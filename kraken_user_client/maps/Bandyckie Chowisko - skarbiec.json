@@ -3,11 +3,7 @@
  "name": "Bandyckie Chowisko - skarbiec",
  "gateways": [
   {
-   "to": "Bandyckie Chowisko",
-   "minimap": {
-    "top": 670.833,
-    "left": 554.167
-   }
+   "to": "Bandyckie Chowisko"
   }
  ]
 }

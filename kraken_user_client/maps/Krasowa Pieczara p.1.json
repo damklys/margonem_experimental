@@ -3,18 +3,10 @@
  "name": "Krasowa Pieczara p.1",
  "gateways": [
   {
-   "to": "Legowisko Wilczej Hordy",
-   "minimap": {
-    "top": 630,
-    "left": 525
-   }
+   "to": "Legowisko Wilczej Hordy"
   },
   {
-   "to": "Krasowa Pieczara p.2",
-   "minimap": {
-    "top": 245,
-    "left": 175
-   }
+   "to": "Krasowa Pieczara p.2"
   }
  ]
 }

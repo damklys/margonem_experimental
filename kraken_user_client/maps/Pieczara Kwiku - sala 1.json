@@ -3,18 +3,10 @@
  "name": "Pieczara Kwiku - sala 1",
  "gateways": [
   {
-   "to": "Racicowy Matecznik",
-   "minimap": {
-    "top": 422.917,
-    "left": 87.5
-   }
+   "to": "Racicowy Matecznik"
   },
   {
-   "to": "Pieczara Kwiku - sala 2",
-   "minimap": {
-    "top": 29.1667,
-    "left": 568.75
-   }
+   "to": "Pieczara Kwiku - sala 2"
   }
  ]
 }

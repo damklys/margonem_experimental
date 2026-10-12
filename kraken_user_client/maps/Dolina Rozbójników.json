@@ -3,32 +3,16 @@
  "name": "Dolina Rozbójników",
  "gateways": [
   {
-   "to": "Przełęcz Łotrzyków",
-   "minimap": {
-    "top": 0,
-    "left": 80.0938
-   }
+   "to": "Przełęcz Łotrzyków"
   },
   {
-   "to": "Ghuli Mogilnik",
-   "minimap": {
-    "top": 145.625,
-    "left": 458.719
-   }
+   "to": "Ghuli Mogilnik"
   },
   {
-   "to": "Kamienna Kryjówka",
-   "minimap": {
-    "top": 451.438,
-    "left": 371.344
-   }
+   "to": "Kamienna Kryjówka"
   },
   {
-   "to": "Mokradła",
-   "minimap": {
-    "top": 691.719,
-    "left": 196.594
-   }
+   "to": "Mokradła"
   }
  ]
 }

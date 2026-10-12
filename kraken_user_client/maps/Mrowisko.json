@@ -3,18 +3,10 @@
  "name": "Mrowisko",
  "gateways": [
   {
-   "to": "Łany Zboża",
-   "minimap": {
-    "top": 656.25,
-    "left": 415.625
-   }
+   "to": "Łany Zboża"
   },
   {
-   "to": "Mrowisko p.1",
-   "minimap": {
-    "top": 415.625,
-    "left": 218.75
-   }
+   "to": "Mrowisko p.1"
   }
  ]
 }

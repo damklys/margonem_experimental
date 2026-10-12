@@ -3,11 +3,7 @@
  "name": "Świątynia Andarum - zbrojownia",
  "gateways": [
   {
-   "to": "Świątynia Andarum - magazyn p.2",
-   "minimap": {
-    "top": 557.812,
-    "left": 164.062
-   }
+   "to": "Świątynia Andarum - magazyn p.2"
   }
  ]
 }

@@ -3,32 +3,16 @@
  "name": "Oaza Siedmiu Wichrów",
  "gateways": [
   {
-   "to": "Stare Sioło",
-   "minimap": {
-    "top": 516.969,
-    "left": 0
-   }
+   "to": "Stare Sioło"
   },
   {
-   "to": "Ciche Rumowiska",
-   "minimap": {
-    "top": 691.719,
-    "left": 342.219
-   }
+   "to": "Ciche Rumowiska"
   },
   {
-   "to": "Złote Piaski",
-   "minimap": {
-    "top": 662.594,
-    "left": 458.719
-   }
+   "to": "Złote Piaski"
   },
   {
-   "to": "Płaskowyż Arpen",
-   "minimap": {
-    "top": 0,
-    "left": 283.969
-   }
+   "to": "Płaskowyż Arpen"
   }
  ]
 }

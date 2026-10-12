@@ -3,11 +3,7 @@
  "name": "Zmarzlina Amaimona Soplorękiego - sala",
  "gateways": [
   {
-   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek",
-   "minimap": {
-    "top": 678.125,
-    "left": 196.875
-   }
+   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek"
   }
  ]
 }

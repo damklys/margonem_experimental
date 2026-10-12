@@ -3,18 +3,10 @@
  "name": "Pieczara Czaszek",
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.1",
-   "minimap": {
-    "top": 560,
-    "left": 280
-   }
+   "to": "Labirynt Wyklętych p.1"
   },
   {
-   "to": "Nizina Wieśniaków",
-   "minimap": {
-    "top": 560,
-    "left": 525
-   }
+   "to": "Nizina Wieśniaków"
   }
  ]
 }

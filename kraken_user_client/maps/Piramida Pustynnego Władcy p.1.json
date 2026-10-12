@@ -3,18 +3,10 @@
  "name": "Piramida Pustynnego Władcy p.1",
  "gateways": [
   {
-   "to": "Złote Piaski",
-   "minimap": {
-    "top": 659.615,
-    "left": 188.462
-   }
+   "to": "Złote Piaski"
   },
   {
-   "to": "Piramida Pustynnego Władcy p.2",
-   "minimap": {
-    "top": 13.4615,
-    "left": 390.385
-   }
+   "to": "Piramida Pustynnego Władcy p.2"
   }
  ]
 }

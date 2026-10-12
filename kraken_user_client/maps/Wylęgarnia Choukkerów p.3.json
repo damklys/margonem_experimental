@@ -3,11 +3,7 @@
  "name": "Wylęgarnia Choukkerów p.3",
  "gateways": [
   {
-   "to": "Wylęgarnia Choukkerów p.2",
-   "minimap": {
-    "top": 601.562,
-    "left": 525
-   }
+   "to": "Wylęgarnia Choukkerów p.2"
   }
  ]
 }

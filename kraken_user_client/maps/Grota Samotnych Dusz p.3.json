@@ -3,32 +3,16 @@
  "name": "Grota Samotnych Dusz p.3",
  "gateways": [
   {
-   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa",
-   "minimap": {
-    "top": 667.188,
-    "left": 142.188
-   }
+   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa"
   },
   {
-   "to": "Ślepe Wyrobisko",
-   "minimap": {
-    "top": 306.25,
-    "left": 393.75
-   }
+   "to": "Ślepe Wyrobisko"
   },
   {
-   "to": "Grota Samotnych Dusz p.4",
-   "minimap": {
-    "top": 481.25,
-    "left": 601.562
-   }
+   "to": "Grota Samotnych Dusz p.4"
   },
   {
-   "to": "Grota Samotnych Dusz p.2",
-   "minimap": {
-    "top": 32.812,
-    "left": 612.5
-   }
+   "to": "Grota Samotnych Dusz p.2"
   }
  ]
 }

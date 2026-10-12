@@ -3,18 +3,10 @@
  "name": "Piekielna Grota p.3 - sala 2",
  "gateways": [
   {
-   "to": "Piekielna Grota p.3 - sala 1",
-   "minimap": {
-    "top": 87.5,
-    "left": 525
-   }
+   "to": "Piekielna Grota p.3 - sala 1"
   },
   {
-   "to": "Piekielna Grota p.4",
-   "minimap": {
-    "top": 145.833,
-    "left": 175
-   }
+   "to": "Piekielna Grota p.4"
   }
  ]
 }

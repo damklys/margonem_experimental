@@ -3,18 +3,10 @@
  "name": "Górska Grota p.2",
  "gateways": [
   {
-   "to": "Nawiedzony Jar",
-   "minimap": {
-    "top": 361.263,
-    "left": 361.263
-   }
+   "to": "Nawiedzony Jar"
   },
   {
-   "to": "Górska Grota p.1",
-   "minimap": {
-    "top": 67.7368,
-    "left": 135.474
-   }
+   "to": "Górska Grota p.1"
   }
  ]
 }

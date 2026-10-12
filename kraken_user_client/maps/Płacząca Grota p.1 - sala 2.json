@@ -3,18 +3,10 @@
  "name": "Płacząca Grota p.1 - sala 2",
  "gateways": [
   {
-   "to": "Płacząca Grota p.2",
-   "minimap": {
-    "top": 510.417,
-    "left": 218.75
-   }
+   "to": "Płacząca Grota p.2"
   },
   {
-   "to": "Wzgórze Płaczek",
-   "minimap": {
-    "top": 277.083,
-    "left": 627.083
-   }
+   "to": "Wzgórze Płaczek"
   }
  ]
 }

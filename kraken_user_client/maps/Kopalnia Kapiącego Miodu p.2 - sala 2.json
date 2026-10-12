@@ -3,18 +3,10 @@
  "name": "Kopalnia Kapiącego Miodu p.2 - sala 2",
  "gateways": [
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2",
-   "minimap": {
-    "top": 590.625,
-    "left": 54.6875
-   }
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2"
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.3",
-   "minimap": {
-    "top": 360.938,
-    "left": 656.25
-   }
+   "to": "Kopalnia Kapiącego Miodu p.3"
   }
  ]
 }

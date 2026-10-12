@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Zabłocona Jama p.2 - sala 3",
-   "minimap": {
-    "top": 656.25,
-    "left": 306.25
-   },
    "x": 21,
    "y": 45,
    "toId": 6943,

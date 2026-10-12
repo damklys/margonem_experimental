@@ -3,25 +3,13 @@
  "name": "Las Dziwów",
  "gateways": [
   {
-   "to": "Cienisty Bór",
-   "minimap": {
-    "top": 0,
-    "left": 305.812
-   }
+   "to": "Cienisty Bór"
   },
   {
-   "to": "Namiot Kambiona",
-   "minimap": {
-    "top": 516.969,
-    "left": 123.781
-   }
+   "to": "Namiot Kambiona"
   },
   {
-   "to": "Złowrogie Bagna",
-   "minimap": {
-    "top": 342.219,
-    "left": 0
-   }
+   "to": "Złowrogie Bagna"
   },
   {
    "to": "Liściaste Rozstaje"

@@ -3,18 +3,10 @@
  "name": "Mrowisko p.2",
  "gateways": [
   {
-   "to": "Mrowisko p.1",
-   "minimap": {
-    "top": 21.875,
-    "left": 43.75
-   }
+   "to": "Mrowisko p.1"
   },
   {
-   "to": "Kopiec Mrówek p.2",
-   "minimap": {
-    "top": 415.625,
-    "left": 656.25
-   }
+   "to": "Kopiec Mrówek p.2"
   }
  ]
 }

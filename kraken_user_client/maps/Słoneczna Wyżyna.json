@@ -3,18 +3,10 @@
  "name": "Słoneczna Wyżyna",
  "gateways": [
   {
-   "to": "Zasłonięte Jezioro",
-   "minimap": {
-    "top": 393.75,
-    "left": 689.062
-   }
+   "to": "Zasłonięte Jezioro"
   },
   {
-   "to": "Lazurowe Wzgórze",
-   "minimap": {
-    "top": 196.875,
-    "left": 0
-   }
+   "to": "Lazurowe Wzgórze"
   }
  ]
 }

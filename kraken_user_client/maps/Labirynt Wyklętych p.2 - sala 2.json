@@ -3,11 +3,7 @@
  "name": "Labirynt Wyklętych p.2 - sala 2",
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.1",
-   "minimap": {
-    "top": 17.5,
-    "left": 52.5
-   }
+   "to": "Labirynt Wyklętych p.1"
   }
  ]
 }

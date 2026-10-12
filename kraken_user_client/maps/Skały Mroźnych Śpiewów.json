@@ -3,67 +3,31 @@
  "name": "Skały Mroźnych Śpiewów",
  "gateways": [
   {
-   "to": "Andarum Ilami",
-   "minimap": {
-    "top": 65.625,
-    "left": 689.062
-   }
+   "to": "Andarum Ilami"
   },
   {
-   "to": "Erem Czarnego Słońca p.1 - północ",
-   "minimap": {
-    "top": 120.312,
-    "left": 317.188
-   }
+   "to": "Erem Czarnego Słońca p.1 - północ"
   },
   {
-   "to": "Firnowa Grota p.1",
-   "minimap": {
-    "top": 120.312,
-    "left": 251.562
-   }
+   "to": "Firnowa Grota p.1"
   },
   {
-   "to": "Cmentarzysko Szerpów",
-   "minimap": {
-    "top": 0,
-    "left": 131.25
-   }
+   "to": "Cmentarzysko Szerpów"
   },
   {
-   "to": "Firnowa Grota p.2",
-   "minimap": {
-    "top": 240.625,
-    "left": 284.375
-   }
+   "to": "Firnowa Grota p.2"
   },
   {
-   "to": "Erem Czarnego Słońca p.3 - południe",
-   "minimap": {
-    "top": 514.062,
-    "left": 229.688
-   }
+   "to": "Erem Czarnego Słońca p.3 - południe"
   },
   {
-   "to": "Lodowa Wyrwa p.1 s.1",
-   "minimap": {
-    "top": 459.375,
-    "left": 437.5
-   }
+   "to": "Lodowa Wyrwa p.1 s.1"
   },
   {
-   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek",
-   "minimap": {
-    "top": 481.25,
-    "left": 656.25
-   }
+   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek"
   },
   {
-   "to": "Lodowa Wyrwa p.2",
-   "minimap": {
-    "top": 645.312,
-    "left": 546.875
-   }
+   "to": "Lodowa Wyrwa p.2"
   }
  ]
 }

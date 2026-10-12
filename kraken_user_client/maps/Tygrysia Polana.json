@@ -3,32 +3,16 @@
  "name": "Tygrysia Polana",
  "gateways": [
   {
-   "to": "Leśna Przełęcz",
-   "minimap": {
-    "top": 640.75,
-    "left": 0
-   }
+   "to": "Leśna Przełęcz"
   },
   {
-   "to": "Jama Kocich Ślepi",
-   "minimap": {
-    "top": 458.719,
-    "left": 116.5
-   }
+   "to": "Jama Kocich Ślepi"
   },
   {
-   "to": "Jaskinia Dzikich Kotów",
-   "minimap": {
-    "top": 487.844,
-    "left": 211.156
-   }
+   "to": "Jaskinia Dzikich Kotów"
   },
   {
-   "to": "Dzikie Pagórki",
-   "minimap": {
-    "top": 604.344,
-    "left": 458.719
-   }
+   "to": "Dzikie Pagórki"
   }
  ]
 }

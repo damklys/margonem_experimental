@@ -3,11 +3,7 @@
  "name": "Smocza Jaskinia",
  "gateways": [
   {
-   "to": "Smocze Góry",
-   "minimap": {
-    "top": 678.125,
-    "left": 87.5
-   }
+   "to": "Smocze Góry"
   }
  ]
 }

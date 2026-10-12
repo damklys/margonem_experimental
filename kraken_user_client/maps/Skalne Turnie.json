@@ -3,18 +3,10 @@
  "name": "Skalne Turnie",
  "gateways": [
   {
-   "to": "Legowisko Wilczej Hordy",
-   "minimap": {
-    "top": 0,
-    "left": 196.875
-   }
+   "to": "Legowisko Wilczej Hordy"
   },
   {
-   "to": "Skarpiska Tolloków",
-   "minimap": {
-    "top": 328.125,
-    "left": 0
-   }
+   "to": "Skarpiska Tolloków"
   }
  ]
 }

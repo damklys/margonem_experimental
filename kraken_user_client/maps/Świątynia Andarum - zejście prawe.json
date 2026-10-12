@@ -3,18 +3,10 @@
  "name": "Świątynia Andarum - zejście prawe",
  "gateways": [
   {
-   "to": "Świątynia Andarum",
-   "minimap": {
-    "top": 20.5769,
-    "left": 164.615
-   }
+   "to": "Świątynia Andarum"
   },
   {
-   "to": "Świątynia Andarum - podziemia",
-   "minimap": {
-    "top": 658.462,
-    "left": 432.115
-   }
+   "to": "Świątynia Andarum - podziemia"
   }
  ]
 }

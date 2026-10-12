@@ -3,18 +3,10 @@
  "name": "Podziemny Przełaz p.1",
  "gateways": [
   {
-   "to": "Opuszczony Bastion",
-   "minimap": {
-    "top": 656.25,
-    "left": 437.5
-   }
+   "to": "Opuszczony Bastion"
   },
   {
-   "to": "Podziemny Przełaz p.2",
-   "minimap": {
-    "top": 284.375,
-    "left": 43.75
-   }
+   "to": "Podziemny Przełaz p.2"
   }
  ]
 }

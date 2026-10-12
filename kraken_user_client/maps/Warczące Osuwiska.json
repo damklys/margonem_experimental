@@ -3,32 +3,16 @@
  "name": "Warczące Osuwiska",
  "gateways": [
   {
-   "to": "Ghuli Mogilnik",
-   "minimap": {
-    "top": 404.688,
-    "left": 0
-   }
+   "to": "Ghuli Mogilnik"
   },
   {
-   "to": "Wilcza Skarpa",
-   "minimap": {
-    "top": 175,
-    "left": 689.062
-   }
+   "to": "Wilcza Skarpa"
   },
   {
-   "to": "Wilcza Nora p.1",
-   "minimap": {
-    "top": 656.25,
-    "left": 667.188
-   }
+   "to": "Wilcza Nora p.1"
   },
   {
-   "to": "Legowisko Wilczej Hordy",
-   "minimap": {
-    "top": 689.062,
-    "left": 295.312
-   }
+   "to": "Legowisko Wilczej Hordy"
   }
  ]
 }

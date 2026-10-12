@@ -3,18 +3,10 @@
  "name": "Grota Caerbannoga",
  "gateways": [
   {
-   "to": "Grota Caerbannoga - leże bestii",
-   "minimap": {
-    "top": 636.364,
-    "left": 286.364
-   }
+   "to": "Grota Caerbannoga - leże bestii"
   },
   {
-   "to": "Czeluść Ognistej Pożogi",
-   "minimap": {
-    "top": 127.273,
-    "left": 413.636
-   }
+   "to": "Czeluść Ognistej Pożogi"
   }
  ]
 }

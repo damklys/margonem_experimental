@@ -3,32 +3,16 @@
  "name": "Zagrzybiałe Ścieżki p.2",
  "gateways": [
   {
-   "to": "Zagrzybiałe Ścieżki p.1 - sala 1",
-   "minimap": {
-    "top": 58.3333,
-    "left": 131.25
-   }
+   "to": "Zagrzybiałe Ścieżki p.1 - sala 1"
   },
   {
-   "to": "Zagrzybiałe Ścieżki p.1 - sala 2",
-   "minimap": {
-    "top": 510.417,
-    "left": 43.75
-   }
+   "to": "Zagrzybiałe Ścieżki p.1 - sala 2"
   },
   {
-   "to": "Zagrzybiałe Ścieżki p.1 - sala 3",
-   "minimap": {
-    "top": 43.75,
-    "left": 612.5
-   }
+   "to": "Zagrzybiałe Ścieżki p.1 - sala 3"
   },
   {
-   "to": "Zagrzybiałe Ścieżki p.3",
-   "minimap": {
-    "top": 641.667,
-    "left": 583.333
-   }
+   "to": "Zagrzybiałe Ścieżki p.3"
   }
  ]
 }

@@ -3,32 +3,16 @@
  "name": "Podmokła Dolina",
  "gateways": [
   {
-   "to": "Mokradła",
-   "minimap": {
-    "top": 426.562,
-    "left": 689.062
-   }
+   "to": "Mokradła"
   },
   {
-   "to": "Morwowe Przejście",
-   "minimap": {
-    "top": 0,
-    "left": 350
-   }
+   "to": "Morwowe Przejście"
   },
   {
-   "to": "Las Goblinów",
-   "minimap": {
-    "top": 689.062,
-    "left": 470.312
-   }
+   "to": "Las Goblinów"
   },
   {
-   "to": "Jaskinia Pogardy",
-   "minimap": {
-    "top": 535.938,
-    "left": 153.125
-   }
+   "to": "Jaskinia Pogardy"
   }
  ]
 }

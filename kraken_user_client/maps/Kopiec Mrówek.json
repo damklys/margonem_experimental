@@ -3,18 +3,10 @@
  "name": "Kopiec Mrówek",
  "gateways": [
   {
-   "to": "Kopiec Mrówek p.1",
-   "minimap": {
-    "top": 262.5,
-    "left": 109.375
-   }
+   "to": "Kopiec Mrówek p.1"
   },
   {
-   "to": "Łany Zboża",
-   "minimap": {
-    "top": 656.25,
-    "left": 525
-   }
+   "to": "Łany Zboża"
   }
  ]
 }

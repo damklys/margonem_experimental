@@ -3,25 +3,13 @@
  "name": "Grota Pragnolli p.2",
  "gateways": [
   {
-   "to": "Grota Pragnolli p.1 - sala 2",
-   "minimap": {
-    "top": 203.52,
-    "left": 279.84
-   }
+   "to": "Grota Pragnolli p.1 - sala 2"
   },
   {
-   "to": "Grota Pragnolli p.2 - sala 2",
-   "minimap": {
-    "top": 241.68,
-    "left": 50.88
-   }
+   "to": "Grota Pragnolli p.2 - sala 2"
   },
   {
-   "to": "Grota Pragnolli p.3",
-   "minimap": {
-    "top": 114.48,
-    "left": 521.52
-   }
+   "to": "Grota Pragnolli p.3"
   }
  ]
 }

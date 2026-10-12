@@ -3,18 +3,10 @@
  "name": "Przeklęty Zamek - wejście wschodnie",
  "gateways": [
   {
-   "to": "Przeklęty Zamek - sala zgromadzeń",
-   "minimap": {
-    "top": 175,
-    "left": 612.5
-   }
+   "to": "Przeklęty Zamek - sala zgromadzeń"
   },
   {
-   "to": "Stare Ruiny",
-   "minimap": {
-    "top": 408.333,
-    "left": 583.333
-   }
+   "to": "Stare Ruiny"
   }
  ]
 }

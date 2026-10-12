@@ -3,18 +3,10 @@
  "name": "Grota Samotnych Dusz p.3 - sala wyjściowa",
  "gateways": [
   {
-   "to": "Liściaste Rozstaje",
-   "minimap": {
-    "top": 656.25,
-    "left": 459.375
-   }
+   "to": "Liściaste Rozstaje"
   },
   {
-   "to": "Grota Samotnych Dusz p.3",
-   "minimap": {
-    "top": 218.75,
-    "left": 546.875
-   }
+   "to": "Grota Samotnych Dusz p.3"
   }
  ]
 }

@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Porzucone Pasieki",
-   "minimap": {
-    "top": 204.167,
-    "left": 692.708
-   },
    "x": 95,
    "y": 28,
    "toId": 138,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Przedmieścia Karka-han",
-   "minimap": {
-    "top": 36.4583,
-    "left": 0
-   },
    "x": 0,
    "y": 5,
    "toId": 36,
@@ -33,10 +25,6 @@
   },
   {
    "to": "Wichrowe Szczyty",
-   "minimap": {
-    "top": 459.375,
-    "left": 422.917
-   },
    "x": 57,
    "y": 63,
    "toId": 84,

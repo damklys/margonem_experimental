@@ -3,32 +3,16 @@
  "name": "Księżycowe Wzniesienie",
  "gateways": [
   {
-   "to": "Trupia Przełęcz",
-   "minimap": {
-    "top": 378.625,
-    "left": 0
-   }
+   "to": "Trupia Przełęcz"
   },
   {
-   "to": "Mglista Polana Vesy",
-   "minimap": {
-    "top": 0,
-    "left": 247.562
-   }
+   "to": "Mglista Polana Vesy"
   },
   {
-   "to": "Zapomniany Święty Gaj p.1",
-   "minimap": {
-    "top": 109.219,
-    "left": 356.781
-   }
+   "to": "Zapomniany Święty Gaj p.1"
   },
   {
-   "to": "Sosnowe Odludzie",
-   "minimap": {
-    "top": 182.031,
-    "left": 458.719
-   }
+   "to": "Sosnowe Odludzie"
   }
  ]
 }

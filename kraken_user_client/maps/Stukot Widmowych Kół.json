@@ -3,18 +3,10 @@
  "name": "Stukot Widmowych Kół",
  "gateways": [
   {
-   "to": "Stary Kupiecki Trakt",
-   "minimap": {
-    "top": 0,
-    "left": 233
-   }
+   "to": "Stary Kupiecki Trakt"
   },
   {
-   "to": "Wertepy Rzezimieszków",
-   "minimap": {
-    "top": 691.719,
-    "left": 138.344
-   }
+   "to": "Wertepy Rzezimieszków"
   }
  ]
 }

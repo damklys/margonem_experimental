@@ -3,25 +3,13 @@
  "name": "Krypty Dusz Śniegu p.2",
  "gateways": [
   {
-   "to": "Krypty Dusz Śniegu p.3",
-   "minimap": {
-    "top": 320.833,
-    "left": 72.9167
-   }
+   "to": "Krypty Dusz Śniegu p.3"
   },
   {
-   "to": "Krypty Dusz Śniegu p.1",
-   "minimap": {
-    "top": 29.1667,
-    "left": 510.417
-   }
+   "to": "Krypty Dusz Śniegu p.1"
   },
   {
-   "to": "Krypty Dusz Śniegu p.3 - komnata Lisza",
-   "minimap": {
-    "top": 641.667,
-    "left": 408.333
-   }
+   "to": "Krypty Dusz Śniegu p.3 - komnata Lisza"
   }
  ]
 }

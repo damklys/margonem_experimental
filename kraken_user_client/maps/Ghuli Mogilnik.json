@@ -3,32 +3,16 @@
  "name": "Ghuli Mogilnik",
  "gateways": [
   {
-   "to": "Dolina Rozbójników",
-   "minimap": {
-    "top": 207.812,
-    "left": 0
-   }
+   "to": "Dolina Rozbójników"
   },
   {
-   "to": "Zapomniany Grobowiec p.1",
-   "minimap": {
-    "top": 229.688,
-    "left": 339.062
-   }
+   "to": "Zapomniany Grobowiec p.1"
   },
   {
-   "to": "Warczące Osuwiska",
-   "minimap": {
-    "top": 404.688,
-    "left": 689.062
-   }
+   "to": "Warczące Osuwiska"
   },
   {
-   "to": "Polana Ścierwojadów",
-   "minimap": {
-    "top": 689.062,
-    "left": 251.562
-   }
+   "to": "Polana Ścierwojadów"
   }
  ]
 }

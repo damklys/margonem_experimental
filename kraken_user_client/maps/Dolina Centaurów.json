@@ -3,18 +3,10 @@
  "name": "Dolina Centaurów",
  "gateways": [
   {
-   "to": "Iglaste Ścieżki",
-   "minimap": {
-    "top": 269.792,
-    "left": 692.708
-   }
+   "to": "Iglaste Ścieżki"
   },
   {
-   "to": "Selva Oscura",
-   "minimap": {
-    "top": 459.375,
-    "left": 430.208
-   }
+   "to": "Selva Oscura"
   }
  ]
 }

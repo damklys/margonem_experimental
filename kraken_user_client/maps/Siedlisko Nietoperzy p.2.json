@@ -3,18 +3,10 @@
  "name": "Siedlisko Nietoperzy p.2",
  "gateways": [
   {
-   "to": "Siedlisko Nietoperzy p.1",
-   "minimap": {
-    "top": 291.667,
-    "left": 320.833
-   }
+   "to": "Siedlisko Nietoperzy p.1"
   },
   {
-   "to": "Siedlisko Nietoperzy p.3 - sala 1",
-   "minimap": {
-    "top": 87.5,
-    "left": 437.5
-   }
+   "to": "Siedlisko Nietoperzy p.3 - sala 1"
   }
  ]
 }

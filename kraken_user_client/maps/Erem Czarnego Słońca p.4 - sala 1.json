@@ -3,18 +3,10 @@
  "name": "Erem Czarnego Słońca p.4 - sala 1",
  "gateways": [
   {
-   "to": "Erem Czarnego Słońca p.3",
-   "minimap": {
-    "top": 87.5,
-    "left": 306.25
-   }
+   "to": "Erem Czarnego Słońca p.3"
   },
   {
-   "to": "Erem Czarnego Słońca p.5",
-   "minimap": {
-    "top": 568.75,
-    "left": 131.25
-   }
+   "to": "Erem Czarnego Słońca p.5"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Zabłocona Jama p.1 - sala 1",
  "gateways": [
   {
-   "to": "Zawiły Bór",
-   "minimap": {
-    "top": 656.25,
-    "left": 452.083
-   }
+   "to": "Zawiły Bór"
   },
   {
-   "to": "Zabłocona Jama p.2 - sala 1",
-   "minimap": {
-    "top": 160.417,
-    "left": 175
-   }
+   "to": "Zabłocona Jama p.2 - sala 1"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Mrówcza Kolonia p.1 - prawy tunel",
  "gateways": [
   {
-   "to": "Mrówcza Kolonia p.2 - prawe korytarze",
-   "minimap": {
-    "top": 656.25,
-    "left": 109.375
-   }
+   "to": "Mrówcza Kolonia p.2 - prawe korytarze"
   },
   {
-   "to": "Leśny Bród",
-   "minimap": {
-    "top": 481.25,
-    "left": 546.875
-   }
+   "to": "Leśny Bród"
   }
  ]
 }

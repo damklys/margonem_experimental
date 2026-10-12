@@ -3,11 +3,7 @@
  "name": "Sala Zamarzniętych Kości",
  "gateways": [
   {
-   "to": "Przejście Zamarzniętych Kości",
-   "minimap": {
-    "top": 481.25,
-    "left": 568.75
-   }
+   "to": "Przejście Zamarzniętych Kości"
   }
  ]
 }

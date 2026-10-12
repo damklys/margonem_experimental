@@ -3,25 +3,13 @@
  "name": "Pieczara Niepogody p.2 - sala 1",
  "gateways": [
   {
-   "to": "Pieczara Niepogody p.1",
-   "minimap": {
-    "top": 14.5833,
-    "left": 495.833
-   }
+   "to": "Pieczara Niepogody p.1"
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 2",
-   "minimap": {
-    "top": 87.5,
-    "left": 583.333
-   }
+   "to": "Pieczara Niepogody p.2 - sala 2"
   },
   {
-   "to": "Pieczara Niepogody p.3",
-   "minimap": {
-    "top": 393.75,
-    "left": 306.25
-   }
+   "to": "Pieczara Niepogody p.3"
   }
  ]
 }

@@ -3,130 +3,58 @@
  "name": "Podgrodzie Nithal",
  "gateways": [
   {
-   "to": "Nizina Wieśniaków",
-   "minimap": {
-    "top": 36.458,
-    "left": 0
-   }
+   "to": "Nizina Wieśniaków"
   },
   {
-   "to": "Dom Rózi",
-   "minimap": {
-    "top": 291.667,
-    "left": 21.875
-   }
+   "to": "Dom Rózi"
   },
   {
-   "to": "Zajazd pod Tęczowym Żukiem",
-   "minimap": {
-    "top": 204.167,
-    "left": 65.625
-   }
+   "to": "Zajazd pod Tęczowym Żukiem"
   },
   {
-   "to": "Dom Edny",
-   "minimap": {
-    "top": 291.667,
-    "left": 116.667
-   }
+   "to": "Dom Edny"
   },
   {
-   "to": "Młyn",
-   "minimap": {
-    "top": 87.5,
-    "left": 160.417
-   }
+   "to": "Młyn"
   },
   {
-   "to": "Nithal",
-   "minimap": {
-    "top": 459.375,
-    "left": 189.583
-   }
+   "to": "Nithal"
   },
   {
-   "to": "Bagna Chojraków",
-   "minimap": {
-    "top": 459.375,
-    "left": 663.542
-   }
+   "to": "Bagna Chojraków"
   },
   {
-   "to": "Drewutnia",
-   "minimap": {
-    "top": 145.833,
-    "left": 678.125
-   }
+   "to": "Drewutnia"
   },
   {
-   "to": "Chlew",
-   "minimap": {
-    "top": 233.333,
-    "left": 678.125
-   }
+   "to": "Chlew"
   },
   {
-   "to": "Cytadela p.3",
-   "minimap": {
-    "top": 342.708,
-    "left": 80.208
-   }
+   "to": "Cytadela p.3"
   },
   {
-   "to": "Cytadela p.2",
-   "minimap": {
-    "top": 444.792,
-    "left": 87.5
-   }
+   "to": "Cytadela p.2"
   },
   {
-   "to": "Żołnierz Nithal",
-   "minimap": {
-    "top": 459.375,
-    "left": 196.875
-   }
+   "to": "Żołnierz Nithal"
   },
   {
-   "to": "Dom Młynarza",
-   "minimap": {
-    "top": 65.625,
-    "left": 204.167
-   }
+   "to": "Dom Młynarza"
   },
   {
-   "to": "Stajnie",
-   "minimap": {
-    "top": 138.542,
-    "left": 422.917
-   }
+   "to": "Stajnie"
   },
   {
-   "to": "Źródło Narumi",
-   "minimap": {
-    "top": 0,
-    "left": 473.958
-   }
+   "to": "Źródło Narumi"
   },
   {
-   "to": "Gospodarstwo Łucji i Jana",
-   "minimap": {
-    "top": 153.125,
-    "left": 561.458
-   }
+   "to": "Gospodarstwo Łucji i Jana"
   },
   {
-   "to": "Stodoła",
-   "minimap": {
-    "top": 189.583,
-    "left": 619.792
-   }
+   "to": "Stodoła"
   },
   {
-   "to": "Dom Almonda",
-   "minimap": {
-    "top": 269.792,
-    "left": 517.708
-   }
+   "to": "Dom Almonda"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Jaskinia Łowców p.1",
  "gateways": [
   {
-   "to": "Ithan",
-   "minimap": {
-    "top": 630,
-    "left": 525
-   }
+   "to": "Ithan"
   },
   {
-   "to": "Jaskinia Łowców p.2",
-   "minimap": {
-    "top": 35,
-    "left": 315
-   }
+   "to": "Jaskinia Łowców p.2"
   }
  ]
 }

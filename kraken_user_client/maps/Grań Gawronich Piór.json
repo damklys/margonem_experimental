@@ -3,18 +3,10 @@
  "name": "Grań Gawronich Piór",
  "gateways": [
   {
-   "to": "Lazurowe Wzgórze",
-   "minimap": {
-    "top": 459.375,
-    "left": 247.917
-   }
+   "to": "Lazurowe Wzgórze"
   },
   {
-   "to": "Thuzal",
-   "minimap": {
-    "top": 0,
-    "left": 226.042
-   }
+   "to": "Thuzal"
   }
  ]
 }

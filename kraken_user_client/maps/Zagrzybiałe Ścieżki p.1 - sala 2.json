@@ -3,18 +3,10 @@
  "name": "Zagrzybiałe Ścieżki p.1 - sala 2",
  "gateways": [
   {
-   "to": "Zagrzybiałe Ścieżki p.2",
-   "minimap": {
-    "top": 116.667,
-    "left": 583.333
-   }
+   "to": "Zagrzybiałe Ścieżki p.2"
   },
   {
-   "to": "Gadzia Kotlina",
-   "minimap": {
-    "top": 670.833,
-    "left": 131.25
-   }
+   "to": "Gadzia Kotlina"
   }
  ]
 }

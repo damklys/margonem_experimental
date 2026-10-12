@@ -3,18 +3,10 @@
  "name": "Uroczysko Wodnika",
  "gateways": [
   {
-   "to": "Moczary Rybiego Oka",
-   "minimap": {
-    "top": 0,
-    "left": 109.219
-   }
+   "to": "Moczary Rybiego Oka"
   },
   {
-   "to": "Źródło Narumi",
-   "minimap": {
-    "top": 691.719,
-    "left": 189.312
-   }
+   "to": "Źródło Narumi"
   }
  ]
 }

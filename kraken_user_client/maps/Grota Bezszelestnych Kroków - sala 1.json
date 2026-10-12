@@ -3,25 +3,13 @@
  "name": "Grota Bezszelestnych Kroków - sala 1",
  "gateways": [
   {
-   "to": "Zapomniany Szlak",
-   "minimap": {
-    "top": 656.25,
-    "left": 196.875
-   }
+   "to": "Zapomniany Szlak"
   },
   {
-   "to": "Grota Bezszelestnych Kroków - sala 2",
-   "minimap": {
-    "top": 196.875,
-    "left": 590.625
-   }
+   "to": "Grota Bezszelestnych Kroków - sala 2"
   },
   {
-   "to": "Grota Bezszelestnych Kroków - sala 3",
-   "minimap": {
-    "top": 43.75,
-    "left": 153.125
-   }
+   "to": "Grota Bezszelestnych Kroków - sala 3"
   }
  ]
 }

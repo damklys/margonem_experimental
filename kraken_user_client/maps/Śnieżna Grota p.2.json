@@ -3,18 +3,10 @@
  "name": "Śnieżna Grota p.2",
  "gateways": [
   {
-   "to": "Śnieżna Grota p.1",
-   "minimap": {
-    "top": 160.417,
-    "left": 350
-   }
+   "to": "Śnieżna Grota p.1"
   },
   {
-   "to": "Śnieżna Grota p.3",
-   "minimap": {
-    "top": 525,
-    "left": 102.083
-   }
+   "to": "Śnieżna Grota p.3"
   }
  ]
 }

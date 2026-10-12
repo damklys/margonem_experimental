@@ -3,32 +3,16 @@
  "name": "Lodowa Sala",
  "gateways": [
   {
-   "to": "Śnieżna Grota p.3",
-   "minimap": {
-    "top": 328.125,
-    "left": 350
-   }
+   "to": "Śnieżna Grota p.3"
   },
   {
-   "to": "Przejście Magicznego Mrozu",
-   "minimap": {
-    "top": 109.375,
-    "left": 164.062
-   }
+   "to": "Przejście Magicznego Mrozu"
   },
   {
-   "to": "Przejście Lodowatego Wiatru",
-   "minimap": {
-    "top": 87.5,
-    "left": 579.688
-   }
+   "to": "Przejście Lodowatego Wiatru"
   },
   {
-   "to": "Przejście Zmarzniętych Kości",
-   "minimap": {
-    "top": 503.125,
-    "left": 568.75
-   }
+   "to": "Przejście Zmarzniętych Kości"
   }
  ]
 }

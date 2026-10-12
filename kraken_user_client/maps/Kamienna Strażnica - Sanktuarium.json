@@ -3,11 +3,7 @@
  "name": "Kamienna Strażnica - Sanktuarium",
  "gateways": [
   {
-   "to": "Kamienna Strażnica - Sala Chwały",
-   "minimap": {
-    "top": 29.136,
-    "left": 233.091
-   }
+   "to": "Kamienna Strażnica - Sala Chwały"
   }
  ]
 }

@@ -3,25 +3,13 @@
  "name": "Zabłocona Jama p.2 - sala 2",
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 1",
-   "minimap": {
-    "top": 109.375,
-    "left": 87.5
-   }
+   "to": "Zabłocona Jama p.2 - sala 1"
   },
   {
-   "to": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów",
-   "minimap": {
-    "top": 557.812,
-    "left": 43.75
-   }
+   "to": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów"
   },
   {
-   "to": "Zabłocona Jama p.2 - sala 3",
-   "minimap": {
-    "top": 634.375,
-    "left": 546.875
-   }
+   "to": "Zabłocona Jama p.2 - sala 3"
   }
  ]
 }

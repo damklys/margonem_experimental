@@ -3,39 +3,19 @@
  "name": "Gościniec Bardów",
  "gateways": [
   {
-   "to": "Eder",
-   "minimap": {
-    "top": 0,
-    "left": 313.094
-   }
+   "to": "Eder"
   },
   {
-   "to": "Wertepy Rzezimieszków",
-   "minimap": {
-    "top": 553.375,
-    "left": 458.719
-   }
+   "to": "Wertepy Rzezimieszków"
   },
   {
-   "to": "Nizina Wieśniaków",
-   "minimap": {
-    "top": 691.719,
-    "left": 320.375
-   }
+   "to": "Nizina Wieśniaków"
   },
   {
-   "to": "Racicowy Matecznik",
-   "minimap": {
-    "top": 313.094,
-    "left": 0
-   }
+   "to": "Racicowy Matecznik"
   },
   {
-   "to": "Namiot Tropicieli Herosów",
-   "minimap": {
-    "top": 58.25,
-    "left": 429.594
-   }
+   "to": "Namiot Tropicieli Herosów"
   }
  ]
 }

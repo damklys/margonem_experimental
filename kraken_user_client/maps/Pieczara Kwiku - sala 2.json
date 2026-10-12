@@ -3,11 +3,7 @@
  "name": "Pieczara Kwiku - sala 2",
  "gateways": [
   {
-   "to": "Pieczara Kwiku - sala 1",
-   "minimap": {
-    "top": 525,
-    "left": 225
-   }
+   "to": "Pieczara Kwiku - sala 1"
   }
  ]
 }

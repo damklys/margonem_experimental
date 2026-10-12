@@ -3,18 +3,10 @@
  "name": "Kamienna Jaskinia - sala 2",
  "gateways": [
   {
-   "to": "Kamienna Jaskinia - sala 1",
-   "minimap": {
-    "top": 42,
-    "left": 98
-   }
+   "to": "Kamienna Jaskinia - sala 1"
   },
   {
-   "to": "Andarum Ilami",
-   "minimap": {
-    "top": 672,
-    "left": 434
-   }
+   "to": "Andarum Ilami"
   }
  ]
 }

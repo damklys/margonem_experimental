@@ -3,18 +3,10 @@
  "name": "Przełaz olbrzymów",
  "gateways": [
   {
-   "to": "Smocze Góry",
-   "minimap": {
-    "top": 656.25,
-    "left": 196.875
-   }
+   "to": "Smocze Góry"
   },
   {
-   "to": "Selva Oscura",
-   "minimap": {
-    "top": 65.625,
-    "left": 87.5
-   }
+   "to": "Selva Oscura"
   }
  ]
 }

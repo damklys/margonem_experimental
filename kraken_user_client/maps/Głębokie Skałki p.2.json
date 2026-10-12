@@ -3,25 +3,13 @@
  "name": "Głębokie Skałki p.2",
  "gateways": [
   {
-   "to": "Głębokie Skałki p.1",
-   "minimap": {
-    "top": 72.9167,
-    "left": 393.75
-   }
+   "to": "Głębokie Skałki p.1"
   },
   {
-   "to": "Zdradzieckie Przejście p.1",
-   "minimap": {
-    "top": 145.833,
-    "left": 131.25
-   }
+   "to": "Zdradzieckie Przejście p.1"
   },
   {
-   "to": "Głębokie Skałki p.3",
-   "minimap": {
-    "top": 627.083,
-    "left": 583.333
-   }
+   "to": "Głębokie Skałki p.3"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Grota Bezszelestnych Kroków - sala 3",
  "gateways": [
   {
-   "to": "Grota Bezszelestnych Kroków - sala 2",
-   "minimap": {
-    "top": 120.312,
-    "left": 656.25
-   }
+   "to": "Grota Bezszelestnych Kroków - sala 2"
   },
   {
-   "to": "Grota Bezszelestnych Kroków - sala 1",
-   "minimap": {
-    "top": 678.125,
-    "left": 470.312
-   }
+   "to": "Grota Bezszelestnych Kroków - sala 1"
   }
  ]
 }

@@ -3,25 +3,13 @@
  "name": "Dzikie Pagórki",
  "gateways": [
   {
-   "to": "Tygrysia Polana",
-   "minimap": {
-    "top": 138.344,
-    "left": 0
-   }
+   "to": "Tygrysia Polana"
   },
   {
-   "to": "Jaskinia Dzikich Kotów",
-   "minimap": {
-    "top": 276.688,
-    "left": 65.5312
-   }
+   "to": "Jaskinia Dzikich Kotów"
   },
   {
-   "to": "Pradawne Wzgórze Przodków",
-   "minimap": {
-    "top": 691.719,
-    "left": 305.812
-   }
+   "to": "Pradawne Wzgórze Przodków"
   }
  ]
 }

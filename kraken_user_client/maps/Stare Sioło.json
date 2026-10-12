@@ -3,25 +3,13 @@
  "name": "Stare Sioło",
  "gateways": [
   {
-   "to": "Sucha Dolina",
-   "minimap": {
-    "top": 0,
-    "left": 568.75
-   }
+   "to": "Sucha Dolina"
   },
   {
-   "to": "Oaza Siedmiu Wichrów",
-   "minimap": {
-    "top": 277.083,
-    "left": 692.708
-   }
+   "to": "Oaza Siedmiu Wichrów"
   },
   {
-   "to": "Tuzmer",
-   "minimap": {
-    "top": 459.375,
-    "left": 350
-   }
+   "to": "Tuzmer"
   }
  ]
 }

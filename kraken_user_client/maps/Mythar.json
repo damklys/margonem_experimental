@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Smocze Góry",
-   "minimap": {
-    "top": 262.5,
-    "left": 0
-   },
    "x": 0,
    "y": 35,
    "toId": 253,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Zawiły Bór",
-   "minimap": {
-    "top": 0,
-    "left": 233.333
-   },
    "x": 31,
    "y": 0,
    "toId": 330,
@@ -33,10 +25,6 @@
   },
   {
    "to": "Złowrogie Bagna",
-   "minimap": {
-    "top": 196.875,
-    "left": 692.708
-   },
    "x": 95,
    "y": 26,
    "toId": 246,

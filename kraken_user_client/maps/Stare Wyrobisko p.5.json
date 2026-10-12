@@ -3,18 +3,10 @@
  "name": "Stare Wyrobisko p.5",
  "gateways": [
   {
-   "to": "Nawiedzony Jar",
-   "minimap": {
-    "top": 638.235,
-    "left": 247.059
-   }
+   "to": "Nawiedzony Jar"
   },
   {
-   "to": "Stare Wyrobisko p.4",
-   "minimap": {
-    "top": 61.7647,
-    "left": 350
-   }
+   "to": "Stare Wyrobisko p.4"
   }
  ]
 }

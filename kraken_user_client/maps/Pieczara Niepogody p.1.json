@@ -3,25 +3,13 @@
  "name": "Pieczara Niepogody p.1",
  "gateways": [
   {
-   "to": "Fort Eder",
-   "minimap": {
-    "top": 490,
-    "left": 612.5
-   }
+   "to": "Fort Eder"
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 2",
-   "minimap": {
-    "top": 140,
-    "left": 157.5
-   }
+   "to": "Pieczara Niepogody p.2 - sala 2"
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 1",
-   "minimap": {
-    "top": 315,
-    "left": 70
-   }
+   "to": "Pieczara Niepogody p.2 - sala 1"
   }
  ]
 }

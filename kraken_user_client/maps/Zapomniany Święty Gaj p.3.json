@@ -3,11 +3,7 @@
  "name": "Zapomniany Święty Gaj p.3",
  "gateways": [
   {
-   "to": "Zapomniany Święty Gaj p.2",
-   "minimap": {
-    "top": 122.5,
-    "left": 140
-   }
+   "to": "Zapomniany Święty Gaj p.2"
   }
  ]
 }

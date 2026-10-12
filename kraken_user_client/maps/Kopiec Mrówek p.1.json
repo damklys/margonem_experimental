@@ -3,18 +3,10 @@
  "name": "Kopiec Mrówek p.1",
  "gateways": [
   {
-   "to": "Kopiec Mrówek p.2",
-   "minimap": {
-    "top": 109.375,
-    "left": 153.125
-   }
+   "to": "Kopiec Mrówek p.2"
   },
   {
-   "to": "Kopiec Mrówek",
-   "minimap": {
-    "top": 328.125,
-    "left": 350
-   }
+   "to": "Kopiec Mrówek"
   }
  ]
 }

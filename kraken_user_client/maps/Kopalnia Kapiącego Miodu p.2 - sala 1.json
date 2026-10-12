@@ -3,25 +3,13 @@
  "name": "Kopalnia Kapiącego Miodu p.2 - sala 1",
  "gateways": [
   {
-   "to": "Kopalnia Kapiącego Miodu p.3",
-   "minimap": {
-    "top": 273.438,
-    "left": 306.25
-   }
+   "to": "Kopalnia Kapiącego Miodu p.3"
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki",
-   "minimap": {
-    "top": 43.75,
-    "left": 120.312
-   }
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki"
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1",
-   "minimap": {
-    "top": 437.5,
-    "left": 481.25
-   }
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1"
   }
  ]
 }

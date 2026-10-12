@@ -3,18 +3,10 @@
  "name": "Dolina Suchych Łez",
  "gateways": [
   {
-   "to": "Ciche Rumowiska",
-   "minimap": {
-    "top": 320.833,
-    "left": 0
-   }
+   "to": "Ciche Rumowiska"
   },
   {
-   "to": "Złote Piaski",
-   "minimap": {
-    "top": 0,
-    "left": 102.083
-   }
+   "to": "Złote Piaski"
   }
  ]
 }

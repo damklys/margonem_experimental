@@ -3,25 +3,13 @@
  "name": "Świszcząca Grota p.2",
  "gateways": [
   {
-   "to": "Świszcząca Grota p.1",
-   "minimap": {
-    "top": 21.875,
-    "left": 87.5
-   }
+   "to": "Świszcząca Grota p.1"
   },
   {
-   "to": "Zburzona Twierdza",
-   "minimap": {
-    "top": 634.375,
-    "left": 415.625
-   }
+   "to": "Zburzona Twierdza"
   },
   {
-   "to": "Świszcząca Grota p.3",
-   "minimap": {
-    "top": 240.625,
-    "left": 590.625
-   }
+   "to": "Świszcząca Grota p.3"
   }
  ]
 }

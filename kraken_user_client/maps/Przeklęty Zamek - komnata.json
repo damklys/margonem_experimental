@@ -3,11 +3,7 @@
  "name": "Przeklęty Zamek - komnata",
  "gateways": [
   {
-   "to": "Przeklęty Zamek p.2",
-   "minimap": {
-    "top": 612.5,
-    "left": 481.25
-   }
+   "to": "Przeklęty Zamek p.2"
   }
  ]
 }

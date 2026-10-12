@@ -3,18 +3,10 @@
  "name": "Przeklęta Strażnica p.1",
  "gateways": [
   {
-   "to": "Przeklęta Strażnica",
-   "minimap": {
-    "top": 636.364,
-    "left": 222.727
-   }
+   "to": "Przeklęta Strażnica"
   },
   {
-   "to": "Przeklęta Strażnica p.2",
-   "minimap": {
-    "top": 95.4545,
-    "left": 636.364
-   }
+   "to": "Przeklęta Strażnica p.2"
   }
  ]
 }

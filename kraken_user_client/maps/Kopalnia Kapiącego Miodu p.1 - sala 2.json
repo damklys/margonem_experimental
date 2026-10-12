@@ -3,18 +3,10 @@
  "name": "Kopalnia Kapiącego Miodu p.1 - sala 2",
  "gateways": [
   {
-   "to": "Porzucone Pasieki",
-   "minimap": {
-    "top": 667.188,
-    "left": 98.4375
-   }
+   "to": "Porzucone Pasieki"
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.2 - sala 2",
-   "minimap": {
-    "top": 76.5625,
-    "left": 120.312
-   }
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala 2"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Zapomniany Święty Gaj p.1 - sala 1",
  "gateways": [
   {
-   "to": "Zapomniany Święty Gaj p.1",
-   "minimap": {
-    "top": 291.667,
-    "left": 87.5
-   }
+   "to": "Zapomniany Święty Gaj p.1"
   },
   {
-   "to": "Zapomniany Święty Gaj p.2",
-   "minimap": {
-    "top": 583.333,
-    "left": 437.5
-   }
+   "to": "Zapomniany Święty Gaj p.2"
   }
  ]
 }

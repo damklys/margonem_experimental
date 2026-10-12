@@ -3,18 +3,10 @@
  "name": "Pieczara Szaleńców - przedsionek",
  "gateways": [
   {
-   "to": "Pieczara Szaleńców - sala 4",
-   "minimap": {
-    "top": 656.25,
-    "left": 350
-   }
+   "to": "Pieczara Szaleńców - sala 4"
   },
   {
-   "to": "Pieczara Szaleńców - sala Regulusa Mętnookiego",
-   "minimap": {
-    "top": 65.625,
-    "left": 393.75
-   }
+   "to": "Pieczara Szaleńców - sala Regulusa Mętnookiego"
   }
  ]
 }

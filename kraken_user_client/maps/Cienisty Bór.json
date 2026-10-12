@@ -3,18 +3,10 @@
  "name": "Cienisty Bór",
  "gateways": [
   {
-   "to": "Ostępy Szalbierskich Lasów",
-   "minimap": {
-    "top": 305.812,
-    "left": 0
-   }
+   "to": "Ostępy Szalbierskich Lasów"
   },
   {
-   "to": "Las Dziwów",
-   "minimap": {
-    "top": 691.719,
-    "left": 313.094
-   }
+   "to": "Las Dziwów"
   }
  ]
 }

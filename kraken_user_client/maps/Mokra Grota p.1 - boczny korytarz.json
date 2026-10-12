@@ -3,25 +3,13 @@
  "name": "Mokra Grota p.1 - boczny korytarz",
  "gateways": [
   {
-   "to": "Mokra Grota p.1",
-   "minimap": {
-    "top": 667.188,
-    "left": 131.25
-   }
+   "to": "Mokra Grota p.1"
   },
   {
-   "to": "Mokra Grota p.1 - przełaz",
-   "minimap": {
-    "top": 437.5,
-    "left": 590.625
-   }
+   "to": "Mokra Grota p.1 - przełaz"
   },
   {
-   "to": "Mokra Grota p.2 - korytarz",
-   "minimap": {
-    "top": 568.75,
-    "left": 54.6875
-   }
+   "to": "Mokra Grota p.2 - korytarz"
   }
  ]
 }

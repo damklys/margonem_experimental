@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Kopalnia Margorii",
-   "minimap": {
-    "top": 648.031,
-    "left": 58.25
-   },
    "x": 8,
    "y": 89,
    "toId": 6772,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Labirynt Margorii",
-   "minimap": {
-    "top": 669.875,
-    "left": 378.625
-   },
    "x": 52,
    "y": 92,
    "toId": 6771,
@@ -32,11 +24,7 @@
    "zone": 0
   },
   {
-   "to": "Margoria - Sala Królewska",
-   "minimap": {
-    "top": 138.344,
-    "left": 218.438
-   }
+   "to": "Margoria - Sala Królewska"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Podziemia Zniszczonej Wieży p.1",
  "gateways": [
   {
-   "to": "Ruiny Wieży Magów - przedsionek",
-   "minimap": {
-    "top": 50,
-    "left": 366.667
-   }
+   "to": "Ruiny Wieży Magów - przedsionek"
   },
   {
-   "to": "Podziemia Zniszczonej Wieży p.2",
-   "minimap": {
-    "top": 600,
-    "left": 600
-   }
+   "to": "Podziemia Zniszczonej Wieży p.2"
   }
  ]
 }

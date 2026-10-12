@@ -3,32 +3,16 @@
  "name": "Wertepy Rzezimieszków",
  "gateways": [
   {
-   "to": "Stukot Widmowych Kół",
-   "minimap": {
-    "top": 0,
-    "left": 196.875
-   }
+   "to": "Stukot Widmowych Kół"
   },
   {
-   "to": "Źródło Narumi",
-   "minimap": {
-    "top": 459.375,
-    "left": 689.062
-   }
+   "to": "Źródło Narumi"
   },
   {
-   "to": "Gościniec Bardów",
-   "minimap": {
-    "top": 481.25,
-    "left": 0
-   }
+   "to": "Gościniec Bardów"
   },
   {
-   "to": "Chata szabrowników",
-   "minimap": {
-    "top": 98.4375,
-    "left": 535.938
-   }
+   "to": "Chata szabrowników"
   }
  ]
 }

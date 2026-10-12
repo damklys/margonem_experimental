@@ -3,25 +3,13 @@
  "name": "Źródło Narumi",
  "gateways": [
   {
-   "to": "Wertepy Rzezimieszków",
-   "minimap": {
-    "top": 459.375,
-    "left": 0
-   }
+   "to": "Wertepy Rzezimieszków"
   },
   {
-   "to": "Uroczysko Wodnika",
-   "minimap": {
-    "top": 0,
-    "left": 284.375
-   }
+   "to": "Uroczysko Wodnika"
   },
   {
-   "to": "Podgrodzie Nithal",
-   "minimap": {
-    "top": 689.062,
-    "left": 360.938
-   }
+   "to": "Podgrodzie Nithal"
   }
  ]
 }

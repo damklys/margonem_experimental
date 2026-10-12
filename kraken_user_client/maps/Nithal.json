@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Mury Nithal - Baszta Koronna",
-   "minimap": {
-    "top": 94.792,
-    "left": 14.583
-   },
    "x": 2,
    "y": 13,
    "toId": 965,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Kwatera żołnierska",
-   "minimap": {
-    "top": 72.917,
-    "left": 29.167
-   },
    "x": 4,
    "y": 10,
    "toId": 770,
@@ -33,10 +25,6 @@
   },
   {
    "to": "Akademia wojskowa p.1",
-   "minimap": {
-    "top": 247.917,
-    "left": 29.167
-   },
    "x": 4,
    "y": 34,
    "toId": 862,
@@ -46,10 +34,6 @@
   },
   {
    "to": "Akademia wojskowa - stajnia",
-   "minimap": {
-    "top": 291.667,
-    "left": 43.75
-   },
    "x": 6,
    "y": 40,
    "toId": 861,
@@ -59,10 +43,6 @@
   },
   {
    "to": "Izba chorych płn.",
-   "minimap": {
-    "top": 350,
-    "left": 43.75
-   },
    "x": 6,
    "y": 48,
    "toId": 817,
@@ -72,10 +52,6 @@
   },
   {
    "to": "Winnica Meflakasti",
-   "minimap": {
-    "top": 145.833,
-    "left": 72.917
-   },
    "x": 44,
    "y": 61,
    "toId": 731,
@@ -85,10 +61,6 @@
   },
   {
    "to": "Kamienica Zagadek",
-   "minimap": {
-    "top": 145.833,
-    "left": 138.542
-   },
    "x": 19,
    "y": 20,
    "toId": 4263,
@@ -98,10 +70,6 @@
   },
   {
    "to": "Kamienica de Waldenów",
-   "minimap": {
-    "top": 233.333,
-    "left": 182.292
-   },
    "x": 25,
    "y": 32,
    "toId": 4414,
@@ -111,10 +79,6 @@
   },
   {
    "to": "Gildia Kupców - część wschodnia",
-   "minimap": {
-    "top": 342.708,
-    "left": 182.292
-   },
    "x": 25,
    "y": 47,
    "toId": 954,
@@ -124,10 +88,6 @@
   },
   {
    "to": "Kamienica Tamena",
-   "minimap": {
-    "top": 422.917,
-    "left": 182.292
-   },
    "x": 25,
    "y": 58,
    "toId": 747,
@@ -137,10 +97,6 @@
   },
   {
    "to": "Kamienica Prokusi",
-   "minimap": {
-    "top": 145.833,
-    "left": 204.167
-   },
    "x": 28,
    "y": 20,
    "toId": 740,
@@ -150,10 +106,6 @@
   },
   {
    "to": "Kamienica Krynii Lufis",
-   "minimap": {
-    "top": 422.917,
-    "left": 204.167
-   },
    "x": 28,
    "y": 58,
    "toId": 802,
@@ -163,10 +115,6 @@
   },
   {
    "to": "Cytadela",
-   "minimap": {
-    "top": 72.917,
-    "left": 218.75
-   },
    "x": 30,
    "y": 10,
    "toId": 865,
@@ -176,10 +124,6 @@
   },
   {
    "to": "Kamienica Nitrusa",
-   "minimap": {
-    "top": 233.333,
-    "left": 226.042
-   },
    "x": 31,
    "y": 32,
    "toId": 743,
@@ -189,10 +133,6 @@
   },
   {
    "to": "Kamienica Cecylii",
-   "minimap": {
-    "top": 145.833,
-    "left": 247.917
-   },
    "x": 34,
    "y": 20,
    "toId": 796,
@@ -202,10 +142,6 @@
   },
   {
    "to": "Kamienica Pireza",
-   "minimap": {
-    "top": 233.333,
-    "left": 247.917
-   },
    "x": 34,
    "y": 32,
    "toId": 810,
@@ -215,10 +151,6 @@
   },
   {
    "to": "Kamienica Nandraroka",
-   "minimap": {
-    "top": 422.917,
-    "left": 247.917
-   },
    "x": 34,
    "y": 58,
    "toId": 791,
@@ -228,10 +160,6 @@
   },
   {
    "to": "Kamienica Broka",
-   "minimap": {
-    "top": 422.917,
-    "left": 269.792
-   },
    "x": 37,
    "y": 58,
    "toId": 751,
@@ -241,10 +169,6 @@
   },
   {
    "to": "Południowe mury Nithal - część zachodnia",
-   "minimap": {
-    "top": 444.792,
-    "left": 284.375
-   },
    "x": 39,
    "y": 61,
    "toId": 963,
@@ -254,10 +178,6 @@
   },
   {
    "to": "Kamienica Flawiana",
-   "minimap": {
-    "top": 422.917,
-    "left": 291.667
-   },
    "x": 40,
    "y": 58,
    "toId": 3776,
@@ -267,10 +187,6 @@
   },
   {
    "to": "Podgrodzie Nithal",
-   "minimap": {
-    "top": 51.042,
-    "left": 313.542
-   },
    "x": 43,
    "y": 7,
    "toId": 575,
@@ -280,10 +196,6 @@
   },
   {
    "to": "Ratusz Nithal",
-   "minimap": {
-    "top": 226.042,
-    "left": 320.833
-   },
    "x": 44,
    "y": 31,
    "toId": 1021,
@@ -293,10 +205,6 @@
   },
   {
    "to": "Południowe mury Nithal - część wschodnia",
-   "minimap": {
-    "top": 444.792,
-    "left": 357.292
-   },
    "x": 49,
    "y": 61,
    "toId": 962,
@@ -306,10 +214,6 @@
   },
   {
    "to": "Zajazd pod Złamanym Dukatem",
-   "minimap": {
-    "top": 408.333,
-    "left": 371.875
-   },
    "x": 51,
    "y": 56,
    "toId": 923,
@@ -319,10 +223,6 @@
   },
   {
    "to": "Knajpa pod Czarnym Tulipanem",
-   "minimap": {
-    "top": 72.917,
-    "left": 393.75
-   },
    "x": 54,
    "y": 10,
    "toId": 829,
@@ -332,10 +232,6 @@
   },
   {
    "to": "Pizzeria",
-   "minimap": {
-    "top": 233.333,
-    "left": 393.75
-   },
    "x": 54,
    "y": 32,
    "toId": 2950,
@@ -345,10 +241,6 @@
   },
   {
    "to": "Kamienica Rewii",
-   "minimap": {
-    "top": 145.833,
-    "left": 415.625
-   },
    "x": 57,
    "y": 20,
    "toId": 782,
@@ -358,10 +250,6 @@
   },
   {
    "to": "Zajazd pod Złamanym Dukatem - pokój właściciela",
-   "minimap": {
-    "top": 422.917,
-    "left": 422.917
-   },
    "x": 58,
    "y": 58,
    "toId": 925,
@@ -371,10 +259,6 @@
   },
   {
    "to": "Kamienica Eklektusa",
-   "minimap": {
-    "top": 233.333,
-    "left": 437.5
-   },
    "x": 60,
    "y": 32,
    "toId": 733,
@@ -384,10 +268,6 @@
   },
   {
    "to": "Kamienica Miona",
-   "minimap": {
-    "top": 422.917,
-    "left": 444.792
-   },
    "x": 61,
    "y": 58,
    "toId": 756,
@@ -397,10 +277,6 @@
   },
   {
    "to": "Kamienica Uliany i Arsena",
-   "minimap": {
-    "top": 233.333,
-    "left": 459.375
-   },
    "x": 63,
    "y": 32,
    "toId": 624,
@@ -410,10 +286,6 @@
   },
   {
    "to": "Rezydencja Vonikur - kuchnia",
-   "minimap": {
-    "top": 342.708,
-    "left": 459.375
-   },
    "x": 63,
    "y": 47,
    "toId": 1709,
@@ -423,10 +295,6 @@
   },
   {
    "to": "Kamienica Mirutki",
-   "minimap": {
-    "top": 422.917,
-    "left": 466.667
-   },
    "x": 64,
    "y": 58,
    "toId": 1782,
@@ -436,10 +304,6 @@
   },
   {
    "to": "Opuszczona kamienica",
-   "minimap": {
-    "top": 145.833,
-    "left": 481.25
-   },
    "x": 66,
    "y": 20,
    "toId": 4425,
@@ -449,10 +313,6 @@
   },
   {
    "to": "Kamienica Kandelia",
-   "minimap": {
-    "top": 233.333,
-    "left": 481.25
-   },
    "x": 66,
    "y": 32,
    "toId": 1805,
@@ -462,10 +322,6 @@
   },
   {
    "to": "Rezydencja Vonikur",
-   "minimap": {
-    "top": 306.25,
-    "left": 481.25
-   },
    "x": 66,
    "y": 42,
    "toId": 1707,
@@ -475,10 +331,6 @@
   },
   {
    "to": "Kamienica Galeny i Sarda",
-   "minimap": {
-    "top": 72.917,
-    "left": 495.833
-   },
    "x": 68,
    "y": 10,
    "toId": 4165,
@@ -488,10 +340,6 @@
   },
   {
    "to": "Rezydencja Trafalgar",
-   "minimap": {
-    "top": 422.917,
-    "left": 495.833
-   },
    "x": 68,
    "y": 58,
    "toId": 915,
@@ -501,10 +349,6 @@
   },
   {
    "to": "Kamienica Andronikusa",
-   "minimap": {
-    "top": 233.333,
-    "left": 503.125
-   },
    "x": 69,
    "y": 32,
    "toId": 737,
@@ -514,10 +358,6 @@
   },
   {
    "to": "Rezydencja Vonikur - biblioteczka",
-   "minimap": {
-    "top": 342.708,
-    "left": 503.125
-   },
    "x": 69,
    "y": 47,
    "toId": 1710,
@@ -527,10 +367,6 @@
   },
   {
    "to": "Uniwersytet płn.",
-   "minimap": {
-    "top": 342.708,
-    "left": 568.75
-   },
    "x": 78,
    "y": 47,
    "toId": 890,
@@ -540,10 +376,6 @@
   },
   {
    "to": "Dormitorium - część akolitów",
-   "minimap": {
-    "top": 72.917,
-    "left": 576.042
-   },
    "x": 79,
    "y": 10,
    "toId": 851,
@@ -553,10 +385,6 @@
   },
   {
    "to": "Uniwersytet płd.",
-   "minimap": {
-    "top": 379.167,
-    "left": 605.208
-   },
    "x": 83,
    "y": 52,
    "toId": 903,
@@ -566,10 +394,6 @@
   },
   {
    "to": "Świątynia Czterech Bóstw",
-   "minimap": {
-    "top": 182.292,
-    "left": 612.5
-   },
    "x": 84,
    "y": 25,
    "toId": 908,
@@ -579,10 +403,6 @@
   },
   {
    "to": "Dormitorium - część westalek",
-   "minimap": {
-    "top": 72.917,
-    "left": 648.958
-   },
    "x": 89,
    "y": 10,
    "toId": 853,
@@ -591,25 +411,13 @@
    "zone": 2
   },
   {
-   "to": "Cytadela p.1",
-   "minimap": {
-    "top": 21.875,
-    "left": 218.75
-   }
+   "to": "Cytadela p.1"
   },
   {
-   "to": "Prywatna kamienica",
-   "minimap": {
-    "top": 145.833,
-    "left": 393.75
-   }
+   "to": "Prywatna kamienica"
   },
   {
    "to": "Izba chorych płd.",
-   "minimap": {
-    "top": 422.917,
-    "left": 43.75
-   },
    "x": 6,
    "y": 58,
    "toId": 823,
@@ -619,10 +427,6 @@
   },
   {
    "to": "Dom Rezarda",
-   "minimap": {
-    "top": 145.833,
-    "left": 72.917
-   },
    "x": 10,
    "y": 20,
    "toId": 785,
@@ -632,10 +436,6 @@
   },
   {
    "to": "Kamienica Lukrecji",
-   "minimap": {
-    "top": 145.833,
-    "left": 116.667
-   },
    "x": 16,
    "y": 20,
    "toId": 767,
@@ -645,10 +445,6 @@
   },
   {
    "to": "Kamienica Tanenbara",
-   "minimap": {
-    "top": 233.333,
-    "left": 116.667
-   },
    "x": 16,
    "y": 32,
    "toId": 761,
@@ -658,10 +454,6 @@
   },
   {
    "to": "Gildia Kupców - część zachodnia",
-   "minimap": {
-    "top": 342.708,
-    "left": 116.667
-   },
    "x": 16,
    "y": 47,
    "toId": 952,
@@ -671,10 +463,6 @@
   },
   {
    "to": "Kamienica Furii Infernalis",
-   "minimap": {
-    "top": 233.333,
-    "left": 138.542
-   },
    "x": 19,
    "y": 32,
    "toId": 1077,
@@ -684,10 +472,6 @@
   },
   {
    "to": "Gildia Kupców - część północna",
-   "minimap": {
-    "top": 306.25,
-    "left": 145.833
-   },
    "x": 20,
    "y": 42,
    "toId": 953,
@@ -697,10 +481,6 @@
   },
   {
    "to": "Kamienica Vilgara",
-   "minimap": {
-    "top": 233.333,
-    "left": 160.417
-   },
    "x": 22,
    "y": 32,
    "toId": 1696,

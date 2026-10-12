@@ -3,18 +3,10 @@
  "name": "Jaskinia Wilczego Zamętu p.1",
  "gateways": [
   {
-   "to": "Wilczy Szpic",
-   "minimap": {
-    "top": 568.75,
-    "left": 437.5
-   }
+   "to": "Wilczy Szpic"
   },
   {
-   "to": "Jaskinia Wilczego Zamętu p.2",
-   "minimap": {
-    "top": 87.5,
-    "left": 350
-   }
+   "to": "Jaskinia Wilczego Zamętu p.2"
   }
  ]
 }

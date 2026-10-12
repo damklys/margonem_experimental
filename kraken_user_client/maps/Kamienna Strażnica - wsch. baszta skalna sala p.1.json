@@ -3,25 +3,13 @@
  "name": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
  "gateways": [
   {
-   "to": "Kamienna Strażnica - wsch. baszta zasypany tunel",
-   "minimap": {
-    "top": 636,
-    "left": 169.6
-   }
+   "to": "Kamienna Strażnica - wsch. baszta zasypany tunel"
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta p.1",
-   "minimap": {
-    "top": 84.8,
-    "left": 233.2
-   }
+   "to": "Kamienna Strażnica - wsch. baszta p.1"
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
-   "minimap": {
-    "top": 636,
-    "left": 339.2
-   }
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.0"
   }
  ]
 }

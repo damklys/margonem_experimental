@@ -3,18 +3,10 @@
  "name": "Podziemia Zniszczonej Wieży p.2",
  "gateways": [
   {
-   "to": "Podziemia Zniszczonej Wieży p.1",
-   "minimap": {
-    "top": 66.6667,
-    "left": 50
-   }
+   "to": "Podziemia Zniszczonej Wieży p.1"
   },
   {
-   "to": "Podziemia Zniszczonej Wieży p.3",
-   "minimap": {
-    "top": 183.333,
-    "left": 433.333
-   }
+   "to": "Podziemia Zniszczonej Wieży p.3"
   }
  ]
 }

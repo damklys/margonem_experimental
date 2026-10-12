@@ -3,18 +3,10 @@
  "name": "Przejście Lodowatego Wiatru",
  "gateways": [
   {
-   "to": "Lodowa Sala",
-   "minimap": {
-    "top": 360.938,
-    "left": 175
-   }
+   "to": "Lodowa Sala"
   },
   {
-   "to": "Sala Lodowatego Wiatru",
-   "minimap": {
-    "top": 164.062,
-    "left": 164.062
-   }
+   "to": "Sala Lodowatego Wiatru"
   }
  ]
 }

@@ -3,53 +3,25 @@
  "name": "Fort Eder",
  "gateways": [
   {
-   "to": "Las Goblinów",
-   "minimap": {
-    "top": 371.344,
-    "left": 0
-   }
+   "to": "Las Goblinów"
   },
   {
-   "to": "Mokradła",
-   "minimap": {
-    "top": 0,
-    "left": 211.156
-   }
+   "to": "Mokradła"
   },
   {
-   "to": "Stary Kupiecki Trakt",
-   "minimap": {
-    "top": 393.188,
-    "left": 458.719
-   }
+   "to": "Stary Kupiecki Trakt"
   },
   {
-   "to": "Ciemnica Szubrawców p.1 - sala 1",
-   "minimap": {
-    "top": 604.344,
-    "left": 436.875
-   }
+   "to": "Ciemnica Szubrawców p.1 - sala 1"
   },
   {
-   "to": "Eder",
-   "minimap": {
-    "top": 691.719,
-    "left": 203.875
-   }
+   "to": "Eder"
   },
   {
-   "to": "Pieczara Niepogody p.1",
-   "minimap": {
-    "top": 538.812,
-    "left": 72.8125
-   }
+   "to": "Pieczara Niepogody p.1"
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 2",
-   "minimap": {
-    "top": 611.625,
-    "left": 50.9688
-   }
+   "to": "Pieczara Niepogody p.2 - sala 2"
   }
  ]
 }

@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Stare Sioło",
-   "minimap": {
-    "top": 0,
-    "left": 350
-   },
    "x": 47,
    "y": 0,
    "toId": 1154,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Port Tuzmer",
-   "minimap": {
-    "top": 459.375,
-    "left": 335.417
-   },
    "x": 45,
    "y": 63,
    "toId": 630,

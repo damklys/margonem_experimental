@@ -3,18 +3,10 @@
  "name": "Podziemny Przełaz p.2",
  "gateways": [
   {
-   "to": "Podziemny Przełaz p.1",
-   "minimap": {
-    "top": 218.75,
-    "left": 590.625
-   }
+   "to": "Podziemny Przełaz p.1"
   },
   {
-   "to": "Zrujnowana Wieża",
-   "minimap": {
-    "top": 65.625,
-    "left": 87.5
-   }
+   "to": "Zrujnowana Wieża"
   }
  ]
 }

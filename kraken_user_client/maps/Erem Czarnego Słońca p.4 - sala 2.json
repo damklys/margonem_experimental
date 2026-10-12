@@ -3,25 +3,13 @@
  "name": "Erem Czarnego Słońca p.4 - sala 2",
  "gateways": [
   {
-   "to": "Świątynia Andarum - magazyn p.2",
-   "minimap": {
-    "top": 196.875,
-    "left": 656.25
-   }
+   "to": "Świątynia Andarum - magazyn p.2"
   },
   {
-   "to": "Erem Czarnego Słońca p.3 - południe",
-   "minimap": {
-    "top": 350,
-    "left": 525
-   }
+   "to": "Erem Czarnego Słońca p.3 - południe"
   },
   {
-   "to": "Erem Czarnego Słońca p.3",
-   "minimap": {
-    "top": 87.5,
-    "left": 393.75
-   }
+   "to": "Erem Czarnego Słońca p.3"
   }
  ]
 }

@@ -3,11 +3,7 @@
  "name": "Port Tuzmer",
  "gateways": [
   {
-   "to": "Tuzmer",
-   "minimap": {
-    "top": 0,
-    "left": 342.708
-   }
+   "to": "Tuzmer"
   }
  ]
 }

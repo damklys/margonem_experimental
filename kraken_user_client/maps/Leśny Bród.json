@@ -3,32 +3,16 @@
  "name": "Leśny Bród",
  "gateways": [
   {
-   "to": "Zniszczone Opactwo",
-   "minimap": {
-    "top": 185.938,
-    "left": 0
-   }
+   "to": "Zniszczone Opactwo"
   },
   {
-   "to": "Dolina Yss",
-   "minimap": {
-    "top": 0,
-    "left": 207.812
-   }
+   "to": "Dolina Yss"
   },
   {
-   "to": "Mrówcza Kolonia p.1 - lewy tunel",
-   "minimap": {
-    "top": 590.625,
-    "left": 32.8125
-   }
+   "to": "Mrówcza Kolonia p.1 - lewy tunel"
   },
   {
-   "to": "Mrówcza Kolonia p.1 - prawy tunel",
-   "minimap": {
-    "top": 557.812,
-    "left": 634.375
-   }
+   "to": "Mrówcza Kolonia p.1 - prawy tunel"
   }
  ]
 }

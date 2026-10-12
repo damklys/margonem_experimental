@@ -3,18 +3,10 @@
  "name": "Ślepe Wyrobisko",
  "gateways": [
   {
-   "to": "Grota Samotnych Dusz p.3",
-   "minimap": {
-    "top": 525,
-    "left": 32.812
-   }
+   "to": "Grota Samotnych Dusz p.3"
   },
   {
-   "to": "Kopalnia Margorii",
-   "minimap": {
-    "top": 153.125,
-    "left": 579.688
-   }
+   "to": "Kopalnia Margorii"
   }
  ]
 }

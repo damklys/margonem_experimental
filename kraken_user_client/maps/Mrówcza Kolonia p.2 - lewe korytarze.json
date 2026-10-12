@@ -3,18 +3,10 @@
  "name": "Mrówcza Kolonia p.2 - lewe korytarze",
  "gateways": [
   {
-   "to": "Mrówcza Kolonia p.1 - lewy tunel",
-   "minimap": {
-    "top": 56,
-    "left": 588
-   }
+   "to": "Mrówcza Kolonia p.1 - lewy tunel"
   },
   {
-   "to": "Mrówcza Kolonia p.3 - lewa komora jaj",
-   "minimap": {
-    "top": 672,
-    "left": 140
-   }
+   "to": "Mrówcza Kolonia p.3 - lewa komora jaj"
   }
  ]
 }

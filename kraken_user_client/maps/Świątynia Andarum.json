@@ -3,25 +3,13 @@
  "name": "Świątynia Andarum",
  "gateways": [
   {
-   "to": "Świątynia Andarum - zejście lewe",
-   "minimap": {
-    "top": 273.913,
-    "left": 76.087
-   }
+   "to": "Świątynia Andarum - zejście lewe"
   },
   {
-   "to": "Świątynia Andarum - zejście prawe",
-   "minimap": {
-    "top": 273.913,
-    "left": 623.913
-   }
+   "to": "Świątynia Andarum - zejście prawe"
   },
   {
-   "to": "Andarum Ilami",
-   "minimap": {
-    "top": 304.348,
-    "left": 334.783
-   }
+   "to": "Andarum Ilami"
   }
  ]
 }

@@ -3,11 +3,7 @@
  "name": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
  "gateways": [
   {
-   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
-   "minimap": {
-    "top": 65.538,
-    "left": 196.615
-   }
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1"
   }
  ]
 }

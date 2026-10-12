@@ -3,25 +3,13 @@
  "name": "Lazurowe Wzgórze",
  "gateways": [
   {
-   "to": "Słoneczna Wyżyna",
-   "minimap": {
-    "top": 131.25,
-    "left": 692.708
-   }
+   "to": "Słoneczna Wyżyna"
   },
   {
-   "to": "Kwieciste Przejście",
-   "minimap": {
-    "top": 459.375,
-    "left": 357.292
-   }
+   "to": "Kwieciste Przejście"
   },
   {
-   "to": "Grań Gawronich Piór",
-   "minimap": {
-    "top": 0,
-    "left": 247.917
-   }
+   "to": "Grań Gawronich Piór"
   }
  ]
 }

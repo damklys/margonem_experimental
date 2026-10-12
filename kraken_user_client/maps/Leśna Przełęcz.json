@@ -3,32 +3,16 @@
  "name": "Leśna Przełęcz",
  "gateways": [
   {
-   "to": "Torneg",
-   "minimap": {
-    "top": 364.583,
-    "left": 0
-   }
+   "to": "Torneg"
   },
   {
-   "to": "Zatopiony Szczyt",
-   "minimap": {
-    "top": 459.375,
-    "left": 364.583
-   }
+   "to": "Zatopiony Szczyt"
   },
   {
-   "to": "Tygrysia Polana",
-   "minimap": {
-    "top": 408.333,
-    "left": 692.708
-   }
+   "to": "Tygrysia Polana"
   },
   {
-   "to": "Kryjówka Dzikich Kotów",
-   "minimap": {
-    "top": 0,
-    "left": 444.792
-   }
+   "to": "Kryjówka Dzikich Kotów"
   }
  ]
 }

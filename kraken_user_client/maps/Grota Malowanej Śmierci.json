@@ -3,11 +3,7 @@
  "name": "Grota Malowanej Śmierci",
  "gateways": [
   {
-   "to": "Dziewicza Knieja",
-   "minimap": {
-    "top": 590.625,
-    "left": 284.375
-   }
+   "to": "Dziewicza Knieja"
   }
  ]
 }

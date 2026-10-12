@@ -3,18 +3,10 @@
  "name": "Świątynia Andarum - magazyn p.1",
  "gateways": [
   {
-   "to": "Świątynia Andarum - podziemia",
-   "minimap": {
-    "top": 167.708,
-    "left": 685.417
-   }
+   "to": "Świątynia Andarum - podziemia"
   },
   {
-   "to": "Świątynia Andarum - magazyn p.2",
-   "minimap": {
-    "top": 371.875,
-    "left": 350
-   }
+   "to": "Świątynia Andarum - magazyn p.2"
   }
  ]
 }

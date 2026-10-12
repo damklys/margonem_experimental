@@ -3,25 +3,13 @@
  "name": "Zabłocona Jama p.2 - sala 3",
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 2",
-   "minimap": {
-    "top": 54.6875,
-    "left": 98.4375
-   }
+   "to": "Zabłocona Jama p.2 - sala 2"
   },
   {
-   "to": "Zabłocona Jama p.2 - Sala Magicznego Błota",
-   "minimap": {
-    "top": 87.5,
-    "left": 579.688
-   }
+   "to": "Zabłocona Jama p.2 - Sala Magicznego Błota"
   },
   {
-   "to": "Zabłocona Jama p.1 - sala 2",
-   "minimap": {
-    "top": 601.562,
-    "left": 492.188
-   }
+   "to": "Zabłocona Jama p.1 - sala 2"
   }
  ]
 }

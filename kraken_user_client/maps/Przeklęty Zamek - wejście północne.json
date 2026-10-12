@@ -3,18 +3,10 @@
  "name": "Przeklęty Zamek - wejście północne",
  "gateways": [
   {
-   "to": "Stare Ruiny",
-   "minimap": {
-    "top": 58.3333,
-    "left": 320.833
-   }
+   "to": "Stare Ruiny"
   },
   {
-   "to": "Przeklęty Zamek - podziemia północne",
-   "minimap": {
-    "top": 379.167,
-    "left": 612.5
-   }
+   "to": "Przeklęty Zamek - podziemia północne"
   }
  ]
 }

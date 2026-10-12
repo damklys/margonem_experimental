@@ -3,11 +3,7 @@
  "name": "Sala Magicznego Mrozu",
  "gateways": [
   {
-   "to": "Przejście Magicznego Mrozu",
-   "minimap": {
-    "top": 284.375,
-    "left": 426.562
-   }
+   "to": "Przejście Magicznego Mrozu"
   }
  ]
 }

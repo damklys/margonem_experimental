@@ -3,25 +3,13 @@
  "name": "Ciche Rumowiska",
  "gateways": [
   {
-   "to": "Płaskowyż Arpen",
-   "minimap": {
-    "top": 0,
-    "left": 342.708
-   }
+   "to": "Płaskowyż Arpen"
   },
   {
-   "to": "Złote Piaski",
-   "minimap": {
-    "top": 0,
-    "left": 495.833
-   }
+   "to": "Złote Piaski"
   },
   {
-   "to": "Dolina Suchych Łez",
-   "minimap": {
-    "top": 320.833,
-    "left": 692.708
-   }
+   "to": "Dolina Suchych Łez"
   },
   {
    "to": "Tuzmer"

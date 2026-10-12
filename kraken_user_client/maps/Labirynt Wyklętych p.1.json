@@ -3,25 +3,13 @@
  "name": "Labirynt Wyklętych p.1",
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.2 - sala 1",
-   "minimap": {
-    "top": 218.75,
-    "left": 277.083
-   }
+   "to": "Labirynt Wyklętych p.2 - sala 1"
   },
   {
-   "to": "Pieczara Czaszek",
-   "minimap": {
-    "top": 29.167,
-    "left": 612.5
-   }
+   "to": "Pieczara Czaszek"
   },
   {
-   "to": "Labirynt Wyklętych p.2 - sala 2",
-   "minimap": {
-    "top": 495.833,
-    "left": 656.25
-   }
+   "to": "Labirynt Wyklętych p.2 - sala 2"
   }
  ]
 }

@@ -3,46 +3,22 @@
  "name": "Płaskowyż Arpan",
  "gateways": [
   {
-   "to": "Trupia Przełęcz",
-   "minimap": {
-    "top": 0,
-    "left": 401.042
-   }
+   "to": "Trupia Przełęcz"
   },
   {
-   "to": "Skalne Cmentarzysko p.1",
-   "minimap": {
-    "top": 131.25,
-    "left": 627.083
-   }
+   "to": "Skalne Cmentarzysko p.1"
   },
   {
-   "to": "Sucha Dolina",
-   "minimap": {
-    "top": 357.292,
-    "left": 0
-   }
+   "to": "Sucha Dolina"
   },
   {
-   "to": "Oaza Siedmiu Wichrów",
-   "minimap": {
-    "top": 459.375,
-    "left": 277.083
-   }
+   "to": "Oaza Siedmiu Wichrów"
   },
   {
-   "to": "Złote Piaski",
-   "minimap": {
-    "top": 459.375,
-    "left": 619.792
-   }
+   "to": "Złote Piaski"
   },
   {
-   "to": "Pustkowia Pogrzebanych",
-   "minimap": {
-    "top": 422.917,
-    "left": 692.708
-   }
+   "to": "Pustkowia Pogrzebanych"
   }
  ]
 }

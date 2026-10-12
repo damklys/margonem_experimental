@@ -3,18 +3,10 @@
  "name": "Mroczna Pieczara p.2",
  "gateways": [
   {
-   "to": "Mroczna Pieczara p.1 - sala 3",
-   "minimap": {
-    "top": 311.111,
-    "left": 194.444
-   }
+   "to": "Mroczna Pieczara p.1 - sala 3"
   },
   {
-   "to": "Mroczny Przesmyk",
-   "minimap": {
-    "top": 583.333,
-    "left": 233.333
-   }
+   "to": "Mroczny Przesmyk"
   }
  ]
 }

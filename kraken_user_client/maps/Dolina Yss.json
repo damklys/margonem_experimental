@@ -3,32 +3,16 @@
  "name": "Dolina Yss",
  "gateways": [
   {
-   "to": "Ithan",
-   "minimap": {
-    "top": 633.469,
-    "left": 0
-   }
+   "to": "Ithan"
   },
   {
-   "to": "Leśny Bród",
-   "minimap": {
-    "top": 691.719,
-    "left": 138.344
-   }
+   "to": "Leśny Bród"
   },
   {
-   "to": "Orla Grań",
-   "minimap": {
-    "top": 531.531,
-    "left": 458.719
-   }
+   "to": "Orla Grań"
   },
   {
-   "to": "Wilczy Szpic",
-   "minimap": {
-    "top": 0,
-    "left": 123.781
-   }
+   "to": "Wilczy Szpic"
   }
  ]
 }

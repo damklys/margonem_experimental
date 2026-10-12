@@ -3,18 +3,10 @@
  "name": "Pieczara Szaleńców - sala 2",
  "gateways": [
   {
-   "to": "Pieczara Szaleńców - sala 1",
-   "minimap": {
-    "top": 328.125,
-    "left": 65.625
-   }
+   "to": "Pieczara Szaleńców - sala 1"
   },
   {
-   "to": "Pieczara Szaleńców - sala 3",
-   "minimap": {
-    "top": 32.8125,
-    "left": 590.625
-   }
+   "to": "Pieczara Szaleńców - sala 3"
   }
  ]
 }

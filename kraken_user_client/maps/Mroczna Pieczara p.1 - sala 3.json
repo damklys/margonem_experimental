@@ -3,32 +3,16 @@
  "name": "Mroczna Pieczara p.1 - sala 3",
  "gateways": [
   {
-   "to": "Mroczny Przesmyk",
-   "minimap": {
-    "top": 575.4,
-    "left": 246.6
-   }
+   "to": "Mroczny Przesmyk"
   },
   {
-   "to": "Mroczna Pieczara p.1 - sala 1",
-   "minimap": {
-    "top": 411,
-    "left": 41.1
-   }
+   "to": "Mroczna Pieczara p.1 - sala 1"
   },
   {
-   "to": "Mroczna Pieczara p.2",
-   "minimap": {
-    "top": 41.1,
-    "left": 102.75
-   }
+   "to": "Mroczna Pieczara p.2"
   },
   {
-   "to": "Mokra Grota p.2 - korytarz",
-   "minimap": {
-    "top": 123.3,
-    "left": 349.35
-   }
+   "to": "Mokra Grota p.2 - korytarz"
   }
  ]
 }

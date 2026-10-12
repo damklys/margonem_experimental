@@ -3,18 +3,10 @@
  "name": "Przeklęty Zamek - podziemia południowe",
  "gateways": [
   {
-   "to": "Przeklęty Zamek - zbrojownia",
-   "minimap": {
-    "top": 656.25,
-    "left": 590.625
-   }
+   "to": "Przeklęty Zamek - zbrojownia"
   },
   {
-   "to": "Przeklęty Zamek - wejście południowe",
-   "minimap": {
-    "top": 43.75,
-    "left": 65.625
-   }
+   "to": "Przeklęty Zamek - wejście południowe"
   }
  ]
 }

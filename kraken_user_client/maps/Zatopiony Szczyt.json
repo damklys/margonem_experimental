@@ -3,25 +3,13 @@
  "name": "Zatopiony Szczyt",
  "gateways": [
   {
-   "to": "Stare Ruiny",
-   "minimap": {
-    "top": 360.938,
-    "left": 0
-   }
+   "to": "Stare Ruiny"
   },
   {
-   "to": "Leśna Przełęcz",
-   "minimap": {
-    "top": 0,
-    "left": 535.938
-   }
+   "to": "Leśna Przełęcz"
   },
   {
-   "to": "Ruiny Szabrowników",
-   "minimap": {
-    "top": 328.125,
-    "left": 689.062
-   }
+   "to": "Ruiny Szabrowników"
   }
  ]
 }

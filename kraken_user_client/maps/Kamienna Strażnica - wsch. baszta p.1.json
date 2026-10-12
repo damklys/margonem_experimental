@@ -3,25 +3,13 @@
  "name": "Kamienna Strażnica - wsch. baszta p.1",
  "gateways": [
   {
-   "to": "Trupia Przełęcz",
-   "minimap": {
-    "top": 385,
-    "left": 140
-   }
+   "to": "Trupia Przełęcz"
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta p.2",
-   "minimap": {
-    "top": 105,
-    "left": 315
-   }
+   "to": "Kamienna Strażnica - wsch. baszta p.2"
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
-   "minimap": {
-    "top": 560,
-    "left": 315
-   }
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1"
   }
  ]
 }

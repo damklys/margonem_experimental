@@ -3,25 +3,13 @@
  "name": "Opuszczony Bastion",
  "gateways": [
   {
-   "to": "Zburzona Twierdza",
-   "minimap": {
-    "top": 32.8125,
-    "left": 0
-   }
+   "to": "Zburzona Twierdza"
   },
   {
-   "to": "Podziemny Przełaz p.1",
-   "minimap": {
-    "top": 273.438,
-    "left": 404.688
-   }
+   "to": "Podziemny Przełaz p.1"
   },
   {
-   "to": "Zrujnowana Wieża",
-   "minimap": {
-    "top": 295.312,
-    "left": 32.8125
-   }
+   "to": "Zrujnowana Wieża"
   }
  ]
 }

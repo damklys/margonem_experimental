@@ -3,11 +3,7 @@
  "name": "Zapomniany Grobowiec p.5",
  "gateways": [
   {
-   "to": "Zapomniany Grobowiec p.4",
-   "minimap": {
-    "top": 32.8125,
-    "left": 87.5
-   }
+   "to": "Zapomniany Grobowiec p.4"
   }
  ]
 }

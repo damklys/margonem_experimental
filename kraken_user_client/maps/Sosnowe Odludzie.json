@@ -3,39 +3,19 @@
  "name": "Sosnowe Odludzie",
  "gateways": [
   {
-   "to": "Leszy (91w)",
-   "minimap": {
-    "top": 407.75,
-    "left": 0
-   }
+   "to": "Leszy (91w)"
   },
   {
-   "to": "Księżycowe Wzniesienie",
-   "minimap": {
-    "top": 415.031,
-    "left": 0
-   }
+   "to": "Księżycowe Wzniesienie"
   },
   {
-   "to": "Chodniki Mrinding",
-   "minimap": {
-    "top": 567.938,
-    "left": 21.844
-   }
+   "to": "Chodniki Mrinding"
   },
   {
-   "to": "Liściaste Rozstaje",
-   "minimap": {
-    "top": 0,
-    "left": 182.031
-   }
+   "to": "Liściaste Rozstaje"
   },
   {
-   "to": "Podziemne Rozpadliny",
-   "minimap": {
-    "top": 342.219,
-    "left": 422.312
-   }
+   "to": "Podziemne Rozpadliny"
   }
  ]
 }

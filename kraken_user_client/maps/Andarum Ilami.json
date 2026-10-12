@@ -3,39 +3,19 @@
  "name": "Andarum Ilami",
  "gateways": [
   {
-   "to": "Kamienna Jaskinia - sala 2",
-   "minimap": {
-    "top": 568.75,
-    "left": 634.375
-   }
+   "to": "Kamienna Jaskinia - sala 2"
   },
   {
-   "to": "Świątynia Andarum",
-   "minimap": {
-    "top": 153.125,
-    "left": 525
-   }
+   "to": "Świątynia Andarum"
   },
   {
-   "to": "Zdradzieckie Przejście p.1",
-   "minimap": {
-    "top": 426.562,
-    "left": 32.8125
-   }
+   "to": "Zdradzieckie Przejście p.1"
   },
   {
-   "to": "Śnieżna Grota p.1",
-   "minimap": {
-    "top": 196.875,
-    "left": 76.5625
-   }
+   "to": "Śnieżna Grota p.1"
   },
   {
-   "to": "Skały Mroźnych Śpiewów",
-   "minimap": {
-    "top": 54.6875,
-    "left": 0
-   }
+   "to": "Skały Mroźnych Śpiewów"
   }
  ]
 }

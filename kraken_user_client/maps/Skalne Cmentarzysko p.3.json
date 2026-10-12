@@ -3,18 +3,10 @@
  "name": "Skalne Cmentarzysko p.3",
  "gateways": [
   {
-   "to": "Skalne Cmentarzysko p.2",
-   "minimap": {
-    "top": 481.25,
-    "left": 579.688
-   }
+   "to": "Skalne Cmentarzysko p.2"
   },
   {
-   "to": "Skalne Cmentarzysko p.4",
-   "minimap": {
-    "top": 109.375,
-    "left": 54.6875
-   }
+   "to": "Skalne Cmentarzysko p.4"
   }
  ]
 }

@@ -3,18 +3,10 @@
  "name": "Las Goblinów",
  "gateways": [
   {
-   "to": "Podmokła Dolina",
-   "minimap": {
-    "top": 0,
-    "left": 305.812
-   }
+   "to": "Podmokła Dolina"
   },
   {
-   "to": "Fort Eder",
-   "minimap": {
-    "top": 371.344,
-    "left": 458.719
-   }
+   "to": "Fort Eder"
   }
  ]
 }

@@ -3,39 +3,19 @@
  "name": "Zawiły Bór",
  "gateways": [
   {
-   "to": "Selva Oscura",
-   "minimap": {
-    "top": 277.083,
-    "left": 0
-   }
+   "to": "Selva Oscura"
   },
   {
-   "to": "Iglaste Ścieżki",
-   "minimap": {
-    "top": 0,
-    "left": 517.708
-   }
+   "to": "Iglaste Ścieżki"
   },
   {
-   "to": "Błędny Szlak",
-   "minimap": {
-    "top": 182.292,
-    "left": 692.708
-   }
+   "to": "Błędny Szlak"
   },
   {
-   "to": "Zabłocona Jama p.1 - sala 1",
-   "minimap": {
-    "top": 320.833,
-    "left": 357.292
-   }
+   "to": "Zabłocona Jama p.1 - sala 1"
   },
   {
-   "to": "Mythar",
-   "minimap": {
-    "top": 459.375,
-    "left": 233.333
-   }
+   "to": "Mythar"
   }
  ]
 }

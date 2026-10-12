@@ -3,39 +3,19 @@
  "name": "Mokradła",
  "gateways": [
   {
-   "to": "Dolina Rozbójników",
-   "minimap": {
-    "top": 0,
-    "left": 295.312
-   }
+   "to": "Dolina Rozbójników"
   },
   {
-   "to": "Polana Ścierwojadów",
-   "minimap": {
-    "top": 153.125,
-    "left": 689.062
-   }
+   "to": "Polana Ścierwojadów"
   },
   {
-   "to": "Skarpiska Tolloków",
-   "minimap": {
-    "top": 601.562,
-    "left": 689.062
-   }
+   "to": "Skarpiska Tolloków"
   },
   {
-   "to": "Podmokła Dolina",
-   "minimap": {
-    "top": 426.562,
-    "left": 0
-   }
+   "to": "Podmokła Dolina"
   },
   {
-   "to": "Fort Eder",
-   "minimap": {
-    "top": 689.062,
-    "left": 317.188
-   }
+   "to": "Fort Eder"
   }
  ]
 }

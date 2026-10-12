@@ -3,18 +3,10 @@
  "name": "Kamienna Strażnica - zach. baszta p.2",
  "gateways": [
   {
-   "to": "Kamienna Strażnica - zach. baszta p.1",
-   "minimap": {
-    "top": 233.333,
-    "left": 262.5
-   }
+   "to": "Kamienna Strażnica - zach. baszta p.1"
   },
   {
-   "to": "Trupia Przełęcz",
-   "minimap": {
-    "top": 320.833,
-    "left": 554.167
-   }
+   "to": "Trupia Przełęcz"
   }
  ]
 }

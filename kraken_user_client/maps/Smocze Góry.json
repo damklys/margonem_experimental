@@ -3,18 +3,10 @@
  "name": "Smocze Góry",
  "gateways": [
   {
-   "to": "Mythar",
-   "minimap": {
-    "top": 262.5,
-    "left": 692.708
-   }
+   "to": "Mythar"
   },
   {
-   "to": "Przełaz olbrzymów",
-   "minimap": {
-    "top": 65.625,
-    "left": 65.625
-   }
+   "to": "Przełaz olbrzymów"
   }
  ]
 }

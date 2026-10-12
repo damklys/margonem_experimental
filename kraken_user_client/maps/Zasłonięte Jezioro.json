@@ -3,18 +3,10 @@
  "name": "Zasłonięte Jezioro",
  "gateways": [
   {
-   "to": "Spokojne Przejście",
-   "minimap": {
-    "top": 167.469,
-    "left": 458.719
-   }
+   "to": "Spokojne Przejście"
   },
   {
-   "to": "Słoneczna Wyżyna",
-   "minimap": {
-    "top": 495.125,
-    "left": 0
-   }
+   "to": "Słoneczna Wyżyna"
   }
  ]
 }

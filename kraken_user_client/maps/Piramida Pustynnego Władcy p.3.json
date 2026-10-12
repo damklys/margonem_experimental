@@ -3,11 +3,7 @@
  "name": "Piramida Pustynnego Władcy p.3",
  "gateways": [
   {
-   "to": "Piramida Pustynnego Władcy p.2",
-   "minimap": {
-    "top": 616.667,
-    "left": 300
-   }
+   "to": "Piramida Pustynnego Władcy p.2"
   }
  ]
 }

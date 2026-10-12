@@ -7,10 +7,6 @@
  "gateways": [
   {
    "to": "Las Dziwów",
-   "minimap": {
-    "top": 189.312,
-    "left": 0
-   },
    "x": 0,
    "y": 26,
    "toId": 229,
@@ -20,10 +16,6 @@
   },
   {
    "to": "Sosnowe Odludzie",
-   "minimap": {
-    "top": 691.719,
-    "left": 182.031
-   },
    "x": 25,
    "y": 95,
    "toId": 701,
@@ -33,10 +25,6 @@
   },
   {
    "to": "Jezioro Ważek",
-   "minimap": {
-    "top": 0,
-    "left": 320.375
-   },
    "x": 44,
    "y": 0,
    "toId": 349,
@@ -46,10 +34,6 @@
   },
   {
    "to": "Grota Samotnych Dusz p.3 - sala wyjściowa",
-   "minimap": {
-    "top": 138.344,
-    "left": 415.031
-   },
    "x": 57,
    "y": 19,
    "toId": 3457,
@@ -59,10 +43,6 @@
   },
   {
    "to": "Zapomniana Ścieżyna",
-   "minimap": {
-    "top": 502.406,
-    "left": 458.719
-   },
    "x": 63,
    "y": 69,
    "toId": 576,

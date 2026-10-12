@@ -3,18 +3,10 @@
  "name": "Radosna Polana",
  "gateways": [
   {
-   "to": "Wioska Gnolli",
-   "minimap": {
-    "top": 514.062,
-    "left": 689.062
-   }
+   "to": "Wioska Gnolli"
   },
   {
-   "to": "Pieczara Szaleńców - sala 1",
-   "minimap": {
-    "top": 153.125,
-    "left": 306.25
-   }
+   "to": "Pieczara Szaleńców - sala 1"
   }
  ]
 }

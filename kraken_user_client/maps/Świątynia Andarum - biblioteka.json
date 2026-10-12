@@ -3,11 +3,7 @@
  "name": "Świątynia Andarum - biblioteka",
  "gateways": [
   {
-   "to": "Świątynia Andarum - podziemia",
-   "minimap": {
-    "top": 164.062,
-    "left": 10.9375
-   }
+   "to": "Świątynia Andarum - podziemia"
   }
  ]
 }

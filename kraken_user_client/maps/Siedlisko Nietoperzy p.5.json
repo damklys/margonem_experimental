@@ -3,18 +3,10 @@
  "name": "Siedlisko Nietoperzy p.5",
  "gateways": [
   {
-   "to": "Siedlisko Nietoperzy p.4",
-   "minimap": {
-    "top": 481.25,
-    "left": 306.25
-   }
+   "to": "Siedlisko Nietoperzy p.4"
   },
   {
-   "to": "Dziewicza Knieja",
-   "minimap": {
-    "top": 568.75,
-    "left": 175
-   }
+   "to": "Dziewicza Knieja"
   }
  ]
 }

@@ -3,32 +3,16 @@
  "name": "Mokra Grota p.1",
  "gateways": [
   {
-   "to": "Zapomniany Szlak",
-   "minimap": {
-    "top": 656.25,
-    "left": 43.75
-   }
+   "to": "Zapomniany Szlak"
   },
   {
-   "to": "Mokra Grota p.2",
-   "minimap": {
-    "top": 612.5,
-    "left": 568.75
-   }
+   "to": "Mokra Grota p.2"
   },
   {
-   "to": "Mokra Grota p.1 - przełaz",
-   "minimap": {
-    "top": 120.312,
-    "left": 426.562
-   }
+   "to": "Mokra Grota p.1 - przełaz"
   },
   {
-   "to": "Mokra Grota p.1 - boczny korytarz",
-   "minimap": {
-    "top": 196.875,
-    "left": 142.188
-   }
+   "to": "Mokra Grota p.1 - boczny korytarz"
   }
  ]
 }

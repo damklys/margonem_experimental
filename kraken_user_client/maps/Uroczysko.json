@@ -3,60 +3,28 @@
  "name": "Uroczysko",
  "gateways": [
   {
-   "to": "Porzucone Pasieki",
-   "minimap": {
-    "top": 0,
-    "left": 175
-   }
+   "to": "Porzucone Pasieki"
   },
   {
-   "to": "Lazurytowa Groda p.1",
-   "minimap": {
-    "top": 43.75,
-    "left": 269.792
-   }
+   "to": "Lazurytowa Groda p.1"
   },
   {
-   "to": "Wichrowe Szczyty",
-   "minimap": {
-    "top": 306.25,
-    "left": 0
-   }
+   "to": "Wichrowe Szczyty"
   },
   {
-   "to": "Zapomniany Szlak",
-   "minimap": {
-    "top": 459.375,
-    "left": 393.75
-   }
+   "to": "Zapomniany Szlak"
   },
   {
-   "to": "Zniszczone Opactwo",
-   "minimap": {
-    "top": 284.375,
-    "left": 692.708
-   }
+   "to": "Zniszczone Opactwo"
   },
   {
-   "to": "Lazurytowa Grota p.1",
-   "minimap": {
-    "top": 43.75,
-    "left": 269.792
-   }
+   "to": "Lazurytowa Grota p.1"
   },
   {
-   "to": "Namiot rozbójników",
-   "minimap": {
-    "top": 430.208,
-    "left": 619.792
-   }
+   "to": "Namiot rozbójników"
   },
   {
-   "to": "Namiot Rumcajsa",
-   "minimap": {
-    "top": 123.958,
-    "left": 415.625
-   }
+   "to": "Namiot Rumcajsa"
   }
  ]
 }

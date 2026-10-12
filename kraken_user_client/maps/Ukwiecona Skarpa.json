@@ -3,11 +3,7 @@
  "name": "Ukwiecona Skarpa",
  "gateways": [
   {
-   "to": "Racicowy Matecznik",
-   "minimap": {
-    "top": 371.875,
-    "left": 692.708
-   }
+   "to": "Racicowy Matecznik"
   }
  ]
 }

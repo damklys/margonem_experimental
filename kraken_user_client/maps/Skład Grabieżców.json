@@ -3,11 +3,7 @@
  "name": "Skład Grabieżców",
  "gateways": [
   {
-   "to": "Pagórki Łupieżców",
-   "minimap": {
-    "top": 656.25,
-    "left": 393.75
-   }
+   "to": "Pagórki Łupieżców"
   }
  ]
 }
