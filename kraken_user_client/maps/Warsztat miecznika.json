@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Warsztat miecznika",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

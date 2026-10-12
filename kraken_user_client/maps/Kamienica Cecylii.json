@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Cecylii",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

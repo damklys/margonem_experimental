@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Posiadłość Kruzo - magazyn",
+ "gateways": [
+  {
+   "to": "Włości rodu Kruzo"
+  }
+ ]
+}

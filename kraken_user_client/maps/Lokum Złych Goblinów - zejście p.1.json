@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów - zejście p.1",
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów - wieża"
+  }
+ ]
+}

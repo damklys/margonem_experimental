@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia płatnerza",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "kraken": "mapa",
+ "name": "Podgrodzie Nithal",
+ "gateways": [
+  {
+   "to": "Nizina Wieśniaków",
+   "minimap": {
+    "top": 36.458,
+    "left": 0
+   }
+  },
+  {
+   "to": "Dom Rózi",
+   "minimap": {
+    "top": 291.667,
+    "left": 21.875
+   }
+  },
+  {
+   "to": "Zajazd pod Tęczowym Żukiem",
+   "minimap": {
+    "top": 204.167,
+    "left": 65.625
+   }
+  },
+  {
+   "to": "Dom Edny",
+   "minimap": {
+    "top": 291.667,
+    "left": 116.667
+   }
+  },
+  {
+   "to": "Młyn",
+   "minimap": {
+    "top": 87.5,
+    "left": 160.417
+   }
+  },
+  {
+   "to": "Nithal",
+   "minimap": {
+    "top": 459.375,
+    "left": 189.583
+   }
+  },
+  {
+   "to": "Bagna Chojraków",
+   "minimap": {
+    "top": 459.375,
+    "left": 663.542
+   }
+  },
+  {
+   "to": "Drewutnia",
+   "minimap": {
+    "top": 145.833,
+    "left": 678.125
+   }
+  },
+  {
+   "to": "Chlew",
+   "minimap": {
+    "top": 233.333,
+    "left": 678.125
+   }
+  },
+  {
+   "to": "Cytadela p.3",
+   "minimap": {
+    "top": 342.708,
+    "left": 80.208
+   }
+  },
+  {
+   "to": "Cytadela p.2",
+   "minimap": {
+    "top": 444.792,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Żołnierz Nithal",
+   "minimap": {
+    "top": 459.375,
+    "left": 196.875
+   }
+  },
+  {
+   "to": "Dom Młynarza",
+   "minimap": {
+    "top": 65.625,
+    "left": 204.167
+   }
+  },
+  {
+   "to": "Stajnie",
+   "minimap": {
+    "top": 138.542,
+    "left": 422.917
+   }
+  },
+  {
+   "to": "Źródło Narumi",
+   "minimap": {
+    "top": 0,
+    "left": 473.958
+   }
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana",
+   "minimap": {
+    "top": 153.125,
+    "left": 561.458
+   }
+  },
+  {
+   "to": "Stodoła",
+   "minimap": {
+    "top": 189.583,
+    "left": 619.792
+   }
+  },
+  {
+   "to": "Dom Almonda",
+   "minimap": {
+    "top": 269.792,
+    "left": 517.708
+   }
+  }
+ ]
+}

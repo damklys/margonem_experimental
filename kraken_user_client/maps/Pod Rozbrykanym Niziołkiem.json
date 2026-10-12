@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Pod Rozbrykanym Niziołkiem",
+ "gateways": [
+  {
+   "to": "Pod Rozbrykanym Niziołkiem - piętro",
+   "minimap": {
+    "top": 29.15,
+    "left": 29.15
+   }
+  },
+  {
+   "to": "Pod Rozbrykanym Niziołkiem - piwnica",
+   "minimap": {
+    "top": 116.6,
+    "left": 262.35
+   }
+  },
+  {
+   "to": "Ithan",
+   "minimap": {
+    "top": 641.3,
+    "left": 262.35
+   }
+  }
+ ]
+}

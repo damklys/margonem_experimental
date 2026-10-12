@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Torina",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

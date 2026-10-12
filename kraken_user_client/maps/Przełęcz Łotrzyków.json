@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Przełęcz Łotrzyków",
+ "gateways": [
+  {
+   "to": "Orla Grań",
+   "minimap": {
+    "top": 0,
+    "left": 123.781
+   }
+  },
+  {
+   "to": "Pagórki Łupieżców",
+   "minimap": {
+    "top": 342.219,
+    "left": 458.719
+   }
+  },
+  {
+   "to": "Dolina Rozbójników",
+   "minimap": {
+    "top": 691.719,
+    "left": 80.0938
+   }
+  }
+ ]
+}

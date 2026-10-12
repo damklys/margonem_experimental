@@ -1,0 +1,36 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Gindera",
+ "id": 57,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Gindera p.1",
+   "x": 11,
+   "y": 6,
+   "toId": 1944,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Werbin",
+   "x": 2,
+   "y": 8,
+   "toId": 9,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Werbin",
+   "x": 2,
+   "y": 9,
+   "toId": 9,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

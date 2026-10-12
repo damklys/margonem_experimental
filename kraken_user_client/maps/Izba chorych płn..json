@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Izba chorych płn.",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

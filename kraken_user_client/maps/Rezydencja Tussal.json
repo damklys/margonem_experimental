@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Tussal",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

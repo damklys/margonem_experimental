@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Lochy miejskie",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

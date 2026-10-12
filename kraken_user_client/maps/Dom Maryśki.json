@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Maryśki",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

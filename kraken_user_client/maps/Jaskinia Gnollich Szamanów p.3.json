@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Gnollich Szamanów p.3",
+ "gateways": [
+  {
+   "to": "Jaskinia Gnollich Szamanów p.2",
+   "minimap": {
+    "top": 67.3077,
+    "left": 80.7692
+   }
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów - komnata Kozuga",
+   "minimap": {
+    "top": 336.538,
+    "left": 376.923
+   }
+  }
+ ]
+}

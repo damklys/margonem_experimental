@@ -1,0 +1,138 @@
+{
+ "kraken": "mapa",
+ "name": "Przełęcz Dwóch Koron",
+ "id": 10,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Domek Pioruna",
+   "x": 91,
+   "y": 24,
+   "toId": 245,
+   "key": 2,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kryształowa Grota p.1",
+   "x": 83,
+   "y": 59,
+   "toId": 7342,
+   "key": 0,
+   "lvl": 0,
+   "zone": 1
+  },
+  {
+   "to": "Posterunek",
+   "x": 31,
+   "y": 25,
+   "toId": 1701,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 39,
+   "y": 0,
+   "toId": 36,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 31,
+   "toId": 1057,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 95,
+   "y": 34,
+   "toId": 84,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 32,
+   "toId": 1057,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 33,
+   "toId": 1057,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posterunek",
+   "x": 32,
+   "y": 25,
+   "toId": 1701,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 40,
+   "y": 0,
+   "toId": 36,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 41,
+   "y": 0,
+   "toId": 36,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 95,
+   "y": 35,
+   "toId": 84,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 95,
+   "y": 36,
+   "toId": 84,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  [
+   "Skalista Wyżyna",
+   "Posterunek",
+   "Przedmieścia Karka-han",
+   "Domek Pioruna",
+   "Wichrowe Szczyty"
+  ],
+  [
+   "Kryształowa Grota p.1"
+  ]
+ ]
+}

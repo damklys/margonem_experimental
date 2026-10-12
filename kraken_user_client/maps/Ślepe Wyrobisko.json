@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Ślepe Wyrobisko",
+ "gateways": [
+  {
+   "to": "Grota Samotnych Dusz p.3",
+   "minimap": {
+    "top": 525,
+    "left": 32.812
+   }
+  },
+  {
+   "to": "Kopalnia Margorii",
+   "minimap": {
+    "top": 153.125,
+    "left": 579.688
+   }
+  }
+ ]
+}

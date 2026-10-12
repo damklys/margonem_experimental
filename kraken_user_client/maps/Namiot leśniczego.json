@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot leśniczego",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

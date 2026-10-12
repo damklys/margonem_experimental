@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Pireza",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

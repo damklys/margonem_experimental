@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Głębokie Skałki p.3",
+ "gateways": [
+  {
+   "to": "Głębokie Skałki p.2",
+   "minimap": {
+    "top": 21.875,
+    "left": 590.625
+   }
+  },
+  {
+   "to": "Głębokie Skałki p.4",
+   "minimap": {
+    "top": 612.5,
+    "left": 546.875
+   }
+  }
+ ]
+}

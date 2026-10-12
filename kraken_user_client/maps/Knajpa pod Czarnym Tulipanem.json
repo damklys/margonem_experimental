@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Knajpa pod Czarnym Tulipanem",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

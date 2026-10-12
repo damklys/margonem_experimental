@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Izba Pamięci",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

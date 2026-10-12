@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Chata bandytów",
+ "gateways": [
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "minimap": {
+    "top": 481.25,
+    "left": 481.25
+   }
+  },
+  {
+   "to": "Bandyckie Chowisko",
+   "minimap": {
+    "top": 525,
+    "left": 131.25
+   }
+  }
+ ]
+}

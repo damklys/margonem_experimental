@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Trakt Moradrana",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

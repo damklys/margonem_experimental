@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Trafalgar",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zaginiona Dolina",
+ "gateways": [
+  {
+   "to": "Brama Północy"
+  }
+ ]
+}

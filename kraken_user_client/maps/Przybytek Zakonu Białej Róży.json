@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Przybytek Zakonu Białej Róży",
+ "gateways": [
+  {
+   "to": "Ratusz Karka-han"
+  }
+ ]
+}

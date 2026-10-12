@@ -1,0 +1,48 @@
+{
+ "kraken": "mapa",
+ "name": "Zburzona Twierdza",
+ "gateways": [
+  {
+   "to": "Zniszczone Opactwo",
+   "minimap": {
+    "top": 0,
+    "left": 120.312
+   }
+  },
+  {
+   "to": "Świszcząca Grota p.1",
+   "minimap": {
+    "top": 295.312,
+    "left": 76.5625
+   }
+  },
+  {
+   "to": "Świszcząca Grota p.2",
+   "minimap": {
+    "top": 634.375,
+    "left": 470.312
+   }
+  },
+  {
+   "to": "Świszcząca Grota p.3",
+   "minimap": {
+    "top": 120.312,
+    "left": 415.625
+   }
+  },
+  {
+   "to": "Opuszczony Bastion",
+   "minimap": {
+    "top": 32.8125,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Nawiedzony Jar",
+   "minimap": {
+    "top": 689.062,
+    "left": 262.5
+   }
+  }
+ ]
+}

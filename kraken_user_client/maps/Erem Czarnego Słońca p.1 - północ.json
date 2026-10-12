@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Erem Czarnego Słońca p.1 - północ",
+ "gateways": [
+  {
+   "to": "Erem Czarnego Słońca p.2",
+   "minimap": {
+    "top": 262.5,
+    "left": 350
+   }
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "minimap": {
+    "top": 481.25,
+    "left": 350
+   }
+  }
+ ]
+}

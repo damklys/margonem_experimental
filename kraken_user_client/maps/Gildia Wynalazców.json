@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Wynalazców",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

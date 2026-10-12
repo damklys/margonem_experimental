@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Ciemnica Szubrawców p.1 - sala 1",
+ "gateways": [
+  {
+   "to": "Fort Eder",
+   "minimap": {
+    "top": 166.667,
+    "left": 33.3333
+   }
+  },
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 2",
+   "minimap": {
+    "top": 666.667,
+    "left": 100
+   }
+  }
+ ]
+}

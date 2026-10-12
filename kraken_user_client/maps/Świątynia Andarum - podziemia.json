@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Andarum - podziemia",
+ "gateways": [
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "minimap": {
+    "top": 11.8644,
+    "left": 640.678
+   }
+  },
+  {
+   "to": "Świątynia Andarum - zejście lewe",
+   "minimap": {
+    "top": 11.8644,
+    "left": 59.322
+   }
+  },
+  {
+   "to": "Świątynia Andarum - biblioteka",
+   "minimap": {
+    "top": 177.966,
+    "left": 676.271
+   }
+  },
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "minimap": {
+    "top": 403.39,
+    "left": 344.068
+   }
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.1",
+   "minimap": {
+    "top": 284.746,
+    "left": 11.8644
+   }
+  }
+ ]
+}

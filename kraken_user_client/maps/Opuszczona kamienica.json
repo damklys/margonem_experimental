@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczona kamienica",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

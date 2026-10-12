@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Jama Kocich Ślepi",
+ "gateways": [
+  {
+   "to": "Tygrysia Polana",
+   "minimap": {
+    "top": 636.364,
+    "left": 477.273
+   }
+  }
+ ]
+}

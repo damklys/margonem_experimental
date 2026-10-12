@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kwatery u Morcera",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kryształowa Grota p.6",
+ "gateways": [
+  {
+   "to": "Szyb Zdrajców"
+  }
+ ]
+}

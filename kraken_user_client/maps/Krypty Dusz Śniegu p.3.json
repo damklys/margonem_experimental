@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Dusz Śniegu p.3",
+ "gateways": [
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "minimap": {
+    "top": 145.833,
+    "left": 233.333
+   }
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.2",
+   "minimap": {
+    "top": 525,
+    "left": 452.083
+   }
+  }
+ ]
+}

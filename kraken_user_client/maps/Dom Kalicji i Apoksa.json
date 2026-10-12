@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Kalicji i Apoksa",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczony dom",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

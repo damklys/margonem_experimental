@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Stare Wyrobisko p.1",
+ "gateways": [
+  {
+   "to": "Stare Wyrobisko p.2",
+   "minimap": {
+    "top": 350,
+    "left": 218.75
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniana Ścieżyna",
+ "gateways": [
+  {
+   "to": "Liściaste Rozstaje"
+  }
+ ]
+}

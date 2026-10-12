@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Prastara Puszcza",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

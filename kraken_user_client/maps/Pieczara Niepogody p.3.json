@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Niepogody p.3",
+ "gateways": [
+  {
+   "to": "Pieczara Niepogody p.2 - sala 1",
+   "minimap": {
+    "top": 32.8125,
+    "left": 54.6875
+   }
+  },
+  {
+   "to": "Pieczara Niepogody p.2 - sala 2",
+   "minimap": {
+    "top": 21.875,
+    "left": 514.062
+   }
+  },
+  {
+   "to": "Pieczara Niepogody p.4",
+   "minimap": {
+    "top": 295.312,
+    "left": 240.625
+   }
+  }
+ ]
+}

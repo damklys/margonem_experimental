@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Kambiona",
+ "gateways": [
+  {
+   "to": "Las Dziwów",
+   "minimap": {
+    "top": 525,
+    "left": 350
+   }
+  }
+ ]
+}

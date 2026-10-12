@@ -1,0 +1,63 @@
+{
+ "kraken": "mapa",
+ "name": "Skalista Wyżyna",
+ "id": 1057,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Brama Północy",
+   "x": 0,
+   "y": 31,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ognista Rozpadlina",
+   "x": 32,
+   "y": 43,
+   "toId": 2428,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 95,
+   "y": 31,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 0,
+   "y": 32,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 95,
+   "y": 32,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 95,
+   "y": 33,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

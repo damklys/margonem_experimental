@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Liszli i Semkosa",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

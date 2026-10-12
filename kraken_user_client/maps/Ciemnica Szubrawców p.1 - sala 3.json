@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Ciemnica Szubrawców p.1 - sala 3",
+ "gateways": [
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 2",
+   "minimap": {
+    "top": 43.75,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Stary Kupiecki Trakt",
+   "minimap": {
+    "top": 492.188,
+    "left": 634.375
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Fretar - sala 1",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn.",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Stare Wyrobisko p.3",
+ "gateways": [
+  {
+   "to": "Stare Wyrobisko p.4",
+   "minimap": {
+    "top": 465.826,
+    "left": 127.043
+   }
+  },
+  {
+   "to": "Stare Wyrobisko p.2",
+   "minimap": {
+    "top": 84.6957,
+    "left": 359.957
+   }
+  },
+  {
+   "to": "Nawiedzony Jar",
+   "minimap": {
+    "top": 614.043,
+    "left": 232.913
+   }
+  }
+ ]
+}

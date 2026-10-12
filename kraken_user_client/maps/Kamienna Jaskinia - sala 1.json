@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Jaskinia - sala 1",
+ "gateways": [
+  {
+   "to": "Zapomniany Szlak",
+   "minimap": {
+    "top": 280,
+    "left": 574
+   }
+  },
+  {
+   "to": "Kamienna Jaskinia - sala 2",
+   "minimap": {
+    "top": 672,
+    "left": 210
+   }
+  },
+  {
+   "to": "Kamienna Jaskinia - sala 3",
+   "minimap": {
+    "top": 56,
+    "left": 84
+   }
+  }
+ ]
+}

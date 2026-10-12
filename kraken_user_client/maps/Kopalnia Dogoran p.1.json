@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Dogoran p.1",
+ "gateways": [
+  {
+   "to": "Ithan"
+  }
+ ]
+}

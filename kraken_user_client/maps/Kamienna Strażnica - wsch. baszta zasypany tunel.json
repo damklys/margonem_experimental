@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Strażnica - wsch. baszta zasypany tunel",
+ "gateways": [
+  {
+   "to": "Kamienna Strażnica - tunel",
+   "minimap": {
+    "top": 420,
+    "left": 210
+   }
+  },
+  {
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+   "minimap": {
+    "top": 52.5,
+    "left": 560
+   }
+  }
+ ]
+}

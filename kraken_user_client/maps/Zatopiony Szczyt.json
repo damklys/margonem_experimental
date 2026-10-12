@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Zatopiony Szczyt",
+ "gateways": [
+  {
+   "to": "Stare Ruiny",
+   "minimap": {
+    "top": 360.938,
+    "left": 0
+   }
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "minimap": {
+    "top": 0,
+    "left": 535.938
+   }
+  },
+  {
+   "to": "Ruiny Szabrowników",
+   "minimap": {
+    "top": 328.125,
+    "left": 689.062
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Górska Grota p.1",
+ "gateways": [
+  {
+   "to": "Górska Grota p.2",
+   "minimap": {
+    "top": 212.625,
+    "left": 364.5
+   }
+  }
+ ]
+}

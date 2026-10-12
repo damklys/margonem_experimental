@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Mokra Grota p.2 - korytarz",
+ "gateways": [
+  {
+   "to": "Mokra Grota p.1 - boczny korytarz",
+   "minimap": {
+    "top": 14,
+    "left": 70
+   }
+  },
+  {
+   "to": "Mroczna Pieczara p.1 - sala 3",
+   "minimap": {
+    "top": 546,
+    "left": 546
+   }
+  }
+ ]
+}

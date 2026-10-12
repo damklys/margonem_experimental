@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Mroczna Pieczara p.0",
+ "gateways": [
+  {
+   "to": "Mroczna Pieczara p.1 - sala 2",
+   "minimap": {
+    "top": 105,
+    "left": 140
+   }
+  },
+  {
+   "to": "Migotliwa Pieczara",
+   "minimap": {
+    "top": 455,
+    "left": 490
+   }
+  }
+ ]
+}

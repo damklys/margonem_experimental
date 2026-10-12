@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Zagrzybiałe Ścieżki p.3",
+ "gateways": [
+  {
+   "to": "Zagrzybiałe Ścieżki p.2",
+   "minimap": {
+    "top": 43.75,
+    "left": 109.375
+   }
+  }
+ ]
+}

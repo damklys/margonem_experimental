@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Płacząca Grota p.2",
+ "gateways": [
+  {
+   "to": "Płacząca Grota p.1 - sala 1",
+   "minimap": {
+    "top": 32.812,
+    "left": 65.625
+   }
+  },
+  {
+   "to": "Płacząca Grota p.3",
+   "minimap": {
+    "top": 612.5,
+    "left": 185.938
+   }
+  },
+  {
+   "to": "Płacząca Grota p.1 - sala 2",
+   "minimap": {
+    "top": 317.188,
+    "left": 623.438
+   }
+  }
+ ]
+}

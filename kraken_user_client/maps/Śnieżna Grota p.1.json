@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Śnieżna Grota p.1",
+ "gateways": [
+  {
+   "to": "Andarum Ilami",
+   "minimap": {
+    "top": 262.5,
+    "left": 554.167
+   }
+  },
+  {
+   "to": "Śnieżna Grota p.2",
+   "minimap": {
+    "top": 525,
+    "left": 495.833
+   }
+  }
+ ]
+}

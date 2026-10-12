@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Inlefi p.1",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

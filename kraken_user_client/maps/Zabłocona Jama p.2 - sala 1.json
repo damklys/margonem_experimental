@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Zabłocona Jama p.2 - sala 1",
+ "gateways": [
+  {
+   "to": "Zabłocona Jama p.1 - sala 1",
+   "minimap": {
+    "top": 32.8125,
+    "left": 142.188
+   }
+  },
+  {
+   "to": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+   "minimap": {
+    "top": 76.5625,
+    "left": 557.812
+   }
+  },
+  {
+   "to": "Zabłocona Jama p.2 - sala 2",
+   "minimap": {
+    "top": 667.188,
+    "left": 426.562
+   }
+  }
+ ]
+}

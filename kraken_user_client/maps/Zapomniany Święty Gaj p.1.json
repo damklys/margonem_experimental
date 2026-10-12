@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniany Święty Gaj p.1",
+ "gateways": [
+  {
+   "to": "Zapomniany Święty Gaj p.2",
+   "minimap": {
+    "top": 459.375,
+    "left": 240.625
+   }
+  },
+  {
+   "to": "Zapomniany Święty Gaj p.1 - sala 1",
+   "minimap": {
+    "top": 262.5,
+    "left": 525
+   }
+  },
+  {
+   "to": "Księżycowe Wzniesienie",
+   "minimap": {
+    "top": 393.75,
+    "left": 525
+   }
+  }
+ ]
+}

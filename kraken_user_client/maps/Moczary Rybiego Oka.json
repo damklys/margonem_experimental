@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Moczary Rybiego Oka",
+ "gateways": [
+  {
+   "to": "Stary Kupiecki Trakt",
+   "minimap": {
+    "top": 538.812,
+    "left": 0
+   }
+  },
+  {
+   "to": "Uroczysko Wodnika",
+   "minimap": {
+    "top": 691.719,
+    "left": 109.219
+   }
+  }
+ ]
+}

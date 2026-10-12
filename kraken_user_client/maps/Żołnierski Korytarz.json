@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Żołnierski Korytarz",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

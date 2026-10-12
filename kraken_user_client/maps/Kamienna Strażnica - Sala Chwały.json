@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Strażnica - Sala Chwały",
+ "gateways": [
+  {
+   "to": "Kamienna Strażnica - Sanktuarium",
+   "minimap": {
+    "top": 400,
+    "left": 100
+   }
+  },
+  {
+   "to": "Kamienna Strażnica - tunel",
+   "minimap": {
+    "top": 50,
+    "left": 200
+   }
+  }
+ ]
+}

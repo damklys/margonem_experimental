@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Krwawego Opętania - przedsionek",
+ "gateways": [
+  {
+   "to": "Wyjście",
+   "minimap": {
+    "top": 568.75,
+    "left": 306.25
+   }
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Margorii",
+ "gateways": [
+  {
+   "to": "Ślepe Wyrobisko",
+   "minimap": {
+    "top": 604.344,
+    "left": 50.969
+   }
+  },
+  {
+   "to": "Margoria",
+   "minimap": {
+    "top": 72.812,
+    "left": 167.469
+   }
+  },
+  {
+   "to": "Labirynt Margorii",
+   "minimap": {
+    "top": 94.656,
+    "left": 385.906
+   }
+  }
+ ]
+}

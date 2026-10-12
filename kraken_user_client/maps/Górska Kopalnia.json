@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Górska Kopalnia",
+ "gateways": [
+  {
+   "to": "Nawiedzony Jar",
+   "minimap": {
+    "top": 506.897,
+    "left": 579.31
+   }
+  }
+ ]
+}

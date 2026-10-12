@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Ciemnica Szubrawców p.1 - sala 2",
+ "gateways": [
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 1",
+   "minimap": {
+    "top": 116.667,
+    "left": 33.3333
+   }
+  },
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 3",
+   "minimap": {
+    "top": 650,
+    "left": 600
+   }
+  }
+ ]
+}

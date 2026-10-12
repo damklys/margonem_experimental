@@ -1,0 +1,36 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów - wieża",
+ "id": 7470,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów - zejście p.1",
+   "x": 4,
+   "y": 11,
+   "toId": 7471,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 9,
+   "y": 13,
+   "toId": 4764,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 10,
+   "y": 13,
+   "toId": 4764,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Lukrecji",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

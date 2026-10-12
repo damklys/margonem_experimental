@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Iglaste Ścieżki",
+ "gateways": [
+  {
+   "to": "Dolina Centaurów",
+   "minimap": {
+    "top": 269.792,
+    "left": 0
+   }
+  },
+  {
+   "to": "Zawiły Bór",
+   "minimap": {
+    "top": 459.375,
+    "left": 517.708
+   }
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "minimap": {
+    "top": 218.75,
+    "left": 692.708
+   }
+  }
+ ]
+}

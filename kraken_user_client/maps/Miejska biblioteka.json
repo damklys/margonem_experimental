@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Miejska biblioteka",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

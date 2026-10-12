@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Jalena i Tafii",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

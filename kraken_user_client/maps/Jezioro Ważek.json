@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Jezioro Ważek",
+ "gateways": [
+  {
+   "to": "Liściaste Rozstaje"
+  }
+ ]
+}

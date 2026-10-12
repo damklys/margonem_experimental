@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Austeria Karibiego",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Porzucone Pasieki",
+ "gateways": [
+  {
+   "to": "Ithan",
+   "minimap": {
+    "top": 339.062,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Kopalnie Kapiącego Miodu p.1 - sala 1",
+   "minimap": {
+    "top": 306.25,
+    "left": 579.688
+   }
+  },
+  {
+   "to": "Kopalnie Kapiącego Miodu p.1 - sala 2",
+   "minimap": {
+    "top": 503.125,
+    "left": 76.5625
+   }
+  },
+  {
+   "to": "Uroczysko",
+   "minimap": {
+    "top": 689.062,
+    "left": 251.562
+   }
+  },
+  {
+   "to": "Mistyczny Bór",
+   "minimap": {
+    "top": 306.25,
+    "left": 0
+   }
+  }
+ ]
+}

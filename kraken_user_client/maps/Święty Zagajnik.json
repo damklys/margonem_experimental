@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Święty Zagajnik",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

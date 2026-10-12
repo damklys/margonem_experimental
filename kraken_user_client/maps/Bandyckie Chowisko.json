@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Bandyckie Chowisko",
+ "gateways": [
+  {
+   "to": "Chata bandytów",
+   "minimap": {
+    "top": 350,
+    "left": 572.727
+   }
+  },
+  {
+   "to": "Bandyckie Chowisko - skarbiec",
+   "minimap": {
+    "top": 63.6364,
+    "left": 286.364
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica de Waldenów",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

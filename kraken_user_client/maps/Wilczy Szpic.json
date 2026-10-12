@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Wilczy Szpic",
+ "gateways": [
+  {
+   "to": "Łany Zboża",
+   "minimap": {
+    "top": 0,
+    "left": 175
+   }
+  },
+  {
+   "to": "Stare Ruiny",
+   "minimap": {
+    "top": 437.5,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Jaskinia Wilczego Zamętu p.1",
+   "minimap": {
+    "top": 470.312,
+    "left": 382.812
+   }
+  },
+  {
+   "to": "Dolina Yss",
+   "minimap": {
+    "top": 689.062,
+    "left": 185.938
+   }
+  },
+  {
+   "to": "Jaskinia Wilczego Zamętu p.2",
+   "minimap": {
+    "top": 262.5,
+    "left": 360.938
+   }
+  }
+ ]
+}

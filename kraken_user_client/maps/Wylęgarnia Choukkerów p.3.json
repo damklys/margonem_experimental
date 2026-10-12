@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Wylęgarnia Choukkerów p.3",
+ "gateways": [
+  {
+   "to": "Wylęgarnia Choukkerów p.2",
+   "minimap": {
+    "top": 601.562,
+    "left": 525
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Erem Czarnego Słońca p.2",
+ "gateways": [
+  {
+   "to": "Erem Czarnego Słońca p.1 - północ",
+   "minimap": {
+    "top": 386.842,
+    "left": 350
+   }
+  },
+  {
+   "to": "Erem Czarnego Słońca p.3",
+   "minimap": {
+    "top": 515.789,
+    "left": 350
+   }
+  }
+ ]
+}

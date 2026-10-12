@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Różą Wiatrów p.1",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

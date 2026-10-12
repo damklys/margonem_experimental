@@ -1,0 +1,12 @@
+{
+ "kraken": "mapa",
+ "name": "Posterunek",
+ "gateways": [
+  {
+   "to": "Przełęcz Dwóch Koron"
+  },
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

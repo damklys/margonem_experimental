@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - część akolitów",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

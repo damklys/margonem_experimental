@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Jemenossa",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

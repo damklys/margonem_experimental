@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Andarum - zejście lewe",
+ "gateways": [
+  {
+   "to": "Świątynia Andarum",
+   "minimap": {
+    "top": 20.5769,
+    "left": 349.808
+   }
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "minimap": {
+    "top": 658.462,
+    "left": 102.885
+   }
+  }
+ ]
+}

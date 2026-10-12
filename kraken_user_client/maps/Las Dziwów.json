@@ -1,0 +1,30 @@
+{
+ "kraken": "mapa",
+ "name": "Las Dziwów",
+ "gateways": [
+  {
+   "to": "Cienisty Bór",
+   "minimap": {
+    "top": 0,
+    "left": 305.812
+   }
+  },
+  {
+   "to": "Namiot Kambiona",
+   "minimap": {
+    "top": 516.969,
+    "left": 123.781
+   }
+  },
+  {
+   "to": "Złowrogie Bagna",
+   "minimap": {
+    "top": 342.219,
+    "left": 0
+   }
+  },
+  {
+   "to": "Liściaste Rozstaje"
+  }
+ ]
+}

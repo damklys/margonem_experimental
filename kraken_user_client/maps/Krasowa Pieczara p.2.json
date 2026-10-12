@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Krasowa Pieczara p.2",
+ "gateways": [
+  {
+   "to": "Krasowa Pieczara p.1",
+   "minimap": {
+    "top": 29.1667,
+    "left": 583.333
+   }
+  },
+  {
+   "to": "Krasowa Pieczara p.3",
+   "minimap": {
+    "top": 204.167,
+    "left": 262.5
+   }
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "minimap": {
+    "top": 554.167,
+    "left": 145.833
+   }
+  }
+ ]
+}

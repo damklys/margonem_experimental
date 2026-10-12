@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Zdradzieckie Przejście p.1",
+ "gateways": [
+  {
+   "to": "Andarum Ilami",
+   "minimap": {
+    "top": 50.9688,
+    "left": 436.875
+   }
+  },
+  {
+   "to": "Głębokie Skałki p.1",
+   "minimap": {
+    "top": 334.938,
+    "left": 400.469
+   }
+  },
+  {
+   "to": "Głębokie Skałki p.2",
+   "minimap": {
+    "top": 684.438,
+    "left": 385.906
+   }
+  },
+  {
+   "to": "Zdradzieckie Przejście p.2",
+   "minimap": {
+    "top": 640.75,
+    "left": 218.438
+   }
+  },
+  {
+   "to": "Wylęgarnia Choukkerów p.1",
+   "minimap": {
+    "top": 516.969,
+    "left": 36.4062
+   }
+  }
+ ]
+}

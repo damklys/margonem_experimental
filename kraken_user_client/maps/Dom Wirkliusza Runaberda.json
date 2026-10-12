@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wirkliusza Runaberda",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

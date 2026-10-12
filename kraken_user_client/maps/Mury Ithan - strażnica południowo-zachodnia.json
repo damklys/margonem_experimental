@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Mury Ithan - strażnica południowo-zachodnia",
+ "gateways": [
+  {
+   "to": "Ithan"
+  }
+ ]
+}

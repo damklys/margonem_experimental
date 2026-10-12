@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia Frassona",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Ruiny Pustynnych Burz",
+ "gateways": [
+  {
+   "to": "Złote Piaski",
+   "minimap": {
+    "top": 415.031,
+    "left": 0
+   }
+  }
+ ]
+}

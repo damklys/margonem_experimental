@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Strażnica - wsch. baszta p.2",
+ "gateways": [
+  {
+   "to": "Kamienna Strażnica - wsch. baszta p.1",
+   "minimap": {
+    "top": 210,
+    "left": 315
+   }
+  }
+ ]
+}

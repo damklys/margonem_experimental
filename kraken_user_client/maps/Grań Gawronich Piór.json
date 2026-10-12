@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Grań Gawronich Piór",
+ "gateways": [
+  {
+   "to": "Lazurowe Wzgórze",
+   "minimap": {
+    "top": 459.375,
+    "left": 247.917
+   }
+  },
+  {
+   "to": "Thuzal",
+   "minimap": {
+    "top": 0,
+    "left": 226.042
+   }
+  }
+ ]
+}

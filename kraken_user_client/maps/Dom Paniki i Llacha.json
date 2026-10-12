@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Paniki i Llacha",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

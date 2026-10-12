@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn Krasnoludów",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

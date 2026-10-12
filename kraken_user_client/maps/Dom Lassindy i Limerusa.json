@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Lassindy i Limerusa",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

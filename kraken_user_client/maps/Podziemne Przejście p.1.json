@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemne Przejście p.1",
+ "id": 87,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podziemne Przejście p.2",
+   "x": 5,
+   "y": 6,
+   "toId": 88,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 5,
+   "y": 13,
+   "toId": 84,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

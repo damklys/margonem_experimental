@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Przeklęty Zamek p.1",
+ "gateways": [
+  {
+   "to": "Przeklęty Zamek - sala zgromadzeń",
+   "minimap": {
+    "top": 218.75,
+    "left": 350
+   }
+  },
+  {
+   "to": "Przeklęty Zamek p.2",
+   "minimap": {
+    "top": 306.25,
+    "left": 131.25
+   }
+  }
+ ]
+}

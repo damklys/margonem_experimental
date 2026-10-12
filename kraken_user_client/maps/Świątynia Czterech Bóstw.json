@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Czterech Bóstw",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

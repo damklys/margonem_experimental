@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Góry Zrębowe",
+ "gateways": [
+  {
+   "to": "Brama Północy"
+  }
+ ]
+}

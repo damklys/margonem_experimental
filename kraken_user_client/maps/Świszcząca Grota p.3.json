@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Świszcząca Grota p.3",
+ "gateways": [
+  {
+   "to": "Świszcząca Grota p.2",
+   "minimap": {
+    "top": 262.5,
+    "left": 65.625
+   }
+  },
+  {
+   "to": "Zburzona Twierdza",
+   "minimap": {
+    "top": 656.25,
+    "left": 175
+   }
+  },
+  {
+   "to": "Świszcząca Grota p.4",
+   "minimap": {
+    "top": 503.125,
+    "left": 525
+   }
+  }
+ ]
+}

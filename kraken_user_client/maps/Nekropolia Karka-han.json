@@ -1,0 +1,72 @@
+{
+ "kraken": "mapa",
+ "name": "Nekropolia Karka-han",
+ "id": 2546,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Grobowiec Rodziny Tywelta",
+   "x": 26,
+   "y": 9,
+   "toId": 2884,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 0,
+   "y": 33,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Krypta Rodu Heregata",
+   "x": 28,
+   "y": 36,
+   "toId": 2877,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 0,
+   "y": 34,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 0,
+   "y": 35,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Grobowiec Rodziny Tywelta",
+   "x": 27,
+   "y": 9,
+   "toId": 2884,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Krypta Rodu Heregata",
+   "x": 29,
+   "y": 36,
+   "toId": 2877,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

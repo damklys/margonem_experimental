@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Ostępy Szalbierskich Lasów",
+ "gateways": [
+  {
+   "to": "Iglaste Ścieżki",
+   "minimap": {
+    "top": 218.75,
+    "left": 0
+   }
+  },
+  {
+   "to": "Błędny Szlak",
+   "minimap": {
+    "top": 459.375,
+    "left": 466.667
+   }
+  },
+  {
+   "to": "Chata bandytów",
+   "minimap": {
+    "top": 182.292,
+    "left": 408.333
+   }
+  },
+  {
+   "to": "Cienisty Bór",
+   "minimap": {
+    "top": 298.958,
+    "left": 692.708
+   }
+  },
+  {
+   "to": "Siedziba rekieterów",
+   "minimap": {
+    "top": 247.917,
+    "left": 335.417
+   }
+  }
+ ]
+}

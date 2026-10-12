@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Hergata i Halfinii",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

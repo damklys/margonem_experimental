@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Przeklęta Strażnica - podziemia p.2 s.2",
+ "gateways": [
+  {
+   "to": "Przeklęta Strażnica - podziemia p.1 s.2",
+   "minimap": {
+    "top": 127.273,
+    "left": 604.545
+   }
+  },
+  {
+   "to": "Przeklęta Strażnica - podziemia p.2 s.3",
+   "minimap": {
+    "top": 477.273,
+    "left": 636.364
+   }
+  }
+ ]
+}

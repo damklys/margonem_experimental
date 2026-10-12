@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Konstantego i Forsycji",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

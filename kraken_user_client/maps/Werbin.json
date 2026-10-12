@@ -1,0 +1,252 @@
+{
+ "kraken": "mapa",
+ "name": "Werbin",
+ "id": 9,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Brama Północy",
+   "x": 63,
+   "y": 53,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Alabraskana",
+   "x": 60,
+   "y": 73,
+   "toId": 65,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Barnesa",
+   "x": 21,
+   "y": 17,
+   "toId": 1939,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Enoliana",
+   "x": 18,
+   "y": 16,
+   "toId": 64,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Gepperta - warsztat",
+   "x": 15,
+   "y": 22,
+   "toId": 2061,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Gindera",
+   "x": 37,
+   "y": 10,
+   "toId": 57,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Idropusa",
+   "x": 48,
+   "y": 65,
+   "toId": 58,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Jalena i Tafii",
+   "x": 46,
+   "y": 16,
+   "toId": 60,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Paratoka",
+   "x": 25,
+   "y": 10,
+   "toId": 55,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Rozalii",
+   "x": 34,
+   "y": 31,
+   "toId": 1929,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karczma pod Fioletowym Kryształem",
+   "x": 30,
+   "y": 13,
+   "toId": 62,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kopalnia Fretar - sala 1",
+   "x": 57,
+   "y": 37,
+   "toId": 46,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kopalnia Inlefi p.1",
+   "x": 30,
+   "y": 73,
+   "toId": 49,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kopalnia Latimeria p.1",
+   "x": 20,
+   "y": 84,
+   "toId": 52,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Magazyn Krasnoludów",
+   "x": 43,
+   "y": 30,
+   "toId": 3839,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury - kwatera główna",
+   "x": 47,
+   "y": 44,
+   "toId": 2075,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Namiot Amry",
+   "x": 2,
+   "y": 10,
+   "toId": 1955,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Namiot wiedźmy",
+   "x": 28,
+   "y": 59,
+   "toId": 1946,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Opuszczony dom",
+   "x": 58,
+   "y": 16,
+   "toId": 1945,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 0,
+   "y": 38,
+   "toId": 355,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wrzosowiska",
+   "x": 43,
+   "y": 95,
+   "toId": 1975,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 0,
+   "y": 39,
+   "toId": 355,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karczma pod Fioletowym Kryształem",
+   "x": 31,
+   "y": 13,
+   "toId": 62,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wrzosowiska",
+   "x": 44,
+   "y": 95,
+   "toId": 1975,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wrzosowiska",
+   "x": 45,
+   "y": 95,
+   "toId": 1975,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Idropusa",
+   "x": 49,
+   "y": 65,
+   "toId": 58,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 63,
+   "y": 54,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

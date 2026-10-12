@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Slina",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

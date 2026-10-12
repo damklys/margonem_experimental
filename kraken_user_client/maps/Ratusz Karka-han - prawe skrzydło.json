@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Karka-han - prawe skrzydło",
+ "gateways": [
+  {
+   "to": "Ratusz Karka-han"
+  }
+ ]
+}

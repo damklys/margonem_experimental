@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Orla Grań",
+ "gateways": [
+  {
+   "to": "Dziewicza Knieja",
+   "minimap": {
+    "top": 524.25,
+    "left": 458.719
+   }
+  },
+  {
+   "to": "Stare Ruiny",
+   "minimap": {
+    "top": 0,
+    "left": 320.375
+   }
+  },
+  {
+   "to": "Dolina Yss",
+   "minimap": {
+    "top": 524.25,
+    "left": 0
+   }
+  },
+  {
+   "to": "Przełęcz Łotrzyków",
+   "minimap": {
+    "top": 691.719,
+    "left": 131.062
+   }
+  },
+  {
+   "to": "Przeklęta Strażnica",
+   "minimap": {
+    "top": 174.75,
+    "left": 378.625
+   }
+  }
+ ]
+}

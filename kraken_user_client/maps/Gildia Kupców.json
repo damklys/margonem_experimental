@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Kupców",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

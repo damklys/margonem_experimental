@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia na Rozstajach",
+ "gateways": [
+  {
+   "to": "Brama Północy"
+  }
+ ]
+}

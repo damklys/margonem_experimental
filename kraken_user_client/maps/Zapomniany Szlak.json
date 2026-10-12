@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniany Szlak",
+ "gateways": [
+  {
+   "to": "Uroczysko",
+   "minimap": {
+    "top": 0,
+    "left": 393.75
+   }
+  },
+  {
+   "to": "Mroczny Przesmyk",
+   "minimap": {
+    "top": 459.375,
+    "left": 473.958
+   }
+  },
+  {
+   "to": "Mokra Grota p.1",
+   "minimap": {
+    "top": 189.583,
+    "left": 415.625
+   }
+  },
+  {
+   "to": "Grota Bezszelestnych Kroków - sala 1",
+   "minimap": {
+    "top": 109.375,
+    "left": 386.458
+   }
+  },
+  {
+   "to": "Kamienna Jaskinia - sala 1",
+   "minimap": {
+    "top": 386.458,
+    "left": 109.375
+   }
+  }
+ ]
+}

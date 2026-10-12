@@ -1,0 +1,69 @@
+{
+ "kraken": "mapa",
+ "name": "Stare Ruiny",
+ "gateways": [
+  {
+   "to": "Wilczy Szpic",
+   "minimap": {
+    "top": 291.667,
+    "left": 0
+   }
+  },
+  {
+   "to": "Torneg",
+   "minimap": {
+    "top": 0,
+    "left": 350
+   }
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "minimap": {
+    "top": 247.917,
+    "left": 692.708
+   }
+  },
+  {
+   "to": "Orla Grań",
+   "minimap": {
+    "top": 459.375,
+    "left": 313.542
+   }
+  },
+  {
+   "to": "Przeklęty Zamek - wejście północne",
+   "minimap": {
+    "top": 72.9167,
+    "left": 240.625
+   }
+  },
+  {
+   "to": "Przeklęty Zamek - wejście południowe",
+   "minimap": {
+    "top": 386.458,
+    "left": 386.458
+   }
+  },
+  {
+   "to": "Przeklęty Zamek - wejście wschodnie",
+   "minimap": {
+    "top": 131.25,
+    "left": 430.208
+   }
+  },
+  {
+   "to": "Przeklęty Zamek p.2",
+   "minimap": {
+    "top": 153.125,
+    "left": 539.583
+   }
+  },
+  {
+   "to": "Dziewicza Knieja",
+   "minimap": {
+    "top": 459.375,
+    "left": 561.458
+   }
+  }
+ ]
+}

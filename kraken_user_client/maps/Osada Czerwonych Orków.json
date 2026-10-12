@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Osada Czerwonych Orków",
+ "gateways": [
+  {
+   "to": "Włości rodu Kruzo"
+  }
+ ]
+}

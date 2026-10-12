@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Lecznica dla zwierząt",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

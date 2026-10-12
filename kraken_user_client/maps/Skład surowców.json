@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Skład surowców",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

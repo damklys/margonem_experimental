@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Ruiny Szabrowników",
+ "gateways": [
+  {
+   "to": "Zatopiony Szczyt",
+   "minimap": {
+    "top": 218.75,
+    "left": 0
+   }
+  }
+ ]
+}

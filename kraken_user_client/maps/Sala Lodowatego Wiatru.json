@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Lodowatego Wiatru",
+ "gateways": [
+  {
+   "to": "Przejście Lodowatego Wiatru",
+   "minimap": {
+    "top": 32.8125,
+    "left": 76.5625
+   }
+  }
+ ]
+}

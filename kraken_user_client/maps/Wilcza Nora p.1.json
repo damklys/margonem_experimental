@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Wilcza Nora p.1",
+ "gateways": [
+  {
+   "to": "Warczące Osuwiska",
+   "minimap": {
+    "top": 656.25,
+    "left": 350
+   }
+  },
+  {
+   "to": "Wilcza Nora p.2",
+   "minimap": {
+    "top": 218.75,
+    "left": 175
+   }
+  }
+ ]
+}

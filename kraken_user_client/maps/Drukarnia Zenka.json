@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Drukarnia Zenka",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

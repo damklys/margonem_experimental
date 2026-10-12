@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Siedlisko Nietoperzy p.3 - sala 2",
+ "gateways": [
+  {
+   "to": "Siedlisko Nietoperzy p.3 - sala 1",
+   "minimap": {
+    "top": 583.333,
+    "left": 38.8889
+   }
+  }
+ ]
+}

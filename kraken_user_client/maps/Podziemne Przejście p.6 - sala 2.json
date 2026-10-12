@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemne Przejście p.6 - sala 2",
+ "id": 95,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podziemne Przejście p.6 - sala 3",
+   "x": 4,
+   "y": 2,
+   "toId": 96,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Podziemne Przejście p.6 - sala wyjściowa",
+   "x": 13,
+   "y": 14,
+   "toId": 94,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

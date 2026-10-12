@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Warsztat kowala Kalpusa",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Dusz Śniegu p.1",
+ "gateways": [
+  {
+   "to": "Krypty Dusz Śniegu p.2",
+   "minimap": {
+    "top": 116.667,
+    "left": 160.417
+   }
+  },
+  {
+   "to": "Cmentarzysko Szerpów",
+   "minimap": {
+    "top": 656.25,
+    "left": 350
+   }
+  }
+ ]
+}

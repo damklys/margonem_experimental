@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Alabastrowy Hotel",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Wzgórze Płaczek",
+ "gateways": [
+  {
+   "to": "Gadzia Kotlina",
+   "minimap": {
+    "top": 0,
+    "left": 72.917
+   }
+  },
+  {
+   "to": "Płacząca Grota p.1 - sala 1",
+   "minimap": {
+    "top": 255.208,
+    "left": 269.792
+   }
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "minimap": {
+    "top": 459.375,
+    "left": 525
+   }
+  },
+  {
+   "to": "Płacząca Grota p.1 - sala 2",
+   "minimap": {
+    "top": 320.833,
+    "left": 561.458
+   }
+  },
+  {
+   "to": "Mglista Polana Vesy",
+   "minimap": {
+    "top": 138.542,
+    "left": 692.708
+   }
+  }
+ ]
+}

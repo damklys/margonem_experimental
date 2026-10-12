@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Kocim Wąsem",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

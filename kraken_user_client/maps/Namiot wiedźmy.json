@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot wiedźmy",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

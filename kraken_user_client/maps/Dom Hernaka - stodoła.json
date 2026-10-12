@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Hernaka - stodoła",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

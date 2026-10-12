@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia Inetora",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

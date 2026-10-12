@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Śnieżna Grota p.3",
+ "gateways": [
+  {
+   "to": "Śnieżna Grota p.2",
+   "minimap": {
+    "top": 667.188,
+    "left": 76.5625
+   }
+  },
+  {
+   "to": "Lodowa Sala",
+   "minimap": {
+    "top": 459.375,
+    "left": 404.688
+   }
+  }
+ ]
+}

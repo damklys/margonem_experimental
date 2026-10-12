@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Morwowe Przejście",
+ "gateways": [
+  {
+   "to": "Podmokła Dolina",
+   "minimap": {
+    "top": 689.062,
+    "left": 350
+   }
+  },
+  {
+   "to": "Nawiedzony Jar",
+   "minimap": {
+    "top": 218.75,
+    "left": 0
+   }
+  }
+ ]
+}

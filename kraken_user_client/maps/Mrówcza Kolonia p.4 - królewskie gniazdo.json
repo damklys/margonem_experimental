@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Mrówcza Kolonia p.4 - królewskie gniazdo",
+ "gateways": [
+  {
+   "to": "Mrówcza Kolonia p.3 - lewa komora jaj",
+   "minimap": {
+    "top": 21.875,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Mrówcza Kolonia p.3 - prawa komora jaj",
+   "minimap": {
+    "top": 21.875,
+    "left": 579.688
+   }
+  }
+ ]
+}

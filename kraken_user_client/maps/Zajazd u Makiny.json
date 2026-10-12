@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd u Makiny",
+ "gateways": [
+  {
+   "to": "Ithan"
+  }
+ ]
+}

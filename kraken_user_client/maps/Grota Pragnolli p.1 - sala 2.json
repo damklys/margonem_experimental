@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Pragnolli p.1 - sala 2",
+ "gateways": [
+  {
+   "to": "Grota Pragnolli p.1",
+   "minimap": {
+    "top": 155.556,
+    "left": 93.3333
+   }
+  },
+  {
+   "to": "Grota Pragnolli p.2",
+   "minimap": {
+    "top": 528.889,
+    "left": 451.111
+   }
+  }
+ ]
+}

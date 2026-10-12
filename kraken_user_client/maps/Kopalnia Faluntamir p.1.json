@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Faluntamir p.1",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

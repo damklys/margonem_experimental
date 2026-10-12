@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Aberyta",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

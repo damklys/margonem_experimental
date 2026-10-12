@@ -1,0 +1,62 @@
+{
+ "kraken": "mapa",
+ "name": "Nizina Wieśniaków",
+ "gateways": [
+  {
+   "to": "Racicowy Matecznik",
+   "minimap": {
+    "top": 313.094,
+    "left": 0
+   }
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "minimap": {
+    "top": 116.667,
+    "left": 0
+   }
+  },
+  {
+   "to": "Pieczara Czaszek",
+   "minimap": {
+    "top": 291.667,
+    "left": 7.292
+   }
+  },
+  {
+   "to": "Gościniec Bardów",
+   "minimap": {
+    "top": 0,
+    "left": 313.542
+   }
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "minimap": {
+    "top": 459.375,
+    "left": 328.125
+   }
+  },
+  {
+   "to": "Dom Chlasta",
+   "minimap": {
+    "top": 364.583,
+    "left": 583.333
+   }
+  },
+  {
+   "to": "Szopa",
+   "minimap": {
+    "top": 320.833,
+    "left": 678.125
+   }
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "minimap": {
+    "top": 36.458,
+    "left": 692.708
+   }
+  }
+ ]
+}

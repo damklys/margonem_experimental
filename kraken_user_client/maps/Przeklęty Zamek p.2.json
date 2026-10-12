@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Przeklęty Zamek p.2",
+ "gateways": [
+  {
+   "to": "Przeklęty Zamek p.1",
+   "minimap": {
+    "top": 175,
+    "left": 525
+   }
+  },
+  {
+   "to": "Stare Ruiny",
+   "minimap": {
+    "top": 291.667,
+    "left": 525
+   }
+  },
+  {
+   "to": "Przeklęty Zamek - komnata",
+   "minimap": {
+    "top": 116.667,
+    "left": 87.5
+   }
+  }
+ ]
+}

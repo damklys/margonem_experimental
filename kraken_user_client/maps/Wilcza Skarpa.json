@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Wilcza Skarpa",
+ "gateways": [
+  {
+   "to": "Warczące Osuwiska",
+   "minimap": {
+    "top": 123.781,
+    "left": 0
+   }
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "minimap": {
+    "top": 560.656,
+    "left": 0
+   }
+  }
+ ]
+}

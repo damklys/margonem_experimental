@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Piekielna Sala Ognia",
+ "gateways": [
+  {
+   "to": "Piekielna Grota p.4",
+   "minimap": {
+    "top": 554.167,
+    "left": 131.25
+   }
+  }
+ ]
+}

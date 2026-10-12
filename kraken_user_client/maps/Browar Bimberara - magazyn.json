@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Browar Bimberara - magazyn",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

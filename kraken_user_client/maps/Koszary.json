@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Koszary",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

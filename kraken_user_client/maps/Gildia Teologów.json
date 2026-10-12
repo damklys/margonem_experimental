@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}

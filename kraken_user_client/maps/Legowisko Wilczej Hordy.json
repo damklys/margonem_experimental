@@ -1,0 +1,55 @@
+{
+ "kraken": "mapa",
+ "name": "Legowisko Wilczej Hordy",
+ "gateways": [
+  {
+   "to": "Wilcza Skarpa",
+   "minimap": {
+    "top": 142.188,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Warczące Osuwiska",
+   "minimap": {
+    "top": 0,
+    "left": 284.375
+   }
+  },
+  {
+   "to": "Polana Ścierwojadów",
+   "minimap": {
+    "top": 164.062,
+    "left": 0
+   }
+  },
+  {
+   "to": "Krasowa Pieczara p.1",
+   "minimap": {
+    "top": 470.312,
+    "left": 612.5
+   }
+  },
+  {
+   "to": "Krasowa Pieczara p.2",
+   "minimap": {
+    "top": 481.25,
+    "left": 371.875
+   }
+  },
+  {
+   "to": "Krasowa Pieczara p.3",
+   "minimap": {
+    "top": 601.562,
+    "left": 306.25
+   }
+  },
+  {
+   "to": "Skalne Turnie",
+   "minimap": {
+    "top": 689.062,
+    "left": 196.875
+   }
+  }
+ ]
+}

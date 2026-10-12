@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Skalne Cmentarzysko p.1",
+ "gateways": [
+  {
+   "to": "Płaskowyż Arpan",
+   "minimap": {
+    "top": 634.375,
+    "left": 459.375
+   }
+  },
+  {
+   "to": "Skalne Cmentarzysko p.2",
+   "minimap": {
+    "top": 131.25,
+    "left": 196.875
+   }
+  }
+ ]
+}

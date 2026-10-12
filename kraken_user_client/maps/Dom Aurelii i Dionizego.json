@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Aurelii i Dionizego",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

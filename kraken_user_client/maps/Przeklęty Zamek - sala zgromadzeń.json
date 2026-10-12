@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Przeklęty Zamek - sala zgromadzeń",
+ "gateways": [
+  {
+   "to": "Przeklęty Zamek - zbrojownia",
+   "minimap": {
+    "top": 233.333,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Przeklęty Zamek p.1",
+   "minimap": {
+    "top": 277.083,
+    "left": 495.833
+   }
+  },
+  {
+   "to": "Przeklęty Zamek - wejście wschodnie",
+   "minimap": {
+    "top": 87.5,
+    "left": 627.083
+   }
+  }
+ ]
+}

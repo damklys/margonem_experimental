@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Grobowiec Rodziny Tywelta",
+ "gateways": [
+  {
+   "to": "Nekropolia Karka-han"
+  }
+ ]
+}

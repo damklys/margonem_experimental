@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Galeny i Sarda",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

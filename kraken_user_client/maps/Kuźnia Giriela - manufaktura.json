@@ -1,0 +1,12 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia Giriela - manufaktura",
+ "gateways": [
+  {
+   "to": "Kuźnia Giriela - warsztat"
+  },
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

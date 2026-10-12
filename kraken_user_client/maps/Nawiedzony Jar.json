@@ -1,0 +1,76 @@
+{
+ "kraken": "mapa",
+ "name": "Nawiedzony Jar",
+ "gateways": [
+  {
+   "to": "Zburzona Twierdza",
+   "minimap": {
+    "top": 0,
+    "left": 273.438
+   }
+  },
+  {
+   "to": "Stare Wyrobisko p.4",
+   "minimap": {
+    "top": 273.438,
+    "left": 382.812
+   }
+  },
+  {
+   "to": "Stare Wyrobisko p.5",
+   "minimap": {
+    "top": 459.375,
+    "left": 503.125
+   }
+  },
+  {
+   "to": "Mroczny Przesmyk",
+   "minimap": {
+    "top": 350,
+    "left": 0
+   }
+  },
+  {
+   "to": "Górska Kopalnia",
+   "minimap": {
+    "top": 612.5,
+    "left": 623.438
+   }
+  },
+  {
+   "to": "Górska Grota p.2",
+   "minimap": {
+    "top": 612.5,
+    "left": 109.375
+   }
+  },
+  {
+   "to": "Morwowe Przejście",
+   "minimap": {
+    "top": 218.75,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Stare Wyrobisko p.3",
+   "minimap": {
+    "top": 262.5,
+    "left": 459.375
+   }
+  }
+ ],
+ "zones": [
+  [
+   "Morwowe Przejście",
+   "Stare Wyrobisko p.3"
+  ],
+  [
+   "Zburzona Twierdza",
+   "Stare Wyrobisko p.4",
+   "Stare Wyrobisko p.5",
+   "Mroczny Przesmyk",
+   "Górska Kopalnia",
+   "Górska Grota p.2"
+  ]
+ ]
+}

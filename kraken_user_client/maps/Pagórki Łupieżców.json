@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Pagórki Łupieżców",
+ "gateways": [
+  {
+   "to": "Przełęcz Łotrzyków",
+   "minimap": {
+    "top": 349.5,
+    "left": 0
+   }
+  },
+  {
+   "to": "Skład Grabieżców",
+   "minimap": {
+    "top": 291.25,
+    "left": 123.781
+   }
+  },
+  {
+   "to": "Schowek na Łupy",
+   "minimap": {
+    "top": 364.062,
+    "left": 167.469
+   }
+  }
+ ]
+}

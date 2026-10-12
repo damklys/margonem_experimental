@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Zrujnowana Wieża",
+ "gateways": [
+  {
+   "to": "Opuszczony Bastion",
+   "minimap": {
+    "top": 612.5,
+    "left": 393.75
+   }
+  },
+  {
+   "to": "Podziemny Przełaz p.2",
+   "minimap": {
+    "top": 218.75,
+    "left": 481.25
+   }
+  }
+ ]
+}

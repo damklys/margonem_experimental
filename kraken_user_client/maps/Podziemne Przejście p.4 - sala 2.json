@@ -1,0 +1,36 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemne Przejście p.4 - sala 2",
+ "id": 91,
+ "w": 27,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podziemne Przejście p.4",
+   "x": 1,
+   "y": 14,
+   "toId": 90,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Podziemne Przejście p.4 - sala 3",
+   "x": 12,
+   "y": 4,
+   "toId": 92,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Podziemne Przejście p.4",
+   "x": 2,
+   "y": 14,
+   "toId": 90,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

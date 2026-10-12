@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Liściasta kryjówka",
+ "gateways": [
+  {
+   "to": "Brama Północy"
+  }
+ ]
+}

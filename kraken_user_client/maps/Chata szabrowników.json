@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Chata szabrowników",
+ "gateways": [
+  {
+   "to": "Wertepy Rzezimieszków",
+   "minimap": {
+    "top": 612.5,
+    "left": 350
+   }
+  }
+ ]
+}

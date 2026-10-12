@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Latimeria p.1",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniana kopalnia p.2",
+ "gateways": [
+  {
+   "to": "Zapomniana kopalnia p.1"
+  }
+ ]
+}

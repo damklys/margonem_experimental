@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Lazurytowa Grota p.1",
+ "gateways": [
+  {
+   "to": "Uroczysko",
+   "minimap": {
+    "top": 568.75,
+    "left": 371.875
+   }
+  },
+  {
+   "to": "Lazurytowa Grota p.2",
+   "minimap": {
+    "top": 284.375,
+    "left": 568.75
+   }
+  }
+ ]
+}

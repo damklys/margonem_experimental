@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Furii Infernalis",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

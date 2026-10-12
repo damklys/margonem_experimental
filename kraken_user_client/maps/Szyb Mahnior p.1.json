@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Szyb Mahnior p.1",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

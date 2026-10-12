@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Spokojne Przejście",
+ "gateways": [
+  {
+   "to": "Eder",
+   "minimap": {
+    "top": 254.844,
+    "left": 458.719
+   }
+  },
+  {
+   "to": "Racicowy Matecznik",
+   "minimap": {
+    "top": 691.719,
+    "left": 58.25
+   }
+  },
+  {
+   "to": "Zasłonięte Jezioro",
+   "minimap": {
+    "top": 167.469,
+    "left": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Beczką Śledzi - mieszkanie",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

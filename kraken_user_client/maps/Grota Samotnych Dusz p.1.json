@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Samotnych Dusz p.1",
+ "gateways": [
+  {
+   "to": "Trupia Przełęcz"
+  }
+ ]
+}

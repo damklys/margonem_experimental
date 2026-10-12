@@ -1,0 +1,708 @@
+{
+ "kraken": "mapa",
+ "name": "Tuzmer",
+ "id": 589,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Stare Sioło",
+   "minimap": {
+    "top": 0,
+    "left": 350
+   },
+   "x": 47,
+   "y": 0,
+   "toId": 1154,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Port Tuzmer",
+   "minimap": {
+    "top": 459.375,
+    "left": 335.417
+   },
+   "x": 45,
+   "y": 63,
+   "toId": 630,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Arena Gladiatorów",
+   "x": 27,
+   "y": 57,
+   "toId": 1442,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 95,
+   "y": 51,
+   "toId": 2869,
+   "key": 0,
+   "lvl": 0,
+   "zone": 6
+  },
+  {
+   "to": "Dom Adanny",
+   "x": 37,
+   "y": 55,
+   "toId": 1594,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Anecji",
+   "x": 58,
+   "y": 43,
+   "toId": 1427,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Aurusa",
+   "x": 62,
+   "y": 15,
+   "toId": 1433,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Bernarda",
+   "x": 28,
+   "y": 11,
+   "toId": 1490,
+   "key": 0,
+   "lvl": 0,
+   "zone": 2
+  },
+  {
+   "to": "Dom Erkora",
+   "x": 43,
+   "y": 55,
+   "toId": 1318,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Flopka",
+   "x": 34,
+   "y": 11,
+   "toId": 1574,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Hengadze",
+   "x": 45,
+   "y": 15,
+   "toId": 1329,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Horsfei",
+   "x": 39,
+   "y": 15,
+   "toId": 1567,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Jallosa",
+   "x": 64,
+   "y": 43,
+   "toId": 1599,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Keftii",
+   "x": 24,
+   "y": 42,
+   "toId": 1312,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Klacynii",
+   "x": 66,
+   "y": 52,
+   "toId": 1435,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Krosnego",
+   "x": 57,
+   "y": 55,
+   "toId": 1429,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Leksosa",
+   "x": 67,
+   "y": 39,
+   "toId": 1576,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Losso Minewita",
+   "x": 59,
+   "y": 30,
+   "toId": 1564,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Mei Shang Lii",
+   "x": 17,
+   "y": 34,
+   "toId": 1499,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Mii",
+   "x": 64,
+   "y": 30,
+   "toId": 1440,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Piwocji",
+   "x": 31,
+   "y": 42,
+   "toId": 1326,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Rajwosa",
+   "x": 22,
+   "y": 34,
+   "toId": 1331,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Randala Rotguta",
+   "x": 22,
+   "y": 21,
+   "toId": 1497,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Senekjusza",
+   "x": 52,
+   "y": 55,
+   "toId": 1566,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Seridiusza",
+   "x": 57,
+   "y": 15,
+   "toId": 1487,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Telsara",
+   "x": 34,
+   "y": 17,
+   "toId": 1492,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Toramidamusa",
+   "x": 27,
+   "y": 21,
+   "toId": 1495,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Wirkliusza Runaberda",
+   "x": 5,
+   "y": 38,
+   "toId": 1569,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom dziadka Jeżyka",
+   "x": 30,
+   "y": 12,
+   "toId": 1494,
+   "key": 0,
+   "lvl": 0,
+   "zone": 2
+  },
+  {
+   "to": "Kamienica Bursztynek",
+   "x": 14,
+   "y": 16,
+   "toId": 1600,
+   "key": 2,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kamienica Wernaidy",
+   "x": 74,
+   "y": 39,
+   "toId": 1438,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Magistrat",
+   "x": 47,
+   "y": 31,
+   "toId": 1313,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Magistrat p.2",
+   "x": 47,
+   "y": 24,
+   "toId": 1517,
+   "key": 0,
+   "lvl": 0,
+   "zone": 4
+  },
+  {
+   "to": "Posterunek",
+   "x": 52,
+   "y": 15,
+   "toId": 1572,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 0,
+   "y": 39,
+   "toId": 2873,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Tawerna pod Beczką Śledzi",
+   "x": 31,
+   "y": 34,
+   "toId": 1333,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Tawerna pod Beczką Śledzi - mieszkanie",
+   "x": 31,
+   "y": 29,
+   "toId": 1335,
+   "key": 0,
+   "lvl": 0,
+   "zone": 3
+  },
+  {
+   "to": "Warsztat kowala Kalpusa",
+   "x": 35,
+   "y": 47,
+   "toId": 1908,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wartownia",
+   "x": 79,
+   "y": 52,
+   "toId": 1520,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wartownia p.1",
+   "x": 80,
+   "y": 47,
+   "toId": 1521,
+   "key": 0,
+   "lvl": 0,
+   "zone": 5
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów",
+   "x": 83,
+   "y": 37,
+   "toId": 1539,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów p.1",
+   "x": 87,
+   "y": 32,
+   "toId": 1541,
+   "key": 0,
+   "lvl": 0,
+   "zone": 6
+  },
+  {
+   "to": "Łaźnia damska - szatnia",
+   "x": 3,
+   "y": 27,
+   "toId": 1507,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Łaźnia męska - szatnia",
+   "x": 11,
+   "y": 27,
+   "toId": 1506,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Łaźnia p.1",
+   "x": 7,
+   "y": 19,
+   "toId": 1531,
+   "key": 0,
+   "lvl": 0,
+   "zone": 1
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 0,
+   "y": 40,
+   "toId": 2873,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Wirkliusza Runaberda",
+   "x": 6,
+   "y": 38,
+   "toId": 1569,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Randala Rotguta",
+   "x": 23,
+   "y": 21,
+   "toId": 1497,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Rajwosa",
+   "x": 23,
+   "y": 34,
+   "toId": 1331,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Toramidamusa",
+   "x": 28,
+   "y": 21,
+   "toId": 1495,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Arena Gladiatorów",
+   "x": 28,
+   "y": 57,
+   "toId": 1442,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Bernarda",
+   "x": 29,
+   "y": 11,
+   "toId": 1490,
+   "key": 0,
+   "lvl": 0,
+   "zone": 2
+  },
+  {
+   "to": "Dom Piwocji",
+   "x": 32,
+   "y": 42,
+   "toId": 1326,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Adanny",
+   "x": 38,
+   "y": 55,
+   "toId": 1594,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Horsfei",
+   "x": 40,
+   "y": 15,
+   "toId": 1567,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 46,
+   "y": 63,
+   "toId": 630,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 47,
+   "y": 63,
+   "toId": 630,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 48,
+   "y": 0,
+   "toId": 1154,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Magistrat p.2",
+   "x": 48,
+   "y": 24,
+   "toId": 1517,
+   "key": 0,
+   "lvl": 0,
+   "zone": 4
+  },
+  {
+   "to": "Magistrat",
+   "x": 48,
+   "y": 31,
+   "toId": 1313,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 48,
+   "y": 63,
+   "toId": 630,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 49,
+   "y": 0,
+   "toId": 1154,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posterunek",
+   "x": 53,
+   "y": 15,
+   "toId": 1572,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Senekjusza",
+   "x": 53,
+   "y": 55,
+   "toId": 1566,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Losso Minewita",
+   "x": 60,
+   "y": 30,
+   "toId": 1564,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Aurusa",
+   "x": 63,
+   "y": 15,
+   "toId": 1433,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Leksosa",
+   "x": 67,
+   "y": 40,
+   "toId": 1576,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wartownia",
+   "x": 80,
+   "y": 52,
+   "toId": 1520,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów",
+   "x": 84,
+   "y": 37,
+   "toId": 1539,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 95,
+   "y": 52,
+   "toId": 2869,
+   "key": 0,
+   "lvl": 0,
+   "zone": 6
+  }
+ ],
+ "zones": [
+  [
+   "Ruchome Piaski",
+   "Łaźnia damska - szatnia",
+   "Dom Wirkliusza Runaberda",
+   "Łaźnia męska - szatnia",
+   "Kamienica Bursztynek",
+   "Dom Mei Shang Lii",
+   "Dom Randala Rotguta",
+   "Dom Rajwosa",
+   "Dom Keftii",
+   "Dom Toramidamusa",
+   "Arena Gladiatorów",
+   "Tawerna pod Beczką Śledzi",
+   "Dom Piwocji",
+   "Dom Flopka",
+   "Dom Telsara",
+   "Warsztat kowala Kalpusa",
+   "Dom Adanny",
+   "Dom Horsfei",
+   "Dom Erkora",
+   "Dom Hengadze",
+   "Port Tuzmer",
+   "Stare Sioło",
+   "Magistrat",
+   "Posterunek",
+   "Dom Senekjusza",
+   "Dom Seridiusza",
+   "Dom Krosnego",
+   "Dom Anecji",
+   "Dom Losso Minewita",
+   "Dom Aurusa",
+   "Dom Mii",
+   "Dom Jallosa",
+   "Dom Klacynii",
+   "Dom Leksosa",
+   "Kamienica Wernaidy",
+   "Wartownia",
+   "Zajazd pod Różą Wiatrów"
+  ],
+  [
+   "Łaźnia p.1"
+  ],
+  [
+   "Dom Bernarda",
+   "Dom dziadka Jeżyka"
+  ],
+  [
+   "Tawerna pod Beczką Śledzi - mieszkanie"
+  ],
+  [
+   "Magistrat p.2"
+  ],
+  [
+   "Wartownia p.1"
+  ],
+  [
+   "Zajazd pod Różą Wiatrów p.1",
+   "Ciche Rumowiska"
+  ]
+ ]
+}

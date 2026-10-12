@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Skalne Cmentarzysko p.2",
+ "gateways": [
+  {
+   "to": "Skalne Cmentarzysko p.1",
+   "minimap": {
+    "top": 29.1667,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Skalne Cmentarzysko p.3",
+   "minimap": {
+    "top": 656.25,
+    "left": 466.667
+   }
+  }
+ ]
+}

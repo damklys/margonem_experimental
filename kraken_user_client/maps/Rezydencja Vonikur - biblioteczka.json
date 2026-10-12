@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Vonikur - biblioteczka",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

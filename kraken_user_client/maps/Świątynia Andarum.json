@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Andarum",
+ "gateways": [
+  {
+   "to": "Świątynia Andarum - zejście lewe",
+   "minimap": {
+    "top": 273.913,
+    "left": 76.087
+   }
+  },
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "minimap": {
+    "top": 273.913,
+    "left": 623.913
+   }
+  },
+  {
+   "to": "Andarum Ilami",
+   "minimap": {
+    "top": 304.348,
+    "left": 334.783
+   }
+  }
+ ]
+}

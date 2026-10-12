@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Szaleńców - sala Regulusa Mętnookiego",
+ "gateways": [
+  {
+   "to": "Pieczara Szaleńców - przedsionek",
+   "minimap": {
+    "top": 678.125,
+    "left": 601.562
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Arena Gladiatorów",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

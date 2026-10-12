@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gammel Khazad Gravkammer",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

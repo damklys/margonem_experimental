@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Fioletowym Kryształem",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

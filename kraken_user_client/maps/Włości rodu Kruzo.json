@@ -1,0 +1,153 @@
+{
+ "kraken": "mapa",
+ "name": "Włości rodu Kruzo",
+ "id": 4764,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Brama Północy",
+   "x": 37,
+   "y": 63,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Gryforium",
+   "x": 52,
+   "y": 24,
+   "toId": 7479,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Lokum Złych Goblinów - wieża",
+   "x": 5,
+   "y": 40,
+   "toId": 7470,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Osada Czerwonych Orków",
+   "x": 0,
+   "y": 5,
+   "toId": 356,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - budynek gospodarczy",
+   "x": 37,
+   "y": 18,
+   "toId": 4767,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - magazyn",
+   "x": 37,
+   "y": 36,
+   "toId": 4769,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - przedsionek",
+   "x": 46,
+   "y": 15,
+   "toId": 4765,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - stajnia",
+   "x": 70,
+   "y": 30,
+   "toId": 4770,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - strażnica zachodnia",
+   "x": 26,
+   "y": 20,
+   "toId": 4768,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ukryty Kanion",
+   "x": 3,
+   "y": 0,
+   "toId": 261,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ukryty Kanion",
+   "x": 4,
+   "y": 0,
+   "toId": 261,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - magazyn",
+   "x": 38,
+   "y": 36,
+   "toId": 4769,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 38,
+   "y": 63,
+   "toId": 37,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - przedsionek",
+   "x": 47,
+   "y": 15,
+   "toId": 4765,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - przedsionek",
+   "x": 48,
+   "y": 15,
+   "toId": 4765,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Posiadłość Kruzo - stajnia",
+   "x": 71,
+   "y": 30,
+   "toId": 4770,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

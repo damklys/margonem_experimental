@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gryforium",
+ "gateways": [
+  {
+   "to": "Włości rodu Kruzo"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Mury Nithal - Baszta Koronna",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

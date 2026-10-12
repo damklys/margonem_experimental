@@ -1,0 +1,45 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemne Przejście p.6 - sala wyjściowa",
+ "id": 94,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podziemne Przejście p.5",
+   "x": 2,
+   "y": 8,
+   "toId": 93,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Podziemne Przejście p.6 - sala 2",
+   "x": 16,
+   "y": 5,
+   "toId": 95,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 8,
+   "y": 14,
+   "toId": 84,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Podziemne Przejście p.5",
+   "x": 3,
+   "y": 8,
+   "toId": 93,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

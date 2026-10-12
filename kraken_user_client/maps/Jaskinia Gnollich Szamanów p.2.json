@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Gnollich Szamanów p.2",
+ "gateways": [
+  {
+   "to": "Wioska Gnolli",
+   "minimap": {
+    "top": 452.941,
+    "left": 473.529
+   }
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów p.1",
+   "minimap": {
+    "top": 82.3529,
+    "left": 144.118
+   }
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów p.3",
+   "minimap": {
+    "top": 164.706,
+    "left": 370.588
+   }
+  }
+ ]
+}

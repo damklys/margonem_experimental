@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Zgromadzeń",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

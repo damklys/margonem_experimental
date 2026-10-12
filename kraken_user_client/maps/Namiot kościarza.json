@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot kościarza",
+ "gateways": [
+  {
+   "to": "Trupia Przełęcz"
+  }
+ ]
+}

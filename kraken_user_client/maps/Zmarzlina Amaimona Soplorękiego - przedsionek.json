@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Zmarzlina Amaimona Soplorękiego - przedsionek",
+ "gateways": [
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "minimap": {
+    "top": 656.25,
+    "left": 284.375
+   }
+  },
+  {
+   "to": "Zmarzlina Amaimona Soplorękiego - sala",
+   "minimap": {
+    "top": 43.75,
+    "left": 284.375
+   }
+  }
+ ]
+}

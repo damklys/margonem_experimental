@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Schowek na Łupy",
+ "gateways": [
+  {
+   "to": "Pagórki Łupieżców",
+   "minimap": {
+    "top": 10.9375,
+    "left": 153.125
+   }
+  }
+ ]
+}

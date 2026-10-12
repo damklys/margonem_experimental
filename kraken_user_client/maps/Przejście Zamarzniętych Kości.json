@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście Zamarzniętych Kości",
+ "gateways": [
+  {
+   "to": "Lodowa Sala",
+   "minimap": {
+    "top": 87.5,
+    "left": 109.375
+   }
+  },
+  {
+   "to": "Sala Zamarzniętych Kości",
+   "minimap": {
+    "top": 579.688,
+    "left": 557.812
+   }
+  }
+ ]
+}

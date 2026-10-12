@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Mury - kwatera główna",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

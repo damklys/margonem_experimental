@@ -1,0 +1,22 @@
+{
+ "kraken": "mapa",
+ "name": "Zabłocona Jama p.2 - Sala Magicznego Błota",
+ "id": 6946,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Zabłocona Jama p.2 - sala 3",
+   "minimap": {
+    "top": 656.25,
+    "left": 306.25
+   },
+   "x": 21,
+   "y": 45,
+   "toId": 6943,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ]
+}

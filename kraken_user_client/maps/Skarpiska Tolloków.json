@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Skarpiska Tolloków",
+ "gateways": [
+  {
+   "to": "Skalne Turnie",
+   "minimap": {
+    "top": 317.188,
+    "left": 689.062
+   }
+  },
+  {
+   "to": "Polana Ścierwojadów",
+   "minimap": {
+    "top": 0,
+    "left": 295.312
+   }
+  },
+  {
+   "to": "Mokradła",
+   "minimap": {
+    "top": 262.5,
+    "left": 0
+   }
+  }
+ ]
+}

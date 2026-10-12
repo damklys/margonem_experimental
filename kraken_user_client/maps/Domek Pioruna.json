@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Domek Pioruna",
+ "gateways": [
+  {
+   "to": "Przełęcz Dwóch Koron"
+  }
+ ]
+}

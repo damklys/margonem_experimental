@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Południowe mury Nithal - część zachodnia",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

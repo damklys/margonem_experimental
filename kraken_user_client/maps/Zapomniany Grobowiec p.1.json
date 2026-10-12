@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniany Grobowiec p.1",
+ "gateways": [
+  {
+   "to": "Ghuli Mogilnik",
+   "minimap": {
+    "top": 656.25,
+    "left": 350
+   }
+  },
+  {
+   "to": "Zapomniany Grobowiec p.2",
+   "minimap": {
+    "top": 175,
+    "left": 590.625
+   }
+  }
+ ]
+}

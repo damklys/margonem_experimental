@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba główna klanu Uchiha",
+ "gateways": [
+  {
+   "to": "Brama Północy"
+  }
+ ]
+}

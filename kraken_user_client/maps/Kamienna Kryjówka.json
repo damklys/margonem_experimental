@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Kryjówka",
+ "gateways": [
+  {
+   "to": "Dolina Rozbójników",
+   "minimap": {
+    "top": 656.25,
+    "left": 284.375
+   }
+  }
+ ]
+}

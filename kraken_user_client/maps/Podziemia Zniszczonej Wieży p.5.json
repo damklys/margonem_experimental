@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemia Zniszczonej Wieży p.5",
+ "gateways": [
+  {
+   "to": "Podziemia Zniszczonej Wieży p.4",
+   "minimap": {
+    "top": 43.75,
+    "left": 65.625
+   }
+  }
+ ]
+}

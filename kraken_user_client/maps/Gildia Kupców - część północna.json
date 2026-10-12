@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Kupców - część północna",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

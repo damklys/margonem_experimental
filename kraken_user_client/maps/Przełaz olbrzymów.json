@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Przełaz olbrzymów",
+ "gateways": [
+  {
+   "to": "Smocze Góry",
+   "minimap": {
+    "top": 656.25,
+    "left": 196.875
+   }
+  },
+  {
+   "to": "Selva Oscura",
+   "minimap": {
+    "top": 65.625,
+    "left": 87.5
+   }
+  }
+ ]
+}

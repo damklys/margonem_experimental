@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Łaźnia damska - szatnia",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

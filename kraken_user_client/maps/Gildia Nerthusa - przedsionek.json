@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Nerthusa - przedsionek",
+ "gateways": [
+  {
+   "to": "Ithan"
+  }
+ ]
+}

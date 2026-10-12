@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Huta żelaza",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

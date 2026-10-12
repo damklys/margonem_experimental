@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Eder",
+ "gateways": [
+  {
+   "to": "Fort Eder",
+   "minimap": {
+    "top": 0,
+    "left": 196.594
+   }
+  },
+  {
+   "to": "Spokojne Przejście",
+   "minimap": {
+    "top": 254.844,
+    "left": 0
+   }
+  },
+  {
+   "to": "Gościniec Bardów",
+   "minimap": {
+    "top": 691.719,
+    "left": 313.094
+   }
+  }
+ ]
+}

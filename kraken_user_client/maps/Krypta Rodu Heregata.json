@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Krypta Rodu Heregata",
+ "gateways": [
+  {
+   "to": "Nekropolia Karka-han"
+  }
+ ]
+}

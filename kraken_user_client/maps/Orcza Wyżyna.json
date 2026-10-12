@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Orcza Wyżyna",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

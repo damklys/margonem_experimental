@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Lazurytowa Grota p.3 - sala 1",
+ "gateways": [
+  {
+   "to": "Lazurytowa Grota p.2",
+   "minimap": {
+    "top": 14.5833,
+    "left": 87.5
+   }
+  },
+  {
+   "to": "Lazurytowa Grota p.3 - sala 2",
+   "minimap": {
+    "top": 627.083,
+    "left": 495.833
+   }
+  }
+ ]
+}

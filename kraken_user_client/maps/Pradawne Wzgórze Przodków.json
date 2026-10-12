@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Pradawne Wzgórze Przodków",
+ "gateways": [
+  {
+   "to": "Dzikie Pagórki",
+   "minimap": {
+    "top": 0,
+    "left": 313.094
+   }
+  },
+  {
+   "to": "Osada Mulusów",
+   "minimap": {
+    "top": 58.25,
+    "left": 0
+   }
+  },
+  {
+   "to": "Osada Mulusów",
+   "minimap": {
+    "top": 429.594,
+    "left": 0
+   }
+  },
+  {
+   "to": "Osada Mulusów",
+   "minimap": {
+    "top": 633.469,
+    "left": 0
+   }
+  },
+  {
+   "to": "Świątynia Mzintlavy",
+   "minimap": {
+    "top": 50.969,
+    "left": 334.938
+   }
+  }
+ ]
+}

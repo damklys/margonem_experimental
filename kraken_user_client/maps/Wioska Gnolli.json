@@ -1,0 +1,48 @@
+{
+ "kraken": "mapa",
+ "name": "Wioska Gnolli",
+ "gateways": [
+  {
+   "to": "Ithan",
+   "minimap": {
+    "top": 630,
+    "left": 525
+   }
+  },
+  {
+   "to": "Namiot Vari Krugera",
+   "minimap": {
+    "top": 313.542,
+    "left": 298.958
+   }
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów p.1",
+   "minimap": {
+    "top": 21.875,
+    "left": 488.542
+   }
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów p.2",
+   "minimap": {
+    "top": 153.125,
+    "left": 612.5
+   }
+  },
+  {
+   "to": "Czeluść Ognistej Pożogi",
+   "minimap": {
+    "top": 0,
+    "left": 247.917
+   }
+  },
+  {
+   "to": "Radosna Polana",
+   "minimap": {
+    "top": 116.667,
+    "left": 0
+   }
+  }
+ ]
+}

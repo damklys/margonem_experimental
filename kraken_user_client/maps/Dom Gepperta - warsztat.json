@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Gepperta - warsztat",
+ "gateways": [
+  {
+   "to": "Werbin"
+  }
+ ]
+}

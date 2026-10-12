@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Wilcza Nora p.2",
+ "gateways": [
+  {
+   "to": "Wilcza Nora p.1",
+   "minimap": {
+    "top": 109.375,
+    "left": 65.625
+   }
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "kraken": "mapa",
+ "name": "Złote Piaski",
+ "gateways": [
+  {
+   "to": "Dolina Suchych Łez",
+   "minimap": {
+    "top": 691.719,
+    "left": 334.938
+   }
+  },
+  {
+   "to": "Ruiny Pustynnych Burz",
+   "minimap": {
+    "top": 415.031,
+    "left": 458.719
+   }
+  },
+  {
+   "to": "Płaskowyż Arpen",
+   "minimap": {
+    "top": 0,
+    "left": 160.188
+   }
+  },
+  {
+   "to": "Piramida Pustynnego Władcy p.1",
+   "minimap": {
+    "top": 240.281,
+    "left": 174.75
+   }
+  },
+  {
+   "to": "Oaza Siedmiu Wichrów",
+   "minimap": {
+    "top": 655.312,
+    "left": 0
+   }
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "minimap": {
+    "top": 691.719,
+    "left": 29.125
+   }
+  }
+ ]
+}

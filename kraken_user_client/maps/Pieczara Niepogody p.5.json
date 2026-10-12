@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Niepogody p.5",
+ "gateways": [
+  {
+   "to": "Pieczara Niepogody p.4",
+   "minimap": {
+    "top": 116.667,
+    "left": 306.25
+   }
+  }
+ ]
+}

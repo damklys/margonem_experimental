@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Łowców p.2",
+ "gateways": [
+  {
+   "to": "Jaskinia Łowców p.1",
+   "minimap": {
+    "top": 612.5,
+    "left": 175
+   }
+  },
+  {
+   "to": "Ithan",
+   "minimap": {
+    "top": 612.5,
+    "left": 481.25
+   }
+  }
+ ]
+}

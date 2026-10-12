@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Mrówcza Kolonia p.1 - lewy tunel",
+ "gateways": [
+  {
+   "to": "Leśny Bród",
+   "minimap": {
+    "top": 525,
+    "left": 109.375
+   }
+  },
+  {
+   "to": "Mrówcza Kolonia p.2 - lewe korytarze",
+   "minimap": {
+    "top": 634.375,
+    "left": 590.625
+   }
+  }
+ ]
+}

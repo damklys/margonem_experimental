@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Zabłocona Jama p.1 - sala 2",
+ "gateways": [
+  {
+   "to": "Zabłocona Jama p.2 - sala 3",
+   "minimap": {
+    "top": 175,
+    "left": 153.125
+   }
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "minimap": {
+    "top": 437.5,
+    "left": 568.75
+   }
+  }
+ ]
+}

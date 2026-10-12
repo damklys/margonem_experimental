@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Ergassaj",
+ "gateways": [
+  {
+   "to": "Mythar"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Piekielna Grota p.1",
+ "gateways": [
+  {
+   "to": "Zniszczone Opactwo",
+   "minimap": {
+    "top": 379.167,
+    "left": 554.167
+   }
+  },
+  {
+   "to": "Piekielna Grota p.2",
+   "minimap": {
+    "top": 320.833,
+    "left": 175
+   }
+  }
+ ]
+}

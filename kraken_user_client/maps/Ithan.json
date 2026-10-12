@@ -1,0 +1,500 @@
+{
+ "kraken": "mapa",
+ "name": "Ithan",
+ "id": 1,
+ "w": 96,
+ "h": 100,
+ "gateways": [
+  {
+   "to": "Dolina Yss",
+   "minimap": {
+    "top": 637,
+    "left": 665
+   },
+   "x": 95,
+   "y": 90,
+   "toId": 11,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "minimap": {
+    "top": 693,
+    "left": 301
+   },
+   "x": 42,
+   "y": 99,
+   "toId": 8,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Jaskinia Łowców p.1",
+   "minimap": {
+    "top": 189,
+    "left": 581
+   },
+   "x": 83,
+   "y": 27,
+   "toId": 15,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "minimap": {
+    "top": 469,
+    "left": 0
+   },
+   "x": 0,
+   "y": 66,
+   "toId": 138,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Jaskinia Łowców p.2",
+   "minimap": {
+    "top": 140,
+    "left": 609
+   },
+   "x": 87,
+   "y": 20,
+   "toId": 2663,
+   "key": 0,
+   "lvl": 0,
+   "zone": 1
+  },
+  {
+   "to": "Wioska Gnolli",
+   "minimap": {
+    "top": 0,
+    "left": 553
+   },
+   "x": 79,
+   "y": 0,
+   "toId": 333,
+   "key": 0,
+   "lvl": 0,
+   "zone": 1
+  },
+  {
+   "to": "Dom Huslina",
+   "minimap": {
+    "top": 672,
+    "left": 70
+   },
+   "x": 10,
+   "y": 96,
+   "toId": 34,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica północno-zachodnia",
+   "minimap": {
+    "top": 28,
+    "left": 91
+   },
+   "x": 13,
+   "y": 4,
+   "toId": 2720,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom sióstr",
+   "minimap": {
+    "top": 105,
+    "left": 133
+   },
+   "x": 19,
+   "y": 15,
+   "toId": 13,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Stary magazyn",
+   "minimap": {
+    "top": 455,
+    "left": 133
+   },
+   "x": 19,
+   "y": 65,
+   "toId": 191,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zajazd u Makiny",
+   "minimap": {
+    "top": 308,
+    "left": 161
+   },
+   "x": 23,
+   "y": 44,
+   "toId": 17,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica południowo-zachodnia",
+   "minimap": {
+    "top": 476,
+    "left": 189
+   },
+   "x": 27,
+   "y": 68,
+   "toId": 2712,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Roana",
+   "minimap": {
+    "top": 371,
+    "left": 224
+   },
+   "x": 32,
+   "y": 53,
+   "toId": 26,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ratusz Ithan",
+   "minimap": {
+    "top": 98,
+    "left": 231
+   },
+   "x": 33,
+   "y": 14,
+   "toId": 7,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Aukcyjny",
+   "minimap": {
+    "top": 189,
+    "left": 238
+   },
+   "x": 34,
+   "y": 27,
+   "toId": 610,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica południowo-wschodnia",
+   "minimap": {
+    "top": 476,
+    "left": 294
+   },
+   "x": 42,
+   "y": 68,
+   "toId": 2713,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Niela",
+   "minimap": {
+    "top": 245,
+    "left": 301
+   },
+   "x": 43,
+   "y": 35,
+   "toId": 3081,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "minimap": {
+    "top": 105,
+    "left": 308
+   },
+   "x": 44,
+   "y": 15,
+   "toId": 3130,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Pod Rozbrykanym Niziołkiem",
+   "minimap": {
+    "top": 147,
+    "left": 336
+   },
+   "x": 48,
+   "y": 21,
+   "toId": 2665,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Eldrika",
+   "minimap": {
+    "top": 245,
+    "left": 350
+   },
+   "x": 50,
+   "y": 35,
+   "toId": 297,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Szkoła",
+   "minimap": {
+    "top": 154,
+    "left": 371
+   },
+   "x": 53,
+   "y": 22,
+   "toId": 967,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Baraki",
+   "minimap": {
+    "top": 385,
+    "left": 392
+   },
+   "x": 56,
+   "y": 55,
+   "toId": 5,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kopalnia Dogoran p.1",
+   "minimap": {
+    "top": 616,
+    "left": 483
+   },
+   "x": 69,
+   "y": 88,
+   "toId": 2517,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica północno-wschodnia",
+   "minimap": {
+    "top": 84,
+    "left": 497
+   },
+   "x": 71,
+   "y": 12,
+   "toId": 2711,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Unila",
+   "minimap": {
+    "top": 364,
+    "left": 525
+   },
+   "x": 75,
+   "y": 52,
+   "toId": 18,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "x": 0,
+   "y": 67,
+   "toId": 138,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica północno-zachodnia",
+   "x": 14,
+   "y": 4,
+   "toId": 2720,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Stary magazyn",
+   "x": 20,
+   "y": 65,
+   "toId": 191,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zajazd u Makiny",
+   "x": 24,
+   "y": 44,
+   "toId": 17,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Ratusz Ithan",
+   "x": 34,
+   "y": 14,
+   "toId": 7,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Aukcyjny",
+   "x": 34,
+   "y": 28,
+   "toId": 610,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Niela",
+   "x": 43,
+   "y": 36,
+   "toId": 3081,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "x": 43,
+   "y": 99,
+   "toId": 8,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "x": 44,
+   "y": 99,
+   "toId": 8,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Pod Rozbrykanym Niziołkiem",
+   "x": 49,
+   "y": 21,
+   "toId": 2665,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Eldrika",
+   "x": 50,
+   "y": 36,
+   "toId": 297,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Baraki",
+   "x": 57,
+   "y": 55,
+   "toId": 5,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mury Ithan - strażnica północno-wschodnia",
+   "x": 72,
+   "y": 12,
+   "toId": 2711,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Unila",
+   "x": 76,
+   "y": 52,
+   "toId": 18,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dolina Yss",
+   "x": 95,
+   "y": 91,
+   "toId": 11,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  [
+   "Porzucone Pasieki",
+   "Dom Huslina",
+   "Mury Ithan - strażnica północno-zachodnia",
+   "Dom sióstr",
+   "Stary magazyn",
+   "Zajazd u Makiny",
+   "Mury Ithan - strażnica południowo-zachodnia",
+   "Dom Roana",
+   "Ratusz Ithan",
+   "Dom Aukcyjny",
+   "Mury Ithan - strażnica południowo-wschodnia",
+   "Zniszczone Opactwo",
+   "Dom Niela",
+   "Gildia Nerthusa - przedsionek",
+   "Pod Rozbrykanym Niziołkiem",
+   "Dom Eldrika",
+   "Szkoła",
+   "Baraki",
+   "Kopalnia Dogoran p.1",
+   "Mury Ithan - strażnica północno-wschodnia",
+   "Dom Unila",
+   "Jaskinia Łowców p.1",
+   "Dolina Yss"
+  ],
+  [
+   "Wioska Gnolli",
+   "Jaskinia Łowców p.2"
+  ]
+ ]
+}

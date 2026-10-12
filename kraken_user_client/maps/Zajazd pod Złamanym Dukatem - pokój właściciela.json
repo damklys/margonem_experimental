@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Złamanym Dukatem - pokój właściciela",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

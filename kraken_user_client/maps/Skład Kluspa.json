@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Skład Kluspa",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

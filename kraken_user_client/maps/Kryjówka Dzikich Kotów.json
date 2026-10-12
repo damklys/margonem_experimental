@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Kryjówka Dzikich Kotów",
+ "gateways": [
+  {
+   "to": "Leśna Przełęcz",
+   "minimap": {
+    "top": 689.062,
+    "left": 317.188
+   }
+  },
+  {
+   "to": "Grota Dzikiego Kota",
+   "minimap": {
+    "top": 196.875,
+    "left": 415.625
+   }
+  }
+ ]
+}

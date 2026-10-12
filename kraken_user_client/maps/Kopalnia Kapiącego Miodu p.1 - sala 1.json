@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Kapiącego Miodu p.1 - sala 1",
+ "gateways": [
+  {
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+   "minimap": {
+    "top": 200,
+    "left": 550
+   }
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "minimap": {
+    "top": 666.667,
+    "left": 616.667
+   }
+  }
+ ]
+}

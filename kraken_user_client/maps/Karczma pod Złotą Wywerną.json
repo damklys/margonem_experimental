@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Złotą Wywerną",
+ "gateways": [
+  {
+   "to": "Karka-han"
+  }
+ ]
+}

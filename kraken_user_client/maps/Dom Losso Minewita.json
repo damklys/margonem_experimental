@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Losso Minewita",
+ "gateways": [
+  {
+   "to": "Tuzmer"
+  }
+ ]
+}

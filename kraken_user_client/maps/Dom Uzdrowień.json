@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Uzdrowień",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

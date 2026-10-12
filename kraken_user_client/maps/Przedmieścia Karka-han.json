@@ -1,0 +1,230 @@
+{
+ "kraken": "mapa",
+ "name": "Przedmieścia Karka-han",
+ "id": 36,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dom Aberyta",
+   "x": 72,
+   "y": 9,
+   "toId": 304,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Kluspa",
+   "x": 31,
+   "y": 45,
+   "toId": 345,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Maryśki",
+   "x": 89,
+   "y": 48,
+   "toId": 1790,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Dom Torina",
+   "x": 51,
+   "y": 56,
+   "toId": 342,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Huta żelaza",
+   "x": 11,
+   "y": 18,
+   "toId": 1801,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 57,
+   "y": 0,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Kopalnia Faluntamir p.1",
+   "x": 36,
+   "y": 24,
+   "toId": 269,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Lokum krasnoludów",
+   "x": 42,
+   "y": 9,
+   "toId": 1846,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Mistyczny Bór",
+   "x": 95,
+   "y": 5,
+   "toId": 1788,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Namiot leśniczego",
+   "x": 86,
+   "y": 6,
+   "toId": 1793,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przeklęta Pieczara p.1",
+   "x": 22,
+   "y": 26,
+   "toId": 101,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 39,
+   "y": 63,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Skład Kluspa",
+   "x": 2,
+   "y": 56,
+   "toId": 1802,
+   "key": 0,
+   "lvl": 0,
+   "zone": 1
+  },
+  {
+   "to": "Skład surowców",
+   "x": 21,
+   "y": 17,
+   "toId": 1803,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Szyb Mahnior p.1",
+   "x": 62,
+   "y": 44,
+   "toId": 278,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Warsztat miecznika",
+   "x": 15,
+   "y": 9,
+   "toId": 1836,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 0,
+   "y": 38,
+   "toId": 1084,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 40,
+   "y": 63,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 41,
+   "y": 63,
+   "toId": 10,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 58,
+   "y": 0,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 59,
+   "y": 0,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 60,
+   "y": 0,
+   "toId": 35,
+   "key": 0,
+   "lvl": 0,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  [
+   "Święty Zagajnik",
+   "Huta żelaza",
+   "Warsztat miecznika",
+   "Skład surowców",
+   "Przeklęta Pieczara p.1",
+   "Dom Kluspa",
+   "Kopalnia Faluntamir p.1",
+   "Przełęcz Dwóch Koron",
+   "Lokum krasnoludów",
+   "Dom Torina",
+   "Karka-han",
+   "Szyb Mahnior p.1",
+   "Dom Aberyta",
+   "Namiot leśniczego",
+   "Dom Maryśki",
+   "Mistyczny Bór"
+  ],
+  [
+   "Skład Kluspa"
+  ]
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Mrowisko p.1",
+ "gateways": [
+  {
+   "to": "Mrowisko",
+   "minimap": {
+    "top": 21.875,
+    "left": 175
+   }
+  },
+  {
+   "to": "Mrowisko p.2",
+   "minimap": {
+    "top": 656.25,
+    "left": 568.75
+   }
+  }
+ ]
+}

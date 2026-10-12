@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Akademia wojskowa p.1",
+ "gateways": [
+  {
+   "to": "Nithal"
+  }
+ ]
+}

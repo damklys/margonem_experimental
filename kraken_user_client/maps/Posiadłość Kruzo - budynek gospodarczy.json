@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Posiadłość Kruzo - budynek gospodarczy",
+ "gateways": [
+  {
+   "to": "Włości rodu Kruzo"
+  }
+ ]
+}

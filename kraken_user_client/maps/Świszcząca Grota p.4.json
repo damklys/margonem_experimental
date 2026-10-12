@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Świszcząca Grota p.4",
+ "gateways": [
+  {
+   "to": "Świszcząca Grota p.3",
+   "minimap": {
+    "top": 509.091,
+    "left": 190.909
+   }
+  }
+ ]
+}

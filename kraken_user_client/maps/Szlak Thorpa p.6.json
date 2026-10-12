@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Szlak Thorpa p.6",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

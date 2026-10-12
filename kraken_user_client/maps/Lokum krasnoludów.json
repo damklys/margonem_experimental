@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum krasnoludów",
+ "gateways": [
+  {
+   "to": "Przedmieścia Karka-han"
+  }
+ ]
+}

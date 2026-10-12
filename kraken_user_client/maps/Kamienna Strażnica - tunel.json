@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienna Strażnica - tunel",
+ "gateways": [
+  {
+   "to": "Kamienna Strażnica - zach. baszta p.1",
+   "minimap": {
+    "top": 103.704,
+    "left": 77.778
+   }
+  },
+  {
+   "to": "Kamienna Strażnica - Sala Chwały",
+   "minimap": {
+    "top": 298.148,
+    "left": 350
+   }
+  },
+  {
+   "to": "Kamienna Strażnica - wsch. baszta zasypany tunel",
+   "minimap": {
+    "top": 51.852,
+    "left": 570.37
+   }
+  }
+ ]
+}

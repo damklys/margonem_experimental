@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Racicowy Matecznik",
+ "gateways": [
+  {
+   "to": "Spokojne Przejście",
+   "minimap": {
+    "top": 0,
+    "left": 291.667
+   }
+  },
+  {
+   "to": "Ukwiecona Skarpa",
+   "minimap": {
+    "top": 364.583,
+    "left": 0
+   }
+  },
+  {
+   "to": "Pieczara Kwiku - sala 1",
+   "minimap": {
+    "top": 226.042,
+    "left": 43.75
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Sowia Dziupla",
+ "gateways": [
+  {
+   "to": "Wichrowe Szczyty"
+  }
+ ]
+}

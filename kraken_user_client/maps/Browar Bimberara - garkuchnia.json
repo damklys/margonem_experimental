@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Browar Bimberara - garkuchnia",
+ "gateways": [
+  {
+   "to": "Mirvenis-Adur"
+  }
+ ]
+}

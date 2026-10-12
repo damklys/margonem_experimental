@@ -1,0 +1,27 @@
+{
+ "kraken": "mapa",
+ "name": "Torneg",
+ "gateways": [
+  {
+   "to": "Łany Zboża",
+   "minimap": {
+    "top": 313.542,
+    "left": 0
+   }
+  },
+  {
+   "to": "Stare Ruiny",
+   "minimap": {
+    "top": 459.375,
+    "left": 342.708
+   }
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "minimap": {
+    "top": 371.875,
+    "left": 692.708
+   }
+  }
+ ]
+}

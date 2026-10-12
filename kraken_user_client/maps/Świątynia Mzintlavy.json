@@ -1,0 +1,13 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Mzintlavy",
+ "gateways": [
+  {
+   "to": "Pradawne Wzgórze Przodków",
+   "minimap": {
+    "top": 678.125,
+    "left": 350
+   }
+  }
+ ]
+}

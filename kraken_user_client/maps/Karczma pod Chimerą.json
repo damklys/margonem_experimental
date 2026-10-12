@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Chimerą",
+ "gateways": [
+  {
+   "to": "Thuzal"
+  }
+ ]
+}
