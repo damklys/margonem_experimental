@@ -1,0 +1,61 @@
+{
+ "kraken": "przebieg",
+ "version": "3.90.202610131130",
+ "name": "Zero to Hero",
+ "tiles": [
+  {
+   "type": "tutorial",
+   "prof": "b",
+   "conds": []
+  },
+  {
+   "type": "exp",
+   "exp": "nieumarli (16lvl)",
+   "set": "10lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 10
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "[33] Zezwolnienie na teleportacje do Torneg.",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "eq",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (20) Mrówki - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 20
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 30
+    }
+   ]
+  }
+ ]
+}
