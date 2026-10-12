@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kraken Loader
 // @namespace    kraken.margonem
-// @version      1.0.202610131000
+// @version      1.1.202610131100
 // @description  Pobiera i uruchamia najnowszą wersję Kraken Bot (opcjonalnie Kraken Recorder) z GitHuba – bez ręcznej aktualizacji w Tampermonkey
 // @match        https://*.margonem.pl/
 // @exclude      https://margonem.pl/*
@@ -110,6 +110,8 @@
   }
 
   const ref = LOCAL ? 'local' : await latestRef();
+  // Bot czyta stąd repo i commit, z którego pobiera wspólne dane (quests/, routes/, sets/).
+  window.KrakenRepo = { repo: REPO, branch: BRANCH, ref: /^[0-9a-f]{40}$/.test(ref) ? ref : '' };
   for (const { file } of SCRIPTS) {
     let code = null;
     let from = '';

@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.87.202610130930",
+ "name": "ZR: (20) Mrówki - Torneg",
+ "questId": 13175,
+ "questName": "Mrowisko.",
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, Myszko Śledziona! W czym mógłbym ci pomóc?",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": " Zakonnik Równowagi To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić...",
+     "a": "Chciałbym rozpocząć pierwszy etap zadania - Mrowisko"
+    },
+    {
+     "q": " Zakonnik Równowagi W Łanach Zboża, na zachód od Torneg, nieopodal młyna, swoje gniazdo założyły mrówki. Ich populacja drastycznie rośnie z dnia na dzień! Czy odważysz się tam udać i ograniczyć ich liczebność?",
+     "a": "Mrówki?"
+    },
+    {
+     "q": " Zakonnik Równowagi Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
+     "a": "Tak też zrobię"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "n": 100,
+   "route": "mrówki (20lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Zabiłem mrówki"
+    },
+    {
+     "q": "Zakonnik Równowagi Dobra robota, do zobaczenia następnym razem!",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "kolejny etap zadania - Mrowisko"
+    },
+    {
+     "q": "Pomimo twoich starań, mrówki cały czas lgną do swojego gniazda. Tempo wzrostu ich populacji nie maleje, a wręcz rośnie! Czy odważysz się ponownie tam udać i przetrzebić ich szeregi?",
+     "a": "Mam w tym doświadczenie."
+    },
+    {
+     "q": "Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
+     "a": "Wyruszam natychmiast!"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "n": 250,
+   "route": "mrówki (20lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Zabiłem mrówki"
+    },
+    {
+     "q": "Zakonnik Równowagi Dobra robota, do zobaczenia następnym razem!",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "ostatni etap zadania - Mrowisko"
+    },
+    {
+     "q": "Wszystkie okoliczne mrówki ponownie pojawiły się w mrowisku! Udaj się do niego ostatni raz, by przywrócić naturze równowagę, ograniczając ich populację do optymalnego poziomu.",
+     "a": "Mrówki to dla mnie nic."
+    },
+    {
+     "q": " Zakonnik Równowagi Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
+     "a": "Wyruszam natychmiast!"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "n": 500,
+   "route": "mrówki (20lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Zabiłem mrówki"
+    },
+    {
+     "q": " Zakonnik Równowagi Dobra robota, mrówki nie zagrażają już równowadze w naturze!",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}
