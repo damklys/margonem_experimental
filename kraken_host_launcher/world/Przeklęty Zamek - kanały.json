@@ -1,0 +1,16 @@
+{
+  "location": "Przeklęty Zamek - kanały",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - zbrojownia",
+      "gw": {
+        "top": 284.375,
+        "left": 306.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

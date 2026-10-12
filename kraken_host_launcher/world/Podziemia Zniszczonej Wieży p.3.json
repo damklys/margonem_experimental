@@ -1,0 +1,23 @@
+{
+  "location": "Podziemia Zniszczonej Wieży p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Podziemia Zniszczonej Wieży p.2",
+      "gw": {
+        "top": 16.6667,
+        "left": 50
+      }
+    },
+    {
+      "name": "Podziemia Zniszczonej Wieży p.4",
+      "gw": {
+        "top": 633.333,
+        "left": 66.6667
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

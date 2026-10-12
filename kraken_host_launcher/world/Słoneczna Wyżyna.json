@@ -1,0 +1,23 @@
+{
+  "location": "Słoneczna Wyżyna",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zasłonięte Jezioro",
+      "gw": {
+        "top": 393.75,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Lazurowe Wzgórze",
+      "gw": {
+        "top": 196.875,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

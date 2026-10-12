@@ -1,0 +1,16 @@
+{
+  "location": "Sala Zamarzniętych Kości",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przejście Zamarzniętych Kości",
+      "gw": {
+        "top": 481.25,
+        "left": 568.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

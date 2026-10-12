@@ -1,0 +1,49 @@
+{
+  "location": "Mroczny Przesmyk",
+  "type": "",
+  "destination": [
+    {
+      "name": "Nawiedzony Jar",
+      "directly": true,
+      "gw": {
+        "top": 350.0,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.1 - sala 3",
+      "directly": true,
+      "gw": {
+        "top": 426.562,
+        "left": 470.312
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.1 - sala 1",
+      "directly": true,
+      "gw": {
+        "top": 503.125,
+        "left": 360.938
+      }
+    },
+    {
+      "name": "Zapomniany Szlak",
+      "directly": true,
+      "gw": {
+        "top": 0.0,
+        "left": 360.938
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.2",
+      "directly": true,
+      "gw": {
+        "top": 262.5,
+        "left": 404.688
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

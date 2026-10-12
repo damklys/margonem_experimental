@@ -1,0 +1,17 @@
+{
+  "location": "Smocza Jaskinia",
+  "type": "",
+  "destination": [
+    {
+      "name": "Smocze Góry",
+      "directly": true,
+      "gw": {
+        "top": 678.125,
+        "left": 87.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

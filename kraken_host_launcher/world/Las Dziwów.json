@@ -1,0 +1,30 @@
+{
+  "location": "Las Dziwów",
+  "type": "",
+  "destination": [
+    {
+      "name": "Cienisty Bór",
+      "gw": {
+        "top": 0,
+        "left": 305.812
+      }
+    },
+    {
+      "name": "Namiot Kambiona",
+      "gw": {
+        "top": 516.969,
+        "left": 123.781
+      }
+    },
+    {
+      "name": "Złowrogie Bagna",
+      "gw": {
+        "top": 342.219,
+        "left": 0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

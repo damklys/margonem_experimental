@@ -1,0 +1,44 @@
+{
+  "location": "Zniszczone Opactwo",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ithan",
+      "gw": {
+        "top": 0.0,
+        "left": 120.312
+      }
+    },
+    {
+      "name": "Uroczysko",
+      "gw": {
+        "top": 415.625,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Leśny Bród",
+      "gw": {
+        "top": 185.938,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Zburzona Twierdza",
+      "gw": {
+        "top": 689.062,
+        "left": 120.312
+      }
+    },
+    {
+      "name": "Piekielna Grota p.1",
+      "gw": {
+        "top": 568.75,
+        "left": 32.8125
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Kopalnia Kapiącego Miodu p.1 - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Porzucone Pasieki",
+      "gw": {
+        "top": 667.188,
+        "left": 98.4375
+      }
+    },
+    {
+      "name": "Kopalnia Kapiącego Miodu p.2 - sala 2",
+      "gw": {
+        "top": 76.5625,
+        "left": 120.312
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

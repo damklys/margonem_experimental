@@ -1,0 +1,160 @@
+{
+  "min_lvl": 43,
+  "max_lvl": 50,
+  "route": [
+    {
+      "location": "Zburzona Twierdza",
+      "gw_top": 295.312,
+      "gw_left": 76.5625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Świszcząca Grota p.1",
+      "gw_top": 280.0,
+      "gw_left": 525.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Świszcząca Grota p.2",
+      "gw_top": 240.625,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Świszcząca Grota p.3",
+      "gw_top": 503.125,
+      "gw_left": 525.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Świszcząca Grota p.4",
+      "gw_top": 509.091,
+      "gw_left": 190.909,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Świszcząca Grota p.3",
+      "gw_top": 656.25,
+      "gw_left": 175.0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zburzona Twierdza",
+      "gw_top": 689.062,
+      "gw_left": 262.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Nawiedzony Jar",
+      "gw_top": 262.5,
+      "gw_left": 459.375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.3",
+      "gw_top": 84.6957,
+      "gw_left": 359.957,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.2",
+      "gw_top": 67.7419,
+      "gw_left": 564.516,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.1",
+      "gw_top": 350.0,
+      "gw_left": 218.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.2",
+      "gw_top": 90.3226,
+      "gw_left": 338.71,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.3",
+      "gw_top": 465.826,
+      "gw_left": 127.043,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.4",
+      "gw_top": 444.162,
+      "gw_left": 228.811,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.5",
+      "gw_top": 638.235,
+      "gw_left": 247.059,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Nawiedzony Jar",
+      "gw_top": 0.0,
+      "gw_left": 273.438,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zburzona Twierdza",
+      "gw_top": 32.8125,
+      "gw_left": 689.062,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Opuszczony Bastion",
+      "gw_top": 273.438,
+      "gw_left": 404.688,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Podziemny Przełaz p.1",
+      "gw_top": 284.375,
+      "gw_left": 43.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Podziemny Przełaz p.2",
+      "gw_top": 65.625,
+      "gw_left": 87.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zrujnowana Wieża",
+      "gw_top": 612.5,
+      "gw_left": 393.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Opuszczony Bastion",
+      "gw_top": 32.8125,
+      "gw_left": 0.0,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

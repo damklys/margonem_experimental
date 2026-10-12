@@ -1,0 +1,16 @@
+{
+  "location": "Wylęgarnia Choukkerów p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Wylęgarnia Choukkerów p.2",
+      "gw": {
+        "top": 601.562,
+        "left": 525.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

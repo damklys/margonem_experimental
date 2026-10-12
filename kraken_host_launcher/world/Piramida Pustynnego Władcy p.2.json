@@ -1,0 +1,23 @@
+{
+  "location": "Piramida Pustynnego Władcy p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Piramida Pustynnego Władcy p.1",
+      "gw": {
+        "top": 87.5,
+        "left": 350
+      }
+    },
+    {
+      "name": "Piramida Pustynnego Władcy p.3",
+      "gw": {
+        "top": 568.75,
+        "left": 277.083
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

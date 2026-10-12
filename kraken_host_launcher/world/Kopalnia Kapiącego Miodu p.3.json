@@ -1,0 +1,23 @@
+{
+  "location": "Kopalnia Kapiącego Miodu p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kopalnia Kapiącego Miodu p.2 - sala 2",
+      "gw": {
+        "top": 43.75,
+        "left": 76.5625
+      }
+    },
+    {
+      "name": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+      "gw": {
+        "top": 415.625,
+        "left": 579.688
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

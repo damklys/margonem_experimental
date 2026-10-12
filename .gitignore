@@ -1,0 +1,33 @@
+# ── Python ──
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.eggs/
+*.egg-info/
+build/
+dist/
+
+# ── system / edytory ──
+.DS_Store
+.vscode/
+.idea/
+.claude/
+
+# ── kraken_host_launcher: dane lokalne i SEKRETY ──
+# profile przeglądarek (ciasteczka, zapisane hasła, sesje) – ~24 GB
+kraken_host_launcher/profiles/
+# logi i cache tras
+kraken_host_launcher/logs/
+kraken_host_launcher/route_cache/
+# konfiguracje postaci zawierają loginy i HASŁA do kont gry
+kraken_host_launcher/config/*.json
+kraken_host_launcher/config/*.lock
+# webhook Discorda (wzór: alert/discord.example.json)
+kraken_host_launcher/alert/discord.json
+
+# ── kraken_user_client: lokalne pliki robocze ──
+kraken_user_client/*.local.js
+
+# lokalne notatki (adres MAC, ścieżki maszyn wirtualnych)
+kraken_host_launcher/boot.txt

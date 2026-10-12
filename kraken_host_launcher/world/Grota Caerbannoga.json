@@ -1,0 +1,23 @@
+{
+  "location": "Grota Caerbannoga",
+  "type": "",
+  "destination": [
+    {
+      "name": "Grota Caerbannoga - leże bestii",
+      "gw": {
+        "top": 636.364,
+        "left": 286.364
+      }
+    },
+    {
+      "name": "Czeluść Ognistej Pożogi",
+      "gw": {
+        "top": 127.273,
+        "left": 413.636
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

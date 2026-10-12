@@ -1,0 +1,83 @@
+{
+  "min_lvl": 91,
+  "max_lvl": 97,
+  "route": [
+    {
+      "location": "Złowrogie Bagna",
+      "gw_top": 379.167,
+      "gw_left": 58.3333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 1",
+      "gw_top": 641.667,
+      "gw_left": 554.167,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.2",
+      "gw_top": 641.667,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.3",
+      "gw_top": 43.75,
+      "gw_left": 109.375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.2",
+      "gw_top": 510.417,
+      "gw_left": 43.75,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 2",
+      "gw_top": 116.667,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.2",
+      "gw_top": 43.75,
+      "gw_left": 612.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 3",
+      "gw_top": 597.917,
+      "gw_left": 568.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Mglista Polana Vesy",
+      "gw_top": 604.344,
+      "gw_left": 0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wzgórze Płaczek",
+      "gw_top": 0,
+      "gw_left": 72.917,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Gadzia Kotlina",
+      "gw_top": 0,
+      "gw_left": 430.208,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

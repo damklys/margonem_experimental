@@ -1,0 +1,16 @@
+{
+  "location": "Sala Magicznego Mrozu",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przejście Magicznego Mrozu",
+      "gw": {
+        "top": 284.375,
+        "left": 426.562
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

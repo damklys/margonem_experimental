@@ -1,0 +1,30 @@
+{
+  "location": "Erem Czarnego Słońca p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Erem Czarnego Słońca p.4 - sala 2",
+      "gw": {
+        "top": 350.0,
+        "left": 604.545
+      }
+    },
+    {
+      "name": "Erem Czarnego Słońca p.4 - sala 1",
+      "gw": {
+        "top": 350.0,
+        "left": 95.4545
+      }
+    },
+    {
+      "name": "Erem Czarnego Słońca p.2",
+      "gw": {
+        "top": 111.364,
+        "left": 350.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

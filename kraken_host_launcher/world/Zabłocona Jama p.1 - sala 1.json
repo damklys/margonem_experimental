@@ -1,0 +1,415 @@
+{
+  "location": "Zabłocona Jama p.1 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zawiły Bór",
+      "gw": {
+        "top": 656.25,
+        "left": 452.083
+      }
+    },
+    {
+      "name": "Zabłocona Jama p.2 - sala 1",
+      "gw": {
+        "top": 160.417,
+        "left": 175
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": false,
+        "left": 422.917,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8904",
+        "top": 72.9167,
+        "type": "mmp-mob",
+        "x": 29,
+        "y": 5
+      },
+      {
+        "grp": false,
+        "left": 495.833,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "8905",
+        "top": 131.25,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 9
+      },
+      {
+        "grp": true,
+        "left": 379.167,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "8906",
+        "top": 145.833,
+        "type": "mmp-mob",
+        "x": 26,
+        "y": 10
+      },
+      {
+        "grp": false,
+        "left": 612.5,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8907",
+        "top": 160.417,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 408.333,
+        "level": 106,
+        "name": "Wąż wodny",
+        "tip_id": "8908",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 28,
+        "y": 12
+      },
+      {
+        "grp": true,
+        "left": 583.333,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8909",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 40,
+        "y": 15
+      },
+      {
+        "grp": true,
+        "left": 554.167,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8910",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 38,
+        "y": 18
+      },
+      {
+        "grp": true,
+        "left": 437.5,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8911",
+        "top": 277.083,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 19
+      },
+      {
+        "grp": true,
+        "left": 393.75,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "8912",
+        "top": 291.667,
+        "type": "mmp-mob",
+        "x": 27,
+        "y": 20
+      },
+      {
+        "grp": true,
+        "left": 525,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "8913",
+        "top": 320.833,
+        "type": "mmp-mob",
+        "x": 36,
+        "y": 22
+      },
+      {
+        "grp": false,
+        "left": 597.917,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "8914",
+        "top": 335.417,
+        "type": "mmp-mob",
+        "x": 41,
+        "y": 23
+      },
+      {
+        "grp": true,
+        "left": 481.25,
+        "level": 106,
+        "name": "Wąż wodny",
+        "tip_id": "8915",
+        "top": 350,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 24
+      },
+      {
+        "grp": true,
+        "left": 539.583,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "8916",
+        "top": 379.167,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 26
+      },
+      {
+        "grp": false,
+        "left": 306.25,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8917",
+        "top": 335.417,
+        "type": "mmp-mob",
+        "x": 21,
+        "y": 23
+      },
+      {
+        "grp": false,
+        "left": 160.417,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8918",
+        "top": 320.833,
+        "type": "mmp-mob",
+        "x": 11,
+        "y": 22
+      },
+      {
+        "grp": true,
+        "left": 262.5,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "8919",
+        "top": 350,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 24
+      },
+      {
+        "grp": false,
+        "left": 247.917,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "8920",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 18
+      },
+      {
+        "grp": false,
+        "left": 554.167,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8921",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 38,
+        "y": 33
+      },
+      {
+        "grp": true,
+        "left": 131.25,
+        "level": 106,
+        "name": "Wąż wodny",
+        "tip_id": "8922",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 350,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "8923",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 18
+      },
+      {
+        "grp": true,
+        "left": 320.833,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "8924",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 22,
+        "y": 15
+      },
+      {
+        "grp": false,
+        "left": 145.833,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "8925",
+        "top": 247.917,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 189.583,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "8926",
+        "top": 408.333,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 28
+      },
+      {
+        "grp": true,
+        "left": 233.333,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "8927",
+        "top": 364.583,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 25
+      },
+      {
+        "grp": false,
+        "left": 204.167,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8928",
+        "top": 627.083,
+        "type": "mmp-mob",
+        "x": 14,
+        "y": 43
+      },
+      {
+        "grp": true,
+        "left": 116.667,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "8929",
+        "top": 495.833,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 34
+      },
+      {
+        "grp": false,
+        "left": 291.667,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "8930",
+        "top": 437.5,
+        "type": "mmp-mob",
+        "x": 20,
+        "y": 30
+      },
+      {
+        "grp": false,
+        "left": 481.25,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8931",
+        "top": 612.5,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 42
+      },
+      {
+        "grp": true,
+        "left": 72.9167,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8932",
+        "top": 568.75,
+        "type": "mmp-mob",
+        "x": 5,
+        "y": 39
+      },
+      {
+        "grp": true,
+        "left": 131.25,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8933",
+        "top": 597.917,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 41
+      },
+      {
+        "grp": true,
+        "left": 233.333,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8934",
+        "top": 131.25,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 9
+      },
+      {
+        "grp": true,
+        "left": 262.5,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "8935",
+        "top": 160.417,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 160.417,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8936",
+        "top": 510.417,
+        "type": "mmp-mob",
+        "x": 11,
+        "y": 35
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 175,
+        "name": "Zabłocona Jama p.2 - sala 1",
+        "tip_id": "8902",
+        "top": 160.417,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 452.083,
+        "name": "Zawiły Bór",
+        "tip_id": "8903",
+        "top": 656.25,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": []
+  },
+  "frame_size": 15.0
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Krypty Dusz Śniegu p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Krypty Dusz Śniegu p.2",
+      "gw": {
+        "top": 116.667,
+        "left": 160.417
+      }
+    },
+    {
+      "name": "Cmentarzysko Szerpów",
+      "gw": {
+        "top": 656.25,
+        "left": 350.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

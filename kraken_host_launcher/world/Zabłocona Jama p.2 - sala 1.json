@@ -1,0 +1,657 @@
+{
+  "location": "Zabłocona Jama p.2 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zabłocona Jama p.1 - sala 1",
+      "gw": {
+        "top": 32.8125,
+        "left": 142.188
+      }
+    },
+    {
+      "name": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+      "gw": {
+        "top": 76.5625,
+        "left": 557.812
+      }
+    },
+    {
+      "name": "Zabłocona Jama p.2 - sala 2",
+      "gw": {
+        "top": 667.188,
+        "left": 426.562
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 535.938,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8952",
+        "top": 131.25,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 12
+      },
+      {
+        "grp": false,
+        "left": 514.062,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8953",
+        "top": 448.438,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 41
+      },
+      {
+        "grp": true,
+        "left": 557.812,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8954",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 44
+      },
+      {
+        "grp": false,
+        "left": 601.562,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8955",
+        "top": 437.5,
+        "type": "mmp-mob",
+        "x": 55,
+        "y": 40
+      },
+      {
+        "grp": false,
+        "left": 273.438,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8956",
+        "top": 306.25,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 28
+      },
+      {
+        "grp": false,
+        "left": 579.688,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8957",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 53,
+        "y": 20
+      },
+      {
+        "grp": true,
+        "left": 579.688,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8958",
+        "top": 382.812,
+        "type": "mmp-mob",
+        "x": 53,
+        "y": 35
+      },
+      {
+        "grp": true,
+        "left": 535.938,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8959",
+        "top": 514.062,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 47
+      },
+      {
+        "grp": true,
+        "left": 350,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8960",
+        "top": 371.875,
+        "type": "mmp-mob",
+        "x": 32,
+        "y": 34
+      },
+      {
+        "grp": true,
+        "left": 546.875,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8961",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": 50,
+        "y": 36
+      },
+      {
+        "grp": false,
+        "left": 284.375,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8962",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": 26,
+        "y": 36
+      },
+      {
+        "grp": true,
+        "left": 273.438,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8963",
+        "top": 492.188,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 45
+      },
+      {
+        "grp": true,
+        "left": 448.438,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8964",
+        "top": 579.688,
+        "type": "mmp-mob",
+        "x": 41,
+        "y": 53
+      },
+      {
+        "grp": false,
+        "left": 131.25,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8965",
+        "top": 492.188,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 45
+      },
+      {
+        "grp": false,
+        "left": 601.562,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8966",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 55,
+        "y": 16
+      },
+      {
+        "grp": true,
+        "left": 459.375,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8967",
+        "top": 328.125,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 30
+      },
+      {
+        "grp": true,
+        "left": 426.562,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8968",
+        "top": 601.562,
+        "type": "mmp-mob",
+        "x": 39,
+        "y": 55
+      },
+      {
+        "grp": true,
+        "left": 568.75,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8969",
+        "top": 120.312,
+        "type": "mmp-mob",
+        "x": 52,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 481.25,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8970",
+        "top": 306.25,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 28
+      },
+      {
+        "grp": true,
+        "left": 459.375,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8971",
+        "top": 612.5,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 56
+      },
+      {
+        "grp": false,
+        "left": 557.812,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8972",
+        "top": 339.062,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 31
+      },
+      {
+        "grp": false,
+        "left": 535.938,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8973",
+        "top": 295.312,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 185.938,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8974",
+        "top": 437.5,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 40
+      },
+      {
+        "grp": true,
+        "left": 525,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8975",
+        "top": 492.188,
+        "type": "mmp-mob",
+        "x": 48,
+        "y": 45
+      },
+      {
+        "grp": false,
+        "left": 404.688,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "8976",
+        "top": 339.062,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 31
+      },
+      {
+        "grp": true,
+        "left": 207.812,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8977",
+        "top": 426.562,
+        "type": "mmp-mob",
+        "x": 19,
+        "y": 39
+      },
+      {
+        "grp": false,
+        "left": 470.312,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8978",
+        "top": 535.938,
+        "type": "mmp-mob",
+        "x": 43,
+        "y": 49
+      },
+      {
+        "grp": true,
+        "left": 371.875,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8979",
+        "top": 514.062,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 47
+      },
+      {
+        "grp": false,
+        "left": 382.812,
+        "level": null,
+        "name": null,
+        "tip_id": "8980",
+        "top": 382.812,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": true,
+        "left": 557.812,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8981",
+        "top": 153.125,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 14
+      },
+      {
+        "grp": true,
+        "left": 251.562,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8982",
+        "top": 459.375,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 42
+      },
+      {
+        "grp": true,
+        "left": 339.062,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8983",
+        "top": 525,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 48
+      },
+      {
+        "grp": false,
+        "left": 612.5,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8984",
+        "top": 251.562,
+        "type": "mmp-mob",
+        "x": 56,
+        "y": 23
+      },
+      {
+        "grp": false,
+        "left": 503.125,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8985",
+        "top": 360.938,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 33
+      },
+      {
+        "grp": false,
+        "left": 437.5,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "8986",
+        "top": 503.125,
+        "type": "mmp-mob",
+        "x": 40,
+        "y": 46
+      },
+      {
+        "grp": false,
+        "left": 262.5,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "8987",
+        "top": 546.875,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 50
+      },
+      {
+        "grp": true,
+        "left": 164.062,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "8988",
+        "top": 76.5625,
+        "type": "mmp-mob",
+        "x": 15,
+        "y": 7
+      },
+      {
+        "grp": true,
+        "left": 196.875,
+        "level": 106,
+        "name": "Wąż wodny",
+        "tip_id": "8989",
+        "top": 87.5,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 8
+      },
+      {
+        "grp": true,
+        "left": 339.062,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8990",
+        "top": 131.25,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 12
+      },
+      {
+        "grp": false,
+        "left": 175,
+        "level": 106,
+        "name": "Olbrzymia jadowita ropucha",
+        "tip_id": "8991",
+        "top": 142.188,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 13
+      },
+      {
+        "grp": true,
+        "left": 306.25,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "8992",
+        "top": 153.125,
+        "type": "mmp-mob",
+        "x": 28,
+        "y": 14
+      },
+      {
+        "grp": true,
+        "left": 328.125,
+        "level": 106,
+        "name": "Olbrzymia jadowita ropucha",
+        "tip_id": "8993",
+        "top": 164.062,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 15
+      },
+      {
+        "grp": true,
+        "left": 262.5,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "8994",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 16
+      },
+      {
+        "grp": false,
+        "left": 229.688,
+        "level": null,
+        "name": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+        "tip_id": "8995",
+        "top": 185.938,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": true,
+        "left": 87.5,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8996",
+        "top": 207.812,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 19
+      },
+      {
+        "grp": true,
+        "left": 284.375,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "8997",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 26,
+        "y": 20
+      },
+      {
+        "grp": true,
+        "left": 251.562,
+        "level": 106,
+        "name": "Wąż wodny",
+        "tip_id": "8998",
+        "top": 229.688,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 21
+      },
+      {
+        "grp": true,
+        "left": 98.4375,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "8999",
+        "top": 240.625,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 22
+      },
+      {
+        "grp": true,
+        "left": 196.875,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "9000",
+        "top": 251.562,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 23
+      },
+      {
+        "grp": true,
+        "left": 164.062,
+        "level": 106,
+        "name": "Wąż zbożowy",
+        "tip_id": "9001",
+        "top": 273.438,
+        "type": "mmp-mob",
+        "x": 15,
+        "y": 25
+      },
+      {
+        "grp": false,
+        "left": 218.75,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "9002",
+        "top": 284.375,
+        "type": "mmp-mob",
+        "x": 20,
+        "y": 26
+      },
+      {
+        "grp": true,
+        "left": 131.25,
+        "level": 107,
+        "name": "Krwiopijcza ropucha",
+        "tip_id": "9003",
+        "top": 295.312,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 109.375,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "9004",
+        "top": 317.188,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 29
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 142.188,
+        "name": "Zabłocona Jama p.1 - sala 1",
+        "tip_id": "8949",
+        "top": 32.8125,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 426.562,
+        "name": "Zabłocona Jama p.2 - sala 2",
+        "tip_id": "8950",
+        "top": 667.188,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 557.812,
+        "name": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+        "tip_id": "8951",
+        "top": 76.5625,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [
+      {
+        "left": 306.25,
+        "name": "Błoto",
+        "tip_id": "9005",
+        "top": 360.938,
+        "type": "mmp-npc"
+      }
+    ],
+    "mmp-item": []
+  },
+  "frame_size": 11.0
+}

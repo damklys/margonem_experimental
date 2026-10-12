@@ -1,0 +1,51 @@
+{
+  "location": "Zburzona Twierdza",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zniszczone Opactwo",
+      "gw": {
+        "top": 0.0,
+        "left": 120.312
+      }
+    },
+    {
+      "name": "Świszcząca Grota p.1",
+      "gw": {
+        "top": 295.312,
+        "left": 76.5625
+      }
+    },
+    {
+      "name": "Świszcząca Grota p.2",
+      "gw": {
+        "top": 634.375,
+        "left": 470.312
+      }
+    },
+    {
+      "name": "Świszcząca Grota p.3",
+      "gw": {
+        "top": 120.312,
+        "left": 415.625
+      }
+    },
+    {
+      "name": "Opuszczony Bastion",
+      "gw": {
+        "top": 32.8125,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Nawiedzony Jar",
+      "gw": {
+        "top": 689.062,
+        "left": 262.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,30 @@
+{
+  "location": "Stare Sioło",
+  "type": "",
+  "destination": [
+    {
+      "name": "Sucha Dolina",
+      "gw": {
+        "top": 0,
+        "left": 568.75
+      }
+    },
+    {
+      "name": "Oaza Siedmiu Wichrów",
+      "gw": {
+        "top": 277.083,
+        "left": 692.708
+      }
+    },
+    {
+      "name": "Tuzmer",
+      "gw": {
+        "top": 459.375,
+        "left": 350
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

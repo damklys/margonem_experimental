@@ -1,0 +1,23 @@
+{
+  "location": "Świszcząca Grota p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zburzona Twierdza",
+      "gw": {
+        "top": 525.0,
+        "left": 280.0
+      }
+    },
+    {
+      "name": "Świszcząca Grota p.2",
+      "gw": {
+        "top": 280.0,
+        "left": 525.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

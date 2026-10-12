@@ -1,0 +1,16 @@
+{
+  "location": "Górska Grota p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Górska Grota p.2",
+      "gw": {
+        "top": 212.625,
+        "left": 364.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

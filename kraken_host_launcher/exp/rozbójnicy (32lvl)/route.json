@@ -1,0 +1,62 @@
+{
+  "min_lvl": 28,
+  "max_lvl": 35,
+  "route": [
+    {
+      "location": "Przełęcz Łotrzyków",
+      "gw_top": 691.719,
+      "gw_left": 80.0938,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Dolina Rozbójników",
+      "gw_top": 451.438,
+      "gw_left": 371.344,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Kryjówka",
+      "gw_top": 656.25,
+      "gw_left": 284.375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Dolina Rozbójników",
+      "gw_top": 0.0,
+      "gw_left": 80.0938,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przełęcz Łotrzyków",
+      "gw_top": 342.219,
+      "gw_left": 458.719,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pagórki Łupieżców",
+      "gw_top": 291.25,
+      "gw_left": 123.781,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skład Grabieżców",
+      "gw_top": 656.25,
+      "gw_left": 393.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pagórki Łupieżców",
+      "gw_top": 349.5,
+      "gw_left": 0.0,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

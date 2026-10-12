@@ -1,0 +1,23 @@
+{
+  "location": "Śnieżna Grota p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Śnieżna Grota p.1",
+      "gw": {
+        "top": 160.417,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Śnieżna Grota p.3",
+      "gw": {
+        "top": 525.0,
+        "left": 102.083
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

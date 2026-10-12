@@ -1,0 +1,33 @@
+{
+  "location": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kamienna Strażnica - wsch. baszta zasypany tunel",
+      "directly": true,
+      "gw": {
+        "top": 636,
+        "left": 169.6
+      }
+    },
+    {
+      "name": "Kamienna Strażnica - wsch. baszta p.1",
+      "directly": true,
+      "gw": {
+        "top": 84.8,
+        "left": 233.2
+      }
+    },
+    {
+      "name": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
+      "directly": true,
+      "gw": {
+        "top": 636,
+        "left": 339.2
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

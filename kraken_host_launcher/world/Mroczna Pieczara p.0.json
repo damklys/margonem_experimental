@@ -1,0 +1,23 @@
+{
+  "location": "Mroczna Pieczara p.0",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mroczna Pieczara p.1 - sala 2",
+      "gw": {
+        "top": 105.0,
+        "left": 140.0
+      }
+    },
+    {
+      "name": "Migotliwa Pieczara",
+      "gw": {
+        "top": 455.0,
+        "left": 490.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

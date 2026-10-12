@@ -1,0 +1,23 @@
+{
+  "location": "Wylęgarnia Choukkerów p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zdradzieckie Przejście p.1",
+      "gw": {
+        "top": 678.125,
+        "left": 492.188
+      }
+    },
+    {
+      "name": "Wylęgarnia Choukkerów p.1",
+      "gw": {
+        "top": 459.375,
+        "left": 525.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

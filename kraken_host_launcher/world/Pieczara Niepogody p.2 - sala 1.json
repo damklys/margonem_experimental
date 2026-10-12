@@ -1,0 +1,30 @@
+{
+  "location": "Pieczara Niepogody p.2 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pieczara Niepogody p.1",
+      "gw": {
+        "top": 14.5833,
+        "left": 495.833
+      }
+    },
+    {
+      "name": "Pieczara Niepogody p.2 - sala 2",
+      "gw": {
+        "top": 87.5,
+        "left": 583.333
+      }
+    },
+    {
+      "name": "Pieczara Niepogody p.3",
+      "gw": {
+        "top": 393.75,
+        "left": 306.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

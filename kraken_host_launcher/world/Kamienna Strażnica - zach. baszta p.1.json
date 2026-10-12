@@ -1,0 +1,25 @@
+{
+  "location": "Kamienna Strażnica - zach. baszta p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kamienna Strażnica - zach. baszta p.2",
+      "directly": true,
+      "gw": {
+        "top": 87.45,
+        "left": 320.65
+      }
+    },
+    {
+      "name": "Kamienna Strażnica - tunel",
+      "directly": true,
+      "gw": {
+        "top": 583,
+        "left": 349.8
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,37 @@
+{
+  "location": "Wertepy Rzezimieszków",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stukot Widmowych Kół",
+      "gw": {
+        "top": 0.0,
+        "left": 196.875
+      }
+    },
+    {
+      "name": "Źródło Narumi",
+      "gw": {
+        "top": 459.375,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Gościniec Bardów",
+      "gw": {
+        "top": 481.25,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Chata szabrowników",
+      "gw": {
+        "top": 98.4375,
+        "left": 535.938
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

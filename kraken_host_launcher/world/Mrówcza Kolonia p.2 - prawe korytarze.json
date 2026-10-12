@@ -1,0 +1,23 @@
+{
+  "location": "Mrówcza Kolonia p.2 - prawe korytarze",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mrówcza Kolonia p.3 - prawa komora jaj",
+      "gw": {
+        "top": 658.0,
+        "left": 602.0
+      }
+    },
+    {
+      "name": "Mrówcza Kolonia p.1 - prawy tunel",
+      "gw": {
+        "top": 56.0,
+        "left": 56.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

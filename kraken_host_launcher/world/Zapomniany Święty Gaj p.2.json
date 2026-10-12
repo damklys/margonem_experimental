@@ -1,0 +1,33 @@
+{
+  "location": "Zapomniany Święty Gaj p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zapomniany Święty Gaj p.1",
+      "directly": true,
+      "gw": {
+        "top": 87.5,
+        "left": 320.833
+      }
+    },
+    {
+      "name": "Zapomniany Święty Gaj p.3",
+      "directly": true,
+      "gw": {
+        "top": 597.917,
+        "left": 495.833
+      }
+    },
+    {
+      "name": "Zapomniany Święty Gaj p.1 - sala 1",
+      "directly": true,
+      "gw": {
+        "top": 43.75,
+        "left": 597.917
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

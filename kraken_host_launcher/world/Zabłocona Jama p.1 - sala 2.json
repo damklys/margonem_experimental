@@ -1,0 +1,162 @@
+{
+  "location": "Zabłocona Jama p.1 - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zabłocona Jama p.2 - sala 3",
+      "gw": {
+        "top": 175,
+        "left": 153.125
+      }
+    },
+    {
+      "name": "Trupia Przełęcz",
+      "gw": {
+        "top": 437.5,
+        "left": 568.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": false,
+        "left": 196.875,
+        "level": 106,
+        "name": "Turkusowa ropucha",
+        "tip_id": "9620",
+        "top": 153.125,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 7
+      },
+      {
+        "grp": true,
+        "left": 393.75,
+        "level": 90,
+        "name": "Górska pantera",
+        "tip_id": "9621",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 8
+      },
+      {
+        "grp": true,
+        "left": 459.375,
+        "level": 90,
+        "name": "Górska pantera",
+        "tip_id": "9622",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 21,
+        "y": 10
+      },
+      {
+        "grp": false,
+        "left": 153.125,
+        "level": 107,
+        "name": "Wąż prądowy",
+        "tip_id": "9623",
+        "top": 240.625,
+        "type": "mmp-mob",
+        "x": 7,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 546.875,
+        "level": 91,
+        "name": "Grafitowa puma",
+        "tip_id": "9624",
+        "top": 371.875,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 481.25,
+        "level": 91,
+        "name": "Grafitowa puma",
+        "tip_id": "9625",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": 22,
+        "y": 18
+      },
+      {
+        "grp": false,
+        "left": 371.875,
+        "level": 90,
+        "name": "Górska pantera",
+        "tip_id": "9626",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 22
+      },
+      {
+        "grp": true,
+        "left": 131.25,
+        "level": 107,
+        "name": "Kumak górski",
+        "tip_id": "9627",
+        "top": 503.125,
+        "type": "mmp-mob",
+        "x": 6,
+        "y": 23
+      },
+      {
+        "grp": true,
+        "left": 175,
+        "level": 105,
+        "name": "Jadowita ropucha",
+        "tip_id": "9628",
+        "top": 525,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 24
+      },
+      {
+        "grp": false,
+        "left": 284.375,
+        "level": 106,
+        "name": "Wąż falisty",
+        "tip_id": "9629",
+        "top": 568.75,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 26
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 153.125,
+        "name": "Zabłocona Jama p.2 - sala 3",
+        "tip_id": "9618",
+        "top": 175,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 568.75,
+        "name": "Trupia Przełęcz",
+        "tip_id": "9619",
+        "top": 437.5,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": []
+  },
+  "frame_size": 22.0
+}

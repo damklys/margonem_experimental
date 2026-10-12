@@ -1,0 +1,30 @@
+{
+  "location": "Przeklęty Zamek p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek p.1",
+      "gw": {
+        "top": 175.0,
+        "left": 525.0
+      }
+    },
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 291.667,
+        "left": 525.0
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - komnata",
+      "gw": {
+        "top": 116.667,
+        "left": 87.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

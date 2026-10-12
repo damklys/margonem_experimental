@@ -1,0 +1,41 @@
+{
+  "min_lvl": 67,
+  "max_lvl": 74,
+  "route": [
+    {
+      "location": "Zdradzieckie Przejście p.1",
+      "gw_top": 334.938,
+      "gw_left": 400.469,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Głębokie Skałki p.1",
+      "gw_top": 641.667,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Głębokie Skałki p.2",
+      "gw_top": 627.083,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Głębokie Skałki p.3",
+      "gw_top": 21.875,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Głębokie Skałki p.2",
+      "gw_top": 145.833,
+      "gw_left": 131.25,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

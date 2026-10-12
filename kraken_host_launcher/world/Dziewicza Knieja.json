@@ -1,0 +1,1242 @@
+{
+  "location": "Dziewicza Knieja",
+  "type": "",
+  "destination": [
+    {
+      "name": "Las Tropicieli",
+      "gw": {
+        "top": 582.5,
+        "left": 458.719
+      }
+    },
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 0.0,
+        "left": 87.375
+      }
+    },
+    {
+      "name": "Grota Malowanej Śmierci",
+      "gw": {
+        "top": 334.938,
+        "left": 313.094
+      }
+    },
+    {
+      "name": "Siedlisko Nietoperzy p.1",
+      "gw": {
+        "top": 458.719,
+        "left": 101.938
+      }
+    },
+    {
+      "name": "Siedlisko Nietoperzy p.5",
+      "gw": {
+        "top": 305.812,
+        "left": 72.8125
+      }
+    },
+    {
+      "name": "Orla Grań",
+      "gw": {
+        "top": 524.25,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 123.781,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "352",
+        "top": 123.781,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 422.312,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "353",
+        "top": 80.0938,
+        "type": "mmp-mob",
+        "x": 58,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 43.6875,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "354",
+        "top": 72.8125,
+        "type": "mmp-mob",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "grp": false,
+        "left": 283.969,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "355",
+        "top": 87.375,
+        "type": "mmp-mob",
+        "x": 39,
+        "y": 12
+      },
+      {
+        "grp": true,
+        "left": 94.6562,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "356",
+        "top": 109.219,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 15
+      },
+      {
+        "grp": true,
+        "left": 385.906,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "357",
+        "top": 72.8125,
+        "type": "mmp-mob",
+        "x": 53,
+        "y": 10
+      },
+      {
+        "grp": true,
+        "left": 415.031,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "358",
+        "top": 101.938,
+        "type": "mmp-mob",
+        "x": 57,
+        "y": 14
+      },
+      {
+        "grp": false,
+        "left": 429.594,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "359",
+        "top": 495.125,
+        "type": "mmp-mob",
+        "x": 59,
+        "y": 68
+      },
+      {
+        "grp": true,
+        "left": 342.219,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "360",
+        "top": 131.062,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 18
+      },
+      {
+        "grp": true,
+        "left": 196.594,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "361",
+        "top": 167.469,
+        "type": "mmp-mob",
+        "x": 27,
+        "y": 23
+      },
+      {
+        "grp": true,
+        "left": 291.25,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "362",
+        "top": 196.594,
+        "type": "mmp-mob",
+        "x": 40,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 218.438,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "363",
+        "top": 189.312,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 26
+      },
+      {
+        "grp": true,
+        "left": 262.125,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "364",
+        "top": 211.156,
+        "type": "mmp-mob",
+        "x": 36,
+        "y": 29
+      },
+      {
+        "grp": true,
+        "left": 305.812,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "365",
+        "top": 247.562,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 34
+      },
+      {
+        "grp": false,
+        "left": 429.594,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "366",
+        "top": 291.25,
+        "type": "mmp-mob",
+        "x": 59,
+        "y": 40
+      },
+      {
+        "grp": true,
+        "left": 138.344,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "367",
+        "top": 415.031,
+        "type": "mmp-mob",
+        "x": 19,
+        "y": 57
+      },
+      {
+        "grp": true,
+        "left": 152.906,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "368",
+        "top": 429.594,
+        "type": "mmp-mob",
+        "x": 21,
+        "y": 59
+      },
+      {
+        "grp": true,
+        "left": 167.469,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "369",
+        "top": 422.312,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 58
+      },
+      {
+        "grp": true,
+        "left": 87.375,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "370",
+        "top": 495.125,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 68
+      },
+      {
+        "grp": true,
+        "left": 94.6562,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "371",
+        "top": 473.281,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 65
+      },
+      {
+        "grp": true,
+        "left": 436.875,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "372",
+        "top": 407.75,
+        "type": "mmp-mob",
+        "x": 60,
+        "y": 56
+      },
+      {
+        "grp": true,
+        "left": 320.375,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "373",
+        "top": 531.531,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 73
+      },
+      {
+        "grp": true,
+        "left": 393.188,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "374",
+        "top": 436.875,
+        "type": "mmp-mob",
+        "x": 54,
+        "y": 60
+      },
+      {
+        "grp": true,
+        "left": 123.781,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "375",
+        "top": 582.5,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 80
+      },
+      {
+        "grp": true,
+        "left": 371.344,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "376",
+        "top": 567.938,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 78
+      },
+      {
+        "grp": true,
+        "left": 393.188,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "377",
+        "top": 560.656,
+        "type": "mmp-mob",
+        "x": 54,
+        "y": 77
+      },
+      {
+        "grp": true,
+        "left": 240.281,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "378",
+        "top": 655.312,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 90
+      },
+      {
+        "grp": false,
+        "left": 174.75,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "379",
+        "top": 138.344,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 19
+      },
+      {
+        "grp": true,
+        "left": 247.562,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "380",
+        "top": 262.125,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 36
+      },
+      {
+        "grp": true,
+        "left": 342.219,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "381",
+        "top": 509.688,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 70
+      },
+      {
+        "grp": true,
+        "left": 218.438,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "382",
+        "top": 640.75,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 88
+      },
+      {
+        "grp": false,
+        "left": 371.344,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "383",
+        "top": 334.938,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 46
+      },
+      {
+        "grp": false,
+        "left": 131.062,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "384",
+        "top": 349.5,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 48
+      },
+      {
+        "grp": false,
+        "left": 291.25,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "385",
+        "top": 502.406,
+        "type": "mmp-mob",
+        "x": 40,
+        "y": 69
+      },
+      {
+        "grp": false,
+        "left": 436.875,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "386",
+        "top": 364.062,
+        "type": "mmp-mob",
+        "x": 60,
+        "y": 50
+      },
+      {
+        "grp": false,
+        "left": 313.094,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "387",
+        "top": 444.156,
+        "type": "mmp-mob",
+        "x": 43,
+        "y": 61
+      },
+      {
+        "grp": true,
+        "left": 131.062,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "388",
+        "top": 597.062,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 82
+      },
+      {
+        "grp": true,
+        "left": 65.5312,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "389",
+        "top": 487.844,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 67
+      },
+      {
+        "grp": false,
+        "left": 116.5,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "390",
+        "top": 29.125,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 4
+      },
+      {
+        "grp": true,
+        "left": 189.312,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "391",
+        "top": 80.0938,
+        "type": "mmp-mob",
+        "x": 26,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 203.875,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "392",
+        "top": 58.25,
+        "type": "mmp-mob",
+        "x": 28,
+        "y": 8
+      },
+      {
+        "grp": true,
+        "left": 225.719,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "393",
+        "top": 65.5312,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 9
+      },
+      {
+        "grp": false,
+        "left": 349.5,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "394",
+        "top": 101.938,
+        "type": "mmp-mob",
+        "x": 48,
+        "y": 14
+      },
+      {
+        "grp": false,
+        "left": 298.531,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "395",
+        "top": 123.781,
+        "type": "mmp-mob",
+        "x": 41,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 87.375,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "396",
+        "top": 320.375,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 44
+      },
+      {
+        "grp": true,
+        "left": 174.75,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "397",
+        "top": 305.812,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 42
+      },
+      {
+        "grp": false,
+        "left": 254.844,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "398",
+        "top": 50.9688,
+        "type": "mmp-mob",
+        "x": 35,
+        "y": 7
+      },
+      {
+        "grp": true,
+        "left": 415.031,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "399",
+        "top": 218.438,
+        "type": "mmp-mob",
+        "x": 57,
+        "y": 30
+      },
+      {
+        "grp": true,
+        "left": 400.469,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "400",
+        "top": 225.719,
+        "type": "mmp-mob",
+        "x": 55,
+        "y": 31
+      },
+      {
+        "grp": true,
+        "left": 436.875,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "401",
+        "top": 233,
+        "type": "mmp-mob",
+        "x": 60,
+        "y": 32
+      },
+      {
+        "grp": true,
+        "left": 422.312,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "402",
+        "top": 422.312,
+        "type": "mmp-mob",
+        "x": 58,
+        "y": 58
+      },
+      {
+        "grp": true,
+        "left": 247.562,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "403",
+        "top": 429.594,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 59
+      },
+      {
+        "grp": true,
+        "left": 225.719,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "404",
+        "top": 436.875,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 60
+      },
+      {
+        "grp": true,
+        "left": 240.281,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "405",
+        "top": 451.438,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 62
+      },
+      {
+        "grp": true,
+        "left": 320.375,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "406",
+        "top": 356.781,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 49
+      },
+      {
+        "grp": true,
+        "left": 356.781,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "407",
+        "top": 364.062,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 50
+      },
+      {
+        "grp": true,
+        "left": 334.938,
+        "level": 22,
+        "name": "Niedźwiadek",
+        "tip_id": "408",
+        "top": 378.625,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 52
+      },
+      {
+        "grp": false,
+        "left": 269.406,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "409",
+        "top": 407.75,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 56
+      },
+      {
+        "grp": false,
+        "left": 43.6875,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "410",
+        "top": 516.969,
+        "type": "mmp-mob",
+        "x": 6,
+        "y": 71
+      },
+      {
+        "grp": false,
+        "left": 87.375,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "411",
+        "top": 582.5,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 80
+      },
+      {
+        "grp": true,
+        "left": 145.625,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "412",
+        "top": 618.906,
+        "type": "mmp-mob",
+        "x": 20,
+        "y": 85
+      },
+      {
+        "grp": true,
+        "left": 123.781,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "413",
+        "top": 640.75,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 88
+      },
+      {
+        "grp": true,
+        "left": 196.594,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "414",
+        "top": 662.594,
+        "type": "mmp-mob",
+        "x": 27,
+        "y": 91
+      },
+      {
+        "grp": true,
+        "left": 269.406,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "415",
+        "top": 575.219,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 79
+      },
+      {
+        "grp": false,
+        "left": 334.938,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "416",
+        "top": 618.906,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 85
+      },
+      {
+        "grp": true,
+        "left": 291.25,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "417",
+        "top": 597.062,
+        "type": "mmp-mob",
+        "x": 40,
+        "y": 82
+      },
+      {
+        "grp": false,
+        "left": 167.469,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "418",
+        "top": 21.8438,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 3
+      },
+      {
+        "grp": true,
+        "left": 58.25,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "419",
+        "top": 94.6562,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 13
+      },
+      {
+        "grp": true,
+        "left": 320.375,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "420",
+        "top": 145.625,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 20
+      },
+      {
+        "grp": false,
+        "left": 371.344,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "421",
+        "top": 240.281,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 33
+      },
+      {
+        "grp": true,
+        "left": 225.719,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "422",
+        "top": 247.562,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 34
+      },
+      {
+        "grp": true,
+        "left": 334.938,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "423",
+        "top": 262.125,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 36
+      },
+      {
+        "grp": true,
+        "left": 211.156,
+        "level": 24,
+        "name": "Niedźwiedź czarny",
+        "tip_id": "424",
+        "top": 283.969,
+        "type": "mmp-mob",
+        "x": 29,
+        "y": 39
+      },
+      {
+        "grp": true,
+        "left": 116.5,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "425",
+        "top": 313.094,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 43
+      },
+      {
+        "grp": false,
+        "left": 349.5,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "426",
+        "top": 400.469,
+        "type": "mmp-mob",
+        "x": 48,
+        "y": 55
+      },
+      {
+        "grp": true,
+        "left": 371.344,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "427",
+        "top": 451.438,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 62
+      },
+      {
+        "grp": false,
+        "left": 160.188,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "428",
+        "top": 473.281,
+        "type": "mmp-mob",
+        "x": 22,
+        "y": 65
+      },
+      {
+        "grp": false,
+        "left": 116.5,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "429",
+        "top": 509.688,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 70
+      },
+      {
+        "grp": false,
+        "left": 356.781,
+        "level": 24,
+        "name": "Niedźwiedź szary",
+        "tip_id": "430",
+        "top": 589.781,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 81
+      },
+      {
+        "grp": true,
+        "left": 109.219,
+        "level": 23,
+        "name": "Niedźwiedź brunatny",
+        "tip_id": "431",
+        "top": 604.344,
+        "type": "mmp-mob",
+        "x": 15,
+        "y": 83
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 0,
+        "name": "Orla Grań",
+        "tip_id": "273",
+        "top": 524.25,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 0,
+        "name": "Orla Grań",
+        "tip_id": "274",
+        "top": 531.531,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 72.8125,
+        "name": "Siedlisko Nietoperzy p.5",
+        "tip_id": "275",
+        "top": 305.812,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 87.375,
+        "name": "Stare Ruiny",
+        "tip_id": "276",
+        "top": 0,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 94.6562,
+        "name": "Stare Ruiny",
+        "tip_id": "277",
+        "top": 0,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 101.938,
+        "name": "Siedlisko Nietoperzy p.1",
+        "tip_id": "278",
+        "top": 458.719,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 313.094,
+        "name": "Grota Malowanej Śmierci",
+        "tip_id": "279",
+        "top": 334.938,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 458.719,
+        "name": "Las Tropicieli",
+        "tip_id": "280",
+        "top": 575.219,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 458.719,
+        "name": "Las Tropicieli",
+        "tip_id": "281",
+        "top": 582.5,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [
+      {
+        "left": 131.062,
+        "name": "Paśnik",
+        "tip_id": "351",
+        "top": 291.25,
+        "type": "mmp-npc"
+      }
+    ],
+    "mmp-item": [
+      {
+        "left": 72.8125,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "432",
+        "top": 87.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 320.375,
+        "name": "Jeżyny",
+        "tip_id": "433",
+        "top": 131.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 385.906,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "434",
+        "top": 203.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 313.094,
+        "name": "Jeżyny",
+        "tip_id": "435",
+        "top": 233,
+        "type": "mmp-item"
+      },
+      {
+        "left": 334.938,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "436",
+        "top": 458.719,
+        "type": "mmp-item"
+      },
+      {
+        "left": 50.9688,
+        "name": "Jeżyny",
+        "tip_id": "437",
+        "top": 495.125,
+        "type": "mmp-item"
+      },
+      {
+        "left": 160.188,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "438",
+        "top": 546.094,
+        "type": "mmp-item"
+      },
+      {
+        "left": 298.531,
+        "name": "Jeżyny",
+        "tip_id": "439",
+        "top": 575.219,
+        "type": "mmp-item"
+      },
+      {
+        "left": 247.562,
+        "name": "Macierzanka",
+        "tip_id": "440",
+        "top": 43.6875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 240.281,
+        "name": "Macierzanka",
+        "tip_id": "441",
+        "top": 189.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 356.781,
+        "name": "Macierzanka",
+        "tip_id": "442",
+        "top": 247.562,
+        "type": "mmp-item"
+      },
+      {
+        "left": 247.562,
+        "name": "Macierzanka",
+        "tip_id": "443",
+        "top": 415.031,
+        "type": "mmp-item"
+      },
+      {
+        "left": 385.906,
+        "name": "Jeżyny",
+        "tip_id": "444",
+        "top": 43.6875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 50.9688,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "445",
+        "top": 50.9688,
+        "type": "mmp-item"
+      },
+      {
+        "left": 211.156,
+        "name": "Jeżyny",
+        "tip_id": "446",
+        "top": 174.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 436.875,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "447",
+        "top": 211.156,
+        "type": "mmp-item"
+      },
+      {
+        "left": 233,
+        "name": "Jeżyny",
+        "tip_id": "448",
+        "top": 240.281,
+        "type": "mmp-item"
+      },
+      {
+        "left": 371.344,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "449",
+        "top": 262.125,
+        "type": "mmp-item"
+      },
+      {
+        "left": 196.594,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "450",
+        "top": 276.688,
+        "type": "mmp-item"
+      },
+      {
+        "left": 116.5,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "451",
+        "top": 298.531,
+        "type": "mmp-item"
+      },
+      {
+        "left": 123.781,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "452",
+        "top": 342.219,
+        "type": "mmp-item"
+      },
+      {
+        "left": 283.969,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "453",
+        "top": 407.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 240.281,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "454",
+        "top": 422.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 94.6562,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "455",
+        "top": 538.812,
+        "type": "mmp-item"
+      },
+      {
+        "left": 131.062,
+        "name": "Czosnek niedźwiedzi",
+        "tip_id": "456",
+        "top": 575.219,
+        "type": "mmp-item"
+      },
+      {
+        "left": 80.0938,
+        "name": "Jeżyny",
+        "tip_id": "457",
+        "top": 160.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 131.062,
+        "name": "Jeżyny",
+        "tip_id": "458",
+        "top": 167.469,
+        "type": "mmp-item"
+      },
+      {
+        "left": 94.6562,
+        "name": "Jeżyny",
+        "tip_id": "459",
+        "top": 189.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 298.531,
+        "name": "Jeżyny",
+        "tip_id": "460",
+        "top": 334.938,
+        "type": "mmp-item"
+      },
+      {
+        "left": 334.938,
+        "name": "Jeżyny",
+        "tip_id": "461",
+        "top": 349.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 436.875,
+        "name": "Jeżyny",
+        "tip_id": "462",
+        "top": 349.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 276.688,
+        "name": "Jeżyny",
+        "tip_id": "463",
+        "top": 604.344,
+        "type": "mmp-item"
+      }
+    ]
+  },
+  "frame_size": 8.0
+}

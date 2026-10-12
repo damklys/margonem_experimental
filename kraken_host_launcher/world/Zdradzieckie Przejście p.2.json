@@ -1,0 +1,23 @@
+{
+  "location": "Zdradzieckie Przejście p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zdradzieckie Przejście p.1",
+      "gw": {
+        "top": 10.9375,
+        "left": 590.625
+      }
+    },
+    {
+      "name": "Labirynt Margorii",
+      "gw": {
+        "top": 667.188,
+        "left": 98.4375
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

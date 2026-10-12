@@ -1,0 +1,23 @@
+{
+  "location": "Przeklęty Zamek p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - sala zgromadzeń",
+      "gw": {
+        "top": 218.75,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Przeklęty Zamek p.2",
+      "gw": {
+        "top": 306.25,
+        "left": 131.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

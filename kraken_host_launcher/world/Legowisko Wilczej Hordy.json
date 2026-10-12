@@ -1,0 +1,58 @@
+{
+  "location": "Legowisko Wilczej Hordy",
+  "type": "",
+  "destination": [
+    {
+      "name": "Wilcza Skarpa",
+      "gw": {
+        "top": 142.188,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Warczące Osuwiska",
+      "gw": {
+        "top": 0.0,
+        "left": 284.375
+      }
+    },
+    {
+      "name": "Polana Ścierwojadów",
+      "gw": {
+        "top": 164.062,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Krasowa Pieczara p.1",
+      "gw": {
+        "top": 470.312,
+        "left": 612.5
+      }
+    },
+    {
+      "name": "Krasowa Pieczara p.2",
+      "gw": {
+        "top": 481.25,
+        "left": 371.875
+      }
+    },
+    {
+      "name": "Krasowa Pieczara p.3",
+      "gw": {
+        "top": 601.562,
+        "left": 306.25
+      }
+    },
+    {
+      "name": "Skalne Turnie",
+      "gw": {
+        "top": 689.062,
+        "left": 196.875
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

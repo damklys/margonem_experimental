@@ -1,0 +1,30 @@
+{
+  "location": "Świątynia Andarum",
+  "type": "",
+  "destination": [
+    {
+      "name": "Świątynia Andarum - zejście lewe",
+      "gw": {
+        "top": 273.913,
+        "left": 76.087
+      }
+    },
+    {
+      "name": "Świątynia Andarum - zejście prawe",
+      "gw": {
+        "top": 273.913,
+        "left": 623.913
+      }
+    },
+    {
+      "name": "Andarum Ilami",
+      "gw": {
+        "top": 304.348,
+        "left": 334.783
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

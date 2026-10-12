@@ -1,0 +1,23 @@
+{
+  "location": "Przeklęta Strażnica p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęta Strażnica",
+      "gw": {
+        "top": 636.364,
+        "left": 222.727
+      }
+    },
+    {
+      "name": "Przeklęta Strażnica p.2",
+      "gw": {
+        "top": 95.4545,
+        "left": 636.364
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,49 @@
+{
+  "location": "Wzgórze Płaczek",
+  "type": "",
+  "destination": [
+    {
+      "name": "Gadzia Kotlina",
+      "directly": true,
+      "gw": {
+        "top": 0,
+        "left": 72.917
+      }
+    },
+    {
+      "name": "Płacząca Grota p.1 - sala 1",
+      "directly": true,
+      "gw": {
+        "top": 255.208,
+        "left": 269.792
+      }
+    },
+    {
+      "name": "Trupia Przełęcz",
+      "directly": true,
+      "gw": {
+        "top": 459.375,
+        "left": 525
+      }
+    },
+    {
+      "name": "Płacząca Grota p.1 - sala 2",
+      "directly": true,
+      "gw": {
+        "top": 320.833,
+        "left": 561.458
+      }
+    },
+    {
+      "name": "Mglista Polana Vesy",
+      "directly": true,
+      "gw": {
+        "top": 138.542,
+        "left": 692.708
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

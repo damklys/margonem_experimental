@@ -1,0 +1,30 @@
+{
+  "location": "Racicowy Matecznik",
+  "type": "",
+  "destination": [
+    {
+      "name": "Spokojne Przejście",
+      "gw": {
+        "top": 0.0,
+        "left": 291.667
+      }
+    },
+    {
+      "name": "Ukwiecona Skarpa",
+      "gw": {
+        "top": 364.583,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Pieczara Kwiku - sala 1",
+      "gw": {
+        "top": 226.042,
+        "left": 43.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

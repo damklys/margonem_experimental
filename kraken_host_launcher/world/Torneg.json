@@ -1,0 +1,30 @@
+{
+  "location": "Torneg",
+  "type": "",
+  "destination": [
+    {
+      "name": "Łany Zboża",
+      "gw": {
+        "top": 313.542,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 459.375,
+        "left": 342.708
+      }
+    },
+    {
+      "name": "Leśna Przełęcz",
+      "gw": {
+        "top": 371.875,
+        "left": 692.708
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,176 @@
+{
+  "location": "Pod Rozbrykanym Niziołkiem",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pod Rozbrykanym Niziołkiem - piętro",
+      "directly": true,
+      "gw": {
+        "top": 29.15,
+        "left": 29.15
+      }
+    },
+    {
+      "name": "Pod Rozbrykanym Niziołkiem - piwnica",
+      "directly": true,
+      "gw": {
+        "top": 116.6,
+        "left": 262.35
+      }
+    },
+    {
+      "name": "Ithan",
+      "directly": true,
+      "gw": {
+        "top": 641.3,
+        "left": 262.35
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "mobs": [
+    {
+      "left": 116.6,
+      "level": null,
+      "name": "Szynkareczka Malwina",
+      "tip_id": "675",
+      "top": 378.95,
+      "type": "npc",
+      "x": 4,
+      "y": 13
+    },
+    {
+      "left": 233.2,
+      "level": null,
+      "name": "Stały Bywalec",
+      "tip_id": "676",
+      "top": 320.65,
+      "type": "npc",
+      "x": 8,
+      "y": 11
+    },
+    {
+      "left": 87.45,
+      "level": null,
+      "name": "Antałek krasnoludowego piwa",
+      "tip_id": "677",
+      "top": 349.8,
+      "type": "npc",
+      "x": 3,
+      "y": 12
+    },
+    {
+      "left": 437.25,
+      "level": null,
+      "name": "Witold",
+      "tip_id": "678",
+      "top": 583,
+      "type": "npc",
+      "x": 15,
+      "y": 20
+    },
+    {
+      "left": 349.8,
+      "level": null,
+      "name": "Biuralista Gracjan",
+      "tip_id": "679",
+      "top": 145.75,
+      "type": "npc",
+      "x": 12,
+      "y": 5
+    },
+    {
+      "left": 87.45,
+      "level": null,
+      "name": "Eugenia",
+      "tip_id": "680",
+      "top": 145.75,
+      "type": "npc",
+      "x": 3,
+      "y": 5
+    },
+    {
+      "left": 58.3,
+      "level": null,
+      "name": "Milagros",
+      "tip_id": "681",
+      "top": 466.4,
+      "type": "npc",
+      "x": 2,
+      "y": 16
+    },
+    {
+      "left": 145.75,
+      "level": null,
+      "name": "Weirdo",
+      "tip_id": "682",
+      "top": 466.4,
+      "type": "npc",
+      "x": 5,
+      "y": 16
+    },
+    {
+      "left": 233.2,
+      "level": null,
+      "name": "Bella",
+      "tip_id": "683",
+      "top": 437.25,
+      "type": "npc",
+      "x": 8,
+      "y": 15
+    },
+    {
+      "left": 58.3,
+      "level": null,
+      "name": "Amanto",
+      "tip_id": "684",
+      "top": 174.9,
+      "type": "npc",
+      "x": 2,
+      "y": 6
+    },
+    {
+      "left": 495.55,
+      "level": null,
+      "name": "Włościanin Filip",
+      "tip_id": "685",
+      "top": 145.75,
+      "type": "npc",
+      "x": 17,
+      "y": 5
+    },
+    {
+      "left": 466.4,
+      "level": null,
+      "name": "Mook II",
+      "tip_id": "686",
+      "top": 408.1,
+      "type": "npc",
+      "x": 16,
+      "y": 14
+    },
+    {
+      "left": 349.8,
+      "level": null,
+      "name": "Aliya",
+      "tip_id": "687",
+      "top": 408.1,
+      "type": "npc",
+      "x": 12,
+      "y": 14
+    },
+    {
+      "left": 204.05,
+      "level": null,
+      "name": "Mnich Damien",
+      "tip_id": "688",
+      "top": 204.05,
+      "type": "npc",
+      "x": 7,
+      "y": 7
+    }
+  ],
+  "frame_size": 30.0
+}

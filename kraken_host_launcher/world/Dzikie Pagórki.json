@@ -1,0 +1,30 @@
+{
+  "location": "Dzikie Pagórki",
+  "type": "",
+  "destination": [
+    {
+      "name": "Tygrysia Polana",
+      "gw": {
+        "top": 138.344,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Jaskinia Dzikich Kotów",
+      "gw": {
+        "top": 276.688,
+        "left": 65.5312
+      }
+    },
+    {
+      "name": "Pradawne Wzgórze Przodków",
+      "gw": {
+        "top": 691.719,
+        "left": 305.812
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

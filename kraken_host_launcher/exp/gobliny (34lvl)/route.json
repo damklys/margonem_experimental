@@ -1,0 +1,34 @@
+{
+  "min_lvl": 30,
+  "max_lvl": 37,
+  "route": [
+    {
+      "location": "Las Goblinów",
+      "gw_top": 0.0,
+      "gw_left": 305.812,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Podmokła Dolina",
+      "gw_top": 0.0,
+      "gw_left": 350.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Morwowe Przejście",
+      "gw_top": 689.062,
+      "gw_left": 350.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Podmokła Dolina",
+      "gw_top": 689.062,
+      "gw_left": 470.312,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "min_lvl": 57,
+  "max_lvl": 64,
+  "route": [
+    {
+      "location": "Pieczara Szaleńców - sala 1",
+      "gw_top": 131.25,
+      "gw_left": 102.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pieczara Szaleńców - sala 2",
+      "gw_top": 32.8125,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pieczara Szaleńców - sala 3",
+      "gw_top": 382.812,
+      "gw_left": 634.375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pieczara Szaleńców - sala 4",
+      "gw_top": 481.25,
+      "gw_left": 470.312,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pieczara Szaleńców - sala 3",
+      "gw_top": 65.625,
+      "gw_left": 120.312,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Pieczara Szaleńców - sala 2",
+      "gw_top": 328.125,
+      "gw_left": 65.625,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

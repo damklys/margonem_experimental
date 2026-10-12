@@ -1,0 +1,76 @@
+{
+  "min_lvl": 108,
+  "max_lvl": 114,
+  "route": [
+    {
+      "location": "Oaza Siedmiu Wichrów",
+      "gw_top": 691.719,
+      "gw_left": 342.219,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Ciche Rumowiska",
+      "gw_top": 320.833,
+      "gw_left": 692.708,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Dolina Suchych Łez",
+      "gw_top": 0,
+      "gw_left": 102.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Złote Piaski",
+      "gw_top": 240.281,
+      "gw_left": 174.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.1",
+      "gw_top": 13.4615,
+      "gw_left": 390.385,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.2",
+      "gw_top": 568.75,
+      "gw_left": 277.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.3",
+      "gw_top": 616.667,
+      "gw_left": 300,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.2",
+      "gw_top": 87.5,
+      "gw_left": 350,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.1",
+      "gw_top": 659.615,
+      "gw_left": 188.462,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Złote Piaski",
+      "gw_top": 655.312,
+      "gw_left": 0,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

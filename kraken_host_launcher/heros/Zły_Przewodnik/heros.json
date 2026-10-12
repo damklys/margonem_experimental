@@ -1,0 +1,244 @@
+{
+  "route": [
+    {
+      "location": "Ithan",
+      "respawns": [
+        {"top": 609, "left": 203}
+      ],
+      "gw": {"top": 693, "left": 301}
+    },
+    {
+      "location": "Zniszczone Opactwo",
+      "respawns": [
+        {"top": 503.125, "left": 65.625}
+      ],
+      "gw": {"top": 415.625, "left": 0}
+    },
+    {
+      "location": "Uroczysko",
+      "respawns": [
+        {"top": 364.583, "left": 670.833},
+        {"top": 240.625, "left": 583.333},
+        {"top": 65.625, "left": 656.25}
+      ],
+      "gw": {"top": 43.75, "left": 269.792}
+    },
+    {
+      "location": "Lazurytowa Grota p.1",
+      "respawns": [
+        {"top": 350, "left": 284.375}
+      ],
+      "gw": {"top": 284.375, "left": 568.75}
+    },
+    {
+      "location": "Lazurytowa Grota p.2",
+      "respawns": [
+        {"top": 218.75, "left": 273.438},
+        {"top": 98.4375, "left": 382.812},
+        {"top": 185.938, "left": 601.562}
+      ],
+      "gw": {"top": 306.25, "left": 448.438}
+    },
+    {
+      "location": "Lazurytowa Grota p.3 - sala 2",
+      "respawns": [
+        {"top": 315, "left": 157.5}
+      ],
+      "gw": {"top": 122.5, "left": 297.5}
+    },
+    {
+      "location": "Lazurytowa Grota p.3 - sala 1",
+      "respawns": [
+        {"top": 597.917, "left": 320.833},
+        {"top": 233.333, "left": 495.833},
+        {"top": 233.333, "left": 145.833}
+      ],
+      "gw": {"top": 14.5833, "left": 87.5}
+    },
+    {
+      "location": "Lazurytowa Grota p.2",
+      "respawns": [],
+      "gw": {"top": 54.6875, "left": 196.875}
+    },
+    {
+      "location": "Lazurytowa Grota p.1",
+      "respawns": [],
+      "gw": {"top": 568.75, "left": 371.875}
+    },
+    {
+      "location": "Uroczysko",
+      "respawns": [
+        {"top": 189.583, "left": 94.7917}
+      ],
+      "gw": {"top": 459.375, "left": 393.75}
+    },
+    {
+      "location": "Zapomniany Szlak",
+      "respawns": [
+        {"top": 36.4583, "left": 298.958},
+        {"top": 94.7917, "left": 342.708},
+        {"top": 109.375, "left": 123.958},
+        {"top": 175, "left": 182.292},
+        {"top": 247.917, "left": 277.083},
+        {"top": 247.917, "left": 43.75},
+        {"top": 357.292, "left": 189.583},
+        {"top": 437.5, "left": 350},
+        {"top": 364.583, "left": 401.042},
+        {"top": 350, "left": 481.25},
+        {"top": 371.875, "left": 648.958},
+        {"top": 262.5, "left": 627.083},
+        {"top": 160.417, "left": 576.042},
+        {"top": 298.958, "left": 422.917},
+        {"top": 247.917, "left": 466.667}
+      ],
+      "gw": {"top": 189.583, "left": 415.625}
+    },
+    {
+      "location": "Mokra Grota p.1",
+      "respawns": [
+        {"top": 568.75, "left": 218.75},
+        {"top": 448.438, "left": 404.688},
+        {"top": 142.188, "left": 634.375}
+      ],
+      "gw": {"top": 196.875, "left": 142.188}
+    },
+    {
+      "location": "Mokra Grota p.1 - boczny korytarz",
+      "respawns": [
+        {"top": 437.5, "left": 185.938},
+        {"top": 612.5, "left": 481.25},
+        {"top": 382.812, "left": 273.438}
+      ],
+      "gw": {"top": 568.75, "left": 54.6875}
+    },
+    {
+      "location": "Mokra Grota p.2 - korytarz",
+      "respawns": [
+        {"top": 252, "left": 322},
+        {"top": 462, "left": 504},
+        {"top": 616, "left": 182}
+      ],
+      "gw": {"top": 14, "left": 70}
+    },
+    {
+      "location": "Mokra Grota p.1 - boczny korytarz",
+      "respawns": [],
+      "gw": {"top": 667.188, "left": 131.25}
+    },
+    {
+      "location": "Mokra Grota p.1",
+      "respawns": [
+        {"top": 142.188, "left": 634.375},
+        {"top": 448.438, "left": 404.688},
+        {"top": 568.75, "left": 218.75}
+      ],
+      "gw": {"top": 656.25, "left": 43.75}
+    },
+    {
+      "location": "Zapomniany Szlak",
+      "respawns": [],
+      "gw": {"top": 109.375, "left": 386.458}
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 1",
+      "respawns": [
+        {"top": 350, "left": 415.625},
+        {"top": 262.5, "left": 393.75}
+      ],
+      "gw": {"top": 196.875, "left": 590.625}
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 2",
+      "respawns": [
+        {"top": 470.312, "left": 568.75},
+        {"top": 185.938, "left": 557.812},
+        {"top": 109.375, "left": 360.938},
+        {"top": 207.812, "left": 131.25}
+      ],
+      "gw": {"top": 131.25, "left": 54.6875}
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 3",
+      "respawns": [
+        {"top": 142.188, "left": 371.875},
+        {"top": 164.062, "left": 54.6875},
+        {"top": 317.188, "left": 371.875},
+        {"top": 459.375, "left": 306.25},
+        {"top": 535.938, "left": 492.188}
+      ],
+      "gw": {"top": 678.125, "left": 470.312}
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 1",
+      "respawns": [],
+      "gw": {"top": 656.25, "left": 196.875}
+    },
+    {
+      "location": "Zapomniany Szlak",
+      "respawns": [],
+      "gw": {"top": 459.375, "left": 473.958}
+    },
+    {
+      "location": "Mroczny Przesmyk",
+      "respawns": [
+        {"top": 262.5, "left": 612.5},
+        {"top": 590.625, "left": 645.312}
+      ],
+      "gw": {"top": 426.562, "left": 470.312}
+    },
+    {
+      "location": "Mroczna Pieczara p.1 - sala 3",
+      "respawns": [],
+      "gw": {"top": 41.1, "left": 102.75}
+    },
+    {
+      "location": "Mroczna Pieczara p.2",
+      "respawns": [],
+      "gw": {"top": 583.333, "left": 233.333}
+    },
+    {
+      "location": "Mroczny Przesmyk",
+      "respawns": [
+        {"top": 371.875, "left": 459.375}
+      ],
+      "gw": {"top": 262.5, "left": 404.688}
+    },
+    {
+      "location": "Mroczna Pieczara p.2",
+      "respawns": [],
+      "gw": {"top": 311.111, "left": 194.444}
+    },
+    {
+      "location": "Mroczna Pieczara p.1 - sala 3",
+      "respawns": [],
+      "gw": {"top": 575.4, "left": 246.6}
+    },
+    {
+      "location": "Mroczny Przesmyk",
+      "respawns": [
+        {"top": 645.312, "left": 328.125},
+        {"top": 557.812, "left": 164.062},
+        {"top": 262.5, "left": 328.125},
+        {"top": 76.5625, "left": 196.875},
+        {"top": 175, "left": 459.375},
+        {"top": 21.875, "left": 459.375}
+      ],
+      "gw": {"top": 0, "left": 360.938}
+    },
+    {
+      "location": "Zapomniany Szlak",
+      "respawns": [],
+      "gw": {"top": 0, "left": 393.75}
+    },
+    {
+      "location": "Uroczysko",
+      "respawns": [],
+      "gw": {"top": 284.375, "left": 692.708}
+    },
+    {
+      "location": "Zniszczone Opactwo",
+      "respawns": [],
+      "gw": {"top": 0, "left": 120.312}
+    }
+  ]
+}

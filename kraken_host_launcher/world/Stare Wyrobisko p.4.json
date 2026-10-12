@@ -1,0 +1,265 @@
+{
+  "location": "Stare Wyrobisko p.4",
+  "type": "",
+  "destination": [
+    {
+      "name": "Nawiedzony Jar",
+      "gw": {
+        "top": 646.054,
+        "left": 174.973
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.5",
+      "gw": {
+        "top": 444.162,
+        "left": 228.811
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.3",
+      "gw": {
+        "top": 390.324,
+        "left": 309.568
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 161.514,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "1551",
+        "top": 67.2973,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 5
+      },
+      {
+        "grp": true,
+        "left": 269.189,
+        "level": 48,
+        "name": "Ork trarroll",
+        "tip_id": "1552",
+        "top": 94.2162,
+        "type": "mmp-mob",
+        "x": 20,
+        "y": 7
+      },
+      {
+        "grp": true,
+        "left": 188.432,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "1554",
+        "top": 444.162,
+        "type": "mmp-mob",
+        "x": 14,
+        "y": 33
+      },
+      {
+        "grp": true,
+        "left": 121.135,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "1555",
+        "top": 94.2162,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 7
+      },
+      {
+        "grp": true,
+        "left": 296.108,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "1556",
+        "top": 269.189,
+        "type": "mmp-mob",
+        "x": 22,
+        "y": 20
+      },
+      {
+        "grp": false,
+        "left": 148.054,
+        "level": 47,
+        "name": "Ork zhaghokk",
+        "tip_id": "1557",
+        "top": 228.811,
+        "type": "mmp-mob",
+        "x": 11,
+        "y": 17
+      },
+      {
+        "grp": false,
+        "left": 417.243,
+        "level": 48,
+        "name": "Ork trarroll",
+        "tip_id": "1558",
+        "top": 363.405,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 336.486,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "1559",
+        "top": 255.73,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 19
+      },
+      {
+        "grp": false,
+        "left": 134.595,
+        "level": 47,
+        "name": "Ork zhaghokk",
+        "tip_id": "1560",
+        "top": 323.027,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 24
+      },
+      {
+        "grp": false,
+        "left": 107.676,
+        "level": 48,
+        "name": "Ork trarroll",
+        "tip_id": "1561",
+        "top": 457.622,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 34
+      },
+      {
+        "grp": false,
+        "left": 80.7568,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "1562",
+        "top": 538.378,
+        "type": "mmp-mob",
+        "x": 6,
+        "y": 40
+      },
+      {
+        "grp": true,
+        "left": 94.2162,
+        "level": 48,
+        "name": "Ork trarroll",
+        "tip_id": "1563",
+        "top": 646.054,
+        "type": "mmp-mob",
+        "x": 7,
+        "y": 48
+      },
+      {
+        "grp": true,
+        "left": 228.811,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "1564",
+        "top": 484.541,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 36
+      },
+      {
+        "grp": false,
+        "left": 323.027,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "1565",
+        "top": 457.622,
+        "type": "mmp-mob",
+        "x": 24,
+        "y": 34
+      },
+      {
+        "grp": true,
+        "left": 134.595,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "1566",
+        "top": 632.595,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 47
+      },
+      {
+        "grp": true,
+        "left": 336.486,
+        "level": 48,
+        "name": "Ork trarroll",
+        "tip_id": "1567",
+        "top": 80.7568,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 6
+      },
+      {
+        "grp": false,
+        "left": 201.892,
+        "level": 47,
+        "name": "Ork zhaghokk",
+        "tip_id": "1568",
+        "top": 363.405,
+        "type": "mmp-mob",
+        "x": 15,
+        "y": 27
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 174.973,
+        "name": "Nawiedzony Jar",
+        "tip_id": "1548",
+        "top": 646.054,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 228.811,
+        "name": "Stare Wyrobisko p.5",
+        "tip_id": "1549",
+        "top": 444.162,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 309.568,
+        "name": "Stare Wyrobisko p.3",
+        "tip_id": "1550",
+        "top": 390.324,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [
+      {
+        "grp": false,
+        "left": 296.108,
+        "level": 50,
+        "name": "Krogor",
+        "tip_id": "1553",
+        "top": 121.135,
+        "type": "mmp-elite",
+        "x": 22,
+        "y": 9
+      }
+    ],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": []
+  },
+  "frame_size": 14.0
+}

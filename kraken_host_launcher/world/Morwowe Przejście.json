@@ -1,0 +1,23 @@
+{
+  "location": "Morwowe Przejście",
+  "type": "",
+  "destination": [
+    {
+      "name": "Podmokła Dolina",
+      "gw": {
+        "top": 689.062,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Nawiedzony Jar",
+      "gw": {
+        "top": 218.75,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Grota Pragnolli p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Czeluść Ognistej Pożogi",
+      "gw": {
+        "top": 340.0,
+        "left": 100.0
+      }
+    },
+    {
+      "name": "Grota Pragnolli p.1 - sala 2",
+      "gw": {
+        "top": 160.0,
+        "left": 580.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

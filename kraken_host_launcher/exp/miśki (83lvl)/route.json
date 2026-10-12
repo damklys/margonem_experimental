@@ -1,0 +1,90 @@
+{
+  "min_lvl": 79,
+  "max_lvl": 86,
+  "route": [
+    {
+      "location": "Firnowa Grota p.1",
+      "gw_top": 262.5,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Firnowa Grota p.2",
+      "gw_top": 109.375,
+      "gw_left": 415.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Firnowa Grota p.2 s.1",
+      "gw_top": 475.0,
+      "gw_left": 575.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Firnowa Grota p.2",
+      "gw_top": 415.625,
+      "gw_left": 634.375,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skały Mroźnych Śpiewów",
+      "gw_top": 459.375,
+      "gw_left": 437.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Wyrwa p.1 s.1",
+      "gw_top": 131.25,
+      "gw_left": 568.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Wyrwa p.1 s.2",
+      "gw_top": 218.75,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sala Lodowych Iglic",
+      "gw_top": 650.0,
+      "gw_left": 312.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Wyrwa p.1 s.2",
+      "gw_top": 634.375,
+      "gw_left": 612.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Wyrwa p.1 s.1",
+      "gw_top": 568.75,
+      "gw_left": 568.75,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Wyrwa p.2",
+      "gw_top": 422.917,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skały Mroźnych Śpiewów",
+      "gw_top": 120.312,
+      "gw_left": 251.562,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "location": "Porzucone Pasieki",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ithan",
+      "gw": {
+        "top": 339.062,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Kopalnie Kapiącego Miodu p.1 - sala 1",
+      "gw": {
+        "top": 306.25,
+        "left": 579.688
+      }
+    },
+    {
+      "name": "Kopalnie Kapiącego Miodu p.1 - sala 2",
+      "gw": {
+        "top": 503.125,
+        "left": 76.5625
+      }
+    },
+    {
+      "name": "Uroczysko",
+      "gw": {
+        "top": 689.062,
+        "left": 251.562
+      }
+    },
+    {
+      "name": "Mistyczny Bór",
+      "gw": {
+        "top": 306.25,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

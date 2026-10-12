@@ -1,0 +1,17 @@
+{
+  "location": "Labirynt Wyklętych p.2 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Labirynt Wyklętych p.1",
+      "directly": true,
+      "gw": {
+        "top": 26.923,
+        "left": 53.846
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

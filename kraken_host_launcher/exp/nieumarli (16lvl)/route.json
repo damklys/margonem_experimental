@@ -1,0 +1,111 @@
+{
+  "min_lvl": 13,
+  "max_lvl": 19,
+  "route": [
+    {
+      "location": "Stare Ruiny",
+      "gw_top": 386.458,
+      "gw_left": 386.458,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - wejście południowe",
+      "gw_top": 116.667,
+      "gw_left": 58.3333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - podziemia południowe",
+      "gw_top": 656.25,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - zbrojownia",
+      "gw_top": 422.917,
+      "gw_left": 175,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - kanały",
+      "gw_top": 284.375,
+      "gw_left": 306.25,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - zbrojownia",
+      "gw_top": 233.333,
+      "gw_left": 583.333,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - sala zgromadzeń",
+      "gw_top": 277.083,
+      "gw_left": 495.833,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek p.1",
+      "gw_top": 306.25,
+      "gw_left": 131.25,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek p.2",
+      "gw_top": 291.667,
+      "gw_left": 525,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Ruiny",
+      "gw_top": 72.9167,
+      "gw_left": 240.625,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - wejście północne",
+      "gw_top": 379.167,
+      "gw_left": 612.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - podziemia północne",
+      "gw_top": 122.5,
+      "gw_left": 35,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - zbrojownia",
+      "gw_top": 335.417,
+      "gw_left": 277.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - podziemia południowe",
+      "gw_top": 43.75,
+      "gw_left": 65.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przeklęty Zamek - wejście południowe",
+      "gw_top": 58.3333,
+      "gw_left": 320.833,
+      "attack": true,
+      "excluded_mobs": []
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "location": "Liściaste Rozstaje",
+  "type": "",
+  "destination": [
+    {
+      "name": "Las Dziwów",
+      "directly": true,
+      "gw": {
+        "top": 189.312,
+        "left": 0
+      }
+    },
+    {
+      "name": "Sosnowe Odludzie",
+      "directly": true,
+      "gw": {
+        "top": 691.719,
+        "left": 182.031
+      }
+    },
+    {
+      "name": "Jezioro Ważek",
+      "directly": true,
+      "gw": {
+        "top": 0,
+        "left": 320.375
+      }
+    },
+    {
+      "name": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+      "directly": true,
+      "gw": {
+        "top": 138.344,
+        "left": 415.031
+      }
+    },
+    {
+      "name": "Zapomniana Ścieżyna",
+      "directly": true,
+      "gw": {
+        "top": 502.406,
+        "left": 458.719
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "mobs": [
+    {
+      "grp": true,
+      "left": 378.625,
+      "level": 91,
+      "name": "Leszy",
+      "tip_id": "564",
+      "top": 65.5312,
+      "type": "mob",
+      "x": 52,
+      "y": 9
+    },
+    {
+      "grp": true,
+      "left": 356.781,
+      "level": 91,
+      "name": "Opiekun lasu",
+      "tip_id": "565",
+      "top": 87.375,
+      "type": "mob",
+      "x": 49,
+      "y": 12
+    },
+    {
+      "grp": false,
+      "left": 327.656,
+      "level": 92,
+      "name": "Dziad borowy",
+      "tip_id": "566",
+      "top": 94.6562,
+      "type": "mob",
+      "x": 45,
+      "y": 13
+    },
+    {
+      "grp": true,
+      "left": 378.625,
+      "level": 92,
+      "name": "Dziad borowy",
+      "tip_id": "567",
+      "top": 123.781,
+      "type": "mob",
+      "x": 52,
+      "y": 17
+    },
+    {
+      "grp": true,
+      "left": 225.719,
+      "level": 91,
+      "name": "Leszy",
+      "tip_id": "568",
+      "top": 174.75,
+      "type": "mob",
+      "x": 31,
+      "y": 24
+    },
+    {
+      "grp": true,
+      "left": 247.562,
+      "level": 91,
+      "name": "Opiekun lasu",
+      "tip_id": "569",
+      "top": 182.031,
+      "type": "mob",
+      "x": 34,
+      "y": 25
+    },
+    {
+      "grp": false,
+      "left": 342.219,
+      "level": 91,
+      "name": "Leszy",
+      "tip_id": "570",
+      "top": 182.031,
+      "type": "mob",
+      "x": 47,
+      "y": 25
+    },
+    {
+      "grp": true,
+      "left": 356.781,
+      "level": 92,
+      "name": "Dziad borowy",
+      "tip_id": "571",
+      "top": 138.344,
+      "type": "mob",
+      "x": 49,
+      "y": 19
+    },
+    {
+      "grp": true,
+      "left": 429.594,
+      "level": 91,
+      "name": "Opiekun lasu",
+      "tip_id": "572",
+      "top": 116.5,
+      "type": "mob",
+      "x": 59,
+      "y": 16
+    },
+    {
+      "grp": true,
+      "left": 444.156,
+      "level": 91,
+      "name": "Leszy",
+      "tip_id": "573",
+      "top": 131.062,
+      "type": "mob",
+      "x": 61,
+      "y": 18
+    },
+    {
+      "grp": false,
+      "left": 385.906,
+      "level": 92,
+      "name": "Dziad borowy",
+      "tip_id": "574",
+      "top": 203.875,
+      "type": "mob",
+      "x": 53,
+      "y": 28
+    },
+    {
+      "grp": true,
+      "left": 429.594,
+      "level": 91,
+      "name": "Opiekun lasu",
+      "tip_id": "575",
+      "top": 269.406,
+      "type": "mob",
+      "x": 59,
+      "y": 37
+    },
+    {
+      "grp": true,
+      "left": 415.031,
+      "level": 91,
+      "name": "Opiekun lasu",
+      "tip_id": "576",
+      "top": 276.688,
+      "type": "mob",
+      "x": 57,
+      "y": 38
+    },
+    {
+      "grp": true,
+      "left": 415.031,
+      "level": 91,
+      "name": "Leszy",
+      "tip_id": "577",
+      "top": 364.062,
+      "type": "mob",
+      "x": 57,
+      "y": 50
+    },
+    {
+      "grp": true,
+      "left": 400.469,
+      "level": 92,
+      "name": "Dziad borowy",
+      "tip_id": "578",
+      "top": 378.625,
+      "type": "mob",
+      "x": 55,
+      "y": 52
+    },
+    {
+      "grp": false,
+      "left": 400.469,
+      "level": 90,
+      "name": "Górska pantera",
+      "tip_id": "579",
+      "top": 58.25,
+      "type": "mob",
+      "x": 55,
+      "y": 8
+    },
+    {
+      "grp": false,
+      "left": 415.031,
+      "level": 90,
+      "name": "Górska pantera",
+      "tip_id": "580",
+      "top": 174.75,
+      "type": "mob",
+      "x": 57,
+      "y": 24
+    },
+    {
+      "grp": false,
+      "left": 240.281,
+      "level": 90,
+      "name": "Górska pantera",
+      "tip_id": "581",
+      "top": 225.719,
+      "type": "mob",
+      "x": 33,
+      "y": 31
+    },
+    {
+      "grp": false,
+      "left": 334.938,
+      "level": 91,
+      "name": "Grafitowa puma",
+      "tip_id": "582",
+      "top": 254.844,
+      "type": "mob",
+      "x": 46,
+      "y": 35
+    },
+    {
+      "grp": false,
+      "left": 72.8125,
+      "level": 91,
+      "name": "Grafitowa puma",
+      "tip_id": "583",
+      "top": 254.844,
+      "type": "mob",
+      "x": 10,
+      "y": 35
+    },
+    {
+      "grp": false,
+      "left": 21.8438,
+      "level": 91,
+      "name": "Grafitowa puma",
+      "tip_id": "584",
+      "top": 65.5312,
+      "type": "mob",
+      "x": 3,
+      "y": 9
+    },
+    {
+      "left": 14.5625,
+      "level": null,
+      "name": "Drzewo lipowe",
+      "tip_id": "547",
+      "top": 597.062,
+      "type": "npc",
+      "x": 2,
+      "y": 82
+    },
+    {
+      "left": 14.5625,
+      "level": null,
+      "name": "Hamadriada Fortuvia",
+      "tip_id": "548",
+      "top": 123.781,
+      "type": "npc",
+      "x": 2,
+      "y": 17
+    },
+    {
+      "left": 269.406,
+      "level": null,
+      "name": "Północny Zachód - główny traktPołudniowy Zachód - TuzmerWschód - Thuzal oraz Eder",
+      "tip_id": "549",
+      "top": 393.188,
+      "type": "npc",
+      "x": 37,
+      "y": 54
+    },
+    {
+      "left": 58.25,
+      "level": null,
+      "name": "Wschód - Thuzal oraz TuzmerZachód - Mythar, główny trakt",
+      "tip_id": "550",
+      "top": 152.906,
+      "type": "npc",
+      "x": 8,
+      "y": 21
+    },
+    {
+      "left": 182.031,
+      "level": null,
+      "name": "Zakonnik Równowagi",
+      "tip_id": "551",
+      "top": 291.25,
+      "type": "npc",
+      "x": 25,
+      "y": 40
+    },
+    {
+      "left": 152.906,
+      "level": null,
+      "name": "Uzdrowicielka Emanilia",
+      "tip_id": "552",
+      "top": 371.344,
+      "type": "npc",
+      "x": 21,
+      "y": 51
+    },
+    {
+      "left": 14.5625,
+      "level": null,
+      "name": "Tropicielka Olekusa",
+      "tip_id": "553",
+      "top": 349.5,
+      "type": "npc",
+      "x": 2,
+      "y": 48
+    },
+    {
+      "left": 211.156,
+      "level": null,
+      "name": "Mag Waken",
+      "tip_id": "554",
+      "top": 276.688,
+      "type": "npc",
+      "x": 29,
+      "y": 38
+    },
+    {
+      "left": 160.188,
+      "level": null,
+      "name": "Szybki Daraker",
+      "tip_id": "555",
+      "top": 422.312,
+      "type": "npc",
+      "x": 22,
+      "y": 58
+    },
+    {
+      "left": 138.344,
+      "level": null,
+      "name": "Handlarka Halidura",
+      "tip_id": "556",
+      "top": 385.906,
+      "type": "npc",
+      "x": 19,
+      "y": 53
+    },
+    {
+      "left": 145.625,
+      "level": null,
+      "name": "Strażnik obozu",
+      "tip_id": "557",
+      "top": 298.531,
+      "type": "npc",
+      "x": 20,
+      "y": 41
+    },
+    {
+      "left": 225.719,
+      "level": null,
+      "name": "Strażnik obozu",
+      "tip_id": "558",
+      "top": 320.375,
+      "type": "npc",
+      "x": 31,
+      "y": 44
+    },
+    {
+      "left": 233,
+      "level": null,
+      "name": "Podróżnik Lakimus",
+      "tip_id": "559",
+      "top": 393.188,
+      "type": "npc",
+      "x": 32,
+      "y": 54
+    },
+    {
+      "left": 94.6562,
+      "level": null,
+      "name": "Astralny koncentrator",
+      "tip_id": "560",
+      "top": 218.438,
+      "type": "npc",
+      "x": 13,
+      "y": 30
+    },
+    {
+      "left": 116.5,
+      "level": null,
+      "name": "Krasnoludzki szyb",
+      "tip_id": "561",
+      "top": 305.812,
+      "type": "npc",
+      "x": 16,
+      "y": 42
+    },
+    {
+      "left": 342.219,
+      "level": null,
+      "name": null,
+      "tip_id": "588",
+      "top": 80.0938,
+      "type": "heros-resp",
+      "x": 47,
+      "y": 11
+    },
+    {
+      "left": 87.375,
+      "level": null,
+      "name": null,
+      "tip_id": "589",
+      "top": 495.125,
+      "type": "heros-resp",
+      "x": 12,
+      "y": 68
+    },
+    {
+      "left": 371.344,
+      "level": null,
+      "name": null,
+      "tip_id": "590",
+      "top": 560.656,
+      "type": "heros-resp",
+      "x": 51,
+      "y": 77
+    }
+  ],
+  "frame_size": 8.0
+}

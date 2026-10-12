@@ -1,0 +1,25 @@
+{
+  "location": "Pieczara Czaszek",
+  "type": "",
+  "destination": [
+    {
+      "name": "Labirynt Wyklętych p.1",
+      "directly": true,
+      "gw": {
+        "top": 560,
+        "left": 280
+      }
+    },
+    {
+      "name": "Nizina Wieśniaków",
+      "directly": true,
+      "gw": {
+        "top": 560,
+        "left": 525
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

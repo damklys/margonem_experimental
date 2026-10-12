@@ -1,0 +1,23 @@
+{
+  "location": "Śnieżna Grota p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Śnieżna Grota p.2",
+      "gw": {
+        "top": 667.188,
+        "left": 76.5625
+      }
+    },
+    {
+      "name": "Lodowa Sala",
+      "gw": {
+        "top": 459.375,
+        "left": 404.688
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

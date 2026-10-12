@@ -1,0 +1,30 @@
+{
+  "location": "Iglaste Ścieżki",
+  "type": "",
+  "destination": [
+    {
+      "name": "Dolina Centaurów",
+      "gw": {
+        "top": 269.792,
+        "left": 0
+      }
+    },
+    {
+      "name": "Zawiły Bór",
+      "gw": {
+        "top": 459.375,
+        "left": 517.708
+      }
+    },
+    {
+      "name": "Ostępy Szalbierskich Lasów",
+      "gw": {
+        "top": 218.75,
+        "left": 692.708
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

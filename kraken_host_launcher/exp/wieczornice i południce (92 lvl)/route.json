@@ -1,0 +1,195 @@
+{
+  "min_lvl": 89,
+  "max_lvl": 95,
+  "route": [
+    {
+      "location": "Trupia Przełęcz",
+      "gw_top": 415.031,
+      "gw_left": 422.312,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - wsch. baszta p.1",
+      "gw_top": 560,
+      "gw_left": 315,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+      "gw_top": 636,
+      "gw_left": 339.2,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
+      "gw_top": 65.538,
+      "gw_left": 196.615,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+      "gw_top": 636,
+      "gw_left": 169.6,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - wsch. baszta zasypany tunel",
+      "gw_top": 420,
+      "gw_left": 210,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - tunel",
+      "gw_top": 298.148,
+      "gw_left": 350,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - Sala Chwały",
+      "gw_top": 400,
+      "gw_left": 100,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - Sanktuarium",
+      "gw_top": 29.136,
+      "gw_left": 233.091,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - Sala Chwały",
+      "gw_top": 50,
+      "gw_left": 200,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - tunel",
+      "gw_top": 103.704,
+      "gw_left": 77.778,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - zach. baszta p.1",
+      "gw_top": 87.45,
+      "gw_left": 320.65,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Kamienna Strażnica - zach. baszta p.2",
+      "gw_top": 320.833,
+      "gw_left": 554.167,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Trupia Przełęcz",
+      "gw_top": 0,
+      "gw_left": 291.25,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wzgórze Płaczek",
+      "gw_top": 138.542,
+      "gw_left": 692.708,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Mglista Polana Vesy",
+      "gw_top": 604.344,
+      "gw_left": 0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wzgórze Płaczek",
+      "gw_top": 255.208,
+      "gw_left": 269.792,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.1 - sala 1",
+      "gw_top": 634.375,
+      "gw_left": 262.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.2",
+      "gw_top": 612.5,
+      "gw_left": 185.938,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.3",
+      "gw_top": 525,
+      "gw_left": 466.667,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota - sala Lamentu",
+      "gw_top": 612.5,
+      "gw_left": 437.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.3",
+      "gw_top": 131.25,
+      "gw_left": 597.917,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.2",
+      "gw_top": 317.188,
+      "gw_left": 623.438,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.1 - sala 2",
+      "gw_top": 510.417,
+      "gw_left": 218.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.2",
+      "gw_top": 32.812,
+      "gw_left": 65.625,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płacząca Grota p.1 - sala 1",
+      "gw_top": 218.75,
+      "gw_left": 153.125,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wzgórze Płaczek",
+      "gw_top": 459.375,
+      "gw_left": 525,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

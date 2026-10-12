@@ -1,0 +1,44 @@
+{
+  "location": "Mokradła",
+  "type": "",
+  "destination": [
+    {
+      "name": "Dolina Rozbójników",
+      "gw": {
+        "top": 0.0,
+        "left": 295.312
+      }
+    },
+    {
+      "name": "Polana Ścierwojadów",
+      "gw": {
+        "top": 153.125,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Skarpiska Tolloków",
+      "gw": {
+        "top": 601.562,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Podmokła Dolina",
+      "gw": {
+        "top": 426.562,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Fort Eder",
+      "gw": {
+        "top": 689.062,
+        "left": 317.188
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

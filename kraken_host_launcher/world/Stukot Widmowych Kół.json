@@ -1,0 +1,23 @@
+{
+  "location": "Stukot Widmowych Kół",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stary Kupiecki Trakt",
+      "gw": {
+        "top": 0.0,
+        "left": 233.0
+      }
+    },
+    {
+      "name": "Wertepy Rzezimieszków",
+      "gw": {
+        "top": 691.719,
+        "left": 138.344
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

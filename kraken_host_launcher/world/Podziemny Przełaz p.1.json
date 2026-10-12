@@ -1,0 +1,23 @@
+{
+  "location": "Podziemny Przełaz p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Opuszczony Bastion",
+      "gw": {
+        "top": 656.25,
+        "left": 437.5
+      }
+    },
+    {
+      "name": "Podziemny Przełaz p.2",
+      "gw": {
+        "top": 284.375,
+        "left": 43.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

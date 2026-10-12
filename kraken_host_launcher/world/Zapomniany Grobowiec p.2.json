@@ -1,0 +1,23 @@
+{
+  "location": "Zapomniany Grobowiec p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zapomniany Grobowiec p.1",
+      "gw": {
+        "top": 120.312,
+        "left": 601.562
+      }
+    },
+    {
+      "name": "Zapomniany Grobowiec p.3",
+      "gw": {
+        "top": 579.688,
+        "left": 317.188
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

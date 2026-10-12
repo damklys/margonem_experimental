@@ -1,0 +1,6 @@
+{
+  "webhook_url": "https://discord.com/api/webhooks/<ID>/<TOKEN>",
+  "enabled": false,
+  "mention_role_id": null,
+  "send_screenshot": false
+}

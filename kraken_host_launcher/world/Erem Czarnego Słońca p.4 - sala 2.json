@@ -1,0 +1,30 @@
+{
+  "location": "Erem Czarnego Słońca p.4 - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Świątynia Andarum - magazyn p.2",
+      "gw": {
+        "top": 196.875,
+        "left": 656.25
+      }
+    },
+    {
+      "name": "Erem Czarnego Słońca p.3 - południe",
+      "gw": {
+        "top": 350.0,
+        "left": 525.0
+      }
+    },
+    {
+      "name": "Erem Czarnego Słońca p.3",
+      "gw": {
+        "top": 87.5,
+        "left": 393.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

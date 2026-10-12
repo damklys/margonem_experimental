@@ -1,0 +1,280 @@
+{
+  "location": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zabłocona Jama p.2 - sala 1",
+      "gw": {
+        "top": 189.583,
+        "left": 72.9167
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 335.417,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9120",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 18
+      },
+      {
+        "grp": true,
+        "left": 262.5,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9121",
+        "top": 539.583,
+        "type": "mmp-mob",
+        "x": 18,
+        "y": 37
+      },
+      {
+        "grp": true,
+        "left": 364.583,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9122",
+        "top": 583.333,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 40
+      },
+      {
+        "grp": false,
+        "left": 364.583,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9123",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 12
+      },
+      {
+        "grp": true,
+        "left": 87.5,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9124",
+        "top": 145.833,
+        "type": "mmp-mob",
+        "x": 6,
+        "y": 10
+      },
+      {
+        "grp": false,
+        "left": 175,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9125",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 12,
+        "y": 33
+      },
+      {
+        "grp": true,
+        "left": 218.75,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9126",
+        "top": 525,
+        "type": "mmp-mob",
+        "x": 15,
+        "y": 36
+      },
+      {
+        "grp": true,
+        "left": 452.083,
+        "level": 107,
+        "name": "Błotniak",
+        "tip_id": "9127",
+        "top": 539.583,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 37
+      },
+      {
+        "grp": true,
+        "left": 131.25,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9128",
+        "top": 160.417,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 11
+      },
+      {
+        "grp": true,
+        "left": 102.083,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9129",
+        "top": 452.083,
+        "type": "mmp-mob",
+        "x": 7,
+        "y": 31
+      },
+      {
+        "grp": true,
+        "left": 466.667,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9130",
+        "top": 495.833,
+        "type": "mmp-mob",
+        "x": 32,
+        "y": 34
+      },
+      {
+        "grp": false,
+        "left": 422.917,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9131",
+        "top": 612.5,
+        "type": "mmp-mob",
+        "x": 29,
+        "y": 42
+      },
+      {
+        "grp": true,
+        "left": 189.583,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9132",
+        "top": 189.583,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 13
+      },
+      {
+        "grp": true,
+        "left": 291.667,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9133",
+        "top": 291.667,
+        "type": "mmp-mob",
+        "x": 20,
+        "y": 20
+      },
+      {
+        "grp": true,
+        "left": 145.833,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9134",
+        "top": 422.917,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 29
+      },
+      {
+        "grp": true,
+        "left": 320.833,
+        "level": 108,
+        "name": "Kamienny zwał",
+        "tip_id": "9135",
+        "top": 568.75,
+        "type": "mmp-mob",
+        "x": 22,
+        "y": 39
+      },
+      {
+        "grp": true,
+        "left": 233.333,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9136",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 15
+      },
+      {
+        "grp": true,
+        "left": 204.167,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9137",
+        "top": 379.167,
+        "type": "mmp-mob",
+        "x": 14,
+        "y": 26
+      },
+      {
+        "grp": true,
+        "left": 495.833,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9138",
+        "top": 525,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 36
+      },
+      {
+        "grp": true,
+        "left": 277.083,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9139",
+        "top": 247.917,
+        "type": "mmp-mob",
+        "x": 19,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 247.917,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9140",
+        "top": 364.583,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 25
+      },
+      {
+        "grp": false,
+        "left": 131.25,
+        "level": 108,
+        "name": "Żywa fałda",
+        "tip_id": "9141",
+        "top": 510.417,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 35
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 72.9167,
+        "name": null,
+        "tip_id": "9119",
+        "top": 189.583,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": []
+  },
+  "frame_size": 15.0
+}

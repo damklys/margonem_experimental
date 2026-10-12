@@ -1,0 +1,6 @@
+<div class="positioner">
+            <div class="inner-text" data-trans="unconcious_info_txt"><b>Jesteś nieprzytomny.</b><br>Nie wiesz co się wokół Ciebie dzieje. Chyba ktoś Cię przenosi.<br>Ockniesz się, kiedy wrócą Ci siły, za </div>
+            <div class="dazed-time">3min 34s</div>
+        </div>
+
+

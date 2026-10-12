@@ -1,0 +1,76 @@
+{
+  "min_lvl": 103,
+  "max_lvl": 109,
+  "route": [
+    {
+      "location": "Sucha Dolina",
+      "gw_top": 364.062,
+      "gw_left": 458.719,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płaskowyż Arpan",
+      "gw_top": 131.25,
+      "gw_left": 627.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.1",
+      "gw_top": 131.25,
+      "gw_left": 196.875,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.2",
+      "gw_top": 656.25,
+      "gw_left": 466.667,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.3",
+      "gw_top": 109.375,
+      "gw_left": 54.6875,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.4",
+      "gw_top": 43.75,
+      "gw_left": 109.375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.3",
+      "gw_top": 481.25,
+      "gw_left": 579.688,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.2",
+      "gw_top": 29.1667,
+      "gw_left": 87.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Skalne Cmentarzysko p.1",
+      "gw_top": 634.375,
+      "gw_left": 459.375,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Płaskowyż Arpan",
+      "gw_top": 357.292,
+      "gw_left": 0,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

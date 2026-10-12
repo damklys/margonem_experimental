@@ -1,0 +1,23 @@
+{
+  "location": "Zrujnowana Wieża",
+  "type": "",
+  "destination": [
+    {
+      "name": "Opuszczony Bastion",
+      "gw": {
+        "top": 612.5,
+        "left": 393.75
+      }
+    },
+    {
+      "name": "Podziemny Przełaz p.2",
+      "gw": {
+        "top": 218.75,
+        "left": 481.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

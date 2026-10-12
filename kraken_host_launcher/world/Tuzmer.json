@@ -1,0 +1,23 @@
+{
+  "location": "Tuzmer",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stare Sioło",
+      "gw": {
+        "top": 0,
+        "left": 350
+      }
+    },
+    {
+      "name": "Port Tuzmer",
+      "gw": {
+        "top": 459.375,
+        "left": 335.417
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Mrówcza Kolonia p.3 - prawa komora jaj",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mrówcza Kolonia p.4 - królewskie gniazdo",
+      "gw": {
+        "top": 672.0,
+        "left": 56.0
+      }
+    },
+    {
+      "name": "Mrówcza Kolonia p.2 - prawe korytarze",
+      "gw": {
+        "top": 28.0,
+        "left": 602.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,30 @@
+{
+  "location": "Skarpiska Tolloków",
+  "type": "",
+  "destination": [
+    {
+      "name": "Skalne Turnie",
+      "gw": {
+        "top": 317.188,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Polana Ścierwojadów",
+      "gw": {
+        "top": 0.0,
+        "left": 295.312
+      }
+    },
+    {
+      "name": "Mokradła",
+      "gw": {
+        "top": 262.5,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

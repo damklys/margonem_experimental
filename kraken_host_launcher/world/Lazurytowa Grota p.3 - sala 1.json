@@ -1,0 +1,23 @@
+{
+  "location": "Lazurytowa Grota p.3 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Lazurytowa Grota p.2",
+      "gw": {
+        "top": 14.5833,
+        "left": 87.5
+      }
+    },
+    {
+      "name": "Lazurytowa Grota p.3 - sala 2",
+      "gw": {
+        "top": 627.083,
+        "left": 495.833
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

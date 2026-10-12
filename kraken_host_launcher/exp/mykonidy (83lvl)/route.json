@@ -1,0 +1,118 @@
+{
+  "min_lvl": 79,
+  "max_lvl": 86,
+  "route": [
+    {
+      "location": "Śnieżna Grota p.2",
+      "gw_top": 525.0,
+      "gw_left": 102.083,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Śnieżna Grota p.3",
+      "gw_top": 459.375,
+      "gw_left": 404.688,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Sala",
+      "gw_top": 87.5,
+      "gw_left": 579.688,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Lodowatego Wiatru",
+      "gw_top": 164.062,
+      "gw_left": 164.062,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sala Lodowatego Wiatru",
+      "gw_top": 32.8125,
+      "gw_left": 76.5625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Lodowatego Wiatru",
+      "gw_top": 360.938,
+      "gw_left": 175.0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Sala",
+      "gw_top": 109.375,
+      "gw_left": 164.062,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Magicznego Mrozu",
+      "gw_top": 164.062,
+      "gw_left": 273.438,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sala Magicznego Mrozu",
+      "gw_top": 284.375,
+      "gw_left": 426.562,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Magicznego Mrozu",
+      "gw_top": 196.875,
+      "gw_left": 492.188,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Sala",
+      "gw_top": 503.125,
+      "gw_left": 568.75,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Zamarzniętych Kości",
+      "gw_top": 579.688,
+      "gw_left": 557.812,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sala Zamarzniętych Kości",
+      "gw_top": 481.25,
+      "gw_left": 568.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Przejście Zamarzniętych Kości",
+      "gw_top": 87.5,
+      "gw_left": 109.375,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Lodowa Sala",
+      "gw_top": 328.125,
+      "gw_left": 350.0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Śnieżna Grota p.3",
+      "gw_top": 667.188,
+      "gw_left": 76.5625,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

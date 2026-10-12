@@ -1,0 +1,23 @@
+{
+  "location": "Wilcza Skarpa",
+  "type": "",
+  "destination": [
+    {
+      "name": "Warczące Osuwiska",
+      "gw": {
+        "top": 123.781,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Legowisko Wilczej Hordy",
+      "gw": {
+        "top": 560.656,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

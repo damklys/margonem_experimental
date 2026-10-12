@@ -1,0 +1,23 @@
+{
+  "location": "Jaskinia Gnollich Szamanów p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Jaskinia Gnollich Szamanów p.2",
+      "gw": {
+        "top": 538.462,
+        "left": 457.692
+      }
+    },
+    {
+      "name": "Wioska Gnolli",
+      "gw": {
+        "top": 350.0,
+        "left": 80.7692
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Przeklęty Zamek - wejście północne",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 58.3333,
+        "left": 320.833
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - podziemia północne",
+      "gw": {
+        "top": 379.167,
+        "left": 612.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,13 @@
+{
+  "gathering_location": "Pieczara Szaleńców - przedsionek",
+  "gathering_position": {"top": 153.125, "left": 393.75},
+  "fight_location": "Pieczara Szaleńców - sala Regulusa Mętnookiego",
+  "fight_position": {"top": 109.375, "left": 393.75},
+  "exit_location": "Pieczara Szaleńców - sala 4",
+  "colossus_class": "mmp-collosus",
+  "party_size": 10,
+  "gather_key": "g",
+  "attack_key": "q",
+  "gather_interval_s": 10,
+  "follower_min_party": 5
+}

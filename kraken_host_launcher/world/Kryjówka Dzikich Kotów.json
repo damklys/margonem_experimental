@@ -1,0 +1,23 @@
+{
+  "location": "Kryjówka Dzikich Kotów",
+  "type": "",
+  "destination": [
+    {
+      "name": "Leśna Przełęcz",
+      "gw": {
+        "top": 689.062,
+        "left": 317.188
+      }
+    },
+    {
+      "name": "Grota Dzikiego Kota",
+      "gw": {
+        "top": 196.875,
+        "left": 415.625
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

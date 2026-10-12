@@ -1,0 +1,23 @@
+{
+  "location": "Zapomniany Grobowiec p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ghuli Mogilnik",
+      "gw": {
+        "top": 656.25,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Zapomniany Grobowiec p.2",
+      "gw": {
+        "top": 175.0,
+        "left": 590.625
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

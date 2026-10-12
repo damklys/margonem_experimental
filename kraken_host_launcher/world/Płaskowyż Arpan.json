@@ -1,0 +1,51 @@
+{
+  "location": "Płaskowyż Arpan",
+  "type": "",
+  "destination": [
+    {
+      "name": "Trupia Przełęcz",
+      "gw": {
+        "top": 0,
+        "left": 401.042
+      }
+    },
+    {
+      "name": "Skalne Cmentarzysko p.1",
+      "gw": {
+        "top": 131.25,
+        "left": 627.083
+      }
+    },
+    {
+      "name": "Sucha Dolina",
+      "gw": {
+        "top": 357.292,
+        "left": 0
+      }
+    },
+    {
+      "name": "Oaza Siedmiu Wichrów",
+      "gw": {
+        "top": 459.375,
+        "left": 277.083
+      }
+    },
+    {
+      "name": "Złote Piaski",
+      "gw": {
+        "top": 459.375,
+        "left": 619.792
+      }
+    },
+    {
+      "name": "Pustkowia Pogrzebanych",
+      "gw": {
+        "top": 422.917,
+        "left": 692.708
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

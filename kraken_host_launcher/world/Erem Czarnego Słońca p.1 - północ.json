@@ -1,0 +1,23 @@
+{
+  "location": "Erem Czarnego Słońca p.1 - północ",
+  "type": "",
+  "destination": [
+    {
+      "name": "Erem Czarnego Słońca p.2",
+      "gw": {
+        "top": 262.5,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Skały Mroźnych Śpiewów",
+      "gw": {
+        "top": 481.25,
+        "left": 350.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

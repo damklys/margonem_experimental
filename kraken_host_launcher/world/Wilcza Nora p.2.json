@@ -1,0 +1,16 @@
+{
+  "location": "Wilcza Nora p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Wilcza Nora p.1",
+      "gw": {
+        "top": 109.375,
+        "left": 65.625
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

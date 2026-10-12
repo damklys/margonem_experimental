@@ -1,0 +1,206 @@
+{
+  "location": "Zmarzlina Amaimona Soplorękiego - sala",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zmarzlina Amaimona Soplorękiego - przedsionek",
+      "directly": true,
+      "gw": {
+        "top": 678.125,
+        "left": 196.875
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "mobs": [
+    {
+      "grp": false,
+      "left": 415.625,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "595",
+      "top": 415.625,
+      "type": "mob",
+      "x": 38,
+      "y": 38
+    },
+    {
+      "grp": false,
+      "left": 459.375,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "596",
+      "top": 371.875,
+      "type": "mob",
+      "x": 42,
+      "y": 34
+    },
+    {
+      "grp": false,
+      "left": 273.438,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "597",
+      "top": 328.125,
+      "type": "mob",
+      "x": 25,
+      "y": 30
+    },
+    {
+      "grp": false,
+      "left": 350,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "598",
+      "top": 360.938,
+      "type": "mob",
+      "x": 32,
+      "y": 33
+    },
+    {
+      "grp": false,
+      "left": 382.812,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "599",
+      "top": 514.062,
+      "type": "mob",
+      "x": 35,
+      "y": 47
+    },
+    {
+      "grp": false,
+      "left": 590.625,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "600",
+      "top": 382.812,
+      "type": "mob",
+      "x": 54,
+      "y": 35
+    },
+    {
+      "grp": false,
+      "left": 295.312,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "601",
+      "top": 623.438,
+      "type": "mob",
+      "x": 27,
+      "y": 57
+    },
+    {
+      "grp": false,
+      "left": 153.125,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "602",
+      "top": 634.375,
+      "type": "mob",
+      "x": 14,
+      "y": 58
+    },
+    {
+      "grp": false,
+      "left": 470.312,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "603",
+      "top": 481.25,
+      "type": "mob",
+      "x": 43,
+      "y": 44
+    },
+    {
+      "grp": false,
+      "left": 317.188,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "607",
+      "top": 251.562,
+      "type": "mob",
+      "x": 29,
+      "y": 23
+    },
+    {
+      "grp": false,
+      "left": 492.188,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "608",
+      "top": 262.5,
+      "type": "mob",
+      "x": 45,
+      "y": 24
+    },
+    {
+      "grp": false,
+      "left": 612.5,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "609",
+      "top": 295.312,
+      "type": "mob",
+      "x": 56,
+      "y": 27
+    },
+    {
+      "grp": false,
+      "left": 546.875,
+      "level": 82,
+      "name": "Zniewolony purpurowy włochacz",
+      "tip_id": "610",
+      "top": 426.562,
+      "type": "mob",
+      "x": 50,
+      "y": 39
+    },
+    {
+      "grp": false,
+      "left": 350,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "611",
+      "top": 579.688,
+      "type": "mob",
+      "x": 32,
+      "y": 53
+    },
+    {
+      "grp": false,
+      "left": 229.688,
+      "level": 81,
+      "name": "Zniewolony lodowy włochacz",
+      "tip_id": "612",
+      "top": 590.625,
+      "type": "mob",
+      "x": 21,
+      "y": 54
+    },
+    {
+      "left": 339.062,
+      "level": null,
+      "name": "Zaczarowany grzyb",
+      "tip_id": "604",
+      "top": 240.625,
+      "type": "npc",
+      "x": 31,
+      "y": 22
+    },
+    {
+      "grp": false,
+      "left": 360.938,
+      "level": 83,
+      "name": "Amaimon Soploręki",
+      "tip_id": "606",
+      "top": 175,
+      "type": "collosus",
+      "x": 33,
+      "y": 16
+    }
+  ],
+  "frame_size": 11.0
+}

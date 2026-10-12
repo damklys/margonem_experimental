@@ -1,0 +1,33 @@
+{
+  "location": "Płacząca Grota p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Płacząca Grota p.1 - sala 1",
+      "directly": true,
+      "gw": {
+        "top": 32.812,
+        "left": 65.625
+      }
+    },
+    {
+      "name": "Płacząca Grota p.3",
+      "directly": true,
+      "gw": {
+        "top": 612.5,
+        "left": 185.938
+      }
+    },
+    {
+      "name": "Płacząca Grota p.1 - sala 2",
+      "directly": true,
+      "gw": {
+        "top": 317.188,
+        "left": 623.438
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

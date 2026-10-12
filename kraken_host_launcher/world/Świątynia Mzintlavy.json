@@ -1,0 +1,407 @@
+{
+  "location": "Świątynia Mzintlavy",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pradawne Wzgórze Przodków",
+      "directly": true,
+      "gw": {
+        "top": 678.125,
+        "left": 350
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": false,
+        "left": 350,
+        "level": 25,
+        "name": "Świątynny Fula Gula",
+        "tip_id": "4267",
+        "top": 306.25,
+        "type": "mmp-mob",
+        "x": 32,
+        "y": 28
+      },
+      {
+        "grp": false,
+        "left": 382.812,
+        "level": 31,
+        "name": "Świątynny Furu Mulu",
+        "tip_id": "4268",
+        "top": 328.125,
+        "type": "mmp-mob",
+        "x": 35,
+        "y": 30
+      },
+      {
+        "grp": false,
+        "left": 339.062,
+        "level": 30,
+        "name": "Świątynny Zulu Gula",
+        "tip_id": "4269",
+        "top": 339.062,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 31
+      },
+      {
+        "grp": false,
+        "left": 185.938,
+        "level": 31,
+        "name": "Świątynny Furu Mulu",
+        "tip_id": "4270",
+        "top": 350,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 32
+      },
+      {
+        "grp": false,
+        "left": 514.062,
+        "level": 29,
+        "name": "Świątynny Bulu Mulu",
+        "tip_id": "4271",
+        "top": 350,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 32
+      },
+      {
+        "grp": false,
+        "left": 142.188,
+        "level": 27,
+        "name": "Świątynny Zulu Mulu",
+        "tip_id": "4272",
+        "top": 360.938,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 33
+      },
+      {
+        "grp": false,
+        "left": 535.938,
+        "level": null,
+        "name": null,
+        "tip_id": "4273",
+        "top": 371.875,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": false,
+        "left": 43.75,
+        "level": 31,
+        "name": "Świątynny Furu Mulu",
+        "tip_id": "4274",
+        "top": 382.812,
+        "type": "mmp-mob",
+        "x": 4,
+        "y": 35
+      },
+      {
+        "grp": false,
+        "left": 175,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4275",
+        "top": 382.812,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 35
+      },
+      {
+        "grp": false,
+        "left": 393.75,
+        "level": null,
+        "name": null,
+        "tip_id": "4276",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": false,
+        "left": 656.25,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4277",
+        "top": 393.75,
+        "type": "mmp-mob",
+        "x": 60,
+        "y": 36
+      },
+      {
+        "grp": false,
+        "left": 21.875,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4278",
+        "top": 415.625,
+        "type": "mmp-mob",
+        "x": 2,
+        "y": 38
+      },
+      {
+        "grp": false,
+        "left": 426.562,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4279",
+        "top": 415.625,
+        "type": "mmp-mob",
+        "x": 39,
+        "y": 38
+      },
+      {
+        "grp": false,
+        "left": 667.188,
+        "level": null,
+        "name": "Mamlambo (36b)",
+        "tip_id": "4280",
+        "top": 426.562,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": false,
+        "left": 273.438,
+        "level": 31,
+        "name": "Świątynny Furu Mulu",
+        "tip_id": "4281",
+        "top": 459.375,
+        "type": "mmp-mob",
+        "x": 25,
+        "y": 42
+      },
+      {
+        "grp": false,
+        "left": 142.188,
+        "level": 29,
+        "name": "Świątynny Bulu Mulu",
+        "tip_id": "4282",
+        "top": 470.312,
+        "type": "mmp-mob",
+        "x": 13,
+        "y": 43
+      },
+      {
+        "grp": false,
+        "left": 481.25,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4283",
+        "top": 470.312,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 43
+      },
+      {
+        "grp": false,
+        "left": 525,
+        "level": 30,
+        "name": "Świątynny Zulu Gula",
+        "tip_id": "4284",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 48,
+        "y": 44
+      },
+      {
+        "grp": false,
+        "left": 175,
+        "level": 30,
+        "name": "Świątynny Zulu Gula",
+        "tip_id": "4285",
+        "top": 492.188,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 45
+      },
+      {
+        "grp": false,
+        "left": 360.938,
+        "level": null,
+        "name": null,
+        "tip_id": "4286",
+        "top": 503.125,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": false,
+        "left": 32.8125,
+        "level": null,
+        "name": null,
+        "tip_id": "4287",
+        "top": 514.062,
+        "type": "mmp-mob",
+        "x": null,
+        "y": null
+      },
+      {
+        "grp": false,
+        "left": 153.125,
+        "level": 25,
+        "name": "Świątynny Fula Gula",
+        "tip_id": "4288",
+        "top": 514.062,
+        "type": "mmp-mob",
+        "x": 14,
+        "y": 47
+      },
+      {
+        "grp": false,
+        "left": 328.125,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4289",
+        "top": 525,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 48
+      },
+      {
+        "grp": false,
+        "left": 54.6875,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4290",
+        "top": 535.938,
+        "type": "mmp-mob",
+        "x": 5,
+        "y": 49
+      },
+      {
+        "grp": false,
+        "left": 98.4375,
+        "level": 27,
+        "name": "Świątynny Zulu Mulu",
+        "tip_id": "4291",
+        "top": 590.625,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 54
+      },
+      {
+        "grp": false,
+        "left": 579.688,
+        "level": 31,
+        "name": "Świątynny Furu Mulu",
+        "tip_id": "4292",
+        "top": 612.5,
+        "type": "mmp-mob",
+        "x": 53,
+        "y": 56
+      },
+      {
+        "grp": false,
+        "left": 87.5,
+        "level": 28,
+        "name": "Świątynny Dida Gula",
+        "tip_id": "4293",
+        "top": 623.438,
+        "type": "mmp-mob",
+        "x": 8,
+        "y": 57
+      },
+      {
+        "grp": false,
+        "left": 535.938,
+        "level": 27,
+        "name": "Świątynny Zulu Mulu",
+        "tip_id": "4294",
+        "top": 623.438,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 57
+      },
+      {
+        "grp": false,
+        "left": 120.312,
+        "level": 25,
+        "name": "Świątynny Fula Gula",
+        "tip_id": "4295",
+        "top": 634.375,
+        "type": "mmp-mob",
+        "x": 11,
+        "y": 58
+      },
+      {
+        "grp": false,
+        "left": 317.188,
+        "level": 26,
+        "name": "Świątynny Nuna Gula",
+        "tip_id": "4296",
+        "top": 634.375,
+        "type": "mmp-mob",
+        "x": 29,
+        "y": 58
+      },
+      {
+        "grp": false,
+        "left": 568.75,
+        "level": 27,
+        "name": "Świątynny Zulu Mulu",
+        "tip_id": "4297",
+        "top": 645.312,
+        "type": "mmp-mob",
+        "x": 52,
+        "y": 59
+      },
+      {
+        "grp": false,
+        "left": 339.062,
+        "level": 25,
+        "name": "Świątynny Fula Gula",
+        "tip_id": "4298",
+        "top": 656.25,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 60
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 350,
+        "name": "Pradawne Wzgórze Przodków",
+        "tip_id": "4300",
+        "top": 678.125,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [
+      {
+        "left": 350,
+        "name": "Mamlambo",
+        "tip_id": "4266",
+        "top": 153.125,
+        "type": "mmp-collosus"
+      }
+    ],
+    "mmp-heros-resp": [],
+    "mmp-npc": [
+      {
+        "left": 371.875,
+        "name": "Zaczarowany grzyb",
+        "tip_id": "4299",
+        "top": 273.438,
+        "type": "mmp-npc"
+      }
+    ],
+    "mmp-item": []
+  },
+  "frame_size": 11.0
+}

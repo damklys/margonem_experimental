@@ -1,0 +1,338 @@
+{
+  "route": [
+    {
+      "location": "Eder",
+      "respawns": [
+        {"top": 36.4062, "left": 21.8438}
+      ],
+      "gw": {"top": 87.375, "left": 225.719}
+    },
+    {
+      "location": "Dom Mrocznego Zgrzyta",
+      "respawns": [
+        {"top": 218.75, "left": 437.5}
+      ],
+      "gw": {"top": 568.75, "left": 393.75}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 174.75, "left": 342.219}
+    },
+    {
+      "location": "Siedziba Kultystów",
+      "respawns": [
+        {"top": 248.387, "left": 248.387}
+      ],
+      "gw": {"top": 632.258, "left": 361.29}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 291.25, "left": 415.031}
+    },
+    {
+      "location": "Dom Artenii i Tafina",
+      "respawns": [
+        {"top": 218.75, "left": 218.75}
+      ],
+      "gw": {"top": 218.75, "left": 481.25}
+    },
+    {
+      "location": "Dom Artenii i Tafina - piwnica",
+      "respawns": [
+        {"top": 466.667, "left": 427.778}
+      ],
+      "gw": {"top": 77.7778, "left": 77.7778}
+    },
+    {
+      "location": "Dom Artenii i Tafina",
+      "respawns": [
+        {"top": 218.75, "left": 218.75}
+      ],
+      "gw": {"top": 525, "left": 393.75}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 291.25, "left": 415.031}
+    },
+    {
+      "location": "Dom Etrefana",
+      "respawns": [],
+      "gw": {"top": 525, "left": 175}
+    },
+    {
+      "location": "Dom Etrefana - pracownia",
+      "respawns": [
+        {"top": 525, "left": 262.5}
+      ],
+      "gw": {"top": 131.25, "left": 87.5}
+    },
+    {
+      "location": "Dom Etrefana",
+      "respawns": [],
+      "gw": {"top": 393.75, "left": 481.25}
+    },
+    {
+      "location": "Dom Etrefana p.1",
+      "respawns": [],
+      "gw": {"top": 393.75, "left": 481.25}
+    },
+    {
+      "location": "Dom Etrefana p.2",
+      "respawns": [
+        {"top": 262.5, "left": 218.75}
+      ],
+      "gw": {"top": 306.25, "left": 481.25}
+    },
+    {
+      "location": "Dom Etrefana p.1",
+      "respawns": [],
+      "gw": {"top": 306.25, "left": 481.25}
+    },
+    {
+      "location": "Dom Etrefana",
+      "respawns": [],
+      "gw": {"top": 568.75, "left": 350}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 415.031, "left": 364.062}
+    },
+    {
+      "location": "Dom Erniego",
+      "respawns": [
+        {"top": 306.25, "left": 262.5}
+      ],
+      "gw": {"top": 350, "left": 481.25}
+    },
+    {
+      "location": "Dom Erniego p.1",
+      "respawns": [
+        {"top": 218.75, "left": 262.5}
+      ],
+      "gw": {"top": 350, "left": 87.5}
+    },
+    {
+      "location": "Dom Erniego",
+      "respawns": [],
+      "gw": {"top": 350, "left": 87.5}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 291.25, "left": 298.531}
+    },
+    {
+      "location": "Pracownia Bonifacego",
+      "respawns": [],
+      "gw": {"top": 350, "left": 481.25}
+    },
+    {
+      "location": "Pracownia Bonifacego p.1",
+      "respawns": [
+        {"top": 262.5, "left": 218.75}
+      ],
+      "gw": {"top": 481.25, "left": 437.5}
+    },
+    {
+      "location": "Pracownia Bonifacego",
+      "respawns": [],
+      "gw": {"top": 525, "left": 350}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 233, "left": 291.25}
+    },
+    {
+      "location": "Dom Mikliniosa",
+      "respawns": [],
+      "gw": {"top": 481.25, "left": 350}
+    },
+    {
+      "location": "Dom Mikliniosa - przyziemie",
+      "respawns": [
+        {"top": 437.5, "left": 350}
+      ],
+      "gw": {"top": 218.75, "left": 437.5}
+    },
+    {
+      "location": "Dom Mikliniosa",
+      "respawns": [],
+      "gw": {"top": 306.25, "left": 525}
+    },
+    {
+      "location": "Dom Mikliniosa p.1",
+      "respawns": [
+        {"top": 218.75, "left": 393.75}
+      ],
+      "gw": {"top": 262.5, "left": 525}
+    },
+    {
+      "location": "Dom Mikliniosa",
+      "respawns": [],
+      "gw": {"top": 350, "left": 131.25}
+    },
+    {
+      "location": "Eder",
+      "respawns": [],
+      "gw": {"top": 0, "left": 203.875}
+    },
+    {
+      "location": "Fort Eder",
+      "respawns": [],
+      "gw": {"top": 531.531, "left": 174.75}
+    },
+    {
+      "location": "Fortyfikacja p.1",
+      "respawns": [],
+      "gw": {"top": 595, "left": 595}
+    },
+    {
+      "location": "Fortyfikacja",
+      "respawns": [
+        {"top": 595, "left": 245}
+      ],
+      "gw": {"top": 490, "left": 560}
+    },
+    {
+      "location": "Fortyfikacja p.1",
+      "respawns": [],
+      "gw": {"top": 385, "left": 280}
+    },
+    {
+      "location": "Fortyfikacja p.2",
+      "respawns": [
+        {"top": 140, "left": 350}
+      ],
+      "gw": {"top": 35, "left": 420}
+    },
+    {
+      "location": "Fortyfikacja p.3",
+      "respawns": [],
+      "gw": {"top": 35, "left": 210}
+    },
+    {
+      "location": "Fortyfikacja p.4",
+      "respawns": [
+        {"top": 490, "left": 385}
+      ],
+      "gw": {"top": 35, "left": 455}
+    },
+    {
+      "location": "Fortyfikacja p.5",
+      "respawns": [
+        {"top": 350, "left": 350}
+      ],
+      "gw": {"top": 175, "left": 455}
+    },
+    {
+      "location": "Fortyfikacja p.4",
+      "respawns": [],
+      "gw": {"top": 315, "left": 210}
+    },
+    {
+      "location": "Fortyfikacja p.4",
+      "respawns": [],
+      "gw": {"top": 560, "left": 350}
+    },
+    {
+      "location": "Fort Eder",
+      "respawns": [],
+      "gw": {"top": 604.344, "left": 436.875}
+    },
+    {
+      "location": "Ciemnica Szubrawców p.1 - sala 1",
+      "respawns": [
+        {"top": 233.333, "left": 133.333}
+      ],
+      "gw": {"top": 666.667, "left": 100}
+    },
+    {
+      "location": "Ciemnica Szubrawców p.1 - sala 2",
+      "respawns": [
+        {"top": 83.3333, "left": 216.667}
+      ],
+      "gw": {"top": 650, "left": 600}
+    },
+    {
+      "location": "Ciemnica Szubrawców p.1 - sala 3",
+      "respawns": [
+        {"top": 131.25, "left": 492.188},
+        {"top": 579.688, "left": 557.812}
+      ],
+      "gw": {"top": 43.75, "left": 87.5}
+    },
+    {
+      "location": "Ciemnica Szubrawców p.1 - sala 2",
+      "respawns": [
+        {"top": 83.3333, "left": 216.667}
+      ],
+      "gw": {"top": 116.667, "left": 33.3333}
+    },
+    {
+      "location": "Ciemnica Szubrawców p.1 - sala 1",
+      "respawns": [
+        {"top": 233.333, "left": 133.333}
+      ],
+      "gw": {"top": 166.667, "left": 33.3333}
+    },
+    {
+      "location": "Fort Eder",
+      "respawns": [
+        {"top": 436.875, "left": 429.594}
+      ],
+      "gw": {"top": 393.188, "left": 458.719}
+    },
+    {
+      "location": "Stary Kupiecki Trakt",
+      "respawns": [
+        {"top": 58.25, "left": 58.25},
+        {"top": 87.375, "left": 371.344},
+        {"top": 320.375, "left": 400.469},
+        {"top": 669.875, "left": 400.469}
+      ],
+      "gw": {"top": 691.719, "left": 233}
+    },
+    {
+      "location": "Stukot Widmowych Kół",
+      "respawns": [
+        {"top": 444.156, "left": 167.469},
+        {"top": 203.875, "left": 145.625},
+        {"top": 36.4062, "left": 36.4062},
+        {"top": 524.25, "left": 349.5}
+      ],
+      "gw": {"top": 691.719, "left": 138.344}
+    },
+    {
+      "location": "Wertepy Rzezimieszków",
+      "respawns": [
+        {"top": 131.25, "left": 579.688}
+      ],
+      "gw": {"top": 98.4375, "left": 535.938}
+    },
+    {
+      "location": "Chata szabrowników",
+      "respawns": [
+        {"top": 175, "left": 262.5}
+      ],
+      "gw": {"top": 612.5, "left": 350}
+    },
+    {
+      "location": "Wertepy Rzezimieszków",
+      "respawns": [
+        {"top": 601.562, "left": 131.25},
+        {"top": 557.812, "left": 579.688}
+      ],
+      "gw": {"top": 481.25, "left": 0}
+    },
+    {
+      "location": "Gościniec Bardów",
+      "respawns": [],
+      "gw": {"top": 0, "left": 320.375}
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "location": "Labirynt Wyklętych p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Labirynt Wyklętych p.2 - sala 1",
+      "directly": true,
+      "gw": {
+        "top": 218.75,
+        "left": 277.083
+      }
+    },
+    {
+      "name": "Pieczara Czaszek",
+      "directly": true,
+      "gw": {
+        "top": 29.167,
+        "left": 612.5
+      }
+    },
+    {
+      "name": "Labirynt Wyklętych p.2 - sala 2",
+      "directly": true,
+      "gw": {
+        "top": 495.833,
+        "left": 656.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

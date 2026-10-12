@@ -1,0 +1,16 @@
+{
+  "location": "Kamienna Kryjówka",
+  "type": "",
+  "destination": [
+    {
+      "name": "Dolina Rozbójników",
+      "gw": {
+        "top": 656.25,
+        "left": 284.375
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

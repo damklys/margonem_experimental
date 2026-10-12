@@ -1,0 +1,16 @@
+{
+  "location": "Stare Wyrobisko p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stare Wyrobisko p.2",
+      "gw": {
+        "top": 350.0,
+        "left": 218.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

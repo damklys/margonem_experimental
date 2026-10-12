@@ -1,0 +1,23 @@
+{
+  "location": "Jaskinia Wilczego Zamętu p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Jaskinia Wilczego Zamętu p.1",
+      "gw": {
+        "top": 634.375,
+        "left": 218.75
+      }
+    },
+    {
+      "name": "Wilczy Szpic",
+      "gw": {
+        "top": 350.0,
+        "left": 546.875
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

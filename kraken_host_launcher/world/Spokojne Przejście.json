@@ -1,0 +1,30 @@
+{
+  "location": "Spokojne Przejście",
+  "type": "",
+  "destination": [
+    {
+      "name": "Eder",
+      "gw": {
+        "top": 254.844,
+        "left": 458.719
+      }
+    },
+    {
+      "name": "Racicowy Matecznik",
+      "gw": {
+        "top": 691.719,
+        "left": 58.25
+      }
+    },
+    {
+      "name": "Zasłonięte Jezioro",
+      "gw": {
+        "top": 167.469,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

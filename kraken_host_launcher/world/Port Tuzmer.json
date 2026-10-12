@@ -1,0 +1,16 @@
+{
+  "location": "Port Tuzmer",
+  "type": "",
+  "destination": [
+    {
+      "name": "Tuzmer",
+      "gw": {
+        "top": 0,
+        "left": 342.708
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

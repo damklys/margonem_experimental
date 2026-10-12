@@ -1,0 +1,30 @@
+{
+  "location": "Mroczna Pieczara p.1 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mroczny Przesmyk",
+      "gw": {
+        "top": 588.0,
+        "left": 336.0
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.1 - sala 2",
+      "gw": {
+        "top": 364.0,
+        "left": 112.0
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.1 - sala 3",
+      "gw": {
+        "top": 84.0,
+        "left": 336.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

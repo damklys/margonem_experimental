@@ -1,0 +1,16 @@
+{
+  "location": "Siedlisko Nietoperzy p.3 - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Siedlisko Nietoperzy p.3 - sala 1",
+      "gw": {
+        "top": 583.333,
+        "left": 38.8889
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

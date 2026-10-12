@@ -1,0 +1,17 @@
+{
+  "location": "Kamienna Strażnica - Sanktuarium",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kamienna Strażnica - Sala Chwały",
+      "directly": true,
+      "gw": {
+        "top": 29.136,
+        "left": 233.091
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

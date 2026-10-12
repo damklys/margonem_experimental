@@ -1,0 +1,23 @@
+{
+  "location": "Głębokie Skałki p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Głębokie Skałki p.2",
+      "gw": {
+        "top": 21.875,
+        "left": 590.625
+      }
+    },
+    {
+      "name": "Głębokie Skałki p.4",
+      "gw": {
+        "top": 612.5,
+        "left": 546.875
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

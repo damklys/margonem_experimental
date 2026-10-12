@@ -1,0 +1,168 @@
+{
+  "route": [
+    {
+      "location": "Stare Sioło",
+      "respawns": [
+        {"top": 51.0417, "left": 663.542},
+        {"top": 320.833, "left": 612.5}
+      ],
+      "gw": {"top": 0, "left": 568.75}
+    },
+    {
+      "location": "Sucha Dolina",
+      "respawns": [
+        {"top": 560.656, "left": 225.719},
+        {"top": 167.469, "left": 320.375}
+      ],
+      "gw": {"top": 364.062, "left": 458.719}
+    },
+    {
+      "location": "Płaskowyż Arpan",
+      "respawns": [
+        {"top": 233.333, "left": 269.792},
+        {"top": 364.583, "left": 532.292},
+        {"top": 109.375, "left": 517.708}
+      ],
+      "gw": {"top": 131.25, "left": 627.083}
+    },
+    {
+      "location": "Skalne Cmentarzysko p.1",
+      "respawns": [
+        {"top": 371.875, "left": 109.375}
+      ],
+      "gw": {"top": 131.25, "left": 196.875}
+    },
+    {
+      "location": "Skalne Cmentarzysko p.2",
+      "respawns": [
+        {"top": 291.667, "left": 583.333},
+        {"top": 583.333, "left": 116.667}
+      ],
+      "gw": {"top": 656.25, "left": 466.667}
+    },
+    {
+      "location": "Skalne Cmentarzysko p.3",
+      "respawns": [
+        {"top": 426.562, "left": 382.812},
+        {"top": 109.375, "left": 601.562},
+        {"top": 481.25, "left": 207.812}
+      ],
+      "gw": {"top": 481.25, "left": 579.688}
+    },
+    {
+      "location": "Skalne Cmentarzysko p.2",
+      "respawns": [
+        {"top": 583.333, "left": 116.667},
+        {"top": 291.667, "left": 583.333}
+      ],
+      "gw": {"top": 29.1667, "left": 87.5}
+    },
+    {
+      "location": "Skalne Cmentarzysko p.1",
+      "respawns": [
+        {"top": 371.875, "left": 109.375}
+      ],
+      "gw": {"top": 634.375, "left": 459.375}
+    },
+    {
+      "location": "Płaskowyż Arpan",
+      "respawns": [
+        {"top": 109.375, "left": 517.708},
+        {"top": 233.333, "left": 269.792},
+        {"top": 364.583, "left": 532.292}
+      ],
+      "gw": {"top": 459.375, "left": 619.792}
+    },
+    {
+      "location": "Złote Piaski",
+      "respawns": [
+        {"top": 50.9688, "left": 320.375},
+        {"top": 400.469, "left": 320.375},
+        {"top": 436.875, "left": 80.0938},
+        {"top": 211.156, "left": 94.6562}
+      ],
+      "gw": {"top": 240.281, "left": 174.75}
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.1",
+      "respawns": [
+        {"top": 471.154, "left": 551.923},
+        {"top": 148.077, "left": 121.154}
+      ],
+      "gw": {"top": 13.4615, "left": 376.923}
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.2",
+      "respawns": [
+        {"top": 350, "left": 277.083}
+      ],
+      "gw": {"top": 87.5, "left": 335.417}
+    },
+    {
+      "location": "Piramida Pustynnego Władcy p.1",
+      "respawns": [
+        {"top": 148.077, "left": 121.154},
+        {"top": 471.154, "left": 551.923}
+      ],
+      "gw": {"top": 659.615, "left": 188.462}
+    },
+    {
+      "location": "Złote Piaski",
+      "respawns": [
+        {"top": 50.9688, "left": 320.375},
+        {"top": 400.469, "left": 320.375},
+        {"top": 436.875, "left": 80.0938},
+        {"top": 211.156, "left": 94.6562}
+      ],
+      "gw": {"top": 415.031, "left": 458.719}
+    },
+    {
+      "location": "Ruiny Pustynnych Burz",
+      "respawns": [
+        {"top": 167.469, "left": 160.188},
+        {"top": 509.688, "left": 320.375}
+      ],
+      "gw": {"top": 407.75, "left": 0}
+    },
+    {
+      "location": "Złote Piaski",
+      "respawns": [
+        {"top": 50.9688, "left": 320.375},
+        {"top": 400.469, "left": 320.375},
+        {"top": 436.875, "left": 80.0938},
+        {"top": 211.156, "left": 94.6562}
+      ],
+      "gw": {"top": 691.719, "left": 334.938}
+    },
+    {
+      "location": "Dolina Suchych Łez",
+      "respawns": [
+        {"top": 255.208, "left": 576.042},
+        {"top": 444.792, "left": 444.792},
+        {"top": 379.167, "left": 247.917}
+      ],
+      "gw": {"top": 320.833, "left": 0}
+    },
+    {
+      "location": "Ciche Rumowiska",
+      "respawns": [
+        {"top": 342.708, "left": 583.333},
+        {"top": 80.2083, "left": 619.792},
+        {"top": 350, "left": 466.667},
+        {"top": 196.875, "left": 189.583},
+        {"top": 401.042, "left": 138.542}
+      ],
+      "gw": {"top": 0, "left": 342.708}
+    },
+    {
+      "location": "Oaza Siedmiu Wichrów",
+      "respawns": [
+        {"top": 524.25, "left": 356.781},
+        {"top": 487.844, "left": 160.188},
+        {"top": 305.812, "left": 233},
+        {"top": 254.844, "left": 349.5}
+      ],
+      "gw": {"top": 509.688, "left": 0}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "location": "Pieczara Niepogody p.5",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pieczara Niepogody p.4",
+      "gw": {
+        "top": 116.667,
+        "left": 306.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

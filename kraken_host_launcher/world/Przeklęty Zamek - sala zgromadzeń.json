@@ -1,0 +1,30 @@
+{
+  "location": "Przeklęty Zamek - sala zgromadzeń",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - zbrojownia",
+      "gw": {
+        "top": 233.333,
+        "left": 87.5
+      }
+    },
+    {
+      "name": "Przeklęty Zamek p.1",
+      "gw": {
+        "top": 277.083,
+        "left": 495.833
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - wejście wschodnie",
+      "gw": {
+        "top": 87.5,
+        "left": 627.083
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

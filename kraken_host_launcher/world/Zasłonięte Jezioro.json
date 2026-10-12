@@ -1,0 +1,23 @@
+{
+  "location": "Zasłonięte Jezioro",
+  "type": "",
+  "destination": [
+    {
+      "name": "Spokojne Przejście",
+      "gw": {
+        "top": 167.469,
+        "left": 458.719
+      }
+    },
+    {
+      "name": "Słoneczna Wyżyna",
+      "gw": {
+        "top": 495.125,
+        "left": 0.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

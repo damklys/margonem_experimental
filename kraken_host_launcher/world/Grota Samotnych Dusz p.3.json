@@ -1,0 +1,414 @@
+{
+  "location": "Grota Samotnych Dusz p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+      "directly": true,
+      "gw": {
+        "top": 667.188,
+        "left": 142.188
+      }
+    },
+    {
+      "name": "Ślepe Wyrobisko",
+      "directly": true,
+      "gw": {
+        "top": 306.25,
+        "left": 393.75
+      }
+    },
+    {
+      "name": "Grota Samotnych Dusz p.4",
+      "directly": true,
+      "gw": {
+        "top": 481.25,
+        "left": 601.562
+      }
+    },
+    {
+      "name": "Grota Samotnych Dusz p.2",
+      "directly": true,
+      "gw": {
+        "top": 32.812,
+        "left": 612.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 382.812,
+        "level": 89,
+        "name": "Grex",
+        "tip_id": "891",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 35,
+        "y": 24
+      },
+      {
+        "grp": true,
+        "left": 481.25,
+        "level": 89,
+        "name": "Grex",
+        "tip_id": "892",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 16
+      },
+      {
+        "grp": true,
+        "left": 317.188,
+        "level": 89,
+        "name": "Grex",
+        "tip_id": "893",
+        "top": 284.375,
+        "type": "mmp-mob",
+        "x": 29,
+        "y": 26
+      },
+      {
+        "grp": true,
+        "left": 415.625,
+        "level": 89,
+        "name": "Grex",
+        "tip_id": "894",
+        "top": 240.625,
+        "type": "mmp-mob",
+        "x": 38,
+        "y": 22
+      },
+      {
+        "grp": true,
+        "left": 284.375,
+        "level": 90,
+        "name": "Urgrap",
+        "tip_id": "895",
+        "top": 273.438,
+        "type": "mmp-mob",
+        "x": 26,
+        "y": 25
+      },
+      {
+        "grp": true,
+        "left": 470.312,
+        "level": 90,
+        "name": "Urgrap",
+        "tip_id": "896",
+        "top": 470.312,
+        "type": "mmp-mob",
+        "x": 43,
+        "y": 43
+      },
+      {
+        "grp": false,
+        "left": 448.438,
+        "level": 90,
+        "name": "Urgrap",
+        "tip_id": "897",
+        "top": 207.812,
+        "type": "mmp-mob",
+        "x": 41,
+        "y": 19
+      },
+      {
+        "grp": true,
+        "left": 514.062,
+        "level": 90,
+        "name": "Volmat",
+        "tip_id": "898",
+        "top": 153.125,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 14
+      },
+      {
+        "grp": true,
+        "left": 360.938,
+        "level": 90,
+        "name": "Volmat",
+        "tip_id": "899",
+        "top": 295.312,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 27
+      },
+      {
+        "grp": true,
+        "left": 546.875,
+        "level": 90,
+        "name": "Volmat",
+        "tip_id": "900",
+        "top": 481.25,
+        "type": "mmp-mob",
+        "x": 50,
+        "y": 44
+      },
+      {
+        "grp": true,
+        "left": 251.562,
+        "level": 90,
+        "name": "Volmat",
+        "tip_id": "901",
+        "top": 262.5,
+        "type": "mmp-mob",
+        "x": 23,
+        "y": 24
+      },
+      {
+        "grp": false,
+        "left": 514.062,
+        "level": 89,
+        "name": "Grex",
+        "tip_id": "902",
+        "top": 437.5,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 40
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 142.188,
+        "name": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+        "tip_id": "886",
+        "top": 667.188,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 393.75,
+        "name": "Ślepe Wyrobisko",
+        "tip_id": "887",
+        "top": 306.25,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 601.562,
+        "name": "Grota Samotnych Dusz p.4",
+        "tip_id": "888",
+        "top": 481.25,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 612.5,
+        "name": "Grota Samotnych Dusz p.2",
+        "tip_id": "889",
+        "top": 32.8125,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [
+      {
+        "left": 470.312,
+        "name": "Trup",
+        "tip_id": "890",
+        "top": 415.625,
+        "type": "mmp-npc"
+      }
+    ],
+    "mmp-item": [
+      {
+        "left": 557.812,
+        "name": "Fungibar ulotny",
+        "tip_id": "903",
+        "top": 65.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 634.375,
+        "name": "Fungibar ulotny",
+        "tip_id": "904",
+        "top": 76.5625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 525,
+        "name": "Fungibar ulotny",
+        "tip_id": "905",
+        "top": 120.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 87.5,
+        "name": "Fungibar ulotny",
+        "tip_id": "906",
+        "top": 339.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 131.25,
+        "name": "Fungibar ulotny",
+        "tip_id": "907",
+        "top": 437.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 87.5,
+        "name": "Fungibar ulotny",
+        "tip_id": "908",
+        "top": 470.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 481.25,
+        "name": "Kości",
+        "tip_id": "909",
+        "top": 142.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 535.938,
+        "name": "Doskonała czaszka",
+        "tip_id": "910",
+        "top": 153.125,
+        "type": "mmp-item"
+      },
+      {
+        "left": 393.75,
+        "name": "Kości",
+        "tip_id": "911",
+        "top": 196.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 164.062,
+        "name": "Kości",
+        "tip_id": "912",
+        "top": 240.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 240.625,
+        "name": "Skałogryz bełtający",
+        "tip_id": "913",
+        "top": 240.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 295.312,
+        "name": "Skałogryz bełtający",
+        "tip_id": "914",
+        "top": 251.562,
+        "type": "mmp-item"
+      },
+      {
+        "left": 196.875,
+        "name": "Kości",
+        "tip_id": "915",
+        "top": 295.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 43.75,
+        "name": "Kości",
+        "tip_id": "916",
+        "top": 371.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 503.125,
+        "name": "Skałogryz bełtający",
+        "tip_id": "917",
+        "top": 393.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 448.438,
+        "name": "Skałogryz bełtający",
+        "tip_id": "918",
+        "top": 426.562,
+        "type": "mmp-item"
+      },
+      {
+        "left": 568.75,
+        "name": "Skałogryz bełtający",
+        "tip_id": "919",
+        "top": 448.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 164.062,
+        "name": "Doskonała czaszka",
+        "tip_id": "920",
+        "top": 492.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 207.812,
+        "name": "Skałogryz bełtający",
+        "tip_id": "921",
+        "top": 492.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 240.625,
+        "name": "Kości",
+        "tip_id": "922",
+        "top": 514.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 262.5,
+        "name": "Doskonała czaszka",
+        "tip_id": "923",
+        "top": 525,
+        "type": "mmp-item"
+      },
+      {
+        "left": 426.562,
+        "name": "Doskonała czaszka",
+        "tip_id": "924",
+        "top": 546.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 142.188,
+        "name": "Doskonała czaszka",
+        "tip_id": "925",
+        "top": 601.562,
+        "type": "mmp-item"
+      },
+      {
+        "left": 492.188,
+        "name": "Doskonała czaszka",
+        "tip_id": "926",
+        "top": 601.562,
+        "type": "mmp-item"
+      },
+      {
+        "left": 120.312,
+        "name": "Skałogryz bełtający",
+        "tip_id": "927",
+        "top": 612.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 459.375,
+        "name": "Doskonała czaszka",
+        "tip_id": "928",
+        "top": 612.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 196.875,
+        "name": "Skałogryz bełtający",
+        "tip_id": "929",
+        "top": 645.312,
+        "type": "mmp-item"
+      }
+    ]
+  },
+  "frame_size": 11.0
+}

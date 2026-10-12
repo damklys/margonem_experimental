@@ -1,0 +1,210 @@
+{
+  "location": "Kopalnia Margorii",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ślepe Wyrobisko",
+      "directly": true,
+      "gw": {
+        "top": 604.344,
+        "left": 50.969
+      }
+    },
+    {
+      "name": "Margoria",
+      "directly": true,
+      "gw": {
+        "top": 72.812,
+        "left": 167.469
+      }
+    },
+    {
+      "name": "Labirynt Margorii",
+      "directly": true,
+      "gw": {
+        "top": 94.656,
+        "left": 385.906
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "frame_size": 8.0,
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": false,
+        "left": 160.188,
+        "level": 86,
+        "name": "Krasnoludzki kowal",
+        "tip_id": "589",
+        "top": 160.188,
+        "type": "mob",
+        "x": 22,
+        "y": 22
+      },
+      {
+        "grp": false,
+        "left": 80.0938,
+        "level": 85,
+        "name": "Krasnoludzki górnik",
+        "tip_id": "590",
+        "top": 196.594,
+        "type": "mob",
+        "x": 11,
+        "y": 27
+      },
+      {
+        "grp": false,
+        "left": 203.875,
+        "level": 87,
+        "name": "Krasnoludzki wojownik",
+        "tip_id": "591",
+        "top": 218.438,
+        "type": "mob",
+        "x": 28,
+        "y": 30
+      },
+      {
+        "grp": false,
+        "left": 160.188,
+        "level": 87,
+        "name": "Krasnoludzki wojownik",
+        "tip_id": "592",
+        "top": 283.969,
+        "type": "mob",
+        "x": 22,
+        "y": 39
+      },
+      {
+        "grp": false,
+        "left": 145.625,
+        "level": 87,
+        "name": "Krasnoludzki wojownik",
+        "tip_id": "593",
+        "top": 305.812,
+        "type": "mob",
+        "x": 20,
+        "y": 42
+      },
+      {
+        "grp": false,
+        "left": 72.8125,
+        "level": 87,
+        "name": "Krasnoludzki wojownik",
+        "tip_id": "594",
+        "top": 364.062,
+        "type": "mob",
+        "x": 10,
+        "y": 50
+      },
+      {
+        "grp": false,
+        "left": 43.6875,
+        "level": 85,
+        "name": "Krasnoludzki górnik",
+        "tip_id": "595",
+        "top": 385.906,
+        "type": "mob",
+        "x": 6,
+        "y": 53
+      },
+      {
+        "grp": false,
+        "left": 152.906,
+        "level": 86,
+        "name": "Krasnoludzki strażnik",
+        "tip_id": "597",
+        "top": 546.094,
+        "type": "mob",
+        "x": 21,
+        "y": 75
+      },
+      {
+        "grp": false,
+        "left": 160.188,
+        "level": 86,
+        "name": "Krasnoludzki kowal",
+        "tip_id": "599",
+        "top": 611.625,
+        "type": "mob",
+        "x": 22,
+        "y": 84
+      },
+      {
+        "grp": false,
+        "left": 50.9688,
+        "level": 85,
+        "name": "Krasnoludzki górnik",
+        "tip_id": "600",
+        "top": 334.938,
+        "type": "mob",
+        "x": 7,
+        "y": 46
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 50.9688,
+        "name": "Ślepe Wyrobisko",
+        "tip_id": "728",
+        "top": 604.344,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 167.469,
+        "name": "Margoria",
+        "tip_id": "729",
+        "top": 72.8125,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 385.906,
+        "name": "Labirynt Margorii",
+        "tip_id": "730",
+        "top": 94.6562,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [
+      {
+        "left": 58.25,
+        "level": null,
+        "name": null,
+        "tip_id": "603",
+        "top": 291.25,
+        "type": "heros-resp",
+        "x": 8,
+        "y": 40
+      },
+      {
+        "left": 218.438,
+        "level": null,
+        "name": null,
+        "tip_id": "604",
+        "top": 669.875,
+        "type": "heros-resp",
+        "x": 30,
+        "y": 92
+      },
+      {
+        "left": 422.312,
+        "level": null,
+        "name": null,
+        "tip_id": "605",
+        "top": 516.969,
+        "type": "heros-resp",
+        "x": 58,
+        "y": 71
+      }
+    ],
+    "mmp-npc": [],
+    "mmp-item": []
+  }
+}

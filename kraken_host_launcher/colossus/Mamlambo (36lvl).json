@@ -1,0 +1,13 @@
+{
+  "gathering_location": "Pradawne Wzgórze Przodków",
+  "gathering_position": {"top": 94.656, "left": 334.938},
+  "fight_location": "Świątynia Mzintlavy",
+  "fight_position": {"top": 240.625, "left": 350.0},
+  "exit_location": "Pradawne Wzgórze Przodków",
+  "colossus_class": "mmp-collosus",
+  "party_size": 10,
+  "gather_key": "g",
+  "attack_key": "q",
+  "gather_interval_s": 10,
+  "follower_min_party": 5
+}

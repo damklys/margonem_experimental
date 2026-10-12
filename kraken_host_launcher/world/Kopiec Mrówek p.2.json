@@ -1,0 +1,23 @@
+{
+  "location": "Kopiec Mrówek p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mrowisko p.2",
+      "gw": {
+        "top": 415.625,
+        "left": 21.875
+      }
+    },
+    {
+      "name": "Kopiec Mrówek p.1",
+      "gw": {
+        "top": 21.875,
+        "left": 525.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

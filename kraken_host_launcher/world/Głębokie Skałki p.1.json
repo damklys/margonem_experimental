@@ -1,0 +1,23 @@
+{
+  "location": "Głębokie Skałki p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zdradzieckie Przejście p.1",
+      "gw": {
+        "top": 87.5,
+        "left": 43.75
+      }
+    },
+    {
+      "name": "Głębokie Skałki p.2",
+      "gw": {
+        "top": 641.667,
+        "left": 583.333
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

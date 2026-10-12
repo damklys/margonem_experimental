@@ -1,0 +1,16 @@
+{
+  "location": "Namiot Kambiona",
+  "type": "",
+  "destination": [
+    {
+      "name": "Las Dziwów",
+      "gw": {
+        "top": 525,
+        "left": 350
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,41 @@
+{
+  "min_lvl": 0,
+  "max_lvl": 999,
+  "route": [
+    {
+      "location": "Morwowe Przejście",
+      "gw_top": 218.75,
+      "gw_left": 0.0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Nawiedzony Jar",
+      "gw_top": 262.5,
+      "gw_left": 459.375,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.3",
+      "gw_top": 465.826,
+      "gw_left": 127.043,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.4",
+      "gw_top": 444.162,
+      "gw_left": 228.811,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Stare Wyrobisko p.5",
+      "gw_top": 638.235,
+      "gw_left": 247.059,
+      "attack": true,
+      "excluded_mobs": []
+    }
+  ]
+}

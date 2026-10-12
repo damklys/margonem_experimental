@@ -1,0 +1,23 @@
+{
+  "location": "Piekielna Grota p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zniszczone Opactwo",
+      "gw": {
+        "top": 379.167,
+        "left": 554.167
+      }
+    },
+    {
+      "name": "Piekielna Grota p.2",
+      "gw": {
+        "top": 320.833,
+        "left": 175.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

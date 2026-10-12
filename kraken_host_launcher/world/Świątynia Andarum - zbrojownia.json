@@ -1,0 +1,16 @@
+{
+  "location": "Świątynia Andarum - zbrojownia",
+  "type": "",
+  "destination": [
+    {
+      "name": "Świątynia Andarum - magazyn p.2",
+      "gw": {
+        "top": 557.812,
+        "left": 164.062
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,16 @@
+{
+  "location": "Bandyckie Chowisko - skarbiec",
+  "type": "",
+  "destination": [
+    {
+      "name": "Bandyckie Chowisko",
+      "gw": {
+        "top": 670.833,
+        "left": 554.167
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,37 @@
+{
+  "location": "Przeklęty Zamek - zbrojownia",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - podziemia północne",
+      "gw": {
+        "top": 14.5833,
+        "left": 189.583
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - Kanały",
+      "gw": {
+        "top": 422.917,
+        "left": 175.0
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - podziemia południowe",
+      "gw": {
+        "top": 335.417,
+        "left": 277.083
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - sala zgromadzeń",
+      "gw": {
+        "top": 233.333,
+        "left": 583.333
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

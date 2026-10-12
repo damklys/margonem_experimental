@@ -1,0 +1,104 @@
+{
+  "min_lvl": 60,
+  "max_lvl": 67,
+  "route": [
+    {
+      "location": "Radosna Polana",
+      "gw_top": 514.062,
+      "gw_left": 689.062,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wioska Gnolli",
+      "gw_top": 21.875,
+      "gw_left": 488.542,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Jaskinia Gnollich Szamanów p.1",
+      "gw_top": 538.462,
+      "gw_left": 457.692,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Jaskinia Gnollich Szamanów p.2",
+      "gw_top": 164.706,
+      "gw_left": 370.588,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Jaskinia Gnollich Szamanów p.3",
+      "gw_top": 67.3077,
+      "gw_left": 80.7692,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Jaskinia Gnollich Szamanów p.2",
+      "gw_top": 452.941,
+      "gw_left": 473.529,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wioska Gnolli",
+      "gw_top": 0.0,
+      "gw_left": 247.917,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Czeluść Ognistej Pożogi",
+      "gw_top": 43.75,
+      "gw_left": 72.9167,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Pragnolli p.1",
+      "gw_top": 160.0,
+      "gw_left": 580.0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Pragnolli p.1 - sala 2",
+      "gw_top": 528.889,
+      "gw_left": 451.111,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Pragnolli p.2",
+      "gw_top": 114.48,
+      "gw_left": 521.52,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Pragnolli p.3",
+      "gw_top": 630.0,
+      "gw_left": 542.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Czeluść Ognistej Pożogi",
+      "gw_top": 459.375,
+      "gw_left": 247.917,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Wioska Gnolli",
+      "gw_top": 116.667,
+      "gw_left": 0.0,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

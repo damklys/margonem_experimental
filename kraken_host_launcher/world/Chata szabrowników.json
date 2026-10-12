@@ -1,0 +1,16 @@
+{
+  "location": "Chata szabrowników",
+  "type": "",
+  "destination": [
+    {
+      "name": "Wertepy Rzezimieszków",
+      "gw": {
+        "top": 612.5,
+        "left": 350.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

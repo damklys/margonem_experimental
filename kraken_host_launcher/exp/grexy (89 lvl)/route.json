@@ -1,0 +1,90 @@
+{
+  "min_lvl": 85,
+  "max_lvl": 92,
+  "route": [
+    {
+      "location": "Grota Samotnych Dusz p.1",
+      "gw_top": 557.812,
+      "gw_left": 164.062,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.2",
+      "gw_top": 153.125,
+      "gw_left": 492.188,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.3",
+      "gw_top": 667.188,
+      "gw_left": 142.188,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+      "gw_top": 218.75,
+      "gw_left": 546.875,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.3",
+      "gw_top": 481.25,
+      "gw_left": 601.562,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.4",
+      "gw_top": 364.583,
+      "gw_left": 247.917,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.5",
+      "gw_top": 218.75,
+      "gw_left": 160.417,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.6",
+      "gw_top": 32.8125,
+      "gw_left": 43.75,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.5",
+      "gw_top": 408.333,
+      "gw_left": 131.25,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.4",
+      "gw_top": 14.5833,
+      "gw_left": 102.083,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.3",
+      "gw_top": 32.8125,
+      "gw_left": 612.5,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Samotnych Dusz p.2",
+      "gw_top": 546.875,
+      "gw_left": 65.625,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

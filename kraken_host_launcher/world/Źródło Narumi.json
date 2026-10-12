@@ -1,0 +1,33 @@
+{
+  "location": "Źródło Narumi",
+  "type": "",
+  "destination": [
+    {
+      "name": "Wertepy Rzezimieszków",
+      "directly": true,
+      "gw": {
+        "top": 459.375,
+        "left": 0
+      }
+    },
+    {
+      "name": "Uroczysko Wodnika",
+      "directly": true,
+      "gw": {
+        "top": 0,
+        "left": 284.375
+      }
+    },
+    {
+      "name": "Podgrodzie Nithal",
+      "directly": true,
+      "gw": {
+        "top": 689.062,
+        "left": 360.938
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

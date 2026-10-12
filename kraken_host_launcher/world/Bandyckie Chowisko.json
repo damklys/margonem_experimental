@@ -1,0 +1,23 @@
+{
+  "location": "Bandyckie Chowisko",
+  "type": "",
+  "destination": [
+    {
+      "name": "Chata bandytów",
+      "gw": {
+        "top": 350,
+        "left": 572.727
+      }
+    },
+    {
+      "name": "Bandyckie Chowisko - skarbiec",
+      "gw": {
+        "top": 63.6364,
+        "left": 286.364
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

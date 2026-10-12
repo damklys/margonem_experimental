@@ -1,0 +1,73 @@
+{
+  "location": "Nawiedzony Jar",
+  "type": "",
+  "destination": [
+    {
+      "name": "Zburzona Twierdza",
+      "directly": true,
+      "gw": {
+        "top": 0.0,
+        "left": 273.438
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.4",
+      "directly": true,
+      "gw": {
+        "top": 273.438,
+        "left": 382.812
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.5",
+      "directly": true,
+      "gw": {
+        "top": 459.375,
+        "left": 503.125
+      }
+    },
+    {
+      "name": "Mroczny Przesmyk",
+      "directly": true,
+      "gw": {
+        "top": 350.0,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Górska Kopalnia",
+      "directly": true,
+      "gw": {
+        "top": 612.5,
+        "left": 623.438
+      }
+    },
+    {
+      "name": "Górska Grota p.2",
+      "directly": true,
+      "gw": {
+        "top": 612.5,
+        "left": 109.375
+      }
+    },
+    {
+      "name": "Morwowe Przejście",
+      "directly": true,
+      "gw": {
+        "top": 218.75,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.3",
+      "directly": true,
+      "gw": {
+        "top": 262.5,
+        "left": 459.375
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,16 @@
+{
+  "location": "Przeklęty Zamek - komnata",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek p.2",
+      "gw": {
+        "top": 612.5,
+        "left": 481.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

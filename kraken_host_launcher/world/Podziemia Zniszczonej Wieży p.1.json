@@ -1,0 +1,23 @@
+{
+  "location": "Podziemia Zniszczonej Wieży p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ruiny Wieży Magów - przedsionek",
+      "gw": {
+        "top": 50,
+        "left": 366.667
+      }
+    },
+    {
+      "name": "Podziemia Zniszczonej Wieży p.2",
+      "gw": {
+        "top": 600,
+        "left": 600
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

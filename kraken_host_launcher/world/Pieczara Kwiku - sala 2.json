@@ -1,0 +1,16 @@
+{
+  "location": "Pieczara Kwiku - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pieczara Kwiku - sala 1",
+      "gw": {
+        "top": 525.0,
+        "left": 225.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

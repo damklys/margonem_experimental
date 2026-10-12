@@ -1,0 +1,30 @@
+{
+  "location": "Pagórki Łupieżców",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przełęcz Łotrzyków",
+      "gw": {
+        "top": 349.5,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Skład Grabieżców",
+      "gw": {
+        "top": 291.25,
+        "left": 123.781
+      }
+    },
+    {
+      "name": "Schowek na Łupy",
+      "gw": {
+        "top": 364.062,
+        "left": 167.469
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Lazurytowa Grota p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Uroczysko",
+      "gw": {
+        "top": 568.75,
+        "left": 371.875
+      }
+    },
+    {
+      "name": "Lazurytowa Grota p.2",
+      "gw": {
+        "top": 284.375,
+        "left": 568.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,16 @@
+{
+  "location": "Schowek na Łupy",
+  "type": "",
+  "destination": [
+    {
+      "name": "Pagórki Łupieżców",
+      "gw": {
+        "top": 10.9375,
+        "left": 153.125
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

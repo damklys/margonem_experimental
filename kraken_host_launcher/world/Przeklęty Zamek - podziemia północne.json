@@ -1,0 +1,23 @@
+{
+  "location": "Przeklęty Zamek - podziemia północne",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - wejście północne",
+      "gw": {
+        "top": 315.0,
+        "left": 612.5
+      }
+    },
+    {
+      "name": "Przeklęty Zamek - zbrojownia",
+      "gw": {
+        "top": 122.5,
+        "left": 35.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,16 @@
+{
+  "location": "Jama Kocich Ślepi",
+  "type": "",
+  "destination": [
+    {
+      "name": "Tygrysia Polana",
+      "gw": {
+        "top": 636.364,
+        "left": 477.273
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

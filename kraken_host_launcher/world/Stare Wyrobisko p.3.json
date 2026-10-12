@@ -1,0 +1,132 @@
+{
+  "location": "Stare Wyrobisko p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stare Wyrobisko p.4",
+      "gw": {
+        "top": 465.826,
+        "left": 127.043
+      }
+    },
+    {
+      "name": "Stare Wyrobisko p.2",
+      "gw": {
+        "top": 84.6957,
+        "left": 359.957
+      }
+    },
+    {
+      "name": "Nawiedzony Jar",
+      "gw": {
+        "top": 614.043,
+        "left": 232.913
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": false,
+        "left": 359.957,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "2001",
+        "top": 169.391,
+        "type": "mmp-mob",
+        "x": 17,
+        "y": 8
+      },
+      {
+        "grp": true,
+        "left": 402.304,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "2002",
+        "top": 338.783,
+        "type": "mmp-mob",
+        "x": 19,
+        "y": 16
+      },
+      {
+        "grp": false,
+        "left": 190.565,
+        "level": 47,
+        "name": "Ork zhaghokk",
+        "tip_id": "2003",
+        "top": 550.522,
+        "type": "mmp-mob",
+        "x": 9,
+        "y": 26
+      },
+      {
+        "grp": false,
+        "left": 211.739,
+        "level": 48,
+        "name": "Ork wuakl",
+        "tip_id": "2004",
+        "top": 296.435,
+        "type": "mmp-mob",
+        "x": 10,
+        "y": 14
+      },
+      {
+        "grp": false,
+        "left": 105.87,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "2005",
+        "top": 359.957,
+        "type": "mmp-mob",
+        "x": 5,
+        "y": 17
+      },
+      {
+        "grp": true,
+        "left": 338.783,
+        "level": 47,
+        "name": "Ork kuurgh",
+        "tip_id": "2006",
+        "top": 381.13,
+        "type": "mmp-mob",
+        "x": 16,
+        "y": 18
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 127.043,
+        "name": "Stare Wyrobisko p.4",
+        "tip_id": "1998",
+        "top": 465.826,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 232.913,
+        "name": "Nawiedzony Jar",
+        "tip_id": "1999",
+        "top": 614.043,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 359.957,
+        "name": "Stare Wyrobisko p.2",
+        "tip_id": "2000",
+        "top": 84.6957,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": []
+  },
+  "frame_size": 22.0
+}

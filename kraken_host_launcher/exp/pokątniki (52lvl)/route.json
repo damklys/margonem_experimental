@@ -1,0 +1,27 @@
+{
+  "min_lvl": 48,
+  "max_lvl": 55,
+  "route": [
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 1",
+      "gw_top": 196.875,
+      "gw_left": 590.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 2",
+      "gw_top": 131.25,
+      "gw_left": 54.6875,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Grota Bezszelestnych Kroków - sala 3",
+      "gw_top": 678.125,
+      "gw_left": 470.312,
+      "attack": true,
+      "excluded_mobs": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "min_lvl": 95,
+  "max_lvl": 101,
+  "route": [
+    {
+      "location": "Błędny Szlak",
+      "gw_top": 175,
+      "gw_left": 0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zawiły Bór",
+      "gw_top": 277.083,
+      "gw_left": 0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Selva Oscura",
+      "gw_top": 0,
+      "gw_left": 430.208,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Dolina Centaurów",
+      "gw_top": 269.792,
+      "gw_left": 692.708,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Iglaste Ścieżki",
+      "gw_top": 218.75,
+      "gw_left": 692.708,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Ostępy Szalbierskich Lasów",
+      "gw_top": 459.375,
+      "gw_left": 466.667,
+      "attack": true,
+      "excluded_mobs": []
+    }
+  ]
+}

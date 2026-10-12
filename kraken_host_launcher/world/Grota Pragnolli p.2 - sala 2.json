@@ -1,0 +1,16 @@
+{
+  "location": "Grota Pragnolli p.2 - sala 2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Grota Pragnolli p.2",
+      "gw": {
+        "top": 227.5,
+        "left": 577.5
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

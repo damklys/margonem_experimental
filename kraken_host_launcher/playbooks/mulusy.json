@@ -1,0 +1,99 @@
+{
+  "name": "mulusy",
+  "description": "Ekspowisko mulusy (28lvl) — Dzikie Pagórki → Pradawne Wzgórze Przodków → Osada Mulusów",
+  "steps": [
+    {
+      "action": "solve_captcha",
+      "params": { "action": "immediately" }
+    },
+    {
+      "action": "navigate_to",
+      "params": { "location": "Dzikie Pagórki" }
+    },
+    {
+      "loop": {
+        "steps": [
+          {
+            "action": "wait",
+            "params": { "seconds": 1.5 },
+            "comment": "czekaj na załadowanie mapy"
+          },
+          {
+            "loop": {
+              "stop_when": { "$targets": "empty" },
+              "sleep_s": 0.1,
+              "steps": [
+                {
+                  "action": "find_object",
+                  "params": { "type": ["mmp-mob"] },
+                  "save_as": "targets"
+                },
+                {
+                  "action": "kill_object",
+                  "params": { "targets": "$targets" },
+                  "skip_when": { "$targets": "empty" }
+                }
+              ]
+            }
+          },
+          {
+            "action": "navigate_to",
+            "params": { "location": "Pradawne Wzgórze Przodków" }
+          },
+          {
+            "action": "wait",
+            "params": { "seconds": 1.5 }
+          },
+          {
+            "loop": {
+              "stop_when": { "$targets": "empty" },
+              "sleep_s": 0.1,
+              "steps": [
+                {
+                  "action": "find_object",
+                  "params": { "type": ["mmp-mob"] },
+                  "save_as": "targets"
+                },
+                {
+                  "action": "kill_object",
+                  "params": { "targets": "$targets" },
+                  "skip_when": { "$targets": "empty" }
+                }
+              ]
+            }
+          },
+          {
+            "action": "navigate_to",
+            "params": { "location": "Osada Mulusów" }
+          },
+          {
+            "action": "wait",
+            "params": { "seconds": 1.5 }
+          },
+          {
+            "loop": {
+              "stop_when": { "$targets": "empty" },
+              "sleep_s": 0.1,
+              "steps": [
+                {
+                  "action": "find_object",
+                  "params": { "type": ["mmp-mob"] },
+                  "save_as": "targets"
+                },
+                {
+                  "action": "kill_object",
+                  "params": { "targets": "$targets" },
+                  "skip_when": { "$targets": "empty" }
+                }
+              ]
+            }
+          },
+          {
+            "action": "navigate_to",
+            "params": { "location": "Dzikie Pagórki" }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "location": "Dolina Rozbójników",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przełęcz Łotrzyków",
+      "gw": {
+        "top": 0.0,
+        "left": 80.0938
+      }
+    },
+    {
+      "name": "Ghuli Mogilnik",
+      "gw": {
+        "top": 145.625,
+        "left": 458.719
+      }
+    },
+    {
+      "name": "Kamienna Kryjówka",
+      "gw": {
+        "top": 451.438,
+        "left": 371.344
+      }
+    },
+    {
+      "name": "Mokradła",
+      "gw": {
+        "top": 691.719,
+        "left": 196.594
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

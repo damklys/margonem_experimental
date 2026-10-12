@@ -1,0 +1,37 @@
+{
+  "location": "Tygrysia Polana",
+  "type": "",
+  "destination": [
+    {
+      "name": "Leśna Przełęcz",
+      "gw": {
+        "top": 640.75,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Jama Kocich Ślepi",
+      "gw": {
+        "top": 458.719,
+        "left": 116.5
+      }
+    },
+    {
+      "name": "Jaskinia Dzikich Kotów",
+      "gw": {
+        "top": 487.844,
+        "left": 211.156
+      }
+    },
+    {
+      "name": "Dzikie Pagórki",
+      "gw": {
+        "top": 604.344,
+        "left": 458.719
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

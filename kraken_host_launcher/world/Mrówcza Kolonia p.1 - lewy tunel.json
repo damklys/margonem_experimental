@@ -1,0 +1,23 @@
+{
+  "location": "Mrówcza Kolonia p.1 - lewy tunel",
+  "type": "",
+  "destination": [
+    {
+      "name": "Leśny Bród",
+      "gw": {
+        "top": 525.0,
+        "left": 109.375
+      }
+    },
+    {
+      "name": "Mrówcza Kolonia p.2 - lewe korytarze",
+      "gw": {
+        "top": 634.375,
+        "left": 590.625
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Wilcza Nora p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Warczące Osuwiska",
+      "gw": {
+        "top": 656.25,
+        "left": 350.0
+      }
+    },
+    {
+      "name": "Wilcza Nora p.2",
+      "gw": {
+        "top": 218.75,
+        "left": 175.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,746 @@
+{
+  "location": "Wilczy Szpic",
+  "type": "",
+  "destination": [
+    {
+      "name": "Łany Zboża",
+      "gw": {
+        "top": 0.0,
+        "left": 175.0
+      }
+    },
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 437.5,
+        "left": 689.062
+      }
+    },
+    {
+      "name": "Jaskinia Wilczego Zamętu p.1",
+      "gw": {
+        "top": 470.312,
+        "left": 382.812
+      }
+    },
+    {
+      "name": "Dolina Yss",
+      "gw": {
+        "top": 689.062,
+        "left": 185.938
+      }
+    },
+    {
+      "name": "Jaskinia Wilczego Zamętu p.2",
+      "directly": true,
+      "gw": {
+        "top": 262.5,
+        "left": 360.938
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "objects": {
+    "mmp-mob": [
+      {
+        "grp": true,
+        "left": 426.562,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "335",
+        "top": 164.062,
+        "type": "mmp-mob",
+        "x": 39,
+        "y": 15
+      },
+      {
+        "grp": true,
+        "left": 459.375,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "336",
+        "top": 185.938,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 17
+      },
+      {
+        "grp": false,
+        "left": 492.188,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "339",
+        "top": 317.188,
+        "type": "mmp-mob",
+        "x": 45,
+        "y": 29
+      },
+      {
+        "grp": true,
+        "left": 328.125,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "340",
+        "top": 317.188,
+        "type": "mmp-mob",
+        "x": 30,
+        "y": 29
+      },
+      {
+        "grp": true,
+        "left": 295.312,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "341",
+        "top": 360.938,
+        "type": "mmp-mob",
+        "x": 27,
+        "y": 33
+      },
+      {
+        "grp": false,
+        "left": 503.125,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "342",
+        "top": 415.625,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 38
+      },
+      {
+        "grp": true,
+        "left": 360.938,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "343",
+        "top": 492.188,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 45
+      },
+      {
+        "grp": true,
+        "left": 404.688,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "344",
+        "top": 514.062,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 47
+      },
+      {
+        "grp": false,
+        "left": 470.312,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "345",
+        "top": 557.812,
+        "type": "mmp-mob",
+        "x": 43,
+        "y": 51
+      },
+      {
+        "grp": false,
+        "left": 459.375,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "346",
+        "top": 645.312,
+        "type": "mmp-mob",
+        "x": 42,
+        "y": 59
+      },
+      {
+        "grp": false,
+        "left": 393.75,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "347",
+        "top": 612.5,
+        "type": "mmp-mob",
+        "x": 36,
+        "y": 56
+      },
+      {
+        "grp": false,
+        "left": 590.625,
+        "level": 2,
+        "name": "Żaba",
+        "tip_id": "348",
+        "top": 579.688,
+        "type": "mmp-mob",
+        "x": 54,
+        "y": 53
+      },
+      {
+        "grp": false,
+        "left": 612.5,
+        "level": 2,
+        "name": "Żaba",
+        "tip_id": "349",
+        "top": 601.562,
+        "type": "mmp-mob",
+        "x": 56,
+        "y": 55
+      },
+      {
+        "grp": false,
+        "left": 546.875,
+        "level": 2,
+        "name": "Żaba",
+        "tip_id": "350",
+        "top": 623.438,
+        "type": "mmp-mob",
+        "x": 50,
+        "y": 57
+      },
+      {
+        "grp": false,
+        "left": 579.688,
+        "level": 2,
+        "name": "Żaba",
+        "tip_id": "351",
+        "top": 656.25,
+        "type": "mmp-mob",
+        "x": 53,
+        "y": 60
+      },
+      {
+        "grp": true,
+        "left": 360.938,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "352",
+        "top": 295.312,
+        "type": "mmp-mob",
+        "x": 33,
+        "y": 27
+      },
+      {
+        "grp": false,
+        "left": 404.688,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "353",
+        "top": 360.938,
+        "type": "mmp-mob",
+        "x": 37,
+        "y": 33
+      },
+      {
+        "grp": true,
+        "left": 339.062,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "354",
+        "top": 371.875,
+        "type": "mmp-mob",
+        "x": 31,
+        "y": 34
+      },
+      {
+        "grp": false,
+        "left": 371.875,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "355",
+        "top": 557.812,
+        "type": "mmp-mob",
+        "x": 34,
+        "y": 51
+      },
+      {
+        "grp": false,
+        "left": 426.562,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "356",
+        "top": 634.375,
+        "type": "mmp-mob",
+        "x": 39,
+        "y": 58
+      },
+      {
+        "grp": true,
+        "left": 514.062,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "712",
+        "top": 32.8125,
+        "type": "mmp-mob",
+        "x": 47,
+        "y": 3
+      },
+      {
+        "grp": true,
+        "left": 546.875,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "713",
+        "top": 54.6875,
+        "type": "mmp-mob",
+        "x": 50,
+        "y": 5
+      },
+      {
+        "grp": true,
+        "left": 481.25,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "729",
+        "top": 153.125,
+        "type": "mmp-mob",
+        "x": 44,
+        "y": 14
+      },
+      {
+        "grp": true,
+        "left": 503.125,
+        "level": 19,
+        "name": "Duży pancernik",
+        "tip_id": "730",
+        "top": 142.188,
+        "type": "mmp-mob",
+        "x": 46,
+        "y": 13
+      },
+      {
+        "grp": true,
+        "left": 557.812,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "731",
+        "top": 175,
+        "type": "mmp-mob",
+        "x": 51,
+        "y": 16
+      },
+      {
+        "grp": true,
+        "left": 535.938,
+        "level": 19,
+        "name": "Czarny wilk",
+        "tip_id": "732",
+        "top": 218.75,
+        "type": "mmp-mob",
+        "x": 49,
+        "y": 20
+      }
+    ],
+    "mmp-gw": [
+      {
+        "left": 164.062,
+        "name": "Łany Zboża",
+        "tip_id": "273",
+        "top": 0,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 175,
+        "name": "Łany Zboża",
+        "tip_id": "274",
+        "top": 0,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 185.938,
+        "name": "Dolina Yss",
+        "tip_id": "275",
+        "top": 689.062,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 196.875,
+        "name": "Dolina Yss",
+        "tip_id": "276",
+        "top": 689.062,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 360.938,
+        "name": "Jaskinia Wilczego Zamętu p.2",
+        "tip_id": "277",
+        "top": 262.5,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 382.812,
+        "name": "Jaskinia Wilczego Zamętu p.1",
+        "tip_id": "278",
+        "top": 470.312,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 689.062,
+        "name": "Stare Ruiny",
+        "tip_id": "279",
+        "top": 426.562,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 689.062,
+        "name": "Stare Ruiny",
+        "tip_id": "280",
+        "top": 437.5,
+        "type": "mmp-gw"
+      },
+      {
+        "left": 689.062,
+        "name": "Stare Ruiny",
+        "tip_id": "281",
+        "top": 448.438,
+        "type": "mmp-gw"
+      }
+    ],
+    "mmp-elite": [],
+    "mmp-elite2": [],
+    "mmp-elite3": [],
+    "mmp-titan-resp": [],
+    "mmp-collosus": [],
+    "mmp-heros-resp": [],
+    "mmp-npc": [],
+    "mmp-item": [
+      {
+        "left": 54.6875,
+        "name": "Macierzanka",
+        "tip_id": "357",
+        "top": 43.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 120.312,
+        "name": "Macierzanka",
+        "tip_id": "358",
+        "top": 54.6875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 142.188,
+        "name": "Macierzanka",
+        "tip_id": "359",
+        "top": 65.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 448.438,
+        "name": "Macierzanka",
+        "tip_id": "360",
+        "top": 65.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 328.125,
+        "name": "Macierzanka",
+        "tip_id": "361",
+        "top": 109.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 98.4375,
+        "name": "Macierzanka",
+        "tip_id": "362",
+        "top": 196.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 350,
+        "name": "Macierzanka",
+        "tip_id": "363",
+        "top": 284.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 120.312,
+        "name": "Macierzanka",
+        "tip_id": "364",
+        "top": 339.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 109.375,
+        "name": "Macierzanka",
+        "tip_id": "365",
+        "top": 350,
+        "type": "mmp-item"
+      },
+      {
+        "left": 557.812,
+        "name": "Macierzanka",
+        "tip_id": "366",
+        "top": 371.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 98.4375,
+        "name": "Macierzanka",
+        "tip_id": "367",
+        "top": 623.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 459.375,
+        "name": "Macierzanka",
+        "tip_id": "368",
+        "top": 634.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 360.938,
+        "name": "Macierzanka",
+        "tip_id": "369",
+        "top": 43.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 360.938,
+        "name": "Macierzanka",
+        "tip_id": "370",
+        "top": 120.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 229.688,
+        "name": "Macierzanka",
+        "tip_id": "371",
+        "top": 284.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 689.062,
+        "name": "Macierzanka",
+        "tip_id": "372",
+        "top": 284.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 415.625,
+        "name": "Macierzanka",
+        "tip_id": "373",
+        "top": 306.25,
+        "type": "mmp-item"
+      },
+      {
+        "left": 481.25,
+        "name": "Jeżyny",
+        "tip_id": "374",
+        "top": 404.688,
+        "type": "mmp-item"
+      },
+      {
+        "left": 185.938,
+        "name": "Macierzanka",
+        "tip_id": "375",
+        "top": 514.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 120.312,
+        "name": "Macierzanka",
+        "tip_id": "376",
+        "top": 634.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 492.188,
+        "name": "Jeżyny",
+        "tip_id": "377",
+        "top": 21.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 590.625,
+        "name": "Jeżyny",
+        "tip_id": "378",
+        "top": 43.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 481.25,
+        "name": "Jeżyny",
+        "tip_id": "379",
+        "top": 65.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 656.25,
+        "name": "Jeżyny",
+        "tip_id": "380",
+        "top": 120.312,
+        "type": "mmp-item"
+      },
+      {
+        "left": 43.75,
+        "name": "Jeżyny",
+        "tip_id": "381",
+        "top": 142.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 568.75,
+        "name": "Jeżyny",
+        "tip_id": "382",
+        "top": 142.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 10.9375,
+        "name": "Jeżyny",
+        "tip_id": "383",
+        "top": 164.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 678.125,
+        "name": "Jeżyny",
+        "tip_id": "384",
+        "top": 240.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 601.562,
+        "name": "Jeżyny",
+        "tip_id": "385",
+        "top": 273.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 43.75,
+        "name": "Jeżyny",
+        "tip_id": "386",
+        "top": 437.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 185.938,
+        "name": "Jeżyny",
+        "tip_id": "387",
+        "top": 448.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 426.562,
+        "name": "Jeżyny",
+        "tip_id": "388",
+        "top": 481.25,
+        "type": "mmp-item"
+      },
+      {
+        "left": 87.5,
+        "name": "Jeżyny",
+        "tip_id": "389",
+        "top": 503.125,
+        "type": "mmp-item"
+      },
+      {
+        "left": 284.375,
+        "name": "Jeżyny",
+        "tip_id": "390",
+        "top": 590.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 153.125,
+        "name": "Jeżyny",
+        "tip_id": "391",
+        "top": 623.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 65.625,
+        "name": "Chabry",
+        "tip_id": "392",
+        "top": 21.875,
+        "type": "mmp-item"
+      },
+      {
+        "left": 54.6875,
+        "name": "Chabry",
+        "tip_id": "393",
+        "top": 65.625,
+        "type": "mmp-item"
+      },
+      {
+        "left": 634.375,
+        "name": "Fiołek",
+        "tip_id": "394",
+        "top": 87.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 218.75,
+        "name": "Chabry",
+        "tip_id": "395",
+        "top": 98.4375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 503.125,
+        "name": "Fiołek",
+        "tip_id": "396",
+        "top": 109.375,
+        "type": "mmp-item"
+      },
+      {
+        "left": 251.562,
+        "name": "Chabry",
+        "tip_id": "397",
+        "top": 142.188,
+        "type": "mmp-item"
+      },
+      {
+        "left": 196.875,
+        "name": "Chabry",
+        "tip_id": "398",
+        "top": 164.062,
+        "type": "mmp-item"
+      },
+      {
+        "left": 623.438,
+        "name": "Fiołek",
+        "tip_id": "399",
+        "top": 175,
+        "type": "mmp-item"
+      },
+      {
+        "left": 76.5625,
+        "name": "Chabry",
+        "tip_id": "400",
+        "top": 218.75,
+        "type": "mmp-item"
+      },
+      {
+        "left": 557.812,
+        "name": "Fiołek",
+        "tip_id": "401",
+        "top": 262.5,
+        "type": "mmp-item"
+      },
+      {
+        "left": 131.25,
+        "name": "Chabry",
+        "tip_id": "402",
+        "top": 273.438,
+        "type": "mmp-item"
+      },
+      {
+        "left": 470.312,
+        "name": "Fiołek",
+        "tip_id": "403",
+        "top": 306.25,
+        "type": "mmp-item"
+      },
+      {
+        "left": 54.6875,
+        "name": "Chabry",
+        "tip_id": "404",
+        "top": 317.188,
+        "type": "mmp-item"
+      }
+    ]
+  },
+  "frame_size": 11.0
+}

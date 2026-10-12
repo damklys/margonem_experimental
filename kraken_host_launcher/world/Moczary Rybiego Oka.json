@@ -1,0 +1,313 @@
+{
+  "location": "Moczary Rybiego Oka",
+  "type": "",
+  "destination": [
+    {
+      "name": "Stary Kupiecki Trakt",
+      "directly": true,
+      "gw": {
+        "top": 538.812,
+        "left": 0
+      }
+    },
+    {
+      "name": "Uroczysko Wodnika",
+      "directly": true,
+      "gw": {
+        "top": 691.719,
+        "left": 109.219
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "mobs": [
+    {
+      "grp": false,
+      "left": 400.469,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1861",
+      "top": 138.344,
+      "type": "mob",
+      "x": 55,
+      "y": 19
+    },
+    {
+      "grp": false,
+      "left": 240.281,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1862",
+      "top": 291.25,
+      "type": "mob",
+      "x": 33,
+      "y": 40
+    },
+    {
+      "grp": false,
+      "left": 80.0938,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1863",
+      "top": 21.8438,
+      "type": "mob",
+      "x": 11,
+      "y": 3
+    },
+    {
+      "grp": false,
+      "left": 458.719,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1864",
+      "top": 371.344,
+      "type": "mob",
+      "x": 63,
+      "y": 51
+    },
+    {
+      "grp": false,
+      "left": 94.6562,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1865",
+      "top": 276.688,
+      "type": "mob",
+      "x": 13,
+      "y": 38
+    },
+    {
+      "grp": false,
+      "left": 58.25,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1866",
+      "top": 385.906,
+      "type": "mob",
+      "x": 8,
+      "y": 53
+    },
+    {
+      "grp": false,
+      "left": 262.125,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1867",
+      "top": 349.5,
+      "type": "mob",
+      "x": 36,
+      "y": 48
+    },
+    {
+      "grp": false,
+      "left": 233,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1868",
+      "top": 356.781,
+      "type": "mob",
+      "x": 32,
+      "y": 49
+    },
+    {
+      "grp": false,
+      "left": 50.9688,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1869",
+      "top": 371.344,
+      "type": "mob",
+      "x": 7,
+      "y": 51
+    },
+    {
+      "grp": false,
+      "left": 451.438,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1870",
+      "top": 385.906,
+      "type": "mob",
+      "x": 62,
+      "y": 53
+    },
+    {
+      "grp": false,
+      "left": 407.75,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1871",
+      "top": 597.062,
+      "type": "mob",
+      "x": 56,
+      "y": 82
+    },
+    {
+      "grp": false,
+      "left": 371.344,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1872",
+      "top": 145.625,
+      "type": "mob",
+      "x": 51,
+      "y": 20
+    },
+    {
+      "grp": false,
+      "left": 58.25,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1873",
+      "top": 269.406,
+      "type": "mob",
+      "x": 8,
+      "y": 37
+    },
+    {
+      "grp": false,
+      "left": 400.469,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1874",
+      "top": 669.875,
+      "type": "mob",
+      "x": 55,
+      "y": 92
+    },
+    {
+      "grp": false,
+      "left": 254.844,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1875",
+      "top": 269.406,
+      "type": "mob",
+      "x": 35,
+      "y": 37
+    },
+    {
+      "grp": false,
+      "left": 436.875,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1876",
+      "top": 458.719,
+      "type": "mob",
+      "x": 60,
+      "y": 63
+    },
+    {
+      "grp": false,
+      "left": 415.031,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1877",
+      "top": 160.188,
+      "type": "mob",
+      "x": 57,
+      "y": 22
+    },
+    {
+      "grp": false,
+      "left": 80.0938,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1878",
+      "top": 254.844,
+      "type": "mob",
+      "x": 11,
+      "y": 35
+    },
+    {
+      "grp": false,
+      "left": 14.5625,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1879",
+      "top": 101.938,
+      "type": "mob",
+      "x": 2,
+      "y": 14
+    },
+    {
+      "grp": false,
+      "left": 211.156,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1880",
+      "top": 662.594,
+      "type": "mob",
+      "x": 29,
+      "y": 91
+    },
+    {
+      "grp": false,
+      "left": 371.344,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1881",
+      "top": 589.781,
+      "type": "mob",
+      "x": 51,
+      "y": 81
+    },
+    {
+      "grp": false,
+      "left": 334.938,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1882",
+      "top": 451.438,
+      "type": "mob",
+      "x": 46,
+      "y": 62
+    },
+    {
+      "grp": false,
+      "left": 87.375,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1883",
+      "top": 0,
+      "type": "mob",
+      "x": 12,
+      "y": 0
+    },
+    {
+      "grp": false,
+      "left": 254.844,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1884",
+      "top": 524.25,
+      "type": "mob",
+      "x": 35,
+      "y": 72
+    },
+    {
+      "grp": false,
+      "left": 240.281,
+      "level": 2,
+      "name": "Żaba",
+      "tip_id": "1885",
+      "top": 538.812,
+      "type": "mob",
+      "x": 33,
+      "y": 74
+    },
+    {
+      "left": 138.344,
+      "level": null,
+      "name": "Topielec",
+      "tip_id": "1860",
+      "top": 94.6562,
+      "type": "npc",
+      "x": 19,
+      "y": 13
+    }
+  ],
+  "frame_size": 8.0
+}

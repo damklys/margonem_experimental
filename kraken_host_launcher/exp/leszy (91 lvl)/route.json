@@ -1,0 +1,83 @@
+{
+  "min_lvl": 88,
+  "max_lvl": 94,
+  "route": [
+    {
+      "location": "Liściaste Rozstaje",
+      "gw_top": 691.719,
+      "gw_left": 182.031,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sosnowe Odludzie",
+      "gw_top": 415.031,
+      "gw_left": 0,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Księżycowe Wzniesienie",
+      "gw_top": 109.219,
+      "gw_left": 356.781,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.1",
+      "gw_top": 459.375,
+      "gw_left": 240.625,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.2",
+      "gw_top": 597.917,
+      "gw_left": 495.833,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.3",
+      "gw_top": 122.5,
+      "gw_left": 140,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.2",
+      "gw_top": 43.75,
+      "gw_left": 597.917,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.1 - sala 1",
+      "gw_top": 291.667,
+      "gw_left": 87.5,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Zapomniany Święty Gaj p.1",
+      "gw_top": 393.75,
+      "gw_left": 525,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Księżycowe Wzniesienie",
+      "gw_top": 182.031,
+      "gw_left": 458.719,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Sosnowe Odludzie",
+      "gw_top": 0,
+      "gw_left": 182.031,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Przeklęty Zamek - wejście wschodnie",
+  "type": "",
+  "destination": [
+    {
+      "name": "Przeklęty Zamek - sala zgromadzeń",
+      "gw": {
+        "top": 175.0,
+        "left": 612.5
+      }
+    },
+    {
+      "name": "Stare Ruiny",
+      "gw": {
+        "top": 408.333,
+        "left": 583.333
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

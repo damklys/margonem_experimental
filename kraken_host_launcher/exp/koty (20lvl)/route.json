@@ -1,0 +1,48 @@
+{
+  "min_lvl": 16,
+  "max_lvl": 23,
+  "route": [
+    {
+      "location": "Kryjówka Dzikich Kotów",
+      "gw_top": 689.062,
+      "gw_left": 317.188,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Leśna Przełęcz",
+      "gw_top": 408.333,
+      "gw_left": 692.708,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Tygrysia Polana",
+      "gw_top": 487.844,
+      "gw_left": 211.156,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Jaskinia Dzikich Kotów",
+      "gw_top": 667.188,
+      "gw_left": 98.4375,
+      "attack": true,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Tygrysia Polana",
+      "gw_top": 640.75,
+      "gw_left": 0.0,
+      "attack": false,
+      "excluded_mobs": []
+    },
+    {
+      "location": "Leśna Przełęcz",
+      "gw_top": 0.0,
+      "gw_left": 444.792,
+      "attack": false,
+      "excluded_mobs": []
+    }
+  ]
+}

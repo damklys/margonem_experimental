@@ -1,0 +1,240 @@
+{
+  "route": [
+    {
+      "location": "Fort Eder",
+      "respawns": [],
+      "gw": {"top": 538.812, "left": 72.8125}
+    },
+    {
+      "location": "Pieczara Niepogody p.1",
+      "respawns": [
+        {"top": 402.5, "left": 280},
+        {"top": 455, "left": 157.5}
+      ],
+      "gw": {"top": 315, "left": 70}
+    },
+    {
+      "location": "Pieczara Niepogody p.2 - sala 1",
+      "respawns": [
+        {"top": 218.75, "left": 597.917},
+        {"top": 87.5, "left": 291.667}
+      ],
+      "gw": {"top": 393.75, "left": 306.25}
+    },
+    {
+      "location": "Pieczara Niepogody p.3",
+      "respawns": [
+        {"top": 131.25, "left": 284.375},
+        {"top": 393.75, "left": 306.25},
+        {"top": 415.625, "left": 557.812}
+      ],
+      "gw": {"top": 295.312, "left": 240.625}
+    },
+    {
+      "location": "Pieczara Niepogody p.4",
+      "respawns": [
+        {"top": 145.833, "left": 495.833},
+        {"top": 306.25, "left": 58.3333}
+      ],
+      "gw": {"top": 422.917, "left": 568.75}
+    },
+    {
+      "location": "Pieczara Niepogody p.5",
+      "respawns": [
+        {"top": 160.417, "left": 583.333},
+        {"top": 320.833, "left": 466.667},
+        {"top": 291.667, "left": 175}
+      ],
+      "gw": {"top": 116.667, "left": 306.25}
+    },
+    {
+      "location": "Pieczara Niepogody p.4",
+      "respawns": [
+        {"top": 145.833, "left": 495.833},
+        {"top": 306.25, "left": 58.3333}
+      ],
+      "gw": {"top": 43.75, "left": 58.3333}
+    },
+    {
+      "location": "Pieczara Niepogody p.3",
+      "respawns": [
+        {"top": 415.625, "left": 557.812},
+        {"top": 393.75, "left": 306.25},
+        {"top": 131.25, "left": 284.375}
+      ],
+      "gw": {"top": 21.875, "left": 514.062}
+    },
+    {
+      "location": "Pieczara Niepogody p.2 - sala 2",
+      "respawns": [
+        {"top": 189.312, "left": 320.375},
+        {"top": 538.812, "left": 305.812}
+      ],
+      "gw": {"top": 655.312, "left": 262.125}
+    },
+    {
+      "location": "Fort Eder",
+      "respawns": [],
+      "gw": {"top": 0, "left": 203.875}
+    },
+    {
+      "location": "Mokradła",
+      "respawns": [],
+      "gw": {"top": 612.5, "left": 689.062}
+    },
+    {
+      "location": "Skarpiska Tolloków",
+      "respawns": [
+        {"top": 164.062, "left": 404.688},
+        {"top": 273.438, "left": 568.75},
+        {"top": 350, "left": 393.75},
+        {"top": 667.188, "left": 43.75}
+      ],
+      "gw": {"top": 328.125, "left": 689.062}
+    },
+    {
+      "location": "Skalne Turnie",
+      "respawns": [
+        {"top": 426.562, "left": 667.188},
+        {"top": 623.438, "left": 459.375},
+        {"top": 393.75, "left": 328.125},
+        {"top": 32.8125, "left": 339.062}
+      ],
+      "gw": {"top": 0, "left": 185.938}
+    },
+    {
+      "location": "Legowisko Wilczej Hordy",
+      "respawns": [
+        {"top": 612.5, "left": 492.188}
+      ],
+      "gw": {"top": 601.562, "left": 306.25}
+    },
+    {
+      "location": "Krasowa Pieczara p.3",
+      "respawns": [
+        {"top": 131.25, "left": 189.583}
+      ],
+      "gw": {"top": 189.583, "left": 131.25}
+    },
+    {
+      "location": "Krasowa Pieczara p.2",
+      "respawns": [
+        {"top": 364.583, "left": 87.5},
+        {"top": 510.417, "left": 466.667}
+      ],
+      "gw": {"top": 29.1667, "left": 583.333}
+    },
+    {
+      "location": "Krasowa Pieczara p.1",
+      "respawns": [],
+      "gw": {"top": 630, "left": 525}
+    },
+    {
+      "location": "Legowisko Wilczej Hordy",
+      "respawns": [
+        {"top": 371.875, "left": 634.375}
+      ],
+      "gw": {"top": 470.312, "left": 612.5}
+    },
+    {
+      "location": "Krasowa Pieczara p.1",
+      "respawns": [],
+      "gw": {"top": 245, "left": 175}
+    },
+    {
+      "location": "Krasowa Pieczara p.2",
+      "respawns": [
+        {"top": 364.583, "left": 87.5},
+        {"top": 510.417, "left": 466.667}
+      ],
+      "gw": {"top": 554.167, "left": 145.833}
+    },
+    {
+      "location": "Legowisko Wilczej Hordy",
+      "respawns": [
+        {"top": 273.438, "left": 350},
+        {"top": 21.875, "left": 415.625}
+      ],
+      "gw": {"top": 142.188, "left": 689.062}
+    },
+    {
+      "location": "Wilcza Skarpa",
+      "respawns": [
+        {"top": 291.25, "left": 29.125},
+        {"top": 283.969, "left": 240.281},
+        {"top": 58.25, "left": 254.844},
+        {"top": 247.562, "left": 349.5},
+        {"top": 225.719, "left": 436.875},
+        {"top": 495.125, "left": 436.875}
+      ],
+      "gw": {"top": 123.781, "left": 0}
+    },
+    {
+      "location": "Warczące Osuwiska",
+      "respawns": [
+        {"top": 207.812, "left": 164.062},
+        {"top": 525, "left": 656.25}
+      ],
+      "gw": {"top": 656.25, "left": 667.188}
+    },
+    {
+      "location": "Wilcza Nora p.1",
+      "respawns": [],
+      "gw": {"top": 218.75, "left": 175}
+    },
+    {
+      "location": "Wilcza Nora p.2",
+      "respawns": [
+        {"top": 109.375, "left": 393.75}
+      ],
+      "gw": {"top": 109.375, "left": 65.625}
+    },
+    {
+      "location": "Wilcza Nora p.1",
+      "respawns": [],
+      "gw": {"top": 656.25, "left": 350}
+    },
+    {
+      "location": "Warczące Osuwiska",
+      "respawns": [
+        {"top": 546.875, "left": 175}
+      ],
+      "gw": {"top": 689.062, "left": 284.375}
+    },
+    {
+      "location": "Legowisko Wilczej Hordy",
+      "respawns": [
+        {"top": 612.5, "left": 492.188},
+        {"top": 371.875, "left": 634.375},
+        {"top": 273.438, "left": 350},
+        {"top": 21.875, "left": 415.625}
+      ],
+      "gw": {"top": 689.062, "left": 185.938}
+    },
+    {
+      "location": "Skalne Turnie",
+      "respawns": [
+        {"top": 426.562, "left": 667.188},
+        {"top": 623.438, "left": 459.375},
+        {"top": 393.75, "left": 328.125},
+        {"top": 32.8125, "left": 339.062}
+      ],
+      "gw": {"top": 328.125, "left": 0}
+    },
+    {
+      "location": "Skarpiska Tolloków",
+      "respawns": [
+        {"top": 164.062, "left": 404.688},
+        {"top": 273.438, "left": 568.75},
+        {"top": 350, "left": 393.75},
+        {"top": 667.188, "left": 43.75}
+      ],
+      "gw": {"top": 262.5, "left": 0}
+    },
+    {
+      "location": "Mokradła",
+      "respawns": [],
+      "gw": {"top": 689.062, "left": 317.188}
+    }
+  ]
+}

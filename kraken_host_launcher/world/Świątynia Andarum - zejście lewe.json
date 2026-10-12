@@ -1,0 +1,23 @@
+{
+  "location": "Świątynia Andarum - zejście lewe",
+  "type": "",
+  "destination": [
+    {
+      "name": "Świątynia Andarum",
+      "gw": {
+        "top": 20.5769,
+        "left": 349.808
+      }
+    },
+    {
+      "name": "Świątynia Andarum - podziemia",
+      "gw": {
+        "top": 658.462,
+        "left": 102.885
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

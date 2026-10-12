@@ -1,0 +1,23 @@
+{
+  "location": "Mrowisko",
+  "type": "",
+  "destination": [
+    {
+      "name": "Łany Zboża",
+      "gw": {
+        "top": 656.25,
+        "left": 415.625
+      }
+    },
+    {
+      "name": "Mrowisko p.1",
+      "gw": {
+        "top": 415.625,
+        "left": 218.75
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

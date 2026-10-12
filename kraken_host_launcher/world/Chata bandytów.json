@@ -1,0 +1,23 @@
+{
+  "location": "Chata bandytów",
+  "type": "",
+  "destination": [
+    {
+      "name": "Ostępy Szalbierskich Lasów",
+      "gw": {
+        "top": 481.25,
+        "left": 481.25
+      }
+    },
+    {
+      "name": "Bandyckie Chowisko",
+      "gw": {
+        "top": 525,
+        "left": 131.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

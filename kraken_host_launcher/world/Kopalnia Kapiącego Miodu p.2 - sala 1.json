@@ -1,0 +1,30 @@
+{
+  "location": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kopalnia Kapiącego Miodu p.3",
+      "gw": {
+        "top": 273.438,
+        "left": 306.25
+      }
+    },
+    {
+      "name": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki",
+      "gw": {
+        "top": 43.75,
+        "left": 120.312
+      }
+    },
+    {
+      "name": "Kopalnia Kapiącego Miodu p.1 - sala 1",
+      "gw": {
+        "top": 437.5,
+        "left": 481.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

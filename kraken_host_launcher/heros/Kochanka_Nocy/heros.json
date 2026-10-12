@@ -1,0 +1,144 @@
+{
+  "route": [
+    {
+      "location": "Mythar",
+      "respawns": [],
+      "gw": {"top": 0, "left": 233.333}
+    },
+    {
+      "location": "Zawiły Bór",
+      "respawns": [
+        {"top": 313.542, "left": 102.083},
+        {"top": 284.375, "left": 342.708},
+        {"top": 58.3333, "left": 634.375},
+        {"top": 36.4583, "left": 350}
+      ],
+      "gw": {"top": 277.083, "left": 0}
+    },
+    {
+      "location": "Selva Oscura",
+      "respawns": [
+        {"top": 269.792, "left": 525},
+        {"top": 255.208, "left": 167.708},
+        {"top": 138.542, "left": 175},
+        {"top": 87.5, "left": 554.167}
+      ],
+      "gw": {"top": 0, "left": 422.917}
+    },
+    {
+      "location": "Dolina Centaurów",
+      "respawns": [
+        {"top": 320.833, "left": 408.333},
+        {"top": 393.75, "left": 80.2083},
+        {"top": 116.667, "left": 503.125},
+        {"top": 335.417, "left": 612.5}
+      ],
+      "gw": {"top": 269.792, "left": 692.708}
+    },
+    {
+      "location": "Iglaste Ścieżki",
+      "respawns": [
+        {"top": 72.9167, "left": 167.708},
+        {"top": 408.333, "left": 211.458},
+        {"top": 342.708, "left": 495.833},
+        {"top": 65.625, "left": 605.208},
+        {"top": 291.667, "left": 641.667}
+      ],
+      "gw": {"top": 459.375, "left": 517.708}
+    },
+    {
+      "location": "Zawiły Bór",
+      "respawns": [
+        {"top": 36.4583, "left": 350},
+        {"top": 58.3333, "left": 634.375},
+        {"top": 284.375, "left": 342.708},
+        {"top": 313.542, "left": 102.083}
+      ],
+      "gw": {"top": 182.292, "left": 692.708}
+    },
+    {
+      "location": "Błędny Szlak",
+      "respawns": [
+        {"top": 320.833, "left": 58.3333},
+        {"top": 36.4583, "left": 160.417},
+        {"top": 167.708, "left": 546.875},
+        {"top": 306.25, "left": 291.667}
+      ],
+      "gw": {"top": 459.375, "left": 160.417}
+    },
+    {
+      "location": "Złowrogie Bagna",
+      "respawns": [
+        {"top": 72.9167, "left": 72.9167},
+        {"top": 284.375, "left": 167.708},
+        {"top": 298.958, "left": 386.458},
+        {"top": 145.833, "left": 379.167}
+      ],
+      "gw": {"top": 459.375, "left": 430.208}
+    },
+    {
+      "location": "Gadzia Kotlina",
+      "respawns": [
+        {"top": 189.583, "left": 364.583},
+        {"top": 233.333, "left": 72.9167},
+        {"top": 313.542, "left": 277.083},
+        {"top": 233.333, "left": 72.9167},
+        {"top": 102.083, "left": 525},
+        {"top": 357.292, "left": 437.5}
+      ],
+      "gw": {"top": 255.208, "left": 692.708}
+    },
+    {
+      "location": "Mglista Polana Vesy",
+      "respawns": [
+        {"top": 87.375, "left": 50.9688},
+        {"top": 80.0938, "left": 320.375}
+      ],
+      "gw": {"top": 291.25, "left": 94.6562}
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 3",
+      "respawns": [
+        {"top": 408.333, "left": 408.333},
+        {"top": 160.417, "left": 554.167},
+        {"top": 102.083, "left": 102.083}
+      ],
+      "gw": {"top": 627.083, "left": 379.167}
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.2",
+      "respawns": [
+        {"top": 204.167, "left": 422.917},
+        {"top": 627.083, "left": 437.5}
+      ],
+      "gw": {"top": 510.417, "left": 43.75}
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 2",
+      "respawns": [
+        {"top": 247.917, "left": 525},
+        {"top": 87.5, "left": 247.917}
+      ],
+      "gw": {"top": 116.667, "left": 583.333}
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.2",
+      "respawns": [],
+      "gw": {"top": 58.3333, "left": 131.25}
+    },
+    {
+      "location": "Zagrzybiałe Ścieżki p.1 - sala 1",
+      "respawns": [
+        {"top": 306.25, "left": 481.25},
+        {"top": 175, "left": 72.9167},
+        {"top": 510.417, "left": 262.5}
+      ],
+      "gw": {"top": 627.083, "left": 131.25}
+    },
+    {
+      "location": "Złowrogie Bagna",
+      "respawns": [],
+      "gw": {"top": 196.875, "left": 0}
+    }
+  ]
+}

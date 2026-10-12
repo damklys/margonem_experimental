@@ -1,0 +1,23 @@
+{
+  "location": "Siedlisko Nietoperzy p.5",
+  "type": "",
+  "destination": [
+    {
+      "name": "Siedlisko Nietoperzy p.4",
+      "gw": {
+        "top": 481.25,
+        "left": 306.25
+      }
+    },
+    {
+      "name": "Dziewicza Knieja",
+      "gw": {
+        "top": 568.75,
+        "left": 175.0
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

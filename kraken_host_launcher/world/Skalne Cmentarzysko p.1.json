@@ -1,0 +1,23 @@
+{
+  "location": "Skalne Cmentarzysko p.1",
+  "type": "",
+  "destination": [
+    {
+      "name": "Płaskowyż Arpan",
+      "gw": {
+        "top": 634.375,
+        "left": 459.375
+      }
+    },
+    {
+      "name": "Skalne Cmentarzysko p.2",
+      "gw": {
+        "top": 131.25,
+        "left": 196.875
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

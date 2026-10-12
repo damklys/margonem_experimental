@@ -1,0 +1,385 @@
+{
+  "location": "Ithan",
+  "type": "",
+  "destination": [
+    {
+      "name": "Dolina Yss",
+      "directly": true,
+      "gw": {
+        "top": 637.0,
+        "left": 665.0
+      }
+    },
+    {
+      "name": "Zniszczone Opactwo",
+      "directly": true,
+      "gw": {
+        "top": 693.0,
+        "left": 301.0
+      }
+    },
+    {
+      "name": "Jaskinia Łowców p.1",
+      "directly": true,
+      "gw": {
+        "top": 189.0,
+        "left": 581.0
+      }
+    },
+    {
+      "name": "Porzucone Pasieki",
+      "directly": true,
+      "gw": {
+        "top": 469.0,
+        "left": 0.0
+      }
+    },
+    {
+      "name": "Jaskinia Łowców p.2",
+      "directly": true,
+      "gw": {
+        "top": 140.0,
+        "left": 609.0
+      }
+    },
+    {
+      "name": "Wioska Gnolli",
+      "directly": false,
+      "transition": [
+        {
+          "name": "Jaskinia Łowców p.1",
+          "gw": {
+            "top": 189.0,
+            "left": 581.0
+          }
+        },
+        {
+          "name": "Jaskinia Łowców p.2",
+          "gw": {
+            "top": 35.0,
+            "left": 315.0
+          }
+        },
+        {
+          "name": "Ithan",
+          "gw": {
+            "top": 612.5,
+            "left": 481.25
+          }
+        }
+      ],
+      "gw": {
+        "top": 0.0,
+        "left": 553.0
+      }
+    },
+    {
+      "name": "Dom Huslina",
+      "directly": true,
+      "gw": {
+        "top": 672,
+        "left": 70
+      }
+    },
+    {
+      "name": "Mury Ithan - strażnica północno-zachodnia",
+      "directly": true,
+      "gw": {
+        "top": 28,
+        "left": 91
+      }
+    },
+    {
+      "name": "Dom sióstr",
+      "directly": true,
+      "gw": {
+        "top": 105,
+        "left": 133
+      }
+    },
+    {
+      "name": "Stary magazyn",
+      "directly": true,
+      "gw": {
+        "top": 455,
+        "left": 133
+      }
+    },
+    {
+      "name": "Zajazd u Makiny",
+      "directly": true,
+      "gw": {
+        "top": 308,
+        "left": 161
+      }
+    },
+    {
+      "name": "Mury Ithan - strażnica południowo-zachodnia",
+      "directly": true,
+      "gw": {
+        "top": 476,
+        "left": 189
+      }
+    },
+    {
+      "name": "Dom Roana",
+      "directly": true,
+      "gw": {
+        "top": 371,
+        "left": 224
+      }
+    },
+    {
+      "name": "Ratusz Ithan",
+      "directly": true,
+      "gw": {
+        "top": 98,
+        "left": 231
+      }
+    },
+    {
+      "name": "Dom Aukcyjny",
+      "directly": true,
+      "gw": {
+        "top": 189,
+        "left": 238
+      }
+    },
+    {
+      "name": "Mury Ithan - strażnica południowo-wschodnia",
+      "directly": true,
+      "gw": {
+        "top": 476,
+        "left": 294
+      }
+    },
+    {
+      "name": "Dom Niela",
+      "directly": true,
+      "gw": {
+        "top": 245,
+        "left": 301
+      }
+    },
+    {
+      "name": "Gildia Nerthusa - przedsionek",
+      "directly": true,
+      "gw": {
+        "top": 105,
+        "left": 308
+      }
+    },
+    {
+      "name": "Pod Rozbrykanym Niziołkiem",
+      "directly": true,
+      "gw": {
+        "top": 147,
+        "left": 336
+      }
+    },
+    {
+      "name": "Dom Eldrika",
+      "directly": true,
+      "gw": {
+        "top": 245,
+        "left": 350
+      }
+    },
+    {
+      "name": "Szkoła",
+      "directly": true,
+      "gw": {
+        "top": 154,
+        "left": 371
+      }
+    },
+    {
+      "name": "Baraki",
+      "directly": true,
+      "gw": {
+        "top": 385,
+        "left": 392
+      }
+    },
+    {
+      "name": "Kopalnia Dogoran p.1",
+      "directly": true,
+      "gw": {
+        "top": 616,
+        "left": 483
+      }
+    },
+    {
+      "name": "Mury Ithan - strażnica północno-wschodnia",
+      "directly": true,
+      "gw": {
+        "top": 84,
+        "left": 497
+      }
+    },
+    {
+      "name": "Dom Unila",
+      "directly": true,
+      "gw": {
+        "top": 364,
+        "left": 525
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": [],
+  "mobs": [
+    {
+      "left": 623,
+      "level": null,
+      "name": null,
+      "tip_id": "2655",
+      "top": 567,
+      "type": "heros-resp",
+      "x": 89,
+      "y": 81
+    },
+    {
+      "left": 203,
+      "level": null,
+      "name": null,
+      "tip_id": "2656",
+      "top": 609,
+      "type": "heros-resp",
+      "x": 29,
+      "y": 87
+    },
+    {
+      "left": 35,
+      "level": null,
+      "name": null,
+      "tip_id": "2657",
+      "top": 665,
+      "type": "heros-resp",
+      "x": 5,
+      "y": 95
+    },
+    {
+      "left": 28,
+      "level": null,
+      "name": null,
+      "tip_id": "2658",
+      "top": 42,
+      "type": "heros-resp",
+      "x": 4,
+      "y": 6
+    },
+    {
+      "left": 280,
+      "level": null,
+      "name": null,
+      "tip_id": "2659",
+      "top": 112,
+      "type": "heros-resp",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "left": 406,
+      "level": null,
+      "name": null,
+      "tip_id": "2660",
+      "top": 147,
+      "type": "heros-resp",
+      "x": 58,
+      "y": 21
+    },
+    {
+      "left": 546,
+      "level": null,
+      "name": null,
+      "tip_id": "2661",
+      "top": 245,
+      "type": "heros-resp",
+      "x": 78,
+      "y": 35
+    },
+    {
+      "left": 371,
+      "level": null,
+      "name": null,
+      "tip_id": "2662",
+      "top": 14,
+      "type": "heros-resp",
+      "x": 53,
+      "y": 2
+    },
+    {
+      "left": 343,
+      "level": null,
+      "name": null,
+      "tip_id": "2663",
+      "top": 469,
+      "type": "heros-resp",
+      "x": 49,
+      "y": 67
+    },
+    {
+      "left": 336,
+      "level": null,
+      "name": null,
+      "tip_id": "2664",
+      "top": 469,
+      "type": "heros-resp",
+      "x": 48,
+      "y": 67
+    },
+    {
+      "left": 350,
+      "level": null,
+      "name": null,
+      "tip_id": "2665",
+      "top": 399,
+      "type": "heros-resp",
+      "x": 50,
+      "y": 57
+    },
+    {
+      "left": 154,
+      "level": null,
+      "name": null,
+      "tip_id": "2666",
+      "top": 308,
+      "type": "heros-resp",
+      "x": 22,
+      "y": 44
+    },
+    {
+      "left": 126,
+      "level": null,
+      "name": null,
+      "tip_id": "2667",
+      "top": 385,
+      "type": "heros-resp",
+      "x": 18,
+      "y": 55
+    },
+    {
+      "left": 462,
+      "level": null,
+      "name": null,
+      "tip_id": "2668",
+      "top": 399,
+      "type": "heros-resp",
+      "x": 66,
+      "y": 57
+    },
+    {
+      "left": 189,
+      "level": null,
+      "name": null,
+      "tip_id": "2669",
+      "top": 112,
+      "type": "heros-resp",
+      "x": 27,
+      "y": 16
+    }
+  ],
+  "frame_size": 7.0
+}

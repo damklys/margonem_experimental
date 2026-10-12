@@ -1,0 +1,17 @@
+{
+  "location": "Kamienna Strażnica - wsch. baszta p.2",
+  "type": "",
+  "destination": [
+    {
+      "name": "Kamienna Strażnica - wsch. baszta p.1",
+      "directly": true,
+      "gw": {
+        "top": 210,
+        "left": 315
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

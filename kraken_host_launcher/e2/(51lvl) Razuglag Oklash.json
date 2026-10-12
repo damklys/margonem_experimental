@@ -1,0 +1,20 @@
+{
+  "name": "Razuglag Oklash",
+  "level": 51,
+  "location": "Stare Wyrobisko p.3",
+  "frame_size": 21.174,
+  "gather_key": "g",
+  "tolerance_px": 14.0,
+  "waiting_positions": [
+    { "x": 4, "y": 6, "top": 127.044, "left":  84.696, "label": "(4,6)" },
+    { "x": 5, "y": 6, "top": 127.044, "left": 105.870, "label": "(5,6)" },
+    { "x": 6, "y": 6, "top": 127.044, "left": 127.044, "label": "(6,6)" },
+    { "x": 7, "y": 6, "top": 127.044, "left": 148.218, "label": "(7,6)" },
+    { "x": 8, "y": 6, "top": 127.044, "left": 169.392, "label": "(8,6)" },
+    { "x": 4, "y": 7, "top": 148.218, "left":  84.696, "label": "(4,7)" },
+    { "x": 5, "y": 7, "top": 148.218, "left": 105.870, "label": "(5,7)" },
+    { "x": 6, "y": 7, "top": 148.218, "left": 127.044, "label": "(6,7)" },
+    { "x": 7, "y": 7, "top": 148.218, "left": 148.218, "label": "(7,7)" },
+    { "x": 8, "y": 7, "top": 148.218, "left": 169.392, "label": "(8,7)" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "location": "Mroczna Pieczara p.1 - sala 3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Mroczny Przesmyk",
+      "gw": {
+        "top": 575.4,
+        "left": 246.6
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.1 - sala 1",
+      "gw": {
+        "top": 411.0,
+        "left": 41.1
+      }
+    },
+    {
+      "name": "Mroczna Pieczara p.2",
+      "gw": {
+        "top": 41.1,
+        "left": 102.75
+      }
+    },
+    {
+      "name": "Mokra Grota p.2 - korytarz",
+      "gw": {
+        "top": 123.3,
+        "left": 349.35
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

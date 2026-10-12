@@ -1,0 +1,23 @@
+{
+  "location": "Ruiny Wieży Magów - przedsionek",
+  "type": "",
+  "destination": [
+    {
+      "name": "Selva Oscura",
+      "gw": {
+        "top": 595,
+        "left": 280
+      }
+    },
+    {
+      "name": "Podziemia Zniszczonej Wieży p.1",
+      "gw": {
+        "top": 280,
+        "left": 105
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

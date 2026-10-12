@@ -1,0 +1,25 @@
+{
+  "location": "Płacząca Grota p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Płacząca Grota - sala Lamentu",
+      "directly": true,
+      "gw": {
+        "top": 525,
+        "left": 466.667
+      }
+    },
+    {
+      "name": "Płacząca Grota p.2",
+      "directly": true,
+      "gw": {
+        "top": 131.25,
+        "left": 597.917
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

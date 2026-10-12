@@ -1,0 +1,44 @@
+{
+  "location": "Zawiły Bór",
+  "type": "",
+  "destination": [
+    {
+      "name": "Selva Oscura",
+      "gw": {
+        "top": 277.083,
+        "left": 0
+      }
+    },
+    {
+      "name": "Iglaste Ścieżki",
+      "gw": {
+        "top": 0,
+        "left": 517.708
+      }
+    },
+    {
+      "name": "Błędny Szlak",
+      "gw": {
+        "top": 182.292,
+        "left": 692.708
+      }
+    },
+    {
+      "name": "Zabłocona Jama p.1 - sala 1",
+      "gw": {
+        "top": 320.833,
+        "left": 357.292
+      }
+    },
+    {
+      "name": "Mythar",
+      "gw": {
+        "top": 459.375,
+        "left": 233.333
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

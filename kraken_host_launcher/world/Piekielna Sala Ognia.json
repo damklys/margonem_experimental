@@ -1,0 +1,16 @@
+{
+  "location": "Piekielna Sala Ognia",
+  "type": "",
+  "destination": [
+    {
+      "name": "Piekielna Grota p.4",
+      "gw": {
+        "top": 554.167,
+        "left": 131.25
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

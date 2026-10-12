@@ -1,0 +1,23 @@
+{
+  "location": "Przejście Lodowatego Wiatru",
+  "type": "",
+  "destination": [
+    {
+      "name": "Lodowa Sala",
+      "gw": {
+        "top": 360.938,
+        "left": 175.0
+      }
+    },
+    {
+      "name": "Sala Lodowatego Wiatru",
+      "gw": {
+        "top": 164.062,
+        "left": 164.062
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "location": "Krypty Dusz Śniegu p.3",
+  "type": "",
+  "destination": [
+    {
+      "name": "Świątynia Andarum - lokum mnichów",
+      "gw": {
+        "top": 145.833,
+        "left": 233.333
+      }
+    },
+    {
+      "name": "Krypty Dusz Śniegu p.2",
+      "gw": {
+        "top": 525.0,
+        "left": 452.083
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}

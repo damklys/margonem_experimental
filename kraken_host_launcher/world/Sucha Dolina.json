@@ -1,0 +1,23 @@
+{
+  "location": "Sucha Dolina",
+  "type": "",
+  "destination": [
+    {
+      "name": "Płaskowyż Arpan",
+      "gw": {
+        "top": 364.062,
+        "left": 458.719
+      }
+    },
+    {
+      "name": "Stare Sioło",
+      "gw": {
+        "top": 691.719,
+        "left": 334.938
+      }
+    }
+  ],
+  "heros": [],
+  "included_mobs": [],
+  "excluded_mobs": []
+}
