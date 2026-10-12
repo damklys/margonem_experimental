@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mistrzowski kołczan strzelca",
+ "tplId": 51957,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 70,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan4.gif",
+ "stat": "acdmg=11;artisan_worthless;binds;energybon=15;lvl=70;poison=31,61;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

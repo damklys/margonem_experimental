@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Herbaciarz Dorian",
+ "map": "Tuzmer",
+ "x": 19,
+ "y": 51,
+ "id": 36527,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

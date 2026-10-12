@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Aukcjoner",
+ "map": "Thuzal",
+ "x": 58,
+ "y": 50,
+ "id": 60088,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Garbarz Herfog",
+ "map": "Werbin",
+ "x": 28,
+ "y": 41,
+ "id": 14009,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Raniący dokucznik",
+ "tplId": 52673,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 240,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet302.gif",
+ "stat": "artisan_worthless;binds;dmg=2425,2964;lvl=240;rarity=common;reqp=b;slow=77;wound=25,521",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

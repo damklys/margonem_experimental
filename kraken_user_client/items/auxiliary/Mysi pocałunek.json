@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mysi pocałunek",
+ "tplId": 56880,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 10,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/kh-sztylet1.gif",
+ "stat": "dmg=68,83;lvl=10;permbound;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

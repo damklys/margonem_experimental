@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kula pierwszych przymrozków",
+ "tplId": 32884,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 60,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb205.gif",
+ "stat": "artisan_worthless;binds;frost=44,247;lvl=60;manabon=20;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

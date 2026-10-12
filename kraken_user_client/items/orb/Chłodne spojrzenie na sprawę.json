@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chłodne spojrzenie na sprawę",
+ "tplId": 52709,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 240,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb300.gif",
+ "stat": "artisan_worthless;binds;frost=176,1925;lvl=240;rarity=common;reqp=m;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

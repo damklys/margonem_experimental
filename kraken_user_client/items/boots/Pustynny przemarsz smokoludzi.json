@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pustynny przemarsz smokoludzi",
+ "tplId": 52162,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 280,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty1030.gif",
+ "stat": "absorb=1722;absorbm=861;ac=413;act=6;artisan_worthless;binds;lvl=280;rarity=common;reqp=mt;resfire=9;sa=78",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

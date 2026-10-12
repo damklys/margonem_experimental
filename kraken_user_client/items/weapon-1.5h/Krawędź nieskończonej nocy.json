@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krawędź nieskończonej nocy",
+ "tplId": 52470,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 260,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz974.gif",
+ "stat": "artisan_worthless;binds;dmg=5818,7111;energybon=27;lvl=260;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

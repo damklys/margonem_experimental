@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pałasz Szagriatów",
+ "tplId": 56864,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 16,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/kh-miecz1.gif",
+ "stat": "dmg=142,174;lvl=16;permbound;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

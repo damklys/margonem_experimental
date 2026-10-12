@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Buty zdobione łzami driad",
+ "tplId": 52161,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 280,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "but/buty1027.gif",
+ "stat": "ac=585;act=12;artisan_worthless;binds;lvl=280;rarity=common;reqp=bh;resfire=3;sa=78",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

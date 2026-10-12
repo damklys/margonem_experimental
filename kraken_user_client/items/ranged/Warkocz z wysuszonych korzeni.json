@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warkocz z wysuszonych korzeni",
+ "tplId": 52522,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 125,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk688.gif",
+ "stat": "artisan_worthless;binds;dmg=1024,1252;fire=1154;lvl=125;manabon=36;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

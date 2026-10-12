@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kamuflaż kałamarnicy",
+ "tplId": 52377,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 110,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1156.gif",
+ "stat": "ac=528;artisan_worthless;binds;da=36;hpbon=1.1;lvl=110;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

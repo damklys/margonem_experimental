@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przekłucie postawionych żagli",
+ "tplId": 52774,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 125,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk1.gif",
+ "stat": "artisan_worthless;binds;light=195,293;lvl=125;manabon=36;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

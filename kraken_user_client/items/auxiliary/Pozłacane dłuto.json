@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pozłacane dłuto",
+ "tplId": 52669,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 170,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet324.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=1393,1702;lvl=170;rarity=common;reqp=b;wound=25,299",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

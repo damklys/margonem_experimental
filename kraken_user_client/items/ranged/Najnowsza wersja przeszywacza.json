@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Najnowsza wersja przeszywacza",
+ "tplId": 52580,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 300,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk686.gif",
+ "stat": "artisan_worthless;binds;dmg=5388,6586;lowevade=30;lvl=300;rarity=common;reqp=h;wound=25,2138",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

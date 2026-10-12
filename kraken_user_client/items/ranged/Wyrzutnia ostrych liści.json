@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyrzutnia ostrych liści",
+ "tplId": 52587,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 200,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk718.gif",
+ "stat": "artisan_worthless;binds;dmg=2757,3369;energybon=23;lvl=200;poison=89,1178;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

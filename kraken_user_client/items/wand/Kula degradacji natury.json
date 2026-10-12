@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kula degradacji natury",
+ "tplId": 52594,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka375.gif",
+ "stat": "artisan_worthless;binds;critmval=6;fire=1626;lvl=125;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

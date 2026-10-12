@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarna strzała wojownika",
+ "tplId": 32982,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 90,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz560.gif",
+ "stat": "artisan_worthless;binds;dmg=1136,1388;ds=54;lvl=90;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

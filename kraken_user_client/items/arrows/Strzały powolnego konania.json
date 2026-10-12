@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Strzały powolnego konania",
+ "tplId": 52741,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 170,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka2.gif",
+ "stat": "acdmg=41;artisan_worthless;binds;da=51;lvl=170;poison=76,221;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

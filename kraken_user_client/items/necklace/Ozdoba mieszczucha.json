@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ozdoba mieszczucha",
+ "tplId": 52262,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 182,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1055.gif",
+ "stat": "artisan_worthless;binds;critmval=12;da=54;di=105;heal=381;lvl=182;rarity=common;reqp=mpt;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 107833,
+   "cur": "zl"
+  }
+ ]
+}

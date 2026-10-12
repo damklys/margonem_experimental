@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Topór rodziny Szabadabada",
+ "tplId": 56867,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 16,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "top/kh-topor2.gif",
+ "stat": "dmg=168,205;lvl=16;permbound;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kubrak wybitnych osiągnięć",
+ "tplId": 52399,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 280,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1173.gif",
+ "stat": "absorb=6888;absorbm=3444;ac=1148;artisan_worthless;binds;crit=1;lvl=280;manabon=93;rarity=common;reqp=m;resfire=10",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

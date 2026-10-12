@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warstwa czarnej szczeciny",
+ "tplId": 33773,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja746.gif",
+ "stat": "ac=246;act=16;artisan_worthless;binds;evade=8;lvl=75;rarity=common;reqp=h;reslight=4;sa=38",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

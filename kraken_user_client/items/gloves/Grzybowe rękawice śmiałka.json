@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Grzybowe rękawice śmiałka",
+ "tplId": 52180,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 240,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice1154.gif",
+ "stat": "ac=413;act=8;artisan_worthless;binds;lvl=240;rarity=common;reqp=bhw;reslight=2;slow=77",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

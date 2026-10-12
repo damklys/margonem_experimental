@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Popiel",
+ "tplId": 32973,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 70,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz562.gif",
+ "stat": "artisan_worthless;binds;dmg=803,982;lowevade=7;lvl=70;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

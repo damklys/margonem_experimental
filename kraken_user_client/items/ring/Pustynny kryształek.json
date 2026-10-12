@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pustynny kryształek",
+ "tplId": 52218,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 107,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien1064.gif",
+ "stat": "artisan_worthless;binds;critval=12;hp=1309;lvl=107;rarity=common;reqp=bhw;sa=35",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 34655,
+   "cur": "zl"
+  }
+ ]
+}

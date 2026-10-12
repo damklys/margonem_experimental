@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Barbarzyński ścinacz głów",
+ "tplId": 52466,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 185,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz915.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=3344,4087;lvl=185;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

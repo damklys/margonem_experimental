@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kompletny kołczan tropiciela",
+ "tplId": 51958,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 50,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan1.gif",
+ "stat": "artisan_worthless;binds;critval=6;fire=69;lvl=50;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

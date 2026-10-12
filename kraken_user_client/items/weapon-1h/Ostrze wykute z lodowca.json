@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostrze wykute z lodowca",
+ "tplId": 33656,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 60,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz638.gif",
+ "stat": "artisan_worthless;binds;contra=50;dmg=471,576;frost=57,262;lvl=60;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

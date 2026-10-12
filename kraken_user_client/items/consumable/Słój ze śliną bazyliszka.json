@@ -1,0 +1,62 @@
+{
+ "kraken": "przedmiot",
+ "name": "Słój ze śliną bazyliszka",
+ "tplId": 41888,
+ "cl": 21,
+ "category": "consumable",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pot/mix189.gif",
+ "stat": "amount=5;cansplit=1;capacity=15;leczy=70000;rarity=common",
+ "sellers": [
+  {
+   "map": "Mirvenis-Adur",
+   "npc": "Uzdrowiciel Ypsli",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Uzdrowicielka Emanilia",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Jemenoss",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Tuzmer",
+   "npc": "Uzdrowiciel Toramidamus",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Werbin",
+   "npc": "Uzdrowicielka Hiliko",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kapłanka Hiada",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Karka-han",
+   "npc": "Uzdrowicielka Halfinia",
+   "price": 255950,
+   "cur": "zl"
+  },
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ajsza",
+   "price": 255950,
+   "cur": "zl"
+  }
+ ]
+}

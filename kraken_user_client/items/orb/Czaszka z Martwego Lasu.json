@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czaszka z Martwego Lasu",
+ "tplId": 52706,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 185,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb305.gif",
+ "stat": "artisan_worthless;binds;frost=136,1263;hp=1312;lvl=185;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

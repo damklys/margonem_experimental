@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostrze nienaruszonej reputacji",
+ "tplId": 52483,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 280,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz964.gif",
+ "stat": "acdmg=47;artisan_worthless;binds;dmg=9221,11270;lvl=280;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

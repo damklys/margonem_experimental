@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynka pocztowa",
+ "map": "Karka-han",
+ "x": 52,
+ "y": 26,
+ "id": 17635,
+ "roles": [
+  "mail"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

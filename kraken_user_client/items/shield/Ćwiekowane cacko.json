@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ćwiekowane cacko",
+ "tplId": 56884,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 13,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "tar/tarcza09.gif",
+ "stat": "ac=29;act=1;blok=14;da=11;lvl=13;permbound;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "kraken": "npc",
+ "name": "Brasz",
+ "map": "Mythar",
+ "x": 77,
+ "y": 27,
+ "id": 14144,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Prosta wężowa łebka",
+     "cl": 9,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "hel/helm706.gif",
+     "lvl": 85,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Hełm leśnego licha",
+     "cl": 9,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "hel/helm709.gif",
+     "lvl": 85,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Okazałe rogi centaura",
+     "cl": 9,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "hel/helm713.gif",
+     "lvl": 95,
+     "reqp": "pw"
+    },
+    {
+     "name": "Świerkowy kask",
+     "cl": 9,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "hel/helm717.gif",
+     "lvl": 95,
+     "reqp": "bh"
+    },
+    {
+     "name": "Podarunek Introprodara",
+     "cl": 9,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "hel/helm703.gif",
+     "lvl": 95,
+     "reqp": "mt"
+    },
+    {
+     "name": "Smocze podeszwy",
+     "cl": 10,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "but/buty789.gif",
+     "lvl": 85,
+     "reqp": "pw"
+    },
+    {
+     "name": "Ochrona przed igliwiem",
+     "cl": 10,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "but/buty795.gif",
+     "lvl": 85,
+     "reqp": "bh"
+    },
+    {
+     "name": "Fikuśne kamasze maga",
+     "cl": 10,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "but/buty781.gif",
+     "lvl": 85,
+     "reqp": "mt"
+    },
+    {
+     "name": "Mytharskie cholewy",
+     "cl": 10,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "but/buty777.gif",
+     "lvl": 95,
+     "reqp": ""
+    },
+    {
+     "name": "Zamszowy chwyt gadziny",
+     "cl": 11,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "rek/rekawice779.gif",
+     "lvl": 85,
+     "reqp": ""
+    },
+    {
+     "name": "Ochrona z wężowej skóry",
+     "cl": 11,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "rek/rekawice795.gif",
+     "lvl": 95,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Wytwór syczącego rzemieślnika",
+     "cl": 11,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "rek/rekawice785.gif",
+     "lvl": 95,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Bagienna narośl",
+     "cl": 12,
+     "price": 30254,
+     "cur": "zl",
+     "icon": "pie/pierscien793.gif",
+     "lvl": 82,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Iglasty kryształ",
+     "cl": 12,
+     "price": 30254,
+     "cur": "zl",
+     "icon": "pie/pierscien790.gif",
+     "lvl": 82,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Rubinowy język kameleona",
+     "cl": 12,
+     "price": 37955,
+     "cur": "zl",
+     "icon": "pie/pierscien779.gif",
+     "lvl": 92,
+     "reqp": "pw"
+    },
+    {
+     "name": "Koralowy język żaby",
+     "cl": 12,
+     "price": 37955,
+     "cur": "zl",
+     "icon": "pie/pierscien786.gif",
+     "lvl": 92,
+     "reqp": "bh"
+    },
+    {
+     "name": "Jaspisowy język węża",
+     "cl": 12,
+     "price": 37955,
+     "cur": "zl",
+     "icon": "pie/pierscien776.gif",
+     "lvl": 92,
+     "reqp": "mt"
+    },
+    {
+     "name": "Gadzia kolia",
+     "cl": 13,
+     "price": 30254,
+     "cur": "zl",
+     "icon": "nas/naszyjnik777.gif",
+     "lvl": 82,
+     "reqp": "pw"
+    },
+    {
+     "name": "Naszyjnik ofiary bagien",
+     "cl": 13,
+     "price": 30254,
+     "cur": "zl",
+     "icon": "nas/naszyjnik769.gif",
+     "lvl": 82,
+     "reqp": "bh"
+    },
+    {
+     "name": "Amulet przemiany w gada",
+     "cl": 13,
+     "price": 30254,
+     "cur": "zl",
+     "icon": "nas/naszyjnik773.gif",
+     "lvl": 82,
+     "reqp": "mt"
+    },
+    {
+     "name": "Ozdoba wężowego kochanka",
+     "cl": 13,
+     "price": 37955,
+     "cur": "zl",
+     "icon": "nas/naszyjnik782.gif",
+     "lvl": 92,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Smoczy wisior",
+     "cl": 13,
+     "price": 37955,
+     "cur": "zl",
+     "icon": "nas/naszyjnik787.gif",
+     "lvl": 92,
+     "reqp": "mpt"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

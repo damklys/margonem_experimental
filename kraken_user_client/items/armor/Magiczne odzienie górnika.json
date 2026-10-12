@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Magiczne odzienie górnika",
+ "tplId": 52392,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 155,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1178.gif",
+ "stat": "absorb=2651;absorbm=1325;ac=442;artisan_worthless;binds;critmval=6;lvl=155;manabon=52;rarity=common;reqp=m;reslight=10",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

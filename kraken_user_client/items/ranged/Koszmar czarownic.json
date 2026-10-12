@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Koszmar czarownic",
+ "tplId": 52532,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk678.gif",
+ "stat": "artisan_worthless;binds;dmg=4145,5066;fire=4671;lvl=300;rarity=common;reqp=t;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

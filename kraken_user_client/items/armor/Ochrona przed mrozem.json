@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona przed mrozem",
+ "tplId": 52412,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1186.gif",
+ "stat": "absorb=5160;absorbm=2580;ac=1806;act=12;artisan_worthless;binds;lvl=300;manabon=50;rarity=common;reqp=t;resfrost=8;sa=158",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

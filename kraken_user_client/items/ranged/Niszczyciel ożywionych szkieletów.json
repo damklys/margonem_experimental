@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Niszczyciel ożywionych szkieletów",
+ "tplId": 52569,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 110,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk699.gif",
+ "stat": "artisan_worthless;binds;dmg=1103,1348;dz=65;lvl=110;rarity=common;reqp=h;wound=25,438",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

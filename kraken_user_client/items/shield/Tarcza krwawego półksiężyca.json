@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza krwawego półksiężyca",
+ "tplId": 52633,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 170,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza566.gif",
+ "stat": "ac=826;act=1;artisan_worthless;binds;blok=170;da=51;lvl=170;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

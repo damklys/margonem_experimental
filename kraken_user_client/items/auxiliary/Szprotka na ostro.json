@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szprotka na ostro",
+ "tplId": 52665,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 110,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet328.gif",
+ "stat": "artisan_worthless;binds;dmg=721,881;energybon=17;lvl=110;rarity=common;reqp=b;wound=25,155",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

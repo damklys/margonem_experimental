@@ -1,0 +1,492 @@
+{
+ "kraken": "npc",
+ "name": "Sprzedawca Dulko Hin",
+ "map": "Nithal",
+ "x": 29,
+ "y": 41,
+ "id": 18653,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Wyrzutnia spalonego plażowicza",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk674.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Skwierczenie podpalonej wiedźmy",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk676.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa dobrego imienia",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk677.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Koszmar czarownic",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk678.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Lotki pogromcy nokturni",
+     "cl": 29,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "arr/ogien5.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Wiadomość z Jęczywąwozu",
+     "cl": 29,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "arr/ogien5.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Ogień smoczej pustyni",
+     "cl": 29,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "arr/ogien4.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Łatwopalna amunicja tropiciela",
+     "cl": 29,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "arr/ogien4.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Naciąg zdobiony ceramiką",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk734.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Łuk ze specjalistyczną nakładką",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk714.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Ramiona tryumfu",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk710.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Świst surowej zimy",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk706.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Strzały ranienia dzikusów",
+     "cl": 29,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "arr/zimno5.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Szpikulec łowcy wiedźm",
+     "cl": 29,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "arr/zimno5.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Chłód pana mrozu",
+     "cl": 29,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "arr/zimno4.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Pierwszy zimowy śnieg",
+     "cl": 29,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "arr/zimno4.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Łoskot uderzających błyskawic",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk702.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Wyładowywacz agresji",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk679.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Naciąg piorunującej kariery",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk671.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Źródło nieszczęsnych fal",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk742.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Przesył energetyczny",
+     "cl": 29,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "arr/blysk5.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Paraliżujący grot Wabicielki",
+     "cl": 29,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "arr/blysk5.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Groty wiecznej burzy",
+     "cl": 29,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "arr/blysk4.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Wolny ładunek",
+     "cl": 29,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "arr/blysk4.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Wyrzutnia łusek bolity",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk713.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Przerażający łuk wiedźmobija",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk727.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa pochlebnych opinii",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk737.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Przyrząd eksperta łowów",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk741.gif",
+     "lvl": 300,
+     "reqp": "h"
+    },
+    {
+     "name": "Pociski na dendrokreatury",
+     "cl": 29,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "arr/zwykla5.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Lotki strażnika czarownic",
+     "cl": 29,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "arr/zwykla5.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Ranienie smoczego ogona",
+     "cl": 29,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "arr/zwykla4.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Strzały z eksperymentalnymi lotkami",
+     "cl": 29,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "arr/zwykla4.gif",
+     "lvl": 300,
+     "reqp": "h"
+    },
+    {
+     "name": "Struna silnej toksyny",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk719.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Postrach czarownic",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk721.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Narzędzie przynoszące chwałę",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk722.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Wystrzał żrącej substancji",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk723.gif",
+     "lvl": 300,
+     "reqp": "h"
+    },
+    {
+     "name": "Silna trucizna mutokli",
+     "cl": 29,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "arr/trutka5.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Niszczyciele wiedźmich potworów",
+     "cl": 29,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "arr/trutka5.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Sekret mrocznej driady",
+     "cl": 29,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "arr/trutka4.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Mieszanka trzech jadów",
+     "cl": 29,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "arr/trutka4.gif",
+     "lvl": 300,
+     "reqp": "h"
+    },
+    {
+     "name": "Ramiona mocnego naciągu",
+     "cl": 4,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "luk/luk682.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Brzęcząca struna łowcy",
+     "cl": 4,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "luk/luk684.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Łuk rekordowej głębokości",
+     "cl": 4,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "luk/luk685.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Najnowsza wersja przeszywacza",
+     "cl": 4,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "luk/luk686.gif",
+     "lvl": 300,
+     "reqp": "h"
+    },
+    {
+     "name": "Warstwy papuzich piór",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1184.gif",
+     "lvl": 240,
+     "reqp": "t"
+    },
+    {
+     "name": "Wodny kamuflaż tropiciela",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1187.gif",
+     "lvl": 260,
+     "reqp": "t"
+    },
+    {
+     "name": "Peleryna niespotykanego zaszczytu",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1185.gif",
+     "lvl": 280,
+     "reqp": "t"
+    },
+    {
+     "name": "Ochrona przed mrozem",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1186.gif",
+     "lvl": 300,
+     "reqp": "t"
+    },
+    {
+     "name": "Wdzianko łowcy bolit",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1196.gif",
+     "lvl": 240,
+     "reqp": "h"
+    },
+    {
+     "name": "Kubrak myśliwego specjalisty",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1199.gif",
+     "lvl": 260,
+     "reqp": "h"
+    },
+    {
+     "name": "Kapota wielkiej chwały",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1197.gif",
+     "lvl": 280,
+     "reqp": "h"
+    },
+    {
+     "name": "Izolacja wiecznej zmarzliny",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1198.gif",
+     "lvl": 300,
+     "reqp": "h"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

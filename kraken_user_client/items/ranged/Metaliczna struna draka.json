@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Metaliczna struna draka",
+ "tplId": 52563,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 200,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk709.gif",
+ "stat": "artisan_worthless;binds;dmg=4090,4999;lvl=200;pierce=20;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

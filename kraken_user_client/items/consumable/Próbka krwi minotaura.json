@@ -1,0 +1,62 @@
+{
+ "kraken": "przedmiot",
+ "name": "Próbka krwi minotaura",
+ "tplId": 41892,
+ "cl": 21,
+ "category": "consumable",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pot/mix193.gif",
+ "stat": "amount=5;cansplit=1;capacity=15;leczy=125000;rarity=common",
+ "sellers": [
+  {
+   "map": "Mirvenis-Adur",
+   "npc": "Uzdrowiciel Ypsli",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Uzdrowicielka Emanilia",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Jemenoss",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Tuzmer",
+   "npc": "Uzdrowiciel Toramidamus",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Werbin",
+   "npc": "Uzdrowicielka Hiliko",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kapłanka Hiada",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Karka-han",
+   "npc": "Uzdrowicielka Halfinia",
+   "price": 521496,
+   "cur": "zl"
+  },
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ajsza",
+   "price": 521496,
+   "cur": "zl"
+  }
+ ]
+}

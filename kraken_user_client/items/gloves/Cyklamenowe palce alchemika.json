@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cyklamenowe palce alchemika",
+ "tplId": 52172,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 155,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "rek/rekawice1146.gif",
+ "stat": "absorb=552;absorbm=276;ac=133;act=6;artisan_worthless;binds;lvl=155;rarity=common;reqp=mt;reslight=9;slow=52",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

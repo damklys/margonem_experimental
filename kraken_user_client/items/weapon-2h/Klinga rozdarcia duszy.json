@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Klinga rozdarcia duszy",
+ "tplId": 36609,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 50,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz576.gif",
+ "stat": "artisan_worthless;binds;dmg=723,884;energybon=13;lvl=50;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

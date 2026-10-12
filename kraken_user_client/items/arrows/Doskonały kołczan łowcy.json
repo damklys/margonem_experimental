@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Doskonały kołczan łowcy",
+ "tplId": 51953,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 60,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan3.gif",
+ "stat": "acdmg=9;artisan_worthless;binds;critval=6;lvl=60;pdmg=55;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

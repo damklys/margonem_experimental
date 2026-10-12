@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łuk ociekającej żywicy",
+ "tplId": 33108,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 80,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk475.gif",
+ "stat": "artisan_worthless;binds;critmval=6;dmg=540,660;light=486,728;lvl=80;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

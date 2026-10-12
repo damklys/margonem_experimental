@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierścień ulotnej myśli",
+ "tplId": 33638,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 52,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "pie/pierscien775.gif",
+ "stat": "artisan_worthless;binds;critmval=6;di=33;hp=301;lvl=52;manabon=18;rarity=common;reqp=mt;sa=21",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 13776,
+   "cur": "zl"
+  }
+ ]
+}

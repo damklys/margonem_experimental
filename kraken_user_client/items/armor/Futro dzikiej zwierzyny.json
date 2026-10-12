@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Futro dzikiej zwierzyny",
+ "tplId": 52419,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1195.gif",
+ "stat": "ac=1056;act=16;artisan_worthless;binds;lvl=200;rarity=common;reqp=h;reslight=4;sa=100;slow=65",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

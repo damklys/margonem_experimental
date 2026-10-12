@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błykotka w kolorze błota",
+ "tplId": 52241,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 257,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien1058.gif",
+ "stat": "artisan_worthless;binds;dz=147;evade=26;hp=2042;lvl=257;rarity=common;reqp=bh;sa=137",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 170079,
+   "cur": "zl"
+  }
+ ]
+}

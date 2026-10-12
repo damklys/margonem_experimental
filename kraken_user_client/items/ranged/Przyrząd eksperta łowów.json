@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przyrząd eksperta łowów",
+ "tplId": 52568,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 300,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk741.gif",
+ "stat": "artisan_worthless;binds;dmg=7993,9770;lvl=300;pierce=20;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

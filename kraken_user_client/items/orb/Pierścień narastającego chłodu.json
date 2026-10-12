@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierścień narastającego chłodu",
+ "tplId": 52708,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 220,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb301.gif",
+ "stat": "artisan_worthless;binds;frost=161,1669;lvl=220;manabon=60;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

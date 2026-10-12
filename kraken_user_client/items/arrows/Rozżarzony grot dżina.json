@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rozżarzony grot dżina",
+ "tplId": 52751,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 140,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien1.gif",
+ "stat": "artisan_worthless;binds;di=82;fire=289;lvl=140;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

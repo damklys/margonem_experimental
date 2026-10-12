@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Rumka",
+ "map": "Nithal",
+ "x": 38,
+ "y": 58,
+ "id": 16548,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

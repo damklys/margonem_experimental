@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Amunicja dotkliwych poparzeń",
+ "tplId": 52755,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 200,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien3.gif",
+ "stat": "artisan_worthless;binds;energybon=23;fire=505;lvl=200;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

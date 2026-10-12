@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miażdżycielki lodowych skał",
+ "tplId": 52187,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 300,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice1141.gif",
+ "stat": "absorb=1084;absorbm=542;ac=484;act=4;artisan_worthless;binds;lvl=300;rarity=common;reqp=mpt;resfrost=8;slow=94",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

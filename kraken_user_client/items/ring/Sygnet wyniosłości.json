@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sygnet wyniosłości",
+ "tplId": 33643,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 72,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "pie/pierscien774.gif",
+ "stat": "artisan_worthless;binds;crit=2;di=44;heal=124;lvl=72;rarity=common;reqp=mt;sa=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 23747,
+   "cur": "zl"
+  }
+ ]
+}

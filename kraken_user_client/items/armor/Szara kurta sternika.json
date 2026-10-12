@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szara kurta sternika",
+ "tplId": 52414,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1203.gif",
+ "stat": "ac=510;act=16;artisan_worthless;binds;evade=13;lvl=125;rarity=common;reqp=h;resfire=4;sa=63",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

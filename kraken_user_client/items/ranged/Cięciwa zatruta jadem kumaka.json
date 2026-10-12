@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięciwa zatruta jadem kumaka",
+ "tplId": 34004,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 80,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk518.gif",
+ "stat": "artisan_worthless;binds;dmg=702,858;energybon=15;lvl=80;poison=36,300;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

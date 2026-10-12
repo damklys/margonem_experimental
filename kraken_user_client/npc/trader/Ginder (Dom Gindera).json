@@ -1,0 +1,258 @@
+{
+ "kraken": "npc",
+ "name": "Ginder",
+ "map": "Dom Gindera",
+ "x": 6,
+ "y": 9,
+ "id": 53498,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Wyrok myśliwego",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk700.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg podskakujących wnętrzności",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk701.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Łuk strażnika kopalni",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk736.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg pulsującej krwi",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk740.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Lotki bezwzględności łowcy",
+     "cl": 29,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "arr/zwykla1.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Krwawe pociski",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/zwykla2.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Broń kąśliwej toksyny",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk732.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg ociekającej trucizny",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk733.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Lotki z bakcylem",
+     "cl": 29,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "arr/trutka1.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Strzały powolnego konania",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/trutka2.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Ramiona pożogi",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk692.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa pląsających płomieni",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk693.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Lotki ognistych ptaków",
+     "cl": 29,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "arr/ogien1.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Parzące szpikulce",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/ogien2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Skrzydła mroźnego wiatru",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk711.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa tańczących kryształków",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk707.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Lotki skrzypiącego mrozu",
+     "cl": 29,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "arr/zimno1.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Mrożąca amunicja tropiciela",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/zimno2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Rogi nawałnicy",
+     "cl": 4,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "luk/luk672.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa przeskakujących błyskawic",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk691.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Lotki kapryśnych błyskawic",
+     "cl": 29,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "arr/blysk1.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Groty nadchodzącej burzy",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/blysk2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Peleryna przejrzystego nieba",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1190.gif",
+     "lvl": 155,
+     "reqp": "t"
+    },
+    {
+     "name": "Warstwy materiałowych chmur",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1182.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Narzuta łowcy skór",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1202.gif",
+     "lvl": 155,
+     "reqp": "h"
+    },
+    {
+     "name": "Mglisty kamuflaż myśliwego",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1194.gif",
+     "lvl": 170,
+     "reqp": "h"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

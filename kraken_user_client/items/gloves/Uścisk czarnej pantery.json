@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Uścisk czarnej pantery",
+ "tplId": 52164,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 110,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "rek/rekawice1137.gif",
+ "stat": "ac=137;act=1;artisan_worthless;binds;lowevade=11;lvl=110;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

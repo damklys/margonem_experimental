@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sztylet wielkich szkód",
+ "tplId": 52675,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 280,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet300.gif",
+ "stat": "artisan_worthless;binds;dmg=3135,3832;lvl=280;rarity=common;reqp=b;sa=78;wound=25,673",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

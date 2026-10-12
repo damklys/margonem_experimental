@@ -1,0 +1,168 @@
+{
+ "kraken": "npc",
+ "name": "Ernest",
+ "map": "Zatopiony Szczyt",
+ "x": 47,
+ "y": 20,
+ "id": 326885,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Rdzewiejący kask",
+     "cl": 9,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "hel/53.gif",
+     "lvl": 10,
+     "reqp": ""
+    },
+    {
+     "name": "Kamuflaż sprytnego łobuza",
+     "cl": 9,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "hel/helm17.gif",
+     "lvl": 13,
+     "reqp": ""
+    },
+    {
+     "name": "Przyłbica przyszłego bohatera",
+     "cl": 9,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "hel/helm242.gif",
+     "lvl": 16,
+     "reqp": ""
+    },
+    {
+     "name": "Obuwie do tańca",
+     "cl": 10,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "but/buty56.gif",
+     "lvl": 10,
+     "reqp": ""
+    },
+    {
+     "name": "Stukające blaszki wędrowca",
+     "cl": 10,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "but/rycerskie.gif",
+     "lvl": 13,
+     "reqp": ""
+    },
+    {
+     "name": "Porzucone mienie",
+     "cl": 10,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "but/buty346.gif",
+     "lvl": 16,
+     "reqp": ""
+    },
+    {
+     "name": "Rękawice gospodarcze",
+     "cl": 11,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "rek/rekawice02.gif",
+     "lvl": 10,
+     "reqp": ""
+    },
+    {
+     "name": "Lepkie rączki",
+     "cl": 11,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "rek/rekawice04.gif",
+     "lvl": 13,
+     "reqp": ""
+    },
+    {
+     "name": "Chwyt metalowej dermatozy",
+     "cl": 11,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "rek/rekawice06.gif",
+     "lvl": 16,
+     "reqp": ""
+    },
+    {
+     "name": "Zrabowany pierścionek",
+     "cl": 12,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "pie/piersc67.gif",
+     "lvl": 10,
+     "reqp": ""
+    },
+    {
+     "name": "Srebrna obrączka obieżyświata",
+     "cl": 12,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "pie/piersc69.gif",
+     "lvl": 13,
+     "reqp": ""
+    },
+    {
+     "name": "Niskiej wartości pamiątka rodzinna",
+     "cl": 12,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "pie/piersc68.gif",
+     "lvl": 16,
+     "reqp": ""
+    },
+    {
+     "name": "Uwierający kamyk",
+     "cl": 13,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "nas/naszyjnik53.gif",
+     "lvl": 10,
+     "reqp": ""
+    },
+    {
+     "name": "Symbol taboru",
+     "cl": 13,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "nas/naszyjnik54.gif",
+     "lvl": 13,
+     "reqp": ""
+    },
+    {
+     "name": "Wróżbiarska gwiazdka",
+     "cl": 13,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "nas/naszyjnik55.gif",
+     "lvl": 16,
+     "reqp": ""
+    },
+    {
+     "name": "Talizman mocy wody",
+     "cl": 22,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "tal/talizman12.gif",
+     "lvl": 10,
+     "reqp": ""
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

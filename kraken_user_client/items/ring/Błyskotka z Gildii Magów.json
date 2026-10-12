@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błyskotka z Gildii Magów",
+ "tplId": 52232,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 182,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "pie/pierscien1047.gif",
+ "stat": "absorb=681;artisan_worthless;binds;di=307;lvl=182;rarity=common;reqp=mt;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 107833,
+   "cur": "zl"
+  }
+ ]
+}

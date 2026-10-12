@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Osłona kłamliwego wróżbiarza",
+ "tplId": 56883,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 10,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "tar/start_gob07.gif",
+ "stat": "ac=22;act=1;blok=11;hp=68;lvl=10;permbound;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

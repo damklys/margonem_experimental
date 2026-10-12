@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szabelka spod szyldu Amore",
+ "tplId": 56882,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 16,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/kh-miecz3.gif",
+ "stat": "dmg=101,124;lvl=16;permbound;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

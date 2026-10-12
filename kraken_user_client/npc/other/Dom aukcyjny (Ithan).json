@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Dom aukcyjny",
+ "map": "Ithan",
+ "x": 33,
+ "y": 30,
+ "id": 133631,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

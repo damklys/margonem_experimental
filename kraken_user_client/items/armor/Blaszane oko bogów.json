@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Blaszane oko bogów",
+ "tplId": 33994,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja708.gif",
+ "stat": "ac=329;act=8;artisan_worthless;binds;evade=28;hp=512;lvl=85;rarity=common;reqp=b;resfire=2",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

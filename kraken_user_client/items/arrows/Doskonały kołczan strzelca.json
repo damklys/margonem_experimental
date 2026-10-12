@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Doskonały kołczan strzelca",
+ "tplId": 51956,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 60,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan4.gif",
+ "stat": "acdmg=9;artisan_worthless;binds;lowevade=6;lvl=60;poison=27,49;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

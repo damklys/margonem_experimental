@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Posążek ze smoczej jaskini",
+ "tplId": 34370,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 100,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb203.gif",
+ "stat": "artisan_worthless;binds;critmval=6;light=450,674;lvl=100;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

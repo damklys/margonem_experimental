@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawe palce dzikusa",
+ "tplId": 52181,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 240,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice1142.gif",
+ "stat": "absorb=746;absorbm=373;ac=333;act=4;artisan_worthless;binds;heal=289;lvl=240;rarity=common;reqp=mpt;reslight=8",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

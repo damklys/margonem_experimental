@@ -1,0 +1,375 @@
+{
+ "kraken": "npc",
+ "name": "Vascus",
+ "map": "Thuzal",
+ "x": 52,
+ "y": 42,
+ "id": 57804,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Hełm górmistrza",
+     "cl": 9,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "hel/helm992.gif",
+     "lvl": 170,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Rogi sztygara",
+     "cl": 9,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "hel/helm996.gif",
+     "lvl": 170,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Udany projekt wynalazcy",
+     "cl": 9,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "hel/helm1000.gif",
+     "lvl": 185,
+     "reqp": "pw"
+    },
+    {
+     "name": "Misyjna czapka teologa",
+     "cl": 9,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "hel/helm1004.gif",
+     "lvl": 185,
+     "reqp": "bh"
+    },
+    {
+     "name": "Astralny kask maga",
+     "cl": 9,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "hel/helm988.gif",
+     "lvl": 185,
+     "reqp": "mt"
+    },
+    {
+     "name": "Pamiątka z wielkiego miasta",
+     "cl": 9,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "hel/helm984.gif",
+     "lvl": 200,
+     "reqp": ""
+    },
+    {
+     "name": "Stalowy szturmak",
+     "cl": 9,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "hel/helm994.gif",
+     "lvl": 220,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Zaczarowane kabuto",
+     "cl": 9,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "hel/helm998.gif",
+     "lvl": 220,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Cholewy z czarnej hydry",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1015.gif",
+     "lvl": 170,
+     "reqp": "pw"
+    },
+    {
+     "name": "Zielone skórki hydry",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1025.gif",
+     "lvl": 170,
+     "reqp": "bh"
+    },
+    {
+     "name": "Kamasze poskramiacza hydr",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1032.gif",
+     "lvl": 170,
+     "reqp": "mt"
+    },
+    {
+     "name": "Elfickie kamasze",
+     "cl": 10,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "but/buty1011.gif",
+     "lvl": 185,
+     "reqp": ""
+    },
+    {
+     "name": "Podeszwy z thuzalskich koszarów",
+     "cl": 10,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "but/buty1023.gif",
+     "lvl": 200,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Zdobycz z Katakumb Rozkoszy",
+     "cl": 10,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "but/buty1019.gif",
+     "lvl": 200,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Cholewy z elfickiej stali",
+     "cl": 10,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "but/buty1016.gif",
+     "lvl": 220,
+     "reqp": "pw"
+    },
+    {
+     "name": "Wysokie cholewy elfa",
+     "cl": 10,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "but/buty1026.gif",
+     "lvl": 220,
+     "reqp": "bh"
+    },
+    {
+     "name": "Cholewy mieszkańca kniei",
+     "cl": 10,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "but/buty1031.gif",
+     "lvl": 220,
+     "reqp": "mt"
+    },
+    {
+     "name": "Skórzane rękawice górnika",
+     "cl": 11,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "rek/rekawice1136.gif",
+     "lvl": 170,
+     "reqp": ""
+    },
+    {
+     "name": "Palce wyblakłych kolorów",
+     "cl": 11,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "rek/rekawice1156.gif",
+     "lvl": 185,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Dotyk głębokiej czerwieni",
+     "cl": 11,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "rek/rekawice1144.gif",
+     "lvl": 185,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Ochrona dłoni wynalazcy",
+     "cl": 11,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "rek/rekawice1138.gif",
+     "lvl": 200,
+     "reqp": "pw"
+    },
+    {
+     "name": "Ochrona dłoni teologa",
+     "cl": 11,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "rek/rekawice1150.gif",
+     "lvl": 200,
+     "reqp": "bh"
+    },
+    {
+     "name": "Ochrona dłoni maga",
+     "cl": 11,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "rek/rekawice1147.gif",
+     "lvl": 200,
+     "reqp": "mt"
+    },
+    {
+     "name": "Bandaże wielkiej przygody",
+     "cl": 11,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "rek/rekawice1134.gif",
+     "lvl": 220,
+     "reqp": ""
+    },
+    {
+     "name": "Błyskotka z Gildii Teologów",
+     "cl": 12,
+     "price": 107833,
+     "cur": "zl",
+     "icon": "pie/pierscien1054.gif",
+     "lvl": 182,
+     "reqp": "pw"
+    },
+    {
+     "name": "Błyskotka z Gildii Wynalazców",
+     "cl": 12,
+     "price": 107833,
+     "cur": "zl",
+     "icon": "pie/pierscien1055.gif",
+     "lvl": 182,
+     "reqp": "bh"
+    },
+    {
+     "name": "Błyskotka z Gildii Magów",
+     "cl": 12,
+     "price": 107833,
+     "cur": "zl",
+     "icon": "pie/pierscien1047.gif",
+     "lvl": 182,
+     "reqp": "mt"
+    },
+    {
+     "name": "Kryształowe kwiecie Valmira",
+     "cl": 12,
+     "price": 123804,
+     "cur": "zl",
+     "icon": "pie/pierscien1065.gif",
+     "lvl": 197,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Otok zniewolonej driady",
+     "cl": 12,
+     "price": 123804,
+     "cur": "zl",
+     "icon": "pie/pierscien1060.gif",
+     "lvl": 197,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Pierścień młodości",
+     "cl": 12,
+     "price": 142821,
+     "cur": "zl",
+     "icon": "pie/pierscien1052.gif",
+     "lvl": 217,
+     "reqp": "pw"
+    },
+    {
+     "name": "Oczko dojrzałości",
+     "cl": 12,
+     "price": 142821,
+     "cur": "zl",
+     "icon": "pie/pierscien1057.gif",
+     "lvl": 217,
+     "reqp": "bh"
+    },
+    {
+     "name": "Sygnet starości",
+     "cl": 12,
+     "price": 142821,
+     "cur": "zl",
+     "icon": "pie/pierscien1049.gif",
+     "lvl": 217,
+     "reqp": "mt"
+    },
+    {
+     "name": "Żołnierskie odznaczenie",
+     "cl": 13,
+     "price": 107833,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1060.gif",
+     "lvl": 182,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Ozdoba mieszczucha",
+     "cl": 13,
+     "price": 107833,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1055.gif",
+     "lvl": 182,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Krwawy order draka",
+     "cl": 13,
+     "price": 123804,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1050.gif",
+     "lvl": 197,
+     "reqp": "pw"
+    },
+    {
+     "name": "Utleniony medalion patrycjusza",
+     "cl": 13,
+     "price": 123804,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1040.gif",
+     "lvl": 197,
+     "reqp": "bh"
+    },
+    {
+     "name": "Korowy amulet driady",
+     "cl": 13,
+     "price": 123804,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1045.gif",
+     "lvl": 197,
+     "reqp": "mt"
+    },
+    {
+     "name": "Więzienie błogich doznań",
+     "cl": 13,
+     "price": 142821,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1061.gif",
+     "lvl": 217,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Wisior kumulacji gniewu",
+     "cl": 13,
+     "price": 142821,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1056.gif",
+     "lvl": 217,
+     "reqp": "mpt"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

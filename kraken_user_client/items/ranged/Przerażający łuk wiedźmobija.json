@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przerażający łuk wiedźmobija",
+ "tplId": 52566,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 260,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk727.gif",
+ "stat": "artisan_worthless;binds;dmg=6283,7680;lvl=260;rarity=common;reqp=h;sa=73",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

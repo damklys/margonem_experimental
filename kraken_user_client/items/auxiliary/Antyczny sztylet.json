@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Antyczny sztylet",
+ "tplId": 52653,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 110,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet310.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=915,1118;lvl=110;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

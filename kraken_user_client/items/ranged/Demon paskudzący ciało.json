@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Demon paskudzący ciało",
+ "tplId": 34006,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 100,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk513.gif",
+ "stat": "artisan_worthless;binds;dmg=961,1174;lvl=100;poison=45,411;rarity=common;reqp=h;slow=37",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

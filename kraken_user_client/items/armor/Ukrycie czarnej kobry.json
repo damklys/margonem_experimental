@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ukrycie czarnej kobry",
+ "tplId": 34015,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja749.gif",
+ "stat": "ac=292;act=16;artisan_worthless;binds;energybon=16;lvl=85;rarity=common;reqp=h;resfire=4;sa=43",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

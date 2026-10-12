@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Alchemik Kalipos",
+ "map": "Karka-han",
+ "x": 88,
+ "y": 30,
+ "id": 10068,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

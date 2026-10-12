@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płaszcz eksploratora bagien",
+ "tplId": 52408,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 220,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1188.gif",
+ "stat": "absorb=3080;absorbm=1540;ac=1078;act=12;artisan_worthless;binds;lvl=220;manabon=97;rarity=common;reqp=t;resfrost=8;sa=55",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

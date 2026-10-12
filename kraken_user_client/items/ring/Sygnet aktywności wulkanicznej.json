@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sygnet aktywności wulkanicznej",
+ "tplId": 52224,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 137,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien1070.gif",
+ "stat": "artisan_worthless;binds;crit=1;evade=14;hp=897;lvl=137;rarity=common;reqp=mpt;sa=42;slow=47",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 59633,
+   "cur": "zl"
+  }
+ ]
+}

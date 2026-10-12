@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dawczyni radości",
+ "tplId": 56885,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 16,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "tar/tarcza09.gif",
+ "stat": "ac=36;act=1;blok=18;lvl=16;permbound;rarity=common;reqp=pw;resfire=3;sa=12",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

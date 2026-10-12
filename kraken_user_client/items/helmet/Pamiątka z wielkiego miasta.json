@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pamiątka z wielkiego miasta",
+ "tplId": 52128,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 200,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm984.gif",
+ "stat": "ac=392;artisan_worthless;binds;lvl=200;rarity=common;sa=58",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

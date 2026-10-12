@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona mrocznych pnączy",
+ "tplId": 52332,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1153.gif",
+ "stat": "ac=1259;act=1;artisan_worthless;binds;hpbon=1.9;lowcrit=2;lvl=185;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

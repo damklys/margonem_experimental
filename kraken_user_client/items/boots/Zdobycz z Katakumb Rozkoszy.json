@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zdobycz z Katakumb Rozkoszy",
+ "tplId": 52153,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 200,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "but/buty1019.gif",
+ "stat": "absorb=665;absorbm=333;ac=297;act=4;artisan_worthless;binds;di=115;lvl=200;rarity=common;reqp=mpt;reslight=8",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

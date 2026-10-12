@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Nessa",
+ "map": "Mythar",
+ "x": 44,
+ "y": 50,
+ "id": 13880,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

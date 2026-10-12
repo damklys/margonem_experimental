@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Okucie życiowego dorobku",
+ "tplId": 52325,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 280,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1137.gif",
+ "stat": "ac=2066;act=8;artisan_worthless;binds;evade=93;lvl=280;rarity=common;reqp=b;resfire=2;slow=88",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

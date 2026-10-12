@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Buciki szczura okrętowego",
+ "tplId": 52141,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 110,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "but/buty1017.gif",
+ "stat": "absorb=266;absorbm=133;ac=119;act=4;artisan_worthless;binds;hp=461;lvl=110;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,429 @@
+{
+ "kraken": "npc",
+ "name": "Szybki Daraker",
+ "map": "Liściaste Rozstaje",
+ "x": 22,
+ "y": 58,
+ "id": 278185,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Falchion żabiej czaszki",
+     "cl": 3,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz564.gif",
+     "lvl": 80,
+     "reqp": "w"
+    },
+    {
+     "name": "Czarna strzała wojownika",
+     "cl": 3,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz560.gif",
+     "lvl": 90,
+     "reqp": "w"
+    },
+    {
+     "name": "Cięcie biesa",
+     "cl": 3,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz559.gif",
+     "lvl": 100,
+     "reqp": "w"
+    },
+    {
+     "name": "Iglasta osłona",
+     "cl": 14,
+     "price": 28862,
+     "cur": "zl",
+     "icon": "tar/tarcza406.gif",
+     "lvl": 80,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza połowicznej przemiany",
+     "cl": 14,
+     "price": 36312,
+     "cur": "zl",
+     "icon": "tar/tarcza407.gif",
+     "lvl": 90,
+     "reqp": "w"
+    },
+    {
+     "name": "Trofeum centaura",
+     "cl": 14,
+     "price": 45051,
+     "cur": "zl",
+     "icon": "tar/tarcza408.gif",
+     "lvl": 100,
+     "reqp": "w"
+    },
+    {
+     "name": "Czarne chmury",
+     "cl": 2,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz573.gif",
+     "lvl": 80,
+     "reqp": "w"
+    },
+    {
+     "name": "Czarna poszarpana klinga",
+     "cl": 2,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz572.gif",
+     "lvl": 90,
+     "reqp": "w"
+    },
+    {
+     "name": "Wiertło na wrogów",
+     "cl": 2,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz571.gif",
+     "lvl": 100,
+     "reqp": "w"
+    },
+    {
+     "name": "Szabla plącząca trzewia",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz583.gif",
+     "lvl": 80,
+     "reqp": "bw"
+    },
+    {
+     "name": "Mytharski zębacz",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz587.gif",
+     "lvl": 90,
+     "reqp": "bw"
+    },
+    {
+     "name": "Amarantowy zawadiaka",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz588.gif",
+     "lvl": 100,
+     "reqp": "bw"
+    },
+    {
+     "name": "Płaski sztylet z Mythar",
+     "cl": 5,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "bro/sztylet207.gif",
+     "lvl": 80,
+     "reqp": "b"
+    },
+    {
+     "name": "Upust krokodylich łez",
+     "cl": 5,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "bro/sztylet203.gif",
+     "lvl": 90,
+     "reqp": "b"
+    },
+    {
+     "name": "Rozdarcie gadziej skóry",
+     "cl": 5,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "bro/sztylet202.gif",
+     "lvl": 100,
+     "reqp": "b"
+    },
+    {
+     "name": "Podręczna mytharska maczeta",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz594.gif",
+     "lvl": 80,
+     "reqp": "b"
+    },
+    {
+     "name": "Piła tnąca konary",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz590.gif",
+     "lvl": 90,
+     "reqp": "b"
+    },
+    {
+     "name": "Wężowy urwiłeb",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz589.gif",
+     "lvl": 100,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze grzechotnika",
+     "cl": 5,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "bro/sztylet196.gif",
+     "lvl": 80,
+     "reqp": "b"
+    },
+    {
+     "name": "Żelazna strzałka",
+     "cl": 5,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "bro/sztylet200.gif",
+     "lvl": 90,
+     "reqp": "b"
+    },
+    {
+     "name": "Haratanie wężowego ogona",
+     "cl": 5,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "bro/sztylet201.gif",
+     "lvl": 100,
+     "reqp": "b"
+    },
+    {
+     "name": "Plusk gadziego jadu",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz612.gif",
+     "lvl": 80,
+     "reqp": "b"
+    },
+    {
+     "name": "Miecz skąpany w jadzie kobry",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz608.gif",
+     "lvl": 90,
+     "reqp": "b"
+    },
+    {
+     "name": "Ekwipunek mistrza trucizn",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz607.gif",
+     "lvl": 100,
+     "reqp": "b"
+    },
+    {
+     "name": "Podręczna trująca szabelka",
+     "cl": 5,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "bro/sztylet220.gif",
+     "lvl": 80,
+     "reqp": "b"
+    },
+    {
+     "name": "Zielonkawy sztylet",
+     "cl": 5,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "bro/sztylet224.gif",
+     "lvl": 90,
+     "reqp": "b"
+    },
+    {
+     "name": "Iglasty zadzior",
+     "cl": 5,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "bro/sztylet225.gif",
+     "lvl": 100,
+     "reqp": "b"
+    },
+    {
+     "name": "Płomienny sejmitar",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz613.gif",
+     "lvl": 80,
+     "reqp": "p"
+    },
+    {
+     "name": "Wyszczerbione ostrze pożogi",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz618.gif",
+     "lvl": 90,
+     "reqp": "p"
+    },
+    {
+     "name": "Stal rozgrzana smoczym oddechem",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz617.gif",
+     "lvl": 100,
+     "reqp": "p"
+    },
+    {
+     "name": "Ochrona gadziego odkrywcy",
+     "cl": 14,
+     "price": 28862,
+     "cur": "zl",
+     "icon": "tar/tarcza418.gif",
+     "lvl": 80,
+     "reqp": "p"
+    },
+    {
+     "name": "Tarcza z fiolką antidotum",
+     "cl": 14,
+     "price": 36312,
+     "cur": "zl",
+     "icon": "tar/tarcza419.gif",
+     "lvl": 90,
+     "reqp": "p"
+    },
+    {
+     "name": "Ochrona smoczych pazurów",
+     "cl": 14,
+     "price": 45051,
+     "cur": "zl",
+     "icon": "tar/tarcza420.gif",
+     "lvl": 100,
+     "reqp": "p"
+    },
+    {
+     "name": "Szabla kuta na zimno",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz637.gif",
+     "lvl": 80,
+     "reqp": "p"
+    },
+    {
+     "name": "Zęby mrozu",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz641.gif",
+     "lvl": 90,
+     "reqp": "p"
+    },
+    {
+     "name": "Ostrze hibernacji",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz642.gif",
+     "lvl": 100,
+     "reqp": "p"
+    },
+    {
+     "name": "Burzowy falchion",
+     "cl": 1,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "mie/miecz650.gif",
+     "lvl": 80,
+     "reqp": "p"
+    },
+    {
+     "name": "Gadzi paraliż",
+     "cl": 1,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "mie/miecz627.gif",
+     "lvl": 90,
+     "reqp": "p"
+    },
+    {
+     "name": "Pamiątka z Wieży Magów",
+     "cl": 1,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "mie/miecz626.gif",
+     "lvl": 100,
+     "reqp": "p"
+    },
+    {
+     "name": "Filcowa opieka gadów",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja701.gif",
+     "lvl": 85,
+     "reqp": "w"
+    },
+    {
+     "name": "Pancerz doświadczonego wojownika",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja699.gif",
+     "lvl": 95,
+     "reqp": "w"
+    },
+    {
+     "name": "Blaszane oko bogów",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja708.gif",
+     "lvl": 85,
+     "reqp": "b"
+    },
+    {
+     "name": "Zbroja doświadczonego tancerza",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja707.gif",
+     "lvl": 95,
+     "reqp": "b"
+    },
+    {
+     "name": "Kolczuga smoczej łuski",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja717.gif",
+     "lvl": 85,
+     "reqp": "p"
+    },
+    {
+     "name": "Puszka doświadczonego paladyna",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja718.gif",
+     "lvl": 95,
+     "reqp": "pw"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

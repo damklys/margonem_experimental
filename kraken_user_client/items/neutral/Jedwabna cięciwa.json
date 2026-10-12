@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Jedwabna cięciwa",
+ "tplId": 5410,
+ "cl": 15,
+ "category": "neutral",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "neu/cieci02.gif",
+ "stat": "amount=1;cansplit=1;capacity=5;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 12000,
+   "cur": "zl"
+  }
+ ]
+}

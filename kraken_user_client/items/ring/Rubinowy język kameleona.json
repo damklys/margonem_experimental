@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rubinowy język kameleona",
+ "tplId": 33878,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 92,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "pie/pierscien779.gif",
+ "stat": "artisan_worthless;binds;crit=1;ds=55;hp=1095;lvl=92;rarity=common;reqp=pw;sa=31",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 37955,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 37955,
+   "cur": "zl"
+  }
+ ]
+}

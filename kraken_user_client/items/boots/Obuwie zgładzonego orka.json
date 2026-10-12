@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obuwie zgładzonego orka",
+ "tplId": 52146,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 155,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "but/buty1022.gif",
+ "stat": "ac=246;act=8;artisan_worthless;binds;da=47;lvl=155;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Prowizoryczne opancerzenie",
+ "tplId": 56893,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 13,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "kaf/kaftan06.gif",
+ "stat": "ac=33;act=8;evade=6;lvl=13;permbound;rarity=common;reqp=b;resfire=2",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

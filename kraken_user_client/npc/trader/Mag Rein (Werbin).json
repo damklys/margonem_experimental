@@ -1,0 +1,150 @@
+{
+ "kraken": "npc",
+ "name": "Mag Rein",
+ "map": "Werbin",
+ "x": 2,
+ "y": 16,
+ "id": 53528,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Pożeracz płomieni",
+     "cl": 6,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "roz/rozdzka376.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Kostur oszalałej wiedźmy",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka377.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Zabawka piromana",
+     "cl": 7,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "orb/orb296.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Płonący glob",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb292.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Pożeracz chłodu",
+     "cl": 6,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "roz/rozdzka401.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Narzędzie szronotwórcy",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka402.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Orb nagłego spowolnienia",
+     "cl": 7,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "orb/orb308.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula ostrego mrozu",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb304.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Pożeracz wyładowań",
+     "cl": 6,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "roz/rozdzka381.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Zakurzony pastorał",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka380.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Sfera wyładowań",
+     "cl": 7,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "orb/orb311.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Więzienie nawałnicy",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb315.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Magiczne odzienie górnika",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1178.gif",
+     "lvl": 155,
+     "reqp": "m"
+    },
+    {
+     "name": "Schludna szata czarnoksiężnika",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1170.gif",
+     "lvl": 170,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierwszy zimowy śnieg",
+ "tplId": 52772,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno4.gif",
+ "stat": "artisan_worthless;binds;frost=220,888;lvl=300;rarity=common;reqp=t;resdmg=1;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

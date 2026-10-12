@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pąk z wyspy Magradit",
+ "tplId": 52252,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 122,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1038.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=69;di=72;lvl=122;manabon=36;rarity=common;reqp=mpt;sa=39",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 46115,
+   "cur": "zl"
+  }
+ ]
+}

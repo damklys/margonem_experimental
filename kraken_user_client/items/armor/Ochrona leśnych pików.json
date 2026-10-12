@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona leśnych pików",
+ "tplId": 56900,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 16,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja20a.gif",
+ "stat": "ac=47;blok=2;hpbon=0.2;lvl=16;permbound;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Utwardzone podeszwy",
+ "tplId": 52157,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 240,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty1010.gif",
+ "stat": "ac=480;artisan_worthless;binds;heal=307;lvl=240;rarity=common",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

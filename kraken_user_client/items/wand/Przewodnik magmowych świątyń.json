@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przewodnik magmowych świątyń",
+ "tplId": 33141,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 70,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka257.gif",
+ "stat": "artisan_worthless;binds;fire=714;lvl=70;manabon=23;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

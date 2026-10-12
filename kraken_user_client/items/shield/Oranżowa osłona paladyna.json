@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Oranżowa osłona paladyna",
+ "tplId": 33752,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 50,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza415.gif",
+ "stat": "ac=135;artisan_worthless;binds;blok=60;hp=262;lvl=50;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 12971,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kolczuga smoczej łuski",
+ "tplId": 33996,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja717.gif",
+ "stat": "ac=366;artisan_worthless;binds;hp=512;hpbon=0.9;lvl=85;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

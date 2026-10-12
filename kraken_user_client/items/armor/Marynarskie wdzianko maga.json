@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Marynarskie wdzianko maga",
+ "tplId": 52390,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1179.gif",
+ "stat": "absorb=1913;absorbm=956;ac=319;artisan_worthless;binds;da=39;lvl=125;manabon=42;rarity=common;reqp=m;resfire=10",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

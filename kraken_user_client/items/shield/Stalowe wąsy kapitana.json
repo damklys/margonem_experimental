@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowe wąsy kapitana",
+ "tplId": 52643,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 140,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza582.gif",
+ "stat": "ac=567;artisan_worthless;binds;blok=168;critval=6;lvl=140;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

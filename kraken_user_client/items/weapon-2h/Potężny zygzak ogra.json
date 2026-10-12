@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Potężny zygzak ogra",
+ "tplId": 52478,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 185,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz920.gif",
+ "stat": "artisan_worthless;binds;da=54;dmg=4681,5721;lvl=185;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

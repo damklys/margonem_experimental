@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawe pięści maga",
+ "tplId": 33631,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 65,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice786.gif",
+ "stat": "absorb=106;absorbm=53;ac=48;act=4;artisan_worthless;binds;lvl=65;manabon=21;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

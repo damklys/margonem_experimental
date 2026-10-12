@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tunika ze skóry dzika",
+ "tplId": 56899,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 13,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja24.gif",
+ "stat": "ac=37;da=11;hpbon=0.1;lvl=13;permbound;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

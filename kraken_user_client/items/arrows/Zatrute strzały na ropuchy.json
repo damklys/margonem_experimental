@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zatrute strzały na ropuchy",
+ "tplId": 51970,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 80,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/strzalatrut.gif",
+ "stat": "acdmg=13;artisan_worthless;binds;lvl=80;poison=36,73;rarity=common;reqp=h;sa=28",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

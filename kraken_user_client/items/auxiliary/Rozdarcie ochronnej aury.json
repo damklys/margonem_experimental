@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rozdarcie ochronnej aury",
+ "tplId": 52674,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 260,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet305.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=2769,3385;lvl=260;rarity=common;reqp=b;wound=25,595",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

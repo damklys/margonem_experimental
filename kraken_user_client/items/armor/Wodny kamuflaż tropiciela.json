@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wodny kamuflaż tropiciela",
+ "tplId": 52410,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 260,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1187.gif",
+ "stat": "absorb=4056;absorbm=2028;ac=1420;act=12;artisan_worthless;binds;crit=1;lvl=260;manabon=43;rarity=common;reqp=t;reslight=8;sa=65",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

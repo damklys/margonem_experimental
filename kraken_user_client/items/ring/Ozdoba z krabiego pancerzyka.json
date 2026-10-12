@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ozdoba z krabiego pancerzyka",
+ "tplId": 52221,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 122,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien1056.gif",
+ "stat": "artisan_worthless;binds;dz=72;energybon=18;evade=12;hp=779;lvl=122;rarity=common;reqp=bh;sa=39",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 46115,
+   "cur": "zl"
+  }
+ ]
+}

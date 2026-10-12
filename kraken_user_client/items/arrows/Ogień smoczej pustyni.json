@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ogień smoczej pustyni",
+ "tplId": 52759,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 280,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien4.gif",
+ "stat": "artisan_worthless;binds;da=78;fire=878;lvl=280;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

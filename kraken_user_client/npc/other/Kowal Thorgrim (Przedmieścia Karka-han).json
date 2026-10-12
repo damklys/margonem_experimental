@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Kowal Thorgrim",
+ "map": "Przedmieścia Karka-han",
+ "x": 17,
+ "y": 11,
+ "id": 50465,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

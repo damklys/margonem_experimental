@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz zwycięzcy turnieju",
+ "tplId": 33760,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja712.gif",
+ "stat": "ac=277;act=8;artisan_worthless;binds;dz=46;evade=25;lvl=75;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Protekcja zmutowanych liści",
+ "tplId": 52320,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1141.gif",
+ "stat": "ac=1049;act=8;artisan_worthless;binds;da=54;evade=62;lvl=185;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

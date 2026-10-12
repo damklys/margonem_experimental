@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierś wiedźmobija",
+ "tplId": 52336,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 260,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1151.gif",
+ "stat": "ac=2190;act=1;artisan_worthless;binds;hp=2075;hpbon=2.6;lvl=260;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

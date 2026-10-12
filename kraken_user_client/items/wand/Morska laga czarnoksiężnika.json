@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Morska laga czarnoksiężnika",
+ "tplId": 52607,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 140,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka399.gif",
+ "stat": "artisan_worthless;binds;frost=140,1639;lvl=140;rarity=common;reqp=m;sa=43",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

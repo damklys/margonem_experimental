@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Prawdziwy chłód",
+ "tplId": 52508,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 300,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz962.gif",
+ "stat": "artisan_worthless;binds;dmg=5329,6513;frost=287,2961;lvl=300;rarity=common;reqp=p;resdmg=1;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

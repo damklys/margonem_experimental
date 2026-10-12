@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mieszanka trzech jadów",
+ "tplId": 52748,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 300,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka4.gif",
+ "stat": "acdmg=103;artisan_worthless;binds;lvl=300;poison=134,559;rarity=common;reqp=h;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

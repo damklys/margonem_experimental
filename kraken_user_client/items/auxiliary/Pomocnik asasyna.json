@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pomocnik asasyna",
+ "tplId": 52688,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 300,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet322.gif",
+ "stat": "artisan_worthless;binds;dmg=3523,4306;hp=2538;lvl=300;poison=191,691;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

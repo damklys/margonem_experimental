@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cholewy mieszkańca kniei",
+ "tplId": 52156,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 220,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty1031.gif",
+ "stat": "absorb=1155;absorbm=578;ac=277;act=6;artisan_worthless;binds;evade=22;lvl=220;rarity=common;reqp=mt;resfrost=9",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

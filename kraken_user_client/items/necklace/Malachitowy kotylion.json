@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Malachitowy kotylion",
+ "tplId": 52274,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 277,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1042.gif",
+ "stat": "artisan_worthless;binds;crit=2;hp=2267;lvl=277;rarity=common;reqp=bh;sa=147;slow=87",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 178569,
+   "cur": "zl"
+  }
+ ]
+}

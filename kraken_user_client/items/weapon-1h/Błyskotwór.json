@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błyskotwór",
+ "tplId": 32882,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 50,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz628.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=372,454;light=184,275;lvl=50;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

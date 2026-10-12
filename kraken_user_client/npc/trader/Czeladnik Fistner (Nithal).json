@@ -1,0 +1,600 @@
+{
+ "kraken": "npc",
+ "name": "Czeladnik Fistner",
+ "map": "Nithal",
+ "x": 34,
+ "y": 46,
+ "id": 387102,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Ścinacz mutujących grzybów",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz948.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze zakończone zadziorem",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz950.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Narzędzie wielkich sukcesów",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz946.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Mistrzowski siekacz",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz945.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Stalowy psotnik",
+     "cl": 5,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "bro/sztylet297.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Drażnienie wiedźmy",
+     "cl": 5,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "bro/sztylet294.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Postrach smokoludzi",
+     "cl": 5,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "bro/sztylet299.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Sztylet mistrza pojedynków",
+     "cl": 5,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "bro/sztylet298.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Wykrzywiacz cierpiących mord",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz887.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Delikatne podtruwanie",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz889.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Zęby wyjątkowego wyróżnienia",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz885.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Zainfekowany kieł",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz884.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Trujący zgrywus",
+     "cl": 5,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "bro/sztylet321.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze skąpane w eliksirze",
+     "cl": 5,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "bro/sztylet318.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Grymas asayna",
+     "cl": 5,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "bro/sztylet323.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Pomocnik asasyna",
+     "cl": 5,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "bro/sztylet322.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Klucz do wrogiego serca",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz905.gif",
+     "lvl": 240,
+     "reqp": "bw"
+    },
+    {
+     "name": "Rajskie pióro",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz903.gif",
+     "lvl": 260,
+     "reqp": "bw"
+    },
+    {
+     "name": "Ametystowa chwała asasyna",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz907.gif",
+     "lvl": 280,
+     "reqp": "bw"
+    },
+    {
+     "name": "Ostatni widok",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz908.gif",
+     "lvl": 300,
+     "reqp": "bw"
+    },
+    {
+     "name": "Raniący dokucznik",
+     "cl": 5,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "bro/sztylet302.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Rozdarcie ochronnej aury",
+     "cl": 5,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "bro/sztylet305.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Sztylet wielkich szkód",
+     "cl": 5,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "bro/sztylet300.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Przebijak ze stali szlachetnej",
+     "cl": 5,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "bro/sztylet301.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Cęgi boliciego dentysty",
+     "cl": 2,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz966.gif",
+     "lvl": 240,
+     "reqp": "w"
+    },
+    {
+     "name": "Potępiona chmura",
+     "cl": 2,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz965.gif",
+     "lvl": 260,
+     "reqp": "w"
+    },
+    {
+     "name": "Ostrze nienaruszonej reputacji",
+     "cl": 2,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz964.gif",
+     "lvl": 280,
+     "reqp": "w"
+    },
+    {
+     "name": "Zmora magów",
+     "cl": 2,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz963.gif",
+     "lvl": 300,
+     "reqp": "w"
+    },
+    {
+     "name": "Czarny postrach Mahopteków",
+     "cl": 3,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz971.gif",
+     "lvl": 240,
+     "reqp": "w"
+    },
+    {
+     "name": "Krawędź nieskończonej nocy",
+     "cl": 3,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz974.gif",
+     "lvl": 260,
+     "reqp": "w"
+    },
+    {
+     "name": "Wielki honor wojownika",
+     "cl": 3,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz969.gif",
+     "lvl": 280,
+     "reqp": "w"
+    },
+    {
+     "name": "Narzędzie siepacza",
+     "cl": 3,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz968.gif",
+     "lvl": 300,
+     "reqp": "w"
+    },
+    {
+     "name": "Ochrona wyćwiczonego wojaka",
+     "cl": 14,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "tar/tarcza576.gif",
+     "lvl": 240,
+     "reqp": "w"
+    },
+    {
+     "name": "Blokada złośliwych zaklęć",
+     "cl": 14,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "tar/tarcza577.gif",
+     "lvl": 260,
+     "reqp": "w"
+    },
+    {
+     "name": "Skarb mrocznych driad",
+     "cl": 14,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "tar/tarcza578.gif",
+     "lvl": 280,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza na plecy",
+     "cl": 14,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "tar/tarcza579.gif",
+     "lvl": 300,
+     "reqp": "w"
+    },
+    {
+     "name": "Podgrzewacz racji żywnościowych",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz899.gif",
+     "lvl": 240,
+     "reqp": "p"
+    },
+    {
+     "name": "Magmowy ptak",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz897.gif",
+     "lvl": 260,
+     "reqp": "p"
+    },
+    {
+     "name": "Żarliwość ludzkiego uznania",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz901.gif",
+     "lvl": 280,
+     "reqp": "p"
+    },
+    {
+     "name": "Topiciel mroźnych krain",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz902.gif",
+     "lvl": 300,
+     "reqp": "p"
+    },
+    {
+     "name": "Tarcza eksploratora dziczy",
+     "cl": 14,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "tar/tarcza570.gif",
+     "lvl": 240,
+     "reqp": "p"
+    },
+    {
+     "name": "Odbicie miłosnego czaru",
+     "cl": 14,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "tar/tarcza571.gif",
+     "lvl": 260,
+     "reqp": "p"
+    },
+    {
+     "name": "Zwierciadło pustynnej nocy",
+     "cl": 14,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "tar/tarcza572.gif",
+     "lvl": 280,
+     "reqp": "p"
+    },
+    {
+     "name": "Blacha ognistej mocy",
+     "cl": 14,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "tar/tarcza573.gif",
+     "lvl": 300,
+     "reqp": "p"
+    },
+    {
+     "name": "Próg zamarzania",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz959.gif",
+     "lvl": 240,
+     "reqp": "p"
+    },
+    {
+     "name": "Zamarznięta fala",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz957.gif",
+     "lvl": 260,
+     "reqp": "p"
+    },
+    {
+     "name": "Sopel ogólnego poszanowania",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz961.gif",
+     "lvl": 280,
+     "reqp": "p"
+    },
+    {
+     "name": "Prawdziwy chłód",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz962.gif",
+     "lvl": 300,
+     "reqp": "p"
+    },
+    {
+     "name": "Uciszacz dendrokreatur",
+     "cl": 1,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "mie/miecz881.gif",
+     "lvl": 240,
+     "reqp": "p"
+    },
+    {
+     "name": "Przenośna nawałnica",
+     "cl": 1,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "mie/miecz883.gif",
+     "lvl": 260,
+     "reqp": "p"
+    },
+    {
+     "name": "Szczęka wielkiej glorii",
+     "cl": 1,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "mie/miecz879.gif",
+     "lvl": 280,
+     "reqp": "p"
+    },
+    {
+     "name": "Podręczne napięcie",
+     "cl": 1,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "mie/miecz880.gif",
+     "lvl": 300,
+     "reqp": "p"
+    },
+    {
+     "name": "Warstwy lunarnych skór",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1136.gif",
+     "lvl": 240,
+     "reqp": "b"
+    },
+    {
+     "name": "Pancerz pogromcy dzikusów",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1139.gif",
+     "lvl": 260,
+     "reqp": "b"
+    },
+    {
+     "name": "Okucie życiowego dorobku",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1137.gif",
+     "lvl": 280,
+     "reqp": "b"
+    },
+    {
+     "name": "Kaftan zaklęty mrozem",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1138.gif",
+     "lvl": 300,
+     "reqp": "b"
+    },
+    {
+     "name": "Łuski aspirującego dowódcy",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1148.gif",
+     "lvl": 240,
+     "reqp": "w"
+    },
+    {
+     "name": "Pierś wiedźmobija",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1151.gif",
+     "lvl": 260,
+     "reqp": "w"
+    },
+    {
+     "name": "Napierśnik olbrzymiego splendoru",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1149.gif",
+     "lvl": 280,
+     "reqp": "w"
+    },
+    {
+     "name": "Opancerzenie czempiona",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1150.gif",
+     "lvl": 300,
+     "reqp": "w"
+    },
+    {
+     "name": "Odbicie księżycowej łuny",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1160.gif",
+     "lvl": 240,
+     "reqp": "p"
+    },
+    {
+     "name": "Blachy awansu społecznego",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1163.gif",
+     "lvl": 260,
+     "reqp": "p"
+    },
+    {
+     "name": "Pancerz bijącej dumy",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1161.gif",
+     "lvl": 280,
+     "reqp": "p"
+    },
+    {
+     "name": "Zbroja renegata",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1162.gif",
+     "lvl": 300,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

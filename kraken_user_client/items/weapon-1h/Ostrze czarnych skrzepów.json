@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostrze czarnych skrzepów",
+ "tplId": 52429,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 170,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz922.gif",
+ "stat": "artisan_worthless;binds;da=51;dmg=2481,3033;lvl=170;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

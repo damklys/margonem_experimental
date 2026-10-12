@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Toksyczny malachit",
+ "tplId": 33747,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 60,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet222.gif",
+ "stat": "artisan_worthless;binds;dmg=311,381;lvl=60;poison=38,61;rarity=common;reqp=b;sa=23",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

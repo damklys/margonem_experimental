@@ -1,0 +1,348 @@
+{
+ "kraken": "npc",
+ "name": "Sprzedawca Roan",
+ "map": "Ithan",
+ "x": 39,
+ "y": 51,
+ "id": 66,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Osłona młodej harpii",
+     "cl": 9,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "hel/helm705.gif",
+     "lvl": 55,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Hełm łowcy koboldów",
+     "cl": 9,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "hel/helm708.gif",
+     "lvl": 55,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Kask pogromcy gnolli",
+     "cl": 9,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "hel/helm712.gif",
+     "lvl": 65,
+     "reqp": "pw"
+    },
+    {
+     "name": "Magiczne wsparcie demiliszy",
+     "cl": 9,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "hel/helm702.gif",
+     "lvl": 65,
+     "reqp": "mt"
+    },
+    {
+     "name": "Czapka łowcy tygrysów",
+     "cl": 9,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "hel/helm716.gif",
+     "lvl": 65,
+     "reqp": "bh"
+    },
+    {
+     "name": "Srebrna kopuła śmiałka",
+     "cl": 9,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "hel/helm718.gif",
+     "lvl": 75,
+     "reqp": ""
+    },
+    {
+     "name": "Szara piechota",
+     "cl": 10,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "but/buty788.gif",
+     "lvl": 55,
+     "reqp": "pw"
+    },
+    {
+     "name": "Szelest nieuważnego kobolda",
+     "cl": 10,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "but/buty794.gif",
+     "lvl": 55,
+     "reqp": "bh"
+    },
+    {
+     "name": "Obuwie pokryte pajęczyną",
+     "cl": 10,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "but/buty782.gif",
+     "lvl": 55,
+     "reqp": "mt"
+    },
+    {
+     "name": "Szczecina gnolla",
+     "cl": 10,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "but/buty779.gif",
+     "lvl": 65,
+     "reqp": ""
+    },
+    {
+     "name": "Pozłacana duma rycerza",
+     "cl": 10,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "but/buty792.gif",
+     "lvl": 75,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Cholewy czarnoksiężnika",
+     "cl": 10,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "but/buty786.gif",
+     "lvl": 75,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Poplamione rękawice strażnika",
+     "cl": 11,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "rek/rekawice780.gif",
+     "lvl": 55,
+     "reqp": ""
+    },
+    {
+     "name": "Lniane otuldłonie",
+     "cl": 11,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "rek/rekawice796.gif",
+     "lvl": 65,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Krwawe pięści maga",
+     "cl": 11,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "rek/rekawice786.gif",
+     "lvl": 65,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Zakurzone wojenne rękawice",
+     "cl": 11,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "rek/rekawice784.gif",
+     "lvl": 75,
+     "reqp": "bw"
+    },
+    {
+     "name": "Splot ametystowych nici",
+     "cl": 11,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "rek/rekawice789.gif",
+     "lvl": 75,
+     "reqp": "mp"
+    },
+    {
+     "name": "Zemsta banity",
+     "cl": 11,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "rek/rekawice794.gif",
+     "lvl": 75,
+     "reqp": "ht"
+    },
+    {
+     "name": "Odwet wojownika",
+     "cl": 12,
+     "price": 13776,
+     "cur": "zl",
+     "icon": "pie/pierscien780.gif",
+     "lvl": 52,
+     "reqp": "pw"
+    },
+    {
+     "name": "Odznaka młodego asasyna",
+     "cl": 12,
+     "price": 13776,
+     "cur": "zl",
+     "icon": "pie/pierscien785.gif",
+     "lvl": 52,
+     "reqp": "bh"
+    },
+    {
+     "name": "Pierścień ulotnej myśli",
+     "cl": 12,
+     "price": 13776,
+     "cur": "zl",
+     "icon": "pie/pierscien775.gif",
+     "lvl": 52,
+     "reqp": "mt"
+    },
+    {
+     "name": "Symbol spopielenia",
+     "cl": 12,
+     "price": 18299,
+     "cur": "zl",
+     "icon": "pie/pierscien794.gif",
+     "lvl": 62,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Kryształowe iskry",
+     "cl": 12,
+     "price": 18299,
+     "cur": "zl",
+     "icon": "pie/pierscien789.gif",
+     "lvl": 62,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Pycha Wernoradu",
+     "cl": 12,
+     "price": 23747,
+     "cur": "zl",
+     "icon": "pie/pierscien781.gif",
+     "lvl": 72,
+     "reqp": "pw"
+    },
+    {
+     "name": "Koralowa narośl",
+     "cl": 12,
+     "price": 23747,
+     "cur": "zl",
+     "icon": "pie/pierscien784.gif",
+     "lvl": 72,
+     "reqp": "bh"
+    },
+    {
+     "name": "Sygnet wyniosłości",
+     "cl": 12,
+     "price": 23747,
+     "cur": "zl",
+     "icon": "pie/pierscien774.gif",
+     "lvl": 72,
+     "reqp": "mt"
+    },
+    {
+     "name": "Zielony wabiciel żądłaków",
+     "cl": 13,
+     "price": 13776,
+     "cur": "zl",
+     "icon": "nas/naszyjnik780.gif",
+     "lvl": 52,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Miododajny naszyjnik maga",
+     "cl": 13,
+     "price": 13776,
+     "cur": "zl",
+     "icon": "nas/naszyjnik785.gif",
+     "lvl": 52,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Kwiecisty popis jubilera",
+     "cl": 13,
+     "price": 18299,
+     "cur": "zl",
+     "icon": "nas/naszyjnik776.gif",
+     "lvl": 62,
+     "reqp": "bw"
+    },
+    {
+     "name": "Chabrowa zawieszka",
+     "cl": 13,
+     "price": 18299,
+     "cur": "zl",
+     "icon": "nas/naszyjnik772.gif",
+     "lvl": 62,
+     "reqp": "mp"
+    },
+    {
+     "name": "Medalion fotosyntezy",
+     "cl": 13,
+     "price": 18299,
+     "cur": "zl",
+     "icon": "nas/naszyjnik768.gif",
+     "lvl": 62,
+     "reqp": "ht"
+    },
+    {
+     "name": "Wonne pąki kniei",
+     "cl": 13,
+     "price": 23747,
+     "cur": "zl",
+     "icon": "nas/naszyjnik781.gif",
+     "lvl": 72,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Odurzająca woń hortensji",
+     "cl": 13,
+     "price": 23747,
+     "cur": "zl",
+     "icon": "nas/naszyjnik786.gif",
+     "lvl": 72,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Mała torba",
+     "cl": 24,
+     "price": 37500,
+     "cur": "zl",
+     "icon": "bag/torba05.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Średnia torba",
+     "cl": 24,
+     "price": 90000,
+     "cur": "zl",
+     "icon": "bag/torba10.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Małe etui na klucze",
+     "cl": 24,
+     "price": 37500,
+     "cur": "zl",
+     "icon": "bag/keybag.gif",
+     "lvl": 0,
+     "reqp": ""
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kryształowy dziurkacz",
+ "tplId": 52671,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 200,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet304.gif",
+ "stat": "artisan_worthless;binds;dmg=1802,2203;ds=115;lvl=200;rarity=common;reqp=b;wound=25,387",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

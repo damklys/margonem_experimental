@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Kowal Jaki",
+ "map": "Mirvenis-Adur",
+ "x": 50,
+ "y": 23,
+ "id": 25685,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

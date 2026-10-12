@@ -1,0 +1,312 @@
+{
+ "kraken": "npc",
+ "name": "Handlarz Otar",
+ "map": "Werbin",
+ "x": 41,
+ "y": 31,
+ "id": 348437,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Kłęby stali",
+     "cl": 2,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz918.gif",
+     "lvl": 155,
+     "reqp": "w"
+    },
+    {
+     "name": "Ciężkie narzędzie egzekutora",
+     "cl": 2,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz919.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Krnąbrny falchion",
+     "cl": 3,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz909.gif",
+     "lvl": 155,
+     "reqp": "w"
+    },
+    {
+     "name": "Dopieszczony kawałek metalu",
+     "cl": 3,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz914.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Solidna blokada górnika",
+     "cl": 14,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "tar/tarcza565.gif",
+     "lvl": 155,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza krwawego półksiężyca",
+     "cl": 14,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "tar/tarcza566.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Złoty siekacz",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz956.gif",
+     "lvl": 155,
+     "reqp": "bw"
+    },
+    {
+     "name": "Metalowe zęby",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz952.gif",
+     "lvl": 170,
+     "reqp": "bw"
+    },
+    {
+     "name": "Sztylet pogromcy wiedźm",
+     "cl": 5,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "bro/sztylet329.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Pozłacane dłuto",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet324.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Pazur pośmiertnego stężenia",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz926.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze czarnych skrzepów",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz922.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Nóż do samoobrony",
+     "cl": 5,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "bro/sztylet311.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Wykrawacz mięsnych kąsków",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet306.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Krawędź zarazy",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz896.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Skażona piła",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz891.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Dźgnięcie zgnilizny",
+     "cl": 5,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "bro/sztylet317.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Truciciel organów",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet312.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Rozgrzana stal rycerza",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz938.gif",
+     "lvl": 155,
+     "reqp": "p"
+    },
+    {
+     "name": "Rdzeń magmowego filaru",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz934.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Protekcja starego czarnoksiężnika",
+     "cl": 14,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "tar/tarcza583.gif",
+     "lvl": 155,
+     "reqp": "p"
+    },
+    {
+     "name": "Lśniąca tarcza zakonnika",
+     "cl": 14,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "tar/tarcza584.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Zadzior wielkiej śnieżycy",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz939.gif",
+     "lvl": 155,
+     "reqp": "p"
+    },
+    {
+     "name": "Cięcie lodowej tafli",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz943.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Rażąca zabawka paladyna",
+     "cl": 1,
+     "price": 117127,
+     "cur": "zl",
+     "icon": "mie/miecz932.gif",
+     "lvl": 155,
+     "reqp": "p"
+    },
+    {
+     "name": "Szabelka wielu wyładowań",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz928.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Skórzane odzienie asasyna",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1142.gif",
+     "lvl": 155,
+     "reqp": "b"
+    },
+    {
+     "name": "Żołnierski uniform",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1134.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Mundur walczącego z wiedźmami",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1154.gif",
+     "lvl": 155,
+     "reqp": "w"
+    },
+    {
+     "name": "Pierś zdobywcy kazamat",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1146.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Magiczna kamizela paladyna",
+     "cl": 8,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "zbr/zbroja1166.gif",
+     "lvl": 155,
+     "reqp": "p"
+    },
+    {
+     "name": "Kurta łowcy orków",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1158.gif",
+     "lvl": 170,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

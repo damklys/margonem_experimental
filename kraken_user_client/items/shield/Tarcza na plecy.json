@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza na plecy",
+ "tplId": 52640,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 300,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza579.gif",
+ "stat": "ac=2090;act=1;artisan_worthless;binds;blok=345;lvl=300;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

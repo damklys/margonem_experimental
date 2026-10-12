@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kryształowe iskry",
+ "tplId": 33640,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 62,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien789.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=39;hp=362;lvl=62;rarity=common;reqp=mpt;sa=24",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 18299,
+   "cur": "zl"
+  }
+ ]
+}

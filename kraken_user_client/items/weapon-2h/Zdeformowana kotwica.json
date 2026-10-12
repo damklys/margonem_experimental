@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zdeformowana kotwica",
+ "tplId": 52475,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 140,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz917.gif",
+ "stat": "artisan_worthless;binds;dmg=3036,3711;ds=82;lvl=140;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ramię huraganu",
+ "tplId": 52618,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka382.gif",
+ "stat": "artisan_worthless;binds;critmval=6;light=1490,2235;lvl=125;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

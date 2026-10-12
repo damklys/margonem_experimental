@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zbroja ze znakiem czaszki",
+ "tplId": 52383,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1159.gif",
+ "stat": "ac=1320;artisan_worthless;binds;ds=115;hpbon=2;lvl=200;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

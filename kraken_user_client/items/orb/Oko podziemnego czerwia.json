@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Oko podziemnego czerwia",
+ "tplId": 52703,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 140,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb306.gif",
+ "stat": "artisan_worthless;binds;critmval=6;frost=103,819;lvl=140;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

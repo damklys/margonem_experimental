@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Język żaru i ognia",
+ "tplId": 33654,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 60,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz614.gif",
+ "stat": "artisan_worthless;binds;dmg=471,576;fire=291;lvl=60;manabon=20;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Napierśnik odważnego grotołaza",
+ "tplId": 52322,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 220,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1140.gif",
+ "stat": "ac=1386;act=8;artisan_worthless;binds;energybon=25;evade=73;lvl=220;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

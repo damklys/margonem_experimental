@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zmora magów",
+ "tplId": 52484,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 300,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz963.gif",
+ "stat": "artisan_worthless;binds;dmg=10362,12665;ds=171;lvl=300;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

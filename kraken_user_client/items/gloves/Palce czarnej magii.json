@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Palce czarnej magii",
+ "tplId": 52182,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 260,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "rek/rekawice1140.gif",
+ "stat": "ac=527;act=1;artisan_worthless;binds;crit=1;lvl=260;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sfera nieurodzajnej gleby",
+ "tplId": 52702,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb307.gif",
+ "stat": "artisan_worthless;binds;frost=92,691;lvl=125;manabon=36;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

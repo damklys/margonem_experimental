@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Srebrna kopuła śmiałka",
+ "tplId": 33621,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 75,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm718.gif",
+ "stat": "ac=91;artisan_worthless;binds;da=27;lvl=75;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

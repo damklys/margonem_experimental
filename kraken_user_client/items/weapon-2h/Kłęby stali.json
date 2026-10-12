@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kłęby stali",
+ "tplId": 52476,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 155,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz918.gif",
+ "stat": "artisan_worthless;binds;dmg=3548,4337;lvl=155;rarity=common;reqp=w;slow=52",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

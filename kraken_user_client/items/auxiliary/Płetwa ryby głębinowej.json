@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płetwa ryby głębinowej",
+ "tplId": 52679,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 140,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet314.gif",
+ "stat": "artisan_worthless;binds;dmg=1032,1262;hp=922;lvl=140;poison=89,202;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

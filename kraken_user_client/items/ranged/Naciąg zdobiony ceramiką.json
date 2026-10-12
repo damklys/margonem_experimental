@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Naciąg zdobiony ceramiką",
+ "tplId": 52541,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 240,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk734.gif",
+ "stat": "artisan_worthless;binds;dmg=2853,3487;frost=176,2898;lvl=240;manabon=65;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

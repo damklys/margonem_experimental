@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Karmazynowy lekki pancerz",
+ "tplId": 33772,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 65,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja751.gif",
+ "stat": "ac=203;act=16;artisan_worthless;binds;dz=40;lvl=65;rarity=common;reqp=h;resfire=4;sa=33",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

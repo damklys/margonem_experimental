@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zrywacz nieprzyjaznych żagli",
+ "tplId": 52462,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 125,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz911.gif",
+ "stat": "artisan_worthless;binds;dmg=1829,2235;hp=802;lvl=125;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

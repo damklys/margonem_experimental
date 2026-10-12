@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Schludna szata czarnoksiężnika",
+ "tplId": 52393,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1170.gif",
+ "stat": "absorb=3060;absorbm=1530;ac=510;artisan_worthless;binds;hp=1177;lvl=170;manabon=57;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "kraken": "npc",
+ "name": "Trajnalok",
+ "map": "Mythar",
+ "x": 58,
+ "y": 29,
+ "id": 13628,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Symfonia agonalnych jęków",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk506.gif",
+     "lvl": 80,
+     "reqp": "h"
+    },
+    {
+     "name": "Skrzydła sokoła",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk507.gif",
+     "lvl": 90,
+     "reqp": "h"
+    },
+    {
+     "name": "Narzędzie rozrywające wrogów",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk501.gif",
+     "lvl": 100,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa zatruta jadem kumaka",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk518.gif",
+     "lvl": 80,
+     "reqp": "h"
+    },
+    {
+     "name": "Jastrzębi celownik",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk519.gif",
+     "lvl": 90,
+     "reqp": "h"
+    },
+    {
+     "name": "Demon paskudzący ciało",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk513.gif",
+     "lvl": 100,
+     "reqp": "h"
+    },
+    {
+     "name": "Zatrute strzały na ropuchy",
+     "cl": 29,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "arr/strzalatrut.gif",
+     "lvl": 80,
+     "reqp": "h"
+    },
+    {
+     "name": "Zatrute strzały na węże",
+     "cl": 29,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "arr/strzalatrut.gif",
+     "lvl": 90,
+     "reqp": "h"
+    },
+    {
+     "name": "Zatrute strzały na aligatory",
+     "cl": 29,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "arr/strzalatrut.gif",
+     "lvl": 100,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg łowcy węży",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk492.gif",
+     "lvl": 80,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa orlich piór",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk494.gif",
+     "lvl": 90,
+     "reqp": "h"
+    },
+    {
+     "name": "Pleciona wyrzutnia konarów",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk495.gif",
+     "lvl": 100,
+     "reqp": "h"
+    },
+    {
+     "name": "Ostre strzały na ropuchy",
+     "cl": 29,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "arr/strzalazwyk1.gif",
+     "lvl": 80,
+     "reqp": "h"
+    },
+    {
+     "name": "Ostre strzały na węże",
+     "cl": 29,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "arr/strzalazwyk1.gif",
+     "lvl": 90,
+     "reqp": "h"
+    },
+    {
+     "name": "Ostre strzały na aligatory",
+     "cl": 29,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "arr/strzalazwyk1.gif",
+     "lvl": 100,
+     "reqp": "h"
+    },
+    {
+     "name": "Wyrzutnia rozgotowanych żab",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk458.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Gniewna cięciwa z Mythar",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk459.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Zew Introprodara",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk453.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Płonące strzały na ropuchy",
+     "cl": 29,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "arr/strzalaogien.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Płonące strzały na węże",
+     "cl": 29,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "arr/strzalaogien.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Płonące strzały na aligatory",
+     "cl": 29,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "arr/strzalaogien.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Świst smoczych gór",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk463.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Falujący ogon komety",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk461.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Mroźna projekcja",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk460.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Mrożące strzały na ropuchy",
+     "cl": 29,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "arr/strzalalod.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Mrożące strzały na węże",
+     "cl": 29,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "arr/strzalalod.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Mrożące strzały na aligatory",
+     "cl": 29,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "arr/strzalalod.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Łuk ociekającej żywicy",
+     "cl": 4,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "luk/luk475.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Tajemnica nocnej łuny",
+     "cl": 4,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "luk/luk473.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Broń tańczących świateł",
+     "cl": 4,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "luk/luk472.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Gromiące strzały na ropuchy",
+     "cl": 29,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "arr/strzalablysk.gif",
+     "lvl": 80,
+     "reqp": "t"
+    },
+    {
+     "name": "Gromiące strzały na węże",
+     "cl": 29,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "arr/strzalablysk.gif",
+     "lvl": 90,
+     "reqp": "t"
+    },
+    {
+     "name": "Gromiące strzały na aligatory",
+     "cl": 29,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "arr/strzalablysk.gif",
+     "lvl": 100,
+     "reqp": "t"
+    },
+    {
+     "name": "Zbożowy kamuflaż węża",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja739.gif",
+     "lvl": 85,
+     "reqp": "t"
+    },
+    {
+     "name": "Odzienie doświadczonego tropiciela",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja737.gif",
+     "lvl": 95,
+     "reqp": "t"
+    },
+    {
+     "name": "Ukrycie czarnej kobry",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja749.gif",
+     "lvl": 85,
+     "reqp": "h"
+    },
+    {
+     "name": "Kurta doświadczonego łowcy",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja747.gif",
+     "lvl": 95,
+     "reqp": "h"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lustro rozlanej krwi",
+ "tplId": 52647,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 200,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza568.gif",
+ "stat": "ac=990;artisan_worthless;binds;blok=240;lvl=200;manabon=55;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

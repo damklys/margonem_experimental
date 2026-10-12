@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rdzeń śnieżnego golema",
+ "tplId": 32883,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 50,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb204.gif",
+ "stat": "artisan_worthless;binds;critmval=6;frost=37,195;lvl=50;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

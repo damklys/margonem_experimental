@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kostur oszalałej wiedźmy",
+ "tplId": 52597,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka377.gif",
+ "stat": "artisan_worthless;binds;fire=2601;hp=1177;lvl=170;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

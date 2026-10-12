@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Wirsenna",
+ "map": "Mythar",
+ "x": 24,
+ "y": 11,
+ "id": 13874,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

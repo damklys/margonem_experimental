@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łatwopalna amunicja tropiciela",
+ "tplId": 52760,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien4.gif",
+ "stat": "artisan_worthless;binds;fire=987;heal=764;lvl=300;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Złoty symbol mądrości",
+ "tplId": 52242,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 257,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "pie/pierscien1050.gif",
+ "stat": "artisan_worthless;binds;di=147;evade=26;hp=2042;lvl=257;rarity=common;reqp=mt;sa=137",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 170079,
+   "cur": "zl"
+  }
+ ]
+}

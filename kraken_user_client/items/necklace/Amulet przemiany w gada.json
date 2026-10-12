@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Amulet przemiany w gada",
+ "tplId": 33883,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 82,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik773.gif",
+ "stat": "artisan_worthless;binds;crit=1;critmval=6;hp=958;lvl=82;rarity=common;reqp=mt;sa=29;slow=31",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 30254,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 30254,
+   "cur": "zl"
+  }
+ ]
+}

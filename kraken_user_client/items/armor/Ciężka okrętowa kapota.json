@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ciężka okrętowa kapota",
+ "tplId": 52379,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 140,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1157.gif",
+ "stat": "ac=756;artisan_worthless;binds;crit=1;hpbon=1.4;lvl=140;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

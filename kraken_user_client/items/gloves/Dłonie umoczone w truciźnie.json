@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dłonie umoczone w truciźnie",
+ "tplId": 52183,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 260,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "rek/rekawice1152.gif",
+ "stat": "ac=431;act=12;artisan_worthless;binds;critval=6;lvl=260;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zamrożone odbicie",
+ "tplId": 52712,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 300,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb299.gif",
+ "stat": "artisan_worthless;binds;frost=220,2796;lvl=300;rarity=common;reqp=m;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

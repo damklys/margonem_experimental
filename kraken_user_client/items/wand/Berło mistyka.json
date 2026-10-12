@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Berło mistyka",
+ "tplId": 52604,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 300,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka372.gif",
+ "stat": "artisan_worthless;binds;fire=6579;lvl=300;rarity=common;reqp=m;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

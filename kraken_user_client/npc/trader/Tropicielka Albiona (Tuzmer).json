@@ -1,0 +1,375 @@
+{
+ "kraken": "npc",
+ "name": "Tropicielka Albiona",
+ "map": "Tuzmer",
+ "x": 50,
+ "y": 54,
+ "id": 37814,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Niszczyciel ożywionych szkieletów",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk699.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Pogromca zasuszonych mumii",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk697.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Groźna cięciwa pirata",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk698.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Lekki celownik majtka",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk726.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Wyrzutnia strzał bosmana",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk712.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg eksploratora wysp",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk716.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Portowa amunicja",
+     "cl": 29,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "arr/zwykla1.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Szpila obrońcy okrętu",
+     "cl": 29,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "arr/zwykla1.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Lotka starego wyspiarza",
+     "cl": 29,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "arr/zwykla1.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Patogenne ramiona mumii",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk731.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Broń łowcy skorpionów",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk729.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Toksyna pustynnej roślinności",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk730.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Igła toksyny skarabeusza",
+     "cl": 29,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "arr/trutka1.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Ukłucie pustynnego kaktusa",
+     "cl": 29,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "arr/trutka1.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Strzała z kolcem jadowym",
+     "cl": 29,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "arr/trutka1.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Pustynny celownik",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk690.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Warkocz z wysuszonych korzeni",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk688.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Splot płonącego krzewu",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk689.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Złota szpila pustyni",
+     "cl": 29,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "arr/ogien1.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Lotka wirującego piasku",
+     "cl": 29,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "arr/ogien1.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Rozżarzony grot dżina",
+     "cl": 29,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "arr/ogien1.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Kolce morskiej toni",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk715.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Łuk nagłych przypływów",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk735.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Dar głębinowej syreny",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk725.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Grot oceaniczny",
+     "cl": 29,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "arr/zimno1.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Rozdarcie wielkiej fali",
+     "cl": 29,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "arr/zimno1.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Morska igła",
+     "cl": 29,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "arr/zimno1.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Elektryzująca bryza",
+     "cl": 4,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "luk/luk680.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Przyzwanie sztormu",
+     "cl": 4,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "luk/luk703.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Warkocz szkwałowy",
+     "cl": 4,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "luk/luk695.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Świst burzy piaskowej",
+     "cl": 29,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "arr/blysk1.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Przekłucie postawionych żagli",
+     "cl": 29,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "arr/blysk1.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Posłany piorun",
+     "cl": 29,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "arr/blysk1.gif",
+     "lvl": 140,
+     "reqp": "t"
+    },
+    {
+     "name": "Odzienie pogromcy kotowatych",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1192.gif",
+     "lvl": 110,
+     "reqp": "h"
+    },
+    {
+     "name": "Szara kurta sternika",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1203.gif",
+     "lvl": 125,
+     "reqp": "h"
+    },
+    {
+     "name": "Ochrona wprawionego żeglarza",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1193.gif",
+     "lvl": 140,
+     "reqp": "h"
+    },
+    {
+     "name": "Wodna kapa tropiciela",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1180.gif",
+     "lvl": 110,
+     "reqp": "t"
+    },
+    {
+     "name": "Peleryna morskiej toni",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1191.gif",
+     "lvl": 125,
+     "reqp": "t"
+    },
+    {
+     "name": "Błękitny falochron",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1181.gif",
+     "lvl": 140,
+     "reqp": "t"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

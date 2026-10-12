@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Niskiej wartości pamiątka rodzinna",
+ "tplId": 56921,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 16,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pie/piersc68.gif",
+ "stat": "crit=1;da=12;evade=2;lowevade=2;lvl=16;permbound;rarity=common;sa=12",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

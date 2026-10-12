@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ramiona mocnego naciągu",
+ "tplId": 52577,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 240,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk682.gif",
+ "stat": "artisan_worthless;binds;dmg=3709,4533;lvl=240;pierce=20;rarity=common;reqp=h;wound=25,1472",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

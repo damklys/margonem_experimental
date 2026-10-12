@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odzienie znawcy zaklęć",
+ "tplId": 33762,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 65,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja719.gif",
+ "stat": "ac=254;artisan_worthless;binds;crit=1;hpbon=0.7;lvl=65;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

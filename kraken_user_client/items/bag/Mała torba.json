@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mała torba",
+ "tplId": 1525,
+ "cl": 24,
+ "category": "bag",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "bag/torba05.gif",
+ "stat": "bag=5;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 37500,
+   "cur": "zl"
+  }
+ ]
+}

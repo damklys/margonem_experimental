@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Upust krokodylich łez",
+ "tplId": 33980,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 90,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet203.gif",
+ "stat": "artisan_worthless;binds;dmg=541,661;lvl=90;rarity=common;reqp=b;sa=31;wound=25,116",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lodowe wrzody",
+ "tplId": 52707,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 200,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb303.gif",
+ "stat": "artisan_worthless;binds;frost=147,1431;lvl=200;rarity=common;reqp=m;slow=65",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

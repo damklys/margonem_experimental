@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Iglasty kryształ",
+ "tplId": 33877,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 82,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien790.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=29;lvl=82;manabon=26;rarity=common;reqp=mpt;sa=49",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 30254,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 30254,
+   "cur": "zl"
+  }
+ ]
+}

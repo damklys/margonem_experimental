@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Oko celności",
+ "tplId": 52138,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 300,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "hel/helm1007.gif",
+ "stat": "ac=724;act=12;artisan_worthless;binds;lvl=300;rarity=common;reqp=bh;resfrost=3;slow=94",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

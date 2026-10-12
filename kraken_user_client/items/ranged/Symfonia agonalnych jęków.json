@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Symfonia agonalnych jęków",
+ "tplId": 33035,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 80,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk506.gif",
+ "stat": "artisan_worthless;binds;dmg=702,858;lowevade=8;lvl=80;rarity=common;reqp=h;wound=25,278",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

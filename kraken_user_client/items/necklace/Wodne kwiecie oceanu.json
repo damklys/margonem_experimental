@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wodne kwiecie oceanu",
+ "tplId": 52255,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 137,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1034.gif",
+ "stat": "artisan_worthless;binds;critmval=6;da=42;di=80;evade=14;hp=897;lvl=137;rarity=common;reqp=mt;sa=42",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 59633,
+   "cur": "zl"
+  }
+ ]
+}

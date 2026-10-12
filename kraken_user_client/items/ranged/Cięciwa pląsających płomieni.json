@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięciwa pląsających płomieni",
+ "tplId": 52525,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 170,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk693.gif",
+ "stat": "artisan_worthless;binds;dmg=1639,2003;fire=1847;lvl=170;pierce=20;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

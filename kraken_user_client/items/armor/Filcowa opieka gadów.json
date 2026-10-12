@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Filcowa opieka gadów",
+ "tplId": 33991,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja701.gif",
+ "stat": "ac=395;act=1;artisan_worthless;binds;crit=1;hpbon=0.9;lvl=85;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

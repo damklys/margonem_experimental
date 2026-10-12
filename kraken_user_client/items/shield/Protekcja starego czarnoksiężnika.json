@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Protekcja starego czarnoksiężnika",
+ "tplId": 52644,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 155,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza583.gif",
+ "stat": "ac=663;artisan_worthless;binds;blok=186;lowevade=16;lvl=155;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

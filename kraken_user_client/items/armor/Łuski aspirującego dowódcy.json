@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łuski aspirującego dowódcy",
+ "tplId": 52335,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 240,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1148.gif",
+ "stat": "ac=1918;act=1;artisan_worthless;binds;hp=1858;hpbon=2.4;lvl=240;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

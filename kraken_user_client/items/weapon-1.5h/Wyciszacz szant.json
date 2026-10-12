@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyciszacz szant",
+ "tplId": 52463,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 140,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz912.gif",
+ "stat": "artisan_worthless;binds;dmg=2169,2651;energybon=19;lvl=140;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

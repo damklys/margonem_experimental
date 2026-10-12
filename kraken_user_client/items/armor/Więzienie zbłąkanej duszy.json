@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Więzienie zbłąkanej duszy",
+ "tplId": 52333,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1147.gif",
+ "stat": "ac=1426;act=1;artisan_worthless;binds;da=58;hpbon=2;lvl=200;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

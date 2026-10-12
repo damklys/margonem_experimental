@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wytwór miejscowej szwaczki",
+ "tplId": 33755,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 55,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja697.gif",
+ "stat": "ac=220;act=1;artisan_worthless;binds;ds=35;hpbon=0.6;lvl=55;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

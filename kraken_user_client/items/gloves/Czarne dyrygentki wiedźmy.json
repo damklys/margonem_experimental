@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarne dyrygentki wiedźmy",
+ "tplId": 52184,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 260,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "rek/rekawice1145.gif",
+ "stat": "absorb=1268;absorbm=634;ac=304;act=6;artisan_worthless;binds;critmval=6;lvl=260;rarity=common;reqp=mt;resfire=9",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

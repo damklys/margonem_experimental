@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Apoks",
+ "map": "Karka-han",
+ "x": 11,
+ "y": 11,
+ "id": 10375,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

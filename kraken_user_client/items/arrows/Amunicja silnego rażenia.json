@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Amunicja silnego rażenia",
+ "tplId": 52779,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 200,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk3.gif",
+ "stat": "artisan_worthless;binds;dz=115;light=404,606;lvl=200;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

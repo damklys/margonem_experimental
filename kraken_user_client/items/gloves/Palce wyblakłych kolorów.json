@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Palce wyblakłych kolorów",
+ "tplId": 52174,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 185,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice1156.gif",
+ "stat": "ac=271;act=8;artisan_worthless;binds;energybon=22;lvl=185;rarity=common;reqp=bhw;resfrost=2",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

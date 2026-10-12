@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Druid Grefin",
+ "map": "Mistyczny Bór",
+ "x": 52,
+ "y": 35,
+ "id": 51136,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

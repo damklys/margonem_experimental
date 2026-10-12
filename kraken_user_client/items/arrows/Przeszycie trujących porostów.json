@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przeszycie trujących porostów",
+ "tplId": 52744,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 220,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka3.gif",
+ "stat": "acdmg=62;artisan_worthless;binds;dz=126;lvl=220;poison=98,334;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

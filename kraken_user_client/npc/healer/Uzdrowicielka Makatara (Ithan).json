@@ -1,0 +1,15 @@
+{
+ "kraken": "npc",
+ "name": "Uzdrowicielka Makatara",
+ "map": "Ithan",
+ "x": 18,
+ "y": 15,
+ "id": 1,
+ "roles": [
+  "heal",
+  "shop"
+ ],
+ "shops": [],
+ "role": "healer",
+ "buysAll": false
+}

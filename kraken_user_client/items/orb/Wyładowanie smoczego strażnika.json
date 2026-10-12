@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyładowanie smoczego strażnika",
+ "tplId": 52723,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 280,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb316.gif",
+ "stat": "artisan_worthless;binds;da=78;light=2244,3367;lvl=280;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

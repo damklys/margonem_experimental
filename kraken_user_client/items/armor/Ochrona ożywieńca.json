@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona ożywieńca",
+ "tplId": 52407,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1183.gif",
+ "stat": "absorb=2640;absorbm=1320;ac=924;act=12;artisan_worthless;binds;lvl=200;manabon=33;rarity=common;reqp=t;resdmg=1;reslight=8;sa=50",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

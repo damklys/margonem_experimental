@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Księżyc patrycjusza",
+ "tplId": 52539,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 200,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk738.gif",
+ "stat": "artisan_worthless;binds;dmg=2121,2592;frost=147,2154;lvl=200;pierce=20;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

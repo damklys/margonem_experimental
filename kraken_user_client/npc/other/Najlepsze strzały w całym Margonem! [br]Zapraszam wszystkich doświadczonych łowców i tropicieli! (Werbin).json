@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Najlepsze strzały w całym Margonem! [br]Zapraszam wszystkich doświadczonych łowców i tropicieli!",
+ "map": "Werbin",
+ "x": 37,
+ "y": 7,
+ "id": 53497,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

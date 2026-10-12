@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Strój obiecującego naukowca",
+ "tplId": 52396,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 220,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1176.gif",
+ "stat": "absorb=4620;absorbm=2310;ac=770;artisan_worthless;binds;da=63;lvl=220;manabon=73;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

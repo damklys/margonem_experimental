@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sfera wyładowań",
+ "tplId": 52716,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 155,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb311.gif",
+ "stat": "artisan_worthless;binds;crit=1;light=864,1295;lvl=155;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

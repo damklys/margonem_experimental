@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wahadełko czarownicy",
+ "tplId": 52260,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 167,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1044.gif",
+ "stat": "artisan_worthless;binds;critmval=6;da=50;di=97;heal=340;lvl=167;manabon=47;rarity=common;reqp=mt;sa=50",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 91226,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz krwawego bosmana",
+ "tplId": 52329,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 140,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1145.gif",
+ "stat": "ac=816;act=1;artisan_worthless;binds;ds=82;hpbon=1.4;lvl=140;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

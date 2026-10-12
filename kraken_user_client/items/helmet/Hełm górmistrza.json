@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Hełm górmistrza",
+ "tplId": 52123,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 170,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm992.gif",
+ "stat": "ac=313;act=8;artisan_worthless;binds;energybon=21;lvl=170;rarity=common;reqp=bhw;resfrost=2",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

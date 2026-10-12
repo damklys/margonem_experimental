@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Poroże mordercy",
+ "tplId": 52131,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 240,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm1001.gif",
+ "stat": "ac=610;act=1;artisan_worthless;binds;blok=36;lvl=240;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

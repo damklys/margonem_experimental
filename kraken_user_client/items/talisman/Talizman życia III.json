@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Talizman życia III",
+ "tplId": 1214,
+ "cl": 22,
+ "category": "talisman",
+ "lvl": 78,
+ "reqp": "bpw",
+ "rarity": "common",
+ "icon": "tal/talizman02.gif",
+ "stat": "afterheal=25,1500;lvl=78;permbound;rarity=common;reqp=bpw",
+ "sellers": [
+  {
+   "map": "Mythar",
+   "npc": "Anguss",
+   "price": 159500,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Burzliwa gałka oczna",
+ "tplId": 52721,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 240,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb318.gif",
+ "stat": "acdmg=37;artisan_worthless;binds;light=1736,2604;lvl=240;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

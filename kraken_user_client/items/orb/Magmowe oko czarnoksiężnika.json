@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Magmowe oko czarnoksiężnika",
+ "tplId": 52697,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 240,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb289.gif",
+ "stat": "artisan_worthless;binds;da=68;fire=2151;lvl=240;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

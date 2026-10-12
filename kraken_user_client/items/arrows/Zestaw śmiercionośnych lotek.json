@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zestaw śmiercionośnych lotek",
+ "tplId": 52732,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 220,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla3.gif",
+ "stat": "acdmg=62;artisan_worthless;binds;energybon=25;lvl=220;pdmg=373;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Otwieracz krabich pancerzy",
+ "tplId": 52474,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 125,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz916.gif",
+ "stat": "artisan_worthless;binds;dmg=2560,3129;energybon=18;lvl=125;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

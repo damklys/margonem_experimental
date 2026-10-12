@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kurta gorącej pustyni",
+ "tplId": 52389,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 110,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1168.gif",
+ "stat": "absorb=1584;absorbm=792;ac=264;artisan_worthless;binds;di=65;lvl=110;manabon=37;rarity=common;reqp=m;resfire=10",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

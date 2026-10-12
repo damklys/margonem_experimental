@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostre strzały na ropuchy",
+ "tplId": 51967,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 80,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/strzalazwyk1.gif",
+ "stat": "acdmg=13;artisan_worthless;binds;critval=6;lvl=80;pdmg=81;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

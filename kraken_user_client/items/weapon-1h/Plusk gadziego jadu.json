@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Plusk gadziego jadu",
+ "tplId": 32993,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 80,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz612.gif",
+ "stat": "artisan_worthless;binds;da=28;dmg=640,782;lvl=80;poison=71,214;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "kraken": "npc",
+ "name": "Uzdrowiciel Toramidamus",
+ "map": "Tuzmer",
+ "x": 26,
+ "y": 21,
+ "id": 35125,
+ "roles": [
+  "heal",
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 70,
+   "sellp": 150,
+   "purchase": "16,21",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Ampułka uzdrawiająca",
+     "cl": 21,
+     "price": 312,
+     "cur": "zl",
+     "icon": "pot/mix177.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Fiolka lekkiej regeneracji",
+     "cl": 21,
+     "price": 762,
+     "cur": "zl",
+     "icon": "pot/mix178.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Flakonik śmiałka",
+     "cl": 21,
+     "price": 1515,
+     "cur": "zl",
+     "icon": "pot/mix179.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Krople na drobne rany",
+     "cl": 21,
+     "price": 3021,
+     "cur": "zl",
+     "icon": "pot/mix180.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Piramidka odnowy",
+     "cl": 21,
+     "price": 6050,
+     "cur": "zl",
+     "icon": "pot/mix181.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Mikstura początkującego alchemika",
+     "cl": 21,
+     "price": 15246,
+     "cur": "zl",
+     "icon": "pot/mix182.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Łyk Odrodzenia",
+     "cl": 21,
+     "price": 30950,
+     "cur": "zl",
+     "icon": "pot/mix183.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Remedium na głębokie rany",
+     "cl": 21,
+     "price": 63762,
+     "cur": "zl",
+     "icon": "pot/mix184.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Magiczne panaceum",
+     "cl": 21,
+     "price": 98450,
+     "cur": "zl",
+     "icon": "pot/mix185.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Silny specyfik leczący",
+     "cl": 21,
+     "price": 135012,
+     "cur": "zl",
+     "icon": "pot/mix186.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Wyciąg wieloziołowy",
+     "cl": 21,
+     "price": 173450,
+     "cur": "zl",
+     "icon": "pot/mix187.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Antidotum łowcy węży",
+     "cl": 21,
+     "price": 213762,
+     "cur": "zl",
+     "icon": "pot/mix188.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Słój ze śliną bazyliszka",
+     "cl": 21,
+     "price": 255950,
+     "cur": "zl",
+     "icon": "pot/mix189.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Preparat wzmocnionej regeneracji",
+     "cl": 21,
+     "price": 300012,
+     "cur": "zl",
+     "icon": "pot/mix190.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Eliksir mistrza alchemii",
+     "cl": 21,
+     "price": 345950,
+     "cur": "zl",
+     "icon": "pot/mix191.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Płyn w kryształowym więzieniu",
+     "cl": 21,
+     "price": 393762,
+     "cur": "zl",
+     "icon": "pot/mix192.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Próbka krwi minotaura",
+     "cl": 21,
+     "price": 521496,
+     "cur": "zl",
+     "icon": "pot/mix193.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Roztwór Róży Wspomnień",
+     "cl": 21,
+     "price": 660950,
+     "cur": "zl",
+     "icon": "pot/mix194.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Wywar z magicznych porostów",
+     "cl": 21,
+     "price": 812121,
+     "cur": "zl",
+     "icon": "pot/mix195.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Koncentrat zabliźniający",
+     "cl": 21,
+     "price": 975012,
+     "cur": "zl",
+     "icon": "pot/mix196.gif",
+     "lvl": 0,
+     "reqp": ""
+    }
+   ]
+  }
+ ],
+ "role": "healer",
+ "buysAll": false
+}

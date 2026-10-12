@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wdzianko łowcy bolit",
+ "tplId": 52421,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 240,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1196.gif",
+ "stat": "ac=1421;act=16;artisan_worthless;binds;dz=137;lvl=240;rarity=common;reqp=h;resfrost=4;sa=120",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Głowochron wilka morskiego",
+ "tplId": 52117,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 125,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm992.gif",
+ "stat": "ac=196;act=8;artisan_worthless;binds;hp=539;lvl=125;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płonący glob",
+ "tplId": 52693,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb292.gif",
+ "stat": "artisan_worthless;binds;fire=1235;lvl=170;rarity=common;reqp=m;resdmg=1",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

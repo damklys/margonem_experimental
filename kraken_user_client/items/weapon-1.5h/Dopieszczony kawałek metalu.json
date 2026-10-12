@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dopieszczony kawałek metalu",
+ "tplId": 52465,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 170,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz914.gif",
+ "stat": "artisan_worthless;binds;dmg=2926,3576;ds=98;lvl=170;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

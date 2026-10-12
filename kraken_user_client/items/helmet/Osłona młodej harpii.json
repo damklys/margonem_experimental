@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Osłona młodej harpii",
+ "tplId": 33610,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 55,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm705.gif",
+ "stat": "ac=62;act=8;artisan_worthless;binds;da=22;lvl=55;rarity=common;reqp=bhw;resfire=2",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

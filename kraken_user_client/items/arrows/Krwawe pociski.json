@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawe pociski",
+ "tplId": 52729,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 170,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla2.gif",
+ "stat": "acdmg=41;artisan_worthless;binds;dz=98;lvl=170;pdmg=247;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

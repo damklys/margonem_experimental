@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Głębinowa Gwardia",
+ "map": "Werbin",
+ "x": 14,
+ "y": 32,
+ "id": 122837,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

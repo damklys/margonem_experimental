@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Okazałe rogi centaura",
+ "tplId": 33866,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 95,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm713.gif",
+ "stat": "ac=147;act=1;artisan_worthless;binds;hp=404;lvl=95;rarity=common;reqp=pw;resfrost=3",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

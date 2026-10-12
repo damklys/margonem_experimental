@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zęby piaskowej wydmy",
+ "tplId": 52473,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 110,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz910.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=2121,2592;lvl=110;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

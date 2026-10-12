@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miecz skąpany w jadzie kobry",
+ "tplId": 32994,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 90,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz608.gif",
+ "stat": "artisan_worthless;binds;dmg=754,922;hp=546;lvl=90;poison=80,252;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

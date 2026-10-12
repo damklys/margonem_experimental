@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Mistrz Johan",
+ "map": "Karka-han",
+ "x": 9,
+ "y": 39,
+ "id": 44136,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

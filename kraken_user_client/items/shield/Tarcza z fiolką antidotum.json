@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza z fiolką antidotum",
+ "tplId": 33989,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 90,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza419.gif",
+ "stat": "ac=297;artisan_worthless;binds;blok=108;lowevade=9;lvl=90;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 36312,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 36312,
+   "cur": "zl"
+  }
+ ]
+}

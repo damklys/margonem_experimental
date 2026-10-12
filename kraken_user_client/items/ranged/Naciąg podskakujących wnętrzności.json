@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Naciąg podskakujących wnętrzności",
+ "tplId": 52573,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 170,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk701.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=2130,2604;lvl=170;rarity=common;reqp=h;wound=25,845",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

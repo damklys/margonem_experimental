@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Napierśnik olbrzymiego splendoru",
+ "tplId": 52375,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 280,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1149.gif",
+ "stat": "ac=2480;act=1;artisan_worthless;binds;hpbon=2.8;lowevade=28;lvl=280;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Konstrukcja pana chłodu",
+ "tplId": 52540,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 220,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk724.gif",
+ "stat": "artisan_worthless;binds;da=63;dmg=2474,3024;frost=161,2513;lvl=220;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

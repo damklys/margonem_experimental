@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kamasze poskramiacza hydr",
+ "tplId": 52150,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 170,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty1032.gif",
+ "stat": "absorb=765;absorbm=383;ac=184;act=6;artisan_worthless;binds;heal=205;lvl=170;rarity=common;reqp=mt;resfrost=9",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

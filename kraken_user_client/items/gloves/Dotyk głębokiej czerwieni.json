@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dotyk głębokiej czerwieni",
+ "tplId": 52175,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 185,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice1144.gif",
+ "stat": "absorb=490;absorbm=245;ac=219;act=4;artisan_worthless;binds;lvl=185;manabon=51;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

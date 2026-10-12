@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groty z odłamków lodowca",
+ "tplId": 52768,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 220,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno3.gif",
+ "stat": "acdmg=32;artisan_worthless;binds;frost=161,530;lvl=220;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Uwierający kamyk",
+ "tplId": 56922,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "nas/naszyjnik53.gif",
+ "stat": "ac=4;da=11;evade=2;hp=73;lvl=10;permbound;rarity=common;sa=11",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

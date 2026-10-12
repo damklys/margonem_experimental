@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miotełka błyskawic",
+ "tplId": 34361,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 90,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka262.gif",
+ "stat": "artisan_worthless;binds;light=926,1388;lvl=90;rarity=common;reqp=m;slow=34",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

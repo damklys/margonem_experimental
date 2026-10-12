@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Eleganckie ostrze wojownika",
+ "tplId": 32971,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 50,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz561.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=516,631;lvl=50;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chłód pana mrozu",
+ "tplId": 52771,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 280,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno4.gif",
+ "stat": "acdmg=47;artisan_worthless;binds;frost=205,790;lvl=280;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

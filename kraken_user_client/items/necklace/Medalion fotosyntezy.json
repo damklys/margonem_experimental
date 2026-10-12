@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Medalion fotosyntezy",
+ "tplId": 33648,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 62,
+ "reqp": "ht",
+ "rarity": "common",
+ "icon": "nas/naszyjnik768.gif",
+ "stat": "artisan_worthless;binds;crit=2;critval=6;energybon=14;lvl=62;rarity=common;reqp=ht;sa=39",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 18299,
+   "cur": "zl"
+  }
+ ]
+}

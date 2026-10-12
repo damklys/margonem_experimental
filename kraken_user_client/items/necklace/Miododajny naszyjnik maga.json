@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miododajny naszyjnik maga",
+ "tplId": 33645,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 52,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik785.gif",
+ "stat": "artisan_worthless;binds;crit=2;da=34;hp=301;lvl=52;rarity=common;reqp=mpt;sa=21",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 13776,
+   "cur": "zl"
+  }
+ ]
+}

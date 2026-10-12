@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lotki pogromcy nokturni",
+ "tplId": 52757,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 240,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien5.gif",
+ "stat": "artisan_worthless;binds;fire=679;lvl=240;rarity=common;reqp=t;resdmg=1;sa=68",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

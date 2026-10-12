@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zrabowany pierścionek",
+ "tplId": 56919,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pie/piersc67.gif",
+ "stat": "crit=1;da=13;hp=121;lvl=10;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

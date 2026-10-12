@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Małe etui na klucze",
+ "tplId": 4429,
+ "cl": 24,
+ "category": "bag",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "bag/keybag.gif",
+ "stat": "bag=6;btype=18;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 37500,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,321 @@
+{
+ "kraken": "npc",
+ "name": "Handlarka Keftia",
+ "map": "Tuzmer",
+ "x": 19,
+ "y": 44,
+ "id": 24703,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Obwódka z drutu kolczastego",
+     "cl": 9,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "hel/helm985.gif",
+     "lvl": 110,
+     "reqp": ""
+    },
+    {
+     "name": "Głowochron wilka morskiego",
+     "cl": 9,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "hel/helm992.gif",
+     "lvl": 125,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Hełm pustynnego eksploratora",
+     "cl": 9,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "hel/helm997.gif",
+     "lvl": 125,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Groźne rogi wyspiarza",
+     "cl": 9,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "hel/helm1002.gif",
+     "lvl": 140,
+     "reqp": "pw"
+    },
+    {
+     "name": "Czapa portowego bywalca",
+     "cl": 9,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "hel/helm1005.gif",
+     "lvl": 140,
+     "reqp": "bh"
+    },
+    {
+     "name": "Kask zawodowego żeglarza",
+     "cl": 9,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "hel/helm989.gif",
+     "lvl": 140,
+     "reqp": "mt"
+    },
+    {
+     "name": "Lekkie trzewiki majtka",
+     "cl": 10,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "but/buty1021.gif",
+     "lvl": 110,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Buciki szczura okrętowego",
+     "cl": 10,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "but/buty1017.gif",
+     "lvl": 110,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Stalowe cholewy sternika",
+     "cl": 10,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "but/buty1014.gif",
+     "lvl": 125,
+     "reqp": "pw"
+    },
+    {
+     "name": "Zielone podeszwy bosmana",
+     "cl": 10,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "but/buty1028.gif",
+     "lvl": 125,
+     "reqp": "bh"
+    },
+    {
+     "name": "Obuwie okrętowego obserwatora",
+     "cl": 10,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "but/buty1029.gif",
+     "lvl": 125,
+     "reqp": "mt"
+    },
+    {
+     "name": "Kapitańskie kamasze",
+     "cl": 10,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "but/buty1012.gif",
+     "lvl": 140,
+     "reqp": ""
+    },
+    {
+     "name": "Uścisk czarnej pantery",
+     "cl": 11,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "rek/rekawice1137.gif",
+     "lvl": 110,
+     "reqp": "pw"
+    },
+    {
+     "name": "Skarabeuszowe osłony",
+     "cl": 11,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "rek/rekawice1149.gif",
+     "lvl": 110,
+     "reqp": "bh"
+    },
+    {
+     "name": "Skórki pustynnej żaby",
+     "cl": 11,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "rek/rekawice1148.gif",
+     "lvl": 110,
+     "reqp": "mt"
+    },
+    {
+     "name": "Rękawice z pustynnego grobowca",
+     "cl": 11,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "rek/rekawice1135.gif",
+     "lvl": 125,
+     "reqp": ""
+    },
+    {
+     "name": "Chwyt wprawionego poławiacza",
+     "cl": 11,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "rek/rekawice1155.gif",
+     "lvl": 140,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Osłony krwiożerczej piranii",
+     "cl": 11,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "rek/rekawice1143.gif",
+     "lvl": 140,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Pustynny kryształek",
+     "cl": 12,
+     "price": 34655,
+     "cur": "zl",
+     "icon": "pie/pierscien1064.gif",
+     "lvl": 107,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Fragment koralowca",
+     "cl": 12,
+     "price": 34655,
+     "cur": "zl",
+     "icon": "pie/pierscien1061.gif",
+     "lvl": 107,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Pestka egzotycznego owocu",
+     "cl": 12,
+     "price": 46115,
+     "cur": "zl",
+     "icon": "pie/pierscien1053.gif",
+     "lvl": 122,
+     "reqp": "pw"
+    },
+    {
+     "name": "Ozdoba z krabiego pancerzyka",
+     "cl": 12,
+     "price": 46115,
+     "cur": "zl",
+     "icon": "pie/pierscien1056.gif",
+     "lvl": 122,
+     "reqp": "bh"
+    },
+    {
+     "name": "Oko feniksa",
+     "cl": 12,
+     "price": 46115,
+     "cur": "zl",
+     "icon": "pie/pierscien1048.gif",
+     "lvl": 122,
+     "reqp": "mt"
+    },
+    {
+     "name": "Grudka wygasającego wulkanu",
+     "cl": 12,
+     "price": 59633,
+     "cur": "zl",
+     "icon": "pie/pierscien1071.gif",
+     "lvl": 137,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Sygnet aktywności wulkanicznej",
+     "cl": 12,
+     "price": 59633,
+     "cur": "zl",
+     "icon": "pie/pierscien1070.gif",
+     "lvl": 137,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Zapomniana ozdoba alghula",
+     "cl": 13,
+     "price": 34655,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1035.gif",
+     "lvl": 107,
+     "reqp": "pw"
+    },
+    {
+     "name": "Awenturyn antycznej mumii",
+     "cl": 13,
+     "price": 34655,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1064.gif",
+     "lvl": 107,
+     "reqp": "bh"
+    },
+    {
+     "name": "Amulet kościstej pokraki",
+     "cl": 13,
+     "price": 34655,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1033.gif",
+     "lvl": 107,
+     "reqp": "mt"
+    },
+    {
+     "name": "Pąk z wyspy Rem",
+     "cl": 13,
+     "price": 46115,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1037.gif",
+     "lvl": 122,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Pąk z wyspy Magradit",
+     "cl": 13,
+     "price": 46115,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1038.gif",
+     "lvl": 122,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Rozkwitnięty koralowiec",
+     "cl": 13,
+     "price": 59633,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1036.gif",
+     "lvl": 137,
+     "reqp": "pw"
+    },
+    {
+     "name": "Ozdoba kwitnących alg",
+     "cl": 13,
+     "price": 59633,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1065.gif",
+     "lvl": 137,
+     "reqp": "bh"
+    },
+    {
+     "name": "Wodne kwiecie oceanu",
+     "cl": 13,
+     "price": 59633,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1034.gif",
+     "lvl": 137,
+     "reqp": "mt"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

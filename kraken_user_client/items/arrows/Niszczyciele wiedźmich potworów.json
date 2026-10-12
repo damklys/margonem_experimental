@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Niszczyciele wiedźmich potworów",
+ "tplId": 52746,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 260,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka5.gif",
+ "stat": "acdmg=81;artisan_worthless;binds;dz=148;lvl=260;poison=116,440;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

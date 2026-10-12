@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierścień młodości",
+ "tplId": 52235,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 217,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "pie/pierscien1052.gif",
+ "stat": "acdmg=24;artisan_worthless;binds;critval=6;ds=125;hp=1621;lvl=217;rarity=common;reqp=pw;sa=62",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 142821,
+   "cur": "zl"
+  }
+ ]
+}

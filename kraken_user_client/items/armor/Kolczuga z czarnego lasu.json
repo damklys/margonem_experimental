@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kolczuga z czarnego lasu",
+ "tplId": 56898,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 10,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "kaf/zbroja07.gif",
+ "stat": "ac=28;hp=73;hpbon=0.1;lvl=10;permbound;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

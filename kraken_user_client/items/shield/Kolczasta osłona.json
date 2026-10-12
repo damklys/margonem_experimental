@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kolczasta osłona",
+ "tplId": 33749,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 50,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza403.gif",
+ "stat": "ac=146;act=1;artisan_worthless;binds;blok=50;lvl=50;pierceb=50;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 12971,
+   "cur": "zl"
+  }
+ ]
+}

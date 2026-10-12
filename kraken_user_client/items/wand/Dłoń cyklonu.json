@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dłoń cyklonu",
+ "tplId": 52617,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 110,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka404.gif",
+ "stat": "artisan_worthless;binds;hp=689;light=1234,1851;lvl=110;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

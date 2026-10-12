@@ -1,0 +1,51 @@
+{
+ "kraken": "npc",
+ "name": "Anguss",
+ "map": "Mythar",
+ "x": 71,
+ "y": 41,
+ "id": 15543,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 65,
+   "sellp": 145,
+   "purchase": "16,22",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Talizman życia I",
+     "cl": 22,
+     "price": 87000,
+     "cur": "zl",
+     "icon": "tal/talizman02.gif",
+     "lvl": 50,
+     "reqp": "bpw"
+    },
+    {
+     "name": "Talizman życia II",
+     "cl": 22,
+     "price": 123250,
+     "cur": "zl",
+     "icon": "tal/talizman02.gif",
+     "lvl": 65,
+     "reqp": "bpw"
+    },
+    {
+     "name": "Talizman życia III",
+     "cl": 22,
+     "price": 159500,
+     "cur": "zl",
+     "icon": "tal/talizman02.gif",
+     "lvl": 78,
+     "reqp": "bpw"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": false
+}

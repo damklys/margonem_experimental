@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Przemytnik Irwin",
+ "map": "Nithal",
+ "x": 62,
+ "y": 9,
+ "id": 19746,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

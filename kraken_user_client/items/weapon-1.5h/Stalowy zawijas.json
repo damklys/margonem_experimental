@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowy zawijas",
+ "tplId": 32980,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 60,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz563.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=654,799;lvl=60;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Grudka wygasającego wulkanu",
+ "tplId": 52223,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 137,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien1071.gif",
+ "stat": "artisan_worthless;binds;crit=3;lvl=137;rarity=common;reqp=bhw;sa=77",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 59633,
+   "cur": "zl"
+  }
+ ]
+}

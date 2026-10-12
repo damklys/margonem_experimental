@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Maska aspirującego skrytobójcy",
+ "tplId": 52132,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 240,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "hel/helm1006.gif",
+ "stat": "ac=498;act=12;artisan_worthless;binds;evade=24;lvl=240;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

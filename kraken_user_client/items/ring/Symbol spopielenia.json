@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Symbol spopielenia",
+ "tplId": 33639,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 62,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien794.gif",
+ "stat": "artisan_worthless;binds;da=39;evade=6;hp=362;lvl=62;rarity=common;reqp=bhw;sa=24",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 18299,
+   "cur": "zl"
+  }
+ ]
+}

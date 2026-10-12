@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pociski nieuchwytnego podpalacza",
+ "tplId": 52756,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 220,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien3.gif",
+ "stat": "artisan_worthless;binds;fire=589;lowevade=22;lvl=220;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

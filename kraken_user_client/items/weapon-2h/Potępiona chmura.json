@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Potępiona chmura",
+ "tplId": 52482,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 260,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz965.gif",
+ "stat": "artisan_worthless;binds;dmg=8145,9955;hp=2075;lvl=260;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

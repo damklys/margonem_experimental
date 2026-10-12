@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowy szturmak",
+ "tplId": 52129,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 220,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm994.gif",
+ "stat": "ac=473;act=8;artisan_worthless;binds;lvl=220;rarity=common;reqp=bhw;resfrost=2;slow=71",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

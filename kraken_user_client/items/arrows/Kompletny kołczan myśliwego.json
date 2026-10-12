@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kompletny kołczan myśliwego",
+ "tplId": 51961,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 50,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan2.gif",
+ "stat": "acdmg=5;artisan_worthless;binds;frost=37,62;lvl=50;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Upust skumulowanych płomieni",
+ "tplId": 52754,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 185,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien2.gif",
+ "stat": "artisan_worthless;binds;da=54;fire=446;lvl=185;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

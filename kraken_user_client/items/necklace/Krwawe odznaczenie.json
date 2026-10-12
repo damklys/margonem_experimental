@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawe odznaczenie",
+ "tplId": 52258,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 167,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1049.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=50;hp=1150;lowevade=33;lvl=167;rarity=common;reqp=pw;sa=50",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 91226,
+   "cur": "zl"
+  }
+ ]
+}

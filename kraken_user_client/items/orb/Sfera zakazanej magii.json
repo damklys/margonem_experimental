@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sfera zakazanej magii",
+ "tplId": 52699,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 280,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb291.gif",
+ "stat": "artisan_worthless;binds;fire=2781;lvl=280;rarity=common;reqp=m;slow=88",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

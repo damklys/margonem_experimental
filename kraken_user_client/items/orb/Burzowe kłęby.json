@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Burzowe kłęby",
+ "tplId": 52713,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 110,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb310.gif",
+ "stat": "artisan_worthless;binds;hp=689;light=516,774;lvl=110;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

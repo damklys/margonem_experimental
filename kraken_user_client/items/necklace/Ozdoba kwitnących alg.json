@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ozdoba kwitnących alg",
+ "tplId": 52254,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 137,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1065.gif",
+ "stat": "artisan_worthless;binds;crit=1;dz=80;evade=27;hp=897;lvl=137;rarity=common;reqp=bh;sa=42",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 59633,
+   "cur": "zl"
+  }
+ ]
+}

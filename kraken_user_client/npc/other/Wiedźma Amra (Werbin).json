@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Wiedźma Amra",
+ "map": "Werbin",
+ "x": 4,
+ "y": 11,
+ "id": 9675,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

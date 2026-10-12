@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chabrowa zawieszka",
+ "tplId": 33647,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 62,
+ "reqp": "mp",
+ "rarity": "common",
+ "icon": "nas/naszyjnik772.gif",
+ "stat": "artisan_worthless;binds;di=38;hp=700;lvl=62;manabon=21;rarity=common;reqp=mp;sa=24;slow=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 18299,
+   "cur": "zl"
+  }
+ ]
+}

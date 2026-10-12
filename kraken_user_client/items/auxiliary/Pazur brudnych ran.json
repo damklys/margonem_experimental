@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pazur brudnych ran",
+ "tplId": 52684,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 220,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet320.gif",
+ "stat": "artisan_worthless;binds;dmg=2103,2570;lowevade=22;lvl=220;poison=140,412;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

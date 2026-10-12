@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Splot drewnianych warkoczy",
+ "tplId": 52562,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 185,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk708.gif",
+ "stat": "artisan_worthless;binds;da=54;dmg=3611,4413;lvl=185;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

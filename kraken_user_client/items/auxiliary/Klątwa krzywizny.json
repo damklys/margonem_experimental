@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Klątwa krzywizny",
+ "tplId": 33744,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 60,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet205.gif",
+ "stat": "artisan_worthless;binds;dmg=311,381;ds=37;lvl=60;rarity=common;reqp=b;wound=25,67",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

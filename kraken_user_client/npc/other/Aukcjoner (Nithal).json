@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Aukcjoner",
+ "map": "Nithal",
+ "x": 21,
+ "y": 43,
+ "id": 17706,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

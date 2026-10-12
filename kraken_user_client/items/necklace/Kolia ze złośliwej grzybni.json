@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kolia ze złośliwej grzybni",
+ "tplId": 52270,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 237,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1046.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=67;hp=1826;lvl=237;manabon=124;rarity=common;reqp=mt;sa=67",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 158307,
+   "cur": "zl"
+  }
+ ]
+}

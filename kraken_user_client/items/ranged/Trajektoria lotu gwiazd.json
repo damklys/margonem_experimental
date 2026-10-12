@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Trajektoria lotu gwiazd",
+ "tplId": 33107,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 70,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk477.gif",
+ "stat": "artisan_worthless;binds;dmg=450,550;dz=43;light=405,607;lvl=70;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

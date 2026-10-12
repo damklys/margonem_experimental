@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyschnięty śledzik",
+ "tplId": 52666,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 125,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet327.gif",
+ "stat": "artisan_worthless;binds;dmg=871,1064;dz=73;lvl=125;rarity=common;reqp=b;wound=25,187",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

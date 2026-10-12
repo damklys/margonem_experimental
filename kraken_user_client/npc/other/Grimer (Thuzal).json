@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Grimer",
+ "map": "Thuzal",
+ "x": 50,
+ "y": 48,
+ "id": 54056,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

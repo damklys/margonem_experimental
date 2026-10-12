@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ramiona pożogi",
+ "tplId": 52524,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 155,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk692.gif",
+ "stat": "artisan_worthless;binds;da=47;dmg=1419,1735;fire=1600;lvl=155;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

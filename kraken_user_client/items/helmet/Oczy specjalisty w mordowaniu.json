@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Oczy specjalisty w mordowaniu",
+ "tplId": 52135,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 280,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm995.gif",
+ "stat": "ac=705;act=8;artisan_worthless;binds;hp=1354;lvl=280;rarity=common;reqp=bhw;resfrost=2",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

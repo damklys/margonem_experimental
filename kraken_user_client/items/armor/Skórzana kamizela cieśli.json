@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skórzana kamizela cieśli",
+ "tplId": 52317,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 140,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1133.gif",
+ "stat": "ac=680;act=8;artisan_worthless;binds;evade=47;lvl=140;rarity=common;reqp=b;resfire=2;sa=43",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

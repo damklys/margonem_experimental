@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wodna kapa tropiciela",
+ "tplId": 52401,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 110,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1180.gif",
+ "stat": "absorb=1056;absorbm=528;ac=370;act=12;artisan_worthless;binds;lowevade=11;lvl=110;manabon=18;rarity=common;reqp=t;resfire=8;sa=28",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

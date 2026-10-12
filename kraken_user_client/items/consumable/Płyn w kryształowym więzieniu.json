@@ -1,0 +1,62 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płyn w kryształowym więzieniu",
+ "tplId": 41891,
+ "cl": 21,
+ "category": "consumable",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pot/mix192.gif",
+ "stat": "amount=5;cansplit=1;capacity=15;leczy=100000;rarity=common",
+ "sellers": [
+  {
+   "map": "Mirvenis-Adur",
+   "npc": "Uzdrowiciel Ypsli",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Uzdrowicielka Emanilia",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Jemenoss",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Tuzmer",
+   "npc": "Uzdrowiciel Toramidamus",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Werbin",
+   "npc": "Uzdrowicielka Hiliko",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kapłanka Hiada",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Karka-han",
+   "npc": "Uzdrowicielka Halfinia",
+   "price": 393762,
+   "cur": "zl"
+  },
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ajsza",
+   "price": 393762,
+   "cur": "zl"
+  }
+ ]
+}

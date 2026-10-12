@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rdzeń magmowego filaru",
+ "tplId": 52489,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 170,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz934.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=2107,2575;fire=1301;lvl=170;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

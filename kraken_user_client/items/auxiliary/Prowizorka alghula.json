@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Prowizorka alghula",
+ "tplId": 52677,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 110,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet316.gif",
+ "stat": "artisan_worthless;binds;dmg=721,881;evade=11;lvl=110;poison=70,141;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

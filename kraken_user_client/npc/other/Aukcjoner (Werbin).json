@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Aukcjoner",
+ "map": "Werbin",
+ "x": 34,
+ "y": 24,
+ "id": 44123,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

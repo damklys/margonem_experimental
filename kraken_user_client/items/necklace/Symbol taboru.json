@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Symbol taboru",
+ "tplId": 56923,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 13,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "nas/naszyjnik54.gif",
+ "stat": "crit=2;hp=151;lvl=13;permbound;rarity=common;sa=15",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

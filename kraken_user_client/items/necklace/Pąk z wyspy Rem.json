@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pąk z wyspy Rem",
+ "tplId": 52251,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 122,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1037.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=100;energybon=18;lvl=122;rarity=common;reqp=bhw;sa=39",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 46115,
+   "cur": "zl"
+  }
+ ]
+}

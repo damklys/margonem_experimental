@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Burzowy falchion",
+ "tplId": 33898,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 80,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz650.gif",
+ "stat": "artisan_worthless;binds;dmg=694,848;light=343,514;lvl=80;rarity=common;reqp=p;resdmg=1;sa=28",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

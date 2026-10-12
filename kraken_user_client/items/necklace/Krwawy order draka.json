@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawy order draka",
+ "tplId": 52263,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 197,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1050.gif",
+ "stat": "artisan_worthless;binds;crit=2;da=57;hp=2825;lvl=197;rarity=common;reqp=pw;sa=57",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 123804,
+   "cur": "zl"
+  }
+ ]
+}

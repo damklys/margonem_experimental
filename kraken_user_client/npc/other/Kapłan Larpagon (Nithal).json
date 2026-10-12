@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Kapłan Larpagon",
+ "map": "Nithal",
+ "x": 82,
+ "y": 25,
+ "id": 16612,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

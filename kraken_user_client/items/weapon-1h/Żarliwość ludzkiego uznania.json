@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żarliwość ludzkiego uznania",
+ "tplId": 52495,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 280,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz901.gif",
+ "stat": "artisan_worthless;binds;di=160;dmg=4742,5796;fire=2927;lvl=280;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

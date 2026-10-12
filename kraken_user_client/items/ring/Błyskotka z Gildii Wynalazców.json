@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błyskotka z Gildii Wynalazców",
+ "tplId": 52231,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 182,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien1055.gif",
+ "stat": "artisan_worthless;binds;dz=307;evade=18;lvl=182;rarity=common;reqp=bh;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 107833,
+   "cur": "zl"
+  }
+ ]
+}

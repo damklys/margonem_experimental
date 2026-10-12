@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chwyt zastygłej smoły",
+ "tplId": 52170,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 155,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "rek/rekawice1139.gif",
+ "stat": "ac=230;act=1;artisan_worthless;binds;hp=638;lvl=155;rarity=common;reqp=pw;reslight=3",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

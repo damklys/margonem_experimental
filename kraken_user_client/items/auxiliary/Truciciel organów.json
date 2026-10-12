@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Truciciel organów",
+ "tplId": 52681,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 170,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet312.gif",
+ "stat": "artisan_worthless;binds;dmg=1393,1702;energybon=21;lvl=170;poison=108,273;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

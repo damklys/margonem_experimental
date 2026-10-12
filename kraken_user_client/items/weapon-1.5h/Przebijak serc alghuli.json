@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przebijak serc alghuli",
+ "tplId": 52461,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 110,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz913.gif",
+ "stat": "artisan_worthless;binds;dmg=1515,1851;ds=65;lvl=110;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

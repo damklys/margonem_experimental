@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szelest nieuważnego kobolda",
+ "tplId": 33623,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 55,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "but/buty794.gif",
+ "stat": "ac=52;act=12;artisan_worthless;binds;evade=6;lvl=55;rarity=common;reqp=bh;resfrost=3",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

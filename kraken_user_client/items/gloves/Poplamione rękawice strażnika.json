@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Poplamione rękawice strażnika",
+ "tplId": 33629,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 55,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice780.gif",
+ "stat": "ac=46;artisan_worthless;binds;da=22;lvl=55;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

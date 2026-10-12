@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza dawnej chwały",
+ "tplId": 33750,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 60,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza404.gif",
+ "stat": "ac=185;act=1;artisan_worthless;binds;blok=60;hp=315;lvl=60;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 17325,
+   "cur": "zl"
+  }
+ ]
+}

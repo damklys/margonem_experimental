@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Okopcona stal ludożercy",
+ "tplId": 52467,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 200,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz970.gif",
+ "stat": "artisan_worthless;binds;dmg=3787,4628;lowevade=20;lvl=200;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

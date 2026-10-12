@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Fragment koralowca",
+ "tplId": 52219,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 107,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien1061.gif",
+ "stat": "artisan_worthless;binds;critmval=12;hp=1309;lvl=107;rarity=common;reqp=mpt;sa=35",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 34655,
+   "cur": "zl"
+  }
+ ]
+}

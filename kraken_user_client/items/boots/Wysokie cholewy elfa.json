@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wysokie cholewy elfa",
+ "tplId": 52155,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 220,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "but/buty1026.gif",
+ "stat": "ac=393;act=12;artisan_worthless;binds;lvl=220;rarity=common;reqp=bh;resfrost=3;slow=71",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

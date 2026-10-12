@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierś z tajemniczym symbolem",
+ "tplId": 33761,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 55,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja716.gif",
+ "stat": "ac=204;artisan_worthless;binds;energybon=14;hpbon=0.6;lvl=55;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

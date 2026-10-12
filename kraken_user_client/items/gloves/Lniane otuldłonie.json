@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lniane otuldłonie",
+ "tplId": 33630,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 65,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice796.gif",
+ "stat": "ac=59;act=8;artisan_worthless;binds;lowevade=7;lvl=65;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Astralny kask maga",
+ "tplId": 52127,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 185,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm988.gif",
+ "stat": "absorb=962;absorbm=481;ac=231;act=6;artisan_worthless;binds;critmval=6;lvl=185;rarity=common;reqp=mt;reslight=9",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

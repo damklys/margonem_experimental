@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pulsujące ostrze zemsty",
+ "tplId": 25217,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 70,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz585.gif",
+ "stat": "artisan_worthless;binds;dmg=533,652;energybon=15;lvl=70;rarity=common;reqp=bw;wound=25,196",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

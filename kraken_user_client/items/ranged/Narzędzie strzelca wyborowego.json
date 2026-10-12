@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Narzędzie strzelca wyborowego",
+ "tplId": 52564,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 220,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk717.gif",
+ "stat": "artisan_worthless;binds;dmg=4771,5832;energybon=25;lvl=220;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

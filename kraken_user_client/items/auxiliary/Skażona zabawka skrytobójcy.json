@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skażona zabawka skrytobójcy",
+ "tplId": 33748,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 70,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet223.gif",
+ "stat": "artisan_worthless;binds;dmg=382,467;energybon=15;lvl=70;poison=45,75;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

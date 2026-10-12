@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gromiące strzały na ropuchy",
+ "tplId": 51979,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 80,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/strzalablysk.gif",
+ "stat": "absorb=202;artisan_worthless;binds;light=103,154;lvl=80;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

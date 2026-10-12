@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Morska igła",
+ "tplId": 52763,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 140,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno1.gif",
+ "stat": "artisan_worthless;binds;energybon=19;frost=103,260;lvl=140;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

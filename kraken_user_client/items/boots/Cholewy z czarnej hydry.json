@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cholewy z czarnej hydry",
+ "tplId": 52148,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 170,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty1015.gif",
+ "stat": "ac=318;act=1;artisan_worthless;binds;hp=737;lvl=170;rarity=common;reqp=pw;resfrost=3",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

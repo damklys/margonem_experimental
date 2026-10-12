@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gadzi paraliż",
+ "tplId": 33899,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 90,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz627.gif",
+ "stat": "artisan_worthless;binds;di=54;dmg=818,1000;light=404,606;lvl=90;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

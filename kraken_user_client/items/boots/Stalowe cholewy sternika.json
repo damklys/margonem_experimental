@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowe cholewy sternika",
+ "tplId": 52142,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 125,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty1014.gif",
+ "stat": "ac=199;act=1;artisan_worthless;binds;energybon=18;lvl=125;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

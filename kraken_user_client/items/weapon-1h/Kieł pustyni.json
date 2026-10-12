@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kieł pustyni",
+ "tplId": 52487,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 140,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz936.gif",
+ "stat": "artisan_worthless;binds;critmval=6;dmg=1562,1909;fire=964;lvl=140;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

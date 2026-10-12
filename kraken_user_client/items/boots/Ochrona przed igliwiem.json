@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona przed igliwiem",
+ "tplId": 33870,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 85,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "but/buty795.gif",
+ "stat": "ac=93;act=12;artisan_worthless;binds;energybon=16;lvl=85;rarity=common;reqp=bh;resfrost=3",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

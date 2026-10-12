@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kąsające ostrze",
+ "tplId": 33746,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 50,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet221.gif",
+ "stat": "artisan_worthless;binds;dmg=246,300;hp=290;lvl=50;poison=32,48;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

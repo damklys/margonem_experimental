@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wonne pąki kniei",
+ "tplId": 33649,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 72,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik781.gif",
+ "stat": "artisan_worthless;binds;critval=6;da=44;energybon=15;hp=426;lvl=72;rarity=common;reqp=bhw;sa=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 23747,
+   "cur": "zl"
+  }
+ ]
+}

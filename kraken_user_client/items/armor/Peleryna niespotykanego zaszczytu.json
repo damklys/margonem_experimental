@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Peleryna niespotykanego zaszczytu",
+ "tplId": 52411,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 280,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1185.gif",
+ "stat": "absorb=4592;absorbm=2296;ac=1607;act=12;artisan_worthless;binds;energybon=29;lvl=280;manabon=47;rarity=common;reqp=t;resfire=8;sa=70",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

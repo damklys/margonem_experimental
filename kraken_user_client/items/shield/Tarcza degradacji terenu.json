@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza degradacji terenu",
+ "tplId": 52630,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 125,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza563.gif",
+ "stat": "ac=516;act=1;artisan_worthless;binds;blok=125;critval=6;lvl=125;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

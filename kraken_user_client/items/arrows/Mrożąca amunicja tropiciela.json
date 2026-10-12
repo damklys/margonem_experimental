@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mrożąca amunicja tropiciela",
+ "tplId": 52765,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 170,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno2.gif",
+ "stat": "artisan_worthless;binds;crit=1;frost=125,351;lvl=170;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

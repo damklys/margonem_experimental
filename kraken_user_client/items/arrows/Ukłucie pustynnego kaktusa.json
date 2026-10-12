@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ukłucie pustynnego kaktusa",
+ "tplId": 52738,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 125,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka1.gif",
+ "stat": "acdmg=26;artisan_worthless;binds;evade=13;lvl=125;poison=56,138;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

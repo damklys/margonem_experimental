@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowy płatek",
+ "tplId": 33742,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 70,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet199.gif",
+ "stat": "artisan_worthless;binds;da=26;dmg=485,593;lvl=70;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

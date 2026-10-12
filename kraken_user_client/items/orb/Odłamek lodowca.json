@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odłamek lodowca",
+ "tplId": 32885,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 70,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb206.gif",
+ "stat": "artisan_worthless;binds;frost=51,303;lvl=70;rarity=common;reqp=m;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

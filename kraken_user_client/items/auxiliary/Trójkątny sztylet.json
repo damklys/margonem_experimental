@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Trójkątny sztylet",
+ "tplId": 33743,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 50,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet206.gif",
+ "stat": "artisan_worthless;binds;dmg=246,300;evade=5;lvl=50;rarity=common;reqp=b;wound=25,53",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

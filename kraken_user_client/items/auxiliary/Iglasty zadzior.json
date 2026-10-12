@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Iglasty zadzior",
+ "tplId": 33984,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 100,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet225.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=628,768;lvl=100;poison=64,123;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

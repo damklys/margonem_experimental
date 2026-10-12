@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zabawka piromana",
+ "tplId": 52692,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 155,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb296.gif",
+ "stat": "artisan_worthless;binds;di=90;fire=1070;lvl=155;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

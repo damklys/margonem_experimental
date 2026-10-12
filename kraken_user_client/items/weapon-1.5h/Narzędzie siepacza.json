@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Narzędzie siepacza",
+ "tplId": 52472,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 300,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz968.gif",
+ "stat": "artisan_worthless;binds;blok=45;dmg=7401,9046;lvl=300;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

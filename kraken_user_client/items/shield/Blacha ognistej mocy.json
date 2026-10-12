@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Blacha ognistej mocy",
+ "tplId": 52652,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 300,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza573.gif",
+ "stat": "ac=1935;artisan_worthless;binds;blok=360;lvl=300;rarity=common;reqp=p;resfrost=6;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

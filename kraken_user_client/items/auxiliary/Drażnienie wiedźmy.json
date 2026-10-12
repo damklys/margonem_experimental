@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Drażnienie wiedźmy",
+ "tplId": 52662,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 260,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet294.gif",
+ "stat": "artisan_worthless;binds;dmg=3514,4295;evade=26;lvl=260;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

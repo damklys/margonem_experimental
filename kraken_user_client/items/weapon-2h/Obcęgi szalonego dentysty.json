@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obcęgi szalonego dentysty",
+ "tplId": 33651,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 70,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz574.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=1125,1374;lvl=70;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

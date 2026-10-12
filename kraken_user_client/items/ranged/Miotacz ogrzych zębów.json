@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miotacz ogrzych zębów",
+ "tplId": 52575,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 200,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk681.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=2757,3369;lvl=200;rarity=common;reqp=h;wound=25,1094",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kaftan zaklęty mrozem",
+ "tplId": 52326,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 300,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1138.gif",
+ "stat": "ac=2322;act=8;artisan_worthless;binds;evade=100;lvl=300;rarity=common;reqp=b;resfrost=2;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

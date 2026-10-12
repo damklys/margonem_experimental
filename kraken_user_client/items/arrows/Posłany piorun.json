@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Posłany piorun",
+ "tplId": 52775,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 140,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk1.gif",
+ "stat": "artisan_worthless;binds;evade=14;light=231,347;lvl=140;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krwawa narzuta ogra",
+ "tplId": 52394,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1177.gif",
+ "stat": "absorb=3497;absorbm=1748;ac=583;artisan_worthless;binds;lowcrit=2;lvl=185;manabon=62;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

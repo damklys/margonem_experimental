@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zbożowy kamuflaż węża",
+ "tplId": 34012,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja739.gif",
+ "stat": "absorb=731;absorbm=366;ac=256;act=12;artisan_worthless;binds;energybon=16;lvl=85;manabon=14;rarity=common;reqp=t;resfrost=8;sa=21",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

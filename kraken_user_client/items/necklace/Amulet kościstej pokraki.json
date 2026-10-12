@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Amulet kościstej pokraki",
+ "tplId": 52250,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 107,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1033.gif",
+ "stat": "artisan_worthless;binds;critmval=6;da=35;di=63;hp=667;lvl=107;manabon=32;rarity=common;reqp=mt;sa=35",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 34655,
+   "cur": "zl"
+  }
+ ]
+}

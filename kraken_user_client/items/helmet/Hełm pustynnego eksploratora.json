@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Hełm pustynnego eksploratora",
+ "tplId": 52118,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 125,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm997.gif",
+ "stat": "absorb=353;absorbm=177;ac=158;act=4;artisan_worthless;binds;di=73;lvl=125;rarity=common;reqp=mpt;reslight=8",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wytwór syczącego rzemieślnika",
+ "tplId": 33875,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 95,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice785.gif",
+ "stat": "absorb=180;absorbm=90;ac=80;act=4;artisan_worthless;binds;hp=383;lvl=95;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

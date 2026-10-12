@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięcie lodowej tafli",
+ "tplId": 52501,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 170,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz943.gif",
+ "stat": "artisan_worthless;binds;dmg=2107,2575;energybon=21;frost=163,1170;lvl=170;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

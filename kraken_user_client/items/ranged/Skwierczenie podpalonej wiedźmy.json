@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skwierczenie podpalonej wiedźmy",
+ "tplId": 52530,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 260,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk676.gif",
+ "stat": "artisan_worthless;binds;di=148;dmg=3258,3982;fire=3672;lvl=260;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

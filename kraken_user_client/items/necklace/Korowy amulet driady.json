@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Korowy amulet driady",
+ "tplId": 52265,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 197,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1045.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=57;evade=20;hp=1425;lvl=197;rarity=common;reqp=mt;sa=57;slow=64",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 123804,
+   "cur": "zl"
+  }
+ ]
+}

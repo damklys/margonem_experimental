@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kopyta wiedźmiego chowańca",
+ "tplId": 52159,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 260,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "but/buty1020.gif",
+ "stat": "absorb=1022;absorbm=511;ac=456;act=4;artisan_worthless;binds;lvl=260;manabon=70;rarity=common;reqp=mpt;reslight=8",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

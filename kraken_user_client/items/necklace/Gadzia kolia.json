@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gadzia kolia",
+ "tplId": 33881,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 82,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik777.gif",
+ "stat": "artisan_worthless;binds;crit=2;critval=12;heal=143;lvl=82;rarity=common;reqp=pw;sa=29",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 30254,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 30254,
+   "cur": "zl"
+  }
+ ]
+}

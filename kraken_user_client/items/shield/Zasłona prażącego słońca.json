@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zasłona prażącego słońca",
+ "tplId": 52641,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 110,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza580.gif",
+ "stat": "ac=396;artisan_worthless;binds;blok=132;crit=1;lvl=110;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

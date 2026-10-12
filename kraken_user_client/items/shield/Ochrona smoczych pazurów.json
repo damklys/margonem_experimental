@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona smoczych pazurów",
+ "tplId": 33990,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 100,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza420.gif",
+ "stat": "ac=345;artisan_worthless;binds;blok=120;lvl=100;manabon=30;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 45051,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 45051,
+   "cur": "zl"
+  }
+ ]
+}

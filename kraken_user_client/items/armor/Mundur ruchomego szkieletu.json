@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mundur ruchomego szkieletu",
+ "tplId": 52315,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 110,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1132.gif",
+ "stat": "ac=475;act=8;artisan_worthless;binds;evade=48;lvl=110;rarity=common;reqp=b;resfire=2",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

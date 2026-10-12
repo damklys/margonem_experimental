@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łuk nagłych przypływów",
+ "tplId": 52534,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 125,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk735.gif",
+ "stat": "artisan_worthless;binds;dmg=1024,1252;evade=13;frost=92,1040;lvl=125;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

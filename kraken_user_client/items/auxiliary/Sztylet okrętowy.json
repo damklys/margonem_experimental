@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Sztylet okrętowy",
+ "tplId": 33660,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 50,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet197.gif",
+ "stat": "artisan_worthless;binds;dmg=312,381;lvl=50;rarity=common;reqp=b;sa=21",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

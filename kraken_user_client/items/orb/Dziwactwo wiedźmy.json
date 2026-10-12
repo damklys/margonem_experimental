@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dziwactwo wiedźmy",
+ "tplId": 52710,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 260,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb302.gif",
+ "stat": "artisan_worthless;binds;frost=191,2198;hp=2075;lvl=260;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

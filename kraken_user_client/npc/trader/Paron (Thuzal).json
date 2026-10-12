@@ -1,0 +1,276 @@
+{
+ "kraken": "npc",
+ "name": "Paron",
+ "map": "Thuzal",
+ "x": 65,
+ "y": 56,
+ "id": 57801,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Kostur oszalałej wiedźmy",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka377.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Magiczny totem barbarzyńcy",
+     "cl": 6,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "roz/rozdzka378.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Zdławiony ogień kniei",
+     "cl": 6,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "roz/rozdzka373.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Wypalacz lepkich pajęczyn",
+     "cl": 6,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "roz/rozdzka369.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Płonący glob",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb292.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Klątwa gorączki złota",
+     "cl": 7,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "orb/orb293.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Wybuchowa sfera czarnoksiężnika",
+     "cl": 7,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "orb/orb286.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Żar podziemnych kuźni",
+     "cl": 7,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "orb/orb288.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Narzędzie szronotwórcy",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka402.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Chłód oczu nieumarłego",
+     "cl": 6,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "roz/rozdzka403.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształ ze skarbca ogrów",
+     "cl": 6,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "roz/rozdzka389.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Podpora drowiej szamanki",
+     "cl": 6,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "roz/rozdzka397.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula ostrego mrozu",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb304.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Czaszka z Martwego Lasu",
+     "cl": 7,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "orb/orb305.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Lodowe wrzody",
+     "cl": 7,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "orb/orb303.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Pierścień narastającego chłodu",
+     "cl": 7,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "orb/orb301.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Zakurzony pastorał",
+     "cl": 6,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "roz/rozdzka380.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Berło porywów wiatru",
+     "cl": 6,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "roz/rozdzka379.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Noga starego Valmira",
+     "cl": 6,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "roz/rozdzka386.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Pogromca olbrzymich płazów",
+     "cl": 6,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "roz/rozdzka390.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Więzienie nawałnicy",
+     "cl": 7,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "orb/orb315.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Gniewna podobizna",
+     "cl": 7,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "orb/orb314.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształowa orbita",
+     "cl": 7,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "orb/orb321.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Narodziny burzy",
+     "cl": 7,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "orb/orb319.gif",
+     "lvl": 220,
+     "reqp": "m"
+    },
+    {
+     "name": "Schludna szata czarnoksiężnika",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1170.gif",
+     "lvl": 170,
+     "reqp": "m"
+    },
+    {
+     "name": "Krwawa narzuta ogra",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1177.gif",
+     "lvl": 185,
+     "reqp": "m"
+    },
+    {
+     "name": "Łachmany patrycjusza",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1171.gif",
+     "lvl": 200,
+     "reqp": "m"
+    },
+    {
+     "name": "Strój obiecującego naukowca",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1176.gif",
+     "lvl": 220,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

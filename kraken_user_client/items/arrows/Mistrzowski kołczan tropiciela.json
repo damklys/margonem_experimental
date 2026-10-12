@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mistrzowski kołczan tropiciela",
+ "tplId": 51960,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 70,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan1.gif",
+ "stat": "acdmg=7;artisan_worthless;binds;fire=107;lvl=70;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

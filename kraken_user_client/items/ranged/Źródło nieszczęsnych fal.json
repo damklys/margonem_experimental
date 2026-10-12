@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Źródło nieszczęsnych fal",
+ "tplId": 52556,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk742.gif",
+ "stat": "artisan_worthless;binds;dmg=4145,5066;heal=764;light=3728,5592;lvl=300;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

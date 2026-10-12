@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szczecina gnolla",
+ "tplId": 33626,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 65,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty779.gif",
+ "stat": "ac=68;artisan_worthless;binds;da=24;lvl=65;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

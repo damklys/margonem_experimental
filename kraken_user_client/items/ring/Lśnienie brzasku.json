@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lśnienie brzasku",
+ "tplId": 52229,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 167,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien1062.gif",
+ "stat": "artisan_worthless;binds;crit=1;di=97;hp=2275;lvl=167;rarity=common;reqp=mpt;sa=50",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 91226,
+   "cur": "zl"
+  }
+ ]
+}

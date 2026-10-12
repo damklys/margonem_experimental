@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Magiczne wsparcie demiliszy",
+ "tplId": 33619,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 65,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm702.gif",
+ "stat": "absorb=209;absorbm=105;ac=50;act=6;artisan_worthless;binds;evade=7;lvl=65;rarity=common;reqp=mt;reslight=9",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

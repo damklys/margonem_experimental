@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Peleryna z metalową wstawką",
+ "tplId": 34371,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 85,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja729.gif",
+ "stat": "absorb=1097;absorbm=548;ac=183;artisan_worthless;binds;crit=1;lvl=85;manabon=28;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

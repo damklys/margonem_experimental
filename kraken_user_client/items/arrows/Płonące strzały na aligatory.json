@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płonące strzały na aligatory",
+ "tplId": 51975,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 100,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/strzalaogien.gif",
+ "stat": "artisan_worthless;binds;evade=10;fire=176;lvl=100;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groty nadchodzącej burzy",
+ "tplId": 52777,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 170,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk2.gif",
+ "stat": "artisan_worthless;binds;critmval=6;light=312,468;lvl=170;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

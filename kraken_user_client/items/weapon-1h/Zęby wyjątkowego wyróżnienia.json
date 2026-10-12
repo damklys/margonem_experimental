@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zęby wyjątkowego wyróżnienia",
+ "tplId": 52447,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 280,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz885.gif",
+ "stat": "artisan_worthless;binds;dmg=4374,5345;ds=160;lvl=280;poison=250,1464;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

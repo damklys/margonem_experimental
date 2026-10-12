@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Podarunek Introprodara",
+ "tplId": 33868,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 95,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm703.gif",
+ "stat": "absorb=353;absorbm=176;ac=85;act=6;artisan_worthless;binds;heal=112;lvl=95;rarity=common;reqp=mt;resfrost=9",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

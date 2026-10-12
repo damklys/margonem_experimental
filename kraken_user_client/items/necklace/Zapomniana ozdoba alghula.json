@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zapomniana ozdoba alghula",
+ "tplId": 52248,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 107,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1035.gif",
+ "stat": "artisan_worthless;binds;crit=1;critval=6;ds=63;energybon=17;hp=667;lvl=107;rarity=common;reqp=pw;sa=35",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 34655,
+   "cur": "zl"
+  }
+ ]
+}

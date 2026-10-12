@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wolny ładunek",
+ "tplId": 52784,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk4.gif",
+ "stat": "acdmg=53;artisan_worthless;binds;light=789,1184;lvl=300;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

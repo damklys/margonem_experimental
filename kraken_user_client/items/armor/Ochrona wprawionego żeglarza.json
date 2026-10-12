@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona wprawionego żeglarza",
+ "tplId": 52415,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 140,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1193.gif",
+ "stat": "ac=605;act=16;artisan_worthless;binds;critval=6;lvl=140;rarity=common;reqp=h;resfrost=4;sa=70",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

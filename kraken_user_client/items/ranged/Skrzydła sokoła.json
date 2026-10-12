@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skrzydła sokoła",
+ "tplId": 33998,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 90,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk507.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=827,1011;lvl=90;rarity=common;reqp=h;wound=25,328",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

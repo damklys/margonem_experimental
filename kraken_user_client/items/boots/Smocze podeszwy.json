@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Smocze podeszwy",
+ "tplId": 33869,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 85,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty789.gif",
+ "stat": "ac=114;act=1;artisan_worthless;binds;crit=1;lvl=85;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

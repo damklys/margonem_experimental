@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Broń tańczących świateł",
+ "tplId": 34011,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 100,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk472.gif",
+ "stat": "artisan_worthless;binds;dmg=739,903;light=665,997;lvl=100;pierce=20;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

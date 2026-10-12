@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Klątwa gorączki złota",
+ "tplId": 52694,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 185,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb293.gif",
+ "stat": "artisan_worthless;binds;critmval=6;fire=1412;lvl=185;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

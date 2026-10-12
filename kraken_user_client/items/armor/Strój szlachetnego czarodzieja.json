@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Strój szlachetnego czarodzieja",
+ "tplId": 33774,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 55,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja732.gif",
+ "stat": "absorb=611;absorbm=305;ac=102;artisan_worthless;binds;da=22;lvl=55;manabon=18;rarity=common;reqp=m;resfire=10",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

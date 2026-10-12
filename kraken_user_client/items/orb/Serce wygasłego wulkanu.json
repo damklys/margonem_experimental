@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Serce wygasłego wulkanu",
+ "tplId": 32875,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 70,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb195.gif",
+ "stat": "artisan_worthless;binds;fire=339;lvl=70;rarity=common;reqp=m;sa=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

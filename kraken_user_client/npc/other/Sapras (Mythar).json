@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Sapras",
+ "map": "Mythar",
+ "x": 8,
+ "y": 17,
+ "id": 13635,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

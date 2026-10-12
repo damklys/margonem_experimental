@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Źródło odurzających zapachów",
+ "tplId": 52271,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 257,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1062.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=137;hp=2042;lvl=257;rarity=common;reqp=bhw;sa=137",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 170079,
+   "cur": "zl"
+  }
+ ]
+}

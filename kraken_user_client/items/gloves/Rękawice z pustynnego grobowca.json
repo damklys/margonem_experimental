@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rękawice z pustynnego grobowca",
+ "tplId": 52167,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 125,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice1135.gif",
+ "stat": "ac=143;artisan_worthless;binds;da=39;lvl=125;rarity=common",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

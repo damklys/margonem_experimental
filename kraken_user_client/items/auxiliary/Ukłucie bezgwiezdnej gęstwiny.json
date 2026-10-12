@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ukłucie bezgwiezdnej gęstwiny",
+ "tplId": 52659,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 200,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet295.gif",
+ "stat": "artisan_worthless;binds;da=58;dmg=2287,2795;lvl=200;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

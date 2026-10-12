@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obuwie do tańca",
+ "tplId": 56913,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty56.gif",
+ "stat": "ac=8;lvl=10;permbound;rarity=common;sa=11",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

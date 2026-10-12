@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Fikuśne kamasze maga",
+ "tplId": 33871,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 85,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty781.gif",
+ "stat": "absorb=274;absorbm=137;ac=66;act=6;artisan_worthless;binds;lvl=85;rarity=common;reqp=mt;resfrost=9;slow=32",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

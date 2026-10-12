@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Jastrzębi celownik",
+ "tplId": 34005,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 90,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk519.gif",
+ "stat": "artisan_worthless;binds;dmg=827,1011;lvl=90;pierce=20;poison=40,353;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

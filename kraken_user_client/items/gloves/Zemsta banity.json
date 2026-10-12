@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zemsta banity",
+ "tplId": 33635,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 75,
+ "reqp": "ht",
+ "rarity": "common",
+ "icon": "rek/rekawice794.gif",
+ "stat": "ac=58;act=14;artisan_worthless;binds;dz=46;lvl=75;rarity=common;reqp=ht;reslight=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

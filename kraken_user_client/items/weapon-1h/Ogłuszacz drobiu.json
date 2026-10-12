@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ogłuszacz drobiu",
+ "tplId": 56869,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 13,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "drz/kh-cep2.gif",
+ "stat": "dmg=100,123;frost=12,56;lvl=13;permbound;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

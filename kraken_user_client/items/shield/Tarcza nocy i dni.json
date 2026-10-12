@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza nocy i dni",
+ "tplId": 33753,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 60,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza416.gif",
+ "stat": "ac=171;artisan_worthless;binds;blok=72;lvl=60;pierceb=50;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 17325,
+   "cur": "zl"
+  }
+ ]
+}

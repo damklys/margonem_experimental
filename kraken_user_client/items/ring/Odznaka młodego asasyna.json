@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odznaka młodego asasyna",
+ "tplId": 33637,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 52,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien785.gif",
+ "stat": "artisan_worthless;binds;critval=6;dz=33;energybon=13;lvl=52;rarity=common;reqp=bh;sa=34",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 13776,
+   "cur": "zl"
+  }
+ ]
+}

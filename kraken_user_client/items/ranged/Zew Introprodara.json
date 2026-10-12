@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zew Introprodara",
+ "tplId": 34009,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 100,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk453.gif",
+ "stat": "artisan_worthless;binds;dmg=739,903;evade=10;fire=833;lvl=100;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz w sam raz",
+ "tplId": 56895,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 10,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja18.gif",
+ "stat": "ac=30;act=1;hp=73;hpbon=0.1;lvl=10;permbound;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

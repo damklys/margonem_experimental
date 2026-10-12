@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Iglasta osłona",
+ "tplId": 33985,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 80,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza406.gif",
+ "stat": "ac=272;act=1;artisan_worthless;binds;blok=80;energybon=15;lvl=80;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 28862,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 28862,
+   "cur": "zl"
+  }
+ ]
+}

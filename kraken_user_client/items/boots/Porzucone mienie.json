@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Porzucone mienie",
+ "tplId": 56915,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 16,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty346.gif",
+ "stat": "ac=13;da=12;lvl=16;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warkocz szkwałowy",
+ "tplId": 52547,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 140,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk695.gif",
+ "stat": "artisan_worthless;binds;dmg=1215,1484;light=1092,1639;lvl=140;rarity=common;reqp=t;slow=48",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

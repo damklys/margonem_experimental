@@ -1,0 +1,213 @@
+{
+ "kraken": "npc",
+ "name": "Adept Ceranir",
+ "map": "Ithan",
+ "x": 54,
+ "y": 55,
+ "id": 255396,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Iskra piromana",
+     "cl": 6,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "roz/rozdzka259.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształy erupcji",
+     "cl": 6,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "roz/rozdzka258.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Przewodnik magmowych świątyń",
+     "cl": 6,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "roz/rozdzka257.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Żar z niebios",
+     "cl": 7,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "orb/orb197.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Piekielny podarunek",
+     "cl": 7,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "orb/orb196.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Serce wygasłego wulkanu",
+     "cl": 7,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "orb/orb195.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Grot lodowcowy",
+     "cl": 6,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "roz/rozdzka277.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształowe pąki szronokrzewu",
+     "cl": 6,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "roz/rozdzka276.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Księżycowy płacz",
+     "cl": 6,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "roz/rozdzka275.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Rdzeń śnieżnego golema",
+     "cl": 7,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "orb/orb204.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula pierwszych przymrozków",
+     "cl": 7,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "orb/orb205.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Odłamek lodowca",
+     "cl": 7,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "orb/orb206.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Świetlisty kryształ",
+     "cl": 6,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "roz/rozdzka264.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Narzędzie migocących świateł",
+     "cl": 6,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "roz/rozdzka265.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Skrząca magiczna buława",
+     "cl": 6,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "roz/rozdzka260.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Piaskowe oko burzy",
+     "cl": 7,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "orb/orb222.gif",
+     "lvl": 50,
+     "reqp": "m"
+    },
+    {
+     "name": "Pułapka nagłego paraliżu",
+     "cl": 7,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "orb/orb223.gif",
+     "lvl": 60,
+     "reqp": "m"
+    },
+    {
+     "name": "Pochwycona energia słońca",
+     "cl": 7,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "orb/orb224.gif",
+     "lvl": 70,
+     "reqp": "m"
+    },
+    {
+     "name": "Strój szlachetnego czarodzieja",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja732.gif",
+     "lvl": 55,
+     "reqp": "m"
+    },
+    {
+     "name": "Surdut sztukmistrza",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "zbr/zbroja730.gif",
+     "lvl": 65,
+     "reqp": "m"
+    },
+    {
+     "name": "Splot magicznych nici",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja756.gif",
+     "lvl": 75,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

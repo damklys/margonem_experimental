@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Aukcjoner",
+ "map": "Mirvenis-Adur",
+ "x": 86,
+ "y": 30,
+ "id": 117062,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

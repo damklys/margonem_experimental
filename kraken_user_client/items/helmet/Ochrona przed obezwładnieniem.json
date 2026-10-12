@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona przed obezwładnieniem",
+ "tplId": 52137,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 300,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm1003.gif",
+ "stat": "ac=885;acdmg=40;act=1;artisan_worthless;binds;lvl=300;rarity=common;reqp=pw;resfrost=3",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

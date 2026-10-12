@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Splot magicznych nici",
+ "tplId": 33862,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja756.gif",
+ "stat": "absorb=923;absorbm=461;ac=154;artisan_worthless;binds;hp=445;lvl=75;manabon=25;rarity=common;reqp=m;reslight=10",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

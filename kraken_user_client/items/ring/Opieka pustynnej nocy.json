@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Opieka pustynnej nocy",
+ "tplId": 52244,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 277,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien1072.gif",
+ "stat": "artisan_worthless;binds;critmval=6;heal=681;lvl=277;manabon=74;rarity=common;reqp=mpt;sa=147",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 178569,
+   "cur": "zl"
+  }
+ ]
+}

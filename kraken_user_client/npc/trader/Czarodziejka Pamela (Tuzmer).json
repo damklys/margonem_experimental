@@ -1,0 +1,213 @@
+{
+ "kraken": "npc",
+ "name": "Czarodziejka Pamela",
+ "map": "Tuzmer",
+ "x": 68,
+ "y": 30,
+ "id": 297709,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Kwiat pustyni",
+     "cl": 6,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "roz/rozdzka383.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula degradacji natury",
+     "cl": 6,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "roz/rozdzka375.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Kostur mieszkańca oazy",
+     "cl": 6,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "roz/rozdzka384.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Orb słonecznych pęcherzy",
+     "cl": 7,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "orb/orb297.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Złota wydma",
+     "cl": 7,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "orb/orb295.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Oko ducha pustyni",
+     "cl": 7,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "orb/orb294.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Gniazdo chłodu oazy",
+     "cl": 6,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "roz/rozdzka398.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Pastorał pustynnego dżina",
+     "cl": 6,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "roz/rozdzka400.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Morska laga czarnoksiężnika",
+     "cl": 6,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "roz/rozdzka399.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Magiczne grudki ziemi",
+     "cl": 7,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "orb/orb309.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Sfera nieurodzajnej gleby",
+     "cl": 7,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "orb/orb307.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Oko podziemnego czerwia",
+     "cl": 7,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "orb/orb306.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Dłoń cyklonu",
+     "cl": 6,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "roz/rozdzka404.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Ramię huraganu",
+     "cl": 6,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "roz/rozdzka382.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Noga wiatru",
+     "cl": 6,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "roz/rozdzka405.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Burzowe kłęby",
+     "cl": 7,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "orb/orb310.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Wał szkwałowy",
+     "cl": 7,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "orb/orb312.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Oko gromowładnego",
+     "cl": 7,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "orb/orb313.gif",
+     "lvl": 140,
+     "reqp": "m"
+    },
+    {
+     "name": "Kurta gorącej pustyni",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1168.gif",
+     "lvl": 110,
+     "reqp": "m"
+    },
+    {
+     "name": "Marynarskie wdzianko maga",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1179.gif",
+     "lvl": 125,
+     "reqp": "m"
+    },
+    {
+     "name": "Koszula wilka morskiego",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1169.gif",
+     "lvl": 140,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

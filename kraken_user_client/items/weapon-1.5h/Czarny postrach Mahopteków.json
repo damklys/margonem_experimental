@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarny postrach Mahopteków",
+ "tplId": 52469,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 240,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz971.gif",
+ "stat": "artisan_worthless;binds;dmg=5095,6227;lvl=240;rarity=common;reqp=w;sa=68",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

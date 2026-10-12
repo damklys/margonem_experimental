@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Klątwa dygocących kości",
+ "tplId": 34365,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 80,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb207.gif",
+ "stat": "artisan_worthless;binds;di=48;frost=59,364;lvl=80;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Felkissian",
+ "map": "Mythar",
+ "x": 51,
+ "y": 34,
+ "id": 14053,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

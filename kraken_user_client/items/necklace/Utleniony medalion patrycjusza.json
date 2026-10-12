@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Utleniony medalion patrycjusza",
+ "tplId": 52264,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 197,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1040.gif",
+ "stat": "artisan_worthless;binds;critval=6;da=57;evade=39;lvl=197;rarity=common;reqp=bh;sa=57;slow=64",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 123804,
+   "cur": "zl"
+  }
+ ]
+}

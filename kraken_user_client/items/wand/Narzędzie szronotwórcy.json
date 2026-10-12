@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Narzędzie szronotwórcy",
+ "tplId": 52609,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka402.gif",
+ "stat": "artisan_worthless;binds;da=51;frost=170,2211;lvl=170;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

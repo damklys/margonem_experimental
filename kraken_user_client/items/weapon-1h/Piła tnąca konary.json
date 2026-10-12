@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Piła tnąca konary",
+ "tplId": 33890,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 90,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz590.gif",
+ "stat": "artisan_worthless;binds;dmg=963,1177;lvl=90;rarity=common;reqp=b;sa=31",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

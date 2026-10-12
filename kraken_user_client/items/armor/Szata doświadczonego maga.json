@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szata doświadczonego maga",
+ "tplId": 34372,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja728.gif",
+ "stat": "absorb=1283;absorbm=641;ac=214;artisan_worthless;binds;lvl=95;manabon=32;rarity=common;reqp=m;resfire=10;slow=35",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

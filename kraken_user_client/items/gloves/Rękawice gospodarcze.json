@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rękawice gospodarcze",
+ "tplId": 56916,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice02.gif",
+ "stat": "ac=6;hp=60;lvl=10;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

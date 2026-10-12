@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płaski sztylet z Mythar",
+ "tplId": 33979,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 80,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet207.gif",
+ "stat": "artisan_worthless;binds;dmg=459,561;hp=478;lvl=80;rarity=common;reqp=b;wound=25,99",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

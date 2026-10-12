@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skórzane odzienie asasyna",
+ "tplId": 52318,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 155,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1142.gif",
+ "stat": "ac=795;act=8;artisan_worthless;binds;ds=90;evade=52;lvl=155;rarity=common;reqp=b;reslight=2",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

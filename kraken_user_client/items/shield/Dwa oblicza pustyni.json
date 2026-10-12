@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dwa oblicza pustyni",
+ "tplId": 52642,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 125,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza581.gif",
+ "stat": "ac=478;artisan_worthless;binds;blok=150;energybon=18;lvl=125;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

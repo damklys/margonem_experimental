@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kubrak myśliwego specjalisty",
+ "tplId": 52422,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 260,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1199.gif",
+ "stat": "ac=1622;act=16;artisan_worthless;binds;energybon=27;lvl=260;rarity=common;reqp=h;resfrost=4;sa=130",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

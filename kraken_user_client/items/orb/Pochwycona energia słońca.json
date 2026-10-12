@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pochwycona energia słońca",
+ "tplId": 33140,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 70,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb224.gif",
+ "stat": "artisan_worthless;binds;crit=1;light=274,411;lvl=70;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

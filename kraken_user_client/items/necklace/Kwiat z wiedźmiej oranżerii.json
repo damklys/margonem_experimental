@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kwiat z wiedźmiej oranżerii",
+ "tplId": 52272,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 257,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1057.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=72;heal=611;hp=2042;lvl=257;manabon=69;rarity=common;reqp=mpt;sa=72",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 170079,
+   "cur": "zl"
+  }
+ ]
+}

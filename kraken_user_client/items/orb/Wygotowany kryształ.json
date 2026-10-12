@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wygotowany kryształ",
+ "tplId": 34362,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 80,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb194.gif",
+ "stat": "artisan_worthless;binds;da=28;fire=407;lvl=80;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

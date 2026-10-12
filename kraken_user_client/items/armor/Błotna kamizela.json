@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błotna kamizela",
+ "tplId": 52321,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1135.gif",
+ "stat": "ac=1188;act=8;artisan_worthless;binds;evade=67;lowcrit=2;lvl=200;rarity=common;reqp=b;reslight=2",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

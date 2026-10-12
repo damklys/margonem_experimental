@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pociski na dendrokreatury",
+ "tplId": 52733,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 240,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla5.gif",
+ "stat": "acdmg=71;artisan_worthless;binds;hp=1858;lvl=240;pdmg=430;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

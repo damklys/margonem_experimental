@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Falchion żabiej czaszki",
+ "tplId": 32981,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 80,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz564.gif",
+ "stat": "artisan_worthless;binds;dmg=964,1178;lvl=80;rarity=common;reqp=w;slow=31",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

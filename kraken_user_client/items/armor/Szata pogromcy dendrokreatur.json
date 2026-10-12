@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szata pogromcy dendrokreatur",
+ "tplId": 52397,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 240,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1172.gif",
+ "stat": "absorb=5328;absorbm=2664;ac=888;artisan_worthless;binds;lvl=240;manabon=80;rarity=common;reqp=m;resdmg=1;resfrost=10",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

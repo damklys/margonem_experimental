@@ -1,0 +1,492 @@
+{
+ "kraken": "npc",
+ "name": "Puk",
+ "map": "Thuzal",
+ "x": 64,
+ "y": 52,
+ "id": 57802,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Naciąg podskakujących wnętrzności",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk701.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa zlęknionej driady",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk696.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Miotacz ogrzych zębów",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk681.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Narzędzie bezdusznego łowcy",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk683.gif",
+     "lvl": 220,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg pulsującej krwi",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk740.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Splot drewnianych warkoczy",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk708.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Metaliczna struna draka",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk709.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Narzędzie strzelca wyborowego",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk717.gif",
+     "lvl": 220,
+     "reqp": "h"
+    },
+    {
+     "name": "Krwawe pociski",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/zwykla2.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Nośniki wielkich boleści",
+     "cl": 29,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "arr/zwykla2.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Groty przeszywające ciało",
+     "cl": 29,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "arr/zwykla3.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Zestaw śmiercionośnych lotek",
+     "cl": 29,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "arr/zwykla3.gif",
+     "lvl": 220,
+     "reqp": "h"
+    },
+    {
+     "name": "Naciąg ociekającej trucizny",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk733.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Miotacz trupiego jadu",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk728.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Wyrzutnia ostrych liści",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk718.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Narzędzie wybitnego truciciela",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk720.gif",
+     "lvl": 220,
+     "reqp": "h"
+    },
+    {
+     "name": "Strzały powolnego konania",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/trutka2.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Nośniki dokuczliwych bakcyli",
+     "cl": 29,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "arr/trutka2.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Groty gnijącej krwi",
+     "cl": 29,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "arr/trutka3.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Przeszycie trujących porostów",
+     "cl": 29,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "arr/trutka3.gif",
+     "lvl": 220,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa pląsających płomieni",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk693.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Oddech ogra",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk687.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Rdzeń zmutowanej rośliny",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk673.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Konstrukcja badacza płomieni",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk675.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Parzące szpikulce",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/ogien2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Upust skumulowanych płomieni",
+     "cl": 29,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "arr/ogien2.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Amunicja dotkliwych poparzeń",
+     "cl": 29,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "arr/ogien3.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Pociski nieuchwytnego podpalacza",
+     "cl": 29,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "arr/ogien3.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa tańczących kryształków",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk707.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Mroźny naciąg draka",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk739.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Księżyc patrycjusza",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk738.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Konstrukcja pana chłodu",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk724.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Mrożąca amunicja tropiciela",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/zimno2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Żądła dotkliwego chłodu",
+     "cl": 29,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "arr/zimno2.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Amunicja spowalniająca",
+     "cl": 29,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "arr/zimno3.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Groty z odłamków lodowca",
+     "cl": 29,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "arr/zimno3.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Cięciwa przeskakujących błyskawic",
+     "cl": 4,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "luk/luk691.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Światło z głębi lasu",
+     "cl": 4,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "luk/luk705.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Słońce barbarzyńcy",
+     "cl": 4,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "luk/luk704.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Konstrukcja mistrza błyskawic",
+     "cl": 4,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "luk/luk694.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Groty nadchodzącej burzy",
+     "cl": 29,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "arr/blysk2.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Przedłużenie oślepiającego światła",
+     "cl": 29,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "arr/blysk2.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Amunicja silnego rażenia",
+     "cl": 29,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "arr/blysk3.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Strzały nocnych rozbłysków",
+     "cl": 29,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "arr/blysk3.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Warstwy materiałowych chmur",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1182.gif",
+     "lvl": 170,
+     "reqp": "t"
+    },
+    {
+     "name": "Zimowy kubrak Valmira",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1189.gif",
+     "lvl": 185,
+     "reqp": "t"
+    },
+    {
+     "name": "Ochrona ożywieńca",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1183.gif",
+     "lvl": 200,
+     "reqp": "t"
+    },
+    {
+     "name": "Płaszcz eksploratora bagien",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1188.gif",
+     "lvl": 220,
+     "reqp": "t"
+    },
+    {
+     "name": "Mglisty kamuflaż myśliwego",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1194.gif",
+     "lvl": 170,
+     "reqp": "h"
+    },
+    {
+     "name": "Driadzia podomka",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1201.gif",
+     "lvl": 185,
+     "reqp": "h"
+    },
+    {
+     "name": "Futro dzikiej zwierzyny",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1195.gif",
+     "lvl": 200,
+     "reqp": "h"
+    },
+    {
+     "name": "Powłoka badacza natury",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1200.gif",
+     "lvl": 220,
+     "reqp": "h"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

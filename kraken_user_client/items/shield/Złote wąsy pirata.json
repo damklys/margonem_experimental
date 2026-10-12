@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Złote wąsy pirata",
+ "tplId": 52631,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 140,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza564.gif",
+ "stat": "ac=612;act=1;artisan_worthless;binds;blok=140;energybon=19;lvl=140;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

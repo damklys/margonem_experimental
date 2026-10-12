@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Driadzia podomka",
+ "tplId": 52418,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1201.gif",
+ "stat": "ac=932;act=16;artisan_worthless;binds;lowevade=19;lvl=185;rarity=common;reqp=h;resfrost=4;sa=93",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

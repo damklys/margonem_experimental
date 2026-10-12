@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kwiat pustyni",
+ "tplId": 52593,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 110,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka383.gif",
+ "stat": "artisan_worthless;binds;fire=1346;lvl=110;rarity=common;reqp=m;slow=39",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

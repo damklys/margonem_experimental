@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Więzienie nawałnicy",
+ "tplId": 52717,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb315.gif",
+ "stat": "artisan_worthless;binds;da=51;light=997,1496;lvl=170;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

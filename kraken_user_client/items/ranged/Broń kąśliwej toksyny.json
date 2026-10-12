@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Broń kąśliwej toksyny",
+ "tplId": 52584,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 155,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk732.gif",
+ "stat": "artisan_worthless;binds;dmg=1845,2255;energybon=20;lvl=155;poison=69,789;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

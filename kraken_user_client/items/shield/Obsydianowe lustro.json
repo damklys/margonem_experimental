@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obsydianowe lustro",
+ "tplId": 52636,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 220,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza575.gif",
+ "stat": "ac=1247;act=1;artisan_worthless;binds;blok=220;lvl=220;rarity=common;reqp=w;slow=71",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

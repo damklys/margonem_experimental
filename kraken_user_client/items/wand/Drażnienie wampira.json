@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Drażnienie wampira",
+ "tplId": 33158,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 80,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka263.gif",
+ "stat": "artisan_worthless;binds;da=28;light=785,1178;lvl=80;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

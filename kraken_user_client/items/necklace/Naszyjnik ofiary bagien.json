@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Naszyjnik ofiary bagien",
+ "tplId": 33882,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 82,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "nas/naszyjnik769.gif",
+ "stat": "artisan_worthless;binds;crit=1;dz=50;energybon=15;evade=16;lvl=82;rarity=common;reqp=bh;sa=29",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 30254,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 30254,
+   "cur": "zl"
+  }
+ ]
+}

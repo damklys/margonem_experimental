@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kwiecisty popis jubilera",
+ "tplId": 33646,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 62,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik776.gif",
+ "stat": "artisan_worthless;binds;crit=1;ds=73;hp=700;lvl=62;rarity=common;reqp=bw;sa=24",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 18299,
+   "cur": "zl"
+  }
+ ]
+}

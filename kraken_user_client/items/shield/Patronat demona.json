@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Patronat demona",
+ "tplId": 33751,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 70,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza405.gif",
+ "stat": "ac=227;act=1;artisan_worthless;binds;blok=70;crit=1;lvl=70;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 22577,
+   "cur": "zl"
+  }
+ ]
+}

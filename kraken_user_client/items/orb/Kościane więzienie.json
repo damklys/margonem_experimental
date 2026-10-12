@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kościane więzienie",
+ "tplId": 34366,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 90,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb208.gif",
+ "stat": "artisan_worthless;binds;critmval=6;frost=66,429;lvl=90;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

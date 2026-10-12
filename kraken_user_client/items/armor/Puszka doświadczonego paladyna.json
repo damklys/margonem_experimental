@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Puszka doświadczonego paladyna",
+ "tplId": 33997,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "zbr/zbroja718.gif",
+ "stat": "ac=445;act=1;artisan_worthless;binds;critval=6;hpbon=1;lvl=95;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarne chmury",
+ "tplId": 33886,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 80,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz573.gif",
+ "stat": "artisan_worthless;binds;dmg=1349,1649;lowevade=8;lvl=80;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

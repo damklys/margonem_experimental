@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obwódka z drutu kolczastego",
+ "tplId": 52116,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 110,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm985.gif",
+ "stat": "ac=157;artisan_worthless;binds;da=36;lvl=110;rarity=common",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

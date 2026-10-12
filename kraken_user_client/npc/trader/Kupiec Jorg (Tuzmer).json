@@ -1,0 +1,456 @@
+{
+ "kraken": "npc",
+ "name": "Kupiec Jorg",
+ "map": "Tuzmer",
+ "x": 23,
+ "y": 57,
+ "id": 298088,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Zęby piaskowej wydmy",
+     "cl": 2,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz910.gif",
+     "lvl": 110,
+     "reqp": "w"
+    },
+    {
+     "name": "Otwieracz krabich pancerzy",
+     "cl": 2,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz916.gif",
+     "lvl": 125,
+     "reqp": "w"
+    },
+    {
+     "name": "Zdeformowana kotwica",
+     "cl": 2,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz917.gif",
+     "lvl": 140,
+     "reqp": "w"
+    },
+    {
+     "name": "Przebijak serc alghuli",
+     "cl": 3,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz913.gif",
+     "lvl": 110,
+     "reqp": "w"
+    },
+    {
+     "name": "Zrywacz nieprzyjaznych żagli",
+     "cl": 3,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz911.gif",
+     "lvl": 125,
+     "reqp": "w"
+    },
+    {
+     "name": "Wyciszacz szant",
+     "cl": 3,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz912.gif",
+     "lvl": 140,
+     "reqp": "w"
+    },
+    {
+     "name": "Osłona resztek flory",
+     "cl": 14,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "tar/tarcza562.gif",
+     "lvl": 110,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza degradacji terenu",
+     "cl": 14,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "tar/tarcza563.gif",
+     "lvl": 125,
+     "reqp": "w"
+    },
+    {
+     "name": "Złote wąsy pirata",
+     "cl": 14,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "tar/tarcza564.gif",
+     "lvl": 140,
+     "reqp": "w"
+    },
+    {
+     "name": "Przecinak rybich ości",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz953.gif",
+     "lvl": 110,
+     "reqp": "bw"
+    },
+    {
+     "name": "Piracki falownik",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz955.gif",
+     "lvl": 125,
+     "reqp": "bw"
+    },
+    {
+     "name": "Znalezisko z bezludnej wyspy",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz954.gif",
+     "lvl": 140,
+     "reqp": "bw"
+    },
+    {
+     "name": "Szprotka na ostro",
+     "cl": 5,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "bro/sztylet328.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Wyschnięty śledzik",
+     "cl": 5,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "bro/sztylet327.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Złoty karaś",
+     "cl": 5,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "bro/sztylet326.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Wyrok pustyni",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz923.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Giętka tuzmerska stal",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz925.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Klinga wygasłego wulkanu",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz924.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Antyczny sztylet",
+     "cl": 5,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "bro/sztylet310.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Rogowacizna zmarłego pirata",
+     "cl": 5,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "bro/sztylet309.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Fragment syreniego ogona",
+     "cl": 5,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "bro/sztylet308.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Szpila antycznej toksyny",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz892.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Smaganie skorpiona",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz895.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Trawiciel tratw",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz894.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Prowizorka alghula",
+     "cl": 5,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "bro/sztylet316.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Pazur feniksa",
+     "cl": 5,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "bro/sztylet315.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Płetwa ryby głębinowej",
+     "cl": 5,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "bro/sztylet314.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Rozdarcie mumich bandaży",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz935.gif",
+     "lvl": 110,
+     "reqp": "p"
+    },
+    {
+     "name": "Klinga lotu feniksa",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz937.gif",
+     "lvl": 125,
+     "reqp": "p"
+    },
+    {
+     "name": "Kieł pustyni",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz936.gif",
+     "lvl": 140,
+     "reqp": "p"
+    },
+    {
+     "name": "Zasłona prażącego słońca",
+     "cl": 14,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "tar/tarcza580.gif",
+     "lvl": 110,
+     "reqp": "p"
+    },
+    {
+     "name": "Dwa oblicza pustyni",
+     "cl": 14,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "tar/tarcza581.gif",
+     "lvl": 125,
+     "reqp": "p"
+    },
+    {
+     "name": "Stalowe wąsy kapitana",
+     "cl": 14,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "tar/tarcza582.gif",
+     "lvl": 140,
+     "reqp": "p"
+    },
+    {
+     "name": "Broń poławiacza pereł",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz942.gif",
+     "lvl": 110,
+     "reqp": "p"
+    },
+    {
+     "name": "Uderzenie rybiej płetwy",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz940.gif",
+     "lvl": 125,
+     "reqp": "p"
+    },
+    {
+     "name": "Ostrze wielorybnika",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz941.gif",
+     "lvl": 140,
+     "reqp": "p"
+    },
+    {
+     "name": "Burzowy pałasz",
+     "cl": 1,
+     "price": 55164,
+     "cur": "zl",
+     "icon": "mie/miecz929.gif",
+     "lvl": 110,
+     "reqp": "p"
+    },
+    {
+     "name": "Zygzak przecięcia nieboskłonu",
+     "cl": 1,
+     "price": 72990,
+     "cur": "zl",
+     "icon": "mie/miecz931.gif",
+     "lvl": 125,
+     "reqp": "p"
+    },
+    {
+     "name": "Ogłuszająca nawałnica",
+     "cl": 1,
+     "price": 93840,
+     "cur": "zl",
+     "icon": "mie/miecz930.gif",
+     "lvl": 140,
+     "reqp": "p"
+    },
+    {
+     "name": "Mundur ruchomego szkieletu",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1132.gif",
+     "lvl": 110,
+     "reqp": "b"
+    },
+    {
+     "name": "Warstwy sztywnych bandaży",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1143.gif",
+     "lvl": 125,
+     "reqp": "b"
+    },
+    {
+     "name": "Skórzana kamizela cieśli",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1133.gif",
+     "lvl": 140,
+     "reqp": "b"
+    },
+    {
+     "name": "Kolczuga pogromcy mumii",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1144.gif",
+     "lvl": 110,
+     "reqp": "w"
+    },
+    {
+     "name": "Ochrona ognistego skorpiona",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1155.gif",
+     "lvl": 125,
+     "reqp": "w"
+    },
+    {
+     "name": "Pancerz krwawego bosmana",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1145.gif",
+     "lvl": 140,
+     "reqp": "w"
+    },
+    {
+     "name": "Kamuflaż kałamarnicy",
+     "cl": 8,
+     "price": 36776,
+     "cur": "zl",
+     "icon": "zbr/zbroja1156.gif",
+     "lvl": 110,
+     "reqp": "p"
+    },
+    {
+     "name": "Zbroja opływowego kształtu",
+     "cl": 8,
+     "price": 48660,
+     "cur": "zl",
+     "icon": "zbr/zbroja1167.gif",
+     "lvl": 125,
+     "reqp": "p"
+    },
+    {
+     "name": "Ciężka okrętowa kapota",
+     "cl": 8,
+     "price": 62560,
+     "cur": "zl",
+     "icon": "zbr/zbroja1157.gif",
+     "lvl": 140,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

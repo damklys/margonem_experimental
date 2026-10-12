@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kurta łowcy orków",
+ "tplId": 52381,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 170,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1158.gif",
+ "stat": "ac=1020;artisan_worthless;binds;hpbon=1.7;lvl=170;rarity=common;reqp=p;reslight=6;slow=57",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

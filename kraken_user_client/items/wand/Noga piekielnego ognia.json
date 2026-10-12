@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Noga piekielnego ognia",
+ "tplId": 52601,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 240,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka374.gif",
+ "stat": "absorb=1066;artisan_worthless;binds;fire=4529;lvl=240;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

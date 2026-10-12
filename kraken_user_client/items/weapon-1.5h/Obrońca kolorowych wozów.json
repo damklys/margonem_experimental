@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obrońca kolorowych wozów",
+ "tplId": 56865,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 10,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "top/kh-topor4.gif",
+ "stat": "dmg=112,137;lvl=10;permbound;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

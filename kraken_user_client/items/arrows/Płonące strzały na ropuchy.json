@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płonące strzały na ropuchy",
+ "tplId": 51973,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 80,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/strzalaogien.gif",
+ "stat": "artisan_worthless;binds;dz=48;fire=129;lvl=80;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

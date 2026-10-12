@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kruszyciele lodu",
+ "tplId": 52186,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 300,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice1153.gif",
+ "stat": "ac=600;act=8;artisan_worthless;binds;heal=377;lvl=300;rarity=common;reqp=bhw;resfrost=2",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

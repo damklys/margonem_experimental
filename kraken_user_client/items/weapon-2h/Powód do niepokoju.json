@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Powód do niepokoju",
+ "tplId": 52479,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 200,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz973.gif",
+ "stat": "artisan_worthless;binds;dmg=5301,6480;energybon=23;lvl=200;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Amarantowy zawadiaka",
+ "tplId": 32975,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 100,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz588.gif",
+ "stat": "artisan_worthless;binds;dmg=876,1071;ds=60;lvl=100;rarity=common;reqp=bw;wound=25,323",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zygzak przecięcia nieboskłonu",
+ "tplId": 52510,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 125,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz931.gif",
+ "stat": "artisan_worthless;binds;di=73;dmg=1317,1609;light=650,975;lvl=125;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

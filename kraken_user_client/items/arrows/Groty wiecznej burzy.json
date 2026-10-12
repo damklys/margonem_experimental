@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groty wiecznej burzy",
+ "tplId": 52783,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 280,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk4.gif",
+ "stat": "artisan_worthless;binds;da=78;light=703,1054;lvl=280;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

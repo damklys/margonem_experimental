@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żywiczna sfera",
+ "tplId": 34368,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 80,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb201.gif",
+ "stat": "artisan_worthless;binds;light=328,493;lvl=80;rarity=common;reqp=m;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

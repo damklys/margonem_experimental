@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zaczarowane kabuto",
+ "tplId": 52130,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 220,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm998.gif",
+ "stat": "absorb=854;absorbm=427;ac=381;act=4;artisan_worthless;binds;heal=286;lvl=220;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lotka starego wyspiarza",
+ "tplId": 52727,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 140,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla1.gif",
+ "stat": "acdmg=30;artisan_worthless;binds;crit=1;lvl=140;pdmg=183;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

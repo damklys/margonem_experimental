@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ekwipunek mistrza trucizn",
+ "tplId": 32995,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 100,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz607.gif",
+ "stat": "artisan_worthless;binds;dmg=876,1071;energybon=17;lvl=100;poison=89,293;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

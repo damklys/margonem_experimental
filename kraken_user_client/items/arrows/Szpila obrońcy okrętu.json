@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szpila obrońcy okrętu",
+ "tplId": 52726,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 125,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla1.gif",
+ "stat": "acdmg=26;artisan_worthless;binds;energybon=18;lvl=125;pdmg=154;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

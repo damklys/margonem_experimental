@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Orb nagłego spowolnienia",
+ "tplId": 52704,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 155,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb308.gif",
+ "stat": "artisan_worthless;binds;crit=1;frost=114,957;lvl=155;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

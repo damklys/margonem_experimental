@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Srebrna obrączka obieżyświata",
+ "tplId": 56920,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 13,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "pie/piersc69.gif",
+ "stat": "crit=2;da=11;lvl=13;permbound;rarity=common;sa=11;slow=12",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

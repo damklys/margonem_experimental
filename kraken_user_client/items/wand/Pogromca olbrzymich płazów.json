@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pogromca olbrzymich płazów",
+ "tplId": 52624,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 220,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka390.gif",
+ "stat": "artisan_worthless;binds;da=63;light=3600,5400;lvl=220;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

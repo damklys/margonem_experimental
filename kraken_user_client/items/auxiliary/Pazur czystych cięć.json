@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pazur czystych cięć",
+ "tplId": 52660,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 220,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet296.gif",
+ "stat": "artisan_worthless;binds;dmg=2668,3261;lowevade=22;lvl=220;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

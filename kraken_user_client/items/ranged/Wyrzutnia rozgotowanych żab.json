@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyrzutnia rozgotowanych żab",
+ "tplId": 34007,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 80,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk458.gif",
+ "stat": "artisan_worthless;binds;dmg=540,660;fire=608;hp=478;lvl=80;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

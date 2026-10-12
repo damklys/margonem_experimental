@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warstwy lunarnych skór",
+ "tplId": 52323,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 240,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1136.gif",
+ "stat": "ac=1598;act=8;artisan_worthless;binds;da=68;evade=80;lvl=240;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

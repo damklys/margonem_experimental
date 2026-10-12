@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostrze skąpane w eliksirze",
+ "tplId": 52686,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 260,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet318.gif",
+ "stat": "artisan_worthless;binds;dmg=2769,3385;hp=2075;lvl=260;poison=166,543;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

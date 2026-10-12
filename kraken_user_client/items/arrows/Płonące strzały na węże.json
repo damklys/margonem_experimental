@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płonące strzały na węże",
+ "tplId": 51974,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 90,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/strzalaogien.gif",
+ "stat": "artisan_worthless;binds;energybon=16;fire=151;lvl=90;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

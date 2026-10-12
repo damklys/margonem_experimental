@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błyskotka z Gildii Teologów",
+ "tplId": 52230,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 182,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "pie/pierscien1054.gif",
+ "stat": "artisan_worthless;binds;ds=307;lowevade=18;lvl=182;rarity=common;reqp=pw;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 107833,
+   "cur": "zl"
+  }
+ ]
+}

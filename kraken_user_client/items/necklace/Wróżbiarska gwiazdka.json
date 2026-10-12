@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wróżbiarska gwiazdka",
+ "tplId": 56924,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 16,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "nas/naszyjnik55.gif",
+ "stat": "crit=1;da=12;hp=103;lvl=16;permbound;rarity=common;sa=20",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

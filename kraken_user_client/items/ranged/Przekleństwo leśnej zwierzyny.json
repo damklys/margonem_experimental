@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przekleństwo leśnej zwierzyny",
+ "tplId": 33764,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 60,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk488.gif",
+ "stat": "artisan_worthless;binds;dmg=706,863;evade=6;lvl=60;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

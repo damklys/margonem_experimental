@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Błękitny falochron",
+ "tplId": 52403,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 140,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1181.gif",
+ "stat": "absorb=1512;absorbm=756;ac=529;act=12;artisan_worthless;binds;critval=6;lvl=140;manabon=23;rarity=common;reqp=t;resfrost=8;sa=35",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

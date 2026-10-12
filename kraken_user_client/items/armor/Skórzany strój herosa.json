@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skórzany strój herosa",
+ "tplId": 33763,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja722.gif",
+ "stat": "ac=308;artisan_worthless;binds;hp=445;hpbon=0.8;lvl=75;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

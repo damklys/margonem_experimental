@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zadzior patrycjusza",
+ "tplId": 52658,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 185,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet307.gif",
+ "stat": "artisan_worthless;binds;dmg=2019,2468;energybon=22;lvl=185;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

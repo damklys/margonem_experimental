@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łachmany patrycjusza",
+ "tplId": 52395,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 200,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1171.gif",
+ "stat": "absorb=3960;absorbm=1980;ac=660;artisan_worthless;binds;lvl=200;manabon=67;rarity=common;reqp=m;reslight=10;slow=65",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Genomar",
+ "map": "Ratusz Karka-han",
+ "x": 19,
+ "y": 21,
+ "id": 18652,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

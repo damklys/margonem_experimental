@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Znalezisko z bezludnej wyspy",
+ "tplId": 52451,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 140,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz954.gif",
+ "stat": "artisan_worthless;binds;da=43;dmg=1440,1760;lvl=140;rarity=common;reqp=bw;wound=25,530",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

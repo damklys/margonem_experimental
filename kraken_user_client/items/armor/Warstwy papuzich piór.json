@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warstwy papuzich piór",
+ "tplId": 52409,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 240,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1184.gif",
+ "stat": "absorb=3552;absorbm=1776;ac=1243;act=12;artisan_worthless;binds;critmval=6;lvl=240;manabon=40;rarity=common;reqp=t;resfrost=8;sa=60",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

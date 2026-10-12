@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Nośniki dokuczliwych bakcyli",
+ "tplId": 52742,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 185,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka2.gif",
+ "stat": "acdmg=47;artisan_worthless;binds;critval=6;lvl=185;poison=83,253;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żołnierskie odznaczenie",
+ "tplId": 52261,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 182,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1060.gif",
+ "stat": "artisan_worthless;binds;critval=12;da=99;lowcrit=2;lvl=182;rarity=common;reqp=bhw;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 107833,
+   "cur": "zl"
+  }
+ ]
+}

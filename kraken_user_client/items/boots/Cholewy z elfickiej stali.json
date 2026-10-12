@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cholewy z elfickiej stali",
+ "tplId": 52154,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 220,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty1016.gif",
+ "stat": "ac=480;act=1;artisan_worthless;binds;ds=126;lvl=220;rarity=common;reqp=pw;resfrost=3",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

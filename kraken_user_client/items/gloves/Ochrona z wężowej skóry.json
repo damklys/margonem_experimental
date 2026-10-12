@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona z wężowej skóry",
+ "tplId": 33874,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 95,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice795.gif",
+ "stat": "ac=99;act=8;artisan_worthless;binds;evade=10;lvl=95;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

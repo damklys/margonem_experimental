@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skrząca magiczna buława",
+ "tplId": 33159,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 70,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka260.gif",
+ "stat": "artisan_worthless;binds;di=43;light=655,982;lvl=70;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

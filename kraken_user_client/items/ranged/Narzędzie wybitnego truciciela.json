@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Narzędzie wybitnego truciciela",
+ "tplId": 52588,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 220,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk720.gif",
+ "stat": "artisan_worthless;binds;dmg=3216,3931;dz=126;lvl=220;poison=98,1374;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

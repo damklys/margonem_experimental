@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żądła dotkliwego chłodu",
+ "tplId": 52766,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 185,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno2.gif",
+ "stat": "acdmg=24;artisan_worthless;binds;frost=136,401;lvl=185;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Strzały z eksperymentalnymi lotkami",
+ "tplId": 52736,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 300,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla4.gif",
+ "stat": "acdmg=103;artisan_worthless;binds;lvl=300;pdmg=625;rarity=common;reqp=h;slow=94",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

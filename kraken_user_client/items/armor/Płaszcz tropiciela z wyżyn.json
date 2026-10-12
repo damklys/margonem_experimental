@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płaszcz tropiciela z wyżyn",
+ "tplId": 33769,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 65,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "bro/zbroja754.gif",
+ "stat": "absorb=507;absorbm=254;ac=177;act=12;artisan_worthless;binds;evade=7;lvl=65;manabon=11;rarity=common;reqp=t;resfrost=8;sa=16",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

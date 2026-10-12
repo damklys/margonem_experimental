@@ -1,0 +1,15 @@
+{
+ "kraken": "npc",
+ "name": "Doktor Nad",
+ "map": "Nithal",
+ "x": 5,
+ "y": 48,
+ "id": 177460,
+ "roles": [
+  "heal",
+  "shop"
+ ],
+ "shops": [],
+ "role": "healer",
+ "buysAll": false
+}

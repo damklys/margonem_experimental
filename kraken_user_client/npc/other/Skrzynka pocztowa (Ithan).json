@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynka pocztowa",
+ "map": "Ithan",
+ "x": 41,
+ "y": 50,
+ "id": 17632,
+ "roles": [
+  "mail"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

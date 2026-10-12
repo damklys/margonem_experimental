@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zamszowy chwyt gadziny",
+ "tplId": 33873,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 85,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice779.gif",
+ "stat": "ac=82;artisan_worthless;binds;da=29;lvl=85;rarity=common",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

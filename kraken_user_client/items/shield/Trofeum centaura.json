@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Trofeum centaura",
+ "tplId": 33987,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 100,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza408.gif",
+ "stat": "ac=373;act=1;artisan_worthless;binds;blok=100;ds=60;lvl=100;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 45051,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 45051,
+   "cur": "zl"
+  }
+ ]
+}

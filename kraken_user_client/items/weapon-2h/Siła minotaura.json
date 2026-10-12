@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Siła minotaura",
+ "tplId": 32984,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 60,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz575.gif",
+ "stat": "artisan_worthless;binds;dmg=916,1119;energybon=14;lvl=60;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

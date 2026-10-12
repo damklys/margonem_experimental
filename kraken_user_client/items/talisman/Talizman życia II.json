@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Talizman życia II",
+ "tplId": 1213,
+ "cl": 22,
+ "category": "talisman",
+ "lvl": 65,
+ "reqp": "bpw",
+ "rarity": "common",
+ "icon": "tal/talizman02.gif",
+ "stat": "afterheal=25,1000;lvl=65;permbound;rarity=common;reqp=bpw",
+ "sellers": [
+  {
+   "map": "Mythar",
+   "npc": "Anguss",
+   "price": 123250,
+   "cur": "zl"
+  }
+ ]
+}

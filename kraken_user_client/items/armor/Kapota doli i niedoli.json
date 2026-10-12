@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kapota doli i niedoli",
+ "tplId": 56894,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 16,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "kaf/kaftan07.gif",
+ "stat": "ac=42;act=8;da=12;evade=5;lvl=16;permbound;rarity=common;reqp=b;resfire=2",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odurzająca woń hortensji",
+ "tplId": 33650,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 72,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik786.gif",
+ "stat": "artisan_worthless;binds;critmval=12;di=44;heal=124;lvl=72;manabon=23;rarity=common;reqp=mpt;sa=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 23747,
+   "cur": "zl"
+  }
+ ]
+}

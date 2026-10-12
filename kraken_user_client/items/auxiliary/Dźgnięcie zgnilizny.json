@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dźgnięcie zgnilizny",
+ "tplId": 52680,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 155,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet317.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=1206,1475;lvl=155;poison=99,237;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

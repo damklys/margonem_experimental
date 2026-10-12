@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Reba",
+ "map": "Mirvenis-Adur",
+ "x": 93,
+ "y": 28,
+ "id": 25691,
+ "roles": [
+  "shop"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

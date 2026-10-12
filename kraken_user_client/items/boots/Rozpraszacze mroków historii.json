@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rozpraszacze mroków historii",
+ "tplId": 52160,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 280,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty1013.gif",
+ "stat": "ac=716;act=1;artisan_worthless;binds;lvl=280;rarity=common;reqp=pw;resfire=3;sa=78",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

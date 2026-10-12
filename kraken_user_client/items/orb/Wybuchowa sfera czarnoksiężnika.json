@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wybuchowa sfera czarnoksiężnika",
+ "tplId": 52695,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 200,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb286.gif",
+ "stat": "artisan_worthless;binds;di=115;fire=1599;lvl=200;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

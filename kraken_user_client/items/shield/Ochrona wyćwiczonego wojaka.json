@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona wyćwiczonego wojaka",
+ "tplId": 52637,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 240,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza576.gif",
+ "stat": "ac=1439;act=1;artisan_worthless;binds;blok=240;lvl=240;pierceb=50;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chwyt wprawionego poławiacza",
+ "tplId": 52168,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 140,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "rek/rekawice1155.gif",
+ "stat": "ac=176;act=8;artisan_worthless;binds;critval=6;lvl=140;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

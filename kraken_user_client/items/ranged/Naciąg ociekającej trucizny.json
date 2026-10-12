@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Naciąg ociekającej trucizny",
+ "tplId": 52585,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 170,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk733.gif",
+ "stat": "artisan_worthless;binds;dmg=2130,2604;lowevade=17;lvl=170;poison=76,910;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mistrzowski kołczan łucznika",
+ "tplId": 51966,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 70,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/thuz-kolczan6.gif",
+ "stat": "artisan_worthless;binds;crit=1;light=86,129;lvl=70;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 33864,
+   "cur": "zl"
+  }
+ ]
+}

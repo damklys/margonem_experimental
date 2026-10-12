@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Udany projekt wynalazcy",
+ "tplId": 52125,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 185,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm1000.gif",
+ "stat": "ac=400;act=1;artisan_worthless;binds;crit=1;lvl=185;rarity=common;reqp=pw;reslight=3",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mytharskie cholewy",
+ "tplId": 33872,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 95,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty777.gif",
+ "stat": "ac=115;artisan_worthless;binds;da=32;lvl=95;rarity=common",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

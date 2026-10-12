@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przesył energetyczny",
+ "tplId": 52781,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 240,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk5.gif",
+ "stat": "acdmg=37;artisan_worthless;binds;light=543,815;lvl=240;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

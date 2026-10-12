@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rogi sztygara",
+ "tplId": 52124,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 170,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm996.gif",
+ "stat": "absorb=565;absorbm=283;ac=252;act=4;artisan_worthless;binds;lvl=170;manabon=48;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

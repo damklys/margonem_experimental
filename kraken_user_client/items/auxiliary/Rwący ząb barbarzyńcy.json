@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rwący ząb barbarzyńcy",
+ "tplId": 52670,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 185,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet325.gif",
+ "stat": "artisan_worthless;binds;dmg=1592,1945;evade=19;lvl=185;rarity=common;reqp=b;wound=25,342",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

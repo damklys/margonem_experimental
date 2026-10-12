@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wyrzutnia spalonego plażowicza",
+ "tplId": 52529,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 240,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk674.gif",
+ "stat": "artisan_worthless;binds;dmg=2853,3487;fire=3215;lvl=240;pierce=20;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

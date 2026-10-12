@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Opancerzenie czempiona",
+ "tplId": 52376,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 300,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1150.gif",
+ "stat": "ac=2786;act=1;artisan_worthless;binds;hpbon=3;lvl=300;rarity=common;reqp=w;sa=83",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

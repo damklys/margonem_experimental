@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ametystowa chwała asasyna",
+ "tplId": 52459,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 280,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz907.gif",
+ "stat": "artisan_worthless;binds;dmg=4374,5345;lvl=280;rarity=common;reqp=bw;sa=78;wound=25,1610",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

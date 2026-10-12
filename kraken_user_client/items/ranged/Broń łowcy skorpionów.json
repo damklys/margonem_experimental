@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Broń łowcy skorpionów",
+ "tplId": 52582,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 125,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk729.gif",
+ "stat": "acdmg=14;artisan_worthless;binds;dmg=1331,1627;lvl=125;poison=56,569;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

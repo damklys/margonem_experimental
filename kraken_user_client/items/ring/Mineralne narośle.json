@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mineralne narośle",
+ "tplId": 52226,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 152,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien1069.gif",
+ "stat": "artisan_worthless;binds;crit=1;critval=6;energybon=20;lvl=152;rarity=common;reqp=bh;sa=84",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 74879,
+   "cur": "zl"
+  }
+ ]
+}

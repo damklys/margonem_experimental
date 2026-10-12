@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Podręczna mytharska maczeta",
+ "tplId": 33889,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 80,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz594.gif",
+ "stat": "artisan_worthless;binds;dmg=817,999;evade=8;lvl=80;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

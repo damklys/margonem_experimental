@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Złota wydma",
+ "tplId": 52690,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb295.gif",
+ "stat": "artisan_worthless;binds;da=39;fire=772;lvl=125;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

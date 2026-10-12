@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mglista buława wędrowca",
+ "tplId": 56868,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 10,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "drz/kh-cep1.gif",
+ "stat": "dmg=81,99;frost=10,45;lvl=10;permbound;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

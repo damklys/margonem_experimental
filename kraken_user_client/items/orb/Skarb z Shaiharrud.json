@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skarb z Shaiharrud",
+ "tplId": 52700,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 300,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb290.gif",
+ "stat": "artisan_worthless;binds;fire=3125;heal=764;lvl=300;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

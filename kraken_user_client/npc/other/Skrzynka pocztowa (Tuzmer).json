@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynka pocztowa",
+ "map": "Tuzmer",
+ "x": 46,
+ "y": 31,
+ "id": 37329,
+ "roles": [
+  "mail"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

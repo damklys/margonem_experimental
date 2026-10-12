@@ -1,0 +1,240 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynie",
+ "map": "Zatopiony Szczyt",
+ "x": 41,
+ "y": 15,
+ "id": 343961,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Wietrzny rozplatacz warkoczy",
+     "cl": 1,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "mie/kh-miecz4.gif",
+     "lvl": 10,
+     "reqp": "b"
+    },
+    {
+     "name": "Tańczące ostrze",
+     "cl": 1,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "mie/kh-miecz2.gif",
+     "lvl": 13,
+     "reqp": "b"
+    },
+    {
+     "name": "Pałasz Szagriatów",
+     "cl": 1,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "mie/kh-miecz1.gif",
+     "lvl": 16,
+     "reqp": "b"
+    },
+    {
+     "name": "Mysi pocałunek",
+     "cl": 5,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "mie/kh-sztylet1.gif",
+     "lvl": 10,
+     "reqp": "b"
+    },
+    {
+     "name": "Ukąszenie komara",
+     "cl": 5,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "mie/kh-sztylet3.gif",
+     "lvl": 13,
+     "reqp": "b"
+    },
+    {
+     "name": "Szabelka spod szyldu Amore",
+     "cl": 5,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "mie/kh-miecz3.gif",
+     "lvl": 16,
+     "reqp": "b"
+    },
+    {
+     "name": "Obrońca kolorowych wozów",
+     "cl": 3,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "top/kh-topor4.gif",
+     "lvl": 10,
+     "reqp": "w"
+    },
+    {
+     "name": "Stalowy diablik",
+     "cl": 3,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "top/kh-topor5.gif",
+     "lvl": 13,
+     "reqp": "w"
+    },
+    {
+     "name": "Topór rodziny Szabadabada",
+     "cl": 3,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "top/kh-topor2.gif",
+     "lvl": 16,
+     "reqp": "w"
+    },
+    {
+     "name": "Osłona kłamliwego wróżbiarza",
+     "cl": 14,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "tar/start_gob07.gif",
+     "lvl": 10,
+     "reqp": "pw"
+    },
+    {
+     "name": "Ćwiekowane cacko",
+     "cl": 14,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "tar/tarcza09.gif",
+     "lvl": 13,
+     "reqp": "pw"
+    },
+    {
+     "name": "Dawczyni radości",
+     "cl": 14,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "tar/tarcza09.gif",
+     "lvl": 16,
+     "reqp": "pw"
+    },
+    {
+     "name": "Mglista buława wędrowca",
+     "cl": 1,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "drz/kh-cep1.gif",
+     "lvl": 10,
+     "reqp": "p"
+    },
+    {
+     "name": "Ogłuszacz drobiu",
+     "cl": 1,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "drz/kh-cep2.gif",
+     "lvl": 13,
+     "reqp": "p"
+    },
+    {
+     "name": "Hajda",
+     "cl": 1,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "drz/kh-cep3.gif",
+     "lvl": 16,
+     "reqp": "p"
+    },
+    {
+     "name": "Kubrak nadzorcy taboru",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "kaf/zbroja18.gif",
+     "lvl": 10,
+     "reqp": "b"
+    },
+    {
+     "name": "Prowizoryczne opancerzenie",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "kaf/kaftan06.gif",
+     "lvl": 13,
+     "reqp": "b"
+    },
+    {
+     "name": "Kapota doli i niedoli",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "kaf/kaftan07.gif",
+     "lvl": 16,
+     "reqp": "b"
+    },
+    {
+     "name": "Pancerz w sam raz",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "zbr/zbroja18.gif",
+     "lvl": 10,
+     "reqp": "w"
+    },
+    {
+     "name": "Stalowa piżama",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "zbr/zbroja25.gif",
+     "lvl": 13,
+     "reqp": "w"
+    },
+    {
+     "name": "Blachy milczącego świata",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "zbr/zbroja27.gif",
+     "lvl": 16,
+     "reqp": "w"
+    },
+    {
+     "name": "Kolczuga z czarnego lasu",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "kaf/zbroja07.gif",
+     "lvl": 10,
+     "reqp": "p"
+    },
+    {
+     "name": "Tunika ze skóry dzika",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "zbr/zbroja24.gif",
+     "lvl": 13,
+     "reqp": "p"
+    },
+    {
+     "name": "Ochrona leśnych pików",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "zbr/zbroja20a.gif",
+     "lvl": 16,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

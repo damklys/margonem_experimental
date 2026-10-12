@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przyłbica przyszłego bohatera",
+ "tplId": 56912,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 16,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm242.gif",
+ "stat": "ac=14;hp=83;lvl=16;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

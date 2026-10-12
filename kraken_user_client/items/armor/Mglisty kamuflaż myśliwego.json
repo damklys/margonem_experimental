@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mglisty kamuflaż myśliwego",
+ "tplId": 52417,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 170,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1194.gif",
+ "stat": "ac=816;act=16;artisan_worthless;binds;lowcrit=2;lvl=170;rarity=common;reqp=h;reslight=4;sa=85",
+ "sellers": [
+  {
+   "map": "Dom Gindera",
+   "npc": "Ginder",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

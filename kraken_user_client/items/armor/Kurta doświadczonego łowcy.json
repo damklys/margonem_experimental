@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kurta doświadczonego łowcy",
+ "tplId": 34016,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja747.gif",
+ "stat": "ac=342;act=16;artisan_worthless;binds;evade=10;lvl=95;rarity=common;reqp=h;reslight=4;sa=48",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

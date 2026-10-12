@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ciężkie narzędzie egzekutora",
+ "tplId": 52477,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 170,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz919.gif",
+ "stat": "artisan_worthless;binds;dmg=4097,5007;lowevade=17;lvl=170;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

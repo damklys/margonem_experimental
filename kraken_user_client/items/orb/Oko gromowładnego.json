@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Oko gromowładnego",
+ "tplId": 52715,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 140,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb313.gif",
+ "stat": "artisan_worthless;binds;light=739,1108;lvl=140;manabon=40;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

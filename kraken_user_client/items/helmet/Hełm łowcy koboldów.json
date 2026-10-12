@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Hełm łowcy koboldów",
+ "tplId": 33611,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 55,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm708.gif",
+ "stat": "absorb=113;absorbm=56;ac=50;act=4;artisan_worthless;binds;da=22;lvl=55;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

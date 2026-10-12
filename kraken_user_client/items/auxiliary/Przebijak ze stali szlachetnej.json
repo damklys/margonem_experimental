@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przebijak ze stali szlachetnej",
+ "tplId": 52676,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 300,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet301.gif",
+ "stat": "acdmg=53;artisan_worthless;binds;dmg=3523,4306;lvl=300;rarity=common;reqp=b;wound=25,757",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowa odznaka z katakumb",
+ "tplId": 52243,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 277,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien1073.gif",
+ "stat": "artisan_worthless;binds;energybon=28;lowcrit=2;lowevade=28;lvl=277;rarity=common;reqp=bhw;sa=147",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 178569,
+   "cur": "zl"
+  }
+ ]
+}

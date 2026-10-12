@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groty przeszywające ciało",
+ "tplId": 52731,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 200,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla3.gif",
+ "stat": "acdmg=53;artisan_worthless;binds;evade=20;lvl=200;pdmg=320;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

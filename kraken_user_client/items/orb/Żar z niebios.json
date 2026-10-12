@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żar z niebios",
+ "tplId": 32863,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 50,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb197.gif",
+ "stat": "artisan_worthless;binds;crit=1;fire=218;lvl=50;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Osłony krwiożerczej piranii",
+ "tplId": 52169,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 140,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "rek/rekawice1143.gif",
+ "stat": "absorb=318;absorbm=159;ac=142;act=4;artisan_worthless;binds;critmval=6;lvl=140;rarity=common;reqp=mpt;reslight=8",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

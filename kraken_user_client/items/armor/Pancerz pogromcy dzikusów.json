@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz pogromcy dzikusów",
+ "tplId": 52324,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 260,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1139.gif",
+ "stat": "ac=1825;act=8;artisan_worthless;binds;crit=1;evade=87;lvl=260;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

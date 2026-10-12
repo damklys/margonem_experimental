@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skarb mrocznych driad",
+ "tplId": 52639,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 280,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza578.gif",
+ "stat": "ac=1860;act=1;artisan_worthless;binds;blok=280;hp=1948;lvl=280;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

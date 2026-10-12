@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynka pocztowa",
+ "map": "Thuzal",
+ "x": 70,
+ "y": 42,
+ "id": 58930,
+ "roles": [
+  "mail"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

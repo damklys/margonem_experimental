@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Świst surowej zimy",
+ "tplId": 52544,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 300,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk706.gif",
+ "stat": "artisan_worthless;binds;dmg=4145,5066;frost=220,4211;lvl=300;rarity=common;reqp=t;slow=94",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

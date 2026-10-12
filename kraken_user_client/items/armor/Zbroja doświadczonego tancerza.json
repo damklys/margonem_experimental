@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zbroja doświadczonego tancerza",
+ "tplId": 33995,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja707.gif",
+ "stat": "ac=385;act=8;artisan_worthless;binds;evade=41;lvl=95;rarity=common;reqp=b;resfrost=2",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

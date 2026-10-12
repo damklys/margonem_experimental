@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skarabeuszowe osłony",
+ "tplId": 52165,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 110,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "rek/rekawice1149.gif",
+ "stat": "ac=112;act=12;artisan_worthless;binds;evade=11;lvl=110;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

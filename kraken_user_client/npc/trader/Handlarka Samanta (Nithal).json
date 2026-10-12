@@ -1,0 +1,276 @@
+{
+ "kraken": "npc",
+ "name": "Handlarka Samanta",
+ "map": "Nithal",
+ "x": 36,
+ "y": 42,
+ "id": 387101,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Noga piekielnego ognia",
+     "cl": 6,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "roz/rozdzka374.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Spalona wiedźma",
+     "cl": 6,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "roz/rozdzka370.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Żar wybitnego maga",
+     "cl": 6,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "roz/rozdzka371.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Berło mistyka",
+     "cl": 6,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "roz/rozdzka372.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Magmowe oko czarnoksiężnika",
+     "cl": 7,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "orb/orb289.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula pieszczot czarownicy",
+     "cl": 7,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "orb/orb287.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Sfera zakazanej magii",
+     "cl": 7,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "orb/orb291.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Skarb z Shaiharrud",
+     "cl": 7,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "orb/orb290.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Wymrożony szkieletor",
+     "cl": 6,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "roz/rozdzka388.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Kostur panowania nad chłodem",
+     "cl": 6,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "roz/rozdzka396.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula wielkich ambicji",
+     "cl": 6,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "roz/rozdzka395.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Czaszka ezoteryka",
+     "cl": 6,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "roz/rozdzka394.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Chłodne spojrzenie na sprawę",
+     "cl": 7,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "orb/orb300.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Dziwactwo wiedźmy",
+     "cl": 7,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "orb/orb302.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Kula sługi Tanrotha",
+     "cl": 7,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "orb/orb298.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Zamrożone odbicie",
+     "cl": 7,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "orb/orb299.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształowe narzędzie meteorologa",
+     "cl": 6,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "roz/rozdzka387.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Ludzki piorunochron",
+     "cl": 6,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "roz/rozdzka391.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Blask dobrego słowa",
+     "cl": 6,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "roz/rozdzka392.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Impuls o wysokiej amplitudzie",
+     "cl": 6,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "roz/rozdzka393.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Burzliwa gałka oczna",
+     "cl": 7,
+     "price": 240456,
+     "cur": "zl",
+     "icon": "orb/orb318.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Magnetyczna sfera Sybilli",
+     "cl": 7,
+     "price": 257319,
+     "cur": "zl",
+     "icon": "orb/orb320.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Wyładowanie smoczego strażnika",
+     "cl": 7,
+     "price": 269402,
+     "cur": "zl",
+     "icon": "orb/orb316.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Akumulator magicznego potencjału",
+     "cl": 7,
+     "price": 277750,
+     "cur": "zl",
+     "icon": "orb/orb317.gif",
+     "lvl": 300,
+     "reqp": "m"
+    },
+    {
+     "name": "Szata pogromcy dendrokreatur",
+     "cl": 8,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "zbr/zbroja1172.gif",
+     "lvl": 240,
+     "reqp": "m"
+    },
+    {
+     "name": "Łachmany z Potępionego Zamczyska",
+     "cl": 8,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "zbr/zbroja1175.gif",
+     "lvl": 260,
+     "reqp": "m"
+    },
+    {
+     "name": "Kubrak wybitnych osiągnięć",
+     "cl": 8,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "zbr/zbroja1173.gif",
+     "lvl": 280,
+     "reqp": "m"
+    },
+    {
+     "name": "Habit z kamieniem szlachetnym",
+     "cl": 8,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "zbr/zbroja1174.gif",
+     "lvl": 300,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

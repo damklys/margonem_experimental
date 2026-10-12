@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wielka duma śmiałka",
+ "tplId": 52185,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 280,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice1133.gif",
+ "stat": "ac=517;artisan_worthless;binds;evade=28;lvl=280;rarity=common",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cholewy grotołaza",
+ "tplId": 52163,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 300,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty1009.gif",
+ "stat": "ac=697;artisan_worthless;binds;da=83;lvl=300;rarity=common",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Podręczna trująca szabelka",
+ "tplId": 33982,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 80,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet220.gif",
+ "stat": "artisan_worthless;binds;dmg=459,561;evade=8;lvl=80;poison=51,90;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 43292,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

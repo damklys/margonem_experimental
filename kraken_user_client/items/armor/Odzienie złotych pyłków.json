@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odzienie złotych pyłków",
+ "tplId": 33768,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 55,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja741.gif",
+ "stat": "absorb=407;absorbm=204;ac=142;act=12;artisan_worthless;binds;da=22;lvl=55;manabon=9;rarity=common;reqp=t;reslight=8;sa=14",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

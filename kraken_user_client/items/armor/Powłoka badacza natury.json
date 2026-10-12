@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Powłoka badacza natury",
+ "tplId": 52420,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 220,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1200.gif",
+ "stat": "ac=1232;act=16;artisan_worthless;binds;evade=22;lvl=220;rarity=common;reqp=h;resfrost=4;sa=110",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

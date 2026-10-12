@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Postrach czarownic",
+ "tplId": 52590,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 260,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk721.gif",
+ "stat": "artisan_worthless;binds;dmg=4235,5177;lvl=260;poison=116,1810;rarity=common;reqp=h;slow=82",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

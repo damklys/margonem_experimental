@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Habit z kamieniem szlachetnym",
+ "tplId": 52400,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 300,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1174.gif",
+ "stat": "absorb=7740;absorbm=3870;ac=1290;artisan_worthless;binds;hp=2538;lvl=300;manabon=100;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

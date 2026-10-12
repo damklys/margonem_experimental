@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wykrawacz mięsnych kąsków",
+ "tplId": 52657,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 170,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet306.gif",
+ "stat": "artisan_worthless;binds;dmg=1767,2160;lvl=170;rarity=common;reqp=b;slow=57",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Talizman mocy wody",
+ "tplId": 10361,
+ "cl": 22,
+ "category": "talisman",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "tal/talizman12.gif",
+ "stat": "lvl=10;permbound;rarity=common;respred=12",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

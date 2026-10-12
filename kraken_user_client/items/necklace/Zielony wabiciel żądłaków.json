@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zielony wabiciel żądłaków",
+ "tplId": 33644,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 52,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik780.gif",
+ "stat": "artisan_worthless;binds;crit=1;da=21;energybon=27;hp=301;lvl=52;rarity=common;reqp=bhw;sa=21",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 13776,
+   "cur": "zl"
+  }
+ ]
+}

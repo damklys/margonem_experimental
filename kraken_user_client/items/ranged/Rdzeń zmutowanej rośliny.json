@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rdzeń zmutowanej rośliny",
+ "tplId": 52527,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 200,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk673.gif",
+ "stat": "artisan_worthless;binds;dmg=2121,2592;dz=115;fire=2390;lvl=200;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

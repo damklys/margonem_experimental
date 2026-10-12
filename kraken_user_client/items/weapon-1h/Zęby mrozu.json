@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zęby mrozu",
+ "tplId": 33896,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 90,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz641.gif",
+ "stat": "artisan_worthless;binds;dmg=818,1000;frost=86,454;hp=546;lvl=90;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wielki honor wojownika",
+ "tplId": 52471,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 280,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz969.gif",
+ "stat": "artisan_worthless;binds;dmg=6587,8050;hp=2301;lvl=280;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

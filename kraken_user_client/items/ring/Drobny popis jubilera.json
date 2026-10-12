@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Drobny popis jubilera",
+ "tplId": 52227,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 152,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "pie/pierscien1067.gif",
+ "stat": "artisan_worthless;binds;crit=1;critmval=6;heal=301;lvl=152;manabon=43;rarity=common;reqp=mt;sa=46",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 74879,
+   "cur": "zl"
+  }
+ ]
+}

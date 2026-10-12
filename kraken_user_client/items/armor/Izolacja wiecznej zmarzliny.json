@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Izolacja wiecznej zmarzliny",
+ "tplId": 52424,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 300,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja1198.gif",
+ "stat": "ac=2064;act=16;artisan_worthless;binds;lvl=300;rarity=common;reqp=h;resfrost=4;sa=233",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zimowy kubrak Valmira",
+ "tplId": 52406,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1189.gif",
+ "stat": "absorb=2331;absorbm=1166;ac=816;act=12;artisan_worthless;binds;da=54;lvl=185;manabon=31;rarity=common;reqp=t;resfrost=8;sa=46",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

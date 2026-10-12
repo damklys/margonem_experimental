@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zdławiony ogień kniei",
+ "tplId": 52599,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 200,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka373.gif",
+ "stat": "artisan_worthless;binds;di=115;fire=3366;lvl=200;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 190276,
+   "cur": "zl"
+  }
+ ]
+}

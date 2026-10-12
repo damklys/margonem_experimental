@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kwiecie wiedźmy",
+ "tplId": 52240,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 257,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "pie/pierscien1051.gif",
+ "stat": "artisan_worthless;binds;critval=6;hp=4058;lvl=257;rarity=common;reqp=pw;sa=137",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 170079,
+   "cur": "zl"
+  }
+ ]
+}

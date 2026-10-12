@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zatrute strzały na węże",
+ "tplId": 51971,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 90,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/strzalatrut.gif",
+ "stat": "acdmg=16;artisan_worthless;binds;lowevade=9;lvl=90;poison=40,86;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

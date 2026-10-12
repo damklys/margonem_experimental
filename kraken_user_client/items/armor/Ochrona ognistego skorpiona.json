@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona ognistego skorpiona",
+ "tplId": 52328,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1155.gif",
+ "stat": "ac=689;act=1;artisan_worthless;binds;crit=1;hpbon=1.3;lvl=125;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

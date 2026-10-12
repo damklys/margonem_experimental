@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Skrzynka pocztowa",
+ "map": "Mirvenis-Adur",
+ "x": 74,
+ "y": 57,
+ "id": 236611,
+ "roles": [
+  "mail"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

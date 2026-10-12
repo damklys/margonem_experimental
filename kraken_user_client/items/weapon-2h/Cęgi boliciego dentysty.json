@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cęgi boliciego dentysty",
+ "tplId": 52481,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 240,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz966.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=7133,8718;lvl=240;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

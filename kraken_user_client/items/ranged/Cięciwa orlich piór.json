@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięciwa orlich piór",
+ "tplId": 34002,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 90,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk494.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=1227,1500;lvl=90;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

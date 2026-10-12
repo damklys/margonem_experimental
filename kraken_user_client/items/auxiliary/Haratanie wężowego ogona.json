@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Haratanie wężowego ogona",
+ "tplId": 33978,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 100,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet201.gif",
+ "stat": "artisan_worthless;binds;dmg=797,974;ds=60;lvl=100;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

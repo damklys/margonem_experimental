@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięciwa dobrego imienia",
+ "tplId": 52531,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 280,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk677.gif",
+ "stat": "artisan_worthless;binds;dmg=3689,4508;fire=4157;lvl=280;rarity=common;reqp=t;slow=88",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

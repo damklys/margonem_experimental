@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Elfickie kamasze",
+ "tplId": 52151,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 185,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/buty1011.gif",
+ "stat": "ac=315;artisan_worthless;binds;lvl=185;rarity=common;slow=61",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

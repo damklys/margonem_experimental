@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obuwie okrętowego obserwatora",
+ "tplId": 52144,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 125,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty1029.gif",
+ "stat": "absorb=478;absorbm=239;ac=115;act=6;artisan_worthless;binds;lvl=125;manabon=36;rarity=common;reqp=mt;resfire=9",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

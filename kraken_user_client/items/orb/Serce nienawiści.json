@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Serce nienawiści",
+ "tplId": 34364,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 100,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb192.gif",
+ "stat": "artisan_worthless;binds;fire=557;lvl=100;manabon=30;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

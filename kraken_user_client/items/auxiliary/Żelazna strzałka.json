@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żelazna strzałka",
+ "tplId": 33977,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 90,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet200.gif",
+ "stat": "artisan_worthless;binds;dmg=686,839;evade=9;lvl=90;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

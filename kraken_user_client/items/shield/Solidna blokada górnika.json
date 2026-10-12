@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Solidna blokada górnika",
+ "tplId": 52632,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 155,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza565.gif",
+ "stat": "ac=716;act=1;artisan_worthless;binds;blok=155;lowevade=16;lvl=155;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

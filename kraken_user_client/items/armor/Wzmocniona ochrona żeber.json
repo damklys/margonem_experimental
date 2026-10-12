@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wzmocniona ochrona żeber",
+ "tplId": 33756,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 65,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja700.gif",
+ "stat": "ac=274;act=1;artisan_worthless;binds;hpbon=0.7;lvl=65;rarity=common;reqp=w;sa=24",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

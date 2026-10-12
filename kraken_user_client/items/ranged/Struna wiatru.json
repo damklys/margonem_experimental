@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Struna wiatru",
+ "tplId": 33766,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 50,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk469.gif",
+ "stat": "artisan_worthless;binds;di=32;dmg=289,353;frost=37,294;lvl=50;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

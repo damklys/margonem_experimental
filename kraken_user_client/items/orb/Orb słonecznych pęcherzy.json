@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Orb słonecznych pęcherzy",
+ "tplId": 52689,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 110,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb297.gif",
+ "stat": "artisan_worthless;binds;crit=1;fire=640;lvl=110;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kula pieszczot czarownicy",
+ "tplId": 52698,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 260,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb287.gif",
+ "stat": "artisan_worthless;binds;crit=1;fire=2456;lvl=260;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

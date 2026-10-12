@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mytharski zębacz",
+ "tplId": 32974,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 90,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz587.gif",
+ "stat": "artisan_worthless;binds;dmg=754,922;hp=546;lvl=90;rarity=common;reqp=bw;wound=25,278",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

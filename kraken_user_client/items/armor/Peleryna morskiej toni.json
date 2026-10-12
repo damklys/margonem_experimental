@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Peleryna morskiej toni",
+ "tplId": 52402,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja1191.gif",
+ "stat": "absorb=1275;absorbm=638;ac=446;act=12;artisan_worthless;binds;evade=13;lvl=125;manabon=21;rarity=common;reqp=t;resfire=8;sa=31",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

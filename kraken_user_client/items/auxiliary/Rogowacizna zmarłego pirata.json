@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rogowacizna zmarłego pirata",
+ "tplId": 52654,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 125,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet309.gif",
+ "stat": "acdmg=14;artisan_worthless;binds;dmg=1105,1350;lvl=125;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

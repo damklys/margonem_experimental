@@ -1,0 +1,14 @@
+{
+ "kraken": "npc",
+ "name": "Tęczowa aukcjonerka",
+ "map": "Dom Aukcyjny",
+ "x": 12,
+ "y": 6,
+ "id": 17712,
+ "roles": [
+  "auction"
+ ],
+ "shops": [],
+ "role": "other",
+ "buysAll": false
+}

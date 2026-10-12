@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łachmany z Potępionego Zamczyska",
+ "tplId": 52398,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 260,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja1175.gif",
+ "stat": "absorb=6084;absorbm=3042;ac=1014;artisan_worthless;binds;lvl=260;manabon=87;rarity=common;reqp=m;reslight=10;sa=73",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

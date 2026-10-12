@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pestka egzotycznego owocu",
+ "tplId": 52220,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 122,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "pie/pierscien1053.gif",
+ "stat": "artisan_worthless;binds;ds=72;energybon=36;hp=779;lvl=122;rarity=common;reqp=pw;sa=39",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 46115,
+   "cur": "zl"
+  }
+ ]
+}

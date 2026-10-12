@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Blokada herosa",
+ "tplId": 33754,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 70,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza417.gif",
+ "stat": "ac=210;artisan_worthless;binds;blok=84;lvl=70;manabon=23;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 22577,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szpila antycznej toksyny",
+ "tplId": 52437,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 110,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz892.gif",
+ "stat": "artisan_worthless;binds;dmg=1006,1229;hp=689;lvl=110;poison=98,337;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

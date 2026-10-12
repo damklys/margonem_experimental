@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Przedłużenie oślepiającego światła",
+ "tplId": 52778,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 185,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/blysk2.gif",
+ "stat": "artisan_worthless;binds;hp=1312;light=357,535;lvl=185;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Puk",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

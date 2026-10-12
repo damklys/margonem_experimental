@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ranienie smoczego ogona",
+ "tplId": 52735,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 280,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/zwykla4.gif",
+ "stat": "acdmg=92;artisan_worthless;binds;dz=160;lvl=280;pdmg=556;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 269402,
+   "cur": "zl"
+  }
+ ]
+}

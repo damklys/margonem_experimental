@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kamuflaż sprytnego łobuza",
+ "tplId": 56911,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 13,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm17.gif",
+ "stat": "ac=11;da=11;lvl=13;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

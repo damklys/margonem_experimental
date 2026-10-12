@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kryształowe kwiecie Valmira",
+ "tplId": 52233,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 197,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien1065.gif",
+ "stat": "artisan_worthless;binds;crit=2;hp=1425;lowcrit=2;lvl=197;rarity=common;reqp=bhw;sa=57",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 123804,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kask pogromcy gnolli",
+ "tplId": 33612,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 65,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm712.gif",
+ "stat": "ac=87;act=1;artisan_worthless;binds;ds=40;lvl=65;rarity=common;reqp=pw;reslight=3",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

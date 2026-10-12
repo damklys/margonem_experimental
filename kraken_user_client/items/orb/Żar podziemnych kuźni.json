@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Żar podziemnych kuźni",
+ "tplId": 52696,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 220,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb288.gif",
+ "stat": "artisan_worthless;binds;fire=1865;lvl=220;manabon=60;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

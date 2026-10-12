@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Miodowa cięciwa",
+ "tplId": 33105,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 50,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk481.gif",
+ "stat": "artisan_worthless;binds;dmg=289,353;energybon=13;light=260,390;lvl=50;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

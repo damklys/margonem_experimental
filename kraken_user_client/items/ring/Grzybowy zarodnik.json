@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Grzybowy zarodnik",
+ "tplId": 52238,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 237,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "pie/pierscien1058.gif",
+ "stat": "artisan_worthless;binds;energybon=52;lowevade=24;lvl=237;rarity=common;reqp=bhw;sa=127",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 158307,
+   "cur": "zl"
+  }
+ ]
+}

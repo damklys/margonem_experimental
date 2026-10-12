@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ostre strzały na węże",
+ "tplId": 51968,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 90,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/strzalazwyk1.gif",
+ "stat": "acdmg=16;artisan_worthless;binds;energybon=16;lvl=90;pdmg=96;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Szara piechota",
+ "tplId": 33622,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 55,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "but/buty788.gif",
+ "stat": "ac=63;act=1;artisan_worthless;binds;lvl=55;rarity=common;reqp=pw;resfrost=3;sa=22",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

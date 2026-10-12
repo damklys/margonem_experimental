@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pastorał pustynnego dżina",
+ "tplId": 52606,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 125,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka400.gif",
+ "stat": "artisan_worthless;binds;frost=125,1382;lvl=125;manabon=36;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Czarodziejka Pamela",
+   "price": 72990,
+   "cur": "zl"
+  }
+ ]
+}

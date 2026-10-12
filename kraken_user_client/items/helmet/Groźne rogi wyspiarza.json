@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groźne rogi wyspiarza",
+ "tplId": 52119,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 140,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "hel/helm1002.gif",
+ "stat": "ac=259;act=1;artisan_worthless;binds;ds=82;lvl=140;rarity=common;reqp=pw;resfire=3",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

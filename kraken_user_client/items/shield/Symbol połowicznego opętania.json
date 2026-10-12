@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Symbol połowicznego opętania",
+ "tplId": 52648,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 220,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza569.gif",
+ "stat": "ac=1155;artisan_worthless;binds;blok=264;lvl=220;pierceb=50;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

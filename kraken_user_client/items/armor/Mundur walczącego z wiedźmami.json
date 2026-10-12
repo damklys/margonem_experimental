@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mundur walczącego z wiedźmami",
+ "tplId": 52330,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 155,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1154.gif",
+ "stat": "ac=954;act=1;artisan_worthless;binds;energybon=20;hpbon=1.6;lvl=155;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

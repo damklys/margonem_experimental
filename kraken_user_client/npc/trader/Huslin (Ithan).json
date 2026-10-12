@@ -1,0 +1,393 @@
+{
+ "kraken": "npc",
+ "name": "Huslin",
+ "map": "Ithan",
+ "x": 12,
+ "y": 96,
+ "id": 5552,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Dziurawiec",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk503.gif",
+     "lvl": 50,
+     "reqp": "h"
+    },
+    {
+     "name": "Spektrum dotkliwego ranienia",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk504.gif",
+     "lvl": 60,
+     "reqp": "h"
+    },
+    {
+     "name": "Klątwa głębokich ran",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk505.gif",
+     "lvl": 70,
+     "reqp": "h"
+    },
+    {
+     "name": "Nić wzmocnionej toksyny",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk515.gif",
+     "lvl": 50,
+     "reqp": "h"
+    },
+    {
+     "name": "Niezawodne narzędzie oprawcy",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk516.gif",
+     "lvl": 60,
+     "reqp": "h"
+    },
+    {
+     "name": "Łuk żrących błot",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk517.gif",
+     "lvl": 70,
+     "reqp": "h"
+    },
+    {
+     "name": "Kompletny kołczan strzelca",
+     "cl": 29,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan4.gif",
+     "lvl": 50,
+     "reqp": "h"
+    },
+    {
+     "name": "Doskonały kołczan strzelca",
+     "cl": 29,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan4.gif",
+     "lvl": 60,
+     "reqp": "h"
+    },
+    {
+     "name": "Mistrzowski kołczan strzelca",
+     "cl": 29,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan4.gif",
+     "lvl": 70,
+     "reqp": "h"
+    },
+    {
+     "name": "Broń doświadczonego łowcy",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk486.gif",
+     "lvl": 50,
+     "reqp": "h"
+    },
+    {
+     "name": "Przekleństwo leśnej zwierzyny",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk488.gif",
+     "lvl": 60,
+     "reqp": "h"
+    },
+    {
+     "name": "Szybkostrzelik myśliwego",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk490.gif",
+     "lvl": 70,
+     "reqp": "h"
+    },
+    {
+     "name": "Kompletny kołczan łowcy",
+     "cl": 29,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan3.gif",
+     "lvl": 50,
+     "reqp": "h"
+    },
+    {
+     "name": "Doskonały kołczan łowcy",
+     "cl": 29,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan3.gif",
+     "lvl": 60,
+     "reqp": "h"
+    },
+    {
+     "name": "Mistrzowski kołczan łowcy",
+     "cl": 29,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan3.gif",
+     "lvl": 70,
+     "reqp": "h"
+    },
+    {
+     "name": "Skwierczący naciąg",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk455.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Ogniste szczypce",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk456.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Soczysty łuk anemonów",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk457.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Kompletny kołczan tropiciela",
+     "cl": 29,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan1.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Doskonały kołczan tropiciela",
+     "cl": 29,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan1.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Mistrzowski kołczan tropiciela",
+     "cl": 29,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan1.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Struna wiatru",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk469.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Melodia kryształków lodu",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk467.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Zimowy szpon",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk465.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Kompletny kołczan myśliwego",
+     "cl": 29,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan2.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Doskonały kołczan myśliwego",
+     "cl": 29,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan2.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Mistrzowski kołczan myśliwego",
+     "cl": 29,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan2.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Miodowa cięciwa",
+     "cl": 4,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "luk/luk481.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Pozłacane łęczysko",
+     "cl": 4,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "luk/luk479.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Trajektoria lotu gwiazd",
+     "cl": 4,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "luk/luk477.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Kompletny kołczan łucznika",
+     "cl": 29,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan6.gif",
+     "lvl": 50,
+     "reqp": "t"
+    },
+    {
+     "name": "Doskonały kołczan łucznika",
+     "cl": 29,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan6.gif",
+     "lvl": 60,
+     "reqp": "t"
+    },
+    {
+     "name": "Mistrzowski kołczan łucznika",
+     "cl": 29,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "arr/thuz-kolczan6.gif",
+     "lvl": 70,
+     "reqp": "t"
+    },
+    {
+     "name": "Odzienie złotych pyłków",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja741.gif",
+     "lvl": 55,
+     "reqp": "t"
+    },
+    {
+     "name": "Płaszcz tropiciela z wyżyn",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "bro/zbroja754.gif",
+     "lvl": 65,
+     "reqp": "t"
+    },
+    {
+     "name": "Opieka leśnej istoty",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja740.gif",
+     "lvl": 75,
+     "reqp": "t"
+    },
+    {
+     "name": "Skórzana kurta łowcy",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja748.gif",
+     "lvl": 55,
+     "reqp": "h"
+    },
+    {
+     "name": "Karmazynowy lekki pancerz",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "zbr/zbroja751.gif",
+     "lvl": 65,
+     "reqp": "h"
+    },
+    {
+     "name": "Warstwa czarnej szczeciny",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja746.gif",
+     "lvl": 75,
+     "reqp": "h"
+    },
+    {
+     "name": "Cięciwa",
+     "cl": 15,
+     "price": 7500,
+     "cur": "zl",
+     "icon": "neu/cieci01.gif",
+     "lvl": 0,
+     "reqp": ""
+    },
+    {
+     "name": "Jedwabna cięciwa",
+     "cl": 15,
+     "price": 12000,
+     "cur": "zl",
+     "icon": "neu/cieci02.gif",
+     "lvl": 0,
+     "reqp": ""
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czapka łowcy tygrysów",
+ "tplId": 33620,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 65,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "hel/helm716.gif",
+ "stat": "ac=71;act=12;artisan_worthless;binds;crit=1;lvl=65;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

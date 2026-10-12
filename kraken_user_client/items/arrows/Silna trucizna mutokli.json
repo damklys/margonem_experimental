@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Silna trucizna mutokli",
+ "tplId": 52745,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 240,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka5.gif",
+ "stat": "acdmg=71;artisan_worthless;binds;critval=6;lvl=240;poison=107,385;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

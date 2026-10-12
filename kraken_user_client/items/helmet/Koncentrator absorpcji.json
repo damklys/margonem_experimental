@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Koncentrator absorpcji",
+ "tplId": 52139,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 300,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm991.gif",
+ "stat": "absorb=2129;absorbm=1064;ac=511;act=6;artisan_worthless;binds;lvl=300;rarity=common;reqp=mt;resdmg=1;resfrost=9",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 185167,
+   "cur": "zl"
+  }
+ ]
+}

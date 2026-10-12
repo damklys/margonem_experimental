@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Niezawodne narzędzie oprawcy",
+ "tplId": 33025,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 60,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk516.gif",
+ "stat": "artisan_worthless;binds;dmg=476,582;lvl=60;pierce=20;poison=27,203;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

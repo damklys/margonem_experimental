@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pierś zdobywcy kazamat",
+ "tplId": 52331,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 170,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1146.gif",
+ "stat": "ac=1102;act=1;artisan_worthless;binds;critval=6;hpbon=1.7;lvl=170;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

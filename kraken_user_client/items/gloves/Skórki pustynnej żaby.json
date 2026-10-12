@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skórki pustynnej żaby",
+ "tplId": 52166,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 110,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "rek/rekawice1148.gif",
+ "stat": "absorb=330;absorbm=165;ac=79;act=6;artisan_worthless;binds;lowcrit=2;lvl=110;rarity=common;reqp=mt;resfire=9",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

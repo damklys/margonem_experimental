@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Grot oceaniczny",
+ "tplId": 52761,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 110,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/zimno1.gif",
+ "stat": "artisan_worthless;binds;frost=81,182;hp=689;lvl=110;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

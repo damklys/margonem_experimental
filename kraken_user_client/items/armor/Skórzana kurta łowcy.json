@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Skórzana kurta łowcy",
+ "tplId": 33771,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 55,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "zbr/zbroja748.gif",
+ "stat": "ac=163;act=16;artisan_worthless;binds;crit=1;lvl=55;rarity=common;reqp=h;resfrost=4;sa=28",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

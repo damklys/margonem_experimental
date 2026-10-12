@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Osłona resztek flory",
+ "tplId": 52629,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 110,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza562.gif",
+ "stat": "ac=428;act=1;artisan_worthless;binds;blok=110;hp=607;lvl=110;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

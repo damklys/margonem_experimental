@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza eksploratora dziczy",
+ "tplId": 52649,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 240,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza570.gif",
+ "stat": "ac=1332;artisan_worthless;binds;blok=288;da=68;lvl=240;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Magmowy ptak",
+ "tplId": 52494,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 260,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz897.gif",
+ "stat": "artisan_worthless;binds;dmg=4189,5120;energybon=27;fire=2586;lvl=260;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

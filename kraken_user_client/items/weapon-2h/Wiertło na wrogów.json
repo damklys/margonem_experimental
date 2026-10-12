@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wiertło na wrogów",
+ "tplId": 33888,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 100,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz571.gif",
+ "stat": "artisan_worthless;binds;dmg=1847,2258;energybon=17;lvl=100;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

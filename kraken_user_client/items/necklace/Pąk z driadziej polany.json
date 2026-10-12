@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pąk z driadziej polany",
+ "tplId": 52276,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 297,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1063.gif",
+ "stat": "artisan_worthless;binds;da=157;evade=30;hp=2502;lvl=297;rarity=common;reqp=bhw;sa=157",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 184463,
+   "cur": "zl"
+  }
+ ]
+}

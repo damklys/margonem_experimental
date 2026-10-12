@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kask zawodowego żeglarza",
+ "tplId": 52121,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 140,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm989.gif",
+ "stat": "absorb=624;absorbm=312;ac=150;act=6;artisan_worthless;binds;di=82;lvl=140;rarity=common;reqp=mt;resfire=9",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 62560,
+   "cur": "zl"
+  }
+ ]
+}

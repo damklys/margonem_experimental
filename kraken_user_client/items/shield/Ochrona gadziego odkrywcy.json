@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona gadziego odkrywcy",
+ "tplId": 33988,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 80,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza418.gif",
+ "stat": "ac=252;artisan_worthless;binds;blok=96;critval=6;lvl=80;rarity=common;reqp=p;reslight=6",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 28862,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 28862,
+   "cur": "zl"
+  }
+ ]
+}

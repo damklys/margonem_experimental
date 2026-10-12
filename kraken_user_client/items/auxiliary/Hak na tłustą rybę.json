@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Hak na tłustą rybę",
+ "tplId": 52682,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 185,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet313.gif",
+ "stat": "artisan_worthless;binds;dmg=1592,1945;lvl=185;poison=118,312;rarity=common;reqp=b;sa=54",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

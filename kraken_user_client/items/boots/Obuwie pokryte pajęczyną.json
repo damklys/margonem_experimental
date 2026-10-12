@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Obuwie pokryte pajęczyną",
+ "tplId": 33624,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 55,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "but/buty782.gif",
+ "stat": "absorb=153;absorbm=76;ac=37;act=6;artisan_worthless;binds;hp=232;lvl=55;rarity=common;reqp=mt;reslight=9",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 15044,
+   "cur": "zl"
+  }
+ ]
+}

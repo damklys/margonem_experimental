@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odzienie natchnionego rycerza",
+ "tplId": 52384,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 220,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1164.gif",
+ "stat": "ac=1540;artisan_worthless;binds;blok=33;hpbon=2.2;lvl=220;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

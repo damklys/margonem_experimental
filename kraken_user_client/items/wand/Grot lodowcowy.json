@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Grot lodowcowy",
+ "tplId": 33148,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 50,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka277.gif",
+ "stat": "artisan_worthless;binds;frost=50,390;hp=290;lvl=50;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

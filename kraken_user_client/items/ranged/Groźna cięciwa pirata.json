@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groźna cięciwa pirata",
+ "tplId": 52571,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 140,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk698.gif",
+ "stat": "artisan_worthless;binds;dmg=1579,1930;hp=922;lvl=140;rarity=common;reqp=h;wound=25,627",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 93840,
+   "cur": "zl"
+  }
+ ]
+}

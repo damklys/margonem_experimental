@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Brosza skrytobójczych zasług",
+ "tplId": 52246,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 297,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien1076.gif",
+ "stat": "acdmg=39;artisan_worthless;binds;dz=169;evade=30;lvl=297;rarity=common;reqp=bh;sa=157",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 184463,
+   "cur": "zl"
+  }
+ ]
+}

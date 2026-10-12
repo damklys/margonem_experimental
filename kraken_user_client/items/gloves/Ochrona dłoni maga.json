@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ochrona dłoni maga",
+ "tplId": 52178,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 200,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "rek/rekawice1147.gif",
+ "stat": "absorb=825;absorbm=413;ac=198;act=6;artisan_worthless;binds;dz=115;lvl=200;rarity=common;reqp=mt;reslight=9",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

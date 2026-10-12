@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Surdut sztukmistrza",
+ "tplId": 33861,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 65,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "zbr/zbroja730.gif",
+ "stat": "absorb=761;absorbm=380;ac=127;artisan_worthless;binds;crit=1;lvl=65;manabon=22;rarity=common;reqp=m;resfrost=10",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 19830,
+   "cur": "zl"
+  }
+ ]
+}

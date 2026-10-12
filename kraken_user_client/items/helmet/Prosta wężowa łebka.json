@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Prosta wężowa łebka",
+ "tplId": 33864,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 85,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "hel/helm706.gif",
+ "stat": "ac=112;act=8;artisan_worthless;binds;lvl=85;rarity=common;reqp=bhw;resfrost=2;sa=29",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

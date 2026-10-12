@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Podeszwy z thuzalskich koszarów",
+ "tplId": 52152,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 200,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "but/buty1023.gif",
+ "stat": "ac=368;act=8;artisan_worthless;binds;lowevade=20;lvl=200;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 126850,
+   "cur": "zl"
+  }
+ ]
+}

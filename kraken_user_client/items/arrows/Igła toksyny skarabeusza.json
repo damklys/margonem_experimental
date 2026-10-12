@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Igła toksyny skarabeusza",
+ "tplId": 52737,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 110,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "arr/trutka1.gif",
+ "stat": "acdmg=21;artisan_worthless;binds;dz=65;lvl=110;poison=49,114;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

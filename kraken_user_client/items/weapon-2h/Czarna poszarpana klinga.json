@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarna poszarpana klinga",
+ "tplId": 33887,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 90,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz572.gif",
+ "stat": "artisan_worthless;binds;dmg=1590,1944;hp=546;lvl=90;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

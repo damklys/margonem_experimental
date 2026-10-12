@@ -1,0 +1,600 @@
+{
+ "kraken": "npc",
+ "name": "Kowal Drowin",
+ "map": "Thuzal",
+ "x": 11,
+ "y": 54,
+ "id": 54054,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Ciężkie narzędzie egzekutora",
+     "cl": 2,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz919.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Potężny zygzak ogra",
+     "cl": 2,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz920.gif",
+     "lvl": 185,
+     "reqp": "w"
+    },
+    {
+     "name": "Powód do niepokoju",
+     "cl": 2,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz973.gif",
+     "lvl": 200,
+     "reqp": "w"
+    },
+    {
+     "name": "Czarna krawędzica",
+     "cl": 2,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz967.gif",
+     "lvl": 220,
+     "reqp": "w"
+    },
+    {
+     "name": "Dopieszczony kawałek metalu",
+     "cl": 3,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz914.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Barbarzyński ścinacz głów",
+     "cl": 3,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz915.gif",
+     "lvl": 185,
+     "reqp": "w"
+    },
+    {
+     "name": "Okopcona stal ludożercy",
+     "cl": 3,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz970.gif",
+     "lvl": 200,
+     "reqp": "w"
+    },
+    {
+     "name": "Przeklęty zawijas",
+     "cl": 3,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz972.gif",
+     "lvl": 220,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza krwawego półksiężyca",
+     "cl": 14,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "tar/tarcza566.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Blokada pancernych rogów",
+     "cl": 14,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "tar/tarcza567.gif",
+     "lvl": 185,
+     "reqp": "w"
+    },
+    {
+     "name": "Mroczne odbicie",
+     "cl": 14,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "tar/tarcza574.gif",
+     "lvl": 200,
+     "reqp": "w"
+    },
+    {
+     "name": "Obsydianowe lustro",
+     "cl": 14,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "tar/tarcza575.gif",
+     "lvl": 220,
+     "reqp": "w"
+    },
+    {
+     "name": "Metalowe zęby",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz952.gif",
+     "lvl": 170,
+     "reqp": "bw"
+    },
+    {
+     "name": "Kawał elfickiej stali",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz951.gif",
+     "lvl": 185,
+     "reqp": "bw"
+    },
+    {
+     "name": "Pamiątka z głębokiej kniei",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz906.gif",
+     "lvl": 200,
+     "reqp": "bw"
+    },
+    {
+     "name": "Jęzor magicznego płaza",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz904.gif",
+     "lvl": 220,
+     "reqp": "bw"
+    },
+    {
+     "name": "Pozłacane dłuto",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet324.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Rwący ząb barbarzyńcy",
+     "cl": 5,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "bro/sztylet325.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Kryształowy dziurkacz",
+     "cl": 5,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "bro/sztylet304.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Pazur kaleczący wnętrze",
+     "cl": 5,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "bro/sztylet303.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze czarnych skrzepów",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz922.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Łup z rodzinnego grobowca",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz921.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Zielone ostrze driady",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz947.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Jęzor mieszkańca bagien",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz949.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Wykrawacz mięsnych kąsków",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet306.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Zadzior patrycjusza",
+     "cl": 5,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "bro/sztylet307.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Ukłucie bezgwiezdnej gęstwiny",
+     "cl": 5,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "bro/sztylet295.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Pazur czystych cięć",
+     "cl": 5,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "bro/sztylet296.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Skażona piła",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz891.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Cięcie toksycznych soków",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz890.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Aktywator procesów gnilnych",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz886.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Jęzor toksycznej żaby",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz888.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Truciciel organów",
+     "cl": 5,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "bro/sztylet312.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Hak na tłustą rybę",
+     "cl": 5,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "bro/sztylet313.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Trujący pączek",
+     "cl": 5,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "bro/sztylet319.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Pazur brudnych ran",
+     "cl": 5,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "bro/sztylet320.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Rdzeń magmowego filaru",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz934.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Ogień Valmirów",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz933.gif",
+     "lvl": 185,
+     "reqp": "p"
+    },
+    {
+     "name": "Pal specyficznej tortury",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz900.gif",
+     "lvl": 200,
+     "reqp": "p"
+    },
+    {
+     "name": "Znacznik ludzkiego bydła",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz898.gif",
+     "lvl": 220,
+     "reqp": "p"
+    },
+    {
+     "name": "Lśniąca tarcza zakonnika",
+     "cl": 14,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "tar/tarcza584.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Stalowy pancernik",
+     "cl": 14,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "tar/tarcza585.gif",
+     "lvl": 185,
+     "reqp": "p"
+    },
+    {
+     "name": "Lustro rozlanej krwi",
+     "cl": 14,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "tar/tarcza568.gif",
+     "lvl": 200,
+     "reqp": "p"
+    },
+    {
+     "name": "Symbol połowicznego opętania",
+     "cl": 14,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "tar/tarcza569.gif",
+     "lvl": 220,
+     "reqp": "p"
+    },
+    {
+     "name": "Cięcie lodowej tafli",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz943.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Dar uratowanej driady",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz944.gif",
+     "lvl": 185,
+     "reqp": "p"
+    },
+    {
+     "name": "Pałasz z północy",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz960.gif",
+     "lvl": 200,
+     "reqp": "p"
+    },
+    {
+     "name": "Skaranie boskie",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz958.gif",
+     "lvl": 220,
+     "reqp": "p"
+    },
+    {
+     "name": "Szabelka wielu wyładowań",
+     "cl": 1,
+     "price": 141834,
+     "cur": "zl",
+     "icon": "mie/miecz928.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Miecz świetlny",
+     "cl": 1,
+     "price": 166659,
+     "cur": "zl",
+     "icon": "mie/miecz927.gif",
+     "lvl": 185,
+     "reqp": "p"
+    },
+    {
+     "name": "Znak z niebios",
+     "cl": 1,
+     "price": 190276,
+     "cur": "zl",
+     "icon": "mie/miecz878.gif",
+     "lvl": 200,
+     "reqp": "p"
+    },
+    {
+     "name": "Imitacja pioruna",
+     "cl": 1,
+     "price": 218075,
+     "cur": "zl",
+     "icon": "mie/miecz882.gif",
+     "lvl": 220,
+     "reqp": "p"
+    },
+    {
+     "name": "Żołnierski uniform",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1134.gif",
+     "lvl": 170,
+     "reqp": "b"
+    },
+    {
+     "name": "Protekcja zmutowanych liści",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1141.gif",
+     "lvl": 185,
+     "reqp": "b"
+    },
+    {
+     "name": "Błotna kamizela",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1135.gif",
+     "lvl": 200,
+     "reqp": "b"
+    },
+    {
+     "name": "Napierśnik odważnego grotołaza",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1140.gif",
+     "lvl": 220,
+     "reqp": "b"
+    },
+    {
+     "name": "Pierś zdobywcy kazamat",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1146.gif",
+     "lvl": 170,
+     "reqp": "w"
+    },
+    {
+     "name": "Ochrona mrocznych pnączy",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1153.gif",
+     "lvl": 185,
+     "reqp": "w"
+    },
+    {
+     "name": "Więzienie zbłąkanej duszy",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1147.gif",
+     "lvl": 200,
+     "reqp": "w"
+    },
+    {
+     "name": "Blachy poszukiwacza przygód",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1152.gif",
+     "lvl": 220,
+     "reqp": "w"
+    },
+    {
+     "name": "Kurta łowcy orków",
+     "cl": 8,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "zbr/zbroja1158.gif",
+     "lvl": 170,
+     "reqp": "p"
+    },
+    {
+     "name": "Pancerz zdjęty z patrycjusza",
+     "cl": 8,
+     "price": 111106,
+     "cur": "zl",
+     "icon": "zbr/zbroja1165.gif",
+     "lvl": 185,
+     "reqp": "p"
+    },
+    {
+     "name": "Zbroja ze znakiem czaszki",
+     "cl": 8,
+     "price": 126850,
+     "cur": "zl",
+     "icon": "zbr/zbroja1159.gif",
+     "lvl": 200,
+     "reqp": "p"
+    },
+    {
+     "name": "Odzienie natchnionego rycerza",
+     "cl": 8,
+     "price": 145383,
+     "cur": "zl",
+     "icon": "zbr/zbroja1164.gif",
+     "lvl": 220,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

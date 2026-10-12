@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Akumulator magicznego potencjału",
+ "tplId": 52724,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 300,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb317.gif",
+ "stat": "artisan_worthless;binds;heal=764;light=2522,3783;lvl=300;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 277750,
+   "cur": "zl"
+  }
+ ]
+}

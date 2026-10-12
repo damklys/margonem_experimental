@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Melodia kryształków lodu",
+ "tplId": 33097,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 60,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk467.gif",
+ "stat": "artisan_worthless;binds;dmg=366,448;frost=44,372;hp=350;lvl=60;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

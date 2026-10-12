@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Świerkowy kask",
+ "tplId": 33867,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 95,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "hel/helm717.gif",
+ "stat": "ac=120;act=12;artisan_worthless;binds;dz=57;lvl=95;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

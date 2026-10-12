@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lśniąca tarcza zakonnika",
+ "tplId": 52645,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 170,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "tar/tarcza584.gif",
+ "stat": "ac=765;artisan_worthless;binds;blok=204;lvl=170;pierceb=50;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 94556,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 94556,
+   "cur": "zl"
+  }
+ ]
+}

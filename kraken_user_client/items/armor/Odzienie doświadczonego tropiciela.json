@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Odzienie doświadczonego tropiciela",
+ "tplId": 34013,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja737.gif",
+ "stat": "absorb=855;absorbm=428;ac=299;act=12;artisan_worthless;binds;evade=10;lvl=95;manabon=16;rarity=common;reqp=t;reslight=8;sa=24",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

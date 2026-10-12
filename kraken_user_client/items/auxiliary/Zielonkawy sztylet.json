@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zielonkawy sztylet",
+ "tplId": 33983,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 90,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet224.gif",
+ "stat": "artisan_worthless;binds;dmg=541,661;energybon=16;lvl=90;poison=57,106;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stalowy psotnik",
+ "tplId": 52661,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 240,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "bro/sztylet297.gif",
+ "stat": "artisan_worthless;binds;dmg=3077,3761;dz=137;lvl=240;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Czeladnik Fistner",
+   "price": 240456,
+   "cur": "zl"
+  }
+ ]
+}

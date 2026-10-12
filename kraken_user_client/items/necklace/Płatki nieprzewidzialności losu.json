@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Płatki nieprzewidzialności losu",
+ "tplId": 52277,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 297,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1058.gif",
+ "stat": "artisan_worthless;binds;da=157;heal=753;lvl=297;manabon=79;rarity=common;reqp=mpt;sa=157",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 184463,
+   "cur": "zl"
+  }
+ ]
+}

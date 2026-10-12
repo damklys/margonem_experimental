@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Niebieska smuga",
+ "tplId": 33150,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 80,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka272.gif",
+ "stat": "artisan_worthless;binds;critmval=6;frost=80,728;lvl=80;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 43292,
+   "cur": "zl"
+  }
+ ]
+}

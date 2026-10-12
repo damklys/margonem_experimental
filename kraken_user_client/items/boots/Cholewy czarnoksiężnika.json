@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cholewy czarnoksiężnika",
+ "tplId": 33628,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 75,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "but/buty786.gif",
+ "stat": "absorb=155;absorbm=77;ac=69;act=4;artisan_worthless;binds;lvl=75;rarity=common;reqp=mpt;resfire=8;slow=29",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

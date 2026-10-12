@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kula ostrego mrozu",
+ "tplId": 52705,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 170,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb304.gif",
+ "stat": "artisan_worthless;binds;di=98;frost=125,1105;lvl=170;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Mag Rein",
+   "price": 141834,
+   "cur": "zl"
+  },
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 141834,
+   "cur": "zl"
+  }
+ ]
+}

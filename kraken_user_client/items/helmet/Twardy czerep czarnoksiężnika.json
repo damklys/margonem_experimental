@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Twardy czerep czarnoksiężnika",
+ "tplId": 52133,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 240,
+ "reqp": "mt",
+ "rarity": "common",
+ "icon": "hel/helm990.gif",
+ "stat": "absorb=1465;absorbm=733;ac=352;act=6;artisan_worthless;binds;lowcrit=2;lvl=240;rarity=common;reqp=mt;resfire=9",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 160304,
+   "cur": "zl"
+  }
+ ]
+}

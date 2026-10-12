@@ -1,0 +1,204 @@
+{
+ "kraken": "npc",
+ "name": "Mag Waken",
+ "map": "Liściaste Rozstaje",
+ "x": 29,
+ "y": 38,
+ "id": 278184,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Płomień cierpiącej duszy",
+     "cl": 6,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "roz/rozdzka254.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Miotacz szeptanych zaklęć",
+     "cl": 6,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "roz/rozdzka255.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Skarb ifryta",
+     "cl": 6,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "roz/rozdzka256.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Wygotowany kryształ",
+     "cl": 7,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "orb/orb194.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Parzący knebel",
+     "cl": 7,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "orb/orb193.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Serce nienawiści",
+     "cl": 7,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "orb/orb192.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Niebieska smuga",
+     "cl": 6,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "roz/rozdzka272.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Zaklęcie siwego mrozu",
+     "cl": 6,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "roz/rozdzka273.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Łza lodowej nimfy",
+     "cl": 6,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "roz/rozdzka274.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Klątwa dygocących kości",
+     "cl": 7,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "orb/orb207.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Kościane więzienie",
+     "cl": 7,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "orb/orb208.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Bagienne cielę",
+     "cl": 7,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "orb/orb209.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Drażnienie wampira",
+     "cl": 6,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "roz/rozdzka263.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Miotełka błyskawic",
+     "cl": 6,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "roz/rozdzka262.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Diabelski owoc",
+     "cl": 6,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "roz/rozdzka261.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Żywiczna sfera",
+     "cl": 7,
+     "price": 43292,
+     "cur": "zl",
+     "icon": "orb/orb201.gif",
+     "lvl": 80,
+     "reqp": "m"
+    },
+    {
+     "name": "Łaskotanie czarcich zębów",
+     "cl": 7,
+     "price": 54470,
+     "cur": "zl",
+     "icon": "orb/orb202.gif",
+     "lvl": 90,
+     "reqp": "m"
+    },
+    {
+     "name": "Posążek ze smoczej jaskini",
+     "cl": 7,
+     "price": 67575,
+     "cur": "zl",
+     "icon": "orb/orb203.gif",
+     "lvl": 100,
+     "reqp": "m"
+    },
+    {
+     "name": "Peleryna z metalową wstawką",
+     "cl": 8,
+     "price": 32433,
+     "cur": "zl",
+     "icon": "zbr/zbroja729.gif",
+     "lvl": 85,
+     "reqp": "m"
+    },
+    {
+     "name": "Szata doświadczonego maga",
+     "cl": 8,
+     "price": 40514,
+     "cur": "zl",
+     "icon": "zbr/zbroja728.gif",
+     "lvl": 95,
+     "reqp": "m"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

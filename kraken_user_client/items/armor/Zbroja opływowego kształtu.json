@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zbroja opływowego kształtu",
+ "tplId": 52378,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1167.gif",
+ "stat": "ac=638;artisan_worthless;binds;hpbon=1.3;lvl=125;manabon=36;rarity=common;reqp=p;resfire=6",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kolczuga pogromcy mumii",
+ "tplId": 52327,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 110,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja1144.gif",
+ "stat": "ac=570;act=1;artisan_worthless;binds;hpbon=1.1;lowevade=11;lvl=110;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 36776,
+   "cur": "zl"
+  }
+ ]
+}

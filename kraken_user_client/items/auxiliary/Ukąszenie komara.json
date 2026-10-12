@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ukąszenie komara",
+ "tplId": 56881,
+ "cl": 5,
+ "category": "auxiliary",
+ "lvl": 13,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/kh-sztylet3.gif",
+ "stat": "dmg=84,103;lvl=13;permbound;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

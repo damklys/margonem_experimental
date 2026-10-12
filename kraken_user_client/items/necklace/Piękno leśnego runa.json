@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Piękno leśnego runa",
+ "tplId": 52269,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 237,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1041.gif",
+ "stat": "artisan_worthless;binds;critval=6;energybon=26;evade=24;hp=1826;lvl=237;rarity=common;reqp=bh;sa=127",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 158307,
+   "cur": "zl"
+  }
+ ]
+}

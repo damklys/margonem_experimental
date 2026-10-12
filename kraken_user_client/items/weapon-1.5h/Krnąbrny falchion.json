@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Krnąbrny falchion",
+ "tplId": 52464,
+ "cl": 3,
+ "category": "weapon-1.5h",
+ "lvl": 155,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz909.gif",
+ "stat": "artisan_worthless;binds;critval=6;dmg=2535,3098;lvl=155;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Handlarz Otar",
+   "price": 117127,
+   "cur": "zl"
+  }
+ ]
+}

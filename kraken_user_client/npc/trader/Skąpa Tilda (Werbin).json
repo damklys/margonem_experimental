@@ -1,0 +1,222 @@
+{
+ "kraken": "npc",
+ "name": "Skąpa Tilda",
+ "map": "Werbin",
+ "x": 24,
+ "y": 22,
+ "id": 348438,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Prosty kask górnika",
+     "cl": 9,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "hel/helm987.gif",
+     "lvl": 155,
+     "reqp": ""
+    },
+    {
+     "name": "Hełm górmistrza",
+     "cl": 9,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "hel/helm992.gif",
+     "lvl": 170,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Rogi sztygara",
+     "cl": 9,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "hel/helm996.gif",
+     "lvl": 170,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Obuwie zgładzonego orka",
+     "cl": 10,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "but/buty1022.gif",
+     "lvl": 155,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Kozaki spalonej wiedźmy",
+     "cl": 10,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "but/buty1018.gif",
+     "lvl": 155,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Cholewy z czarnej hydry",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1015.gif",
+     "lvl": 170,
+     "reqp": "pw"
+    },
+    {
+     "name": "Zielone skórki hydry",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1025.gif",
+     "lvl": 170,
+     "reqp": "bh"
+    },
+    {
+     "name": "Kamasze poskramiacza hydr",
+     "cl": 10,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "but/buty1032.gif",
+     "lvl": 170,
+     "reqp": "mt"
+    },
+    {
+     "name": "Chwyt zastygłej smoły",
+     "cl": 11,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "rek/rekawice1139.gif",
+     "lvl": 155,
+     "reqp": "pw"
+    },
+    {
+     "name": "Bagienny uścisk dłoni",
+     "cl": 11,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "rek/rekawice1151.gif",
+     "lvl": 155,
+     "reqp": "bh"
+    },
+    {
+     "name": "Cyklamenowe palce alchemika",
+     "cl": 11,
+     "price": 78085,
+     "cur": "zl",
+     "icon": "rek/rekawice1146.gif",
+     "lvl": 155,
+     "reqp": "mt"
+    },
+    {
+     "name": "Skórzane rękawice górnika",
+     "cl": 11,
+     "price": 94556,
+     "cur": "zl",
+     "icon": "rek/rekawice1136.gif",
+     "lvl": 170,
+     "reqp": ""
+    },
+    {
+     "name": "Rycerskie grudki",
+     "cl": 12,
+     "price": 74879,
+     "cur": "zl",
+     "icon": "pie/pierscien1068.gif",
+     "lvl": 152,
+     "reqp": "pw"
+    },
+    {
+     "name": "Mineralne narośle",
+     "cl": 12,
+     "price": 74879,
+     "cur": "zl",
+     "icon": "pie/pierscien1069.gif",
+     "lvl": 152,
+     "reqp": "bh"
+    },
+    {
+     "name": "Drobny popis jubilera",
+     "cl": 12,
+     "price": 74879,
+     "cur": "zl",
+     "icon": "pie/pierscien1067.gif",
+     "lvl": 152,
+     "reqp": "mt"
+    },
+    {
+     "name": "Wieczorny mrok",
+     "cl": 12,
+     "price": 91226,
+     "cur": "zl",
+     "icon": "pie/pierscien1063.gif",
+     "lvl": 167,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Lśnienie brzasku",
+     "cl": 12,
+     "price": 91226,
+     "cur": "zl",
+     "icon": "pie/pierscien1062.gif",
+     "lvl": 167,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Życiodajny brelok",
+     "cl": 13,
+     "price": 74879,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1059.gif",
+     "lvl": 152,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Wisior szybkiej regeneracji",
+     "cl": 13,
+     "price": 74879,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1054.gif",
+     "lvl": 152,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Krwawe odznaczenie",
+     "cl": 13,
+     "price": 91226,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1049.gif",
+     "lvl": 167,
+     "reqp": "pw"
+    },
+    {
+     "name": "Zielona ozdoba skrytobójcy",
+     "cl": 13,
+     "price": 91226,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1039.gif",
+     "lvl": 167,
+     "reqp": "bh"
+    },
+    {
+     "name": "Wahadełko czarownicy",
+     "cl": 13,
+     "price": 91226,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1044.gif",
+     "lvl": 167,
+     "reqp": "mt"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

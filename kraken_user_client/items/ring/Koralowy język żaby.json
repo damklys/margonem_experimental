@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Koralowy język żaby",
+ "tplId": 33879,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 92,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien786.gif",
+ "stat": "artisan_worthless;binds;crit=1;critval=6;dz=55;lvl=92;rarity=common;reqp=bh;sa=31;slow=34",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 37955,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 37955,
+   "cur": "zl"
+  }
+ ]
+}

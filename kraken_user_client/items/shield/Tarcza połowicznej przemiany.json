@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Tarcza połowicznej przemiany",
+ "tplId": 33986,
+ "cl": 14,
+ "category": "shield",
+ "lvl": 90,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "tar/tarcza407.gif",
+ "stat": "ac=321;act=1;artisan_worthless;binds;blok=90;critval=6;lvl=90;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 36312,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 36312,
+   "cur": "zl"
+  }
+ ]
+}

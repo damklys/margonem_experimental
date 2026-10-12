@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Prosty kask górnika",
+ "tplId": 52122,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 155,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/helm987.gif",
+ "stat": "ac=262;artisan_worthless;binds;lowcrit=2;lvl=155;rarity=common",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 78085,
+   "cur": "zl"
+  }
+ ]
+}

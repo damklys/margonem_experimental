@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Cięciwa",
+ "tplId": 5409,
+ "cl": 15,
+ "category": "neutral",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "neu/cieci01.gif",
+ "stat": "amount=1;cansplit=1;capacity=5;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 7500,
+   "cur": "zl"
+  }
+ ]
+}

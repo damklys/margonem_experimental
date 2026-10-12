@@ -1,0 +1,420 @@
+{
+ "kraken": "npc",
+ "name": "Kupiec Grand",
+ "map": "Nithal",
+ "x": 35,
+ "y": 38,
+ "id": 18853,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 100,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Poroże mordercy",
+     "cl": 9,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "hel/helm1001.gif",
+     "lvl": 240,
+     "reqp": "pw"
+    },
+    {
+     "name": "Maska aspirującego skrytobójcy",
+     "cl": 9,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "hel/helm1006.gif",
+     "lvl": 240,
+     "reqp": "bh"
+    },
+    {
+     "name": "Twardy czerep czarnoksiężnika",
+     "cl": 9,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "hel/helm990.gif",
+     "lvl": 240,
+     "reqp": "mt"
+    },
+    {
+     "name": "Stalowa twarzyczka",
+     "cl": 9,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "hel/helm986.gif",
+     "lvl": 260,
+     "reqp": ""
+    },
+    {
+     "name": "Oczy specjalisty w mordowaniu",
+     "cl": 9,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "hel/helm995.gif",
+     "lvl": 280,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Gogle wielkiej cierpliwości",
+     "cl": 9,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "hel/helm999.gif",
+     "lvl": 280,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Ochrona przed obezwładnieniem",
+     "cl": 9,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "hel/helm1003.gif",
+     "lvl": 300,
+     "reqp": "pw"
+    },
+    {
+     "name": "Oko celności",
+     "cl": 9,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "hel/helm1007.gif",
+     "lvl": 300,
+     "reqp": "bh"
+    },
+    {
+     "name": "Koncentrator absorpcji",
+     "cl": 9,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "hel/helm991.gif",
+     "lvl": 300,
+     "reqp": "mt"
+    },
+    {
+     "name": "Utwardzone podeszwy",
+     "cl": 10,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "but/buty1010.gif",
+     "lvl": 240,
+     "reqp": ""
+    },
+    {
+     "name": "Wysokie obuwie z katakumb",
+     "cl": 10,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "but/buty1024.gif",
+     "lvl": 260,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Kopyta wiedźmiego chowańca",
+     "cl": 10,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "but/buty1020.gif",
+     "lvl": 260,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Rozpraszacze mroków historii",
+     "cl": 10,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "but/buty1013.gif",
+     "lvl": 280,
+     "reqp": "pw"
+    },
+    {
+     "name": "Buty zdobione łzami driad",
+     "cl": 10,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "but/buty1027.gif",
+     "lvl": 280,
+     "reqp": "bh"
+    },
+    {
+     "name": "Pustynny przemarsz smokoludzi",
+     "cl": 10,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "but/buty1030.gif",
+     "lvl": 280,
+     "reqp": "mt"
+    },
+    {
+     "name": "Cholewy grotołaza",
+     "cl": 10,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "but/buty1009.gif",
+     "lvl": 300,
+     "reqp": ""
+    },
+    {
+     "name": "Grzybowe rękawice śmiałka",
+     "cl": 11,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "rek/rekawice1154.gif",
+     "lvl": 240,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Krwawe palce dzikusa",
+     "cl": 11,
+     "price": 160304,
+     "cur": "zl",
+     "icon": "rek/rekawice1142.gif",
+     "lvl": 240,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Palce czarnej magii",
+     "cl": 11,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "rek/rekawice1140.gif",
+     "lvl": 260,
+     "reqp": "pw"
+    },
+    {
+     "name": "Dłonie umoczone w truciźnie",
+     "cl": 11,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "rek/rekawice1152.gif",
+     "lvl": 260,
+     "reqp": "bh"
+    },
+    {
+     "name": "Czarne dyrygentki wiedźmy",
+     "cl": 11,
+     "price": 171546,
+     "cur": "zl",
+     "icon": "rek/rekawice1145.gif",
+     "lvl": 260,
+     "reqp": "mt"
+    },
+    {
+     "name": "Wielka duma śmiałka",
+     "cl": 11,
+     "price": 179601,
+     "cur": "zl",
+     "icon": "rek/rekawice1133.gif",
+     "lvl": 280,
+     "reqp": ""
+    },
+    {
+     "name": "Kruszyciele lodu",
+     "cl": 11,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "rek/rekawice1153.gif",
+     "lvl": 300,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Miażdżycielki lodowych skał",
+     "cl": 11,
+     "price": 185167,
+     "cur": "zl",
+     "icon": "rek/rekawice1141.gif",
+     "lvl": 300,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Grzybowy zarodnik",
+     "cl": 12,
+     "price": 158307,
+     "cur": "zl",
+     "icon": "pie/pierscien1058.gif",
+     "lvl": 237,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Kryształ leśnego mutanta",
+     "cl": 12,
+     "price": 158307,
+     "cur": "zl",
+     "icon": "pie/pierscien1059.gif",
+     "lvl": 237,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Kwiecie wiedźmy",
+     "cl": 12,
+     "price": 170079,
+     "cur": "zl",
+     "icon": "pie/pierscien1051.gif",
+     "lvl": 257,
+     "reqp": "pw"
+    },
+    {
+     "name": "Błykotka w kolorze błota",
+     "cl": 12,
+     "price": 170079,
+     "cur": "zl",
+     "icon": "pie/pierscien1058.gif",
+     "lvl": 257,
+     "reqp": "bh"
+    },
+    {
+     "name": "Złoty symbol mądrości",
+     "cl": 12,
+     "price": 170079,
+     "cur": "zl",
+     "icon": "pie/pierscien1050.gif",
+     "lvl": 257,
+     "reqp": "mt"
+    },
+    {
+     "name": "Stalowa odznaka z katakumb",
+     "cl": 12,
+     "price": 178569,
+     "cur": "zl",
+     "icon": "pie/pierscien1073.gif",
+     "lvl": 277,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Opieka pustynnej nocy",
+     "cl": 12,
+     "price": 178569,
+     "cur": "zl",
+     "icon": "pie/pierscien1072.gif",
+     "lvl": 277,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Brosza rycerskich zasług",
+     "cl": 12,
+     "price": 184463,
+     "cur": "zl",
+     "icon": "pie/pierscien1075.gif",
+     "lvl": 297,
+     "reqp": "pw"
+    },
+    {
+     "name": "Brosza skrytobójczych zasług",
+     "cl": 12,
+     "price": 184463,
+     "cur": "zl",
+     "icon": "pie/pierscien1076.gif",
+     "lvl": 297,
+     "reqp": "bh"
+    },
+    {
+     "name": "Brosza magicznych zasług",
+     "cl": 12,
+     "price": 184463,
+     "cur": "zl",
+     "icon": "pie/pierscien1074.gif",
+     "lvl": 297,
+     "reqp": "mt"
+    },
+    {
+     "name": "Mutagenny klejnot grzybiarza",
+     "cl": 13,
+     "price": 158307,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1051.gif",
+     "lvl": 237,
+     "reqp": "pw"
+    },
+    {
+     "name": "Piękno leśnego runa",
+     "cl": 13,
+     "price": 158307,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1041.gif",
+     "lvl": 237,
+     "reqp": "bh"
+    },
+    {
+     "name": "Kolia ze złośliwej grzybni",
+     "cl": 13,
+     "price": 158307,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1046.gif",
+     "lvl": 237,
+     "reqp": "mt"
+    },
+    {
+     "name": "Źródło odurzających zapachów",
+     "cl": 13,
+     "price": 170079,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1062.gif",
+     "lvl": 257,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Kwiat z wiedźmiej oranżerii",
+     "cl": 13,
+     "price": 170079,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1057.gif",
+     "lvl": 257,
+     "reqp": "mpt"
+    },
+    {
+     "name": "Wojenny kryształ",
+     "cl": 13,
+     "price": 178569,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1052.gif",
+     "lvl": 277,
+     "reqp": "pw"
+    },
+    {
+     "name": "Malachitowy kotylion",
+     "cl": 13,
+     "price": 178569,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1042.gif",
+     "lvl": 277,
+     "reqp": "bh"
+    },
+    {
+     "name": "Brunatna ozdoba czarodzieja",
+     "cl": 13,
+     "price": 178569,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1047.gif",
+     "lvl": 277,
+     "reqp": "mt"
+    },
+    {
+     "name": "Pąk z driadziej polany",
+     "cl": 13,
+     "price": 184463,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1063.gif",
+     "lvl": 297,
+     "reqp": "bhw"
+    },
+    {
+     "name": "Płatki nieprzewidzialności losu",
+     "cl": 13,
+     "price": 184463,
+     "cur": "zl",
+     "icon": "nas/naszyjnik1058.gif",
+     "lvl": 297,
+     "reqp": "mpt"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}

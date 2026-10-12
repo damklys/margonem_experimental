@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rdzewiejący kask",
+ "tplId": 56910,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 10,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "hel/53.gif",
+ "stat": "ac=8;evade=1;lvl=10;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

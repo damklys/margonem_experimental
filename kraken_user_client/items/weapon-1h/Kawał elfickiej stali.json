@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kawał elfickiej stali",
+ "tplId": 52454,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 185,
+ "reqp": "bw",
+ "rarity": "common",
+ "icon": "mie/miecz951.gif",
+ "stat": "acdmg=24;artisan_worthless;binds;dmg=2220,2713;lvl=185;rarity=common;reqp=bw;wound=25,817",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 166659,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stal rozgrzana smoczym oddechem",
+ "tplId": 33894,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 100,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "mie/miecz617.gif",
+ "stat": "artisan_worthless;binds;dmg=950,1161;fire=587;lowevade=10;lvl=100;rarity=common;reqp=p;resdmg=1",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 67575,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 67575,
+   "cur": "zl"
+  }
+ ]
+}

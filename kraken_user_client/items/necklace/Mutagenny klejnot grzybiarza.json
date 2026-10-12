@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mutagenny klejnot grzybiarza",
+ "tplId": 52268,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 237,
+ "reqp": "pw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1051.gif",
+ "stat": "artisan_worthless;binds;blok=36;critval=6;da=67;energybon=26;hp=1826;lvl=237;rarity=common;reqp=pw;sa=67",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 158307,
+   "cur": "zl"
+  }
+ ]
+}

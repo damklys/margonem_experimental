@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz zdjęty z patrycjusza",
+ "tplId": 52382,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 185,
+ "reqp": "p",
+ "rarity": "common",
+ "icon": "zbr/zbroja1165.gif",
+ "stat": "ac=1166;artisan_worthless;binds;energybon=22;hpbon=1.9;lvl=185;rarity=common;reqp=p;resfrost=6",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 111106,
+   "cur": "zl"
+  }
+ ]
+}

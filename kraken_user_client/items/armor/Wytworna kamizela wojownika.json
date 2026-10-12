@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wytworna kamizela wojownika",
+ "tplId": 33757,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja701.gif",
+ "stat": "ac=332;act=1;artisan_worthless;binds;hp=445;hpbon=0.8;lvl=75;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Kowal Unil",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

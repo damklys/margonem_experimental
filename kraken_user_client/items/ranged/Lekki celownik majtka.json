@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Lekki celownik majtka",
+ "tplId": 52557,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 110,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk726.gif",
+ "stat": "artisan_worthless;binds;dmg=1636,1999;energybon=17;lvl=110;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Tropicielka Albiona",
+   "price": 55164,
+   "cur": "zl"
+  }
+ ]
+}

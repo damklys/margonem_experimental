@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Magnetyczna sfera Sybilli",
+ "tplId": 52722,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 260,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb320.gif",
+ "stat": "artisan_worthless;binds;light=1982,2974;lvl=260;rarity=common;reqp=m;sa=73",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Handlarka Samanta",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

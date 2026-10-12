@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wysokie obuwie z katakumb",
+ "tplId": 52158,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 260,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "but/buty1024.gif",
+ "stat": "ac=566;act=8;artisan_worthless;binds;energybon=27;lvl=260;rarity=common;reqp=bhw;reslight=2",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 171546,
+   "cur": "zl"
+  }
+ ]
+}

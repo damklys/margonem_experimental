@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pułapka nagłego paraliżu",
+ "tplId": 32887,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 60,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb223.gif",
+ "stat": "artisan_worthless;binds;hp=350;light=223,334;lvl=60;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Adept Ceranir",
+   "price": 25988,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Warstwy sztywnych bandaży",
+ "tplId": 52316,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 125,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "zbr/zbroja1143.gif",
+ "stat": "ac=574;act=8;artisan_worthless;binds;da=39;evade=42;lvl=125;rarity=common;reqp=b;resfire=2",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Kupiec Jorg",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

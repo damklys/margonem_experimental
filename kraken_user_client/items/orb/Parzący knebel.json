@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Parzący knebel",
+ "tplId": 34363,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 90,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb193.gif",
+ "stat": "artisan_worthless;binds;fire=480;hp=546;lvl=90;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Mag Waken",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

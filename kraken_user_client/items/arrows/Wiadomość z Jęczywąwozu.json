@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wiadomość z Jęczywąwozu",
+ "tplId": 52758,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 260,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "arr/ogien5.gif",
+ "stat": "artisan_worthless;binds;critmval=6;fire=776;lvl=260;rarity=common;reqp=t;resdmg=1",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Sprzedawca Dulko Hin",
+   "price": 257319,
+   "cur": "zl"
+  }
+ ]
+}

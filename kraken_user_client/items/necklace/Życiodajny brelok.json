@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Życiodajny brelok",
+ "tplId": 52256,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 152,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik1059.gif",
+ "stat": "artisan_worthless;binds;critval=6;da=84;hp=1021;lvl=152;rarity=common;reqp=bhw;sa=46;slow=51",
+ "sellers": [
+  {
+   "map": "Werbin",
+   "npc": "Skąpa Tilda",
+   "price": 74879,
+   "cur": "zl"
+  }
+ ]
+}

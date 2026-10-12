@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pancerz doświadczonego wojownika",
+ "tplId": 33992,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 95,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "zbr/zbroja699.gif",
+ "stat": "ac=462;act=1;artisan_worthless;binds;ds=57;hpbon=1;lvl=95;rarity=common;reqp=w",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Szybki Daraker",
+   "price": 40514,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Kowal Frasson",
+   "price": 40514,
+   "cur": "zl"
+  }
+ ]
+}

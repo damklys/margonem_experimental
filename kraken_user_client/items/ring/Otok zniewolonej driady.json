@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Otok zniewolonej driady",
+ "tplId": 52234,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 197,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "pie/pierscien1060.gif",
+ "stat": "artisan_worthless;binds;crit=1;heal=423;lvl=197;manabon=54;rarity=common;reqp=mpt;sa=57;slow=64",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 123804,
+   "cur": "zl"
+  }
+ ]
+}

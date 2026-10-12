@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zielone podeszwy bosmana",
+ "tplId": 52143,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 125,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "but/buty1028.gif",
+ "stat": "ac=163;act=12;artisan_worthless;binds;hp=527;lvl=125;rarity=common;reqp=bh;resfire=3",
+ "sellers": [
+  {
+   "map": "Tuzmer",
+   "npc": "Handlarka Keftia",
+   "price": 48660,
+   "cur": "zl"
+  }
+ ]
+}

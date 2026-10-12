@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Opieka leśnej istoty",
+ "tplId": 33770,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 75,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "zbr/zbroja740.gif",
+ "stat": "absorb=615;absorbm=308;ac=215;act=12;artisan_worthless;binds;lvl=75;manabon=13;rarity=common;reqp=t;reslight=8;sa=19;slow=29",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 25581,
+   "cur": "zl"
+  }
+ ]
+}

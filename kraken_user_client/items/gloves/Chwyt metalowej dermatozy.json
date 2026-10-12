@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Chwyt metalowej dermatozy",
+ "tplId": 56918,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 16,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice06.gif",
+ "stat": "ac=11;da=12;lvl=16;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

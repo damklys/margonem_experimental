@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Bandaże wielkiej przygody",
+ "tplId": 52179,
+ "cl": 11,
+ "category": "gloves",
+ "lvl": 220,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "rek/rekawice1134.gif",
+ "stat": "ac=347;artisan_worthless;binds;lowevade=22;lvl=220;rarity=common",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Vascus",
+   "price": 145383,
+   "cur": "zl"
+  }
+ ]
+}

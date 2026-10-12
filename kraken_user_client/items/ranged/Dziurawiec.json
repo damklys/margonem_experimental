@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Dziurawiec",
+ "tplId": 33032,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 50,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/luk503.gif",
+ "stat": "artisan_worthless;binds;dmg=376,459;evade=5;lvl=50;rarity=common;reqp=h;wound=25,149",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Huslin",
+   "price": 19457,
+   "cur": "zl"
+  }
+ ]
+}

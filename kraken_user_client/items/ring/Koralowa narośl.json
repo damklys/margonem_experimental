@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Koralowa narośl",
+ "tplId": 33642,
+ "cl": 12,
+ "category": "ring",
+ "lvl": 72,
+ "reqp": "bh",
+ "rarity": "common",
+ "icon": "pie/pierscien784.gif",
+ "stat": "artisan_worthless;binds;crit=1;dz=84;energybon=15;lvl=72;rarity=common;reqp=bh;sa=26",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 23747,
+   "cur": "zl"
+  }
+ ]
+}

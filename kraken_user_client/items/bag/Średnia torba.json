@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Średnia torba",
+ "tplId": 1526,
+ "cl": 24,
+ "category": "bag",
+ "lvl": 0,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "bag/torba10.gif",
+ "stat": "bag=10;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Ithan",
+   "npc": "Sprzedawca Roan",
+   "price": 90000,
+   "cur": "zl"
+  }
+ ]
+}

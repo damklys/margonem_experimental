@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Ozdoba wężowego kochanka",
+ "tplId": 33884,
+ "cl": 13,
+ "category": "necklace",
+ "lvl": 92,
+ "reqp": "bhw",
+ "rarity": "common",
+ "icon": "nas/naszyjnik782.gif",
+ "stat": "artisan_worthless;binds;da=77;hp=560;lowevade=9;lvl=92;rarity=common;reqp=bhw;sa=31",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 37955,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 37955,
+   "cur": "zl"
+  }
+ ]
+}

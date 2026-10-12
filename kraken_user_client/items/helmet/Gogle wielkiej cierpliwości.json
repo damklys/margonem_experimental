@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gogle wielkiej cierpliwości",
+ "tplId": 52136,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 280,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm999.gif",
+ "stat": "absorb=1273;absorbm=636;ac=568;act=4;artisan_worthless;binds;hp=1354;lvl=280;rarity=common;reqp=mpt;resfrost=8",
+ "sellers": [
+  {
+   "map": "Nithal",
+   "npc": "Kupiec Grand",
+   "price": 179601,
+   "cur": "zl"
+  }
+ ]
+}

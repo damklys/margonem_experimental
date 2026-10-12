@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Stukające blaszki wędrowca",
+ "tplId": 56914,
+ "cl": 10,
+ "category": "boots",
+ "lvl": 13,
+ "reqp": "",
+ "rarity": "common",
+ "icon": "but/rycerskie.gif",
+ "stat": "ac=10;hp=72;lvl=13;permbound;rarity=common",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Ernest",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

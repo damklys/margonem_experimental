@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Jęzor mieszkańca bagien",
+ "tplId": 52432,
+ "cl": 1,
+ "category": "weapon-1h",
+ "lvl": 220,
+ "reqp": "b",
+ "rarity": "common",
+ "icon": "mie/miecz949.gif",
+ "stat": "artisan_worthless;binds;crit=1;dmg=3746,4579;lvl=220;rarity=common;reqp=b",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

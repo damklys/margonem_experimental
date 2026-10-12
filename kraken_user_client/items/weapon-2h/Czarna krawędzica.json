@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czarna krawędzica",
+ "tplId": 52480,
+ "cl": 2,
+ "category": "weapon-2h",
+ "lvl": 220,
+ "reqp": "w",
+ "rarity": "common",
+ "icon": "mie/miecz967.gif",
+ "stat": "artisan_worthless;binds;dmg=6185,7559;lvl=220;rarity=common;reqp=w;sa=63",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Kowal Drowin",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

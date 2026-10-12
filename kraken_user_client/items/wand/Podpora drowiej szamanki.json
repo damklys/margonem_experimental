@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Podpora drowiej szamanki",
+ "tplId": 52612,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 220,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka397.gif",
+ "stat": "artisan_worthless;binds;frost=220,3338;lvl=220;rarity=common;reqp=m;resdmg=1",
+ "sellers": [
+  {
+   "map": "Thuzal",
+   "npc": "Paron",
+   "price": 218075,
+   "cur": "zl"
+  }
+ ]
+}

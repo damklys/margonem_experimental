@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gniewna cięciwa z Mythar",
+ "tplId": 34008,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 90,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk459.gif",
+ "stat": "artisan_worthless;binds;critmval=6;dmg=636,778;fire=717;lvl=90;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Tropicielka Olekusa",
+   "price": 54470,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Trajnalok",
+   "price": 54470,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "kraken": "przedmiot",
+ "name": "Hełm leśnego licha",
+ "tplId": 33865,
+ "cl": 9,
+ "category": "helmet",
+ "lvl": 85,
+ "reqp": "mpt",
+ "rarity": "common",
+ "icon": "hel/helm709.gif",
+ "stat": "absorb=203;absorbm=101;ac=90;act=4;artisan_worthless;binds;lvl=85;rarity=common;reqp=mpt;resfrost=8;sa=29",
+ "sellers": [
+  {
+   "map": "Liściaste Rozstaje",
+   "npc": "Handlarka Halidura",
+   "price": 32433,
+   "cur": "zl"
+  },
+  {
+   "map": "Mythar",
+   "npc": "Brasz",
+   "price": 32433,
+   "cur": "zl"
+  }
+ ]
+}

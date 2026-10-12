@@ -1,0 +1,456 @@
+{
+ "kraken": "npc",
+ "name": "Kowal Unil",
+ "map": "Ithan",
+ "x": 73,
+ "y": 52,
+ "id": 5553,
+ "roles": [
+  "shop"
+ ],
+ "shops": [
+  {
+   "kind": "equip",
+   "buyp": 75,
+   "sellp": 150,
+   "purchase": "*",
+   "cur": "zl",
+   "items": [
+    {
+     "name": "Eleganckie ostrze wojownika",
+     "cl": 3,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz561.gif",
+     "lvl": 50,
+     "reqp": "w"
+    },
+    {
+     "name": "Stalowy zawijas",
+     "cl": 3,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz563.gif",
+     "lvl": 60,
+     "reqp": "w"
+    },
+    {
+     "name": "Popiel",
+     "cl": 3,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz562.gif",
+     "lvl": 70,
+     "reqp": "w"
+    },
+    {
+     "name": "Kolczasta osłona",
+     "cl": 14,
+     "price": 12971,
+     "cur": "zl",
+     "icon": "tar/tarcza403.gif",
+     "lvl": 50,
+     "reqp": "w"
+    },
+    {
+     "name": "Tarcza dawnej chwały",
+     "cl": 14,
+     "price": 17325,
+     "cur": "zl",
+     "icon": "tar/tarcza404.gif",
+     "lvl": 60,
+     "reqp": "w"
+    },
+    {
+     "name": "Patronat demona",
+     "cl": 14,
+     "price": 22577,
+     "cur": "zl",
+     "icon": "tar/tarcza405.gif",
+     "lvl": 70,
+     "reqp": "w"
+    },
+    {
+     "name": "Klinga rozdarcia duszy",
+     "cl": 2,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz576.gif",
+     "lvl": 50,
+     "reqp": "w"
+    },
+    {
+     "name": "Siła minotaura",
+     "cl": 2,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz575.gif",
+     "lvl": 60,
+     "reqp": "w"
+    },
+    {
+     "name": "Obcęgi szalonego dentysty",
+     "cl": 2,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz574.gif",
+     "lvl": 70,
+     "reqp": "w"
+    },
+    {
+     "name": "Emanująca klinga",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz586.gif",
+     "lvl": 50,
+     "reqp": "bw"
+    },
+    {
+     "name": "Stalowy jęzor wiedźmy",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz584.gif",
+     "lvl": 60,
+     "reqp": "bw"
+    },
+    {
+     "name": "Pulsujące ostrze zemsty",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz585.gif",
+     "lvl": 70,
+     "reqp": "bw"
+    },
+    {
+     "name": "Trójkątny sztylet",
+     "cl": 5,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "bro/sztylet206.gif",
+     "lvl": 50,
+     "reqp": "b"
+    },
+    {
+     "name": "Klątwa krzywizny",
+     "cl": 5,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "bro/sztylet205.gif",
+     "lvl": 60,
+     "reqp": "b"
+    },
+    {
+     "name": "Ostrze rwącego wodospadu",
+     "cl": 5,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "bro/sztylet204.gif",
+     "lvl": 70,
+     "reqp": "b"
+    },
+    {
+     "name": "Pałasz honoru i chwały",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz591.gif",
+     "lvl": 50,
+     "reqp": "b"
+    },
+    {
+     "name": "Ekwipunek szlachcica",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz593.gif",
+     "lvl": 60,
+     "reqp": "b"
+    },
+    {
+     "name": "Szeroki metal strażnika",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz592.gif",
+     "lvl": 70,
+     "reqp": "b"
+    },
+    {
+     "name": "Sztylet okrętowy",
+     "cl": 5,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "bro/sztylet197.gif",
+     "lvl": 50,
+     "reqp": "b"
+    },
+    {
+     "name": "Duma rzeźnika",
+     "cl": 5,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "bro/sztylet198.gif",
+     "lvl": 60,
+     "reqp": "b"
+    },
+    {
+     "name": "Stalowy płatek",
+     "cl": 5,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "bro/sztylet199.gif",
+     "lvl": 70,
+     "reqp": "b"
+    },
+    {
+     "name": "Rynsztunek walecznego pszczelarza",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz609.gif",
+     "lvl": 50,
+     "reqp": "b"
+    },
+    {
+     "name": "Stalowa żmija",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz611.gif",
+     "lvl": 60,
+     "reqp": "b"
+    },
+    {
+     "name": "Podstawowe wyposażenie asasyna",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz610.gif",
+     "lvl": 70,
+     "reqp": "b"
+    },
+    {
+     "name": "Kąsające ostrze",
+     "cl": 5,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "bro/sztylet221.gif",
+     "lvl": 50,
+     "reqp": "b"
+    },
+    {
+     "name": "Toksyczny malachit",
+     "cl": 5,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "bro/sztylet222.gif",
+     "lvl": 60,
+     "reqp": "b"
+    },
+    {
+     "name": "Skażona zabawka skrytobójcy",
+     "cl": 5,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "bro/sztylet223.gif",
+     "lvl": 70,
+     "reqp": "b"
+    },
+    {
+     "name": "Skwar",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz616.gif",
+     "lvl": 50,
+     "reqp": "p"
+    },
+    {
+     "name": "Język żaru i ognia",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz614.gif",
+     "lvl": 60,
+     "reqp": "p"
+    },
+    {
+     "name": "Przestroga żywiołaka",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz615.gif",
+     "lvl": 70,
+     "reqp": "p"
+    },
+    {
+     "name": "Oranżowa osłona paladyna",
+     "cl": 14,
+     "price": 12971,
+     "cur": "zl",
+     "icon": "tar/tarcza415.gif",
+     "lvl": 50,
+     "reqp": "p"
+    },
+    {
+     "name": "Tarcza nocy i dni",
+     "cl": 14,
+     "price": 17325,
+     "cur": "zl",
+     "icon": "tar/tarcza416.gif",
+     "lvl": 60,
+     "reqp": "p"
+    },
+    {
+     "name": "Blokada herosa",
+     "cl": 14,
+     "price": 22577,
+     "cur": "zl",
+     "icon": "tar/tarcza417.gif",
+     "lvl": 70,
+     "reqp": "p"
+    },
+    {
+     "name": "Miecz pani jeziora",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz640.gif",
+     "lvl": 50,
+     "reqp": "p"
+    },
+    {
+     "name": "Ostrze wykute z lodowca",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz638.gif",
+     "lvl": 60,
+     "reqp": "p"
+    },
+    {
+     "name": "Talia mroźnej istoty",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz639.gif",
+     "lvl": 70,
+     "reqp": "p"
+    },
+    {
+     "name": "Błyskotwór",
+     "cl": 1,
+     "price": 19457,
+     "cur": "zl",
+     "icon": "mie/miecz628.gif",
+     "lvl": 50,
+     "reqp": "p"
+    },
+    {
+     "name": "Złota karabela triumfatora",
+     "cl": 1,
+     "price": 25988,
+     "cur": "zl",
+     "icon": "mie/miecz630.gif",
+     "lvl": 60,
+     "reqp": "p"
+    },
+    {
+     "name": "Szpon Murmura",
+     "cl": 1,
+     "price": 33864,
+     "cur": "zl",
+     "icon": "mie/miecz629.gif",
+     "lvl": 70,
+     "reqp": "p"
+    },
+    {
+     "name": "Wytwór miejscowej szwaczki",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja697.gif",
+     "lvl": 55,
+     "reqp": "w"
+    },
+    {
+     "name": "Wzmocniona ochrona żeber",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "zbr/zbroja700.gif",
+     "lvl": 65,
+     "reqp": "w"
+    },
+    {
+     "name": "Wytworna kamizela wojownika",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja701.gif",
+     "lvl": 75,
+     "reqp": "w"
+    },
+    {
+     "name": "Strój ze znakiem śmierci",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja705.gif",
+     "lvl": 55,
+     "reqp": "b"
+    },
+    {
+     "name": "Klata pulsujących świateł",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "zbr/zbroja709.gif",
+     "lvl": 65,
+     "reqp": "b"
+    },
+    {
+     "name": "Pancerz zwycięzcy turnieju",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja712.gif",
+     "lvl": 75,
+     "reqp": "b"
+    },
+    {
+     "name": "Pierś z tajemniczym symbolem",
+     "cl": 8,
+     "price": 15044,
+     "cur": "zl",
+     "icon": "zbr/zbroja716.gif",
+     "lvl": 55,
+     "reqp": "p"
+    },
+    {
+     "name": "Odzienie znawcy zaklęć",
+     "cl": 8,
+     "price": 19830,
+     "cur": "zl",
+     "icon": "zbr/zbroja719.gif",
+     "lvl": 65,
+     "reqp": "p"
+    },
+    {
+     "name": "Skórzany strój herosa",
+     "cl": 8,
+     "price": 25581,
+     "cur": "zl",
+     "icon": "zbr/zbroja722.gif",
+     "lvl": 75,
+     "reqp": "p"
+    }
+   ]
+  }
+ ],
+ "role": "trader",
+ "buysAll": true
+}
