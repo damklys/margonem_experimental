@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.87.202610130930",
+ "name": "ZR: (22) Drapieżnicy z Dziewiczej Kniei - Torneg",
+ "questId": 0,
+ "questName": "",
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zakonnik Równowagi To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić...",
+     "a": "pierwszy etap zadania - Drapieżnicy z Dziewiczej Kniei"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
+   "n": 100,
+   "route": "niedzwiedzie (23lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Przegoniłem kotowate do ich kryjówek"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "kolejny etap zadania - Drapieżnicy z Dziewiczej Kniei"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
+   "n": 250,
+   "route": "niedzwiedzie (23lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Przegoniłem kotowate do ich kryjówek"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "ostatni etap zadania - Drapieżnicy z Dziewiczej Kniei"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
+   "n": 500,
+   "route": "niedzwiedzie (23lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Przegoniłem kotowate do ich kryjówek"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}
