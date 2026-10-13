@@ -89,7 +89,7 @@
   {
    "type": "kill",
    "mob": "Leśny bazyliszek; Ziemny bazyliszek; Szlachetny bazyliszek; Kamienny bazyliszek",
-   "n": 250,
+   "n": 150,
    "route": "bazyliszki (26lvl)"
   },
   {
