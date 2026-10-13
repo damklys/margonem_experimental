@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-90",
+  "name": "90lvl",
+  "lvl": 90,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm leśnego licha",
+   "2": "Iglasty kryształ",
+   "3": "Amulet przemiany w gada",
+   "4": "Zamszowy chwyt gadziny",
+   "5": "Gniewna cięciwa z Mythar",
+   "6": "Zbożowy kamuflaż węża",
+   "7": "Płonące strzały na węże",
+   "8": "Fikuśne kamasze maga",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

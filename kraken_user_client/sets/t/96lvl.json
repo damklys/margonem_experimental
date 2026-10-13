@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-96",
+  "name": "96lvl",
+  "lvl": 96,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Podarunek Introprodara",
+   "2": "Jaspisowy język węża",
+   "3": "Smoczy wisior",
+   "4": "Wytwór syczącego rzemieślnika",
+   "5": "Gniewna cięciwa z Mythar",
+   "6": "Odzienie doświadczonego tropiciela",
+   "7": "Płonące strzały na węże",
+   "8": "Mytharskie cholewy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

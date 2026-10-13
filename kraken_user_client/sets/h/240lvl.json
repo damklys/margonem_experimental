@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-240",
+  "name": "240lvl",
+  "lvl": 240,
+  "potionName": "Preparat wzmocnionej regeneracji",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Maska aspirującego skrytobójcy",
+   "2": "Grzybowy zarodnik",
+   "3": "Piękno leśnego runa",
+   "4": "Grzybowe rękawice śmiałka",
+   "5": "Ramiona mocnego naciągu",
+   "6": "Wdzianko łowcy bolit",
+   "7": "Pociski na dendrokreatury",
+   "8": "Utwardzone podeszwy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

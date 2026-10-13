@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-132",
+  "name": "132lvl",
+  "lvl": 132,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Głowochron wilka morskiego",
+   "2": "Ozdoba z krabiego pancerzyka",
+   "3": "Pąk z wyspy Rem",
+   "4": "Rękawice z pustynnego grobowca",
+   "5": "Pogromca zasuszonych mumii",
+   "6": "Szara kurta sternika",
+   "7": "Szpila obrońcy okrętu",
+   "8": "Zielone podeszwy bosmana",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-168",
+  "name": "168lvl",
+  "lvl": 168,
+  "potionName": "Magiczne panaceum",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Wieczorny mrok",
+   "3": "Zielona ozdoba skrytobójcy",
+   "4": "Bagienny uścisk dłoni",
+   "5": "Pazur pośmiertnego stężenia",
+   "6": "Skórzane odzienie asasyna",
+   "7": "Nóż do samoobrony",
+   "8": "Obuwie zgładzonego orka",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

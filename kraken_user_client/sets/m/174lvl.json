@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-174",
+  "name": "174lvl",
+  "lvl": 174,
+  "potionName": "Silny specyfik leczący",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Rogi sztygara",
+   "2": "Lśnienie brzasku",
+   "3": "Wahadełko czarownicy",
+   "4": "Skórzane rękawice górnika",
+   "5": "Kostur oszalałej wiedźmy",
+   "6": "Schludna szata czarnoksiężnika",
+   "7": "Płonący glob",
+   "8": "Kamasze poskramiacza hydr",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-102",
+  "name": "102lvl",
+  "lvl": 102,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Świerkowy kask",
+   "2": "Koralowy język żaby",
+   "3": "Ozdoba wężowego kochanka",
+   "4": "Ochrona z wężowej skóry",
+   "5": "Narzędzie rozrywające wrogów",
+   "6": "Kurta doświadczonego łowcy",
+   "7": "Ostre strzały na aligatory",
+   "8": "Mytharskie cholewy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

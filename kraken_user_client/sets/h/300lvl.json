@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-300",
+  "name": "300lvl",
+  "lvl": 300,
+  "potionName": "Koncentrat zabliźniający",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Oko celności",
+   "2": "Brosza skrytobójczych zasług",
+   "3": "Pąk z driadziej polany",
+   "4": "Kruszyciele lodu",
+   "5": "Najnowsza wersja przeszywacza",
+   "6": "Izolacja wiecznej zmarzliny",
+   "7": "Strzały z eksperymentalnymi lotkami",
+   "8": "Cholewy grotołaza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

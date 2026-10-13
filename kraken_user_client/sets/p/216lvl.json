@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-216",
+  "name": "216lvl",
+  "lvl": 216,
+  "potionName": "Antidotum łowcy węży",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Otok zniewolonej driady",
+   "3": "Krwawy order draka",
+   "4": "Ochrona dłoni wynalazcy",
+   "5": "Pal specyficznej tortury",
+   "6": "Zbroja ze znakiem czaszki",
+   "7": "Lustro rozlanej krwi",
+   "8": "Zdobycz z Katakumb Rozkoszy",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

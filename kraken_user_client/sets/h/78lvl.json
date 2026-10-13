@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-78",
+  "name": "78lvl",
+  "lvl": 78,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Koralowa narośl",
+   "3": "Wonne pąki kniei",
+   "4": "Zemsta banity",
+   "5": "Klątwa głębokich ran",
+   "6": "Warstwa czarnej szczeciny",
+   "7": "Mistrzowski kołczan łowcy",
+   "8": "Pozłacana duma rycerza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

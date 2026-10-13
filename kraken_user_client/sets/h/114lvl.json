@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-114",
+  "name": "114lvl",
+  "lvl": 114,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Obwódka z drutu kolczastego",
+   "2": "Pustynny kryształek",
+   "3": "Awenturyn antycznej mumii",
+   "4": "Skarabeuszowe osłony",
+   "5": "Lekki celownik majtka",
+   "6": "Odzienie pogromcy kotowatych",
+   "7": "Portowa amunicja",
+   "8": "Lekkie trzewiki majtka",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

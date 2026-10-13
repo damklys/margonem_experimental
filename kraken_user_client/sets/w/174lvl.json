@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-174",
+  "name": "174lvl",
+  "lvl": 174,
+  "potionName": "Silny specyfik leczący",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm górmistrza",
+   "2": "Wieczorny mrok",
+   "3": "Krwawe odznaczenie",
+   "4": "Skórzane rękawice górnika",
+   "5": "Ciężkie narzędzie egzekutora",
+   "6": "Pierś zdobywcy kazamat",
+   "8": "Cholewy z czarnej hydry",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

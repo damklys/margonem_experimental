@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-228",
+  "name": "228lvl",
+  "lvl": 228,
+  "potionName": "Słój ze śliną bazyliszka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Stalowy szturmak",
+   "2": "Oczko dojrzałości",
+   "3": "Więzienie błogich doznań",
+   "4": "Bandaże wielkiej przygody",
+   "5": "Jęzor mieszkańca bagien",
+   "6": "Napierśnik odważnego grotołaza",
+   "7": "Pazur czystych cięć",
+   "8": "Wysokie cholewy elfa",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

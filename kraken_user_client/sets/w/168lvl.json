@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-168",
+  "name": "168lvl",
+  "lvl": 168,
+  "potionName": "Magiczne panaceum",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Wieczorny mrok",
+   "3": "Krwawe odznaczenie",
+   "4": "Chwyt zastygłej smoły",
+   "5": "Kłęby stali",
+   "6": "Mundur walczącego z wiedźmami",
+   "8": "Obuwie zgładzonego orka",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

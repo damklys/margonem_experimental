@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-126",
+  "name": "126lvl",
+  "lvl": 126,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm pustynnego eksploratora",
+   "2": "Oko feniksa",
+   "3": "Pąk z wyspy Magradit",
+   "4": "Rękawice z pustynnego grobowca",
+   "5": "Warkocz z wysuszonych korzeni",
+   "6": "Peleryna morskiej toni",
+   "7": "Lotka wirującego piasku",
+   "8": "Obuwie okrętowego obserwatora",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

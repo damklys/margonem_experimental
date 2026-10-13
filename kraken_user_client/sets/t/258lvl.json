@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-258",
+  "name": "258lvl",
+  "lvl": 258,
+  "potionName": "Eliksir mistrza alchemii",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Twardy czerep czarnoksiężnika",
+   "2": "Złoty symbol mądrości",
+   "3": "Kwiat z wiedźmiej oranżerii",
+   "4": "Krwawe palce dzikusa",
+   "5": "Wyrzutnia spalonego plażowicza",
+   "6": "Warstwy papuzich piór",
+   "7": "Lotki pogromcy nokturni",
+   "8": "Utwardzone podeszwy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

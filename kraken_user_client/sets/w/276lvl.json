@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-276",
+  "name": "276lvl",
+  "lvl": 276,
+  "potionName": "Próbka krwi minotaura",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Stalowa twarzyczka",
+   "2": "Kwiecie wiedźmy",
+   "3": "Źródło odurzających zapachów",
+   "4": "Palce czarnej magii",
+   "5": "Potępiona chmura",
+   "6": "Pierś wiedźmobija",
+   "8": "Wysokie obuwie z katakumb",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

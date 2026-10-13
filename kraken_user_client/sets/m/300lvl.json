@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-300",
+  "name": "300lvl",
+  "lvl": 300,
+  "potionName": "Koncentrat zabliźniający",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Koncentrator absorpcji",
+   "2": "Brosza magicznych zasług",
+   "3": "Płatki nieprzewidzialności losu",
+   "4": "Miażdżycielki lodowych skał",
+   "5": "Berło mistyka",
+   "6": "Habit z kamieniem szlachetnym",
+   "7": "Skarb z Shaiharrud",
+   "8": "Cholewy grotołaza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

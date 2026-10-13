@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-252",
+  "name": "252lvl",
+  "lvl": 252,
+  "potionName": "Eliksir mistrza alchemii",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Poroże mordercy",
+   "2": "Grzybowy zarodnik",
+   "3": "Mutagenny klejnot grzybiarza",
+   "4": "Grzybowe rękawice śmiałka",
+   "5": "Cęgi boliciego dentysty",
+   "6": "Łuski aspirującego dowódcy",
+   "8": "Utwardzone podeszwy",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

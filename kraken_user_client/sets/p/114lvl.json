@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-114",
+  "name": "114lvl",
+  "lvl": 114,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Obwódka z drutu kolczastego",
+   "2": "Fragment koralowca",
+   "3": "Zapomniana ozdoba alghula",
+   "4": "Uścisk czarnej pantery",
+   "5": "Rozdarcie mumich bandaży",
+   "6": "Kamuflaż kałamarnicy",
+   "7": "Zasłona prażącego słońca",
+   "8": "Buciki szczura okrętowego",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

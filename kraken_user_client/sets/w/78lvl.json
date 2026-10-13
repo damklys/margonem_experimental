@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-78",
+  "name": "78lvl",
+  "lvl": 78,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Pycha Wernoradu",
+   "3": "Wonne pąki kniei",
+   "4": "Zakurzone wojenne rękawice",
+   "5": "Obcęgi szalonego dentysty",
+   "6": "Wytworna kamizela wojownika",
+   "8": "Pozłacana duma rycerza",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

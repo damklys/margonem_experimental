@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-216",
+  "name": "216lvl",
+  "lvl": 216,
+  "potionName": "Antidotum łowcy węży",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Kryształowe kwiecie Valmira",
+   "3": "Krwawy order draka",
+   "4": "Ochrona dłoni wynalazcy",
+   "5": "Powód do niepokoju",
+   "6": "Więzienie zbłąkanej duszy",
+   "8": "Podeszwy z thuzalskich koszarów",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-288",
+  "name": "288lvl",
+  "lvl": 288,
+  "potionName": "Roztwór Róży Wspomnień",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Oczy specjalisty w mordowaniu",
+   "2": "Stalowa odznaka z katakumb",
+   "3": "Malachitowy kotylion",
+   "4": "Wielka duma śmiałka",
+   "5": "Cięciwa pochlebnych opinii",
+   "6": "Kapota wielkiej chwały",
+   "7": "Ranienie smoczego ogona",
+   "8": "Buty zdobione łzami driad",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-192",
+  "name": "192lvl",
+  "lvl": 192,
+  "potionName": "Wyciąg wieloziołowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Misyjna czapka teologa",
+   "2": "Błyskotka z Gildii Wynalazców",
+   "3": "Żołnierskie odznaczenie",
+   "4": "Palce wyblakłych kolorów",
+   "5": "Cięciwa zlęknionej driady",
+   "6": "Driadzia podomka",
+   "7": "Nośniki wielkich boleści",
+   "8": "Elfickie kamasze",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

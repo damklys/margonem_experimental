@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-168",
+  "name": "168lvl",
+  "lvl": 168,
+  "potionName": "Magiczne panaceum",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Lśnienie brzasku",
+   "3": "Wahadełko czarownicy",
+   "4": "Cyklamenowe palce alchemika",
+   "5": "Pożeracz płomieni",
+   "6": "Magiczne odzienie górnika",
+   "7": "Zabawka piromana",
+   "8": "Kozaki spalonej wiedźmy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

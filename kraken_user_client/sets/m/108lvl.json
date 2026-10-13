@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-108",
+  "name": "108lvl",
+  "lvl": 108,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Podarunek Introprodara",
+   "2": "Fragment koralowca",
+   "3": "Amulet kościstej pokraki",
+   "4": "Wytwór syczącego rzemieślnika",
+   "5": "Skarb ifryta",
+   "6": "Szata doświadczonego maga",
+   "7": "Serce nienawiści",
+   "8": "Mytharskie cholewy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

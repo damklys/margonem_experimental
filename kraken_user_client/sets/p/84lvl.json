@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-84",
+  "name": "84lvl",
+  "lvl": 84,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Iglasty kryształ",
+   "3": "Gadzia kolia",
+   "4": "Splot ametystowych nici",
+   "5": "Płomienny sejmitar",
+   "6": "Skórzany strój herosa",
+   "7": "Ochrona gadziego odkrywcy",
+   "8": "Cholewy czarnoksiężnika",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

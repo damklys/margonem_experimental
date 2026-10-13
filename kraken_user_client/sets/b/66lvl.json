@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-66",
+  "name": "66lvl",
+  "lvl": 66,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Czapka łowcy tygrysów",
+   "2": "Symbol spopielenia",
+   "3": "Kwiecisty popis jubilera",
+   "4": "Lniane otuldłonie",
+   "5": "Ekwipunek szlachcica",
+   "6": "Klata pulsujących świateł",
+   "7": "Duma rzeźnika",
+   "8": "Szczecina gnolla",
+   "9": "Talizman życia II"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

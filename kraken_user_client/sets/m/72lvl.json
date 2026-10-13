@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-72",
+  "name": "72lvl",
+  "lvl": 72,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Magiczne wsparcie demiliszy",
+   "2": "Sygnet wyniosłości",
+   "3": "Odurzająca woń hortensji",
+   "4": "Krwawe pięści maga",
+   "5": "Przewodnik magmowych świątyń",
+   "6": "Surdut sztukmistrza",
+   "7": "Serce wygasłego wulkanu",
+   "8": "Szczecina gnolla",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

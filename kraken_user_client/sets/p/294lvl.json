@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-294",
+  "name": "294lvl",
+  "lvl": 294,
+  "potionName": "Wywar z magicznych porostów",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Gogle wielkiej cierpliwości",
+   "2": "Opieka pustynnej nocy",
+   "3": "Wojenny kryształ",
+   "4": "Wielka duma śmiałka",
+   "5": "Żarliwość ludzkiego uznania",
+   "6": "Pancerz bijącej dumy",
+   "7": "Zwierciadło pustynnej nocy",
+   "8": "Rozpraszacze mroków historii",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

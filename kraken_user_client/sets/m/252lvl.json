@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-252",
+  "name": "252lvl",
+  "lvl": 252,
+  "potionName": "Eliksir mistrza alchemii",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Twardy czerep czarnoksiężnika",
+   "2": "Kryształ leśnego mutanta",
+   "3": "Kolia ze złośliwej grzybni",
+   "4": "Krwawe palce dzikusa",
+   "5": "Noga piekielnego ognia",
+   "6": "Szata pogromcy dendrokreatur",
+   "7": "Magmowe oko czarnoksiężnika",
+   "8": "Utwardzone podeszwy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

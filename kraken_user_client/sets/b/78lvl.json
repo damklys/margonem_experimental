@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-78",
+  "name": "78lvl",
+  "lvl": 78,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Koralowa narośl",
+   "3": "Wonne pąki kniei",
+   "4": "Zakurzone wojenne rękawice",
+   "5": "Szeroki metal strażnika",
+   "6": "Pancerz zwycięzcy turnieju",
+   "7": "Stalowy płatek",
+   "8": "Pozłacana duma rycerza",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

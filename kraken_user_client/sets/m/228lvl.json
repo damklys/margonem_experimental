@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-228",
+  "name": "228lvl",
+  "lvl": 228,
+  "potionName": "Słój ze śliną bazyliszka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Zaczarowane kabuto",
+   "2": "Sygnet starości",
+   "3": "Wisior kumulacji gniewu",
+   "4": "Bandaże wielkiej przygody",
+   "5": "Wypalacz lepkich pajęczyn",
+   "6": "Strój obiecującego naukowca",
+   "7": "Żar podziemnych kuźni",
+   "8": "Cholewy mieszkańca kniei",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

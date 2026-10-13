@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-150",
+  "name": "150lvl",
+  "lvl": 150,
+  "potionName": "Magiczne panaceum",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Czapa portowego bywalca",
+   "2": "Grudka wygasającego wulkanu",
+   "3": "Ozdoba kwitnących alg",
+   "4": "Chwyt wprawionego poławiacza",
+   "5": "Klinga wygasłego wulkanu",
+   "6": "Skórzana kamizela cieśli",
+   "7": "Fragment syreniego ogona",
+   "8": "Kapitańskie kamasze",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

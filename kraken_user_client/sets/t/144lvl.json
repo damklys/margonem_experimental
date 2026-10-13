@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-144",
+  "name": "144lvl",
+  "lvl": 144,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Kask zawodowego żeglarza",
+   "2": "Sygnet aktywności wulkanicznej",
+   "3": "Wodne kwiecie oceanu",
+   "4": "Osłony krwiożerczej piranii",
+   "5": "Splot płonącego krzewu",
+   "6": "Błękitny falochron",
+   "7": "Rozżarzony grot dżina",
+   "8": "Kapitańskie kamasze",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

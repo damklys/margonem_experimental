@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-288",
+  "name": "288lvl",
+  "lvl": 288,
+  "potionName": "Roztwór Róży Wspomnień",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Gogle wielkiej cierpliwości",
+   "2": "Opieka pustynnej nocy",
+   "3": "Brunatna ozdoba czarodzieja",
+   "4": "Wielka duma śmiałka",
+   "5": "Cięciwa dobrego imienia",
+   "6": "Peleryna niespotykanego zaszczytu",
+   "7": "Ogień smoczej pustyni",
+   "8": "Pustynny przemarsz smokoludzi",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

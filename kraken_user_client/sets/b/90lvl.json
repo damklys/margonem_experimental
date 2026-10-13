@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-90",
+  "name": "90lvl",
+  "lvl": 90,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosta wężowa łebka",
+   "2": "Bagienna narośl",
+   "3": "Naszyjnik ofiary bagien",
+   "4": "Zamszowy chwyt gadziny",
+   "5": "Piła tnąca konary",
+   "6": "Blaszane oko bogów",
+   "7": "Żelazna strzałka",
+   "8": "Ochrona przed igliwiem",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

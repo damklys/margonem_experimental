@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-264",
+  "name": "264lvl",
+  "lvl": 264,
+  "potionName": "Płyn w kryształowym więzieniu",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Stalowa twarzyczka",
+   "2": "Błykotka w kolorze błota",
+   "3": "Źródło odurzających zapachów",
+   "4": "Dłonie umoczone w truciźnie",
+   "5": "Brzęcząca struna łowcy",
+   "6": "Kubrak myśliwego specjalisty",
+   "7": "Lotki strażnika czarownic",
+   "8": "Wysokie obuwie z katakumb",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

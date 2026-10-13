@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-216",
+  "name": "216lvl",
+  "lvl": 216,
+  "potionName": "Antidotum łowcy węży",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Otok zniewolonej driady",
+   "3": "Korowy amulet driady",
+   "4": "Ochrona dłoni maga",
+   "5": "Rdzeń zmutowanej rośliny",
+   "6": "Ochrona ożywieńca",
+   "7": "Amunicja dotkliwych poparzeń",
+   "8": "Zdobycz z Katakumb Rozkoszy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

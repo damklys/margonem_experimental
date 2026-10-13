@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-60",
+  "name": "60lvl",
+  "lvl": 60,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Osłona młodej harpii",
+   "2": "Odznaka młodego asasyna",
+   "3": "Zielony wabiciel żądłaków",
+   "4": "Poplamione rękawice strażnika",
+   "5": "Przekleństwo leśnej zwierzyny",
+   "6": "Skórzana kurta łowcy",
+   "7": "Doskonały kołczan łowcy",
+   "8": "Szelest nieuważnego kobolda",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

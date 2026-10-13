@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-174",
+  "name": "174lvl",
+  "lvl": 174,
+  "potionName": "Silny specyfik leczący",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Rogi sztygara",
+   "2": "Lśnienie brzasku",
+   "3": "Krwawe odznaczenie",
+   "4": "Skórzane rękawice górnika",
+   "5": "Rdzeń magmowego filaru",
+   "6": "Kurta łowcy orków",
+   "7": "Lśniąca tarcza zakonnika",
+   "8": "Cholewy z czarnej hydry",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

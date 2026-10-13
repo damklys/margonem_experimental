@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-120",
+  "name": "120lvl",
+  "lvl": 120,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Obwódka z drutu kolczastego",
+   "2": "Fragment koralowca",
+   "3": "Amulet kościstej pokraki",
+   "4": "Skórki pustynnej żaby",
+   "5": "Kwiat pustyni",
+   "6": "Kurta gorącej pustyni",
+   "7": "Orb słonecznych pęcherzy",
+   "8": "Buciki szczura okrętowego",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

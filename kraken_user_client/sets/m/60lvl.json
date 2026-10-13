@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-60",
+  "name": "60lvl",
+  "lvl": 60,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm łowcy koboldów",
+   "2": "Pierścień ulotnej myśli",
+   "3": "Miododajny naszyjnik maga",
+   "4": "Poplamione rękawice strażnika",
+   "5": "Kryształy erupcji",
+   "6": "Strój szlachetnego czarodzieja",
+   "7": "Piekielny podarunek",
+   "8": "Obuwie pokryte pajęczyną",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-96",
+  "name": "96lvl",
+  "lvl": 96,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Okazałe rogi centaura",
+   "2": "Rubinowy język kameleona",
+   "3": "Ozdoba wężowego kochanka",
+   "4": "Ochrona z wężowej skóry",
+   "5": "Czarna poszarpana klinga",
+   "6": "Pancerz doświadczonego wojownika",
+   "8": "Mytharskie cholewy",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

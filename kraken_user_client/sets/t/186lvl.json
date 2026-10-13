@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-186",
+  "name": "186lvl",
+  "lvl": 186,
+  "potionName": "Silny specyfik leczący",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Astralny kask maga",
+   "2": "Błyskotka z Gildii Magów",
+   "3": "Ozdoba mieszczucha",
+   "4": "Dotyk głębokiej czerwieni",
+   "5": "Oddech ogra",
+   "6": "Zimowy kubrak Valmira",
+   "7": "Upust skumulowanych płomieni",
+   "8": "Elfickie kamasze",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

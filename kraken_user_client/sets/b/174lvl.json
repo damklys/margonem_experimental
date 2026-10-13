@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.120.202610132000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-174",
+  "name": "174lvl",
+  "lvl": 174,
+  "potionName": "Silny specyfik leczący",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm górmistrza",
+   "2": "Wieczorny mrok",
+   "3": "Zielona ozdoba skrytobójcy",
+   "4": "Skórzane rękawice górnika",
+   "5": "Ostrze czarnych skrzepów",
+   "6": "Żołnierski uniform",
+   "7": "Wykrawacz mięsnych kąsków",
+   "8": "Zielone skórki hydry",
+   "9": "Talizman życia III"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}
