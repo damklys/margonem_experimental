@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-zbiry-46lvl",
+  "name": "zbiry (46lvl)",
+  "lvlMin": 42,
+  "lvlMax": 49,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Ciemnica Szubrawców p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Ciemnica Szubrawców p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Ciemnica Szubrawców p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Stary Kupiecki Trakt",
+    "attack": true
+   },
+   {
+    "location": "Stukot Widmowych Kół",
+    "attack": true
+   },
+   {
+    "location": "Wertepy Rzezimieszków",
+    "attack": true
+   },
+   {
+    "location": "Stukot Widmowych Kół",
+    "attack": false
+   },
+   {
+    "location": "Stary Kupiecki Trakt",
+    "attack": false
+   },
+   {
+    "location": "Ciemnica Szubrawców p.1 - sala 3",
+    "attack": false
+   },
+   {
+    "location": "Ciemnica Szubrawców p.1 - sala 2",
+    "attack": false
+   }
+  ]
+ }
+}

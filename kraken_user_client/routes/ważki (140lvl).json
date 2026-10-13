@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-140-wazki",
+ "route": {
+  "id": "mw-wazki-140lvl",
+  "name": "ważki (140lvl)",
+  "lvlMin": 136,
+  "lvlMax": 143,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Jezioro Ważek",
+    "attack": true
+   },
+   {
+    "location": "Góralskie Przejście",
+    "attack": false
+   },
+   {
+    "location": "Babi Wzgórek",
+    "attack": true
+   },
+   {
+    "location": "Góralskie Przejście",
+    "attack": false
+   }
+  ]
+ }
+}

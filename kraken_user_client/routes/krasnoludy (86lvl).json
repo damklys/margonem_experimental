@@ -1,0 +1,27 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-krasnoludy-86lvl",
+  "name": "krasnoludy (86lvl)",
+  "lvlMin": 82,
+  "lvlMax": 89,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Labirynt Margorii",
+    "attack": true
+   },
+   {
+    "location": "Margoria",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Margorii",
+    "attack": true
+   }
+  ]
+ }
+}

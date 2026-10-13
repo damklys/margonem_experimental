@@ -1,0 +1,35 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-jaskiniowe-tolloki-71lvl",
+  "name": "jaskiniowe tolloki (71lvl)",
+  "lvlMin": 67,
+  "lvlMax": 74,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zdradzieckie Przejście p.1",
+    "attack": true
+   },
+   {
+    "location": "Głębokie Skałki p.1",
+    "attack": true
+   },
+   {
+    "location": "Głębokie Skałki p.2",
+    "attack": true
+   },
+   {
+    "location": "Głębokie Skałki p.3",
+    "attack": true
+   },
+   {
+    "location": "Głębokie Skałki p.2",
+    "attack": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,199 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-239-drzewce",
+ "route": {
+  "id": "mw-drzewce-239lvl",
+  "name": "drzewce (239lvl)",
+  "lvlMin": 235,
+  "lvlMax": 242,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Urwisko Zdrewniałych",
+    "attack": true
+   },
+   {
+    "location": "Wąwóz Zakorzenionych Dusz",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Wąwóz Zakorzenionych Dusz",
+    "attack": true
+   },
+   {
+    "location": "Regiel Zabłąkanych",
+    "attack": true
+   },
+   {
+    "location": "Źródło Zakorzenionego Ludu",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.3",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Korzennego Czaru p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Źródło Zakorzenionego Ludu",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Gęstwina",
+    "attack": true
+   },
+   {
+    "location": "Źródło Zakorzenionego Ludu",
+    "attack": true
+   },
+   {
+    "location": "Regiel Zabłąkanych",
+    "attack": true
+   },
+   {
+    "location": "Wąwóz Zakorzenionych Dusz",
+    "attack": true
+   },
+   {
+    "location": "Urwisko Zdrewniałych",
+    "attack": true
+   },
+   {
+    "location": "Wąwóz Zakorzenionych Dusz",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota - sala boczna",
+    "attack": false
+   },
+   {
+    "location": "Krzaczasta Grota - korytarz",
+    "attack": true
+   },
+   {
+    "location": "Krzaczasta Grota - sala boczna",
+    "attack": false
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 3",
+    "attack": false
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 2",
+    "attack": false
+   },
+   {
+    "location": "Krzaczasta Grota p.1 - sala 1",
+    "attack": false
+   },
+   {
+    "location": "Wąwóz Zakorzenionych Dusz",
+    "attack": false
+   }
+  ]
+ }
+}

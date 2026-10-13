@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-gobliny-34lvl",
+  "name": "gobliny (34lvl)",
+  "lvlMin": 30,
+  "lvlMax": 37,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Las Goblinów",
+    "attack": true
+   },
+   {
+    "location": "Podmokła Dolina",
+    "attack": true
+   },
+   {
+    "location": "Morwowe Przejście",
+    "attack": true
+   },
+   {
+    "location": "Podmokła Dolina",
+    "attack": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-puffy-37lvl",
+  "name": "puffy (37lvl)",
+  "lvlMin": 33,
+  "lvlMax": 40,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Pieczara Niepogody p.1",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Niepogody p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Niepogody p.3",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Niepogody p.4",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Niepogody p.5",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Niepogody p.4",
+    "attack": false
+   },
+   {
+    "location": "Pieczara Niepogody p.3",
+    "attack": false
+   },
+   {
+    "location": "Pieczara Niepogody p.2 - sala 2",
+    "attack": true
+   }
+  ]
+ }
+}

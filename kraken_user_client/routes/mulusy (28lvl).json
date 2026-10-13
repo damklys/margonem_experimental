@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-mulusy-28lvl",
+  "name": "mulusy (28lvl)",
+  "lvlMin": 24,
+  "lvlMax": 31,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Dzikie Pagórki",
+    "attack": true
+   },
+   {
+    "location": "Pradawne Wzgórze Przodków",
+    "attack": true
+   },
+   {
+    "location": "Osada Mulusów",
+    "attack": true
+   },
+   {
+    "location": "Pradawne Wzgórze Przodków",
+    "attack": false
+   }
+  ]
+ }
+}

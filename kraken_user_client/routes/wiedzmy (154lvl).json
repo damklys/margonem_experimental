@@ -1,0 +1,127 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-154-wiedzmy",
+ "route": {
+  "id": "mw-wiedzmy-154lvl",
+  "name": "wiedzmy (154lvl)",
+  "lvlMin": 150,
+  "lvlMax": 157,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Wiedźmie Kotłowisko",
+    "attack": true
+   },
+   {
+    "location": "Sabatowe Góry",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Dom Adariel",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Dom Amry",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Dom Atalii",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Dom czarnej magii",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Dom starej czarownicy",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Magazyn mioteł",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Ograbiona świątynia",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Opuszczone więzienie",
+    "attack": true
+   },
+   {
+    "location": "Lochy Tristam",
+    "attack": true
+   },
+   {
+    "location": "Laboratorium Adariel",
+    "attack": true
+   },
+   {
+    "location": "Lochy Tristam",
+    "attack": true
+   },
+   {
+    "location": "Opuszczone więzienie",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Splugawiona kaplica",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Splądrowana kaplica",
+    "attack": true
+   },
+   {
+    "location": "Tristam",
+    "attack": true
+   },
+   {
+    "location": "Sabatowe Góry",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-pokatniki-52lvl",
+  "name": "pokątniki (52lvl)",
+  "lvlMin": 48,
+  "lvlMax": 55,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Grota Bezszelestnych Kroków - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Grota Bezszelestnych Kroków - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Bezszelestnych Kroków - sala 3",
+    "attack": true
+   }
+  ]
+ }
+}

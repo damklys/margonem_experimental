@@ -1,0 +1,63 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-208-furbole",
+ "route": {
+  "id": "mw-furbole-208lvl",
+  "name": "furbole (208lvl)",
+  "lvlMin": 204,
+  "lvlMax": 211,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zapomniany Las",
+    "attack": true
+   },
+   {
+    "location": "Rozległa Równina",
+    "attack": true
+   },
+   {
+    "location": "Dolina Gniewu",
+    "attack": true
+   },
+   {
+    "location": "Terytorium Furii",
+    "attack": true
+   },
+   {
+    "location": "Zapadlisko Zniewolonych",
+    "attack": true
+   },
+   {
+    "location": "Terytorium Furii",
+    "attack": true
+   },
+   {
+    "location": "Dolina Gniewu",
+    "attack": true
+   },
+   {
+    "location": "Zalana Grota",
+    "attack": true
+   },
+   {
+    "location": "Dolina Gniewu",
+    "attack": true
+   },
+   {
+    "location": "Rozległa Równina",
+    "attack": true
+   },
+   {
+    "location": "Wzgórza Obłędu",
+    "attack": true
+   },
+   {
+    "location": "Rozległa Równina",
+    "attack": true
+   }
+  ]
+ }
+}

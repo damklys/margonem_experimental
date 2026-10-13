@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-erem-80lvl",
+  "name": "erem (80lvl)",
+  "lvlMin": 76,
+  "lvlMax": 83,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Erem Czarnego Słońca p.1 - północ",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3",
+    "attack": false
+   },
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3 - południe",
+    "attack": true
+   },
+   {
+    "location": "Skały Mroźnych Śpiewów",
+    "attack": false
+   }
+  ]
+ }
+}

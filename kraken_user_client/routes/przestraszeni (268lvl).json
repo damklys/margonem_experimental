@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-268-przestraszeni",
+ "route": {
+  "id": "mw-przestraszeni-268lvl",
+  "name": "przestraszeni (268lvl)",
+  "lvlMin": 264,
+  "lvlMax": 271,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 6",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szepczące Wyrwy p.2 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

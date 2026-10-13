@@ -1,0 +1,35 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-wodniki-75-lvl",
+  "name": "wodniki (75 lvl)",
+  "lvlMin": 72,
+  "lvlMax": 78,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Moczary Rybiego Oka",
+    "attack": true
+   },
+   {
+    "location": "Uroczysko Wodnika",
+    "attack": true
+   },
+   {
+    "location": "Źródło Narumi",
+    "attack": true
+   },
+   {
+    "location": "Uroczysko Wodnika",
+    "attack": false
+   },
+   {
+    "location": "Moczary Rybiego Oka",
+    "attack": false
+   }
+  ]
+ }
+}

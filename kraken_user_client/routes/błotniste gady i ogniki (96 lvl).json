@@ -1,0 +1,23 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-blotniste-gady-i-ogniki-96-lvl",
+  "name": "błotniste gady i ogniki (96 lvl)",
+  "lvlMin": 93,
+  "lvlMax": 99,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Złowrogie Bagna",
+    "attack": true
+   },
+   {
+    "location": "Gadzia Kotlina",
+    "attack": true
+   }
+  ]
+ }
+}

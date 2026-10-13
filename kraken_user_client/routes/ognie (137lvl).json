@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-137-ognie",
+ "route": {
+  "id": "mw-ognie-137lvl",
+  "name": "ognie (137lvl)",
+  "lvlMin": 133,
+  "lvlMax": 140,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Ścieżki Erebeth p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Ścieżki Erebeth p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Ścieżki Erebeth p.3",
+    "attack": true
+   },
+   {
+    "location": "Ścieżki Erebeth p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Ścieżki Erebeth p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Ścieżki Erebeth p.3",
+    "attack": true
+   },
+   {
+    "location": "Kuźnia Worundriela p.3",
+    "attack": false
+   },
+   {
+    "location": "Ognista Studnia p.3",
+    "attack": false
+   },
+   {
+    "location": "Ognista Studnia p.2",
+    "attack": false
+   },
+   {
+    "location": "Ognista Studnia p.1",
+    "attack": true
+   },
+   {
+    "location": "Ognista Studnia p.2",
+    "attack": false
+   },
+   {
+    "location": "Ognista Studnia p.3",
+    "attack": false
+   },
+   {
+    "location": "Kuźnia Worundriela p.3",
+    "attack": false
+   },
+   {
+    "location": "Ścieżki Erebeth p.3",
+    "attack": false
+   }
+  ]
+ }
+}

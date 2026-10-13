@@ -1,0 +1,175 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-227-maddoki",
+ "route": {
+  "id": "mw-maddoki-227lvl",
+  "name": "maddoki (227lvl)",
+  "lvlMin": 223,
+  "lvlMax": 230,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zawodzące Kaskady",
+    "attack": true
+   },
+   {
+    "location": "Strumienie Szemrzących Wód",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Strumienie Szemrzących Wód",
+    "attack": true
+   },
+   {
+    "location": "Skryty Azyl",
+    "attack": true
+   },
+   {
+    "location": "Dolina Potoku Śmierci",
+    "attack": true
+   },
+   {
+    "location": "Nora Jaszczurzych Koszmarów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Dolina Potoku Śmierci",
+    "attack": true
+   },
+   {
+    "location": "Złota Dąbrowa",
+    "attack": true
+   },
+   {
+    "location": "Mechata Jama p.1",
+    "attack": true
+   },
+   {
+    "location": "Mechata Jama p.2",
+    "attack": true
+   },
+   {
+    "location": "Mechata Jama p.3",
+    "attack": true
+   },
+   {
+    "location": "Mechata Jama p.2",
+    "attack": true
+   },
+   {
+    "location": "Mechata Jama p.1",
+    "attack": true
+   },
+   {
+    "location": "Złota Dąbrowa",
+    "attack": true
+   },
+   {
+    "location": "Dolina Potoku Śmierci",
+    "attack": true
+   },
+   {
+    "location": "Skryty Azyl",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Grota Porośniętych Stalagmitów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Skryty Azyl",
+    "attack": true
+   },
+   {
+    "location": "Strumienie Szemrzących Wód",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-rozbojnicy-32lvl",
+  "name": "rozbójnicy (32lvl)",
+  "lvlMin": 28,
+  "lvlMax": 35,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Przełęcz Łotrzyków",
+    "attack": true
+   },
+   {
+    "location": "Dolina Rozbójników",
+    "attack": true
+   },
+   {
+    "location": "Kamienna Kryjówka",
+    "attack": true
+   },
+   {
+    "location": "Dolina Rozbójników",
+    "attack": false
+   },
+   {
+    "location": "Przełęcz Łotrzyków",
+    "attack": false
+   },
+   {
+    "location": "Pagórki Łupieżców",
+    "attack": true
+   },
+   {
+    "location": "Skład Grabieżców",
+    "attack": true
+   },
+   {
+    "location": "Pagórki Łupieżców",
+    "attack": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-286-mroczne-driady",
+ "route": {
+  "id": "mw-mroczne-driady-286lvl",
+  "name": "mroczne driady (286lvl)",
+  "lvlMin": 282,
+  "lvlMax": 289,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Rozlewisko Kai",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-dlawiciele-83lvl",
+  "name": "dławiciele (83lvl)",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Wylęgarnia Choukkerów p.1",
+    "attack": true
+   },
+   {
+    "location": "Wylęgarnia Choukkerów p.2",
+    "attack": true
+   },
+   {
+    "location": "Wylęgarnia Choukkerów p.3",
+    "attack": true
+   },
+   {
+    "location": "Wylęgarnia Choukkerów p.2",
+    "attack": true
+   }
+  ]
+ }
+}

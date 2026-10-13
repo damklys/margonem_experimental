@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-zadlaki-58lvl",
+  "name": "żądłaki (58lvl)",
+  "lvlMin": 54,
+  "lvlMax": 61,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Porzucone Pasieki",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Kapiącego Miodu p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Kapiącego Miodu p.3",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Kapiącego Miodu p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Kapiącego Miodu p.1 - sala 2",
+    "attack": true
+   }
+  ]
+ }
+}

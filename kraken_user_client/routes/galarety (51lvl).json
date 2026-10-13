@@ -1,0 +1,35 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-galarety-51lvl",
+  "name": "galarety (51lvl)",
+  "lvlMin": 47,
+  "lvlMax": 54,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Mokra Grota p.1",
+    "attack": true
+   },
+   {
+    "location": "Mokra Grota p.1 - boczny korytarz",
+    "attack": true
+   },
+   {
+    "location": "Mokra Grota p.2 - korytarz",
+    "attack": true
+   },
+   {
+    "location": "Mokra Grota p.1 - boczny korytarz",
+    "attack": false
+   },
+   {
+    "location": "Mokra Grota p.1 - przełaz",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-136-impy",
+ "route": {
+  "id": "mw-impy-136lvl",
+  "name": "impy (136lvl)",
+  "lvlMin": 132,
+  "lvlMax": 139,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Chodniki Mrinding",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Chodniki Mrinding p.1 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

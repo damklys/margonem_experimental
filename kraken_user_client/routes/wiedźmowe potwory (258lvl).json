@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-258-wiedzmowe-potwory",
+ "route": {
+  "id": "mw-wiedzmowe-potwory-258lvl",
+  "name": "wiedźmowe potwory (258lvl)",
+  "lvlMin": 254,
+  "lvlMax": 261,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zachodnie Zbocze",
+    "attack": true
+   },
+   {
+    "location": "Plugawe Pustkowie",
+    "attack": true
+   },
+   {
+    "location": "Jęczywąwóz",
+    "attack": true
+   },
+   {
+    "location": "Pogranicze Wisielców",
+    "attack": true
+   },
+   {
+    "location": "Skalisty Styk",
+    "attack": true
+   },
+   {
+    "location": "Zacisze Zimnych Wiatrów",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Przyjemnej Woni",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Przyjemnej Woni - źródło",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Przyjemnej Woni",
+    "attack": true
+   },
+   {
+    "location": "Zacisze Zimnych Wiatrów",
+    "attack": true
+   },
+   {
+    "location": "Skalisty Styk",
+    "attack": true
+   },
+   {
+    "location": "Pogranicze Wisielców",
+    "attack": true
+   },
+   {
+    "location": "Jęczywąwóz",
+    "attack": true
+   },
+   {
+    "location": "Plugawe Pustkowie",
+    "attack": true
+   }
+  ]
+ }
+}

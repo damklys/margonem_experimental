@@ -1,0 +1,23 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-bazyliszki-26lvl",
+  "name": "bazyliszki (26lvl)",
+  "lvlMin": 22,
+  "lvlMax": 29,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Las Tropicieli",
+    "attack": true
+   },
+   {
+    "location": "Dziewicza Knieja",
+    "attack": false
+   }
+  ]
+ }
+}

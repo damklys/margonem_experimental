@@ -1,0 +1,247 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-253-maho",
+ "route": {
+  "id": "mw-maho-253lvl",
+  "name": "maho (253lvl)",
+  "lvlMin": 249,
+  "lvlMax": 256,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Altepetl Mahoptekan",
+    "attack": true
+   },
+   {
+    "location": "Topan p.1",
+    "attack": true
+   },
+   {
+    "location": "Topan p.2",
+    "attack": true
+   },
+   {
+    "location": "Topan p.3",
+    "attack": true
+   },
+   {
+    "location": "Topan p.4",
+    "attack": true
+   },
+   {
+    "location": "Topan p.5",
+    "attack": true
+   },
+   {
+    "location": "Topan p.6",
+    "attack": true
+   },
+   {
+    "location": "Topan p.7",
+    "attack": true
+   },
+   {
+    "location": "Topan p.8",
+    "attack": true
+   },
+   {
+    "location": "Topan p.9",
+    "attack": true
+   },
+   {
+    "location": "Topan p.10",
+    "attack": true
+   },
+   {
+    "location": "Topan p.11",
+    "attack": true
+   },
+   {
+    "location": "Topan p.12",
+    "attack": true
+   },
+   {
+    "location": "Topan p.13",
+    "attack": true
+   },
+   {
+    "location": "Topan p.12",
+    "attack": true
+   },
+   {
+    "location": "Topan p.11",
+    "attack": true
+   },
+   {
+    "location": "Topan p.10",
+    "attack": true
+   },
+   {
+    "location": "Topan p.9",
+    "attack": true
+   },
+   {
+    "location": "Topan p.8",
+    "attack": true
+   },
+   {
+    "location": "Topan p.7",
+    "attack": true
+   },
+   {
+    "location": "Topan p.6",
+    "attack": true
+   },
+   {
+    "location": "Topan p.5",
+    "attack": true
+   },
+   {
+    "location": "Topan p.4",
+    "attack": true
+   },
+   {
+    "location": "Topan p.3",
+    "attack": true
+   },
+   {
+    "location": "Topan p.2",
+    "attack": true
+   },
+   {
+    "location": "Topan p.1",
+    "attack": true
+   },
+   {
+    "location": "Altepetl Mahoptekan",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.1",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.2",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.3",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.4",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.5",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.6",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.7",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.8",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.7",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.6",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.5",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.4",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.3",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.2",
+    "attack": true
+   },
+   {
+    "location": "Wschodni Mictlan p.1",
+    "attack": true
+   },
+   {
+    "location": "Altepetl Mahoptekan",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.1",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.2",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.3",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.4",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.5",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.6",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.7",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.8",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.7",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.6",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.5",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.4",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.3",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.2",
+    "attack": true
+   },
+   {
+    "location": "Zachodni Mictlan p.1",
+    "attack": true
+   }
+  ]
+ }
+}

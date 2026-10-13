@@ -1,0 +1,35 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-stare-wyrobisko",
+  "name": "stare wyrobisko",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Morwowe Przejście",
+    "attack": false
+   },
+   {
+    "location": "Nawiedzony Jar",
+    "attack": false
+   },
+   {
+    "location": "Stare Wyrobisko p.3",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.4",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.5",
+    "attack": true
+   }
+  ]
+ }
+}

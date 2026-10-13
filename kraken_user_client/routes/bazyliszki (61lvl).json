@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-bazyliszki-61lvl",
+  "name": "bazyliszki (61lvl)",
+  "lvlMin": 57,
+  "lvlMax": 64,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Pieczara Szaleńców - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Szaleńców - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Szaleńców - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Szaleńców - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Pieczara Szaleńców - sala 3",
+    "attack": false
+   },
+   {
+    "location": "Pieczara Szaleńców - sala 2",
+    "attack": false
+   }
+  ]
+ }
+}

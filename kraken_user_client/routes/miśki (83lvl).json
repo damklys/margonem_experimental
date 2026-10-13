@@ -1,0 +1,63 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-miski-83lvl",
+  "name": "miśki (83lvl)",
+  "lvlMin": 79,
+  "lvlMax": 86,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Firnowa Grota p.1",
+    "attack": true
+   },
+   {
+    "location": "Firnowa Grota p.2",
+    "attack": true
+   },
+   {
+    "location": "Firnowa Grota p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Firnowa Grota p.2",
+    "attack": false
+   },
+   {
+    "location": "Skały Mroźnych Śpiewów",
+    "attack": false
+   },
+   {
+    "location": "Lodowa Wyrwa p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Lodowa Wyrwa p.1 s.2",
+    "attack": true
+   },
+   {
+    "location": "Sala Lodowych Iglic",
+    "attack": true
+   },
+   {
+    "location": "Lodowa Wyrwa p.1 s.2",
+    "attack": false
+   },
+   {
+    "location": "Lodowa Wyrwa p.1 s.1",
+    "attack": false
+   },
+   {
+    "location": "Lodowa Wyrwa p.2",
+    "attack": true
+   },
+   {
+    "location": "Skały Mroźnych Śpiewów",
+    "attack": false
+   }
+  ]
+ }
+}

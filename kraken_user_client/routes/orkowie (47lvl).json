@@ -1,0 +1,103 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-orkowie-47lvl",
+  "name": "orkowie (47lvl)",
+  "lvlMin": 43,
+  "lvlMax": 50,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zburzona Twierdza",
+    "attack": true
+   },
+   {
+    "location": "Świszcząca Grota p.1",
+    "attack": true
+   },
+   {
+    "location": "Świszcząca Grota p.2",
+    "attack": true
+   },
+   {
+    "location": "Świszcząca Grota p.3",
+    "attack": true
+   },
+   {
+    "location": "Świszcząca Grota p.4",
+    "attack": true
+   },
+   {
+    "location": "Świszcząca Grota p.3",
+    "attack": false
+   },
+   {
+    "location": "Zburzona Twierdza",
+    "attack": false
+   },
+   {
+    "location": "Nawiedzony Jar",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.3",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.2",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.1",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.2",
+    "attack": false
+   },
+   {
+    "location": "Stare Wyrobisko p.3",
+    "attack": false
+   },
+   {
+    "location": "Stare Wyrobisko p.4",
+    "attack": true
+   },
+   {
+    "location": "Stare Wyrobisko p.5",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzony Jar",
+    "attack": false
+   },
+   {
+    "location": "Zburzona Twierdza",
+    "attack": false
+   },
+   {
+    "location": "Opuszczony Bastion",
+    "attack": true
+   },
+   {
+    "location": "Podziemne Przejście p.1",
+    "attack": true
+   },
+   {
+    "location": "Podziemne Przejście p.2",
+    "attack": true
+   },
+   {
+    "location": "Zrujnowana Wieża",
+    "attack": true
+   },
+   {
+    "location": "Opuszczony Bastion",
+    "attack": false
+   }
+  ]
+ }
+}

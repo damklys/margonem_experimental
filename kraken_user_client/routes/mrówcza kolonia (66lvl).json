@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-mrowcza-kolonia-66lvl",
+  "name": "mrówcza kolonia (66lvl)",
+  "lvlMin": 62,
+  "lvlMax": 69,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Mrówcza Kolonia p.1 - lewy tunel",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.2 - lewe korytarze",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.3 - lewa komora jaj",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.4 - królewskie gniazdo",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.3 - prawa komora jaj",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.2 - prawe korytarze",
+    "attack": true
+   },
+   {
+    "location": "Mrówcza Kolonia p.1 - prawy tunel",
+    "attack": true
+   },
+   {
+    "location": "Leśny Bród",
+    "attack": false
+   }
+  ]
+ }
+}

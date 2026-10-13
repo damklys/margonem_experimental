@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-koty-20lvl",
+  "name": "koty (20lvl)",
+  "lvlMin": 16,
+  "lvlMax": 23,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Kryjówka Dzikich Kotów",
+    "attack": true
+   },
+   {
+    "location": "Leśna Przełęcz",
+    "attack": true
+   },
+   {
+    "location": "Tygrysia Polana",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Dzikich Kotów",
+    "attack": true
+   },
+   {
+    "location": "Tygrysia Polana",
+    "attack": false
+   },
+   {
+    "location": "Leśna Przełęcz",
+    "attack": false
+   }
+  ]
+ }
+}

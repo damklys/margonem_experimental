@@ -1,0 +1,23 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-152-dusze",
+ "route": {
+  "id": "mw-dusze-152lvl",
+  "name": "dusze (152lvl)",
+  "lvlMin": 148,
+  "lvlMax": 155,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Upiorna Droga",
+    "attack": true
+   },
+   {
+    "location": "Wiedźmie Kotłowisko",
+    "attack": true
+   }
+  ]
+ }
+}

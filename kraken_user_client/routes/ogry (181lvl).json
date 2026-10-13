@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-181-ogry",
+ "route": {
+  "id": "mw-ogry-181lvl",
+  "name": "ogry (181lvl)",
+  "lvlMin": 177,
+  "lvlMax": 184,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Ogrza Kawerna p.1",
+    "attack": true
+   },
+   {
+    "location": "Ogrza Kawerna p.2",
+    "attack": true
+   },
+   {
+    "location": "Ogrza Kawerna p.3",
+    "attack": true
+   },
+   {
+    "location": "Ogrza Kawerna p.4",
+    "attack": true
+   },
+   {
+    "location": "Ogrza Kawerna p.3",
+    "attack": true
+   },
+   {
+    "location": "Ogrza Kawerna p.2",
+    "attack": true
+   }
+  ]
+ }
+}

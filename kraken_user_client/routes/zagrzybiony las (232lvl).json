@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.117.202610131830",
+ "source": "margoworld:exp-232-zagrzybiony-las",
+ "route": {
+  "id": "mw-zagrzybiony-las-232lvl",
+  "name": "zagrzybiony las (232lvl)",
+  "lvlMin": 228,
+  "lvlMax": 235,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Gęste Sploty",
+    "attack": true
+   },
+   {
+    "location": "Zmurszały Łęg",
+    "attack": true
+   },
+   {
+    "location": "Garb Połamanych Konarów",
+    "attack": true
+   },
+   {
+    "location": "Gardziel Podgnitych Mchów p.1",
+    "attack": true
+   },
+   {
+    "location": "Gardziel Podgnitych Mchów p.2",
+    "attack": true
+   },
+   {
+    "location": "Gardziel Podgnitych Mchów p.3",
+    "attack": true
+   },
+   {
+    "location": "Gardziel Podgnitych Mchów p.2",
+    "attack": true
+   },
+   {
+    "location": "Gardziel Podgnitych Mchów p.1",
+    "attack": true
+   },
+   {
+    "location": "Garb Połamanych Konarów",
+    "attack": true
+   },
+   {
+    "location": "Zalesiony Step",
+    "attack": true
+   },
+   {
+    "location": "Garb Połamanych Konarów",
+    "attack": true
+   },
+   {
+    "location": "Zmurszały Łęg",
+    "attack": true
+   },
+   {
+    "location": "Zarosłe Szczeliny p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zarosłe Szczeliny p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Zarosłe Szczeliny p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Zarosłe Szczeliny p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Zarosłe Szczeliny p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zmurszały Łęg",
+    "attack": true
+   }
+  ]
+ }
+}
