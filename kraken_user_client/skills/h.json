@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "h",
+ "profName": "łowca",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    97,
+    232,
+    245,
+    85,
+    71,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    218,
+    241,
+    96,
+    235,
+    264,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    113,
+    64,
+    88,
+    62,
+    220,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    178,
+    173,
+    253,
+    81,
+    179,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    98,
+    87,
+    265,
+    181,
+    41,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    217,
+    67,
+    180,
+    75,
+    256,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    8,
+    238,
+    304,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "8": {
+   "name": "Zdradziecki grot",
+   "type": "active",
+   "max": 10,
+   "desc": "Jeżeli przeciwnik zbytnio się do ciebie zbliży, atakujesz go z zaskoczenia niszcząc tym samym jego manę i energię."
+  },
+  "41": {
+   "name": "Rozpraszająca strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Wyprowadzasz zaskakujący strzał, który obniża przeciwnikowi szanse na cios krytyczny i przebicie. Strzał nie wymaga celnego ataku do zadziałania.\n"
+  },
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "62": {
+   "name": "Zwinność",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoje unikalne umiejętności pozwalają ci osiągnąć większa szybkość ataków z bonusów posiadanych przedmiotów.\n"
+  },
+  "64": {
+   "name": "Przebijanie pancerza",
+   "type": "passive",
+   "max": 10,
+   "desc": "Groty twoich strzał stają się ostrzejsze niż kiedykolwiek. Pozwala to na przebicie pancerza z jeszcze większą efektywnością."
+  },
+  "67": {
+   "name": "Łatwy cel",
+   "type": "passive",
+   "max": 10,
+   "desc": "Widząc słaniającego się na nogach przeciwnika, zadajesz mu większe obrażenia fizyczne, jeżeli jego ilość punktów życia spadła poniżej 20%."
+  },
+  "71": {
+   "name": "Wzmocnienie wigoru",
+   "type": "passive",
+   "max": 10,
+   "desc": "Sprawność w działaniu pozwala ci zwiększyć ilość energii i przywracać co turę jej część. "
+  },
+  "75": {
+   "name": "Wilczy instynkt",
+   "type": "passive",
+   "max": 10,
+   "desc": "W obawie przed utratą życia wzrasta szansa na wykonanie uniku.\n\n"
+  },
+  "81": {
+   "name": "Bandażowanie ran",
+   "type": "active",
+   "max": 10,
+   "desc": "Leczysz samego siebie poprzez zabandażowanie ran. Przez chwilę uodparnia cię to na działanie efektów obezwładnienia. Każde kolejne uleczenie jest słabsze malejąc o 25% wartości początkowej."
+  },
+  "85": {
+   "name": "Błyskawiczny strzał",
+   "type": "active",
+   "max": 10,
+   "desc": "Nie zważając na włożony w to wysiłek, natychmiast wystrzeliwujesz strzałę w swoich wrogów, której bardzo trudno uniknąć. Jeżeli wykonałeś kombinację, przywracasz sobie część energii."
+  },
+  "87": {
+   "name": "Jadowy grot",
+   "type": "passive",
+   "max": 10,
+   "desc": "Uderzenie w punkt witalny przeciwnika zmniejsza jego odporność na truciznę oraz ma 25% szansy na osłabienie najbliższego leczenia turowego przeciwnika."
+  },
+  "88": {
+   "name": "Szybka strzała",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz wykonywać szybką strzałę, która skraca czas wykonywania twojej tury o 75%."
+  },
+  "96": {
+   "name": "Wyniszczające rany",
+   "type": "active",
+   "max": 10,
+   "desc": "Wiedza o technice zadawania głębokich ran pozwala ci łatwiej aplikować ich pierwszą kumulację oraz dodatkowo ranić przeciwnika nieuchronnymi obrażeniami zależnymi od jego maksymalnego zdrowia."
+  },
+  "97": {
+   "name": "Podwójny strzał",
+   "type": "active",
+   "max": 10,
+   "desc": "Wystrzeliwujesz dwie strzały, jednak ich siła ciosu jest mniejsza."
+  },
+  "98": {
+   "name": "Bolesne uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Kiedy strzała trafi w czuły punkt przeciwnika powodując uderzenie krytyczne, następny cios przeciwnika będzie wolniejszy.\n"
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "113": {
+   "name": "Krytyczne wzmocnienie",
+   "type": "active",
+   "max": 10,
+   "desc": "Dzięki skupieniu się na celu, zwiększasz szanse na zadanie ciosu krytycznego."
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "173": {
+   "name": "Zranienie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększasz szansę na powstawanie dodatkowych ran u przeciwnika. Umiejętność ta przez 3 tury zabiera przeciwnikowi życie o wartości 15% przyjętych przez niego obrażeń."
+  },
+  "178": {
+   "name": "Diamentowa strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Stosujesz strzały z bardzo twardym grotem, które zwiększają obrażenia ataku. Diamentowa strzała jest trudna do uniknięcia oraz zablokowania."
+  },
+  "179": {
+   "name": "Remedium",
+   "type": "passive",
+   "max": 10,
+   "desc": "Pozwala częściowo uodpornić się na obrażenia magiczne."
+  },
+  "180": {
+   "name": "Przypływ gniewu",
+   "type": "passive",
+   "max": 10,
+   "desc": "Będąc zaatakowanym krytycznie, wzmacniasz siłę swojego następnego ataku o 10%. Dodatkowo jeżeli twoje zdrowie spadnie poniżej progu adrenaliny, wszelkie efekty niszczenia energii stają się przeciw tobie mniej skuteczne."
+  },
+  "181": {
+   "name": "Szkoła przetrwania",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dzięki temu szkoleniu uodparniasz się na trucizny i głębokie rany."
+  },
+  "217": {
+   "name": "Dziki zapał",
+   "type": "active",
+   "max": 10,
+   "desc": "Gromadzisz zapał przyspieszając się na krótką chwilę, przez który naciągasz strzały z większą siłą i zwiększasz odporności na żywioły. Kolejne wystrzelone przez ciebie strzały zadadzą więcej obrażeń i będą wzmacniać również trafienia krytyczne."
+  },
+  "218": {
+   "name": "Wyswobodzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Doświadczenie w boju pozwala ci instynktownie zmniejszyć poziom spowolnień (pochodzącego z przedmiotów przeciwnika, trucizny oraz magii zimna) oraz efektów obezwładnień.\n"
+  },
+  "220": {
+   "name": "Medytacja",
+   "type": "active",
+   "max": 10,
+   "desc": "Poświęcasz chwilę na odzyskanie swoich zasobów energii. Każde kolejne użycie jest 10% słabsze od poprzedniego."
+  },
+  "232": {
+   "name": "Zatruta strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Wzmacniasz truciznę, którą nasączona jest twoja strzała, co wzmacnia zadawane przez nie obrażenia na 5 tur. Następny atak przeciwnika, na którego nałożona jest ta toksyna, zostaje osłabiony."
+  },
+  "235": {
+   "name": "Naturalny unik",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyostrzone zmysły pozwalają ci zwiększyć posiadany unik. \n\n"
+  },
+  "238": {
+   "name": "Oczyszczenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Dmiesz w róg błyskawicznie oczyszczając swoich sojuszników z ogłuszeń oraz obrażeń rozłożonych w czasie."
+  },
+  "241": {
+   "name": "Toksyczny wstrząs",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wszyscy zatruci przeciwnicy zadają mniejsze obrażenia (działa również na ataki specjalne). Efekt dotyczy wszystkich członków drużyny posiadających atak od trucizn."
+  },
+  "245": {
+   "name": "Rozdzierająca strzała",
+   "type": "passive",
+   "max": 10,
+   "desc": "Strzały, które wystrzeliwujesz są kierowane w łączenia w zbroi przeciwnika. Zwiększa to posiadaną szansę na głęboką ranę i wzmacnia jej działanie."
+  },
+  "253": {
+   "name": "Krytyczny strzał",
+   "type": "passive",
+   "max": 10,
+   "desc": "Częste celowanie w punkty witalne pozwoliło ci rozwinąć umiejętność zadawania większych obrażeń krytycznych z broni dystansowej. Ataki zawsze powodują zmniejszenie szybkości przeciwnika."
+  },
+  "256": {
+   "name": "Sztuka koncentracji",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyjątkowe skupienie zwiększa skuteczność trafień twoich strzał oraz pozwala szybciej wydostawać się z efektu obezwładnienia."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "264": {
+   "name": "Piętno bestii",
+   "type": "active",
+   "max": 10,
+   "desc": "Naznaczasz wszystkich twoich przeciwników, co powoduje zwiększenie przyjmowanych przez nich obrażeń. Rzucanie tej umiejętności wymaga jednak więcej czasu."
+  },
+  "265": {
+   "name": "Destrukcyjne strzały",
+   "type": "passive",
+   "max": 10,
+   "desc": "Ciosy krytyczne, które przebiły pancerz przeciwnika wzmacniają posiadane niszczenie pancerza. Masz również większą szansę zadać głęboką ranę."
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "304": {
+   "name": "Przewaga w terenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wykorzystując otoczenie, celniej uderzasz w odsłonięte punkty przeciwnika. Wszelkie niezredukowane obrażenia stają się bardziej niebezpieczne."
+  }
+ }
+}

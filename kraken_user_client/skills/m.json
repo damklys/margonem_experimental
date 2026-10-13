@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "m",
+ "profName": "mag",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    21,
+    58,
+    70,
+    12,
+    11,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    247,
+    78,
+    246,
+    69,
+    79,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    167,
+    123,
+    258,
+    277,
+    107,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    59,
+    9,
+    7,
+    131,
+    182,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    46,
+    262,
+    49,
+    302,
+    54,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    55,
+    50,
+    53,
+    47,
+    166,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    266,
+    56,
+    101,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "7": {
+   "name": "Potęga błyskawic",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyspecjalizowanie magii błyskawic prowadzi do zwiększenia twoich obrażeń krytycznych oraz wzmocnieniu bariery ochronnej, która szybciej się odnawia i zwiększa twoją odporność na ogłuszenie."
+  },
+  "9": {
+   "name": "Potęga zimna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyspecjalizowanie magii zimna prowadzi do zadawania obrażeń krytycznych częściej i o większej mocy oraz szybszego odnawiania twojej bariery ochronnej. Dodatkowo umożliwia niszczenie odporności przeciwnika wraz z każdym ciosem."
+  },
+  "11": {
+   "name": "Koncentracja many",
+   "type": "passive",
+   "max": 10,
+   "desc": "Umiejętność pozyskiwania i cyklicznego przywracania magicznej energii, która pozwala rzucać czary.\n"
+  },
+  "12": {
+   "name": "Zwiększenie absorpcji",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz skutecznie skupiać moc magiczną, której nadmiarowe zasoby poświęcasz na wzmocnienie swojej bariery ochronnej. Każdy zadany cios przywraca ci część absorpcji oraz absorpcji magicznej."
+  },
+  "21": {
+   "name": "Kula ognia",
+   "type": "active",
+   "max": 10,
+   "desc": "Atak magiczny z broni zaklętej żywiołem ognia, skupiony w niszczycielskiej kuli, podpalającej przy zetknięciu z celem."
+  },
+  "46": {
+   "name": "Stopiona skóra",
+   "type": "passive",
+   "max": 10,
+   "desc": "Moc ognia uodparnia twoją skórę magmową ochroną, która potrafi zablokować nadciągające w twoją stronę pociski oraz zmniejsza zdolności przeciwnika do niszczenia twojej absorpcji."
+  },
+  "47": {
+   "name": "Wytrwałość elementalisty",
+   "type": "passive",
+   "max": 10,
+   "desc": "Liczne stoczone boje uodparniają cię na obrażenia od magii żywiołów."
+  },
+  "49": {
+   "name": "Wyładowanie energii",
+   "type": "passive",
+   "max": 10,
+   "desc": "Koncentrujesz wysoki ładunek magiczny, który może eksplodować jeżeli otrzymasz obrażenia krytyczne."
+  },
+  "50": {
+   "name": "Lodowa bariera",
+   "type": "active",
+   "max": 10,
+   "desc": "W wyniku zaklęcia tworzy się lodowa bariera, która utrzymuje się przez kilka tur. Każdy atakujący, który trafi postać z nałożoną magiczną barierą, zostaje spowolniony na 1 turę oraz otrzymuje od 6% do 14% obrażeń zwrotnych od własnej broni. Posiadacz ma również zwiększoną odporność na ogłuszenia. Spowolnienie nie łączy się z Płonącą barierą, Elektryczną barierą i Porażającą tarczą i Szadzią."
+  },
+  "53": {
+   "name": "Elektryczna bariera",
+   "type": "active",
+   "max": 10,
+   "desc": "W wyniku zaklęcia tworzy się elektryczna bariera, która utrzymuje się przez kilka tur. Każdy atakujący, który trafi postać z nałożoną magiczną barierą, zostaje spowolniony na 1 turę oraz otrzymuje od 6% do 14% obrażeń zwrotnych od własnej broni. Posiadacz ma również zwiększony pancerz. Spowolnienie nie łączy się z Płonącą barierą, Lodową barierą i Porażającą tarczą i Szadzią.\n\n"
+  },
+  "54": {
+   "name": "Apogeum",
+   "type": "passive",
+   "max": 10,
+   "desc": "Widok przegrywającego przeciwnika sprawia, że wstępują w ciebie nowe siły. Szansa na trafienie krytyczne postaci wzrasta gdy przeciwnik posiada mniej niż 20% punktów życia. Umiejętności nie da się osłabić poprzez inne czary lub przewagę poziomową przeciwnika.\n\n"
+  },
+  "55": {
+   "name": "Płonąca bariera",
+   "type": "active",
+   "max": 10,
+   "desc": "W wyniku zaklęcia tworzy się płonąca bariera, która utrzymuje się przez kilka tur. Każdy atakujący, który trafi postać z nałożoną magiczną barierą, zostaje spowolniony na 1 turę oraz otrzymuje od 6% do 14% obrażeń zwrotnych od własnej broni. Posiadacz ma również zwiększoną odporność na truciznę. Spowolnienie nie łączy się z Lodową barierą, Elektryczną barierą i Porażającą tarczą i Szadzią."
+  },
+  "56": {
+   "name": "Klątwa",
+   "type": "active",
+   "max": 10,
+   "desc": "Kombinacja czarów powoduje nałożenie na przeciwnika klątwy, redukującej obrażenia jego następnego ataku oraz szansę na przebicie pancerza na następne tury. Zaklęcie zwiększa twoje obrażenia magiczne. Wzmacniane są również dodatkowe obrażenia krytyczne. Umiejętność aktywuje się z atakiem."
+  },
+  "58": {
+   "name": "Lodowy pocisk",
+   "type": "active",
+   "max": 10,
+   "desc": "Wzmocnienie kryształu energii zimna w broni wzmacnia magiczne spowolnienie i powoduje obniżenie absorpcji przeciwnika. Lodowy pocisk ma szansę zamrozić celu czaru. Dodatkowe spowolnienie, jakie oferuje ta umiejętność, nie jest redukowane przez odporności."
+  },
+  "59": {
+   "name": "Potęga ognia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyspecjalizowanie magii ognia prowadzi do zwiększenia twoich obrażeń krytycznych oraz wzmocnieniu bariery ochronnej, która wzmacnia twój pancerz oraz redukuje obrażenia od pocisków."
+  },
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "69": {
+   "name": "Chwila skupienia",
+   "type": "active",
+   "max": 10,
+   "desc": "Chwila silnego skupienia pozwalająca przywrócić część punktów many. Każde kolejne użycie jest 10% słabsze od poprzedniego."
+  },
+  "70": {
+   "name": "Porażenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Czar porażenia pozwala lepiej kontrolować obrażenia broni zaklętej żywiołem błyskawic."
+  },
+  "78": {
+   "name": "Leczenie ran",
+   "type": "active",
+   "max": 10,
+   "desc": "Skupienie magicznej esencji pozwala ci na leczenie własnych ran lub ran wybranego sojusznika. Każde kolejne uleczenie jest słabsze, malejąc o 25% wartości początkowej."
+  },
+  "79": {
+   "name": "Zdrowa atmosfera",
+   "type": "active",
+   "max": 10,
+   "desc": "Skupienie many pod postacią życiodajnej energii leczącej wszystkich kompanów w drużynie. Każde kolejne uleczenie jest słabsze malejąc o 25% wartości początkowej. Użycie umiejętności podczas samotnej walki sprawia, że jest ona o połowę słabsza."
+  },
+  "101": {
+   "name": "Magiczna osłona",
+   "type": "passive",
+   "max": 10,
+   "desc": "Magiczny pancerz staje się trudniejszy w penetracji."
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "107": {
+   "name": "Moc leczenia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka o tworzeniu przedmiotów magicznych pozwala uzyskać większą moc przywracanego życia z twojego ekwipunku."
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "123": {
+   "name": "Szadź",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonujesz zaklęcie przyzwania magicznego mrozu, który spowalnia twoich przeciwników.\n"
+  },
+  "131": {
+   "name": "Determinacja",
+   "type": "passive",
+   "max": 10,
+   "desc": "Szybka nauka pozwala ci zgłębić znacznie wiele dziedzin, dzięki czemu poznajesz w jaki sposób wrogowie mogą wyrządzać ci szkodę przy użyciu trucizn i głębokich ran."
+  },
+  "166": {
+   "name": "Osłabienie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Ledwie wyczuwalna fala magicznego zaburzenia zakłóca przepływ przywracania zdrowia przeciwników."
+  },
+  "167": {
+   "name": "Spowalniające uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoje uderzenia krytyczne spowalniają kolejny atak przeciwnika."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "182": {
+   "name": "Krytyczna potęga",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonujesz atak zwiększający twoje szanse na cios krytyczny w kilku najbliższych turach."
+  },
+  "246": {
+   "name": "Fuzja żywiołów",
+   "type": "active",
+   "max": 10,
+   "desc": "Użycie odpowiedniej kombinacji zaklęć pozwala uwolnić moc pochodzącą z ich połączenia, aby zadać nieuchronne obrażenia przeciwnikowi."
+  },
+  "247": {
+   "name": "Duszący pocisk",
+   "type": "active",
+   "max": 10,
+   "desc": "Koncentrując moc magiczną kierujesz w stronę przeciwnika pocisk zmniejszający siłę jego ataku."
+  },
+  "258": {
+   "name": "Rozładowujący pocisk",
+   "type": "passive",
+   "max": 10,
+   "desc": "Poznajesz sztukę wyprowadzania rozładowujących pocisków, które są znacznie trudniejsze do zablokowania."
+  },
+  "262": {
+   "name": "Mroźne sople",
+   "type": "passive",
+   "max": 10,
+   "desc": "Śmiertelnie ostre pociski z lodu jakie wytwarzasz, potrafią przebić pancerz przeciwnika. Trafienia krytyczne magią lodu prowadzą do gromadzenia punktów kombinacji."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "266": {
+   "name": "Wewnętrzny spokój",
+   "type": "active",
+   "max": 10,
+   "desc": "Tworzysz wokół siebie osłonę absorbującą wszystkie otrzymywane obrażenia."
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "277": {
+   "name": "Rytualne szaty",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiednie szaty chronią przed utratą skupienia podczas rzucania zaklęć oraz potrafią odbijać nadlatujące pociski. Spowolnienia z przedmiotów przeciwnika oraz trucizny i magii zimna zostają zmniejszone."
+  },
+  "302": {
+   "name": "Nieuleczalne zaklęcia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Krytyczne pociski stają się trudniejsze do wyleczenia."
+  }
+ }
+}

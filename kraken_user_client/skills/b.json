@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "b",
+ "profName": "tancerz ostrzy",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    209,
+    82,
+    84,
+    94,
+    213,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    210,
+    236,
+    129,
+    216,
+    222,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    223,
+    127,
+    125,
+    214,
+    219,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    65,
+    237,
+    211,
+    111,
+    259,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    225,
+    229,
+    66,
+    230,
+    212,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    221,
+    224,
+    272,
+    227,
+    100,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    228,
+    279,
+    267,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "65": {
+   "name": "Krytyczne cięcie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Broń pomocnicza staje się przedłużeniem twojej dłoni, dzięki czemu trafiasz krytycznie znacznie częściej i mocniej."
+  },
+  "66": {
+   "name": "Bezlitosny arsenał",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz posługiwać się każdym typem ostrza, co zwiększa szansę na zadanie głębokiej, niezależnie w której ręce dzierżysz broń. Głębokie rany zaaplikowane przez broń główną zadają przeciwnikowi jeszcze więcej obrażeń."
+  },
+  "82": {
+   "name": "Trujące pchnięcie",
+   "type": "active",
+   "max": 10,
+   "desc": "Wiedza o różnych rodzajach toksyn, pozwala zwiększyć obrażenia zadawane przez truciznę oraz osłabić siłę ciosu przeciwnika w następnej turze. Wzmocniona trucizna działa przez 5 tur. Efekt aplikuje się po trafieniu przeciwnika."
+  },
+  "84": {
+   "name": "Przenikliwa rana",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiednie przygotowanie pozwala zwiększyć twoją skuteczność w aplikowaniu głębokich ran oraz zwiększa ich obrażenia jeżeli zostały zaaplikowane bronią pomocniczą.\n"
+  },
+  "94": {
+   "name": "Potrójne uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Ogromna zręczność w używaniu broni głównej, pozwala uderzyć nią dwa razy podczas jednej tury. Bonusy nie są brane pod uwagę. "
+  },
+  "100": {
+   "name": "Riposta",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz parować oraz kontrować sparowane ataki przeciwnika. Sparować można jedynie ciosy wykonane bronią białą."
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "111": {
+   "name": "Odetchnięcie",
+   "type": "active",
+   "max": 10,
+   "desc": "Poświęcasz chwilę na odzyskanie swoich zasobów energii. Każde kolejne użycie jest 10% słabsze od poprzedniego."
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "125": {
+   "name": "Krytyczne przyspieszenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trafienie krytyczne pozwala pokonać swoje ograniczenia, przez co masz 25% szans na przyspieszenie ruchów na 3 tury. "
+  },
+  "127": {
+   "name": "Wirujące ostrze",
+   "type": "active",
+   "max": 10,
+   "desc": "Rozpoczynasz wirujący taniec ostrzy, podczas którego wykonujesz atak na przeciwnika oraz ranisz do 3 losowych przeciwników w obrębie linii atakowanego i atakującego. Pasywnie, twoje ataki podstawowe mają szansę na zranienie stojących przy sobie przeciwników jednym ciosem. Dodatkowo potwory zadają przeciw tobie zmniejszone obrażenia.\n\n"
+  },
+  "129": {
+   "name": "Podstępne uderzenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonanie prawidłowej kombinacji powoduje zadanie dodatkowych nieuchronnych obrażeń. Umiejętność ułatwia aplikację pierwszej kumulacji głębokiej rany, a wytrenowanie jej w stopniu mistrzowskim sprawia, że chybienie nią będzie niemożliwe."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "209": {
+   "name": "Błyskawiczny cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Kosztem energii zadajesz mocniejszy i szybszy cios."
+  },
+  "210": {
+   "name": "Zadziorny atak",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonujesz szybki atak, który po trafieniu niszczy pancerz przeciwnika."
+  },
+  "211": {
+   "name": "Zdradzieckie cięcie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dobrze wymierzony atak bronią główną skutkuje przyjęciem przez przeciwnika dotkliwych obrażeń od zranienia. Umiejętność ta przez 3 tury zabiera przeciwnikowi życie o wartości 15% przyjętych przez niego obrażeń."
+  },
+  "212": {
+   "name": "Furia",
+   "type": "active",
+   "max": 10,
+   "desc": "W ferworze walki twój szał działa na wszystkich sojuszników, co zwiększa zadawane przez nich obrażenia oraz siłę ich ciosów krytycznych. Sam zyskujesz jedynie połowę wzmocnienia obrażeń."
+  },
+  "213": {
+   "name": "Poprawa kondycji",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dzięki wymagającemu treningowi jesteś w stanie zwiększyć swoją bazową ilość energii i co turę przywracać jej część. "
+  },
+  "214": {
+   "name": "Płynność ruchów",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoje ruchy stają się bardziej płynne, skutecznie niwelując efekty spowolnienia, których źródłem jest ekwipunek przeciwnika oraz obrażenia od magii i trucizny, co ułatwia unikanie wymierzonych w ciebie ataków."
+  },
+  "216": {
+   "name": "Zew krwi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Widząc siłę swoich krytycznych ataków, odnawiasz część energii."
+  },
+  "219": {
+   "name": "Jadowity podmuch",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykorzystując wiedzę o toksynach potrafisz rozsiać na polu bitwy zatruty obłok powodujący osłabienie umiejętności leczących przeciwnika."
+  },
+  "221": {
+   "name": "Zabójcze uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Morderczy instynkt pozwala ci zadawać wyższe obrażenia podczas ciosów krytycznych zadanych bronią główną."
+  },
+  "222": {
+   "name": "Stłamszenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonując kombinację szybkich ciosów możesz znacznie zredukować obrażenia nadciągającego ataku przeciwnika."
+  },
+  "223": {
+   "name": "Rozpraszający atak",
+   "type": "active",
+   "max": 10,
+   "desc": "Podczas ataku wydajesz z siebie przerażający krzyk, który obniża szansę przeciwnika na cios krytyczny i przebicie oraz zmniejsza jego atak. Obniżenie szansy na cios krytyczny i przebicie nie wymaga celnego ataku.\n"
+  },
+  "224": {
+   "name": "Zamroczenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonujesz zabójcze cięcie rozpraszające skupienie przeciwnika, pozbawiając go zasobów energii."
+  },
+  "225": {
+   "name": "Bolesny cios",
+   "type": "passive",
+   "max": 10,
+   "desc": "Doskonale wiesz gdzie celować, dzięki czemu bez problemu spowalniasz kolejny atak przeciwnika przy każdym ciosie krytycznym."
+  },
+  "227": {
+   "name": "Adrenalina",
+   "type": "passive",
+   "max": 10,
+   "desc": "W przypływie obaw o własne życie, szybkość twojego ataku drastycznie wzrasta. Warunkiem działania jest posiadanie życia poniżej progu adrenaliny."
+  },
+  "228": {
+   "name": "Wściekłość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Po otrzymaniu obrażeń od ciosu krytycznego, twoje trzy kolejne ataki zadadzą większe obrażenia fizyczne."
+  },
+  "229": {
+   "name": "Czarna krew",
+   "type": "passive",
+   "max": 10,
+   "desc": "Jeżeli na twoją broń została nałożona trucizna, masz 25% szans na osłabienie leczenia turowego przeciwnika po zadaniu ciosu krytycznego. Dodatkowo uderzając krytycznie przeciwnika, odsłaniasz jego podatność na truciznę.\n\n"
+  },
+  "230": {
+   "name": "Gruboskórność",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odporność na obrażenia magiczne zostaje nieznacznie zwiększona."
+  },
+  "236": {
+   "name": "Toksyczne opary",
+   "type": "passive",
+   "max": 10,
+   "desc": "Do momentu utrzymywania się toksyny w ciele twoich przeciwników, moc wszelkich zadawanych przez nich obrażeń zostaje zmniejszona."
+  },
+  "237": {
+   "name": "Opatrywanie ran",
+   "type": "active",
+   "max": 10,
+   "desc": "Instynkt przetrwania pozwala ci na natychmiastowe wyleczenie niegroźnych ran i chwilowe uodpornienie się na obrażenia magiczne. Każde kolejne uleczenie jest słabsze, malejąc o 25% wartości początkowej."
+  },
+  "259": {
+   "name": "Uporczywość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Przyjmowanie obrażeń oraz zwalczanie trucizn i głębokich ran w swoim organizmie, pozwala się na nie uodpornić i zwiększyć skuteczność unikania pocisków."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "267": {
+   "name": "Zasadzka",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiednie przygotowanie ataku sprawia, że trafienie w przeciwnika staje się prostsze."
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "272": {
+   "name": "Amok",
+   "type": "active",
+   "max": 10,
+   "desc": "Wpadasz w amok, sprawiając, że twoje ataki częściej trafiają krytycznie i leczą cię za część zadanych obrażeń."
+  },
+  "279": {
+   "name": "Poszarpane ostrze",
+   "type": "passive",
+   "max": 10,
+   "desc": "Drobne wypustki na broni pozwalają niszczyć i przebijać pancerz przeciwnika."
+  }
+ }
+}

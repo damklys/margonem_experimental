@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "w",
+ "profName": "wojownik",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    23,
+    204,
+    271,
+    72,
+    234,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    22,
+    39,
+    29,
+    205,
+    188,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    130,
+    207,
+    73,
+    208,
+    206,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    20,
+    36,
+    184,
+    31,
+    24,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    30,
+    27,
+    203,
+    183,
+    109,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    43,
+    34,
+    32,
+    42,
+    110,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    278,
+    37,
+    300,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "20": {
+   "name": "Kontratak",
+   "type": "passive",
+   "max": 10,
+   "desc": "Po przyjęciu ciosu krytycznego zwiększasz swoje obrażenia fizyczne o 10% oraz masz szansę wykonać skuteczną kontrę wymierzoną w atakującego cię przeciwnika. Nauka tej umiejętności zapewnia premię do odporności na żywioły."
+  },
+  "22": {
+   "name": "Ogłuszający cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Zadajesz atak w głowę, który zmniejsza obrażenia przeciwnika i ma szanse go ogłuszyć. Odpowiednia kombinacja pozwoli na zadanie dodatkowych nieuchronnych obrażeń."
+  },
+  "23": {
+   "name": "Niszczycielski cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Skupiasz swoje uderzenie na pancerzu przeciwnika, starając się skruszyć jego pancerz. Celny cios chwilowo dekoncentruje przeciwnika sprawiając, że jego następny cios zada mniej obrażeń."
+  },
+  "24": {
+   "name": "Wytrzymałość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dzięki ciężkiemu treningowi zwiększasz swoją ilość punktów życia, w zależności od ilości siły."
+  },
+  "27": {
+   "name": "Odbicie ciosu",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz sparować ciosy przeciwników walczących w zwarciu bronią białą, przez co nie zadają ci one obrażeń.\n"
+  },
+  "29": {
+   "name": "Twarda głowa",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dzięki swojej wyjątkowej wytrwałości, lepiej wykorzystujesz ochronę, jaką oferuje zgromadzony przez ciebie pancerz, zarazem skracając czas, w którym pozostajesz w stanie obezwładnienia. Spowolnienia z przedmiotów przeciwnika oraz trucizny i magii zimna zostają zmniejszone.\n"
+  },
+  "30": {
+   "name": "Berserk",
+   "type": "passive",
+   "max": 10,
+   "desc": "Skoncentrowanie gniewu na przeciwniku powoduje obniżenie jego szybkości ataku. Przyjęcie ciosu krytycznego podczas niskiego poziomu zdrowia, zwiększa obrażenia fizyczne twojej broni."
+  },
+  "31": {
+   "name": "Krwawa jatka",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wzmacnia obrażenia zadawane od głębokiej rany oraz niszczenie pancerza podczas ataku."
+  },
+  "32": {
+   "name": "Ciężka rana",
+   "type": "passive",
+   "max": 10,
+   "desc": "Uderzając krytycznie w szale walki masz szansę na zadanie przeciwnikowi obrażeń o sile 10% wykonanego ataku, które będą trwały 3 tury.\n"
+  },
+  "34": {
+   "name": "Kamienna skóra",
+   "type": "active",
+   "max": 10,
+   "desc": "Twoja skóra staje się twarda jak kamień wzmacniając początkową wartość pancerza postaci w zależności od utraconego życia. Dodatkowo wzmacniana jest twoja odporność na magię.\n"
+  },
+  "36": {
+   "name": "Celny cios",
+   "type": "passive",
+   "max": 10,
+   "desc": "Doświadczenie przy władaniu bronią jednoręczną zwiększa szansę na trafienie w przeciwnika."
+  },
+  "37": {
+   "name": "Wytrącenie z równowagi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Potrafisz wytrącić przeciwnika z równowagi przez co straci najbliższą turę. Wytrącenia mogą się sumować i działają kolejno jedno po drugim."
+  },
+  "39": {
+   "name": "Zdruzgotanie",
+   "type": "active",
+   "max": 10,
+   "desc": "Twoje następne ataki zostaną wykonane zarówno mieczem jak i tarczą, co spowoduje zadanie zwiększonych obrażeń. Wzmacniane są również ciosy krytyczne. Odpowiednia kombinacja pozwoli na zadanie podczas ataku inicjującego dodatkowych nieuchronnych obrażeń."
+  },
+  "42": {
+   "name": "Ostatnie uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Widok przegrywającego przeciwnika sprawia, że wstępują w ciebie nowe siły. Szansa na trafienie krytyczne wzrasta gdy przeciwnik posiada mniej niż 20% punktów życia. Efektu nie da się osłabić poprzez inne czary lub przewagę poziomową przeciwnika.\n"
+  },
+  "43": {
+   "name": "Krwiożerczy szał",
+   "type": "active",
+   "max": 10,
+   "desc": "Zatracasz się w krwiożerczym szale, co sprawia, że leczysz się za część zadanych obrażeń. Dodatkowo stajesz się bardziej odporny na magię żywiołów."
+  },
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "72": {
+   "name": "Okaleczenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Umiejętność odczytywania ruchów przeciwnika sprawia, że rośnie szansa na zadanie mu głębokich obrażeń o jeszcze większej sile."
+  },
+  "73": {
+   "name": "Przemożenie zmęczenia",
+   "type": "active",
+   "max": 10,
+   "desc": "Hart ducha pozwala ci w krótkim czasie odzyskać część utraconej energii. Każde kolejne użycie jest 10% słabsze od poprzedniego. "
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "109": {
+   "name": "Bolesny uraz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoje ostrze ma szansę zranić przeciwnika obrażeniami o wartości 15% przyjętych przez niego obrażeń przez 3 tury."
+  },
+  "110": {
+   "name": "Paraliżujący cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Błyskawiczne uderzenie w konkretne miejsce na ciele przeciwnika obniża jego zdolności bojowe w postaci zadawanych obrażeń, ciosów krytycznych oraz przebić. Obniżenie szansy na cios krytyczny i przebicie nie wymaga celnego ataku.\n"
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "130": {
+   "name": "Szarża",
+   "type": "active",
+   "max": 10,
+   "desc": "Dokonujesz widowiskowej szarży zwiększając swoją szybkość podczas kilku następnych ataków."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "183": {
+   "name": "Krytyczne spowolnienie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Mistrzostwo w trafianiu w punkty witalne, sprawia że uderzenia krytyczne spowalniają kolejny atak przeciwnika.\n"
+  },
+  "184": {
+   "name": "Adaptacja",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wielokrotne zwalczanie trucizn i głębokich ran w swoim organizmie, pozwala uodpornić się na ich rodzaj obrażeń. "
+  },
+  "188": {
+   "name": "Wyzywający okrzyk",
+   "type": "active",
+   "max": 10,
+   "desc": "Wydajesz prowokujący okrzyk, który ściąga na ciebie uwagę przeciwników na najbliższe tury. Sprowokowani przeciwnicy mają mniejszą skuteczność ataku oraz obrony."
+  },
+  "203": {
+   "name": "Agresywny atak",
+   "type": "active",
+   "max": 10,
+   "desc": "Wyprowadzasz bardzo silny cios wzmacniający zadawane obrażenia oraz powodujący nieuchronne obrażenia rozłożone w czasie."
+  },
+  "204": {
+   "name": "Błyskawiczny atak",
+   "type": "active",
+   "max": 10,
+   "desc": "Gnasz przed siebie, wykonując przy tym znacznie szybszy i mocniejszy atak."
+  },
+  "205": {
+   "name": "Żądza krwi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rzucasz się w wir walki, przez co z każdym uderzeniem krytycznym odzyskujesz część energii. \n"
+  },
+  "206": {
+   "name": "Osłona tarczą",
+   "type": "active",
+   "max": 10,
+   "desc": "Szybkie schronienie się za tarczą pozwala uleczyć się w zależności od zgromadzonych punktów kombinacji, a pancerz i blok zyskiwany za pośrednictwem tarczy zostaje zwiększony na jedną turę. Zwiększasz również swoją odporność na zostanie ogłuszonym. Twoi sojusznicy stają się bardziej zmotywowani do twojej obrony i zyskują zwiększoną szansę na cios krytyczny. Efekt nie zwiększa szansy na cios krytyczny pomocniczy. Sam zyskujesz tylko połowę wzrostu szansy na cios krytyczny."
+  },
+  "207": {
+   "name": "Potężne uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wzmacnia krytyczne uderzenie bronią białą."
+  },
+  "208": {
+   "name": "Mocarna ochrona",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wyostrzone zmysły pozwalają ci zwiększyć szansę na trafienie, blok tarczą oraz blok strzały. Dodatkowo gromadzisz punkty kombinacji za każdy zablokowany cios."
+  },
+  "234": {
+   "name": "Wzmocnienie energii",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trening siły woli pozwala ci zwiększyć maksymalną ilość posiadanej energii i przywracać jej część po każdej turze."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "271": {
+   "name": "Okrzyk bojowy",
+   "type": "active",
+   "max": 10,
+   "desc": "Podczas nagłego ataku wydajesz z siebie niekontrolowany krzyk, co zwiększa szanse na zadanie ciosu krytycznego."
+  },
+  "278": {
+   "name": "Zmiażdżenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Jeśli duża część ataku przedostanie się przez pancerz przeciwnika, zadajesz dodatkowe obrażenia nieuchronne. Pasywnie umiejętność zapewnia dodatkową siłę ciosów krytycznych oraz szansę na osłabienie przywracania zdrowia przeciwnika trafionego krytycznie."
+  },
+  "300": {
+   "name": "Niezwyciężoność",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowujesz sztukę zadawania obrażeń nieuchronnych."
+  }
+ }
+}

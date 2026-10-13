@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "t",
+ "profName": "tropiciel",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    26,
+    14,
+    68,
+    239,
+    243,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    95,
+    255,
+    231,
+    215,
+    89,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    90,
+    240,
+    105,
+    192,
+    248,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    193,
+    195,
+    194,
+    15,
+    226,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    254,
+    233,
+    274,
+    257,
+    244,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    260,
+    174,
+    261,
+    103,
+    102,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    242,
+    275,
+    303,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "14": {
+   "name": "Lodowa strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Za pomocą magii zaklinasz strzałę żywiołem zimna, która spowalnia wroga oraz ma szansę go zamrozić. Dodatkowe spowolnienie, jakie oferuje ta umiejętność, nie jest redukowane przez odporności."
+  },
+  "15": {
+   "name": "Krytyczne trafienie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiednie wyszkolenie w używaniu broni dystansowej daje ci zwiększone obrażenia krytyczne oraz 25% szansy na przyspieszenie się po krytycznym uderzeniu w przeciwnika."
+  },
+  "26": {
+   "name": "Płonąca strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Podpalasz strzałę i wysyłasz ją w stronę wroga, siejąc spustoszenie. Dodatkowo przeciwnik będzie otrzymywał obrażenia od ognia przez kilka tur. Efektu podpalenia nie można uniknąć."
+  },
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "68": {
+   "name": "Porażająca strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Za pomocą magii zaklinasz strzałę żywiołem błyskawic, który niszczy pancerz przeciwnika oraz aplikuje porażenie na kilka tur."
+  },
+  "89": {
+   "name": "Podwójny dech",
+   "type": "active",
+   "max": 10,
+   "desc": "Pozwala na zwiększenie szybkości całej drużyny na kilka tur. Sam uzyskujesz tylko połowę mocy."
+  },
+  "90": {
+   "name": "Wzmocnienie absorpcji",
+   "type": "passive",
+   "max": 10,
+   "desc": "Pozwala na zwiększenie absorpcji z posiadanych przedmiotów oraz odnowę jej zasobów przy każdym celnym ataku."
+  },
+  "95": {
+   "name": "Strzała z niespodzianką",
+   "type": "active",
+   "max": 10,
+   "desc": "Używanie głównych umiejętności danego żywiołu wzmacnia efekt strzały z niespodzianką, która w zależności od zebranych punktów kombinacji osłabia atak przeciwnika. Osłabienie nie łączy się z Emanującą strzałą."
+  },
+  "102": {
+   "name": "Śmierdzący ładunek",
+   "type": "active",
+   "max": 10,
+   "desc": "Rzucasz w przeciwnika taktycznym ładunkiem, przez co na kilka tur maleje jego szansa na cios krytyczny i przebicie. Przeciwnik staje się znacznie bardziej podatny na obrażenia, wobec czego ty oraz twoi sojusznicy atakujecie go z większą siłą. Dodatkowe obrażenia są nieuchronne."
+  },
+  "103": {
+   "name": "Energetyzujący wstrząs",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoja szansa na unik zwiększa się, gdy poziom życia spadnie poniżej progu adrenalinowego.\n\n"
+  },
+  "105": {
+   "name": "Zaklęty grot",
+   "type": "active",
+   "max": 10,
+   "desc": "Wystrzeliwane przez ciebie pociski zostają zaklęte magią, kierując się same w stronę przeciwnika przez co mają większą szansę na trafienie krytyczne."
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "174": {
+   "name": "Niewrażliwość na zimno",
+   "type": "passive",
+   "max": 10,
+   "desc": "Znajomość magii pozwala ci lepiej zrozumieć naturę żywiołu zimna. Obrażenia otrzymywane od tego żywiołu zostają zmniejszone, a zaklinane przez ciebie strzały przeszywają wrogów chłodem."
+  },
+  "192": {
+   "name": "Przywracanie mocy",
+   "type": "active",
+   "max": 10,
+   "desc": "Unikalna umiejętność regeneracyjna przywraca część utraconych punktów many i energii. Każde kolejne użycie jest 10% słabsze od poprzedniego."
+  },
+  "193": {
+   "name": "Strzelecka moc ognia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Tchnięcie magii w broń dystansową zwiększa obrażenia uderzenia krytycznego od ognia oraz zwiększa skuteczność absorbowania obrażeń dystansowych. Dodatkowo zwiększa obrażenia od żywiołu ognia w zależności od intelektu, a przywracane życie z twojego ekwipunku zostaje wzmocnione."
+  },
+  "194": {
+   "name": "Strzelecka moc błyskawic",
+   "type": "passive",
+   "max": 10,
+   "desc": "Tchnięcie magii w broń dystansową zwiększa obrażenia uderzenia krytycznego od błyskawic oraz zwiększa niszczony pancerz podczas wystąpienia ciosu krytycznego wraz z przebiciem. Dodatkowo zwiększa obrażenia od żywiołu błyskawic w zależności od intelektu."
+  },
+  "195": {
+   "name": "Strzelecka moc zimna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Tchnięcie magii w broń dystansową zwiększa obrażenia uderzenia krytycznego od zimna oraz zwiększa ich częstotliwość występowania. Dodatkowo zwiększa obrażenia od żywiołu zimna w zależności od intelektu, a przywracane życie z twojego ekwipunku zostaje wzmocnione."
+  },
+  "215": {
+   "name": "Swobodny unik",
+   "type": "passive",
+   "max": 10,
+   "desc": "Swoboda ruchów pozwala ci rozwinąć naturalną umiejętność unikania ciosów."
+  },
+  "226": {
+   "name": "Znieczulica",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększa naturalną odporność na truciznę i głębokie rany."
+  },
+  "231": {
+   "name": "Wycieńczająca strzała",
+   "type": "active",
+   "max": 10,
+   "desc": "Strzała zabierająca część maksymalnego zdrowia przeciwnika."
+  },
+  "233": {
+   "name": "Rytuał ochrony żywiołów",
+   "type": "passive",
+   "max": 10,
+   "desc": "Znajomość magii pozwala ci lepiej zrozumieć naturę żywiołu. Otrzymywane obrażenia magiczne zostają zmniejszone."
+  },
+  "239": {
+   "name": "Podwójne trafienie",
+   "type": "active",
+   "max": 10,
+   "desc": "Wystrzeliwujesz dwie strzały, jednak ich siła ciosu jest mniejsza."
+  },
+  "240": {
+   "name": "Wygodne stroje",
+   "type": "passive",
+   "max": 10,
+   "desc": "Dzięki unikalnej zdolności otrzymujesz więcej szybkości ataku z bonusów w przedmiotach i zyskujesz odporność na spowolnienie, którego źródłem są przedmioty przeciwnika, magia zimna i trucizna.\n"
+  },
+  "242": {
+   "name": "Przeklinanie przedmiotów",
+   "type": "passive",
+   "max": 10,
+   "desc": "Mroczne szepty i przeklęte symbole zakłócają magiczne atrybuty twoich przeciwników, osłabiając przywracane przez nich życie."
+  },
+  "243": {
+   "name": "Skupienie mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Ogromne skupienie woli pozwala ci na zwiększenie ilości many oraz energii i ich turowe przywracanie."
+  },
+  "244": {
+   "name": "Emanujące strzały",
+   "type": "active",
+   "max": 10,
+   "desc": "Wystrzelenie pomiędzy przeciwników niewidzialnych strzał emanujących magią, które obniżają ataki krytyczne wszystkich przeciwników na kilka tur."
+  },
+  "248": {
+   "name": "Kojące ochłodzenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Podmuch magicznej energii leczy ciebie lub wybranego sojusznika. Każde kolejne uleczenie jest słabsze, malejąc o 25% wartości początkowej."
+  },
+  "254": {
+   "name": "Gwałtowny strzał",
+   "type": "active",
+   "max": 10,
+   "desc": "Twój pocisk zostanie wystrzelony w znacznie krótszym czasie, co wpływa na szybkość załadowania kolejnej amunicji."
+  },
+  "255": {
+   "name": "Kruszące groty",
+   "type": "passive",
+   "max": 10,
+   "desc": "Technika udoskonalania grotów sprawia, że szansa na przebicie pancerza przeciwnika zostaje zwiększona. Dodatkowo potrafisz wykonywać szybką strzałę, która skraca czas wykonywania twojej tury o 75%. Zadane przez ciebie trafienia krytyczne prowadzą do kumulacji punktów kombinacji."
+  },
+  "257": {
+   "name": "Wzmożony ostrzał",
+   "type": "passive",
+   "max": 10,
+   "desc": "Widząc słaniającego się na nogach przeciwnika, zadajesz mu większe obrażenia, jeżeli jego ilość punktów życia spadła poniżej 20%."
+  },
+  "260": {
+   "name": "Niewrażliwość na ogień",
+   "type": "passive",
+   "max": 10,
+   "desc": "Znajomość magii pozwala ci lepiej zrozumieć naturę żywiołu ognia. Obrażenia otrzymywane od tego żywiołu oraz obrażenia fizyczne zostają zmniejszone, a posiadana przez ciebie absorpcja jest mniej podatna na zniszczenie."
+  },
+  "261": {
+   "name": "Niewrażliwość na błyskawice",
+   "type": "passive",
+   "max": 10,
+   "desc": "Znajomość magii pozwala ci lepiej zrozumieć naturę żywiołu błyskawic. Obrażenia otrzymywane od tego żywiołu zostają zmniejszone, a zadawane obrażenia w przeciwników zostają zwiększone jeżeli nie zostaną zredukowane."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "274": {
+   "name": "Łaknienie magii",
+   "type": "passive",
+   "max": 10,
+   "desc": "Każde wystrzelone trafienie krytyczne sprawia, że odzyskujesz część swoich zasobów."
+  },
+  "275": {
+   "name": "Zaklinanie przedmiotów",
+   "type": "passive",
+   "max": 10,
+   "desc": "Magiczne słowa i pradawne gesty nasycają ciebie i twoją drużynę tajemną mocą, zwiększając przywracane przez was życie."
+  },
+  "303": {
+   "name": "Mistrzowska kondycja",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wieloletnie treningi zapewniają dodatkowe pokłady energii i koncentracji podczas walki, co ułatwia unikanie ataków."
+  }
+ }
+}

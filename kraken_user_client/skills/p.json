@@ -1,0 +1,346 @@
+{
+ "kraken": "drzewko",
+ "version": "3.133.202610140030",
+ "prof": "p",
+ "profName": "paladyn",
+ "tiers": [
+  {
+   "lvl": 25,
+   "pts": 1,
+   "ids": [
+    99,
+    86,
+    112,
+    38,
+    185,
+    263
+   ]
+  },
+  {
+   "lvl": 35,
+   "pts": 10,
+   "ids": [
+    186,
+    187,
+    198,
+    108,
+    25,
+    168
+   ]
+  },
+  {
+   "lvl": 50,
+   "pts": 25,
+   "ids": [
+    44,
+    200,
+    249,
+    191,
+    76,
+    61
+   ]
+  },
+  {
+   "lvl": 80,
+   "pts": 55,
+   "ids": [
+    250,
+    252,
+    251,
+    18,
+    199,
+    106
+   ]
+  },
+  {
+   "lvl": 120,
+   "pts": 95,
+   "ids": [
+    197,
+    33,
+    202,
+    189,
+    196,
+    120
+   ]
+  },
+  {
+   "lvl": 170,
+   "pts": 145,
+   "ids": [
+    92,
+    201,
+    45,
+    273,
+    276,
+    119
+   ]
+  },
+  {
+   "lvl": 230,
+   "pts": 205,
+   "ids": [
+    77,
+    190,
+    301,
+    270,
+    269,
+    268
+   ]
+  }
+ ],
+ "skills": {
+  "18": {
+   "name": "Krytyczne uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Wieloletni trening uskutecznił obrażenia fizyczne zadawane podczas ciosów krytycznych oraz wszelkie obrażenia zadawane potworom."
+  },
+  "25": {
+   "name": "Prowokujący okrzyk",
+   "type": "active",
+   "max": 10,
+   "desc": "Wykonujesz zawołanie bitewne, które prowokuje przeciwników do atakowania tylko ciebie przez najbliższe tury. Podczas okrzyku zyskujesz większy pancerz ze swojej tarczy i odporność na ogłuszenie, a twoi kompani z pierwszej linii uzyskują większe obrażenia od broni białej.\n"
+  },
+  "33": {
+   "name": "Przeszywające uderzenie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Za każdym razem gdy zaatakujesz przeciwnika uderzeniem krytycznym, przeszywa go ból, który powoduje spowolnienie jego następnego ataku."
+  },
+  "38": {
+   "name": "Szybki atak",
+   "type": "active",
+   "max": 10,
+   "desc": "Uderzasz we wroga z niespotykaną dotąd siłą i szybkością kosztem utraty części energii."
+  },
+  "44": {
+   "name": "Strażnik boskich mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twój miecz powoduje odzyskiwanie energii wraz z każdym wykonanym ciosem krytycznym, a twoja tarcza otrzymuje większą szansę na blok."
+  },
+  "45": {
+   "name": "Splot odporności",
+   "type": "passive",
+   "max": 10,
+   "desc": "Znajomość magii pozwala ci lepiej zrozumieć naturę żywiołu. Otrzymywane obrażenia magiczne zostają zmniejszone."
+  },
+  "61": {
+   "name": "Wrodzona szybkość",
+   "type": "passive",
+   "max": 10,
+   "desc": "Opanowanie techniki zwinności, umożliwia zadawanie większej ilości ciosów w walce.\n"
+  },
+  "76": {
+   "name": "Aura ochrony",
+   "type": "active",
+   "max": 10,
+   "desc": "Boska energia wokół ciebie zwiększa na kilka tur obronę magiczną twoich kompanów. Sam uzyskujesz z niej tylko połowę mocy."
+  },
+  "77": {
+   "name": "Płonąca przychylność",
+   "type": "passive",
+   "max": 10,
+   "desc": "Błogosławisz swoją broń, która zapewnia dodatkową penetrację odporności, manę i obrażenia krytyczne."
+  },
+  "86": {
+   "name": "Pchnięcie mrozu",
+   "type": "active",
+   "max": 10,
+   "desc": "Po uderzeniu bronią mrozu, spowalniasz przeciwnika i masz szansę na to, żeby go zamrozić. Zaklęta broń dodatkowo kruszy absorpcję przeciwnika. Dodatkowe spowolnienie, jakie oferuje ta umiejętność, nie jest redukowane przez odporności."
+  },
+  "92": {
+   "name": "Tarcza słońca",
+   "type": "active",
+   "max": 10,
+   "desc": "Twoja tarcza emanuje świętą energią, która zwiększa obronę, szansę na cios krytyczny oraz przywracane życie przez 5 tur. Co każdą turę dodatkowy pancerz oraz przywracane życie maleją o 20%."
+  },
+  "99": {
+   "name": "Gorące uderzenie",
+   "type": "active",
+   "max": 10,
+   "desc": "Błogosławieństwo Ermosa zaklina twoją broń żywiołem ognia, przez co zadaje ona dodatkowe obrażenia oraz zwiększa celność podczas tego ataku. Podmuch płomieni sprawia, że przeciwnik zostaje podpalony. Efektu podpalenia nie można uniknąć."
+  },
+  "106": {
+   "name": "Przetrwanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia wyprowadzane przez przeciwników stają się mniejsze."
+  },
+  "108": {
+   "name": "Gniew bogów",
+   "type": "active",
+   "max": 10,
+   "desc": "Potrafisz kumulować siłę swojego ciosu poprzez blokowanie ataków przeciwnika. W zależności od ilości posiadanych punktów kombinacji potrafisz ściągnąć gniew bogów w stronę wroga, zadając im nieuchronne obrażenia oraz zmniejszając ich zdolność do blokowania ciosów."
+  },
+  "112": {
+   "name": "Porażający cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Używasz broni zaklętej żywiołem błyskawic, przez co niszczysz pancerz przeciwnika oraz porażasz go na kilka tur. Trafienie przeciwnika zmniejsza jego szansę na zablokowanie ataku."
+  },
+  "119": {
+   "name": "Trwałość mocy",
+   "type": "passive",
+   "max": 10,
+   "desc": "Trwałość energii i many zostaje wzmożona, przez co zwiększa się jej odporność na zniszczenie."
+  },
+  "120": {
+   "name": "Wzmocniony pancerz",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwala udoskonalić swój pancerz, dzięki czemu staje się on bardziej odporny na zniszczenie."
+  },
+  "168": {
+   "name": "Cios krytyczny",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwija umiejętność celowania w punkty witalne przeciwnika, przez co zwiększa szanse na zadanie krytycznych obrażeń.\n"
+  },
+  "185": {
+   "name": "Moc sprawiedliwych",
+   "type": "passive",
+   "max": 10,
+   "desc": "Czujesz moc niebiańskiej siły, która pozwala ci zwiększyć ilość energii i many oraz ich turowe odnawianie."
+  },
+  "186": {
+   "name": "Skupienie na celu",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoja broń uderza przeciwnika z idealną celnością, dzięki czemu jego szansa na unik zostaje zmniejszona."
+  },
+  "187": {
+   "name": "Błogosławiona ochrona",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoja zbroja zostaje pobłogosławiona w imię świętej sprawy, zwiększającym tym samym redukcję obrażeń od głębokich ran i trucizn."
+  },
+  "189": {
+   "name": "Parowanie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Twoja obrona znacznie wzrasta dzięki umiejętności parowania ataków. Sparować można tylko ataki zadane przez broń białą.\n"
+  },
+  "190": {
+   "name": "Mroźna parada",
+   "type": "passive",
+   "max": 10,
+   "desc": "Ataki mrozem pozwalają spowolnić przeciwnika do końca trwania walki."
+  },
+  "191": {
+   "name": "Srebrzysty blask",
+   "type": "active",
+   "max": 10,
+   "desc": "Uleczasz się za każdy zgromadzony punkt kombinacji. Magia czaru wywołuje chwilowy wzrost zadawanych obrażeń oraz przywracanie energii. Dodatkowe obrażenia wzmacniają również ciosy krytyczne."
+  },
+  "196": {
+   "name": "Witalność",
+   "type": "passive",
+   "max": 10,
+   "desc": "Rozwijanie swojej siły sprawia, że możesz przyjąć więcej obrażeń od przeciwników."
+  },
+  "197": {
+   "name": "Rozpraszający cios",
+   "type": "active",
+   "max": 10,
+   "desc": "Uderzasz przeciwnika z niespotykaną dotąd siłą zmniejszając jego zdolności bojowe w postaci zadawanych obrażeń, ciosów krytycznych oraz przebić. Obniżenie szansy na cios krytyczny i przebicie nie wymaga celnego ataku.\n"
+  },
+  "198": {
+   "name": "Hart ducha",
+   "type": "passive",
+   "max": 10,
+   "desc": "Stajesz się bardziej wytrwały, co pozwala ci redukować spowolnienia, których źródłem są przedmioty przeciwnika, magia zimna i trucizna oraz skraca czas przebywania w stanie obezwładnienia wywołanym ogłuszeniem lub zamrożeniem."
+  },
+  "199": {
+   "name": "Fala leczenia",
+   "type": "active",
+   "max": 10,
+   "desc": "Wysyłasz przed siebie falę świętego światła, która leczy sojuszników w drużynie. Każde kolejne uleczenie jest słabsze malejąc o 25% wartości początkowej. Użycie umiejętności podczas samotnej walki sprawia, że jest ona o połowę słabsza."
+  },
+  "200": {
+   "name": "Łaska Gerdeth",
+   "type": "passive",
+   "max": 10,
+   "desc": "Błogosławieństwo bogini Gerdeth zwiększa przywracane życie z twojego ekwipunku i zmniejsza skuteczność wystrzeliwanych w ciebie pocisków."
+  },
+  "201": {
+   "name": "Niebiańska ochrona",
+   "type": "passive",
+   "max": 10,
+   "desc": "Łaska niebios interweniuje podczas przyjmowanych przez ciebie ciosów krytycznych, zwiększając twoje obrażenia fizyczne na 3 tury."
+  },
+  "202": {
+   "name": "Porażająca tarcza",
+   "type": "active",
+   "max": 10,
+   "desc": "Osłaniasz się porażającą tarczą, odbijając część przyjętych obrażeń (od 6% do 14%) w kierunku wroga i spowalniając go na jedną turę. Spowolnienie nie łączy się z Płonącą barierą, Lodową barierą oraz Elektryczną barierą. Moc porażającej tarczy dodatkowo uodparnia na działanie trucizn.\n"
+  },
+  "249": {
+   "name": "Odnowa mocy",
+   "type": "active",
+   "max": 10,
+   "desc": "Cicho recytujesz kanon, dzięki czemu przywracasz sobie część punktów many i energii. Każde kolejne użycie jest 10% słabsze od poprzedniego."
+  },
+  "250": {
+   "name": "Krytyczna moc ognia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Krytyczne obrażenia od magii ognia zadają więcej obrażeń i szansa na ich wystąpienie jest zwiększona, jeżeli trafią wroga posiadającego poniżej 20% zdrowia. Efektu wzrostu szansy na cios krytyczny nie da się osłabić poprzez inne czary lub przewagę poziomową przeciwnika."
+  },
+  "251": {
+   "name": "Krytyczna moc błyskawic",
+   "type": "passive",
+   "max": 10,
+   "desc": "Krytyczne obrażenia od magii błyskawic zadają więcej obrażeń. Dodatkowo potrafisz przebijać się przez pancerz przeciwnika, a czas przebywania w stanie ogłuszenia jest krótszy."
+  },
+  "252": {
+   "name": "Krytyczna moc zimna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Krytyczne obrażenia od magii zimna występują częściej, zadają więcej obrażeń i mają 25% szans na obniżenie u przeciwnika efektów leczenia, których źródłem jest ich ekwipunek."
+  },
+  "263": {
+   "name": "Sprawność fizyczna",
+   "type": "passive",
+   "max": 10,
+   "desc": "Zwiększona ilość punktów życia sprawia, że jesteś w stanie dłużej przyjmować ataki wroga. \n\n"
+  },
+  "268": {
+   "name": "Końskie zdrowie",
+   "type": "passive",
+   "max": 10,
+   "desc": "Odpowiedni trening umożliwia zwiększenie maksymalnego zdrowia, odporności przed obrażeniami oraz zwiększenie przywracania punktów życia przez przedmioty leczące. Wzmocnienie nie działa na procentowe oraz pełne leczenie."
+  },
+  "269": {
+   "name": "Płatnerstwo",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka płatnerstwa pozwalająca zwiększać swój pancerz."
+  },
+  "270": {
+   "name": "Źródło potęgi",
+   "type": "passive",
+   "max": 10,
+   "desc": "Nauka pozwalająca odnaleźć w sobie moc stanowiącą o własnej potędze."
+  },
+  "273": {
+   "name": "Kula światłości",
+   "type": "active",
+   "max": 10,
+   "desc": "Dzięki boskiej światłości potrafisz przyzwać kulę, która zada przeciwnikowi obrażenia oraz wykradnie część jego many. Umiejętność nie wymaga walki w zwarciu."
+  },
+  "276": {
+   "name": "Aura życia",
+   "type": "passive",
+   "max": 10,
+   "desc": "Pod wpływem zdrowotnej aury, ty oraz wszyscy w drużynie, posiadacie większą pulę życia."
+  },
+  "301": {
+   "name": "Napięcie bojowe",
+   "type": "passive",
+   "max": 10,
+   "desc": "Obrażenia od elektryczności łatwiej przechodzą przez opancerzenie przeciwnika."
+  }
+ }
+}
