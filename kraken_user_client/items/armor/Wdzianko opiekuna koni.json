@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Wdzianko opiekuna koni",
+ "tplId": 56908,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 13,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "kaf/kaftan11.gif",
+ "stat": "ac=30;act=16;da=11;lvl=13;permbound;rarity=common;reqp=h;resfire=4;sa=7",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

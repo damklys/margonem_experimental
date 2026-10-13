@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zżółknięta narzutka trapera",
+ "tplId": 56905,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 13,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "szt/plaszcz23.gif",
+ "stat": "absorb=74;absorbm=37;ac=26;act=12;da=11;lvl=13;permbound;rarity=common;reqp=t;resfire=8;sa=3",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1762,
+   "cur": "zl"
+  }
+ ]
+}

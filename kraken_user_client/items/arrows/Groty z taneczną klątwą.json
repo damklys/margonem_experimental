@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Groty z taneczną klątwą",
+ "tplId": 56890,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 13,
+ "reqp": "ht",
+ "rarity": "common",
+ "icon": "arr/belt1.gif",
+ "stat": "acdmg=1;dz=11;lvl=13;pdmg=9;permbound;rarity=common;reqp=ht",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

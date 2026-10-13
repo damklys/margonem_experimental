@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Pociski z więdnących liści",
+ "tplId": 56891,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 16,
+ "reqp": "ht",
+ "rarity": "common",
+ "icon": "arr/belt4.gif",
+ "stat": "acdmg=2;evade=2;lvl=16;pdmg=11;permbound;rarity=common;reqp=ht",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

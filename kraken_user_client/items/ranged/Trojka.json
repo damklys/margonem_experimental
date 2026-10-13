@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Trojka",
+ "tplId": 56879,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 16,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "luk/wioskakusza4.gif",
+ "stat": "dmg=181,221;lvl=16;permbound;rarity=common;reqp=h",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

@@ -231,6 +231,141 @@
      "icon": "zbr/zbroja20a.gif",
      "lvl": 16,
      "reqp": "p"
+    },
+    {
+     "name": "Łuk cienia i blasku",
+     "cl": 4,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "luk/luk_43.gif",
+     "lvl": 10,
+     "reqp": "t"
+    },
+    {
+     "name": "Zęby obieżyświata",
+     "cl": 4,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "luk/luk_42.gif",
+     "lvl": 13,
+     "reqp": "t"
+    },
+    {
+     "name": "Celownik Muriatów",
+     "cl": 4,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "luk/luk_44.gif",
+     "lvl": 16,
+     "reqp": "t"
+    },
+    {
+     "name": "Kusza zamkniętych oczu",
+     "cl": 4,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "luk/wioskakusza2.gif",
+     "lvl": 10,
+     "reqp": "h"
+    },
+    {
+     "name": "Używana kusza myśliwego",
+     "cl": 4,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "luk/wioskakusza3.gif",
+     "lvl": 13,
+     "reqp": "h"
+    },
+    {
+     "name": "Trojka",
+     "cl": 4,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "luk/wioskakusza4.gif",
+     "lvl": 16,
+     "reqp": "h"
+    },
+    {
+     "name": "Mysie kości",
+     "cl": 29,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "arr/belt2.gif",
+     "lvl": 10,
+     "reqp": "ht"
+    },
+    {
+     "name": "Groty z taneczną klątwą",
+     "cl": 29,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "arr/belt1.gif",
+     "lvl": 13,
+     "reqp": "ht"
+    },
+    {
+     "name": "Pociski z więdnących liści",
+     "cl": 29,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "arr/belt4.gif",
+     "lvl": 16,
+     "reqp": "ht"
+    },
+    {
+     "name": "Stare barwione płótno",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "szt/plaszcz29.gif",
+     "lvl": 10,
+     "reqp": "t"
+    },
+    {
+     "name": "Zżółknięta narzutka trapera",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "szt/plaszcz23.gif",
+     "lvl": 13,
+     "reqp": "t"
+    },
+    {
+     "name": "Peleryna wiernego kompana",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "szt/plaszcz24.gif",
+     "lvl": 16,
+     "reqp": "t"
+    },
+    {
+     "name": "Odzienie spadających liści",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "kaf/kaftan12.gif",
+     "lvl": 10,
+     "reqp": "h"
+    },
+    {
+     "name": "Wdzianko opiekuna koni",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "kaf/kaftan11.gif",
+     "lvl": 13,
+     "reqp": "h"
+    },
+    {
+     "name": "Kaftan dzikich trefli",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "kaf/kaftan10.gif",
+     "lvl": 16,
+     "reqp": "h"
     }
    ]
   }

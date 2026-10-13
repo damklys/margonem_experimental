@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Mysie kości",
+ "tplId": 56889,
+ "cl": 29,
+ "category": "arrows",
+ "lvl": 10,
+ "reqp": "ht",
+ "rarity": "common",
+ "icon": "arr/belt2.gif",
+ "stat": "acdmg=1;hp=73;lvl=10;pdmg=7;permbound;rarity=common;reqp=ht",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

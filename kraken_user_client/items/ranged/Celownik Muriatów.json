@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Celownik Muriatów",
+ "tplId": 56876,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 16,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk_44.gif",
+ "stat": "dmg=94,115;frost=12,95;lvl=16;permbound;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

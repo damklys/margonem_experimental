@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Zęby obieżyświata",
+ "tplId": 56875,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 13,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk_42.gif",
+ "stat": "dmg=78,95;frost=10,79;lvl=13;permbound;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

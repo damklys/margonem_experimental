@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Peleryna wiernego kompana",
+ "tplId": 56906,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 16,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "szt/plaszcz24.gif",
+ "stat": "absorb=93;absorbm=47;ac=33;act=12;evade=2;lvl=16;permbound;rarity=common;reqp=t;resfire=8;sa=4",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

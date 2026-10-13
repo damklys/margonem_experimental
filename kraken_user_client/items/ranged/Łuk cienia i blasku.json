@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Łuk cienia i blasku",
+ "tplId": 56874,
+ "cl": 4,
+ "category": "ranged",
+ "lvl": 10,
+ "reqp": "t",
+ "rarity": "common",
+ "icon": "luk/luk_43.gif",
+ "stat": "dmg=63,77;frost=7,64;lvl=10;permbound;rarity=common;reqp=t",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

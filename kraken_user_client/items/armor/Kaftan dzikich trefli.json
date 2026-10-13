@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kaftan dzikich trefli",
+ "tplId": 56909,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 16,
+ "reqp": "h",
+ "rarity": "common",
+ "icon": "kaf/kaftan10.gif",
+ "stat": "ac=37;act=16;evade=2;lvl=16;permbound;rarity=common;reqp=h;resfire=4;sa=8",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}
