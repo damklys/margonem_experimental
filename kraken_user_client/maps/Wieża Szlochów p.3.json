@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Wieża Szlochów p.3",
+ "id": 4064,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wieża Szlochów p.2",
+   "x": 13,
+   "y": 10
+  }
+ ]
+}

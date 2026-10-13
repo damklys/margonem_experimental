@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rezarda - kuchnia",
+ "id": 786,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rezarda",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

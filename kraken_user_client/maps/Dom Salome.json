@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Salome",
+ "id": 2213,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Salome - piwnica",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 11,
+   "y": 10
+  },
+  {
+   "to": "Dom Salome p.1",
+   "x": 12,
+   "y": 3
+  },
+  {
+   "to": "Torneg",
+   "x": 12,
+   "y": 10
+  }
+ ]
+}

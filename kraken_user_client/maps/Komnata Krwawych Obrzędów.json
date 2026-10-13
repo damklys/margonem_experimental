@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Komnata Krwawych Obrzędów",
+ "id": 5947,
+ "w": 45,
+ "h": 45,
+ "gateways": [
+  {
+   "to": "Więzienie Demonów",
+   "x": 22,
+   "y": 4
+  }
+ ]
+}

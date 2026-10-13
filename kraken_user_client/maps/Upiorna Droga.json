@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Upiorna Droga",
+ "id": 1293,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Pogranicze Wisielców",
+   "x": 0,
+   "y": 11
+  },
+  {
+   "to": "Wiedźmie Kotłowisko",
+   "x": 31,
+   "y": 63
+  },
+  {
+   "to": "Wiedźmie Kotłowisko",
+   "x": 32,
+   "y": 63
+  },
+  {
+   "to": "Wiedźmie Kotłowisko",
+   "x": 33,
+   "y": 63
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 58,
+   "y": 0
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 59,
+   "y": 0
+  }
+ ]
+}

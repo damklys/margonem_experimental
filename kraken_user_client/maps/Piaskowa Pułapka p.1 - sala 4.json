@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Piaskowa Pułapka p.1 - sala 4",
+ "id": 7374,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Piaskowa Pułapka p.1 - sala 3",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Piaskowa Pułapka p.1 - sala 1",
+   "x": 10,
+   "y": 41
+  },
+  {
+   "to": "Piaskowa Pułapka p.1 - sala 1",
+   "x": 10,
+   "y": 42
+  }
+ ]
+}

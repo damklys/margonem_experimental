@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kaplica",
+ "id": 1760,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

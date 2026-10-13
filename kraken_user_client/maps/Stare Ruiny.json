@@ -1,33 +1,94 @@
 {
  "kraken": "mapa",
  "name": "Stare Ruiny",
+ "id": 12,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Wilczy Szpic"
+   "to": "Wilczy Szpic",
+   "x": 0,
+   "y": 39
   },
   {
-   "to": "Torneg"
+   "to": "Wilczy Szpic",
+   "x": 0,
+   "y": 40
   },
   {
-   "to": "Zatopiony Szczyt"
+   "to": "Wilczy Szpic",
+   "x": 0,
+   "y": 41
   },
   {
-   "to": "Orla Grań"
+   "to": "Dom Grambera",
+   "x": 14,
+   "y": 14
   },
   {
-   "to": "Przeklęty Zamek - wejście północne"
+   "to": "Przeklęty Zamek - wejście północne",
+   "x": 33,
+   "y": 10
   },
   {
-   "to": "Przeklęty Zamek - wejście południowe"
+   "to": "Orla Grań",
+   "x": 43,
+   "y": 63
   },
   {
-   "to": "Przeklęty Zamek - wejście wschodnie"
+   "to": "Orla Grań",
+   "x": 44,
+   "y": 63
   },
   {
-   "to": "Przeklęty Zamek p.2"
+   "to": "Torneg",
+   "x": 46,
+   "y": 0
   },
   {
-   "to": "Dziewicza Knieja"
+   "to": "Torneg",
+   "x": 47,
+   "y": 0
+  },
+  {
+   "to": "Torneg",
+   "x": 48,
+   "y": 0
+  },
+  {
+   "to": "Przeklęty Zamek - wejście południowe",
+   "x": 53,
+   "y": 53
+  },
+  {
+   "to": "Przeklęty Zamek - wejście wschodnie",
+   "x": 59,
+   "y": 18
+  },
+  {
+   "to": "Przeklęty Zamek p.2",
+   "x": 74,
+   "y": 21
+  },
+  {
+   "to": "Dziewicza Knieja",
+   "x": 76,
+   "y": 63
+  },
+  {
+   "to": "Dziewicza Knieja",
+   "x": 77,
+   "y": 63
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 95,
+   "y": 33
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 95,
+   "y": 34
   }
  ]
 }

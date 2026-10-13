@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Skamieniałej Kory p.2",
+ "id": 7687,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Grota Skamieniałej Kory p.1 - sala 1",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Grota Skamieniałej Kory p.1 - sala 2",
+   "x": 35,
+   "y": 8
+  }
+ ]
+}

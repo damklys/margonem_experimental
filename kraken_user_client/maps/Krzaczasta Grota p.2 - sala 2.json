@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Krzaczasta Grota p.2 - sala 2",
+ "id": 3624,
+ "w": 24,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Krzaczasta Grota p.2 - sala 3",
+   "x": 9,
+   "y": 6
+  },
+  {
+   "to": "Wąwóz Zakorzenionych Dusz",
+   "x": 16,
+   "y": 29
+  }
+ ]
+}

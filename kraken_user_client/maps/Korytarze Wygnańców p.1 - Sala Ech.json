@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Wygnańców p.1 - Sala Ech",
+ "id": 7358,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Korytarze Wygnańców p.1 - Jaskinia Zagubionych",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Wyspa Ingotia",
+   "x": 26,
+   "y": 60
+  },
+  {
+   "to": "Korytarze Wygnańców p.2 - Sala Żądzy",
+   "x": 55,
+   "y": 3
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Szlachetnych",
+   "x": 59,
+   "y": 40
+  }
+ ]
+}

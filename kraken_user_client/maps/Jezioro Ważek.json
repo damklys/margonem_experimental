@@ -1,9 +1,50 @@
 {
  "kraken": "mapa",
  "name": "Jezioro Ważek",
+ "id": 349,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Liściaste Rozstaje"
+   "to": "Las Dziwów",
+   "x": 0,
+   "y": 66
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 0,
+   "y": 67
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 25,
+   "y": 0
+  },
+  {
+   "to": "Przepaść Zadumy - przedsionek",
+   "x": 37,
+   "y": 44,
+   "req": "Przejście dostępne od 130 do 169 poziomu"
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 44,
+   "y": 95
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 45,
+   "y": 95
+  },
+  {
+   "to": "Góralskie Przejście",
+   "x": 63,
+   "y": 62
   }
  ]
 }

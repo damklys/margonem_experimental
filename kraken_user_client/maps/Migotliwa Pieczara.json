@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Migotliwa Pieczara",
- "gateways": []
+ "id": 1800,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Mroczna Pieczara p.0",
+   "x": 21,
+   "y": 3
+  }
+ ]
 }

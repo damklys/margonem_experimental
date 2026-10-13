@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniane Sztolnie",
+ "id": 7861,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Zamierzchłe Arterie p.2 - sala 1",
+   "x": 41,
+   "y": 18
+  }
+ ]
+}

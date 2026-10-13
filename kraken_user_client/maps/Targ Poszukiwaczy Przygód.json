@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Targ Poszukiwaczy Przygód",
+ "id": 1987,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 7,
+   "y": 21
+  }
+ ]
+}

@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Grota Pragnolli p.1 - sala 2",
+ "id": 3439,
+ "w": 45,
+ "h": 40,
  "gateways": [
   {
-   "to": "Grota Pragnolli p.1"
+   "to": "Grota Pragnolli p.1",
+   "x": 6,
+   "y": 10
   },
   {
-   "to": "Grota Pragnolli p.2"
+   "to": "Grota Pragnolli p.2",
+   "x": 29,
+   "y": 34
   }
  ]
 }

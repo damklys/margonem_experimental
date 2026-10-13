@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Prochownia",
+ "id": 1235,
+ "w": 19,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 4,
+   "y": 16
+  }
+ ]
+}

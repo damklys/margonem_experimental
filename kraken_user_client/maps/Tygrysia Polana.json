@@ -1,18 +1,35 @@
 {
  "kraken": "mapa",
  "name": "Tygrysia Polana",
+ "id": 1263,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Leśna Przełęcz"
+   "to": "Leśna Przełęcz",
+   "x": 0,
+   "y": 88
   },
   {
-   "to": "Jama Kocich Ślepi"
+   "to": "Leśna Przełęcz",
+   "x": 0,
+   "y": 89
   },
   {
-   "to": "Jaskinia Dzikich Kotów"
+   "to": "Jama Kocich Ślepi",
+   "x": 16,
+   "y": 63
   },
   {
-   "to": "Dzikie Pagórki"
+   "to": "Jaskinia Dzikich Kotów",
+   "x": 29,
+   "y": 67
+  },
+  {
+   "to": "Dzikie Pagórki",
+   "x": 63,
+   "y": 83,
+   "req": "Przejście dostępne od 20 poziomu"
   }
  ]
 }

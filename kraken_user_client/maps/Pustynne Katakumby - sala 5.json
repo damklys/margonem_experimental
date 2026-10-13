@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - sala 5",
+ "id": 3033,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Odnalezionych Skrytobójców",
+   "x": 19,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Odnalezionych Skrytobójców",
+   "x": 20,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - sala 4",
+   "x": 78,
+   "y": 62
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 79,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - sala 4",
+   "x": 79,
+   "y": 62
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 80,
+   "y": 3
+  }
+ ]
+}

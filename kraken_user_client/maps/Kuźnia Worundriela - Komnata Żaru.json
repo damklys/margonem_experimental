@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia Worundriela - Komnata Żaru",
+ "id": 7466,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Kuźnia Worundriela p.3",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Kuźnia Worundriela p.3",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Ognista Studnia p.3",
+   "x": 31,
+   "y": 1
+  }
+ ]
+}

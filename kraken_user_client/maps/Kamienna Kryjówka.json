@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Kryjówka",
+ "id": 2530,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Dolina Rozbójników"
+   "to": "Dolina Rozbójników",
+   "x": 13,
+   "y": 30
   }
  ]
 }

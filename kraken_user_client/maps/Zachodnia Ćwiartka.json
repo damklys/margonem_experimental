@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodnia Ćwiartka",
+ "id": 6484,
+ "w": 100,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Redrock",
+   "x": 99,
+   "y": 50
+  },
+  {
+   "to": "Redrock",
+   "x": 99,
+   "y": 51
+  }
+ ]
+}

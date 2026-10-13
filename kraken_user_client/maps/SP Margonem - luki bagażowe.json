@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - luki bagażowe",
+ "id": 7296,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - korytarz techniczny",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "to": "SP Margonem - korytarz techniczny",
+   "x": 3,
+   "y": 12
+  }
+ ]
+}

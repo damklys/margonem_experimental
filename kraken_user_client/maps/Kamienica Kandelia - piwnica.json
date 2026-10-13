@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Kandelia - piwnica",
+ "id": 1807,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Kandelia",
+   "x": 6,
+   "y": 4
+  }
+ ]
+}

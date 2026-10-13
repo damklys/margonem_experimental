@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Łowców p.0",
+ "id": 16,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Jaskinia Łowców p.1",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "to": "Jaskinia Łowców p.1",
+   "x": 13,
+   "y": 14
+  }
+ ]
+}

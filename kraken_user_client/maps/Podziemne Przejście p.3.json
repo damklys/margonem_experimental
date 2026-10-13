@@ -6,31 +6,19 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Podziemne Przejście p.2",
-   "x": 14,
-   "y": 9,
-   "toId": 88,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Podziemne Przejście p.4",
    "x": 6,
-   "y": 6,
-   "toId": 90,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 6
+  },
+  {
+   "to": "Podziemne Przejście p.2",
+   "x": 14,
+   "y": 9
   },
   {
    "to": "Podziemne Przejście p.2",
    "x": 15,
-   "y": 9,
-   "toId": 88,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 9
   }
  ]
 }

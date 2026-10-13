@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Warsztat Drowina",
+ "id": 2124,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Warsztat Drowina - piwnica",
+   "x": 2,
+   "y": 12
+  },
+  {
+   "to": "Thuzal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Dom Drowina",
+   "x": 10,
+   "y": 9
   }
  ]
 }

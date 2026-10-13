@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek - kanały",
+ "id": 173,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Przeklęty Zamek - zbrojownia"
+   "to": "Przeklęty Zamek - zbrojownia",
+   "x": 14,
+   "y": 13
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Tęczowym Żukiem - piwnica",
+ "id": 628,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Tęczowym Żukiem",
+   "x": 4,
+   "y": 6
+  }
+ ]
+}

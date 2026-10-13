@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot kapitana",
+ "id": 1608,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ruchome Piaski",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Felkissiana",
+ "id": 326,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Dom Felikssiana p.1",
+   "x": 6,
+   "y": 9
+  },
+  {
+   "to": "Mythar",
+   "x": 12,
+   "y": 8
+  },
+  {
+   "to": "Mythar",
+   "x": 12,
+   "y": 9
   }
  ]
 }

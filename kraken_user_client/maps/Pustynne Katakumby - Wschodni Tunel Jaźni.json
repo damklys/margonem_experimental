@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+ "id": 3042,
+ "w": 94,
+ "h": 66,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 2,
+   "y": 59
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 3,
+   "y": 59
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 51,
+   "y": 61
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 52,
+   "y": 61
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 53,
+   "y": 61
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+   "x": 84,
+   "y": 4
+  }
+ ]
+}

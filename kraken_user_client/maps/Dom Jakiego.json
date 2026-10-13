@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Dom Jakiego",
+ "id": 3509,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 8,
+   "y": 13
   }
  ]
 }

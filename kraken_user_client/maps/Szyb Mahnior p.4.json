@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Szyb Mahnior p.4",
+ "id": 282,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Szyb Mahnior p.3",
+   "x": 42,
+   "y": 2
+  }
+ ]
+}

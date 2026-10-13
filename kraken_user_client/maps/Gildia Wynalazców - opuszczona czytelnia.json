@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Wynalazców - opuszczona czytelnia",
+ "id": 1966,
+ "w": 18,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Gildia Wynalazców - aula uniwersytecka",
+   "x": 2,
+   "y": 4
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Zielonym Jednorożcem - piwnica",
+ "id": 296,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Zielonym Jednorożcem",
+   "x": 14,
+   "y": 8
+  }
+ ]
+}

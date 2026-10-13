@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście północno-wschodnie",
+ "id": 2717,
+ "w": 16,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Składy",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Wschodnie skrzydło murów",
+   "x": 7,
+   "y": 22
+  }
+ ]
+}

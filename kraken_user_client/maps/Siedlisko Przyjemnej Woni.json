@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Siedlisko Przyjemnej Woni",
+ "id": 8186,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Siedlisko Przyjemnej Woni - źródło",
+   "x": 14,
+   "y": 6
+  },
+  {
+   "to": "Zacisze Zimnych Wiatrów",
+   "x": 14,
+   "y": 42
+  }
+ ]
+}

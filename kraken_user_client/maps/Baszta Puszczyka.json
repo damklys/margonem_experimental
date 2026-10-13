@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Puszczyka",
+ "id": 2166,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Sowie Lochy",
+   "x": 2,
+   "y": 11
+  },
+  {
+   "to": "Baszta Puszczyka p.1",
+   "x": 9,
+   "y": 3
+  },
+  {
+   "to": "Baszta Sowy",
+   "x": 14,
+   "y": 13
+  },
+  {
+   "to": "Baszta Sowy",
+   "x": 14,
+   "y": 14
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodnia piwnica świątynna p.2",
+ "id": 910,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zachodnia piwnica świątynna p.1",
+   "x": 4,
+   "y": 3
+  }
+ ]
+}

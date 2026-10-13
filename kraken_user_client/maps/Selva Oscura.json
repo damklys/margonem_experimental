@@ -1,18 +1,59 @@
 {
  "kraken": "mapa",
  "name": "Selva Oscura",
+ "id": 332,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zawiły Bór"
+   "to": "Przełaz olbrzymów",
+   "x": 7,
+   "y": 61
   },
   {
-   "to": "Dolina Centaurów"
+   "to": "Ruiny Wieży Magów - przedsionek",
+   "x": 8,
+   "y": 52
   },
   {
-   "to": "Ruiny Wieży Magów - przedsionek"
+   "to": "Dolina Centaurów",
+   "x": 58,
+   "y": 0
   },
   {
-   "to": "Przełaz olbrzymów"
+   "to": "Dolina Centaurów",
+   "x": 59,
+   "y": 0
+  },
+  {
+   "to": "Smocze Góry",
+   "x": 62,
+   "y": 63
+  },
+  {
+   "to": "Smocze Góry",
+   "x": 63,
+   "y": 63
+  },
+  {
+   "to": "Smocze Góry",
+   "x": 64,
+   "y": 63
+  },
+  {
+   "to": "Zawiły Bór",
+   "x": 95,
+   "y": 37
+  },
+  {
+   "to": "Zawiły Bór",
+   "x": 95,
+   "y": 38
+  },
+  {
+   "to": "Zawiły Bór",
+   "x": 95,
+   "y": 39
   }
  ]
 }

@@ -1,0 +1,96 @@
+{
+ "kraken": "mapa",
+ "name": "Knajpa pod Czarnym Tulipanem p.2",
+ "id": 980,
+ "w": 25,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.1",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Izba 14",
+   "x": 4,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 20",
+   "x": 5,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 15",
+   "x": 6,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 21",
+   "x": 7,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 16",
+   "x": 8,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 22",
+   "x": 9,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 17",
+   "x": 10,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 23",
+   "x": 11,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 18",
+   "x": 12,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 24",
+   "x": 13,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 19",
+   "x": 14,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 25",
+   "x": 15,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2 - arena",
+   "x": 20,
+   "y": 9
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2 - arena",
+   "x": 21,
+   "y": 9
+  }
+ ]
+}

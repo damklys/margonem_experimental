@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Arena Gladiatorów - piwnica",
+ "id": 1524,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Arena Gladiatorów",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

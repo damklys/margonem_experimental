@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Pizzeria",
+ "id": 2950,
+ "w": 24,
+ "h": 21,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 5,
+   "y": 19
+  },
+  {
+   "to": "Nithal",
+   "x": 6,
+   "y": 19
+  },
+  {
+   "to": "Pizzeria - piwnica",
+   "x": 9,
+   "y": 6
   }
  ]
 }

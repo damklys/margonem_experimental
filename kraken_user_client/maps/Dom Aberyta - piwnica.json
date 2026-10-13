@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Aberyta - piwnica",
+ "id": 1792,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Aberyta",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

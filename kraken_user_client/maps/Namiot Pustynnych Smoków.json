@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Pustynnych Smoków",
+ "id": 3323,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

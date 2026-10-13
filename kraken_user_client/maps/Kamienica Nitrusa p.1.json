@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Nitrusa p.1",
+ "id": 744,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Nitrusa p.2",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Kamienica Nitrusa",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Kanały pod Portem Tuzmer",
+ "id": 1614,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kwatera rozbójników",
+   "x": 4,
+   "y": 19
+  },
+  {
+   "to": "Kwatera rozbójników",
+   "x": 5,
+   "y": 19
+  },
+  {
+   "to": "Dom Lorenzo",
+   "x": 15,
+   "y": 31
+  },
+  {
+   "to": "Tajemnicze przejście",
+   "x": 45,
+   "y": 2
+  },
+  {
+   "to": "Dom Łasicy",
+   "x": 51,
+   "y": 8
+  },
+  {
+   "to": "Dom Danillo",
+   "x": 61,
+   "y": 20
+  },
+  {
+   "to": "Dom Danillo",
+   "x": 62,
+   "y": 20
+  }
+ ]
+}

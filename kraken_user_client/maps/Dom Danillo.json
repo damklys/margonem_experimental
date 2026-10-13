@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Danillo",
+ "id": 1628,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

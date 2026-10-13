@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Biuro p.112",
+ "id": 393,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Karka-han - prawe skrzydło",
+   "x": 10,
+   "y": 4
+  }
+ ]
+}

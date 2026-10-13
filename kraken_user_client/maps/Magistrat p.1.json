@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Magistrat p.1",
+ "id": 1516,
+ "w": 34,
+ "h": 26,
+ "gateways": [
+  {
+   "to": "Magistrat p.2",
+   "x": 16,
+   "y": 5
+  },
+  {
+   "to": "Magistrat",
+   "x": 16,
+   "y": 13
+  },
+  {
+   "to": "Magistrat p.2",
+   "x": 17,
+   "y": 5
+  },
+  {
+   "to": "Magistrat",
+   "x": 17,
+   "y": 13
+  }
+ ]
+}

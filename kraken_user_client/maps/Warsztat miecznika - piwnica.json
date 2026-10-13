@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Warsztat miecznika - piwnica",
+ "id": 1837,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Warsztat miecznika",
+   "x": 12,
+   "y": 3
+  }
+ ]
+}

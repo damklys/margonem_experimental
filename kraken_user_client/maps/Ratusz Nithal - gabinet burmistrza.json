@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Nithal - gabinet burmistrza",
+ "id": 1025,
+ "w": 18,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Ratusz Nithal",
+   "x": 9,
+   "y": 13
+  }
+ ]
+}

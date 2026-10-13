@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Zmarzlina Amaimona Soplorękiego - przedsionek",
+ "id": 4046,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Skały Mroźnych Śpiewów"
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 13,
+   "y": 30
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 14,
+   "y": 30
   },
   {
    "to": "Zmarzlina Amaimona Soplorękiego - sala"

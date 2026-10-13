@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom rodziny Martel - piwnica",
+ "id": 1915,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom rodziny Martel",
+   "x": 12,
+   "y": 4
+  }
+ ]
+}

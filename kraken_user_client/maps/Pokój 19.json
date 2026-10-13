@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pokój 19",
+ "id": 1018,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Tęczowym Żukiem p.2",
+   "x": 8,
+   "y": 5
+  }
+ ]
+}

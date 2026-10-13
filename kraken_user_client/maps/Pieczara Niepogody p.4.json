@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Niepogody p.4",
+ "id": 1668,
+ "w": 48,
+ "h": 32,
  "gateways": [
   {
-   "to": "Pieczara Niepogody p.3"
+   "to": "Pieczara Niepogody p.3",
+   "x": 4,
+   "y": 3
   },
   {
-   "to": "Pieczara Niepogody p.5"
+   "to": "Pieczara Niepogody p.5",
+   "x": 39,
+   "y": 29
   }
  ]
 }

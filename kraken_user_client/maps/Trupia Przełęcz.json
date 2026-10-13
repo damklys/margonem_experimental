@@ -6,124 +6,74 @@
  "h": 96,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.1 - sala 2",
-   "x": 10,
-   "y": 61,
-   "toId": 6940,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Płaskowyż Arpan",
-   "x": 23,
-   "y": 95,
-   "toId": 2865,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Niecka Xiuh Atl",
    "x": 0,
    "y": 53,
-   "toId": 1901,
-   "key": 0,
-   "lvl": 65536200,
-   "zone": 0
-  },
-  {
-   "to": "Kamienna Strażnica - zach. baszta p.2",
-   "x": 9,
-   "y": 21,
-   "toId": 1153,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Namiot kościarza",
-   "x": 14,
-   "y": 13,
-   "toId": 1907,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Grota Samotnych Dusz p.1",
-   "x": 36,
-   "y": 72,
-   "toId": 1353,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Wzgórze Płaczek",
-   "x": 40,
-   "y": 0,
-   "toId": 3759,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kamienna Strażnica - wsch. baszta p.1",
-   "x": 58,
-   "y": 57,
-   "toId": 1145,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Księżycowe Wzniesienie",
-   "x": 63,
-   "y": 20,
-   "toId": 1137,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Jaskinia"
+   "req": "Przejście dostępne od 200 poziomu"
   },
   {
    "to": "Niecka Xiuh Atl",
    "x": 0,
    "y": 54,
-   "toId": 1901,
-   "key": 0,
-   "lvl": 65536200,
-   "zone": 0
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Kamienna Strażnica - zach. baszta p.2",
+   "x": 9,
+   "y": 21
+  },
+  {
+   "to": "Zabłocona Jama p.1 - sala 2",
+   "x": 10,
+   "y": 61
+  },
+  {
+   "to": "Namiot kościarza",
+   "x": 14,
+   "y": 13
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 23,
+   "y": 95
   },
   {
    "to": "Płaskowyż Arpan",
    "x": 24,
-   "y": 95,
-   "toId": 2865,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 95
+  },
+  {
+   "to": "Grota Samotnych Dusz p.1",
+   "x": 36,
+   "y": 72
+  },
+  {
+   "to": "Wzgórze Płaczek",
+   "x": 40,
+   "y": 0
   },
   {
    "to": "Wzgórze Płaczek",
    "x": 41,
-   "y": 0,
-   "toId": 3759,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
+  },
+  {
+   "to": "Kamienna Strażnica - wsch. baszta p.1",
+   "x": 58,
+   "y": 57
   },
   {
    "to": "Księżycowe Wzniesienie",
    "x": 63,
-   "y": 21,
-   "toId": 1137,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 20
+  },
+  {
+   "to": "Księżycowe Wzniesienie",
+   "x": 63,
+   "y": 21
+  },
+  {
+   "to": "Jaskinia"
   }
  ]
 }

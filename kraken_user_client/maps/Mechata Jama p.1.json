@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Mechata Jama p.1",
+ "id": 7844,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Mechata Jama p.2",
+   "x": 24,
+   "y": 13
+  },
+  {
+   "to": "Złota Dąbrowa",
+   "x": 24,
+   "y": 46
+  }
+ ]
+}

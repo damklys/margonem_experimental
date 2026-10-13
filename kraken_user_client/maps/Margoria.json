@@ -8,20 +8,12 @@
   {
    "to": "Kopalnia Margorii",
    "x": 8,
-   "y": 89,
-   "toId": 6772,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 89
   },
   {
    "to": "Labirynt Margorii",
    "x": 52,
-   "y": 92,
-   "toId": 6771,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 92
   },
   {
    "to": "Margoria - Sala Królewska"

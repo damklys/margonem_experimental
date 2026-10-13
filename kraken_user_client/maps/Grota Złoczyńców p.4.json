@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Złoczyńców p.4",
+ "id": 197,
+ "w": 33,
+ "h": 54,
+ "gateways": [
+  {
+   "to": "Grota Złoczyńców p.3",
+   "x": 18,
+   "y": 4
+  }
+ ]
+}

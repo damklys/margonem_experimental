@@ -1,33 +1,80 @@
 {
  "kraken": "mapa",
  "name": "Skały Mroźnych Śpiewów",
+ "id": 1387,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Andarum Ilami"
+   "to": "Jaskinia Lodowego Czaru",
+   "x": 4,
+   "y": 33
   },
   {
-   "to": "Erem Czarnego Słońca p.1 - północ"
+   "to": "Cmentarzysko Szerpów",
+   "x": 10,
+   "y": 0
   },
   {
-   "to": "Firnowa Grota p.1"
+   "to": "Cmentarzysko Szerpów",
+   "x": 11,
+   "y": 0
   },
   {
-   "to": "Cmentarzysko Szerpów"
+   "to": "Cmentarzysko Szerpów",
+   "x": 12,
+   "y": 0
   },
   {
-   "to": "Firnowa Grota p.2"
+   "to": "Erem Czarnego Słońca p.3 - południe",
+   "x": 21,
+   "y": 47
   },
   {
-   "to": "Erem Czarnego Słońca p.3 - południe"
+   "to": "Firnowa Grota p.1",
+   "x": 23,
+   "y": 11
   },
   {
-   "to": "Lodowa Wyrwa p.1 s.1"
+   "to": "Firnowa Grota p.2",
+   "x": 26,
+   "y": 22
   },
   {
-   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek"
+   "to": "Erem Czarnego Słońca p.1 - północ",
+   "x": 28,
+   "y": 11
   },
   {
-   "to": "Lodowa Wyrwa p.2"
+   "to": "Erem Czarnego Słońca p.1 - północ",
+   "x": 29,
+   "y": 11
+  },
+  {
+   "to": "Lodowa Wyrwa p.1 s.1",
+   "x": 40,
+   "y": 42
+  },
+  {
+   "to": "Lodowa Wyrwa p.2",
+   "x": 50,
+   "y": 59
+  },
+  {
+   "to": "Zmarzlina Amaimona Soplorękiego - przedsionek",
+   "x": 60,
+   "y": 44,
+   "req": "Przejście dostępne od 69 do 108 poziomu"
+  },
+  {
+   "to": "Andarum Ilami",
+   "x": 63,
+   "y": 5
+  },
+  {
+   "to": "Andarum Ilami",
+   "x": 63,
+   "y": 6
   }
  ]
 }

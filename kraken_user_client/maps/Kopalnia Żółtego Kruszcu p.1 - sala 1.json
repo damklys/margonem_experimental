@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Żółtego Kruszcu p.1 - sala 1",
+ "id": 6953,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kopalnia Żółtego Kruszcu p.2 - sala 1",
+   "x": 8,
+   "y": 7
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 28,
+   "y": 62
+  },
+  {
+   "to": "Kopalnia Żółtego Kruszcu p.1 - sala 2",
+   "x": 50,
+   "y": 10
+  }
+ ]
+}

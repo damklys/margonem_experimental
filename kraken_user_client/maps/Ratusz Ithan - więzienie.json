@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Ithan - więzienie",
+ "id": 2534,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Ithan",
+   "x": 5,
+   "y": 1
+  }
+ ]
+}

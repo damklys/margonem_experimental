@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Siedlisko Szczurów p.1",
+ "id": 597,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Wnętrze drzewa",
+   "x": 15,
+   "y": 15
+  },
+  {
+   "to": "Siedlisko Szczurów p.2",
+   "x": 27,
+   "y": 13
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Mury - skrzydło północne",
+ "id": 2071,
+ "w": 45,
+ "h": 23,
+ "gateways": [
+  {
+   "to": "Mury - skrzydło zachodnie",
+   "x": 3,
+   "y": 5
+  },
+  {
+   "to": "Mury - skrzydło wschodnie",
+   "x": 33,
+   "y": 16
+  }
+ ]
+}

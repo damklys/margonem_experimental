@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Bezsennych p.2 s.2",
+ "id": 6052,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.2 s.1",
+   "x": 1,
+   "y": 26
+  },
+  {
+   "to": "Krypty Bezsennych p.2 s.1",
+   "x": 1,
+   "y": 27
+  },
+  {
+   "to": "Grobowiec Przeklętego Krakania - przedsionek",
+   "x": 34,
+   "y": 5,
+   "req": "Przejście dostępne od 176 do 215 poziomu"
+  },
+  {
+   "to": "Grobowiec Przeklętego Krakania - przedsionek",
+   "x": 35,
+   "y": 5,
+   "req": "Przejście dostępne od 176 do 215 poziomu"
+  },
+  {
+   "to": "Krypty Bezsennych p.1 s.2",
+   "x": 39,
+   "y": 45
+  },
+  {
+   "to": "Krypty Bezsennych p.1 s.2",
+   "x": 40,
+   "y": 45
+  }
+ ]
+}

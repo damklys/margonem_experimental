@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom rybaka Yarte",
+ "id": 1415,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Dom rybaka Yarte - piwnica",
+   "x": 10,
+   "y": 10
+  }
+ ]
+}

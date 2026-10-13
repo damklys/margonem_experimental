@@ -1,15 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum",
+ "id": 6608,
+ "w": 46,
+ "h": 31,
  "gateways": [
   {
-   "to": "Świątynia Andarum - zejście lewe"
+   "to": "Świątynia Andarum - zejście lewe",
+   "x": 4,
+   "y": 18
   },
   {
-   "to": "Świątynia Andarum - zejście prawe"
+   "to": "Świątynia Andarum - zejście lewe",
+   "x": 5,
+   "y": 18
   },
   {
-   "to": "Andarum Ilami"
+   "to": "Andarum Ilami",
+   "x": 22,
+   "y": 20
+  },
+  {
+   "to": "Andarum Ilami",
+   "x": 23,
+   "y": 20
+  },
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "x": 40,
+   "y": 18
+  },
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "x": 41,
+   "y": 18
   }
  ]
 }

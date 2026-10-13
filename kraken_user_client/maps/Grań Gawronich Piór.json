@@ -1,12 +1,81 @@
 {
  "kraken": "mapa",
  "name": "Grań Gawronich Piór",
+ "id": 2020,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Lazurowe Wzgórze"
+   "to": "Gvar Hamryd",
+   "x": 0,
+   "y": 41,
+   "req": "Przejście dostępne od 200 poziomu"
   },
   {
-   "to": "Thuzal"
+   "to": "Gvar Hamryd",
+   "x": 0,
+   "y": 42,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Ogrza Kawerna p.1",
+   "x": 24,
+   "y": 60
+  },
+  {
+   "to": "Thuzal",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Thuzal",
+   "x": 31,
+   "y": 0
+  },
+  {
+   "to": "Thuzal",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Thuzal",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 33,
+   "y": 63
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 34,
+   "y": 63
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 35,
+   "y": 63
+  },
+  {
+   "to": "Tajemniczy tunel",
+   "x": 67,
+   "y": 16
+  },
+  {
+   "to": "Kaplica",
+   "x": 91,
+   "y": 8
+  },
+  {
+   "to": "Błota Sham Al",
+   "x": 95,
+   "y": 37
+  },
+  {
+   "to": "Błota Sham Al",
+   "x": 95,
+   "y": 38
   }
  ]
 }

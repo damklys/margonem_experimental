@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ograbiona świątynia",
+ "id": 1299,
+ "w": 30,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 14,
+   "y": 18
+  },
+  {
+   "to": "Tristam",
+   "x": 15,
+   "y": 18
+  }
+ ]
+}

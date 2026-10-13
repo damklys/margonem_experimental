@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Strażnica północno-wschodnia",
+ "id": 2711,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Składy",
+   "x": 8,
+   "y": 8
+  },
+  {
+   "to": "Ithan",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Ithan",
+   "x": 9,
+   "y": 13
+  }
+ ]
+}

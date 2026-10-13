@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Ulryka - sala zgromadzeń",
+ "id": 3508,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Ulryka",
+   "x": 2,
+   "y": 9
+  }
+ ]
+}

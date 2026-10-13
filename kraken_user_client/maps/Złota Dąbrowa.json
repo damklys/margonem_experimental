@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Złota Dąbrowa",
+ "id": 7832,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "to": "Złudny Trakt",
+   "x": 48,
+   "y": 0
+  },
+  {
+   "to": "Mechata Jama p.1",
+   "x": 49,
+   "y": 49
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 64,
+   "y": 63
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 65,
+   "y": 63
+  },
+  {
+   "to": "Bór Zagubionych",
+   "x": 95,
+   "y": 19
+  },
+  {
+   "to": "Martwy Las",
+   "x": 95,
+   "y": 50
+  },
+  {
+   "to": "Martwy Las",
+   "x": 95,
+   "y": 51
+  }
+ ]
+}

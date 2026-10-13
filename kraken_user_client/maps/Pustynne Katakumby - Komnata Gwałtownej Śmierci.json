@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+ "id": 3035,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Marzeń",
+   "x": 6,
+   "y": 14
+  },
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Marzeń",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Pustynne Katakumby - sala 5",
+   "x": 7,
+   "y": 62
+  },
+  {
+   "to": "Pustynne Katakumby - sala 5",
+   "x": 8,
+   "y": 62
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 24,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 25,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 26,
+   "y": 3
+  }
+ ]
+}

@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Magistrat p.2",
+ "id": 1517,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Magistrat p.1",
+   "x": 7,
+   "y": 6
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Magistrat p.1",
+   "x": 8,
+   "y": 6
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 12
   }
  ]
 }

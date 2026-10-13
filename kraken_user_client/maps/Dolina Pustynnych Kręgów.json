@@ -1,0 +1,76 @@
+{
+ "kraken": "mapa",
+ "name": "Dolina Pustynnych Kręgów",
+ "id": 2871,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 0,
+   "y": 81
+  },
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 0,
+   "y": 82
+  },
+  {
+   "to": "Źródło Zakorzenionego Ludu",
+   "x": 9,
+   "y": 0
+  },
+  {
+   "to": "Źródło Zakorzenionego Ludu",
+   "x": 10,
+   "y": 0
+  },
+  {
+   "to": "Piachy Zniewolonych",
+   "x": 16,
+   "y": 95
+  },
+  {
+   "to": "Piachy Zniewolonych",
+   "x": 17,
+   "y": 95
+  },
+  {
+   "to": "Kopalnia Żółtego Kruszcu p.1 - sala 1",
+   "x": 35,
+   "y": 84
+  },
+  {
+   "to": "Kopalnia Żółtego Kruszcu p.1 - sala 1",
+   "x": 36,
+   "y": 84
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 45,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 46,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Siedziba goblinów",
+   "x": 56,
+   "y": 91
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 63,
+   "y": 38
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 63,
+   "y": 39
+  }
+ ]
+}

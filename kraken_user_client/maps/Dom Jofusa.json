@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Jofusa",
+ "id": 273,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Jofusa - piwnica",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Dom Jofusa p.1",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

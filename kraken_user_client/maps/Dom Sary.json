@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Sary",
+ "id": 80,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Sary p.1",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Torneg",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Torneg",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Sary - piwnica",
+   "x": 12,
+   "y": 10
+  }
+ ]
+}

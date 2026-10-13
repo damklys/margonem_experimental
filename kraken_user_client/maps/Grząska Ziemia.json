@@ -1,0 +1,59 @@
+{
+ "kraken": "mapa",
+ "name": "Grząska Ziemia",
+ "id": 7825,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 0,
+   "y": 57
+  },
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 0,
+   "y": 58
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 29,
+   "y": 63
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 30,
+   "y": 63
+  },
+  {
+   "to": "Mglisty Las",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "to": "Mglisty Las",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 82,
+   "y": 63
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 83,
+   "y": 63
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 95,
+   "y": 34
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 95,
+   "y": 35
+  }
+ ]
+}

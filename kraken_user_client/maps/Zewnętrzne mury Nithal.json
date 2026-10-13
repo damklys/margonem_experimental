@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zewnętrzne mury Nithal",
+ "id": 966,
+ "w": 25,
+ "h": 41,
+ "gateways": [
+  {
+   "to": "Mury Nithal - Baszta Koronna",
+   "x": 22,
+   "y": 4
+  },
+  {
+   "to": "Mury Nithal - Baszta Trwała",
+   "x": 23,
+   "y": 38
+  }
+ ]
+}

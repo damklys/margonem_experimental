@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Dogoran p.1",
+ "id": 2517,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Kopalnia Dogoran p.2",
+   "x": 13,
+   "y": 8
+  },
+  {
+   "to": "Ithan",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "to": "Ithan",
+   "x": 17,
+   "y": 30
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia przemytników",
+ "id": 4734,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Lokum krasnoludów - piwnica p.2",
+   "x": 11,
+   "y": 25
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Piaskowej Burzy s.2",
+ "id": 3332,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Namiot Naznaczonych",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Jaskinia Piaskowej Burzy s.1",
+   "x": 25,
+   "y": 9
+  },
+  {
+   "to": "Jaskinia Piaskowej Burzy s.1",
+   "x": 26,
+   "y": 9
+  }
+ ]
+}

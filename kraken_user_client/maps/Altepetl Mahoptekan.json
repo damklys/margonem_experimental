@@ -1,0 +1,64 @@
+{
+ "kraken": "mapa",
+ "name": "Altepetl Mahoptekan",
+ "id": 1926,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 13,
+   "y": 95
+  },
+  {
+   "to": "Zachodni Mictlan p.1",
+   "x": 14,
+   "y": 33
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 14,
+   "y": 95
+  },
+  {
+   "to": "Zachodni Mictlan p.1",
+   "x": 15,
+   "y": 33
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 22,
+   "y": 0
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 23,
+   "y": 0
+  },
+  {
+   "to": "Topan p.1",
+   "x": 34,
+   "y": 13
+  },
+  {
+   "to": "Topan p.1",
+   "x": 35,
+   "y": 13
+  },
+  {
+   "to": "Wschodni Mictlan p.1",
+   "x": 51,
+   "y": 38
+  },
+  {
+   "to": "Wschodni Mictlan p.1",
+   "x": 52,
+   "y": 38
+  },
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 63,
+   "y": 52
+  }
+ ]
+}

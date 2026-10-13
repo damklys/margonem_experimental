@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - magazyn p.1",
+ "id": 6613,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Świątynia Andarum - podziemia"
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 47,
+   "y": 51
   },
   {
-   "to": "Świątynia Andarum - magazyn p.2"
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 48,
+   "y": 51
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 94,
+   "y": 22
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 94,
+   "y": 23
   }
  ]
 }

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Vonikur p.2",
+ "id": 1787,
+ "w": 23,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Vonikur - lewe skrzydło",
+   "x": 1,
+   "y": 9
+  },
+  {
+   "to": "Rezydencja Vonikur",
+   "x": 11,
+   "y": 10
+  },
+  {
+   "to": "Rezydencja Vonikur - prawe skrzydło",
+   "x": 21,
+   "y": 9
+  }
+ ]
+}

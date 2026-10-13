@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Czaszek",
+ "id": 846,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.1"
+   "to": "Labirynt Wyklętych p.1",
+   "x": 8,
+   "y": 16
   },
   {
-   "to": "Nizina Wieśniaków"
+   "to": "Nizina Wieśniaków",
+   "x": 15,
+   "y": 16
   }
  ]
 }

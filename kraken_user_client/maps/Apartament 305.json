@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Apartament 305",
+ "id": 1045,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.3 - część wschodnia",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.3 - część wschodnia",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

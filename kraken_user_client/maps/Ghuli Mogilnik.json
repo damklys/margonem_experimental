@@ -1,18 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Ghuli Mogilnik",
+ "id": 111,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Dolina Rozbójników"
+   "to": "Dolina Rozbójników",
+   "x": 0,
+   "y": 19
   },
   {
-   "to": "Zapomniany Grobowiec p.1"
+   "to": "Dolina Rozbójników",
+   "x": 0,
+   "y": 20
   },
   {
-   "to": "Warczące Osuwiska"
+   "to": "Polana Ścierwojadów",
+   "x": 23,
+   "y": 63
   },
   {
-   "to": "Polana Ścierwojadów"
+   "to": "Zapomniany Grobowiec p.1",
+   "x": 31,
+   "y": 21
+  },
+  {
+   "to": "Warczące Osuwiska",
+   "x": 63,
+   "y": 37
+  },
+  {
+   "to": "Warczące Osuwiska",
+   "x": 63,
+   "y": 38
   }
  ]
 }

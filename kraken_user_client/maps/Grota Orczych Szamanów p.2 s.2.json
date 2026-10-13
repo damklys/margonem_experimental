@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Orczych Szamanów p.2 s.2",
+ "id": 5850,
+ "w": 40,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Grota Orczych Szamanów p.2 s.1",
+   "x": 6,
+   "y": 32
+  },
+  {
+   "to": "Grota Orczych Szamanów p.2 s.1",
+   "x": 6,
+   "y": 33
+  },
+  {
+   "to": "Grota Orczych Szamanów p.1 s.2",
+   "x": 34,
+   "y": 2
+  }
+ ]
+}

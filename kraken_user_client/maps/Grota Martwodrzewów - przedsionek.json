@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Martwodrzewów - przedsionek",
+ "id": 4266,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Regiel Zabłąkanych",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

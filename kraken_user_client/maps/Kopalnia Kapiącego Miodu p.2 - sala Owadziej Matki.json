@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki",
- "gateways": []
+ "id": 5395,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+   "x": 10,
+   "y": 60
+  }
+ ]
 }

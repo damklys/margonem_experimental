@@ -1,18 +1,45 @@
 {
  "kraken": "mapa",
  "name": "Podmokła Dolina",
+ "id": 727,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Mokradła"
+   "to": "Jaskinia Pogardy",
+   "x": 14,
+   "y": 49,
+   "req": "Przejście dostępne do 53 poziomu"
   },
   {
-   "to": "Morwowe Przejście"
+   "to": "Morwowe Przejście",
+   "x": 31,
+   "y": 0
   },
   {
-   "to": "Las Goblinów"
+   "to": "Morwowe Przejście",
+   "x": 32,
+   "y": 0
   },
   {
-   "to": "Jaskinia Pogardy"
+   "to": "Morwowe Przejście",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Las Goblinów",
+   "x": 42,
+   "y": 63
+  },
+  {
+   "to": "Las Goblinów",
+   "x": 43,
+   "y": 63
+  },
+  {
+   "to": "Mokradła",
+   "x": 63,
+   "y": 39
   }
  ]
 }

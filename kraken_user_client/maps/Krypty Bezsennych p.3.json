@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Bezsennych p.3",
+ "id": 6053,
+ "w": 33,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.2 s.1",
+   "x": 16,
+   "y": 25
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaszczurze Korytarze p.2 - sala 5",
+ "id": 7843,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jaszczurze Korytarze p.2 - sala 4",
+   "x": 19,
+   "y": 28
+  }
+ ]
+}

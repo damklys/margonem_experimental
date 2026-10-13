@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - taras",
+ "id": 7297,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "SP Margonem - kasyno",
+   "x": 31,
+   "y": 58
+  },
+  {
+   "to": "SP Margonem - kasyno",
+   "x": 32,
+   "y": 58
+  }
+ ]
+}

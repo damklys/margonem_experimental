@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Janiny i Mariana - pokój Edzia",
+ "id": 8130,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Janiny i Mariana",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

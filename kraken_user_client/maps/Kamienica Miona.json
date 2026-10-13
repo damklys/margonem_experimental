@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Miona",
+ "id": 756,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Kamienica Miona p.1",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 12
   }
  ]
 }

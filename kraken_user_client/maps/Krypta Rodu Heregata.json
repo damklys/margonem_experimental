@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Krypta Rodu Heregata",
+ "id": 2877,
+ "w": 23,
+ "h": 23,
  "gateways": [
   {
-   "to": "Nekropolia Karka-han"
+   "to": "Krypta Rodu Heregata p.1",
+   "x": 10,
+   "y": 6
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 10,
+   "y": 21
+  },
+  {
+   "to": "Krypta Rodu Heregata p.1",
+   "x": 11,
+   "y": 6
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 11,
+   "y": 21
+  },
+  {
+   "to": "Krypta Rodu Heregata p.1",
+   "x": 12,
+   "y": 6
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 12,
+   "y": 21
   }
  ]
 }

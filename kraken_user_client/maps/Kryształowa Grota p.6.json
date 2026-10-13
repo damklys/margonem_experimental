@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kryształowa Grota p.6",
+ "id": 7350,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Szyb Zdrajców"
+   "to": "Szyb Zdrajców",
+   "x": 25,
+   "y": 58
+  },
+  {
+   "to": "Kryształowa Grota p.5",
+   "x": 49,
+   "y": 1
+  },
+  {
+   "to": "Kryształowa Grota p.5",
+   "x": 50,
+   "y": 1
   }
  ]
 }

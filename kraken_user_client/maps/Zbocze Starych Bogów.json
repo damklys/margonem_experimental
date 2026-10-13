@@ -1,5 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Zbocze Starych Bogów",
- "gateways": []
+ "id": 7680,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 0,
+   "y": 53
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 0,
+   "y": 54
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 41,
+   "y": 95
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 42,
+   "y": 95
+  },
+  {
+   "to": "Nizina Wieśniaków",
+   "x": 63,
+   "y": 48
+  },
+  {
+   "to": "Nizina Wieśniaków",
+   "x": 63,
+   "y": 49
+  }
+ ]
 }

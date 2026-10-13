@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Huta żelaza",
+ "id": 1801,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Przedmieścia Karka-han",
+   "x": 13,
+   "y": 8
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 13,
+   "y": 9
   }
  ]
 }

@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Radosna Polana",
+ "id": 276,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Wioska Gnolli"
+   "to": "Zakurzone przejście",
+   "x": 26,
+   "y": 42
   },
   {
-   "to": "Pieczara Szaleńców - sala 1"
+   "to": "Pieczara Szaleńców - sala 1",
+   "x": 28,
+   "y": 14
+  },
+  {
+   "to": "Wioska Gnolli",
+   "x": 63,
+   "y": 47
+  },
+  {
+   "to": "Wioska Gnolli",
+   "x": 63,
+   "y": 48
   }
  ]
 }

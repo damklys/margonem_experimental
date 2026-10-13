@@ -6,40 +6,24 @@
  "h": 64,
  "gateways": [
   {
-   "to": "Porzucone Pasieki",
-   "x": 95,
-   "y": 28,
-   "toId": 138,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Przedmieścia Karka-han",
    "x": 0,
-   "y": 5,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 5
   },
   {
    "to": "Wichrowe Szczyty",
    "x": 57,
-   "y": 63,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Wichrowe Szczyty",
    "x": 58,
-   "y": 63,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "x": 95,
+   "y": 28
   }
  ]
 }

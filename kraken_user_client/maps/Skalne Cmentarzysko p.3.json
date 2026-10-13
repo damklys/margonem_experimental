@@ -1,12 +1,20 @@
 {
  "kraken": "mapa",
  "name": "Skalne Cmentarzysko p.3",
+ "id": 7065,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Skalne Cmentarzysko p.2"
+   "to": "Skalne Cmentarzysko p.4",
+   "x": 5,
+   "y": 10,
+   "req": "Przejście dostępne do 125 poziomu"
   },
   {
-   "to": "Skalne Cmentarzysko p.4"
+   "to": "Skalne Cmentarzysko p.2",
+   "x": 53,
+   "y": 44
   }
  ]
 }

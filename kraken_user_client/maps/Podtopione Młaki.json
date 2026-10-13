@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Podtopione Młaki",
+ "id": 8531,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Moczary Rybiego Oka",
+   "x": 0,
+   "y": 58
+  },
+  {
+   "to": "Moczary Rybiego Oka",
+   "x": 0,
+   "y": 59
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 29,
+   "y": 95
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 30,
+   "y": 95
+  }
+ ]
+}

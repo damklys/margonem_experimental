@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mei Shang Lii p.1",
+ "id": 1500,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mei Shang Lii",
+   "x": 5,
+   "y": 9
+  }
+ ]
+}

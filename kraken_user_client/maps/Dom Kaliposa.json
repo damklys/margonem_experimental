@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Kaliposa",
+ "id": 104,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Dom Kaliposa p.1",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Karka-han",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Dom Kaliposa - piwnica",
+   "x": 13,
+   "y": 10
   }
  ]
 }

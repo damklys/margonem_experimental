@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Cynamonii",
+ "id": 1209,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Stare Sioło",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Tussal p.1 - gabinet",
+ "id": 1972,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Tussal",
+   "x": 11,
+   "y": 13
+  }
+ ]
+}

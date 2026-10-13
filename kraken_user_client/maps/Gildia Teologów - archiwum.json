@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów - archiwum",
+ "id": 1904,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 13,
+   "y": 11
+  }
+ ]
+}

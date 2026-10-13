@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Tysiąca Świec",
+ "id": 5943,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Sala Spowiedzi Konających",
+   "x": 47,
+   "y": 4
+  }
+ ]
+}

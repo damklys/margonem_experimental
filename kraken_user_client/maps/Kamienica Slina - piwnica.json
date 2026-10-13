@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Slina - piwnica",
+ "id": 1832,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Slina",
+   "x": 10,
+   "y": 4
+  }
+ ]
+}

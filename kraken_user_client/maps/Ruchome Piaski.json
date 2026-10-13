@@ -1,9 +1,64 @@
 {
  "kraken": "mapa",
  "name": "Ruchome Piaski",
+ "id": 2873,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Piachy Zniewolonych",
+   "x": 31,
+   "y": 0
+  },
+  {
+   "to": "Piachy Zniewolonych",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Magazyn",
+   "x": 46,
+   "y": 50
+  },
+  {
+   "to": "Kuchnia polowa",
+   "x": 49,
+   "y": 49
+  },
+  {
+   "to": "Namiot",
+   "x": 51,
+   "y": 51
+  },
+  {
+   "to": "Namiot",
+   "x": 54,
+   "y": 54
+  },
+  {
+   "to": "Namiot kapitana",
+   "x": 56,
+   "y": 53
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 71,
+   "y": 63
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 72,
+   "y": 63
+  },
+  {
+   "to": "Tuzmer",
+   "x": 95,
+   "y": 39
+  },
+  {
+   "to": "Tuzmer",
+   "x": 95,
+   "y": 40
   }
  ]
 }

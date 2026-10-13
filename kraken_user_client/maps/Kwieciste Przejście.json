@@ -1,5 +1,69 @@
 {
  "kraken": "mapa",
  "name": "Kwieciste Przejście",
- "gateways": []
+ "id": 344,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Głuchy Las",
+   "x": 0,
+   "y": 30
+  },
+  {
+   "to": "Głuchy Las",
+   "x": 0,
+   "y": 31
+  },
+  {
+   "to": "Dom Tunii",
+   "x": 19,
+   "y": 17
+  },
+  {
+   "to": "Dom Tunii",
+   "x": 20,
+   "y": 17
+  },
+  {
+   "to": "Złudny Trakt",
+   "x": 39,
+   "y": 63
+  },
+  {
+   "to": "Złudny Trakt",
+   "x": 40,
+   "y": 63
+  },
+  {
+   "to": "Złudny Trakt",
+   "x": 41,
+   "y": 63
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 48,
+   "y": 0
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 49,
+   "y": 0
+  },
+  {
+   "to": "Lazurowe Wzgórze",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "to": "Ukwiecona Skarpa",
+   "x": 95,
+   "y": 16
+  },
+  {
+   "to": "Ukwiecona Skarpa",
+   "x": 95,
+   "y": 17
+  }
+ ]
 }

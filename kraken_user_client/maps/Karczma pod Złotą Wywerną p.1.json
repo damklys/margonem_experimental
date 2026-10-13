@@ -1,0 +1,139 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Złotą Wywerną p.1",
+ "id": 207,
+ "w": 32,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Izba 114",
+   "x": 5,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 115",
+   "x": 5,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 116",
+   "x": 5,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 117",
+   "x": 5,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 118",
+   "x": 5,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 119",
+   "x": 5,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 120",
+   "x": 5,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 112",
+   "x": 10,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 113",
+   "x": 10,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 110",
+   "x": 12,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 111",
+   "x": 12,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 108",
+   "x": 14,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 109",
+   "x": 14,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 106",
+   "x": 16,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 107",
+   "x": 16,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 104",
+   "x": 18,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 105",
+   "x": 18,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 102",
+   "x": 20,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 103",
+   "x": 20,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 101",
+   "x": 22,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Karczma pod Złotą Wywerną",
+   "x": 25,
+   "y": 7
+  },
+  {
+   "to": "Karczma pod Złotą Wywerną p.2",
+   "x": 26,
+   "y": 14
+  }
+ ]
+}

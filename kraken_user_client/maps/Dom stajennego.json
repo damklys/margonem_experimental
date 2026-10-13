@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom stajennego",
+ "id": 1277,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom stajennego p.1",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

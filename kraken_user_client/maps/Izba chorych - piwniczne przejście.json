@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Izba chorych - piwniczne przejście",
+ "id": 827,
+ "w": 20,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Izba chorych płd. - piwnica p.1",
+   "x": 6,
+   "y": 19
+  },
+  {
+   "to": "Izba chorych płn. - piwnica p.3",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Kanały Nithal p.1 - sala 1",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "to": "Izba chorych - piwniczne przejście - piwnica",
+   "x": 16,
+   "y": 14
+  }
+ ]
+}

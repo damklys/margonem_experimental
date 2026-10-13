@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Oztotl Tzacua p.4 - sala 2",
+ "id": 5670,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Oztotl Tzacua p.4 - sala 1",
+   "x": 4,
+   "y": 18
+  },
+  {
+   "to": "Oztotl Tzacua p.3 - sala 2",
+   "x": 15,
+   "y": 28
+  },
+  {
+   "to": "Oztotl Tzacua p.5",
+   "x": 16,
+   "y": 2
+  },
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 25,
+   "y": 29
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Miasteczko Cukrowiec",
+ "id": 6853,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Lodowy park",
+   "x": 0,
+   "y": 74
+  },
+  {
+   "to": "Fabryka Słodki Amok - hala główna",
+   "x": 18,
+   "y": 20
+  },
+  {
+   "to": "Dom Pinkertonów",
+   "x": 23,
+   "y": 66
+  },
+  {
+   "to": "Dom handlowy",
+   "x": 36,
+   "y": 64
+  },
+  {
+   "to": "Zaśnieżony trakt",
+   "x": 63,
+   "y": 44
+  },
+  {
+   "to": "Zaśnieżony trakt",
+   "x": 63,
+   "y": 45
+  },
+  {
+   "to": "Zaśnieżony trakt",
+   "x": 63,
+   "y": 46
+  }
+ ]
+}

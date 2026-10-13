@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Cedrika",
+ "id": 2199,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Dom Cedrika p.1",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Torneg",
+   "x": 6,
+   "y": 15
+  },
+  {
+   "to": "Torneg",
+   "x": 7,
+   "y": 15
+  }
+ ]
+}

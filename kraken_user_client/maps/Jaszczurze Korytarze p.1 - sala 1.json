@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaszczurze Korytarze p.1 - sala 1",
+ "id": 7835,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 24,
+   "y": 27
+  },
+  {
+   "to": "Jaszczurze Korytarze p.1 - sala 2",
+   "x": 25,
+   "y": 4
+  }
+ ]
+}

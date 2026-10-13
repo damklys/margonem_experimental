@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Nawiedzone Kazamaty p.1 s.2",
+ "id": 5867,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Nawiedzone Komnaty - przedsionek",
+   "x": 1,
+   "y": 1
+  },
+  {
+   "to": "Nawiedzone Kazamaty p.2 s.2",
+   "x": 1,
+   "y": 22
+  }
+ ]
+}

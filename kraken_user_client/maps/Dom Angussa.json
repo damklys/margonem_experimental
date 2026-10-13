@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Angussa",
+ "id": 327,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Mythar",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Dom Angussa - pracownia",
+   "x": 7,
+   "y": 6
   }
  ]
 }

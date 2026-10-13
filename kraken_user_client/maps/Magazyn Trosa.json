@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn Trosa",
+ "id": 1178,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

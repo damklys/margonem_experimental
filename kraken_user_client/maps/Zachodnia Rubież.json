@@ -1,5 +1,64 @@
 {
  "kraken": "mapa",
  "name": "Zachodnia Rubież",
- "gateways": []
+ "id": 730,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 0,
+   "y": 29
+  },
+  {
+   "to": "Nizina Wieśniaków",
+   "x": 45,
+   "y": 0
+  },
+  {
+   "to": "Nizina Wieśniaków",
+   "x": 46,
+   "y": 0
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 76,
+   "y": 63
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 77,
+   "y": 63
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 78,
+   "y": 63
+  },
+  {
+   "to": "Akademia wojskowa - stajnia",
+   "x": 87,
+   "y": 39
+  },
+  {
+   "to": "Akademia wojskowa - stajnia",
+   "x": 88,
+   "y": 39
+  },
+  {
+   "to": "Akademia wojskowa p.1",
+   "x": 89,
+   "y": 33
+  },
+  {
+   "to": "Akademia wojskowa p.1",
+   "x": 90,
+   "y": 33
+  }
+ ]
 }

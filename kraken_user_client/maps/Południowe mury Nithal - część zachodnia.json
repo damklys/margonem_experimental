@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Południowe mury Nithal - część zachodnia",
+ "id": 963,
+ "w": 47,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Mury Nithal - Baszta Trwała",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Nithal",
+   "x": 38,
+   "y": 4
   }
  ]
 }

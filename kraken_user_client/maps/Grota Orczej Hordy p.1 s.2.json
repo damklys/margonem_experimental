@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Orczej Hordy p.1 s.2",
+ "id": 5853,
+ "w": 44,
+ "h": 44,
+ "gateways": [
+  {
+   "to": "Osada Czerwonych Orków",
+   "x": 14,
+   "y": 42
+  },
+  {
+   "to": "Grota Orczej Hordy p.2 s.1",
+   "x": 38,
+   "y": 9
+  }
+ ]
+}

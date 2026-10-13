@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Dom Merakliego",
+ "id": 3504,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 12,
+   "y": 13
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zakon Białej Lilii - siedziba kapłanek",
+ "id": 850,
+ "w": 20,
+ "h": 29,
+ "gateways": [
+  {
+   "to": "Zakon Białej Lilii - kaplica",
+   "x": 17,
+   "y": 18
+  }
+ ]
+}

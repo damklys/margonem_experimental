@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Mury zachodnie Tuzmer",
+ "id": 1575,
+ "w": 36,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Flopka",
+   "x": 12,
+   "y": 11
+  },
+  {
+   "to": "Dom Flopka",
+   "x": 13,
+   "y": 11
+  }
+ ]
+}

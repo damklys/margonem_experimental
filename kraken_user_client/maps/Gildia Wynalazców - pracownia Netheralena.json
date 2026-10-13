@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Wynalazców - pracownia Netheralena",
+ "id": 1964,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Gildia Wynalazców - laboratorium Tii Rumore",
+   "x": 4,
+   "y": 5
+  },
+  {
+   "to": "Gildia Wynalazców - aula uniwersytecka",
+   "x": 12,
+   "y": 20
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Teatr Monticolo - kulisy lewe",
+ "id": 7425,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Teatr Monticolo - korytarz",
+   "x": 9,
+   "y": 7
+  },
+  {
+   "to": "Teatr Monticolo - sala teatralna",
+   "x": 12,
+   "y": 11
+  }
+ ]
+}

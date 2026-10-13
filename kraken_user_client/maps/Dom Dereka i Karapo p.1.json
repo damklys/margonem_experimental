@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Dereka i Karapo p.1",
+ "id": 1173,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Dereka i Karapo",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

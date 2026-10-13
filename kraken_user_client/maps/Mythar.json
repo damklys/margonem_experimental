@@ -8,263 +8,147 @@
   {
    "to": "Smocze Góry",
    "x": 0,
-   "y": 35,
-   "toId": 253,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Zawiły Bór",
-   "x": 31,
-   "y": 0,
-   "toId": 330,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Złowrogie Bagna",
-   "x": 95,
-   "y": 26,
-   "toId": 246,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Alabastrowy Hotel",
-   "x": 75,
-   "y": 21,
-   "toId": 324,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Angussa",
-   "x": 72,
-   "y": 42,
-   "toId": 327,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Essy i Frassona",
-   "x": 59,
-   "y": 18,
-   "toId": 307,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Felkissiana",
-   "x": 50,
-   "y": 36,
-   "toId": 326,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Jemenossa",
-   "x": 49,
-   "y": 13,
-   "toId": 325,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Krassa",
-   "x": 55,
-   "y": 44,
-   "toId": 322,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Lassindy i Limerusa",
-   "x": 75,
-   "y": 12,
-   "toId": 308,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Liszli i Semkosa",
-   "x": 81,
-   "y": 28,
-   "toId": 328,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Lussa",
-   "x": 68,
-   "y": 28,
-   "toId": 256,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Presztreka",
-   "x": 88,
-   "y": 47,
-   "toId": 311,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Saprasa",
-   "x": 9,
-   "y": 17,
-   "toId": 310,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Trajnaloka",
-   "x": 66,
-   "y": 31,
-   "toId": 315,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Umplecji i Kiliona",
-   "x": 64,
-   "y": 18,
-   "toId": 323,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Walasara",
-   "x": 42,
-   "y": 46,
-   "toId": 316,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Węży",
-   "x": 60,
-   "y": 29,
-   "toId": 318,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Izba Pamięci",
-   "x": 45,
-   "y": 26,
-   "toId": 3687,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kuźnia Frassona",
-   "x": 54,
-   "y": 16,
-   "toId": 314,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Sala Zgromadzeń",
-   "x": 79,
-   "y": 50,
-   "toId": 313,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Siedziba Ergassaj",
-   "x": 63,
-   "y": 50,
-   "toId": 320,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Urwisko Zdrewniałych",
-   "x": 88,
-   "y": 63,
-   "toId": 3594,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 35
   },
   {
    "to": "Smocze Góry",
    "x": 0,
-   "y": 36,
-   "toId": 253,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 36
+  },
+  {
+   "to": "Dom Saprasa",
+   "x": 9,
+   "y": 17
+  },
+  {
+   "to": "Zawiły Bór",
+   "x": 31,
+   "y": 0
   },
   {
    "to": "Zawiły Bór",
    "x": 32,
-   "y": 0,
-   "toId": 330,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
   },
   {
    "to": "Zawiły Bór",
    "x": 33,
-   "y": 0,
-   "toId": 330,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
+  },
+  {
+   "to": "Dom Walasara",
+   "x": 42,
+   "y": 46
+  },
+  {
+   "to": "Izba Pamięci",
+   "x": 45,
+   "y": 26
+  },
+  {
+   "to": "Dom Jemenossa",
+   "x": 49,
+   "y": 13
+  },
+  {
+   "to": "Dom Felkissiana",
+   "x": 50,
+   "y": 36
+  },
+  {
+   "to": "Kuźnia Frassona",
+   "x": 54,
+   "y": 16
   },
   {
    "to": "Kuźnia Frassona",
    "x": 55,
-   "y": 16,
-   "toId": 314,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 16
+  },
+  {
+   "to": "Dom Krassa",
+   "x": 55,
+   "y": 44
+  },
+  {
+   "to": "Dom Essy i Frassona",
+   "x": 59,
+   "y": 18
+  },
+  {
+   "to": "Dom Węży",
+   "x": 60,
+   "y": 29
   },
   {
    "to": "Dom Węży",
    "x": 61,
-   "y": 29,
-   "toId": 318,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 29
+  },
+  {
+   "to": "Siedziba Ergassaj",
+   "x": 63,
+   "y": 50
+  },
+  {
+   "to": "Dom Umplecji i Kiliona",
+   "x": 64,
+   "y": 18
+  },
+  {
+   "to": "Dom Trajnaloka",
+   "x": 66,
+   "y": 31
+  },
+  {
+   "to": "Dom Lussa",
+   "x": 68,
+   "y": 28
+  },
+  {
+   "to": "Dom Angussa",
+   "x": 72,
+   "y": 42
+  },
+  {
+   "to": "Dom Lassindy i Limerusa",
+   "x": 75,
+   "y": 12
+  },
+  {
+   "to": "Alabastrowy Hotel",
+   "x": 75,
+   "y": 21
+  },
+  {
+   "to": "Sala Zgromadzeń",
+   "x": 79,
+   "y": 50
+  },
+  {
+   "to": "Dom Liszli i Semkosa",
+   "x": 81,
+   "y": 28
+  },
+  {
+   "to": "Dom Presztreka",
+   "x": 88,
+   "y": 47
+  },
+  {
+   "to": "Urwisko Zdrewniałych",
+   "x": 88,
+   "y": 63
   },
   {
    "to": "Złowrogie Bagna",
    "x": 95,
-   "y": 27,
-   "toId": 246,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 26
+  },
+  {
+   "to": "Złowrogie Bagna",
+   "x": 95,
+   "y": 27
   }
  ]
 }

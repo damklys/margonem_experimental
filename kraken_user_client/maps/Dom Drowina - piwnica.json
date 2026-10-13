@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Drowina - piwnica",
+ "id": 2123,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Drowina",
+   "x": 4,
+   "y": 6
+  }
+ ]
+}

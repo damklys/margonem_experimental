@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Izba 120",
+ "id": 413,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Karczma pod Złotą Wywerną p.1",
+   "x": 12,
+   "y": 8
+  }
+ ]
+}

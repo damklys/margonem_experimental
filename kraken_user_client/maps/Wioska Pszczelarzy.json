@@ -1,0 +1,77 @@
+{
+ "kraken": "mapa",
+ "name": "Wioska Pszczelarzy",
+ "id": 137,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dom Zbigniewa",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Dom Benia i Zgryzeldy",
+   "x": 18,
+   "y": 29
+  },
+  {
+   "to": "Podziemna pasieka",
+   "x": 24,
+   "y": 47,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pszczelarski magazyn",
+   "x": 31,
+   "y": 24
+  },
+  {
+   "to": "Dom Mafki i Hieronima",
+   "x": 32,
+   "y": 18
+  },
+  {
+   "to": "Pszczelarski magazyn",
+   "x": 32,
+   "y": 24
+  },
+  {
+   "to": "MAP#139",
+   "x": 34,
+   "y": 51,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "MAP#139",
+   "x": 35,
+   "y": 51,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom rodziny Martel",
+   "x": 37,
+   "y": 7
+  },
+  {
+   "to": "Dom Jofusa",
+   "x": 54,
+   "y": 21
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "x": 59,
+   "y": 63
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "x": 60,
+   "y": 63
+  },
+  {
+   "to": "Porzucone Pasieki",
+   "x": 61,
+   "y": 63
+  }
+ ]
+}

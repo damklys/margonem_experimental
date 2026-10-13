@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Piracka Kryjówka",
+ "id": 1446,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Piracka Kryjówka - piwnica",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Sericji i Callusa p.1",
+ "id": 1182,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Sericji i Callusa",
+   "x": 4,
+   "y": 7
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Ciechomira i Rzepichy",
+ "id": 8515,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podbrzezie",
+   "x": 3,
+   "y": 6
+  }
+ ]
+}

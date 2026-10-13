@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Rewii",
+ "id": 782,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Rewii p.1",
+   "x": 10,
+   "y": 2
+  },
+  {
+   "to": "Kamienica Rewii - piwnica",
+   "x": 10,
+   "y": 11
   }
  ]
 }

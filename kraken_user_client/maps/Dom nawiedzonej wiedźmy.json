@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom nawiedzonej wiedźmy",
+ "id": 1304,
+ "w": 16,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 6,
+   "y": 18
+  }
+ ]
+}

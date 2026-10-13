@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kwatera 16",
+ "id": 3558,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kwatery u Morcera",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Kwatery u Morcera",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

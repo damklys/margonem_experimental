@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Krynii Lufis p.3",
+ "id": 805,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Krynii Lufis p.2",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

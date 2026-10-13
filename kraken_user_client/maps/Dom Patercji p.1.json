@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Patercji p.1",
+ "id": 1377,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Dom Patercji",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

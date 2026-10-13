@@ -1,18 +1,76 @@
 {
  "kraken": "mapa",
  "name": "Las Dziwów",
+ "id": 229,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Cienisty Bór"
+   "to": "Złowrogie Bagna",
+   "x": 0,
+   "y": 47
   },
   {
-   "to": "Namiot Kambiona"
+   "to": "Złowrogie Bagna",
+   "x": 0,
+   "y": 48
   },
   {
-   "to": "Złowrogie Bagna"
+   "to": "Namiot Kambiona",
+   "x": 17,
+   "y": 71,
+   "req": "Przejście dostępne do 114 poziomu"
   },
   {
-   "to": "Liściaste Rozstaje"
+   "to": "Cienisty Bór",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 42,
+   "y": 0
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 43,
+   "y": 0
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 44,
+   "y": 0
+  },
+  {
+   "to": "Jaskinia Magów",
+   "x": 53,
+   "y": 51,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Jezioro Ważek",
+   "x": 63,
+   "y": 34
+  },
+  {
+   "to": "Jezioro Ważek",
+   "x": 63,
+   "y": 35
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 63,
+   "y": 90
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 63,
+   "y": 91
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 63,
+   "y": 92
   }
  ]
 }

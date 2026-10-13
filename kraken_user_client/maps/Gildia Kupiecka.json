@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Kupiecka",
+ "id": 1421,
+ "w": 19,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Gildia Kupiecka - piwnica",
+   "x": 3,
+   "y": 13
+  },
+  {
+   "to": "Gildia Kupiecka - piwnica",
+   "x": 4,
+   "y": 13
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 11,
+   "y": 14
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 13,
+   "y": 14
+  },
+  {
+   "to": "Gildia Kupiecka p.1",
+   "x": 15,
+   "y": 3
+  }
+ ]
+}

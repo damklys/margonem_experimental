@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodnie mury Nithal",
+ "id": 960,
+ "w": 16,
+ "h": 49,
+ "gateways": [
+  {
+   "to": "Mury Nithal - Baszta Ogniowa",
+   "x": 6,
+   "y": 3
+  },
+  {
+   "to": "Mury Nithal - Baszta Kolcza",
+   "x": 6,
+   "y": 46
+  },
+  {
+   "to": "Mury Nithal - Baszta Ogniowa",
+   "x": 7,
+   "y": 3
+  },
+  {
+   "to": "Mury Nithal - Baszta Kolcza",
+   "x": 7,
+   "y": 46
+  }
+ ]
+}

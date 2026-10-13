@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Pajęczyn p.1",
+ "id": 231,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pieczara Pajęczyn p.2",
+   "x": 12,
+   "y": 10
+  },
+  {
+   "to": "Stary magazyn - piwnica",
+   "x": 15,
+   "y": 15
+  }
+ ]
+}

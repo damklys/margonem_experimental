@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Skały Pamięci Nikantosa",
+ "id": 263,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kurhany Zwyciężonych",
+   "x": 75,
+   "y": 63
+  },
+  {
+   "to": "Kurhany Zwyciężonych",
+   "x": 76,
+   "y": 63
+  },
+  {
+   "to": "Dziki Zagajnik",
+   "x": 95,
+   "y": 51
+  }
+ ]
+}

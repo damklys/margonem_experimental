@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Letanii i Flaviusa",
+ "id": 1091,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Święty Zagajnik",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

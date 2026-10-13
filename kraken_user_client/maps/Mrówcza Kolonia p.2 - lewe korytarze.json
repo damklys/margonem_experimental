@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Mrówcza Kolonia p.2 - lewe korytarze",
+ "id": 6542,
+ "w": 50,
+ "h": 50,
  "gateways": [
   {
-   "to": "Mrówcza Kolonia p.1 - lewy tunel"
+   "to": "Mrówcza Kolonia p.3 - lewa komora jaj",
+   "x": 10,
+   "y": 48
   },
   {
-   "to": "Mrówcza Kolonia p.3 - lewa komora jaj"
+   "to": "Mrówcza Kolonia p.1 - lewy tunel",
+   "x": 42,
+   "y": 4
+  },
+  {
+   "to": "Mrówcza Kolonia p.1 - lewy tunel",
+   "x": 43,
+   "y": 4
   }
  ]
 }

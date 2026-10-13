@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Hernaka - stodoła",
+ "id": 2181,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Thuzal",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Dom Hernaka",
+   "x": 10,
+   "y": 8
+  },
+  {
+   "to": "Dom Hernaka",
+   "x": 11,
+   "y": 8
   }
  ]
 }

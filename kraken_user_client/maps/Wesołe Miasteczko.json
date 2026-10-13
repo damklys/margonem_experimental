@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Wesołe Miasteczko",
+ "id": 2734,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Gabinet Luster",
+   "x": 10,
+   "y": 41
+  },
+  {
+   "to": "Gabinet Luster",
+   "x": 11,
+   "y": 41
+  },
+  {
+   "to": "Gabinet Luster",
+   "x": 12,
+   "y": 41
+  },
+  {
+   "to": "Dom Strachów i Dziwów",
+   "x": 16,
+   "y": 21
+  },
+  {
+   "to": "Dom Strachów i Dziwów",
+   "x": 17,
+   "y": 21
+  },
+  {
+   "to": "Dom Strachów i Dziwów",
+   "x": 18,
+   "y": 21
+  }
+ ]
+}

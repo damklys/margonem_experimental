@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Wiedźmiej Złośliwości",
+ "id": 2817,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Wyspa Magradit",
+   "x": 6,
+   "y": 20
+  }
+ ]
+}

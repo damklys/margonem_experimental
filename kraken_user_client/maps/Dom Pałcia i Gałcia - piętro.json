@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Pałcia i Gałcia - piętro",
+ "id": 8127,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Pałcia i Gałcia - parter",
+   "x": 2,
+   "y": 6
+  }
+ ]
+}

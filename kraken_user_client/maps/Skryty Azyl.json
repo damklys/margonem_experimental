@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Skryty Azyl",
+ "id": 7834,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Bagna Umarłych",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 0,
+   "y": 40
+  },
+  {
+   "to": "Grota Porośniętych Stalagmitów p.1 - sala 1",
+   "x": 11,
+   "y": 25
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Grota Porośniętych Stalagmitów p.1 - sala 2",
+   "x": 45,
+   "y": 11
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 63,
+   "y": 7
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 63,
+   "y": 8
+  }
+ ]
+}

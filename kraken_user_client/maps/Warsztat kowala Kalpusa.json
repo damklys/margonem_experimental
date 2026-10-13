@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Warsztat kowala Kalpusa",
+ "id": 1908,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Mieszkanie kowala Kalpusa p.1",
+   "x": 11,
+   "y": 9
   }
  ]
 }

@@ -1,0 +1,25 @@
+{
+ "kraken": "mapa",
+ "name": "Drzewo Dusz p.1",
+ "id": 6054,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Głusza Świstu",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Głusza Świstu",
+   "x": 11,
+   "y": 20
+  },
+  {
+   "to": "Drzewo Dusz p.2",
+   "x": 16,
+   "y": 10,
+   "req": "Przejście dostępne do 190 poziomu"
+  }
+ ]
+}

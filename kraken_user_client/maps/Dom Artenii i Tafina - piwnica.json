@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Artenii i Tafina - piwnica",
+ "id": 2011,
+ "w": 18,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Artenii i Tafina",
+   "x": 2,
+   "y": 2
+  }
+ ]
+}

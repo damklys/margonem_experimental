@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodnie Zbocze",
+ "id": 4049,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Plugawe Pustkowie",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Plugawe Pustkowie",
+   "x": 37,
+   "y": 0
+  },
+  {
+   "to": "Tristam",
+   "x": 63,
+   "y": 30
+  },
+  {
+   "to": "Tristam",
+   "x": 63,
+   "y": 31
+  }
+ ]
+}

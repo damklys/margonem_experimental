@@ -8,407 +8,358 @@
   {
    "to": "Mury Nithal - Baszta Koronna",
    "x": 2,
-   "y": 13,
-   "toId": 965,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 13
   },
   {
    "to": "Kwatera żołnierska",
    "x": 4,
-   "y": 10,
-   "toId": 770,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 10
   },
   {
    "to": "Akademia wojskowa p.1",
    "x": 4,
-   "y": 34,
-   "toId": 862,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 34
+  },
+  {
+   "to": "Akademia wojskowa p.1",
+   "x": 5,
+   "y": 34
   },
   {
    "to": "Akademia wojskowa - stajnia",
    "x": 6,
-   "y": 40,
-   "toId": 861,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 40
   },
   {
    "to": "Izba chorych płn.",
    "x": 6,
-   "y": 48,
-   "toId": 817,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 48
   },
   {
-   "to": "Winnica Meflakasti",
-   "x": 44,
-   "y": 61,
-   "toId": 731,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "to": "Izba chorych płd.",
+   "x": 6,
+   "y": 58
+  },
+  {
+   "to": "Akademia wojskowa - stajnia",
+   "x": 7,
+   "y": 40
+  },
+  {
+   "to": "Izba chorych płn.",
+   "x": 7,
+   "y": 48
+  },
+  {
+   "to": "Izba chorych płd.",
+   "x": 7,
+   "y": 58
+  },
+  {
+   "to": "Dom Rezarda",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Kwatera żołnierska",
+   "x": 12,
+   "y": 10
+  },
+  {
+   "to": "Kamienica Lukrecji",
+   "x": 16,
+   "y": 20
+  },
+  {
+   "to": "Kamienica Tanenbara",
+   "x": 16,
+   "y": 32
+  },
+  {
+   "to": "Gildia Kupców - część zachodnia",
+   "x": 16,
+   "y": 47
+  },
+  {
+   "to": "Kwatera żołnierska",
+   "x": 17,
+   "y": 10
   },
   {
    "to": "Kamienica Zagadek",
    "x": 19,
-   "y": 20,
-   "toId": 4263,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 20
+  },
+  {
+   "to": "MAP#1077",
+   "x": 19,
+   "y": 32,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Gildia Kupców - część północna",
+   "x": 20,
+   "y": 42
+  },
+  {
+   "to": "Gildia Kupców - część północna",
+   "x": 21,
+   "y": 42
+  },
+  {
+   "to": "Kamienica Vilgara",
+   "x": 22,
+   "y": 32,
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Kamienica de Waldenów",
    "x": 25,
    "y": 32,
-   "toId": 4414,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Gildia Kupców - część wschodnia",
    "x": 25,
-   "y": 47,
-   "toId": 954,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 47
   },
   {
    "to": "Kamienica Tamena",
    "x": 25,
-   "y": 58,
-   "toId": 747,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Kamienica Prokusi",
    "x": 28,
-   "y": 20,
-   "toId": 740,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 20
   },
   {
    "to": "Kamienica Krynii Lufis",
    "x": 28,
-   "y": 58,
-   "toId": 802,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Cytadela",
    "x": 30,
-   "y": 10,
-   "toId": 865,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 10
+  },
+  {
+   "to": "Cytadela",
+   "x": 31,
+   "y": 10
   },
   {
    "to": "Kamienica Nitrusa",
    "x": 31,
-   "y": 32,
-   "toId": 743,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
   },
   {
    "to": "Kamienica Cecylii",
    "x": 34,
-   "y": 20,
-   "toId": 796,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 20
   },
   {
    "to": "Kamienica Pireza",
    "x": 34,
-   "y": 32,
-   "toId": 810,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
   },
   {
    "to": "Kamienica Nandraroka",
    "x": 34,
-   "y": 58,
-   "toId": 791,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Kamienica Broka",
    "x": 37,
-   "y": 58,
-   "toId": 751,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Południowe mury Nithal - część zachodnia",
    "x": 39,
-   "y": 61,
-   "toId": 963,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 61
   },
   {
    "to": "Kamienica Flawiana",
    "x": 40,
-   "y": 58,
-   "toId": 3776,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Podgrodzie Nithal",
    "x": 43,
-   "y": 7,
-   "toId": 575,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 7
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 44,
+   "y": 7
   },
   {
    "to": "Ratusz Nithal",
    "x": 44,
-   "y": 31,
-   "toId": 1021,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 31
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 44,
+   "y": 61
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 45,
+   "y": 7
   },
   {
    "to": "Południowe mury Nithal - część wschodnia",
    "x": 49,
-   "y": 61,
-   "toId": 962,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 61
   },
   {
    "to": "Zajazd pod Złamanym Dukatem",
    "x": 51,
-   "y": 56,
-   "toId": 923,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 56
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem",
+   "x": 52,
+   "y": 56
   },
   {
    "to": "Knajpa pod Czarnym Tulipanem",
    "x": 54,
-   "y": 10,
-   "toId": 829,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 10
   },
   {
    "to": "Pizzeria",
    "x": 54,
-   "y": 32,
-   "toId": 2950,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem",
+   "x": 55,
+   "y": 10
   },
   {
    "to": "Kamienica Rewii",
    "x": 57,
-   "y": 20,
-   "toId": 782,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 20
   },
   {
    "to": "Zajazd pod Złamanym Dukatem - pokój właściciela",
    "x": 58,
-   "y": 58,
-   "toId": 925,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Kamienica Eklektusa",
    "x": 60,
-   "y": 32,
-   "toId": 733,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
   },
   {
    "to": "Kamienica Miona",
    "x": 61,
-   "y": 58,
-   "toId": 756,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Kamienica Uliany i Arsena",
    "x": 63,
-   "y": 32,
-   "toId": 624,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
   },
   {
    "to": "Rezydencja Vonikur - kuchnia",
    "x": 63,
-   "y": 47,
-   "toId": 1709,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 47
   },
   {
    "to": "Kamienica Mirutki",
    "x": 64,
    "y": 58,
-   "toId": 1782,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Opuszczona kamienica",
    "x": 66,
    "y": 20,
-   "toId": 4425,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Kamienica Kandelia",
    "x": 66,
    "y": 32,
-   "toId": 1805,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Rezydencja Vonikur",
    "x": 66,
-   "y": 42,
-   "toId": 1707,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 42
   },
   {
    "to": "Kamienica Galeny i Sarda",
    "x": 68,
-   "y": 10,
-   "toId": 4165,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 10
   },
   {
    "to": "Rezydencja Trafalgar",
    "x": 68,
-   "y": 58,
-   "toId": 915,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 58
   },
   {
    "to": "Kamienica Andronikusa",
    "x": 69,
-   "y": 32,
-   "toId": 737,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 32
   },
   {
    "to": "Rezydencja Vonikur - biblioteczka",
    "x": 69,
-   "y": 47,
-   "toId": 1710,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 47
+  },
+  {
+   "to": "Rezydencja Trafalgar",
+   "x": 69,
+   "y": 58
   },
   {
    "to": "Uniwersytet płn.",
    "x": 78,
-   "y": 47,
-   "toId": 890,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 47
   },
   {
    "to": "Dormitorium - część akolitów",
    "x": 79,
-   "y": 10,
-   "toId": 851,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 10
+  },
+  {
+   "to": "Uniwersytet płn.",
+   "x": 79,
+   "y": 47
+  },
+  {
+   "to": "Dormitorium - część akolitów",
+   "x": 80,
+   "y": 10
   },
   {
    "to": "Uniwersytet płd.",
    "x": 83,
-   "y": 52,
-   "toId": 903,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 52
   },
   {
    "to": "Świątynia Czterech Bóstw",
    "x": 84,
-   "y": 25,
-   "toId": 908,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 25
+  },
+  {
+   "to": "Uniwersytet płd.",
+   "x": 84,
+   "y": 52
   },
   {
    "to": "Dormitorium - część westalek",
    "x": 89,
-   "y": 10,
-   "toId": 853,
-   "key": 0,
-   "lvl": 0,
-   "zone": 2
+   "y": 10
+  },
+  {
+   "to": "Dormitorium - część westalek",
+   "x": 90,
+   "y": 10
   },
   {
    "to": "Cytadela p.1"
@@ -417,229 +368,7 @@
    "to": "Prywatna kamienica"
   },
   {
-   "to": "Izba chorych płd.",
-   "x": 6,
-   "y": 58,
-   "toId": 823,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Dom Rezarda",
-   "x": 10,
-   "y": 20,
-   "toId": 785,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kamienica Lukrecji",
-   "x": 16,
-   "y": 20,
-   "toId": 767,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kamienica Tanenbara",
-   "x": 16,
-   "y": 32,
-   "toId": 761,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Gildia Kupców - część zachodnia",
-   "x": 16,
-   "y": 47,
-   "toId": 952,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kamienica Furii Infernalis",
-   "x": 19,
-   "y": 32,
-   "toId": 1077,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Gildia Kupców - część północna",
-   "x": 20,
-   "y": 42,
-   "toId": 953,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kamienica Vilgara",
-   "x": 22,
-   "y": 32,
-   "toId": 1696,
-   "key": 2,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Akademia wojskowa p.1",
-   "x": 5,
-   "y": 34,
-   "toId": 862,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Akademia wojskowa - stajnia",
-   "x": 7,
-   "y": 40,
-   "toId": 861,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Izba chorych płn.",
-   "x": 7,
-   "y": 48,
-   "toId": 817,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Izba chorych płd.",
-   "x": 7,
-   "y": 58,
-   "toId": 823,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kwatera żołnierska",
-   "x": 12,
-   "y": 10,
-   "toId": 775,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Kwatera żołnierska",
-   "x": 17,
-   "y": 10,
-   "toId": 779,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Gildia Kupców - część północna",
-   "x": 21,
-   "y": 42,
-   "toId": 953,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Cytadela",
-   "x": 31,
-   "y": 10,
-   "toId": 865,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Podgrodzie Nithal",
-   "x": 44,
-   "y": 7,
-   "toId": 575,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Podgrodzie Nithal",
-   "x": 45,
-   "y": 7,
-   "toId": 575,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Zajazd pod Złamanym Dukatem",
-   "x": 52,
-   "y": 56,
-   "toId": 923,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Knajpa pod Czarnym Tulipanem",
-   "x": 55,
-   "y": 10,
-   "toId": 829,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Rezydencja Trafalgar",
-   "x": 69,
-   "y": 58,
-   "toId": 915,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Uniwersytet płn.",
-   "x": 79,
-   "y": 47,
-   "toId": 890,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Dormitorium - część akolitów",
-   "x": 80,
-   "y": 10,
-   "toId": 851,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Uniwersytet płd.",
-   "x": 84,
-   "y": 52,
-   "toId": 903,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
-  },
-  {
-   "to": "Dormitorium - część westalek",
-   "x": 90,
-   "y": 10,
-   "toId": 853,
-   "key": 0,
-   "lvl": 0,
-   "zone": 2
+   "to": "Kamienica Furii Infernalis"
   }
  ],
  "zones": [

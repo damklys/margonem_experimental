@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Arachnitopia p.2",
+ "id": 1136,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Arachnitopia p.1",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Arachnitopia p.3",
+   "x": 45,
+   "y": 22
+  }
+ ]
+}

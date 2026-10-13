@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Starodrzew Przedwiecznych p.2",
+ "id": 7689,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Starodrzew Przedwiecznych p.1",
+   "x": 23,
+   "y": 28
+  }
+ ]
+}

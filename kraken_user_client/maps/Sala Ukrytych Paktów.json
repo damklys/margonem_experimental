@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Ukrytych Paktów",
+ "id": 7484,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Korytarze Milczących Intryg p.3",
+   "x": 31,
+   "y": 60
+  },
+  {
+   "to": "Korytarze Milczących Intryg p.3",
+   "x": 32,
+   "y": 60
+  }
+ ]
+}

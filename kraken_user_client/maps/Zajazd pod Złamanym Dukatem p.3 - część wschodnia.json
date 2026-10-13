@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Złamanym Dukatem p.3 - część wschodnia",
+ "id": 930,
+ "w": 16,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.2 - część wschodnia",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Apartament 305",
+   "x": 3,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 308",
+   "x": 6,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 309",
+   "x": 6,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 306",
+   "x": 7,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 307",
+   "x": 11,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

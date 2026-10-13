@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Otchłań Pajęczych Sieci",
+ "id": 3737,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Dolina Pajęczych Korytarzy",
+   "x": 0,
+   "y": 35
+  },
+  {
+   "to": "Dolina Pajęczych Korytarzy",
+   "x": 0,
+   "y": 36
+  },
+  {
+   "to": "Pajęczy Las",
+   "x": 63,
+   "y": 28
+  },
+  {
+   "to": "Pajęczy Las",
+   "x": 63,
+   "y": 29
+  }
+ ]
+}

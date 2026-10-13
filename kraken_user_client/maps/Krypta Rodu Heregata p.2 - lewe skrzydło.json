@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Krypta Rodu Heregata p.2 - lewe skrzydło",
+ "id": 2879,
+ "w": 23,
+ "h": 23,
+ "gateways": [
+  {
+   "to": "Krypta Rodu Heregata p.1",
+   "x": 20,
+   "y": 3
+  }
+ ]
+}

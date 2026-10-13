@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Kandelia p.1",
+ "id": 1806,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Kandelia - strych",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Kamienica Kandelia",
+   "x": 10,
+   "y": 9
+  }
+ ]
+}

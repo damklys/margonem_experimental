@@ -1,12 +1,42 @@
 {
  "kraken": "mapa",
  "name": "Źródło Narumi",
+ "id": 8532,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Wertepy Rzezimieszków"
+   "to": "Uroczysko Wodnika",
+   "x": 0,
+   "y": 89
   },
   {
-   "to": "Uroczysko Wodnika"
+   "to": "Uroczysko Wodnika",
+   "x": 0,
+   "y": 90
+  },
+  {
+   "to": "Podtopione Młaki",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Podtopione Młaki",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Starorzecze Narumi",
+   "x": 41,
+   "y": 95
+  },
+  {
+   "to": "Starorzecze Narumi",
+   "x": 42,
+   "y": 95
+  },
+  {
+   "to": "Wertepy Rzezimieszków"
   },
   {
    "to": "Podgrodzie Nithal"

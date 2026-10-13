@@ -1,15 +1,156 @@
 {
  "kraken": "mapa",
  "name": "Torneg",
+ "id": 2,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Łany Zboża"
+   "to": "Łany Zboża",
+   "x": 0,
+   "y": 43
   },
   {
-   "to": "Stare Ruiny"
+   "to": "Łany Zboża",
+   "x": 0,
+   "y": 44
   },
   {
-   "to": "Leśna Przełęcz"
+   "to": "Dom Mira",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Zielna Grota p.1 - sala 1",
+   "x": 5,
+   "y": 32
+  },
+  {
+   "to": "Dom Szagarata",
+   "x": 11,
+   "y": 36
+  },
+  {
+   "to": "Kurnik",
+   "x": 16,
+   "y": 7
+  },
+  {
+   "to": "Dom Galisa",
+   "x": 19,
+   "y": 28
+  },
+  {
+   "to": "Dom Antoniego - parter",
+   "x": 22,
+   "y": 43
+  },
+  {
+   "to": "Dom Toksyniusza",
+   "x": 30,
+   "y": 61
+  },
+  {
+   "to": "Dom Salome",
+   "x": 40,
+   "y": 30
+  },
+  {
+   "to": "Zajazd Umbara",
+   "x": 44,
+   "y": 56
+  },
+  {
+   "to": "Dom Cedrika",
+   "x": 46,
+   "y": 27
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 46,
+   "y": 63
+  },
+  {
+   "to": "Dom Cedrika",
+   "x": 47,
+   "y": 27
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 47,
+   "y": 63
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 48,
+   "y": 63
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 49,
+   "y": 0,
+   "req": "Przejście dostępne od 160 poziomu"
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 50,
+   "y": 0,
+   "req": "Przejście dostępne od 160 poziomu"
+  },
+  {
+   "to": "Dom Alrika",
+   "x": 56,
+   "y": 19
+  },
+  {
+   "to": "Dom Moliwii",
+   "x": 61,
+   "y": 31
+  },
+  {
+   "to": "Dom Idalii",
+   "x": 62,
+   "y": 46
+  },
+  {
+   "to": "Dom Wei",
+   "x": 64,
+   "y": 35
+  },
+  {
+   "to": "Dom Sary",
+   "x": 73,
+   "y": 56
+  },
+  {
+   "to": "Zakon Białej Lilii - kaplica",
+   "x": 81,
+   "y": 8
+  },
+  {
+   "to": "Zakon Białej Lilii - kaplica",
+   "x": 82,
+   "y": 8
+  },
+  {
+   "to": "Dom Barabasza",
+   "x": 87,
+   "y": 59
+  },
+  {
+   "to": "Dom Syntii i Leona",
+   "x": 90,
+   "y": 41
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 95,
+   "y": 50
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 95,
+   "y": 51
   }
  ]
 }

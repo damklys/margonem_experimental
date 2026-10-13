@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek - wejście wschodnie",
+ "id": 169,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przeklęty Zamek - sala zgromadzeń"
+   "to": "Stare Ruiny",
+   "x": 20,
+   "y": 14
   },
   {
-   "to": "Stare Ruiny"
+   "to": "Przeklęty Zamek - sala zgromadzeń",
+   "x": 21,
+   "y": 6
   }
  ]
 }

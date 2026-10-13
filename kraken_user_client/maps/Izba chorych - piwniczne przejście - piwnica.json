@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Izba chorych - piwniczne przejście - piwnica",
+ "id": 828,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Izba chorych - piwniczne przejście",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

@@ -1,9 +1,35 @@
 {
  "kraken": "mapa",
  "name": "Ruiny Pustynnych Burz",
+ "id": 2868,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Złote Piaski"
+   "to": "Złote Piaski",
+   "x": 0,
+   "y": 56
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 0,
+   "y": 57
+  },
+  {
+   "to": "Pustynne Katakumby - sala 1",
+   "x": 27,
+   "y": 63,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 63,
+   "y": 60
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 63,
+   "y": 61
   }
  ]
 }

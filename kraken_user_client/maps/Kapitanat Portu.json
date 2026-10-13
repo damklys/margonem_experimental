@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kapitanat Portu",
+ "id": 1472,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba Kapitana Portu",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

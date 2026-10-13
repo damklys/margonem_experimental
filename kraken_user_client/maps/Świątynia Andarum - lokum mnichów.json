@@ -1,12 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - lokum mnichów",
+ "id": 6616,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Świątynia Andarum - podziemia"
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 5,
+   "y": 59
   },
   {
-   "to": "Krypty Dusz Śniegu p.3"
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 5,
+   "y": 60
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 12,
+   "y": 2
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 13,
+   "y": 2
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 14,
+   "y": 2
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.3",
+   "x": 31,
+   "y": 50
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.3",
+   "x": 32,
+   "y": 50
   },
   {
    "to": "Świątynia Andarum - magazyn p.3"

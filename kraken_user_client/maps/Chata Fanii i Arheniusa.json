@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Fanii i Arheniusa",
+ "id": 1096,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Święty Zagajnik",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

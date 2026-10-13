@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Rezydencja Vonikur",
+ "id": 1707,
+ "w": 17,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Rezydencja Vonikur - kuchnia",
+   "x": 1,
+   "y": 8
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Rezydencja Vonikur p.2",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Nithal",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Rezydencja Vonikur - biblioteczka",
+   "x": 15,
+   "y": 8
   }
  ]
 }

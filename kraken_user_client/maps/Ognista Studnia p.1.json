@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Ognista Studnia p.1",
+ "id": 7467,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Ognista Studnia p.2",
+   "x": 20,
+   "y": 45
+  },
+  {
+   "to": "Zasypane Ograbar-dun",
+   "x": 22,
+   "y": 2
+  },
+  {
+   "to": "Zasypane Ograbar-dun",
+   "x": 23,
+   "y": 2
+  }
+ ]
+}

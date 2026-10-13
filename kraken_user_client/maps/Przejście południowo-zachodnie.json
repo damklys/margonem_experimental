@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście południowo-zachodnie",
+ "id": 2722,
+ "w": 16,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zachodnie skrzydło murów",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Izba wytrzeźwień",
+   "x": 7,
+   "y": 30
+  }
+ ]
+}

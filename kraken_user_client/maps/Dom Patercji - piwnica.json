@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Patercji - piwnica",
+ "id": 1378,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Patercji",
+   "x": 11,
+   "y": 4
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Wulkan Politraki - Piekielne Czeluście",
+ "id": 7061,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Wulkan Politraki - przedsionek",
+   "x": 21,
+   "y": 40
+  }
+ ]
+}

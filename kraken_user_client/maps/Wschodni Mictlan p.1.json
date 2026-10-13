@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodni Mictlan p.1",
+ "id": 5677,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wschodni Mictlan p.2",
+   "x": 7,
+   "y": 8
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Wschodni Mictlan p.2",
+   "x": 8,
+   "y": 8
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

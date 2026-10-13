@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Strachów i Dziwów",
+ "id": 6549,
+ "w": 40,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Wesołe Miasteczko",
+   "x": 18,
+   "y": 38
+  },
+  {
+   "to": "Wesołe Miasteczko",
+   "x": 19,
+   "y": 38
+  },
+  {
+   "to": "Wesołe Miasteczko",
+   "x": 20,
+   "y": 38
+  },
+  {
+   "to": "Wesołe Miasteczko",
+   "x": 21,
+   "y": 38
+  }
+ ]
+}

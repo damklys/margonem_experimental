@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Broka",
+ "id": 751,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Kamienica Broka p.1",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Kamienica Broka - piwnica",
+   "x": 9,
+   "y": 5
   }
  ]
 }

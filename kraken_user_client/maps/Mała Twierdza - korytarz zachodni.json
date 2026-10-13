@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - korytarz zachodni",
+ "id": 7443,
+ "w": 32,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - mury zachodnie",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "Mała Twierdza - mury zachodnie",
+   "x": 1,
+   "y": 14
+  },
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 30,
+   "y": 13
+  },
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 30,
+   "y": 14
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Spustoszona jaskinia",
+ "id": 19,
+ "w": 19,
+ "h": 25,
+ "gateways": [
+  {
+   "to": "Orla Grań",
+   "x": 6,
+   "y": 21
+  }
+ ]
+}

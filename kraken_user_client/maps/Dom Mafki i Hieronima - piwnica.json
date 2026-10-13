@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mafki i Hieronima - piwnica",
+ "id": 1918,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mafki i Hieronima",
+   "x": 12,
+   "y": 6
+  }
+ ]
+}

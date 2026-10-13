@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Komnata Poległych Legionistów",
+ "id": 3038,
+ "w": 47,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Grobowiec Seta",
+   "x": 22,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 22,
+   "y": 45
+  },
+  {
+   "to": "Pustynne Katakumby - Grobowiec Seta",
+   "x": 23,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 23,
+   "y": 45
+  },
+  {
+   "to": "Pustynne Katakumby - Grobowiec Seta",
+   "x": 24,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 24,
+   "y": 45
+  }
+ ]
+}

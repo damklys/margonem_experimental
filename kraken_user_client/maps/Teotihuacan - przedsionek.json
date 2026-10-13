@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Teotihuacan - przedsionek",
+ "id": 5709,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Teotihuacan",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Topan p.13",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Teotihuacan",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Topan p.13",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

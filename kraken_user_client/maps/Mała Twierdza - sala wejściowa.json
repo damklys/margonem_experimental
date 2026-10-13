@@ -1,0 +1,61 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - sala wejściowa",
+ "id": 7440,
+ "w": 32,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - korytarz zachodni",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "Mała Twierdza - korytarz zachodni",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "Mała Twierdza - magazyn",
+   "x": 7,
+   "y": 20
+  },
+  {
+   "to": "Mała Twierdza - sala główna",
+   "x": 15,
+   "y": 4,
+   "req": "Przejście dostępne do 163 poziomu"
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 15,
+   "y": 22
+  },
+  {
+   "to": "Mała Twierdza - sala główna",
+   "x": 16,
+   "y": 4,
+   "req": "Przejście dostępne do 163 poziomu"
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 16,
+   "y": 22
+  },
+  {
+   "to": "Mała Twierdza p.1",
+   "x": 28,
+   "y": 5
+  },
+  {
+   "to": "Mała Twierdza - mury wschodnie",
+   "x": 30,
+   "y": 12
+  },
+  {
+   "to": "Mała Twierdza - mury wschodnie",
+   "x": 30,
+   "y": 13
+  }
+ ]
+}

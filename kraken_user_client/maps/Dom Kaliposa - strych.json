@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Kaliposa - strych",
+ "id": 1824,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Kaliposa p.1",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

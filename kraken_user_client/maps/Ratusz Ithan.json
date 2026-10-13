@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Ratusz Ithan",
+ "id": 7,
+ "w": 30,
+ "h": 17,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Ratusz Ithan - więzienie",
+   "x": 1,
+   "y": 14
+  },
+  {
+   "to": "Ratusz Ithan p.1",
+   "x": 14,
+   "y": 1
+  },
+  {
+   "to": "Ithan",
+   "x": 14,
+   "y": 12
+  },
+  {
+   "to": "Ratusz Ithan p.1",
+   "x": 15,
+   "y": 1
+  },
+  {
+   "to": "Ithan",
+   "x": 15,
+   "y": 12
+  },
+  {
+   "to": "Ratusz Ithan - skarbiec",
+   "x": 28,
+   "y": 14
   }
  ]
 }

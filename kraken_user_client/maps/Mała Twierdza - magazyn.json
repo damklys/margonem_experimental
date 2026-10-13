@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - magazyn",
+ "id": 7448,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 32,
+   "y": 57
+  }
+ ]
+}

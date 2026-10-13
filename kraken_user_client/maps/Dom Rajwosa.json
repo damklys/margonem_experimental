@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Rajwosa",
+ "id": 1331,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Dom Rajwosa p.1",
+   "x": 10,
+   "y": 9
   }
  ]
 }

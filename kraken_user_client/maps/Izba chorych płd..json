@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Izba chorych płd.",
+ "id": 823,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Izba chorych płd. p.1",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Izba chorych płd. - piwnica p.1",
+   "x": 3,
+   "y": 15
+  },
+  {
+   "to": "Nithal",
+   "x": 6,
+   "y": 17
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 17
   }
  ]
 }

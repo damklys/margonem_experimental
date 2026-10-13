@@ -6,148 +6,93 @@
  "h": 64,
  "gateways": [
   {
+   "to": "Werbin",
+   "x": 0,
+   "y": 53
+  },
+  {
+   "to": "Werbin",
+   "x": 0,
+   "y": 54
+  },
+  {
    "to": "Góry Zrębowe",
    "x": 12,
-   "y": 63,
-   "toId": 121,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kuźnia na Rozstajach",
-   "x": 15,
-   "y": 43,
-   "toId": 2344,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Liściasta kryjówka",
-   "x": 91,
-   "y": 13,
-   "toId": 230,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Siedziba główna klanu Uchiha",
-   "x": 70,
-   "y": 7,
-   "toId": 951,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Skalista Wyżyna",
-   "x": 95,
-   "y": 31,
-   "toId": 1057,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Werbin",
-   "x": 0,
-   "y": 53,
-   "toId": 9,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Włości rodu Kruzo",
-   "x": 37,
-   "y": 0,
-   "toId": 4764,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Zaginiona Dolina",
-   "x": 89,
-   "y": 63,
-   "toId": 1107,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Zapomniana kopalnia p.1",
-   "x": 34,
-   "y": 6,
-   "toId": 3246,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Werbin",
-   "x": 0,
-   "y": 54,
-   "toId": 9,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Góry Zrębowe",
    "x": 13,
-   "y": 63,
-   "toId": 121,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Góry Zrębowe",
    "x": 14,
-   "y": 63,
-   "toId": 121,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
+  },
+  {
+   "to": "Kuźnia na Rozstajach",
+   "x": 15,
+   "y": 43
+  },
+  {
+   "to": "Zapomniana kopalnia p.1",
+   "x": 34,
+   "y": 6
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 37,
+   "y": 0
   },
   {
    "to": "Włości rodu Kruzo",
    "x": 38,
-   "y": 0,
-   "toId": 4764,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
+  },
+  {
+   "to": "MAP#951",
+   "x": 70,
+   "y": 7,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 89,
+   "y": 63
   },
   {
    "to": "Zaginiona Dolina",
    "x": 90,
-   "y": 63,
-   "toId": 1107,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
-   "to": "Liściasta kryjówka",
+   "to": "MAP#230",
+   "x": 91,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "MAP#230",
    "x": 92,
    "y": 13,
-   "toId": 230,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Skalista Wyżyna",
    "x": 95,
-   "y": 32,
-   "toId": 1057,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 31
+  },
+  {
+   "to": "Skalista Wyżyna",
+   "x": 95,
+   "y": 32
+  },
+  {
+   "to": "Liściasta kryjówka"
+  },
+  {
+   "to": "Siedziba główna klanu Uchiha"
   }
  ]
 }

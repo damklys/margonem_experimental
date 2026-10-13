@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Rozalii",
+ "id": 1929,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Dom Rozalii p.1",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Dom Rozalii - piwnica",
+   "x": 11,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 12,
+   "y": 8
   }
  ]
 }

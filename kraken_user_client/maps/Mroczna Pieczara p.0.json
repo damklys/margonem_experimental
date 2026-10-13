@@ -1,12 +1,31 @@
 {
  "kraken": "mapa",
  "name": "Mroczna Pieczara p.0",
+ "id": 189,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mroczna Pieczara p.1 - sala 2"
+   "to": "Mroczna Pieczara p.1 - sala 2",
+   "x": 4,
+   "y": 3
   },
   {
-   "to": "Migotliwa Pieczara"
+   "to": "Siedziba Maga",
+   "x": 12,
+   "y": 2
+  },
+  {
+   "to": "Migotliwa Pieczara",
+   "x": 13,
+   "y": 13,
+   "req": "Przejście dostępne od 38 do 64 poziomu"
+  },
+  {
+   "to": "Migotliwa Pieczara",
+   "x": 14,
+   "y": 13,
+   "req": "Przejście dostępne od 38 do 64 poziomu"
   }
  ]
 }

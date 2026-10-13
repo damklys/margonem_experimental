@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Lukrecji p.1",
+ "id": 768,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Lukrecji",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

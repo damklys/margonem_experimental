@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Ruiny Szabrowników",
+ "id": 707,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zatopiony Szczyt"
+   "to": "Zatopiony Szczyt",
+   "x": 0,
+   "y": 29
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 0,
+   "y": 30
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 0,
+   "y": 31
   }
  ]
 }

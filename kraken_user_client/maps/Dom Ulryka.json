@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Ulryka",
+ "id": 3507,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Dom Ulryka - sala zgromadzeń",
+   "x": 2,
+   "y": 6
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 8,
+   "y": 13
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - maszynownia",
+ "id": 7295,
+ "w": 23,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - korytarz techniczny",
+   "x": 20,
+   "y": 11
+  },
+  {
+   "to": "SP Margonem - korytarz techniczny",
+   "x": 20,
+   "y": 12
+  }
+ ]
+}

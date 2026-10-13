@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pokój ergassaj 114",
+ "id": 498,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba Ergassaj p.1",
+   "x": 7,
+   "y": 3
+  }
+ ]
+}

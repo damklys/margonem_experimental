@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Wygnańców p.1 - Bezdenne Przepaści",
+ "id": 7360,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Korytarze Wygnańców p.1 - Jaskinia Zagubionych",
+   "x": 4,
+   "y": 49
+  },
+  {
+   "to": "Korytarze Wygnańców p.2 - Komora Budowniczego",
+   "x": 14,
+   "y": 4
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Komora Opuszczonych",
+   "x": 60,
+   "y": 13
+  }
+ ]
+}

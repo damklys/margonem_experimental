@@ -1,12 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Uroczysko Wodnika",
+ "id": 8533,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Moczary Rybiego Oka"
+   "to": "Dolny Bieg",
+   "x": 34,
+   "y": 95
   },
   {
-   "to": "Źródło Narumi"
+   "to": "Moczary Rybiego Oka",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 35,
+   "y": 95
+  },
+  {
+   "to": "Moczary Rybiego Oka",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 63,
+   "y": 89
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 63,
+   "y": 90
   }
  ]
 }

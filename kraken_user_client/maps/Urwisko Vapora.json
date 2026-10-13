@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Urwisko Vapora",
+ "id": 3327,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Smocze Skalisko",
+   "x": 0,
+   "y": 55
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 0,
+   "y": 56
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 37,
+   "y": 0
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 41,
+   "y": 63
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 42,
+   "y": 63
+  }
+ ]
+}

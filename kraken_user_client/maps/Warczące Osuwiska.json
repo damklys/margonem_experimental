@@ -1,18 +1,45 @@
 {
  "kraken": "mapa",
  "name": "Warczące Osuwiska",
+ "id": 2536,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Ghuli Mogilnik"
+   "to": "Ghuli Mogilnik",
+   "x": 0,
+   "y": 37
   },
   {
-   "to": "Wilcza Skarpa"
+   "to": "Ghuli Mogilnik",
+   "x": 0,
+   "y": 38
   },
   {
-   "to": "Wilcza Nora p.1"
+   "to": "Legowisko Wilczej Hordy",
+   "x": 26,
+   "y": 63
   },
   {
-   "to": "Legowisko Wilczej Hordy"
+   "to": "Legowisko Wilczej Hordy",
+   "x": 27,
+   "y": 63
+  },
+  {
+   "to": "Wilcza Nora p.1",
+   "x": 61,
+   "y": 60,
+   "req": "Przejście dostępne do 58 poziomu"
+  },
+  {
+   "to": "Wilcza Skarpa",
+   "x": 63,
+   "y": 16
+  },
+  {
+   "to": "Wilcza Skarpa",
+   "x": 63,
+   "y": 17
   }
  ]
 }

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Siedlisko Nietoperzy p.3 - sala 2",
+ "id": 2521,
+ "w": 36,
+ "h": 36,
  "gateways": [
   {
-   "to": "Siedlisko Nietoperzy p.3 - sala 1"
+   "to": "Siedlisko Nietoperzy p.3 - sala 1",
+   "x": 2,
+   "y": 30
   }
  ]
 }

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Thorpela wschodnia",
+ "id": 3503,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 7,
+   "y": 13
   }
  ]
 }

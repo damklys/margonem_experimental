@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Straży Bramy p.1",
+ "id": 1215,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba Straży Bramy",
+   "x": 5,
+   "y": 8
+  }
+ ]
+}

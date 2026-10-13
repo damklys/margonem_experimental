@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Telsara",
+ "id": 1492,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Telsara p.1",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Dom dziadka Jeżyka",
+   "x": 6,
+   "y": 5
+  },
+  {
+   "to": "Tuzmer",
+   "x": 11,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 11,
+   "y": 9
   }
  ]
 }

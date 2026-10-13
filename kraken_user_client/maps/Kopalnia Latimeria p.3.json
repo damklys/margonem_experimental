@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Latimeria p.3",
+ "id": 54,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kopalnia Latimeria p.2",
+   "x": 15,
+   "y": 3
+  }
+ ]
+}

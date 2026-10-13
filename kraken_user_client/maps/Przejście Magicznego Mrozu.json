@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przejście Magicznego Mrozu",
+ "id": 592,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Lodowa Sala"
+   "to": "Sala Magicznego Mrozu",
+   "x": 25,
+   "y": 15
   },
   {
-   "to": "Sala Magicznego Mrozu"
+   "to": "Lodowa Sala",
+   "x": 45,
+   "y": 18
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kordegarda",
+ "id": 2710,
+ "w": 28,
+ "h": 17,
+ "gateways": [
+  {
+   "to": "Strażnica południowo-wschodnia",
+   "x": 11,
+   "y": 10
+  },
+  {
+   "to": "Przejście południowo-wschodnie",
+   "x": 24,
+   "y": 4
+  }
+ ]
+}

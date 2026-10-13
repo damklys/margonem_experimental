@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Złoczyńców p.1",
+ "id": 194,
+ "w": 19,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 11,
+   "y": 21
+  },
+  {
+   "to": "Grota Złoczyńców p.2",
+   "x": 16,
+   "y": 11
+  }
+ ]
+}

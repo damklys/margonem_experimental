@@ -1,15 +1,114 @@
 {
  "kraken": "mapa",
  "name": "Stare Sioło",
+ "id": 1154,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Sucha Dolina"
+   "to": "Piachy Zniewolonych",
+   "x": 0,
+   "y": 44
   },
   {
-   "to": "Oaza Siedmiu Wichrów"
+   "to": "Dom Namianaszi",
+   "x": 6,
+   "y": 29
   },
   {
-   "to": "Tuzmer"
+   "to": "Dom Namianaszi",
+   "x": 7,
+   "y": 29
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Gospodarstwo Balko",
+   "x": 16,
+   "y": 50
+  },
+  {
+   "to": "Magazyn rodziny Balko",
+   "x": 24,
+   "y": 54
+  },
+  {
+   "to": "Magazyn rodziny Balko",
+   "x": 25,
+   "y": 54
+  },
+  {
+   "to": "Siedziba Straży Bramy",
+   "x": 38,
+   "y": 53
+  },
+  {
+   "to": "Siedziba Straży Bramy",
+   "x": 39,
+   "y": 53
+  },
+  {
+   "to": "Tuzmer",
+   "x": 47,
+   "y": 63
+  },
+  {
+   "to": "Tuzmer",
+   "x": 48,
+   "y": 63
+  },
+  {
+   "to": "Tuzmer",
+   "x": 49,
+   "y": 63
+  },
+  {
+   "to": "Gospodarstwo Erdy",
+   "x": 56,
+   "y": 11
+  },
+  {
+   "to": "Gospodarstwo Erdy",
+   "x": 57,
+   "y": 11
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 77,
+   "y": 0
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 78,
+   "y": 0
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 79,
+   "y": 0
+  },
+  {
+   "to": "Dom Cynamonii",
+   "x": 90,
+   "y": 23
+  },
+  {
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 95,
+   "y": 38
+  },
+  {
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 95,
+   "y": 39
   }
  ]
 }

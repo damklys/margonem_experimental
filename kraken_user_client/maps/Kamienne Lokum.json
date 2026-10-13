@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienne Lokum",
+ "id": 224,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zasłonięte Jezioro",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Zasłonięte Jezioro",
+   "x": 6,
+   "y": 13
+  },
+  {
+   "to": "Kamienne Lokum p.1",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

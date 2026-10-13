@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Siedziba Ergassaj",
+ "id": 320,
+ "w": 24,
+ "h": 20,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Siedziba Ergassaj p.1",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Mythar",
+   "x": 16,
+   "y": 18
+  },
+  {
+   "to": "Mythar",
+   "x": 17,
+   "y": 18
+  },
+  {
+   "to": "Mythar",
+   "x": 18,
+   "y": 18
   }
  ]
 }

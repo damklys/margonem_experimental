@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przybytek Zakonu Białej Róży",
+ "id": 258,
+ "w": 28,
+ "h": 38,
  "gateways": [
   {
-   "to": "Ratusz Karka-han"
+   "to": "Ratusz Karka-han",
+   "x": 24,
+   "y": 7
+  },
+  {
+   "to": "Ratusz Karka-han",
+   "x": 25,
+   "y": 7
   }
  ]
 }

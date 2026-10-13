@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Spowiedzi Konających",
+ "id": 5942,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 31,
+   "y": 6
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 31,
+   "y": 46
+  },
+  {
+   "to": "Sala Tysiąca Świec",
+   "x": 31,
+   "y": 61
+  },
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 32,
+   "y": 6
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 32,
+   "y": 46
+  },
+  {
+   "to": "Sala Tysiąca Świec",
+   "x": 32,
+   "y": 61
+  },
+  {
+   "to": "Przejście Oczyszczenia",
+   "x": 59,
+   "y": 11
+  },
+  {
+   "to": "Przejście Oczyszczenia",
+   "x": 59,
+   "y": 12
+  }
+ ]
+}

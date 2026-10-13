@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Janiny i Mariana",
+ "id": 8118,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 4,
+   "y": 14
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 5,
+   "y": 14
+  },
+  {
+   "to": "Dom Janiny i Mariana - pokój Edzia",
+   "x": 6,
+   "y": 6
+  }
+ ]
+}

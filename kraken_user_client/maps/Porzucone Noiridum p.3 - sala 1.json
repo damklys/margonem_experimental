@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Porzucone Noiridum p.3 - sala 1",
+ "id": 7856,
+ "w": 36,
+ "h": 36,
+ "gateways": [
+  {
+   "to": "Porzucone Noiridum p.2",
+   "x": 3,
+   "y": 27
+  },
+  {
+   "to": "Porzucone Noiridum p.3 - sala 2",
+   "x": 19,
+   "y": 4
+  }
+ ]
+}

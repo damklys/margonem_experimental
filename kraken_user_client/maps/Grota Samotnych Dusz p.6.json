@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Samotnych Dusz p.6",
+ "id": 3466,
+ "w": 64,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Grota Samotnych Dusz p.5",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Opuszczony Szyb",
+   "x": 61,
+   "y": 24
+  },
+  {
+   "to": "Opuszczony Szyb",
+   "x": 61,
+   "y": 25
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Altepetl Mahoptekan (wersja questowa)",
+ "id": 5490,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Przedsionek Quinametzin",
+   "x": 34,
+   "y": 13
+  },
+  {
+   "to": "Przedsionek Quinametzin",
+   "x": 35,
+   "y": 13
+  },
+  {
+   "to": "Niecka Xiuh Atl (wersja questowa)",
+   "x": 63,
+   "y": 52
+  }
+ ]
+}

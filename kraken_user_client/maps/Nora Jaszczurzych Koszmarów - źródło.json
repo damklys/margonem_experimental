@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Nora Jaszczurzych Koszmarów - źródło",
+ "id": 7849,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Nora Jaszczurzych Koszmarów p.1 - sala 2",
+   "x": 55,
+   "y": 18
+  }
+ ]
+}

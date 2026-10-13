@@ -1,0 +1,69 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Komnata Opętanych Dusz",
+ "id": 3036,
+ "w": 32,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Nadziei",
+   "x": 4,
+   "y": 24
+  },
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Nadziei",
+   "x": 5,
+   "y": 24
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Odnalezionych Skrytobójców",
+   "x": 5,
+   "y": 46
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Odnalezionych Skrytobójców",
+   "x": 6,
+   "y": 46
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Odnalezionych Skrytobójców",
+   "x": 7,
+   "y": 46
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 16,
+   "y": 5
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 17,
+   "y": 5
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 18,
+   "y": 5
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 28,
+   "y": 7
+  },
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Marzeń",
+   "x": 28,
+   "y": 36
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 29,
+   "y": 7
+  },
+  {
+   "to": "Pustynne Katakumby - Korytarz Porzuconych Marzeń",
+   "x": 29,
+   "y": 36
+  }
+ ]
+}

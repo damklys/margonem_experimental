@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Tunii",
+ "id": 353,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kwieciste Przejście",
+   "x": 9,
+   "y": 12
+  }
+ ]
+}

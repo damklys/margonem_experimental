@@ -1,12 +1,22 @@
 {
  "kraken": "mapa",
  "name": "Mokra Grota p.1 - przełaz",
+ "id": 4582,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mokra Grota p.2 - korytarz"
+   "to": "Mokra Grota p.1 - boczny korytarz",
+   "x": 3,
+   "y": 3
   },
   {
-   "to": "Mokra Grota p.1"
+   "to": "Mokra Grota p.1",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Mokra Grota p.2 - korytarz"
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Mroźnych Strzał",
+ "id": 2356,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 29,
+   "y": 60
+  },
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 35,
+   "y": 60
+  }
+ ]
+}

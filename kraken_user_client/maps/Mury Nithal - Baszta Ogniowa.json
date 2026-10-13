@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Mury Nithal - Baszta Ogniowa",
+ "id": 959,
+ "w": 16,
+ "h": 25,
+ "gateways": [
+  {
+   "to": "Północne mury Nithal - część wschodnia",
+   "x": 2,
+   "y": 6
+  },
+  {
+   "to": "Północne mury Nithal - część wschodnia",
+   "x": 2,
+   "y": 7
+  },
+  {
+   "to": "Wschodnie mury Nithal",
+   "x": 7,
+   "y": 22
+  },
+  {
+   "to": "Wschodnie mury Nithal",
+   "x": 8,
+   "y": 22
+  }
+ ]
+}

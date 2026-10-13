@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście Myśliwych p.2",
+ "id": 634,
+ "w": 40,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Przejście Myśliwych p.1",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Orla Grań",
+   "x": 26,
+   "y": 1
+  }
+ ]
+}

@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Nandraroka",
+ "id": 791,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Nandraroka - piwnica p.1",
+   "x": 11,
+   "y": 6
+  },
+  {
+   "to": "Kamienica Nandraroka p.1",
+   "x": 11,
+   "y": 9
   }
  ]
 }

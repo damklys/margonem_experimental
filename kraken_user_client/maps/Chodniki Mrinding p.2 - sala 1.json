@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Chodniki Mrinding p.2 - sala 1",
+ "id": 7458,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Chodniki Mrinding p.1 - sala 2",
+   "x": 6,
+   "y": 46
+  },
+  {
+   "to": "Chodniki Mrinding p.1 - sala 1",
+   "x": 29,
+   "y": 3
+  },
+  {
+   "to": "Chodniki Mrinding p.2 - sala 2",
+   "x": 54,
+   "y": 52
+  },
+  {
+   "to": "Chodniki Mrinding p.2 - sala 2",
+   "x": 54,
+   "y": 53
+  }
+ ]
+}

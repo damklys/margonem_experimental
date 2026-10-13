@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Anzelma",
+ "id": 109,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 4,
+   "y": 14
+  },
+  {
+   "to": "Karka-han",
+   "x": 5,
+   "y": 14
   }
  ]
 }

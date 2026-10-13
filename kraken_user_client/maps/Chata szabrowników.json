@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Chata szabrowników",
+ "id": 4528,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Wertepy Rzezimieszków"
+   "to": "Wertepy Rzezimieszków",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Wertepy Rzezimieszków",
+   "x": 8,
+   "y": 14
   }
  ]
 }

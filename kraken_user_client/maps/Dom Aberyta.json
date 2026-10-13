@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Aberyta",
+ "id": 304,
+ "w": 18,
+ "h": 17,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Przedmieścia Karka-han",
+   "x": 3,
+   "y": 12
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Dom Aberyta p.1",
+   "x": 9,
+   "y": 6
+  },
+  {
+   "to": "Dom Aberyta - piwnica",
+   "x": 15,
+   "y": 11
   }
  ]
 }

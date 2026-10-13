@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Zdradzieckie Przejście p.2",
+ "id": 6629,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zdradzieckie Przejście p.1"
+   "to": "Labirynt Margorii",
+   "x": 9,
+   "y": 61
   },
   {
-   "to": "Labirynt Margorii"
+   "to": "Zdradzieckie Przejście p.1",
+   "x": 54,
+   "y": 1
   }
  ]
 }

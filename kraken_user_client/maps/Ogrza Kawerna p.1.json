@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ogrza Kawerna p.1",
+ "id": 7690,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 9,
+   "y": 35
+  },
+  {
+   "to": "Ogrza Kawerna p.2",
+   "x": 34,
+   "y": 38
+  }
+ ]
+}

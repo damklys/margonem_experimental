@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów - pracownia archeologa",
+ "id": 1905,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 14,
+   "y": 13
+  },
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 14,
+   "y": 14
+  }
+ ]
+}

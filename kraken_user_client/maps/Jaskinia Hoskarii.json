@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Hoskarii",
+ "id": 1336,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Wioska Rybacka",
+   "x": 15,
+   "y": 30
+  }
+ ]
+}

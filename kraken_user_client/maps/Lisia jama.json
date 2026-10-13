@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lisia jama",
+ "id": 2828,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Leśna Przełęcz",
+   "x": 6,
+   "y": 22
+  }
+ ]
+}

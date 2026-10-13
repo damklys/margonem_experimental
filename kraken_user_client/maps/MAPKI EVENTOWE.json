@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "MAPKI EVENTOWE",
+ "id": 1126,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Składzik beczek",
+   "x": 6,
+   "y": 2
+  },
+  {
+   "to": "Składzik beczek",
+   "x": 7,
+   "y": 2
+  }
+ ]
+}

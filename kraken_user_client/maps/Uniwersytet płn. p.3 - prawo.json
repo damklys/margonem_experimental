@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. p.3 - prawo",
+ "id": 895,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn. p.2",
+   "x": 11,
+   "y": 14
+  }
+ ]
+}

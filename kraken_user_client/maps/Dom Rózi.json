@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Rózi",
- "gateways": []
+ "id": 613,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rózi p.1",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Dom Rózi - piwnica",
+   "x": 3,
+   "y": 13
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 7,
+   "y": 13
+  }
+ ]
 }

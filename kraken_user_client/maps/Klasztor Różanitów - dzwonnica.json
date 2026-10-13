@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - dzwonnica",
+ "id": 2509,
+ "w": 17,
+ "h": 17,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płd.-zach.p.2",
+   "x": 5,
+   "y": 8
+  }
+ ]
+}

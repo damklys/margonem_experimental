@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Ciemnica Szubrawców p.1 - sala 1",
+ "id": 2350,
+ "w": 42,
+ "h": 42,
  "gateways": [
   {
-   "to": "Fort Eder"
+   "to": "Fort Eder",
+   "x": 2,
+   "y": 10
   },
   {
-   "to": "Ciemnica Szubrawców p.1 - sala 2"
+   "to": "Ciemnica Szubrawców p.1 - sala 2",
+   "x": 6,
+   "y": 40
   }
  ]
 }

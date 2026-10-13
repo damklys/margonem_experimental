@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zalana Grota",
+ "id": 1912,
+ "w": 36,
+ "h": 36,
+ "gateways": [
+  {
+   "to": "Dolina Gniewu",
+   "x": 28,
+   "y": 33
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Ostoja Marzeń (wersja przed questami)",
+ "id": 2883,
+ "w": 86,
+ "h": 49,
+ "gateways": [
+  {
+   "to": "Dom Torkina (wersja przed questami)",
+   "x": 32,
+   "y": 27
+  }
+ ]
+}

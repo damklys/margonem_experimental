@@ -6,112 +6,64 @@
  "h": 64,
  "gateways": [
   {
-   "to": "Mistyczny Bór",
-   "x": 57,
-   "y": 0,
-   "toId": 1788,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Podziemne Przejście - sala wyjściowa",
-   "x": 44,
-   "y": 20,
-   "toId": 98,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Podziemne Przejście p.1",
-   "x": 57,
-   "y": 32,
-   "toId": 87,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Podziemne Przejście p.6 - sala wyjściowa",
-   "x": 49,
-   "y": 49,
-   "toId": 94,
-   "key": 0,
-   "lvl": 0,
-   "zone": 2
+   "to": "Przełęcz Dwóch Koron",
+   "x": 0,
+   "y": 34
   },
   {
    "to": "Przełęcz Dwóch Koron",
    "x": 0,
-   "y": 34,
-   "toId": 10,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 35
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 0,
+   "y": 36
   },
   {
    "to": "Sowia Dziupla",
    "x": 22,
-   "y": 59,
-   "toId": 2290,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "y": 59
   },
   {
-   "to": "Uroczysko",
-   "x": 95,
-   "y": 41,
-   "toId": 38,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Podziemne Przejście - sala wyjściowa",
+   "x": 44,
+   "y": 20
   },
   {
-   "to": "Przełęcz Dwóch Koron",
-   "x": 0,
-   "y": 35,
-   "toId": 10,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Podziemne Przejście p.6 - sala wyjściowa",
+   "x": 49,
+   "y": 49
   },
   {
-   "to": "Przełęcz Dwóch Koron",
-   "x": 0,
-   "y": 36,
-   "toId": 10,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Mistyczny Bór",
+   "x": 57,
+   "y": 0
+  },
+  {
+   "to": "Podziemne Przejście p.1",
+   "x": 57,
+   "y": 32
   },
   {
    "to": "Mistyczny Bór",
    "x": 58,
-   "y": 0,
-   "toId": 1788,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
   },
   {
    "to": "Uroczysko",
    "x": 95,
-   "y": 42,
-   "toId": 38,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 41
   },
   {
    "to": "Uroczysko",
    "x": 95,
-   "y": 43,
-   "toId": 38,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 42
+  },
+  {
+   "to": "Uroczysko",
+   "x": 95,
+   "y": 43
   }
  ],
  "zones": [

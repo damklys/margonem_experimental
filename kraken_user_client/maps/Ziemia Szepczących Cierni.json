@@ -1,0 +1,69 @@
+{
+ "kraken": "mapa",
+ "name": "Ziemia Szepczących Cierni",
+ "id": 7684,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Martwy Las",
+   "x": 0,
+   "y": 25
+  },
+  {
+   "to": "Martwy Las",
+   "x": 0,
+   "y": 26
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 20,
+   "y": 63
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 21,
+   "y": 63
+  },
+  {
+   "to": "Grota Skamieniałej Kory p.1 - sala 1",
+   "x": 31,
+   "y": 17
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "x": 73,
+   "y": 0
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "x": 74,
+   "y": 0
+  },
+  {
+   "to": "Grota Skamieniałej Kory p.1 - sala 2",
+   "x": 81,
+   "y": 29
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 95,
+   "y": 28
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 95,
+   "y": 29
+  }
+ ]
+}

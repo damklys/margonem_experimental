@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - wschodnia komnata",
+ "id": 4061,
+ "w": 25,
+ "h": 25,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - korytarz wschodni",
+   "x": 17,
+   "y": 4
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 20,
+   "y": 23
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Puszczyka p.1",
+ "id": 2167,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Puszczyka",
+   "x": 9,
+   "y": 11
+  }
+ ]
+}

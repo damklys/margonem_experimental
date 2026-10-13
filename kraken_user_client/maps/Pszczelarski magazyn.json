@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pszczelarski magazyn",
+ "id": 4403,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

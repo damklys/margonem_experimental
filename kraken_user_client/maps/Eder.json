@@ -1,15 +1,162 @@
 {
  "kraken": "mapa",
  "name": "Eder",
+ "id": 33,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Fort Eder"
+   "to": "Spokojne Przejście",
+   "x": 0,
+   "y": 34
   },
   {
-   "to": "Spokojne Przejście"
+   "to": "Spokojne Przejście",
+   "x": 0,
+   "y": 35
   },
   {
-   "to": "Gościniec Bardów"
+   "to": "Spokojne Przejście",
+   "x": 0,
+   "y": 36
+  },
+  {
+   "to": "Dom Mrocznego Zgrzyta",
+   "x": 3,
+   "y": 6
+  },
+  {
+   "to": "Teatr Monticolo - foyer",
+   "x": 10,
+   "y": 87
+  },
+  {
+   "to": "Opuszczony dom",
+   "x": 14,
+   "y": 66,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom Schadzek",
+   "x": 22,
+   "y": 44
+  },
+  {
+   "to": "Dom Schadzek",
+   "x": 23,
+   "y": 44
+  },
+  {
+   "to": "Teatr Monticolo - wejście od zaplecza",
+   "x": 23,
+   "y": 90,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom Burmistrza",
+   "x": 25,
+   "y": 36
+  },
+  {
+   "to": "Magazyn Eder",
+   "x": 25,
+   "y": 54
+  },
+  {
+   "to": "Fort Eder",
+   "x": 26,
+   "y": 0
+  },
+  {
+   "to": "Fort Eder",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Fort Eder",
+   "x": 28,
+   "y": 0
+  },
+  {
+   "to": "Fort Eder",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Siedziba Kultystów",
+   "x": 31,
+   "y": 12
+  },
+  {
+   "to": "Karczma pod Posępnym Czerepem",
+   "x": 37,
+   "y": 57
+  },
+  {
+   "to": "Dom Mikliniosa",
+   "x": 40,
+   "y": 32
+  },
+  {
+   "to": "Pracownia Bonifacego",
+   "x": 41,
+   "y": 40
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 42,
+   "y": 95
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 43,
+   "y": 95
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 44,
+   "y": 95
+  },
+  {
+   "to": "Dom Artenii i Tafina",
+   "x": 47,
+   "y": 24
+  },
+  {
+   "to": "Targ Poszukiwaczy Przygód",
+   "x": 48,
+   "y": 44
+  },
+  {
+   "to": "Dom Erniego",
+   "x": 50,
+   "y": 57
+  },
+  {
+   "to": "Zbójecka spiżarnia",
+   "x": 51,
+   "y": 25,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Siedziba Maga",
+   "x": 56,
+   "y": 7
+  },
+  {
+   "to": "Siedziba Maga",
+   "x": 57,
+   "y": 7
+  },
+  {
+   "to": "Dom Etrefana",
+   "x": 57,
+   "y": 40
+  },
+  {
+   "to": "Grota Złoczyńców p.1",
+   "x": 58,
+   "y": 74
   }
  ]
 }

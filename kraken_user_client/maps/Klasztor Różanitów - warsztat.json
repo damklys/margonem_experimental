@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - warsztat",
+ "id": 2506,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płd.-zach.p.1",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Klasztor Różanitów - pomieszczenia gospodarcze",
+   "x": 14,
+   "y": 10
+  },
+  {
+   "to": "Klasztor Różanitów - pomieszczenia gospodarcze",
+   "x": 14,
+   "y": 11
+  }
+ ]
+}

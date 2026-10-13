@@ -1,21 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Mroczny Przesmyk",
+ "id": 140,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Nawiedzony Jar"
+   "to": "Zapomniany Szlak",
+   "x": 32,
+   "y": 0
   },
   {
-   "to": "Mroczna Pieczara p.1 - sala 3"
+   "to": "Zapomniany Szlak",
+   "x": 33,
+   "y": 0
   },
   {
-   "to": "Mroczna Pieczara p.1 - sala 1"
+   "to": "Mroczna Pieczara p.1 - sala 1",
+   "x": 33,
+   "y": 46
   },
   {
-   "to": "Zapomniany Szlak"
+   "to": "Zapomniany Szlak",
+   "x": 34,
+   "y": 0
   },
   {
-   "to": "Mroczna Pieczara p.2"
+   "to": "Mroczna Pieczara p.2",
+   "x": 37,
+   "y": 24
+  },
+  {
+   "to": "Mroczna Pieczara p.1 - sala 3",
+   "x": 43,
+   "y": 39
+  },
+  {
+   "to": "Nawiedzony Jar",
+   "x": 63,
+   "y": 32
   }
  ]
 }

@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia Wilczego Zamętu p.2",
+ "id": 582,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Jaskinia Wilczego Zamętu p.1"
+   "to": "Jaskinia Wilczego Zamętu p.1",
+   "x": 10,
+   "y": 29
   },
   {
-   "to": "Wilczy Szpic"
+   "to": "Wilczy Szpic",
+   "x": 25,
+   "y": 16
   }
  ]
 }

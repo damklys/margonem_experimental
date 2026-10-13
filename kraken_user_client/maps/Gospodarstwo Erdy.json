@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Erdy",
+ "id": 1207,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Stare Sioło",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Gospodarstwo Erdy p.1",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

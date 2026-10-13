@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Jaskinia - sala 2",
+ "id": 6536,
+ "w": 50,
+ "h": 50,
  "gateways": [
   {
-   "to": "Kamienna Jaskinia - sala 1"
+   "to": "Kamienna Jaskinia - sala 1",
+   "x": 7,
+   "y": 3
   },
   {
-   "to": "Andarum Ilami"
+   "to": "Andarum Ilami",
+   "x": 30,
+   "y": 48
+  },
+  {
+   "to": "Andarum Ilami",
+   "x": 31,
+   "y": 48
   }
  ]
 }

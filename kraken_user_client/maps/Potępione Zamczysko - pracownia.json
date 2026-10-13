@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - pracownia",
+ "id": 4057,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 11,
+   "y": 20
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rumiry i Dobromira",
+ "id": 1120,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rumiry i Dobromira - piwnica",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 11,
+   "y": 11
+  },
+  {
+   "to": "Dom Rumiry i Dobromira p.1",
+   "x": 12,
+   "y": 3
+  }
+ ]
+}

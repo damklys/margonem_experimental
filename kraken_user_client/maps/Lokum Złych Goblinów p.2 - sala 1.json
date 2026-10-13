@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów p.2 - sala 1",
+ "id": 7472,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów p.2 - sala 2",
+   "x": 9,
+   "y": 8
+  },
+  {
+   "to": "Lokum Złych Goblinów - zejście p.1",
+   "x": 37,
+   "y": 50
+  },
+  {
+   "to": "Lokum Złych Goblinów p.3 - sala 1",
+   "x": 59,
+   "y": 52
+  }
+ ]
+}

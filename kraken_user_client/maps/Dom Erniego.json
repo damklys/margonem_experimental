@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Erniego",
+ "id": 162,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 2,
+   "y": 8
+  },
+  {
+   "to": "Eder",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "to": "Dom Erniego p.1",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Krzaczasta Grota - sala boczna",
+ "id": 3626,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Krzaczasta Grota p.1 - sala 3",
+   "x": 5,
+   "y": 21
+  },
+  {
+   "to": "Krzaczasta Grota - korytarz",
+   "x": 21,
+   "y": 10
+  }
+ ]
+}

@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Krasowa Pieczara p.3",
+ "id": 156,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Krasowa Pieczara p.2"
+   "to": "Krasowa Pieczara p.2",
+   "x": 9,
+   "y": 13
   },
   {
-   "to": "Legowisko Wilczej Hordy"
+   "to": "Legowisko Wilczej Hordy",
+   "x": 11,
+   "y": 46
   }
  ]
 }

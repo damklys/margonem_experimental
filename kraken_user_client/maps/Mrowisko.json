@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Mrowisko",
+ "id": 2522,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Łany Zboża"
+   "to": "Mrowisko p.1",
+   "x": 10,
+   "y": 19
   },
   {
-   "to": "Mrowisko p.1"
+   "to": "Łany Zboża",
+   "x": 19,
+   "y": 30
   }
  ]
 }

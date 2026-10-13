@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Tawerna pod Kocim Wąsem",
+ "id": 4474,
+ "w": 28,
+ "h": 24,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 21,
+   "y": 22
   }
  ]
 }

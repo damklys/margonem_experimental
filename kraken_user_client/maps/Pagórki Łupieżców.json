@@ -1,15 +1,35 @@
 {
  "kraken": "mapa",
  "name": "Pagórki Łupieżców",
+ "id": 2524,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Przełęcz Łotrzyków"
+   "to": "Przełęcz Łotrzyków",
+   "x": 0,
+   "y": 47
   },
   {
-   "to": "Skład Grabieżców"
+   "to": "Przełęcz Łotrzyków",
+   "x": 0,
+   "y": 48
   },
   {
-   "to": "Schowek na Łupy"
+   "to": "Skład Grabieżców",
+   "x": 17,
+   "y": 40
+  },
+  {
+   "to": "Schowek na Łupy",
+   "x": 23,
+   "y": 50
+  },
+  {
+   "to": "Namiot Bandytów",
+   "x": 59,
+   "y": 48,
+   "req": "Przejście dostępne do 45 poziomu"
   }
  ]
 }

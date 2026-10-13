@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Piechoty Piłowej",
+ "id": 3316,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

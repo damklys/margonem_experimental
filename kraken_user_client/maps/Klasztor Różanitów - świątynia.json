@@ -1,0 +1,64 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - świątynia",
+ "id": 2337,
+ "w": 53,
+ "h": 30,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płn.-zach.p.1",
+   "x": 4,
+   "y": 24
+  },
+  {
+   "to": "Klasztor Różanitów - kapitularz",
+   "x": 7,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - kapitularz",
+   "x": 8,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - kapitularz",
+   "x": 9,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 25,
+   "y": 27
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 26,
+   "y": 27
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 27,
+   "y": 27
+  },
+  {
+   "to": "Klasztor Różanitów - refektarz",
+   "x": 44,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - refektarz",
+   "x": 45,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - refektarz",
+   "x": 46,
+   "y": 28
+  },
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płn.-wsch.p.1",
+   "x": 48,
+   "y": 24
+  }
+ ]
+}

@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Johana",
+ "id": 1843,
+ "w": 18,
+ "h": 18,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Dom Johana - piwnica",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Karka-han",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Dom Johana p.1",
+   "x": 12,
+   "y": 4
   }
  ]
 }

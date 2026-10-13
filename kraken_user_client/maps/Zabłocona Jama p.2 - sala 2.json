@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Zabłocona Jama p.2 - sala 2",
+ "id": 6942,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 1"
+   "to": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów",
+   "x": 4,
+   "y": 51
   },
   {
-   "to": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów"
+   "to": "Zabłocona Jama p.2 - sala 1",
+   "x": 8,
+   "y": 10
   },
   {
-   "to": "Zabłocona Jama p.2 - sala 3"
+   "to": "Zabłocona Jama p.2 - sala 3",
+   "x": 50,
+   "y": 58
   }
  ]
 }

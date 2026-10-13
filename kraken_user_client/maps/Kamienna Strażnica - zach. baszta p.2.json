@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Strażnica - zach. baszta p.2",
+ "id": 1153,
+ "w": 24,
+ "h": 20,
  "gateways": [
   {
-   "to": "Kamienna Strażnica - zach. baszta p.1"
+   "to": "Kamienna Strażnica - zach. baszta p.1",
+   "x": 9,
+   "y": 8
   },
   {
-   "to": "Trupia Przełęcz"
+   "to": "Trupia Przełęcz",
+   "x": 19,
+   "y": 11
   }
  ]
 }

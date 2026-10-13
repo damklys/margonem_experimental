@@ -1,33 +1,121 @@
 {
  "kraken": "mapa",
  "name": "Podgrodzie Nithal",
+ "id": 575,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Nizina Wieśniaków"
+   "to": "Nizina Wieśniaków",
+   "x": 0,
+   "y": 5
   },
   {
-   "to": "Dom Rózi"
+   "to": "Nizina Wieśniaków",
+   "x": 0,
+   "y": 6
   },
   {
-   "to": "Zajazd pod Tęczowym Żukiem"
+   "to": "Nizina Wieśniaków",
+   "x": 0,
+   "y": 7
   },
   {
-   "to": "Dom Edny"
+   "to": "Dom Rózi",
+   "x": 3,
+   "y": 40
   },
   {
-   "to": "Młyn"
+   "to": "Zajazd pod Tęczowym Żukiem",
+   "x": 9,
+   "y": 28
   },
   {
-   "to": "Nithal"
+   "to": "Zajazd pod Tęczowym Żukiem",
+   "x": 10,
+   "y": 28
   },
   {
-   "to": "Bagna Chojraków"
+   "to": "Dom Edny",
+   "x": 16,
+   "y": 40
   },
   {
-   "to": "Drewutnia"
+   "to": "Młyn",
+   "x": 22,
+   "y": 12
   },
   {
-   "to": "Chlew"
+   "to": "Nithal",
+   "x": 26,
+   "y": 63
+  },
+  {
+   "to": "Nithal",
+   "x": 27,
+   "y": 63
+  },
+  {
+   "to": "Dom Młynarza",
+   "x": 28,
+   "y": 9
+  },
+  {
+   "to": "Stajnie",
+   "x": 57,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Stajnie",
+   "x": 58,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 67,
+   "y": 0
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 68,
+   "y": 0
+  },
+  {
+   "to": "Dom Almonda",
+   "x": 71,
+   "y": 37
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana",
+   "x": 77,
+   "y": 21
+  },
+  {
+   "to": "Stodoła",
+   "x": 85,
+   "y": 26
+  },
+  {
+   "to": "Stodoła",
+   "x": 86,
+   "y": 26
+  },
+  {
+   "to": "Bagna Chojraków",
+   "x": 91,
+   "y": 63
+  },
+  {
+   "to": "Drewutnia",
+   "x": 93,
+   "y": 20
+  },
+  {
+   "to": "Chlew",
+   "x": 93,
+   "y": 32
   },
   {
    "to": "Cytadela p.3"
@@ -39,22 +127,7 @@
    "to": "Żołnierz Nithal"
   },
   {
-   "to": "Dom Młynarza"
-  },
-  {
-   "to": "Stajnie"
-  },
-  {
    "to": "Źródło Narumi"
-  },
-  {
-   "to": "Gospodarstwo Łucji i Jana"
-  },
-  {
-   "to": "Stodoła"
-  },
-  {
-   "to": "Dom Almonda"
   }
  ]
 }

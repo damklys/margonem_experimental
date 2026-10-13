@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kuźnia Frassona",
+ "id": 314,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 11,
+   "y": 14
   }
  ]
 }

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Starorzecze Narumi",
+ "id": 8535,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Dolny Bieg",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 0,
+   "y": 29
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "to": "Źródło Narumi",
+   "x": 42,
+   "y": 0
+  }
+ ]
+}

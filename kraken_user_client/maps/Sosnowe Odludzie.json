@@ -1,21 +1,47 @@
 {
  "kraken": "mapa",
  "name": "Sosnowe Odludzie",
+ "id": 701,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
+   "to": "Księżycowe Wzniesienie",
+   "x": 0,
+   "y": 56
+  },
+  {
+   "to": "Księżycowe Wzniesienie",
+   "x": 0,
+   "y": 57
+  },
+  {
+   "to": "Chodniki Mrinding",
+   "x": 3,
+   "y": 78
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 25,
+   "y": 0
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 26,
+   "y": 0
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Podziemne Rozpadliny",
+   "x": 58,
+   "y": 47
+  },
+  {
    "to": "Leszy (91w)"
-  },
-  {
-   "to": "Księżycowe Wzniesienie"
-  },
-  {
-   "to": "Chodniki Mrinding"
-  },
-  {
-   "to": "Liściaste Rozstaje"
-  },
-  {
-   "to": "Podziemne Rozpadliny"
   }
  ]
 }

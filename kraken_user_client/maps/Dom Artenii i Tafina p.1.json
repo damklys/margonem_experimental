@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Artenii i Tafina p.1",
+ "id": 158,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Artenii i Tafina",
+   "x": 5,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - klatka schodowa p.3",
+ "id": 7273,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - kasyno",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "SP Margonem - kasyno",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "SP Margonem - mostek kapitański",
+   "x": 10,
+   "y": 3
+  },
+  {
+   "to": "SP Margonem - klatka schodowa p.2",
+   "x": 11,
+   "y": 18
+  },
+  {
+   "to": "SP Margonem - sala bankietowa",
+   "x": 20,
+   "y": 12
+  },
+  {
+   "to": "SP Margonem - sala bankietowa",
+   "x": 20,
+   "y": 13
+  }
+ ]
+}

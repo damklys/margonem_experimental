@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Inetora",
+ "id": 1816,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Inetora p.1",
+   "x": 11,
+   "y": 3
   }
  ]
 }

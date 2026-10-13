@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Szlamowe Kanały p.2 - sala 2",
+ "id": 7700,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 1,
+   "y": 47
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 3",
+   "x": 2,
+   "y": 21
+  },
+  {
+   "to": "Dormitorium - przejście do świątyni",
+   "x": 49,
+   "y": 3
+  }
+ ]
+}

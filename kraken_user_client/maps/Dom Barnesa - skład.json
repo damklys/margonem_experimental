@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Barnesa - skład",
+ "id": 1943,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Barnesa - pracownia",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

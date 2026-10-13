@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Flopka",
+ "id": 1574,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Mury zachodnie Tuzmer",
+   "x": 9,
+   "y": 6
   }
  ]
 }

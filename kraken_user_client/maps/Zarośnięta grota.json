@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zarośnięta grota",
+ "id": 3740,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Winnica Meflakasti",
+   "x": 14,
+   "y": 30
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - piwnica p.1",
+ "id": 857,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dormitorium - piwnica p.2",
+   "x": 6,
+   "y": 9
+  },
+  {
+   "to": "Dormitorium - część westalek",
+   "x": 9,
+   "y": 3
+  }
+ ]
+}

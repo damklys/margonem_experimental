@@ -1,9 +1,338 @@
 {
  "kraken": "mapa",
  "name": "Kwatery u Morcera",
+ "id": 3511,
+ "w": 40,
+ "h": 30,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Kwatera 3",
+   "x": 1,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 2",
+   "x": 1,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 1",
+   "x": 2,
+   "y": 24,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 6",
+   "x": 3,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 5",
+   "x": 3,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 4",
+   "x": 3,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 7",
+   "x": 4,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 8",
+   "x": 6,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 39",
+   "x": 6,
+   "y": 22,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 36",
+   "x": 7,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 9",
+   "x": 8,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 35",
+   "x": 8,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 37",
+   "x": 8,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 38",
+   "x": 8,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 34",
+   "x": 10,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 48",
+   "x": 11,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 49",
+   "x": 11,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 50",
+   "x": 11,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera Thorpa 1",
+   "x": 12,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 33",
+   "x": 12,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 47",
+   "x": 13,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera Thorpa 2",
+   "x": 14,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 32",
+   "x": 14,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 46",
+   "x": 15,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 31",
+   "x": 16,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 45",
+   "x": 17,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera Thorpa 3",
+   "x": 18,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 30",
+   "x": 18,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 44",
+   "x": 19,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera Thorpa 4",
+   "x": 20,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 29",
+   "x": 20,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 43",
+   "x": 21,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 28",
+   "x": 22,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 22,
+   "y": 26
+  },
+  {
+   "to": "Kwatera 42",
+   "x": 23,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 27",
+   "x": 24,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 10",
+   "x": 25,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 26",
+   "x": 26,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 41",
+   "x": 26,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 11",
+   "x": 27,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 40",
+   "x": 28,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 12",
+   "x": 30,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 25",
+   "x": 30,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 13",
+   "x": 32,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 24",
+   "x": 32,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 23",
+   "x": 33,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 22",
+   "x": 33,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 14",
+   "x": 35,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 21",
+   "x": 36,
+   "y": 24,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 15",
+   "x": 37,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 16",
+   "x": 37,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 17",
+   "x": 37,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 18",
+   "x": 37,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 20",
+   "x": 37,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Kwatera 19",
+   "x": 38,
+   "y": 18,
+   "req": "(wymaga klucza)"
   }
  ]
 }

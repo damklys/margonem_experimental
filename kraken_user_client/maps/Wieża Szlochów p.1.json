@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Wieża Szlochów p.1",
+ "id": 4062,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wieża Szlochów p.2",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wschodni",
+   "x": 13,
+   "y": 10
+  }
+ ]
+}

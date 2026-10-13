@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Grota Dzikiego Kota",
- "gateways": []
+ "id": 580,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Kryjówka Dzikich Kotów",
+   "x": 33,
+   "y": 37
+  },
+  {
+   "to": "Kryjówka Dzikich Kotów",
+   "x": 34,
+   "y": 37
+  }
+ ]
 }

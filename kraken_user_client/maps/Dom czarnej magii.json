@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom czarnej magii",
+ "id": 1307,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 14,
+   "y": 14
+  }
+ ]
+}

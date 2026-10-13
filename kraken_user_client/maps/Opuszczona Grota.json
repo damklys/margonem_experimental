@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczona Grota",
+ "id": 20,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dolina Yss",
+   "x": 3,
+   "y": 13
+  },
+  {
+   "to": "Opuszczona Grota - sala 2",
+   "x": 12,
+   "y": 4
+  }
+ ]
+}

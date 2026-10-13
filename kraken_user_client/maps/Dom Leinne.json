@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Leinne",
+ "id": 1602,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Dom Leinne - piwniczka",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom rybaka Yarte - piwnica",
+ "id": 1416,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom rybaka Yarte",
+   "x": 11,
+   "y": 4
+  }
+ ]
+}

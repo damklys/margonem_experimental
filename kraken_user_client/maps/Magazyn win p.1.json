@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn win p.1",
+ "id": 1026,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Winnica Meflakasti",
+   "x": 37,
+   "y": 62
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 38,
+   "y": 62
+  }
+ ]
+}

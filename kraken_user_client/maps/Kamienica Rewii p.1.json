@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Rewii p.1",
+ "id": 783,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Rewii",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

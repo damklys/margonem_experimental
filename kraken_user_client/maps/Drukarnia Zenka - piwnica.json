@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Drukarnia Zenka - piwnica",
+ "id": 2158,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Drukarnia Zenka",
+   "x": 10,
+   "y": 4
+  }
+ ]
+}

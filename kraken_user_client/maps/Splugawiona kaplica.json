@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Splugawiona kaplica",
+ "id": 1300,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Tristam",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

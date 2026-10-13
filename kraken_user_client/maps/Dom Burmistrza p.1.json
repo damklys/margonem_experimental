@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Burmistrza p.1",
+ "id": 160,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Burmistrza",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

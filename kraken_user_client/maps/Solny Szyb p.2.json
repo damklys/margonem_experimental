@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Solny Szyb p.2",
+ "id": 337,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Solny Szyb p.1",
+   "x": 4,
+   "y": 2
+  },
+  {
+   "to": "Solny Szyb p.3",
+   "x": 10,
+   "y": 28
+  }
+ ]
+}

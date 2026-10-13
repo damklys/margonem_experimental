@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Anecji",
+ "id": 1427,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Anecji p.1",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 11
   }
  ]
 }

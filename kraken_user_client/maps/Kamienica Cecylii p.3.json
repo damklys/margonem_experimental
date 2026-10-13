@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Cecylii p.3",
+ "id": 799,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Cecylii p.2",
+   "x": 10,
+   "y": 10
+  }
+ ]
+}

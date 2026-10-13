@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Piramida Pustynnego Władcy p.1",
+ "id": 7067,
+ "w": 52,
+ "h": 52,
  "gateways": [
   {
-   "to": "Złote Piaski"
+   "to": "Złote Piaski",
+   "x": 14,
+   "y": 49
   },
   {
-   "to": "Piramida Pustynnego Władcy p.2"
+   "to": "Piramida Pustynnego Władcy p.2",
+   "x": 28,
+   "y": 1
+  },
+  {
+   "to": "Piramida Pustynnego Władcy p.2",
+   "x": 29,
+   "y": 1
   }
  ]
 }

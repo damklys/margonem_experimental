@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Bosmańskim Biczem - piwnica",
+ "id": 1384,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Tawerna pod Bosmańskim Biczem",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

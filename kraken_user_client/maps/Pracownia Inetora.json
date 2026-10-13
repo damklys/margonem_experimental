@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pracownia Inetora",
+ "id": 106,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 1,
+   "y": 9
+  },
+  {
+   "to": "Pracownia Inetora p.1",
+   "x": 8,
+   "y": 3
   }
  ]
 }

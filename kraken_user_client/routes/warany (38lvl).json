@@ -1,6 +1,6 @@
 {
  "kraken": "trasa",
- "version": "3.110.202610131430",
+ "version": "3.116.202610131700",
  "route": {
   "id": "r-warany38lvl",
   "name": "warany (38lvl)",
@@ -15,6 +15,14 @@
    },
    {
     "location": "Zasłonięte Jezioro",
+    "attack": true
+   },
+   {
+    "location": "Słoneczna Wyżyna",
+    "attack": true
+   },
+   {
+    "location": "Lazurowe Wzgórze",
     "attack": true
    },
    {

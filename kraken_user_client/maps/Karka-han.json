@@ -6,454 +6,261 @@
  "h": 64,
  "gateways": [
   {
-   "to": "Dom Anulisa",
-   "x": 35,
-   "y": 38,
-   "toId": 2919,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Anzelma",
-   "x": 82,
-   "y": 16,
-   "toId": 109,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Aurelii i Dionizego",
-   "x": 19,
-   "y": 8,
-   "toId": 1813,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Azalii",
-   "x": 11,
-   "y": 18,
-   "toId": 4200,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Befry",
-   "x": 15,
-   "y": 38,
-   "toId": 2620,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Hergata i Halfinii",
-   "x": 29,
-   "y": 38,
-   "toId": 107,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Inetora",
-   "x": 77,
-   "y": 10,
-   "toId": 1816,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Johana",
-   "x": 6,
-   "y": 40,
-   "toId": 1843,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Kalicji i Apoksa",
-   "x": 13,
-   "y": 11,
-   "toId": 105,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Kaliposa",
-   "x": 91,
-   "y": 32,
-   "toId": 104,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Konstantego i Forsycji",
-   "x": 77,
-   "y": 25,
-   "toId": 1697,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Dom Lenki",
    "x": 4,
-   "y": 9,
-   "toId": 1809,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Menarika",
-   "x": 64,
-   "y": 8,
-   "toId": 1883,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Nufrexa",
-   "x": 12,
-   "y": 27,
-   "toId": 501,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Remiusza",
-   "x": 5,
-   "y": 54,
-   "toId": 100,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Roszana",
-   "x": 57,
-   "y": 8,
-   "toId": 103,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Zeiny",
-   "x": 9,
-   "y": 8,
-   "toId": 1863,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom płatnerza",
-   "x": 78,
-   "y": 57,
-   "toId": 1884,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom rzeźnika",
-   "x": 17,
-   "y": 23,
-   "toId": 1894,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 9
   },
   {
    "to": "Drukarnia Zenka",
    "x": 5,
-   "y": 20,
-   "toId": 2156,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Gildia Kupców",
-   "x": 73,
-   "y": 16,
-   "toId": 1157,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kamienica Kleofasa",
-   "x": 22,
-   "y": 8,
-   "toId": 1155,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kamienica Newalda",
-   "x": 33,
-   "y": 23,
-   "toId": 1166,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 20
   },
   {
    "to": "Kamienica Slina",
    "x": 5,
-   "y": 29,
-   "toId": 1829,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 29
   },
   {
-   "to": "Karczma pod Złotą Wywerną",
-   "x": 62,
-   "y": 25,
-   "toId": 206,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Dom Remiusza",
+   "x": 5,
+   "y": 54
   },
   {
-   "to": "Lecznica dla zwierząt",
-   "x": 88,
-   "y": 25,
-   "toId": 1595,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Dom Johana",
+   "x": 6,
+   "y": 40
+  },
+  {
+   "to": "Dom Zeiny",
+   "x": 9,
+   "y": 8
+  },
+  {
+   "to": "Dom Azalii",
+   "x": 11,
+   "y": 18
+  },
+  {
+   "to": "Dom Nufrexa",
+   "x": 12,
+   "y": 27
+  },
+  {
+   "to": "Dom Kalicji i Apoksa",
+   "x": 13,
+   "y": 11
+  },
+  {
+   "to": "Dom Befry",
+   "x": 15,
+   "y": 38
+  },
+  {
+   "to": "Dom Befry",
+   "x": 16,
+   "y": 38
+  },
+  {
+   "to": "Magazyn",
+   "x": 16,
+   "y": 53
+  },
+  {
+   "to": "Dom rzeźnika",
+   "x": 17,
+   "y": 23
+  },
+  {
+   "to": "Magazyn",
+   "x": 17,
+   "y": 53
+  },
+  {
+   "to": "Dom Aurelii i Dionizego",
+   "x": 19,
+   "y": 8
+  },
+  {
+   "to": "Kamienica Kleofasa",
+   "x": 22,
+   "y": 8
+  },
+  {
+   "to": "Tawerna pod Kocim Wąsem",
+   "x": 22,
+   "y": 38
+  },
+  {
+   "to": "Prastara Puszcza",
+   "x": 26,
+   "y": 4
+  },
+  {
+   "to": "Prastara Puszcza",
+   "x": 27,
+   "y": 4
+  },
+  {
+   "to": "Dom Hergata i Halfinii",
+   "x": 29,
+   "y": 38
+  },
+  {
+   "to": "Dom Hergata i Halfinii",
+   "x": 30,
+   "y": 38
+  },
+  {
+   "to": "Rozładownia",
+   "x": 32,
+   "y": 52
+  },
+  {
+   "to": "Kamienica Newalda",
+   "x": 33,
+   "y": 23
+  },
+  {
+   "to": "Rozładownia",
+   "x": 33,
+   "y": 52
+  },
+  {
+   "to": "Dom Anulisa",
+   "x": 35,
+   "y": 38
+  },
+  {
+   "to": "Karmazynowa siedziba",
+   "x": 42,
+   "y": 9
+  },
+  {
+   "to": "Ratusz Karka-han",
+   "x": 48,
+   "y": 25
+  },
+  {
+   "to": "Ratusz Karka-han",
+   "x": 49,
+   "y": 25
   },
   {
    "to": "Lochy miejskie",
    "x": 56,
    "y": 23,
-   "toId": 1880,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
+   "req": "(wymaga klucza)"
   },
   {
-   "to": "Magazyn",
-   "x": 16,
-   "y": 53,
-   "toId": 1818,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Miejska biblioteka",
-   "x": 75,
-   "y": 36,
-   "toId": 1596,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Nekropolia Karka-han",
-   "x": 95,
-   "y": 33,
-   "toId": 2546,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Pracownia Inetora",
-   "x": 83,
-   "y": 7,
-   "toId": 106,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Pracownia płatnerza",
-   "x": 85,
-   "y": 53,
-   "toId": 1887,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Prastara Puszcza",
-   "x": 26,
-   "y": 4,
-   "toId": 1219,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Dom Roszana",
+   "x": 57,
+   "y": 8
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 57,
-   "y": 63,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Ratusz Karka-han",
-   "x": 48,
-   "y": 25,
-   "toId": 235,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Rozładownia",
-   "x": 32,
-   "y": 52,
-   "toId": 1826,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Tawerna pod Kocim Wąsem",
-   "x": 22,
-   "y": 38,
-   "toId": 4474,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Befry",
-   "x": 16,
-   "y": 38,
-   "toId": 2620,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Magazyn",
-   "x": 17,
-   "y": 53,
-   "toId": 1818,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Prastara Puszcza",
-   "x": 27,
-   "y": 4,
-   "toId": 1219,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Hergata i Halfinii",
-   "x": 30,
-   "y": 38,
-   "toId": 107,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Rozładownia",
-   "x": 33,
-   "y": 52,
-   "toId": 1826,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Ratusz Karka-han",
-   "x": 49,
-   "y": 25,
-   "toId": 235,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 58,
-   "y": 63,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 59,
-   "y": 63,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 60,
-   "y": 63,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 63
+  },
+  {
+   "to": "Karczma pod Złotą Wywerną",
+   "x": 62,
+   "y": 25
+  },
+  {
+   "to": "Dom Menarika",
+   "x": 64,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Gildia Kupców",
+   "x": 73,
+   "y": 16
+  },
+  {
+   "to": "Miejska Biblioteka",
+   "x": 75,
+   "y": 36
+  },
+  {
+   "to": "Dom Inetora",
+   "x": 77,
+   "y": 10
+  },
+  {
+   "to": "Dom Konstantego i Forsycji",
+   "x": 77,
+   "y": 25
   },
   {
    "to": "Dom Konstantego i Forsycji",
    "x": 78,
-   "y": 25,
-   "toId": 1697,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 25
+  },
+  {
+   "to": "Dom płatnerza",
+   "x": 78,
+   "y": 57
+  },
+  {
+   "to": "Dom Anzelma",
+   "x": 82,
+   "y": 16
+  },
+  {
+   "to": "Pracownia Inetora",
+   "x": 83,
+   "y": 7
+  },
+  {
+   "to": "Pracownia płatnerza",
+   "x": 85,
+   "y": 53
   },
   {
    "to": "Pracownia płatnerza",
    "x": 86,
-   "y": 53,
-   "toId": 1887,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 53
+  },
+  {
+   "to": "Lecznica dla zwierząt",
+   "x": 88,
+   "y": 25
+  },
+  {
+   "to": "Dom Kaliposa",
+   "x": 91,
+   "y": 32
   },
   {
    "to": "Nekropolia Karka-han",
    "x": 95,
-   "y": 34,
-   "toId": 2546,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 33
   },
   {
    "to": "Nekropolia Karka-han",
    "x": 95,
-   "y": 35,
-   "toId": 2546,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 34
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 95,
+   "y": 35
   }
  ]
 }

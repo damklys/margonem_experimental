@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Żaka",
+ "id": 1990,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Dom Żaka p.1",
+   "x": 18,
+   "y": 11
   }
  ]
 }

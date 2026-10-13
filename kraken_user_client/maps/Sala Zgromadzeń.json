@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Sala Zgromadzeń",
+ "id": 313,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 10,
+   "y": 14
   }
  ]
 }

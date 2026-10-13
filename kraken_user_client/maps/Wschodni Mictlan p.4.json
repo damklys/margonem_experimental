@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodni Mictlan p.4",
+ "id": 5680,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Wschodni Mictlan p.5",
+   "x": 6,
+   "y": 30
+  },
+  {
+   "to": "Wschodni Mictlan p.5",
+   "x": 7,
+   "y": 30
+  },
+  {
+   "to": "Wschodni Mictlan p.3",
+   "x": 24,
+   "y": 1
+  }
+ ]
+}

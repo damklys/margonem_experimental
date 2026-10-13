@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Arbor s.2",
+ "id": 6057,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Grota Arbor s.1",
+   "x": 32,
+   "y": 49
+  }
+ ]
+}

@@ -6,229 +6,133 @@
  "h": 100,
  "gateways": [
   {
-   "to": "Browar Bimberara - garkuchnia",
-   "x": 20,
-   "y": 48,
-   "toId": 3500,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Browar Bimberara - warzelnia",
+   "x": 4,
+   "y": 35
+  },
+  {
+   "to": "Thorpela zachodnia",
+   "x": 8,
+   "y": 89
+  },
+  {
+   "to": "Thorpela zachodnia",
+   "x": 9,
+   "y": 89
   },
   {
    "to": "Browar Bimberara - magazyn",
    "x": 14,
-   "y": 46,
-   "toId": 3501,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 46
   },
   {
-   "to": "Browar Bimberara - warzelnia",
-   "x": 4,
-   "y": 35,
-   "toId": 3499,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Trakt Moradrana",
+   "x": 17,
+   "y": 97
   },
   {
-   "to": "Dom Jakiego",
-   "x": 72,
-   "y": 56,
-   "toId": 3509,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Browar Bimberara - garkuchnia",
+   "x": 20,
+   "y": 48
   },
   {
-   "to": "Dom Merakliego",
-   "x": 73,
-   "y": 10,
-   "toId": 3504,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Szyb transportowy",
+   "x": 28,
+   "y": 8
   },
   {
-   "to": "Dom Reby",
-   "x": 94,
-   "y": 28,
-   "toId": 3506,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Tozruka",
-   "x": 89,
-   "y": 8,
-   "toId": 3510,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Ulryka",
-   "x": 84,
-   "y": 17,
-   "toId": 3507,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Uzdrowień",
-   "x": 53,
-   "y": 41,
-   "toId": 635,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Dom Ypsliego",
-   "x": 83,
-   "y": 7,
-   "toId": 3505,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Gammel Khazad Gravkammer",
-   "x": 91,
-   "y": 66,
-   "toId": 3516,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Thorpela wschodnia",
+   "x": 35,
+   "y": 94
   },
   {
    "to": "Kuźnia Giriela - manufaktura",
    "x": 42,
-   "y": 8,
-   "toId": 3478,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kuźnia Giriela - pracownia",
-   "x": 56,
-   "y": 5,
-   "toId": 3480,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 8
   },
   {
    "to": "Kuźnia Giriela - warsztat",
    "x": 43,
-   "y": 18,
-   "toId": 3479,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Kwatery u Morcera",
-   "x": 91,
-   "y": 33,
-   "toId": 3511,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 18
   },
   {
    "to": "Opuszczony Szyb",
    "x": 47,
    "y": 80,
-   "toId": 3473,
-   "key": 0,
-   "lvl": 65536060,
-   "zone": 0
+   "req": "Przejście dostępne od 60 poziomu"
+  },
+  {
+   "to": "Dom Uzdrowień",
+   "x": 53,
+   "y": 41
+  },
+  {
+   "to": "Kuźnia Giriela - pracownia",
+   "x": 56,
+   "y": 5
+  },
+  {
+   "to": "Dom Jakiego",
+   "x": 72,
+   "y": 56
+  },
+  {
+   "to": "Dom Merakliego",
+   "x": 73,
+   "y": 10
   },
   {
    "to": "Szlak Thorpa p.6",
    "x": 81,
    "y": 97,
-   "toId": 3472,
-   "key": 0,
-   "lvl": 65536090,
-   "zone": 0
-  },
-  {
-   "to": "Szyb Zdrajców",
-   "x": 94,
-   "y": 3,
-   "toId": 6775,
-   "key": 0,
-   "lvl": 65536060,
-   "zone": 0
-  },
-  {
-   "to": "Szyb transportowy",
-   "x": 28,
-   "y": 8,
-   "toId": 6770,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Thorpela wschodnia",
-   "x": 35,
-   "y": 94,
-   "toId": 3503,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Thorpela zachodnia",
-   "x": 8,
-   "y": 89,
-   "toId": 3502,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Trakt Moradrana",
-   "x": 17,
-   "y": 97,
-   "toId": 3460,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Thorpela zachodnia",
-   "x": 9,
-   "y": 89,
-   "toId": 3502,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "req": "Przejście dostępne od 90 poziomu"
   },
   {
    "to": "Szlak Thorpa p.6",
    "x": 82,
    "y": 97,
-   "toId": 3472,
-   "key": 0,
-   "lvl": 65536090,
-   "zone": 0
+   "req": "Przejście dostępne od 90 poziomu"
+  },
+  {
+   "to": "Dom Ypsliego",
+   "x": 83,
+   "y": 7
+  },
+  {
+   "to": "Dom Ulryka",
+   "x": 84,
+   "y": 17
+  },
+  {
+   "to": "Dom Tozruka",
+   "x": 89,
+   "y": 8
+  },
+  {
+   "to": "Kwatery u Morcera",
+   "x": 91,
+   "y": 33
+  },
+  {
+   "to": "Gammel Khazad Gravkammer",
+   "x": 91,
+   "y": 66
   },
   {
    "to": "Gammel Khazad Gravkammer",
    "x": 92,
-   "y": 66,
-   "toId": 3516,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 66
+  },
+  {
+   "to": "Szyb Zdrajców",
+   "x": 94,
+   "y": 3,
+   "req": "Przejście dostępne od 60 poziomu"
+  },
+  {
+   "to": "Dom Reby",
+   "x": 94,
+   "y": 28
   }
  ]
 }

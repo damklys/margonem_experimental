@@ -1,0 +1,41 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+ "id": 3037,
+ "w": 72,
+ "h": 54,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 7,
+   "y": 23
+  },
+  {
+   "to": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+   "x": 8,
+   "y": 23
+  },
+  {
+   "to": "Katakumby Antycznego Gniewu - przedsionek",
+   "x": 52,
+   "y": 13,
+   "req": "Przejście dostępne od 265 do 500 poziomu"
+  },
+  {
+   "to": "Katakumby Antycznego Gniewu - przedsionek",
+   "x": 53,
+   "y": 13,
+   "req": "Przejście dostępne od 265 do 500 poziomu"
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 61,
+   "y": 41
+  },
+  {
+   "to": "Pustynne Katakumby - Wschodni Tunel Jaźni",
+   "x": 62,
+   "y": 41
+  }
+ ]
+}

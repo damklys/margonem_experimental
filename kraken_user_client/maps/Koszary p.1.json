@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Koszary p.1",
+ "id": 1981,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Koszary - gabinet kapitana",
+   "x": 3,
+   "y": 13
+  },
+  {
+   "to": "Koszary",
+   "x": 14,
+   "y": 11
+  }
+ ]
+}

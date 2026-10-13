@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Aurelii i Dionizego p.1",
+ "id": 1814,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Aurelii i Dionizego",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

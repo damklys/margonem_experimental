@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Grobowiec Rodziny Tywelta p.1",
+ "id": 2885,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Grobowiec Rodziny Tywelta",
+   "x": 31,
+   "y": 12
+  },
+  {
+   "to": "Grobowiec Rodziny Tywelta",
+   "x": 32,
+   "y": 12
+  },
+  {
+   "to": "Grobowiec Rodziny Tywelta p.2",
+   "x": 39,
+   "y": 59
+  }
+ ]
+}

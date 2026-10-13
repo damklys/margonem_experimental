@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Stare Wyrobisko p.3",
+ "id": 125,
+ "w": 23,
+ "h": 33,
  "gateways": [
   {
-   "to": "Stare Wyrobisko p.4"
+   "to": "Stare Wyrobisko p.4",
+   "x": 6,
+   "y": 22
   },
   {
-   "to": "Stare Wyrobisko p.2"
+   "to": "Nawiedzony Jar",
+   "x": 11,
+   "y": 29
   },
   {
-   "to": "Nawiedzony Jar"
+   "to": "Stare Wyrobisko p.2",
+   "x": 17,
+   "y": 4
   }
  ]
 }

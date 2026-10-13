@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Głębia Przeklętych Fal - przedsionek",
+ "id": 7353,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Archipelag Bremus An",
+   "x": 7,
+   "y": 27
+  }
+ ]
+}

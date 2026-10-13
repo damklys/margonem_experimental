@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Komnaty Czarnej Gwardii - zachód",
+ "id": 5863,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Sala Królewska",
+   "x": 40,
+   "y": 21
+  },
+  {
+   "to": "Sala Królewska",
+   "x": 40,
+   "y": 22
+  },
+  {
+   "to": "Sala Królewska",
+   "x": 40,
+   "y": 23
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Łucji i Jana - piekarnia",
+ "id": 881,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Łucji i Jana",
+   "x": 9,
+   "y": 6
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana - piwnica piekarni",
+   "x": 9,
+   "y": 10
+  }
+ ]
+}

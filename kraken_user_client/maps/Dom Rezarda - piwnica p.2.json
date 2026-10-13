@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rezarda - piwnica p.2",
+ "id": 789,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rezarda - piwnica p.1",
+   "x": 10,
+   "y": 3
+  },
+  {
+   "to": "Dom Rezarda - piwnica p.3",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

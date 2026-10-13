@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pokój 230",
+ "id": 475,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Karczma pod Posępnym Czerepem p.2",
+   "x": 7,
+   "y": 5
+  }
+ ]
+}

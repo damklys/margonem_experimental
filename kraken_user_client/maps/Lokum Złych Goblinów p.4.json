@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów p.4",
+ "id": 7477,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów p.3 - sala 1",
+   "x": 8,
+   "y": 2
+  },
+  {
+   "to": "Lokum Złych Goblinów - pracownia",
+   "x": 15,
+   "y": 16,
+   "req": "Przejście dostępne od 141 do 167 poziomu"
+  }
+ ]
+}

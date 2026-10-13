@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - północna komnata",
+ "id": 8190,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - łącznik zachodni",
+   "x": 4,
+   "y": 19
+  },
+  {
+   "to": "Potępione Zamczysko - łącznik wschodni",
+   "x": 27,
+   "y": 19
+  }
+ ]
+}

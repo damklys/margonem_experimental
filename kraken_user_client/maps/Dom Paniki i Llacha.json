@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Paniki i Llacha",
+ "id": 2053,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 13,
+   "y": 18
+  },
+  {
+   "to": "Thuzal",
+   "x": 14,
+   "y": 18
   }
  ]
 }

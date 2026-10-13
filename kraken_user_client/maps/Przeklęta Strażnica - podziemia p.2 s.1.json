@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Przeklęta Strażnica - podziemia p.2 s.1",
- "gateways": []
+ "id": 5738,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Przeklęta Strażnica - podziemia p.1 s.1",
+   "x": 16,
+   "y": 3
+  }
+ ]
 }

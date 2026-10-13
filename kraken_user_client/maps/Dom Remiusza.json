@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Remiusza",
+ "id": 100,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Karka-han",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Dom Remiusza p.1",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Dom Remiusza - piwnica",
+   "x": 11,
+   "y": 12
   }
  ]
 }

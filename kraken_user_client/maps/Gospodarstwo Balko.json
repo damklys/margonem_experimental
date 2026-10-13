@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Balko",
+ "id": 1210,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Balko - piwnica",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 7,
+   "y": 11
+  }
+ ]
+}

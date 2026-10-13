@@ -8,38 +8,22 @@
   {
    "to": "Kopalnia Margorii",
    "x": 5,
-   "y": 60,
-   "toId": 6772,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 60
   },
   {
    "to": "Margoria",
    "x": 6,
-   "y": 10,
-   "toId": 6773,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 10
   },
   {
    "to": "Szyb Zdrajców",
    "x": 65,
-   "y": 61,
-   "toId": 6775,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 61
   },
   {
    "to": "Zdradzieckie Przejście p.2",
    "x": 91,
-   "y": 1,
-   "toId": 6629,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 1
   }
  ]
 }

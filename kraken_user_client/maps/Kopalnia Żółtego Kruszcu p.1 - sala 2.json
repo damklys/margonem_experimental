@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Żółtego Kruszcu p.1 - sala 2",
+ "id": 6954,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kopalnia Żółtego Kruszcu p.1 - sala 1",
+   "x": 41,
+   "y": 60
+  },
+  {
+   "to": "Chodniki Mrinding p.1 - sala 2",
+   "x": 53,
+   "y": 14
+  }
+ ]
+}

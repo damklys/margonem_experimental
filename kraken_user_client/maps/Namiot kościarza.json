@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Namiot kościarza",
+ "id": 1907,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Trupia Przełęcz"
+   "to": "Trupia Przełęcz",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 8,
+   "y": 11
   }
  ]
 }

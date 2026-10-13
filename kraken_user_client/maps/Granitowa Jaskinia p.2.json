@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Granitowa Jaskinia p.2",
+ "id": 24,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Granitowa Jaskinia",
+   "x": 14,
+   "y": 10
+  }
+ ]
+}

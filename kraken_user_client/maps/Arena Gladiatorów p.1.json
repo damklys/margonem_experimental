@@ -1,0 +1,68 @@
+{
+ "kraken": "mapa",
+ "name": "Arena Gladiatorów p.1",
+ "id": 1523,
+ "w": 34,
+ "h": 26,
+ "gateways": [
+  {
+   "to": "Cela gladiatora 1",
+   "x": 9,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Cela gladiatora 2",
+   "x": 9,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Cela gladiatora 3",
+   "x": 9,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Duża cela gladiatora 1",
+   "x": 10,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Duża cela gladiatora 2",
+   "x": 17,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Arena Gladiatorów",
+   "x": 20,
+   "y": 4
+  },
+  {
+   "to": "Duża cela gladiatora 3",
+   "x": 23,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Cela gladiatora 4",
+   "x": 24,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Cela gladiatora 5",
+   "x": 24,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Cela gladiatora 6",
+   "x": 24,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

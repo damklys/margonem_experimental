@@ -1,21 +1,72 @@
 {
  "kraken": "mapa",
  "name": "Zapomniany Szlak",
+ "id": 150,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Uroczysko"
+   "to": "Kamienna Jaskinia - sala 1",
+   "x": 15,
+   "y": 53
   },
   {
-   "to": "Mroczny Przesmyk"
+   "to": "Twierdza Magów",
+   "x": 24,
+   "y": 13,
+   "req": "(wymaga klucza)"
   },
   {
-   "to": "Mokra Grota p.1"
+   "to": "Uroczysko",
+   "x": 53,
+   "y": 0
   },
   {
-   "to": "Grota Bezszelestnych Kroków - sala 1"
+   "to": "Grota Bezszelestnych Kroków - sala 1",
+   "x": 53,
+   "y": 15
   },
   {
-   "to": "Kamienna Jaskinia - sala 1"
+   "to": "Uroczysko",
+   "x": 54,
+   "y": 0
+  },
+  {
+   "to": "Uroczysko",
+   "x": 55,
+   "y": 0
+  },
+  {
+   "to": "Mokra Grota p.1",
+   "x": 57,
+   "y": 26
+  },
+  {
+   "to": "Mroczny Przesmyk",
+   "x": 64,
+   "y": 63
+  },
+  {
+   "to": "Mroczny Przesmyk",
+   "x": 65,
+   "y": 63
+  },
+  {
+   "to": "Mroczny Przesmyk",
+   "x": 66,
+   "y": 63
+  },
+  {
+   "to": "MAP#152",
+   "x": 78,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "MAP#152",
+   "x": 79,
+   "y": 9,
+   "req": "(wymaga klucza)"
   }
  ]
 }

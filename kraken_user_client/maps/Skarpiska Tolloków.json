@@ -1,15 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Skarpiska Tolloków",
+ "id": 5948,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Skalne Turnie"
+   "to": "Mokradła",
+   "x": 0,
+   "y": 23
   },
   {
-   "to": "Polana Ścierwojadów"
+   "to": "Mokradła",
+   "x": 0,
+   "y": 24
   },
   {
-   "to": "Mokradła"
+   "to": "Polana Ścierwojadów",
+   "x": 26,
+   "y": 0
+  },
+  {
+   "to": "Polana Ścierwojadów",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Skalne Turnie",
+   "x": 63,
+   "y": 29
+  },
+  {
+   "to": "Skalne Turnie",
+   "x": 63,
+   "y": 30
   }
  ]
 }

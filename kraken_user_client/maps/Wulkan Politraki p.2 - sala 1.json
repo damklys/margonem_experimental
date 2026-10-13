@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Wulkan Politraki p.2 - sala 1",
+ "id": 7058,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Wulkan Politraki p.2 - sala 2",
+   "x": 2,
+   "y": 17
+  },
+  {
+   "to": "Wulkan Politraki p.1 - sala 2",
+   "x": 5,
+   "y": 32
+  },
+  {
+   "to": "Wulkan Politraki - przedsionek",
+   "x": 30,
+   "y": 1
+  },
+  {
+   "to": "Wulkan Politraki - przedsionek",
+   "x": 31,
+   "y": 1
+  },
+  {
+   "to": "Wulkan Politraki p.1 - sala 1",
+   "x": 40,
+   "y": 37
+  },
+  {
+   "to": "Wyspa Magradit",
+   "x": 45,
+   "y": 21
+  }
+ ]
+}

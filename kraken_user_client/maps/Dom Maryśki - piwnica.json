@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Maryśki - piwnica",
+ "id": 1897,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Maryśki",
+   "x": 6,
+   "y": 4
+  }
+ ]
+}

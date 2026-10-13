@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom babci Hani - sypialnia",
+ "id": 8129,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom babci Hani",
+   "x": 9,
+   "y": 13
+  }
+ ]
+}

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+ "id": 6945,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 1"
+   "to": "Zabłocona Jama p.2 - sala 1",
+   "x": 5,
+   "y": 13
   }
  ]
 }

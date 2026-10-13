@@ -1,15 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Spokojne Przejście",
+ "id": 214,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Eder"
+   "to": "Zasłonięte Jezioro",
+   "x": 0,
+   "y": 22
   },
   {
-   "to": "Racicowy Matecznik"
+   "to": "Zasłonięte Jezioro",
+   "x": 0,
+   "y": 23
   },
   {
-   "to": "Zasłonięte Jezioro"
+   "to": "Racicowy Matecznik",
+   "x": 7,
+   "y": 95
+  },
+  {
+   "to": "Racicowy Matecznik",
+   "x": 8,
+   "y": 95
+  },
+  {
+   "to": "Eder",
+   "x": 63,
+   "y": 34
+  },
+  {
+   "to": "Eder",
+   "x": 63,
+   "y": 35
+  },
+  {
+   "to": "Eder",
+   "x": 63,
+   "y": 36
   }
  ]
 }

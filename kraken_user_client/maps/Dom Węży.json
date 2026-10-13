@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Węży",
+ "id": 318,
+ "w": 25,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 13,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 14,
+   "y": 14
+  },
+  {
+   "to": "Pracownia Polassa",
+   "x": 18,
+   "y": 8
   }
  ]
 }

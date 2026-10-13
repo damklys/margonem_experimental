@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Uzdrowień",
+ "id": 635,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 8,
+   "y": 11
   }
  ]
 }

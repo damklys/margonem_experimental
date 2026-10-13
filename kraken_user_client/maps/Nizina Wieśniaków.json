@@ -1,30 +1,77 @@
 {
  "kraken": "mapa",
  "name": "Nizina Wieśniaków",
+ "id": 600,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
+   "to": "Zbocze Starych Bogów",
+   "x": 0,
+   "y": 16
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "x": 0,
+   "y": 17
+  },
+  {
+   "to": "Pieczara Czaszek",
+   "x": 1,
+   "y": 40
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 43,
+   "y": 0
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 44,
+   "y": 0
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 45,
+   "y": 0
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 45,
+   "y": 63
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 46,
+   "y": 63
+  },
+  {
+   "to": "Dom Chlasta",
+   "x": 80,
+   "y": 50
+  },
+  {
+   "to": "Szopa",
+   "x": 93,
+   "y": 44
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 95,
+   "y": 5
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 95,
+   "y": 6
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 95,
+   "y": 7
+  },
+  {
    "to": "Racicowy Matecznik"
-  },
-  {
-   "to": "Zbocze Starych Bogów"
-  },
-  {
-   "to": "Pieczara Czaszek"
-  },
-  {
-   "to": "Gościniec Bardów"
-  },
-  {
-   "to": "Zachodnia Rubież"
-  },
-  {
-   "to": "Dom Chlasta"
-  },
-  {
-   "to": "Szopa"
-  },
-  {
-   "to": "Podgrodzie Nithal"
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pokład Szarej Mewy",
+ "id": 1217,
+ "w": 16,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 8
+  }
+ ]
+}

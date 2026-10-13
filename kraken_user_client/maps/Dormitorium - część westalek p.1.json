@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - część westalek p.1",
+ "id": 854,
+ "w": 16,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dormitorium - część westalek",
+   "x": 13,
+   "y": 15
+  }
+ ]
+}

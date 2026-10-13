@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zakon Białej Lilii - piwnica",
+ "id": 879,
+ "w": 32,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zakon Białej Lilii - kaplica",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Zakon Białej Lilii - katakumby",
+   "x": 27,
+   "y": 5
+  }
+ ]
+}

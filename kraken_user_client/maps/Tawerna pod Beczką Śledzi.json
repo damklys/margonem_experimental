@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Tawerna pod Beczką Śledzi",
+ "id": 1333,
+ "w": 25,
+ "h": 18,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tawerna pod Beczką Śledzi p.1",
+   "x": 8,
+   "y": 2
+  },
+  {
+   "to": "Tuzmer",
+   "x": 11,
+   "y": 16
+  },
+  {
+   "to": "Tuzmer",
+   "x": 12,
+   "y": 16
+  },
+  {
+   "to": "Tuzmer",
+   "x": 13,
+   "y": 16
   }
  ]
 }

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Szepczące Wyrwy p.1 - sala 1",
+ "id": 8544,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 6",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Pękający Żleb",
+   "x": 16,
+   "y": 41
+  },
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 1",
+   "x": 40,
+   "y": 34
+  }
+ ]
+}

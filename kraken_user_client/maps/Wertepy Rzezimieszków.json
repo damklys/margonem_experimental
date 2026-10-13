@@ -1,18 +1,52 @@
 {
  "kraken": "mapa",
  "name": "Wertepy Rzezimieszków",
+ "id": 4151,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Stukot Widmowych Kół"
+   "to": "Gościniec Bardów",
+   "x": 0,
+   "y": 43
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 0,
+   "y": 44
+  },
+  {
+   "to": "Stukot Widmowych Kół",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Stukot Widmowych Kół",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Stukot Widmowych Kół",
+   "x": 19,
+   "y": 0
+  },
+  {
+   "to": "Chata szabrowników",
+   "x": 49,
+   "y": 9
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 63,
+   "y": 41
+  },
+  {
+   "to": "Dolny Bieg",
+   "x": 63,
+   "y": 42
   },
   {
    "to": "Źródło Narumi"
-  },
-  {
-   "to": "Gościniec Bardów"
-  },
-  {
-   "to": "Chata szabrowników"
   }
  ]
 }

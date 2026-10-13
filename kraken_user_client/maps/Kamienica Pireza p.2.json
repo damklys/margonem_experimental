@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Pireza p.2",
+ "id": 812,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Pireza p.1",
+   "x": 5,
+   "y": 7
+  },
+  {
+   "to": "Kamienica Pireza - gołębnik",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

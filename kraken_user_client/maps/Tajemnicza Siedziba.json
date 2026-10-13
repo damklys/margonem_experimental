@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Tajemnicza Siedziba",
+ "id": 5941,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Mroczne Komnaty",
+   "x": 2,
+   "y": 37
+  },
+  {
+   "to": "Mroczne Komnaty",
+   "x": 2,
+   "y": 38
+  },
+  {
+   "to": "Sala Spowiedzi Konających",
+   "x": 31,
+   "y": 61
+  },
+  {
+   "to": "Sala Spowiedzi Konających",
+   "x": 32,
+   "y": 61
+  },
+  {
+   "to": "Lochy Kultu",
+   "x": 61,
+   "y": 37
+  },
+  {
+   "to": "Lochy Kultu",
+   "x": 61,
+   "y": 38
+  }
+ ]
+}

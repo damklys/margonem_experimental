@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Twierdza Magów",
+ "id": 283,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zapomniany Szlak",
+   "x": 3,
+   "y": 30
+  },
+  {
+   "to": "Zapomniany Szlak",
+   "x": 4,
+   "y": 30
+  }
+ ]
+}

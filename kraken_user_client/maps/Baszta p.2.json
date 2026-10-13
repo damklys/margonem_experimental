@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta p.2",
+ "id": 1047,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta p.1",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Firnowa Grota p.2 s.1",
+ "id": 3530,
+ "w": 28,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Firnowa Grota p.2",
+   "x": 23,
+   "y": 19
+  }
+ ]
+}

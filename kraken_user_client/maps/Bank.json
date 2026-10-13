@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Bank",
+ "id": 4646,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Redrock",
+   "x": 4,
+   "y": 14
+  },
+  {
+   "to": "Redrock",
+   "x": 5,
+   "y": 14
+  },
+  {
+   "to": "Redrock",
+   "x": 6,
+   "y": 14
+  }
+ ]
+}

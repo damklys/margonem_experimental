@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Bagnista Dolina Dusz",
+ "id": 1761,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 0,
+   "y": 4
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 0,
+   "y": 5
+  },
+  {
+   "to": "Jaskinia",
+   "x": 80,
+   "y": 7
+  }
+ ]
+}

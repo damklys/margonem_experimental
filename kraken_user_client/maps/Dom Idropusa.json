@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Idropusa",
+ "id": 58,
+ "w": 18,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 10,
+   "y": 12
   }
  ]
 }

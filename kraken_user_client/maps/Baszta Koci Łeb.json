@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Koci Łeb",
+ "id": 2076,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Mury - zbrojownia",
+   "x": 9,
+   "y": 7
+  }
+ ]
+}

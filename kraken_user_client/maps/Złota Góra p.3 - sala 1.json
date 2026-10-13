@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Złota Góra p.3 - sala 1",
+ "id": 5661,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dolina Chmur",
+   "x": 5,
+   "y": 36
+  },
+  {
+   "to": "Złota Góra p.2 - sala 4",
+   "x": 58,
+   "y": 61
+  }
+ ]
+}

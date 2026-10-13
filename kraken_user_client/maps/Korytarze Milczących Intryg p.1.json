@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Milczących Intryg p.1",
+ "id": 7480,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Gryforium",
+   "x": 8,
+   "y": 3
+  },
+  {
+   "to": "Korytarze Milczących Intryg p.2 - sala 1",
+   "x": 11,
+   "y": 43
+  },
+  {
+   "to": "Korytarze Milczących Intryg p.2 - sala 2",
+   "x": 27,
+   "y": 43
+  }
+ ]
+}

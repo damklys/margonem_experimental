@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Toksyniusza p.1",
+ "id": 2218,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Toksyniusza",
+   "x": 8,
+   "y": 10
+  }
+ ]
+}

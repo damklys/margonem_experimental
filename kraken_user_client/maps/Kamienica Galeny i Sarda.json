@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Galeny i Sarda",
+ "id": 4165,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 10,
+   "y": 13
   }
  ]
 }

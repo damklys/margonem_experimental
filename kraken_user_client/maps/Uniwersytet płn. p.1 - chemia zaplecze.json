@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. p.1 - chemia zaplecze",
+ "id": 899,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn. p.1 - chemia",
+   "x": 10,
+   "y": 9
+  }
+ ]
+}

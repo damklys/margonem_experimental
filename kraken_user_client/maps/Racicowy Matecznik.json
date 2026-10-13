@@ -1,15 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Racicowy Matecznik",
+ "id": 4154,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Spokojne Przejście"
+   "to": "Ukwiecona Skarpa",
+   "x": 0,
+   "y": 49
   },
   {
-   "to": "Ukwiecona Skarpa"
+   "to": "Ukwiecona Skarpa",
+   "x": 0,
+   "y": 50
   },
   {
-   "to": "Pieczara Kwiku - sala 1"
+   "to": "Ukwiecona Skarpa",
+   "x": 0,
+   "y": 51
+  },
+  {
+   "to": "Pieczara Kwiku - sala 1",
+   "x": 6,
+   "y": 31
+  },
+  {
+   "to": "Spokojne Przejście",
+   "x": 39,
+   "y": 0
+  },
+  {
+   "to": "Spokojne Przejście",
+   "x": 40,
+   "y": 0
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 95,
+   "y": 43
+  },
+  {
+   "to": "Gościniec Bardów",
+   "x": 95,
+   "y": 44
   }
  ]
 }

@@ -1,21 +1,87 @@
 {
  "kraken": "mapa",
  "name": "Zniszczone Opactwo",
+ "id": 8,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Uroczysko",
+   "x": 0,
+   "y": 38
   },
   {
-   "to": "Uroczysko"
+   "to": "Uroczysko",
+   "x": 0,
+   "y": 39
   },
   {
-   "to": "Leśny Bród"
+   "to": "Piekielna Grota p.1",
+   "x": 3,
+   "y": 52
   },
   {
-   "to": "Zburzona Twierdza"
+   "to": "MAP#1055",
+   "x": 5,
+   "y": 53,
+   "req": "(wymaga klucza)"
   },
   {
-   "to": "Piekielna Grota p.1"
+   "to": "MAP#212",
+   "x": 9,
+   "y": 51,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Ithan",
+   "x": 10,
+   "y": 0
+  },
+  {
+   "to": "Zburzona Twierdza",
+   "x": 10,
+   "y": 63
+  },
+  {
+   "to": "Ithan",
+   "x": 11,
+   "y": 0
+  },
+  {
+   "to": "Zburzona Twierdza",
+   "x": 11,
+   "y": 63
+  },
+  {
+   "to": "Ithan",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "to": "Opactwo",
+   "x": 30,
+   "y": 25
+  },
+  {
+   "to": "MAP#723",
+   "x": 59,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Granitowa Jaskinia",
+   "x": 61,
+   "y": 56
+  },
+  {
+   "to": "Leśny Bród",
+   "x": 63,
+   "y": 17
+  },
+  {
+   "to": "Leśny Bród",
+   "x": 63,
+   "y": 18
   }
  ]
 }

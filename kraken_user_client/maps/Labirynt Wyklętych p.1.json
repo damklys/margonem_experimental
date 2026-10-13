@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Labirynt Wyklętych p.1",
+ "id": 847,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.2 - sala 1"
+   "to": "Labirynt Wyklętych p.2 - sala 1",
+   "x": 19,
+   "y": 15
   },
   {
-   "to": "Pieczara Czaszek"
+   "to": "Pieczara Czaszek",
+   "x": 42,
+   "y": 2
   },
   {
-   "to": "Labirynt Wyklętych p.2 - sala 2"
+   "to": "Labirynt Wyklętych p.2 - sala 2",
+   "x": 45,
+   "y": 34
   }
  ]
 }

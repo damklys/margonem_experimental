@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Gnomów",
+ "id": 3025,
+ "w": 50,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Ukryty korytarz",
+   "x": 47,
+   "y": 14
+  }
+ ]
+}

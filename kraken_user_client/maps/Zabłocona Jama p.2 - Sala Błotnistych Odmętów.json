@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów",
+ "id": 6944,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 2"
+   "to": "Zabłocona Jama p.2 - sala 2",
+   "x": 41,
+   "y": 5
   }
  ]
 }

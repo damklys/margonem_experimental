@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Eklektusa",
+ "id": 733,
+ "w": 16,
+ "h": 17,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Kamienica Eklektusa p.1",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 14
   }
  ]
 }

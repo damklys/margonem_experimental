@@ -1,0 +1,129 @@
+{
+ "kraken": "mapa",
+ "name": "Tristam",
+ "id": 1297,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zachodnie Zbocze",
+   "x": 0,
+   "y": 30,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Zachodnie Zbocze",
+   "x": 0,
+   "y": 31,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Splądrowana kaplica",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Splądrowana kaplica",
+   "x": 9,
+   "y": 10
+  },
+  {
+   "to": "Dom Atalii",
+   "x": 13,
+   "y": 32
+  },
+  {
+   "to": "Dom czarnej magii",
+   "x": 28,
+   "y": 51
+  },
+  {
+   "to": "Opuszczone więzienie",
+   "x": 31,
+   "y": 19
+  },
+  {
+   "to": "Dom Amry",
+   "x": 40,
+   "y": 47
+  },
+  {
+   "to": "Dom nawiedzonej wiedźmy",
+   "x": 45,
+   "y": 28
+  },
+  {
+   "to": "Dom starej czarownicy",
+   "x": 52,
+   "y": 25
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 54,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 55,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 56,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Magazyn mioteł",
+   "x": 70,
+   "y": 54
+  },
+  {
+   "to": "Splugawiona kaplica",
+   "x": 73,
+   "y": 20
+  },
+  {
+   "to": "Splugawiona kaplica",
+   "x": 74,
+   "y": 20
+  },
+  {
+   "to": "Dom Adariel",
+   "x": 79,
+   "y": 51
+  },
+  {
+   "to": "Ograbiona świątynia",
+   "x": 85,
+   "y": 13
+  },
+  {
+   "to": "Ograbiona świątynia",
+   "x": 86,
+   "y": 13
+  },
+  {
+   "to": "Ograbiona świątynia",
+   "x": 87,
+   "y": 13
+  },
+  {
+   "to": "Sabatowe Góry",
+   "x": 95,
+   "y": 54
+  },
+  {
+   "to": "Sabatowe Góry",
+   "x": 95,
+   "y": 55
+  },
+  {
+   "to": "Sabatowe Góry",
+   "x": 95,
+   "y": 56
+  }
+ ]
+}

@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Szopa",
- "gateways": []
+ "id": 2430,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Nizina Wieśniaków",
+   "x": 8,
+   "y": 11
+  }
+ ]
 }

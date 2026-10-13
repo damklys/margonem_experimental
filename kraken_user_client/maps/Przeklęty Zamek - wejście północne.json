@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek - wejście północne",
+ "id": 168,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Stare Ruiny"
+   "to": "Stare Ruiny",
+   "x": 11,
+   "y": 2
   },
   {
-   "to": "Przeklęty Zamek - podziemia północne"
+   "to": "Przeklęty Zamek - podziemia północne",
+   "x": 21,
+   "y": 13
   }
  ]
 }

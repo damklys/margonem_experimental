@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jurta Chaegda",
+ "id": 3321,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 10,
+   "y": 13
+  },
+  {
+   "to": "Jaskinia Smoczej Paszczy p.1",
+   "x": 14,
+   "y": 6
+  }
+ ]
+}

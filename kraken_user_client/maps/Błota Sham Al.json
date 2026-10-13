@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Błota Sham Al",
+ "id": 5983,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 0,
+   "y": 37
+  },
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 28,
+   "y": 0
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Głusza Świstu",
+   "x": 63,
+   "y": 15
+  },
+  {
+   "to": "Głusza Świstu",
+   "x": 63,
+   "y": 16
+  }
+ ]
+}

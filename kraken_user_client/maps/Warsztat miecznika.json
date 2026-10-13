@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Warsztat miecznika",
+ "id": 1836,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Przedmieścia Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Warsztat miecznika - piwnica",
+   "x": 12,
+   "y": 10
   }
  ]
 }

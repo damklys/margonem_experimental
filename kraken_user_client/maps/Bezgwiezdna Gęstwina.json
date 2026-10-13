@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "Bezgwiezdna Gęstwina",
+ "id": 7681,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Bór Zagubionych",
+   "x": 0,
+   "y": 62
+  },
+  {
+   "to": "Bór Zagubionych",
+   "x": 0,
+   "y": 63
+  },
+  {
+   "to": "Ukwiecona Skarpa",
+   "x": 2,
+   "y": 0
+  },
+  {
+   "to": "Ukwiecona Skarpa",
+   "x": 3,
+   "y": 0
+  },
+  {
+   "to": "Martwy Las",
+   "x": 10,
+   "y": 95
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 48,
+   "y": 95
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 49,
+   "y": 95
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "x": 63,
+   "y": 53
+  },
+  {
+   "to": "Zbocze Starych Bogów",
+   "x": 63,
+   "y": 54
+  }
+ ]
+}

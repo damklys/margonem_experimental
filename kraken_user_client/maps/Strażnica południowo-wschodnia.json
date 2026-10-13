@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Strażnica południowo-wschodnia",
+ "id": 2713,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ithan",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Kordegarda",
+   "x": 8,
+   "y": 8
+  }
+ ]
+}

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Świszcząca Grota p.4",
+ "id": 120,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Świszcząca Grota p.3"
+   "to": "Świszcząca Grota p.3",
+   "x": 9,
+   "y": 14
   }
  ]
 }

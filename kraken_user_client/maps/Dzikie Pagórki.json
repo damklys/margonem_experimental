@@ -1,15 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dzikie Pagórki",
+ "id": 1267,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Tygrysia Polana"
+   "to": "Tygrysia Polana",
+   "x": 0,
+   "y": 19
   },
   {
-   "to": "Jaskinia Dzikich Kotów"
+   "to": "Jaskinia Dzikich Kotów",
+   "x": 9,
+   "y": 38
   },
   {
-   "to": "Pradawne Wzgórze Przodków"
+   "to": "Pradawne Wzgórze Przodków",
+   "x": 42,
+   "y": 95
+  },
+  {
+   "to": "Pradawne Wzgórze Przodków",
+   "x": 43,
+   "y": 95
   }
  ]
 }

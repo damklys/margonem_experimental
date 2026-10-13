@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum krasnoludów - piwnica p.1",
+ "id": 1849,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Lokum krasnoludów",
+   "x": 3,
+   "y": 3
+  },
+  {
+   "to": "Lokum krasnoludów - piwnica p.2",
+   "x": 12,
+   "y": 13
+  }
+ ]
+}

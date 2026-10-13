@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Wąwóz Zakorzenionych Dusz",
+ "id": 3595,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Krzaczasta Grota p.2 - sala 1",
+   "x": 5,
+   "y": 46
+  },
+  {
+   "to": "Krzaczasta Grota p.1 - sala 1",
+   "x": 26,
+   "y": 45
+  },
+  {
+   "to": "Krzaczasta Grota p.2 - sala 2",
+   "x": 63,
+   "y": 16
+  },
+  {
+   "to": "Regiel Zabłąkanych",
+   "x": 70,
+   "y": 63
+  },
+  {
+   "to": "Urwisko Zdrewniałych",
+   "x": 95,
+   "y": 37
+  },
+  {
+   "to": "Urwisko Zdrewniałych",
+   "x": 95,
+   "y": 38
+  }
+ ]
+}

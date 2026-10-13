@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Siedziba rekieterów",
- "gateways": []
+ "id": 6951,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Siedziba rekieterów p.1",
+   "x": 9,
+   "y": 2
+  }
+ ]
 }

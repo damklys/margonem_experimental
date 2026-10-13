@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Posępnym Czerepem",
+ "id": 40,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 2,
+   "y": 19
+  },
+  {
+   "to": "Eder",
+   "x": 3,
+   "y": 19
+  },
+  {
+   "to": "Karczma pod Posępnym Czerepem p.1",
+   "x": 21,
+   "y": 3
+  }
+ ]
+}

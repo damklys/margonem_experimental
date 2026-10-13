@@ -1,0 +1,25 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów p.2 - sala 2",
+ "id": 7473,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów - warsztat",
+   "x": 5,
+   "y": 27,
+   "req": "Przejście dostępne do 167 poziomu"
+  },
+  {
+   "to": "Lokum Złych Goblinów p.3 - sala 2",
+   "x": 40,
+   "y": 31
+  },
+  {
+   "to": "Lokum Złych Goblinów p.2 - sala 1",
+   "x": 44,
+   "y": 8
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Lodowej Magii",
+ "id": 2353,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 2,
+   "y": 2
+  }
+ ]
+}

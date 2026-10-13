@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom kaletnika Jędrzeja p.1",
+ "id": 1410,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom kaletnika Jędrzeja",
+   "x": 10,
+   "y": 9
+  }
+ ]
+}

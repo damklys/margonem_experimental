@@ -1,0 +1,31 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodni Mictlan p.8",
+ "id": 5694,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zachodni Mictlan p.7",
+   "x": 15,
+   "y": 1
+  },
+  {
+   "to": "Zachodni Mictlan p.9",
+   "x": 15,
+   "y": 24,
+   "req": "Przejście dostępne do 271 poziomu"
+  },
+  {
+   "to": "Zachodni Mictlan p.7",
+   "x": 16,
+   "y": 1
+  },
+  {
+   "to": "Zachodni Mictlan p.9",
+   "x": 16,
+   "y": 24,
+   "req": "Przejście dostępne do 271 poziomu"
+  }
+ ]
+}

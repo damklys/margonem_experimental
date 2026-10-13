@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Przerażające Sypialnie",
+ "id": 5940,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Mroczne Komnaty",
+   "x": 31,
+   "y": 35
+  },
+  {
+   "to": "Mroczne Komnaty",
+   "x": 32,
+   "y": 35
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 61,
+   "y": 33
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 61,
+   "y": 34
+  }
+ ]
+}

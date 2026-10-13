@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Nerthusa - sala obrad",
+ "id": 3131,
+ "w": 25,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "x": 11,
+   "y": 13
+  },
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "x": 12,
+   "y": 13
+  },
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "x": 13,
+   "y": 13
+  }
+ ]
+}

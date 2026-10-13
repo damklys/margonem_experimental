@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Apartament 5",
+ "id": 1549,
+ "w": 19,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Zajazd pod Różą Wiatrów p.1",
+   "x": 8,
+   "y": 17
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów p.1",
+   "x": 9,
+   "y": 17
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów p.1",
+   "x": 10,
+   "y": 17
+  }
+ ]
+}

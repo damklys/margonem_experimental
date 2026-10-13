@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Magistrat - skarbiec",
+ "id": 1518,
+ "w": 18,
+ "h": 26,
+ "gateways": [
+  {
+   "to": "Magistrat",
+   "x": 13,
+   "y": 18
+  }
+ ]
+}

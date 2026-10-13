@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Mroczne Komnaty",
+ "id": 5939,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przedsionek Kultu",
+   "x": 31,
+   "y": 6
+  },
+  {
+   "to": "Przerażające Sypialnie",
+   "x": 31,
+   "y": 43
+  },
+  {
+   "to": "Przedsionek Kultu",
+   "x": 32,
+   "y": 6
+  },
+  {
+   "to": "Przerażające Sypialnie",
+   "x": 32,
+   "y": 43
+  },
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 62,
+   "y": 38
+  },
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 62,
+   "y": 39
+  },
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 62,
+   "y": 40
+  }
+ ]
+}

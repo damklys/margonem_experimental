@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście astronoma",
+ "id": 1054,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta",
+   "x": 6,
+   "y": 2
+  },
+  {
+   "to": "Grota pod Basztą",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

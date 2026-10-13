@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Suchych Pędów s.1",
+ "id": 6059,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Gvar Hamryd",
+   "x": 9,
+   "y": 36
+  },
+  {
+   "to": "Gvar Hamryd",
+   "x": 10,
+   "y": 36
+  },
+  {
+   "to": "Jaskinia Suchych Pędów s.2",
+   "x": 42,
+   "y": 49
+  }
+ ]
+}

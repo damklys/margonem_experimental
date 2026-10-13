@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Szemrzącą Beczułką",
+ "id": 2484,
+ "w": 28,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 6,
+   "y": 18
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 7,
+   "y": 18
+  }
+ ]
+}

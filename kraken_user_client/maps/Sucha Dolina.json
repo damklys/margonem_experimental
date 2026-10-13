@@ -1,12 +1,61 @@
 {
  "kraken": "mapa",
  "name": "Sucha Dolina",
+ "id": 2864,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Płaskowyż Arpan"
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 0,
+   "y": 38
   },
   {
-   "to": "Stare Sioło"
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Grobowiec Nieznających Spokoju",
+   "x": 38,
+   "y": 7
+  },
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 43,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 44,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 45,
+   "y": 95
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 46,
+   "y": 95
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 47,
+   "y": 95
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 63,
+   "y": 49
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 63,
+   "y": 50
   }
  ]
 }

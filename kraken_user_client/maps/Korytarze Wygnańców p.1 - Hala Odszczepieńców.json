@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Wygnańców p.1 - Hala Odszczepieńców",
+ "id": 7362,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Korytarze Wygnańców p.2 - Komnata Wygnańców",
+   "x": 3,
+   "y": 20
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Szlachetnych",
+   "x": 11,
+   "y": 60
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Komora Opuszczonych",
+   "x": 15,
+   "y": 7
+  },
+  {
+   "to": "Wyspa Ingotia",
+   "x": 54,
+   "y": 59
+  }
+ ]
+}

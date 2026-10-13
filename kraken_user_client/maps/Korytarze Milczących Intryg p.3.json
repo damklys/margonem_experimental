@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Milczących Intryg p.3",
+ "id": 7483,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Korytarze Milczących Intryg p.2 - sala 1",
+   "x": 9,
+   "y": 20
+  },
+  {
+   "to": "Sala Ukrytych Paktów",
+   "x": 15,
+   "y": 5
+  },
+  {
+   "to": "Sala Ukrytych Paktów",
+   "x": 16,
+   "y": 5
+  },
+  {
+   "to": "Korytarze Milczących Intryg p.2 - sala 2",
+   "x": 22,
+   "y": 20
+  }
+ ]
+}

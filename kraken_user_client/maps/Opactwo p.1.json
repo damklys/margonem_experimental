@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Opactwo p.1",
+ "id": 291,
+ "w": 24,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Opactwo",
+   "x": 5,
+   "y": 9
+  }
+ ]
+}

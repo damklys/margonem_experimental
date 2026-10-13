@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Szlak Thorpa p.1",
+ "id": 3467,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Podziemne Rozpadliny",
+   "x": 10,
+   "y": 15
+  },
+  {
+   "to": "Szlak Thorpa p.2",
+   "x": 15,
+   "y": 8
+  }
+ ]
+}

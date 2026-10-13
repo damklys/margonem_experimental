@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Cytadela - przejście",
+ "id": 870,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Więzienie Nithal",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "Więzienie Nithal",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "Cytadela",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Północne mury Nithal - część wschodnia",
+   "x": 13,
+   "y": 5
+  }
+ ]
+}

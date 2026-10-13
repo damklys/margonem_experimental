@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - skarbczyk",
+ "id": 2547,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - kapitularz",
+   "x": 12,
+   "y": 3
+  }
+ ]
+}

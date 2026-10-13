@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Ithan p.1",
+ "id": 766,
+ "w": 30,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Ithan",
+   "x": 14,
+   "y": 5
+  },
+  {
+   "to": "Ratusz Ithan",
+   "x": 15,
+   "y": 5
+  }
+ ]
+}

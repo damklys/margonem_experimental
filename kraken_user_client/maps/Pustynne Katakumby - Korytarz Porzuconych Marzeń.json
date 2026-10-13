@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Korytarz Porzuconych Marzeń",
+ "id": 3041,
+ "w": 38,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 2,
+   "y": 14
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 3,
+   "y": 14
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 32,
+   "y": 8
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+   "x": 33,
+   "y": 8
+  }
+ ]
+}

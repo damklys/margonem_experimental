@@ -1,9 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Święty Zagajnik",
+ "id": 1084,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Chata Letanii i Flaviusa",
+   "x": 5,
+   "y": 21
+  },
+  {
+   "to": "Chata Multinii i Szeptusa",
+   "x": 14,
+   "y": 18
+  },
+  {
+   "to": "Chata Fanii i Arheniusa",
+   "x": 19,
+   "y": 21
+  },
+  {
+   "to": "Wóz Alizy i Thorna",
+   "x": 47,
+   "y": 36
+  },
+  {
+   "to": "Wóz Ksenii i Brunona",
+   "x": 50,
+   "y": 34
+  },
+  {
+   "to": "Kaplica Światłości",
+   "x": 66,
+   "y": 17
+  },
+  {
+   "to": "Kaplica Światłości",
+   "x": 67,
+   "y": 17
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 95,
+   "y": 37
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 95,
+   "y": 38
   }
  ]
 }

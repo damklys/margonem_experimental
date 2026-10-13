@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniana kopalnia p.3",
+ "id": 3248,
+ "w": 32,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Zapomniana kopalnia p.2",
+   "x": 17,
+   "y": 13
+  }
+ ]
+}

@@ -1,9 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Uniwersytet płn.",
+ "id": 890,
+ "w": 24,
+ "h": 18,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 3,
+   "y": 16
+  },
+  {
+   "to": "Uniwersytet płn. p.1 - chemia",
+   "x": 4,
+   "y": 1
+  },
+  {
+   "to": "Nithal",
+   "x": 4,
+   "y": 16
+  },
+  {
+   "to": "Uniwersytet płn. - piwnica p.1",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Nithal",
+   "x": 5,
+   "y": 16
+  },
+  {
+   "to": "Uniwersytet płn. - zaplecze",
+   "x": 16,
+   "y": 8
+  },
+  {
+   "to": "Uniwersytet płn. p.1 - gabinety",
+   "x": 20,
+   "y": 1
   }
  ]
 }

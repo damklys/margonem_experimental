@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Gvar Hamryd",
+ "id": 5988,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Matecznik Szelestu",
+   "x": 0,
+   "y": 79
+  },
+  {
+   "to": "Matecznik Szelestu",
+   "x": 0,
+   "y": 80
+  },
+  {
+   "to": "Rozlewisko Kai",
+   "x": 11,
+   "y": 0
+  },
+  {
+   "to": "Rozlewisko Kai",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "to": "Jaskinia Suchych Pędów s.4",
+   "x": 20,
+   "y": 58
+  },
+  {
+   "to": "Jaskinia Suchych Pędów s.1",
+   "x": 46,
+   "y": 29
+  },
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 63,
+   "y": 41
+  },
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 63,
+   "y": 42
+  }
+ ]
+}

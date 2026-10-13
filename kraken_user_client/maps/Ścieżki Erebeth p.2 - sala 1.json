@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Ścieżki Erebeth p.2 - sala 1",
+ "id": 7460,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Chodniki Mrinding p.2 - sala 2",
+   "x": 2,
+   "y": 19
+  },
+  {
+   "to": "Ścieżki Erebeth p.3",
+   "x": 30,
+   "y": 44
+  },
+  {
+   "to": "Ścieżki Erebeth p.2 - sala 2",
+   "x": 45,
+   "y": 31
+  },
+  {
+   "to": "Ścieżki Erebeth p.2 - sala 2",
+   "x": 45,
+   "y": 32
+  }
+ ]
+}

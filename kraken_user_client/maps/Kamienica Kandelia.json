@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Kandelia",
+ "id": 1805,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Kamienica Kandelia - piwnica",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Kandelia p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

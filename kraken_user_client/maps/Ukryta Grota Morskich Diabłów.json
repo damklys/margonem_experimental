@@ -1,0 +1,56 @@
+{
+ "kraken": "mapa",
+ "name": "Ukryta Grota Morskich Diabłów",
+ "id": 1525,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Ukryta Grota Morskich Diabłów - arsenał",
+   "x": 4,
+   "y": 5
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 18,
+   "y": 61
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 19,
+   "y": 61
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 20,
+   "y": 7
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 21,
+   "y": 7
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - siedziba",
+   "x": 35,
+   "y": 5
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - siedziba",
+   "x": 36,
+   "y": 5
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - magazyn",
+   "x": 57,
+   "y": 8,
+   "req": "Przejście dostępne do 144 poziomu"
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - magazyn",
+   "x": 58,
+   "y": 8,
+   "req": "Przejście dostępne do 144 poziomu"
+  }
+ ]
+}

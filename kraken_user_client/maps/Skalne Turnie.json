@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Skalne Turnie",
+ "id": 5293,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Legowisko Wilczej Hordy"
+   "to": "Skarpiska Tolloków",
+   "x": 0,
+   "y": 29
   },
   {
-   "to": "Skarpiska Tolloków"
+   "to": "Skarpiska Tolloków",
+   "x": 0,
+   "y": 30
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 18,
+   "y": 0
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zbójecka spiżarnia p.1",
+ "id": 2014,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zbójecka spiżarnia",
+   "x": 3,
+   "y": 12
+  },
+  {
+   "to": "Zbójecka spiżarnia - zbrojownia",
+   "x": 12,
+   "y": 6
+  }
+ ]
+}

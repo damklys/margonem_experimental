@@ -1,0 +1,90 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodnie Rozdroża",
+ "id": 128,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Ustronie Widzących Drzew",
+   "x": 0,
+   "y": 62
+  },
+  {
+   "to": "Ustronie Widzących Drzew",
+   "x": 0,
+   "y": 63
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 15,
+   "y": 95
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 16,
+   "y": 95
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 17,
+   "y": 95
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 18,
+   "y": 95
+  },
+  {
+   "to": "Cienisty Bór",
+   "x": 19,
+   "y": 95
+  },
+  {
+   "to": "Przepastna Grota p.1",
+   "x": 23,
+   "y": 6
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 45,
+   "y": 0
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 46,
+   "y": 0
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 47,
+   "y": 0
+  },
+  {
+   "to": "Pieczara Wiatru p.1",
+   "x": 50,
+   "y": 17
+  },
+  {
+   "to": "MAP#724",
+   "x": 58,
+   "y": 55,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 63,
+   "y": 23
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 63,
+   "y": 24
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 63,
+   "y": 73
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Oztotl Tzacua p.4 - sala 1",
+ "id": 5669,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Oztotl Tzacua p.3 - sala 1",
+   "x": 7,
+   "y": 29
+  },
+  {
+   "to": "Oztotl Tzacua p.4 - sala 2",
+   "x": 28,
+   "y": 22
+  }
+ ]
+}

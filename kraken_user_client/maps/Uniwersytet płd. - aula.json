@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płd. - aula",
+ "id": 1720,
+ "w": 26,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Uniwersytet płd.",
+   "x": 15,
+   "y": 15
+  }
+ ]
+}

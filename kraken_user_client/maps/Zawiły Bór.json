@@ -1,21 +1,79 @@
 {
  "kraken": "mapa",
  "name": "Zawiły Bór",
+ "id": 330,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Selva Oscura"
+   "to": "Selva Oscura",
+   "x": 0,
+   "y": 37
   },
   {
-   "to": "Iglaste Ścieżki"
+   "to": "Selva Oscura",
+   "x": 0,
+   "y": 38
   },
   {
-   "to": "Błędny Szlak"
+   "to": "Selva Oscura",
+   "x": 0,
+   "y": 39
   },
   {
-   "to": "Zabłocona Jama p.1 - sala 1"
+   "to": "Solny Szyb p.1",
+   "x": 26,
+   "y": 42
   },
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 31,
+   "y": 63
+  },
+  {
+   "to": "Mythar",
+   "x": 32,
+   "y": 63
+  },
+  {
+   "to": "Mythar",
+   "x": 33,
+   "y": 63
+  },
+  {
+   "to": "Zabłocona Jama p.1 - sala 1",
+   "x": 49,
+   "y": 44
+  },
+  {
+   "to": "Iglaste Ścieżki",
+   "x": 70,
+   "y": 0
+  },
+  {
+   "to": "Iglaste Ścieżki",
+   "x": 71,
+   "y": 0
+  },
+  {
+   "to": "Iglaste Ścieżki",
+   "x": 72,
+   "y": 0
+  },
+  {
+   "to": "Błędny Szlak",
+   "x": 95,
+   "y": 24
+  },
+  {
+   "to": "Błędny Szlak",
+   "x": 95,
+   "y": 25
+  },
+  {
+   "to": "Błędny Szlak",
+   "x": 95,
+   "y": 26
   }
  ]
 }

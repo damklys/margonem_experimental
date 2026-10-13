@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Wyspa Rem",
+ "id": 1741,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Opuszczony statek - pokład pod rufą",
+   "x": 30,
+   "y": 43
+  }
+ ]
+}

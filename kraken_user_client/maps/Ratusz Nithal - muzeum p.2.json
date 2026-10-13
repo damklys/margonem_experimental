@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Nithal - muzeum p.2",
+ "id": 1023,
+ "w": 50,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Ratusz Nithal - muzeum p.1",
+   "x": 24,
+   "y": 18
+  },
+  {
+   "to": "Ratusz Nithal - muzeum p.1",
+   "x": 25,
+   "y": 18
+  }
+ ]
+}

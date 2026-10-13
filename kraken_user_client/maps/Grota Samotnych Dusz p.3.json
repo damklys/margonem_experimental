@@ -1,18 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Grota Samotnych Dusz p.3",
+ "id": 1355,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa"
+   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+   "x": 13,
+   "y": 61
   },
   {
-   "to": "Ślepe Wyrobisko"
+   "to": "Ślepe Wyrobisko",
+   "x": 36,
+   "y": 28
   },
   {
-   "to": "Grota Samotnych Dusz p.4"
+   "to": "Grota Samotnych Dusz p.4",
+   "x": 55,
+   "y": 44
   },
   {
-   "to": "Grota Samotnych Dusz p.2"
+   "to": "Grota Samotnych Dusz p.2",
+   "x": 56,
+   "y": 3
   }
  ]
 }

@@ -1,0 +1,35 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Schadzek",
+ "id": 163,
+ "w": 24,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Piwnica pod Domem Schadzek",
+   "x": 2,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom Schadzek p.1",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Eder",
+   "x": 9,
+   "y": 18
+  },
+  {
+   "to": "Eder",
+   "x": 10,
+   "y": 18
+  },
+  {
+   "to": "Eder",
+   "x": 11,
+   "y": 18
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Wygnańców p.1 - Sala Szlachetnych",
+ "id": 7363,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Ech",
+   "x": 3,
+   "y": 38
+  },
+  {
+   "to": "Korytarze Wygnańców p.2 - Sala Żądzy",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Hala Odszczepieńców",
+   "x": 31,
+   "y": 8
+  }
+ ]
+}

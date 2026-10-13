@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Jalena i Tafii",
+ "id": 60,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 10,
+   "y": 10
+  },
+  {
+   "to": "Dom Jalena i Tafii p.1",
+   "x": 13,
+   "y": 3
   }
  ]
 }

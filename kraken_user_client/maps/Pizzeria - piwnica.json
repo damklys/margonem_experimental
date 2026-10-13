@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pizzeria - piwnica",
+ "id": 2951,
+ "w": 34,
+ "h": 37,
+ "gateways": [
+  {
+   "to": "Pizzeria",
+   "x": 17,
+   "y": 14
+  }
+ ]
+}

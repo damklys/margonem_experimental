@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Korsarska Nora - sala 3",
+ "id": 1339,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Korsarska Nora - sala 2",
+   "x": 25,
+   "y": 39
+  },
+  {
+   "to": "Korsarska Nora - zachodni przełaz",
+   "x": 30,
+   "y": 11
+  }
+ ]
+}

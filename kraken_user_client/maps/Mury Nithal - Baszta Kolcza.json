@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Mury Nithal - Baszta Kolcza",
+ "id": 961,
+ "w": 20,
+ "h": 30,
+ "gateways": [
+  {
+   "to": "Południowe mury Nithal - część wschodnia",
+   "x": 1,
+   "y": 22
+  },
+  {
+   "to": "Południowe mury Nithal - część wschodnia",
+   "x": 1,
+   "y": 23
+  },
+  {
+   "to": "Wschodnie mury Nithal",
+   "x": 9,
+   "y": 2
+  },
+  {
+   "to": "Wschodnie mury Nithal",
+   "x": 10,
+   "y": 2
+  }
+ ]
+}

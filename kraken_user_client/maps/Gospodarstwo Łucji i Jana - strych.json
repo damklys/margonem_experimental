@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Łucji i Jana - strych",
+ "id": 884,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Łucji i Jana p.1 - sypialnia",
+   "x": 5,
+   "y": 7
+  }
+ ]
+}

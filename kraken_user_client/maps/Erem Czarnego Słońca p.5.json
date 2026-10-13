@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.5",
- "gateways": []
+ "id": 6623,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Erem Czarnego Słońca p.4 - sala 1",
+   "x": 32,
+   "y": 36
+  },
+  {
+   "to": "Erem Czarnego Słońca p.4 - sala 1",
+   "x": 33,
+   "y": 36
+  }
+ ]
 }

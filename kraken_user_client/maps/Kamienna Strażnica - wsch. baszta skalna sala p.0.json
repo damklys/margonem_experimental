@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
+ "id": 1148,
+ "w": 26,
+ "h": 32,
  "gateways": [
   {
-   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1"
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+   "x": 9,
+   "y": 3
   }
  ]
 }

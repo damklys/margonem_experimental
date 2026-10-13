@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Namiot Vari Krugera",
- "gateways": []
+ "id": 2646,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Gnolli",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Wioska Gnolli",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Wioska Gnolli",
+   "x": 9,
+   "y": 14
+  }
+ ]
 }

@@ -8,20 +8,12 @@
   {
    "to": "Brama Północy",
    "x": 6,
-   "y": 7,
-   "toId": 37,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 7
   },
   {
    "to": "Zapomniana kopalnia p.2",
    "x": 7,
-   "y": 21,
-   "toId": 3247,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 21
   }
  ]
 }

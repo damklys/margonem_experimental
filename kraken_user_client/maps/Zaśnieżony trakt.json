@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Zaśnieżony trakt",
+ "id": 6858,
+ "w": 64,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 1,
+   "y": 14
+  },
+  {
+   "to": "Obóz biedoty",
+   "x": 61,
+   "y": 8
+  },
+  {
+   "to": "Obóz biedoty",
+   "x": 61,
+   "y": 9
+  }
+ ]
+}

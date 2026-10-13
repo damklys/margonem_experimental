@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - zbrojownia",
+ "id": 6615,
+ "w": 32,
+ "h": 64,
  "gateways": [
   {
-   "to": "Świątynia Andarum - magazyn p.2"
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 15,
+   "y": 51
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 16,
+   "y": 51
   }
  ]
 }

@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Almonda",
- "gateways": []
+ "id": 622,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Almonda p.1",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 10,
+   "y": 14
+  }
+ ]
 }

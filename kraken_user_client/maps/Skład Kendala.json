@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Skład Kendala",
+ "id": 1225,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kuźnia Kendala",
+   "x": 7,
+   "y": 4
+  }
+ ]
+}

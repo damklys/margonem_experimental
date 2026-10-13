@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Bogdana i Bronki",
+ "id": 8516,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podbrzezie",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Podbrzezie",
+   "x": 6,
+   "y": 13
+  }
+ ]
+}

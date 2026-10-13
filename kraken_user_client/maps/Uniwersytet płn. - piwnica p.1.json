@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. - piwnica p.1",
+ "id": 896,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn. - piwnica p.2",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Uniwersytet płn.",
+   "x": 10,
+   "y": 2
+  }
+ ]
+}

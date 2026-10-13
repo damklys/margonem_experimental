@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Sowy p.2",
+ "id": 2170,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Sowy p.1",
+   "x": 9,
+   "y": 11
+  }
+ ]
+}

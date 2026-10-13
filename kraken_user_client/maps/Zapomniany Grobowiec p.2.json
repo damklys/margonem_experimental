@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Zapomniany Grobowiec p.2",
+ "id": 702,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zapomniany Grobowiec p.1"
+   "to": "Zapomniany Grobowiec p.3",
+   "x": 29,
+   "y": 53
   },
   {
-   "to": "Zapomniany Grobowiec p.3"
+   "to": "Zapomniany Grobowiec p.1",
+   "x": 55,
+   "y": 11
   }
  ]
 }

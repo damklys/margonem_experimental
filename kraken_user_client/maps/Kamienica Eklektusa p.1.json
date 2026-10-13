@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Eklektusa p.1",
+ "id": 734,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Eklektusa p.2",
+   "x": 4,
+   "y": 2
+  },
+  {
+   "to": "Kamienica Eklektusa",
+   "x": 5,
+   "y": 12
+  }
+ ]
+}

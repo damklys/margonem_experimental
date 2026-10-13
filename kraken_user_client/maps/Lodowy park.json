@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lodowy park",
+ "id": 6924,
+ "w": 33,
+ "h": 33,
+ "gateways": [
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 29,
+   "y": 13
+  }
+ ]
+}

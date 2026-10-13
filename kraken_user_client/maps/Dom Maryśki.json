@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Maryśki",
+ "id": 1790,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Dom Maryśki - piwnica",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 10,
+   "y": 12
   }
  ]
 }

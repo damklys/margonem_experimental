@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Edny - piwnica p.1",
+ "id": 620,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Edny",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Straży Portowej p.1",
+ "id": 1414,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba Straży Portowej",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

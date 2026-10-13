@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Tamena - piwnica",
+ "id": 750,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Tamena",
+   "x": 6,
+   "y": 3
+  }
+ ]
+}

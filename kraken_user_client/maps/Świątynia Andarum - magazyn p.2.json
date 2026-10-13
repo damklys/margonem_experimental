@@ -1,18 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - magazyn p.2",
+ "id": 6614,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Świątynia Andarum - lokum mnichów"
+   "to": "Erem Czarnego Słońca p.4 - sala 2",
+   "x": 1,
+   "y": 22
   },
   {
-   "to": "Świątynia Andarum - magazyn p.1"
+   "to": "Erem Czarnego Słońca p.4 - sala 2",
+   "x": 1,
+   "y": 23
   },
   {
-   "to": "Świątynia Andarum - zbrojownia"
+   "to": "Świątynia Andarum - zbrojownia",
+   "x": 13,
+   "y": 56
   },
   {
-   "to": "Erem Czarnego Słońca p.4 - sala 2"
+   "to": "Świątynia Andarum - zbrojownia",
+   "x": 14,
+   "y": 56
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.1",
+   "x": 47,
+   "y": 46
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.1",
+   "x": 48,
+   "y": 46
+  },
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 94,
+   "y": 23
+  },
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 94,
+   "y": 24
   }
  ]
 }

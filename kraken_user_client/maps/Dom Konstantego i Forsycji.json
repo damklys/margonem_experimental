@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Konstantego i Forsycji",
+ "id": 1697,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Dom Konstantego i Forsycji p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

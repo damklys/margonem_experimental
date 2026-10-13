@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Bezsennych p.1 s.2",
+ "id": 6050,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 5,
+   "y": 10
+  },
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 6,
+   "y": 10
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 37,
+   "y": 43
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 38,
+   "y": 43
+  }
+ ]
+}

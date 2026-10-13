@@ -1,0 +1,74 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Wilczych Kłów",
+ "id": 845,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Winnica Meflakasti",
+   "x": 0,
+   "y": 53
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 0,
+   "y": 54
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 0,
+   "y": 55
+  },
+  {
+   "to": "Dom Rumiry i Dobromira",
+   "x": 19,
+   "y": 51
+  },
+  {
+   "to": "Sklep z winem",
+   "x": 29,
+   "y": 54
+  },
+  {
+   "to": "Bagna Chojraków",
+   "x": 52,
+   "y": 0
+  },
+  {
+   "to": "Bagna Chojraków",
+   "x": 53,
+   "y": 0
+  },
+  {
+   "to": "Baszta",
+   "x": 85,
+   "y": 31
+  },
+  {
+   "to": "Baszta p.2",
+   "x": 88,
+   "y": 21
+  },
+  {
+   "to": "Baszta p.1",
+   "x": 88,
+   "y": 28
+  },
+  {
+   "to": "Grota pod Basztą",
+   "x": 88,
+   "y": 39
+  },
+  {
+   "to": "Bagnista Dolina Dusz",
+   "x": 95,
+   "y": 4
+  },
+  {
+   "to": "Bagnista Dolina Dusz",
+   "x": 95,
+   "y": 5
+  }
+ ]
+}

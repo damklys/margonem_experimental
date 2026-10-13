@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wazira - piwnica",
+ "id": 1119,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Wazira",
+   "x": 4,
+   "y": 4
+  }
+ ]
+}

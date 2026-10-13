@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Oberża pod Złotym Kłosem - piwnica",
+ "id": 2044,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Oberża pod Złotym Kłosem",
+   "x": 4,
+   "y": 4
+  }
+ ]
+}

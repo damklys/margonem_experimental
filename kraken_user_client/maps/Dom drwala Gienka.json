@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom drwala Gienka",
+ "id": 8155,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowe Włości Mikołaja",
+   "x": 3,
+   "y": 14
+  }
+ ]
+}

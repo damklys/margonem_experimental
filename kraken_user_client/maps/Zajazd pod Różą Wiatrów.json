@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Zajazd pod Różą Wiatrów",
+ "id": 1539,
+ "w": 22,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Zajazd pod Różą Wiatrów - kawiarnia",
+   "x": 2,
+   "y": 7
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów - kawiarnia",
+   "x": 2,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 13
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów p.1",
+   "x": 18,
+   "y": 2
   }
  ]
 }

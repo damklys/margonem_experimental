@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Apartament 112",
+ "id": 516,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Alabastrowy Hotel - piwnica p.1",
+   "x": 10,
+   "y": 4
+  }
+ ]
+}

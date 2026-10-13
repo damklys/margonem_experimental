@@ -1,15 +1,61 @@
 {
  "kraken": "mapa",
  "name": "Zatopiony Szczyt",
+ "id": 368,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Stare Ruiny"
+   "to": "Stare Ruiny",
+   "x": 0,
+   "y": 33
   },
   {
-   "to": "Leśna Przełęcz"
+   "to": "Stare Ruiny",
+   "x": 0,
+   "y": 34
   },
   {
-   "to": "Ruiny Szabrowników"
+   "to": "Wóz Vadomy",
+   "x": 9,
+   "y": 39
+  },
+  {
+   "to": "Wóz kapeli",
+   "x": 18,
+   "y": 40
+  },
+  {
+   "to": "Wóz starego Fonsa i Perhany",
+   "x": 32,
+   "y": 19
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 49,
+   "y": 0,
+   "req": "Przejście dostępne od 18 poziomu"
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 50,
+   "y": 0,
+   "req": "Przejście dostępne od 18 poziomu"
+  },
+  {
+   "to": "Ruiny Szabrowników",
+   "x": 63,
+   "y": 29
+  },
+  {
+   "to": "Ruiny Szabrowników",
+   "x": 63,
+   "y": 30
+  },
+  {
+   "to": "Ruiny Szabrowników",
+   "x": 63,
+   "y": 31
   }
  ]
 }

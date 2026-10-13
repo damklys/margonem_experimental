@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Grota Pragnolli p.1",
+ "id": 3438,
+ "w": 35,
+ "h": 28,
  "gateways": [
   {
-   "to": "Czeluść Ognistej Pożogi"
+   "to": "Czeluść Ognistej Pożogi",
+   "x": 5,
+   "y": 17
   },
   {
-   "to": "Grota Pragnolli p.1 - sala 2"
+   "to": "Grota Pragnolli p.1 - sala 2",
+   "x": 29,
+   "y": 8
   }
  ]
 }

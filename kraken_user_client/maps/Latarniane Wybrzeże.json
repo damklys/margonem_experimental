@@ -1,0 +1,89 @@
+{
+ "kraken": "mapa",
+ "name": "Latarniane Wybrzeże",
+ "id": 1262,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Korsarska Nora - sala 1",
+   "x": 11,
+   "y": 60
+  },
+  {
+   "to": "Latarnia",
+   "x": 20,
+   "y": 55
+  },
+  {
+   "to": "Stodoła",
+   "x": 45,
+   "y": 4
+  },
+  {
+   "to": "Stodoła",
+   "x": 45,
+   "y": 5
+  },
+  {
+   "to": "Stajnia",
+   "x": 52,
+   "y": 10
+  },
+  {
+   "to": "Stajnia",
+   "x": 53,
+   "y": 10
+  },
+  {
+   "to": "Dom stajennego",
+   "x": 61,
+   "y": 18
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 61,
+   "y": 53
+  },
+  {
+   "to": "Dom stajennego",
+   "x": 62,
+   "y": 18
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 71,
+   "y": 0
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 72,
+   "y": 0
+  },
+  {
+   "to": "Dom latarnika",
+   "x": 74,
+   "y": 10
+  },
+  {
+   "to": "Dom latarnika",
+   "x": 75,
+   "y": 10
+  },
+  {
+   "to": "Tawerna pod Szemrzącą Beczułką",
+   "x": 89,
+   "y": 23
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 95,
+   "y": 22
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 95,
+   "y": 23
+  }
+ ]
+}

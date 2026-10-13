@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Smoczej Paszczy p.2",
+ "id": 3335,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jaskinia Smoczej Paszczy p.1",
+   "x": 4,
+   "y": 17
+  }
+ ]
+}

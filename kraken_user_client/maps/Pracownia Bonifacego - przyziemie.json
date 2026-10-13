@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia Bonifacego - przyziemie",
+ "id": 2348,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia Bonifacego",
+   "x": 4,
+   "y": 7
+  }
+ ]
+}

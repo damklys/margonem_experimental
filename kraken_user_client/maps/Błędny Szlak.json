@@ -1,15 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Błędny Szlak",
+ "id": 268,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zawiły Bór"
+   "to": "Zawiły Bór",
+   "x": 0,
+   "y": 24
   },
   {
-   "to": "Złowrogie Bagna"
+   "to": "Zawiły Bór",
+   "x": 0,
+   "y": 25
   },
   {
-   "to": "Ostępy Szalbierskich Lasów"
+   "to": "Zawiły Bór",
+   "x": 0,
+   "y": 26
+  },
+  {
+   "to": "Złowrogie Bagna",
+   "x": 21,
+   "y": 63
+  },
+  {
+   "to": "Złowrogie Bagna",
+   "x": 22,
+   "y": 63
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 63,
+   "y": 0
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 64,
+   "y": 0
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 65,
+   "y": 0
   }
  ]
 }

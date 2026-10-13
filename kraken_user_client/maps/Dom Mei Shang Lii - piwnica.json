@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mei Shang Lii - piwnica",
+ "id": 1501,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mei Shang Lii",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

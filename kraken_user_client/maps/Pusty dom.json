@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pusty dom",
+ "id": 1589,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Rybacka",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 8,
+   "y": 10
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pokój 121",
+ "id": 671,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd u Makiny p.1",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

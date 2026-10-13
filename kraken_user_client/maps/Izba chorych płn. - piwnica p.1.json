@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Izba chorych płn. - piwnica p.1",
+ "id": 820,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Izba chorych płn.",
+   "x": 6,
+   "y": 3
+  },
+  {
+   "to": "Izba chorych płn. - piwnica p.2",
+   "x": 6,
+   "y": 9
+  }
+ ]
+}

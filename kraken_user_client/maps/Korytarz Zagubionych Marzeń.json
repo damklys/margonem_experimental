@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarz Zagubionych Marzeń",
+ "id": 2357,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 51,
+   "y": 54
+  }
+ ]
+}

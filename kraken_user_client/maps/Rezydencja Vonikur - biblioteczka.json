@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Rezydencja Vonikur - biblioteczka",
+ "id": 1710,
+ "w": 17,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Rezydencja Vonikur",
+   "x": 3,
+   "y": 5
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 18
+  },
+  {
+   "to": "Rezydencja Vonikur - prawe skrzydło",
+   "x": 9,
+   "y": 2
+  },
+  {
+   "to": "Nithal",
+   "x": 9,
+   "y": 18
   }
  ]
 }

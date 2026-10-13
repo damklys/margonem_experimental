@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Medytacji Tududu",
+ "id": 2790,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dolina Yss",
+   "x": 17,
+   "y": 58
+  }
+ ]
+}

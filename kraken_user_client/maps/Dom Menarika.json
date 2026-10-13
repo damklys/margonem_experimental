@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Menarika",
+ "id": 1883,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 12
   }
  ]
 }

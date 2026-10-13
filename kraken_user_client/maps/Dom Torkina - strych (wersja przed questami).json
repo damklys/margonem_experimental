@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Torkina - strych (wersja przed questami)",
+ "id": 2882,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dom Torkina (wersja przed questami)",
+   "x": 9,
+   "y": 17
+  }
+ ]
+}

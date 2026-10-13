@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Bandyckie Chowisko - skarbiec",
+ "id": 6950,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Bandyckie Chowisko"
+   "to": "Bandyckie Chowisko",
+   "x": 38,
+   "y": 46
   }
  ]
 }

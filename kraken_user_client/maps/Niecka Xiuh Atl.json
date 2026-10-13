@@ -1,9 +1,109 @@
 {
  "kraken": "mapa",
  "name": "Niecka Xiuh Atl",
+ "id": 1901,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Trupia Przełęcz"
+   "to": "Altepetl Mahoptekan",
+   "x": 0,
+   "y": 52
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 11,
+   "y": 95
+  },
+  {
+   "to": "Oztotl Tzacua p.1 - sala 1",
+   "x": 12,
+   "y": 86
+  },
+  {
+   "to": "Sucha Dolina",
+   "x": 12,
+   "y": 95
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Chantli Cuaitla Citlalina",
+   "x": 24,
+   "y": 52
+  },
+  {
+   "to": "Chantli",
+   "x": 24,
+   "y": 76
+  },
+  {
+   "to": "Chantli",
+   "x": 29,
+   "y": 67
+  },
+  {
+   "to": "Chantli",
+   "x": 30,
+   "y": 67
+  },
+  {
+   "to": "Chantli",
+   "x": 34,
+   "y": 78
+  },
+  {
+   "to": "Chantli",
+   "x": 36,
+   "y": 72
+  },
+  {
+   "to": "Oztotl Tzacua p.1 - sala 2",
+   "x": 41,
+   "y": 88
+  },
+  {
+   "to": "Oztotl Tzacua p.3 - sala 2",
+   "x": 48,
+   "y": 57
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 52,
+   "y": 95
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 53,
+   "y": 95
+  },
+  {
+   "to": "Oztotl Tzacua p.4 - sala 2",
+   "x": 55,
+   "y": 19
+  },
+  {
+   "to": "Oztotl Tzacua p.5",
+   "x": 58,
+   "y": 6
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 63,
+   "y": 53
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 63,
+   "y": 54
   }
  ]
 }

@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Lassindy i Limerusa",
+ "id": 308,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Mythar",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Dom Lassindy i Limerusa p.1",
+   "x": 10,
+   "y": 9
   }
  ]
 }

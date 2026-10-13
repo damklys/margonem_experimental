@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Wóz Alizy i Thorna",
+ "id": 1082,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Święty Zagajnik",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Czerwony Szlak",
+ "id": 4630,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Redrock",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Redrock",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Osada plemienia Banok",
+   "x": 95,
+   "y": 43
+  },
+  {
+   "to": "Osada plemienia Banok",
+   "x": 95,
+   "y": 44
+  }
+ ]
+}

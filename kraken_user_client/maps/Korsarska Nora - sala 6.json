@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Korsarska Nora - sala 6",
+ "id": 1342,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Korsarska Nora - sala 5",
+   "x": 2,
+   "y": 12
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - korytarz",
+   "x": 8,
+   "y": 37
+  }
+ ]
+}

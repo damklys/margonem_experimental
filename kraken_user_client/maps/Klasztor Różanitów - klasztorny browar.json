@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - klasztorny browar",
+ "id": 2502,
+ "w": 23,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - korytarz wejściowy",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "Klasztor Różanitów - korytarz wejściowy",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 21,
+   "y": 12
+  },
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 21,
+   "y": 13
+  }
+ ]
+}

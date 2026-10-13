@@ -1,0 +1,59 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - korytarz wejściowy",
+ "id": 4053,
+ "w": 26,
+ "h": 26,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - zachodnia komnata",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Potępione Zamczysko - lochy zachodnie p.1",
+   "x": 3,
+   "y": 14
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz zachodni",
+   "x": 8,
+   "y": 7
+  },
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 12,
+   "y": 1
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 12,
+   "y": 24
+  },
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 13,
+   "y": 1
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 13,
+   "y": 24
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wschodni",
+   "x": 17,
+   "y": 7
+  },
+  {
+   "to": "Potępione Zamczysko - wschodnia komnata",
+   "x": 22,
+   "y": 10
+  },
+  {
+   "to": "Potępione Zamczysko - lochy wschodnie p.1",
+   "x": 22,
+   "y": 14
+  }
+ ]
+}

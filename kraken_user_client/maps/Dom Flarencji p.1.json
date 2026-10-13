@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Flarencji p.1",
+ "id": 1483,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Flarencji",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

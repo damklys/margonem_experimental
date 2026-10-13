@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Łaźnia p.1",
+ "id": 1531,
+ "w": 22,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Łaźnia - część damska",
+   "x": 3,
+   "y": 5
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 2
   }
  ]
 }

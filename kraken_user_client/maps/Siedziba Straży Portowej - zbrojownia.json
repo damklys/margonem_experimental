@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Straży Portowej - zbrojownia",
+ "id": 1412,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Siedziba Straży Portowej",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

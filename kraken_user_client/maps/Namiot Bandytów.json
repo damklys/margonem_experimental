@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Bandytów",
+ "id": 2317,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pagórki Łupieżców",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Pagórki Łupieżców",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

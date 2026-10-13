@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dolina Pełznącego Krzyku",
+ "id": 7828,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 63,
+   "y": 26
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 63,
+   "y": 27
+  }
+ ]
+}

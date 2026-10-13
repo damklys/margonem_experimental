@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Jofusa - piwnica",
+ "id": 274,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Jofusa",
+   "x": 3,
+   "y": 5
+  },
+  {
+   "to": "Zakurzone przejście",
+   "x": 6,
+   "y": 8
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Korsarska Nora - statek",
+ "id": 1345,
+ "w": 18,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Korsarska Nora - sala 5",
+   "x": 5,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "mapa",
+ "name": "Szepczące Wyrwy p.2 - sala 3",
+ "id": 8550,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 4",
+   "x": 8,
+   "y": 21
+  },
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 6",
+   "x": 18,
+   "y": 44
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 4",
+   "x": 26,
+   "y": 3
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 2",
+   "x": 41,
+   "y": 6
+  },
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 2",
+   "x": 41,
+   "y": 14
+  }
+ ]
+}

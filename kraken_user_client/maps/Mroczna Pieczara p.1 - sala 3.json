@@ -1,18 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Mroczna Pieczara p.1 - sala 3",
+ "id": 179,
+ "w": 20,
+ "h": 34,
  "gateways": [
   {
-   "to": "Mroczny Przesmyk"
+   "to": "Mroczna Pieczara p.1 - sala 1",
+   "x": 2,
+   "y": 20
   },
   {
-   "to": "Mroczna Pieczara p.1 - sala 1"
+   "to": "Mroczna Pieczara p.2",
+   "x": 5,
+   "y": 2
   },
   {
-   "to": "Mroczna Pieczara p.2"
+   "to": "Mroczny Przesmyk",
+   "x": 12,
+   "y": 28
   },
   {
-   "to": "Mokra Grota p.2 - korytarz"
+   "to": "Mokra Grota p.2 - korytarz",
+   "x": 17,
+   "y": 6
   }
  ]
 }

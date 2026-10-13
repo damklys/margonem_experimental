@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Kleofasa",
+ "id": 1155,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Kamienica Kleofasa p.1",
+   "x": 4,
+   "y": 2
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 13
   }
  ]
 }

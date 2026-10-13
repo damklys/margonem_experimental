@@ -1,15 +1,25 @@
 {
  "kraken": "mapa",
  "name": "Lazurytowa Grota p.3 - sala 2",
+ "id": 816,
+ "w": 32,
+ "h": 40,
  "gateways": [
   {
-   "to": "Lazurytowa Grota p.3 - sala 1"
+   "to": "Lazurytowa Grota p.4",
+   "x": 7,
+   "y": 11,
+   "req": "Przejście dostępne do 70 poziomu"
   },
   {
-   "to": "Lazurytowa Grota p.2"
+   "to": "Lazurytowa Grota p.2",
+   "x": 13,
+   "y": 26
   },
   {
-   "to": "Lazurytowa Grota p.4"
+   "to": "Lazurytowa Grota p.3 - sala 1",
+   "x": 17,
+   "y": 7
   }
  ]
 }

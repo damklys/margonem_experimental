@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Karmazynowa siedziba",
+ "id": 1715,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 9,
+   "y": 13
+  }
+ ]
+}

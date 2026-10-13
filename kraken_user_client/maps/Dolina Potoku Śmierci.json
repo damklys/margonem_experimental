@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "Dolina Potoku Śmierci",
+ "id": 7833,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Skryty Azyl",
+   "x": 0,
+   "y": 7
+  },
+  {
+   "to": "Skryty Azyl",
+   "x": 0,
+   "y": 8
+  },
+  {
+   "to": "Nora Jaszczurzych Koszmarów p.1 - sala 1",
+   "x": 51,
+   "y": 26
+  },
+  {
+   "to": "Złota Dąbrowa",
+   "x": 64,
+   "y": 0
+  },
+  {
+   "to": "Złota Dąbrowa",
+   "x": 65,
+   "y": 0
+  },
+  {
+   "to": "Martwy Las",
+   "x": 95,
+   "y": 14
+  },
+  {
+   "to": "Martwy Las",
+   "x": 95,
+   "y": 15
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 95,
+   "y": 74
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 95,
+   "y": 75
+  }
+ ]
+}

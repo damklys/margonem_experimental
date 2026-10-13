@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Ślepe Wyrobisko",
+ "id": 6776,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Grota Samotnych Dusz p.3"
+   "to": "Grota Samotnych Dusz p.3",
+   "x": 3,
+   "y": 48
   },
   {
-   "to": "Kopalnia Margorii"
+   "to": "Kopalnia Margorii",
+   "x": 53,
+   "y": 14
   }
  ]
 }

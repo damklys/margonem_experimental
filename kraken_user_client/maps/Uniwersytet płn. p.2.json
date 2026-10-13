@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. p.2",
+ "id": 893,
+ "w": 25,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn. p.3 - sztuka",
+   "x": 2,
+   "y": 12
+  },
+  {
+   "to": "Uniwersytet płn. p.1 - chemia",
+   "x": 12,
+   "y": 15
+  },
+  {
+   "to": "Uniwersytet płn. p.3 - prawo",
+   "x": 22,
+   "y": 12
+  }
+ ]
+}

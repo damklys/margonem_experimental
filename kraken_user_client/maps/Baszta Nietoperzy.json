@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Nietoperzy",
+ "id": 2077,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Mury - skrzydło wschodnie",
+   "x": 9,
+   "y": 7
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zasypane Ograbar-dun",
+ "id": 1192,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Trakt Moradrana",
+   "x": 44,
+   "y": 7
+  },
+  {
+   "to": "Ognista Studnia p.1",
+   "x": 48,
+   "y": 60
+  }
+ ]
+}

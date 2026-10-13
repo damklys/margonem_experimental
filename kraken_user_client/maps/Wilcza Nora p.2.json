@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Wilcza Nora p.2",
+ "id": 2538,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Wilcza Nora p.1"
+   "to": "Wilcza Nora p.1",
+   "x": 3,
+   "y": 5
   }
  ]
 }

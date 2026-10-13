@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Skład Grabieżców",
+ "id": 2531,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Pagórki Łupieżców"
+   "to": "Pagórki Łupieżców",
+   "x": 18,
+   "y": 30
   }
  ]
 }

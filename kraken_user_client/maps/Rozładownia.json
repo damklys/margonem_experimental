@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Rozładownia",
+ "id": 1826,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Mieszkanie sztygara",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 5
   }
  ]
 }

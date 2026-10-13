@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Knieja Lunarnych Głazów",
+ "id": 8172,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Szepty Menhirów",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Szepty Menhirów",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Zalesiony Step",
+   "x": 27,
+   "y": 95
+  },
+  {
+   "to": "Zalesiony Step",
+   "x": 28,
+   "y": 95
+  },
+  {
+   "to": "Głusza Srebrnego Rogu",
+   "x": 63,
+   "y": 58
+  },
+  {
+   "to": "Głusza Srebrnego Rogu",
+   "x": 63,
+   "y": 59
+  }
+ ]
+}

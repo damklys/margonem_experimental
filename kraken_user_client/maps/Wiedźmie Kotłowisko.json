@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Wiedźmie Kotłowisko",
+ "id": 1202,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko",
+   "x": 0,
+   "y": 54
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 0,
+   "y": 55
+  },
+  {
+   "to": "Upiorna Droga",
+   "x": 31,
+   "y": 0
+  },
+  {
+   "to": "Upiorna Droga",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Upiorna Droga",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Sabatowe Góry",
+   "x": 70,
+   "y": 63
+  },
+  {
+   "to": "Sabatowe Góry",
+   "x": 71,
+   "y": 63
+  }
+ ]
+}

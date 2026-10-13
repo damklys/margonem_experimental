@@ -1,21 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Andarum Ilami",
+ "id": 180,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Kamienna Jaskinia - sala 2"
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 0,
+   "y": 5
   },
   {
-   "to": "Świątynia Andarum"
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 0,
+   "y": 6
   },
   {
-   "to": "Zdradzieckie Przejście p.1"
+   "to": "Zdradzieckie Przejście p.1",
+   "x": 3,
+   "y": 39
   },
   {
-   "to": "Śnieżna Grota p.1"
+   "to": "Śnieżna Grota p.1",
+   "x": 7,
+   "y": 18
   },
   {
-   "to": "Skały Mroźnych Śpiewów"
+   "to": "Świątynia Andarum",
+   "x": 48,
+   "y": 14
+  },
+  {
+   "to": "Kamienna Jaskinia - sala 2",
+   "x": 58,
+   "y": 52
   }
  ]
 }

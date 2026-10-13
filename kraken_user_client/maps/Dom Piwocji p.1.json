@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Piwocji p.1",
+ "id": 1327,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Piwocji",
+   "x": 2,
+   "y": 8
+  }
+ ]
+}

@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Krypty Dusz Śniegu p.3",
+ "id": 6626,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Świątynia Andarum - lokum mnichów"
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 15,
+   "y": 10
   },
   {
-   "to": "Krypty Dusz Śniegu p.2"
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 16,
+   "y": 10
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.2",
+   "x": 31,
+   "y": 36
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.2",
+   "x": 32,
+   "y": 36
   }
  ]
 }

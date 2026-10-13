@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Suchych Pędów s.2",
+ "id": 6060,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jaskinia Suchych Pędów s.1",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Jaskinia Suchych Pędów s.3",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

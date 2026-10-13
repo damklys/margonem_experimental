@@ -1,0 +1,34 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Liściem Dębu",
+ "id": 3132,
+ "w": 30,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Gildia Nerthusa - przedsionek",
+   "x": 10,
+   "y": 15
+  },
+  {
+   "to": "Karczma pod Liściem Dębu - piwnica",
+   "x": 12,
+   "y": 9
+  },
+  {
+   "to": "Gildia Nerthusa p.1",
+   "x": 19,
+   "y": 2
+  },
+  {
+   "to": "Karczma pod Liściem Dębu - sala do kostkowania",
+   "x": 22,
+   "y": 4
+  }
+ ]
+}

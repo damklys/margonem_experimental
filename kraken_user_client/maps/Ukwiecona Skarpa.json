@@ -1,9 +1,46 @@
 {
  "kraken": "mapa",
  "name": "Ukwiecona Skarpa",
+ "id": 4155,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Racicowy Matecznik"
+   "to": "Kwieciste Przejście",
+   "x": 0,
+   "y": 16
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 0,
+   "y": 17
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 66,
+   "y": 63,
+   "req": "Przejście dostępne od 150 poziomu"
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 67,
+   "y": 63,
+   "req": "Przejście dostępne od 150 poziomu"
+  },
+  {
+   "to": "Racicowy Matecznik",
+   "x": 95,
+   "y": 49
+  },
+  {
+   "to": "Racicowy Matecznik",
+   "x": 95,
+   "y": 50
+  },
+  {
+   "to": "Racicowy Matecznik",
+   "x": 95,
+   "y": 51
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mieszkanie właściciela zajazdu p.1",
+ "id": 629,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Tęczowym Żukiem",
+   "x": 4,
+   "y": 5
+  }
+ ]
+}

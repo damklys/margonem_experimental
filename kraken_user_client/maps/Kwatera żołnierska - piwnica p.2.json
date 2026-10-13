@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kwatera żołnierska - piwnica p.2",
+ "id": 774,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kwatera żołnierska - piwnica p.1",
+   "x": 10,
+   "y": 9
+  }
+ ]
+}

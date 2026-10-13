@@ -1,0 +1,120 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Złamanym Dukatem p.1",
+ "id": 926,
+ "w": 31,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Komnata 107",
+   "x": 7,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 108",
+   "x": 7,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 109",
+   "x": 7,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 110",
+   "x": 7,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 111",
+   "x": 7,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 112",
+   "x": 7,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 113",
+   "x": 7,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.2 - część zachodnia",
+   "x": 9,
+   "y": 1
+  },
+  {
+   "to": "Apartament 101",
+   "x": 13,
+   "y": 7,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem",
+   "x": 15,
+   "y": 4
+  },
+  {
+   "to": "Apartament 100",
+   "x": 17,
+   "y": 7,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.2 - część wschodnia",
+   "x": 21,
+   "y": 1
+  },
+  {
+   "to": "Komnata 100",
+   "x": 23,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 101",
+   "x": 23,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 102",
+   "x": 23,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 103",
+   "x": 23,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 104",
+   "x": 23,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 105",
+   "x": 23,
+   "y": 14,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Komnata 106",
+   "x": 23,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

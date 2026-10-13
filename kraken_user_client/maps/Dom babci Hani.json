@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom babci Hani",
+ "id": 8128,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom babci Hani - sypialnia",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Dom babci Hani - strych",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

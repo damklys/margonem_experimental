@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Topan p.1",
+ "id": 5696,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Topan p.2",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Topan p.2",
+   "x": 8,
+   "y": 9
+  },
+  {
+   "to": "Altepetl Mahoptekan",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

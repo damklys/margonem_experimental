@@ -1,9 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Akademia wojskowa p.1",
+ "id": 862,
+ "w": 35,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Zachodnia Rubież",
+   "x": 6,
+   "y": 18
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 7,
+   "y": 18
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 8,
+   "y": 18
+  },
+  {
+   "to": "Akademia wojskowa - stajnia",
+   "x": 19,
+   "y": 6
+  },
+  {
+   "to": "Nithal",
+   "x": 26,
+   "y": 18
+  },
+  {
+   "to": "Nithal",
+   "x": 27,
+   "y": 18
+  },
+  {
+   "to": "Nithal",
+   "x": 28,
+   "y": 18
   }
  ]
 }

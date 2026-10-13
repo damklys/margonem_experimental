@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Cytadela",
+ "id": 865,
+ "w": 25,
+ "h": 18,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Mury Nithal - Baszta Koronna",
+   "x": 1,
+   "y": 9
+  },
+  {
+   "to": "Cytadela - kuchnia",
+   "x": 4,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 11,
+   "y": 15
+  },
+  {
+   "to": "Nithal",
+   "x": 12,
+   "y": 15
+  },
+  {
+   "to": "Cytadela p.1",
+   "x": 18,
+   "y": 1
+  },
+  {
+   "to": "Cytadela - przejście",
+   "x": 19,
+   "y": 13
   }
  ]
 }

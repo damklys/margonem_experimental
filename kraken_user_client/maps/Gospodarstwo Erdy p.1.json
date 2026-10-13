@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Erdy p.1",
+ "id": 1208,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Erdy",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

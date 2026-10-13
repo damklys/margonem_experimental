@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn z rybami Alfreda",
+ "id": 1186,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Alfreda",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

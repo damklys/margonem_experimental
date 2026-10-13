@@ -1,9 +1,40 @@
 {
  "kraken": "mapa",
  "name": "Uniwersytet płd.",
+ "id": 903,
+ "w": 28,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Uniwersytet płd. - biblioteka manuskryptów",
+   "x": 3,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Uniwersytet płd. - aula",
+   "x": 12,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 13,
+   "y": 5
+  },
+  {
+   "to": "Nithal",
+   "x": 14,
+   "y": 5
+  },
+  {
+   "to": "Aula Akademii Filmowej",
+   "x": 18,
+   "y": 13
+  },
+  {
+   "to": "Uniwersytet płd. - piwnica p.1",
+   "x": 25,
+   "y": 17
   }
  ]
 }

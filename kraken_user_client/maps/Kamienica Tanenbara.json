@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Tanenbara",
+ "id": 761,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Tanenbara - piwnica",
+   "x": 11,
+   "y": 5
+  },
+  {
+   "to": "Kamienica Tanenbara p.1",
+   "x": 11,
+   "y": 9
   }
  ]
 }

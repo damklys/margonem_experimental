@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Szkoła",
+ "id": 967,
+ "w": 32,
+ "h": 20,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Szkolna biblioteka",
+   "x": 3,
+   "y": 6
+  },
+  {
+   "to": "Ithan",
+   "x": 5,
+   "y": 17
+  },
+  {
+   "to": "Ithan",
+   "x": 6,
+   "y": 17
+  },
+  {
+   "to": "Ithan",
+   "x": 7,
+   "y": 17
+  },
+  {
+   "to": "Szkoła - piwnica",
+   "x": 26,
+   "y": 13
+  },
+  {
+   "to": "Internat",
+   "x": 29,
+   "y": 6
   }
  ]
 }

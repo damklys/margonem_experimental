@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Ciemnica Szubrawców p.1 - sala 2",
+ "id": 2351,
+ "w": 42,
+ "h": 42,
  "gateways": [
   {
-   "to": "Ciemnica Szubrawców p.1 - sala 1"
+   "to": "Ciemnica Szubrawców p.1 - sala 1",
+   "x": 2,
+   "y": 7
   },
   {
-   "to": "Ciemnica Szubrawców p.1 - sala 3"
+   "to": "Ciemnica Szubrawców p.1 - sala 3",
+   "x": 36,
+   "y": 39
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - kuchnia",
+ "id": 855,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dormitorium - część akolitów",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Dormitorium - spiżarnia",
+   "x": 11,
+   "y": 5
+  }
+ ]
+}

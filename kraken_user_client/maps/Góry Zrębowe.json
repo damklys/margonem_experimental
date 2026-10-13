@@ -1,9 +1,69 @@
 {
  "kraken": "mapa",
  "name": "Góry Zrębowe",
+ "id": 121,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Brama Północy"
+   "to": "Namiot pustelnika",
+   "x": 5,
+   "y": 63
+  },
+  {
+   "to": "Brama Północy",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Solna Grota p.1",
+   "x": 39,
+   "y": 7
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 45,
+   "y": 95
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 46,
+   "y": 95
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 47,
+   "y": 95
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 63,
+   "y": 18
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 63,
+   "y": 19
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 63,
+   "y": 90
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 63,
+   "y": 91
   }
  ]
 }

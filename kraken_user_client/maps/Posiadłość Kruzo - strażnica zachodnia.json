@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Posiadłość Kruzo - strażnica zachodnia",
+ "id": 4768,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Włości rodu Kruzo",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 10,
+   "y": 14
   }
  ]
 }

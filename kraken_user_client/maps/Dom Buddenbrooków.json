@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Dom Buddenbrooków",
+ "id": 2046,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 7,
+   "y": 13
   }
  ]
 }

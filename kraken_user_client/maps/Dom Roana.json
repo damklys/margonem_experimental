@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Roana",
+ "id": 26,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Ithan",
+   "x": 12,
+   "y": 10
+  },
+  {
+   "to": "Ithan",
+   "x": 13,
+   "y": 10
+  },
+  {
+   "to": "Dom Roana - piętro",
+   "x": 14,
+   "y": 3
   }
  ]
 }

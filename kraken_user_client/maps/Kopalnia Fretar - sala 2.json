@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Fretar - sala 2",
+ "id": 47,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kopalnia Fretar - sala 3",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Kopalnia Fretar - sala 1",
+   "x": 17,
+   "y": 7
+  }
+ ]
+}

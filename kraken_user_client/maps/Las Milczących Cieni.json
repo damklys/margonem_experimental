@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Las Milczących Cieni",
+ "id": 2825,
+ "w": 64,
+ "h": 100,
+ "gateways": [
+  {
+   "to": "Ostoja Marzeń",
+   "x": 32,
+   "y": 99
+  },
+  {
+   "to": "Ostoja Marzeń",
+   "x": 33,
+   "y": 99
+  }
+ ]
+}

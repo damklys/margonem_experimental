@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Faluntamir p.2 - sala 1",
+ "id": 270,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Kopalnia Faluntamir p.1",
+   "x": 12,
+   "y": 6
+  },
+  {
+   "to": "Kopalnia Faluntamir p.3 - sala 1",
+   "x": 15,
+   "y": 21
+  },
+  {
+   "to": "Kopalnia Faluntamir p.3 - sala 1",
+   "x": 16,
+   "y": 21
+  },
+  {
+   "to": "Kopalnia Faluntamir p.2 - sala 2",
+   "x": 31,
+   "y": 21
+  }
+ ]
+}

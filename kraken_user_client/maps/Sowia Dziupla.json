@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Sowia Dziupla",
+ "id": 2290,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Wichrowe Szczyty"
+   "to": "Wichrowe Szczyty",
+   "x": 12,
+   "y": 18
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 13,
+   "y": 18
   }
  ]
 }

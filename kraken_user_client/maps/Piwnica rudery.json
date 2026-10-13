@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Piwnica rudery",
+ "id": 2889,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Korytarz pod Eder",
+   "x": 2,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Rudera",
+   "x": 12,
+   "y": 8
+  }
+ ]
+}

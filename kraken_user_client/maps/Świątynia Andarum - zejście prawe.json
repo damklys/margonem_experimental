@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - zejście prawe",
+ "id": 6610,
+ "w": 26,
+ "h": 34,
  "gateways": [
   {
-   "to": "Świątynia Andarum"
+   "to": "Świątynia Andarum",
+   "x": 7,
+   "y": 1
   },
   {
-   "to": "Świątynia Andarum - podziemia"
+   "to": "Świątynia Andarum",
+   "x": 8,
+   "y": 1
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 20,
+   "y": 32
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 21,
+   "y": 32
   }
  ]
 }

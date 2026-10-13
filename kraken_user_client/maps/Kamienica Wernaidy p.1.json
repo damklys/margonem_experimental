@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Wernaidy p.1",
+ "id": 1439,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Wernaidy",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "kraken": "mapa",
+ "name": "Alabastrowy Hotel - piwnica p.2",
+ "id": 504,
+ "w": 32,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Apartament 209",
+   "x": 4,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 201",
+   "x": 5,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 207",
+   "x": 5,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 205",
+   "x": 6,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 210",
+   "x": 8,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 202",
+   "x": 12,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Alabastrowy Hotel - piwnica p.1",
+   "x": 15,
+   "y": 13
+  },
+  {
+   "to": "Alabastrowy Hotel - piwnica p.1",
+   "x": 16,
+   "y": 13
+  },
+  {
+   "to": "Apartament 211",
+   "x": 16,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 203",
+   "x": 19,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 212",
+   "x": 23,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 206",
+   "x": 25,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 204",
+   "x": 26,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 208",
+   "x": 26,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 213",
+   "x": 27,
+   "y": 18,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

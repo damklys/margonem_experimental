@@ -1,21 +1,84 @@
 {
  "kraken": "mapa",
  "name": "Orla Grań",
+ "id": 3,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Dziewicza Knieja"
+   "to": "Dolina Yss",
+   "x": 0,
+   "y": 72
   },
   {
-   "to": "Stare Ruiny"
+   "to": "Dolina Yss",
+   "x": 0,
+   "y": 73
   },
   {
-   "to": "Dolina Yss"
+   "to": "Przełęcz Łotrzyków",
+   "x": 16,
+   "y": 95
   },
   {
-   "to": "Przełęcz Łotrzyków"
+   "to": "Przełęcz Łotrzyków",
+   "x": 17,
+   "y": 95
   },
   {
-   "to": "Przeklęta Strażnica"
+   "to": "Przełęcz Łotrzyków",
+   "x": 18,
+   "y": 95
+  },
+  {
+   "to": "Spustoszona jaskinia",
+   "x": 21,
+   "y": 40
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 43,
+   "y": 0
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 44,
+   "y": 0
+  },
+  {
+   "to": "Przejście Myśliwych p.2",
+   "x": 49,
+   "y": 83
+  },
+  {
+   "to": "Przeklęta Strażnica p.2",
+   "x": 51,
+   "y": 13
+  },
+  {
+   "to": "Przeklęta Strażnica",
+   "x": 52,
+   "y": 24
+  },
+  {
+   "to": "Przeklęta Strażnica",
+   "x": 53,
+   "y": 24
+  },
+  {
+   "to": "Przejście Myśliwych p.1",
+   "x": 54,
+   "y": 56
+  },
+  {
+   "to": "Dziewicza Knieja",
+   "x": 63,
+   "y": 72
+  },
+  {
+   "to": "Dziewicza Knieja",
+   "x": 63,
+   "y": 73
   }
  ]
 }

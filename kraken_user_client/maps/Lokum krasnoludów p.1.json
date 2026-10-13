@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum krasnoludów p.1",
+ "id": 1847,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Lokum krasnoludów",
+   "x": 2,
+   "y": 9
+  }
+ ]
+}

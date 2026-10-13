@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Las Goblinów",
+ "id": 725,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Podmokła Dolina"
+   "to": "Podmokła Dolina",
+   "x": 42,
+   "y": 0
   },
   {
-   "to": "Fort Eder"
+   "to": "Podmokła Dolina",
+   "x": 43,
+   "y": 0
+  },
+  {
+   "to": "Fort Eder",
+   "x": 63,
+   "y": 50
+  },
+  {
+   "to": "Fort Eder",
+   "x": 63,
+   "y": 51
   }
  ]
 }

@@ -8,101 +8,57 @@
   {
    "to": "Las Dziwów",
    "x": 0,
-   "y": 26,
-   "toId": 229,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 26
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 0,
+   "y": 28
   },
   {
    "to": "Sosnowe Odludzie",
    "x": 25,
-   "y": 95,
-   "toId": 701,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Jezioro Ważek",
-   "x": 44,
-   "y": 0,
-   "toId": 349,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa",
-   "x": 57,
-   "y": 19,
-   "toId": 3457,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Zapomniana Ścieżyna",
-   "x": 63,
-   "y": 69,
-   "toId": 576,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Las Dziwów",
-   "x": 0,
-   "y": 27,
-   "toId": 229,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Las Dziwów",
-   "x": 0,
-   "y": 28,
-   "toId": 229,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 95
   },
   {
    "to": "Sosnowe Odludzie",
    "x": 26,
-   "y": 95,
-   "toId": 701,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 95
   },
   {
    "to": "Sosnowe Odludzie",
    "x": 27,
-   "y": 95,
-   "toId": 701,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 95
+  },
+  {
+   "to": "Jezioro Ważek",
+   "x": 44,
+   "y": 0
   },
   {
    "to": "Jezioro Ważek",
    "x": 45,
-   "y": 0,
-   "toId": 349,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
+  },
+  {
+   "to": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+   "x": 57,
+   "y": 19
   },
   {
    "to": "Zapomniana Ścieżyna",
    "x": 63,
-   "y": 70,
-   "toId": 576,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 69
+  },
+  {
+   "to": "Zapomniana Ścieżyna",
+   "x": 63,
+   "y": 70
   }
  ]
 }

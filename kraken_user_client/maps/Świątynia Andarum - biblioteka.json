@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - biblioteka",
+ "id": 6612,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Świątynia Andarum - podziemia"
+   "to": "Świątynia Andarum - podziemia",
+   "x": 1,
+   "y": 14
+  },
+  {
+   "to": "Świątynia Andarum - podziemia",
+   "x": 1,
+   "y": 15
   }
  ]
 }

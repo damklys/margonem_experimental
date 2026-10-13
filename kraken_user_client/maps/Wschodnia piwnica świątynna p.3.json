@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodnia piwnica świątynna p.3",
+ "id": 914,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dormitorium - przejście do świątyni",
+   "x": 5,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Wschodnia piwnica świątynna p.2",
+   "x": 10,
+   "y": 2
+  }
+ ]
+}

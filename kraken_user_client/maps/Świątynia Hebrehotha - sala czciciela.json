@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Hebrehotha - sala czciciela",
+ "id": 3341,
+ "w": 50,
+ "h": 50,
+ "gateways": [
+  {
+   "to": "Świątynia Hebrehotha - przedsionek",
+   "x": 26,
+   "y": 48
+  },
+  {
+   "to": "Świątynia Hebrehotha - przedsionek",
+   "x": 27,
+   "y": 48
+  }
+ ]
+}

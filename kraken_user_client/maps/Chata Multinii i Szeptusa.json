@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Multinii i Szeptusa",
+ "id": 1095,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Święty Zagajnik",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

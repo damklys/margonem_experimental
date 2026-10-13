@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Pajęczyn p.4",
+ "id": 234,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Pieczara Pajęczyn p.3",
+   "x": 38,
+   "y": 2
+  }
+ ]
+}

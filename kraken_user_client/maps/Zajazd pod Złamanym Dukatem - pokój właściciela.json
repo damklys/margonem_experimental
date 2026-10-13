@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Zajazd pod Złamanym Dukatem - pokój właściciela",
+ "id": 925,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem",
+   "x": 11,
+   "y": 7
   }
  ]
 }

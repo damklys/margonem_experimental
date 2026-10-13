@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Andronikusa",
+ "id": 737,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Andronikusa p.1",
+   "x": 11,
+   "y": 2
   }
  ]
 }

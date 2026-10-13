@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Wartownia p.1",
+ "id": 1521,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Wartownia",
+   "x": 11,
+   "y": 8
   }
  ]
 }

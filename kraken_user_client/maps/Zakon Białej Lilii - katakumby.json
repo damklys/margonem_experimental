@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zakon Białej Lilii - katakumby",
+ "id": 1139,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zakon Białej Lilii - piwnica",
+   "x": 26,
+   "y": 1
+  }
+ ]
+}

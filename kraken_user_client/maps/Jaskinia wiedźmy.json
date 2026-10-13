@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia wiedźmy",
+ "id": 1947,
+ "w": 18,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Namiot wiedźmy",
+   "x": 6,
+   "y": 1
+  }
+ ]
+}

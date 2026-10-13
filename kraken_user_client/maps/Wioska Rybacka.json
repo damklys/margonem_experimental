@@ -1,0 +1,64 @@
+{
+ "kraken": "mapa",
+ "name": "Wioska Rybacka",
+ "id": 1233,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 0,
+   "y": 58
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 0,
+   "y": 59
+  },
+  {
+   "to": "Chata Lomalandiego",
+   "x": 43,
+   "y": 32
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 51,
+   "y": 0
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 52,
+   "y": 0
+  },
+  {
+   "to": "Dom Hawaikiego",
+   "x": 57,
+   "y": 25
+  },
+  {
+   "to": "Chata Króla Rybaka",
+   "x": 57,
+   "y": 40
+  },
+  {
+   "to": "Dom Rongo",
+   "x": 68,
+   "y": 30
+  },
+  {
+   "to": "Dom Tane",
+   "x": 73,
+   "y": 35
+  },
+  {
+   "to": "Jaskinia Hoskarii",
+   "x": 75,
+   "y": 4
+  },
+  {
+   "to": "Pusty dom",
+   "x": 75,
+   "y": 17
+  }
+ ]
+}

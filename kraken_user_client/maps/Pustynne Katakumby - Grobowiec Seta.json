@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Grobowiec Seta",
+ "id": 3039,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 47,
+   "y": 93
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 48,
+   "y": 93
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 49,
+   "y": 93
+  }
+ ]
+}

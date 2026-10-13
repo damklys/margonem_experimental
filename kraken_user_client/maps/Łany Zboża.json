@@ -1,18 +1,84 @@
 {
  "kraken": "mapa",
  "name": "Łany Zboża",
+ "id": 2029,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Torneg"
+   "to": "Mrowisko",
+   "x": 9,
+   "y": 1
   },
   {
-   "to": "Wilczy Szpic"
+   "to": "Wilczy Szpic",
+   "x": 15,
+   "y": 63
   },
   {
-   "to": "Mrowisko"
+   "to": "Młyn",
+   "x": 16,
+   "y": 10
   },
   {
-   "to": "Kopiec Mrówek"
+   "to": "Wilczy Szpic",
+   "x": 16,
+   "y": 63
+  },
+  {
+   "to": "Młyn",
+   "x": 17,
+   "y": 10
+  },
+  {
+   "to": "Piekarnia",
+   "x": 17,
+   "y": 27
+  },
+  {
+   "to": "Piekarnia",
+   "x": 17,
+   "y": 28
+  },
+  {
+   "to": "Magazyn",
+   "x": 28,
+   "y": 22
+  },
+  {
+   "to": "Magazyn",
+   "x": 29,
+   "y": 22
+  },
+  {
+   "to": "Kopiec Mrówek",
+   "x": 34,
+   "y": 8
+  },
+  {
+   "to": "Dom Mazteni i Ułtana",
+   "x": 46,
+   "y": 8
+  },
+  {
+   "to": "Oberża pod Złotym Kłosem",
+   "x": 51,
+   "y": 41
+  },
+  {
+   "to": "Oberża pod Złotym Kłosem",
+   "x": 52,
+   "y": 41
+  },
+  {
+   "to": "Torneg",
+   "x": 63,
+   "y": 43
+  },
+  {
+   "to": "Torneg",
+   "x": 63,
+   "y": 44
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Przybytek Bogini Wojny",
+ "id": 1358,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 7,
+   "y": 46
+  }
+ ]
+}

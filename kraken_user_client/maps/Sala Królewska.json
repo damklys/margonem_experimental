@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Królewska",
+ "id": 5862,
+ "w": 44,
+ "h": 44,
+ "gateways": [
+  {
+   "to": "Komnaty Czarnej Gwardii - zachód",
+   "x": 1,
+   "y": 15
+  },
+  {
+   "to": "Komnaty Czarnej Gwardii - zachód",
+   "x": 1,
+   "y": 16
+  },
+  {
+   "to": "Komnata Czarnej Perły",
+   "x": 21,
+   "y": 4
+  },
+  {
+   "to": "Sala Rady Orków",
+   "x": 21,
+   "y": 42
+  },
+  {
+   "to": "Komnata Czarnej Perły",
+   "x": 22,
+   "y": 4
+  },
+  {
+   "to": "Sala Rady Orków",
+   "x": 22,
+   "y": 42
+  },
+  {
+   "to": "Komnaty Czarnej Gwardii - wschód",
+   "x": 42,
+   "y": 15
+  },
+  {
+   "to": "Komnaty Czarnej Gwardii - wschód",
+   "x": 42,
+   "y": 16
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Sztab Dowódczy",
+ "id": 2171,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Puchacza",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Sowie Lochy",
+   "x": 14,
+   "y": 9
+  },
+  {
+   "to": "Sowie Lochy",
+   "x": 14,
+   "y": 10
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Dobrawy",
+ "id": 8518,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podbrzezie",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

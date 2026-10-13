@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Andronikusa p.1",
+ "id": 738,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Andronikusa",
+   "x": 11,
+   "y": 4
+  },
+  {
+   "to": "Kamienica Andronikusa - strych",
+   "x": 11,
+   "y": 9
+  }
+ ]
+}

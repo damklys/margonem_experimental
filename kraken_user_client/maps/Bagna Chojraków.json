@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Bagna Chojraków",
- "gateways": []
+ "id": 599,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 20,
+   "y": 63
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 21,
+   "y": 63
+  }
+ ]
 }

@@ -1,12 +1,31 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.4 - sala 1",
+ "id": 6620,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Erem Czarnego Słońca p.3"
+   "to": "Erem Czarnego Słońca p.5",
+   "x": 5,
+   "y": 26,
+   "req": "Przejście dostępne do 93 poziomu"
   },
   {
-   "to": "Erem Czarnego Słońca p.5"
+   "to": "Erem Czarnego Słońca p.5",
+   "x": 6,
+   "y": 26,
+   "req": "Przejście dostępne do 93 poziomu"
+  },
+  {
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 13,
+   "y": 4
+  },
+  {
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 14,
+   "y": 4
   }
  ]
 }

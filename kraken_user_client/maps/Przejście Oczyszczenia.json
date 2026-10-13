@@ -1,0 +1,31 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście Oczyszczenia",
+ "id": 7694,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Sala Spowiedzi Konających",
+   "x": 2,
+   "y": 15
+  },
+  {
+   "to": "Sala Spowiedzi Konających",
+   "x": 2,
+   "y": 16
+  },
+  {
+   "to": "Sala Skaryfikacji Grzeszników",
+   "x": 10,
+   "y": 7,
+   "req": "Przejście dostępne do 217 poziomu"
+  },
+  {
+   "to": "Sala Skaryfikacji Grzeszników",
+   "x": 11,
+   "y": 7,
+   "req": "Przejście dostępne do 217 poziomu"
+  }
+ ]
+}

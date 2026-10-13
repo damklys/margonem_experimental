@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Grobowiec Przodków",
+ "id": 1106,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Zaginiona Dolina",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "to": "Czarcie Oparzeliska",
+   "x": 38,
+   "y": 95
+  },
+  {
+   "to": "Czarcie Oparzeliska",
+   "x": 39,
+   "y": 95
+  },
+  {
+   "to": "Cenotaf Berserkerów - przejście przodków",
+   "x": 41,
+   "y": 60
+  },
+  {
+   "to": "Śnieżna Granica",
+   "x": 63,
+   "y": 14
+  }
+ ]
+}

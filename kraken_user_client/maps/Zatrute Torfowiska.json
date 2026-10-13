@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Zatrute Torfowiska",
+ "id": 7829,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Dolina Pełznącego Krzyku",
+   "x": 29,
+   "y": 63
+  },
+  {
+   "to": "Dolina Pełznącego Krzyku",
+   "x": 30,
+   "y": 63
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 63,
+   "y": 25
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 63,
+   "y": 26
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 63,
+   "y": 46
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 63,
+   "y": 47
+  }
+ ]
+}

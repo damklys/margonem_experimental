@@ -36,7 +36,7 @@
   },
   {
    "type": "kill",
-   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla; Mulu Furla",
+   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla",
    "n": 100,
    "route": "mulusy (28lvl)"
   },
@@ -88,7 +88,7 @@
   },
   {
    "type": "kill",
-   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla; Mulu Furla",
+   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla",
    "n": 250,
    "route": "mulusy (28lvl)"
   },
@@ -140,7 +140,7 @@
   },
   {
    "type": "kill",
-   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla; Mulu Furla",
+   "mob": "Fula Gula; Nuna Gula; Zulu Mulu; Dida Gula; Bulu Mulu; Zulu Gula; Furu Mulu; Zulu Furla; Nuna Furla; Mula Furla",
    "n": 500,
    "route": "mulusy (28lvl)"
   },

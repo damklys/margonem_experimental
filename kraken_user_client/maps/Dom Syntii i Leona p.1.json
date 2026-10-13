@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Syntii i Leona p.1",
+ "id": 2207,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Syntii i Leona",
+   "x": 4,
+   "y": 5
+  }
+ ]
+}

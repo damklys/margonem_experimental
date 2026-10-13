@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Hergata i Halfinii p.1",
+ "id": 108,
+ "w": 23,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Dom Hergata i Halfinii",
+   "x": 2,
+   "y": 6
+  }
+ ]
+}

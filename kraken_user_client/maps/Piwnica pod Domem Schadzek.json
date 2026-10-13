@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Piwnica pod Domem Schadzek",
+ "id": 2818,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Schadzek",
+   "x": 4,
+   "y": 10
+  }
+ ]
+}

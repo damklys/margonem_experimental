@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Krypty Dusz Śniegu p.3 - komnata Lisza",
- "gateways": []
+ "id": 6627,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Krypty Dusz Śniegu p.2",
+   "x": 3,
+   "y": 1
+  }
+ ]
 }

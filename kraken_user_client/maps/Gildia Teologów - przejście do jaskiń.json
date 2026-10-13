@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów - przejście do jaskiń",
+ "id": 1950,
+ "w": 16,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 11,
+   "y": 20
+  }
+ ]
+}

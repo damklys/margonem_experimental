@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Rozległa Równina",
+ "id": 1115,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dolina Gniewu",
+   "x": 0,
+   "y": 19
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 35,
+   "y": 63
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 36,
+   "y": 63
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 37,
+   "y": 63
+  },
+  {
+   "to": "Wzgórza Obłędu",
+   "x": 95,
+   "y": 27
+  },
+  {
+   "to": "Wzgórza Obłędu",
+   "x": 95,
+   "y": 28
+  },
+  {
+   "to": "Wzgórza Obłędu",
+   "x": 95,
+   "y": 29
+  }
+ ]
+}

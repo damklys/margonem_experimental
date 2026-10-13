@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kuźnia Giriela - manufaktura",
+ "id": 3478,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Kuźnia Giriela - warsztat"
+   "to": "Kuźnia Giriela - warsztat",
+   "x": 22,
+   "y": 87
   },
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 27,
+   "y": 93
+  },
+  {
+   "to": "Kuźnia Giriela - pracownia",
+   "x": 60,
+   "y": 27
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Vonikur - piwniczka",
+ "id": 3608,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Vonikur - kuchnia",
+   "x": 11,
+   "y": 10
+  }
+ ]
+}

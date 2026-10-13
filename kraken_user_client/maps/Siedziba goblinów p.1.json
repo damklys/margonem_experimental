@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba goblinów p.1",
+ "id": 1221,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba goblinów",
+   "x": 3,
+   "y": 6
+  }
+ ]
+}

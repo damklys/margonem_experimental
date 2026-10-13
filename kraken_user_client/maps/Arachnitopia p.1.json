@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Arachnitopia p.1",
+ "id": 1132,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dolina Pajęczych Korytarzy",
+   "x": 47,
+   "y": 59
+  },
+  {
+   "to": "Arachnitopia p.2",
+   "x": 56,
+   "y": 11
+  }
+ ]
+}

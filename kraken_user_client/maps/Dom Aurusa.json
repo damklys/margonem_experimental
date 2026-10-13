@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Aurusa",
+ "id": 1433,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Tuzmer",
+   "x": 10,
+   "y": 12
+  },
+  {
+   "to": "Dom Aurusa p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

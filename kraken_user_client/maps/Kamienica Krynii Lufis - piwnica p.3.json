@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Krynii Lufis - piwnica p.3",
+ "id": 808,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kopalnia Krynii Lufis",
+   "x": 6,
+   "y": 9
+  },
+  {
+   "to": "Kamienica Krynii Lufis - piwnica p.2",
+   "x": 9,
+   "y": 4
+  }
+ ]
+}

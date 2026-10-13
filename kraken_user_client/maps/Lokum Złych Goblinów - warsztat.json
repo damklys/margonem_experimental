@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów - warsztat",
+ "id": 7474,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów p.2 - sala 2",
+   "x": 26,
+   "y": 27
+  }
+ ]
+}

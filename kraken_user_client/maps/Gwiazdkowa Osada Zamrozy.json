@@ -1,0 +1,69 @@
+{
+ "kraken": "mapa",
+ "name": "Gwiazdkowa Osada Zamrozy",
+ "id": 8116,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dom Pałcia i Gałcia - parter",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Dom babci Hani",
+   "x": 6,
+   "y": 57
+  },
+  {
+   "to": "Dom Marty i Jana",
+   "x": 20,
+   "y": 17
+  },
+  {
+   "to": "Dom Janiny i Mariana",
+   "x": 26,
+   "y": 13
+  },
+  {
+   "to": "Dom Edwarda",
+   "x": 28,
+   "y": 33
+  },
+  {
+   "to": "Dom Emilio",
+   "x": 34,
+   "y": 44
+  },
+  {
+   "to": "Gwiazdkowe Włości Mikołaja",
+   "x": 38,
+   "y": 0
+  },
+  {
+   "to": "Gwiazdkowe Włości Mikołaja",
+   "x": 39,
+   "y": 0
+  },
+  {
+   "to": "Dom Karoliny i Gabriela",
+   "x": 42,
+   "y": 40
+  },
+  {
+   "to": "Dom Joli i Marka",
+   "x": 47,
+   "y": 19
+  },
+  {
+   "to": "Dom Darii i Kacpra",
+   "x": 48,
+   "y": 30
+  },
+  {
+   "to": "Dom Haliny i Antoniego",
+   "x": 55,
+   "y": 22
+  }
+ ]
+}

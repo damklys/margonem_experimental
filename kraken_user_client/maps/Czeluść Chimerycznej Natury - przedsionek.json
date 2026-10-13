@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Czeluść Chimerycznej Natury - przedsionek",
+ "id": 4066,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Przełęcz Krwistego Posłańca",
+   "x": 12,
+   "y": 30
+  },
+  {
+   "to": "Przełęcz Krwistego Posłańca",
+   "x": 13,
+   "y": 30
+  }
+ ]
+}

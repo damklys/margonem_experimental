@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Wielkanocny Babi Wzgórek",
+ "id": 6982,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Chata Teściowej",
+   "x": 46,
+   "y": 10
+  },
+  {
+   "to": "Góralski magazyn",
+   "x": 46,
+   "y": 24
+  }
+ ]
+}

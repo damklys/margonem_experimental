@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Trzeszczących Kości p.1 - sala 1",
+ "id": 7070,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Wyspa Wraków",
+   "x": 12,
+   "y": 46
+  },
+  {
+   "to": "Grota Trzeszczących Kości p.1 - sala 2",
+   "x": 34,
+   "y": 3
+  }
+ ]
+}

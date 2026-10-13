@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - mury zachodnie",
+ "id": 7444,
+ "w": 32,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - wieża zachodnia",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Mała Twierdza - wieża zachodnia",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 23,
+   "y": 21
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 24,
+   "y": 21
+  },
+  {
+   "to": "Mała Twierdza - korytarz zachodni",
+   "x": 30,
+   "y": 14
+  },
+  {
+   "to": "Mała Twierdza - korytarz zachodni",
+   "x": 30,
+   "y": 15
+  }
+ ]
+}

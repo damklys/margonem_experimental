@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Piaszczysta Grota p.1 - sala 2",
+ "id": 7352,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Piaszczysta Grota p.1 - sala 1",
+   "x": 13,
+   "y": 26
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Orczej Hordy p.2 s.2",
+ "id": 5855,
+ "w": 46,
+ "h": 46,
+ "gateways": [
+  {
+   "to": "Grota Orczej Hordy p.2 s.1",
+   "x": 11,
+   "y": 42
+  },
+  {
+   "to": "Grota Orczej Hordy p.2 s.3",
+   "x": 36,
+   "y": 5,
+   "req": "Przejście dostępne do 173 poziomu"
+  }
+ ]
+}

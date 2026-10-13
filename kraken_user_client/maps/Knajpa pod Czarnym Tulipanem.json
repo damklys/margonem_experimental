@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Knajpa pod Czarnym Tulipanem",
+ "id": 829,
+ "w": 25,
+ "h": 18,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Knajpa pod Czarnym Tulipanem - pokój Lucji",
+   "x": 2,
+   "y": 5
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem - piwnica p.1",
+   "x": 2,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 4,
+   "y": 16
+  },
+  {
+   "to": "Nithal",
+   "x": 5,
+   "y": 16
+  },
+  {
+   "to": "Nithal",
+   "x": 6,
+   "y": 16
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.1",
+   "x": 19,
+   "y": 5
   }
  ]
 }

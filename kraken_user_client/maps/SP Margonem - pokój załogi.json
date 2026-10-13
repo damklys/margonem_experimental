@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - pokój załogi",
+ "id": 7293,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "SP Margonem - klatka schodowa p.1",
+   "x": 2,
+   "y": 11
+  }
+ ]
+}

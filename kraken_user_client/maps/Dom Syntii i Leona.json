@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Syntii i Leona",
+ "id": 2206,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Syntii i Leona p.1",
+   "x": 4,
+   "y": 2
+  },
+  {
+   "to": "Torneg",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Torneg",
+   "x": 9,
+   "y": 13
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Góralska Pieczara p.1",
+ "id": 7335,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Góralska Pieczara p.2",
+   "x": 12,
+   "y": 3
+  },
+  {
+   "to": "Babi Wzgórek",
+   "x": 22,
+   "y": 44
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mieszkanie sztygara",
+ "id": 1827,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rozładownia",
+   "x": 3,
+   "y": 7
+  }
+ ]
+}

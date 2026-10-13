@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Mokra Grota p.1 - boczny korytarz",
+ "id": 4550,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Mokra Grota p.1"
+   "to": "Mokra Grota p.2 - korytarz",
+   "x": 5,
+   "y": 52
   },
   {
-   "to": "Mokra Grota p.1 - przełaz"
+   "to": "Mokra Grota p.1",
+   "x": 12,
+   "y": 61
   },
   {
-   "to": "Mokra Grota p.2 - korytarz"
+   "to": "Mokra Grota p.1 - przełaz",
+   "x": 54,
+   "y": 40
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Inlefi p.2",
+ "id": 50,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kopalnia Inlefi p.1",
+   "x": 16,
+   "y": 8
+  }
+ ]
+}

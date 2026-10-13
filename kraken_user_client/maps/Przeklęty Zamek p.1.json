@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek p.1",
+ "id": 175,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przeklęty Zamek - sala zgromadzeń"
+   "to": "Przeklęty Zamek p.2",
+   "x": 3,
+   "y": 7
   },
   {
-   "to": "Przeklęty Zamek p.2"
+   "to": "Przeklęty Zamek - sala zgromadzeń",
+   "x": 8,
+   "y": 5
   }
  ]
 }

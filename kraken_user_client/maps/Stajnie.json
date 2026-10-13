@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Stajnie",
- "gateways": []
+ "id": 1925,
+ "w": 16,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 7,
+   "y": 18
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 8,
+   "y": 18
+  }
+ ]
 }

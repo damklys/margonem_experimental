@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Lazurytowa Grota p.1",
+ "id": 814,
+ "w": 32,
+ "h": 30,
  "gateways": [
   {
-   "to": "Uroczysko"
+   "to": "Uroczysko",
+   "x": 16,
+   "y": 26
   },
   {
-   "to": "Lazurytowa Grota p.2"
+   "to": "Uroczysko",
+   "x": 17,
+   "y": 26
+  },
+  {
+   "to": "Lazurytowa Grota p.2",
+   "x": 26,
+   "y": 13
   }
  ]
 }

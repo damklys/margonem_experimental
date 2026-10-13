@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Grota Caerbannoga - leże bestii",
- "gateways": []
+ "id": 1745,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Grota Caerbannoga",
+   "x": 38,
+   "y": 62
+  }
+ ]
 }

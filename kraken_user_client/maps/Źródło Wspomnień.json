@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Źródło Wspomnień",
+ "id": 6058,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Jaskinia Ulotnych Wspomnień",
+   "x": 31,
+   "y": 48
+  },
+  {
+   "to": "Jaskinia Ulotnych Wspomnień",
+   "x": 32,
+   "y": 48
+  }
+ ]
+}

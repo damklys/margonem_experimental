@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Hebrehotha - przedsionek",
+ "id": 3339,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Świątynia Hebrehotha - sala czciciela",
+   "x": 6,
+   "y": 5
+  },
+  {
+   "to": "Świątynia Hebrehotha - sala czciciela",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Świątynia Hebrehotha - sala ofiary",
+   "x": 16,
+   "y": 3
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "to": "Świątynia Hebrehotha - sala ofiary",
+   "x": 17,
+   "y": 3
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 17,
+   "y": 30
+  }
+ ]
+}

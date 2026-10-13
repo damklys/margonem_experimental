@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Odwagi",
+ "id": 3336,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jaskinia Próby",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "to": "Jaskinia Próby",
+   "x": 6,
+   "y": 4
+  },
+  {
+   "to": "Namiot Błogosławionych",
+   "x": 19,
+   "y": 20
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 27,
+   "y": 26
+  }
+ ]
+}

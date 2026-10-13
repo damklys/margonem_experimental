@@ -1,27 +1,104 @@
 {
  "kraken": "mapa",
  "name": "Fort Eder",
+ "id": 244,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Las Goblinów"
+   "to": "Las Goblinów",
+   "x": 0,
+   "y": 50
   },
   {
-   "to": "Mokradła"
+   "to": "Las Goblinów",
+   "x": 0,
+   "y": 51
   },
   {
-   "to": "Stary Kupiecki Trakt"
+   "to": "Pieczara Niepogody p.2 - sala 2",
+   "x": 7,
+   "y": 84
   },
   {
-   "to": "Ciemnica Szubrawców p.1 - sala 1"
+   "to": "Pieczara Niepogody p.1",
+   "x": 10,
+   "y": 74
   },
   {
-   "to": "Eder"
+   "to": "Fortyfikacja p.3",
+   "x": 24,
+   "y": 65
   },
   {
-   "to": "Pieczara Niepogody p.1"
+   "to": "Fortyfikacja p.1",
+   "x": 24,
+   "y": 73
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 2"
+   "to": "Fortyfikacja p.3",
+   "x": 25,
+   "y": 65
+  },
+  {
+   "to": "Fortyfikacja p.1",
+   "x": 25,
+   "y": 73
+  },
+  {
+   "to": "Eder",
+   "x": 26,
+   "y": 95
+  },
+  {
+   "to": "Fortyfikacja p.5",
+   "x": 27,
+   "y": 56
+  },
+  {
+   "to": "Eder",
+   "x": 27,
+   "y": 95
+  },
+  {
+   "to": "Mokradła",
+   "x": 28,
+   "y": 0
+  },
+  {
+   "to": "Eder",
+   "x": 28,
+   "y": 95
+  },
+  {
+   "to": "Mokradła",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Eder",
+   "x": 29,
+   "y": 95
+  },
+  {
+   "to": "Mokradła",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 1",
+   "x": 60,
+   "y": 83
+  },
+  {
+   "to": "Stary Kupiecki Trakt",
+   "x": 63,
+   "y": 53
+  },
+  {
+   "to": "Stary Kupiecki Trakt",
+   "x": 63,
+   "y": 54
   }
  ]
 }

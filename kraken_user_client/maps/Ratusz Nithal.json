@@ -1,9 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Ratusz Nithal",
+ "id": 1021,
+ "w": 50,
+ "h": 40,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 23,
+   "y": 36
+  },
+  {
+   "to": "Ratusz Nithal - muzeum p.1",
+   "x": 24,
+   "y": 10
+  },
+  {
+   "to": "Nithal",
+   "x": 24,
+   "y": 36
+  },
+  {
+   "to": "Ratusz Nithal - muzeum p.1",
+   "x": 25,
+   "y": 10
+  },
+  {
+   "to": "Nithal",
+   "x": 25,
+   "y": 36
+  },
+  {
+   "to": "Nithal",
+   "x": 26,
+   "y": 36
+  },
+  {
+   "to": "Ratusz Nithal - skarbiec",
+   "x": 38,
+   "y": 35
+  },
+  {
+   "to": "Ratusz Nithal - gabinet burmistrza",
+   "x": 40,
+   "y": 17
+  },
+  {
+   "to": "Ratusz Nithal - gabinet burmistrza",
+   "x": 41,
+   "y": 17
   }
  ]
 }

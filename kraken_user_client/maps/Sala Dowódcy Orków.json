@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Dowódcy Orków",
+ "id": 5858,
+ "w": 40,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Nawiedzone Komnaty - zachód",
+   "x": 2,
+   "y": 15
+  },
+  {
+   "to": "Sala Rady Orków",
+   "x": 19,
+   "y": 1
+  },
+  {
+   "to": "Nawiedzone Komnaty - przedsionek",
+   "x": 19,
+   "y": 38
+  },
+  {
+   "to": "Sala Rady Orków",
+   "x": 20,
+   "y": 1
+  },
+  {
+   "to": "Nawiedzone Komnaty - przedsionek",
+   "x": 20,
+   "y": 38
+  },
+  {
+   "to": "Nawiedzone Komnaty - wschód",
+   "x": 37,
+   "y": 15
+  }
+ ]
+}

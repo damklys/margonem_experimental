@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Składy",
+ "id": 2715,
+ "w": 36,
+ "h": 25,
+ "gateways": [
+  {
+   "to": "Zaplecze",
+   "x": 1,
+   "y": 6
+  },
+  {
+   "to": "Strażnica północno-wschodnia",
+   "x": 29,
+   "y": 15
+  },
+  {
+   "to": "Przejście północno-wschodnie",
+   "x": 29,
+   "y": 23
+  }
+ ]
+}

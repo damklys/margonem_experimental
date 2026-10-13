@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Etrefana p.2",
+ "id": 2018,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Etrefana p.1",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

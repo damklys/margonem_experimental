@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kuchnia polowa",
+ "id": 1611,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ruchome Piaski",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

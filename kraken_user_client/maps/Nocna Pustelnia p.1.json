@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Nocna Pustelnia p.1",
+ "id": 8555,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Głusza Srebrnego Rogu",
+   "x": 10,
+   "y": 30
+  },
+  {
+   "to": "Nocna Pustelnia p.2",
+   "x": 12,
+   "y": 7
+  }
+ ]
+}

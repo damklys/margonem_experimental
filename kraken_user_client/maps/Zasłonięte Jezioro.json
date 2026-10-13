@@ -1,12 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Zasłonięte Jezioro",
+ "id": 222,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Spokojne Przejście"
+   "to": "Słoneczna Wyżyna",
+   "x": 0,
+   "y": 67
   },
   {
-   "to": "Słoneczna Wyżyna"
+   "to": "Słoneczna Wyżyna",
+   "x": 0,
+   "y": 68
+  },
+  {
+   "to": "Słoneczna Wyżyna",
+   "x": 0,
+   "y": 69
+  },
+  {
+   "to": "Kamienne Lokum",
+   "x": 8,
+   "y": 54
+  },
+  {
+   "to": "Kamienne Lokum p.1",
+   "x": 13,
+   "y": 53
+  },
+  {
+   "to": "Jaskinia Łez",
+   "x": 49,
+   "y": 34
+  },
+  {
+   "to": "Spokojne Przejście",
+   "x": 63,
+   "y": 22
+  },
+  {
+   "to": "Spokojne Przejście",
+   "x": 63,
+   "y": 23
   }
  ]
 }

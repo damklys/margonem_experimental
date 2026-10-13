@@ -1,0 +1,25 @@
+{
+ "kraken": "mapa",
+ "name": "Jaszczurze Korytarze p.2 - sala 4",
+ "id": 7842,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Jaszczurze Korytarze p.2 - sala 3",
+   "x": 13,
+   "y": 44
+  },
+  {
+   "to": "Jaszczurze Korytarze p.2 - sala 5",
+   "x": 20,
+   "y": 11,
+   "req": "Przejście dostępne do 244 poziomu"
+  },
+  {
+   "to": "Jaszczurze Korytarze p.2 - sala 2",
+   "x": 41,
+   "y": 17
+  }
+ ]
+}

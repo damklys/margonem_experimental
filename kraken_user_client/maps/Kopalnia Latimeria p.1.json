@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Latimeria p.1",
+ "id": 52,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 4,
+   "y": 16
+  },
+  {
+   "to": "Kopalnia Latimeria p.2",
+   "x": 8,
+   "y": 7
   }
  ]
 }

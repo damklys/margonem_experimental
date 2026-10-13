@@ -1,18 +1,61 @@
 {
  "kraken": "mapa",
  "name": "Leśna Przełęcz",
+ "id": 1108,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Torneg"
+   "to": "Torneg",
+   "x": 0,
+   "y": 50
   },
   {
-   "to": "Zatopiony Szczyt"
+   "to": "Torneg",
+   "x": 0,
+   "y": 51
   },
   {
-   "to": "Tygrysia Polana"
+   "to": "Dom Vincenta",
+   "x": 21,
+   "y": 28
   },
   {
-   "to": "Kryjówka Dzikich Kotów"
+   "to": "Zatopiony Szczyt",
+   "x": 49,
+   "y": 63
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 50,
+   "y": 63
+  },
+  {
+   "to": "Lisia jama",
+   "x": 55,
+   "y": 24
+  },
+  {
+   "to": "Kryjówka Dzikich Kotów",
+   "x": 61,
+   "y": 0
+  },
+  {
+   "to": "Kryjówka Dzikich Kotów",
+   "x": 62,
+   "y": 0
+  },
+  {
+   "to": "Tygrysia Polana",
+   "x": 95,
+   "y": 56,
+   "req": "Przejście dostępne od 20 poziomu"
+  },
+  {
+   "to": "Tygrysia Polana",
+   "x": 95,
+   "y": 57,
+   "req": "Przejście dostępne od 20 poziomu"
   }
  ]
 }

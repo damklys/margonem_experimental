@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia na Rozstajach - piwnica",
+ "id": 2346,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kuźnia na Rozstajach",
+   "x": 10,
+   "y": 4
+  }
+ ]
+}

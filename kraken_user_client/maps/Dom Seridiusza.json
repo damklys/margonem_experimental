@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Dom Seridiusza",
+ "id": 1487,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Seridiusza - piwnica",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Dom Seridiusza - piwnica",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 10
+  },
+  {
+   "to": "Tuzmer",
+   "x": 10,
+   "y": 10
+  },
+  {
+   "to": "Dom Seridiusza p.1",
+   "x": 12,
+   "y": 3
   }
  ]
 }

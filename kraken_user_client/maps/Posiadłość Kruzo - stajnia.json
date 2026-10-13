@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Posiadłość Kruzo - stajnia",
+ "id": 4770,
+ "w": 24,
+ "h": 20,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Włości rodu Kruzo",
+   "x": 7,
+   "y": 16
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 8,
+   "y": 16
   }
  ]
 }

@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Młynarza",
- "gateways": []
+ "id": 611,
+ "w": 22,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Młynarza p.1",
+   "x": 10,
+   "y": 9
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 12,
+   "y": 12
+  }
+ ]
 }

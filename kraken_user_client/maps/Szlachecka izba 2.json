@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Szlachecka izba 2",
+ "id": 2141,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Austeria Karibiego p.2",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Austeria Karibiego p.2",
+   "x": 7,
+   "y": 12
+  }
+ ]
+}

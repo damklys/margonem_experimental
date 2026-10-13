@@ -1,9 +1,59 @@
 {
  "kraken": "mapa",
  "name": "Akademia wojskowa - stajnia",
+ "id": 861,
+ "w": 35,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Zachodnia Rubież",
+   "x": 3,
+   "y": 18
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 4,
+   "y": 18
+  },
+  {
+   "to": "Akademia wojskowa - piwnica p.1",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 5,
+   "y": 18
+  },
+  {
+   "to": "Mury Nithal - Baszta Trwała",
+   "x": 15,
+   "y": 18
+  },
+  {
+   "to": "Mury Nithal - Baszta Trwała",
+   "x": 16,
+   "y": 18
+  },
+  {
+   "to": "Akademia wojskowa p.1",
+   "x": 17,
+   "y": 1
+  },
+  {
+   "to": "Nithal",
+   "x": 29,
+   "y": 18
+  },
+  {
+   "to": "Nithal",
+   "x": 30,
+   "y": 18
+  },
+  {
+   "to": "Nithal",
+   "x": 31,
+   "y": 18
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gabinet Luster",
+ "id": 6553,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Wesołe Miasteczko",
+   "x": 5,
+   "y": 28
+  }
+ ]
+}

@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Dom Mei Shang Lii",
+ "id": 1499,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Mei Shang Lii p.1",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Dom Mei Shang Lii - piwnica",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 11
   }
  ]
 }

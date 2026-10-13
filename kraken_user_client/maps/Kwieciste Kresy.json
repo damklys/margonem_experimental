@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Kwieciste Kresy",
+ "id": 5986,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Szczerba Samobójców",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Kryształowa Grota p.3 - sala 2",
+   "x": 29,
+   "y": 49
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 77,
+   "y": 63
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 78,
+   "y": 63
+  },
+  {
+   "to": "Ruiny Tass Zhil",
+   "x": 79,
+   "y": 63
+  },
+  {
+   "to": "Las Porywów Wiatru",
+   "x": 95,
+   "y": 24
+  },
+  {
+   "to": "Las Porywów Wiatru",
+   "x": 95,
+   "y": 25
+  }
+ ]
+}

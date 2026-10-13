@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Sekretne Przejście Kapłanów",
+ "id": 3312,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 12,
+   "y": 30
+  },
+  {
+   "to": "Sala Zrujnowanej Świątyni",
+   "x": 28,
+   "y": 23
+  }
+ ]
+}

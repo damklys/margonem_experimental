@@ -1,9 +1,30 @@
 {
  "kraken": "mapa",
  "name": "Karczma pod Chimerą",
+ "id": 2006,
+ "w": 28,
+ "h": 24,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Karczma pod Chimerą p.1",
+   "x": 6,
+   "y": 6
+  },
+  {
+   "to": "Katakumby Rozkoszy",
+   "x": 8,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Thuzal",
+   "x": 22,
+   "y": 19
+  },
+  {
+   "to": "Thuzal",
+   "x": 23,
+   "y": 19
   }
  ]
 }

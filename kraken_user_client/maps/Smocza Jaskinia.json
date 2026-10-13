@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Smocza Jaskinia",
+ "id": 298,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Smocze Góry"
+   "to": "Smocze Góry",
+   "x": 8,
+   "y": 62
+  },
+  {
+   "to": "Smocze Góry",
+   "x": 9,
+   "y": 62
   }
  ]
 }

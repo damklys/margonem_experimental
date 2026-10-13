@@ -1,0 +1,98 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Złotą Wywerną p.2",
+ "id": 208,
+ "w": 32,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Pokój 208",
+   "x": 3,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 214",
+   "x": 3,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 207",
+   "x": 6,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 213",
+   "x": 6,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 206",
+   "x": 9,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 212",
+   "x": 9,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 205",
+   "x": 12,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 211",
+   "x": 12,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 210",
+   "x": 15,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 209",
+   "x": 18,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 204",
+   "x": 19,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 203",
+   "x": 22,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 202",
+   "x": 25,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Karczma pod Złotą Wywerną p.1",
+   "x": 25,
+   "y": 14
+  },
+  {
+   "to": "Pokój 201",
+   "x": 28,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

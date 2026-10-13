@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Szagarata",
+ "id": 69,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Szagarata p.1",
+   "x": 4,
+   "y": 6
+  },
+  {
+   "to": "Torneg",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 10,
+   "y": 12
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Porzucone Noiridum p.2",
+ "id": 7855,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Porzucone Noiridum p.3 - sala 1",
+   "x": 20,
+   "y": 16
+  },
+  {
+   "to": "Zakazana Grota",
+   "x": 47,
+   "y": 34
+  }
+ ]
+}

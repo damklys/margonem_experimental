@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - część akolitów p.1",
+ "id": 852,
+ "w": 16,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dormitorium - część akolitów",
+   "x": 2,
+   "y": 16
+  }
+ ]
+}

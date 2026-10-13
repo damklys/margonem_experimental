@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Przepastna Grota p.2",
+ "id": 136,
+ "w": 33,
+ "h": 35,
+ "gateways": [
+  {
+   "to": "Przepastna Grota p.1",
+   "x": 18,
+   "y": 19
+  }
+ ]
+}

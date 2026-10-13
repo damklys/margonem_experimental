@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mikliniosa - przyziemie",
+ "id": 2342,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mikliniosa",
+   "x": 10,
+   "y": 5
+  }
+ ]
+}

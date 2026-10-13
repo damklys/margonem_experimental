@@ -1,12 +1,20 @@
 {
  "kraken": "mapa",
  "name": "Grota Caerbannoga",
+ "id": 1746,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Grota Caerbannoga - leże bestii"
+   "to": "Czeluść Ognistej Pożogi",
+   "x": 9,
+   "y": 20
   },
   {
-   "to": "Czeluść Ognistej Pożogi"
+   "to": "Grota Caerbannoga - leże bestii",
+   "x": 13,
+   "y": 4,
+   "req": "Przejście dostępne od 57 do 83 poziomu"
   }
  ]
 }

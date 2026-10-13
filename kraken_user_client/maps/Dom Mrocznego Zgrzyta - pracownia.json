@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mrocznego Zgrzyta - pracownia",
+ "id": 4733,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mrocznego Zgrzyta",
+   "x": 4,
+   "y": 3
+  }
+ ]
+}

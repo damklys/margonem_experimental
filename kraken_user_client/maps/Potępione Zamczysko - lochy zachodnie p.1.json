@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - lochy zachodnie p.1",
+ "id": 4054,
+ "w": 32,
+ "h": 34,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - lochy zachodnie p.2",
+   "x": 6,
+   "y": 32
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 18,
+   "y": 1
+  }
+ ]
+}

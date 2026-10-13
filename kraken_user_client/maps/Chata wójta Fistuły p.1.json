@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Chata wójta Fistuły p.1",
+ "id": 7340,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Chata wójta Fistuły",
+   "x": 2,
+   "y": 7
+  }
+ ]
+}

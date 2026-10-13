@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Głuchy Las",
+ "id": 1116,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 0,
+   "y": 65
+  },
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 0,
+   "y": 66
+  },
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 0,
+   "y": 67
+  },
+  {
+   "to": "Zawodzące Kaskady",
+   "x": 22,
+   "y": 95
+  },
+  {
+   "to": "Zawodzące Kaskady",
+   "x": 23,
+   "y": 95
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 63,
+   "y": 62
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 63,
+   "y": 63
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - korytarz techniczny",
+ "id": 7294,
+ "w": 17,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - maszynownia",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "to": "SP Margonem - klatka schodowa p.1",
+   "x": 8,
+   "y": 15
+  },
+  {
+   "to": "SP Margonem - luki bagażowe",
+   "x": 13,
+   "y": 11
+  }
+ ]
+}

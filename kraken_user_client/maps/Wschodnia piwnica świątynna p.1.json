@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodnia piwnica świątynna p.1",
+ "id": 911,
+ "w": 16,
+ "h": 30,
+ "gateways": [
+  {
+   "to": "Świątynia Czterech Bóstw",
+   "x": 8,
+   "y": 18
+  },
+  {
+   "to": "Wschodnia piwnica świątynna p.2",
+   "x": 10,
+   "y": 26
+  }
+ ]
+}

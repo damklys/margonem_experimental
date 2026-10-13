@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Szyb Mahnior p.1",
+ "id": 278,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Szyb Mahnior p.2",
+   "x": 7,
+   "y": 39
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 19,
+   "y": 62
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 20,
+   "y": 62
   }
  ]
 }

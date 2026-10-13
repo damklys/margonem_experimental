@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grobowiec Nieznających Spokoju",
+ "id": 7062,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Sucha Dolina",
+   "x": 9,
+   "y": 44
+  }
+ ]
+}

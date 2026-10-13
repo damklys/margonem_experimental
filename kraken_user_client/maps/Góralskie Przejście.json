@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Góralskie Przejście",
+ "id": 352,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Jezioro Ważek",
+   "x": 0,
+   "y": 62
+  },
+  {
+   "to": "Babi Wzgórek",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Chata wójta Fistuły",
+   "x": 50,
+   "y": 7
+  }
+ ]
+}

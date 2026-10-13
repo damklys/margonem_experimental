@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Strażnica południowo-zachodnia",
+ "id": 2712,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Izba wytrzeźwień",
+   "x": 8,
+   "y": 8
+  },
+  {
+   "to": "Ithan",
+   "x": 13,
+   "y": 9
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Podziemna pasieka",
+ "id": 288,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 10,
+   "y": 12
+  }
+ ]
+}

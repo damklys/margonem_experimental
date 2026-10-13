@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Skrawek Raju",
+ "id": 2183,
+ "w": 24,
+ "h": 20,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 17,
+   "y": 17
+  },
+  {
+   "to": "Thuzal",
+   "x": 18,
+   "y": 17
   }
  ]
 }

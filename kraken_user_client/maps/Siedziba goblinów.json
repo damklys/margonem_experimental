@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba goblinów",
+ "id": 1220,
+ "w": 18,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Siedziba goblinów p.1",
+   "x": 8,
+   "y": 3
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Siedziba goblinów - piwnica",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

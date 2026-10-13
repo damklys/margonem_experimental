@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rumiry i Dobromira p.1",
+ "id": 1121,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rumiry i Dobromira",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

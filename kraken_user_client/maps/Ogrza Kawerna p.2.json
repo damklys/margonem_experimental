@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Ogrza Kawerna p.2",
+ "id": 7691,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Ogrza Kawerna p.1",
+   "x": 25,
+   "y": 44
+  },
+  {
+   "to": "Ogrza Kawerna p.3",
+   "x": 55,
+   "y": 24
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sklep z winem - piwnica p.2",
+ "id": 1125,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Sklep z winem - piwnica p.1",
+   "x": 11,
+   "y": 9
+  }
+ ]
+}

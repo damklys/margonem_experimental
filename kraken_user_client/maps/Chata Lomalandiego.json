@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Lomalandiego",
+ "id": 1245,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Rybacka",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

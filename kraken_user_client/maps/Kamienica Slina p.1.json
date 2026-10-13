@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Slina p.1",
+ "id": 1830,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Slina - pokój",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Kamienica Slina - pokój",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Kamienica Slina",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów - korytarz za ołtarzem",
+ "id": 1903,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Gildia Teologów - pracownia archeologa",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "to": "Gildia Teologów - pracownia archeologa",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Gildia Teologów - archiwum",
+   "x": 2,
+   "y": 16
+  },
+  {
+   "to": "Gildia Teologów - archiwum",
+   "x": 2,
+   "y": 17
+  },
+  {
+   "to": "Gildia Teologów - przejście do jaskiń",
+   "x": 10,
+   "y": 4
+  },
+  {
+   "to": "Gildia Teologów - przejście do jaskiń",
+   "x": 11,
+   "y": 4
+  },
+  {
+   "to": "Gildia Teologów - pracownia historyka",
+   "x": 19,
+   "y": 9
+  },
+  {
+   "to": "Gildia Teologów - pracownia historyka",
+   "x": 19,
+   "y": 10
+  },
+  {
+   "to": "Gildia Teologów - biuro inkwizytora",
+   "x": 19,
+   "y": 16
+  },
+  {
+   "to": "Gildia Teologów - biuro inkwizytora",
+   "x": 19,
+   "y": 17
+  }
+ ]
+}

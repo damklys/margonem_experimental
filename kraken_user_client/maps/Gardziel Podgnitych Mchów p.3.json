@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gardziel Podgnitych Mchów p.3",
+ "id": 8181,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Gardziel Podgnitych Mchów p.2",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

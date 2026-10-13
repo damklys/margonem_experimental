@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Seridiusza - piwnica",
+ "id": 1489,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Seridiusza",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "to": "Dom Seridiusza",
+   "x": 6,
+   "y": 4
+  }
+ ]
+}

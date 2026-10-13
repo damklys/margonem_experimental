@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - mostek kapitański",
+ "id": 7272,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - klatka schodowa p.3",
+   "x": 5,
+   "y": 14
+  }
+ ]
+}

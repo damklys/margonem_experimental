@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Korsarska Nora - sala 1",
+ "id": 1337,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 12,
+   "y": 39
+  },
+  {
+   "to": "Korsarska Nora - sala 2",
+   "x": 35,
+   "y": 6
+  }
+ ]
+}

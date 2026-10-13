@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Naznaczonych",
+ "id": 3317,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Jaskinia Piaskowej Burzy s.2",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

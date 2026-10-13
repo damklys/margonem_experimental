@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Browar Bimberara - garkuchnia",
+ "id": 3500,
+ "w": 40,
+ "h": 40,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Browar Bimberara - magazyn",
+   "x": 1,
+   "y": 27
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 31,
+   "y": 37
+  },
+  {
+   "to": "Browar Bimberara - warzelnia",
+   "x": 32,
+   "y": 3
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mieszkanie kowala Kalpusa p.1",
+ "id": 1909,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Warsztat kowala Kalpusa",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

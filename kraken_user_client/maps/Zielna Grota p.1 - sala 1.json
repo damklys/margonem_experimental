@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zielna Grota p.1 - sala 1",
+ "id": 73,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Torneg",
+   "x": 16,
+   "y": 19
+  },
+  {
+   "to": "Zielna Grota p.1 - sala 2",
+   "x": 17,
+   "y": 2
+  }
+ ]
+}

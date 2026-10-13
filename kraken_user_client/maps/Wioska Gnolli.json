@@ -1,24 +1,45 @@
 {
  "kraken": "mapa",
  "name": "Wioska Gnolli",
+ "id": 333,
+ "w": 96,
+ "h": 60,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Radosna Polana",
+   "x": 0,
+   "y": 15
   },
   {
-   "to": "Namiot Vari Krugera"
+   "to": "Radosna Polana",
+   "x": 0,
+   "y": 16
   },
   {
-   "to": "Jaskinia Gnollich Szamanów p.1"
+   "to": "Czeluść Ognistej Pożogi",
+   "x": 34,
+   "y": 0
   },
   {
-   "to": "Jaskinia Gnollich Szamanów p.2"
+   "to": "Namiot Vari Krugera",
+   "x": 41,
+   "y": 43,
+   "req": "Przejście dostępne do 78 poziomu"
   },
   {
-   "to": "Czeluść Ognistej Pożogi"
+   "to": "Jaskinia Gnollich Szamanów p.1",
+   "x": 67,
+   "y": 3
   },
   {
-   "to": "Radosna Polana"
+   "to": "Ithan",
+   "x": 79,
+   "y": 59
+  },
+  {
+   "to": "Jaskinia Gnollich Szamanów p.2",
+   "x": 84,
+   "y": 21
   }
  ]
 }

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Archiwa",
+ "id": 2719,
+ "w": 16,
+ "h": 41,
+ "gateways": [
+  {
+   "to": "Strażnica północno-zachodnia",
+   "x": 6,
+   "y": 7
+  },
+  {
+   "to": "Zachodnie skrzydło murów",
+   "x": 6,
+   "y": 39
+  },
+  {
+   "to": "Zaplecze",
+   "x": 14,
+   "y": 7
+  },
+  {
+   "to": "Zaplecze",
+   "x": 14,
+   "y": 8
+  }
+ ]
+}

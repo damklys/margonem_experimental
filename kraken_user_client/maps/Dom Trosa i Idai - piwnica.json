@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Trosa i Idai - piwnica",
+ "id": 1177,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Trosa i Idai",
+   "x": 5,
+   "y": 4
+  }
+ ]
+}

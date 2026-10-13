@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Izba wytrzeźwień",
+ "id": 2709,
+ "w": 28,
+ "h": 17,
+ "gateways": [
+  {
+   "to": "Przejście południowo-zachodnie",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Strażnica południowo-zachodnia",
+   "x": 16,
+   "y": 10
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Randala Rotguta p.1",
+ "id": 1498,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Randala Rotguta",
+   "x": 4,
+   "y": 6
+  }
+ ]
+}

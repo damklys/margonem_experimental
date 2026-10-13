@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom starej czarownicy",
+ "id": 1306,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 4,
+   "y": 12
+  }
+ ]
+}

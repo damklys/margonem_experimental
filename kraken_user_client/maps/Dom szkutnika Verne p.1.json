@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom szkutnika Verne p.1",
+ "id": 1454,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom szkutnika Verne",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

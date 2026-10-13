@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Złota Góra p.3 - sala 2",
+ "id": 5662,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Złota Góra p.2 - sala 4",
+   "x": 14,
+   "y": 19
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodni Mictlan p.3",
+ "id": 5689,
+ "w": 33,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zachodni Mictlan p.2",
+   "x": 16,
+   "y": 11
+  },
+  {
+   "to": "Zachodni Mictlan p.4",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

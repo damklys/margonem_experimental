@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom sióstr",
+ "id": 13,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Ithan",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Ithan",
+   "x": 6,
+   "y": 13
+  },
+  {
+   "to": "Ithan",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Dom sióstr p.1",
+   "x": 12,
+   "y": 2
   }
  ]
 }

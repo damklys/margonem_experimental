@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Posiadłość Kruzo - przedsionek",
+ "id": 4765,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Posiadłość Kruzo - sala główna",
+   "x": 7,
+   "y": 6
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Posiadłość Kruzo - sala główna",
+   "x": 8,
+   "y": 6
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 8,
+   "y": 14
   }
  ]
 }

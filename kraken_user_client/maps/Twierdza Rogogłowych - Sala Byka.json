@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Twierdza Rogogłowych - Sala Byka",
+ "id": 7368,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Wyspa Ingotia",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "to": "Wyspa Ingotia",
+   "x": 16,
+   "y": 29
+  }
+ ]
+}

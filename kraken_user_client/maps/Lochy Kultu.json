@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Lochy Kultu",
+ "id": 5944,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Tajemnicza Siedziba",
+   "x": 2,
+   "y": 11
+  },
+  {
+   "to": "Sale Rozdzierania",
+   "x": 31,
+   "y": 62
+  },
+  {
+   "to": "Sale Rozdzierania",
+   "x": 32,
+   "y": 62
+  }
+ ]
+}

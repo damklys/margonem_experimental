@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Zachodnie skrzydło murów",
+ "id": 2721,
+ "w": 34,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Archiwa",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Przejście południowo-zachodnie",
+   "x": 3,
+   "y": 14
+  },
+  {
+   "to": "Przejście południowo-zachodnie",
+   "x": 4,
+   "y": 14
+  }
+ ]
+}

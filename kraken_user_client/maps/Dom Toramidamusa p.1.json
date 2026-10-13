@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Toramidamusa p.1",
+ "id": 1496,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Toramidamusa",
+   "x": 4,
+   "y": 6
+  }
+ ]
+}

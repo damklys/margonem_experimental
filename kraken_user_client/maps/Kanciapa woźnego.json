@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kanciapa woźnego",
+ "id": 1200,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Szkoła - piwnica",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Szkoła - piwnica",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

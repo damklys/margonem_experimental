@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Umplecji i Kiliona",
+ "id": 323,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 8,
+   "y": 14
   }
  ]
 }

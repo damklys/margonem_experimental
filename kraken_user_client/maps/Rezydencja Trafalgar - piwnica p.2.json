@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Trafalgar - piwnica p.2",
+ "id": 920,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Trafalgar - tajemniczy pokój",
+   "x": 4,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Rezydencja Trafalgar - piwnica p.1",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

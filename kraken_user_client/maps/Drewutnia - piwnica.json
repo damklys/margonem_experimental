@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Drewutnia - piwnica",
+ "id": 874,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Drewutnia",
+   "x": 9,
+   "y": 4
+  }
+ ]
+}

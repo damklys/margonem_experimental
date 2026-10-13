@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wirkliusza Runaberda p.1",
+ "id": 1570,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Wirkliusza Runaberda",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

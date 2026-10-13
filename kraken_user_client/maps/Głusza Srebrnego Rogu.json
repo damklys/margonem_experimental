@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Głusza Srebrnego Rogu",
+ "id": 8171,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 0,
+   "y": 58
+  },
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 0,
+   "y": 59
+  },
+  {
+   "to": "Nocna Pustelnia p.1",
+   "x": 20,
+   "y": 23
+  }
+ ]
+}

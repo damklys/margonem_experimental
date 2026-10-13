@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Nocna Pustelnia p.2",
+ "id": 8556,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Nocna Pustelnia p.1",
+   "x": 31,
+   "y": 55
+  },
+  {
+   "to": "Nocna Pustelnia p.1",
+   "x": 32,
+   "y": 55
+  }
+ ]
+}

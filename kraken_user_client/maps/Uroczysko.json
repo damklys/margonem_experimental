@@ -1,24 +1,69 @@
 {
  "kraken": "mapa",
  "name": "Uroczysko",
+ "id": 38,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Porzucone Pasieki"
+   "to": "Wichrowe Szczyty",
+   "x": 0,
+   "y": 41
   },
   {
-   "to": "Lazurytowa Groda p.1"
+   "to": "Wichrowe Szczyty",
+   "x": 0,
+   "y": 42
   },
   {
-   "to": "Wichrowe Szczyty"
+   "to": "Wichrowe Szczyty",
+   "x": 0,
+   "y": 43
   },
   {
-   "to": "Zapomniany Szlak"
+   "to": "Porzucone Pasieki",
+   "x": 22,
+   "y": 0
   },
   {
-   "to": "Zniszczone Opactwo"
+   "to": "Porzucone Pasieki",
+   "x": 23,
+   "y": 0
   },
   {
-   "to": "Lazurytowa Grota p.1"
+   "to": "Porzucone Pasieki",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "to": "Lazurytowa Grota p.1",
+   "x": 37,
+   "y": 6
+  },
+  {
+   "to": "Zapomniany Szlak",
+   "x": 53,
+   "y": 63
+  },
+  {
+   "to": "Zapomniany Szlak",
+   "x": 54,
+   "y": 63
+  },
+  {
+   "to": "Zapomniany Szlak",
+   "x": 55,
+   "y": 63
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "x": 95,
+   "y": 38
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "x": 95,
+   "y": 39
   },
   {
    "to": "Namiot rozbójników"

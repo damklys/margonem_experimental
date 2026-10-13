@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. - zaplecze",
+ "id": 898,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn.",
+   "x": 11,
+   "y": 9
+  }
+ ]
+}

@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Ratusz Thuzal",
+ "id": 1067,
+ "w": 28,
+ "h": 24,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Ratusz Thuzal - sala bankietowa",
+   "x": 1,
+   "y": 2
+  },
+  {
+   "to": "Thuzal",
+   "x": 13,
+   "y": 22
+  },
+  {
+   "to": "Thuzal",
+   "x": 14,
+   "y": 22
+  },
+  {
+   "to": "Ratusz Thuzal - sala dzwonów",
+   "x": 26,
+   "y": 2
   }
  ]
 }

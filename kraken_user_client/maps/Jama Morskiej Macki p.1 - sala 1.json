@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jama Morskiej Macki p.1 - sala 1",
+ "id": 7355,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Jama Morskiej Macki p.1 - sala 2",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "Archipelag Bremus An",
+   "x": 26,
+   "y": 45
+  }
+ ]
+}

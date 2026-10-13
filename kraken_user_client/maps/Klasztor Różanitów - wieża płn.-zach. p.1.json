@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - wieża płn.-zach. p.1",
+ "id": 2488,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płn.-zach.p.2",
+   "x": 3,
+   "y": 6
+  },
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płn.-zach.p.1",
+   "x": 5,
+   "y": 7
+  },
+  {
+   "to": "Klasztor Różanitów - fraternia",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Klasztor Różanitów - fraternia",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Klasztor Różanitów - fraternia",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Klasztor Różanitów - strych p.1",
+   "x": 14,
+   "y": 9
+  },
+  {
+   "to": "Klasztor Różanitów - strych p.1",
+   "x": 14,
+   "y": 10
+  }
+ ]
+}

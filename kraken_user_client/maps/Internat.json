@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Internat",
+ "id": 7379,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Szkoła",
+   "x": 20,
+   "y": 11
+  }
+ ]
+}

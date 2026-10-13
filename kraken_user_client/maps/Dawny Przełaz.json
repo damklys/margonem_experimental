@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dawny Przełaz",
+ "id": 7860,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zamierzchłe Arterie p.3",
+   "x": 9,
+   "y": 30
+  },
+  {
+   "to": "Porzucone Noiridum p.3 - sala 2",
+   "x": 22,
+   "y": 6
+  }
+ ]
+}

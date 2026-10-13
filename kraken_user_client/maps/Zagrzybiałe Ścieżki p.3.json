@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Zagrzybiałe Ścieżki p.3",
+ "id": 6781,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Zagrzybiałe Ścieżki p.2"
+   "to": "Zagrzybiałe Ścieżki p.2",
+   "x": 5,
+   "y": 2
   }
  ]
 }

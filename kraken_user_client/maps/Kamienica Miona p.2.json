@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Miona p.2",
+ "id": 758,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Miona p.1",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

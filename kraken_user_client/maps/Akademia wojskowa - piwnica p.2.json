@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Akademia wojskowa - piwnica p.2",
+ "id": 864,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Akademia wojskowa - piwnica p.1",
+   "x": 5,
+   "y": 9
+  }
+ ]
+}

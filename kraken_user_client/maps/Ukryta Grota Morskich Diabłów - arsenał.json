@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Ukryta Grota Morskich Diabłów - arsenał",
+ "id": 1528,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Ukryta Grota Morskich Diabłów - korytarz",
+   "x": 8,
+   "y": 2
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 30,
+   "y": 38
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 38,
+   "y": 20
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 38,
+   "y": 21
+  }
+ ]
+}

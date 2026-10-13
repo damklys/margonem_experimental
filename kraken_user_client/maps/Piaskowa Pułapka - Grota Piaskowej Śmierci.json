@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Piaskowa Pułapka - Grota Piaskowej Śmierci",
+ "id": 7375,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Piaskowa Pułapka p.1 - sala 2",
+   "x": 3,
+   "y": 16
+  },
+  {
+   "to": "Piaskowa Pułapka p.1 - sala 2",
+   "x": 3,
+   "y": 17
+  }
+ ]
+}

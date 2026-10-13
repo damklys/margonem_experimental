@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Drzewo Życia p.1",
+ "id": 6063,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Matecznik Szelestu",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Matecznik Szelestu",
+   "x": 11,
+   "y": 20
+  },
+  {
+   "to": "Drzewo Życia p.2",
+   "x": 14,
+   "y": 12
+  }
+ ]
+}

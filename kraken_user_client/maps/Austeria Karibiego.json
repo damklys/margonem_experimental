@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Austeria Karibiego",
+ "id": 2131,
+ "w": 22,
+ "h": 20,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Austeria Karibiego - Rozkosz nad Rozkoszami",
+   "x": 4,
+   "y": 18
+  },
+  {
+   "to": "Austeria Karibiego p.1",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Thuzal",
+   "x": 16,
+   "y": 4
+  },
+  {
+   "to": "Thuzal",
+   "x": 17,
+   "y": 4
   }
  ]
 }

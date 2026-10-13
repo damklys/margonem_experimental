@@ -8,29 +8,17 @@
   {
    "to": "Lokum Złych Goblinów - zejście p.1",
    "x": 4,
-   "y": 11,
-   "toId": 7471,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 11
   },
   {
    "to": "Włości rodu Kruzo",
    "x": 9,
-   "y": 13,
-   "toId": 4764,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 13
   },
   {
    "to": "Włości rodu Kruzo",
    "x": 10,
-   "y": 13,
-   "toId": 4764,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 13
   }
  ]
 }

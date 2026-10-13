@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - klatka schodowa płd.-wsch.p.1",
+ "id": 2505,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 6,
+   "y": 7
+  },
+  {
+   "to": "Klasztor Różanitów - lawaterz",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

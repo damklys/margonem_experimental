@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Trajnaloka",
+ "id": 315,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Mythar",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Dom Trajnaloka p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

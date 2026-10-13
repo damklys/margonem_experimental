@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Strażnica - Sanktuarium",
+ "id": 1151,
+ "w": 22,
+ "h": 24,
  "gateways": [
   {
-   "to": "Kamienna Strażnica - Sala Chwały"
+   "to": "Kamienna Strażnica - Sala Chwały",
+   "x": 8,
+   "y": 1
   }
  ]
 }

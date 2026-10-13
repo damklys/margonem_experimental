@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Młynarza p.1",
+ "id": 612,
+ "w": 22,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Młynarza",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Śnieżycowy Las",
+ "id": 4549,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przysiółek Valmirów",
+   "x": 65,
+   "y": 63
+  },
+  {
+   "to": "Śnieżna Granica",
+   "x": 70,
+   "y": 0
+  },
+  {
+   "to": "Śnieżna Granica",
+   "x": 71,
+   "y": 0
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Straży Bramy - loch",
+ "id": 1214,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba Straży Bramy",
+   "x": 2,
+   "y": 4
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grobowiec Przeklętego Krakania - przedsionek",
+ "id": 4196,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 25,
+   "y": 29
+  },
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 26,
+   "y": 29
+  }
+ ]
+}

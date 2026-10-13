@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Karoliny i Gabriela",
+ "id": 8121,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 11,
+   "y": 11
+  }
+ ]
+}

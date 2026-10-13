@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Karczma pod Złotą Wywerną",
+ "id": 206,
+ "w": 34,
+ "h": 22,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 9,
+   "y": 20
+  },
+  {
+   "to": "Karczma pod Złotą Wywerną p.1",
+   "x": 26,
+   "y": 8
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Emilio",
+ "id": 8120,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

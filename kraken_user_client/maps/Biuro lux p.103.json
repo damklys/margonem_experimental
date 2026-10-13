@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Biuro lux p.103",
+ "id": 384,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Karka-han - prawe skrzydło",
+   "x": 18,
+   "y": 8
+  },
+  {
+   "to": "Ratusz Karka-han - prawe skrzydło",
+   "x": 18,
+   "y": 9
+  }
+ ]
+}

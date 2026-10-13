@@ -6,22 +6,14 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Podziemne Przejście p.3",
-   "x": 8,
-   "y": 6,
-   "toId": 89,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Podziemne Przejście p.4 - sala 2",
    "x": 1,
-   "y": 2,
-   "toId": 91,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 2
+  },
+  {
+   "to": "Podziemne Przejście p.3",
+   "x": 8,
+   "y": 6
   }
  ]
 }

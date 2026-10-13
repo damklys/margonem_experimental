@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedlisko Przyjemnej Woni - źródło",
+ "id": 8187,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Siedlisko Przyjemnej Woni",
+   "x": 21,
+   "y": 30
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Konstantego i Forsycji p.1",
+ "id": 1698,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Konstantego i Forsycji",
+   "x": 11,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Świątynia Hebrehotha - sala ofiary",
+ "id": 3340,
+ "w": 50,
+ "h": 50,
+ "gateways": [
+  {
+   "to": "Świątynia Hebrehotha - przedsionek",
+   "x": 25,
+   "y": 48
+  },
+  {
+   "to": "Świątynia Hebrehotha - przedsionek",
+   "x": 26,
+   "y": 48
+  }
+ ]
+}

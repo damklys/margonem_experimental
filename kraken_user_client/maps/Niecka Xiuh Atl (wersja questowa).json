@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Niecka Xiuh Atl (wersja questowa)",
+ "id": 5489,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Altepetl Mahoptekan (wersja questowa)",
+   "x": 0,
+   "y": 52
+  },
+  {
+   "to": "Opuszczona piramida - przedsionek",
+   "x": 10,
+   "y": 7
+  },
+  {
+   "to": "Opuszczona piramida - przedsionek",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

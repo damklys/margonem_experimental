@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Kapitana Portu",
+ "id": 1473,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kapitanat Portu",
+   "x": 17,
+   "y": 9
+  }
+ ]
+}

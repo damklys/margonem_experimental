@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - głębokie lochy",
+ "id": 8193,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - lochy zachodnie p.2",
+   "x": 5,
+   "y": 2
+  },
+  {
+   "to": "Potępione Zamczysko - lochy wschodnie p.2",
+   "x": 26,
+   "y": 2
+  }
+ ]
+}

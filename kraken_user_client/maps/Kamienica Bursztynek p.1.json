@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Bursztynek p.1",
+ "id": 1601,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Kamienica Bursztynek",
+   "x": 6,
+   "y": 6
+  }
+ ]
+}

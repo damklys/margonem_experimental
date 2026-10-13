@@ -1,0 +1,30 @@
+{
+ "kraken": "mapa",
+ "name": "Szepczące Wyrwy p.2 - sala 5",
+ "id": 8552,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Szepczące Wyrwy p.3",
+   "x": 9,
+   "y": 26,
+   "req": "Przejście dostępne do 283 poziomu"
+  },
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 4",
+   "x": 38,
+   "y": 6
+  },
+  {
+   "to": "Szepczące Wyrwy p.2 - sala 6",
+   "x": 40,
+   "y": 17
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 3",
+   "x": 40,
+   "y": 30
+  }
+ ]
+}

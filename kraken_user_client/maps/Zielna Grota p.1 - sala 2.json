@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zielna Grota p.1 - sala 2",
+ "id": 74,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zielna Grota p.1 - sala 1",
+   "x": 5,
+   "y": 14
+  }
+ ]
+}

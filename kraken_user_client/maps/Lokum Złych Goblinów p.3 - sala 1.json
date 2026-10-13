@@ -1,0 +1,25 @@
+{
+ "kraken": "mapa",
+ "name": "Lokum Złych Goblinów p.3 - sala 1",
+ "id": 7475,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Lokum Złych Goblinów p.3 - sala 2",
+   "x": 3,
+   "y": 59
+  },
+  {
+   "to": "Lokum Złych Goblinów p.4",
+   "x": 30,
+   "y": 39,
+   "req": "Przejście dostępne od 141 do 167 poziomu"
+  },
+  {
+   "to": "Lokum Złych Goblinów p.2 - sala 1",
+   "x": 38,
+   "y": 6
+  }
+ ]
+}

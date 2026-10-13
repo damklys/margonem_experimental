@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Próby",
+ "id": 3337,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 5,
+   "y": 26
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 6,
+   "y": 26
+  },
+  {
+   "to": "Jaskinia Odwagi",
+   "x": 23,
+   "y": 30
+  },
+  {
+   "to": "Jaskinia Odwagi",
+   "x": 24,
+   "y": 30
+  }
+ ]
+}

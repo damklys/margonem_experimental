@@ -1,15 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Lazurowe Wzgórze",
+ "id": 347,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Słoneczna Wyżyna"
+   "to": "Stare lokum bandytów",
+   "x": 11,
+   "y": 31
   },
   {
-   "to": "Kwieciste Przejście"
+   "to": "Grań Gawronich Piór",
+   "x": 33,
+   "y": 0
   },
   {
-   "to": "Grań Gawronich Piór"
+   "to": "Grań Gawronich Piór",
+   "x": 34,
+   "y": 0
+  },
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 48,
+   "y": 63
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 49,
+   "y": 63
+  },
+  {
+   "to": "Kwieciste Przejście",
+   "x": 50,
+   "y": 63
+  },
+  {
+   "to": "Słoneczna Wyżyna",
+   "x": 95,
+   "y": 17
+  },
+  {
+   "to": "Słoneczna Wyżyna",
+   "x": 95,
+   "y": 18
   }
  ]
 }

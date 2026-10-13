@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Smoczej Paszczy p.1",
+ "id": 3334,
+ "w": 40,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 2,
+   "y": 12
+  },
+  {
+   "to": "Jurta Chaegda",
+   "x": 20,
+   "y": 21
+  },
+  {
+   "to": "Jaskinia Smoczej Paszczy p.2",
+   "x": 34,
+   "y": 1
+  }
+ ]
+}

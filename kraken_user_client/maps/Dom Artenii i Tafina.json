@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Artenii i Tafina",
+ "id": 157,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Artenii i Tafina p.1",
+   "x": 2,
+   "y": 7
+  },
+  {
+   "to": "Eder",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Eder",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Dom Artenii i Tafina - piwnica",
+   "x": 11,
+   "y": 5
+  }
+ ]
+}

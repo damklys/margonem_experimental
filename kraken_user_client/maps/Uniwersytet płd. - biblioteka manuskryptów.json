@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płd. - biblioteka manuskryptów",
+ "id": 904,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Uniwersytet płd.",
+   "x": 5,
+   "y": 9
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Austeria Karibiego - Rozkosz nad Rozkoszami",
+ "id": 2177,
+ "w": 27,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Austeria Karibiego",
+   "x": 1,
+   "y": 13
+  }
+ ]
+}

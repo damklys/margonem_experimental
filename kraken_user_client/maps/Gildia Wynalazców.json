@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Gildia Wynalazców",
+ "id": 1960,
+ "w": 32,
+ "h": 26,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Gildia Wynalazców - aula uniwersytecka",
+   "x": 15,
+   "y": 3
+  },
+  {
+   "to": "Thuzal",
+   "x": 15,
+   "y": 24
+  },
+  {
+   "to": "Gildia Wynalazców - aula uniwersytecka",
+   "x": 16,
+   "y": 3
+  },
+  {
+   "to": "Thuzal",
+   "x": 16,
+   "y": 24
   }
  ]
 }

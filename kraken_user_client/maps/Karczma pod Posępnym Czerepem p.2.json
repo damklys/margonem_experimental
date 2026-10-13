@@ -1,0 +1,247 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Posępnym Czerepem p.2",
+ "id": 42,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Pokój 221",
+   "x": 1,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 222",
+   "x": 1,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 201",
+   "x": 2,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 226",
+   "x": 2,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 220",
+   "x": 3,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 223",
+   "x": 3,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 202",
+   "x": 4,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 227",
+   "x": 4,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 219",
+   "x": 5,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 224",
+   "x": 5,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 203",
+   "x": 6,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 228",
+   "x": 6,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 225",
+   "x": 7,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 204",
+   "x": 8,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 229",
+   "x": 8,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 205",
+   "x": 10,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Karczma pod Posępnym Czerepem p.1",
+   "x": 10,
+   "y": 5
+  },
+  {
+   "to": "Pokój 218",
+   "x": 10,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 230",
+   "x": 10,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 206",
+   "x": 12,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 217",
+   "x": 12,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 231",
+   "x": 12,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 235",
+   "x": 13,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 207",
+   "x": 14,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 216",
+   "x": 14,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 232",
+   "x": 14,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 236",
+   "x": 15,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 208",
+   "x": 16,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 215",
+   "x": 16,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 233",
+   "x": 16,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 237",
+   "x": 17,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 209",
+   "x": 18,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 214",
+   "x": 18,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 234",
+   "x": 18,
+   "y": 21,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 238",
+   "x": 19,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 210",
+   "x": 20,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 213",
+   "x": 20,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 239",
+   "x": 21,
+   "y": 13
+  },
+  {
+   "to": "Pokój 211",
+   "x": 22,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 212",
+   "x": 22,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

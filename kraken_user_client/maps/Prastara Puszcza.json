@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Prastara Puszcza",
+ "id": 1219,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Zalesiony Step",
+   "x": 21,
+   "y": 0
+  },
+  {
+   "to": "Zalesiony Step",
+   "x": 22,
+   "y": 0
+  },
+  {
+   "to": "Karka-han",
+   "x": 26,
+   "y": 61
+  },
+  {
+   "to": "Karka-han",
+   "x": 27,
+   "y": 61
   }
  ]
 }

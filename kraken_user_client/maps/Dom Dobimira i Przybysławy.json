@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Dobimira i Przybysławy",
+ "id": 8517,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podbrzezie",
+   "x": 4,
+   "y": 9
+  }
+ ]
+}

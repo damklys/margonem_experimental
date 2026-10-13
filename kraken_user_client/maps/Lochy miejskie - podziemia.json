@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lochy miejskie - podziemia",
+ "id": 1881,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Lochy miejskie",
+   "x": 17,
+   "y": 3
+  }
+ ]
+}

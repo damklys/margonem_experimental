@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia krawiecka Sericji i Callusa p.1",
+ "id": 1183,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia krawiecka Sericji i Callusa",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 11,
+   "y": 10
+  }
+ ]
+}

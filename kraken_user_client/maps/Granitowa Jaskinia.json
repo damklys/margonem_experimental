@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Granitowa Jaskinia",
+ "id": 23,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Granitowa Jaskinia p.2",
+   "x": 5,
+   "y": 8
+  },
+  {
+   "to": "Zniszczone Opactwo",
+   "x": 7,
+   "y": 12
+  }
+ ]
+}

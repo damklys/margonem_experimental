@@ -1,0 +1,74 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Tęczowym Żukiem p.2",
+ "id": 1008,
+ "w": 40,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Pokój 11",
+   "x": 5,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 12",
+   "x": 8,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Zajazd pod Tęczowym Żukiem p.1",
+   "x": 12,
+   "y": 4
+  },
+  {
+   "to": "Pokój 13",
+   "x": 19,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 18",
+   "x": 19,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 14",
+   "x": 23,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 19",
+   "x": 23,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 15",
+   "x": 27,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 20",
+   "x": 27,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 16",
+   "x": 31,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 17",
+   "x": 35,
+   "y": 9,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

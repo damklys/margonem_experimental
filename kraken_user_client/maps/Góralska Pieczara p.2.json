@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Góralska Pieczara p.2",
+ "id": 7336,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Góralska Pieczara p.3",
+   "x": 11,
+   "y": 3
+  },
+  {
+   "to": "Góralska Pieczara p.1",
+   "x": 12,
+   "y": 40
+  }
+ ]
+}

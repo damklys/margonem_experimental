@@ -1,24 +1,74 @@
 {
  "kraken": "mapa",
  "name": "Złote Piaski",
+ "id": 2867,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Dolina Suchych Łez"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 0,
+   "y": 90
   },
   {
-   "to": "Ruiny Pustynnych Burz"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 0,
+   "y": 91
   },
   {
-   "to": "Płaskowyż Arpen"
+   "to": "Ciche Rumowiska",
+   "x": 3,
+   "y": 95
   },
   {
-   "to": "Piramida Pustynnego Władcy p.1"
+   "to": "Ciche Rumowiska",
+   "x": 4,
+   "y": 95
   },
   {
-   "to": "Oaza Siedmiu Wichrów"
+   "to": "Płaskowyż Arpan",
+   "x": 21,
+   "y": 0
   },
   {
-   "to": "Ciche Rumowiska"
+   "to": "Płaskowyż Arpan",
+   "x": 22,
+   "y": 0
+  },
+  {
+   "to": "Piramida Pustynnego Władcy p.1",
+   "x": 24,
+   "y": 33
+  },
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 45,
+   "y": 95
+  },
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 46,
+   "y": 95
+  },
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 49,
+   "y": 0
+  },
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "to": "Ruiny Pustynnych Burz",
+   "x": 63,
+   "y": 56
+  },
+  {
+   "to": "Ruiny Pustynnych Burz",
+   "x": 63,
+   "y": 57
   }
  ]
 }

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Wyspa Magradit",
+ "id": 1743,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Grota Wiedźmiej Złośliwości",
+   "x": 25,
+   "y": 64
+  },
+  {
+   "to": "Wulkan Politraki p.1 - sala 1",
+   "x": 38,
+   "y": 51
+  },
+  {
+   "to": "Wulkan Politraki p.2 - sala 1",
+   "x": 48,
+   "y": 35
+  }
+ ]
+}

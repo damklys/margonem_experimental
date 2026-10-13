@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście Władców Mrozu",
+ "id": 2355,
+ "w": 36,
+ "h": 36,
+ "gateways": [
+  {
+   "to": "Sala Mroźnych Strzał",
+   "x": 7,
+   "y": 29,
+   "req": "Przejście dostępne od 250 do 500 poziomu"
+  },
+  {
+   "to": "Sala Mroźnych Strzał",
+   "x": 8,
+   "y": 29,
+   "req": "Przejście dostępne od 250 do 500 poziomu"
+  },
+  {
+   "to": "Sala Mroźnych Szeptów",
+   "x": 16,
+   "y": 30,
+   "req": "Przejście dostępne od 250 do 500 poziomu"
+  },
+  {
+   "to": "Korytarz Zagubionych Marzeń",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Sala Tronowa",
+   "x": 32,
+   "y": 10,
+   "req": "Przejście dostępne od 287 poziomu"
+  },
+  {
+   "to": "Sala Lodowej Magii",
+   "x": 33,
+   "y": 28,
+   "req": "Przejście dostępne od 250 do 500 poziomu"
+  }
+ ]
+}

@@ -1,18 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Przeklęta Strażnica",
+ "id": 5733,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Orla Grań"
+   "to": "Przeklęta Strażnica - podziemia p.1 s.1",
+   "x": 2,
+   "y": 16
   },
   {
-   "to": "Przeklęta Strażnica - podziemia p.1 s.1"
+   "to": "Przeklęta Strażnica p.1",
+   "x": 10,
+   "y": 2
   },
   {
-   "to": "Przeklęta Strażnica - podziemia p.1 s.2"
+   "to": "Orla Grań",
+   "x": 10,
+   "y": 20
   },
   {
-   "to": "Przeklęta Strażnica p.1"
+   "to": "Przeklęta Strażnica p.1",
+   "x": 11,
+   "y": 2
+  },
+  {
+   "to": "Orla Grań",
+   "x": 11,
+   "y": 20
+  },
+  {
+   "to": "Przeklęta Strażnica - podziemia p.1 s.2",
+   "x": 19,
+   "y": 16
   }
  ]
 }

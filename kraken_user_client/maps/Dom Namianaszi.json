@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Namianaszi",
+ "id": 1205,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Namianaszi p.1",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 11,
+   "y": 11
+  }
+ ]
+}

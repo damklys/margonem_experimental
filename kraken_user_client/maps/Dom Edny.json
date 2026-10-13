@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Edny",
- "gateways": []
+ "id": 619,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Edny - piwnica p.1",
+   "x": 3,
+   "y": 12
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 11,
+   "y": 13
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 12,
+   "y": 13
+  }
+ ]
 }

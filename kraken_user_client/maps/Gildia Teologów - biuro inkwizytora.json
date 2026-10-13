@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Teologów - biuro inkwizytora",
+ "id": 1948,
+ "w": 18,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Gildia Teologów - korytarz za ołtarzem",
+   "x": 3,
+   "y": 16
+  }
+ ]
+}

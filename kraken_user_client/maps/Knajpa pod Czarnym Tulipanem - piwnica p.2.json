@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Knajpa pod Czarnym Tulipanem - piwnica p.2",
+ "id": 832,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Knajpa pod Czarnym Tulipanem - piwnica p.1",
+   "x": 11,
+   "y": 2
+  }
+ ]
+}

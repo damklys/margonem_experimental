@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Gildia Kupców - część północna",
+ "id": 953,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Gildia Kupców - część zachodnia",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "to": "Gildia Kupców - część zachodnia",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Nithal",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Gildia Kupców - część wschodnia",
+   "x": 12,
+   "y": 10
   }
  ]
 }

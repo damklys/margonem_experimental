@@ -1,18 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Mglista Polana Vesy",
+ "id": 3758,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Gadzia Kotlina"
+   "to": "Gadzia Kotlina",
+   "x": 0,
+   "y": 35
   },
   {
-   "to": "Zagrzybiałe Ścieżki p.1 - sala 3"
+   "to": "Wzgórze Płaczek",
+   "x": 0,
+   "y": 83
   },
   {
-   "to": "Wzgórze Płaczek"
+   "to": "Wzgórze Płaczek",
+   "x": 0,
+   "y": 84
   },
   {
-   "to": "Księżycowe Wzniesienie"
+   "to": "Zagrzybiałe Ścieżki p.1 - sala 3",
+   "x": 13,
+   "y": 40
+  },
+  {
+   "to": "Księżycowe Wzniesienie",
+   "x": 34,
+   "y": 95
+  },
+  {
+   "to": "Księżycowe Wzniesienie",
+   "x": 35,
+   "y": 95
   }
  ]
 }

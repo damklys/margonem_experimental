@@ -8,20 +8,12 @@
   {
    "to": "Podziemne Przejście - sala wyjściowa",
    "x": 7,
-   "y": 1,
-   "toId": 98,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 1
   },
   {
    "to": "Podziemne Przejście p.6 - sala 3",
    "x": 15,
-   "y": 23,
-   "toId": 96,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 23
   }
  ]
 }

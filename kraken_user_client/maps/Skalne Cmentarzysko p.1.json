@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Skalne Cmentarzysko p.1",
+ "id": 7063,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Płaskowyż Arpan"
+   "to": "Skalne Cmentarzysko p.2",
+   "x": 9,
+   "y": 6
   },
   {
-   "to": "Skalne Cmentarzysko p.2"
+   "to": "Płaskowyż Arpan",
+   "x": 21,
+   "y": 29
   }
  ]
 }

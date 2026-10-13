@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Wóz Vadomy",
+ "id": 1064,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Zatopiony Szczyt",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

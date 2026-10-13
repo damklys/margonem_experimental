@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mikliniosa",
+ "id": 220,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 3,
+   "y": 7
+  },
+  {
+   "to": "Eder",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Dom Mikliniosa - przyziemie",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Mikliniosa p.1",
+   "x": 12,
+   "y": 7
+  }
+ ]
+}

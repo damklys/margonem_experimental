@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Alabraskana - piwnica",
+ "id": 1934,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Alabraskana",
+   "x": 11,
+   "y": 4
+  }
+ ]
+}

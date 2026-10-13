@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Schadzek p.1",
+ "id": 164,
+ "w": 24,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dom Schadzek",
+   "x": 3,
+   "y": 5
+  }
+ ]
+}

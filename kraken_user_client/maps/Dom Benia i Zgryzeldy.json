@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Benia i Zgryzeldy",
+ "id": 1921,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 13,
+   "y": 7
+  }
+ ]
+}

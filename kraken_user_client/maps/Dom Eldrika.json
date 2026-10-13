@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Eldrika",
+ "id": 297,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Ithan",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Ithan",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Dom Eldrika p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

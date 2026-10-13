@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wei",
+ "id": 82,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Torneg",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Dom Wei p.1",
+   "x": 12,
+   "y": 5
+  }
+ ]
+}

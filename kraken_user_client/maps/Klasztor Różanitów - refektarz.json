@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - refektarz",
+ "id": 2498,
+ "w": 17,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 1,
+   "y": 22
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 1,
+   "y": 23
+  },
+  {
+   "to": "Klasztor Różanitów - piwniczka",
+   "x": 2,
+   "y": 25
+  },
+  {
+   "to": "Klasztor Różanitów - świątynia",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 8,
+   "y": 26
+  },
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 9,
+   "y": 26
+  },
+  {
+   "to": "Klasztor Różanitów - klasztorna piekarnia",
+   "x": 10,
+   "y": 26
+  }
+ ]
+}

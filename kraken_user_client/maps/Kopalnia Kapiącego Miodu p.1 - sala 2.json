@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Kapiącego Miodu p.1 - sala 2",
+ "id": 5396,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Porzucone Pasieki"
+   "to": "Porzucone Pasieki",
+   "x": 9,
+   "y": 61
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.2 - sala 2"
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala 2",
+   "x": 11,
+   "y": 7
   }
  ]
 }

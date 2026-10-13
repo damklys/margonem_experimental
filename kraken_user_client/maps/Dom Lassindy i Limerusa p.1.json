@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Lassindy i Limerusa p.1",
+ "id": 309,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Lassindy i Limerusa",
+   "x": 10,
+   "y": 9
+  }
+ ]
+}

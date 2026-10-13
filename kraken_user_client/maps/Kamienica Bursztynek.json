@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Bursztynek",
+ "id": 1600,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Kamienica Bursztynek p.1",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Tuzmer",
+   "x": 4,
+   "y": 17
+  },
+  {
+   "to": "Tuzmer",
+   "x": 5,
+   "y": 17
+  },
+  {
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 17
   }
  ]
 }

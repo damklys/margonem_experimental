@@ -1,15 +1,30 @@
 {
  "kraken": "mapa",
  "name": "Krypty Dusz Śniegu p.2",
+ "id": 6625,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Krypty Dusz Śniegu p.3"
+   "to": "Krypty Dusz Śniegu p.3",
+   "x": 4,
+   "y": 22
   },
   {
-   "to": "Krypty Dusz Śniegu p.1"
+   "to": "Krypty Dusz Śniegu p.3",
+   "x": 5,
+   "y": 22
   },
   {
-   "to": "Krypty Dusz Śniegu p.3 - komnata Lisza"
+   "to": "Krypty Dusz Śniegu p.3 - komnata Lisza",
+   "x": 28,
+   "y": 44,
+   "req": "Przejście dostępne do 88 poziomu"
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.1",
+   "x": 35,
+   "y": 2
   }
  ]
 }

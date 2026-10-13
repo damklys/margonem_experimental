@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Leksosa",
+ "id": 1576,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 5,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Dom Leksosa p.1",
+   "x": 10,
+   "y": 3
   }
  ]
 }

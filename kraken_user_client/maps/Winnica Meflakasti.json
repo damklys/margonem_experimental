@@ -1,9 +1,64 @@
 {
  "kraken": "mapa",
  "name": "Winnica Meflakasti",
+ "id": 731,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Zarośnięta grota",
+   "x": 5,
+   "y": 59
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "to": "Zachodnia Rubież",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Dom Wazira",
+   "x": 17,
+   "y": 39
+  },
+  {
+   "to": "Magazyn win p.1",
+   "x": 34,
+   "y": 44
+  },
+  {
+   "to": "Magazyn win p.1",
+   "x": 35,
+   "y": 44
+  },
+  {
+   "to": "Nithal",
+   "x": 76,
+   "y": 6
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 95,
+   "y": 53
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 95,
+   "y": 54
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 95,
+   "y": 55
   }
  ]
 }

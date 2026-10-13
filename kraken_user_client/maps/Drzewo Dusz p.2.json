@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Drzewo Dusz p.2",
+ "id": 6055,
+ "w": 56,
+ "h": 56,
+ "gateways": [
+  {
+   "to": "Drzewo Dusz p.1",
+   "x": 24,
+   "y": 45
+  }
+ ]
+}

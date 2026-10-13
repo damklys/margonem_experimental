@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Alabraskana",
+ "id": 65,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Dom Alabraskana p.1",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Werbin",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Dom Alabraskana - piwnica",
+   "x": 11,
+   "y": 11
   }
  ]
 }

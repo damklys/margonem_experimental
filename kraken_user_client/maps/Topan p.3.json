@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Topan p.3",
+ "id": 5698,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Topan p.2",
+   "x": 15,
+   "y": 5
+  },
+  {
+   "to": "Topan p.2",
+   "x": 16,
+   "y": 5
+  },
+  {
+   "to": "Topan p.4",
+   "x": 21,
+   "y": 27
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Jęczywąwóz",
+ "id": 4051,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Plugawe Pustkowie",
+   "x": 26,
+   "y": 95
+  },
+  {
+   "to": "Plugawe Pustkowie",
+   "x": 27,
+   "y": 95
+  },
+  {
+   "to": "Skalisty Styk",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "to": "Skalisty Styk",
+   "x": 51,
+   "y": 0
+  },
+  {
+   "to": "Pogranicze Wisielców",
+   "x": 63,
+   "y": 31
+  },
+  {
+   "to": "Pogranicze Wisielców",
+   "x": 63,
+   "y": 32
+  }
+ ]
+}

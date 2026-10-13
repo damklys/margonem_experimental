@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. p.3 - sztuka",
+ "id": 894,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn. p.2",
+   "x": 4,
+   "y": 15
+  }
+ ]
+}

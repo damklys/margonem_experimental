@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Nerthusa - sala prelekcyjna",
+ "id": 1839,
+ "w": 24,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Gildia Nerthusa - biblioteka",
+   "x": 4,
+   "y": 7
+  }
+ ]
+}

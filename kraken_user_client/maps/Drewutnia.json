@@ -1,5 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Drewutnia",
- "gateways": []
+ "id": 875,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Drewutnia - piwnica",
+   "x": 10,
+   "y": 7
+  }
+ ]
 }

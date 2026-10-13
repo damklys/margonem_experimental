@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Angussa - pracownia",
+ "id": 2482,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Angussa",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

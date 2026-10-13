@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Krypty Bezsennych p.2 s.1",
+ "id": 6051,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.3",
+   "x": 24,
+   "y": 10
+  },
+  {
+   "to": "Krypty Bezsennych p.1 s.1",
+   "x": 24,
+   "y": 43
+  },
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 50,
+   "y": 26
+  },
+  {
+   "to": "Krypty Bezsennych p.2 s.2",
+   "x": 50,
+   "y": 27
+  }
+ ]
+}

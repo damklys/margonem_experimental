@@ -1,15 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Strażnica - wsch. baszta skalna sala p.1",
+ "id": 1146,
+ "w": 25,
+ "h": 33,
  "gateways": [
   {
-   "to": "Kamienna Strażnica - wsch. baszta zasypany tunel"
+   "to": "Kamienna Strażnica - wsch. baszta zasypany tunel",
+   "x": 8,
+   "y": 30
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta p.1"
+   "to": "Kamienna Strażnica - wsch. baszta p.1",
+   "x": 11,
+   "y": 4
   },
   {
-   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.0"
+   "to": "Kamienna Strażnica - wsch. baszta p.1",
+   "x": 12,
+   "y": 4
+  },
+  {
+   "to": "Kamienna Strażnica - wsch. baszta skalna sala p.0",
+   "x": 16,
+   "y": 30
   }
  ]
 }

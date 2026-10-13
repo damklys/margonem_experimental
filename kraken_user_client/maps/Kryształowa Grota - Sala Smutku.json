@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kryształowa Grota - Sala Smutku",
+ "id": 7345,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Kryształowa Grota p.2 - sala 1",
+   "x": 8,
+   "y": 46
+  },
+  {
+   "to": "Kryształowa Grota p.2 - sala 2",
+   "x": 39,
+   "y": 46
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Szkolna biblioteka",
+ "id": 1199,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Szkoła",
+   "x": 4,
+   "y": 14
+  },
+  {
+   "to": "Szkoła",
+   "x": 5,
+   "y": 14
+  }
+ ]
+}

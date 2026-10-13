@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Skaryfikacji Grzeszników",
+ "id": 7695,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Przejście Oczyszczenia",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Przejście Oczyszczenia",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Żołnierski Korytarz",
+ "id": 1985,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 6,
+   "y": 20
+  },
+  {
+   "to": "Thuzal",
+   "x": 7,
+   "y": 20
+  },
+  {
+   "to": "Szczerba Samobójców",
+   "x": 17,
+   "y": 3
   }
  ]
 }

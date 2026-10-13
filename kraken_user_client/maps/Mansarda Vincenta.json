@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mansarda Vincenta",
+ "id": 2668,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pod Rozbrykanym Niziołkiem - piętro",
+   "x": 3,
+   "y": 4
+  }
+ ]
+}

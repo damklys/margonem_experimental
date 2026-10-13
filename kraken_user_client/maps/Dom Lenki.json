@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Lenki",
+ "id": 1809,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Dom Lenki - piwnica",
+   "x": 5,
+   "y": 10
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Lenki p.1",
+   "x": 11,
+   "y": 3
   }
  ]
 }

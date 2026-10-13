@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mira",
+ "id": 66,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mira p.1",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Torneg",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

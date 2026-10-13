@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Puchacza",
+ "id": 2163,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Puchacza p.1",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Szczerba Samobójców",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Szczerba Samobójców",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Sztab Dowódczy",
+   "x": 15,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Gepperta - pokój",
+ "id": 2062,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Gepperta - warsztat",
+   "x": 12,
+   "y": 9
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczona Twierdza",
+ "id": 1104,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Góry Zrębowe",
+   "x": 0,
+   "y": 25
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 0,
+   "y": 26
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 0,
+   "y": 55
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 0,
+   "y": 56
+  },
+  {
+   "to": "Mała Twierdza - wieża zachodnia",
+   "x": 25,
+   "y": 12
+  },
+  {
+   "to": "Mała Twierdza - mały barak",
+   "x": 27,
+   "y": 25
+  },
+  {
+   "to": "Mała Twierdza - mury zachodnie",
+   "x": 28,
+   "y": 15
+  },
+  {
+   "to": "Mała Twierdza - mały barak",
+   "x": 28,
+   "y": 25
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 35,
+   "y": 95
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 36,
+   "y": 95
+  },
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 39,
+   "y": 15
+  },
+  {
+   "to": "Mała Twierdza - wieża strażnicza",
+   "x": 46,
+   "y": 40
+  },
+  {
+   "to": "Mała Twierdza - wieża wschodnia",
+   "x": 48,
+   "y": 8
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 55,
+   "y": 0
+  },
+  {
+   "to": "Zaginiona Dolina",
+   "x": 56,
+   "y": 0
+  },
+  {
+   "to": "Czarcie Oparzeliska",
+   "x": 63,
+   "y": 41
+  },
+  {
+   "to": "Czarcie Oparzeliska",
+   "x": 63,
+   "y": 42
+  }
+ ]
+}

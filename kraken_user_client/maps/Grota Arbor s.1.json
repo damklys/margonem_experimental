@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Arbor s.1",
+ "id": 6056,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Grota Arbor s.2",
+   "x": 9,
+   "y": 4
+  },
+  {
+   "to": "Las Porywów Wiatru",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Las Porywów Wiatru",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

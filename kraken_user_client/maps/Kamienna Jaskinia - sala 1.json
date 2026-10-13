@@ -1,15 +1,30 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Jaskinia - sala 1",
+ "id": 6535,
+ "w": 50,
+ "h": 50,
  "gateways": [
   {
-   "to": "Zapomniany Szlak"
+   "to": "Kamienna Jaskinia - sala 3",
+   "x": 6,
+   "y": 4,
+   "req": "Przejście dostępne do 83 poziomu"
   },
   {
-   "to": "Kamienna Jaskinia - sala 2"
+   "to": "Kamienna Jaskinia - sala 2",
+   "x": 15,
+   "y": 48
   },
   {
-   "to": "Kamienna Jaskinia - sala 3"
+   "to": "Zapomniany Szlak",
+   "x": 40,
+   "y": 20
+  },
+  {
+   "to": "Zapomniany Szlak",
+   "x": 41,
+   "y": 20
   }
  ]
 }

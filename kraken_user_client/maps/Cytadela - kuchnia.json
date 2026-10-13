@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Cytadela - kuchnia",
+ "id": 869,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Cytadela",
+   "x": 3,
+   "y": 4
+  }
+ ]
+}

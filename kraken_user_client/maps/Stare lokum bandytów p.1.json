@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Stare lokum bandytów p.1",
+ "id": 1395,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Stare lokum bandytów",
+   "x": 9,
+   "y": 5
+  }
+ ]
+}

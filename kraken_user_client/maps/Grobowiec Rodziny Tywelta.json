@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Grobowiec Rodziny Tywelta",
+ "id": 2884,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Nekropolia Karka-han"
+   "to": "Grobowiec Rodziny Tywelta p.1",
+   "x": 10,
+   "y": 10
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Grobowiec Rodziny Tywelta p.1",
+   "x": 11,
+   "y": 10
+  },
+  {
+   "to": "Nekropolia Karka-han",
+   "x": 11,
+   "y": 20
   }
  ]
 }

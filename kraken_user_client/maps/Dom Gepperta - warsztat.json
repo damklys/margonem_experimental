@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Gepperta - warsztat",
+ "id": 2061,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Dom Gepperta - pokój",
+   "x": 2,
+   "y": 8
+  },
+  {
+   "to": "Werbin",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Werbin",
+   "x": 10,
+   "y": 12
   }
  ]
 }

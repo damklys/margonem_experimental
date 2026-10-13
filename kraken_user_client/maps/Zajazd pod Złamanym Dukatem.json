@@ -1,9 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Zajazd pod Złamanym Dukatem",
+ "id": 923,
+ "w": 30,
+ "h": 22,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Zajazd pod Złamanym Dukatem - kuchnia",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem - kuchnia",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Nithal",
+   "x": 13,
+   "y": 13
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.1",
+   "x": 14,
+   "y": 5
+  },
+  {
+   "to": "Nithal",
+   "x": 14,
+   "y": 13
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.1",
+   "x": 15,
+   "y": 5
+  },
+  {
+   "to": "Nithal",
+   "x": 15,
+   "y": 13
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem - pokój właściciela",
+   "x": 25,
+   "y": 11
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem - pokój właściciela",
+   "x": 26,
+   "y": 11
   }
  ]
 }

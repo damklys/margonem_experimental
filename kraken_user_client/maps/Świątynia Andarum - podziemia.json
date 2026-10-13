@@ -1,21 +1,64 @@
 {
  "kraken": "mapa",
  "name": "Świątynia Andarum - podziemia",
+ "id": 6611,
+ "w": 59,
+ "h": 36,
  "gateways": [
   {
-   "to": "Świątynia Andarum - zejście prawe"
+   "to": "Świątynia Andarum - magazyn p.1",
+   "x": 1,
+   "y": 23
   },
   {
-   "to": "Świątynia Andarum - zejście lewe"
+   "to": "Świątynia Andarum - magazyn p.1",
+   "x": 1,
+   "y": 24
   },
   {
-   "to": "Świątynia Andarum - biblioteka"
+   "to": "Świątynia Andarum - zejście lewe",
+   "x": 4,
+   "y": 1
   },
   {
-   "to": "Świątynia Andarum - lokum mnichów"
+   "to": "Świątynia Andarum - zejście lewe",
+   "x": 5,
+   "y": 1
   },
   {
-   "to": "Świątynia Andarum - magazyn p.1"
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 28,
+   "y": 34
+  },
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 29,
+   "y": 34
+  },
+  {
+   "to": "Świątynia Andarum - lokum mnichów",
+   "x": 30,
+   "y": 34
+  },
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "x": 53,
+   "y": 1
+  },
+  {
+   "to": "Świątynia Andarum - zejście prawe",
+   "x": 54,
+   "y": 1
+  },
+  {
+   "to": "Świątynia Andarum - biblioteka",
+   "x": 57,
+   "y": 14
+  },
+  {
+   "to": "Świątynia Andarum - biblioteka",
+   "x": 57,
+   "y": 15
   }
  ]
 }

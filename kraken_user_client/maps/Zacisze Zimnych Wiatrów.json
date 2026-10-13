@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Zacisze Zimnych Wiatrów",
+ "id": 4271,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Siedlisko Przyjemnej Woni",
+   "x": 10,
+   "y": 22
+  },
+  {
+   "to": "Skalisty Styk",
+   "x": 68,
+   "y": 63
+  },
+  {
+   "to": "Skalisty Styk",
+   "x": 69,
+   "y": 63
+  }
+ ]
+}

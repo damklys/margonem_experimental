@@ -8,20 +8,12 @@
   {
    "to": "Podziemne Przejście p.6 - sala 4",
    "x": 3,
-   "y": 5,
-   "toId": 97,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 5
   },
   {
    "to": "Wichrowe Szczyty",
    "x": 13,
-   "y": 7,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 7
   }
  ]
 }

@@ -1,5 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Gospodarstwo Łucji i Jana",
- "gateways": []
+ "id": 880,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Łucji i Jana p.1",
+   "x": 2,
+   "y": 1
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana - piekarnia",
+   "x": 6,
+   "y": 4
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana - piwnica",
+   "x": 11,
+   "y": 9
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 13,
+   "y": 11
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 14,
+   "y": 11
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 15,
+   "y": 11
+  }
+ ]
 }

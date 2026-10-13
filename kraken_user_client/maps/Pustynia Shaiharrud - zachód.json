@@ -1,0 +1,79 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynia Shaiharrud - zachód",
+ "id": 3315,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Skały Umarłych",
+   "x": 0,
+   "y": 76
+  },
+  {
+   "to": "Skały Umarłych",
+   "x": 0,
+   "y": 77
+  },
+  {
+   "to": "Namiot Gwardii Smokoszczękich",
+   "x": 8,
+   "y": 42
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Jurta Chaegda",
+   "x": 23,
+   "y": 82
+  },
+  {
+   "to": "Jurta Czcicieli",
+   "x": 25,
+   "y": 29
+  },
+  {
+   "to": "Jaskinia Smoczej Paszczy p.1",
+   "x": 25,
+   "y": 73
+  },
+  {
+   "to": "Jaskinia Szczęk",
+   "x": 31,
+   "y": 23
+  },
+  {
+   "to": "Sępiarnia",
+   "x": 33,
+   "y": 48
+  },
+  {
+   "to": "Namiot Piechoty Piłowej",
+   "x": 40,
+   "y": 21
+  },
+  {
+   "to": "Namiot Naznaczonych",
+   "x": 44,
+   "y": 19
+  },
+  {
+   "to": "Jaskinia Piaskowej Burzy s.1",
+   "x": 53,
+   "y": 32
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 63,
+   "y": 42
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 63,
+   "y": 43
+  }
+ ]
+}

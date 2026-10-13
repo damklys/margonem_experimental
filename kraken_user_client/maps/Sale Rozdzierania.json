@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Sale Rozdzierania",
+ "id": 5945,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 2,
+   "y": 45
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 2,
+   "y": 46
+  },
+  {
+   "to": "Lochy Kultu",
+   "x": 31,
+   "y": 2
+  },
+  {
+   "to": "Lochy Kultu",
+   "x": 32,
+   "y": 2
+  }
+ ]
+}

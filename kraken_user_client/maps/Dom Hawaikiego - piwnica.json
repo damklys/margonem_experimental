@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Hawaikiego - piwnica",
+ "id": 1582,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Hawaikiego",
+   "x": 12,
+   "y": 5
+  }
+ ]
+}

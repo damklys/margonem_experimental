@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Broka - strych",
+ "id": 754,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Broka p.2",
+   "x": 4,
+   "y": 5
+  }
+ ]
+}

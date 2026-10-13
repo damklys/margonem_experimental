@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Skład surowców - piwnica",
+ "id": 1804,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Skład surowców",
+   "x": 6,
+   "y": 4
+  }
+ ]
+}

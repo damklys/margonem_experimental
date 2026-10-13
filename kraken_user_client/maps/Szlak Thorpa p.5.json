@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Szlak Thorpa p.5",
+ "id": 3471,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Szlak Thorpa p.4",
+   "x": 6,
+   "y": 50
+  },
+  {
+   "to": "Szlak Thorpa p.6",
+   "x": 44,
+   "y": 35
+  }
+ ]
+}

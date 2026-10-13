@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Króla Rybaka - piwnica",
+ "id": 1247,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Chata Króla Rybaka",
+   "x": 5,
+   "y": 5
+  },
+  {
+   "to": "Chata Króla Rybaka",
+   "x": 6,
+   "y": 5
+  }
+ ]
+}

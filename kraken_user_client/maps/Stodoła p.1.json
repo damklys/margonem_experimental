@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Stodoła p.1",
+ "id": 877,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Stodoła",
+   "x": 5,
+   "y": 6
+  }
+ ]
+}

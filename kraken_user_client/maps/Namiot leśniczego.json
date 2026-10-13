@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Namiot leśniczego",
+ "id": 1793,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Przedmieścia Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 8,
+   "y": 11
   }
  ]
 }

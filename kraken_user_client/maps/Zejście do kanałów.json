@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Zejście do kanałów",
+ "id": 978,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Północne mury Nithal - część wschodnia",
+   "x": 7,
+   "y": 2
+  },
+  {
+   "to": "Kanały Nithal p.1 - sala 3",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Północne mury Nithal - część wschodnia",
+   "x": 8,
+   "y": 2
+  },
+  {
+   "to": "Kanały Nithal p.1 - sala 3",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

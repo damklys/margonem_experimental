@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia",
- "gateways": []
+ "id": 1764,
+ "w": 30,
+ "h": 30,
+ "gateways": [
+  {
+   "to": "Bagnista Dolina Dusz",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "to": "Jaskinia - pracownia",
+   "x": 24,
+   "y": 17
+  }
+ ]
 }

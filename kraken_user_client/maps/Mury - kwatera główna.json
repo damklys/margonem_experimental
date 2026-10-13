@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Mury - kwatera główna",
+ "id": 2075,
+ "w": 25,
+ "h": 18,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Mury - zbrojownia",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Mury - zbrojownia",
+   "x": 9,
+   "y": 5
+  },
+  {
+   "to": "Werbin",
+   "x": 11,
+   "y": 14
+  },
+  {
+   "to": "Werbin",
+   "x": 12,
+   "y": 14
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Drzewo Życia p.2",
+ "id": 6064,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Drzewo Życia p.3",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Drzewo Życia p.1",
+   "x": 18,
+   "y": 16
+  }
+ ]
+}

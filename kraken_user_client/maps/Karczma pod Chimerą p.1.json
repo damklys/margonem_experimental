@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Chimerą p.1",
+ "id": 2007,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Karczma pod Chimerą",
+   "x": 3,
+   "y": 11
+  }
+ ]
+}

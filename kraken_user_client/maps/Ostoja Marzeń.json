@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Ostoja Marzeń",
+ "id": 2774,
+ "w": 100,
+ "h": 100,
+ "gateways": [
+  {
+   "to": "Las Milczących Cieni",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Las Milczących Cieni",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Dom Torkina",
+   "x": 46,
+   "y": 78
+  }
+ ]
+}

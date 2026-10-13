@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Sklep z winem",
+ "id": 1123,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Sklep z winem - piwnica p.1",
+   "x": 10,
+   "y": 8
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

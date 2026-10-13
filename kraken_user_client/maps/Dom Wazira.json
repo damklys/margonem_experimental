@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wazira",
+ "id": 1117,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Wazira - piwnica",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 10,
+   "y": 10
+  },
+  {
+   "to": "Winnica Meflakasti",
+   "x": 11,
+   "y": 10
+  },
+  {
+   "to": "Dom Wazira p.1",
+   "x": 12,
+   "y": 3
+  }
+ ]
+}

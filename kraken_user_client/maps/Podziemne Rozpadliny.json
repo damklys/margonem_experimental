@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Podziemne Rozpadliny",
- "gateways": []
+ "id": 4168,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Kuźnia Worundriela p.1",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Szlak Thorpa p.1",
+   "x": 10,
+   "y": 3
+  },
+  {
+   "to": "Sosnowe Odludzie",
+   "x": 13,
+   "y": 20
+  }
+ ]
 }

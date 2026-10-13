@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dolina Pajęczych Korytarzy",
+ "id": 3738,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Arachnitopia p.1",
+   "x": 24,
+   "y": 24
+  },
+  {
+   "to": "Otchłań Pajęczych Sieci",
+   "x": 63,
+   "y": 35
+  },
+  {
+   "to": "Otchłań Pajęczych Sieci",
+   "x": 63,
+   "y": 36
+  }
+ ]
+}

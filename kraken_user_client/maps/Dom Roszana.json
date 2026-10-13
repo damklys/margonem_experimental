@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Roszana",
+ "id": 103,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 10,
+   "y": 13
+  },
+  {
+   "to": "Dom Roszana p.1",
+   "x": 12,
+   "y": 10
   }
  ]
 }

@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Grota Bezszelestnych Kroków - sala 2",
+ "id": 6474,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Grota Bezszelestnych Kroków - sala 1"
+   "to": "Grota Bezszelestnych Kroków - sala 3",
+   "x": 5,
+   "y": 11
   },
   {
-   "to": "Grota Bezszelestnych Kroków - sala 3"
+   "to": "Grota Bezszelestnych Kroków - sala 3",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Grota Bezszelestnych Kroków - sala 1",
+   "x": 15,
+   "y": 62
   }
  ]
 }

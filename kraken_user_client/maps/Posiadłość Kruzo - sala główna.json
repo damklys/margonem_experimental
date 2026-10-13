@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Posiadłość Kruzo - sala główna",
+ "id": 4766,
+ "w": 28,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Posiadłość Kruzo - przedsionek",
+   "x": 13,
+   "y": 26
+  },
+  {
+   "to": "Posiadłość Kruzo - przedsionek",
+   "x": 14,
+   "y": 26
+  }
+ ]
+}

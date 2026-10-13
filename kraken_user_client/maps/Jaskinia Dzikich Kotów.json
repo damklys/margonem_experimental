@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia Dzikich Kotów",
+ "id": 1264,
+ "w": 48,
+ "h": 64,
  "gateways": [
   {
-   "to": "Tygrysia Polana"
+   "to": "Tygrysia Polana",
+   "x": 9,
+   "y": 61
   },
   {
-   "to": "Dzikie Pagórki"
+   "to": "Dzikie Pagórki",
+   "x": 42,
+   "y": 27
   }
  ]
 }

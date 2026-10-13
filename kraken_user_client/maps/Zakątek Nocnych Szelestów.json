@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Zakątek Nocnych Szelestów",
+ "id": 8175,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Zmurszały Łęg",
+   "x": 29,
+   "y": 95
+  },
+  {
+   "to": "Zmurszały Łęg",
+   "x": 30,
+   "y": 95
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 63,
+   "y": 39
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 63,
+   "y": 40
+  }
+ ]
+}

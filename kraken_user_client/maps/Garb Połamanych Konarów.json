@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "Garb Połamanych Konarów",
+ "id": 8168,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zmurszały Łęg",
+   "x": 0,
+   "y": 19
+  },
+  {
+   "to": "Zmurszały Łęg",
+   "x": 0,
+   "y": 20
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 28,
+   "y": 0
+  },
+  {
+   "to": "Gardziel Podgnitych Mchów p.1",
+   "x": 50,
+   "y": 32
+  },
+  {
+   "to": "Szepty Menhirów",
+   "x": 82,
+   "y": 0
+  },
+  {
+   "to": "Szepty Menhirów",
+   "x": 83,
+   "y": 0
+  },
+  {
+   "to": "Zalesiony Step",
+   "x": 95,
+   "y": 37
+  },
+  {
+   "to": "Zalesiony Step",
+   "x": 95,
+   "y": 38
+  }
+ ]
+}

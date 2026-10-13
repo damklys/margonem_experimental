@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zarosłe Szczeliny p.1 - sala 2",
+ "id": 8177,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Zmurszały Łęg",
+   "x": 28,
+   "y": 42
+  },
+  {
+   "to": "Zarosłe Szczeliny p.1 - sala 3",
+   "x": 31,
+   "y": 8
+  }
+ ]
+}

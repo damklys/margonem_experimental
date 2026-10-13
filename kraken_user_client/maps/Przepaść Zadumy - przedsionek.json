@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Przepaść Zadumy - przedsionek",
+ "id": 4161,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jezioro Ważek",
+   "x": 14,
+   "y": 30
+  }
+ ]
+}

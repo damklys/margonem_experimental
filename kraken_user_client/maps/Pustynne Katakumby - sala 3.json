@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - sala 3",
+ "id": 3031,
+ "w": 30,
+ "h": 44,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - sala 4",
+   "x": 8,
+   "y": 4
+  },
+  {
+   "to": "Pustynne Katakumby - sala 1",
+   "x": 12,
+   "y": 32
+  }
+ ]
+}

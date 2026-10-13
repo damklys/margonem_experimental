@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - sala bankietowa",
+ "id": 7267,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "SP Margonem - klatka schodowa p.3",
+   "x": 2,
+   "y": 18
+  },
+  {
+   "to": "SP Margonem - kuchnia",
+   "x": 29,
+   "y": 18
+  },
+  {
+   "to": "SP Margonem - kuchnia",
+   "x": 29,
+   "y": 25
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Pinkertonów",
+ "id": 6363,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 11,
+   "y": 14
+  }
+ ]
+}

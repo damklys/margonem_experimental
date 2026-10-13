@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Cela gladiatora 3",
+ "id": 1535,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Arena Gladiatorów p.1",
+   "x": 13,
+   "y": 8
+  },
+  {
+   "to": "Arena Gladiatorów p.1",
+   "x": 13,
+   "y": 9
+  }
+ ]
+}

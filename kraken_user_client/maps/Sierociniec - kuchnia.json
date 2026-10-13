@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sierociniec - kuchnia",
+ "id": 1371,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Sierociniec",
+   "x": 3,
+   "y": 3
+  }
+ ]
+}

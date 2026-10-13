@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Północne mury Nithal - część wschodnia",
+ "id": 958,
+ "w": 55,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Cytadela - przejście",
+   "x": 5,
+   "y": 10
+  },
+  {
+   "to": "Zejście do kanałów",
+   "x": 26,
+   "y": 10
+  },
+  {
+   "to": "Mury Nithal - Baszta Ogniowa",
+   "x": 52,
+   "y": 7
+  },
+  {
+   "to": "Mury Nithal - Baszta Ogniowa",
+   "x": 52,
+   "y": 8
+  }
+ ]
+}

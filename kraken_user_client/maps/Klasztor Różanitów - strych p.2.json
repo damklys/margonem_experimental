@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - strych p.2",
+ "id": 2495,
+ "w": 45,
+ "h": 23,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - wieża płn.-zach. p.2",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "Klasztor Różanitów - wieża płn.-zach. p.2",
+   "x": 1,
+   "y": 13
+  }
+ ]
+}

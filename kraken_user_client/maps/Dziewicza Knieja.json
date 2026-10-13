@@ -1,24 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Dziewicza Knieja",
+ "id": 631,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Las Tropicieli"
+   "to": "Orla Grań",
+   "x": 0,
+   "y": 72
   },
   {
-   "to": "Stare Ruiny"
+   "to": "Orla Grań",
+   "x": 0,
+   "y": 73
   },
   {
-   "to": "Grota Malowanej Śmierci"
+   "to": "Siedlisko Nietoperzy p.5",
+   "x": 10,
+   "y": 42
   },
   {
-   "to": "Siedlisko Nietoperzy p.1"
+   "to": "Stare Ruiny",
+   "x": 12,
+   "y": 0
   },
   {
-   "to": "Siedlisko Nietoperzy p.5"
+   "to": "Stare Ruiny",
+   "x": 13,
+   "y": 0
   },
   {
-   "to": "Orla Grań"
+   "to": "Siedlisko Nietoperzy p.1",
+   "x": 14,
+   "y": 63
+  },
+  {
+   "to": "Grota Malowanej Śmierci",
+   "x": 43,
+   "y": 46
+  },
+  {
+   "to": "Las Tropicieli",
+   "x": 63,
+   "y": 79
+  },
+  {
+   "to": "Las Tropicieli",
+   "x": 63,
+   "y": 80
   }
  ]
 }

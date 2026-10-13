@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Grota Malowanej Śmierci",
+ "id": 583,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Dziewicza Knieja"
+   "to": "Dziewicza Knieja",
+   "x": 13,
+   "y": 27
   }
  ]
 }

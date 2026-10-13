@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.1 - północ",
+ "id": 6617,
+ "w": 32,
+ "h": 24,
  "gateways": [
   {
-   "to": "Erem Czarnego Słońca p.2"
+   "to": "Erem Czarnego Słońca p.2",
+   "x": 15,
+   "y": 12
   },
   {
-   "to": "Skały Mroźnych Śpiewów"
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 15,
+   "y": 22
+  },
+  {
+   "to": "Erem Czarnego Słońca p.2",
+   "x": 16,
+   "y": 12
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 16,
+   "y": 22
   }
  ]
 }

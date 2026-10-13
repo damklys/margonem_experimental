@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Kluspa",
+ "id": 345,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Dom Kluspa - piwnica",
+   "x": 5,
+   "y": 11
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Dom Kluspa p.1",
+   "x": 11,
+   "y": 3
   }
  ]
 }

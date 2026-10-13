@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn Eder",
+ "id": 165,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 14,
+   "y": 8
+  },
+  {
+   "to": "Eder",
+   "x": 14,
+   "y": 9
+  }
+ ]
+}

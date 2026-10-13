@@ -1,12 +1,20 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Strażnica - Sala Chwały",
+ "id": 1150,
+ "w": 28,
+ "h": 22,
  "gateways": [
   {
-   "to": "Kamienna Strażnica - Sanktuarium"
+   "to": "Kamienna Strażnica - Sanktuarium",
+   "x": 4,
+   "y": 16,
+   "req": "Przejście dostępne do 106 poziomu"
   },
   {
-   "to": "Kamienna Strażnica - tunel"
+   "to": "Kamienna Strażnica - tunel",
+   "x": 8,
+   "y": 2
   }
  ]
 }

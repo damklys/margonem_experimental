@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Siedlisko Nietoperzy p.1",
+ "id": 143,
+ "w": 32,
+ "h": 24,
  "gateways": [
   {
-   "to": "Dziewicza Knieja"
+   "to": "Dziewicza Knieja",
+   "x": 7,
+   "y": 20
   },
   {
-   "to": "Siedlisko Nietoperzy p.2"
+   "to": "Siedlisko Nietoperzy p.2",
+   "x": 17,
+   "y": 14
   }
  ]
 }

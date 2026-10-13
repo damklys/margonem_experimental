@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Sępa s.1",
+ "id": 3330,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Jaskinia Sępa s.2",
+   "x": 9,
+   "y": 4
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 38,
+   "y": 44
+  },
+  {
+   "to": "Smocze Skalisko",
+   "x": 39,
+   "y": 44
+  }
+ ]
+}

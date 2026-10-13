@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Mrowisko p.1",
+ "id": 2528,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Mrowisko"
+   "to": "Mrowisko",
+   "x": 8,
+   "y": 1
   },
   {
-   "to": "Mrowisko p.2"
+   "to": "Mrowisko p.2",
+   "x": 26,
+   "y": 30
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Łucji i Jana p.1 - sypialnia",
+ "id": 883,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Łucji i Jana - strych",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Gospodarstwo Łucji i Jana p.1",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

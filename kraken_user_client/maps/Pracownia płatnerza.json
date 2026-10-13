@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Pracownia płatnerza",
+ "id": 1887,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Pracownia płatnerza - skład",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Karka-han",
+   "x": 10,
+   "y": 12
   }
  ]
 }

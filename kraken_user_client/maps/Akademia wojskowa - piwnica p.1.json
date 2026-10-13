@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Akademia wojskowa - piwnica p.1",
+ "id": 863,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Akademia wojskowa - piwnica p.2",
+   "x": 2,
+   "y": 11
+  },
+  {
+   "to": "Akademia wojskowa - stajnia",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "to": "Mury Nithal - Baszta Koronna",
+   "x": 17,
+   "y": 4
+  }
+ ]
+}

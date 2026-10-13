@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Edwarda",
+ "id": 8119,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Edwarda p.1",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 12,
+   "y": 8
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 12,
+   "y": 9
+  }
+ ]
+}

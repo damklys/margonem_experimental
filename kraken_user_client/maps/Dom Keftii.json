@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Keftii",
+ "id": 1312,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Keftii p.1",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Tuzmer",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 12
   }
  ]
 }

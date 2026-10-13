@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Stajnia reniferów",
+ "id": 8154,
+ "w": 16,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Gwiazdkowe Włości Mikołaja",
+   "x": 12,
+   "y": 18
+  }
+ ]
+}

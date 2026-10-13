@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Las Tropicieli",
+ "id": 632,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Osada Mulusów"
+   "to": "Dziewicza Knieja",
+   "x": 0,
+   "y": 79
   },
   {
-   "to": "Dziewicza Knieja"
+   "to": "Dziewicza Knieja",
+   "x": 0,
+   "y": 80
+  },
+  {
+   "to": "Osada Mulusów",
+   "x": 63,
+   "y": 23
   }
  ]
 }

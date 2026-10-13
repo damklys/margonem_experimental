@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Izba 19",
+ "id": 992,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

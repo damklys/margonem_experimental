@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Tronowa",
+ "id": 2758,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 23,
+   "y": 3
+  }
+ ]
+}

@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia Gnollich Szamanów p.2",
+ "id": 341,
+ "w": 34,
+ "h": 28,
  "gateways": [
   {
-   "to": "Wioska Gnolli"
+   "to": "Jaskinia Gnollich Szamanów p.1",
+   "x": 7,
+   "y": 4
   },
   {
-   "to": "Jaskinia Gnollich Szamanów p.1"
+   "to": "Jaskinia Gnollich Szamanów p.3",
+   "x": 18,
+   "y": 8
   },
   {
-   "to": "Jaskinia Gnollich Szamanów p.3"
+   "to": "Wioska Gnolli",
+   "x": 23,
+   "y": 22
   }
  ]
 }

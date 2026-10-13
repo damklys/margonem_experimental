@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodnie skrzydło murów",
+ "id": 2718,
+ "w": 27,
+ "h": 17,
+ "gateways": [
+  {
+   "to": "Przejście południowo-wschodnie",
+   "x": 13,
+   "y": 14
+  },
+  {
+   "to": "Przejście południowo-wschodnie",
+   "x": 14,
+   "y": 14
+  },
+  {
+   "to": "Przejście północno-wschodnie",
+   "x": 23,
+   "y": 4
+  }
+ ]
+}

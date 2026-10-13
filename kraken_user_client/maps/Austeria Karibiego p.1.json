@@ -1,0 +1,43 @@
+{
+ "kraken": "mapa",
+ "name": "Austeria Karibiego p.1",
+ "id": 2132,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Austeria Karibiego",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Austeria Karibiego p.2",
+   "x": 5,
+   "y": 10
+  },
+  {
+   "to": "Szlachecka izba 1",
+   "x": 7,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 101",
+   "x": 12,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 102",
+   "x": 12,
+   "y": 10,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 103",
+   "x": 12,
+   "y": 15,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

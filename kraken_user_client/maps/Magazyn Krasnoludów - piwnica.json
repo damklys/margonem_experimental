@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn Krasnoludów - piwnica",
+ "id": 3342,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Magazyn Krasnoludów",
+   "x": 1,
+   "y": 10
+  }
+ ]
+}

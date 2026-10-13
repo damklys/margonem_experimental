@@ -1,9 +1,65 @@
 {
  "kraken": "mapa",
  "name": "Karczma pod Fioletowym Kryształem",
+ "id": 62,
+ "w": 28,
+ "h": 20,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Izba 3",
+   "x": 5,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 2",
+   "x": 5,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 1",
+   "x": 5,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 1",
+   "x": 7,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Werbin",
+   "x": 17,
+   "y": 18
+  },
+  {
+   "to": "Werbin",
+   "x": 18,
+   "y": 18
+  },
+  {
+   "to": "Werbin",
+   "x": 19,
+   "y": 18
+  },
+  {
+   "to": "Karczma pod Fioletowym Kryształem p.1",
+   "x": 20,
+   "y": 10
+  },
+  {
+   "to": "Izba 4",
+   "x": 21,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 5",
+   "x": 21,
+   "y": 17,
+   "req": "(wymaga klucza)"
   }
  ]
 }

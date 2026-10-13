@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Gryforium",
+ "id": 7479,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Korytarze Milczących Intryg p.1",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Korytarze Milczących Intryg p.1",
+   "x": 8,
+   "y": 7
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 8,
+   "y": 11
   }
  ]
 }

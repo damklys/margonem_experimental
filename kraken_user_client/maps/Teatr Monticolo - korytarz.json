@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Teatr Monticolo - korytarz",
+ "id": 7427,
+ "w": 48,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Teatr Monticolo - kulisy lewe",
+   "x": 9,
+   "y": 28
+  },
+  {
+   "to": "Teatr Monticolo - garderoba",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "to": "Teatr Monticolo - garderoba",
+   "x": 18,
+   "y": 10
+  },
+  {
+   "to": "Teatr Monticolo - garderoba",
+   "x": 29,
+   "y": 12
+  },
+  {
+   "to": "Teatr Monticolo - kulisy prawe",
+   "x": 40,
+   "y": 28
+  },
+  {
+   "to": "Teatr Monticolo - wejście od zaplecza",
+   "x": 43,
+   "y": 20
+  }
+ ]
+}

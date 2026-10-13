@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Mokra Grota p.2",
- "gateways": []
+ "id": 177,
+ "w": 32,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Mokra Grota p.1",
+   "x": 6,
+   "y": 4
+  }
+ ]
 }

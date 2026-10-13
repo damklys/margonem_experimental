@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Kastora",
+ "id": 302,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dolina Yss",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Dolina Yss",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

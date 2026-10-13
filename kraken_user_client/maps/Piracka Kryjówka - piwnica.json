@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Piracka Kryjówka - piwnica",
+ "id": 1447,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Piracka Kryjówka",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

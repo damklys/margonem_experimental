@@ -1,5 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Cmentarzysko Szerpów",
- "gateways": []
+ "id": 1730,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Śnieżna Granica",
+   "x": 0,
+   "y": 26
+  },
+  {
+   "to": "Śnieżna Granica",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 10,
+   "y": 63
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 11,
+   "y": 63
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 12,
+   "y": 63
+  },
+  {
+   "to": "Krypty Dusz Śniegu p.1",
+   "x": 61,
+   "y": 36
+  }
+ ]
 }

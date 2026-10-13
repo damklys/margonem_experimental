@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Piramida Pustynnego Władcy p.2",
+ "id": 7068,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Piramida Pustynnego Władcy p.1"
+   "to": "Piramida Pustynnego Władcy p.3",
+   "x": 19,
+   "y": 39
   },
   {
-   "to": "Piramida Pustynnego Władcy p.3"
+   "to": "Piramida Pustynnego Władcy p.1",
+   "x": 23,
+   "y": 6
+  },
+  {
+   "to": "Piramida Pustynnego Władcy p.1",
+   "x": 24,
+   "y": 6
   }
  ]
 }

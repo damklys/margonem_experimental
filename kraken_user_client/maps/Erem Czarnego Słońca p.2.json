@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.2",
+ "id": 6618,
+ "w": 38,
+ "h": 32,
  "gateways": [
   {
-   "to": "Erem Czarnego Słońca p.1 - północ"
+   "to": "Erem Czarnego Słońca p.1 - północ",
+   "x": 18,
+   "y": 21
   },
   {
-   "to": "Erem Czarnego Słońca p.3"
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 18,
+   "y": 28
+  },
+  {
+   "to": "Erem Czarnego Słońca p.1 - północ",
+   "x": 19,
+   "y": 21
+  },
+  {
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 19,
+   "y": 28
   }
  ]
 }

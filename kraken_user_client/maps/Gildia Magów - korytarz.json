@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Magów - korytarz",
+ "id": 1241,
+ "w": 16,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Gildia Magów",
+   "x": 7,
+   "y": 18
+  },
+  {
+   "to": "Gildia Magów",
+   "x": 8,
+   "y": 18
+  },
+  {
+   "to": "Gildia Magów - pokój Olimpiodora",
+   "x": 13,
+   "y": 16
+  }
+ ]
+}

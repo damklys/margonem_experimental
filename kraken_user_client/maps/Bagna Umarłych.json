@@ -1,0 +1,59 @@
+{
+ "kraken": "mapa",
+ "name": "Bagna Umarłych",
+ "id": 7826,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Gnijące Topielisko",
+   "x": 0,
+   "y": 66
+  },
+  {
+   "to": "Gnijące Topielisko",
+   "x": 0,
+   "y": 67
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 19,
+   "y": 0
+  },
+  {
+   "to": "Urwisko Vapora",
+   "x": 36,
+   "y": 95
+  },
+  {
+   "to": "Urwisko Vapora",
+   "x": 37,
+   "y": 95
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 51,
+   "y": 0
+  },
+  {
+   "to": "Skryty Azyl",
+   "x": 63,
+   "y": 39
+  },
+  {
+   "to": "Skryty Azyl",
+   "x": 63,
+   "y": 40
+  }
+ ]
+}

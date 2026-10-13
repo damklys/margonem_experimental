@@ -1,15 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.4 - sala 2",
+ "id": 6621,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Świątynia Andarum - magazyn p.2"
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 17,
+   "y": 4
   },
   {
-   "to": "Erem Czarnego Słońca p.3 - południe"
+   "to": "Erem Czarnego Słońca p.3",
+   "x": 18,
+   "y": 4
   },
   {
-   "to": "Erem Czarnego Słońca p.3"
+   "to": "Erem Czarnego Słońca p.3 - południe",
+   "x": 24,
+   "y": 16
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 30,
+   "y": 8
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 30,
+   "y": 9
+  },
+  {
+   "to": "Świątynia Andarum - magazyn p.2",
+   "x": 30,
+   "y": 10
   }
  ]
 }

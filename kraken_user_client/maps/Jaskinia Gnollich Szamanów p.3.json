@@ -1,12 +1,20 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia Gnollich Szamanów p.3",
+ "id": 3436,
+ "w": 52,
+ "h": 52,
  "gateways": [
   {
-   "to": "Jaskinia Gnollich Szamanów p.2"
+   "to": "Jaskinia Gnollich Szamanów p.2",
+   "x": 6,
+   "y": 5
   },
   {
-   "to": "Jaskinia Gnollich Szamanów - komnata Kozuga"
+   "to": "Jaskinia Gnollich Szamanów - komnata Kozuga",
+   "x": 28,
+   "y": 25,
+   "req": "Przejście dostępne do 79 poziomu"
   }
  ]
 }

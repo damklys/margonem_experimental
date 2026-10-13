@@ -1,0 +1,31 @@
+{
+ "kraken": "mapa",
+ "name": "Przełęcz Krwistego Posłańca",
+ "id": 264,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Czeluść Chimerycznej Natury - przedsionek",
+   "x": 18,
+   "y": 12,
+   "req": "Przejście dostępne od 153 do 192 poziomu"
+  },
+  {
+   "to": "Czeluść Chimerycznej Natury - przedsionek",
+   "x": 19,
+   "y": 12,
+   "req": "Przejście dostępne od 153 do 192 poziomu"
+  },
+  {
+   "to": "Przepaść Aguti",
+   "x": 95,
+   "y": 33
+  },
+  {
+   "to": "Przepaść Aguti",
+   "x": 95,
+   "y": 34
+  }
+ ]
+}

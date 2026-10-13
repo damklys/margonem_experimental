@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Teatr Monticolo - wejście od zaplecza",
+ "id": 7431,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Teatr Monticolo - korytarz",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "to": "Eder",
+   "x": 25,
+   "y": 30
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Chata bandytów p.1",
+ "id": 6948,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Chata bandytów",
+   "x": 12,
+   "y": 6
+  }
+ ]
+}

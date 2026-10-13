@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Kapiącego Miodu p.2 - sala 2",
+ "id": 5398,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2"
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2",
+   "x": 5,
+   "y": 54
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.3"
+   "to": "Kopalnia Kapiącego Miodu p.3",
+   "x": 60,
+   "y": 33
   }
  ]
 }

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczone więzienie",
+ "id": 1302,
+ "w": 22,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 7,
+   "y": 22
+  },
+  {
+   "to": "Lochy Tristam",
+   "x": 18,
+   "y": 14
+  }
+ ]
+}

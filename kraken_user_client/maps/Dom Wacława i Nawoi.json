@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Wacława i Nawoi",
+ "id": 8514,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podbrzezie",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Podbrzezie",
+   "x": 10,
+   "y": 12
+  }
+ ]
+}

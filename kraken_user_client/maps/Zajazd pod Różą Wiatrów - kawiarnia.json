@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Różą Wiatrów - kawiarnia",
+ "id": 1543,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Różą Wiatrów",
+   "x": 13,
+   "y": 7
+  },
+  {
+   "to": "Zajazd pod Różą Wiatrów",
+   "x": 13,
+   "y": 8
+  }
+ ]
+}

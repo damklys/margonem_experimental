@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Teatr Monticolo - foyer",
+ "id": 7423,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Eder",
+   "x": 15,
+   "y": 30
+  }
+ ]
+}

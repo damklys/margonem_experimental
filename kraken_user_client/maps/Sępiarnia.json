@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Sępiarnia",
+ "id": 3320,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Katakumby Antycznego Gniewu - przedsionek",
+ "id": 4268,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+   "x": 16,
+   "y": 29
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Piachy Zniewolonych",
+ "id": 2872,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Piaszczysta Grota p.1 - sala 1",
+   "x": 12,
+   "y": 39
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 31,
+   "y": 63
+  },
+  {
+   "to": "Ruchome Piaski",
+   "x": 32,
+   "y": 63
+  },
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 37,
+   "y": 0
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 80,
+   "y": 0
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 81,
+   "y": 0
+  },
+  {
+   "to": "Stare Sioło",
+   "x": 95,
+   "y": 44
+  }
+ ]
+}

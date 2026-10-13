@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Piętro Afrassy i Brasza",
+ "id": 329,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Liszli i Semkosa",
+   "x": 4,
+   "y": 9
+  }
+ ]
+}

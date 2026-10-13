@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Mrowisko p.2",
+ "id": 2783,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Mrowisko p.1"
+   "to": "Mrowisko p.1",
+   "x": 2,
+   "y": 1
   },
   {
-   "to": "Kopiec Mrówek p.2"
+   "to": "Kopiec Mrówek p.2",
+   "x": 30,
+   "y": 19
   }
  ]
 }

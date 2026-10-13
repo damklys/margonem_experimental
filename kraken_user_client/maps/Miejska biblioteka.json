@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
- "name": "Miejska biblioteka",
+ "name": "Miejska Biblioteka",
+ "id": 1596,
+ "w": 26,
+ "h": 24,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 11,
+   "y": 22
+  },
+  {
+   "to": "Karka-han",
+   "x": 12,
+   "y": 22
+  },
+  {
+   "to": "Karka-han",
+   "x": 13,
+   "y": 22
+  },
+  {
+   "to": "Karka-han",
+   "x": 14,
+   "y": 22
   }
  ]
 }

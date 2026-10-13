@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Orczej Hordy p.2 s.3",
+ "id": 5856,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Grota Orczej Hordy p.2 s.2",
+   "x": 6,
+   "y": 30
+  }
+ ]
+}

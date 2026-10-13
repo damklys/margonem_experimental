@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia krawiecka Sericji i Callusa",
+ "id": 1184,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia krawiecka Sericji i Callusa p.1",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Dom Sericji i Callusa",
+   "x": 10,
+   "y": 10
+  }
+ ]
+}

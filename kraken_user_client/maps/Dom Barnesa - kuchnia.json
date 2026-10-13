@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Barnesa - kuchnia",
+ "id": 1941,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Barnesa",
+   "x": 4,
+   "y": 4
+  }
+ ]
+}

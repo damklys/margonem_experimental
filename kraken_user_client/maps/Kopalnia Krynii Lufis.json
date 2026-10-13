@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Krynii Lufis",
+ "id": 809,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Kamienica Krynii Lufis - piwnica p.3",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

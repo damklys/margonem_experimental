@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Przeklęta Strażnica p.2",
+ "id": 5735,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Przeklęta Strażnica p.1"
+   "to": "Orla Grań",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Przeklęta Strażnica p.1",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "to": "Przeklęta Strażnica p.1",
+   "x": 11,
+   "y": 20
   }
  ]
 }

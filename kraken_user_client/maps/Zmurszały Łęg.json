@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "Zmurszały Łęg",
+ "id": 8167,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zarosłe Szczeliny p.1 - sala 2",
+   "x": 11,
+   "y": 42
+  },
+  {
+   "to": "Zakątek Nocnych Szelestów",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Zakątek Nocnych Szelestów",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Gęste Sploty",
+   "x": 41,
+   "y": 63
+  },
+  {
+   "to": "Zarosłe Szczeliny p.1 - sala 1",
+   "x": 59,
+   "y": 52
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 73,
+   "y": 0
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 74,
+   "y": 0
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 95,
+   "y": 19
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 95,
+   "y": 20
+  }
+ ]
+}

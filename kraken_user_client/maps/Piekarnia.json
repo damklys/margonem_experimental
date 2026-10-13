@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Piekarnia",
+ "id": 2031,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Piekarnia p.1",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Łany Zboża",
+   "x": 11,
+   "y": 8
+  },
+  {
+   "to": "Łany Zboża",
+   "x": 11,
+   "y": 9
+  },
+  {
+   "to": "Łany Zboża",
+   "x": 11,
+   "y": 10
+  }
+ ]
+}

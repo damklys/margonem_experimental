@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Łez",
+ "id": 2562,
+ "w": 24,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Zasłonięte Jezioro",
+   "x": 10,
+   "y": 3
+  }
+ ]
+}

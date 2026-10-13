@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Lokum krasnoludów",
+ "id": 1846,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Lokum krasnoludów p.1",
+   "x": 3,
+   "y": 2
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 5,
+   "y": 9
+  },
+  {
+   "to": "Lokum krasnoludów - piwnica p.1",
+   "x": 11,
+   "y": 8
   }
  ]
 }

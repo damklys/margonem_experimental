@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom płatnerza - piwnica",
+ "id": 1885,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom płatnerza",
+   "x": 5,
+   "y": 3
+  },
+  {
+   "to": "Dom płatnerza - piwnica p.2",
+   "x": 5,
+   "y": 11
+  }
+ ]
+}

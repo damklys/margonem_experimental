@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Kwatera rozbójników",
+ "id": 1631,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 10,
+   "y": 13
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Gnijące Topielisko",
+ "id": 7827,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 0,
+   "y": 14
+  },
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 0,
+   "y": 15
+  },
+  {
+   "to": "Dolina Pełznącego Krzyku",
+   "x": 0,
+   "y": 58
+  },
+  {
+   "to": "Dolina Pełznącego Krzyku",
+   "x": 0,
+   "y": 59
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "to": "Grząska Ziemia",
+   "x": 31,
+   "y": 0
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 63,
+   "y": 66
+  },
+  {
+   "to": "Bagna Umarłych",
+   "x": 63,
+   "y": 67
+  }
+ ]
+}

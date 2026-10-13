@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Felikssiana p.1",
+ "id": 2483,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Felkissiana",
+   "x": 6,
+   "y": 8
+  }
+ ]
+}

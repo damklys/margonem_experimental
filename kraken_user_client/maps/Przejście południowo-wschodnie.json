@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przejście południowo-wschodnie",
+ "id": 2716,
+ "w": 16,
+ "h": 27,
+ "gateways": [
+  {
+   "to": "Wschodnie skrzydło murów",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Kordegarda",
+   "x": 7,
+   "y": 25
+  }
+ ]
+}

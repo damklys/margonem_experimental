@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Składzik beczek",
+ "id": 3357,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Magazyn - piwnica",
+   "x": 7,
+   "y": 6
+  },
+  {
+   "to": "MAPKI EVENTOWE",
+   "x": 7,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

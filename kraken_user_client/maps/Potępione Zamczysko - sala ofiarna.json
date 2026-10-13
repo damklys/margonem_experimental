@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - sala ofiarna",
+ "id": 4056,
+ "w": 33,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - łącznik zachodni",
+   "x": 4,
+   "y": 6
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 15,
+   "y": 37
+  },
+  {
+   "to": "Potępione Zamczysko - pracownia",
+   "x": 16,
+   "y": 3
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 16,
+   "y": 37
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 17,
+   "y": 37
+  },
+  {
+   "to": "Potępione Zamczysko - łącznik wschodni",
+   "x": 28,
+   "y": 6
+  }
+ ]
+}

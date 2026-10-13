@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - fraternia",
+ "id": 2497,
+ "w": 16,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 6,
+   "y": 26
+  },
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 7,
+   "y": 26
+  },
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 8,
+   "y": 26
+  },
+  {
+   "to": "Klasztor Różanitów - wieża płn.-zach. p.1",
+   "x": 9,
+   "y": 4
+  }
+ ]
+}

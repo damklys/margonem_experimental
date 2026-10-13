@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom sir Glusmoronka p.1",
+ "id": 1386,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom sir Glusmoronka",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

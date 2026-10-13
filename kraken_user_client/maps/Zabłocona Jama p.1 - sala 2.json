@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Zabłocona Jama p.1 - sala 2",
+ "id": 6940,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 3"
+   "to": "Zabłocona Jama p.2 - sala 3",
+   "x": 7,
+   "y": 8
   },
   {
-   "to": "Trupia Przełęcz"
+   "to": "Trupia Przełęcz",
+   "x": 26,
+   "y": 20
   }
  ]
 }

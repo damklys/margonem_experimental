@@ -1,0 +1,35 @@
+{
+ "kraken": "mapa",
+ "name": "Pajęczy Las",
+ "id": 1131,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Otchłań Pajęczych Sieci",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "to": "Otchłań Pajęczych Sieci",
+   "x": 0,
+   "y": 29
+  },
+  {
+   "to": "Zapadlisko Zniewolonych",
+   "x": 46,
+   "y": 63
+  },
+  {
+   "to": "Zapadlisko Zniewolonych",
+   "x": 47,
+   "y": 63
+  },
+  {
+   "to": "Grota Przebiegłego Tkacza - przedsionek",
+   "x": 61,
+   "y": 31,
+   "req": "Przejście dostępne od 199 do 238 poziomu"
+  }
+ ]
+}

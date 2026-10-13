@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczona Grota p.2",
+ "id": 22,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Opuszczona Grota - sala 2",
+   "x": 3,
+   "y": 8
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Łucji i Jana - piwnica",
+ "id": 885,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Łucji i Jana",
+   "x": 5,
+   "y": 9
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot pustelnika",
+ "id": 293,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Góry Zrębowe",
+   "x": 7,
+   "y": 11
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Erkora - piwnica",
+ "id": 1320,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Erkora",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Dom Erkora",
+   "x": 5,
+   "y": 8
+  }
+ ]
+}

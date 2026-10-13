@@ -1,9 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Zaginiona Dolina",
+ "id": 1107,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Brama Północy"
+   "to": "Góry Zrębowe",
+   "x": 0,
+   "y": 18
+  },
+  {
+   "to": "Góry Zrębowe",
+   "x": 0,
+   "y": 19
+  },
+  {
+   "to": "Brama Północy",
+   "x": 25,
+   "y": 0
+  },
+  {
+   "to": "Brama Północy",
+   "x": 26,
+   "y": 0
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 55,
+   "y": 63
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 56,
+   "y": 63
+  },
+  {
+   "to": "Grobowiec Przodków",
+   "x": 63,
+   "y": 27
+  },
+  {
+   "to": "Grobowiec Przodków",
+   "x": 63,
+   "y": 28
   }
  ]
 }

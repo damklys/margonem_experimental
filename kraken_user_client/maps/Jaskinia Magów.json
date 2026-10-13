@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Magów",
+ "id": 340,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Las Dziwów",
+   "x": 3,
+   "y": 30
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 4,
+   "y": 30
+  },
+  {
+   "to": "MAP#1673",
+   "x": 30,
+   "y": 17
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Bosmańskim Biczem p.2",
+ "id": 1389,
+ "w": 20,
+ "h": 21,
+ "gateways": [
+  {
+   "to": "Pokój 204",
+   "x": 12,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 205",
+   "x": 12,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój 206",
+   "x": 12,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Tawerna pod Bosmańskim Biczem p.1",
+   "x": 16,
+   "y": 16
+  }
+ ]
+}

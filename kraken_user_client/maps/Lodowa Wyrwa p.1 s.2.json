@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Lodowa Wyrwa p.1 s.2",
+ "id": 1734,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Sala Lodowych Iglic",
+   "x": 27,
+   "y": 10
+  },
+  {
+   "to": "Lodowa Wyrwa p.1 s.1",
+   "x": 28,
+   "y": 29
+  }
+ ]
+}

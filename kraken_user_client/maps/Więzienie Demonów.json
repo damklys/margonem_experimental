@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Więzienie Demonów",
+ "id": 6476,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 7,
+   "y": 3
+  },
+  {
+   "to": "Komnata Krwawych Obrzędów",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Korytarz Ostatnich Nadziei",
+   "x": 8,
+   "y": 3
+  },
+  {
+   "to": "Komnata Krwawych Obrzędów",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

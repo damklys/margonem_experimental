@@ -1,9 +1,25 @@
 {
  "kraken": "mapa",
  "name": "Dom Paratoka",
+ "id": 55,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "MAP#1767",
+   "x": 4,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom Paratoka p.1",
+   "x": 7,
+   "y": 8
+  },
+  {
+   "to": "Werbin",
+   "x": 12,
+   "y": 10
   }
  ]
 }

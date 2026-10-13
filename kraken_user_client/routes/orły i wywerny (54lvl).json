@@ -1,6 +1,6 @@
 {
  "kraken": "trasa",
- "version": "3.110.202610131430",
+ "version": "3.116.202610131700",
  "route": {
   "id": "r-orłyiwywerny",
   "name": "orły i wywerny (54lvl)",
@@ -11,6 +11,18 @@
   "maps": [
    {
     "location": "Zapomniany Szlak",
+    "attack": true
+   },
+   {
+    "location": "Uroczysko",
+    "attack": true
+   },
+   {
+    "location": "Wichrowe Szczyty",
+    "attack": true
+   },
+   {
+    "location": "Uroczysko",
     "attack": true
    }
   ]

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sierociniec p.1",
+ "id": 1370,
+ "w": 19,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Sierociniec",
+   "x": 15,
+   "y": 5
+  }
+ ]
+}

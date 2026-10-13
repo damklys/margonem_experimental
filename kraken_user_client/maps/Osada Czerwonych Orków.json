@@ -1,9 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Osada Czerwonych Orków",
+ "id": 356,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Kurhany Zwyciężonych",
+   "x": 0,
+   "y": 26
+  },
+  {
+   "to": "Kurhany Zwyciężonych",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 8,
+   "y": 63
+  },
+  {
+   "to": "Orcza Wyżyna",
+   "x": 9,
+   "y": 63
+  },
+  {
+   "to": "Grota Orczej Hordy p.1 s.1",
+   "x": 13,
+   "y": 7
+  },
+  {
+   "to": "Dziki Zagajnik",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Grota Orczej Hordy p.1 s.2",
+   "x": 58,
+   "y": 13
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 95,
+   "y": 5
   }
  ]
 }

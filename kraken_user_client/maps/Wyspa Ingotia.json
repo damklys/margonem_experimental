@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Wyspa Ingotia",
+ "id": 1740,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Korytarze Wygnańców p.1 - Jaskinia Zagubionych",
+   "x": 14,
+   "y": 41
+  },
+  {
+   "to": "Korytarze Wygnańców p.3 - Komnata Przeklętego Daru",
+   "x": 26,
+   "y": 13
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Ech",
+   "x": 45,
+   "y": 50
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Ech",
+   "x": 46,
+   "y": 50
+  },
+  {
+   "to": "Twierdza Rogogłowych - Sala Byka",
+   "x": 53,
+   "y": 33
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Hala Odszczepieńców",
+   "x": 81,
+   "y": 27
+  }
+ ]
+}

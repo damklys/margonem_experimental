@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn mioteł",
+ "id": 1308,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 5,
+   "y": 14
+  }
+ ]
+}

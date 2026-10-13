@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Toramidamusa",
+ "id": 1495,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Toramidamusa p.1",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "to": "Dom Toramidamusa - piwnica",
+   "x": 11,
+   "y": 8
   }
  ]
 }

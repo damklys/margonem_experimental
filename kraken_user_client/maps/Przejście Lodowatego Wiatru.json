@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przejście Lodowatego Wiatru",
+ "id": 590,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Lodowa Sala"
+   "to": "Sala Lodowatego Wiatru",
+   "x": 15,
+   "y": 15
   },
   {
-   "to": "Sala Lodowatego Wiatru"
+   "to": "Lodowa Sala",
+   "x": 16,
+   "y": 33
   }
  ]
 }

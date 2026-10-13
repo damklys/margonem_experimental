@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Piekielna Grota p.2",
+ "id": 29,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Piekielna Grota p.1"
+   "to": "Piekielna Grota p.1",
+   "x": 3,
+   "y": 7
   },
   {
-   "to": "Piekielna Grota p.3 - sala 1"
+   "to": "Piekielna Grota p.3 - sala 1",
+   "x": 7,
+   "y": 12
   }
  ]
 }

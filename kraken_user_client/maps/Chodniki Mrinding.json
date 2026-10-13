@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Chodniki Mrinding",
- "gateways": []
+ "id": 7455,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Chodniki Mrinding p.1 - sala 1",
+   "x": 7,
+   "y": 10
+  },
+  {
+   "to": "Sosnowe Odludzie",
+   "x": 8,
+   "y": 17
+  }
+ ]
 }

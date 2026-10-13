@@ -1,18 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Księżycowe Wzniesienie",
+ "id": 1137,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Trupia Przełęcz"
+   "to": "Trupia Przełęcz",
+   "x": 0,
+   "y": 52
   },
   {
-   "to": "Mglista Polana Vesy"
+   "to": "Trupia Przełęcz",
+   "x": 0,
+   "y": 53
   },
   {
-   "to": "Zapomniany Święty Gaj p.1"
+   "to": "Mglista Polana Vesy",
+   "x": 34,
+   "y": 0
   },
   {
-   "to": "Sosnowe Odludzie"
+   "to": "Mglista Polana Vesy",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "to": "Zapomniany Święty Gaj p.1",
+   "x": 49,
+   "y": 15
+  },
+  {
+   "to": "Sosnowe Odludzie",
+   "x": 63,
+   "y": 25
+  },
+  {
+   "to": "Sosnowe Odludzie",
+   "x": 63,
+   "y": 26
   }
  ]
 }

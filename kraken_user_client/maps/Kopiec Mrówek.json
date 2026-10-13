@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kopiec Mrówek",
+ "id": 2523,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Kopiec Mrówek p.1"
+   "to": "Kopiec Mrówek p.1",
+   "x": 5,
+   "y": 12
   },
   {
-   "to": "Łany Zboża"
+   "to": "Łany Zboża",
+   "x": 24,
+   "y": 30
   }
  ]
 }

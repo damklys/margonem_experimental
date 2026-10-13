@@ -1,12 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Dolina Suchych Łez",
+ "id": 2870,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Ciche Rumowiska"
+   "to": "Ciche Rumowiska",
+   "x": 0,
+   "y": 43
   },
   {
-   "to": "Złote Piaski"
+   "to": "Ciche Rumowiska",
+   "x": 0,
+   "y": 44
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 0,
+   "y": 45
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Przybytek Bogini Wojny",
+   "x": 64,
+   "y": 14
+  },
+  {
+   "to": "Skały Umarłych",
+   "x": 95,
+   "y": 41
+  },
+  {
+   "to": "Skały Umarłych",
+   "x": 95,
+   "y": 42
   }
  ]
 }

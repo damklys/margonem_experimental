@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Piekielna Grota p.1",
+ "id": 28,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Zniszczone Opactwo"
+   "to": "Piekielna Grota p.2",
+   "x": 6,
+   "y": 11
   },
   {
-   "to": "Piekielna Grota p.2"
+   "to": "Zniszczone Opactwo",
+   "x": 19,
+   "y": 13
   }
  ]
 }

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Pałcia i Gałcia - parter",
+ "id": 8126,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Pałcia i Gałcia - piętro",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 10,
+   "y": 13
+  }
+ ]
+}

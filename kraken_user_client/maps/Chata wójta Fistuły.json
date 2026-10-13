@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Chata wójta Fistuły",
+ "id": 7339,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Chata wójta Fistuły p.1",
+   "x": 3,
+   "y": 3
+  },
+  {
+   "to": "Góralskie Przejście",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Góralskie Przejście",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Góralskie Przejście",
+   "x": 10,
+   "y": 13
+  }
+ ]
+}

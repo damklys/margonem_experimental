@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Ruiny Wieży Magów - przedsionek",
+ "id": 358,
+ "w": 20,
+ "h": 20,
  "gateways": [
   {
-   "to": "Selva Oscura"
+   "to": "Podziemia Zniszczonej Wieży p.1",
+   "x": 3,
+   "y": 8
   },
   {
-   "to": "Podziemia Zniszczonej Wieży p.1"
+   "to": "Selva Oscura",
+   "x": 7,
+   "y": 17
+  },
+  {
+   "to": "Selva Oscura",
+   "x": 8,
+   "y": 17
+  },
+  {
+   "to": "Selva Oscura",
+   "x": 9,
+   "y": 17
   }
  ]
 }

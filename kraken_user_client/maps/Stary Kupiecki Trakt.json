@@ -1,18 +1,37 @@
 {
  "kraken": "mapa",
  "name": "Stary Kupiecki Trakt",
+ "id": 2308,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Fort Eder"
+   "to": "Fort Eder",
+   "x": 0,
+   "y": 21
+  },
+  {
+   "to": "Fort Eder",
+   "x": 0,
+   "y": 22
+  },
+  {
+   "to": "Ciemnica Szubrawców p.1 - sala 3",
+   "x": 15,
+   "y": 67
+  },
+  {
+   "to": "Stukot Widmowych Kół",
+   "x": 31,
+   "y": 95
+  },
+  {
+   "to": "Stukot Widmowych Kół",
+   "x": 32,
+   "y": 95
   },
   {
    "to": "Moczary Rybiego Oka"
-  },
-  {
-   "to": "Stukot Widmowych Kół"
-  },
-  {
-   "to": "Ciemnica Szubrawców p.1 - sala 3"
   }
  ]
 }

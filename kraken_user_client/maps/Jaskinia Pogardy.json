@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Jaskinia Pogardy",
- "gateways": []
+ "id": 3149,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Podmokła Dolina",
+   "x": 14,
+   "y": 40
+  }
+ ]
 }

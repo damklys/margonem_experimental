@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Knajpa pod Czarnym Tulipanem - pokój Lucji",
+ "id": 841,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Knajpa pod Czarnym Tulipanem",
+   "x": 5,
+   "y": 3
+  }
+ ]
+}

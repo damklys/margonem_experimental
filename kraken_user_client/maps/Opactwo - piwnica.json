@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Opactwo - piwnica",
+ "id": 292,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Opactwo",
+   "x": 20,
+   "y": 16
+  }
+ ]
+}

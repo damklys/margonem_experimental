@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Porośniętych Stalagmitów p.1 - sala 1",
+ "id": 7850,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Skryty Azyl",
+   "x": 3,
+   "y": 21
+  },
+  {
+   "to": "Grota Porośniętych Stalagmitów p.2 - sala 1",
+   "x": 27,
+   "y": 14
+  }
+ ]
+}

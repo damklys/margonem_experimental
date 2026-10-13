@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom rodziny Martel",
+ "id": 1913,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom rodziny Martel p.1",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom rodziny Martel - piwnica",
+   "x": 12,
+   "y": 10
+  }
+ ]
+}

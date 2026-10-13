@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Szczerba Samobójców",
+ "id": 2056,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przysiółek Valmirów",
+   "x": 0,
+   "y": 14
+  },
+  {
+   "to": "Przysiółek Valmirów",
+   "x": 0,
+   "y": 15
+  },
+  {
+   "to": "Baszta Puchacza p.1",
+   "x": 16,
+   "y": 36
+  },
+  {
+   "to": "Baszta Puchacza",
+   "x": 23,
+   "y": 40
+  },
+  {
+   "to": "Żołnierski Korytarz",
+   "x": 40,
+   "y": 61
+  },
+  {
+   "to": "Baszta Sowy",
+   "x": 44,
+   "y": 43
+  },
+  {
+   "to": "Zakazana Grota",
+   "x": 55,
+   "y": 11
+  },
+  {
+   "to": "Kwieciste Kresy",
+   "x": 95,
+   "y": 39
+  }
+ ]
+}

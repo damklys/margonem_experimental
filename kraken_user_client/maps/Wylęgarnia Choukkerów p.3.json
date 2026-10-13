@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Wylęgarnia Choukkerów p.3",
+ "id": 6636,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Wylęgarnia Choukkerów p.2"
+   "to": "Wylęgarnia Choukkerów p.2",
+   "x": 48,
+   "y": 55
   }
  ]
 }

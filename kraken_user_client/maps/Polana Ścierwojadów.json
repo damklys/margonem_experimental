@@ -1,5 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Polana Ścierwojadów",
- "gateways": []
+ "id": 3402,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Mokradła",
+   "x": 0,
+   "y": 45
+  },
+  {
+   "to": "Mokradła",
+   "x": 0,
+   "y": 46
+  },
+  {
+   "to": "Ghuli Mogilnik",
+   "x": 23,
+   "y": 0
+  },
+  {
+   "to": "Skarpiska Tolloków",
+   "x": 26,
+   "y": 63
+  },
+  {
+   "to": "Skarpiska Tolloków",
+   "x": 27,
+   "y": 63
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 63,
+   "y": 14
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 63,
+   "y": 15
+  }
+ ]
 }

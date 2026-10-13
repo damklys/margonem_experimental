@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Korytarze Wygnańców p.1 - Jaskinia Zagubionych",
+ "id": 7359,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Wyspa Ingotia",
+   "x": 6,
+   "y": 44
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Sala Ech",
+   "x": 34,
+   "y": 44
+  },
+  {
+   "to": "Korytarze Wygnańców p.2 - Komora Budowniczego",
+   "x": 42,
+   "y": 16
+  },
+  {
+   "to": "Korytarze Wygnańców p.1 - Bezdenne Przepaści",
+   "x": 44,
+   "y": 7
+  }
+ ]
+}

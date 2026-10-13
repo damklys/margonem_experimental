@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczony statek - pokład pod rufą",
+ "id": 7369,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Wyspa Rem",
+   "x": 5,
+   "y": 14
+  },
+  {
+   "to": "Opuszczony statek - pokład",
+   "x": 6,
+   "y": 9,
+   "req": "Przejście dostępne do 137 poziomu"
+  }
+ ]
+}

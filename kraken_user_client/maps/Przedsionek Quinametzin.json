@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przedsionek Quinametzin",
+ "id": 5491,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Altepetl Mahoptekan (wersja questowa)",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Altepetl Mahoptekan (wersja questowa)",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

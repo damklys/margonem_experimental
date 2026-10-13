@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd pod Złamanym Dukatem - kuchnia",
+ "id": 924,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Złamanym Dukatem",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Zajazd pod Złamanym Dukatem - piwnica",
+   "x": 12,
+   "y": 10
+  }
+ ]
+}

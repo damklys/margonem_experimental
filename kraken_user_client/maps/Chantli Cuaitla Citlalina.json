@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Chantli Cuaitla Citlalina",
+ "id": 5672,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 10,
+   "y": 19
+  },
+  {
+   "to": "Niecka Xiuh Atl",
+   "x": 11,
+   "y": 19
+  }
+ ]
+}

@@ -6,58 +6,34 @@
  "h": 38,
  "gateways": [
   {
-   "to": "Karka-han",
-   "x": 12,
-   "y": 35,
-   "toId": 35,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Przybytek Zakonu Białej Róży",
    "x": 7,
-   "y": 4,
-   "toId": 258,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Ratusz Karka-han - prawe skrzydło",
-   "x": 17,
-   "y": 4,
-   "toId": 381,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 4
   },
   {
    "to": "Przybytek Zakonu Białej Róży",
    "x": 8,
-   "y": 4,
-   "toId": 258,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 4
+  },
+  {
+   "to": "Karka-han",
+   "x": 12,
+   "y": 35
   },
   {
    "to": "Karka-han",
    "x": 13,
-   "y": 35,
-   "toId": 35,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 35
+  },
+  {
+   "to": "Ratusz Karka-han - prawe skrzydło",
+   "x": 17,
+   "y": 4
   },
   {
    "to": "Ratusz Karka-han - prawe skrzydło",
    "x": 18,
-   "y": 4,
-   "toId": 381,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 4
   }
  ]
 }

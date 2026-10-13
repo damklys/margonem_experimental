@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Lazurytowa Grota p.4",
- "gateways": []
+ "id": 2729,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Lazurytowa Grota p.3 - sala 2",
+   "x": 5,
+   "y": 2
+  }
+ ]
 }

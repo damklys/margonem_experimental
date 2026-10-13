@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Apartament 206",
+ "id": 522,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Alabastrowy Hotel - piwnica p.2",
+   "x": 9,
+   "y": 18
+  },
+  {
+   "to": "Alabastrowy Hotel - piwnica p.2",
+   "x": 10,
+   "y": 18
+  }
+ ]
+}

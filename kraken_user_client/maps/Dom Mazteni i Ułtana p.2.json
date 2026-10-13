@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mazteni i Ułtana p.2",
+ "id": 2038,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mazteni i Ułtana p.1",
+   "x": 6,
+   "y": 7
+  }
+ ]
+}

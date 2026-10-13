@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Arachnitopia p.5",
+ "id": 1142,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Arachnitopia p.6",
+   "x": 24,
+   "y": 48,
+   "req": "Przejście dostępne od 200 do 227 poziomu"
+  },
+  {
+   "to": "Arachnitopia p.4",
+   "x": 58,
+   "y": 54
+  }
+ ]
+}

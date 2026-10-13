@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Vincenta",
+ "id": 2058,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Vincenta p.1",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Dom Vincenta - piwnica",
+   "x": 6,
+   "y": 7
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Leśna Przełęcz",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

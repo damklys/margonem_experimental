@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Zapomniany Las",
+ "id": 1111,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Terytorium Furii",
+   "x": 0,
+   "y": 12
+  },
+  {
+   "to": "Terytorium Furii",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "to": "Torneg",
+   "x": 17,
+   "y": 63
+  },
+  {
+   "to": "Torneg",
+   "x": 18,
+   "y": 63
+  },
+  {
+   "to": "Rozległa Równina",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "to": "Rozległa Równina",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Rozległa Równina",
+   "x": 37,
+   "y": 0
+  }
+ ]
+}

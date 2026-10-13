@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Gildia Magów",
+ "id": 1240,
+ "w": 25,
+ "h": 23,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Thuzal",
+   "x": 11,
+   "y": 21
+  },
+  {
+   "to": "Gildia Magów - korytarz",
+   "x": 12,
+   "y": 3
+  },
+  {
+   "to": "Thuzal",
+   "x": 12,
+   "y": 21
+  },
+  {
+   "to": "Thuzal",
+   "x": 13,
+   "y": 21
   }
  ]
 }

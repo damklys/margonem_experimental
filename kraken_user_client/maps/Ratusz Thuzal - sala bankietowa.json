@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Thuzal - sala bankietowa",
+ "id": 1068,
+ "w": 18,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Ratusz Thuzal",
+   "x": 2,
+   "y": 20
+  }
+ ]
+}

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Schowek na Łupy",
+ "id": 2532,
+ "w": 32,
+ "h": 64,
  "gateways": [
   {
-   "to": "Pagórki Łupieżców"
+   "to": "Pagórki Łupieżców",
+   "x": 14,
+   "y": 1
   }
  ]
 }

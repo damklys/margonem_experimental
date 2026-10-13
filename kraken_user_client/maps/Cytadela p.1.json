@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Cytadela p.1",
- "gateways": []
+ "id": 866,
+ "w": 21,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Cytadela p.2",
+   "x": 2,
+   "y": 3
+  },
+  {
+   "to": "Cytadela",
+   "x": 16,
+   "y": 5
+  }
+ ]
 }

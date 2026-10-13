@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Las Monolitów",
+ "id": 8536,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Jałowa Dolina",
+   "x": 0,
+   "y": 48
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 0,
+   "y": 49
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 20,
+   "y": 0
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 21,
+   "y": 0
+  },
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 32,
+   "y": 63
+  },
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 33,
+   "y": 63
+  },
+  {
+   "to": "Krater Uwięzienia",
+   "x": 79,
+   "y": 63
+  },
+  {
+   "to": "Krater Uwięzienia",
+   "x": 80,
+   "y": 63
+  }
+ ]
+}

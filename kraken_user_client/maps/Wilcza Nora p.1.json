@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Wilcza Nora p.1",
+ "id": 2537,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Warczące Osuwiska"
+   "to": "Wilcza Nora p.2",
+   "x": 8,
+   "y": 10
   },
   {
-   "to": "Wilcza Nora p.2"
+   "to": "Warczące Osuwiska",
+   "x": 16,
+   "y": 30
   }
  ]
 }

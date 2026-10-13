@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Leśne bagnisko",
+ "id": 7073,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Mgliste Kurkany",
+   "x": 30,
+   "y": 26
+  }
+ ]
+}

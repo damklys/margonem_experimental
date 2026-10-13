@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kwatera Thorpa 3",
+ "id": 3542,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Kwatery u Morcera",
+   "x": 9,
+   "y": 17
+  },
+  {
+   "to": "Kwatery u Morcera",
+   "x": 10,
+   "y": 17
+  }
+ ]
+}

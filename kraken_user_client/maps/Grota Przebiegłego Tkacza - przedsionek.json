@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Przebiegłego Tkacza - przedsionek",
+ "id": 4206,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pajęczy Las",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "to": "Pajęczy Las",
+   "x": 16,
+   "y": 29
+  }
+ ]
+}

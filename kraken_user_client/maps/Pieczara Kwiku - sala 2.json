@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Kwiku - sala 2",
+ "id": 4157,
+ "w": 28,
+ "h": 24,
  "gateways": [
   {
-   "to": "Pieczara Kwiku - sala 1"
+   "to": "Pieczara Kwiku - sala 1",
+   "x": 9,
+   "y": 21
   }
  ]
 }

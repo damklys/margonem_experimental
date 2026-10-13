@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Korzennego Czaru p.1 - sala 3",
+ "id": 3612,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jaskinia Korzennego Czaru p.1 - sala 1",
+   "x": 12,
+   "y": 9
+  },
+  {
+   "to": "Jaskinia Korzennego Czaru p.1 - sala 4",
+   "x": 30,
+   "y": 17
+  }
+ ]
+}

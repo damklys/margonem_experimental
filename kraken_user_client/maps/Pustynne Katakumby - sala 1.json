@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - sala 1",
+ "id": 3029,
+ "w": 26,
+ "h": 26,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - sala 2",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "Ruiny Pustynnych Burz",
+   "x": 18,
+   "y": 24
+  },
+  {
+   "to": "Pustynne Katakumby - sala 3",
+   "x": 20,
+   "y": 4
+  }
+ ]
+}

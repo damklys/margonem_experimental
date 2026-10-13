@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Antoniego - parter",
+ "id": 3986,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Antoniego - piętro",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Torneg",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 6,
+   "y": 12
+  }
+ ]
+}

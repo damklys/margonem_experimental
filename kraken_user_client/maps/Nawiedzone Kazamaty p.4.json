@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Nawiedzone Kazamaty p.4",
+ "id": 5872,
+ "w": 32,
+ "h": 40,
+ "gateways": [
+  {
+   "to": "Nawiedzone Kazamaty p.3 s.1",
+   "x": 1,
+   "y": 1
+  },
+  {
+   "to": "Nawiedzone Kazamaty p.3 s.2",
+   "x": 30,
+   "y": 1
+  }
+ ]
+}

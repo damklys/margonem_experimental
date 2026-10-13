@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Namiot Amry",
+ "id": 1955,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Werbin",
+   "x": 8,
+   "y": 11
   }
  ]
 }

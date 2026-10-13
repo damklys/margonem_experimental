@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Zabłocona Jama p.2 - sala 3",
+ "id": 6943,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zabłocona Jama p.2 - sala 2"
+   "to": "Zabłocona Jama p.2 - sala 2",
+   "x": 9,
+   "y": 5
   },
   {
-   "to": "Zabłocona Jama p.2 - Sala Magicznego Błota"
+   "to": "Zabłocona Jama p.1 - sala 2",
+   "x": 45,
+   "y": 55
   },
   {
-   "to": "Zabłocona Jama p.1 - sala 2"
+   "to": "Zabłocona Jama p.2 - Sala Magicznego Błota",
+   "x": 53,
+   "y": 8
   }
  ]
 }

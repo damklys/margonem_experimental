@@ -1,9 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Arena Gladiatorów",
+ "id": 1442,
+ "w": 26,
+ "h": 22,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Arena Gladiatorów - piwnica",
+   "x": 5,
+   "y": 17
+  },
+  {
+   "to": "Tuzmer",
+   "x": 11,
+   "y": 19
+  },
+  {
+   "to": "Arena",
+   "x": 12,
+   "y": 15
+  },
+  {
+   "to": "Tuzmer",
+   "x": 12,
+   "y": 19
+  },
+  {
+   "to": "Arena",
+   "x": 13,
+   "y": 15
+  },
+  {
+   "to": "Tuzmer",
+   "x": 13,
+   "y": 19
+  },
+  {
+   "to": "Tuzmer",
+   "x": 14,
+   "y": 19
+  },
+  {
+   "to": "Arena Gladiatorów p.1",
+   "x": 20,
+   "y": 2
   }
  ]
 }

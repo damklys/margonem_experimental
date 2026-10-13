@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Hengadze",
+ "id": 1329,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Dom Hengadze p.1",
+   "x": 3,
+   "y": 9
+  },
+  {
+   "to": "Tuzmer",
+   "x": 10,
+   "y": 13
+  },
+  {
+   "to": "Tuzmer",
+   "x": 11,
+   "y": 13
   }
  ]
 }

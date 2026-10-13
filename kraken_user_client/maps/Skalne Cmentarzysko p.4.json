@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Skalne Cmentarzysko p.4",
+ "id": 7066,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Skalne Cmentarzysko p.3"
+   "to": "Skalne Cmentarzysko p.3",
+   "x": 5,
+   "y": 2
   }
  ]
 }

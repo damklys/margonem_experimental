@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Slina",
+ "id": 1829,
+ "w": 18,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Kamienica Slina p.1",
+   "x": 9,
+   "y": 4
+  },
+  {
+   "to": "Kamienica Slina - piwnica",
+   "x": 15,
+   "y": 11
   }
  ]
 }

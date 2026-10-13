@@ -1,0 +1,69 @@
+{
+ "kraken": "mapa",
+ "name": "Martwy Las",
+ "id": 7683,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Złota Dąbrowa",
+   "x": 0,
+   "y": 18
+  },
+  {
+   "to": "Złota Dąbrowa",
+   "x": 0,
+   "y": 19
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 0,
+   "y": 46
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 0,
+   "y": 47
+  },
+  {
+   "to": "Bór Zagubionych",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Bór Zagubionych",
+   "x": 19,
+   "y": 0
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 23,
+   "y": 63
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 24,
+   "y": 63
+  },
+  {
+   "to": "Starodrzew Przedwiecznych p.1",
+   "x": 55,
+   "y": 15
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 74,
+   "y": 0
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 95,
+   "y": 25
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 95,
+   "y": 26
+  }
+ ]
+}

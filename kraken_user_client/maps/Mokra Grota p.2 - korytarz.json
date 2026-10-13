@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Mokra Grota p.2 - korytarz",
+ "id": 4262,
+ "w": 50,
+ "h": 50,
  "gateways": [
   {
-   "to": "Mokra Grota p.1 - boczny korytarz"
+   "to": "Mokra Grota p.1 - boczny korytarz",
+   "x": 5,
+   "y": 1
   },
   {
-   "to": "Mroczna Pieczara p.1 - sala 3"
+   "to": "Mroczna Pieczara p.1 - sala 3",
+   "x": 39,
+   "y": 39
   }
  ]
 }

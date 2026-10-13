@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Hawaikiego",
+ "id": 1580,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Hawaikiego p.1",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 5,
+   "y": 11
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Dom Hawaikiego - piwnica",
+   "x": 11,
+   "y": 10
+  }
+ ]
+}

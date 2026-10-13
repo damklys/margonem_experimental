@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Nitrusa",
+ "id": 743,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Kamienica Nitrusa p.1",
+   "x": 10,
+   "y": 10
+  },
+  {
+   "to": "Kamienica Nitrusa - piwnica",
+   "x": 11,
+   "y": 8
   }
  ]
 }

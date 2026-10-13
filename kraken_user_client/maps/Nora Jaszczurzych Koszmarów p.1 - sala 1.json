@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Nora Jaszczurzych Koszmarów p.1 - sala 1",
+ "id": 7847,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Nora Jaszczurzych Koszmarów p.1 - sala 2",
+   "x": 2,
+   "y": 11,
+   "req": "Przejście dostępne od 218 do 244 poziomu"
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 36,
+   "y": 46
+  }
+ ]
+}

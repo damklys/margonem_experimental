@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Losso Minewita p.1",
+ "id": 1565,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Losso Minewita",
+   "x": 3,
+   "y": 6
+  }
+ ]
+}

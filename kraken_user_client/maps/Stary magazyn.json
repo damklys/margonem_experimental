@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Stary magazyn",
+ "id": 191,
+ "w": 20,
+ "h": 16,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Stary magazyn - poddasze",
+   "x": 2,
+   "y": 2
+  },
+  {
+   "to": "Ithan",
+   "x": 6,
+   "y": 13
+  },
+  {
+   "to": "Ithan",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Stary magazyn - piwnica",
+   "x": 9,
+   "y": 6
   }
  ]
 }

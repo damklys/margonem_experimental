@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Wiatru p.2",
+ "id": 133,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pieczara Wiatru p.3",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "to": "Pieczara Wiatru p.1",
+   "x": 17,
+   "y": 7
+  }
+ ]
+}

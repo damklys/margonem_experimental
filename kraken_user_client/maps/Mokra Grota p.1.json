@@ -1,18 +1,30 @@
 {
  "kraken": "mapa",
  "name": "Mokra Grota p.1",
+ "id": 176,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zapomniany Szlak"
+   "to": "Zapomniany Szlak",
+   "x": 4,
+   "y": 60
   },
   {
-   "to": "Mokra Grota p.2"
+   "to": "Mokra Grota p.1 - boczny korytarz",
+   "x": 13,
+   "y": 18
   },
   {
-   "to": "Mokra Grota p.1 - przełaz"
+   "to": "Mokra Grota p.1 - przełaz",
+   "x": 39,
+   "y": 11
   },
   {
-   "to": "Mokra Grota p.1 - boczny korytarz"
+   "to": "Mokra Grota p.2",
+   "x": 52,
+   "y": 56,
+   "req": "Przejście dostępne do 64 poziomu"
   }
  ]
 }

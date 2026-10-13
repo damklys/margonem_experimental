@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom latarnika",
+ "id": 1282,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom latarnika p.1",
+   "x": 6,
+   "y": 3
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

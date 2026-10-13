@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - sala główna",
+ "id": 7441,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Mała Twierdza - sala wejściowa",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

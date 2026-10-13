@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Parmina",
+ "id": 1382,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 10,
+   "y": 12
+  }
+ ]
+}

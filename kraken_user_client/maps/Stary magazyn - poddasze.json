@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Stary magazyn - poddasze",
+ "id": 193,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Stary magazyn",
+   "x": 8,
+   "y": 6
+  }
+ ]
+}

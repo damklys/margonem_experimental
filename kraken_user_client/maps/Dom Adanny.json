@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Adanny",
+ "id": 1594,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Adanny p.1",
+   "x": 12,
+   "y": 3
   }
  ]
 }

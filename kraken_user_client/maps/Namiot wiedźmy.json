@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Namiot wiedźmy",
+ "id": 1946,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Werbin",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Jaskinia wiedźmy",
+   "x": 9,
+   "y": 5
   }
  ]
 }

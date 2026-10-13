@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Wnętrze drzewa",
+ "id": 1977,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedlisko Szczurów p.1",
+   "x": 7,
+   "y": 8
+  }
+ ]
+}

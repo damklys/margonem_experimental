@@ -1,12 +1,20 @@
 {
  "kraken": "mapa",
  "name": "Głębokie Skałki p.3",
+ "id": 6632,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Głębokie Skałki p.2"
+   "to": "Głębokie Skałki p.4",
+   "x": 25,
+   "y": 28,
+   "req": "Przejście dostępne do 86 poziomu"
   },
   {
-   "to": "Głębokie Skałki p.4"
+   "to": "Głębokie Skałki p.2",
+   "x": 27,
+   "y": 1
   }
  ]
 }

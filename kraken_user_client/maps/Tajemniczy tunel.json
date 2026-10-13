@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Tajemniczy tunel",
+ "id": 3152,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Grań Gawronich Piór",
+   "x": 17,
+   "y": 47
+  }
+ ]
+}

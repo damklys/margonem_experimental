@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zakurzone przejście",
+ "id": 275,
+ "w": 23,
+ "h": 43,
+ "gateways": [
+  {
+   "to": "Dom Jofusa - piwnica",
+   "x": 7,
+   "y": 34
+  },
+  {
+   "to": "Radosna Polana",
+   "x": 17,
+   "y": 13
+  }
+ ]
+}

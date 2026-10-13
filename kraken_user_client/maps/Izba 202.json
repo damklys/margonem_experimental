@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Izba 202",
+ "id": 2139,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Austeria Karibiego p.2",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Austeria Karibiego p.2",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

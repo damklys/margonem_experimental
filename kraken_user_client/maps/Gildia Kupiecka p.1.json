@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Kupiecka p.1",
+ "id": 1422,
+ "w": 19,
+ "h": 19,
+ "gateways": [
+  {
+   "to": "Gildia Kupiecka",
+   "x": 14,
+   "y": 7
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Terytorium Furii",
+ "id": 3735,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zapadlisko Zniewolonych",
+   "x": 0,
+   "y": 11
+  },
+  {
+   "to": "Zapadlisko Zniewolonych",
+   "x": 0,
+   "y": 12
+  },
+  {
+   "to": "Zapadlisko Zniewolonych",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "to": "Dolina Gniewu",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "to": "Dolina Gniewu",
+   "x": 51,
+   "y": 0
+  },
+  {
+   "to": "Dolina Gniewu",
+   "x": 52,
+   "y": 0
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 95,
+   "y": 12
+  },
+  {
+   "to": "Zapomniany Las",
+   "x": 95,
+   "y": 13
+  }
+ ]
+}

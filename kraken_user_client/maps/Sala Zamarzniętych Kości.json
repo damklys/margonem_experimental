@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Sala Zamarzniętych Kości",
+ "id": 595,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Przejście Zamarzniętych Kości"
+   "to": "Przejście Zamarzniętych Kości",
+   "x": 52,
+   "y": 44
   }
  ]
 }

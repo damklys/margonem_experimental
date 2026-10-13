@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Wulkan Politraki p.1 - sala 2",
+ "id": 7056,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Wulkan Politraki p.1 - sala 3",
+   "x": 2,
+   "y": 25
+  },
+  {
+   "to": "Wulkan Politraki p.2 - sala 2",
+   "x": 14,
+   "y": 2
+  },
+  {
+   "to": "Wulkan Politraki p.2 - sala 2",
+   "x": 15,
+   "y": 2
+  },
+  {
+   "to": "Wulkan Politraki p.2 - sala 1",
+   "x": 45,
+   "y": 2
+  },
+  {
+   "to": "Wulkan Politraki p.1 - sala 1",
+   "x": 61,
+   "y": 47
+  },
+  {
+   "to": "Wulkan Politraki p.1 - sala 1",
+   "x": 61,
+   "y": 48
+  }
+ ]
+}

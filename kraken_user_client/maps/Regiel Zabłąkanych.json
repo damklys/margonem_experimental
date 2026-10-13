@@ -1,0 +1,37 @@
+{
+ "kraken": "mapa",
+ "name": "Regiel Zabłąkanych",
+ "id": 3596,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Grota Martwodrzewów - przedsionek",
+   "x": 32,
+   "y": 8,
+   "req": "Przejście dostępne od 230 do 269 poziomu"
+  },
+  {
+   "to": "Źródło Zakorzenionego Ludu",
+   "x": 36,
+   "y": 63
+  },
+  {
+   "to": "Wąwóz Zakorzenionych Dusz",
+   "x": 70,
+   "y": 0
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 95,
+   "y": 56,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 95,
+   "y": 57,
+   "req": "Przejście dostępne od 200 poziomu"
+  }
+ ]
+}

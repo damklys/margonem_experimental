@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Lodowa Wyrwa p.2",
- "gateways": []
+ "id": 1735,
+ "w": 48,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Lodowa Wyrwa p.1 s.1",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 40,
+   "y": 29
+  }
+ ]
 }

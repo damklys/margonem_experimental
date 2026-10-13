@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Nawiedzone Komnaty - zachód",
+ "id": 5859,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 30,
+   "y": 16
+  },
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 30,
+   "y": 17
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia Polassa",
+ "id": 319,
+ "w": 25,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Węży",
+   "x": 18,
+   "y": 7
+  }
+ ]
+}

@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Magazyn Krasnoludów",
+ "id": 3839,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Werbin"
+   "to": "Werbin",
+   "x": 1,
+   "y": 10
+  },
+  {
+   "to": "Werbin",
+   "x": 1,
+   "y": 11
+  },
+  {
+   "to": "Magazyn Krasnoludów - piwnica",
+   "x": 8,
+   "y": 5
   }
  ]
 }

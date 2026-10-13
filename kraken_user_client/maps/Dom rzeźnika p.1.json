@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom rzeźnika p.1",
+ "id": 1895,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom rzeźnika",
+   "x": 5,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Zimpo - strych",
+ "id": 1373,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Dom Zimpo",
+   "x": 11,
+   "y": 7
+  }
+ ]
+}

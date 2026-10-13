@@ -1,12 +1,79 @@
 {
  "kraken": "mapa",
  "name": "Cienisty Bór",
+ "id": 226,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Ostępy Szalbierskich Lasów"
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 0,
+   "y": 40
   },
   {
-   "to": "Las Dziwów"
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 0,
+   "y": 41
+  },
+  {
+   "to": "Ostępy Szalbierskich Lasów",
+   "x": 0,
+   "y": 42
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 19,
+   "y": 0
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 41,
+   "y": 95
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 42,
+   "y": 95
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 43,
+   "y": 95
+  },
+  {
+   "to": "Las Dziwów",
+   "x": 44,
+   "y": 95
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 63,
+   "y": 40
+  },
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 63,
+   "y": 41
   }
  ]
 }

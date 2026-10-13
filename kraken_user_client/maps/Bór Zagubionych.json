@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Bór Zagubionych",
+ "id": 7682,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Złudny Trakt",
+   "x": 0,
+   "y": 25
+  },
+  {
+   "to": "Złota Dąbrowa",
+   "x": 0,
+   "y": 83
+  },
+  {
+   "to": "Martwy Las",
+   "x": 18,
+   "y": 95
+  },
+  {
+   "to": "Martwy Las",
+   "x": 19,
+   "y": 95
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 63,
+   "y": 62
+  },
+  {
+   "to": "Bezgwiezdna Gęstwina",
+   "x": 63,
+   "y": 63
+  }
+ ]
+}

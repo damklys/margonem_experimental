@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Liściem Dębu - sala do kostkowania",
+ "id": 3133,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Karczma pod Liściem Dębu",
+   "x": 7,
+   "y": 12
+  }
+ ]
+}

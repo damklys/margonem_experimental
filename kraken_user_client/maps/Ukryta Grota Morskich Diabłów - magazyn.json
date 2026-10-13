@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Ukryta Grota Morskich Diabłów - magazyn",
+ "id": 3409,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Ukryta Grota Morskich Diabłów - siedziba",
+   "x": 2,
+   "y": 23
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 24,
+   "y": 40
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 25,
+   "y": 40
+  }
+ ]
+}

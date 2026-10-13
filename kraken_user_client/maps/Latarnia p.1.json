@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Latarnia p.1",
+ "id": 1605,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Latarnia p.2",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "to": "Latarnia",
+   "x": 9,
+   "y": 15
+  }
+ ]
+}

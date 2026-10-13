@@ -1,5 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Pod Rozbrykanym Niziołkiem - piętro",
- "gateways": []
+ "id": 2667,
+ "w": 20,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Mansarda Vincenta",
+   "x": 2,
+   "y": 2
+  },
+  {
+   "to": "Pod Rozbrykanym Niziołkiem",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Pokój Aury",
+   "x": 9,
+   "y": 7
+  }
+ ]
 }

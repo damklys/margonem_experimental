@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot ubogich ludzi",
+ "id": 3263,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dolina Yss",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Dolina Yss",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

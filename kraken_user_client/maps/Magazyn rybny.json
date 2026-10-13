@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn rybny",
+ "id": 1203,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 13
+  }
+ ]
+}

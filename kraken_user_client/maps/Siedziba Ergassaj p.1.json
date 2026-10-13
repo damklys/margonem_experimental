@@ -1,0 +1,104 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba Ergassaj p.1",
+ "id": 321,
+ "w": 28,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Siedziba Ergassaj",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "to": "Pokój ergassaj 101",
+   "x": 9,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 102",
+   "x": 11,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 103",
+   "x": 13,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 110",
+   "x": 14,
+   "y": 16,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 104",
+   "x": 15,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 111",
+   "x": 16,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 105",
+   "x": 17,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 112",
+   "x": 18,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 106",
+   "x": 19,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 113",
+   "x": 20,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 107",
+   "x": 21,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 114",
+   "x": 22,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 108",
+   "x": 23,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 115",
+   "x": 24,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Pokój ergassaj 109",
+   "x": 25,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

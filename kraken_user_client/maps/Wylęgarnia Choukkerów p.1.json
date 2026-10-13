@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Wylęgarnia Choukkerów p.1",
+ "id": 6634,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zdradzieckie Przejście p.1"
+   "to": "Zdradzieckie Przejście p.1",
+   "x": 45,
+   "y": 62
   },
   {
-   "to": "Wylęgarnia Choukkerów p.1"
+   "to": "Wylęgarnia Choukkerów p.2",
+   "x": 48,
+   "y": 42
   }
  ]
 }

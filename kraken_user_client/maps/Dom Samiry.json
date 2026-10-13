@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Samiry",
+ "id": 1405,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Samiry - piwnica",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Dom Samiry - piwnica",
+   "x": 8,
+   "y": 7
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Dom Samiry p.1",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

@@ -1,15 +1,49 @@
 {
  "kraken": "mapa",
  "name": "Przełęcz Łotrzyków",
+ "id": 4,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Orla Grań"
+   "to": "Dolina Rozbójników",
+   "x": 10,
+   "y": 95
   },
   {
-   "to": "Pagórki Łupieżców"
+   "to": "Dolina Rozbójników",
+   "x": 11,
+   "y": 95
   },
   {
-   "to": "Dolina Rozbójników"
+   "to": "Dolina Rozbójników",
+   "x": 12,
+   "y": 95
+  },
+  {
+   "to": "Orla Grań",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Orla Grań",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Orla Grań",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Pagórki Łupieżców",
+   "x": 63,
+   "y": 47
+  },
+  {
+   "to": "Pagórki Łupieżców",
+   "x": 63,
+   "y": 48
   }
  ]
 }

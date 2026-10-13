@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Jaszczurze Korytarze p.1 - sala 3",
+ "id": 7837,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Jaszczurze Korytarze p.1 - sala 4",
+   "x": 4,
+   "y": 14
+  },
+  {
+   "to": "Jaszczurze Korytarze p.1 - sala 4",
+   "x": 4,
+   "y": 15
+  },
+  {
+   "to": "Jaszczurze Korytarze p.2 - sala 2",
+   "x": 7,
+   "y": 18
+  },
+  {
+   "to": "Strumienie Szemrzących Wód",
+   "x": 18,
+   "y": 45
+  },
+  {
+   "to": "Jaszczurze Korytarze p.1 - sala 2",
+   "x": 35,
+   "y": 39
+  },
+  {
+   "to": "Jaszczurze Korytarze p.1 - sala 2",
+   "x": 35,
+   "y": 40
+  }
+ ]
+}

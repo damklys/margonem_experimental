@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - sala operowa",
+ "id": 7276,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "SP Margonem - klatka schodowa p.2",
+   "x": 18,
+   "y": 14
+  }
+ ]
+}

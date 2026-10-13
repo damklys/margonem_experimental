@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Alrika",
+ "id": 76,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Torneg",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 10,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 11,
+   "y": 12
+  },
+  {
+   "to": "Dom Alrika p.1",
+   "x": 13,
+   "y": 4
+  }
+ ]
+}

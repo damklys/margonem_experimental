@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Haliny i Antoniego",
+ "id": 8123,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 5,
+   "y": 10
+  }
+ ]
+}

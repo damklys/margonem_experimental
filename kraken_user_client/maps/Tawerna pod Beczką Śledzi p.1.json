@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Tawerna pod Beczką Śledzi p.1",
+ "id": 1334,
+ "w": 25,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Tawerna pod Beczką Śledzi",
+   "x": 8,
+   "y": 4
+  },
+  {
+   "to": "Tawerna pod Beczką Śledzi - mieszkanie",
+   "x": 14,
+   "y": 2
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Duża cela gladiatora 2",
+ "id": 1532,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Arena Gladiatorów p.1",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "to": "Arena Gladiatorów p.1",
+   "x": 6,
+   "y": 4
+  }
+ ]
+}

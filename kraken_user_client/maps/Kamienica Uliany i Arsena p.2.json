@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Uliany i Arsena p.2",
+ "id": 626,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Uliany i Arsena p.1",
+   "x": 5,
+   "y": 6
+  }
+ ]
+}

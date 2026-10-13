@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Firnowa Grota p.1",
- "gateways": []
+ "id": 1193,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 18,
+   "y": 24
+  },
+  {
+   "to": "Firnowa Grota p.2",
+   "x": 27,
+   "y": 12
+  }
+ ]
 }

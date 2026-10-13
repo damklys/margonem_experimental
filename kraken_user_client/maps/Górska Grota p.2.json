@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Górska Grota p.2",
+ "id": 130,
+ "w": 19,
+ "h": 31,
  "gateways": [
   {
-   "to": "Nawiedzony Jar"
+   "to": "Górska Grota p.1",
+   "x": 6,
+   "y": 3
   },
   {
-   "to": "Górska Grota p.1"
+   "to": "Nawiedzony Jar",
+   "x": 16,
+   "y": 16
   }
  ]
 }

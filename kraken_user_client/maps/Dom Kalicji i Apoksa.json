@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Kalicji i Apoksa",
+ "id": 105,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Dom Kalicji i Apoksa - piwnica",
+   "x": 2,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Karka-han",
+   "x": 5,
+   "y": 12
   }
  ]
 }

@@ -1,30 +1,74 @@
 {
  "kraken": "mapa",
  "name": "Nawiedzony Jar",
+ "id": 122,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zburzona Twierdza"
+   "to": "Mroczny Przesmyk",
+   "x": 0,
+   "y": 32
   },
   {
-   "to": "Stare Wyrobisko p.4"
+   "to": "Górska Grota p.1",
+   "x": 1,
+   "y": 47
   },
   {
-   "to": "Stare Wyrobisko p.5"
+   "to": "Górska Grota p.2",
+   "x": 10,
+   "y": 56
   },
   {
-   "to": "Mroczny Przesmyk"
+   "to": "Zburzona Twierdza",
+   "x": 24,
+   "y": 0
   },
   {
-   "to": "Górska Kopalnia"
+   "to": "Zburzona Twierdza",
+   "x": 25,
+   "y": 0
   },
   {
-   "to": "Górska Grota p.2"
+   "to": "Stare Wyrobisko p.4",
+   "x": 35,
+   "y": 25
   },
   {
-   "to": "Morwowe Przejście"
+   "to": "Stare Wyrobisko p.2",
+   "x": 40,
+   "y": 12
   },
   {
-   "to": "Stare Wyrobisko p.3"
+   "to": "Stare Wyrobisko p.3",
+   "x": 42,
+   "y": 24
+  },
+  {
+   "to": "Stare Wyrobisko p.5",
+   "x": 46,
+   "y": 42
+  },
+  {
+   "to": "Stare Wyrobisko p.1",
+   "x": 50,
+   "y": 12
+  },
+  {
+   "to": "Górska Kopalnia",
+   "x": 57,
+   "y": 56
+  },
+  {
+   "to": "Morwowe Przejście",
+   "x": 63,
+   "y": 19
+  },
+  {
+   "to": "Morwowe Przejście",
+   "x": 63,
+   "y": 20
   }
  ],
  "zones": [

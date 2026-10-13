@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Cecylii - pokój Elizki",
+ "id": 800,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Cecylii",
+   "x": 9,
+   "y": 7
+  }
+ ]
+}

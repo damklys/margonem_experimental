@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Solna Grota p.2",
+ "id": 183,
+ "w": 32,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Solna Grota p.1",
+   "x": 26,
+   "y": 2
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Szlamowe Kanały p.2 - sala 3",
+ "id": 7701,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 15,
+   "y": 45
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 2",
+   "x": 46,
+   "y": 19
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Łaźnia - część męska",
+ "id": 1503,
+ "w": 22,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Łaźnia - część damska",
+   "x": 2,
+   "y": 6,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Łaźnia - piwnica",
+   "x": 3,
+   "y": 13
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Porzucone Noiridum p.3 - sala 2",
+ "id": 7857,
+ "w": 52,
+ "h": 52,
+ "gateways": [
+  {
+   "to": "Porzucone Noiridum p.3 - sala 3",
+   "x": 4,
+   "y": 7
+  },
+  {
+   "to": "Dawny Przełaz",
+   "x": 7,
+   "y": 33
+  },
+  {
+   "to": "Porzucone Noiridum p.3 - sala 1",
+   "x": 25,
+   "y": 44
+  }
+ ]
+}

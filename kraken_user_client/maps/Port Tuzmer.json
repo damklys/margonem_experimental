@@ -1,9 +1,326 @@
 {
  "kraken": "mapa",
  "name": "Port Tuzmer",
+ "id": 630,
+ "w": 96,
+ "h": 96,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Latarniane Wybrzeże",
+   "x": 0,
+   "y": 22
+  },
+  {
+   "to": "Latarniane Wybrzeże",
+   "x": 0,
+   "y": 23
+  },
+  {
+   "to": "Dom Zimpo - strych",
+   "x": 1,
+   "y": 31
+  },
+  {
+   "to": "Pracownia krawiecka Sericji i Callusa p.1",
+   "x": 2,
+   "y": 18
+  },
+  {
+   "to": "Dom Sericji i Callusa",
+   "x": 4,
+   "y": 25
+  },
+  {
+   "to": "Dom Zimpo",
+   "x": 4,
+   "y": 36
+  },
+  {
+   "to": "Sierociniec",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "to": "Dom Orfelii",
+   "x": 7,
+   "y": 15
+  },
+  {
+   "to": "Sierociniec",
+   "x": 8,
+   "y": 9
+  },
+  {
+   "to": "Magazyn Orfelii",
+   "x": 13,
+   "y": 20
+  },
+  {
+   "to": "Dom Gopisa",
+   "x": 13,
+   "y": 35
+  },
+  {
+   "to": "Piracka Kryjówka",
+   "x": 18,
+   "y": 28
+  },
+  {
+   "to": "Magazyn rybny",
+   "x": 19,
+   "y": 39
+  },
+  {
+   "to": "Magazyn rybny",
+   "x": 20,
+   "y": 39
+  },
+  {
+   "to": "Dom sir Glusmoronka",
+   "x": 24,
+   "y": 19
+  },
+  {
+   "to": "Dom sir Glusmoronka",
+   "x": 25,
+   "y": 19
+  },
+  {
+   "to": "Magazyn",
+   "x": 28,
+   "y": 40
+  },
+  {
+   "to": "Magazyn",
+   "x": 29,
+   "y": 40
+  },
+  {
+   "to": "Kapitanat Portu",
+   "x": 31,
+   "y": 34
+  },
+  {
+   "to": "Dom Jankerta",
+   "x": 33,
+   "y": 14
+  },
+  {
+   "to": "Dom Jankerta",
+   "x": 34,
+   "y": 14
+  },
+  {
+   "to": "Magazyn z rybami Alfreda",
+   "x": 34,
+   "y": 27
+  },
+  {
+   "to": "Kuźnia Kendala",
+   "x": 37,
+   "y": 38
+  },
+  {
+   "to": "Kuźnia Kendala",
+   "x": 38,
+   "y": 38
+  },
+  {
+   "to": "Dom Alfreda",
+   "x": 40,
+   "y": 28
+  },
+  {
+   "to": "Dom Alfreda",
+   "x": 41,
+   "y": 28
+  },
+  {
+   "to": "Dom Parmina",
+   "x": 44,
+   "y": 42
+  },
+  {
+   "to": "Tuzmer",
+   "x": 45,
+   "y": 0
+  },
+  {
+   "to": "Dom Leinne",
+   "x": 45,
+   "y": 25
+  },
+  {
+   "to": "Tuzmer",
+   "x": 46,
+   "y": 0
+  },
+  {
+   "to": "Tuzmer",
+   "x": 47,
+   "y": 0
+  },
+  {
+   "to": "Tuzmer",
+   "x": 48,
+   "y": 0
+  },
+  {
+   "to": "Opuszczony dom",
+   "x": 48,
+   "y": 23
+  },
+  {
+   "to": "Opuszczony dom",
+   "x": 49,
+   "y": 23
+  },
+  {
+   "to": "Siedziba Straży Portowej - zbrojownia",
+   "x": 50,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Siedziba Straży Portowej - zbrojownia",
+   "x": 51,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Dom Patercji",
+   "x": 53,
+   "y": 26
+  },
+  {
+   "to": "Siedziba Straży Portowej",
+   "x": 55,
+   "y": 14
+  },
+  {
+   "to": "Siedziba Straży Portowej",
+   "x": 56,
+   "y": 14
+  },
+  {
+   "to": "Dom Patercji p.1",
+   "x": 56,
+   "y": 22
+  },
+  {
+   "to": "Pokład Szarej Mewy",
+   "x": 61,
+   "y": 52
+  },
+  {
+   "to": "Dom Trosa i Idai",
+   "x": 63,
+   "y": 16
+  },
+  {
+   "to": "Dom Dereka i Karapo",
+   "x": 63,
+   "y": 36
+  },
+  {
+   "to": "Dom Trosa i Idai",
+   "x": 64,
+   "y": 16
+  },
+  {
+   "to": "Dom rybaka Yarte",
+   "x": 65,
+   "y": 25
+  },
+  {
+   "to": "Magazyn Trosa",
+   "x": 69,
+   "y": 17
+  },
+  {
+   "to": "Chata Ficjusza",
+   "x": 69,
+   "y": 41
+  },
+  {
+   "to": "Dom Flarencji",
+   "x": 70,
+   "y": 27
+  },
+  {
+   "to": "Dom Flarencji",
+   "x": 71,
+   "y": 27
+  },
+  {
+   "to": "Dom kaletnika Jędrzeja",
+   "x": 72,
+   "y": 12
+  },
+  {
+   "to": "Dom kaletnika Jędrzeja",
+   "x": 73,
+   "y": 12
+  },
+  {
+   "to": "Tawerna pod Bosmańskim Biczem",
+   "x": 76,
+   "y": 42
+  },
+  {
+   "to": "Gildia Kupiecka",
+   "x": 77,
+   "y": 18
+  },
+  {
+   "to": "Tawerna pod Bosmańskim Biczem",
+   "x": 77,
+   "y": 42
+  },
+  {
+   "to": "Gildia Kupiecka",
+   "x": 78,
+   "y": 18
+  },
+  {
+   "to": "Dom Samiry",
+   "x": 81,
+   "y": 29
+  },
+  {
+   "to": "Dom Samiry",
+   "x": 82,
+   "y": 29
+  },
+  {
+   "to": "Opuszczona chata",
+   "x": 84,
+   "y": 34
+  },
+  {
+   "to": "Prochownia",
+   "x": 86,
+   "y": 65
+  },
+  {
+   "to": "Dom Sinis p.1",
+   "x": 88,
+   "y": 24
+  },
+  {
+   "to": "Dom szkutnika Verne",
+   "x": 94,
+   "y": 43
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 95,
+   "y": 58
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 95,
+   "y": 59
   }
  ]
 }

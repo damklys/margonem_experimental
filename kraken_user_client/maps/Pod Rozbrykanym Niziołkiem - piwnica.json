@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Pod Rozbrykanym Niziołkiem - piwnica",
- "gateways": []
+ "id": 2666,
+ "w": 20,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Pod Rozbrykanym Niziołkiem",
+   "x": 8,
+   "y": 1
+  }
+ ]
 }

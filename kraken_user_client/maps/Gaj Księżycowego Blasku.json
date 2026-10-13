@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Gaj Księżycowego Blasku",
+ "id": 8174,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Zakątek Nocnych Szelestów",
+   "x": 0,
+   "y": 39
+  },
+  {
+   "to": "Zakątek Nocnych Szelestów",
+   "x": 0,
+   "y": 40
+  },
+  {
+   "to": "Zmurszały Łęg",
+   "x": 9,
+   "y": 95
+  },
+  {
+   "to": "Zmurszały Łęg",
+   "x": 10,
+   "y": 95
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 59,
+   "y": 95
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 60,
+   "y": 95
+  },
+  {
+   "to": "Szepty Menhirów",
+   "x": 63,
+   "y": 67
+  },
+  {
+   "to": "Szepty Menhirów",
+   "x": 63,
+   "y": 68
+  }
+ ]
+}

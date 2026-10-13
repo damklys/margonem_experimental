@@ -1,0 +1,26 @@
+{
+ "kraken": "mapa",
+ "name": "Porzucone Noiridum p.3 - sala 3",
+ "id": 7858,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Porzucone Noiridum p.3 - sala 2",
+   "x": 17,
+   "y": 59
+  },
+  {
+   "to": "Erem Aldiphrina",
+   "x": 24,
+   "y": 8,
+   "req": "Przejście dostępne do 231 poziomu"
+  },
+  {
+   "to": "Erem Aldiphrina",
+   "x": 25,
+   "y": 8,
+   "req": "Przejście dostępne do 231 poziomu"
+  }
+ ]
+}

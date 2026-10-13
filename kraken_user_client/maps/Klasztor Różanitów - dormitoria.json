@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - dormitoria",
+ "id": 2499,
+ "w": 17,
+ "h": 27,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - wieża płn.-wsch. p.1",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Klasztor Różanitów - lawaterz",
+   "x": 9,
+   "y": 25
+  },
+  {
+   "to": "Klasztor Różanitów - lawaterz",
+   "x": 10,
+   "y": 25
+  },
+  {
+   "to": "Klasztor Różanitów - lawaterz",
+   "x": 11,
+   "y": 25
+  }
+ ]
+}

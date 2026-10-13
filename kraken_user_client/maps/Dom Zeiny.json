@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Dom Zeiny",
+ "id": 1863,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 11
   }
  ]
 }

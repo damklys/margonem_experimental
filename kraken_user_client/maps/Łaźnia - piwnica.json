@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Łaźnia - piwnica",
+ "id": 1504,
+ "w": 20,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Łaźnia - część męska",
+   "x": 3,
+   "y": 3
+  }
+ ]
+}

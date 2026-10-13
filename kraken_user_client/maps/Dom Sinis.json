@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Sinis",
+ "id": 1180,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Sinis p.1",
+   "x": 12,
+   "y": 4
+  },
+  {
+   "to": "Dom Sinis p.1",
+   "x": 13,
+   "y": 4
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta",
+ "id": 1049,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Przejście astronoma",
+   "x": 3,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Baszta p.1",
+   "x": 6,
+   "y": 3
+  }
+ ]
+}

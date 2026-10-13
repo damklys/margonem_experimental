@@ -1,0 +1,45 @@
+{
+ "kraken": "mapa",
+ "name": "Las Porywów Wiatru",
+ "id": 5985,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kwieciste Kresy",
+   "x": 0,
+   "y": 24
+  },
+  {
+   "to": "Kwieciste Kresy",
+   "x": 0,
+   "y": 25
+  },
+  {
+   "to": "Grota Arbor s.1",
+   "x": 24,
+   "y": 42
+  },
+  {
+   "to": "Grota Arbor s.1",
+   "x": 25,
+   "y": 42
+  },
+  {
+   "to": "Głusza Świstu",
+   "x": 29,
+   "y": 63
+  },
+  {
+   "to": "Głusza Świstu",
+   "x": 30,
+   "y": 63
+  },
+  {
+   "to": "Jaskinia Ulotnych Wspomnień",
+   "x": 54,
+   "y": 29,
+   "req": "Przejście dostępne od 164 do 190 poziomu"
+  }
+ ]
+}

@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Niepogody p.1",
+ "id": 1664,
+ "w": 40,
+ "h": 32,
  "gateways": [
   {
-   "to": "Fort Eder"
+   "to": "Pieczara Niepogody p.2 - sala 1",
+   "x": 4,
+   "y": 18
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 2"
+   "to": "Pieczara Niepogody p.2 - sala 2",
+   "x": 9,
+   "y": 8
   },
   {
-   "to": "Pieczara Niepogody p.2 - sala 1"
+   "to": "Fort Eder",
+   "x": 35,
+   "y": 28
   }
  ]
 }

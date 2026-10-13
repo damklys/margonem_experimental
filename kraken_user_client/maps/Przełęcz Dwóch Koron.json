@@ -6,121 +6,73 @@
  "h": 64,
  "gateways": [
   {
-   "to": "Domek Pioruna",
-   "x": 91,
-   "y": 24,
-   "toId": 245,
-   "key": 2,
-   "lvl": 0,
-   "zone": 0
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 31
   },
   {
-   "to": "Kryształowa Grota p.1",
-   "x": 83,
-   "y": 59,
-   "toId": 7342,
-   "key": 0,
-   "lvl": 0,
-   "zone": 1
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 32
+  },
+  {
+   "to": "Skalista Wyżyna",
+   "x": 0,
+   "y": 33
   },
   {
    "to": "Posterunek",
    "x": 31,
-   "y": 25,
-   "toId": 1701,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Przedmieścia Karka-han",
-   "x": 39,
-   "y": 0,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Skalista Wyżyna",
-   "x": 0,
-   "y": 31,
-   "toId": 1057,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Wichrowe Szczyty",
-   "x": 95,
-   "y": 34,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Skalista Wyżyna",
-   "x": 0,
-   "y": 32,
-   "toId": 1057,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Skalista Wyżyna",
-   "x": 0,
-   "y": 33,
-   "toId": 1057,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 25
   },
   {
    "to": "Posterunek",
    "x": 32,
-   "y": 25,
-   "toId": 1701,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 25
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 39,
+   "y": 0
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 40,
-   "y": 0,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
   },
   {
    "to": "Przedmieścia Karka-han",
    "x": 41,
-   "y": 0,
-   "toId": 36,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 0
+  },
+  {
+   "to": "Kryształowa Grota p.1",
+   "x": 83,
+   "y": 59
+  },
+  {
+   "to": "MAP#245",
+   "x": 91,
+   "y": 24,
+   "req": "(wymaga klucza)"
   },
   {
    "to": "Wichrowe Szczyty",
    "x": 95,
-   "y": 35,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 34
   },
   {
    "to": "Wichrowe Szczyty",
    "x": 95,
-   "y": 36,
-   "toId": 84,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 35
+  },
+  {
+   "to": "Wichrowe Szczyty",
+   "x": 95,
+   "y": 36
+  },
+  {
+   "to": "Domek Pioruna"
   }
  ],
  "zones": [

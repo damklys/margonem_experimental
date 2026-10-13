@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek p.2",
+ "id": 3741,
+ "w": 24,
+ "h": 16,
  "gateways": [
   {
-   "to": "Przeklęty Zamek p.1"
+   "to": "Przeklęty Zamek p.1",
+   "x": 18,
+   "y": 6
   },
   {
-   "to": "Stare Ruiny"
+   "to": "Stare Ruiny",
+   "x": 18,
+   "y": 10
   },
   {
    "to": "Przeklęty Zamek - komnata"

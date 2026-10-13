@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Źródło Zakorzenionego Ludu",
+ "id": 3597,
+ "w": 96,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 23,
+   "y": 95
+  },
+  {
+   "to": "Piaskowa Gęstwina",
+   "x": 24,
+   "y": 95
+  },
+  {
+   "to": "Regiel Zabłąkanych",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "to": "Jaskinia Korzennego Czaru p.1 - sala 1",
+   "x": 39,
+   "y": 40
+  },
+  {
+   "to": "Jaskinia Korzennego Czaru p.3",
+   "x": 60,
+   "y": 26
+  },
+  {
+   "to": "Jaskinia Korzennego Czaru p.2 - sala 1",
+   "x": 67,
+   "y": 46
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 73,
+   "y": 95
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 74,
+   "y": 95
+  }
+ ]
+}

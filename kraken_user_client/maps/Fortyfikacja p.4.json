@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Fortyfikacja p.4",
+ "id": 251,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Fortyfikacja p.3",
+   "x": 6,
+   "y": 9
+  },
+  {
+   "to": "Fortyfikacja p.5",
+   "x": 13,
+   "y": 1
+  }
+ ]
+}

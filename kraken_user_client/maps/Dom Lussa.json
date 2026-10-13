@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Lussa",
+ "id": 256,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Dom Lussa - piwnica",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Mythar",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Mythar",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Dom Lussa p.1",
+   "x": 11,
+   "y": 3
   }
  ]
 }

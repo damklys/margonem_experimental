@@ -1,24 +1,81 @@
 {
  "kraken": "mapa",
  "name": "Płaskowyż Arpan",
+ "id": 2865,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Trupia Przełęcz"
+   "to": "Sucha Dolina",
+   "x": 0,
+   "y": 49
   },
   {
-   "to": "Skalne Cmentarzysko p.1"
+   "to": "Sucha Dolina",
+   "x": 0,
+   "y": 50
   },
   {
-   "to": "Sucha Dolina"
+   "to": "Niecka Xiuh Atl",
+   "x": 20,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
   },
   {
-   "to": "Oaza Siedmiu Wichrów"
+   "to": "Niecka Xiuh Atl",
+   "x": 21,
+   "y": 0,
+   "req": "Przejście dostępne od 200 poziomu"
   },
   {
-   "to": "Złote Piaski"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 37,
+   "y": 63
   },
   {
-   "to": "Pustkowia Pogrzebanych"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 38,
+   "y": 63
+  },
+  {
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 39,
+   "y": 63
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 55,
+   "y": 0
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 56,
+   "y": 0
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 85,
+   "y": 63
+  },
+  {
+   "to": "Skalne Cmentarzysko p.1",
+   "x": 86,
+   "y": 18
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 86,
+   "y": 63
+  },
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 95,
+   "y": 58
+  },
+  {
+   "to": "Pustkowia Pogrzebanych",
+   "x": 95,
+   "y": 59
   }
  ]
 }

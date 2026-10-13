@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Grota Samotnych Dusz p.1",
+ "id": 1353,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Trupia Przełęcz"
+   "to": "Grota Samotnych Dusz p.2",
+   "x": 15,
+   "y": 51
+  },
+  {
+   "to": "Trupia Przełęcz",
+   "x": 38,
+   "y": 61
   }
  ]
 }

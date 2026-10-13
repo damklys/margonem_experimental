@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Góralski magazyn",
+ "id": 6990,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wielkanocny Babi Wzgórek",
+   "x": 1,
+   "y": 10
+  },
+  {
+   "to": "Wielkanocny Babi Wzgórek",
+   "x": 1,
+   "y": 11
+  }
+ ]
+}

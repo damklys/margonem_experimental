@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Płacząca Grota p.1 - sala 2",
+ "id": 3761,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Płacząca Grota p.2"
+   "to": "Płacząca Grota p.2",
+   "x": 15,
+   "y": 35
   },
   {
-   "to": "Wzgórze Płaczek"
+   "to": "Wzgórze Płaczek",
+   "x": 43,
+   "y": 19
   }
  ]
 }

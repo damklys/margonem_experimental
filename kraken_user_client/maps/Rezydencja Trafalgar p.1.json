@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Trafalgar p.1",
+ "id": 916,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Trafalgar",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Rezydencja Trafalgar p.2",
+   "x": 12,
+   "y": 9
+  }
+ ]
+}

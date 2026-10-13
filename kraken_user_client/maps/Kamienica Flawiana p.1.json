@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Flawiana p.1",
+ "id": 3777,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Flawiana",
+   "x": 6,
+   "y": 13
+  }
+ ]
+}

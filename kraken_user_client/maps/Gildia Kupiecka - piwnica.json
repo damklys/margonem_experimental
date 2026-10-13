@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Gildia Kupiecka - piwnica",
+ "id": 1423,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gildia Kupiecka",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "to": "Gildia Kupiecka",
+   "x": 5,
+   "y": 3
+  }
+ ]
+}

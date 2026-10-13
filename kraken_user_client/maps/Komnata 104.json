@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Komnata 104",
+ "id": 1032,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.1",
+   "x": 2,
+   "y": 8
+  }
+ ]
+}

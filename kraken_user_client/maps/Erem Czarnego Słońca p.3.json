@@ -1,15 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Erem Czarnego Słońca p.3",
+ "id": 6619,
+ "w": 44,
+ "h": 28,
  "gateways": [
   {
-   "to": "Erem Czarnego Słońca p.4 - sala 2"
+   "to": "Erem Czarnego Słońca p.4 - sala 1",
+   "x": 5,
+   "y": 22
   },
   {
-   "to": "Erem Czarnego Słońca p.4 - sala 1"
+   "to": "Erem Czarnego Słońca p.4 - sala 1",
+   "x": 6,
+   "y": 22
   },
   {
-   "to": "Erem Czarnego Słońca p.2"
+   "to": "Erem Czarnego Słońca p.2",
+   "x": 21,
+   "y": 7
+  },
+  {
+   "to": "Erem Czarnego Słońca p.2",
+   "x": 22,
+   "y": 7
+  },
+  {
+   "to": "Erem Czarnego Słońca p.4 - sala 2",
+   "x": 37,
+   "y": 22
+  },
+  {
+   "to": "Erem Czarnego Słońca p.4 - sala 2",
+   "x": 38,
+   "y": 22
   }
  ]
 }

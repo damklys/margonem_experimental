@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Pustynne Katakumby - Zachodni Tunel Jaźni",
+ "id": 3043,
+ "w": 80,
+ "h": 70,
+ "gateways": [
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 21,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 22,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Poległych Legionistów",
+   "x": 23,
+   "y": 3
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 36,
+   "y": 68
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 37,
+   "y": 68
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Opętanych Dusz",
+   "x": 38,
+   "y": 68
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+   "x": 76,
+   "y": 6
+  },
+  {
+   "to": "Pustynne Katakumby - Komnata Krwawych Wypraw",
+   "x": 77,
+   "y": 6
+  }
+ ]
+}

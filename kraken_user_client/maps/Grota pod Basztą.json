@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota pod Basztą",
+ "id": 1051,
+ "w": 24,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Przejście astronoma",
+   "x": 8,
+   "y": 4
+  },
+  {
+   "to": "Baszta Wilczych Kłów",
+   "x": 15,
+   "y": 12
+  }
+ ]
+}

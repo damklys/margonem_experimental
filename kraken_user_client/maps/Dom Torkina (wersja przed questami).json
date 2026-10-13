@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Torkina (wersja przed questami)",
+ "id": 2881,
+ "w": 32,
+ "h": 21,
+ "gateways": [
+  {
+   "to": "Dom Torkina - strych (wersja przed questami)",
+   "x": 16,
+   "y": 13
+  },
+  {
+   "to": "Ostoja Marzeń (wersja przed questami)",
+   "x": 18,
+   "y": 19
+  },
+  {
+   "to": "Ostoja Marzeń (wersja przed questami)",
+   "x": 19,
+   "y": 19
+  }
+ ]
+}

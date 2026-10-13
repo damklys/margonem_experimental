@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Moliwii",
+ "id": 71,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Torneg",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 9,
+   "y": 12
+  },
+  {
+   "to": "Dom Moliwii p.1",
+   "x": 11,
+   "y": 8
+  }
+ ]
+}

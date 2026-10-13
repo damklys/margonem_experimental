@@ -1,9 +1,53 @@
 {
  "kraken": "mapa",
  "name": "Rozlewisko Kai",
+ "id": 5987,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Matecznik Szelestu",
+   "x": 22,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Matecznik Szelestu",
+   "x": 23,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Przysiółek Valmirów",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "to": "Przysiółek Valmirów",
+   "x": 42,
+   "y": 0
+  },
+  {
+   "to": "Gvar Hamryd",
+   "x": 75,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Gvar Hamryd",
+   "x": 76,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Thuzal",
+   "x": 95,
+   "y": 38
+  },
+  {
+   "to": "Thuzal",
+   "x": 95,
+   "y": 39
   }
  ]
 }

@@ -1,0 +1,20 @@
+{
+ "kraken": "mapa",
+ "name": "Magazyn - piwnica",
+ "id": 1820,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Magazyn",
+   "x": 4,
+   "y": 4
+  },
+  {
+   "to": "Składzik beczek",
+   "x": 8,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pieczara Wiatru p.3",
+ "id": 134,
+ "w": 24,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Pieczara Wiatru p.2",
+   "x": 19,
+   "y": 9
+  }
+ ]
+}

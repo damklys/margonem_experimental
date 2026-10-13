@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Pokój Grety",
+ "id": 1568,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Losso Minewita",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Dom Losso Minewita",
+   "x": 5,
+   "y": 11
+  }
+ ]
+}

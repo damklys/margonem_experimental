@@ -1,18 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Oaza Siedmiu Wichrów",
+ "id": 2866,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Stare Sioło"
+   "to": "Stare Sioło",
+   "x": 0,
+   "y": 70
   },
   {
-   "to": "Ciche Rumowiska"
+   "to": "Stare Sioło",
+   "x": 0,
+   "y": 71
   },
   {
-   "to": "Złote Piaski"
+   "to": "Płaskowyż Arpan",
+   "x": 37,
+   "y": 0
   },
   {
-   "to": "Płaskowyż Arpen"
+   "to": "Płaskowyż Arpan",
+   "x": 38,
+   "y": 0
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 39,
+   "y": 0
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 46,
+   "y": 95
+  },
+  {
+   "to": "Ciche Rumowiska",
+   "x": 47,
+   "y": 95
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 63,
+   "y": 90
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 63,
+   "y": 91
   }
  ]
 }

@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Piaskowa Gęstwina",
+ "id": 3598,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Źródło Zakorzenionego Ludu",
+   "x": 23,
+   "y": 0
+  },
+  {
+   "to": "Źródło Zakorzenionego Ludu",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "to": "Piachy Zniewolonych",
+   "x": 36,
+   "y": 95
+  },
+  {
+   "to": "Piachy Zniewolonych",
+   "x": 37,
+   "y": 95
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 63,
+   "y": 81
+  },
+  {
+   "to": "Dolina Pustynnych Kręgów",
+   "x": 63,
+   "y": 82
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Izba chorych płn. p.2",
+ "id": 819,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Izba chorych płn. p.1",
+   "x": 4,
+   "y": 5
+  }
+ ]
+}

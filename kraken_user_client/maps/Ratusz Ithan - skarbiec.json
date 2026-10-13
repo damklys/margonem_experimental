@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Ithan - skarbiec",
+ "id": 765,
+ "w": 17,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Ithan",
+   "x": 11,
+   "y": 1
+  }
+ ]
+}

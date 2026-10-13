@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Przedsionek Kultu",
+ "id": 5938,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 15,
+   "y": 10
+  },
+  {
+   "to": "Mroczne Komnaty",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 16,
+   "y": 10
+  },
+  {
+   "to": "Mroczne Komnaty",
+   "x": 16,
+   "y": 29
+  }
+ ]
+}

@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Zapomniany Święty Gaj p.2",
+ "id": 1324,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Zapomniany Święty Gaj p.1"
+   "to": "Zapomniany Święty Gaj p.1",
+   "x": 22,
+   "y": 6
   },
   {
-   "to": "Zapomniany Święty Gaj p.3"
+   "to": "Zapomniany Święty Gaj p.3",
+   "x": 34,
+   "y": 41
   },
   {
-   "to": "Zapomniany Święty Gaj p.1 - sala 1"
+   "to": "Zapomniany Święty Gaj p.1 - sala 1",
+   "x": 41,
+   "y": 3
   }
  ]
 }

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Namiot Błogosławionych",
+ "id": 3324,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "to": "Jaskinia Odwagi",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

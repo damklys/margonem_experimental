@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Wschodni Axcaitl",
+ "id": 5686,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Wschodni Mictlan p.8",
+   "x": 10,
+   "y": 2
+  },
+  {
+   "to": "Wschodni Mictlan p.8",
+   "x": 11,
+   "y": 2
+  }
+ ]
+}

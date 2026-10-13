@@ -1,5 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kamienna Jaskinia - sala 3",
- "gateways": []
+ "id": 6537,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Kamienna Jaskinia - sala 1",
+   "x": 26,
+   "y": 11
+  }
+ ]
 }

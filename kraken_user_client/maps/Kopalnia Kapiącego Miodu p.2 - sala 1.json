@@ -1,15 +1,25 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Kapiącego Miodu p.2 - sala 1",
+ "id": 5397,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Kopalnia Kapiącego Miodu p.3"
+   "to": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki",
+   "x": 11,
+   "y": 4,
+   "req": "Przejście dostępne do 71 poziomu"
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki"
+   "to": "Kopalnia Kapiącego Miodu p.3",
+   "x": 28,
+   "y": 25
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1"
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1",
+   "x": 44,
+   "y": 40
   }
  ]
 }

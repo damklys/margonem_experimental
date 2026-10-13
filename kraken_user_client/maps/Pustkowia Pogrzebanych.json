@@ -1,5 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Pustkowia Pogrzebanych",
- "gateways": []
+ "id": 2887,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 0,
+   "y": 90
+  },
+  {
+   "to": "Płaskowyż Arpan",
+   "x": 0,
+   "y": 91
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 17,
+   "y": 95
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 18,
+   "y": 95
+  },
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 63,
+   "y": 6
+  },
+  {
+   "to": "Zatrute Torfowiska",
+   "x": 63,
+   "y": 7
+  }
+ ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Lodowego Czaru",
+ "id": 1130,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Skały Mroźnych Śpiewów",
+   "x": 10,
+   "y": 17
+  }
+ ]
+}

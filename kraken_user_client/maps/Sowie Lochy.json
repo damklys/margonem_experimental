@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Sowie Lochy",
+ "id": 2172,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Sztab Dowódczy",
+   "x": 1,
+   "y": 9
+  },
+  {
+   "to": "Sztab Dowódczy",
+   "x": 1,
+   "y": 10
+  },
+  {
+   "to": "Baszta Puszczyka",
+   "x": 6,
+   "y": 6
+  }
+ ]
+}

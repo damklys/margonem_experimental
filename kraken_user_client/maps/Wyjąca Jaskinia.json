@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Wyjąca Jaskinia",
+ "id": 7334,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Wyjący Wąwóz",
+   "x": 31,
+   "y": 61
+  }
+ ]
+}

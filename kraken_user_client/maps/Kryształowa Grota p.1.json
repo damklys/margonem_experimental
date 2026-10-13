@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kryształowa Grota p.1",
+ "id": 7342,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Przełęcz Dwóch Koron"
+   "to": "Przełęcz Dwóch Koron",
+   "x": 16,
+   "y": 61
+  },
+  {
+   "to": "Przełęcz Dwóch Koron",
+   "x": 17,
+   "y": 61
+  },
+  {
+   "to": "Kryształowa Grota p.2 - sala 1",
+   "x": 47,
+   "y": 59
   }
  ]
 }

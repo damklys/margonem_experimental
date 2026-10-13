@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "SP Margonem - klatka schodowa p.1",
+ "id": 7284,
+ "w": 22,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "SP Margonem - klatka schodowa p.2",
+   "x": 3,
+   "y": 2
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 10,
+   "y": 7
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 10,
+   "y": 9
+  },
+  {
+   "to": "SP Margonem - korytarz techniczny",
+   "x": 13,
+   "y": 11
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 18,
+   "y": 9
+  },
+  {
+   "to": "SP Margonem - pokój drugiej klasy",
+   "x": 19,
+   "y": 7
+  },
+  {
+   "to": "SP Margonem - pokój załogi",
+   "x": 20,
+   "y": 8
+  }
+ ]
+}

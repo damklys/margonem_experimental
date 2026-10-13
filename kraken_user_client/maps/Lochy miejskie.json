@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Lochy miejskie",
+ "id": 1880,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Lochy miejskie - podziemia",
+   "x": 4,
+   "y": 13
+  },
+  {
+   "to": "Lochy miejskie - podziemia",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 10,
+   "y": 9
+  },
+  {
+   "to": "Karka-han",
+   "x": 11,
+   "y": 9
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia płatnerza - skład",
+ "id": 1888,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia płatnerza",
+   "x": 3,
+   "y": 4
+  }
+ ]
+}

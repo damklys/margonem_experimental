@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mafki i Hieronima p.1",
+ "id": 1917,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mafki i Hieronima",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

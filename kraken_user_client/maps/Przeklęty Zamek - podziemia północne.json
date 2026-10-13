@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek - podziemia północne",
+ "id": 170,
+ "w": 40,
+ "h": 24,
  "gateways": [
   {
-   "to": "Przeklęty Zamek - wejście północne"
+   "to": "Przeklęty Zamek - zbrojownia",
+   "x": 2,
+   "y": 7
   },
   {
-   "to": "Przeklęty Zamek - zbrojownia"
+   "to": "Przeklęty Zamek - wejście północne",
+   "x": 35,
+   "y": 18
   }
  ]
 }

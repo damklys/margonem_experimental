@@ -1,0 +1,86 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Fioletowym Kryształem p.1",
+ "id": 63,
+ "w": 29,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Izba 6",
+   "x": 5,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 7",
+   "x": 5,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 8",
+   "x": 5,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 14",
+   "x": 7,
+   "y": 3,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 15",
+   "x": 7,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 16",
+   "x": 7,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 9",
+   "x": 18,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 10",
+   "x": 18,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 12",
+   "x": 20,
+   "y": 13,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Izba 11",
+   "x": 20,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Apartament 2",
+   "x": 21,
+   "y": 7,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Karczma pod Fioletowym Kryształem",
+   "x": 22,
+   "y": 9
+  },
+  {
+   "to": "Izba 13",
+   "x": 23,
+   "y": 7,
+   "req": "(wymaga klucza)"
+  }
+ ]
+}

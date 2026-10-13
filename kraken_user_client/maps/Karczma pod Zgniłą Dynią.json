@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Karczma pod Zgniłą Dynią",
+ "id": 6789,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Miasteczko Deadlow",
+   "x": 8,
+   "y": 20
+  },
+  {
+   "to": "Miasteczko Deadlow",
+   "x": 9,
+   "y": 20
+  }
+ ]
+}

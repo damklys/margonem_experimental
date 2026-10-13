@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Hergata i Halfinii",
+ "id": 107,
+ "w": 23,
+ "h": 18,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Dom Hergata i Halfinii p.1",
+   "x": 2,
+   "y": 2
+  },
+  {
+   "to": "Karka-han",
+   "x": 4,
+   "y": 15
+  },
+  {
+   "to": "Karka-han",
+   "x": 5,
+   "y": 15
   }
  ]
 }

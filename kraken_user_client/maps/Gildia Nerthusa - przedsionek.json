@@ -1,9 +1,54 @@
 {
  "kraken": "mapa",
  "name": "Gildia Nerthusa - przedsionek",
+ "id": 3130,
+ "w": 16,
+ "h": 18,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Gildia Nerthusa - biblioteka",
+   "x": 2,
+   "y": 11,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Gildia Nerthusa - sala obrad",
+   "x": 3,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Gildia Nerthusa - sala obrad",
+   "x": 4,
+   "y": 4,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Ithan",
+   "x": 6,
+   "y": 15
+  },
+  {
+   "to": "Ithan",
+   "x": 7,
+   "y": 15
+  },
+  {
+   "to": "Ithan",
+   "x": 8,
+   "y": 15
+  },
+  {
+   "to": "Karczma pod Liściem Dębu",
+   "x": 13,
+   "y": 12,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Karczma pod Liściem Dębu",
+   "x": 13,
+   "y": 13,
+   "req": "(wymaga klucza)"
   }
  ]
 }

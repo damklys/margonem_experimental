@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Oberża pod Złotym Kłosem p.1",
+ "id": 2040,
+ "w": 24,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Oberża pod Złotym Kłosem p.2",
+   "x": 2,
+   "y": 3
+  },
+  {
+   "to": "Oberża pod Złotym Kłosem",
+   "x": 20,
+   "y": 7
+  }
+ ]
+}

@@ -36,7 +36,7 @@
   },
   {
    "type": "kill",
-   "mob": "Młody Puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
+   "mob": "Młody puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
    "n": 100,
    "route": "puffy (37lvl)"
   },
@@ -88,7 +88,7 @@
   },
   {
    "type": "kill",
-   "mob": "Młody Puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
+   "mob": "Młody puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
    "n": 250,
    "route": "puffy (37lvl)"
   },
@@ -140,7 +140,7 @@
   },
   {
    "type": "kill",
-   "mob": "Młody Puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
+   "mob": "Młody puff; Puff; Młody onyksowy skorpion; Onyksowy skorpion; Nocny Puff",
    "n": 500,
    "route": "puffy (37lvl)"
   },

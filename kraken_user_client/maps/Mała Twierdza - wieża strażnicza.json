@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - wieża strażnicza",
+ "id": 7450,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - podziemny magazyn",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Mała Twierdza - podziemny magazyn",
+   "x": 8,
+   "y": 14
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 14,
+   "y": 9
+  }
+ ]
+}

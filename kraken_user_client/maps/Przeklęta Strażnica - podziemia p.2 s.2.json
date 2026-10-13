@@ -1,12 +1,26 @@
 {
  "kraken": "mapa",
  "name": "Przeklęta Strażnica - podziemia p.2 s.2",
+ "id": 5739,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Przeklęta Strażnica - podziemia p.1 s.2"
+   "to": "Przeklęta Strażnica - podziemia p.1 s.2",
+   "x": 19,
+   "y": 4
   },
   {
-   "to": "Przeklęta Strażnica - podziemia p.2 s.3"
+   "to": "Przeklęta Strażnica - podziemia p.2 s.3",
+   "x": 20,
+   "y": 15,
+   "req": "Przejście dostępne do 43 poziomu"
+  },
+  {
+   "to": "Przeklęta Strażnica - podziemia p.2 s.3",
+   "x": 20,
+   "y": 16,
+   "req": "Przejście dostępne do 43 poziomu"
   }
  ]
 }

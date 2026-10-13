@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Grota Samotnych Dusz p.3 - sala wyjściowa",
+ "id": 3457,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Liściaste Rozstaje"
+   "to": "Liściaste Rozstaje",
+   "x": 21,
+   "y": 30
   },
   {
-   "to": "Grota Samotnych Dusz p.3"
+   "to": "Grota Samotnych Dusz p.3",
+   "x": 25,
+   "y": 10
   }
  ]
 }

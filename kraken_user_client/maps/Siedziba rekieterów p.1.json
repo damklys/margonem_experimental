@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Siedziba rekieterów p.1",
+ "id": 6952,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Siedziba rekieterów",
+   "x": 10,
+   "y": 7
+  }
+ ]
+}

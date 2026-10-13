@@ -1,12 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Zrujnowana Wieża",
+ "id": 2733,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Opuszczony Bastion"
+   "to": "Opuszczony Bastion",
+   "x": 8,
+   "y": 14
   },
   {
-   "to": "Podziemny Przełaz p.2"
+   "to": "Opuszczony Bastion",
+   "x": 9,
+   "y": 14
+  },
+  {
+   "to": "Podziemne Przejście p.2",
+   "x": 11,
+   "y": 5
   }
  ]
 }

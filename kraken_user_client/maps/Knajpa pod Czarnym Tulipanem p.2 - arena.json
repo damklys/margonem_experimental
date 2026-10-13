@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Knajpa pod Czarnym Tulipanem p.2 - arena",
+ "id": 981,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Knajpa pod Czarnym Tulipanem p.2",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

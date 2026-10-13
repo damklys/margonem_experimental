@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom płatnerza p.1",
+ "id": 1889,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom płatnerza",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

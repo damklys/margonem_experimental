@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Samiry - piwnica",
+ "id": 1407,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Samiry",
+   "x": 10,
+   "y": 3
+  },
+  {
+   "to": "Dom Samiry",
+   "x": 11,
+   "y": 3
+  }
+ ]
+}

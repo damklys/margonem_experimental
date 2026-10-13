@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Przeklęta Pieczara p.2",
+ "id": 102,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Przeklęta Pieczara p.1",
+   "x": 15,
+   "y": 11
+  }
+ ]
+}

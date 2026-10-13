@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Grambera",
+ "id": 166,
+ "w": 20,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Stare Ruiny",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Stare Ruiny",
+   "x": 6,
+   "y": 13
+  }
+ ]
+}

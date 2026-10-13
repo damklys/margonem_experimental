@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Jalena i Tafii p.1",
+ "id": 61,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Jalena i Tafii",
+   "x": 12,
+   "y": 8
+  }
+ ]
+}

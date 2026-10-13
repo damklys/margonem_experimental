@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - piwniczka",
+ "id": 2511,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - refektarz",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

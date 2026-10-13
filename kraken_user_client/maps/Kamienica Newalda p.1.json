@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Newalda p.1",
+ "id": 1828,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Newalda",
+   "x": 10,
+   "y": 5
+  }
+ ]
+}

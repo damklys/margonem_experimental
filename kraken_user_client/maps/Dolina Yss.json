@@ -1,18 +1,82 @@
 {
  "kraken": "mapa",
  "name": "Dolina Yss",
+ "id": 11,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Ithan",
+   "x": 0,
+   "y": 86
   },
   {
-   "to": "Leśny Bród"
+   "to": "Ithan",
+   "x": 0,
+   "y": 87
   },
   {
-   "to": "Orla Grań"
+   "to": "Namiot ubogich ludzi",
+   "x": 7,
+   "y": 60
   },
   {
-   "to": "Wilczy Szpic"
+   "to": "Opuszczona Grota",
+   "x": 8,
+   "y": 28
+  },
+  {
+   "to": "Wilczy Szpic",
+   "x": 17,
+   "y": 0
+  },
+  {
+   "to": "Wilczy Szpic",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "to": "Leśny Bród",
+   "x": 19,
+   "y": 95
+  },
+  {
+   "to": "Jaskinia Medytacji Tududu",
+   "x": 42,
+   "y": 47
+  },
+  {
+   "to": "Dom Kastora",
+   "x": 43,
+   "y": 61
+  },
+  {
+   "to": "MAP#289",
+   "x": 53,
+   "y": 19,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "MAP#428",
+   "x": 57,
+   "y": 17,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "MAP#362",
+   "x": 61,
+   "y": 20,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Orla Grań",
+   "x": 63,
+   "y": 72
+  },
+  {
+   "to": "Orla Grań",
+   "x": 63,
+   "y": 73
   }
  ]
 }

@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Labirynt Wyklętych p.2 - sala 1",
+ "id": 848,
+ "w": 26,
+ "h": 26,
  "gateways": [
   {
-   "to": "Labirynt Wyklętych p.1"
+   "to": "Labirynt Wyklętych p.1",
+   "x": 2,
+   "y": 1
   }
  ]
 }

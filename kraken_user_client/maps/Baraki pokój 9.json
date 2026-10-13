@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Baraki pokój 9",
+ "id": 377,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baraki p.1",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Baraki p.1",
+   "x": 6,
+   "y": 12
+  }
+ ]
+}

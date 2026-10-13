@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Aurelii i Dionizego",
+ "id": 1813,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Karka-han",
+   "x": 6,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Dom Aurelii i Dionizego p.1",
+   "x": 10,
+   "y": 3
   }
  ]
 }

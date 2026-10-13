@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Więzienie Nithal",
+ "id": 1674,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Cytadela - przejście",
+   "x": 14,
+   "y": 13
+  }
+ ]
+}

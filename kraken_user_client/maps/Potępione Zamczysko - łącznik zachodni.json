@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - łącznik zachodni",
+ "id": 8188,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 32,
+   "y": 45
+  },
+  {
+   "to": "Potępione Zamczysko - sala ofiarna",
+   "x": 33,
+   "y": 45
+  },
+  {
+   "to": "Potępione Zamczysko - północna komnata",
+   "x": 38,
+   "y": 7
+  }
+ ]
+}

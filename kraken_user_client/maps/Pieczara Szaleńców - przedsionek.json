@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Szaleńców - przedsionek",
+ "id": 3883,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Pieczara Szaleńców - sala 4"
+   "to": "Pieczara Szaleńców - sala 4",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "to": "Pieczara Szaleńców - sala 4",
+   "x": 17,
+   "y": 30
   },
   {
    "to": "Pieczara Szaleńców - sala Regulusa Mętnookiego"

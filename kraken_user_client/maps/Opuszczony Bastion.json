@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Opuszczony Bastion",
+ "id": 2730,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Zburzona Twierdza"
+   "to": "Zburzona Twierdza",
+   "x": 0,
+   "y": 3
   },
   {
-   "to": "Podziemny Przełaz p.1"
+   "to": "Zrujnowana Wieża",
+   "x": 3,
+   "y": 27
   },
   {
-   "to": "Zrujnowana Wieża"
+   "to": "Podziemne Przejście p.1",
+   "x": 37,
+   "y": 25
   }
  ]
 }

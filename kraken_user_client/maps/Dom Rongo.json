@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rongo",
+ "id": 1590,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Wioska Rybacka",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

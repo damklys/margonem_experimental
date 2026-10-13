@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Erem Aldiphrina",
+ "id": 7859,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Porzucone Noiridum p.3 - sala 3",
+   "x": 15,
+   "y": 30
+  }
+ ]
+}

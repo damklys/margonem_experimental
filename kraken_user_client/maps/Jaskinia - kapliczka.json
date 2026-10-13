@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia - kapliczka",
+ "id": 1766,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Jaskinia - pracownia",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

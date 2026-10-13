@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Zbigniewa",
+ "id": 1922,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Zbigniewa p.1",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 6,
+   "y": 12
+  }
+ ]
+}

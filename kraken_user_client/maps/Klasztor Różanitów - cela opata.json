@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - cela opata",
+ "id": 2490,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - klatka schodowa płn.-zach.p.3",
+   "x": 2,
+   "y": 4
+  }
+ ]
+}

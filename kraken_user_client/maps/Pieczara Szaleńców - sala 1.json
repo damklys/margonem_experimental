@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Szaleńców - sala 1",
+ "id": 199,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Radosna Polana"
+   "to": "Pieczara Szaleńców - sala 2",
+   "x": 7,
+   "y": 9
   },
   {
-   "to": "Pieczara Szaleńców - sala 2"
+   "to": "Radosna Polana",
+   "x": 22,
+   "y": 45
   }
  ]
 }

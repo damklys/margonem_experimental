@@ -6,31 +6,19 @@
  "h": 96,
  "gateways": [
   {
-   "to": "Kryształowa Grota p.6",
-   "x": 47,
-   "y": 45,
-   "toId": 7350,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
    "to": "Labirynt Margorii",
    "x": 10,
-   "y": 1,
-   "toId": 6771,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 1
+  },
+  {
+   "to": "Kryształowa Grota p.6",
+   "x": 47,
+   "y": 45
   },
   {
    "to": "Mirvenis-Adur",
    "x": 56,
-   "y": 90,
-   "toId": 3459,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "y": 90
   }
  ]
 }

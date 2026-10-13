@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Kanały Nithal p.1 - sala 2",
+ "id": 7697,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Kanały Nithal p.1 - sala 1",
+   "x": 12,
+   "y": 62
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 40,
+   "y": 15
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 1",
+   "x": 41,
+   "y": 15
+  },
+  {
+   "to": "Kanały Nithal p.1 - sala 3",
+   "x": 62,
+   "y": 51
+  }
+ ]
+}

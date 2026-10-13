@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Krater Uwięzienia",
+ "id": 8541,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 0,
+   "y": 20
+  },
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 0,
+   "y": 21
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "to": "Rumowisko Szarych Głazów",
+   "x": 63,
+   "y": 30
+  },
+  {
+   "to": "Rumowisko Szarych Głazów",
+   "x": 63,
+   "y": 31
+  }
+ ]
+}

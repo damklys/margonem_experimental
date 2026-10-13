@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Jama Morskiej Macki p.1 - sala 3",
+ "id": 7357,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jama Morskiej Macki p.1 - sala 2",
+   "x": 17,
+   "y": 30
+  }
+ ]
+}

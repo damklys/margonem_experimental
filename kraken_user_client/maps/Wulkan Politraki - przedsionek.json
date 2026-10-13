@@ -1,0 +1,25 @@
+{
+ "kraken": "mapa",
+ "name": "Wulkan Politraki - przedsionek",
+ "id": 7060,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Wulkan Politraki p.2 - sala 2",
+   "x": 5,
+   "y": 18
+  },
+  {
+   "to": "Wulkan Politraki - Piekielne Czeluście",
+   "x": 9,
+   "y": 5,
+   "req": "Przejście dostępne od 118 do 144 poziomu"
+  },
+  {
+   "to": "Wulkan Politraki p.2 - sala 1",
+   "x": 16,
+   "y": 16
+  }
+ ]
+}

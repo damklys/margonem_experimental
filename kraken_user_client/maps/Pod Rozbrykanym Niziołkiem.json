@@ -1,15 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Pod Rozbrykanym Niziołkiem",
+ "id": 2665,
+ "w": 20,
+ "h": 24,
  "gateways": [
   {
-   "to": "Pod Rozbrykanym Niziołkiem - piętro"
+   "to": "Pod Rozbrykanym Niziołkiem - piętro",
+   "x": 1,
+   "y": 1
   },
   {
-   "to": "Pod Rozbrykanym Niziołkiem - piwnica"
+   "to": "Pod Rozbrykanym Niziołkiem - piwnica",
+   "x": 9,
+   "y": 4
   },
   {
-   "to": "Ithan"
+   "to": "Ithan",
+   "x": 9,
+   "y": 22
+  },
+  {
+   "to": "Ithan",
+   "x": 10,
+   "y": 22
   }
  ]
 }

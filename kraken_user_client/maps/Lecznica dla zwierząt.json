@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Lecznica dla zwierząt",
+ "id": 1595,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Lecznica dla zwierząt p.1",
+   "x": 3,
+   "y": 3
+  },
+  {
+   "to": "Lecznica dla zwierząt - piwnica",
+   "x": 4,
+   "y": 12
+  },
+  {
+   "to": "Karka-han",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Karka-han",
+   "x": 8,
+   "y": 13
   }
  ]
 }

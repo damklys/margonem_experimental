@@ -1,18 +1,67 @@
 {
  "kraken": "mapa",
  "name": "Ciche Rumowiska",
+ "id": 2869,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Płaskowyż Arpen"
+   "to": "Tuzmer",
+   "x": 0,
+   "y": 51
   },
   {
-   "to": "Złote Piaski"
+   "to": "Tuzmer",
+   "x": 0,
+   "y": 52
   },
   {
-   "to": "Dolina Suchych Łez"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 46,
+   "y": 0
   },
   {
-   "to": "Tuzmer"
+   "to": "Oaza Siedmiu Wichrów",
+   "x": 47,
+   "y": 0
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 51,
+   "y": 63
+  },
+  {
+   "to": "Wioska Rybacka",
+   "x": 52,
+   "y": 63
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 67,
+   "y": 0
+  },
+  {
+   "to": "Złote Piaski",
+   "x": 68,
+   "y": 0
+  },
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 95,
+   "y": 43
+  },
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 95,
+   "y": 44
+  },
+  {
+   "to": "Dolina Suchych Łez",
+   "x": 95,
+   "y": 45
+  },
+  {
+   "to": "Płaskowyż Arpan"
   }
  ]
 }

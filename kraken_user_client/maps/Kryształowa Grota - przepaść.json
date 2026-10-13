@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kryształowa Grota - przepaść",
+ "id": 7341,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Kryształowa Grota p.3 - sala 1",
+   "x": 8,
+   "y": 46
+  },
+  {
+   "to": "Lodowa Sala",
+   "x": 44,
+   "y": 6
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Enoliana p.1",
+ "id": 1935,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Enoliana",
+   "x": 2,
+   "y": 8
+  }
+ ]
+}

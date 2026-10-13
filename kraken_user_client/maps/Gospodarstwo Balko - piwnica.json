@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Gospodarstwo Balko - piwnica",
+ "id": 1211,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gospodarstwo Balko",
+   "x": 4,
+   "y": 5
+  }
+ ]
+}

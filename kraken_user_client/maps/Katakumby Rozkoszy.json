@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Katakumby Rozkoszy",
+ "id": 2186,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Karczma pod Chimerą",
+   "x": 1,
+   "y": 22
+  }
+ ]
+}

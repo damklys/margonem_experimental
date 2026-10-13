@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zacienione Wnęki p.2 - sala 1",
+ "id": 8184,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Zacienione Wnęki p.1 - sala 1",
+   "x": 18,
+   "y": 37
+  },
+  {
+   "to": "Zacienione Wnęki p.2 - sala 2",
+   "x": 41,
+   "y": 14
+  }
+ ]
+}

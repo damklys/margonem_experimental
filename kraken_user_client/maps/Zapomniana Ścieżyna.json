@@ -1,9 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Zapomniana Ścieżyna",
+ "id": 576,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Liściaste Rozstaje"
+   "to": "Liściaste Rozstaje",
+   "x": 0,
+   "y": 69
+  },
+  {
+   "to": "Liściaste Rozstaje",
+   "x": 0,
+   "y": 70
+  },
+  {
+   "to": "Mglisty Las",
+   "x": 51,
+   "y": 95
+  },
+  {
+   "to": "Mglisty Las",
+   "x": 52,
+   "y": 95
+  },
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 63,
+   "y": 41
+  },
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 63,
+   "y": 42
+  },
+  {
+   "to": "Skarpa Trzech Słów",
+   "x": 63,
+   "y": 43
   }
  ]
 }

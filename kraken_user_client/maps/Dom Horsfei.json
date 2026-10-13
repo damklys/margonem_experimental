@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Dom Horsfei",
+ "id": 1567,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Tuzmer",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 8,
+   "y": 11
+  },
+  {
+   "to": "Tuzmer",
+   "x": 9,
+   "y": 11
   }
  ]
 }

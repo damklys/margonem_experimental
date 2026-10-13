@@ -1,0 +1,44 @@
+{
+ "kraken": "mapa",
+ "name": "Ruiny Tass Zhil",
+ "id": 5982,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Krypty Bezsennych p.1 s.1",
+   "x": 45,
+   "y": 32
+  },
+  {
+   "to": "Błota Sham Al",
+   "x": 60,
+   "y": 63
+  },
+  {
+   "to": "Błota Sham Al",
+   "x": 61,
+   "y": 63
+  },
+  {
+   "to": "Kwieciste Kresy",
+   "x": 77,
+   "y": 0
+  },
+  {
+   "to": "Kwieciste Kresy",
+   "x": 78,
+   "y": 0
+  },
+  {
+   "to": "Kwieciste Kresy",
+   "x": 79,
+   "y": 0
+  },
+  {
+   "to": "Krypty Bezsennych p.1 s.2",
+   "x": 89,
+   "y": 61
+  }
+ ]
+}

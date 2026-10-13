@@ -1,18 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Osada Mulusów",
+ "id": 1285,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Pradawne Wzgórze Przodków"
+   "to": "Las Tropicieli",
+   "x": 0,
+   "y": 23
   },
   {
-   "to": "Pradawne Wzgórze Przodków"
-  },
-  {
-   "to": "Pradawne Wzgórze Przodków"
-  },
-  {
-   "to": "Las Tropicieli"
+   "to": "Pradawne Wzgórze Przodków",
+   "x": 63,
+   "y": 59
   }
  ]
 }

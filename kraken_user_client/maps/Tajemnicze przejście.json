@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Tajemnicze przejście",
+ "id": 1625,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Opuszczony dom - piwnica p.1",
+   "x": 4,
+   "y": 2
+  },
+  {
+   "to": "Kanały pod Portem Tuzmer",
+   "x": 21,
+   "y": 31
+  }
+ ]
+}

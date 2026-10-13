@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Mroczna Pieczara p.2",
+ "id": 142,
+ "w": 18,
+ "h": 18,
  "gateways": [
   {
-   "to": "Mroczna Pieczara p.1 - sala 3"
+   "to": "Mroczna Pieczara p.1 - sala 3",
+   "x": 5,
+   "y": 8
   },
   {
-   "to": "Mroczny Przesmyk"
+   "to": "Mroczny Przesmyk",
+   "x": 6,
+   "y": 15
   }
  ]
 }

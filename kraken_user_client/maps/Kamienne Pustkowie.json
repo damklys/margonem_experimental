@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienne Pustkowie",
+ "id": 8540,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Pękający Żleb",
+   "x": 0,
+   "y": 37
+  },
+  {
+   "to": "Pękający Żleb",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Krater Uwięzienia",
+   "x": 63,
+   "y": 20
+  },
+  {
+   "to": "Krater Uwięzienia",
+   "x": 63,
+   "y": 21
+  }
+ ]
+}

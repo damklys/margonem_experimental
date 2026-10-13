@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Zalesiony Step",
+ "id": 8169,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 0,
+   "y": 37
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Prastara Puszcza",
+   "x": 21,
+   "y": 63
+  },
+  {
+   "to": "Prastara Puszcza",
+   "x": 22,
+   "y": 63
+  },
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 28,
+   "y": 0
+  }
+ ]
+}

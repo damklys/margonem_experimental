@@ -1,9 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Magistrat",
+ "id": 1313,
+ "w": 32,
+ "h": 36,
  "gateways": [
   {
-   "to": "Tuzmer"
+   "to": "Magistrat - skarbiec",
+   "x": 5,
+   "y": 33
+  },
+  {
+   "to": "Tuzmer",
+   "x": 14,
+   "y": 30
+  },
+  {
+   "to": "Magistrat p.1",
+   "x": 15,
+   "y": 18
+  },
+  {
+   "to": "Tuzmer",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Magistrat p.1",
+   "x": 16,
+   "y": 18
+  },
+  {
+   "to": "Tuzmer",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "to": "Tuzmer",
+   "x": 17,
+   "y": 30
   }
  ]
 }

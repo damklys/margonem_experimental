@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lecznica dla zwierząt - piwnica",
+ "id": 2219,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Lecznica dla zwierząt",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

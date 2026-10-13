@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Szczęk",
+ "id": 3333,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Jurta Czcicieli",
+   "x": 6,
+   "y": 23
+  },
+  {
+   "to": "Pustynia Shaiharrud - zachód",
+   "x": 25,
+   "y": 20
+  }
+ ]
+}

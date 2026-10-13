@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Mazteni i Ułtana",
+ "id": 2036,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Mazteni i Ułtana p.1",
+   "x": 4,
+   "y": 8
+  },
+  {
+   "to": "Łany Zboża",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Łany Zboża",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - przejście do świątyni",
+ "id": 860,
+ "w": 16,
+ "h": 30,
+ "gateways": [
+  {
+   "to": "Wschodnia piwnica świątynna p.3",
+   "x": 4,
+   "y": 24
+  },
+  {
+   "to": "Dormitorium - piwnica p.3",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Szlamowe Kanały p.2 - sala 2",
+   "x": 8,
+   "y": 26
+  }
+ ]
+}

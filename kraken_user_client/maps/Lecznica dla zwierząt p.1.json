@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Lecznica dla zwierząt p.1",
+ "id": 2220,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Lecznica dla zwierząt",
+   "x": 3,
+   "y": 7
+  }
+ ]
+}

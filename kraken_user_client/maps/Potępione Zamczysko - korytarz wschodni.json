@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko - korytarz wschodni",
+ "id": 4059,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 3,
+   "y": 30
+  },
+  {
+   "to": "Potępione Zamczysko - wschodnia komnata",
+   "x": 23,
+   "y": 30
+  },
+  {
+   "to": "Wieża Szlochów p.1",
+   "x": 26,
+   "y": 3
+  }
+ ]
+}

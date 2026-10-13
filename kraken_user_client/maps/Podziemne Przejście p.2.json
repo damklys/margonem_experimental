@@ -1,36 +1,12 @@
 {
  "kraken": "mapa",
  "name": "Podziemne Przejście p.2",
- "id": 88,
- "w": 20,
- "h": 16,
  "gateways": [
   {
-   "to": "Podziemne Przejście p.1",
-   "x": 4,
-   "y": 7,
-   "toId": 87,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Podziemne Przejście p.1"
   },
   {
-   "to": "Podziemne Przejście p.3",
-   "x": 15,
-   "y": 12,
-   "toId": 89,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
-  },
-  {
-   "to": "Podziemne Przejście p.1",
-   "x": 5,
-   "y": 7,
-   "toId": 87,
-   "key": 0,
-   "lvl": 0,
-   "zone": 0
+   "to": "Zrujnowana Wieża"
   }
  ]
 }

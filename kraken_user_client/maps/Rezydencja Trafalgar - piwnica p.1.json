@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Rezydencja Trafalgar - piwnica p.1",
+ "id": 919,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Rezydencja Trafalgar - piwnica p.2",
+   "x": 12,
+   "y": 8
+  },
+  {
+   "to": "Rezydencja Trafalgar",
+   "x": 12,
+   "y": 10
+  }
+ ]
+}

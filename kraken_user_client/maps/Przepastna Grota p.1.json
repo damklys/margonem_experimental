@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Przepastna Grota p.1",
+ "id": 135,
+ "w": 24,
+ "h": 25,
+ "gateways": [
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "to": "Przepastna Grota p.2",
+   "x": 19,
+   "y": 18
+  }
+ ]
+}

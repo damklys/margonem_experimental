@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Aula Akademii Filmowej",
+ "id": 905,
+ "w": 26,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Uniwersytet płd.",
+   "x": 10,
+   "y": 15
+  }
+ ]
+}

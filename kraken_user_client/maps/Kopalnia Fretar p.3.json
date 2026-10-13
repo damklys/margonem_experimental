@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kopalnia Fretar p.3",
+ "id": 45,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Kopalnia Fretar p.2",
+   "x": 2,
+   "y": 10
+  }
+ ]
+}

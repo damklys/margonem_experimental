@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Samotnych Dusz p.5",
+ "id": 3465,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Grota Samotnych Dusz p.4",
+   "x": 9,
+   "y": 28
+  },
+  {
+   "to": "Grota Samotnych Dusz p.6",
+   "x": 11,
+   "y": 15
+  }
+ ]
+}

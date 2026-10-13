@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przejście Zamarzniętych Kości",
+ "id": 594,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Lodowa Sala"
+   "to": "Lodowa Sala",
+   "x": 10,
+   "y": 8
   },
   {
-   "to": "Sala Zamarzniętych Kości"
+   "to": "Sala Zamarzniętych Kości",
+   "x": 51,
+   "y": 53
   }
  ]
 }

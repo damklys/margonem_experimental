@@ -1,9 +1,35 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Krynii Lufis",
+ "id": 802,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Kamienica Krynii Lufis - piwnica p.1",
+   "x": 7,
+   "y": 5,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Nithal",
+   "x": 7,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 8,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 9,
+   "y": 13
+  },
+  {
+   "to": "Kamienica Krynii Lufis p.1",
+   "x": 11,
+   "y": 3
   }
  ]
 }

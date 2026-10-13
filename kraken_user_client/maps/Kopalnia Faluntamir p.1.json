@@ -1,9 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Kopalnia Faluntamir p.1",
+ "id": 269,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Przedmieścia Karka-han"
+   "to": "Kopalnia Faluntamir p.2 - sala 1",
+   "x": 36,
+   "y": 40
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 58,
+   "y": 62
+  },
+  {
+   "to": "Przedmieścia Karka-han",
+   "x": 59,
+   "y": 62
   }
  ]
 }

@@ -1,0 +1,46 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia Worundriela p.3",
+ "id": 7465,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Ścieżki Erebeth p.3",
+   "x": 3,
+   "y": 25
+  },
+  {
+   "to": "Ścieżki Erebeth p.3",
+   "x": 3,
+   "y": 26
+  },
+  {
+   "to": "Kuźnia Worundriela p.2",
+   "x": 25,
+   "y": 1
+  },
+  {
+   "to": "Ognista Studnia p.3",
+   "x": 55,
+   "y": 10
+  },
+  {
+   "to": "Ognista Studnia p.3",
+   "x": 56,
+   "y": 10
+  },
+  {
+   "to": "Kuźnia Worundriela - Komnata Żaru",
+   "x": 56,
+   "y": 42,
+   "req": "Przejście dostępne do 152 poziomu"
+  },
+  {
+   "to": "Kuźnia Worundriela - Komnata Żaru",
+   "x": 56,
+   "y": 43,
+   "req": "Przejście dostępne do 152 poziomu"
+  }
+ ]
+}

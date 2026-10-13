@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Pogranicze Wisielców",
+ "id": 4052,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Jęczywąwóz",
+   "x": 0,
+   "y": 31
+  },
+  {
+   "to": "Jęczywąwóz",
+   "x": 0,
+   "y": 32
+  },
+  {
+   "to": "Skalisty Styk",
+   "x": 6,
+   "y": 0
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 32,
+   "y": 95
+  },
+  {
+   "to": "Potępione Zamczysko",
+   "x": 33,
+   "y": 95
+  },
+  {
+   "to": "Upiorna Droga",
+   "x": 63,
+   "y": 75
+  }
+ ]
+}

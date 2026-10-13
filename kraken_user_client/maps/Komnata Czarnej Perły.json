@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Komnata Czarnej Perły",
+ "id": 5865,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Sala Królewska",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Sala Królewska",
+   "x": 16,
+   "y": 30
+  }
+ ]
+}

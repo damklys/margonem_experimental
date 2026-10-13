@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Etrefana - pracownia",
+ "id": 2016,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Etrefana",
+   "x": 2,
+   "y": 3
+  }
+ ]
+}

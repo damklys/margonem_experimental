@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Dom Presztreka",
+ "id": 311,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Mythar",
+   "x": 11,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "to": "Mythar",
+   "x": 13,
+   "y": 14
+  },
+  {
+   "to": "Dom Presztreka p.1",
+   "x": 14,
+   "y": 1
   }
  ]
 }

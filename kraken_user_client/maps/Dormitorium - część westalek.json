@@ -1,9 +1,39 @@
 {
  "kraken": "mapa",
  "name": "Dormitorium - część westalek",
+ "id": 853,
+ "w": 16,
+ "h": 20,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Dormitorium - część akolitów",
+   "x": 1,
+   "y": 11
+  },
+  {
+   "to": "Dormitorium - część akolitów",
+   "x": 1,
+   "y": 12
+  },
+  {
+   "to": "Dormitorium - piwnica p.1",
+   "x": 7,
+   "y": 4
+  },
+  {
+   "to": "Nithal",
+   "x": 12,
+   "y": 18
+  },
+  {
+   "to": "Dormitorium - część westalek p.1",
+   "x": 13,
+   "y": 13
+  },
+  {
+   "to": "Nithal",
+   "x": 13,
+   "y": 18
   }
  ]
 }

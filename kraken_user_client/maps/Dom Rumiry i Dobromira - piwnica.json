@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Rumiry i Dobromira - piwnica",
+ "id": 1122,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Rumiry i Dobromira",
+   "x": 6,
+   "y": 3
+  }
+ ]
+}

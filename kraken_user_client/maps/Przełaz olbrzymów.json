@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Przełaz olbrzymów",
+ "id": 299,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Smocze Góry"
+   "to": "Selva Oscura",
+   "x": 4,
+   "y": 3
   },
   {
-   "to": "Selva Oscura"
+   "to": "Smocze Góry",
+   "x": 9,
+   "y": 30
   }
  ]
 }

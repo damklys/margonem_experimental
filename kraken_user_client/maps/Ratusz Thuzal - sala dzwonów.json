@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Ratusz Thuzal - sala dzwonów",
+ "id": 1069,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Ratusz Thuzal",
+   "x": 12,
+   "y": 6
+  }
+ ]
+}

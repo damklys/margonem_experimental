@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Ustronie Widzących Drzew",
+ "id": 1058,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Domek Enyi",
+   "x": 21,
+   "y": 40
+  },
+  {
+   "to": "Domek Enyi",
+   "x": 22,
+   "y": 40
+  },
+  {
+   "to": "Wrzosowiska",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Wrzosowiska",
+   "x": 34,
+   "y": 0
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 63,
+   "y": 30
+  },
+  {
+   "to": "Zachodnie Rozdroża",
+   "x": 63,
+   "y": 31
+  }
+ ]
+}

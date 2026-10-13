@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom babci Hani - strych",
+ "id": 8132,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom babci Hani",
+   "x": 7,
+   "y": 12
+  }
+ ]
+}

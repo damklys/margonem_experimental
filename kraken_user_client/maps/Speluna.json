@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Speluna",
+ "id": 7752,
+ "w": 22,
+ "h": 22,
+ "gateways": [
+  {
+   "to": "Tortuga",
+   "x": 16,
+   "y": 18
+  },
+  {
+   "to": "Tortuga",
+   "x": 17,
+   "y": 18
+  }
+ ]
+}

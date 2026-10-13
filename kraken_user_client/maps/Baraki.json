@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Baraki",
+ "id": 5,
+ "w": 42,
+ "h": 42,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Baraki p.1",
+   "x": 22,
+   "y": 34
+  },
+  {
+   "to": "Ithan",
+   "x": 26,
+   "y": 40
+  },
+  {
+   "to": "Ithan",
+   "x": 27,
+   "y": 40
+  },
+  {
+   "to": "Ithan",
+   "x": 28,
+   "y": 40
   }
  ]
 }

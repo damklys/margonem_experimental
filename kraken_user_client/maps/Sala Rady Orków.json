@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Rady Orków",
+ "id": 5861,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Sala Królewska",
+   "x": 23,
+   "y": 4
+  },
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 23,
+   "y": 45
+  },
+  {
+   "to": "Sala Królewska",
+   "x": 24,
+   "y": 4
+  },
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 24,
+   "y": 45
+  }
+ ]
+}

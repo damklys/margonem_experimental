@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - klatka schodowa płd.-zach.p.2",
+ "id": 2510,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - dzwonnica",
+   "x": 6,
+   "y": 6
+  },
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

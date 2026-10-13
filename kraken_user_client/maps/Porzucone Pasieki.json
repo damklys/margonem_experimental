@@ -1,21 +1,64 @@
 {
  "kraken": "mapa",
  "name": "Porzucone Pasieki",
+ "id": 138,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Ithan"
+   "to": "Mistyczny Bór",
+   "x": 0,
+   "y": 28
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1"
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2",
+   "x": 7,
+   "y": 46
   },
   {
-   "to": "Kopalnia Kapiącego Miodu p.1 - sala 2"
+   "to": "Uroczysko",
+   "x": 22,
+   "y": 63
   },
   {
-   "to": "Uroczysko"
+   "to": "Uroczysko",
+   "x": 23,
+   "y": 63
   },
   {
-   "to": "Mistyczny Bór"
+   "to": "Uroczysko",
+   "x": 24,
+   "y": 63
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 28,
+   "y": 0
+  },
+  {
+   "to": "Wioska Pszczelarzy",
+   "x": 29,
+   "y": 0
+  },
+  {
+   "to": "Kopalnia Kapiącego Miodu p.1 - sala 1",
+   "x": 53,
+   "y": 28
+  },
+  {
+   "to": "Ithan",
+   "x": 63,
+   "y": 30
+  },
+  {
+   "to": "Ithan",
+   "x": 63,
+   "y": 31
   }
  ]
 }

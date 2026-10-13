@@ -1,9 +1,44 @@
 {
  "kraken": "mapa",
  "name": "Mury Nithal - Baszta Koronna",
+ "id": 965,
+ "w": 22,
+ "h": 33,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Zewnętrzne mury Nithal",
+   "x": 4,
+   "y": 16
+  },
+  {
+   "to": "Zewnętrzne mury Nithal",
+   "x": 4,
+   "y": 17
+  },
+  {
+   "to": "Akademia wojskowa - piwnica p.1",
+   "x": 7,
+   "y": 31
+  },
+  {
+   "to": "Akademia wojskowa - piwnica p.1",
+   "x": 8,
+   "y": 31
+  },
+  {
+   "to": "Nithal",
+   "x": 11,
+   "y": 23
+  },
+  {
+   "to": "Cytadela",
+   "x": 18,
+   "y": 7
+  },
+  {
+   "to": "Cytadela",
+   "x": 18,
+   "y": 8
   }
  ]
 }

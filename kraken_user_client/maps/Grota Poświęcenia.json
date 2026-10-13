@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Poświęcenia",
+ "id": 3338,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 16,
+   "y": 29
+  },
+  {
+   "to": "Pustynia Shaiharrud - wschód",
+   "x": 17,
+   "y": 29
+  }
+ ]
+}

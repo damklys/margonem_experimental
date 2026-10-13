@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zamierzchłe Arterie p.2 - sala 2",
+ "id": 7863,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Zamierzchłe Arterie p.2 - sala 1",
+   "x": 49,
+   "y": 59
+  }
+ ]
+}

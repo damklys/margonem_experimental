@@ -1,5 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Chlew",
- "gateways": []
+ "id": 878,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Podgrodzie Nithal",
+   "x": 8,
+   "y": 12
+  }
+ ]
 }

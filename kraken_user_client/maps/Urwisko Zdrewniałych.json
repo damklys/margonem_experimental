@@ -1,9 +1,36 @@
 {
  "kraken": "mapa",
  "name": "Urwisko Zdrewniałych",
+ "id": 3594,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Mythar"
+   "to": "Wąwóz Zakorzenionych Dusz",
+   "x": 0,
+   "y": 37
+  },
+  {
+   "to": "Wąwóz Zakorzenionych Dusz",
+   "x": 0,
+   "y": 38
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 43,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Dolina Chmur",
+   "x": 44,
+   "y": 63,
+   "req": "Przejście dostępne od 200 poziomu"
+  },
+  {
+   "to": "Mythar",
+   "x": 88,
+   "y": 0
   }
  ]
 }

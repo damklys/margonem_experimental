@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Kopiec Mrówek p.1",
+ "id": 2529,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Kopiec Mrówek p.2"
+   "to": "Kopiec Mrówek p.2",
+   "x": 7,
+   "y": 5
   },
   {
-   "to": "Kopiec Mrówek"
+   "to": "Kopiec Mrówek",
+   "x": 16,
+   "y": 15
   }
  ]
 }

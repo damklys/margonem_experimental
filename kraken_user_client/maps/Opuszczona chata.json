@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczona chata",
+ "id": 1471,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Port Tuzmer",
+   "x": 12,
+   "y": 7
+  },
+  {
+   "to": "Port Tuzmer",
+   "x": 12,
+   "y": 8
+  }
+ ]
+}

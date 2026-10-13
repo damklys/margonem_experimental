@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Torkina - strych",
+ "id": 2776,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Dom Torkina",
+   "x": 9,
+   "y": 17
+  }
+ ]
+}

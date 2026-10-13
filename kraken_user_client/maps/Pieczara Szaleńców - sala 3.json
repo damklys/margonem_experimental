@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Pieczara Szaleńców - sala 3",
+ "id": 201,
+ "w": 64,
+ "h": 48,
  "gateways": [
   {
-   "to": "Pieczara Szaleńców - sala 2"
+   "to": "Pieczara Szaleńców - sala 2",
+   "x": 11,
+   "y": 6
   },
   {
-   "to": "Pieczara Szaleńców - sala 4"
+   "to": "Pieczara Szaleńców - sala 4",
+   "x": 58,
+   "y": 35
   }
  ]
 }

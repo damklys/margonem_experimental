@@ -1,0 +1,64 @@
+{
+ "kraken": "mapa",
+ "name": "Potępione Zamczysko",
+ "id": 4048,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Plugawe Pustkowie",
+   "x": 0,
+   "y": 70
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 24,
+   "y": 23
+  },
+  {
+   "to": "Potępione Zamczysko - korytarz wejściowy",
+   "x": 25,
+   "y": 23
+  },
+  {
+   "to": "Wieża Szlochów p.1",
+   "x": 28,
+   "y": 18
+  },
+  {
+   "to": "Pogranicze Wisielców",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "to": "Pogranicze Wisielców",
+   "x": 33,
+   "y": 0
+  },
+  {
+   "to": "Tristam",
+   "x": 54,
+   "y": 95
+  },
+  {
+   "to": "Tristam",
+   "x": 55,
+   "y": 95
+  },
+  {
+   "to": "Tristam",
+   "x": 56,
+   "y": 95
+  },
+  {
+   "to": "Wiedźmie Kotłowisko",
+   "x": 63,
+   "y": 86
+  },
+  {
+   "to": "Wiedźmie Kotłowisko",
+   "x": 63,
+   "y": 87
+  }
+ ]
+}

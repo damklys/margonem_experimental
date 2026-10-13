@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Splądrowana kaplica",
+ "id": 1298,
+ "w": 20,
+ "h": 20,
+ "gateways": [
+  {
+   "to": "Tristam",
+   "x": 9,
+   "y": 18
+  },
+  {
+   "to": "Tristam",
+   "x": 10,
+   "y": 18
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Kamienica Tanenbara p.2",
+ "id": 763,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Kamienica Tanenbara p.1",
+   "x": 10,
+   "y": 6
+  }
+ ]
+}

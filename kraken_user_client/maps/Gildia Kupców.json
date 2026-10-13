@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Gildia Kupców",
+ "id": 1157,
+ "w": 22,
+ "h": 18,
  "gateways": [
   {
-   "to": "Karka-han"
+   "to": "Gildia Kupców - piwnica",
+   "x": 7,
+   "y": 15
+  },
+  {
+   "to": "Gildia Kupców p.1",
+   "x": 14,
+   "y": 1
+  },
+  {
+   "to": "Karka-han",
+   "x": 14,
+   "y": 16
+  },
+  {
+   "to": "Karka-han",
+   "x": 15,
+   "y": 16
   }
  ]
 }

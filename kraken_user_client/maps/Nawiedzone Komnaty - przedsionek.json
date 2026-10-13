@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Nawiedzone Komnaty - przedsionek",
+ "id": 5857,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Nawiedzone Kazamaty p.1 s.1",
+   "x": 5,
+   "y": 27
+  },
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 15,
+   "y": 5
+  },
+  {
+   "to": "Kurhany Zwyciężonych",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "to": "Sala Dowódcy Orków",
+   "x": 16,
+   "y": 5
+  },
+  {
+   "to": "Kurhany Zwyciężonych",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "to": "Nawiedzone Kazamaty p.1 s.2",
+   "x": 26,
+   "y": 27
+  }
+ ]
+}

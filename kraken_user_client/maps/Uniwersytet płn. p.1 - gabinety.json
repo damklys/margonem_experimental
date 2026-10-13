@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Uniwersytet płn. p.1 - gabinety",
+ "id": 892,
+ "w": 16,
+ "h": 18,
+ "gateways": [
+  {
+   "to": "Uniwersytet płn.",
+   "x": 10,
+   "y": 5
+  }
+ ]
+}

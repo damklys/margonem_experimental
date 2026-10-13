@@ -1,0 +1,54 @@
+{
+ "kraken": "mapa",
+ "name": "Pękający Żleb",
+ "id": 8539,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Nieme Góry",
+   "x": 0,
+   "y": 31
+  },
+  {
+   "to": "Nieme Góry",
+   "x": 0,
+   "y": 32
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "to": "Jałowa Dolina",
+   "x": 15,
+   "y": 0
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 2",
+   "x": 20,
+   "y": 47
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 1",
+   "x": 59,
+   "y": 78
+  },
+  {
+   "to": "Szepczące Wyrwy p.1 - sala 1",
+   "x": 60,
+   "y": 78
+  },
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 63,
+   "y": 37
+  },
+  {
+   "to": "Kamienne Pustkowie",
+   "x": 63,
+   "y": 38
+  }
+ ]
+}

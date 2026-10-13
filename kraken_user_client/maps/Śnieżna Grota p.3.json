@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Śnieżna Grota p.3",
+ "id": 286,
+ "w": 64,
+ "h": 64,
  "gateways": [
   {
-   "to": "Śnieżna Grota p.2"
+   "to": "Śnieżna Grota p.2",
+   "x": 7,
+   "y": 61
   },
   {
-   "to": "Lodowa Sala"
+   "to": "Lodowa Sala",
+   "x": 37,
+   "y": 42
   }
  ]
 }

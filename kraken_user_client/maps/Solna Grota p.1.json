@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Solna Grota p.1",
+ "id": 182,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Góry Zrębowe",
+   "x": 4,
+   "y": 11
+  },
+  {
+   "to": "Solna Grota p.2",
+   "x": 12,
+   "y": 7
+  }
+ ]
+}

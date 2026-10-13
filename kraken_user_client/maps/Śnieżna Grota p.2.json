@@ -1,12 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Śnieżna Grota p.2",
+ "id": 285,
+ "w": 48,
+ "h": 48,
  "gateways": [
   {
-   "to": "Śnieżna Grota p.1"
+   "to": "Śnieżna Grota p.3",
+   "x": 7,
+   "y": 36
   },
   {
-   "to": "Śnieżna Grota p.3"
+   "to": "Śnieżna Grota p.1",
+   "x": 24,
+   "y": 11
   }
  ]
 }

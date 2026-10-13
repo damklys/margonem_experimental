@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Jaskinia Ulotnych Wspomnień",
+ "id": 6477,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Źródło Wspomnień",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Las Porywów Wiatru",
+   "x": 12,
+   "y": 14
+  }
+ ]
+}

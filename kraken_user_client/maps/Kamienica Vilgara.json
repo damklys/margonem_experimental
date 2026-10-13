@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Kamienica Vilgara",
+ "id": 1696,
+ "w": 16,
+ "h": 16,
  "gateways": [
   {
-   "to": "Nithal"
+   "to": "Nithal",
+   "x": 7,
+   "y": 12
   }
  ]
 }

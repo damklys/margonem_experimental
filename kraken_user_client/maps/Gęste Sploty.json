@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Gęste Sploty",
+ "id": 8166,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przepaść Aguti",
+   "x": 0,
+   "y": 52
+  },
+  {
+   "to": "Zmurszały Łęg",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "to": "Ukryty Kanion",
+   "x": 46,
+   "y": 63
+  },
+  {
+   "to": "Ukryty Kanion",
+   "x": 47,
+   "y": 63
+  }
+ ]
+}

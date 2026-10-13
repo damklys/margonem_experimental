@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Posiadłość Kruzo - magazyn",
+ "id": 4769,
+ "w": 32,
+ "h": 24,
  "gateways": [
   {
-   "to": "Włości rodu Kruzo"
+   "to": "Włości rodu Kruzo",
+   "x": 15,
+   "y": 22
+  },
+  {
+   "to": "Włości rodu Kruzo",
+   "x": 16,
+   "y": 22
   }
  ]
 }

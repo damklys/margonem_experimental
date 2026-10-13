@@ -1,12 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Wilcza Skarpa",
+ "id": 4547,
+ "w": 64,
+ "h": 96,
  "gateways": [
   {
-   "to": "Warczące Osuwiska"
+   "to": "Warczące Osuwiska",
+   "x": 0,
+   "y": 16
   },
   {
-   "to": "Legowisko Wilczej Hordy"
+   "to": "Warczące Osuwiska",
+   "x": 0,
+   "y": 17
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 0,
+   "y": 76
+  },
+  {
+   "to": "Legowisko Wilczej Hordy",
+   "x": 0,
+   "y": 77
   }
  ]
 }

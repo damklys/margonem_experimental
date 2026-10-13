@@ -1,0 +1,35 @@
+{
+ "kraken": "mapa",
+ "name": "Ukryta Grota Morskich Diabłów - siedziba",
+ "id": 1527,
+ "w": 42,
+ "h": 42,
+ "gateways": [
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 3,
+   "y": 28
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - skarbiec",
+   "x": 3,
+   "y": 29
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 21,
+   "y": 38
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów",
+   "x": 22,
+   "y": 38
+  },
+  {
+   "to": "Ukryta Grota Morskich Diabłów - magazyn",
+   "x": 39,
+   "y": 26,
+   "req": "Przejście dostępne do 144 poziomu"
+  }
+ ]
+}

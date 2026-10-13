@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - kapitularz",
+ "id": 2496,
+ "w": 17,
+ "h": 27,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - świątynia",
+   "x": 9,
+   "y": 4
+  },
+  {
+   "to": "Klasztor Różanitów - skarbczyk",
+   "x": 13,
+   "y": 9
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 15,
+   "y": 23
+  },
+  {
+   "to": "Klasztor Różanitów - wirydarz",
+   "x": 15,
+   "y": 24
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Szepty Menhirów",
+ "id": 8173,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 0,
+   "y": 67
+  },
+  {
+   "to": "Gaj Księżycowego Blasku",
+   "x": 0,
+   "y": 68
+  },
+  {
+   "to": "Zacienione Wnęki p.1 - sala 1",
+   "x": 8,
+   "y": 30
+  },
+  {
+   "to": "Zacienione Wnęki p.1 - sala 2",
+   "x": 49,
+   "y": 33
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 50,
+   "y": 95
+  },
+  {
+   "to": "Garb Połamanych Konarów",
+   "x": 51,
+   "y": 95
+  },
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 63,
+   "y": 38
+  },
+  {
+   "to": "Knieja Lunarnych Głazów",
+   "x": 63,
+   "y": 39
+  }
+ ]
+}

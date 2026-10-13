@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Teatr Monticolo - kulisy prawe",
+ "id": 7426,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Teatr Monticolo - sala teatralna",
+   "x": 2,
+   "y": 13
+  },
+  {
+   "to": "Teatr Monticolo - korytarz",
+   "x": 5,
+   "y": 6
+  }
+ ]
+}

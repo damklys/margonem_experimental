@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Grota Skamieniałej Kory p.1 - sala 2",
+ "id": 7686,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Grota Skamieniałej Kory p.2",
+   "x": 19,
+   "y": 6
+  },
+  {
+   "to": "Ziemia Szepczących Cierni",
+   "x": 20,
+   "y": 46
+  }
+ ]
+}

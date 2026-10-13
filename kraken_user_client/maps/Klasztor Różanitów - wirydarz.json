@@ -1,0 +1,39 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - wirydarz",
+ "id": 2391,
+ "w": 41,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 6,
+   "y": 31
+  },
+  {
+   "to": "Klasztor Różanitów - kapitularz",
+   "x": 7,
+   "y": 21
+  },
+  {
+   "to": "Klasztor Różanitów - świątynia",
+   "x": 20,
+   "y": 12
+  },
+  {
+   "to": "Klasztor Różanitów - korytarz wejściowy",
+   "x": 20,
+   "y": 29
+  },
+  {
+   "to": "Klasztor Różanitów - refektarz",
+   "x": 33,
+   "y": 21
+  },
+  {
+   "to": "Klasztor Różanitów - lawaterz",
+   "x": 34,
+   "y": 31
+  }
+ ]
+}

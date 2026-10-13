@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Opuszczony dom - piwnica p.1",
+ "id": 1624,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Opuszczony dom - piwnica",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "to": "Tajemnicze przejście",
+   "x": 18,
+   "y": 31
+  }
+ ]
+}

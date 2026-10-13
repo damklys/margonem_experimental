@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kuźnia Worundriela p.1",
+ "id": 7463,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Podziemne Rozpadliny",
+   "x": 6,
+   "y": 9
+  },
+  {
+   "to": "Kuźnia Worundriela p.2",
+   "x": 33,
+   "y": 57
+  }
+ ]
+}

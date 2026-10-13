@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - mały barak",
+ "id": 7449,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

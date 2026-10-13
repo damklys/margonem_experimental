@@ -1,9 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Rezydencja Tussal",
+ "id": 1970,
+ "w": 26,
+ "h": 20,
  "gateways": [
   {
-   "to": "Thuzal"
+   "to": "Rezydencja Tussal p.1 - sypialnia",
+   "x": 2,
+   "y": 10
+  },
+  {
+   "to": "Thuzal",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "to": "Thuzal",
+   "x": 13,
+   "y": 14
+  },
+  {
+   "to": "Rezydencja Tussal p.1 - gabinet",
+   "x": 23,
+   "y": 10
   }
  ]
 }

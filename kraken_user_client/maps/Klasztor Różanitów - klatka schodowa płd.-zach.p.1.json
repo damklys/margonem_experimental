@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Klasztor Różanitów - klatka schodowa płd.-zach.p.1",
+ "id": 2507,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Klasztor Różanitów - magazyn ksiąg",
+   "x": 6,
+   "y": 6
+  },
+  {
+   "to": "Klasztor Różanitów - warsztat",
+   "x": 9,
+   "y": 6
+  }
+ ]
+}

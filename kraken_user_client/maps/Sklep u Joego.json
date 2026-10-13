@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Sklep u Joego",
+ "id": 4727,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Redrock",
+   "x": 4,
+   "y": 13
+  },
+  {
+   "to": "Redrock",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "to": "Redrock",
+   "x": 6,
+   "y": 13
+  }
+ ]
+}

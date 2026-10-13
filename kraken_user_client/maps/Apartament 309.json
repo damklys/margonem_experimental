@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Apartament 309",
+ "id": 1044,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zajazd pod Złamanym Dukatem p.3 - część wschodnia",
+   "x": 1,
+   "y": 8
+  }
+ ]
+}

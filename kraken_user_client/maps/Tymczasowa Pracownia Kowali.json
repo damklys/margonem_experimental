@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Tymczasowa Pracownia Kowali",
+ "id": 3477,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Trakt Moradrana",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "to": "Trakt Moradrana",
+   "x": 8,
+   "y": 12
+  }
+ ]
+}

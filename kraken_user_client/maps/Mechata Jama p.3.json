@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Mechata Jama p.3",
+ "id": 7846,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Mechata Jama p.2",
+   "x": 15,
+   "y": 1
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "kraken": "mapa",
+ "name": "Mała Twierdza - wieża zachodnia",
+ "id": 7445,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Mała Twierdza - mury zachodnie",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "to": "Mała Twierdza - mury zachodnie",
+   "x": 8,
+   "y": 5
+  },
+  {
+   "to": "Opuszczona Twierdza",
+   "x": 8,
+   "y": 14
+  }
+ ]
+}

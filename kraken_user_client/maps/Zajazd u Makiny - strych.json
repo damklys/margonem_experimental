@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zajazd u Makiny - strych",
+ "id": 638,
+ "w": 16,
+ "h": 24,
+ "gateways": [
+  {
+   "to": "Zajazd u Makiny p.2",
+   "x": 11,
+   "y": 15
+  }
+ ]
+}

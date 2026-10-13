@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Antoniego - piętro",
+ "id": 3987,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Antoniego - parter",
+   "x": 3,
+   "y": 7
+  }
+ ]
+}

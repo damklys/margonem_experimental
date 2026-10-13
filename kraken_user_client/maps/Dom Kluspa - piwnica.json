@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Kluspa - piwnica",
+ "id": 346,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Kluspa",
+   "x": 3,
+   "y": 3
+  }
+ ]
+}

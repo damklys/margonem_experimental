@@ -1,0 +1,49 @@
+{
+ "kraken": "mapa",
+ "name": "Jałowa Dolina",
+ "id": 8537,
+ "w": 96,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 0,
+   "y": 42
+  },
+  {
+   "to": "Dolina Potoku Śmierci",
+   "x": 0,
+   "y": 43
+  },
+  {
+   "to": "Martwy Las",
+   "x": 23,
+   "y": 0
+  },
+  {
+   "to": "Martwy Las",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "to": "Pękający Żleb",
+   "x": 46,
+   "y": 63
+  },
+  {
+   "to": "Pękający Żleb",
+   "x": 47,
+   "y": 63
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 95,
+   "y": 48
+  },
+  {
+   "to": "Las Monolitów",
+   "x": 95,
+   "y": 49
+  }
+ ]
+}

@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Opuszczony Szyb",
+ "id": 3473,
+ "w": 96,
+ "h": 64,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Grota Samotnych Dusz p.6",
+   "x": 28,
+   "y": 60
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 74,
+   "y": 60
   }
  ]
 }

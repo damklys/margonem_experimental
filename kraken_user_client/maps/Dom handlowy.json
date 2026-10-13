@@ -1,0 +1,24 @@
+{
+ "kraken": "mapa",
+ "name": "Dom handlowy",
+ "id": 6857,
+ "w": 30,
+ "h": 28,
+ "gateways": [
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 22,
+   "y": 25
+  },
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 23,
+   "y": 25
+  },
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 24,
+   "y": 25
+  }
+ ]
+}

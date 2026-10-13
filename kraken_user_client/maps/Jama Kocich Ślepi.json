@@ -1,9 +1,14 @@
 {
  "kraken": "mapa",
  "name": "Jama Kocich Ślepi",
+ "id": 4798,
+ "w": 22,
+ "h": 22,
  "gateways": [
   {
-   "to": "Tygrysia Polana"
+   "to": "Tygrysia Polana",
+   "x": 15,
+   "y": 20
   }
  ]
 }

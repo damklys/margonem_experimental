@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Pracownia Bonifacego p.1",
+ "id": 2349,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia Bonifacego",
+   "x": 10,
+   "y": 11
+  }
+ ]
+}

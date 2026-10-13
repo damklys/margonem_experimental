@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Zbójecka spiżarnia - przyziemie",
+ "id": 2013,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Zbójecka spiżarnia",
+   "x": 3,
+   "y": 3
+  }
+ ]
+}

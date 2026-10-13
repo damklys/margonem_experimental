@@ -1,0 +1,30 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Toksyniusza",
+ "id": 2217,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Pracownia Toksyniusza",
+   "x": 2,
+   "y": 8,
+   "req": "(wymaga klucza)"
+  },
+  {
+   "to": "Torneg",
+   "x": 5,
+   "y": 12
+  },
+  {
+   "to": "Torneg",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "to": "Dom Toksyniusza p.1",
+   "x": 8,
+   "y": 7
+  }
+ ]
+}

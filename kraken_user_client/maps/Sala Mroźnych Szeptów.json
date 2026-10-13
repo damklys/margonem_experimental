@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Mroźnych Szeptów",
+ "id": 2354,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Przejście Władców Mrozu",
+   "x": 58,
+   "y": 2
+  }
+ ]
+}

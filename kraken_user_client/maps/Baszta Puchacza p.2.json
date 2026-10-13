@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Baszta Puchacza p.2",
+ "id": 2165,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Baszta Puchacza p.1",
+   "x": 8,
+   "y": 11
+  }
+ ]
+}

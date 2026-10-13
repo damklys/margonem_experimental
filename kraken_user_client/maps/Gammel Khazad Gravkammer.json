@@ -1,9 +1,19 @@
 {
  "kraken": "mapa",
  "name": "Gammel Khazad Gravkammer",
+ "id": 3516,
+ "w": 32,
+ "h": 32,
  "gateways": [
   {
-   "to": "Mirvenis-Adur"
+   "to": "Mirvenis-Adur",
+   "x": 7,
+   "y": 25
+  },
+  {
+   "to": "Mirvenis-Adur",
+   "x": 8,
+   "y": 25
   }
  ]
 }

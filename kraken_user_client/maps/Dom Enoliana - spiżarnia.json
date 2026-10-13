@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Enoliana - spiżarnia",
+ "id": 1936,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dom Enoliana",
+   "x": 12,
+   "y": 5
+  }
+ ]
+}

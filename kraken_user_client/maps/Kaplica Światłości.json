@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Kaplica Światłości",
+ "id": 1099,
+ "w": 32,
+ "h": 35,
+ "gateways": [
+  {
+   "to": "Święty Zagajnik",
+   "x": 15,
+   "y": 33
+  },
+  {
+   "to": "Święty Zagajnik",
+   "x": 16,
+   "y": 33
+  }
+ ]
+}

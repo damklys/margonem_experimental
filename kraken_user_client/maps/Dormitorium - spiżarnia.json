@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Dormitorium - spiżarnia",
+ "id": 856,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Dormitorium - kuchnia",
+   "x": 9,
+   "y": 4
+  }
+ ]
+}

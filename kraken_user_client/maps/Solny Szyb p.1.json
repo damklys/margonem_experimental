@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Solny Szyb p.1",
+ "id": 336,
+ "w": 32,
+ "h": 32,
+ "gateways": [
+  {
+   "to": "Zawiły Bór",
+   "x": 11,
+   "y": 27
+  },
+  {
+   "to": "Solny Szyb p.2",
+   "x": 18,
+   "y": 22
+  }
+ ]
+}

@@ -1,18 +1,29 @@
 {
  "kraken": "mapa",
  "name": "Przeklęty Zamek - zbrojownia",
+ "id": 172,
+ "w": 48,
+ "h": 32,
  "gateways": [
   {
-   "to": "Przeklęty Zamek - podziemia północne"
+   "to": "Przeklęty Zamek - kanały",
+   "x": 12,
+   "y": 29
   },
   {
-   "to": "Przeklęty Zamek - kanały"
+   "to": "Przeklęty Zamek - podziemia południowe",
+   "x": 13,
+   "y": 1
   },
   {
-   "to": "Przeklęty Zamek - podziemia południowe"
+   "to": "Przeklęty Zamek - podziemia północne",
+   "x": 19,
+   "y": 23
   },
   {
-   "to": "Przeklęty Zamek - sala zgromadzeń"
+   "to": "Przeklęty Zamek - sala zgromadzeń",
+   "x": 40,
+   "y": 16
   }
  ]
 }

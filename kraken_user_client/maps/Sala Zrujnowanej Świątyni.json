@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Sala Zrujnowanej Świątyni",
+ "id": 3313,
+ "w": 48,
+ "h": 48,
+ "gateways": [
+  {
+   "to": "Sekretne Przejście Kapłanów",
+   "x": 41,
+   "y": 3
+  }
+ ]
+}

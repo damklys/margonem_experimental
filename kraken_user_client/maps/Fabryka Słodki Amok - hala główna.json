@@ -1,0 +1,14 @@
+{
+ "kraken": "mapa",
+ "name": "Fabryka Słodki Amok - hala główna",
+ "id": 6854,
+ "w": 31,
+ "h": 31,
+ "gateways": [
+  {
+   "to": "Miasteczko Cukrowiec",
+   "x": 15,
+   "y": 27
+  }
+ ]
+}

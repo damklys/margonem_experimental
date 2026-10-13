@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Zamierzchłe Arterie p.3",
+ "id": 7865,
+ "w": 64,
+ "h": 64,
+ "gateways": [
+  {
+   "to": "Dawny Przełaz",
+   "x": 35,
+   "y": 8
+  },
+  {
+   "to": "Zamierzchłe Arterie p.2 - sala 1",
+   "x": 55,
+   "y": 47
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Dom Darii i Kacpra",
+ "id": 8122,
+ "w": 16,
+ "h": 16,
+ "gateways": [
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "to": "Gwiazdkowa Osada Zamrozy",
+   "x": 3,
+   "y": 9
+  }
+ ]
+}

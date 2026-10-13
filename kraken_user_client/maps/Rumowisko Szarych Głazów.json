@@ -1,0 +1,19 @@
+{
+ "kraken": "mapa",
+ "name": "Rumowisko Szarych Głazów",
+ "id": 8542,
+ "w": 64,
+ "h": 96,
+ "gateways": [
+  {
+   "to": "Krater Uwięzienia",
+   "x": 0,
+   "y": 30
+  },
+  {
+   "to": "Krater Uwięzienia",
+   "x": 0,
+   "y": 31
+  }
+ ]
+}

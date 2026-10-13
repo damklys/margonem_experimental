@@ -1,15 +1,24 @@
 {
  "kraken": "mapa",
  "name": "Świszcząca Grota p.3",
+ "id": 119,
+ "w": 30,
+ "h": 32,
  "gateways": [
   {
-   "to": "Świszcząca Grota p.2"
+   "to": "Świszcząca Grota p.2",
+   "x": 7,
+   "y": 13
   },
   {
-   "to": "Zburzona Twierdza"
+   "to": "Zburzona Twierdza",
+   "x": 8,
+   "y": 30
   },
   {
-   "to": "Świszcząca Grota p.4"
+   "to": "Świszcząca Grota p.4",
+   "x": 25,
+   "y": 13
   }
  ]
 }
