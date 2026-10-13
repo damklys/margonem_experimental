@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.110.202610131430",
+ "name": "ZR: (41) Latające stwory - Ithan",
+ "questId": 0,
+ "questName": "",
+ "set": "48lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Latające stwory"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Orzeł górski; Czarny orzeł; Młoda wywerna; Mała wywerna; Wywerna zielona; Wywerna brązowa; Wywerna szlachetna; Wywerna królewska",
+   "n": 100,
+   "route": "orły i wywerny (54lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Latające stwory"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Orzeł górski; Czarny orzeł; Młoda wywerna; Mała wywerna; Wywerna zielona; Wywerna brązowa; Wywerna szlachetna; Wywerna królewska",
+   "n": 250,
+   "route": "orły i wywerny (54lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Latające stwory"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Orzeł górski; Czarny orzeł; Młoda wywerna; Mała wywerna; Wywerna zielona; Wywerna brązowa; Wywerna szlachetna; Wywerna królewska",
+   "n": 500,
+   "route": "orły i wywerny (54lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.110.202610131430",
+ "name": "ZR: (30) Powolni uciekinierzy - Eder",
+ "questId": 0,
+ "questName": "",
+ "set": "28lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Powolni uciekinierzy"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Żółw błotny; Żółw ostrogrzbiety; Żóły ostrogrzbiety; Żółw norowy",
+   "n": 100,
+   "route": "warany (38lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Powolni uciekinierzy"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Żółw błotny; Żółw ostrogrzbiety; Żóły ostrogrzbiety; Żółw norowy",
+   "n": 250,
+   "route": "warany (38lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Powolni uciekinierzy"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Żółw błotny; Żółw ostrogrzbiety; Żóły ostrogrzbiety; Żółw norowy",
+   "n": 500,
+   "route": "warany (38lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.110.202610131430",
+ "name": "ZR: (32) Racicowy Matecznik - Eder",
+ "questId": 0,
+ "questName": "",
+ "set": "36lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Racicowy Matecznik"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
+   "n": 100,
+   "route": "dziki (40lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Racicowy Matecznik"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
+   "n": 250,
+   "route": "dziki (40lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Racicowy Matecznik"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
+   "n": 500,
+   "route": "dziki (40lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

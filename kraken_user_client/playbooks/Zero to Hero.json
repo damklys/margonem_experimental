@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "3.106.202610131310",
+ "version": "3.110.202610131430",
  "name": "Zero to Hero",
  "tiles": [
   {
@@ -53,7 +53,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "lt",
-     "value": 30
+     "value": 35
     }
    ]
   },
@@ -65,13 +65,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 20
+     "value": 21
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "lt",
-     "value": 35
+     "value": 36
     }
    ]
   },
@@ -83,7 +83,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 20
+     "value": 22
     },
     {
      "join": "and",
@@ -107,7 +107,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "lt",
-     "value": 40
+     "value": 38
     }
    ]
   },
@@ -125,7 +125,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "lt",
-     "value": 40
+     "value": 39
     }
    ]
   },
@@ -137,19 +137,91 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 28
+     "value": 25
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "lt",
-     "value": 45
+     "value": 40
     }
    ]
   },
   {
    "type": "task",
    "task": "ZR: (26) Zbiry ze wschodniego traktu - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 26
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 41
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (27) Przydrożni rozbójnicy - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 27
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 42
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (28) Niechciane sąsiedztwo - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 28
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (29) Pieczara Niepogody - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 29
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 44
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (30) Powolni uciekinierzy - Eder",
    "conds": [
     {
      "join": "and",
@@ -162,6 +234,366 @@
      "stat": "lvl",
      "op": "lt",
      "value": 45
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (31) Mieszkańcy Zasłoniętego Jeziora - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 31
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 46
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (32) Racicowy Matecznik - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 32
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 47
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (33) Grobowi wojownicy - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 33
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 48
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (34) Warczące Osuwiska - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 34
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 49
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (35) Skarpiska Tolloków - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 35
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 50
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (36) Szemrani kupcy - Eder",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 36
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 51
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (37) Porachunki z orkami - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 52
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (38) Potwory z Mrocznego Przesmyku - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 40
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 55
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (39) Mokra Grota - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 60
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (40) Ośmionogi z Groty Bezszelestnych Kroków - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 60
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (41) Latające stwory - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 46
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 61
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (42) Lazurytowa Grota - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 47
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 62
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (43) Owady z kopalni - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 50
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 65
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (44) Bazyliszki - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 51
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 66
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (45) Wioska Gnolli - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 55
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 70
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (46) Szkodniki z Leśnego Brodu - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 56
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 71
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (47) Mrówcza Kolonia - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 60
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 75
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (48) Mieszkańcy Andarum - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 80
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (49) Zdradzieckie tunele - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 80
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (50) Dusze śniegu - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 82
     }
    ]
   }

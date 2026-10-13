@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.110.202610131430",
+ "name": "ZR: (40) Ośmionogi z Groty Bezszelestnych Kroków - Ithan",
+ "questId": 0,
+ "questName": "",
+ "set": "48lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Ośmionogi z Groty Bezszelestnych Kroków"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
+   "n": 100,
+   "route": "pokątniki (52lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Ośmionogi z Groty Bezszelestnych Kroków"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
+   "n": 250,
+   "route": "pokątniki (52lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Ośmionogi z Groty Bezszelestnych Kroków"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
+   "n": 500,
+   "route": "pokątniki (52lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

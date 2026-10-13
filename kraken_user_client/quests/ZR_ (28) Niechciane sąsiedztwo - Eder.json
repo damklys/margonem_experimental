@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.110.202610131430",
+ "name": "ZR: (28) Niechciane sąsiedztwo - Eder",
+ "questId": 0,
+ "questName": "",
+ "set": "28lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Niechciane sąsiedztwo"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
+   "n": 100,
+   "route": "gobliny (34lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Niechciane sąsiedztwo"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
+   "n": 250,
+   "route": "gobliny (34lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Niechciane sąsiedztwo"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
+   "n": 500,
+   "route": "gobliny (34lvl)"
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

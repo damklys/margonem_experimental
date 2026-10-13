@@ -36,7 +36,7 @@
   },
   {
    "type": "kill",
-   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz; Mrówcza Królowa",
    "n": 100,
    "route": "mrówki (20lvl)"
   },
@@ -88,7 +88,7 @@
   },
   {
    "type": "kill",
-   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz; Mrówcza Królowa",
    "n": 250,
    "route": "mrówki (20lvl)"
   },
@@ -140,7 +140,7 @@
   },
   {
    "type": "kill",
-   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz; Mrówcza Królowa",
    "n": 500,
    "route": "mrówki (20lvl)"
   },

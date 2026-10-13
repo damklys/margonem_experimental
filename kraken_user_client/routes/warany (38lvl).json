@@ -1,0 +1,30 @@
+{
+ "kraken": "trasa",
+ "version": "3.110.202610131430",
+ "route": {
+  "id": "r-warany38lvl",
+  "name": "warany (38lvl)",
+  "lvlMin": 34,
+  "lvlMax": 41,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Spokojne Przejście",
+    "attack": true
+   },
+   {
+    "location": "Zasłonięte Jezioro",
+    "attack": true
+   },
+   {
+    "location": "Słoneczna Wyżyna",
+    "attack": true
+   },
+   {
+    "location": "Zasłonięte Jezioro",
+    "attack": true
+   }
+  ]
+ }
+}

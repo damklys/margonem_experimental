@@ -1,0 +1,18 @@
+{
+ "kraken": "trasa",
+ "version": "3.110.202610131430",
+ "route": {
+  "id": "r-orłyiwywerny",
+  "name": "orły i wywerny (54lvl)",
+  "lvlMin": 50,
+  "lvlMax": 57,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zapomniany Szlak",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -36,7 +36,7 @@
   },
   {
    "type": "kill",
-   "mob": "Puma; Tygrys",
+   "mob": "Puma; Tygrys; Tigrios; Mushita",
    "n": 100,
    "route": "koty (20lvl)"
   },
@@ -88,7 +88,7 @@
   },
   {
    "type": "kill",
-   "mob": "Puma; Tygrys",
+   "mob": "Puma; Tygrys; Tigrios; Mushita",
    "n": 250,
    "route": "koty (20lvl)"
   },
@@ -140,7 +140,7 @@
   },
   {
    "type": "kill",
-   "mob": "Puma; Tygrys",
+   "mob": "Puma; Tygrys; Tigrios; Mushita",
    "n": 500,
    "route": "koty (20lvl)"
   },
