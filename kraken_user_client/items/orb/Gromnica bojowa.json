@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Gromnica bojowa",
+ "tplId": 56887,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 13,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/orb09.gif",
+ "stat": "fire=59;lvl=13;permbound;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

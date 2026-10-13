@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Rozgrzany otoczak",
+ "tplId": 56886,
+ "cl": 7,
+ "category": "orb",
+ "lvl": 10,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "orb/start_gob13.gif",
+ "stat": "fire=47;lvl=10;permbound;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2101,
+   "cur": "zl"
+  }
+ ]
+}

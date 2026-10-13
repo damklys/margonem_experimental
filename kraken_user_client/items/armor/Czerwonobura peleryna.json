@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Czerwonobura peleryna",
+ "tplId": 56901,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 10,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "szt/plaszcz26.gif",
+ "stat": "absorb=84;absorbm=42;ac=14;lvl=10;permbound;rarity=common;reqp=m;resfire=10;sa=11",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 1401,
+   "cur": "zl"
+  }
+ ]
+}

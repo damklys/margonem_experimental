@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Narzuta pędzących z wiatrem",
+ "tplId": 56903,
+ "cl": 8,
+ "category": "armor",
+ "lvl": 16,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "szt/plaszcz28.gif",
+ "stat": "absorb=140;absorbm=70;ac=23;da=12;lvl=16;permbound;rarity=common;reqp=m;resfire=10",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2147,
+   "cur": "zl"
+  }
+ ]
+}

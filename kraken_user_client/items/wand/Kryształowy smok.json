@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kryształowy smok",
+ "tplId": 56872,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 13,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka12.gif",
+ "stat": "fire=124;lvl=13;permbound;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 2643,
+   "cur": "zl"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "kraken": "przedmiot",
+ "name": "Kostur Ore Ore",
+ "tplId": 56873,
+ "cl": 6,
+ "category": "wand",
+ "lvl": 16,
+ "reqp": "m",
+ "rarity": "common",
+ "icon": "roz/rozdzka04.gif",
+ "stat": "fire=149;lvl=16;permbound;rarity=common;reqp=m",
+ "sellers": [
+  {
+   "map": "Zatopiony Szczyt",
+   "npc": "Skrzynie",
+   "price": 3221,
+   "cur": "zl"
+  }
+ ]
+}

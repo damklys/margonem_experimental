@@ -366,6 +366,87 @@
      "icon": "kaf/kaftan10.gif",
      "lvl": 16,
      "reqp": "h"
+    },
+    {
+     "name": "Podstawowe narzędzie wróżbiarza",
+     "cl": 6,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "roz/rozdzka08.gif",
+     "lvl": 10,
+     "reqp": "m"
+    },
+    {
+     "name": "Kryształowy smok",
+     "cl": 6,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "roz/rozdzka12.gif",
+     "lvl": 13,
+     "reqp": "m"
+    },
+    {
+     "name": "Kostur Ore Ore",
+     "cl": 6,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "roz/rozdzka04.gif",
+     "lvl": 16,
+     "reqp": "m"
+    },
+    {
+     "name": "Rozgrzany otoczak",
+     "cl": 7,
+     "price": 2101,
+     "cur": "zl",
+     "icon": "orb/start_gob13.gif",
+     "lvl": 10,
+     "reqp": "m"
+    },
+    {
+     "name": "Gromnica bojowa",
+     "cl": 7,
+     "price": 2643,
+     "cur": "zl",
+     "icon": "orb/orb09.gif",
+     "lvl": 13,
+     "reqp": "m"
+    },
+    {
+     "name": "Więzienie ciepłego wiatru",
+     "cl": 7,
+     "price": 3221,
+     "cur": "zl",
+     "icon": "orb/orb07.gif",
+     "lvl": 16,
+     "reqp": "m"
+    },
+    {
+     "name": "Czerwonobura peleryna",
+     "cl": 8,
+     "price": 1401,
+     "cur": "zl",
+     "icon": "szt/plaszcz26.gif",
+     "lvl": 10,
+     "reqp": "m"
+    },
+    {
+     "name": "Płaszcz tańczącego nieba",
+     "cl": 8,
+     "price": 1762,
+     "cur": "zl",
+     "icon": "szt/plaszcz27.gif",
+     "lvl": 13,
+     "reqp": "m"
+    },
+    {
+     "name": "Narzuta pędzących z wiatrem",
+     "cl": 8,
+     "price": 2147,
+     "cur": "zl",
+     "icon": "szt/plaszcz28.gif",
+     "lvl": 16,
+     "reqp": "m"
     }
    ]
   }
