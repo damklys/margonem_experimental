@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
    "n": 100,
-   "route": "niedzwiedzie (23lvl)"
+   "route": "niedźwiedzie (23lvl)"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
    "n": 250,
-   "route": "niedzwiedzie (23lvl)"
+   "route": "niedźwiedzie (23lvl)"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary",
    "n": 500,
-   "route": "niedzwiedzie (23lvl)"
+   "route": "niedźwiedzie (23lvl)"
   },
   {
    "type": "goto",
