@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "3.90.202610131130",
+ "version": "3.106.202610131310",
  "name": "Zero to Hero",
  "tiles": [
   {
@@ -54,6 +54,114 @@
      "stat": "lvl",
      "op": "lt",
      "value": 30
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (21) Dzikie Koty - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 20
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 35
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (22) Drapieżnicy z Dziewiczej Kniei - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 20
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 37
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (23) Leśne bazyliszki - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 23
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (24) Osada Mulusów - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 24
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (25) Demony zamieszkujące Przeklętą Strażnicę - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 28
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 45
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (26) Zbiry ze wschodniego traktu - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 30
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 45
     }
    ]
   }
