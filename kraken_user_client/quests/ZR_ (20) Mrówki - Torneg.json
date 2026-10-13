@@ -17,7 +17,7 @@
    "npc": "Zakonnik Równowagi",
    "rules": [
     {
-     "q": "Zakonnik Równowagi Witaj, Myszko Śledziona! W czym mógłbym ci pomóc?",
+     "q": "Zakonnik Równowagi Witaj,",
      "a": "Słyszałem,"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
      "q": "Pomimo twoich starań, mrówki cały czas lgną do swojego gniazda. Tempo wzrostu ich populacji nie maleje, a wręcz rośnie! Czy odważysz się ponownie tam udać i przetrzebić ich szeregi?",
-     "a": "Mam w tym doświadczenie."
+     "a": "Mam w tym"
     },
     {
      "q": "Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
