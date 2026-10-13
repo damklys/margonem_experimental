@@ -1,0 +1,63 @@
+{
+ "kraken": "trasa",
+ "version": "3.120.202610132030",
+ "source": "ZR 54",
+ "route": {
+  "id": "zr-eremy-swiatynne",
+  "name": "[80lvl] Eremy światynne",
+  "lvlMin": 76,
+  "lvlMax": 83,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.1 - północ",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.5",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.4 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Erem Czarnego Słońca p.3 - południe",
+    "attack": true
+   }
+  ]
+ }
+}

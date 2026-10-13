@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.120.202610132030",
+ "source": "ZR 61",
+ "route": {
+  "id": "zr-drapiezne-koty",
+  "name": "[91lvl] Drapieżne koty",
+  "lvlMin": 87,
+  "lvlMax": 94,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Księżycowe Wzniesienie",
+    "attack": true
+   },
+   {
+    "location": "Sosnowe Odludzie",
+    "attack": true
+   },
+   {
+    "location": "Liściaste Rozstaje",
+    "attack": true
+   },
+   {
+    "location": "Sosnowe Odludzie",
+    "attack": true
+   },
+   {
+    "location": "Księżycowe Wzniesienie",
+    "attack": true
+   },
+   {
+    "location": "Trupia Przełęcz",
+    "attack": true
+   },
+   {
+    "location": "Niecka Xiuh Atl",
+    "attack": true
+   },
+   {
+    "location": "Trupia Przełęcz",
+    "attack": true
+   },
+   {
+    "location": "Zabłocona Jama p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Trupia Przełęcz",
+    "attack": true
+   }
+  ]
+ }
+}

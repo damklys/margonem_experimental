@@ -1,0 +1,172 @@
+{
+ "kraken": "zadanie",
+ "version": "3.120.202610132030",
+ "name": "ZR: (232) Zagrożenie ze Skalnego Pustkowia - Nithal",
+ "questId": 0,
+ "questName": "",
+ "set": "258lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Zagrożenie ze Skalnego Pustkowia"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Skalna modliszka; Mineralny kret; Zaklinaczka fal dźwiękowych; Potępiony solista; Hipnotyzująca skała; Twórczyni przeklętych tekstów; Uzbrojony odszczepieniec; Kamienny osiłek; Mistrz koszmarnej liry; Ślepa Strzała; Skalny pupil; Oślepiony faun; Kamienny kleszcz; Pokutujący bębniarz; Szalony brzdękacz; Wysłannik Tellarów",
+   "n": 100,
+   "route": "[264lvl] tellary"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Zagrożenie ze Skalnego Pustkowia"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Skalna modliszka; Mineralny kret; Zaklinaczka fal dźwiękowych; Potępiony solista; Hipnotyzująca skała; Twórczyni przeklętych tekstów; Uzbrojony odszczepieniec; Kamienny osiłek; Mistrz koszmarnej liry; Ślepa Strzała; Skalny pupil; Oślepiony faun; Kamienny kleszcz; Pokutujący bębniarz; Szalony brzdękacz; Wysłannik Tellarów",
+   "n": 250,
+   "route": "[264lvl] tellary"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Zagrożenie ze Skalnego Pustkowia"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Skalna modliszka; Mineralny kret; Zaklinaczka fal dźwiękowych; Potępiony solista; Hipnotyzująca skała; Twórczyni przeklętych tekstów; Uzbrojony odszczepieniec; Kamienny osiłek; Mistrz koszmarnej liry; Ślepa Strzała; Skalny pupil; Oślepiony faun; Kamienny kleszcz; Pokutujący bębniarz; Szalony brzdękacz; Wysłannik Tellarów",
+   "n": 500,
+   "route": "[264lvl] tellary"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

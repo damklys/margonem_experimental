@@ -1,12 +1,12 @@
 {
  "kraken": "trasa",
- "version": "3.119.202610131930",
+ "version": "3.120.202610132030",
  "source": "wbudowana",
  "route": {
   "id": "b-wodniki-75-lvl",
-  "name": "[75lvl] wodniki",
-  "lvlMin": 72,
-  "lvlMax": 78,
+  "name": "[282lvl] wodniki",
+  "lvlMin": 278,
+  "lvlMax": 285,
   "maxGroup": 0,
   "elites": true,
   "maps": [

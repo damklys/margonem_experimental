@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.120.202610132030",
+ "source": "ZR 250",
+ "route": {
+  "id": "zr-uroczysko-wodnika",
+  "name": "[283lvl] Uroczysko Wodnika",
+  "lvlMin": 279,
+  "lvlMax": 286,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Moczary Rybiego Oka",
+    "attack": true
+   },
+   {
+    "location": "Podtopione Młaki",
+    "attack": true
+   },
+   {
+    "location": "Źródło Narumi",
+    "attack": true
+   },
+   {
+    "location": "Starorzecze Narumi",
+    "attack": true
+   },
+   {
+    "location": "Dolny Bieg",
+    "attack": true
+   },
+   {
+    "location": "Uroczysko Wodnika",
+    "attack": true
+   },
+   {
+    "location": "Dolny Bieg",
+    "attack": true
+   },
+   {
+    "location": "Starorzecze Narumi",
+    "attack": true
+   },
+   {
+    "location": "Źródło Narumi",
+    "attack": true
+   },
+   {
+    "location": "Podtopione Młaki",
+    "attack": true
+   }
+  ]
+ }
+}

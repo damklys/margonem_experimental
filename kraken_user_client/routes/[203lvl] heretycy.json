@@ -35,6 +35,14 @@
     "attack": true
    },
    {
+    "location": "Sala Skaryfikacji Grzeszników",
+    "attack": true
+   },
+   {
+    "location": "Przejście Oczyszczenia",
+    "attack": true
+   },
+   {
     "location": "Sala Spowiedzi Konających",
     "attack": true
    },

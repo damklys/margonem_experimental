@@ -11,7 +11,55 @@
   "elites": true,
   "maps": [
    {
-    "location": "Smocze Skalisko",
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Grota Poświęcenia",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Próby",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Namiot Błogosławionych",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Jurta Nomadzka",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Namiot Pustynnych Smoków",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
     "attack": true
    },
    {
@@ -99,59 +147,35 @@
     "attack": true
    },
    {
-    "location": "Pustynia Shaiharrud - wschód",
+    "location": "Skały Umarłych",
     "attack": true
    },
    {
-    "location": "Grota Poświęcenia",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - wschód",
-    "attack": true
-   },
-   {
-    "location": "Jaskinia Odwagi",
-    "attack": true
-   },
-   {
-    "location": "Jaskinia Próby",
-    "attack": true
-   },
-   {
-    "location": "Jaskinia Odwagi",
-    "attack": true
-   },
-   {
-    "location": "Namiot Błogosławionych",
-    "attack": true
-   },
-   {
-    "location": "Jaskinia Odwagi",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - wschód",
-    "attack": true
-   },
-   {
-    "location": "Jurta Nomadzka",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - wschód",
-    "attack": true
-   },
-   {
-    "location": "Namiot Pustynnych Smoków",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - wschód",
+    "location": "Smocze Skalisko",
     "attack": true
    },
    {
     "location": "Urwisko Vapora",
+    "attack": true
+   },
+   {
+    "location": "Smocze Skalisko",
+    "attack": true
+   },
+   {
+    "location": "Skały Umarłych",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Sępiarnia",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
     "attack": true
    },
    {
@@ -176,30 +200,6 @@
    },
    {
     "location": "Świątynia Hebrehotha - przedsionek",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - wschód",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - zachód",
-    "attack": true
-   },
-   {
-    "location": "Skały Umarłych",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - zachód",
-    "attack": true
-   },
-   {
-    "location": "Sępiarnia",
-    "attack": true
-   },
-   {
-    "location": "Pustynia Shaiharrud - zachód",
     "attack": true
    }
   ]

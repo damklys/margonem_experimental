@@ -115,6 +115,14 @@
     "attack": true
    },
    {
+    "location": "Mała Twierdza - sala główna",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - sala wejściowa",
+    "attack": true
+   },
+   {
     "location": "Mała Twierdza p.1",
     "attack": true
    },

@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "3.110.202610131430",
+ "version": "3.120.202610132030",
  "name": "Zero to Hero",
  "tiles": [
   {
@@ -594,6 +594,1446 @@
      "stat": "lvl",
      "op": "lt",
      "value": 82
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (51) Mnisi ze świątyni - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 83
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (52) Strażnicy biblioteki - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 84
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (53) Tajemnica magazynu świątyni - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 86
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (54) Eremy światynne - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 90
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (55) Włochate stwory - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 90
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (56) Wylęgarnia dławicieli - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 77
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 92
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (57) Robale ze Zdradzieckiego Przejścia - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 95
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (58) Kopalnia Margorii - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 95
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (59) Istoty cienia - Ithan",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 82
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 97
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (60) Grota Samotnych Dusz - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 99
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (61) Drapieżne koty - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 85
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 100
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (62) Zapomniany Święty Gaj - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 86
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 101
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (63) Strażniczki lasów - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 87
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 102
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (64) Gnomie jaskinie - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 103
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (65) Gady ze Złowrogich Bagien - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 89
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 104
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (66) Zwodnicze bagna - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 105
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (67) Dolina Centaurów - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 92
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 107
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (70) Strapienie podróżników - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 95
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 110
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (72) Podziemia wieży magów - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 97
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 112
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (75) Dwugłowe olbrzymy - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 113
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (77) Błotniste istoty - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 100
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 115
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (78) Północny szlak - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 102
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 117
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (81) Potwory z zaświatów - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 106
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 121
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (82) Pustynni wojownicy - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 108
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 123
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (86) Archipelag Bremus An - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 110
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 125
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (89) Rogogłowi obrońcy - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 112
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 127
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (92) Skorupiaki z Rem - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 114
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 129
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (93) Gliniane golemy - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 131
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (96) Na ratunek Magradit - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 118
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 133
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (98) Widma z Wyspy Wraków - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 120
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 135
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (100) Piracka nora - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 122
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 137
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (102) Piaskowi niewolnicy - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 124
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 139
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (104) Kopalnia Żółtego Kruszcu - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 126
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 141
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (105) Latający rabusie - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 128
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 143
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (107) Żywe ognie - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 130
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 145
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (108) Magmowi strażnicy - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 132
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 147
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (109) Skrytobójcy ze Szlaku Thorpa - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 149
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (110) Olbrzymie ważki - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 149
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (111) Góralska przygoda - Liściaste Rozstaje",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 153
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (115) Bezduszni barbarzyńcy - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 140
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 155
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (118) Tajemnica Kruzo - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 142
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 157
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (120) Mechaniczne gobliny - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 144
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 159
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (122) Potępione dusze - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 146
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 161
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (123) Górskie wiedźmy - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 148
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 163
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (126) Czerwone bestie - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 150
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 165
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (130) Dziki Zagajnik - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 169
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (132) Duchy Pradawnych - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 173
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (136) Sala Królewska - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 162
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 177
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (141) Czarna Gwardia - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 166
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 181
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (143) Kryształowe korytarze - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 170
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 185
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (145) Mieszkanki lasu - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 189
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (150) Ogrza kawerna - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 189
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (152) Nieumarła szlachta - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 180
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 195
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (155) Niebezpieczna roślinność - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 184
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 199
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (157) Bezwzględni Valmirowie - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 186
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 201
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (161) Mroczny Las - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 190
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 205
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (164) Śmierdząca robota - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 192
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 207
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (168) Zagubione niewiasty - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 196
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 211
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (171) Heretycy niższego stopnia - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 198
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 213
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (173) Wyznawcy Czarnego Pana - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 200
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 215
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (176) Zapomniany Las - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 204
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 219
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (178) Pajęcze królestwo - Torneg",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 208
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 223
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (184) Mroczny Lud - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 212
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 227
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (187) Wyznawcy Pajęczej Matki - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 229
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (191) Zatrute Torfowiska - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 220
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 235
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (195) Strumienie Szemrzących Wód - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 224
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 239
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (200) Zainfekowane zwierzęta - Karka-han",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 228
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 243
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (204) Księżycowe anomalie - Karka-han",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 232
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 247
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (208) Zakorzeniony Lud - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 251
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (211) Tajemnicza kraina - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 240
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 255
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (215) Waleczne plemię - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 244
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 259
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (220) Mahoptecka starszyzna - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 248
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 263
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (225) Wypaczenie Potępionego Zamczyska - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 252
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 267
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (229) Potępione wiedźmy - Werbin",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 258
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 273
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (232) Zagrożenie ze Skalnego Pustkowia - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 260
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 275
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (236) Przerażone byty - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 262
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 277
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (240) Wernoradzkie zło - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 270
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 285
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (245) Mieszkańcy pustyni Shaiharrud - Tuzmer",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 288
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (250) Uroczysko Wodnika - Nithal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 276
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 291
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "ZR: (254) Tajemnicze mieszkanki lasu - Thuzal",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 295
     }
    ]
   }

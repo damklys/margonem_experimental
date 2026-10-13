@@ -27,6 +27,14 @@
     "attack": true
    },
    {
+    "location": "Lokum Złych Goblinów - warsztat",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.2 - sala 2",
+    "attack": true
+   },
+   {
     "location": "Lokum Złych Goblinów p.3 - sala 2",
     "attack": true
    },

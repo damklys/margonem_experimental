@@ -55,6 +55,14 @@
     "attack": true
    },
    {
+    "location": "Jaszczurze Korytarze p.2 - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Jaszczurze Korytarze p.2 - sala 4",
+    "attack": true
+   },
+   {
     "location": "Jaszczurze Korytarze p.2 - sala 3",
     "attack": true
    },
@@ -88,6 +96,14 @@
    },
    {
     "location": "Dolina Potoku Śmierci",
+    "attack": true
+   },
+   {
+    "location": "Nora Jaszczurzych Koszmarów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Nora Jaszczurzych Koszmarów p.1 - sala 2",
     "attack": true
    },
    {

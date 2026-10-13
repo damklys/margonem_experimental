@@ -11,10 +11,6 @@
   "elites": true,
   "maps": [
    {
-    "location": "Zapadlisko Zniewolonych",
-    "attack": true
-   },
-   {
     "location": "Pajęczy Las",
     "attack": true
    },
@@ -47,6 +43,14 @@
     "attack": true
    },
    {
+    "location": "Arachnitopia p.6",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.5",
+    "attack": true
+   },
+   {
     "location": "Arachnitopia p.4",
     "attack": true
    },
@@ -72,6 +76,10 @@
    },
    {
     "location": "Pajęczy Las",
+    "attack": true
+   },
+   {
+    "location": "Zapadlisko Zniewolonych",
     "attack": true
    }
   ]

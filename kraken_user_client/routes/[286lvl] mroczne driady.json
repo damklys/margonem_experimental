@@ -13,6 +13,74 @@
    {
     "location": "Rozlewisko Kai",
     "attack": true
+   },
+   {
+    "location": "Gvar Hamryd",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.3",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.4",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.3",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Suchych Pędów s.1",
+    "attack": true
+   },
+   {
+    "location": "Gvar Hamryd",
+    "attack": true
+   },
+   {
+    "location": "Matecznik Szelestu",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Życia p.1",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Życia p.2",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Życia p.3",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Życia p.2",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Życia p.1",
+    "attack": true
+   },
+   {
+    "location": "Matecznik Szelestu",
+    "attack": true
+   },
+   {
+    "location": "Gvar Hamryd",
+    "attack": true
    }
   ]
  }

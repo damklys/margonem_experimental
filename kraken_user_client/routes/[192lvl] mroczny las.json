@@ -31,6 +31,14 @@
     "attack": true
    },
    {
+    "location": "Starodrzew Przedwiecznych p.2",
+    "attack": true
+   },
+   {
+    "location": "Starodrzew Przedwiecznych p.1",
+    "attack": true
+   },
+   {
     "location": "Martwy Las",
     "attack": true
    },

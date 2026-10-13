@@ -55,6 +55,10 @@
     "attack": true
    },
    {
+    "location": "Ukryta Grota Morskich Diabłów - magazyn",
+    "attack": true
+   },
+   {
     "location": "Ukryta Grota Morskich Diabłów - siedziba",
     "attack": true
    },
@@ -64,6 +68,10 @@
    },
    {
     "location": "Ukryta Grota Morskich Diabłów - siedziba",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - magazyn",
     "attack": true
    },
    {

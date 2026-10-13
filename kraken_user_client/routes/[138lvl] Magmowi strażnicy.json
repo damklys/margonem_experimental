@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.120.202610132030",
+ "source": "ZR 108",
+ "route": {
+  "id": "zr-magmowi-straznicy",
+  "name": "[138lvl] Magmowi strażnicy",
+  "lvlMin": 134,
+  "lvlMax": 141,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Kuźnia Worundriela p.2",
+    "attack": true
+   },
+   {
+    "location": "Kuźnia Worundriela p.1",
+    "attack": true
+   },
+   {
+    "location": "Kuźnia Worundriela p.2",
+    "attack": true
+   },
+   {
+    "location": "Kuźnia Worundriela p.3",
+    "attack": true
+   },
+   {
+    "location": "Ognista Studnia p.3",
+    "attack": true
+   },
+   {
+    "location": "Ognista Studnia p.2",
+    "attack": true
+   },
+   {
+    "location": "Ognista Studnia p.3",
+    "attack": true
+   },
+   {
+    "location": "Kuźnia Worundriela p.3",
+    "attack": true
+   }
+  ]
+ }
+}

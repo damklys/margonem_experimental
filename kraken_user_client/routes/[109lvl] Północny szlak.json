@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.120.202610132030",
+ "source": "ZR 78",
+ "route": {
+  "id": "zr-polnocny-szlak",
+  "name": "[109lvl] Północny szlak",
+  "lvlMin": 105,
+  "lvlMax": 112,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Płaskowyż Arpan",
+    "attack": true
+   },
+   {
+    "location": "Oaza Siedmiu Wichrów",
+    "attack": true
+   },
+   {
+    "location": "Ciche Rumowiska",
+    "attack": true
+   },
+   {
+    "location": "Wioska Rybacka",
+    "attack": true
+   },
+   {
+    "location": "Ciche Rumowiska",
+    "attack": true
+   },
+   {
+    "location": "Oaza Siedmiu Wichrów",
+    "attack": true
+   },
+   {
+    "location": "Płaskowyż Arpan",
+    "attack": true
+   },
+   {
+    "location": "Pustkowia Pogrzebanych",
+    "attack": true
+   },
+   {
+    "location": "Płaskowyż Arpan",
+    "attack": true
+   },
+   {
+    "location": "Sucha Dolina",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pustynnych Kręgów",
+    "attack": true
+   },
+   {
+    "location": "Piachy Zniewolonych",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pustynnych Kręgów",
+    "attack": true
+   },
+   {
+    "location": "Sucha Dolina",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Nieznających Spokoju",
+    "attack": true
+   },
+   {
+    "location": "Sucha Dolina",
+    "attack": true
+   },
+   {
+    "location": "Płaskowyż Arpan",
+    "attack": true
+   },
+   {
+    "location": "Trupia Przełęcz",
+    "attack": true
+   }
+  ]
+ }
+}
