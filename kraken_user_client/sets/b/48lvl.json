@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "b",
+ "set": {
+  "id": "def-b-48",
+  "name": "48lvl",
+  "lvl": 48,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Czarna zguba bojownika",
+   "3": "Szkiełko w srebrnej oprawie",
+   "4": "Rękawice z mokradeł",
+   "5": "Pałasz Szagriatów",
+   "6": "Kolczuga skrytobójcy amatora",
+   "7": "Szabelka spod szyldu Amore",
+   "8": "Słoneczne frędzle",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "p",
+ "set": {
+  "id": "def-p-28",
+  "name": "28lvl",
+  "lvl": 28,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Stalowa czapka",
+   "2": "Ziarno prawdy",
+   "3": "Kwiecie ametystu",
+   "4": "Kamienny uścisk",
+   "6": "Skórzana zbroja rycerza",
+   "7": "Zbrukana osłona",
+   "8": "Magiczne trzewiki",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

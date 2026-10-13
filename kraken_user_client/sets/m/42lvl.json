@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "m",
+ "set": {
+  "id": "def-m-42",
+  "name": "42lvl",
+  "lvl": 42,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Wizja trzeciego oka",
+   "2": "Czaszka chciwości",
+   "3": "Los tułacza",
+   "4": "Magiczny dotyk rabusia",
+   "5": "Kostur Ore Ore",
+   "6": "Płaszcz wróżbity amatora",
+   "7": "Więzienie ciepłego wiatru",
+   "8": "Trepy na każdą okazję",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "h",
+ "set": {
+  "id": "def-h-36",
+  "name": "36lvl",
+  "lvl": 36,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Bitewny diabeł",
+   "2": "Czaszka gniewu",
+   "3": "Szczęście podróżnika",
+   "4": "Otuldłonie",
+   "5": "Trojka",
+   "6": "Nocny kamuflaż łowcy",
+   "7": "Pociski z więdnących liści",
+   "8": "Goblinie cichobiegi",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

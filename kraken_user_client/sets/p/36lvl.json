@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "p",
+ "set": {
+  "id": "def-p-36",
+  "name": "36lvl",
+  "lvl": 36,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Wzmocniona ochrona maga",
+   "2": "Czaszka chciwości",
+   "3": "Los tułacza",
+   "4": "Otuldłonie",
+   "6": "Płytowa zbroja paladyna",
+   "7": "Wsparcie złego ducha",
+   "8": "Kamasze odważnego rycerza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

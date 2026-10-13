@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "b",
+ "set": {
+  "id": "def-b-20",
+  "name": "20lvl",
+  "lvl": 20,
+  "potionName": "Fiolka lekkiej regeneracji",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask myśliwego",
+   "2": "Pierścień sprawności",
+   "3": "Amulet rycerza",
+   "4": "Rękawice ze skóry",
+   "5": "Pałasz Szagriatów",
+   "6": "Lekki pancerz skrytobójcy",
+   "7": "Szabelka spod szyldu Amore",
+   "8": "Pospolite trepy rycerza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "p",
+ "set": {
+  "id": "def-p-10",
+  "name": "10lvl",
+  "lvl": 10,
+  "potionName": "Ampułka uzdrawiająca",
+  "potionTarget": 200,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Rdzewiejący kask",
+   "2": "Zrabowany pierścionek",
+   "3": "Uwierający kamyk",
+   "4": "Rękawice gospodarcze",
+   "6": "Kolczuga z czarnego lasu",
+   "7": "Osłona kłamliwego wróżbiarza",
+   "8": "Obuwie do tańca",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

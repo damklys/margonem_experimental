@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "b",
+ "set": {
+  "id": "def-b-28",
+  "name": "28lvl",
+  "lvl": 28,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Stalowa czapka",
+   "2": "Oko fałszu",
+   "3": "Malachitowa zawieszka",
+   "4": "Chwyt żmii",
+   "5": "Pałasz Szagriatów",
+   "6": "Ochronna warstwa łańcuchów",
+   "7": "Szabelka spod szyldu Amore",
+   "8": "Wzmocnione podeszwy",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "b": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

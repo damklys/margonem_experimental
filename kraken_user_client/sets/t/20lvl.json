@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "t",
+ "set": {
+  "id": "def-t-20",
+  "name": "20lvl",
+  "lvl": 20,
+  "potionName": "Fiolka lekkiej regeneracji",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Hełm maga bojowego",
+   "2": "Pierścień sprawności",
+   "3": "Magiczna błyskotka",
+   "4": "Poplamione rękawice",
+   "6": "Słoneczny kamuflaż",
+   "8": "Pospolite trepy rycerza",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

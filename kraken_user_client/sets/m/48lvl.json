@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "m",
+ "set": {
+  "id": "def-m-48",
+  "name": "48lvl",
+  "lvl": 48,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Pierścień żądzy krwi",
+   "3": "Gwiazda nadziei",
+   "4": "Symbol tajemnego bractwa",
+   "5": "Kostur Ore Ore",
+   "6": "Cyklamenowa peleryna",
+   "7": "Więzienie ciepłego wiatru",
+   "8": "Podeszwy nocnej ucieczki",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

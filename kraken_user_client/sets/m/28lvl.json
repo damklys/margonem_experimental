@@ -1,0 +1,35 @@
+{
+ "kraken": "zestaw",
+ "version": "3.100.202610131115",
+ "prof": "m",
+ "set": {
+  "id": "def-m-28",
+  "name": "28lvl",
+  "lvl": 28,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Stalowa czapka",
+   "2": "Ziarno prawdy",
+   "3": "Medalion z turkusem",
+   "4": "Eteryczny dotyk",
+   "5": "Kostur Ore Ore",
+   "6": "Odzienie adepta magii",
+   "7": "Więzienie ciepłego wiatru",
+   "8": "Magiczne trzewiki",
+   "9": "Talizman mocy wody"
+  },
+  "skills": {
+   "m": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}
