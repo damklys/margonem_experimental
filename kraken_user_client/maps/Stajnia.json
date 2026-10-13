@@ -6,16 +6,6 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Stodoła",
-   "x": 3,
-   "y": 9
-  },
-  {
-   "to": "Stodoła",
-   "x": 3,
-   "y": 10
-  },
-  {
    "to": "Latarniane Wybrzeże",
    "x": 12,
    "y": 12

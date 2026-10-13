@@ -6,116 +6,14 @@
  "h": 24,
  "gateways": [
   {
-   "to": "Apartament 101",
-   "x": 2,
-   "y": 10,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 103",
-   "x": 2,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 107",
-   "x": 2,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 104",
-   "x": 4,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 108",
-   "x": 4,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 102",
-   "x": 5,
-   "y": 10,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 105",
-   "x": 6,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 109",
-   "x": 6,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 110",
-   "x": 8,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Karczma pod Posępnym Czerepem p.2",
    "x": 9,
    "y": 1
   },
   {
-   "to": "Pokój 111",
-   "x": 10,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 112",
-   "x": 12,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 106",
-   "x": 13,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 113",
-   "x": 14,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 114",
-   "x": 16,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Karczma pod Posępnym Czerepem",
    "x": 17,
    "y": 4
-  },
-  {
-   "to": "Pokój 115",
-   "x": 18,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 116",
-   "x": 20,
-   "y": 21,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 117",
-   "x": 22,
-   "y": 21,
-   "req": "(wymaga klucza)"
   }
  ]
 }

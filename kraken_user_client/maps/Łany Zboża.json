@@ -16,19 +16,9 @@
    "y": 63
   },
   {
-   "to": "Młyn",
-   "x": 16,
-   "y": 10
-  },
-  {
    "to": "Wilczy Szpic",
    "x": 16,
    "y": 63
-  },
-  {
-   "to": "Młyn",
-   "x": 17,
-   "y": 10
   },
   {
    "to": "Piekarnia",
@@ -39,16 +29,6 @@
    "to": "Piekarnia",
    "x": 17,
    "y": 28
-  },
-  {
-   "to": "Magazyn",
-   "x": 28,
-   "y": 22
-  },
-  {
-   "to": "Magazyn",
-   "x": 29,
-   "y": 22
   },
   {
    "to": "Kopiec Mrówek",

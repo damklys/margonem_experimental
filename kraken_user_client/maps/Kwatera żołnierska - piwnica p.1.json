@@ -6,11 +6,6 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Kwatera żołnierska",
-   "x": 5,
-   "y": 2
-  },
-  {
    "to": "Kwatera żołnierska - piwnica p.2",
    "x": 10,
    "y": 11

@@ -6,24 +6,6 @@
  "h": 21,
  "gateways": [
   {
-   "to": "Pokój 101",
-   "x": 12,
-   "y": 5,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 102",
-   "x": 12,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 103",
-   "x": 12,
-   "y": 17,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Tawerna pod Bosmańskim Biczem",
    "x": 16,
    "y": 5

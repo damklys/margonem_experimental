@@ -6,45 +6,9 @@
  "h": 20,
  "gateways": [
   {
-   "to": "Apartament 103",
-   "x": 4,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 106",
-   "x": 4,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 102",
-   "x": 12,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 105",
-   "x": 12,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd Umbara p.1",
    "x": 17,
    "y": 2
-  },
-  {
-   "to": "Apartament 104",
-   "x": 20,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 101",
-   "x": 27,
-   "y": 9,
-   "req": "(wymaga klucza)"
   },
   {
    "to": "Torneg",

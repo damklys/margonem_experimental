@@ -11,33 +11,15 @@
    "y": 10
   },
   {
-   "to": "Izba 14",
-   "x": 4,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Izba 20",
    "x": 5,
    "y": 11,
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Izba 15",
-   "x": 6,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Izba 21",
    "x": 7,
    "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Izba 16",
-   "x": 8,
-   "y": 9,
    "req": "(wymaga klucza)"
   },
   {

@@ -24,20 +24,10 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Pokój 15",
-   "x": 8,
-   "y": 22
-  },
-  {
    "to": "MAP#1748",
    "x": 10,
    "y": 10,
    "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 14",
-   "x": 12,
-   "y": 22
   },
   {
    "to": "MAP#1749",
@@ -52,20 +42,10 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Pokój 13",
-   "x": 16,
-   "y": 22
-  },
-  {
    "to": "MAP#1751",
    "x": 19,
    "y": 10,
    "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 12",
-   "x": 20,
-   "y": 22
   },
   {
    "to": "MAP#1752",
@@ -77,11 +57,6 @@
    "to": "Karczma pod Liściem Dębu",
    "x": 24,
    "y": 14
-  },
-  {
-   "to": "Pokój 11",
-   "x": 24,
-   "y": 22
   },
   {
    "to": "MAP#1753",

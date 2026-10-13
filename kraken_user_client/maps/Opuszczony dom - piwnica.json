@@ -6,11 +6,6 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Opuszczony dom",
-   "x": 7,
-   "y": 5
-  },
-  {
    "to": "Opuszczony dom - piwnica p.1",
    "x": 12,
    "y": 11

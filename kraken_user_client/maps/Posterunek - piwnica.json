@@ -4,11 +4,5 @@
  "id": 1702,
  "w": 16,
  "h": 16,
- "gateways": [
-  {
-   "to": "Posterunek",
-   "x": 2,
-   "y": 4
-  }
- ]
+ "gateways": []
 }

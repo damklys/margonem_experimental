@@ -16,24 +16,9 @@
    "y": 0
   },
   {
-   "to": "Magazyn",
-   "x": 46,
-   "y": 50
-  },
-  {
    "to": "Kuchnia polowa",
    "x": 49,
    "y": 49
-  },
-  {
-   "to": "Namiot",
-   "x": 51,
-   "y": 51
-  },
-  {
-   "to": "Namiot",
-   "x": 54,
-   "y": 54
   },
   {
    "to": "Namiot kapitana",

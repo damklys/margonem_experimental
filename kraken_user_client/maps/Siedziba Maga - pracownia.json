@@ -4,11 +4,5 @@
  "id": 218,
  "w": 24,
  "h": 24,
- "gateways": [
-  {
-   "to": "Siedziba Maga",
-   "x": 15,
-   "y": 22
-  }
- ]
+ "gateways": []
 }

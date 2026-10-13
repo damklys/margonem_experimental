@@ -4,21 +4,5 @@
  "id": 6790,
  "w": 28,
  "h": 28,
- "gateways": [
-  {
-   "to": "Miasteczko Deadlow",
-   "x": 6,
-   "y": 25
-  },
-  {
-   "to": "Miasteczko Deadlow",
-   "x": 7,
-   "y": 25
-  },
-  {
-   "to": "Miasteczko Deadlow",
-   "x": 8,
-   "y": 25
-  }
- ]
+ "gateways": []
 }

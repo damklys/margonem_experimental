@@ -6,87 +6,9 @@
  "h": 20,
  "gateways": [
   {
-   "to": "Pokój 206",
-   "x": 2,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 207",
-   "x": 2,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 205",
-   "x": 6,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 208",
-   "x": 6,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 204",
-   "x": 10,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 209",
-   "x": 10,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 203",
-   "x": 14,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 210",
-   "x": 14,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd Umbara",
    "x": 18,
    "y": 5
-  },
-  {
-   "to": "Pokój 211",
-   "x": 18,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 212",
-   "x": 22,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 202",
-   "x": 25,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 213",
-   "x": 26,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 201",
-   "x": 29,
-   "y": 9,
-   "req": "(wymaga klucza)"
   }
  ]
 }

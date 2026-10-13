@@ -4,11 +4,5 @@
  "id": 4671,
  "w": 20,
  "h": 64,
- "gateways": [
-  {
-   "to": "Redrock",
-   "x": 8,
-   "y": 62
-  }
- ]
+ "gateways": []
 }

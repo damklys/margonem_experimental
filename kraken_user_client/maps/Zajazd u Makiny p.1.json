@@ -6,48 +6,6 @@
  "h": 24,
  "gateways": [
   {
-   "to": "Pokój 112",
-   "x": 2,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 101",
-   "x": 3,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 113",
-   "x": 4,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 102",
-   "x": 5,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 114",
-   "x": 6,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 103",
-   "x": 7,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 104",
-   "x": 9,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd u Makiny p.2",
    "x": 9,
    "y": 13
@@ -56,18 +14,6 @@
    "to": "Zajazd u Makiny p.2",
    "x": 10,
    "y": 13
-  },
-  {
-   "to": "Pokój 115",
-   "x": 10,
-   "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 116",
-   "x": 12,
-   "y": 18,
-   "req": "(wymaga klucza)"
   },
   {
    "to": "Zajazd u Makiny",
@@ -75,27 +21,9 @@
    "y": 4
   },
   {
-   "to": "Pokój 117",
-   "x": 14,
-   "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Pokój 118",
    "x": 16,
    "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 105",
-   "x": 17,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 106",
-   "x": 19,
-   "y": 8,
    "req": "(wymaga klucza)"
   },
   {
@@ -105,21 +33,9 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Pokój 107",
-   "x": 21,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Pokój 120",
    "x": 21,
    "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 108",
-   "x": 23,
-   "y": 8,
    "req": "(wymaga klucza)"
   },
   {
@@ -129,33 +45,15 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Pokój 109",
-   "x": 25,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Pokój 122",
    "x": 25,
    "y": 11,
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Pokój 110",
-   "x": 27,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Pokój 123",
    "x": 27,
    "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 111",
-   "x": 29,
-   "y": 8,
    "req": "(wymaga klucza)"
   },
   {

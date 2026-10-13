@@ -6,16 +6,6 @@
  "h": 64,
  "gateways": [
   {
-   "to": "Redrock",
-   "x": 0,
-   "y": 38
-  },
-  {
-   "to": "Redrock",
-   "x": 0,
-   "y": 39
-  },
-  {
    "to": "Osada plemienia Banok",
    "x": 95,
    "y": 43

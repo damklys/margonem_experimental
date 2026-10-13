@@ -108,24 +108,6 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Izba 102",
-   "x": 20,
-   "y": 9,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Izba 103",
-   "x": 20,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Izba 101",
-   "x": 22,
-   "y": 12,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Karczma pod Złotą Wywerną",
    "x": 25,
    "y": 7

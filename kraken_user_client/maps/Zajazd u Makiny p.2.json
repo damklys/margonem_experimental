@@ -6,48 +6,6 @@
  "h": 24,
  "gateways": [
   {
-   "to": "Pokój 214",
-   "x": 2,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 201",
-   "x": 3,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 215",
-   "x": 4,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 202",
-   "x": 5,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 216",
-   "x": 6,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 203",
-   "x": 7,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 204",
-   "x": 9,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd u Makiny p.1",
    "x": 9,
    "y": 15
@@ -56,125 +14,11 @@
    "to": "Zajazd u Makiny p.1",
    "x": 10,
    "y": 15
-  },
-  {
-   "to": "Pokój 217",
-   "x": 10,
-   "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 205",
-   "x": 12,
-   "y": 7,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 218",
-   "x": 12,
-   "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 206",
-   "x": 14,
-   "y": 7,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 219",
-   "x": 14,
-   "y": 18,
-   "req": "(wymaga klucza)"
   },
   {
    "to": "Zajazd u Makiny - strych",
    "x": 16,
    "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 220",
-   "x": 16,
-   "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 207",
-   "x": 17,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 208",
-   "x": 19,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 221",
-   "x": 19,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 209",
-   "x": 21,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 222",
-   "x": 21,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 210",
-   "x": 23,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 223",
-   "x": 23,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 211",
-   "x": 25,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 224",
-   "x": 25,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 212",
-   "x": 27,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 225",
-   "x": 27,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 213",
-   "x": 29,
-   "y": 8,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Pokój 226",
-   "x": 29,
-   "y": 11,
    "req": "(wymaga klucza)"
   }
  ]

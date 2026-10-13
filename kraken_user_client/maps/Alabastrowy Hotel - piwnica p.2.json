@@ -12,33 +12,15 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Apartament 201",
-   "x": 5,
-   "y": 6,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Apartament 207",
    "x": 5,
    "y": 8,
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Apartament 205",
-   "x": 6,
-   "y": 16,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Apartament 210",
    "x": 8,
    "y": 18,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 202",
-   "x": 12,
-   "y": 5,
    "req": "(wymaga klucza)"
   },
   {
@@ -58,12 +40,6 @@
    "req": "(wymaga klucza)"
   },
   {
-   "to": "Apartament 203",
-   "x": 19,
-   "y": 5,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Apartament 212",
    "x": 23,
    "y": 18,
@@ -73,12 +49,6 @@
    "to": "Apartament 206",
    "x": 25,
    "y": 16,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 204",
-   "x": 26,
-   "y": 6,
    "req": "(wymaga klucza)"
   },
   {

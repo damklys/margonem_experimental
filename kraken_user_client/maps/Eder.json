@@ -31,12 +31,6 @@
    "y": 87
   },
   {
-   "to": "Opuszczony dom",
-   "x": 14,
-   "y": 66,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Dom Schadzek",
    "x": 22,
    "y": 44
@@ -137,16 +131,6 @@
    "x": 51,
    "y": 25,
    "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Siedziba Maga",
-   "x": 56,
-   "y": 7
-  },
-  {
-   "to": "Siedziba Maga",
-   "x": 57,
-   "y": 7
   },
   {
    "to": "Dom Etrefana",

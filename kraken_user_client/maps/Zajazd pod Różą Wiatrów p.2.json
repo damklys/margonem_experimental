@@ -6,66 +6,6 @@
  "h": 22,
  "gateways": [
   {
-   "to": "Apartament 101",
-   "x": 4,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 106",
-   "x": 4,
-   "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 102",
-   "x": 9,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 107",
-   "x": 9,
-   "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 103",
-   "x": 14,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 108",
-   "x": 14,
-   "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 104",
-   "x": 19,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 109",
-   "x": 19,
-   "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 105",
-   "x": 24,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 110",
-   "x": 24,
-   "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd pod Różą Wiatrów p.1",
    "x": 28,
    "y": 17

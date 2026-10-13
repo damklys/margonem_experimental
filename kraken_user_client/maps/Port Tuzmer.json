@@ -86,16 +86,6 @@
    "y": 19
   },
   {
-   "to": "Magazyn",
-   "x": 28,
-   "y": 40
-  },
-  {
-   "to": "Magazyn",
-   "x": 29,
-   "y": 40
-  },
-  {
    "to": "Kapitanat Portu",
    "x": 31,
    "y": 34
@@ -164,16 +154,6 @@
    "to": "Tuzmer",
    "x": 48,
    "y": 0
-  },
-  {
-   "to": "Opuszczony dom",
-   "x": 48,
-   "y": 23
-  },
-  {
-   "to": "Opuszczony dom",
-   "x": 49,
-   "y": 23
   },
   {
    "to": "Siedziba Straży Portowej - zbrojownia",

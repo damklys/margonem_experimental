@@ -53,12 +53,6 @@
    "y": 1
   },
   {
-   "to": "Apartament 101",
-   "x": 13,
-   "y": 7,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Zajazd pod Złamanym Dukatem",
    "x": 15,
    "y": 4

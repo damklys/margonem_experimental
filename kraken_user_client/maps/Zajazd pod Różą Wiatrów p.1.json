@@ -6,21 +6,9 @@
  "h": 22,
  "gateways": [
   {
-   "to": "Apartament 1",
-   "x": 4,
-   "y": 11,
-   "req": "(wymaga klucza)"
-  },
-  {
    "to": "Apartament 6",
    "x": 4,
    "y": 13,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 2",
-   "x": 9,
-   "y": 11,
    "req": "(wymaga klucza)"
   },
   {

@@ -6,11 +6,6 @@
  "h": 16,
  "gateways": [
   {
-   "to": "Magazyn",
-   "x": 4,
-   "y": 4
-  },
-  {
    "to": "Składzik beczek",
    "x": 8,
    "y": 11,

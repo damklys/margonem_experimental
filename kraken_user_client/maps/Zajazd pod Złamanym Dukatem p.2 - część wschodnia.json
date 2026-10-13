@@ -24,24 +24,6 @@
    "to": "Zajazd pod Złamanym Dukatem p.1",
    "x": 4,
    "y": 4
-  },
-  {
-   "to": "Apartament 204",
-   "x": 6,
-   "y": 15,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 205",
-   "x": 6,
-   "y": 19,
-   "req": "(wymaga klucza)"
-  },
-  {
-   "to": "Apartament 203",
-   "x": 11,
-   "y": 9,
-   "req": "(wymaga klucza)"
   }
  ]
 }
