@@ -27,6 +27,10 @@
     {
      "q": " Zakonnik Planu Astralnego Podróżując po tej krainie natknąłem się na białego tygrysa, nazwał siebie Mithrylową Łapą - królem Orlej Grani. Obraził mnie, przez co musiałem ratować życie ucieczką. Chcę, żebyś przyniósł mi łeb Mithrylowej Łapy. W ten sposób zemszczę się na tym potworze, a ty dostaniesz zezwolenie za jego marny łeb. Umowa stoi?",
      "a": "W porządku"
+    },
+    {
+     "q": "Zakonnik Planu Astralnego Wracaj szybko!",
+     "a": "Zakończ rozmowę"
     }
    ]
   },
