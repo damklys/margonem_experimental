@@ -4,7 +4,7 @@
  "name": "ZR: (42) Lazurytowa Grota - Ithan",
  "questId": 0,
  "questName": "",
- "set": "48lvl",
+ "set": "42lvl",
  "steps": [
   {
    "type": "goto",

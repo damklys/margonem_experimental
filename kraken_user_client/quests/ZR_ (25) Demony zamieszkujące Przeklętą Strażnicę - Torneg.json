@@ -4,7 +4,7 @@
  "name": "ZR: (25) Demony zamieszkujące Przeklętą Strażnicę - Torneg",
  "questId": 0,
  "questName": "",
- "set": "28lvl",
+ "set": "20lvl",
  "steps": [
   {
    "type": "goto",

@@ -4,7 +4,7 @@
  "name": "ZR: (32) Racicowy Matecznik - Eder",
  "questId": 0,
  "questName": "",
- "set": "36lvl",
+ "set": "28lvl",
  "steps": [
   {
    "type": "goto",
