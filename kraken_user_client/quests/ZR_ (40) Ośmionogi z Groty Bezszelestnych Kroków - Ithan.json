@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
    "n": 100,
-   "route": "pokątniki (52lvl)"
+   "route": "[52lvl] pokątniki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
    "n": 250,
-   "route": "pokątniki (52lvl)"
+   "route": "[52lvl] pokątniki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Pokątnik Mglisty; Pokątnik Ochnowy; Pokątnik Karminowy",
    "n": 500,
-   "route": "pokątniki (52lvl)"
+   "route": "[52lvl] pokątniki"
   },
   {
    "type": "goto",

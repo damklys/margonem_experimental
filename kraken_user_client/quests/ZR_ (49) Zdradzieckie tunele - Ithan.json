@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Tollok Muchag; Tollok Zombe; Tollok Tarmec; Tollok Vitez; Tollok Utumutu; Tollok Atamatu",
    "n": 100,
-   "route": "jaskiniowe tolloki (71lvl)"
+   "route": "[71lvl] jaskiniowe tolloki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Tollok Muchag; Tollok Zombe; Tollok Tarmec; Tollok Vitez; Tollok Utumutu; Tollok Atamatu",
    "n": 250,
-   "route": "jaskiniowe tolloki (71lvl)"
+   "route": "[71lvl] jaskiniowe tolloki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Tollok Muchag; Tollok Zombe; Tollok Tarmec; Tollok Vitez; Tollok Utumutu; Tollok Atamatu",
    "n": 500,
-   "route": "jaskiniowe tolloki (71lvl)"
+   "route": "[71lvl] jaskiniowe tolloki"
   },
   {
    "type": "goto",

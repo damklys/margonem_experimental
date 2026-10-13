@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Rosomak; Rosomak skalny",
    "n": 100,
-   "route": "rosomaki (66lvl)"
+   "route": "[66lvl] rosomaki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Rosomak; Rosomak skalny",
    "n": 250,
-   "route": "rosomaki (66lvl)"
+   "route": "[66lvl] rosomaki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Rosomak; Rosomak skalny",
    "n": 500,
-   "route": "rosomaki (66lvl)"
+   "route": "[66lvl] rosomaki"
   },
   {
    "type": "goto",

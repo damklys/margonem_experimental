@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-andarum-i-okolice-70lvl",
+  "name": "[70lvl] Andarum i okolice",
+  "lvlMin": 66,
+  "lvlMax": 73,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Andarum Ilami",
+    "attack": true
+   },
+   {
+    "location": "Skały Mroźnych Śpiewów",
+    "attack": true
+   },
+   {
+    "location": "Cmentarzysko Szerpów",
+    "attack": true
+   },
+   {
+    "location": "Skały Mroźnych Śpiewów",
+    "attack": false
+   }
+  ]
+ }
+}

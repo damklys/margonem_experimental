@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-124-caneum",
+ "route": {
+  "id": "mw-caneum-124lvl",
+  "name": "[124lvl] Caneum",
+  "lvlMin": 120,
+  "lvlMax": 127,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka - Grota Piaskowej Śmierci",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Piaskowa Pułapka p.1 - sala 2",
+    "attack": true
+   }
+  ]
+ }
+}

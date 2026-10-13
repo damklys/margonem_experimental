@@ -1,0 +1,19 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-122-kraby",
+ "route": {
+  "id": "mw-kraby-122lvl",
+  "name": "[122lvl] kraby",
+  "lvlMin": 118,
+  "lvlMax": 125,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Wyspa Rem",
+    "attack": true
+   }
+  ]
+ }
+}

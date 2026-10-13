@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Kobold; Kobold łucznik; Kobold nożownik; Foverk Turrim",
    "n": 100,
-   "route": "koboldy (54lvl)"
+   "route": "[54lvl] koboldy"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Kobold; Kobold łucznik; Kobold nożownik; Foverk Turrim",
    "n": 250,
-   "route": "koboldy (54lvl)"
+   "route": "[54lvl] koboldy"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Kobold; Kobold łucznik; Kobold nożownik; Foverk Turrim",
    "n": 500,
-   "route": "koboldy (54lvl)"
+   "route": "[54lvl] koboldy"
   },
   {
    "type": "goto",

@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Srebrny bazyliszek; Magiczny bazyliszek; Purpurowy bazyliszek; Bazyliszek Mroku",
    "n": 100,
-   "route": "bazyliszki (61lvl)"
+   "route": "[61lvl] bazyliszki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Srebrny bazyliszek; Magiczny bazyliszek; Purpurowy bazyliszek; Bazyliszek Mroku",
    "n": 250,
-   "route": "bazyliszki (61lvl)"
+   "route": "[61lvl] bazyliszki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Srebrny bazyliszek; Magiczny bazyliszek; Purpurowy bazyliszek; Bazyliszek Mroku",
    "n": 500,
-   "route": "bazyliszki (61lvl)"
+   "route": "[61lvl] bazyliszki"
   },
   {
    "type": "goto",

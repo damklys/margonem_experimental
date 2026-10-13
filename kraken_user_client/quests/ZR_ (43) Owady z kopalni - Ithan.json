@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Żądłak rogaty; Żądłak; Podżerka krwawa; Wściekłówka; Nieżłopka wątpia",
    "n": 100,
-   "route": "żądłaki (58lvl)"
+   "route": "[58lvl] żądłaki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Żądłak rogaty; Żądłak; Podżerka krwawa; Wściekłówka; Nieżłopka wątpia",
    "n": 250,
-   "route": "żądłaki (58lvl)"
+   "route": "[58lvl] żądłaki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Żądłak rogaty; Żądłak; Podżerka krwawa; Wściekłówka; Nieżłopka wątpia",
    "n": 500,
-   "route": "żądłaki (58lvl)"
+   "route": "[58lvl] żądłaki"
   },
   {
    "type": "goto",

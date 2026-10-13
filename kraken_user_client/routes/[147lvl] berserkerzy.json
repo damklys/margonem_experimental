@@ -1,0 +1,159 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-147-berserkerzy",
+ "route": {
+  "id": "mw-berserkerzy-147lvl",
+  "name": "[147lvl] berserkerzy",
+  "lvlMin": 143,
+  "lvlMax": 150,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Opuszczona Twierdza",
+    "attack": true
+   },
+   {
+    "location": "Czarcie Oparzeliska",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Przodków",
+    "attack": true
+   },
+   {
+    "location": "Cenotaf Berserkerów - przejście przodków",
+    "attack": true
+   },
+   {
+    "location": "Cenotaf Berserkerów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Cenotaf Berserkerów p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Cenotaf Berserkerów p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Cenotaf Berserkerów - przejście przodków",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Przodków",
+    "attack": true
+   },
+   {
+    "location": "Zaginiona Dolina",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Przodków",
+    "attack": true
+   },
+   {
+    "location": "Śnieżna Granica",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Przodków",
+    "attack": true
+   },
+   {
+    "location": "Czarcie Oparzeliska",
+    "attack": true
+   },
+   {
+    "location": "Opuszczona Twierdza",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mały barak",
+    "attack": true
+   },
+   {
+    "location": "Opuszczona Twierdza",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mury zachodnie",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - korytarz zachodni",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - sala wejściowa",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - magazyn",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - sala wejściowa",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mury wschodnie",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - wieża wschodnia",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mury wschodnie",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - sala wejściowa",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza p.1",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - sala wejściowa",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - korytarz zachodni",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mury zachodnie",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - wieża zachodnia",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - mury zachodnie",
+    "attack": true
+   },
+   {
+    "location": "Opuszczona Twierdza",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - wieża strażnicza",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - podziemny magazyn",
+    "attack": true
+   },
+   {
+    "location": "Mała Twierdza - wieża strażnicza",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-gnolle-64lvl",
+  "name": "[64lvl] gnolle",
+  "lvlMin": 60,
+  "lvlMax": 67,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Radosna Polana",
+    "attack": true
+   },
+   {
+    "location": "Wioska Gnolli",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Gnollich Szamanów p.1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Gnollich Szamanów p.2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Gnollich Szamanów p.3",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Gnollich Szamanów p.2",
+    "attack": false
+   },
+   {
+    "location": "Wioska Gnolli",
+    "attack": false
+   },
+   {
+    "location": "Czeluść Ognistej Pożogi",
+    "attack": true
+   },
+   {
+    "location": "Grota Pragnolli p.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Pragnolli p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Pragnolli p.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Pragnolli p.3",
+    "attack": true
+   },
+   {
+    "location": "Czeluść Ognistej Pożogi",
+    "attack": false
+   },
+   {
+    "location": "Wioska Gnolli",
+    "attack": false
+   }
+  ]
+ }
+}

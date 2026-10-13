@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Leśny bazyliszek; Ziemny bazyliszek; Szlachetny bazyliszek; Kamienny bazyliszek",
    "n": 50,
-   "route": "bazyliszki (26lvl)"
+   "route": "[26lvl] bazyliszki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Leśny bazyliszek; Ziemny bazyliszek; Szlachetny bazyliszek; Kamienny bazyliszek",
    "n": 150,
-   "route": "bazyliszki (26lvl)"
+   "route": "[26lvl] bazyliszki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Leśny bazyliszek; Ziemny bazyliszek; Szlachetny bazyliszek; Kamienny bazyliszek",
    "n": 500,
-   "route": "bazyliszki (26lvl)"
+   "route": "[26lvl] bazyliszki"
   },
   {
    "type": "goto",

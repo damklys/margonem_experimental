@@ -1,0 +1,79 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-212-pajaki",
+ "route": {
+  "id": "mw-pajaki-212lvl",
+  "name": "[212lvl] pająki",
+  "lvlMin": 208,
+  "lvlMax": 215,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zapadlisko Zniewolonych",
+    "attack": true
+   },
+   {
+    "location": "Pajęczy Las",
+    "attack": true
+   },
+   {
+    "location": "Otchłań Pajęczych Sieci",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pajęczych Korytarzy",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.1",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.2",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.3",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.4",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.5",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.4",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.3",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.2",
+    "attack": true
+   },
+   {
+    "location": "Arachnitopia p.1",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pajęczych Korytarzy",
+    "attack": true
+   },
+   {
+    "location": "Otchłań Pajęczych Sieci",
+    "attack": true
+   },
+   {
+    "location": "Pajęczy Las",
+    "attack": true
+   }
+  ]
+ }
+}

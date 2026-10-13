@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Strażnik Andarum; Śnieżny wilk; Lazurowy tygrys; Śnieżny niedźwiedź; Śnieżny tygrys",
    "n": 100,
-   "route": "Andarum i okolice (70lvl)"
+   "route": "[70lvl] Andarum i okolice"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Strażnik Andarum; Śnieżny wilk; Lazurowy tygrys; Śnieżny niedźwiedź; Śnieżny tygrys",
    "n": 250,
-   "route": "Andarum i okolice (70lvl)"
+   "route": "[70lvl] Andarum i okolice"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Strażnik Andarum; Śnieżny wilk; Lazurowy tygrys; Śnieżny niedźwiedź; Śnieżny tygrys",
    "n": 500,
-   "route": "Andarum i okolice (70lvl)"
+   "route": "[70lvl] Andarum i okolice"
   },
   {
    "type": "goto",

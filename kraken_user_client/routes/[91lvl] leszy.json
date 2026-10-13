@@ -1,0 +1,59 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-leszy-91-lvl",
+  "name": "[91lvl] leszy",
+  "lvlMin": 88,
+  "lvlMax": 94,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Liściaste Rozstaje",
+    "attack": true
+   },
+   {
+    "location": "Sosnowe Odludzie",
+    "attack": true
+   },
+   {
+    "location": "Księżycowe Wzniesienie",
+    "attack": true
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.1",
+    "attack": true
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.2",
+    "attack": true
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.3",
+    "attack": true
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.2",
+    "attack": false
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zapomniany Święty Gaj p.1",
+    "attack": false
+   },
+   {
+    "location": "Księżycowe Wzniesienie",
+    "attack": false
+   },
+   {
+    "location": "Sosnowe Odludzie",
+    "attack": false
+   }
+  ]
+ }
+}

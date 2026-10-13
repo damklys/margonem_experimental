@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Demilisz; Wściekły demilisz; Lisz",
    "n": 100,
-   "route": "demilisze (72lvl)"
+   "route": "[72lvl] demilisze"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Demilisz; Wściekły demilisz; Lisz",
    "n": 250,
-   "route": "demilisze (72lvl)"
+   "route": "[72lvl] demilisze"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Demilisz; Wściekły demilisz; Lisz",
    "n": 500,
-   "route": "demilisze (72lvl)"
+   "route": "[72lvl] demilisze"
   },
   {
    "type": "goto",

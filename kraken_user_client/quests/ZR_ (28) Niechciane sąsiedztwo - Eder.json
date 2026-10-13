@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
    "n": 100,
-   "route": "gobliny (34lvl)"
+   "route": "[34lvl] gobliny"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
    "n": 250,
-   "route": "gobliny (34lvl)"
+   "route": "[34lvl] gobliny"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Goblin traper; Leśny goblin; Zły goblin; Mistrz fechtunku; Pancerny goblin; Zakuty goblin; Władca krzewów; Władca rzek; Gobbos",
    "n": 500,
-   "route": "gobliny (34lvl)"
+   "route": "[34lvl] gobliny"
   },
   {
    "type": "goto",

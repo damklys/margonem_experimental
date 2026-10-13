@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Pomniejszy demon; Mały demon; Nieznośny demon; Dokuczliwy bies; Paskudny demon; Kąśliwy demon; Shae Phu",
    "n": 100,
-   "route": "demony (29lvl)"
+   "route": "[29lvl] demony"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Pomniejszy demon; Mały demon; Nieznośny demon; Dokuczliwy bies; Paskudny demon; Kąśliwy demon; Shae Phu",
    "n": 250,
-   "route": "demony (29lvl)"
+   "route": "[29lvl] demony"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Pomniejszy demon; Mały demon; Nieznośny demon; Dokuczliwy bies; Paskudny demon; Kąśliwy demon; Shae Phu",
    "n": 500,
-   "route": "demony (29lvl)"
+   "route": "[29lvl] demony"
   },
   {
    "type": "goto",

@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-174-krysztalowa-grota",
+ "route": {
+  "id": "mw-krysztalowa-grota-174lvl",
+  "name": "[174lvl] kryształowa grota",
+  "lvlMin": 170,
+  "lvlMax": 177,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Kryształowa Grota - przepaść",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota - Sala Smutku",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota - Sala Smutku",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.4",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.5",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.6",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.5",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.4",
+    "attack": true
+   },
+   {
+    "location": "Kryształowa Grota p.3 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

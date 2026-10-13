@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Wilczy Śpiew; Wilcze Prawo; Zakrzywiony Pazur; Wilcza Jagoda; Wilcza Paszcza; Oko Wilka; Wilcza Więź",
    "n": 100,
-   "route": "wilcze plemię (44lvl)"
+   "route": "[44lvl] wilcze plemię"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Wilczy Śpiew; Wilcze Prawo; Zakrzywiony Pazur; Wilcza Jagoda; Wilcza Paszcza; Oko Wilka; Wilcza Więź",
    "n": 250,
-   "route": "wilcze plemię (44lvl)"
+   "route": "[44lvl] wilcze plemię"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Wilczy Śpiew; Wilcze Prawo; Zakrzywiony Pazur; Wilcza Jagoda; Wilcza Paszcza; Oko Wilka; Wilcza Więź",
    "n": 500,
-   "route": "wilcze plemię (44lvl)"
+   "route": "[44lvl] wilcze plemię"
   },
   {
    "type": "goto",

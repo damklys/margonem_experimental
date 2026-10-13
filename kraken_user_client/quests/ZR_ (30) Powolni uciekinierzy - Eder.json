@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Żółw błotny; Żółw ostrogrzbiety; Żółw norowy",
    "n": 100,
-   "route": "żółwie (38lvl)"
+   "route": "[38lvl] żółwie"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Żółw błotny; Żółw ostrogrzbiety; Żółw norowy",
    "n": 250,
-   "route": "żółwie (38lvl)"
+   "route": "[38lvl] żółwie"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Żółw błotny; Żółw ostrogrzbiety; Żółw norowy",
    "n": 500,
-   "route": "żółwie (38lvl)"
+   "route": "[38lvl] żółwie"
   },
   {
    "type": "goto",

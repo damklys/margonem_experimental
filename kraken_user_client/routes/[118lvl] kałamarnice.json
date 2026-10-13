@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-118-kalamarnice",
+ "route": {
+  "id": "mw-kalamarnice-118lvl",
+  "name": "[118lvl] kałamarnice",
+  "lvlMin": 114,
+  "lvlMax": 121,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Archipelag Bremus An",
+    "attack": true
+   },
+   {
+    "location": "Jama Morskiej Macki p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Jama Morskiej Macki p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jama Morskiej Macki p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Jama Morskiej Macki p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Jama Morskiej Macki p.1 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

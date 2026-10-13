@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-163-kazamaty",
+ "route": {
+  "id": "mw-kazamaty-163lvl",
+  "name": "[163lvl] kazamaty",
+  "lvlMin": 159,
+  "lvlMax": 166,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Nawiedzone Komnaty - przedsionek",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.3 s.1",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.4",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.3 s.2",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.1 s.2",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.3 s.2",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.4",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.3 s.1",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Nawiedzone Kazamaty p.1 s.1",
+    "attack": true
+   }
+  ]
+ }
+}

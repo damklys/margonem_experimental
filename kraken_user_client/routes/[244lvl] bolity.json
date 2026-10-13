@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-244-bolity",
+ "route": {
+  "id": "mw-bolity-244lvl",
+  "name": "[244lvl] bolity",
+  "lvlMin": 240,
+  "lvlMax": 247,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Dolina Chmur",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Złota Góra p.1 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

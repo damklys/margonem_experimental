@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Grzechotnik; Kobra; Harpia złota; Harpia",
    "n": 100,
-   "route": "przesmyk (50lvl)"
+   "route": "[50lvl] przesmyk"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Grzechotnik; Kobra; Harpia złota; Harpia",
    "n": 250,
-   "route": "przesmyk (50lvl)"
+   "route": "[50lvl] przesmyk"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Grzechotnik; Kobra; Harpia złota; Harpia",
    "n": 500,
-   "route": "przesmyk (50lvl)"
+   "route": "[50lvl] przesmyk"
   },
   {
    "type": "goto",

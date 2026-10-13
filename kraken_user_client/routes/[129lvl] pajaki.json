@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-129-pajaki",
+ "route": {
+  "id": "mw-pajaki-129lvl",
+  "name": "[129lvl] pajaki",
+  "lvlMin": 125,
+  "lvlMax": 132,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Szlak Thorpa p.1",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.2",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.3",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.4",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.5",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.6",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.5",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.4",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.3",
+    "attack": true
+   },
+   {
+    "location": "Szlak Thorpa p.2",
+    "attack": true
+   }
+  ]
+ }
+}

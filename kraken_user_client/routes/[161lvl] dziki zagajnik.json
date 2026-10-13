@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-161-dziki-zagajnik",
+ "route": {
+  "id": "mw-dziki-zagajnik-161lvl",
+  "name": "[161lvl] dziki zagajnik",
+  "lvlMin": 157,
+  "lvlMax": 164,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Ukryty Kanion",
+    "attack": true
+   },
+   {
+    "location": "Dziki Zagajnik",
+    "attack": true
+   },
+   {
+    "location": "Przepaść Aguti",
+    "attack": true
+   },
+   {
+    "location": "Przełęcz Krwistego Posłańca",
+    "attack": true
+   },
+   {
+    "location": "Przepaść Aguti",
+    "attack": true
+   },
+   {
+    "location": "Dziki Zagajnik",
+    "attack": true
+   },
+   {
+    "location": "Skały Pamięci Nikantosa",
+    "attack": true
+   },
+   {
+    "location": "Dziki Zagajnik",
+    "attack": true
+   }
+  ]
+ }
+}

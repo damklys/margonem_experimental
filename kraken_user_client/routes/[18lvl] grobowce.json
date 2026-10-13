@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-18-grobowce",
+ "route": {
+  "id": "mw-grobowce-18lvl",
+  "name": "[18lvl] grobowce",
+  "lvlMin": 14,
+  "lvlMax": 21,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Krypta Rodu Heregata",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata p.1",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata p.2 - lewe skrzydło",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata p.1",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata p.2 - prawe skrzydło",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata p.1",
+    "attack": true
+   },
+   {
+    "location": "Krypta Rodu Heregata",
+    "attack": true
+   },
+   {
+    "location": "Nekropolia Karka-han",
+    "attack": false
+   },
+   {
+    "location": "Grobowiec Rodziny Tywelta",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Rodziny Tywelta p.1",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Rodziny Tywelta p.2",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Rodziny Tywelta p.1",
+    "attack": true
+   },
+   {
+    "location": "Grobowiec Rodziny Tywelta",
+    "attack": true
+   },
+   {
+    "location": "Nekropolia Karka-han",
+    "attack": false
+   }
+  ]
+ }
+}

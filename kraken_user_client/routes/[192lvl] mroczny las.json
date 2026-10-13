@@ -1,0 +1,87 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-192-mroczny-las",
+ "route": {
+  "id": "mw-mroczny-las-192lvl",
+  "name": "[192lvl] mroczny las",
+  "lvlMin": 188,
+  "lvlMax": 195,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Złudny Trakt",
+    "attack": true
+   },
+   {
+    "location": "Bór Zagubionych",
+    "attack": true
+   },
+   {
+    "location": "Bezgwiezdna Gęstwina",
+    "attack": true
+   },
+   {
+    "location": "Martwy Las",
+    "attack": true
+   },
+   {
+    "location": "Starodrzew Przedwiecznych p.1",
+    "attack": true
+   },
+   {
+    "location": "Martwy Las",
+    "attack": true
+   },
+   {
+    "location": "Ziemia Szepczących Cierni",
+    "attack": true
+   },
+   {
+    "location": "Grota Skamieniałej Kory p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Grota Skamieniałej Kory p.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Skamieniałej Kory p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Grota Skamieniałej Kory p.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Skamieniałej Kory p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Ziemia Szepczących Cierni",
+    "attack": true
+   },
+   {
+    "location": "Zbocze Starych Bogów",
+    "attack": true
+   },
+   {
+    "location": "Ziemia Szepczących Cierni",
+    "attack": true
+   },
+   {
+    "location": "Martwy Las",
+    "attack": true
+   },
+   {
+    "location": "Bezgwiezdna Gęstwina",
+    "attack": true
+   },
+   {
+    "location": "Bór Zagubionych",
+    "attack": true
+   }
+  ]
+ }
+}

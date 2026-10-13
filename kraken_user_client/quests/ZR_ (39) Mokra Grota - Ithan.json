@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Wodna galareta; Zgniła galareta; Trująca galareta; Przeźroczysta galareta; Morska galareta; Pąsowa galareta; Agar",
    "n": 100,
-   "route": "galarety (51lvl)"
+   "route": "[51lvl] galarety"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Wodna galareta; Zgniła galareta; Trująca galareta; Przeźroczysta galareta; Morska galareta; Pąsowa galareta; Agar",
    "n": 250,
-   "route": "galarety (51lvl)"
+   "route": "[51lvl] galarety"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Wodna galareta; Zgniła galareta; Trująca galareta; Przeźroczysta galareta; Morska galareta; Pąsowa galareta; Agar",
    "n": 500,
-   "route": "galarety (51lvl)"
+   "route": "[51lvl] galarety"
   },
   {
    "type": "goto",

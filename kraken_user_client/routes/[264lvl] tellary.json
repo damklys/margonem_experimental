@@ -1,0 +1,63 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-264-tellary",
+ "route": {
+  "id": "mw-tellary-264lvl",
+  "name": "[264lvl] tellary",
+  "lvlMin": 260,
+  "lvlMax": 267,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Las Monolitów",
+    "attack": true
+   },
+   {
+    "location": "Jałowa Dolina",
+    "attack": true
+   },
+   {
+    "location": "Pękający Żleb",
+    "attack": true
+   },
+   {
+    "location": "Kamienne Pustkowie",
+    "attack": true
+   },
+   {
+    "location": "Krater Uwięzienia",
+    "attack": true
+   },
+   {
+    "location": "Rumowisko Szarych Głazów",
+    "attack": true
+   },
+   {
+    "location": "Krater Uwięzienia",
+    "attack": true
+   },
+   {
+    "location": "Kamienne Pustkowie",
+    "attack": true
+   },
+   {
+    "location": "Pękający Żleb",
+    "attack": true
+   },
+   {
+    "location": "Nieme Góry",
+    "attack": true
+   },
+   {
+    "location": "Pękający Żleb",
+    "attack": true
+   },
+   {
+    "location": "Jałowa Dolina",
+    "attack": true
+   }
+  ]
+ }
+}

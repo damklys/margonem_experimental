@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-darhouny-87lvl",
+  "name": "[87lvl] darhouny",
+  "lvlMin": 83,
+  "lvlMax": 90,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Szyb Zdrajców",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Margorii",
+    "attack": false
+   },
+   {
+    "location": "Kopalnia Margorii",
+    "attack": false
+   },
+   {
+    "location": "Ślepe Wyrobisko",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Margorii",
+    "attack": false
+   },
+   {
+    "location": "Labirynt Margorii",
+    "attack": false
+   }
+  ]
+ }
+}

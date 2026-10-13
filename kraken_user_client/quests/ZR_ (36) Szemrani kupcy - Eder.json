@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Podły szabrownik; Nikczemny łotr; Niegodziwy drań; Szczęt alias Gładki",
    "n": 100,
-   "route": "zbiry (46lvl)"
+   "route": "[46lvl] zbiry"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Podły szabrownik; Nikczemny łotr; Niegodziwy drań; Szczęt alias Gładki",
    "n": 250,
-   "route": "zbiry (46lvl)"
+   "route": "[46lvl] zbiry"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Podły szabrownik; Nikczemny łotr; Niegodziwy drań; Szczęt alias Gładki",
    "n": 500,
-   "route": "zbiry (46lvl)"
+   "route": "[46lvl] zbiry"
   },
   {
    "type": "goto",

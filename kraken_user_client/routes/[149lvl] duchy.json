@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-149-duchy",
+ "route": {
+  "id": "mw-duchy-149lvl",
+  "name": "[149lvl] duchy",
+  "lvlMin": 145,
+  "lvlMax": 152,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Korytarze Milczących Intryg p.1",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.3",
+    "attack": true
+   },
+   {
+    "location": "Sala Ukrytych Paktów",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.3",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Korytarze Milczących Intryg p.2 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

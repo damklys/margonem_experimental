@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-219-dridery",
+ "route": {
+  "id": "mw-dridery-219lvl",
+  "name": "[219lvl] dridery",
+  "lvlMin": 215,
+  "lvlMax": 222,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Dawny Przełaz",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.3",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zapomniane Sztolnie",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zamierzchłe Arterie p.3",
+    "attack": true
+   }
+  ]
+ }
+}

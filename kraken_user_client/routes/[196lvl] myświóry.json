@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-196-myswiory",
+ "route": {
+  "id": "mw-myswiory-196lvl",
+  "name": "[196lvl] myświóry",
+  "lvlMin": 192,
+  "lvlMax": 199,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Kanały Nithal p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kanały Nithal p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Kanały Nithal p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szlamowe Kanały p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Szlamowe Kanały p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szlamowe Kanały p.2 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Szlamowe Kanały p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Szlamowe Kanały p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Kanały Nithal p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Kanały Nithal p.1 - sala 2",
+    "attack": true
+   }
+  ]
+ }
+}

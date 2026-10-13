@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-216-drowy",
+ "route": {
+  "id": "mw-drowy-216lvl",
+  "name": "[216lvl] drowy",
+  "lvlMin": 212,
+  "lvlMax": 219,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zakazana Grota",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.2",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Dawny Przełaz",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Porzucone Noiridum p.2",
+    "attack": true
+   }
+  ]
+ }
+}

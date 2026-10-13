@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-223-anuraki",
+ "route": {
+  "id": "mw-anuraki-223lvl",
+  "name": "[223lvl] anuraki",
+  "lvlMin": 219,
+  "lvlMax": 226,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Smocze Skalisko",
+    "attack": true
+   },
+   {
+    "location": "Urwisko Vapora",
+    "attack": true
+   },
+   {
+    "location": "Bagna Umarłych",
+    "attack": true
+   },
+   {
+    "location": "Gnijące Topielisko",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pełznącego Krzyku",
+    "attack": true
+   },
+   {
+    "location": "Zatrute Torfowiska",
+    "attack": true
+   },
+   {
+    "location": "Grząska Ziemia",
+    "attack": true
+   },
+   {
+    "location": "Mglisty Las",
+    "attack": true
+   },
+   {
+    "location": "Grząska Ziemia",
+    "attack": true
+   },
+   {
+    "location": "Zatrute Torfowiska",
+    "attack": true
+   },
+   {
+    "location": "Dolina Pełznącego Krzyku",
+    "attack": true
+   },
+   {
+    "location": "Gnijące Topielisko",
+    "attack": true
+   },
+   {
+    "location": "Bagna Umarłych",
+    "attack": true
+   },
+   {
+    "location": "Urwisko Vapora",
+    "attack": true
+   }
+  ]
+ }
+}

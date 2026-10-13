@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-biblioteka-andarum-75lvl",
+  "name": "[75lvl] biblioteka Andarum",
+  "lvlMin": 71,
+  "lvlMax": 78,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Świątynia Andarum",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - zejście lewe",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - podziemia",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - biblioteka",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - podziemia",
+    "attack": false
+   },
+   {
+    "location": "Świątynia Andarum - lokum mnichów",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - podziemia",
+    "attack": false
+   },
+   {
+    "location": "Świątynia Andarum - zejście prawe",
+    "attack": true
+   }
+  ]
+ }
+}

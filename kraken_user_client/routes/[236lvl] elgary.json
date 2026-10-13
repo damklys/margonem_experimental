@@ -1,0 +1,79 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-236-elgary",
+ "route": {
+  "id": "mw-elgary-236lvl",
+  "name": "[236lvl] elgary",
+  "lvlMin": 232,
+  "lvlMax": 239,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Głusza Srebrnego Rogu",
+    "attack": true
+   },
+   {
+    "location": "Knieja Lunarnych Głazów",
+    "attack": true
+   },
+   {
+    "location": "Szepty Menhirów",
+    "attack": true
+   },
+   {
+    "location": "Gaj Księżycowego Blasku",
+    "attack": true
+   },
+   {
+    "location": "Zakątek Nocnych Szelestów",
+    "attack": true
+   },
+   {
+    "location": "Gaj Księżycowego Blasku",
+    "attack": true
+   },
+   {
+    "location": "Szepty Menhirów",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Zacienione Wnęki p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Szepty Menhirów",
+    "attack": true
+   },
+   {
+    "location": "Knieja Lunarnych Głazów",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-178-driady",
+ "route": {
+  "id": "mw-driady-178lvl",
+  "name": "[178lvl] driady",
+  "lvlMin": 174,
+  "lvlMax": 181,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Ruiny Tass Zhil",
+    "attack": true
+   },
+   {
+    "location": "Błota Sham Al",
+    "attack": true
+   },
+   {
+    "location": "Głusza Świstu",
+    "attack": true
+   },
+   {
+    "location": "Drzewo Dusz p.1",
+    "attack": true
+   },
+   {
+    "location": "Głusza Świstu",
+    "attack": true
+   },
+   {
+    "location": "Las Porywów Wiatru",
+    "attack": true
+   },
+   {
+    "location": "Grota Arbor s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Arbor s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Arbor s.1",
+    "attack": true
+   },
+   {
+    "location": "Las Porywów Wiatru",
+    "attack": true
+   },
+   {
+    "location": "Kwieciste Kresy",
+    "attack": true
+   },
+   {
+    "location": "Las Porywów Wiatru",
+    "attack": true
+   },
+   {
+    "location": "Głusza Świstu",
+    "attack": true
+   },
+   {
+    "location": "Błota Sham Al",
+    "attack": true
+   }
+  ]
+ }
+}

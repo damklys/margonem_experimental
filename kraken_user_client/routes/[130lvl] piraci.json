@@ -1,0 +1,119 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-130-piraci",
+ "route": {
+  "id": "mw-piraci-130lvl",
+  "name": "[130lvl] piraci",
+  "lvlMin": 126,
+  "lvlMax": 133,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Korsarska Nora - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - zachodni przełaz",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - wschodni przełaz",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 6",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - korytarz",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - arsenał",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - siedziba",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - skarbiec",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - siedziba",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - arsenał",
+    "attack": true
+   },
+   {
+    "location": "Ukryta Grota Morskich Diabłów - korytarz",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 6",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - statek",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 5",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - wschodni przełaz",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 4",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - zachodni przełaz",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Korsarska Nora - sala 2",
+    "attack": true
+   }
+  ]
+ }
+}

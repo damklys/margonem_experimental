@@ -1,0 +1,103 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-156-czerwoni-orkowie",
+ "route": {
+  "id": "mw-czerwoni-orkowie-156lvl",
+  "name": "[156lvl] czerwoni orkowie",
+  "lvlMin": 152,
+  "lvlMax": 159,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Orcza Wyżyna",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.1 s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.3 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczych Szamanów p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Orcza Wyżyna",
+    "attack": true
+   },
+   {
+    "location": "Osada Czerwonych Orków",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.1 s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Grota Orczej Hordy p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Osada Czerwonych Orków",
+    "attack": true
+   },
+   {
+    "location": "Kurhany Zwyciężonych",
+    "attack": true
+   },
+   {
+    "location": "Osada Czerwonych Orków",
+    "attack": true
+   }
+  ]
+ }
+}

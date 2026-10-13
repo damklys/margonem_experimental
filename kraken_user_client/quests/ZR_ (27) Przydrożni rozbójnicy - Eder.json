@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Stary rozbójnik; Przebiegły łotr; Rozbójniczka; Zły zbir",
    "n": 100,
-   "route": "rozbójnicy (32lvl)"
+   "route": "[32lvl] rozbójnicy"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Stary rozbójnik; Przebiegły łotr; Rozbójniczka; Zły zbir",
    "n": 250,
-   "route": "rozbójnicy (32lvl)"
+   "route": "[32lvl] rozbójnicy"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Stary rozbójnik; Przebiegły łotr; Rozbójniczka; Zły zbir",
    "n": 500,
-   "route": "rozbójnicy (32lvl)"
+   "route": "[32lvl] rozbójnicy"
   },
   {
    "type": "goto",

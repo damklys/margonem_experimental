@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Tollok Boger; Tollok Zibink; Tollok Surbit; Tollok Tuarai; Tollok Shimger",
    "n": 100,
-   "route": "tolloki (45lvl)"
+   "route": "[45lvl] tolloki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Tollok Boger; Tollok Zibink; Tollok Surbit; Tollok Tuarai; Tollok Shimger",
    "n": 250,
-   "route": "tolloki (45lvl)"
+   "route": "[45lvl] tolloki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Tollok Boger; Tollok Zibink; Tollok Surbit; Tollok Tuarai; Tollok Shimger",
    "n": 500,
-   "route": "tolloki (45lvl)"
+   "route": "[45lvl] tolloki"
   },
   {
    "type": "goto",

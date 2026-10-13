@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
    "n": 100,
-   "route": "dziki (40lvl)"
+   "route": "[40lvl] dziki"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
    "n": 250,
-   "route": "dziki (40lvl)"
+   "route": "[40lvl] dziki"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Warchlak; Locha; Odyniec; Tyrtajos",
    "n": 500,
-   "route": "dziki (40lvl)"
+   "route": "[40lvl] dziki"
   },
   {
    "type": "goto",

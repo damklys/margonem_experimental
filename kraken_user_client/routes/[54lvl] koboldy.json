@@ -1,0 +1,35 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-koboldy-54lvl",
+  "name": "[54lvl] koboldy",
+  "lvlMin": 50,
+  "lvlMax": 57,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Lazurytowa Grota p.1",
+    "attack": true
+   },
+   {
+    "location": "Lazurytowa Grota p.2",
+    "attack": true
+   },
+   {
+    "location": "Lazurytowa Grota p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Lazurytowa Grota p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Lazurytowa Grota p.2",
+    "attack": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-278-pustynia",
+ "route": {
+  "id": "mw-pustynia-278lvl",
+  "name": "[278lvl] pustynia",
+  "lvlMin": 274,
+  "lvlMax": 281,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Smocze Skalisko",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Piaskowej Burzy s.1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Piaskowej Burzy s.2",
+    "attack": true
+   },
+   {
+    "location": "Namiot Naznaczonych",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Piaskowej Burzy s.2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Piaskowej Burzy s.1",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Smoczej Paszczy p.1",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Smoczej Paszczy p.2",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Smoczej Paszczy p.1",
+    "attack": true
+   },
+   {
+    "location": "Jurta Chaegda",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Smoczej Paszczy p.1",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Szczęk",
+    "attack": true
+   },
+   {
+    "location": "Jurta Czcicieli",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Szczęk",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Namiot Gwardii Smokoszczękich",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Namiot Piechoty Piłowej",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Grota Poświęcenia",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Próby",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Namiot Błogosławionych",
+    "attack": true
+   },
+   {
+    "location": "Jaskinia Odwagi",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Jurta Nomadzka",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Namiot Pustynnych Smoków",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Urwisko Vapora",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Hebrehotha - przedsionek",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Hebrehotha - sala czciciela",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Hebrehotha - przedsionek",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Hebrehotha - sala ofiary",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Hebrehotha - przedsionek",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - wschód",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Skały Umarłych",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   },
+   {
+    "location": "Sępiarnia",
+    "attack": true
+   },
+   {
+    "location": "Pustynia Shaiharrud - zachód",
+    "attack": true
+   }
+  ]
+ }
+}

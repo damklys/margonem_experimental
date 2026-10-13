@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-127-magradit",
+ "route": {
+  "id": "mw-magradit-127lvl",
+  "name": "[127lvl] magradit",
+  "lvlMin": 123,
+  "lvlMax": 130,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Wulkan Politraki p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Wyspa Magradit",
+    "attack": true
+   },
+   {
+    "location": "Wulkan Politraki p.1 - sala 1",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-187-zmutowane-rosliny",
+ "route": {
+  "id": "mw-zmutowane-rosliny-187lvl",
+  "name": "[187lvl] zmutowane rośliny",
+  "lvlMin": 183,
+  "lvlMax": 190,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Kwieciste Przejście",
+    "attack": true
+   },
+   {
+    "location": "Głuchy Las",
+    "attack": true
+   },
+   {
+    "location": "Skarpa Trzech Słów",
+    "attack": true
+   },
+   {
+    "location": "Zapomniana Ścieżyna",
+    "attack": true
+   },
+   {
+    "location": "Skarpa Trzech Słów",
+    "attack": true
+   },
+   {
+    "location": "Głuchy Las",
+    "attack": true
+   },
+   {
+    "location": "Kwieciste Przejście",
+    "attack": true
+   },
+   {
+    "location": "Ukwiecona Skarpa",
+    "attack": true
+   },
+   {
+    "location": "Kwieciste Przejście",
+    "attack": true
+   },
+   {
+    "location": "Złudny Trakt",
+    "attack": true
+   }
+  ]
+ }
+}

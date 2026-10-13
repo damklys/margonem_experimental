@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-minotaury-81-lvl",
+  "name": "[81lvl] minotaury",
+  "lvlMin": 78,
+  "lvlMax": 84,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Pieczara Czaszek",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Wyklętych p.1",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Wyklętych p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Wyklętych p.1",
+    "attack": false
+   },
+   {
+    "location": "Labirynt Wyklętych p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Wyklętych p.1",
+    "attack": false
+   }
+  ]
+ }
+}

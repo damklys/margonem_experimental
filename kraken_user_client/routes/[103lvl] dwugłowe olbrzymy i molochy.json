@@ -1,0 +1,79 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-dwuglowe-olbrzymy-i-molochy-103-lvl",
+  "name": "[103lvl] dwugłowe olbrzymy i molochy",
+  "lvlMin": 100,
+  "lvlMax": 106,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Smocze Góry",
+    "attack": true
+   },
+   {
+    "location": "Smocza Jaskinia",
+    "attack": true
+   },
+   {
+    "location": "Selva Oscura",
+    "attack": false
+   },
+   {
+    "location": "Ruiny Wieży Magów - przedsionek",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.1",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.2",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.3",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.4",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.5",
+    "attack": true
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.4",
+    "attack": false
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.3",
+    "attack": false
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.2",
+    "attack": false
+   },
+   {
+    "location": "Podziemia Zniszczonej Wieży p.1",
+    "attack": false
+   },
+   {
+    "location": "Ruiny Wieży Magów - przedsionek",
+    "attack": false
+   },
+   {
+    "location": "Selva Oscura",
+    "attack": false
+   },
+   {
+    "location": "Przełaz olbrzymów",
+    "attack": false
+   }
+  ]
+ }
+}

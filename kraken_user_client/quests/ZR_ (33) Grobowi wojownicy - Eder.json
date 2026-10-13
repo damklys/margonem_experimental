@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Ghul słabeusz; Ghul cmentarny; Ghul nocny; Ghul wojownik; Ghul szaman; Dowódca Ghuli",
    "n": 100,
-   "route": "ghule (40lvl)"
+   "route": "[40lvl] ghule"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Ghul słabeusz; Ghul cmentarny; Ghul nocny; Ghul wojownik; Ghul szaman; Dowódca Ghuli",
    "n": 250,
-   "route": "ghule (40lvl)"
+   "route": "[40lvl] ghule"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Ghul słabeusz; Ghul cmentarny; Ghul nocny; Ghul wojownik; Ghul szaman; Dowódca Ghuli",
    "n": 500,
-   "route": "ghule (40lvl)"
+   "route": "[40lvl] ghule"
   },
   {
    "type": "goto",

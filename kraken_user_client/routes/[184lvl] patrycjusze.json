@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-184-patrycjusze",
+ "route": {
+  "id": "mw-patrycjusze-184lvl",
+  "name": "[184lvl] patrycjusze",
+  "lvlMin": 180,
+  "lvlMax": 187,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Krypty Bezsennych p.1 s.1",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.1 s.2",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.2 s.2",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.2 s.1",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.3",
+    "attack": true
+   },
+   {
+    "location": "Krypty Bezsennych p.2 s.1",
+    "attack": true
+   }
+  ]
+ }
+}

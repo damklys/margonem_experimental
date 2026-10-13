@@ -1,0 +1,31 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-magazynierzy-77lvl",
+  "name": "[77lvl] magazynierzy",
+  "lvlMin": 73,
+  "lvlMax": 80,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Świątynia Andarum - magazyn p.1",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - magazyn p.2",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - zbrojownia",
+    "attack": true
+   },
+   {
+    "location": "Świątynia Andarum - magazyn p.2",
+    "attack": false
+   }
+  ]
+ }
+}

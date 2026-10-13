@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary; Karhu; Paladyński Apostata",
    "n": 100,
-   "route": "niedźwiedzie (23lvl)"
+   "route": "[23lvl] niedźwiedzie"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary; Karhu; Paladyński Apostata",
    "n": 250,
-   "route": "niedźwiedzie (23lvl)"
+   "route": "[23lvl] niedźwiedzie"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary; Karhu; Paladyński Apostata",
    "n": 500,
-   "route": "niedźwiedzie (23lvl)"
+   "route": "[23lvl] niedźwiedzie"
   },
   {
    "type": "goto",

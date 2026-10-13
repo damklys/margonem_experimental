@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "margoworld:exp-151-mechaniczne-gobliny",
+ "route": {
+  "id": "mw-mechaniczne-gobliny-151lvl",
+  "name": "[151lvl] mechaniczne gobliny",
+  "lvlMin": 147,
+  "lvlMax": 154,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Lokum Złych Goblinów - wieża",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów - zejście p.1",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.2 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów p.2 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Lokum Złych Goblinów - zejście p.1",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -38,7 +38,7 @@
    "type": "kill",
    "mob": "Gnoll wojownik; Gnoll łucznik; Gnoll mistrz ostrzy; Gnoll szaman; Gnoll łowca; Gnoll strażnik; Tarrol Agze; Furruk Kozug; Vari Kruger",
    "n": 100,
-   "route": "gnolle (64lvl)"
+   "route": "[64lvl] gnolle"
   },
   {
    "type": "goto",
@@ -90,7 +90,7 @@
    "type": "kill",
    "mob": "Gnoll wojownik; Gnoll łucznik; Gnoll mistrz ostrzy; Gnoll szaman; Gnoll łowca; Gnoll strażnik; Tarrol Agze; Furruk Kozug; Vari Kruger",
    "n": 250,
-   "route": "gnolle (64lvl)"
+   "route": "[64lvl] gnolle"
   },
   {
    "type": "goto",
@@ -142,7 +142,7 @@
    "type": "kill",
    "mob": "Gnoll wojownik; Gnoll łucznik; Gnoll mistrz ostrzy; Gnoll szaman; Gnoll łowca; Gnoll strażnik; Tarrol Agze; Furruk Kozug; Vari Kruger",
    "n": 500,
-   "route": "gnolle (64lvl)"
+   "route": "[64lvl] gnolle"
   },
   {
    "type": "goto",

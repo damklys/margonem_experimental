@@ -1,0 +1,59 @@
+{
+ "kraken": "trasa",
+ "version": "3.119.202610131930",
+ "source": "wbudowana",
+ "route": {
+  "id": "b-wilcze-plemie-44lvl",
+  "name": "[44lvl] wilcze plemię",
+  "lvlMin": 40,
+  "lvlMax": 47,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Warczące Osuwiska",
+    "attack": true
+   },
+   {
+    "location": "Wilcza Nora p.1",
+    "attack": true
+   },
+   {
+    "location": "Wilcza Nora p.2",
+    "attack": true
+   },
+   {
+    "location": "Wilcza Nora p.1",
+    "attack": false
+   },
+   {
+    "location": "Warczące Osuwiska",
+    "attack": false
+   },
+   {
+    "location": "Wilcza Skarpa",
+    "attack": true
+   },
+   {
+    "location": "Legowisko Wilczej Hordy",
+    "attack": true
+   },
+   {
+    "location": "Krasowa Pieczara p.1",
+    "attack": true
+   },
+   {
+    "location": "Krasowa Pieczara p.2",
+    "attack": true
+   },
+   {
+    "location": "Krasowa Pieczara p.3",
+    "attack": true
+   },
+   {
+    "location": "Legowisko Wilczej Hordy",
+    "attack": false
+   }
+  ]
+ }
+}
