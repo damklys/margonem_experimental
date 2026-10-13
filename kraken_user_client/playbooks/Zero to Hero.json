@@ -174,12 +174,6 @@
      "stat": "lvl",
      "op": "ge",
      "value": 27
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "lt",
-     "value": 42
     }
    ]
   },
