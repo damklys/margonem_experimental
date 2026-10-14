@@ -22,13 +22,25 @@
    "8": "Słoneczne frędzle"
   },
   "skills": {
-   "b": {}
+   "b": {
+    "94": 10,
+    "209": 1,
+    "213": 2,
+    "263": 10,
+    "168": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    209
+   ],
+   "repeat": true
   }
  }
 }

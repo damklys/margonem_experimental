@@ -22,13 +22,20 @@
    "8": "Wzmocnione podeszwy"
   },
   "skills": {
-   "b": {}
+   "b": {
+    "94": 3,
+    "209": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
   }
  }
 }
