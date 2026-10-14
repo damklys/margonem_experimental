@@ -1,0 +1,1856 @@
+[
+ {
+  "id": 146914,
+  "name": "Mushita",
+  "lvl": 23,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/st-puma.gif",
+  "locations": [
+   {
+    "map": "Grota Dzikiego Kota",
+    "x": 23,
+    "y": 11,
+    "mapId": 580
+   }
+  ]
+ },
+ {
+  "id": 18984,
+  "name": "Kotołak Tropiciel",
+  "lvl": 27,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e1/kotolak_lowca.gif",
+  "locations": [
+   {
+    "map": "Las Tropicieli",
+    "x": 51,
+    "y": 75,
+    "mapId": 632
+   }
+  ]
+ },
+ {
+  "id": 222511,
+  "name": "Shae Phu",
+  "lvl": 30,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/demonszef.gif",
+  "locations": [
+   {
+    "map": "Przeklęta Strażnica - podziemia p.2 s.1",
+    "x": 25,
+    "y": 24,
+    "mapId": 5738
+   },
+   {
+    "map": "Przeklęta Strażnica - podziemia p.2 s.3",
+    "x": 29,
+    "y": 19,
+    "mapId": 5740
+   }
+  ]
+ },
+ {
+  "id": 256372,
+  "name": "Zorg Jednooki Baron",
+  "lvl": 33,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/zbir-e2-zorg.gif",
+  "locations": [
+   {
+    "map": "Schowek na Łupy",
+    "x": 17,
+    "y": 57,
+    "mapId": 2532
+   }
+  ]
+ },
+ {
+  "id": 264342,
+  "name": "Władca rzek",
+  "lvl": 37,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/gobmag2.gif",
+  "locations": [
+   {
+    "map": "Podmokła Dolina",
+    "x": 9,
+    "y": 11,
+    "mapId": 727
+   }
+  ]
+ },
+ {
+  "id": 207860,
+  "name": "Gobbos",
+  "lvl": 40,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/gobsamurai.gif",
+  "locations": [
+   {
+    "map": "Jaskinia Pogardy",
+    "x": 10,
+    "y": 7,
+    "mapId": 3149
+   }
+  ]
+ },
+ {
+  "id": 160694,
+  "name": "Tyrtajos",
+  "lvl": 42,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/dzik.gif",
+  "locations": [
+   {
+    "map": "Pieczara Kwiku - sala 2",
+    "x": 13,
+    "y": 13,
+    "mapId": 4157
+   }
+  ]
+ },
+ {
+  "id": 235051,
+  "name": "Tollok Shimger",
+  "lvl": 47,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/tollok_shimger.gif",
+  "locations": [
+   {
+    "map": "Skalne Turnie",
+    "x": 48,
+    "y": 5,
+    "mapId": 5293
+   }
+  ]
+ },
+ {
+  "id": 62345,
+  "name": "Szczęt alias Gładki",
+  "lvl": 47,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/zbir-szczet.gif",
+  "locations": [
+   {
+    "map": "Stary Kupiecki Trakt",
+    "x": 12,
+    "y": 76,
+    "mapId": 2308
+   }
+  ]
+ },
+ {
+  "id": 190472,
+  "name": "Agar",
+  "lvl": 51,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/glut_agar.gif",
+  "locations": [
+   {
+    "map": "Mokra Grota p.2",
+    "x": 18,
+    "y": 38,
+    "mapId": 177
+   }
+  ]
+ },
+ {
+  "id": 16818,
+  "name": "Razuglag Oklash",
+  "lvl": 51,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/razuglag.gif",
+  "locations": [
+   {
+    "map": "Stare Wyrobisko p.3",
+    "x": 5,
+    "y": 6,
+    "mapId": 125
+   }
+  ]
+ },
+ {
+  "id": 80749,
+  "name": "Foverk Turrim",
+  "lvl": 57,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/kobold07.gif",
+  "locations": [
+   {
+    "map": "Lazurytowa Grota p.4",
+    "x": 19,
+    "y": 21,
+    "mapId": 2729
+   }
+  ]
+ },
+ {
+  "id": 256374,
+  "name": "Owadzia Matka",
+  "lvl": 58,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/zadlak-e2-owadzia-matka.gif",
+  "locations": [
+   {
+    "map": "Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki",
+    "x": 33,
+    "y": 15,
+    "mapId": 5395
+   }
+  ]
+ },
+ {
+  "id": 37049,
+  "name": "Furruk Kozug",
+  "lvl": 66,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/gnoll12.gif",
+  "locations": [
+   {
+    "map": "Jaskinia Gnollich Szamanów - komnata Kozuga",
+    "x": 42,
+    "y": 14,
+    "mapId": 3437
+   }
+  ]
+ },
+ {
+  "id": 76767,
+  "name": "Vari Kruger",
+  "lvl": 66,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/gnoll11.gif",
+  "locations": [
+   {
+    "map": "Namiot Vari Krugera",
+    "x": 4,
+    "y": 4,
+    "mapId": 2646
+   }
+  ]
+ },
+ {
+  "id": 268359,
+  "name": "Jotun",
+  "lvl": 70,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/kam_olbrzym-b.gif",
+  "locations": [
+   {
+    "map": "Kamienna Jaskinia - sala 3",
+    "x": 11,
+    "y": 22,
+    "mapId": 6537
+   }
+  ]
+ },
+ {
+  "id": 271630,
+  "name": "Tollok Utumutu",
+  "lvl": 73,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/tollok_jask_utumatu.gif",
+  "locations": [
+   {
+    "map": "Głębokie Skałki p.4",
+    "x": 7,
+    "y": 18,
+    "mapId": 6633
+   }
+  ]
+ },
+ {
+  "id": 271629,
+  "name": "Tollok Atamatu",
+  "lvl": 73,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/tollok_jask_atamatu.gif",
+  "locations": [
+   {
+    "map": "Głębokie Skałki p.3",
+    "x": 13,
+    "y": 20,
+    "mapId": 6632
+   }
+  ]
+ },
+ {
+  "id": 271623,
+  "name": "Lisz",
+  "lvl": 75,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/lisz_demilisze.gif",
+  "locations": [
+   {
+    "map": "Krypty Dusz Śniegu p.3 - komnata Lisza",
+    "x": 16,
+    "y": 18,
+    "mapId": 6627
+   }
+  ]
+ },
+ {
+  "id": 271624,
+  "name": "Grabarz świątynny",
+  "lvl": 80,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/nieu_mnich_grabarz.gif",
+  "locations": [
+   {
+    "map": "Erem Czarnego Słońca p.5",
+    "x": 28,
+    "y": 14,
+    "mapId": 6623
+   }
+  ]
+ },
+ {
+  "id": 271628,
+  "name": "Wielka Stopa",
+  "lvl": 82,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wlochacze_wielka_stopa.gif",
+  "locations": [
+   {
+    "map": "Firnowa Grota p.2 s.1",
+    "x": 13,
+    "y": 8,
+    "mapId": 3530
+   }
+  ]
+ },
+ {
+  "id": 271625,
+  "name": "Podły zbrojmistrz",
+  "lvl": 82,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/magaz_zbrojmistrz.gif",
+  "locations": [
+   {
+    "map": "Świątynia Andarum - zbrojownia",
+    "x": 25,
+    "y": 5,
+    "mapId": 6615
+   }
+  ]
+ },
+ {
+  "id": 271626,
+  "name": "Choukker",
+  "lvl": 84,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/dlawiciel5.gif",
+  "locations": [
+   {
+    "map": "Wylęgarnia Choukkerów p.1",
+    "x": 40,
+    "y": 19,
+    "mapId": 6634
+   },
+   {
+    "map": "Wylęgarnia Choukkerów p.3",
+    "x": 21,
+    "y": 19,
+    "mapId": 6636
+   }
+  ]
+ },
+ {
+  "id": 278128,
+  "name": "Nadzorczyni krasnoludów",
+  "lvl": 88,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/nadzorczyni_krasnoludow.gif",
+  "locations": [
+   {
+    "map": "Kopalnia Margorii",
+    "x": 28,
+    "y": 54,
+    "mapId": 6772
+   }
+  ]
+ },
+ {
+  "id": 278129,
+  "name": "Morthen",
+  "lvl": 89,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/krasnolud_boss.gif",
+  "locations": [
+   {
+    "map": "Margoria - Sala Królewska",
+    "x": 21,
+    "y": 11,
+    "mapId": 6774
+   }
+  ]
+ },
+ {
+  "id": 278190,
+  "name": "Leśne Widmo",
+  "lvl": 92,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/lesne_widmo.gif",
+  "locations": [
+   {
+    "map": "Zapomniany Święty Gaj p.3",
+    "x": 20,
+    "y": 16,
+    "mapId": 1325
+   }
+  ]
+ },
+ {
+  "id": 122272,
+  "name": "Żelazoręki Ohydziarz",
+  "lvl": 92,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/ugrape2.gif",
+  "locations": [
+   {
+    "map": "Grota Samotnych Dusz p.6",
+    "x": 43,
+    "y": 14,
+    "mapId": 3466
+   }
+  ]
+ },
+ {
+  "id": 32613,
+  "name": "Goplana",
+  "lvl": 93,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/goplana.gif",
+  "locations": [
+   {
+    "map": "Kamienna Strażnica - Sanktuarium",
+    "x": 12,
+    "y": 7,
+    "mapId": 1151
+   }
+  ]
+ },
+ {
+  "id": 13324,
+  "name": "Gnom Figlid",
+  "lvl": 96,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/gnom_figlid.gif",
+  "locations": [
+   {
+    "map": "Zagrzybiałe Ścieżki p.3",
+    "x": 21,
+    "y": 20,
+    "mapId": 6781
+   }
+  ]
+ },
+ {
+  "id": 15835,
+  "name": "Centaur Zyfryd",
+  "lvl": 99,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/cent-zyfryd.gif",
+  "locations": [
+   {
+    "map": "Dolina Centaurów",
+    "x": 47,
+    "y": 25,
+    "mapId": 3765
+   }
+  ]
+ },
+ {
+  "id": 198558,
+  "name": "Kambion",
+  "lvl": 101,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/kambion.gif",
+  "locations": [
+   {
+    "map": "Namiot Kambiona",
+    "x": 10,
+    "y": 6,
+    "mapId": 4998
+   }
+  ]
+ },
+ {
+  "id": 45696,
+  "name": "Jertek Moxos",
+  "lvl": 105,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/moloch-jertek.gif",
+  "locations": [
+   {
+    "map": "Podziemia Zniszczonej Wieży p.5",
+    "x": 19,
+    "y": 23,
+    "mapId": 6938
+   }
+  ]
+ },
+ {
+  "id": 273386,
+  "name": "Miłośnik rycerzy",
+  "lvl": 108,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/blotniaki_milosnik_rycerzy.gif",
+  "locations": [
+   {
+    "map": "Zabłocona Jama p.2 - Sala Błotnistych Odmętów",
+    "x": 30,
+    "y": 42,
+    "mapId": 6944
+   }
+  ]
+ },
+ {
+  "id": 273385,
+  "name": "Miłośnik magii",
+  "lvl": 108,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/blotniaki_milosnik_magii.gif",
+  "locations": [
+   {
+    "map": "Zabłocona Jama p.2 - Sala Magicznego Błota",
+    "x": 39,
+    "y": 15,
+    "mapId": 6946
+   }
+  ]
+ },
+ {
+  "id": 273384,
+  "name": "Miłośnik łowców",
+  "lvl": 108,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/blotniaki_milosnik_lowcow.gif",
+  "locations": [
+   {
+    "map": "Zabłocona Jama p.2 - Sala Duszącej Stęchlizny",
+    "x": 33,
+    "y": 31,
+    "mapId": 6945
+   }
+  ]
+ },
+ {
+  "id": 296118,
+  "name": "Łowca czaszek",
+  "lvl": 112,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/alghul-czaszka-1a.gif",
+  "locations": [
+   {
+    "map": "Skalne Cmentarzysko p.4",
+    "x": 25,
+    "y": 14,
+    "mapId": 7066
+   }
+  ]
+ },
+ {
+  "id": 296267,
+  "name": "Ozirus Władca Hieroglifów",
+  "lvl": 115,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/mumia-ozirus.gif",
+  "locations": [
+   {
+    "map": "Piramida Pustynnego Władcy p.3",
+    "x": 22,
+    "y": 13,
+    "mapId": 7069
+   }
+  ]
+ },
+ {
+  "id": 318402,
+  "name": "Morski potwór",
+  "lvl": 118,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/osmiornica-1b.gif",
+  "locations": [
+   {
+    "map": "Jama Morskiej Macki p.1 - sala 3",
+    "x": 9,
+    "y": 12,
+    "mapId": 7357
+   }
+  ]
+ },
+ {
+  "id": 318548,
+  "name": "Krab pustelnik",
+  "lvl": 124,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/krab_big3.gif",
+  "locations": [
+   {
+    "map": "Opuszczony statek - pokład",
+    "x": 7,
+    "y": 7,
+    "mapId": 7370
+   },
+   {
+    "map": "Wyspa Rem",
+    "x": 63,
+    "y": 33,
+    "mapId": 1741
+   }
+  ]
+ },
+ {
+  "id": 319132,
+  "name": "Borgoros Garamir III",
+  "lvl": 124,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/ingotia_minotaur-7a.gif",
+  "locations": [
+   {
+    "map": "Twierdza Rogogłowych - Sala Byka",
+    "x": 16,
+    "y": 7,
+    "mapId": 7368
+   }
+  ]
+ },
+ {
+  "id": 318758,
+  "name": "Stworzyciel",
+  "lvl": 125,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/stworzyciel.gif",
+  "locations": [
+   {
+    "map": "Piaskowa Pułapka - Grota Piaskowej Śmierci",
+    "x": 22,
+    "y": 10,
+    "mapId": 7375
+   }
+  ]
+ },
+ {
+  "id": 296266,
+  "name": "Ifryt",
+  "lvl": 128,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/magradit_ifryt.gif",
+  "locations": [
+   {
+    "map": "Wulkan Politraki p.1 - sala 3",
+    "x": 10,
+    "y": 51,
+    "mapId": 7057
+   }
+  ]
+ },
+ {
+  "id": 120472,
+  "name": "Młody Jack Truciciel",
+  "lvl": 131,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/pirat01.gif",
+  "locations": [
+   {
+    "map": "Ukryta Grota Morskich Diabłów - magazyn",
+    "x": 25,
+    "y": 16,
+    "mapId": 3409
+   }
+  ]
+ },
+ {
+  "id": 296269,
+  "name": "Helga Opiekunka Rumu",
+  "lvl": 131,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/pirat-2b.gif",
+  "locations": [
+   {
+    "map": "Ukryta Grota Morskich Diabłów - siedziba",
+    "x": 15,
+    "y": 23,
+    "mapId": 1527
+   }
+  ]
+ },
+ {
+  "id": 296270,
+  "name": "Henry Kaprawe Oko",
+  "lvl": 131,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e1/pirat5b.gif",
+  "locations": [
+   {
+    "map": "Ukryta Grota Morskich Diabłów - skarbiec",
+    "x": 14,
+    "y": 14,
+    "mapId": 1526
+   }
+  ]
+ },
+ {
+  "id": 318760,
+  "name": "Eol",
+  "lvl": 135,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/piaskowy_potwor-6a.gif",
+  "locations": [
+   {
+    "map": "Piaszczysta Grota p.1 - sala 2",
+    "x": 12,
+    "y": 8,
+    "mapId": 7352
+   }
+  ]
+ },
+ {
+  "id": 192595,
+  "name": "Grubber Ochlaj",
+  "lvl": 136,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/grubber-ochlaj.gif",
+  "locations": [
+   {
+    "map": "Kopalnia Żółtego Kruszcu p.2 - sala 2",
+    "x": 15,
+    "y": 10,
+    "mapId": 6956
+   }
+  ]
+ },
+ {
+  "id": 333058,
+  "name": "Mistrz Worundriel",
+  "lvl": 139,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/worundriel02.gif",
+  "locations": [
+   {
+    "map": "Kuźnia Worundriela - Komnata Żaru",
+    "x": 24,
+    "y": 31,
+    "mapId": 7466
+   }
+  ]
+ },
+ {
+  "id": 319133,
+  "name": "Wójt Fistuła",
+  "lvl": 144,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/goral-e2-wojt-fistula.gif",
+  "locations": [
+   {
+    "map": "Chata wójta Fistuły p.1",
+    "x": 13,
+    "y": 7,
+    "mapId": 7340
+   }
+  ]
+ },
+ {
+  "id": 319134,
+  "name": "Teściowa Rumcajsa",
+  "lvl": 145,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/goral-e2-tesciowa-rumcajsa.gif",
+  "locations": [
+   {
+    "map": "Chata Teściowej",
+    "x": 13,
+    "y": 7,
+    "mapId": 7338
+   }
+  ]
+ },
+ {
+  "id": 333107,
+  "name": "Berserker Amuno",
+  "lvl": 148,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/amuno.gif",
+  "locations": [
+   {
+    "map": "Cenotaf Berserkerów p.1 - sala 2",
+    "x": 23,
+    "y": 13,
+    "mapId": 7454
+   }
+  ]
+ },
+ {
+  "id": 333060,
+  "name": "Fodug Zolash",
+  "lvl": 150,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/fodug_zolash.gif",
+  "locations": [
+   {
+    "map": "Mała Twierdza - sala główna",
+    "x": 16,
+    "y": 5,
+    "mapId": 7441
+   }
+  ]
+ },
+ {
+  "id": 333264,
+  "name": "Goons Asterus",
+  "lvl": 154,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/goons_asterus-1a.gif",
+  "locations": [
+   {
+    "map": "Lokum Złych Goblinów - warsztat",
+    "x": 18,
+    "y": 11,
+    "mapId": 7474
+   }
+  ]
+ },
+ {
+  "id": 154609,
+  "name": "Adariel",
+  "lvl": 155,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/tri_adariel.gif",
+  "locations": [
+   {
+    "map": "Laboratorium Adariel",
+    "x": 20,
+    "y": 25,
+    "mapId": 1322
+   }
+  ]
+ },
+ {
+  "id": 320880,
+  "name": "Burkog Lorulk",
+  "lvl": 160,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/orkczd.gif",
+  "locations": [
+   {
+    "map": "Grota Orczej Hordy p.2 s.3",
+    "x": 19,
+    "y": 16,
+    "mapId": 5856
+   }
+  ]
+ },
+ {
+  "id": 333108,
+  "name": "Sheba Orcza Szamanka",
+  "lvl": 160,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/r_orc_sheba.gif",
+  "locations": [
+   {
+    "map": "Grota Orczych Szamanów p.3 s.1",
+    "x": 16,
+    "y": 10,
+    "mapId": 5851
+   }
+  ]
+ },
+ {
+  "id": 228348,
+  "name": "Shakkru",
+  "lvl": 160,
+  "grp": false,
+  "aggressive": false,
+  "type": "NPC z dialogiem",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/r_orc_shakkru.gif",
+  "locations": [
+   {
+    "map": "Grota Orczych Szamanów p.3 s.1",
+    "x": 12,
+    "y": 4,
+    "mapId": 5851
+   }
+  ]
+ },
+ {
+  "id": 227363,
+  "name": "Duch Władcy Klanów",
+  "lvl": 165,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/duch_wladcy_kl.gif",
+  "locations": [
+   {
+    "map": "Nawiedzone Kazamaty p.4",
+    "x": 15,
+    "y": 30,
+    "mapId": 5872
+   }
+  ]
+ },
+ {
+  "id": 227436,
+  "name": "Bragarth Myśliwy Dusz",
+  "lvl": 170,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/praork_low_elita.gif",
+  "locations": [
+   {
+    "map": "Sala Rady Orków",
+    "x": 22,
+    "y": 26,
+    "mapId": 5861
+   }
+  ]
+ },
+ {
+  "id": 227435,
+  "name": "Fursharag Pożeracz Umysłów",
+  "lvl": 170,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/praork_mag_elita.gif",
+  "locations": [
+   {
+    "map": "Sala Rady Orków",
+    "x": 9,
+    "y": 10,
+    "mapId": 5861
+   }
+  ]
+ },
+ {
+  "id": 227434,
+  "name": "Ziuggrael Strażnik Królowej",
+  "lvl": 170,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/praork_woj_elita.gif",
+  "locations": [
+   {
+    "map": "Sala Rady Orków",
+    "x": 40,
+    "y": 7,
+    "mapId": 5861
+   }
+  ]
+ },
+ {
+  "id": 227417,
+  "name": "Lusgrathera Królowa Pramatka",
+  "lvl": 175,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/prakrolowa.gif",
+  "locations": [
+   {
+    "map": "Sala Królewska",
+    "x": 22,
+    "y": 23,
+    "mapId": 5862
+   }
+  ]
+ },
+ {
+  "id": 320746,
+  "name": "Królowa Śniegu",
+  "lvl": 175,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/krolowa-sniegu.gif",
+  "locations": [
+   {
+    "map": "Kryształowa Grota - Sala Smutku",
+    "x": 21,
+    "y": 9,
+    "mapId": 7345
+   }
+  ]
+ },
+ {
+  "id": 344659,
+  "name": "Wrzosera",
+  "lvl": 177,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wrzosera-1b.gif",
+  "locations": [
+   {
+    "map": "Drzewo Dusz p.2",
+    "x": 11,
+    "y": 48,
+    "mapId": 6055
+   }
+  ]
+ },
+ {
+  "id": 344657,
+  "name": "Chryzoprenia",
+  "lvl": 177,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/chryzoprenia-1a.gif",
+  "locations": [
+   {
+    "map": "Drzewo Dusz p.2",
+    "x": 29,
+    "y": 8,
+    "mapId": 6055
+   }
+  ]
+ },
+ {
+  "id": 344679,
+  "name": "Cantedewia",
+  "lvl": 177,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/cantedewia-1a.gif",
+  "locations": [
+   {
+    "map": "Drzewo Dusz p.2",
+    "x": 49,
+    "y": 21,
+    "mapId": 6055
+   }
+  ]
+ },
+ {
+  "id": 342484,
+  "name": "Ogr Stalowy Pazur",
+  "lvl": 183,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/ogr_stalowy_pazur-1a.gif",
+  "locations": [
+   {
+    "map": "Ogrza Kawerna p.4",
+    "x": 16,
+    "y": 10,
+    "mapId": 7693
+   }
+  ]
+ },
+ {
+  "id": 241643,
+  "name": "Torunia Ankelwald",
+  "lvl": 186,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/thuz-patr1.gif",
+  "locations": [
+   {
+    "map": "Krypty Bezsennych p.3",
+    "x": 17,
+    "y": 5,
+    "mapId": 6053
+   }
+  ]
+ },
+ {
+  "id": 345546,
+  "name": "Pięknotka Mięsożerna",
+  "lvl": 189,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/zmutowana-roslinka.gif",
+  "locations": [
+   {
+    "map": "Skarpa Trzech Słów",
+    "x": 28,
+    "y": 38,
+    "mapId": 4185
+   }
+  ]
+ },
+ {
+  "id": 58697,
+  "name": "Breheret Żelazny Łeb",
+  "lvl": 192,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/draki-breheret-1b.gif",
+  "locations": [
+   {
+    "map": "Przysiółek Valmirów",
+    "x": 29,
+    "y": 11,
+    "mapId": 2063
+   }
+  ]
+ },
+ {
+  "id": 342481,
+  "name": "Cerasus",
+  "lvl": 193,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/cerasus-1a.gif",
+  "locations": [
+   {
+    "map": "Starodrzew Przedwiecznych p.2",
+    "x": 10,
+    "y": 17,
+    "mapId": 7689
+   }
+  ]
+ },
+ {
+  "id": 342482,
+  "name": "Mysiur Myświórowy Król",
+  "lvl": 197,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/mysiur_myswiorowy_krol-1a.gif",
+  "locations": [
+   {
+    "map": "Szlamowe Kanały p.2 - sala 3",
+    "x": 19,
+    "y": 7,
+    "mapId": 7701
+   }
+  ]
+ },
+ {
+  "id": 234251,
+  "name": "Sadolia Nadzorczyni Hurys",
+  "lvl": 200,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-sadolia.gif",
+  "locations": [
+   {
+    "map": "Przerażające Sypialnie",
+    "x": 18,
+    "y": 11,
+    "mapId": 5940
+   }
+  ]
+ },
+ {
+  "id": 234424,
+  "name": "Sataniel Skrytobójca",
+  "lvl": 204,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-sataniel.gif",
+  "locations": [
+   {
+    "map": "Sala Skaryfikacji Grzeszników",
+    "x": 20,
+    "y": 14,
+    "mapId": 7695
+   }
+  ]
+ },
+ {
+  "id": 234361,
+  "name": "Bergermona Krwawa Hrabina",
+  "lvl": 204,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-bergermona.gif",
+  "locations": [
+   {
+    "map": "Sale Rozdzierania",
+    "x": 43,
+    "y": 60,
+    "mapId": 5945
+   }
+  ]
+ },
+ {
+  "id": 234429,
+  "name": "Annaniel Wysysacz Marzeń",
+  "lvl": 204,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-annaniel.gif",
+  "locations": [
+   {
+    "map": "Tajemnicza Siedziba",
+    "x": 26,
+    "y": 22,
+    "mapId": 5941
+   }
+  ]
+ },
+ {
+  "id": 234431,
+  "name": "Gothardus Kolekcjoner Głów",
+  "lvl": 204,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-gothardus.gif",
+  "locations": [
+   {
+    "map": "Tajemnicza Siedziba",
+    "x": 44,
+    "y": 22,
+    "mapId": 5941
+   }
+  ]
+ },
+ {
+  "id": 234421,
+  "name": "Zufulus Smakosz Serc",
+  "lvl": 205,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/sekta-zufulus.gif",
+  "locations": [
+   {
+    "map": "Sala Tysiąca Świec",
+    "x": 47,
+    "y": 30,
+    "mapId": 5943
+   }
+  ]
+ },
+ {
+  "id": 52950,
+  "name": "Czempion Furboli",
+  "lvl": 210,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/forbol03.gif",
+  "locations": [
+   {
+    "map": "Zalana Grota",
+    "x": 16,
+    "y": 9,
+    "mapId": 1912
+   }
+  ]
+ },
+ {
+  "id": 25041,
+  "name": "Arachniregina Colosseus",
+  "lvl": 214,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/regina-e2.gif",
+  "locations": [
+   {
+    "map": "Arachnitopia p.6",
+    "x": 12,
+    "y": 14,
+    "mapId": 1159
+   }
+  ]
+ },
+ {
+  "id": 25124,
+  "name": "Rycerz z za małym mieczem",
+  "lvl": 214,
+  "grp": false,
+  "aggressive": false,
+  "type": "NPC z dialogiem",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/pajeczy16.gif",
+  "locations": [
+   {
+    "map": "Arachnitopia p.6",
+    "x": 8,
+    "y": 9,
+    "mapId": 1159
+   }
+  ]
+ },
+ {
+  "id": 360457,
+  "name": "Al'diphrin Ilythirahel",
+  "lvl": 218,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/drow-aldiphrin-wladca.gif",
+  "locations": [
+   {
+    "map": "Erem Aldiphrina",
+    "x": 23,
+    "y": 11,
+    "mapId": 7859
+   }
+  ]
+ },
+ {
+  "id": 365024,
+  "name": "Marlloth Malignitas",
+  "lvl": 220,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/drider-marlloth.gif",
+  "locations": [
+   {
+    "map": "Ołtarz Pajęczej Bogini",
+    "x": 29,
+    "y": 14,
+    "mapId": 7864
+   }
+  ]
+ },
+ {
+  "id": 368335,
+  "name": "Arytodam olbrzymi",
+  "lvl": 226,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/arytodam_olbrzymi-1b.gif",
+  "locations": [
+   {
+    "map": "Gnijące Topielisko",
+    "x": 27,
+    "y": 58,
+    "mapId": 7827
+   }
+  ]
+ },
+ {
+  "id": 368336,
+  "name": "Mocny Maddoks",
+  "lvl": 231,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/mocny_maddoks-1b.gif",
+  "locations": [
+   {
+    "map": "Jaszczurze Korytarze p.2 - sala 5",
+    "x": 9,
+    "y": 9,
+    "mapId": 7843
+   }
+  ]
+ },
+ {
+  "id": 379559,
+  "name": "Fangaj",
+  "lvl": 235,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/grzyb-humanoid-1b.gif",
+  "locations": [
+   {
+    "map": "Gardziel Podgnitych Mchów p.3",
+    "x": 33,
+    "y": 33,
+    "mapId": 8181
+   }
+  ]
+ },
+ {
+  "id": 400159,
+  "name": "Luna",
+  "lvl": 237,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/elgary_luna-1b.gif",
+  "locations": [
+   {
+    "map": "Nocna Pustelnia p.2",
+    "x": 6,
+    "y": 27,
+    "mapId": 8556
+   }
+  ]
+ },
+ {
+  "id": 400160,
+  "name": "Noumenia",
+  "lvl": 237,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/elgary_noumenia-1a.gif",
+  "locations": [
+   {
+    "map": "Nocna Pustelnia p.2",
+    "x": 56,
+    "y": 30,
+    "mapId": 8556
+   }
+  ]
+ },
+ {
+  "id": 127762,
+  "name": "Dendroculus",
+  "lvl": 240,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/dendroculus.gif",
+  "locations": [
+   {
+    "map": "Źródło Zakorzenionego Ludu",
+    "x": 35,
+    "y": 46,
+    "mapId": 3597
+   }
+  ]
+ },
+ {
+  "id": 398437,
+  "name": "Silvanasus",
+  "lvl": 241,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/silvanasus.gif",
+  "locations": [
+   {
+    "map": "Krzaczasta Grota - sala główna",
+    "x": 8,
+    "y": 17,
+    "mapId": 3628
+   }
+  ]
+ },
+ {
+  "id": 188257,
+  "name": "Tolypeutes",
+  "lvl": 245,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/bolita.gif",
+  "locations": [
+   {
+    "map": "Złota Góra p.3 - sala 2",
+    "x": 5,
+    "y": 6,
+    "mapId": 5662
+   }
+  ]
+ },
+ {
+  "id": 53398,
+  "name": "Cuaitl Citlalin",
+  "lvl": 250,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/maho-cuaitl.gif",
+  "locations": [
+   {
+    "map": "Chantli Cuaitla Citlalina",
+    "x": 13,
+    "y": 8,
+    "mapId": 5672
+   }
+  ]
+ },
+ {
+  "id": 188256,
+  "name": "Yaotl",
+  "lvl": 258,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/mahoplowca.gif",
+  "locations": [
+   {
+    "map": "Zachodni Mictlan p.9",
+    "x": 7,
+    "y": 10,
+    "mapId": 5695
+   }
+  ]
+ },
+ {
+  "id": 54716,
+  "name": "Quetzalcoatl",
+  "lvl": 258,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/quetzalcoatl-1a.gif",
+  "locations": [
+   {
+    "map": "Wschodni Mictlan p.9",
+    "x": 11,
+    "y": 9,
+    "mapId": 5685
+   }
+  ]
+ },
+ {
+  "id": 379560,
+  "name": "Wabicielka",
+  "lvl": 260,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/trist2_wabicielka-1a.gif",
+  "locations": [
+   {
+    "map": "Siedlisko Przyjemnej Woni - źródło",
+    "x": 19,
+    "y": 13,
+    "mapId": 8187
+   }
+  ]
+ },
+ {
+  "id": 383726,
+  "name": "Pogardliwa Sybilla",
+  "lvl": 263,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/tri2_witch_e2.gif",
+  "locations": [
+   {
+    "map": "Potępione Zamczysko - pracownia",
+    "x": 10,
+    "y": 10,
+    "mapId": 4057
+   }
+  ]
+ },
+ {
+  "id": 399621,
+  "name": "Wysłannik Tellarów",
+  "lvl": 267,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wyslannik_tellarow-1a.gif",
+  "locations": [
+   {
+    "map": "Krater Uwięzienia",
+    "x": 55,
+    "y": 66,
+    "mapId": 8541
+   }
+  ]
+ },
+ {
+  "id": 398426,
+  "name": "Fovos",
+  "lvl": 270,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/fovos-1.gif",
+  "locations": [
+   {
+    "map": "Szepczące Wyrwy p.3",
+    "x": 9,
+    "y": 10,
+    "mapId": 8554
+   }
+  ]
+ },
+ {
+  "id": 185508,
+  "name": "Chopesz",
+  "lvl": 272,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/chopesh2.gif",
+  "locations": [
+   {
+    "map": "Pustynne Katakumby - Komnata Gwałtownej Śmierci",
+    "x": 34,
+    "y": 36,
+    "mapId": 3035
+   }
+  ]
+ },
+ {
+  "id": 60538,
+  "name": "Neferkar Set",
+  "lvl": 274,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/neferkar_set-1a.gif",
+  "locations": [
+   {
+    "map": "Pustynne Katakumby - Grobowiec Seta",
+    "x": 47,
+    "y": 62,
+    "mapId": 3039
+   }
+  ]
+ },
+ {
+  "id": 115000,
+  "name": "Chaegd Agnrakh",
+  "lvl": 280,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/bar_smokoszef.gif",
+  "locations": [
+   {
+    "map": "Świątynia Hebrehotha - sala czciciela",
+    "x": 25,
+    "y": 21,
+    "mapId": 3341
+   }
+  ]
+ },
+ {
+  "id": 115103,
+  "name": "Vaenra Charkhaam",
+  "lvl": 280,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/bar_smoczyca.gif",
+  "locations": [
+   {
+    "map": "Świątynia Hebrehotha - sala ofiary",
+    "x": 29,
+    "y": 27,
+    "mapId": 3340
+   }
+  ]
+ },
+ {
+  "id": 207430,
+  "name": "Terrozaur",
+  "lvl": 280,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/terrorzaur_pus2.gif",
+  "locations": [
+   {
+    "map": "Urwisko Vapora",
+    "x": 84,
+    "y": 48,
+    "mapId": 3327
+   }
+  ]
+ },
+ {
+  "id": 398424,
+  "name": "Mazurnik Przybrzeżny",
+  "lvl": 284,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/mazurnik_przybrzezny-1a.gif",
+  "locations": [
+   {
+    "map": "Źródło Narumi",
+    "x": 42,
+    "y": 79,
+    "mapId": 8532
+   }
+  ]
+ },
+ {
+  "id": 240586,
+  "name": "Nymphemonia",
+  "lvl": 287,
+  "grp": true,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/nymphemonia.gif",
+  "locations": [
+   {
+    "map": "Drzewo Życia p.3",
+    "x": 11,
+    "y": 8,
+    "mapId": 6065
+   }
+  ]
+ },
+ {
+  "id": 63630,
+  "name": "Artenius",
+  "lvl": 300,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wl-mrozu03.gif",
+  "locations": [
+   {
+    "map": "Sala Lodowej Magii",
+    "x": 36,
+    "y": 46,
+    "mapId": 2353
+   }
+  ]
+ },
+ {
+  "id": 63629,
+  "name": "Furion",
+  "lvl": 300,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wl-mrozu02.gif",
+  "locations": [
+   {
+    "map": "Sala Mroźnych Strzał",
+    "x": 31,
+    "y": 21,
+    "mapId": 2356
+   }
+  ]
+ },
+ {
+  "id": 63628,
+  "name": "Zorin",
+  "lvl": 300,
+  "grp": false,
+  "aggressive": false,
+  "type": "potworek (nieagresywny)",
+  "icon": "https://micc.garmory-cdn.cloud/obrazki/npc/e2/wl-mrozu01.gif",
+  "locations": [
+   {
+    "map": "Sala Mroźnych Szeptów",
+    "x": 20,
+    "y": 42,
+    "mapId": 2354
+   }
+  ]
+ }
+]
