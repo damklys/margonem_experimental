@@ -2988,14 +2988,19 @@
       let hops;
       const bad = blocked.get(cur) || new Set();
       let zone = Nav.zone(cur);
+      let zoneSwitched = false;
       const zl = zonesOf(cur);
       if (zl && bad.size) {
         // Część mapy bez zablokowanych przejść (Ithan: zablokowana Jaskinia Łowców p.1 → część z Wioską Gnolli).
         const ok = zl.map((_, i) => i).filter((i) => !zl[i].some((n) => bad.has(n)));
-        if (ok.length && !ok.includes(zone)) zone = ok[0];
+        if (ok.length && !ok.includes(zone)) {
+          zone = ok[0];
+          zoneSwitched = true;
+        }
       }
-      let firstExits = live?.here.length ? live.here.filter((n) => !bad.has(n)) : null;
-      if (bad.size && !firstExits?.length) firstExits = [...new Set(Gw.list().map((g) => g.name))].filter((n) => n && !bad.has(n));
+      // Po przełączeniu części odczyt kolizji okazał się mylny – planujemy z samej części mapy.
+      let firstExits = !zoneSwitched && live?.here.length ? live.here.filter((n) => !bad.has(n)) : null;
+      if (bad.size && !zoneSwitched && !firstExits?.length) firstExits = [...new Set(Gw.list().map((g) => g.name))].filter((n) => n && !bad.has(n));
       try {
         hops = findRoute(cur, target, zone, firstExits?.length ? firstExits : null);
       } catch (e) {
