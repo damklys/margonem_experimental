@@ -37,7 +37,7 @@
   {
    "type": "kill",
    "mob": "Waran krótkoogonowy; Waran stepowy; Waran szary; Waran piaskowy; Waran krokodylowy",
-   "n": 100,
+   "n": 50,
    "route": "[38lvl] warany"
   },
   {
@@ -89,7 +89,7 @@
   {
    "type": "kill",
    "mob": "Waran krótkoogonowy; Waran stepowy; Waran szary; Waran piaskowy; Waran krokodylowy",
-   "n": 250,
+   "n": 150,
    "route": "[38lvl] warany"
   },
   {
