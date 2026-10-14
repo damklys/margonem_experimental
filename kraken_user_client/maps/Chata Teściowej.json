@@ -1,0 +1,9 @@
+{
+ "kraken": "mapa",
+ "name": "Chata Teściowej",
+ "gateways": [
+  {
+   "to": "Babi Wzgórek"
+  }
+ ]
+}
