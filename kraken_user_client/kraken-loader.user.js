@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Kraken Loader
 // @namespace    kraken.margonem
-// @version      1.1.202610131100
+// @version      1.2.202610160030
 // @description  Pobiera i uruchamia najnowszą wersję Kraken Bot (opcjonalnie Kraken Recorder) z GitHuba – bez ręcznej aktualizacji w Tampermonkey
 // @match        https://*.margonem.pl/
-// @exclude      https://margonem.pl/*
-// @exclude      https://www.margonem.pl/*
+// @match        https://www.margonem.pl/*
+// @match        https://margonem.pl/*
 // @exclude      https://forum.margonem.pl/*
 // @exclude      https://commons.margonem.pl/*
 // @exclude      https://dev-commons.margonem.pl/*
@@ -26,6 +26,44 @@
   'use strict';
   if (window.KrakenLoader) return;
   window.KrakenLoader = true;
+
+  // margonem.pl: bot wylogował się na czas odrodzenia E2 (dane w window.name) – odliczanie i powrót na świat o czasie.
+  if (/^(www\.)?margonem\.pl$/.test(location.hostname)) {
+    let ret = null;
+    try {
+      ret = JSON.parse(window.name || 'null');
+    } catch (_) {}
+    if (!ret || !ret.krakenReturn || !/^[a-z0-9-]+$/.test(ret.world || '')) return;
+    const box = document.createElement('div');
+    box.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:2147483647;background:#151a22ee;color:#dde;font:13px sans-serif;padding:8px 12px;border:1px solid #c4ae78;border-radius:6px';
+    const cancel = document.createElement('button');
+    cancel.textContent = 'Anuluj';
+    cancel.style.marginLeft = '8px';
+    const label = document.createElement('span');
+    box.append(label, cancel);
+    let stop = false;
+    cancel.onclick = () => {
+      stop = true;
+      window.name = '';
+      box.remove();
+    };
+    const tick = () => {
+      if (stop) return;
+      const left = Math.round((ret.krakenReturn - Date.now()) / 1000);
+      if (left <= 0) {
+        window.name = '';
+        location.href = `https://${ret.world}.margonem.pl/`;
+        return;
+      }
+      label.textContent = `🦑 Kraken: powrót na ${ret.world}${ret.e2 ? ` (${ret.e2})` : ''} za ${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}`;
+      setTimeout(tick, 1000);
+    };
+    (document.body ? Promise.resolve() : new Promise((r) => addEventListener('DOMContentLoaded', r))).then(() => {
+      document.body.appendChild(box);
+      tick();
+    });
+    return;
+  }
 
   const REPO = 'damklys/margonem_experimental';
   const DIR = 'kraken_user_client';
