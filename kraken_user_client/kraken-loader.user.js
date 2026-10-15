@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kraken Loader
 // @namespace    kraken.margonem
-// @version      1.2.202610160030
+// @version      1.3.202610160105
 // @description  Pobiera i uruchamia najnowszą wersję Kraken Bot (opcjonalnie Kraken Recorder) z GitHuba – bez ręcznej aktualizacji w Tampermonkey
 // @match        https://*.margonem.pl/
 // @match        https://www.margonem.pl/*
@@ -33,6 +33,20 @@
     try {
       ret = JSON.parse(window.name || 'null');
     } catch (_) {}
+    // Dane z adresu (#kraken-return=…&world=…&e2=…) – zapamiętane w sessionStorage, bo strona może zmienić adres.
+    const h = new URLSearchParams(location.hash.slice(1));
+    if (h.get('kraken-return')) {
+      ret = { krakenReturn: +h.get('kraken-return'), world: h.get('world') || '', e2: h.get('e2') || '' };
+      try {
+        sessionStorage.setItem('kraken:return', JSON.stringify(ret));
+      } catch (_) {}
+    }
+    if (!ret?.krakenReturn) {
+      try {
+        ret = JSON.parse(sessionStorage.getItem('kraken:return') || 'null');
+      } catch (_) {}
+    }
+    console.log('%c[Kraken Loader]', 'color:#c4ae78', 'margonem.pl – powrót:', ret ? JSON.stringify(ret) : 'brak (window.name: ' + String(window.name).slice(0, 80) + ')');
     if (!ret || !ret.krakenReturn || !/^[a-z0-9-]+$/.test(ret.world || '')) return;
     const box = document.createElement('div');
     box.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:2147483647;background:#151a22ee;color:#dde;font:13px sans-serif;padding:8px 12px;border:1px solid #c4ae78;border-radius:6px';
@@ -45,6 +59,9 @@
     cancel.onclick = () => {
       stop = true;
       window.name = '';
+      try {
+        sessionStorage.removeItem('kraken:return');
+      } catch (_) {}
       box.remove();
     };
     const tick = () => {
@@ -52,6 +69,9 @@
       const left = Math.round((ret.krakenReturn - Date.now()) / 1000);
       if (left <= 0) {
         window.name = '';
+        try {
+          sessionStorage.removeItem('kraken:return');
+        } catch (_) {}
         location.href = `https://${ret.world}.margonem.pl/`;
         return;
       }
