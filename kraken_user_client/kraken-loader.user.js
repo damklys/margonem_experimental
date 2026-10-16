@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kraken Loader
 // @namespace    kraken.margonem
-// @version      1.3.202610160105
+// @version      1.4.202610160900
 // @description  Pobiera i uruchamia najnowszą wersję Kraken Bot (opcjonalnie Kraken Recorder) z GitHuba – bez ręcznej aktualizacji w Tampermonkey
 // @match        https://*.margonem.pl/
 // @match        https://www.margonem.pl/*
@@ -50,8 +50,10 @@
     if (!ret || !ret.krakenReturn || !/^[a-z0-9-]+$/.test(ret.world || '')) return;
     const box = document.createElement('div');
     box.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:2147483647;background:#151a22ee;color:#dde;font:13px sans-serif;padding:8px 12px;border:1px solid #c4ae78;border-radius:6px';
+    // Stop: od razu na świat, a bot po wczytaniu nie wznawia pracy (#kraken-stop).
     const cancel = document.createElement('button');
-    cancel.textContent = 'Anuluj';
+    cancel.textContent = 'Stop';
+    cancel.title = 'Wróć teraz na świat i zatrzymaj bota';
     cancel.style.marginLeft = '8px';
     const label = document.createElement('span');
     box.append(label, cancel);
@@ -62,7 +64,7 @@
       try {
         sessionStorage.removeItem('kraken:return');
       } catch (_) {}
-      box.remove();
+      location.href = `https://${ret.world}.margonem.pl/#kraken-stop`;
     };
     const tick = () => {
       if (stop) return;
