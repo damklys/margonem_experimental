@@ -37,7 +37,7 @@
   {
    "type": "kill",
    "mob": "Orzeł górski; Czarny orzeł; Młoda wywerna; Mała wywerna; Wywerna zielona; Wywerna brązowa; Wywerna szlachetna; Wywerna królewska",
-   "n": 100,
+   "n": 50,
    "route": "[54lvl] orły i wywerny"
   },
   {
@@ -89,7 +89,7 @@
   {
    "type": "kill",
    "mob": "Orzeł górski; Czarny orzeł; Młoda wywerna; Mała wywerna; Wywerna zielona; Wywerna brązowa; Wywerna szlachetna; Wywerna królewska",
-   "n": 250,
+   "n": 150,
    "route": "[54lvl] orły i wywerny"
   },
   {
