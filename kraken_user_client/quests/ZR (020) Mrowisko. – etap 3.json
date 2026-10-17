@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Mrowisko. – etap 3",
+ "questId": 13175,
+ "questName": "Mrowisko.",
+ "stage": 3,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "ostatni etap zadania - Mrowisko"
+    },
+    {
+     "q": "Wszystkie okoliczne mrówki ponownie pojawiły się w mrowisku! Udaj się do niego ostatni raz, by przywrócić naturze równowagę, ograniczając ich populację do optymalnego poziomu.",
+     "a": "Mrówki to dla mnie nic."
+    },
+    {
+     "q": " Zakonnik Równowagi Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
+     "a": "Wyruszam natychmiast!"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz; Mrówcza Królowa",
+   "n": 500,
+   "route": "[20lvl] mrówki"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj, ",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Zabiłem mrówki"
+    },
+    {
+     "q": " Zakonnik Równowagi Dobra robota, mrówki nie zagrażają już równowadze w naturze!",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Kopalnia Żółtego Kruszcu. – etap 1",
+ "questId": 13238,
+ "questName": "Kopalnia Żółtego Kruszcu.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "126lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Tuzmer",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Kopalnia Żółtego Kruszcu"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Korred wojownik; Korred czterołapy; Korred zbrojny; Grubber Ochlaj",
+   "n": 100,
+   "route": "[134lvl] korredy"
+  },
+  {
+   "type": "goto",
+   "map": "Tuzmer",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

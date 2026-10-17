@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Tajemnica Kruzo. – etap 3",
+ "questId": 13246,
+ "questName": "Tajemnica Kruzo.",
+ "stage": 3,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "138lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Tajemnica Kruzo"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Przeklęta hrabina; Upiór w cylindrze; Potępiona markiza; Duch arystokraty; Wystrojone widmo; Prześwitujący baron; Biała Dama; Upadły Lord",
+   "n": 500,
+   "route": "[149lvl] duchy"
+  },
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Zagrożenie ze Skalnego Pustkowia. – etap 3",
+ "questId": 13280,
+ "questName": "Zagrożenie ze Skalnego Pustkowia.",
+ "stage": 3,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "258lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Zagrożenie ze Skalnego Pustkowia"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Skalna modliszka; Mineralny kret; Zaklinaczka fal dźwiękowych; Potępiony solista; Hipnotyzująca skała; Twórczyni przeklętych tekstów; Uzbrojony odszczepieniec; Kamienny osiłek; Mistrz koszmarnej liry; Ślepa Strzała; Skalny pupil; Oślepiony faun; Kamienny kleszcz; Pokutujący bębniarz; Szalony brzdękacz; Wysłannik Tellarów",
+   "n": 500,
+   "route": "[264lvl] tellary"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

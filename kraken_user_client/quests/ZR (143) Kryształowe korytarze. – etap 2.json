@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Kryształowe korytarze. – etap 2",
+ "questId": 13255,
+ "questName": "Kryształowe korytarze.",
+ "stage": 2,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "168lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Kryształowe korytarze"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Ożywiona zmarzlina; Oszroniona skała; Tealowooka skała; Żółtooka skała; Czerwonooka skała; Nimfa mrozu; Nimfa chłodu; Lodowy golem; Ametystowy golem; Turkusowy golem; Cytrynowy golem; Rubinowy golem; Szafirowy brodacz; Ametystowy brodacz; Malachitowy brodacz; Cytrynowy brodacz; Rubinowy brodacz; Królowa Śniegu; Patronka szronu; Zamarznięty strażnik królowej; Profos lodowej gwardii",
+   "n": 250,
+   "route": "[174lvl] kryształowa grota"
+  },
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

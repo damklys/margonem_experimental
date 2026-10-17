@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Strumienie Szemrzących Wód. – etap 2",
+ "questId": 13271,
+ "questName": "Strumienie Szemrzących Wód.",
+ "stage": 2,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "222lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Strumienie Szemrzących Wód"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Krokodyl różańcowy; Kajman czarny; Aligator rzeczny; Silny aligator; Niegościnny aligator; Przyczajony maddok; Strażnik wodorostów; Zielonoskóry poławiacz; Oślizgły wojownik; Patron wodospadów; Smakosz świeżych ryb; Pancerny maddok; Mocny Maddoks",
+   "n": 250,
+   "route": "[227lvl] maddoki"
+  },
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Zatrute Torfowiska. – etap 2",
+ "questId": 13270,
+ "questName": "Zatrute Torfowiska.",
+ "stage": 2,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "216lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Zatrute Torfowiska"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Jesiotrzyc wąsaty; Pantherania rzeczna; Arval grzebieniasty; Boforan rogaty; Anurak rechotliwy; Krokozaur jasnobrzuchy; Yaramaja krwiopijna; Arytodam olbrzymi",
+   "n": 250,
+   "route": "[223lvl] anuraki"
+  },
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Drapieżnicy z Dziewiczej Kniei. – etap 1",
+ "questId": 13177,
+ "questName": "Drapieżnicy z Dziewiczej Kniei.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zakonnik Równowagi To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić...",
+     "a": "pierwszy etap zadania - Drapieżnicy z Dziewiczej Kniei"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Niedźwiadek; Niedźwiedź brunatny; Niedźwiedź czarny; Niedźwiedź szary; Gacek szary; Karhu; Paladyński Apostata",
+   "n": 100,
+   "route": "[23lvl] niedźwiedzie"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Uporałem się z drapieżnikami z Dziewiczej Kniei"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

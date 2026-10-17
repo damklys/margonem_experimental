@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Czerwone bestie. – etap 3",
+ "questId": 13250,
+ "questName": "Czerwone bestie.",
+ "stage": 3,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "150lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Czerwone bestie"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Obrońca Granic; Karminowy Watażka; Adept Orczej Magii; Czerwonoskóry Wojownik; Ork Waleczny Młot; Pogromca Wątpliwych; Zakapturzony Ork Warlock; Burkog Lorulk; Sheba Orcza Szamanka",
+   "n": 500,
+   "route": "[156lvl] czerwoni orkowie"
+  },
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "3.184.202610161700",
+ "version": "4.2.202610181200",
  "name": "[1-43lvl] Zero to Hero - B",
  "tiles": [
   {
@@ -29,7 +29,7 @@
   },
   {
    "type": "task",
-   "task": "[33] Zezwolnienie na teleportacje do Torneg.",
+   "task": "Zezwolenie na teleportację do Torneg.",
    "conds": [
     {
      "join": "and",
@@ -66,7 +66,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (21) Dzikie Koty - Torneg",
+   "task": "Dzikie Koty. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 21
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 36
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dzikie Koty. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 21
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 36
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dzikie Koty. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -103,7 +139,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (22) Drapieżnicy z Dziewiczej Kniei - Torneg",
+   "task": "Drapieżnicy z Dziewiczej Kniei. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 22
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 37
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Drapieżnicy z Dziewiczej Kniei. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 22
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 37
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Drapieżnicy z Dziewiczej Kniei. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -140,7 +212,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (25) Demony zamieszkujące Przeklętą Strażnicę - Torneg",
+   "task": "Demony zamieszkujące Przeklętą Strażnicę. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 25
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Demony zamieszkujące Przeklętą Strażnicę. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 25
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Demony zamieszkujące Przeklętą Strażnicę. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -177,7 +285,7 @@
   },
   {
    "type": "task",
-   "task": "[45] Zezwolenie na teleportację do Eder",
+   "task": "Zezwolenie na teleportację do Eder.",
    "conds": [
     {
      "join": "and",
@@ -214,7 +322,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (28) Niechciane sąsiedztwo - Eder",
+   "task": "Niechciane sąsiedztwo. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 28
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Niechciane sąsiedztwo. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 28
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Niechciane sąsiedztwo. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -251,7 +395,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (32) Racicowy Matecznik - Eder",
+   "task": "Racicowy Matecznik. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 32
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Racicowy Matecznik. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 32
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Racicowy Matecznik. – etap 3",
    "conds": [
     {
      "join": "and",

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Wyznawcy Czarnego Pana. – etap 1",
+ "questId": 13265,
+ "questName": "Wyznawcy Czarnego Pana.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "198lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Wyznawcy Czarnego Pana"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Mistrz Rytuału; Heretyk Łowca Niewiast; Czciciel Demonów; Heretyk Wirtuoz Tortur; Demoniczny Strażnik; Obrońca Sekty; Czarny Wdowiec",
+   "n": 100,
+   "route": "[203lvl] heretycy"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

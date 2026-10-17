@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Szkodniki z Leśnego Brodu. – etap 1",
+ "questId": 13201,
+ "questName": "Szkodniki z Leśnego Brodu.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  50,
+  150,
+  500
+ ],
+ "set": "54lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Szkodniki z Leśnego Brodu"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Rosomak; Rosomak skalny",
+   "n": 50,
+   "route": "[66lvl] rosomaki"
+  },
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

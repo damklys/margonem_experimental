@@ -1,0 +1,64 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Zezwolenie na teleportację do Eder.",
+ "questId": 45,
+ "questName": "Zezwolenie na teleportację do Eder.",
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Planu Astralnego",
+   "rules": [
+    {
+     "q": "Zakonnik Planu Astralnego Witaj. Jestem przedstawicielem Zakonu Planu Astralnego w Eder",
+     "a": "uzyskać zezwolenie"
+    },
+    {
+     "q": "Normalnie zezwolenie na teleportację do Eder kosztuje",
+     "a": "W porządku, zabiję ich"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Rabuś",
+   "n": 5,
+   "route": ""
+  },
+  {
+   "type": "goto",
+   "map": "Eder",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Planu Astralnego",
+   "rules": [
+    {
+     "q": "Zakonnik Planu Astralnego Witaj. Jestem przedstawicielem Zakonu Planu Astralnego w Eder",
+     "a": "Ja w sprawie zezwolenia na teleportację"
+    },
+    {
+     "q": "I co, zabiłeś ich?",
+     "a": "Tak!"
+    },
+    {
+     "q": "Teraz czas na moją część umowy",
+     "a": "Dalej"
+    },
+    {
+     "q": "Od tej pory inni członkowie Zakonu Planu Astralnego będą mogli teleportować cię do miasta Eder",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

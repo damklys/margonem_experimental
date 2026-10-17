@@ -1,0 +1,3509 @@
+[
+ {
+  "id": 13,
+  "name": "Zabij wilki pożerające owce pastucha Mira.",
+  "grupa": 54,
+  "lvlMin": 15,
+  "lvlMax": 26
+ },
+ {
+  "id": 18,
+  "name": "Zabij niedźwiedzie wyjadające pszczołom miód.",
+  "grupa": 54,
+  "lvlMin": 22,
+  "lvlMax": 32
+ },
+ {
+  "id": 32,
+  "name": "Zezwolenie na teleportację do Ithan.",
+  "grupa": 54,
+  "lvlMin": 30,
+  "lvlMax": 0
+ },
+ {
+  "id": 33,
+  "name": "Zezwolenie na teleportację do Torneg.",
+  "grupa": 54,
+  "lvlMin": 20,
+  "lvlMax": 0
+ },
+ {
+  "id": 34,
+  "name": "Zezwolenie na teleportację do Werbin.",
+  "grupa": 54,
+  "lvlMin": 130,
+  "lvlMax": 0
+ },
+ {
+  "id": 35,
+  "name": "Zezwolenie na teleportację do Karka-han.",
+  "grupa": 54,
+  "lvlMin": 135,
+  "lvlMax": 0
+ },
+ {
+  "id": 44,
+  "name": "Zdobądź piwo dla Tafina.",
+  "grupa": 54,
+  "lvlMin": 30,
+  "lvlMax": 0
+ },
+ {
+  "id": 45,
+  "name": "Zezwolenie na teleportację do Eder.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 73,
+  "name": "Rozwiąż zagadkę kultystów z Eder.",
+  "grupa": 54,
+  "lvlMin": 30,
+  "lvlMax": 0
+ },
+ {
+  "id": 138,
+  "name": "Pomóż Cedrikowi odnaleźć bliźniaczki księcia z Hironii.",
+  "grupa": 54,
+  "lvlMin": 31,
+  "lvlMax": 0
+ },
+ {
+  "id": 156,
+  "name": "Pomóż Alanowi z Torneg pozbyć się potworów.",
+  "grupa": 54,
+  "lvlMin": 22,
+  "lvlMax": 28
+ },
+ {
+  "id": 183,
+  "name": "Aktywuj portal w Nithal.",
+  "grupa": 54,
+  "lvlMin": 150,
+  "lvlMax": 0
+ },
+ {
+  "id": 329,
+  "name": "Zezwolenie na teleportację do Thuzal.",
+  "grupa": 54,
+  "lvlMin": 140,
+  "lvlMax": 0
+ },
+ {
+  "id": 414,
+  "name": "Pomóż przy zaopatrzeniu grupy zwiadowczej z Werbin.",
+  "grupa": 54,
+  "lvlMin": 152,
+  "lvlMax": 0
+ },
+ {
+  "id": 433,
+  "name": "Problem strażnika w Ithan.",
+  "grupa": 54,
+  "lvlMin": 208,
+  "lvlMax": 0
+ },
+ {
+  "id": 503,
+  "name": "Na krabobranie!",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 811,
+  "name": "Ciasto do pizzy dla kucharza Antonia.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 822,
+  "name": "Pizza wędrującego Różanity.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 823,
+  "name": "Soczysta karkówka z knedlem.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 824,
+  "name": "Sakiewki szlachcica.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 825,
+  "name": "Ognisty zestaw.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1111,
+  "name": "Rozdziobią nas kruki, gawrony...",
+  "grupa": 54,
+  "lvlMin": 169,
+  "lvlMax": 0
+ },
+ {
+  "id": 1352,
+  "name": "Ukryty skarb krasnoludów.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1353,
+  "name": "Opowieść o złych decyzjach.",
+  "grupa": 54,
+  "lvlMin": 168,
+  "lvlMax": 0
+ },
+ {
+  "id": 1354,
+  "name": "Na wspak!",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1356,
+  "name": "Ucieczka z Zaginionej Wieży.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1360,
+  "name": "Na pomoc uwięzionym!",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1361,
+  "name": "Za jakie grzechy?!",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1491,
+  "name": "Przygotowania do lekcji.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1492,
+  "name": "Lekcja garncarstwa.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1496,
+  "name": "Rozpoczęcie zajęć w szkole.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 1501,
+  "name": "Strój sportowy.",
+  "grupa": 54,
+  "lvlMin": 25,
+  "lvlMax": 0
+ },
+ {
+  "id": 2190,
+  "name": "Ta inna.",
+  "grupa": 54,
+  "lvlMin": 164,
+  "lvlMax": 0
+ },
+ {
+  "id": 2191,
+  "name": "Uroki życia w Thuzal.",
+  "grupa": 54,
+  "lvlMin": 164,
+  "lvlMax": 0
+ },
+ {
+  "id": 2192,
+  "name": "Gwiazd jest pełne jej spojrzenie.",
+  "grupa": 54,
+  "lvlMin": 164,
+  "lvlMax": 0
+ },
+ {
+  "id": 2432,
+  "name": "Niecodzienna sprawa…",
+  "grupa": 54,
+  "lvlMin": 24,
+  "lvlMax": 0
+ },
+ {
+  "id": 2433,
+  "name": "Walka z czasem.",
+  "grupa": 54,
+  "lvlMin": 24,
+  "lvlMax": 0
+ },
+ {
+  "id": 2434,
+  "name": "Stawić czoło nieznanemu!",
+  "grupa": 54,
+  "lvlMin": 24,
+  "lvlMax": 0
+ },
+ {
+  "id": 2435,
+  "name": "Zagrożenie zażegnane.",
+  "grupa": 54,
+  "lvlMin": 24,
+  "lvlMax": 0
+ },
+ {
+  "id": 2541,
+  "name": "Zezwolenie na teleportację do Liściastych Rozstajów.",
+  "grupa": 54,
+  "lvlMin": 75,
+  "lvlMax": 0
+ },
+ {
+  "id": 10001,
+  "name": "Trudne początki...",
+  "grupa": 1,
+  "lvlMin": 0,
+  "lvlMax": 1
+ },
+ {
+  "id": 10002,
+  "name": "Pierwsze starcia!",
+  "grupa": 1,
+  "lvlMin": 2,
+  "lvlMax": 500
+ },
+ {
+  "id": 10003,
+  "name": "Nieoczekiwane spotkanie...",
+  "grupa": 1,
+  "lvlMin": 3,
+  "lvlMax": 500
+ },
+ {
+  "id": 10004,
+  "name": "Pokrzepienie rannych.",
+  "grupa": 1,
+  "lvlMin": 4,
+  "lvlMax": 500
+ },
+ {
+  "id": 10005,
+  "name": "Właściwa droga.",
+  "grupa": 1,
+  "lvlMin": 5,
+  "lvlMax": 500
+ },
+ {
+  "id": 10006,
+  "name": "Złote interesy.",
+  "grupa": 1,
+  "lvlMin": 6,
+  "lvlMax": 500
+ },
+ {
+  "id": 10007,
+  "name": "W pogoni za wsparciem.",
+  "grupa": 1,
+  "lvlMin": 7,
+  "lvlMax": 500
+ },
+ {
+  "id": 10008,
+  "name": "Interesy w krwawym pocie.",
+  "grupa": 1,
+  "lvlMin": 8,
+  "lvlMax": 500
+ },
+ {
+  "id": 10009,
+  "name": "Pomocna dłoń!",
+  "grupa": 1,
+  "lvlMin": 8,
+  "lvlMax": 500
+ },
+ {
+  "id": 10010,
+  "name": "Wróżba przyszłości...",
+  "grupa": 2,
+  "lvlMin": 10,
+  "lvlMax": 500
+ },
+ {
+  "id": 10011,
+  "name": "Polowanie na wilczycę.",
+  "grupa": 2,
+  "lvlMin": 11,
+  "lvlMax": 500
+ },
+ {
+  "id": 10012,
+  "name": "Refleksje [SEX=początkującego poszukiwacza|początkującej poszukiwaczki] przygód.",
+  "grupa": 2,
+  "lvlMin": 13,
+  "lvlMax": 500
+ },
+ {
+  "id": 10013,
+  "name": "Trudne pożegnanie...",
+  "grupa": 2,
+  "lvlMin": 14,
+  "lvlMax": 500
+ },
+ {
+  "id": 10014,
+  "name": "Historia zażartych wrogów.",
+  "grupa": 2,
+  "lvlMin": 13,
+  "lvlMax": 500
+ },
+ {
+  "id": 10015,
+  "name": "Przeklęte zamczysko.",
+  "grupa": 3,
+  "lvlMin": 15,
+  "lvlMax": 500
+ },
+ {
+  "id": 10016,
+  "name": "Komnata czarnoksiężnika.",
+  "grupa": 3,
+  "lvlMin": 16,
+  "lvlMax": 500
+ },
+ {
+  "id": 10017,
+  "name": "Niedopowiedziane tajemnice.",
+  "grupa": 3,
+  "lvlMin": 17,
+  "lvlMax": 500
+ },
+ {
+  "id": 10018,
+  "name": "W poszukiwaniu bezpiecznego miejsca.",
+  "grupa": 3,
+  "lvlMin": 17,
+  "lvlMax": 500
+ },
+ {
+  "id": 10019,
+  "name": "Zagrożenie z Wilczego Szpicu.",
+  "grupa": 3,
+  "lvlMin": 17,
+  "lvlMax": 500
+ },
+ {
+  "id": 10020,
+  "name": "Widmowa dama.",
+  "grupa": 3,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10021,
+  "name": "Cztery dekady wstecz.",
+  "grupa": 3,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10022,
+  "name": "Pieśń o upiorzycy.",
+  "grupa": 3,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10023,
+  "name": "Noc w Oberży pod Złotym Kłosem.",
+  "grupa": 4,
+  "lvlMin": 18,
+  "lvlMax": 500
+ },
+ {
+  "id": 10024,
+  "name": "Przysługa za przysługę.",
+  "grupa": 4,
+  "lvlMin": 18,
+  "lvlMax": 500
+ },
+ {
+  "id": 10025,
+  "name": "Mrówki, mróweczki...",
+  "grupa": 4,
+  "lvlMin": 19,
+  "lvlMax": 500
+ },
+ {
+  "id": 10026,
+  "name": "Wśród najmłodszych.",
+  "grupa": 4,
+  "lvlMin": 19,
+  "lvlMax": 500
+ },
+ {
+  "id": 10027,
+  "name": "Trucizna z jasnego nieba.",
+  "grupa": 4,
+  "lvlMin": 19,
+  "lvlMax": 500
+ },
+ {
+  "id": 10028,
+  "name": "Ratunek dla cierpiącej!",
+  "grupa": 4,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10029,
+  "name": "Najwyższa pora ruszyć do Torneg!",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10030,
+  "name": "Torneg i jego mieszkańcy.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10031,
+  "name": "Polowanie na Królewskiego Czerwia.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10032,
+  "name": "Czas na prawdziwe zadanie!",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10033,
+  "name": "Polerowanie szklanych kul.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10034,
+  "name": "Garbowanie wilczej skóry.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10035,
+  "name": "Palenie w kowalskim piecu.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10036,
+  "name": "Rozładunek.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10037,
+  "name": "Białe lilie.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10038,
+  "name": "Prace gospodarcze u Idalii.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10039,
+  "name": "Zakochana para z Torneg.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10040,
+  "name": "Pomoc domowa.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10041,
+  "name": "Zagroda pastucha Mira.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10042,
+  "name": "Poszukiwania lutni Edara.",
+  "grupa": 5,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 10043,
+  "name": "Odegnaj dzikie koty od granic miasta.",
+  "grupa": 6,
+  "lvlMin": 22,
+  "lvlMax": 499
+ },
+ {
+  "id": 10044,
+  "name": "Oko w oko z potężną Mushitą.",
+  "grupa": 6,
+  "lvlMin": 22,
+  "lvlMax": 500
+ },
+ {
+  "id": 10045,
+  "name": "Powrót do normalności.",
+  "grupa": 6,
+  "lvlMin": 22,
+  "lvlMax": 500
+ },
+ {
+  "id": 10046,
+  "name": "Uszaty biznes.",
+  "grupa": 6,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10047,
+  "name": "Puchate zagrożenie.",
+  "grupa": 6,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10048,
+  "name": "Powstrzymać mutację!",
+  "grupa": 6,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10049,
+  "name": "Czas podbić Dziewiczą Knieję!",
+  "grupa": 7,
+  "lvlMin": 22,
+  "lvlMax": 500
+ },
+ {
+  "id": 10050,
+  "name": "Nietoperze i niedźwiedzie.",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10051,
+  "name": "Drewniana chata i niewygodne łóżko.",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10052,
+  "name": "Szkolenie u leśnego mistrza.",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10053,
+  "name": "Lekcja 1 - koncentracja!",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10054,
+  "name": "Lekcja 2 - celność!",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10055,
+  "name": "Lekcja 3 - strategia!",
+  "grupa": 7,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 10056,
+  "name": "Czas sprawdzić postępy treningu!",
+  "grupa": 7,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10057,
+  "name": "Polowanie na… KOTOŁAKA! - cz. I.",
+  "grupa": 7,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10058,
+  "name": "Polowanie na… KOTOŁAKA! - cz. II.",
+  "grupa": 7,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10059,
+  "name": "Wspomnienia Nutrisa.",
+  "grupa": 7,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10060,
+  "name": "Mistrz czy tchórz?",
+  "grupa": 7,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 10061,
+  "name": "Zmowa milczenia.",
+  "grupa": 7,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10062,
+  "name": "Długi cień grzechu.",
+  "grupa": 7,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10063,
+  "name": "Owoc zakazanej miłości.",
+  "grupa": 7,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10064,
+  "name": "Na skraju niezbadanej dżungli...",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10065,
+  "name": "Nieposkromione pragnienia...",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10066,
+  "name": "Nadzieja matką głupich...",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10067,
+  "name": "W drodze ku nieznanemu!",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10068,
+  "name": "W drodze ku nieznanemu!",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10069,
+  "name": "Ciemność i strach.",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10070,
+  "name": "Ciemność i strach.",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10071,
+  "name": "Serce piramidy.",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10072,
+  "name": "Nie ma czasu na płacz!",
+  "grupa": 8,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 10073,
+  "name": "W poszukiwaniu prawdy.",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10074,
+  "name": "Dawne zagrożenie nadal czyha w ciemności...",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10075,
+  "name": "Gdy sen nie nadchodzi...",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10076,
+  "name": "Odpoczynek w butelce.",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10077,
+  "name": "Krzyk, który przerwał noc.",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10078,
+  "name": "Nie każde poświęcenie niesie zbawienie.",
+  "grupa": 8,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 10079,
+  "name": "Demoniczna strażnica.",
+  "grupa": 9,
+  "lvlMin": 28,
+  "lvlMax": 500
+ },
+ {
+  "id": 10080,
+  "name": "Sekret z dawnych lat.",
+  "grupa": 9,
+  "lvlMin": 28,
+  "lvlMax": 500
+ },
+ {
+  "id": 10081,
+  "name": "Nękające wizje...",
+  "grupa": 9,
+  "lvlMin": 28,
+  "lvlMax": 500
+ },
+ {
+  "id": 10082,
+  "name": "Dusząca prawda.",
+  "grupa": 9,
+  "lvlMin": 29,
+  "lvlMax": 500
+ },
+ {
+  "id": 10083,
+  "name": "Senne niebezpieczeństwo!",
+  "grupa": 9,
+  "lvlMin": 29,
+  "lvlMax": 500
+ },
+ {
+  "id": 10084,
+  "name": "Wyścig z czasem.",
+  "grupa": 9,
+  "lvlMin": 29,
+  "lvlMax": 500
+ },
+ {
+  "id": 10085,
+  "name": "Na ratunek przyjaciołom!",
+  "grupa": 9,
+  "lvlMin": 30,
+  "lvlMax": 500
+ },
+ {
+  "id": 10086,
+  "name": "Śladami zaginionych.",
+  "grupa": 9,
+  "lvlMin": 30,
+  "lvlMax": 500
+ },
+ {
+  "id": 10087,
+  "name": "Ucieczka z rozbójniczej niewoli.",
+  "grupa": 9,
+  "lvlMin": 31,
+  "lvlMax": 500
+ },
+ {
+  "id": 10088,
+  "name": "W poszukiwaniu pomocy.",
+  "grupa": 9,
+  "lvlMin": 31,
+  "lvlMax": 500
+ },
+ {
+  "id": 10089,
+  "name": "U bram miasta spod ciemnej gwiazdy...",
+  "grupa": 9,
+  "lvlMin": 32,
+  "lvlMax": 500
+ },
+ {
+  "id": 10090,
+  "name": "Witamy w Eder!",
+  "grupa": 10,
+  "lvlMin": 32,
+  "lvlMax": 500
+ },
+ {
+  "id": 10091,
+  "name": "Wyprawa do Lasu Goblinów.",
+  "grupa": 10,
+  "lvlMin": 32,
+  "lvlMax": 500
+ },
+ {
+  "id": 10092,
+  "name": "Ciężkie życie skryby.",
+  "grupa": 10,
+  "lvlMin": 33,
+  "lvlMax": 500
+ },
+ {
+  "id": 10093,
+  "name": "Na ratunek Bonifacemu!",
+  "grupa": 10,
+  "lvlMin": 33,
+  "lvlMax": 500
+ },
+ {
+  "id": 10094,
+  "name": "Nieoczekiwana pomoc.",
+  "grupa": 10,
+  "lvlMin": 33,
+  "lvlMax": 500
+ },
+ {
+  "id": 10095,
+  "name": "Krew goblina.",
+  "grupa": 10,
+  "lvlMin": 34,
+  "lvlMax": 500
+ },
+ {
+  "id": 10096,
+  "name": "Jaskinia Pogardy.",
+  "grupa": 10,
+  "lvlMin": 34,
+  "lvlMax": 500
+ },
+ {
+  "id": 10097,
+  "name": "Zielone fiolki.",
+  "grupa": 10,
+  "lvlMin": 34,
+  "lvlMax": 500
+ },
+ {
+  "id": 10098,
+  "name": "Niedawni wrogowie...",
+  "grupa": 10,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 10099,
+  "name": "Zegar tyka!",
+  "grupa": 10,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 10100,
+  "name": "Prosia spowiedź!",
+  "grupa": 10,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10101,
+  "name": "Niechciani sąsiedzi.",
+  "grupa": 10,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 10102,
+  "name": "Związane ręce.",
+  "grupa": 10,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 10103,
+  "name": "Rytuał zapieczętowania.",
+  "grupa": 10,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 10108,
+  "name": "Pierwsze zarządzenie Erastera.",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10109,
+  "name": "Prawda skryta w oczach Brutusa - cz. I.",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10110,
+  "name": "Prawda skryta w oczach Brutusa - cz. II.",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10111,
+  "name": "Prawda skryta w dokumentach Bonifacego - cz. I.",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10112,
+  "name": "Prawda skryta w dokumentach Bonifacego - cz. II.",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10113,
+  "name": "Czas obrać kierunek...",
+  "grupa": 11,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 10114,
+  "name": "Oko w oko z ghulem!",
+  "grupa": 11,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 10115,
+  "name": "Grobowiec, o którym zapomniano...",
+  "grupa": 11,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 10116,
+  "name": "Wizje przeszłości.",
+  "grupa": 11,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 10117,
+  "name": "Nieodkryte tajemnice...",
+  "grupa": 11,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 10118,
+  "name": "Komnata pełna zgnilizny.",
+  "grupa": 11,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 10119,
+  "name": "Niespodziewani goście!",
+  "grupa": 11,
+  "lvlMin": 38,
+  "lvlMax": 500
+ },
+ {
+  "id": 10120,
+  "name": "Niespodziewani goście!",
+  "grupa": 11,
+  "lvlMin": 38,
+  "lvlMax": 500
+ },
+ {
+  "id": 10121,
+  "name": "Zagmatwana sprawa...",
+  "grupa": 11,
+  "lvlMin": 38,
+  "lvlMax": 500
+ },
+ {
+  "id": 10122,
+  "name": "Koniec poszlak - pokój 110!",
+  "grupa": 11,
+  "lvlMin": 38,
+  "lvlMax": 500
+ },
+ {
+  "id": 10135,
+  "name": "Informacja najcenniejszym towarem...",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10136,
+  "name": "Przysługa dla Mrocznego Zgrzyta I.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10137,
+  "name": "Przysługa dla Mrocznego Zgrzyta II.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10138,
+  "name": "Przysługa dla Mrocznego Zgrzyta III.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10139,
+  "name": "Uprzejmość popłaca.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10140,
+  "name": "Popiół i karmazynowa sadza.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10141,
+  "name": "Popiół i karmazynowa sadza.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10142,
+  "name": "Wytrwałość!",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10143,
+  "name": "Historia karmazynowego szaleńca.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10144,
+  "name": "Ostatnia deska ratunku...",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10145,
+  "name": "Koniec obłędu.",
+  "grupa": 12,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 10146,
+  "name": "Nużąca praca archiwisty...",
+  "grupa": 12,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10147,
+  "name": "Podróż do wnętrza księgi.",
+  "grupa": 12,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10148,
+  "name": "Niedoszli przyjaciele.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10149,
+  "name": "Opowieść ojca nieznającego współczucia.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10150,
+  "name": "Chwila namysłu.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10151,
+  "name": "W dobrej wierze...",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10152,
+  "name": "Przeszpiegi w zbójeckich grotach.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10153,
+  "name": "Spaprana sprawa...",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10154,
+  "name": "Słowa córki dwójki wyrzutków społecznych.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10155,
+  "name": "Słowa córki dwójki wyrzutków społecznych.",
+  "grupa": 13,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 10156,
+  "name": "Prawda nigdy nie jest oczywista.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10157,
+  "name": "Kto ma rację? No kto?",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10158,
+  "name": "Poranne zamieszanie.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10159,
+  "name": "Palący problem.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10160,
+  "name": "Niepewność zrodzona w ogniu.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10161,
+  "name": "Niepewność zrodzona w ogniu.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10162,
+  "name": "Pojednanie.",
+  "grupa": 13,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 10165,
+  "name": "Lokatorzy Opuszczonego Domu.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10166,
+  "name": "Franciszek i Franek.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10167,
+  "name": "Ederski Targ Poszukiwaczy... Przygód?",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10168,
+  "name": "Lepsze pisklę w garści niż kogucik na patyku.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10169,
+  "name": "Polowanie na zgniłe jabłka.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10170,
+  "name": "Akt I: Liryka.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10171,
+  "name": "Akt II: Epika.",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10172,
+  "name": "Akt III: Dramat?",
+  "grupa": 14,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 10173,
+  "name": "Spotkanie z niewiadomym.",
+  "grupa": 14,
+  "lvlMin": 43,
+  "lvlMax": 500
+ },
+ {
+  "id": 10174,
+  "name": "Fundusz Wdów i Sierot.",
+  "grupa": 14,
+  "lvlMin": 43,
+  "lvlMax": 500
+ },
+ {
+  "id": 10175,
+  "name": "Szept ulicy.",
+  "grupa": 14,
+  "lvlMin": 43,
+  "lvlMax": 500
+ },
+ {
+  "id": 10176,
+  "name": "Wyznanie akuszerki.",
+  "grupa": 14,
+  "lvlMin": 43,
+  "lvlMax": 500
+ },
+ {
+  "id": 10177,
+  "name": "Historia Teatru Monticolo w trzech aktach opisana.",
+  "grupa": 14,
+  "lvlMin": 44,
+  "lvlMax": 500
+ },
+ {
+  "id": 10178,
+  "name": "Akt I: Jaskinia.",
+  "grupa": 14,
+  "lvlMin": 44,
+  "lvlMax": 500
+ },
+ {
+  "id": 10179,
+  "name": "Akt II: Kłamstwo.",
+  "grupa": 14,
+  "lvlMin": 44,
+  "lvlMax": 500
+ },
+ {
+  "id": 10185,
+  "name": "Założone pęto.",
+  "grupa": 15,
+  "lvlMin": 45,
+  "lvlMax": 500
+ },
+ {
+  "id": 10186,
+  "name": "Przełknięcie dumy.",
+  "grupa": 15,
+  "lvlMin": 44,
+  "lvlMax": 500
+ },
+ {
+  "id": 10187,
+  "name": "Gra o życie.",
+  "grupa": 15,
+  "lvlMin": 45,
+  "lvlMax": 500
+ },
+ {
+  "id": 10188,
+  "name": "Los bohatera Eder.",
+  "grupa": 15,
+  "lvlMin": 45,
+  "lvlMax": 500
+ },
+ {
+  "id": 10189,
+  "name": "Druga szansa.",
+  "grupa": 15,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10190,
+  "name": "Nieoczekiwana konfrontacja.",
+  "grupa": 15,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10191,
+  "name": "W drodze do szlaku.",
+  "grupa": 15,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10192,
+  "name": "Bez strachu...",
+  "grupa": 15,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10193,
+  "name": "U bram normalności!",
+  "grupa": 15,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10194,
+  "name": "Witaj w Ithan, żołnierzu!",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10195,
+  "name": "Szkolenie czas zacząć!",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10196,
+  "name": "Monotonia życia…",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10197,
+  "name": "Każdy awans jest powodem do dumy!",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10198,
+  "name": "Prawo znam, prawo mam…",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10199,
+  "name": "Zawsze gotowi na wszystko!",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10200,
+  "name": "Szkoła żołnierskiego życia!",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10201,
+  "name": "Spryt i rozwaga traperów.",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10202,
+  "name": "Noc poza miastem.",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10203,
+  "name": "Miejska legenda nadal żywa?!",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10204,
+  "name": "Widmo wilczego gniewu…",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10205,
+  "name": "Uciekając przez deszcz…",
+  "grupa": 16,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 10208,
+  "name": "Historia Wita: Jego wersja.",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10209,
+  "name": "Historia Wita: Jej wersja.",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10210,
+  "name": "Historia Wita: Ich wersja.",
+  "grupa": 16,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 10215,
+  "name": "Brygada wypadowa!",
+  "grupa": 17,
+  "lvlMin": 48,
+  "lvlMax": 500
+ },
+ {
+  "id": 10216,
+  "name": "Rekonesans na terenach wroga!",
+  "grupa": 17,
+  "lvlMin": 48,
+  "lvlMax": 500
+ },
+ {
+  "id": 10217,
+  "name": "Świszcząca podpucha!",
+  "grupa": 17,
+  "lvlMin": 48,
+  "lvlMax": 500
+ },
+ {
+  "id": 10218,
+  "name": "Orcze hordy w gotowości!",
+  "grupa": 17,
+  "lvlMin": 48,
+  "lvlMax": 500
+ },
+ {
+  "id": 10219,
+  "name": "Chwila na złapanie oddechu…",
+  "grupa": 17,
+  "lvlMin": 49,
+  "lvlMax": 500
+ },
+ {
+  "id": 10220,
+  "name": "Cisza przed burzą.",
+  "grupa": 17,
+  "lvlMin": 49,
+  "lvlMax": 500
+ },
+ {
+  "id": 10221,
+  "name": "Walka w świetle ognia i gwiazd.",
+  "grupa": 17,
+  "lvlMin": 49,
+  "lvlMax": 500
+ },
+ {
+  "id": 10222,
+  "name": "Nieoczekiwany gość!",
+  "grupa": 17,
+  "lvlMin": 49,
+  "lvlMax": 500
+ },
+ {
+  "id": 10223,
+  "name": "Czy można jeszcze mieć nadzieję?",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10224,
+  "name": "Cena spokoju.",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10225,
+  "name": "Pamięć o tych, którzy odeszli.",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10226,
+  "name": "Nocne kompromitacje.",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10227,
+  "name": "Sen o młocie.",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10228,
+  "name": "Obrona twierdzy.",
+  "grupa": 17,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 10229,
+  "name": "Misja spersonalizowana!",
+  "grupa": 18,
+  "lvlMin": 51,
+  "lvlMax": 500
+ },
+ {
+  "id": 10230,
+  "name": "Śladami wielkiego odkrywcy.",
+  "grupa": 18,
+  "lvlMin": 51,
+  "lvlMax": 500
+ },
+ {
+  "id": 10231,
+  "name": "Nieplanowany obrót spraw.",
+  "grupa": 18,
+  "lvlMin": 51,
+  "lvlMax": 500
+ },
+ {
+  "id": 10232,
+  "name": "Zachwiana równowaga...",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10233,
+  "name": "Szczytny cel!",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10234,
+  "name": "Szczytny cel!",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10235,
+  "name": "Szczytny cel!",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10236,
+  "name": "Niezrozumiałe pragnienia.",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10237,
+  "name": "Niezrozumiałe pragnienia.",
+  "grupa": 18,
+  "lvlMin": 52,
+  "lvlMax": 500
+ },
+ {
+  "id": 10238,
+  "name": "Piekielny problem.",
+  "grupa": 18,
+  "lvlMin": 53,
+  "lvlMax": 500
+ },
+ {
+  "id": 10239,
+  "name": "Zaogniony konflikt.",
+  "grupa": 18,
+  "lvlMin": 53,
+  "lvlMax": 500
+ },
+ {
+  "id": 10240,
+  "name": "W ognistym spokoju.",
+  "grupa": 18,
+  "lvlMin": 54,
+  "lvlMax": 500
+ },
+ {
+  "id": 10241,
+  "name": "Prawdziwie [SEX=godny|godna]...",
+  "grupa": 18,
+  "lvlMin": 54,
+  "lvlMax": 500
+ },
+ {
+  "id": 10242,
+  "name": "Po zawirowaniach ani śladu.",
+  "grupa": 18,
+  "lvlMin": 54,
+  "lvlMax": 500
+ },
+ {
+  "id": 10244,
+  "name": "Brudne interesy oficera.",
+  "grupa": 18,
+  "lvlMin": 54,
+  "lvlMax": 500
+ },
+ {
+  "id": 10246,
+  "name": "W poszukiwaniu nowych przygód - cz. I.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10247,
+  "name": "W poszukiwaniu nowych przygód - cz. II.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10248,
+  "name": "Co się stało z Erikiem?",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10249,
+  "name": "Na tropie...",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10250,
+  "name": "Sekrety Mokrej Groty.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10251,
+  "name": "W poszukiwaniu nowych przygód - cz. III.",
+  "grupa": 19,
+  "lvlMin": 56,
+  "lvlMax": 500
+ },
+ {
+  "id": 10252,
+  "name": "Dola żądnych przygód…",
+  "grupa": 19,
+  "lvlMin": 56,
+  "lvlMax": 500
+ },
+ {
+  "id": 10253,
+  "name": "Poszukiwanie zaginionej karawany.",
+  "grupa": 19,
+  "lvlMin": 56,
+  "lvlMax": 500
+ },
+ {
+  "id": 10254,
+  "name": "Miejsce wypadku.",
+  "grupa": 19,
+  "lvlMin": 56,
+  "lvlMax": 500
+ },
+ {
+  "id": 10261,
+  "name": "Wywerna, rybak i wielki sum.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10262,
+  "name": "Kocioł druida Jaspera.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10263,
+  "name": "Jajo wywerny królewskiej.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10264,
+  "name": "Znikające rośliny.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10265,
+  "name": "W poszukiwaniu Kowelina.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10266,
+  "name": "Koboldzia tortura.",
+  "grupa": 19,
+  "lvlMin": 55,
+  "lvlMax": 500
+ },
+ {
+  "id": 10282,
+  "name": "Dawni kompani znowu razem!",
+  "grupa": 20,
+  "lvlMin": 60,
+  "lvlMax": 500
+ },
+ {
+  "id": 10283,
+  "name": "Kierunek - północ!",
+  "grupa": 20,
+  "lvlMin": 60,
+  "lvlMax": 500
+ },
+ {
+  "id": 10284,
+  "name": "Lawirując pomiędzy ogniem a ciemnością…",
+  "grupa": 20,
+  "lvlMin": 60,
+  "lvlMax": 500
+ },
+ {
+  "id": 10285,
+  "name": "Nad bezkresną czeluścią.",
+  "grupa": 20,
+  "lvlMin": 60,
+  "lvlMax": 500
+ },
+ {
+  "id": 10286,
+  "name": "Bezkresny labirynt.",
+  "grupa": 20,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 10287,
+  "name": "W leżu bestii.",
+  "grupa": 20,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 10288,
+  "name": "Legendy nie kłamią!",
+  "grupa": 20,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 10289,
+  "name": "Szybki powrót.",
+  "grupa": 20,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 10290,
+  "name": "Chwila rozluźnienia.",
+  "grupa": 20,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 10291,
+  "name": "Alarm!",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10292,
+  "name": "Wycofać się!",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10293,
+  "name": "Pożoga to za mało powiedziane…",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10294,
+  "name": "Zabezpieczenie kopalni to priorytet!",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10295,
+  "name": "Czas na raport.",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10296,
+  "name": "Na ratunek uwięzionym.",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10297,
+  "name": "Na ratunek uwięzionym.",
+  "grupa": 21,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 10298,
+  "name": "Czas złapać oddech.",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10299,
+  "name": "Walki ciąg dalszy…",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10300,
+  "name": "Walki ciąg dalszy…",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10301,
+  "name": "Walki ciąg dalszy…",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10302,
+  "name": "Wyczekiwanie na rozwiązanie.",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10303,
+  "name": "Narada!",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10304,
+  "name": "Niepewny atak.",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10305,
+  "name": "Niepewny atak.",
+  "grupa": 21,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 10309,
+  "name": "Jak mogło do tego dojść?!",
+  "grupa": 22,
+  "lvlMin": 66,
+  "lvlMax": 500
+ },
+ {
+  "id": 10310,
+  "name": "Tylko nie za mocno…",
+  "grupa": 22,
+  "lvlMin": 66,
+  "lvlMax": 500
+ },
+ {
+  "id": 10311,
+  "name": "Czy paznokcie zdołają odrosnąć?!",
+  "grupa": 22,
+  "lvlMin": 66,
+  "lvlMax": 500
+ },
+ {
+  "id": 10312,
+  "name": "W oczekiwaniu na sprawiedliwość…",
+  "grupa": 22,
+  "lvlMin": 66,
+  "lvlMax": 500
+ },
+ {
+  "id": 10313,
+  "name": "Głodni sprawiedliwości!",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10314,
+  "name": "Zarzut I.",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10315,
+  "name": "Zarzut II.",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10316,
+  "name": "Zarzut III.",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10317,
+  "name": "Zarzut IV.",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10318,
+  "name": "Cena niewinności…",
+  "grupa": 22,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 10319,
+  "name": "Ostatnie życzenie…",
+  "grupa": 22,
+  "lvlMin": 68,
+  "lvlMax": 500
+ },
+ {
+  "id": 10320,
+  "name": "W samo południe.",
+  "grupa": 22,
+  "lvlMin": 68,
+  "lvlMax": 500
+ },
+ {
+  "id": 10321,
+  "name": "Odroczenie?",
+  "grupa": 22,
+  "lvlMin": 68,
+  "lvlMax": 500
+ },
+ {
+  "id": 10322,
+  "name": "Idąc bez oczu.",
+  "grupa": 71,
+  "lvlMin": 69,
+  "lvlMax": 500
+ },
+ {
+  "id": 10323,
+  "name": "Poniewierani...",
+  "grupa": 71,
+  "lvlMin": 69,
+  "lvlMax": 500
+ },
+ {
+  "id": 10324,
+  "name": "Kamienne trudności.",
+  "grupa": 71,
+  "lvlMin": 69,
+  "lvlMax": 500
+ },
+ {
+  "id": 10325,
+  "name": "W kamiennej kryjówce.",
+  "grupa": 71,
+  "lvlMin": 69,
+  "lvlMax": 500
+ },
+ {
+  "id": 10326,
+  "name": "Los poniewieranych.",
+  "grupa": 71,
+  "lvlMin": 70,
+  "lvlMax": 500
+ },
+ {
+  "id": 10327,
+  "name": "Śnieżne ścieżki.",
+  "grupa": 71,
+  "lvlMin": 70,
+  "lvlMax": 500
+ },
+ {
+  "id": 10328,
+  "name": "Przedsionek zagubionych dróg.",
+  "grupa": 71,
+  "lvlMin": 70,
+  "lvlMax": 500
+ },
+ {
+  "id": 10329,
+  "name": "Tajemnice ciemności.",
+  "grupa": 71,
+  "lvlMin": 70,
+  "lvlMax": 500
+ },
+ {
+  "id": 10330,
+  "name": "Zdradzieckie przejścia...",
+  "grupa": 71,
+  "lvlMin": 71,
+  "lvlMax": 500
+ },
+ {
+  "id": 10331,
+  "name": "Droga bez końca?",
+  "grupa": 71,
+  "lvlMin": 71,
+  "lvlMax": 500
+ },
+ {
+  "id": 10332,
+  "name": "Nawiedzone krypty.",
+  "grupa": 71,
+  "lvlMin": 71,
+  "lvlMax": 500
+ },
+ {
+  "id": 10333,
+  "name": "Andaryjskie pragnienie.",
+  "grupa": 72,
+  "lvlMin": 72,
+  "lvlMax": 500
+ },
+ {
+  "id": 10334,
+  "name": "Uwięzieni w kamiennych murach.",
+  "grupa": 72,
+  "lvlMin": 72,
+  "lvlMax": 500
+ },
+ {
+  "id": 10335,
+  "name": "Poszukiwania Garusa!",
+  "grupa": 72,
+  "lvlMin": 73,
+  "lvlMax": 500
+ },
+ {
+  "id": 10336,
+  "name": "Tajemnicze zabójstwo w Twierdzy Mnichów.",
+  "grupa": 72,
+  "lvlMin": 73,
+  "lvlMax": 500
+ },
+ {
+  "id": 10337,
+  "name": "Tajemnicze zabójstwo w Twierdzy Mnichów.",
+  "grupa": 72,
+  "lvlMin": 73,
+  "lvlMax": 500
+ },
+ {
+  "id": 10338,
+  "name": "Komplikacja za komplikacją…",
+  "grupa": 72,
+  "lvlMin": 74,
+  "lvlMax": 500
+ },
+ {
+  "id": 10339,
+  "name": "Poranny popłoch wśród mnichów.",
+  "grupa": 72,
+  "lvlMin": 74,
+  "lvlMax": 500
+ },
+ {
+  "id": 10340,
+  "name": "W ciszy pośród licznych wieści...",
+  "grupa": 72,
+  "lvlMin": 74,
+  "lvlMax": 500
+ },
+ {
+  "id": 10341,
+  "name": "Ucieczka ze świątyni Andarum!",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10342,
+  "name": "Ucieczka ze świątyni Andarum!",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10343,
+  "name": "Pogoń zagubionych…",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10344,
+  "name": "Pogoń zagubionych…",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10345,
+  "name": "Pogoń zagubionych…",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10346,
+  "name": "Tajemnice Andarum!",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10347,
+  "name": "Tajemnice Andarum!",
+  "grupa": 72,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 10358,
+  "name": "W cieniu zdradzieckich korytarzy.",
+  "grupa": 73,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 10359,
+  "name": "Czas obrać właściwy kierunek.",
+  "grupa": 73,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 10360,
+  "name": "Zdradliwy oddech.",
+  "grupa": 73,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 10361,
+  "name": "Margoriańskie powitanie...",
+  "grupa": 73,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 10362,
+  "name": "Witaj... Margorio?!",
+  "grupa": 73,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 10363,
+  "name": "Odrobina ciepła.",
+  "grupa": 74,
+  "lvlMin": 79,
+  "lvlMax": 500
+ },
+ {
+  "id": 10364,
+  "name": "Margoriańska codzienność.",
+  "grupa": 74,
+  "lvlMin": 79,
+  "lvlMax": 500
+ },
+ {
+  "id": 10365,
+  "name": "Margoriańska codzienność.",
+  "grupa": 74,
+  "lvlMin": 79,
+  "lvlMax": 500
+ },
+ {
+  "id": 10366,
+  "name": "Na brodę krasnoluda, co znowu?!",
+  "grupa": 74,
+  "lvlMin": 79,
+  "lvlMax": 500
+ },
+ {
+  "id": 10367,
+  "name": "Na brodę krasnoluda, co znowu?!",
+  "grupa": 74,
+  "lvlMin": 79,
+  "lvlMax": 500
+ },
+ {
+  "id": 10368,
+  "name": "Poza zasięgiem...",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10369,
+  "name": "Krasnoludzkie sprawy.",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10370,
+  "name": "Nocne zawikłanie.",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10371,
+  "name": "Nocne zawikłanie.",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10372,
+  "name": "Brudna robota.",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10373,
+  "name": "Brudna robota.",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10374,
+  "name": "Wstrząsające wydarzenia!",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10375,
+  "name": "Wstrząsające wydarzenia!",
+  "grupa": 74,
+  "lvlMin": 80,
+  "lvlMax": 500
+ },
+ {
+  "id": 10376,
+  "name": "Wyrok Morthena.",
+  "grupa": 74,
+  "lvlMin": 81,
+  "lvlMax": 500
+ },
+ {
+  "id": 10377,
+  "name": "Wyrok Morthena.",
+  "grupa": 74,
+  "lvlMin": 81,
+  "lvlMax": 500
+ },
+ {
+  "id": 10385,
+  "name": "W dobrych rękach.",
+  "grupa": 75,
+  "lvlMin": 82,
+  "lvlMax": 500
+ },
+ {
+  "id": 10386,
+  "name": "Przypadłość karawan.",
+  "grupa": 75,
+  "lvlMin": 82,
+  "lvlMax": 500
+ },
+ {
+  "id": 10387,
+  "name": "Magiczne przybycie.",
+  "grupa": 75,
+  "lvlMin": 82,
+  "lvlMax": 500
+ },
+ {
+  "id": 10388,
+  "name": "Wracając do zdrowia...",
+  "grupa": 75,
+  "lvlMin": 82,
+  "lvlMax": 500
+ },
+ {
+  "id": 10389,
+  "name": "Czas pożegnania.",
+  "grupa": 75,
+  "lvlMin": 83,
+  "lvlMax": 500
+ },
+ {
+  "id": 13048,
+  "name": "Spektakl: Wesele",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13049,
+  "name": "Spektakl: Kordian",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13050,
+  "name": "Spektakl: Antygona",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13051,
+  "name": "Spektakl: Dziady, część II",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13052,
+  "name": "Spektakl: Zemsta",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13054,
+  "name": "Podstawy reżyserii.",
+  "grupa": 23,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13080,
+  "name": "Cygańska zguba.",
+  "grupa": 65,
+  "lvlMin": 10,
+  "lvlMax": 500
+ },
+ {
+  "id": 13081,
+  "name": "Zapewnij wyżywienie dla członków taboru.",
+  "grupa": 65,
+  "lvlMin": 10,
+  "lvlMax": 500
+ },
+ {
+  "id": 13082,
+  "name": "Nieznane są ścieżki przyszłości.",
+  "grupa": 65,
+  "lvlMin": 11,
+  "lvlMax": 500
+ },
+ {
+  "id": 13083,
+  "name": "Herbata na ból brzucha.",
+  "grupa": 65,
+  "lvlMin": 11,
+  "lvlMax": 500
+ },
+ {
+  "id": 13084,
+  "name": "Urozmaicenie asortymentu Ernesta.",
+  "grupa": 65,
+  "lvlMin": 12,
+  "lvlMax": 500
+ },
+ {
+  "id": 13085,
+  "name": "Zaginiona klacz.",
+  "grupa": 65,
+  "lvlMin": 12,
+  "lvlMax": 500
+ },
+ {
+  "id": 13109,
+  "name": "Karawana w drodze.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13110,
+  "name": "Widoczna ciemność.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13111,
+  "name": "Dziwna ziemia.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13112,
+  "name": "Strach przed nocą.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13113,
+  "name": "Ognista noc.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13114,
+  "name": "Tylko położyć się i spłonąć.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13115,
+  "name": "Blizny po ogniu.",
+  "grupa": 24,
+  "lvlMin": 178,
+  "lvlMax": 500
+ },
+ {
+  "id": 13122,
+  "name": "Pirat, co nie pije rumu.",
+  "grupa": 31,
+  "lvlMin": 261,
+  "lvlMax": 500
+ },
+ {
+  "id": 13123,
+  "name": "Grzebień dla pięknej pani.",
+  "grupa": 31,
+  "lvlMin": 261,
+  "lvlMax": 500
+ },
+ {
+  "id": 13124,
+  "name": "Miłość syreny.",
+  "grupa": 31,
+  "lvlMin": 261,
+  "lvlMax": 500
+ },
+ {
+  "id": 13125,
+  "name": "Mapa w butelce.",
+  "grupa": 30,
+  "lvlMin": 123,
+  "lvlMax": 500
+ },
+ {
+  "id": 13126,
+  "name": "Legendarny skarb Szalonego Johna.",
+  "grupa": 30,
+  "lvlMin": 123,
+  "lvlMax": 500
+ },
+ {
+  "id": 13127,
+  "name": "Nie lekceważ martwego trytona.",
+  "grupa": 29,
+  "lvlMin": 263,
+  "lvlMax": 500
+ },
+ {
+  "id": 13128,
+  "name": "Podwodne poszukiwania.",
+  "grupa": 29,
+  "lvlMin": 263,
+  "lvlMax": 500
+ },
+ {
+  "id": 13129,
+  "name": "Podwodne miasto Yaggid Lim.",
+  "grupa": 29,
+  "lvlMin": 263,
+  "lvlMax": 500
+ },
+ {
+  "id": 13130,
+  "name": "Precz z cyngą!",
+  "grupa": 32,
+  "lvlMin": 124,
+  "lvlMax": 500
+ },
+ {
+  "id": 13131,
+  "name": "Eksperyment, jakby nie było, medyczny.",
+  "grupa": 32,
+  "lvlMin": 124,
+  "lvlMax": 500
+ },
+ {
+  "id": 13132,
+  "name": "Cytrusowa spekulacja.",
+  "grupa": 32,
+  "lvlMin": 124,
+  "lvlMax": 500
+ },
+ {
+  "id": 13133,
+  "name": "Ktokolwiek widział, ktokolwiek wie...",
+  "grupa": 25,
+  "lvlMin": 121,
+  "lvlMax": 500
+ },
+ {
+  "id": 13134,
+  "name": "W proch się obrócisz.",
+  "grupa": 25,
+  "lvlMin": 121,
+  "lvlMax": 500
+ },
+ {
+  "id": 13135,
+  "name": "Wyrzuć to w cholerę!",
+  "grupa": 25,
+  "lvlMin": 121,
+  "lvlMax": 500
+ },
+ {
+  "id": 13136,
+  "name": "Kim wy w ogóle, kurka, jesteście?",
+  "grupa": 28,
+  "lvlMin": 123,
+  "lvlMax": 500
+ },
+ {
+  "id": 13137,
+  "name": "Nieprzewidziane reperkusje.",
+  "grupa": 28,
+  "lvlMin": 123,
+  "lvlMax": 500
+ },
+ {
+  "id": 13138,
+  "name": "Stary rybak i morze.",
+  "grupa": 27,
+  "lvlMin": 122,
+  "lvlMax": 500
+ },
+ {
+  "id": 13139,
+  "name": "Mokra robota.",
+  "grupa": 27,
+  "lvlMin": 122,
+  "lvlMax": 500
+ },
+ {
+  "id": 13140,
+  "name": "Wyprawa na Caneum.",
+  "grupa": 27,
+  "lvlMin": 122,
+  "lvlMax": 500
+ },
+ {
+  "id": 13164,
+  "name": "Postrach wszelakich statków.",
+  "grupa": 26,
+  "lvlMin": 262,
+  "lvlMax": 500
+ },
+ {
+  "id": 13165,
+  "name": "Dociekając prawdy o Latającym Holendrze.",
+  "grupa": 26,
+  "lvlMin": 262,
+  "lvlMax": 500
+ },
+ {
+  "id": 13166,
+  "name": "Na dno!",
+  "grupa": 26,
+  "lvlMin": 262,
+  "lvlMax": 500
+ },
+ {
+  "id": 13175,
+  "name": "Mrowisko.",
+  "grupa": 55,
+  "lvlMin": 20,
+  "lvlMax": 500
+ },
+ {
+  "id": 13176,
+  "name": "Dzikie Koty.",
+  "grupa": 55,
+  "lvlMin": 21,
+  "lvlMax": 500
+ },
+ {
+  "id": 13177,
+  "name": "Drapieżnicy z Dziewiczej Kniei.",
+  "grupa": 55,
+  "lvlMin": 22,
+  "lvlMax": 500
+ },
+ {
+  "id": 13178,
+  "name": "Leśne bazyliszki.",
+  "grupa": 55,
+  "lvlMin": 23,
+  "lvlMax": 500
+ },
+ {
+  "id": 13179,
+  "name": "Osada Mulusów.",
+  "grupa": 55,
+  "lvlMin": 24,
+  "lvlMax": 500
+ },
+ {
+  "id": 13180,
+  "name": "Demony zamieszkujące Przeklętą Strażnicę.",
+  "grupa": 55,
+  "lvlMin": 25,
+  "lvlMax": 500
+ },
+ {
+  "id": 13181,
+  "name": "Zbiry ze wschodniego traktu.",
+  "grupa": 55,
+  "lvlMin": 26,
+  "lvlMax": 500
+ },
+ {
+  "id": 13182,
+  "name": "Przydrożni rozbójnicy.",
+  "grupa": 56,
+  "lvlMin": 27,
+  "lvlMax": 500
+ },
+ {
+  "id": 13183,
+  "name": "Niechciane sąsiedztwo.",
+  "grupa": 56,
+  "lvlMin": 28,
+  "lvlMax": 500
+ },
+ {
+  "id": 13184,
+  "name": "Pieczara Niepogody.",
+  "grupa": 56,
+  "lvlMin": 29,
+  "lvlMax": 500
+ },
+ {
+  "id": 13185,
+  "name": "Powolni uciekinierzy.",
+  "grupa": 56,
+  "lvlMin": 30,
+  "lvlMax": 500
+ },
+ {
+  "id": 13186,
+  "name": "Mieszkańcy Zasłoniętego Jeziora.",
+  "grupa": 56,
+  "lvlMin": 31,
+  "lvlMax": 500
+ },
+ {
+  "id": 13187,
+  "name": "Racicowy Matecznik.",
+  "grupa": 56,
+  "lvlMin": 32,
+  "lvlMax": 500
+ },
+ {
+  "id": 13188,
+  "name": "Grobowi wojownicy.",
+  "grupa": 56,
+  "lvlMin": 33,
+  "lvlMax": 500
+ },
+ {
+  "id": 13189,
+  "name": "Warczące Osuwiska.",
+  "grupa": 56,
+  "lvlMin": 34,
+  "lvlMax": 500
+ },
+ {
+  "id": 13190,
+  "name": "Skarpiska Tolloków.",
+  "grupa": 56,
+  "lvlMin": 35,
+  "lvlMax": 500
+ },
+ {
+  "id": 13191,
+  "name": "Szemrani kupcy.",
+  "grupa": 56,
+  "lvlMin": 36,
+  "lvlMax": 500
+ },
+ {
+  "id": 13192,
+  "name": "Porachunki z orkami.",
+  "grupa": 57,
+  "lvlMin": 37,
+  "lvlMax": 500
+ },
+ {
+  "id": 13193,
+  "name": "Potwory z Mrocznego Przesmyku.",
+  "grupa": 57,
+  "lvlMin": 38,
+  "lvlMax": 500
+ },
+ {
+  "id": 13194,
+  "name": "Mokra Grota.",
+  "grupa": 57,
+  "lvlMin": 39,
+  "lvlMax": 500
+ },
+ {
+  "id": 13195,
+  "name": "Ośmionogi z Groty Bezszelestnych Kroków.",
+  "grupa": 57,
+  "lvlMin": 40,
+  "lvlMax": 500
+ },
+ {
+  "id": 13196,
+  "name": "Latające stwory.",
+  "grupa": 57,
+  "lvlMin": 41,
+  "lvlMax": 500
+ },
+ {
+  "id": 13197,
+  "name": "Lazurytowa Grota.",
+  "grupa": 57,
+  "lvlMin": 42,
+  "lvlMax": 500
+ },
+ {
+  "id": 13198,
+  "name": "Owady z kopalni.",
+  "grupa": 57,
+  "lvlMin": 43,
+  "lvlMax": 500
+ },
+ {
+  "id": 13199,
+  "name": "Bazyliszki.",
+  "grupa": 57,
+  "lvlMin": 44,
+  "lvlMax": 500
+ },
+ {
+  "id": 13200,
+  "name": "Wioska Gnolli.",
+  "grupa": 57,
+  "lvlMin": 45,
+  "lvlMax": 500
+ },
+ {
+  "id": 13201,
+  "name": "Szkodniki z Leśnego Brodu.",
+  "grupa": 57,
+  "lvlMin": 46,
+  "lvlMax": 500
+ },
+ {
+  "id": 13202,
+  "name": "Mrówcza Kolonia.",
+  "grupa": 57,
+  "lvlMin": 47,
+  "lvlMax": 500
+ },
+ {
+  "id": 13203,
+  "name": "Mieszkańcy Andarum.",
+  "grupa": 57,
+  "lvlMin": 48,
+  "lvlMax": 500
+ },
+ {
+  "id": 13204,
+  "name": "Zdradzieckie tunele.",
+  "grupa": 57,
+  "lvlMin": 49,
+  "lvlMax": 500
+ },
+ {
+  "id": 13205,
+  "name": "Dusze śniegu.",
+  "grupa": 57,
+  "lvlMin": 50,
+  "lvlMax": 500
+ },
+ {
+  "id": 13206,
+  "name": "Mnisi ze świątyni.",
+  "grupa": 57,
+  "lvlMin": 51,
+  "lvlMax": 500
+ },
+ {
+  "id": 13215,
+  "name": "Grota Samotnych Dusz.",
+  "grupa": 58,
+  "lvlMin": 60,
+  "lvlMax": 500
+ },
+ {
+  "id": 13216,
+  "name": "Drapieżne koty.",
+  "grupa": 58,
+  "lvlMin": 61,
+  "lvlMax": 500
+ },
+ {
+  "id": 13217,
+  "name": "Zapomniany Święty Gaj.",
+  "grupa": 58,
+  "lvlMin": 62,
+  "lvlMax": 500
+ },
+ {
+  "id": 13218,
+  "name": "Strażniczki lasów.",
+  "grupa": 58,
+  "lvlMin": 63,
+  "lvlMax": 500
+ },
+ {
+  "id": 13219,
+  "name": "Gnomie jaskinie.",
+  "grupa": 58,
+  "lvlMin": 64,
+  "lvlMax": 500
+ },
+ {
+  "id": 13220,
+  "name": "Gady ze Złowrogich Bagien.",
+  "grupa": 58,
+  "lvlMin": 65,
+  "lvlMax": 500
+ },
+ {
+  "id": 13221,
+  "name": "Zwodnicze bagna.",
+  "grupa": 58,
+  "lvlMin": 66,
+  "lvlMax": 500
+ },
+ {
+  "id": 13222,
+  "name": "Dolina Centaurów.",
+  "grupa": 58,
+  "lvlMin": 67,
+  "lvlMax": 500
+ },
+ {
+  "id": 13223,
+  "name": "Strapienie podróżników.",
+  "grupa": 58,
+  "lvlMin": 70,
+  "lvlMax": 500
+ },
+ {
+  "id": 13224,
+  "name": "Podziemia wieży magów.",
+  "grupa": 58,
+  "lvlMin": 72,
+  "lvlMax": 500
+ },
+ {
+  "id": 13225,
+  "name": "Dwugłowe olbrzymy.",
+  "grupa": 58,
+  "lvlMin": 75,
+  "lvlMax": 500
+ },
+ {
+  "id": 13226,
+  "name": "Błotniste istoty.",
+  "grupa": 58,
+  "lvlMin": 77,
+  "lvlMax": 500
+ },
+ {
+  "id": 13227,
+  "name": "Północny szlak.",
+  "grupa": 59,
+  "lvlMin": 78,
+  "lvlMax": 500
+ },
+ {
+  "id": 13228,
+  "name": "Potwory z zaświatów.",
+  "grupa": 59,
+  "lvlMin": 81,
+  "lvlMax": 500
+ },
+ {
+  "id": 13229,
+  "name": "Pustynni wojownicy.",
+  "grupa": 59,
+  "lvlMin": 82,
+  "lvlMax": 500
+ },
+ {
+  "id": 13230,
+  "name": "Archipelag Bremus An.",
+  "grupa": 59,
+  "lvlMin": 86,
+  "lvlMax": 500
+ },
+ {
+  "id": 13231,
+  "name": "Rogogłowi obrońcy.",
+  "grupa": 59,
+  "lvlMin": 89,
+  "lvlMax": 500
+ },
+ {
+  "id": 13232,
+  "name": "Skorupiaki z Rem.",
+  "grupa": 59,
+  "lvlMin": 92,
+  "lvlMax": 500
+ },
+ {
+  "id": 13233,
+  "name": "Gliniane golemy.",
+  "grupa": 59,
+  "lvlMin": 93,
+  "lvlMax": 500
+ },
+ {
+  "id": 13234,
+  "name": "Na ratunek Magradit.",
+  "grupa": 59,
+  "lvlMin": 96,
+  "lvlMax": 500
+ },
+ {
+  "id": 13235,
+  "name": "Widma z Wyspy Wraków.",
+  "grupa": 59,
+  "lvlMin": 98,
+  "lvlMax": 500
+ },
+ {
+  "id": 13236,
+  "name": "Piracka nora.",
+  "grupa": 59,
+  "lvlMin": 100,
+  "lvlMax": 500
+ },
+ {
+  "id": 13237,
+  "name": "Piaskowi niewolnicy.",
+  "grupa": 59,
+  "lvlMin": 102,
+  "lvlMax": 500
+ },
+ {
+  "id": 13238,
+  "name": "Kopalnia Żółtego Kruszcu.",
+  "grupa": 59,
+  "lvlMin": 104,
+  "lvlMax": 500
+ },
+ {
+  "id": 13239,
+  "name": "Latający rabusie.",
+  "grupa": 58,
+  "lvlMin": 105,
+  "lvlMax": 500
+ },
+ {
+  "id": 13240,
+  "name": "Żywe ognie.",
+  "grupa": 58,
+  "lvlMin": 107,
+  "lvlMax": 500
+ },
+ {
+  "id": 13241,
+  "name": "Magmowi strażnicy.",
+  "grupa": 58,
+  "lvlMin": 108,
+  "lvlMax": 500
+ },
+ {
+  "id": 13242,
+  "name": "Skrytobójcy ze Szlaku Thorpa.",
+  "grupa": 58,
+  "lvlMin": 109,
+  "lvlMax": 500
+ },
+ {
+  "id": 13243,
+  "name": "Olbrzymie ważki.",
+  "grupa": 58,
+  "lvlMin": 110,
+  "lvlMax": 500
+ },
+ {
+  "id": 13244,
+  "name": "Góralska przygoda.",
+  "grupa": 58,
+  "lvlMin": 111,
+  "lvlMax": 500
+ },
+ {
+  "id": 13245,
+  "name": "Bezduszni barbarzyńcy.",
+  "grupa": 60,
+  "lvlMin": 115,
+  "lvlMax": 500
+ },
+ {
+  "id": 13246,
+  "name": "Tajemnica Kruzo.",
+  "grupa": 60,
+  "lvlMin": 118,
+  "lvlMax": 500
+ },
+ {
+  "id": 13247,
+  "name": "Mechaniczne gobliny.",
+  "grupa": 60,
+  "lvlMin": 120,
+  "lvlMax": 500
+ },
+ {
+  "id": 13248,
+  "name": "Potępione dusze.",
+  "grupa": 60,
+  "lvlMin": 122,
+  "lvlMax": 500
+ },
+ {
+  "id": 13249,
+  "name": "Górskie wiedźmy.",
+  "grupa": 60,
+  "lvlMin": 123,
+  "lvlMax": 500
+ },
+ {
+  "id": 13250,
+  "name": "Czerwone bestie.",
+  "grupa": 60,
+  "lvlMin": 126,
+  "lvlMax": 500
+ },
+ {
+  "id": 13251,
+  "name": "Dziki Zagajnik.",
+  "grupa": 60,
+  "lvlMin": 130,
+  "lvlMax": 500
+ },
+ {
+  "id": 13252,
+  "name": "Duchy Pradawnych.",
+  "grupa": 60,
+  "lvlMin": 132,
+  "lvlMax": 500
+ },
+ {
+  "id": 13253,
+  "name": "Sala Królewska.",
+  "grupa": 60,
+  "lvlMin": 136,
+  "lvlMax": 500
+ },
+ {
+  "id": 13254,
+  "name": "Czarna Gwardia.",
+  "grupa": 60,
+  "lvlMin": 141,
+  "lvlMax": 500
+ },
+ {
+  "id": 13255,
+  "name": "Kryształowe korytarze.",
+  "grupa": 60,
+  "lvlMin": 143,
+  "lvlMax": 500
+ },
+ {
+  "id": 13256,
+  "name": "Mieszkanki lasu.",
+  "grupa": 61,
+  "lvlMin": 145,
+  "lvlMax": 500
+ },
+ {
+  "id": 13257,
+  "name": "Ogrza kawerna.",
+  "grupa": 61,
+  "lvlMin": 150,
+  "lvlMax": 500
+ },
+ {
+  "id": 13258,
+  "name": "Nieumarła szlachta",
+  "grupa": 61,
+  "lvlMin": 152,
+  "lvlMax": 500
+ },
+ {
+  "id": 13259,
+  "name": "Niebezpieczna roślinność.",
+  "grupa": 61,
+  "lvlMin": 155,
+  "lvlMax": 500
+ },
+ {
+  "id": 13260,
+  "name": "Bezwzględni Valmirowie.",
+  "grupa": 61,
+  "lvlMin": 157,
+  "lvlMax": 500
+ },
+ {
+  "id": 13261,
+  "name": "Mroczny Las.",
+  "grupa": 62,
+  "lvlMin": 161,
+  "lvlMax": 500
+ },
+ {
+  "id": 13262,
+  "name": "Śmierdząca robota.",
+  "grupa": 62,
+  "lvlMin": 164,
+  "lvlMax": 500
+ },
+ {
+  "id": 13263,
+  "name": "Zagubione niewiasty.",
+  "grupa": 62,
+  "lvlMin": 168,
+  "lvlMax": 500
+ },
+ {
+  "id": 13264,
+  "name": "Heretycy niższego stopnia.",
+  "grupa": 62,
+  "lvlMin": 171,
+  "lvlMax": 500
+ },
+ {
+  "id": 13265,
+  "name": "Wyznawcy Czarnego Pana.",
+  "grupa": 62,
+  "lvlMin": 173,
+  "lvlMax": 500
+ },
+ {
+  "id": 13266,
+  "name": "Zapomniany Las.",
+  "grupa": 55,
+  "lvlMin": 176,
+  "lvlMax": 500
+ },
+ {
+  "id": 13267,
+  "name": "Pajęcze królestwo.",
+  "grupa": 55,
+  "lvlMin": 180,
+  "lvlMax": 500
+ },
+ {
+  "id": 13268,
+  "name": "Mroczny Lud.",
+  "grupa": 61,
+  "lvlMin": 184,
+  "lvlMax": 500
+ },
+ {
+  "id": 13269,
+  "name": "Wyznawcy Pajęczej Matki.",
+  "grupa": 61,
+  "lvlMin": 187,
+  "lvlMax": 500
+ },
+ {
+  "id": 13270,
+  "name": "Zatrute Torfowiska.",
+  "grupa": 61,
+  "lvlMin": 191,
+  "lvlMax": 500
+ },
+ {
+  "id": 13271,
+  "name": "Strumienie Szemrzących Wód.",
+  "grupa": 61,
+  "lvlMin": 195,
+  "lvlMax": 500
+ },
+ {
+  "id": 13272,
+  "name": "Zainfekowane zwierzęta.",
+  "grupa": 63,
+  "lvlMin": 200,
+  "lvlMax": 500
+ },
+ {
+  "id": 13273,
+  "name": "Księżycowe anomalie.",
+  "grupa": 63,
+  "lvlMin": 204,
+  "lvlMax": 500
+ },
+ {
+  "id": 13274,
+  "name": "Zakorzeniony Lud.",
+  "grupa": 59,
+  "lvlMin": 208,
+  "lvlMax": 500
+ },
+ {
+  "id": 13275,
+  "name": "Tajemnicza kraina.",
+  "grupa": 59,
+  "lvlMin": 211,
+  "lvlMax": 500
+ },
+ {
+  "id": 13276,
+  "name": "Waleczne plemię.",
+  "grupa": 59,
+  "lvlMin": 215,
+  "lvlMax": 500
+ },
+ {
+  "id": 13277,
+  "name": "Mahoptecka starszyzna.",
+  "grupa": 59,
+  "lvlMin": 220,
+  "lvlMax": 500
+ },
+ {
+  "id": 13278,
+  "name": "Wypaczenie Potępionego Zamczyska.",
+  "grupa": 60,
+  "lvlMin": 225,
+  "lvlMax": 500
+ },
+ {
+  "id": 13279,
+  "name": "Potępione wiedźmy.",
+  "grupa": 60,
+  "lvlMin": 229,
+  "lvlMax": 500
+ },
+ {
+  "id": 13280,
+  "name": "Zagrożenie ze Skalnego Pustkowia.",
+  "grupa": 62,
+  "lvlMin": 232,
+  "lvlMax": 500
+ },
+ {
+  "id": 13281,
+  "name": "Przerażone byty.",
+  "grupa": 62,
+  "lvlMin": 236,
+  "lvlMax": 500
+ },
+ {
+  "id": 13284,
+  "name": "Uroczysko Wodnika.",
+  "grupa": 62,
+  "lvlMin": 250,
+  "lvlMax": 500
+ },
+ {
+  "id": 13285,
+  "name": "Tajemnicze mieszkanki lasu.",
+  "grupa": 61,
+  "lvlMin": 254,
+  "lvlMax": 500
+ },
+ {
+  "id": 13425,
+  "name": "Eksploracja innego wymiaru!",
+  "grupa": 66,
+  "lvlMin": 250,
+  "lvlMax": 500
+ },
+ {
+  "id": 13426,
+  "name": "Miłość wszystko zwycięża.",
+  "grupa": 67,
+  "lvlMin": 25,
+  "lvlMax": 500
+ }
+]

@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Mieszkanki lasu. – etap 3",
+ "questId": 13256,
+ "questName": "Mieszkanki lasu.",
+ "stage": 3,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "174lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "ostatni etap zadania - Mieszkanki lasu"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Łowczyni Insektów; Poranna Rosa; Leśny Wiatr; Strażniczka Darów Lasu; Córa Dębu; Chryzoprenia; Wrzosera; Cantedewia; Ciernista Strzała; Ożywiony Pień; Bijąca Wierzba; Opiekunka Potoków; Patronka Żywicznej Magii; Fantom Kniei; Władczyni Łąk",
+   "n": 500,
+   "route": "[178lvl] driady"
+  },
+  {
+   "type": "goto",
+   "map": "Thuzal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

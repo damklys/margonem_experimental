@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "3.184.202610161700",
+ "version": "4.2.202610181200",
  "name": "[1-43lvl] Zero to Hero - A",
  "tiles": [
   {
@@ -29,7 +29,7 @@
   },
   {
    "type": "task",
-   "task": "[33] Zezwolnienie na teleportacje do Torneg.",
+   "task": "Zezwolenie na teleportację do Torneg.",
    "conds": [
     {
      "join": "and",
@@ -47,7 +47,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (20) Mrówki - Torneg",
+   "task": "Mrowisko. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 20
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 35
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mrowisko. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 20
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 35
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mrowisko. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -84,7 +120,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (23) Leśne bazyliszki - Torneg",
+   "task": "Leśne bazyliszki. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 23
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 38
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Leśne bazyliszki. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 23
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 38
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Leśne bazyliszki. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -121,7 +193,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (24) Osada Mulusów - Torneg",
+   "task": "Osada Mulusów. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 24
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 39
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Osada Mulusów. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 24
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 39
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Osada Mulusów. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -158,7 +266,7 @@
   },
   {
    "type": "task",
-   "task": "[45] Zezwolenie na teleportację do Eder",
+   "task": "Zezwolenie na teleportację do Eder.",
    "conds": [
     {
      "join": "and",
@@ -176,7 +284,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (27) Przydrożni rozbójnicy - Eder",
+   "task": "Przydrożni rozbójnicy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 27
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 42
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Przydrożni rozbójnicy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 27
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 42
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Przydrożni rozbójnicy. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -213,7 +357,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (29) Pieczara Niepogody - Eder",
+   "task": "Pieczara Niepogody. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 29
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Pieczara Niepogody. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 29
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Pieczara Niepogody. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -250,7 +430,43 @@
   },
   {
    "type": "task",
-   "task": "ZR: (33) Grobowi wojownicy - Eder",
+   "task": "Grobowi wojownicy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 33
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Grobowi wojownicy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 33
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "lt",
+     "value": 43
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Grobowi wojownicy. – etap 3",
    "conds": [
     {
      "join": "and",

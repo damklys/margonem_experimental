@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Dzikie Koty. – etap 1",
+ "questId": 13176,
+ "questName": "Dzikie Koty.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zakonnik Równowagi To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić...",
+     "a": "pierwszy etap zadania - Dzikie Koty"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Puma; Tygrys; Tigrios; Mushita",
+   "n": 100,
+   "route": "[20lvl] koty"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Przegoniłem kotowate do ich kryjówek"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

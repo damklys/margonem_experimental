@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Leśne bazyliszki. – etap 2",
+ "questId": 13178,
+ "questName": "Leśne bazyliszki.",
+ "stage": 2,
+ "stages": 3,
+ "stageKills": [
+  50,
+  150,
+  500
+ ],
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić.",
+     "a": "kolejny etap zadania - Leśne bazyliszki"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Leśny bazyliszek; Ziemny bazyliszek; Szlachetny bazyliszek; Kamienny bazyliszek",
+   "n": 150,
+   "route": "[26lvl] bazyliszki"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "bazyliszków"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  }
+ ]
+}

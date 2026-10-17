@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Mrowisko. – etap 1",
+ "questId": 13175,
+ "questName": "Mrowisko.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "20lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": " Zakonnik Równowagi To prawda. Zobaczmy, jakie zadania mógłbym ci zlecić...",
+     "a": "Chciałbym rozpocząć pierwszy etap zadania - Mrowisko"
+    },
+    {
+     "q": " Zakonnik Równowagi W Łanach Zboża, na zachód od Torneg, nieopodal młyna, swoje gniazdo założyły mrówki. Ich populacja drastycznie rośnie z dnia na dzień! Czy odważysz się tam udać i ograniczyć ich liczebność?",
+     "a": "Mrówki?"
+    },
+    {
+     "q": " Zakonnik Równowagi Wspaniale, nie zwlekaj i ruszaj do mrowiska.",
+     "a": "Tak też zrobię"
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Brązowa mrówka robotnica; Brązowa mrówka tragarz; Brązowa mrówka żołnierz; Mrówcza Królowa",
+   "n": 100,
+   "route": "[20lvl] mrówki"
+  },
+  {
+   "type": "goto",
+   "map": "Torneg",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": " Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Doprawdy? Jakie zadanie dla mnie wykonałeś?",
+     "a": "Zabiłem mrówki"
+    },
+    {
+     "q": "Zakonnik Równowagi Dobra robota, do zobaczenia następnym razem!",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

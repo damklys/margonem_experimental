@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Heretycy niższego stopnia. – etap 1",
+ "questId": 13264,
+ "questName": "Heretycy niższego stopnia.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "198lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Heretycy niższego stopnia"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Wtajemniczony Heretyk; Krwawy Wyznawca; Rozpruwacz Dziewic; Opętany Heretyk; Pogromca Myświórów; Podziemny Wartownik; Bergermona Krwawa Hrabina; Zufulus Smakosz Serc; Sataniel Skrytobójca; Annaniel Wysysacz Marzeń; Gothardus Kolekcjoner Głów",
+   "n": 100,
+   "route": "[203lvl] heretycy"
+  },
+  {
+   "type": "goto",
+   "map": "Nithal",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

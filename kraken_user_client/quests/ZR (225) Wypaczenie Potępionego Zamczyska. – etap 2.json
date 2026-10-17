@@ -1,0 +1,75 @@
+{
+ "kraken": "zadanie",
+ "version": "4.2.202610181200",
+ "name": "Wypaczenie Potępionego Zamczyska. – etap 2",
+ "questId": 13278,
+ "questName": "Wypaczenie Potępionego Zamczyska.",
+ "stage": 2,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "set": "252lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "kolejny etap zadania - Wypaczenie Potępionego Zamczyska"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Ścierwica Mięsówka; Odchodnica Cesarska; Obwisła Prukwa; Kapryśnica Gorejąca; Zadzierzgnięta Haniebnica; Złośliwa Sekutnica; Szpon podziemnej istoty; Potworzak; Wabicielka",
+   "n": 250,
+   "route": "[258lvl] wiedźmowe potwory"
+  },
+  {
+   "type": "goto",
+   "map": "Werbin",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}
