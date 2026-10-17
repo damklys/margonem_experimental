@@ -7,7 +7,6 @@ import re
 import shutil
 import json
 import glob
-import queue
 import subprocess
 import sys as _sys
 
@@ -72,12 +71,9 @@ FONT_BOLD  = ("Segoe UI", 10, "bold")
 FONT_TITLE = ("Segoe UI", 14, "bold")
 FONT_GRP   = ("Segoe UI", 9, "bold")
 
-MODES = ["exp", "heros", "kopalnia", "e2", "dobijarka", "kolos", "otchlan", "playbook", "none", "elite"]
-
 STATUS_COLORS = {
     "OFFLINE":  FG_DIM,
     "RUNNING":  GREEN,
-    "PAUSED":   VIOLET,
     "STOPPING": ACCENT,
     "ERROR":    RED,
 }
@@ -248,190 +244,32 @@ class SessionLogger:
             self._file = None
 
 
-def _auto_select_exp(base_dir: str, level: int):
-    """Return (name, path) of a suitable, unlocked exp location or None."""
-    exp_dir = os.path.join(base_dir, "exp")
-    if not os.path.isdir(exp_dir):
-        return None
-    for name in sorted(os.listdir(exp_dir)):
-        path = os.path.join(exp_dir, name, "route.json")
-        if not os.path.isfile(path):
-            continue
-        if os.path.exists(os.path.join(exp_dir, f"{name}.lock")):
-            continue
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            if data.get("min_lvl", 0) <= level <= data.get("max_lvl", 999):
-                return name, path
-        except Exception:
-            continue
-    return None
-
-
 # ============================================
 # BOT RUNNER
 # ============================================
 class BotRunner:
+    """Sesja przeglądarki: profil (z szablonu), logowanie na margonem.pl, jednorazowa captcha zaraz po wejściu do gry.
+    Całą grą steruje bot Kraken w przeglądarce (Tampermonkey) – tu tylko trzymamy przeglądarkę do STOP."""
+
+    CAPTCHA_WINDOW = 20   # s po wczytaniu gry, w których szukamy captchy (przed startem bota w przeglądarce)
+
     def __init__(self, config: dict,
-                 pause_event: threading.Event,
                  stop_event: threading.Event,
                  logger: SessionLogger):
         self.config          = config
-        self.pause_event     = pause_event
         self.stop_event      = stop_event
         self.logger          = logger
         self.driver          = None
         self.browser_pid: "int | None" = None
-        self.navigate_queue  = queue.Queue()
-        self._exp_lock_path    = None
         self._config_lock_path = None
-        self.pause_callback: "callable | None" = None
         self.login_done_event  = threading.Event()   # sygnał: logowanie zakończone
 
     def log(self, msg):
         self.logger.write(msg)
 
-    def pause_check(self):
-        while not self.pause_event.is_set():
-            if self.stop_event.is_set():
-                raise StopIteration("Bot zatrzymany.")
-            time.sleep(0.2)
-        if self.stop_event.is_set():
-            raise StopIteration("Bot zatrzymany.")
-
     def stop_check(self):
         if self.stop_event.is_set():
-            raise StopIteration("Bot zatrzymany.")
-
-    def _collect_event_rewards(self):
-        """Otwiera Kalendarz, odbiera dostępne nagrody eventu i zamyka okno."""
-        from selenium.webdriver.common.by import By
-
-        drv = self.driver
-
-        def _calendar_visible() -> bool:
-            try:
-                el = drv.find_element(By.CSS_SELECTOR, "div.rewards-calendar")
-                return el.is_displayed()
-            except Exception:
-                return False
-
-        self.log("🎁 Event: otwieram Kalendarz…")
-
-        # Klikaj przycisk co 2s aż okno się pojawi (max 30s)
-        # Nie przerywaj gdy przycisk chwilowo niedostępny — gra ładuje widgety po logowaniu
-        _CAL_SELECTORS = (
-            "div.widget-rewards-calendar-icon",
-            "div.widget-calendar-icon",
-            "[class*='rewards-calendar-icon']",
-            "[class*='calendar-icon']",
-        )
-        t0 = time.time()
-        opened = False
-        while time.time() - t0 < 30:
-            if _calendar_visible():
-                opened = True
-                break
-            clicked = False
-            for sel in _CAL_SELECTORS:
-                try:
-                    btn = drv.find_element(By.CSS_SELECTOR, sel)
-                    if btn.is_displayed():
-                        drv.execute_script("arguments[0].click();", btn)
-                        clicked = True
-                        break
-                except Exception:
-                    pass
-            if not clicked:
-                self.log("⏳ Event: czekam na widget Kalendarza…")
-            time.sleep(2.0)
-
-        if not opened:
-            self.log("⚠️  Event: Kalendarz nie otworzył się po 30s — pomijam")
-            return
-
-        self.log("📅 Event: Kalendarz otwarty")
-        time.sleep(0.5)
-
-        # Zbierz dostępne nagrody — re-query po każdym kliknięciu bo DOM się zmienia.
-        # Nagroda do odebrania: .reward gdzie child .item-wrapper NIE ma klasy "lock".
-        # Nagroda zablokowana:  .reward gdzie child .item-wrapper MA klasę "lock" → pomijamy.
-        collected = 0
-        for _ in range(50):
-            rew = None
-            try:
-                for el in drv.find_elements(By.CSS_SELECTOR, ".rewards-calendar .reward"):
-                    try:
-                        wrapper = el.find_element(By.CSS_SELECTOR, ".item-wrapper")
-                        if "lock" in (wrapper.get_attribute("class") or ""):
-                            continue  # kłódka — pomiń
-                        if el.is_displayed():
-                            rew = el
-                            break
-                    except Exception:
-                        continue
-            except Exception as e:
-                self.log(f"⚠️  Event: błąd skanowania nagród — {e}")
-                break
-
-            if rew is None:
-                break
-
-            try:
-                drv.execute_script("arguments[0].click();", rew)
-                collected += 1
-                self.log(f"🎁 Event: odebrałem nagrodę #{collected}")
-                time.sleep(0.8)
-                # Zamknij ewentualne popup potwierdzenia nagrody
-                for sel in (
-                    ".reward-popup .close",
-                    ".popup-window .close-button",
-                    ".c-window .close-button-corner-decor .close-button",
-                    "div.button.close",
-                ):
-                    try:
-                        cb = drv.find_element(By.CSS_SELECTOR, sel)
-                        if cb.is_displayed():
-                            drv.execute_script("arguments[0].click();", cb)
-                            time.sleep(0.4)
-                            break
-                    except Exception:
-                        pass
-            except Exception as e:
-                self.log(f"⚠️  Event: błąd klikania nagrody — {e}")
-                break
-
-        if collected == 0:
-            self.log("ℹ️  Event: brak dostępnych nagród do odebrania")
-
-        # Zamknij okno Kalendarza — znajdź .c-window zawierające .rewards-calendar przez JS
-        time.sleep(0.3)
-        try:
-            close_btn = drv.execute_script("""
-                var cal = document.querySelector('div.rewards-calendar');
-                if (!cal) return null;
-                var win = cal.closest('div.c-window');
-                if (!win) return null;
-                return win.querySelector('.close-button-corner-decor .close-button');
-            """)
-            if close_btn:
-                drv.execute_script("arguments[0].click();", close_btn)
-            else:
-                raise RuntimeError("close_btn not found via JS")
-        except Exception as e:
-            self.log(f"⚠️  Event: błąd szukania przycisku zamknięcia — {e}")
-            return
-
-        # Zweryfikuj że okno faktycznie zniknęło (max 5s)
-        t0 = time.time()
-        while time.time() - t0 < 5:
-            if not _calendar_visible():
-                self.log("✅ Event: Kalendarz zamknięty")
-                return
-            time.sleep(0.3)
-
-        self.log("⚠️  Event: Kalendarz nadal widoczny po kliknięciu zamknięcia")
+            raise StopIteration("Sesja zatrzymana.")
 
     def run(self):
         self.crashed = False
@@ -452,12 +290,6 @@ class BotRunner:
                     self.log("🔓 Zwolniono lock configa.")
                 except Exception:
                     pass
-            if self._exp_lock_path and os.path.exists(self._exp_lock_path):
-                try:
-                    os.remove(self._exp_lock_path)
-                    self.log("🔓 Zwolniono lock ekspowiska.")
-                except Exception:
-                    pass
             if self.driver:
                 try:
                     self.driver.quit()
@@ -465,58 +297,39 @@ class BotRunner:
                 except Exception:
                     pass
 
+    def _browser_alive(self) -> bool:
+        try:
+            _ = self.driver.window_handles
+            return True
+        except Exception:
+            return False
+
+    def _captcha_once(self, check_and_solve_captcha, By):
+        """Captcha zaraz po wejściu do gry (zanim ruszy bot w przeglądarce) – jedno rozwiązanie i koniec."""
+        t0 = time.time()
+        while time.time() - t0 < self.CAPTCHA_WINDOW:
+            self.stop_check()
+            try:
+                present = bool(self.driver.find_elements(By.CSS_SELECTOR, ".captcha__buttons")) or bool(
+                    self.driver.find_elements(By.XPATH, "//div[@class='label' and text()='Rozwiąż teraz']"))
+            except Exception:
+                present = False
+            if present:
+                self.log("🔐 Captcha po wejściu do gry – rozwiązuję")
+                ok = check_and_solve_captcha(self.driver)
+                self.log("✅ Captcha rozwiązana" if ok else "⚠️  Captcha: nie udało się rozwiązać")
+                return
+            time.sleep(0.5)
+
     def _run_bot(self):
         import undetected_chromedriver as uc
         from selenium.webdriver.common.by import By
-        from selenium.common.exceptions import StaleElementReferenceException
         from login import login
-        from enable_map import enable_map
-        from kill_object import kill_object
-        from battle_handler import check_and_handle_battle
-        from get_near_e2 import get_near_e2
         from create_profile import create_profile
-        from kill_e2 import kill_e2
-        from move import move_to_next_map, travel_to, _get_location_text, _load_config, get_character_level
-        from get_near_object import get_near_object, wait_for_mob
         from captcha import check_and_solve_captcha
-        from discord_webhook import DiscordWebhook
-        from anti_afk import check_interrupts
-        from find_heros import find_nearest_heros_resp, find_heros_on_map, click_heros_resp
-        from select_heros import load_heros_route
-        from kill_heros import kill_heros
-        from move_heros import click_gw
-        from kolos_mode import run_kolos_leader, run_kolos_follower
-        from e2_mode import run_e2
-
-        def _is_game_loaded():
-            return bool(self.driver.find_elements(By.CSS_SELECTOR, "canvas#GAME_CANVAS"))
-
-        def _wait_for_game_canvas(timeout: float = 60.0) -> bool:
-            t0 = time.time()
-            while time.time() - t0 < timeout:
-                if _is_game_loaded():
-                    return True
-                time.sleep(1)
-            return False
-
-        def _refresh_and_wait():
-            self.log("🔄 Odświeżam stronę (brak minimapy / canvas)...")
-            self.driver.refresh()
-            if _wait_for_game_canvas(60.0):
-                self.log("✅ Gra załadowana po odświeżeniu")
-            else:
-                self.log("⚠️  Gra nadal niedostępna po odświeżeniu")
 
         cfg              = self.config
-        FARM_MODE        = cfg["mode"]
         config_path      = cfg["config_path"]
-        delay            = cfg["delay"]
-        exp_route        = cfg.get("exp_route_path")
-        heros_json       = cfg.get("heros_json_path")
-        no_attack        = cfg.get("no_attack", False)
-        auto_exp         = cfg.get("auto_exp", False)
-        kolos_cfg_path   = cfg.get("kolos_config_path")
-        kolos_is_leader  = cfg.get("kolos_is_leader", False)
 
         base_dir      = os.path.dirname(os.path.abspath(__file__))
         browser       = cfg.get("browser", "Chrome")
@@ -588,7 +401,7 @@ class BotRunner:
             config_data = json.load(f)
         credentials = config_data["login"][0]
 
-        self.pause_check()
+        self.stop_check()
 
         import login as _login_mod
         if profile_existed and not recreate and server_url:
@@ -596,11 +409,11 @@ class BotRunner:
             self.log(f"⚡ Istniejący profil — wchodzę na {server_url}")
             self.driver.get(server_url)
             _login_mod._LOGIN_STARTED.release()
-            # Czekaj na canvas#GAME_CANVAS (z obsługą captchy)
+            # Czekaj na canvas#GAME_CANVAS
             t0 = time.time()
             _canvas_ok = False
             while time.time() - t0 < 60:
-                check_and_solve_captcha(self.driver)
+                self.stop_check()
                 if self.driver.find_elements(By.CSS_SELECTOR, "canvas#GAME_CANVAS"):
                     self.log("✅ Gra załadowana bezpośrednio")
                     _canvas_ok = True
@@ -621,461 +434,15 @@ class BotRunner:
                   password=credentials["password"])
 
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
-        self.log(f"⏳ Czekam {delay}s po logowaniu...")
-        for _ in range(delay):
+        self._captcha_once(check_and_solve_captcha, By)
+        self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
+        while not self.stop_event.is_set():
+            if not self._browser_alive():
+                self.log("🔒 Przeglądarka została zamknięta.")
+                self.driver = None
+                return
             time.sleep(1)
-            self.stop_check()
-
-        check_and_solve_captcha(self.driver)
-
-        if cfg.get("event_rewards", False):
-            self._collect_event_rewards()
-
-        discord  = DiscordWebhook()
-
-        while True:
-            self.pause_check()
-            try:
-
-                # --- Detekcja walki PvP/PvE (pomijana w trybie none) ---
-                if self.config.get("mode", "none") != "none":
-                    _cfg_actions = self.config.get("actions") or self.config.get("action") or []
-                    _battle = check_and_handle_battle(
-                        self.driver, self.log, self.stop_event, actions=_cfg_actions or None)
-                    if _battle == "stopped":
-                        raise StopIteration("Bot zatrzymany.")
-                    if _battle == "dead":
-                        # Resetuj stan trasy — bot sam dotrze z powrotem na ekspowisko/e2/heros
-                        self.driver._active_exp_route  = None
-                        self.driver._move_seq_idx      = 0
-                        self.driver._map_first_check   = False
-                        self.driver._active_heros_json = None
-                        self.driver._battle_first_seen = None
-                        self.log("🔄 Restart trasy po śmierci...")
-                        continue
-
-                # --- Globalne sprawdzenie max poziomu ---
-                if self.config.get("max_lvl_enabled") and self.config.get("max_lvl"):
-                    _now = time.time()
-                    if _now - getattr(self, "_last_lvl_check", 0) >= 60:
-                        self._last_lvl_check = _now
-                        _cur_lvl = get_character_level(self.driver)
-                        _max_lvl = self.config["max_lvl"]
-                        if _cur_lvl is not None and _cur_lvl >= _max_lvl:
-                            self.log(f"🎉 Osiągnięto poziom {_cur_lvl} (max: {_max_lvl}) — pauza")
-                            cur = self.config.get("mode", "none")
-                            if cur != "none":
-                                self.config["_saved_mode"] = cur
-                            self.config["mode"] = "none"
-                            if self.pause_callback:
-                                self.pause_callback()
-
-                FARM_MODE  = self.config["mode"]
-                auto_exp   = self.config.get("auto_exp", False)
-                heros_json = self.config.get("heros_json_path")
-
-                # Dispatcher: polecenie nawigacji do mapy
-                try:
-                    nav_target = self.navigate_queue.get_nowait()
-                    self.log(f"🗺️  Dyspozytor: nawiguję do '{nav_target}'")
-                    ok = travel_to(self.driver, nav_target, stop_event=self.stop_event)
-                    self.log(f"✅ Dotarłem do '{nav_target}'" if ok else f"❌ Nie dotarłem do '{nav_target}'")
-                    self.stop_check()
-                    continue
-                except queue.Empty:
-                    pass
-
-                # Captcha + stasis — zawsze aktywne niezależnie od ustawień
-                check_interrupts(self.driver, logger=self.log)
-
-                if FARM_MODE == "none":
-                    # Tylko logowanie — czekaj w pętli
-                    check_and_solve_captcha(self.driver)
-                    time.sleep(5)
-
-                elif FARM_MODE == "exp":
-                    check_and_solve_captcha(self.driver)
-                    try:
-                        enable_map(self.driver, enabled=True)
-                    except Exception:
-                        if not _is_game_loaded():
-                            _refresh_and_wait()
-                        else:
-                            self.log("⚠️  enable_map błąd – retry za 3s")
-                        time.sleep(3)
-                        continue
-
-                    # Auto-dobór ekspowiska na podstawie poziomu postaci
-                    if auto_exp and self.config.get("exp_route_path") is None:
-                        level = get_character_level(self.driver)
-                        if level is None:
-                            self.log("⚠️  Auto EXP: nie udało się odczytać poziomu – retry za 5s")
-                            time.sleep(5)
-                            continue
-                        self.log(f"📊 Auto EXP: poziom postaci = {level}")
-                        chosen = _auto_select_exp(base_dir, level)
-                        if chosen is None:
-                            self.log("⚠️  Auto EXP: brak wolnej lokacji dla tego poziomu – retry za 10s")
-                            time.sleep(10)
-                            continue
-                        exp_name, exp_path = chosen
-                        self.config["exp_route_path"] = exp_path
-                        self.log(f"🎯 Auto EXP: wybrano '{exp_name}' (lvl {level})")
-
-
-                    exp_route = self.config.get("exp_route_path")
-                    if exp_route != getattr(self.driver, "_active_exp_route", None):
-                        # Zwolnij stary lock przed przejściem na nową trasę
-                        if self._exp_lock_path and os.path.exists(self._exp_lock_path):
-                            try:
-                                os.remove(self._exp_lock_path)
-                            except Exception:
-                                pass
-                        self.driver._active_exp_route = exp_route
-                        self.driver._move_seq_idx = 0
-                        self._last_lvl_check = 0
-                        # Utwórz lock dla nowej lokacji
-                        exp_name = os.path.basename(os.path.dirname(exp_route))
-                        self._exp_lock_path = os.path.join(base_dir, "exp", f"{exp_name}.lock")
-                        try:
-                            open(self._exp_lock_path, "w").close()
-                            self.log(f"🔒 Lock: {exp_name}")
-                        except Exception:
-                            pass
-                        _exp_steps = _load_config(exp_route)
-                        self.driver._exp_steps_cache = _exp_steps or []
-                        if _exp_steps:
-                            _first_map = _exp_steps[0].get("location", "")
-                            if _first_map and _get_location_text(self.driver) != _first_map:
-                                self.log(f"🗺️  EXP: nawiguję do startowej mapy: {_first_map}")
-                                if not travel_to(self.driver, _first_map, stop_event=self.stop_event):
-                                    self.log(f"❌ Nie udało się dotrzeć do {_first_map} – retry")
-                                    time.sleep(3)
-                                    continue
-                                self.log(f"✅ Dotarłem do: {_first_map}")
-
-                    # Odczytaj parametry aktualnego kroku trasy
-                    _steps  = getattr(self.driver, "_exp_steps_cache", [])
-                    _sidx   = getattr(self.driver, "_move_seq_idx", 0)
-                    _step   = _steps[_sidx % len(_steps)] if _steps else {}
-                    _attack = _step.get("attack", True)
-                    _excl   = _step.get("excluded_mobs", [])
-                    if _excl:
-                        self.log(f"[DEBUG] krok={_sidx} lokacja={_step.get('location')} excl={_excl}")
-
-                    # Wykryj zmianę mapy — resetuj stan i ustaw flagę pierwszego sprawdzenia
-                    try:
-                        _cur_map = _get_location_text(self.driver)
-                    except Exception:
-                        if not _is_game_loaded():
-                            _refresh_and_wait()
-                        time.sleep(2)
-                        continue
-
-                    # Sprawdź czy jesteśmy na właściwej mapie trasy (np. po śmierci lub wznowieniu)
-                    _expected_map = _step.get("location", "")
-                    if _expected_map and _cur_map != _expected_map:
-                        # Sprawdź czy bieżąca mapa jest gdziekolwiek w trasie
-                        _route_locs = [s.get("location", "") for s in _steps]
-                        if _cur_map in _route_locs:
-                            # Zsynchronizuj indeks do najbliższego pasującego kroku
-                            _candidates = [i for i, loc in enumerate(_route_locs) if loc == _cur_map]
-                            _n = len(_route_locs)
-                            _best = min(_candidates, key=lambda i: (i - _sidx) % _n)
-                            self.driver._move_seq_idx = _best
-                            self.log(f"📍 Synchronizuję trasę: krok {_best} ('{_cur_map}')")
-                        else:
-                            # Mapa spoza trasy (np. miasto po śmierci) — wróć do pierwszego kroku
-                            _first_map = _route_locs[0] if _route_locs else ""
-                            _nav_target = _first_map or _expected_map
-                            self.log(f"📍 Poza trasą: '{_cur_map}' → nawiguję do '{_nav_target}'...")
-                            if travel_to(self.driver, _nav_target, stop_event=self.stop_event):
-                                self.log(f"✅ Powrót na trasę: {_nav_target}")
-                                self.driver._move_seq_idx = 0
-                            else:
-                                self.log(f"❌ Nie udało się wrócić do '{_nav_target}' – retry za 5s")
-                                time.sleep(5)
-                        continue
-
-                    if _cur_map != getattr(self.driver, "_char_level_map", None):
-                        self.driver._char_level_map = _cur_map
-                        self.driver._char_level_cached = get_character_level(self.driver)
-                        self.driver._ignored_tip_ids = set()
-                        self.driver._map_first_check = True
-                    _char_lvl      = getattr(self.driver, "_char_level_cached", None)
-                    _ignored       = getattr(self.driver, "_ignored_tip_ids", set())
-                    _first_check   = getattr(self.driver, "_map_first_check", False)
-
-                    if not _attack:
-                        self.log("⏩ Lokacja pośrednia – przechodzę dalej")
-                        self.driver._map_first_check = False
-                        if not move_to_next_map(self.driver, exp_route):
-                            self.driver._move_fail_count = getattr(self.driver, "_move_fail_count", 0) + 1
-                            if self.driver._move_fail_count >= 3:
-                                self.log("🔄 GW nie znalezione 3x z rzędu – odświeżam stronę...")
-                                self.driver._move_fail_count = 0
-                                _refresh_and_wait()
-                            else:
-                                time.sleep(1)
-                        else:
-                            self.driver._move_fail_count = 0
-                    else:
-                        if _first_check:
-                            # Po zmianie mapy: czekaj aż moby załadują się do DOM (max 2s)
-                            self.driver._map_first_check = False
-                            mob_id = wait_for_mob(self.driver, excluded=_excl,
-                                                  ignored_tip_ids=_ignored, timeout_s=2.0)
-                        else:
-                            mob_id = get_near_object(self.driver, excluded=_excl,
-                                                     ignored_tip_ids=_ignored)
-
-                        if mob_id is None:
-                            self.log("🟡 Brak mobów – ruch...")
-                            self.driver._ignored_tip_ids = set()
-                            if not move_to_next_map(self.driver, exp_route):
-                                self.driver._move_fail_count = getattr(self.driver, "_move_fail_count", 0) + 1
-                                if self.driver._move_fail_count >= 3:
-                                    self.log("🔄 GW nie znalezione 3x z rzędu – odświeżam stronę...")
-                                    self.driver._move_fail_count = 0
-                                    _refresh_and_wait()
-                                continue
-                            else:
-                                self.driver._move_fail_count = 0
-                        else:
-                            self.driver._move_fail_count = 0
-                            result = kill_object(self.driver, mob_id, char_level=_char_lvl)
-                            if result == "IGNORED":
-                                _ignored.add(mob_id)
-
-                elif FARM_MODE == "e2":
-                    e2_cfg_path  = cfg.get("e2_config_path")
-                    e2_is_leader    = cfg.get("e2_is_leader", False)
-                    e2_is_attacker  = cfg.get("e2_is_attacker", False)
-                    e2_pos_idx      = int(cfg.get("e2_position_idx", 0))
-                    if not e2_cfg_path or not os.path.isfile(e2_cfg_path):
-                        self.log("⚠️  Brak konfiguracji E2 — przełącz na tryb none")
-                        self.config["mode"] = "none"
-                        continue
-                    with open(e2_cfg_path, encoding="utf-8") as _f:
-                        e2_cfg_data = json.load(_f)
-                    positions = e2_cfg_data.get("waiting_positions", [])
-                    wait_pos  = positions[e2_pos_idx] if positions else {"x": 0, "y": 0, "top": 0.0, "left": 0.0, "label": "?"}
-                    run_e2(
-                        self.driver,
-                        e2_cfg      = e2_cfg_data,
-                        is_leader   = e2_is_leader,
-                        is_attacker = e2_is_attacker,
-                        wait_pos    = wait_pos,
-                        stop_event  = self.stop_event,
-                        log_fn      = self.log,
-                    )
-
-                elif FARM_MODE == "heros":
-                    check_and_solve_captcha(self.driver)
-                    enable_map(self.driver, enabled=True)
-                    if heros_json != getattr(self.driver, "_active_heros_json", None):
-                        self.driver._active_heros_json = heros_json
-                        heros_data = load_heros_route(heros_json)
-                        self.driver._heros_route       = heros_data["route"]
-                        self.driver._heros_route_index = heros_data["route_index"]
-                        self.log(f"🔄 Heros: załadowano trasę '{os.path.basename(os.path.dirname(heros_json))}'")
-
-                        first_map = self.driver._heros_route[0]["location"]
-                        if _get_location_text(self.driver) != first_map:
-                            self.log(f"🗺️  Heros: nawiguję do startowej mapy: {first_map}")
-                            if not travel_to(self.driver, first_map, stop_event=self.stop_event):
-                                self.log(f"❌ Nie udało się dotrzeć do {first_map}")
-                                return
-                            self.log(f"✅ Dotarłem do: {first_map}")
-
-                    route       = self.driver._heros_route
-                    route_index = self.driver._heros_route_index
-                    location    = route[route_index]
-                    self.log(f"📍 [{route_index+1}/{len(route)}] {location['location']}")
-
-                    for _, resp_coords in enumerate(location.get("respawns", [])):
-                        self.pause_check()
-                        resp_tip_id = find_nearest_heros_resp(
-                            self.driver,
-                            (resp_coords["left"], resp_coords["top"]),
-                            tolerance=20)
-                        if resp_tip_id is None:
-                            continue
-                        heros_detected = click_heros_resp(
-                            self.driver, resp_tip_id,
-                            timeout=120, discord_webhook=discord)
-                        if heros_detected:
-                            heros_tip_id = find_heros_on_map(self.driver)
-                            if no_attack:
-                                while heros_tip_id:
-                                    time.sleep(2)
-                                    self.pause_check()
-                                    check_and_solve_captcha(self.driver)
-                                    heros_tip_id = find_heros_on_map(self.driver)
-                            elif heros_tip_id:
-                                kill_heros(self.driver, heros_tip_id, max_time_s=30)
-                        time.sleep(0.5)
-
-                    gw = location.get("gw")
-                    if gw:
-                        next_idx = (route_index + 1) % len(route)
-                        next_map = route[next_idx]["location"]
-                        ok = click_gw(self.driver, (gw["left"], gw["top"]),
-                                      expected_map_name=next_map, timeout=120, tolerance=30)
-                        if not ok:
-                            ok = click_gw(self.driver, (gw["left"], gw["top"]),
-                                          expected_map_name=next_map, timeout=120, tolerance=50)
-                            if not ok:
-                                self.driver._heros_route_index = next_idx
-                                time.sleep(2)
-                                continue
-
-                    self.driver._heros_route_index = (route_index + 1) % len(route)
-                    time.sleep(0.5)
-
-                elif FARM_MODE == "kopalnia":
-                    from mine_mode import run_mine
-                    mine_path    = self.config.get("mine_config_path")
-                    mine_pos_idx = int(self.config.get("mine_position_idx", 0))
-                    mine_auto    = bool(self.config.get("mine_auto", True))
-                    if not mine_path or not os.path.isfile(mine_path):
-                        self.log("⚠️  Mine: brak pliku konfiguracji – zatrzymuję")
-                        return
-                    with open(mine_path, encoding="utf-8") as _mf:
-                        mine_cfg = json.load(_mf)
-                    mine_cfg["actions"] = (
-                        self.config.get("actions") or
-                        self.config.get("action") or
-                        mine_cfg.get("actions") or
-                        mine_cfg.get("action") or []
-                    )
-                    run_mine(self.driver, mine_cfg, self.stop_event, self.log,
-                             auto_enter=mine_auto, mine_position_idx=mine_pos_idx)
-                    return
-
-                elif FARM_MODE == "elite":
-                    from mine_mode import run_mine_elite_only
-                    mine_path    = self.config.get("mine_config_path")
-                    mine_pos_idx = int(self.config.get("mine_position_idx", 0))
-                    if not mine_path or not os.path.isfile(mine_path):
-                        self.log("⚠️  Elite: brak pliku konfiguracji kopalni – zatrzymuję")
-                        return
-                    with open(mine_path, encoding="utf-8") as _mf:
-                        mine_cfg = json.load(_mf)
-                    mine_cfg["actions"] = (
-                        self.config.get("actions") or
-                        self.config.get("action") or
-                        mine_cfg.get("actions") or
-                        mine_cfg.get("action") or []
-                    )
-                    run_mine_elite_only(self.driver, mine_cfg, self.stop_event, self.log,
-                                        fight_location=mine_cfg.get("fight_location", ""),
-                                        position_idx=mine_pos_idx)
-                    return
-
-                elif FARM_MODE == "dobijarka":
-                    check_and_solve_captcha(self.driver)
-                    self.log("⚙️  Tryb dobijarka – w przygotowaniu...")
-                    time.sleep(10)
-
-                elif FARM_MODE == "playbook":
-                    pb_path = self.config.get("playbook_path")
-                    if not pb_path or not os.path.isfile(pb_path):
-                        self.log("⚠️  Playbook: brak pliku – zatrzymuję")
-                        return
-                    from actions.executor        import ActionRegistry, PlaybookExecutor, load_playbook
-                    from actions.find_object    import find_object
-                    from actions.solve_captcha  import solve_captcha
-                    from actions.kill_object    import kill_object_action
-                    from actions.navigate_to    import navigate_to
-                    from actions.wait           import wait as wait_action
-                    from actions.anti_afk       import anti_afk
-                    from actions.move_to        import move_to
-                    from actions.check_role     import check_role
-                    from actions.disband_group  import disband_group
-                    from actions.wait_group     import wait_group
-                    from actions.make_group     import make_group
-                    from actions.check_afk_members import check_afk_members
-                    from actions.checkout_group import checkout_group
-                    from actions.wait_battle    import wait_battle
-                    from actions.attack_colossus import attack_colossus
-                    from actions.quick_fight    import quick_fight
-                    from actions.watch_battle   import watch_battle
-                    from actions.end_battle     import end_battle
-                    from actions.wait_death     import wait_death
-                    from actions.play                import play as play_action
-                    from actions.check_colossus_done  import check_colossus_done
-                    from actions.use_repeat_entry    import use_repeat_entry
-                    from actions.check_group_size    import check_group_size
-                    _pb_registry = ActionRegistry()
-                    _pb_registry.register("find_object",      find_object)
-                    _pb_registry.register("solve_captcha",    solve_captcha)
-                    _pb_registry.register("kill_object",      kill_object_action)
-                    _pb_registry.register("navigate_to",      navigate_to)
-                    _pb_registry.register("wait",             wait_action)
-                    _pb_registry.register("anti_afk",         anti_afk)
-                    _pb_registry.register("move_to",          move_to)
-                    _pb_registry.register("check_role",       check_role)
-                    _pb_registry.register("disband_group",    disband_group)
-                    _pb_registry.register("wait_group",       wait_group)
-                    _pb_registry.register("make_group",       make_group)
-                    _pb_registry.register("check_afk_members", check_afk_members)
-                    _pb_registry.register("checkout_group",   checkout_group)
-                    _pb_registry.register("wait_battle",      wait_battle)
-                    _pb_registry.register("attack_colossus",  attack_colossus)
-                    _pb_registry.register("quick_fight",      quick_fight)
-                    _pb_registry.register("watch_battle",     watch_battle)
-                    _pb_registry.register("end_battle",       end_battle)
-                    _pb_registry.register("wait_death",       wait_death)
-                    _pb_registry.register("play",                play_action)
-                    _pb_registry.register("check_colossus_done", check_colossus_done)
-                    _pb_registry.register("use_repeat_entry",    use_repeat_entry)
-                    _pb_registry.register("check_group_size",    check_group_size)
-                    _pb_data = load_playbook(pb_path)
-                    _pb_executor = PlaybookExecutor(
-                        self.driver,
-                        registry=_pb_registry,
-                        stop_event=self.stop_event,
-                        log_fn=self.log,
-                    )
-                    if self.config.get("kolos_repeat"):
-                        _pb_executor.ctx.set("kolos_repeat", "true")
-                    _pb_executor.run(_pb_data)
-
-                elif FARM_MODE == "kolos":
-                    kolos_cfg_path  = self.config.get("kolos_config_path")
-                    kolos_is_leader = self.config.get("kolos_is_leader", False)
-                    if not kolos_cfg_path or not os.path.isfile(kolos_cfg_path):
-                        self.log("⚠️  Kolos: brak pliku konfiguracji – zatrzymuję")
-                        return
-                    with open(kolos_cfg_path, encoding="utf-8") as _kf:
-                        kolos_cfg = json.load(_kf)
-                    if kolos_is_leader:
-                        kolos_result = run_kolos_leader(self.driver, kolos_cfg, self.stop_event, self.log)
-                    else:
-                        kolos_result = run_kolos_follower(self.driver, kolos_cfg, self.stop_event, self.log)
-                    if kolos_result in ("killed", "pause"):
-                        reason = "zabiciu kolosusa" if kolos_result == "killed" else "blokadzie sali"
-                        self.log(f"⏸️  Kolos: pausuję sesję po {reason}")
-                        cur = self.config.get("mode", "none")
-                        if cur != "none":
-                            self.config["_saved_mode"] = cur
-                        self.config["mode"] = "none"
-                        if self.pause_callback:
-                            self.pause_callback()
-                        continue
-                    return
-
-                elif FARM_MODE == "otchlan":
-                    from otchlan_mode import run_otchlan
-                    run_otchlan(self.driver, self.stop_event, self.log)
-                    return
-
-            except StopIteration:
-                raise
-            except StaleElementReferenceException:
-                self.log("⚠️  Stale element – retry za 1s")
-                time.sleep(1)
+        raise StopIteration("Sesja zatrzymana.")
 
 # ============================================
 # MODEL GRUP
@@ -1724,8 +1091,6 @@ class GroupPanel(tk.Frame):
                             bd=0, highlightthickness=0)
             tk.Button(ctrl, text="⏹", command=lambda n=name: self._stop_group(n),
                       **_btn_cfg).pack(side="right")
-            tk.Button(ctrl, text="⏸", command=lambda n=name: self._pause_group(n),
-                      **_btn_cfg).pack(side="right")
             tk.Button(ctrl, text="▶", command=lambda n=name: self._start_group(n),
                       **_btn_cfg).pack(side="right")
 
@@ -2040,15 +1405,6 @@ class GroupPanel(tk.Frame):
 
         threading.Thread(target=_sequential, daemon=True).start()
 
-    def _pause_group(self, group: str):
-        if self._get_sessions_fn is None:
-            return
-        for s in self._get_sessions_fn():
-            if (self.gm.group_of(s.session_id) == group
-                    and self.gm.world_of_session(s.session_id) == self._selected_world
-                    and s.is_running):
-                s._on_pause()
-
     def _stop_group(self, group: str):
         if self._get_sessions_fn is None:
             return
@@ -2165,563 +1521,32 @@ class NewConfigDialog(tk.Toplevel):
             self.on_created(filename, path)
         self.destroy()
 
-# ============================================
-# PANEL DYSPOZYTORSKI (drugi sidebar)
-# ============================================
-class DispatchPanel(tk.Frame):
-    """
-    Panel wyboru akcji grupowej: tryb + cel + grupa → START/STOP.
-    Tryby: E2, Kopalnia, Heros, Go (wszystkie mapy ze świata).
-    """
-    WIDTH = 220
-    MODES = ["E2", "Kopalnia", "Heros", "Kolos", "Go"]
-
-    def __init__(self, parent, group_manager: GroupManager, base_dir: str,
-                 get_sessions_fn=None):
-        super().__init__(parent, bg=BG2, width=self.WIDTH)
-        self.pack_propagate(False)
-        self.gm               = group_manager
-        self.base_dir         = base_dir
-        self._active          = False
-        self._get_sessions_fn = get_sessions_fn
-
-        self._scan_targets()
-        self._build()
-        self.gm.subscribe(self._refresh_groups)
-
-    # ---- skanowanie katalogów ----
-    def _scan_targets(self):
-        """Odczytaj dostępne cele dla każdego trybu."""
-        self._e2_list    = self._scan_dir("e2")
-        self._mine_list  = self._scan_mine()
-        self._heros_data = self._scan_heros()
-        self._world_list = self._scan_world()
-        self._kolos_list = self._scan_kolos()
-
-    def _scan_dir(self, subdir: str) -> list:
-        d = os.path.join(self.base_dir, subdir)
-        if not os.path.isdir(d):
-            return []
-        return sorted([
-            name for name in os.listdir(d)
-            if os.path.isdir(os.path.join(d, name))
-        ])
-
-    def _scan_mine(self) -> list:
-        d = os.path.join(self.base_dir, "mine")
-        if not os.path.isdir(d):
-            return []
-        return sorted([
-            os.path.splitext(f)[0]
-            for f in os.listdir(d) if f.endswith(".json")
-        ])
-
-    def _scan_heros(self) -> dict:
-        """
-        Zwraca {heros_name: [{"label": ..., "data": {...}}, ...]}
-        """
-        result = {}
-        heros_dir = os.path.join(self.base_dir, "heros")
-        if not os.path.isdir(heros_dir):
-            return result
-        for name in sorted(os.listdir(heros_dir)):
-            json_path = os.path.join(heros_dir, name, "heros.json")
-            if not os.path.isfile(json_path):
-                continue
-            spawns = []
-            try:
-                with open(json_path, encoding="utf-8") as f:
-                    data = json.load(f)
-                for loc in data.get("route", []):
-                    loc_name = loc.get("location", "?")
-                    for resp in loc.get("respawns", []):
-                        x = resp.get("x", resp.get("left", "?"))
-                        y = resp.get("y", resp.get("top",  "?"))
-                        label = f"{loc_name}  ({x}, {y})"
-                        spawns.append({"label": label, "location": loc_name,
-                                       "data": resp})
-            except Exception:
-                pass
-            result[name] = spawns
-        return result
-
-    def _scan_kolos(self) -> list:
-        """Zwraca posortowaną listę nazw (bez .json) plików z katalogu colossus/."""
-        d = os.path.join(self.base_dir, "colossus")
-        if not os.path.isdir(d):
-            return []
-        return sorted([
-            os.path.splitext(f)[0]
-            for f in os.listdir(d) if f.endswith(".json")
-        ])
-
-    def _scan_world(self) -> list:
-        """
-        Zwraca posortowaną listę nazw map ze świata (./world/*.json).
-        Preferuje pole "location" z JSON-a, fallback do nazwy pliku.
-        """
-        world_dir = os.path.join(self.base_dir, "world")
-        if not os.path.isdir(world_dir):
-            return []
-        names = []
-        for path in sorted(glob.glob(os.path.join(world_dir, "*.json"))):
-            try:
-                with open(path, encoding="utf-8") as f:
-                    data = json.load(f)
-                name = data.get("location")
-                if name:
-                    names.append(name)
-                else:
-                    names.append(os.path.splitext(os.path.basename(path))[0])
-            except Exception:
-                names.append(os.path.splitext(os.path.basename(path))[0])
-        return sorted(set(names), key=lambda s: s.lower())
-
-    # ---- budowanie UI ----
-    def _build(self):
-        # --- nagłówek ---
-        hdr = tk.Frame(self, bg=BG2, pady=8)
-        hdr.pack(fill="x", padx=10)
-        tk.Label(hdr, text="DYSPOZYTOR", font=("Segoe UI", 8, "bold"),
-                 bg=BG2, fg=FG_DIM).pack(side="left")
-        tk.Button(hdr, text="⟳", command=self._rescan,
-                  bg=BG2, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 10, "bold")).pack(side="right")
-        tk.Frame(self, bg=BORDER, height=1).pack(fill="x")
-
-        body = tk.Frame(self, bg=BG2)
-        body.pack(fill="both", expand=True, padx=10, pady=8)
-
-        # --- wybór trybu: 2 × 2 grid, żeby pomieścić 4 przyciski ---
-        tk.Label(body, text="Tryb:", font=("Segoe UI", 8, "bold"),
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 4))
-
-        self.dispatch_mode = tk.StringVar(value="E2")
-        mode_row = tk.Frame(body, bg=BG2)
-        mode_row.pack(fill="x", pady=(0, 8))
-        mode_row.grid_columnconfigure(0, weight=1, uniform="m")
-        mode_row.grid_columnconfigure(1, weight=1, uniform="m")
-        self._mode_btns = {}
-        for i, m in enumerate(self.MODES):
-            b = tk.Radiobutton(mode_row, text=m, variable=self.dispatch_mode,
-                               value=m, command=self._on_mode_change,
-                               bg=BG2, fg=FG, selectcolor=BG2,
-                               activebackground=BG2, activeforeground=ACCENT,
-                               font=("Segoe UI", 8, "bold"), relief="flat",
-                               indicatoron=False, cursor="hand2",
-                               bd=0, pady=5)
-            b.grid(row=i // 2, column=i % 2, sticky="ew",
-                   padx=(0 if i % 2 == 0 else 2, 2 if i % 2 == 0 else 0),
-                   pady=1)
-            self._mode_btns[m] = b
-        self._refresh_mode_colors()
-
-        tk.Frame(body, bg=BORDER, height=1).pack(fill="x", pady=(0, 8))
-
-        # --- dynamiczna sekcja celu ---
-        self.target_frame = tk.Frame(body, bg=BG2)
-        self.target_frame.pack(fill="both", expand=True)
-
-        # ---- E2 ----
-        self.e2_frame = tk.Frame(self.target_frame, bg=BG2)
-        tk.Label(self.e2_frame, text="Elita II:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.e2_var = tk.StringVar()
-        self.e2_lb  = tk.Listbox(self.e2_frame,
-                                  listvariable=tk.StringVar(value=self._e2_list),
-                                  font=FONT_SMALL, bg=BG3, fg=FG,
-                                  selectbackground=ACCENT, selectforeground="#000",
-                                  relief="flat", bd=0, height=8,
-                                  activestyle="none")
-        self.e2_lb.pack(fill="x")
-        if self._e2_list:
-            self.e2_lb.selection_set(0)
-
-        # ---- Kopalnia ----
-        self.mine_frame = tk.Frame(self.target_frame, bg=BG2)
-        tk.Label(self.mine_frame, text="Kopalnia:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.mine_lb = tk.Listbox(self.mine_frame,
-                                   listvariable=tk.StringVar(value=self._mine_list),
-                                   font=FONT_SMALL, bg=BG3, fg=FG,
-                                   selectbackground=ACCENT, selectforeground="#000",
-                                   relief="flat", bd=0, height=8,
-                                   activestyle="none")
-        self.mine_lb.pack(fill="x")
-        if self._mine_list:
-            self.mine_lb.selection_set(0)
-
-        # ---- Heros ----
-        self.heros_frame = tk.Frame(self.target_frame, bg=BG2)
-        tk.Label(self.heros_frame, text="Heros:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.heros_var = tk.StringVar()
-        self.heros_cb  = ttk.Combobox(self.heros_frame, textvariable=self.heros_var,
-                                       font=FONT_SMALL, state="readonly", width=22)
-        self.heros_cb["values"] = list(self._heros_data.keys())
-        if self._heros_data:
-            self.heros_var.set(list(self._heros_data.keys())[0])
-        self.heros_cb.pack(fill="x", pady=(0, 6))
-        self.heros_cb.bind("<<ComboboxSelected>>", self._on_heros_selected)
-
-        tk.Label(self.heros_frame, text="Respawn:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.spawn_lb = tk.Listbox(self.heros_frame,
-                                    font=FONT_SMALL, bg=BG3, fg=FG,
-                                    selectbackground=ACCENT, selectforeground="#000",
-                                    relief="flat", bd=0, height=6,
-                                    activestyle="none")
-        self.spawn_lb.pack(fill="x")
-        self._refresh_spawn_list()
-
-        # ---- Go (wszystkie mapy ze świata, wyszukiwarka) ----
-        self.go_frame = tk.Frame(self.target_frame, bg=BG2)
-        tk.Label(self.go_frame, text="Wyszukaj mapę:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-
-        self.go_search_var = tk.StringVar()
-        self.go_search_var.trace_add("write", self._filter_go_list)
-        go_search = tk.Entry(self.go_frame, textvariable=self.go_search_var,
-                              font=FONT_SMALL, bg=BG3, fg=FG,
-                              insertbackground=FG, relief="flat")
-        go_search.pack(fill="x", ipady=4, pady=(0, 2))
-
-        # licznik wyników
-        self.go_count_lbl = tk.Label(self.go_frame, text="", font=("Segoe UI", 8),
-                                      bg=BG2, fg=FG_DIM, anchor="w")
-        self.go_count_lbl.pack(fill="x", pady=(0, 4))
-
-        tk.Label(self.go_frame, text="Mapa docelowa:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-
-        go_list_frame = tk.Frame(self.go_frame, bg=BG2)
-        go_list_frame.pack(fill="both", expand=True)
-
-        self.go_lb = tk.Listbox(go_list_frame, font=FONT_SMALL, bg=BG3, fg=FG,
-                                 selectbackground=ACCENT, selectforeground="#000",
-                                 relief="flat", bd=0, height=12,
-                                 activestyle="none",
-                                 exportselection=False)
-        go_scroll = tk.Scrollbar(go_list_frame, orient="vertical",
-                                  command=self.go_lb.yview,
-                                  bg=BG3, troughcolor=BG2, bd=0,
-                                  highlightthickness=0, relief="flat")
-        self.go_lb.configure(yscrollcommand=go_scroll.set)
-        go_scroll.pack(side="right", fill="y")
-        self.go_lb.pack(side="left", fill="both", expand=True)
-
-        # Enter w polu wyszukiwania → wybierz pierwszy wynik i odpal START
-        go_search.bind("<Return>", self._on_go_search_enter)
-        # Enter/podwójny klik na liście → odpal START
-        self.go_lb.bind("<Double-Button-1>", lambda e: self._on_start())
-        self.go_lb.bind("<Return>", lambda e: self._on_start())
-
-        self._refresh_go_list()
-
-        # ---- Kolos ----
-        self.kolos_frame = tk.Frame(self.target_frame, bg=BG2)
-        tk.Label(self.kolos_frame, text="Kolos config:", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.kolos_dispatch_var = tk.StringVar()
-        self.kolos_dispatch_lb  = tk.Listbox(
-            self.kolos_frame,
-            listvariable=tk.StringVar(value=self._kolos_list),
-            font=FONT_SMALL, bg=BG3, fg=FG,
-            selectbackground=ACCENT, selectforeground="#000",
-            relief="flat", bd=0, height=6,
-            activestyle="none")
-        self.kolos_dispatch_lb.pack(fill="x", pady=(0, 6))
-        if self._kolos_list:
-            self.kolos_dispatch_lb.selection_set(0)
-
-        tk.Label(self.kolos_frame, text="Leader (sesja):", font=FONT_SMALL,
-                 bg=BG2, fg=FG_DIM).pack(anchor="w", pady=(0, 3))
-        self.kolos_leader_session_var = tk.StringVar()
-        self.kolos_leader_cb = ttk.Combobox(
-            self.kolos_frame, textvariable=self.kolos_leader_session_var,
-            font=FONT_SMALL, state="readonly", width=22)
-        self.kolos_leader_cb.pack(fill="x")
-        self.kolos_frame.bind("<Map>", lambda e: self._refresh_kolos_sessions())
-
-        # pokaż domyślny tryb
-        self._on_mode_change()
-
-        tk.Frame(body, bg=BORDER, height=1).pack(fill="x", pady=(10, 8))
-
-        # --- aktywna grupa (ustawiana z zewnątrz przez set_group) ---
-        self._current_group = None
-        self._current_world = WORLDS[0]
-        self._group_lbl = tk.Label(body, text="— wszystkie grupy —",
-                                    font=("Segoe UI", 8), bg=BG2, fg=FG_DIM)
-        self._group_lbl.pack(anchor="w", pady=(0, 8))
-
-        # --- START / STOP (dyspozytor) ---
-        btn_row = tk.Frame(body, bg=BG2)
-        btn_row.pack(fill="x")
-        self.start_btn = tk.Button(btn_row, text="▶ START",
-                                    command=self._on_start,
-                                    bg=GREEN, fg="#000", font=FONT_BOLD,
-                                    relief="flat", cursor="hand2",
-                                    padx=10, pady=6)
-        self.start_btn.pack(side="left", fill="x", expand=True, padx=(0, 4))
-        self.stop_btn  = tk.Button(btn_row, text="⏹ STOP",
-                                    command=self._on_stop,
-                                    bg=RED, fg="#fff", font=FONT_BOLD,
-                                    relief="flat", cursor="hand2",
-                                    padx=10, pady=6, state="disabled")
-        self.stop_btn.pack(side="left", fill="x", expand=True)
-
-        # status
-        self.status_lbl = tk.Label(body, text="", font=("Segoe UI", 8),
-                                    bg=BG2, fg=FG_DIM, wraplength=200)
-        self.status_lbl.pack(anchor="w", pady=(6, 0))
-
-    # ---- tryb ----
-    def _on_mode_change(self):
-        mode = self.dispatch_mode.get()
-        self.e2_frame.pack_forget()
-        self.mine_frame.pack_forget()
-        self.heros_frame.pack_forget()
-        self.kolos_frame.pack_forget()
-        self.go_frame.pack_forget()
-        if mode == "E2":
-            self.e2_frame.pack(fill="x")
-        elif mode == "Kopalnia":
-            self.mine_frame.pack(fill="x")
-        elif mode == "Heros":
-            self.heros_frame.pack(fill="x")
-        elif mode == "Kolos":
-            self._refresh_kolos_sessions()
-            self.kolos_frame.pack(fill="x")
-        elif mode == "Go":
-            self.go_frame.pack(fill="both", expand=True)
-        self._refresh_mode_colors()
-
-    def _refresh_mode_colors(self):
-        mode = self.dispatch_mode.get()
-        for m, b in self._mode_btns.items():
-            b.configure(bg=ACCENT if m == mode else BG3,
-                        fg="#000" if m == mode else FG)
-
-    def _refresh_kolos_sessions(self):
-        """Odśwież listę sesji dostępnych jako leader kolosusa."""
-        if self._get_sessions_fn is None:
-            return
-        group = self._current_group
-        sessions = self._get_sessions_fn()
-        names = []
-        for s in sessions:
-            in_group = (self.gm.world_of_session(s.session_id) == self._current_world and
-                        (group is None or self.gm.group_of(s.session_id) == group))
-            if in_group:
-                names.append(s.name or f"sesja {s.session_id}")
-        self.kolos_leader_cb["values"] = names
-        if names and not self.kolos_leader_session_var.get():
-            self.kolos_leader_session_var.set(names[0])
-
-    # ---- heros respawny ----
-    def _on_heros_selected(self, _=None):
-        self._refresh_spawn_list()
-
-    def _refresh_spawn_list(self):
-        self.spawn_lb.delete(0, tk.END)
-        name   = self.heros_var.get()
-        spawns = self._heros_data.get(name, [])
-        if not spawns:
-            self.spawn_lb.insert(tk.END, "  (brak danych respawnów)")
-        else:
-            for s in spawns:
-                self.spawn_lb.insert(tk.END, f"  {s['label']}")
-            self.spawn_lb.selection_set(0)
-
-    # ---- Go: lista map + wyszukiwarka ----
-    def _filter_go_list(self, *args):
-        query = self.go_search_var.get().strip().lower()
-        self.go_lb.delete(0, tk.END)
-        matches = [n for n in self._world_list
-                   if not query or query in n.lower()]
-        for n in matches:
-            self.go_lb.insert(tk.END, n)
-        if matches:
-            self.go_lb.selection_set(0)
-        total = len(self._world_list)
-        if query:
-            self.go_count_lbl.configure(text=f"{len(matches)} / {total} pasuje")
-        else:
-            self.go_count_lbl.configure(text=f"{total} map")
-
-    def _refresh_go_list(self):
-        self._filter_go_list()
-
-    def _on_go_search_enter(self, _event=None):
-        """Enter w polu wyszukiwania — jeśli jest dokładnie 1 trafienie, start;
-        jeśli więcej, przenieś focus na listę."""
-        if self.go_lb.size() == 1:
-            self.go_lb.selection_clear(0, tk.END)
-            self.go_lb.selection_set(0)
-            self._on_start()
-        elif self.go_lb.size() > 1:
-            self.go_lb.focus_set()
-
-    # ---- aktywna grupa ----
-    def set_group(self, name: str | None, world: str = "Gordion"):
-        self._current_group = name
-        self._current_world = world
-        if name:
-            color = self.gm.color_of(name, world)
-            self._group_lbl.configure(text=f"● {name}", fg=color)
-        else:
-            self._group_lbl.configure(text="— wszystkie grupy —", fg=FG_DIM)
-
-    def _refresh_groups(self):
-        pass
-
-    # ---- rescan ----
-    def _rescan(self):
-        self._scan_targets()
-        self.e2_lb["listvariable"]   = tk.StringVar(value=self._e2_list)
-        self.mine_lb["listvariable"] = tk.StringVar(value=self._mine_list)
-        self.heros_cb["values"]      = list(self._heros_data.keys())
-        if self._heros_data:
-            self.heros_var.set(list(self._heros_data.keys())[0])
-        self._refresh_spawn_list()
-        self._refresh_go_list()
-        self.kolos_dispatch_lb["listvariable"] = tk.StringVar(value=self._kolos_list)
-        if self._kolos_list:
-            self.kolos_dispatch_lb.selection_set(0)
-        self.status_lbl.configure(text="✅ Odświeżono")
-        self.after(2000, lambda: self.status_lbl.configure(text=""))
-
-    # ---- akcje ----
-    def _get_selected_target(self) -> str | None:
-        mode = self.dispatch_mode.get()
-        if mode == "E2":
-            sel = self.e2_lb.curselection()
-            return self._e2_list[sel[0]] if sel else None
-        elif mode == "Kopalnia":
-            sel = self.mine_lb.curselection()
-            return self._mine_list[sel[0]] if sel else None
-        elif mode == "Heros":
-            heros = self.heros_var.get()
-            sel   = self.spawn_lb.curselection()
-            spawns = self._heros_data.get(heros, [])
-            if sel and spawns:
-                return f"{heros} @ {spawns[sel[0]]['label']}"
-            return heros if heros else None
-        elif mode == "Kolos":
-            sel = self.kolos_dispatch_lb.curselection()
-            return self._kolos_list[sel[0]] if sel else None
-        elif mode == "Go":
-            sel = self.go_lb.curselection()
-            return self.go_lb.get(sel[0]) if sel else None
-        return None
-
-    def _on_start(self):
-        target = self._get_selected_target()
-        group  = self._current_group
-        mode   = self.dispatch_mode.get()
-        if not target:
-            self.status_lbl.configure(text="⚠️  Wybierz cel!", fg=RED)
-            return
-
-        if mode == "Go" and self._get_sessions_fn is not None:
-            sessions = self._get_sessions_fn()
-            sent = 0
-            for session in sessions:
-                in_group = (self.gm.world_of_session(session.session_id) == self._current_world and
-                            (group is None or self.gm.group_of(session.session_id) == group))
-                if in_group:
-                    runner = getattr(session, "_runner", None)
-                    if runner is not None:
-                        runner.navigate_queue.put(target)
-                        sent += 1
-            label = f"'{group}'" if group else "wszystkich grup"
-            self.status_lbl.configure(
-                text=f"🗺️  Go: '{target}'\n→ {sent} sesji ({label})", fg=GREEN)
-            return
-
-        if mode == "Kolos" and self._get_sessions_fn is not None:
-            leader_name = self.kolos_leader_session_var.get()
-            kolos_dir   = os.path.join(self.base_dir, "colossus")
-            kolos_path  = os.path.join(kolos_dir, f"{target}.json")
-            sessions    = self._get_sessions_fn()
-            sent = 0
-            for session in sessions:
-                in_group = (self.gm.world_of_session(session.session_id) == self._current_world and
-                            (group is None or self.gm.group_of(session.session_id) == group))
-                if not in_group:
-                    continue
-                is_leader = (session.name == leader_name or
-                             f"sesja {session.session_id}" == leader_name)
-                session.kolos_var.set(target)
-                session.kolos_leader_var.set(is_leader)
-                session.mode_var.set("kolos")
-                session._on_mode_change()
-                if not session.is_running:
-                    session._on_play()
-                sent += 1
-            label = f"'{group}'" if group else "wszystkich grup"
-            self.status_lbl.configure(
-                text=f"▶ Kolos '{target}'\nleader: {leader_name} | {sent} sesji ({label})",
-                fg=GREEN)
-            self._active = True
-            self.start_btn.configure(state="disabled")
-            self.stop_btn.configure(state="normal")
-            return
-
-        label = group or "wszystkie grupy"
-        self.status_lbl.configure(
-            text=f"▶ [{mode}] {target}\n→ {label}", fg=GREEN)
-
-        self._active = True
-        self.start_btn.configure(state="disabled")
-        self.stop_btn.configure(state="normal")
-
-    def _on_stop(self):
-        self.status_lbl.configure(text="⏹ Zatrzymano", fg=FG_DIM)
-        self._active = False
-        self.start_btn.configure(state="normal")
-        self.stop_btn.configure(state="disabled")
-
-
-# ============================================
-# POJEDYNCZA SESJA
-# ============================================
 class SessionTab(tk.Frame):
+    """Sesja: konto (config), serwer, przeglądarka i szablon profilu. START – przeglądarka z profilem grupy,
+    logowanie i jednorazowa captcha; dalej gra bot Kraken (Tampermonkey). STOP – zamknięcie przeglądarki."""
+
     def __init__(self, parent, session_id: int,
-                 config_map: dict, exp_map: dict, heros_map: dict,
+                 config_map: dict,
                  group_manager: GroupManager,
                  name: str = "",
                  on_status_change=None,
                  on_config_added=None,
                  on_config_refresh=None,
-                 get_all_sessions_fn=None,
-                 kolos_map: dict = None,
-                 mine_map: dict = None,
-                 playbook_map: dict = None,
-                 e2_map: dict = None):
+                 get_all_sessions_fn=None):
         super().__init__(parent, bg=BG)
         self.session_id           = session_id
         self.name                 = name[:20] if name else ""
         self._config_map          = config_map
-        self._exp_map             = exp_map
-        self._heros_map           = heros_map
-        self._kolos_map           = kolos_map or {}
-        self._mine_map            = mine_map or {}
-        self._playbook_map        = playbook_map or {}
-        self._e2_map              = e2_map or {}
         self.gm                   = group_manager
         self.on_status_change     = on_status_change
         self.on_config_added      = on_config_added
         self.on_config_refresh    = on_config_refresh
         self._get_all_sessions_fn = get_all_sessions_fn
 
-        self.pause_event      = threading.Event()
         self.stop_event       = threading.Event()
         self.bot_thread       = None
         self._runner          = None
         self.is_running       = False
-        self.is_paused        = False
         self.status           = "OFFLINE"
         self._pending_restart = None   # after() ID for restart-on-fail
 
@@ -2733,7 +1558,7 @@ class SessionTab(tk.Frame):
                                 bg=BG, fg=FG_DIM)
         self.pid_lbl.place(relx=1.0, x=-90, y=7, anchor="ne")
 
-        # ---- rząd 1: config + delay ----
+        # ---- rząd 1: config + serwer ----
         row1 = tk.Frame(self, bg=BG, pady=6)
         row1.pack(fill="x", padx=14)
 
@@ -2759,13 +1584,6 @@ class SessionTab(tk.Frame):
                                   font=FONT_SMALL, state="readonly", width=10)
         server_cb["values"] = SERVERS
         server_cb.pack(side="left", padx=(0, 14))
-
-        tk.Label(row1, text="Delay (s):", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.delay_var = tk.StringVar(value="10")
-        tk.Entry(row1, textvariable=self.delay_var, font=FONT_SMALL,
-                 bg=BG3, fg=FG, insertbackground=FG, relief="flat",
-                 width=5).pack(side="left", ipady=3, padx=(0, 14))
-
 
         # ---- rząd 1b: browser + template + anti-afk ----
         row1b = tk.Frame(self, bg=BG, pady=2)
@@ -2798,206 +1616,12 @@ class SessionTab(tk.Frame):
                        activebackground=BG, activeforeground=ACCENT,
                        font=FONT_SMALL).pack(side="left", padx=(0, 14))
 
-        tk.Frame(row1b, bg=BORDER, width=1).pack(side="left", fill="y", padx=(0, 14))
-
-        self.anti_afk_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(row1b, text="Anti-AFK",
-                       variable=self.anti_afk_var,
-                       bg=BG, fg=FG, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-
-        self.event_rewards_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(row1b, text="Event",
-                       variable=self.event_rewards_var,
-                       bg=BG, fg=FG, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left", padx=(10, 0))
-
         self.restart_on_fail_var = tk.BooleanVar(value=False)
         tk.Checkbutton(row1b, text="Restart on fail",
                        variable=self.restart_on_fail_var,
                        bg=BG, fg=FG, selectcolor=BG,
                        activebackground=BG, activeforeground=ACCENT,
                        font=FONT_SMALL).pack(side="left", padx=(10, 0))
-
-        tk.Frame(row1b, bg=BORDER, width=1).pack(side="left", fill="y", padx=(10, 10))
-
-        self.max_lvl_enabled_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(row1b, text="Max lvl:",
-                       variable=self.max_lvl_enabled_var,
-                       command=self._on_max_lvl_toggle,
-                       bg=BG, fg=FG, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-        self.max_lvl_var   = tk.StringVar(value="")
-        self.max_lvl_entry = tk.Entry(
-            row1b, textvariable=self.max_lvl_var,
-            font=FONT_SMALL, bg=BG3, fg=FG, insertbackground=FG,
-            relief="flat", width=5, state="disabled")
-        self.max_lvl_entry.pack(side="left", padx=(2, 0))
-
-        # ---- rząd 2: tryb ----
-        row2 = tk.Frame(self, bg=BG)
-        row2.pack(fill="x", padx=14)
-        tk.Label(row2, text="Tryb:", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 6))
-        self.mode_var   = tk.StringVar(value="exp")
-        self._mode_btns = {}
-        for m in MODES:
-            b = tk.Radiobutton(row2, text=m.upper(), variable=self.mode_var, value=m,
-                               command=self._on_mode_change,
-                               bg=BG, fg=FG, selectcolor=BG,
-                               activebackground=BG, activeforeground=ACCENT,
-                               font=("Segoe UI", 8, "bold"), relief="flat",
-                               indicatoron=False, cursor="hand2",
-                               width=8, bd=0, pady=4)
-            b.pack(side="left", padx=2)
-            self._mode_btns[m] = b
-        self._refresh_mode_colors()
-
-        # ---- rząd 3: opcje trybu ----
-        self.opt_row = tk.Frame(self, bg=BG)
-        self.opt_row.pack(fill="x", padx=14, pady=(2, 0))
-
-        self.exp_frame = tk.Frame(self.opt_row, bg=BG)
-        self.auto_exp_var = tk.BooleanVar(value=False)
-        self.auto_exp_cb  = tk.Checkbutton(
-            self.exp_frame, text="Auto", variable=self.auto_exp_var,
-            command=self._on_auto_exp_toggle,
-            bg=BG, fg=FG, selectcolor=BG,
-            activebackground=BG, activeforeground=ACCENT,
-            font=FONT_SMALL)
-        self.auto_exp_cb.pack(side="left", padx=(0, 6))
-        tk.Label(self.exp_frame, text="Lokacja:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.exp_var = tk.StringVar()
-        self.exp_cb  = ttk.Combobox(self.exp_frame, textvariable=self.exp_var,
-                                     font=FONT_SMALL, state="readonly", width=26)
-        self.exp_cb["values"] = list(self._exp_map.keys())
-        if self.exp_cb["values"]:
-            self.exp_var.set(self.exp_cb["values"][0])
-        self.exp_cb.pack(side="left")
-        self.exp_cb.bind("<<ComboboxSelected>>", self._on_exp_changed)
-
-
-        self.heros_frame = tk.Frame(self.opt_row, bg=BG)
-        tk.Label(self.heros_frame, text="Heros:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.heros_var = tk.StringVar()
-        self.heros_cb  = ttk.Combobox(self.heros_frame, textvariable=self.heros_var,
-                                       font=FONT_SMALL, state="readonly", width=26)
-        self.heros_cb["values"] = list(self._heros_map.keys())
-        if self.heros_cb["values"]:
-            self.heros_var.set(self.heros_cb["values"][0])
-        self.heros_cb.pack(side="left", padx=(0, 8))
-        self.heros_cb.bind("<<ComboboxSelected>>", self._on_heros_changed)
-        self.no_attack_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(self.heros_frame, text="no-attack",
-                       variable=self.no_attack_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-
-        # ---- e2 frame ----
-        self.e2_frame = tk.Frame(self.opt_row, bg=BG)
-        tk.Label(self.e2_frame, text="E2:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.e2_var = tk.StringVar()
-        self.e2_cb  = ttk.Combobox(self.e2_frame, textvariable=self.e2_var,
-                                    font=FONT_SMALL, state="readonly", width=22)
-        self.e2_cb["values"] = list(self._e2_map.keys())
-        if self.e2_cb["values"]:
-            self.e2_var.set(self.e2_cb["values"][0])
-        self.e2_cb.pack(side="left", padx=(0, 4))
-        self.e2_cb.bind("<<ComboboxSelected>>", self._on_e2_changed)
-
-        tk.Label(self.e2_frame, text="Poz:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.e2_pos_var = tk.StringVar()
-        self.e2_pos_cb  = ttk.Combobox(self.e2_frame, textvariable=self.e2_pos_var,
-                                        font=FONT_SMALL, state="readonly", width=8)
-        self.e2_pos_cb.pack(side="left", padx=(0, 8))
-
-        self.e2_leader_var   = tk.BooleanVar(value=False)
-        self.e2_attacker_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(self.e2_frame, text="Lider",
-                       variable=self.e2_leader_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-        tk.Checkbutton(self.e2_frame, text="Attacker",
-                       variable=self.e2_attacker_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left", padx=(8, 0))
-
-        self._refresh_e2_positions()
-
-        # ---- kolos frame ----
-        self.kolos_frame = tk.Frame(self.opt_row, bg=BG)
-        tk.Label(self.kolos_frame, text="Kolos:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.kolos_var = tk.StringVar()
-        self.kolos_cb  = ttk.Combobox(self.kolos_frame, textvariable=self.kolos_var,
-                                       font=FONT_SMALL, state="readonly", width=26)
-        self.kolos_cb["values"] = list(self._kolos_map.keys())
-        if self.kolos_cb["values"]:
-            self.kolos_var.set(self.kolos_cb["values"][0])
-        self.kolos_cb.pack(side="left", padx=(0, 8))
-        self.kolos_leader_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(self.kolos_frame, text="Lider",
-                       variable=self.kolos_leader_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-        self.kolos_repeat_var = tk.BooleanVar(value=False)
-        tk.Checkbutton(self.kolos_frame, text="Repeat",
-                       variable=self.kolos_repeat_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left", padx=(8, 0))
-
-        # ---- mine / elite frame ----
-        self.mine_frame = tk.Frame(self.opt_row, bg=BG)
-        tk.Label(self.mine_frame, text="Kopalnia:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.mine_var = tk.StringVar()
-        self.mine_cb  = ttk.Combobox(self.mine_frame, textvariable=self.mine_var,
-                                      font=FONT_SMALL, state="readonly", width=20)
-        self.mine_cb["values"] = list(self._mine_map.keys())
-        if self.mine_cb["values"]:
-            self.mine_var.set(self.mine_cb["values"][0])
-        self.mine_cb.pack(side="left", padx=(0, 4))
-        self.mine_cb.bind("<<ComboboxSelected>>", self._on_mine_changed)
-
-        tk.Label(self.mine_frame, text="Poz:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.mine_pos_var = tk.StringVar()
-        self.mine_pos_cb  = ttk.Combobox(self.mine_frame, textvariable=self.mine_pos_var,
-                                          font=FONT_SMALL, state="readonly", width=16)
-        self.mine_pos_cb.pack(side="left", padx=(0, 6))
-
-        self.mine_auto_var = tk.BooleanVar(value=True)
-        tk.Checkbutton(self.mine_frame, text="Auto",
-                       variable=self.mine_auto_var,
-                       bg=BG, fg=FG_DIM, selectcolor=BG,
-                       activebackground=BG, activeforeground=ACCENT,
-                       font=FONT_SMALL).pack(side="left")
-
-        self._refresh_mine_positions()
-
-        self.playbook_frame = tk.Frame(self.opt_row, bg=BG)
-        tk.Label(self.playbook_frame, text="Playbook:", font=FONT_SMALL,
-                 bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
-        self.playbook_var = tk.StringVar()
-        self.playbook_cb  = ttk.Combobox(self.playbook_frame, textvariable=self.playbook_var,
-                                          font=FONT_SMALL, state="readonly", width=24)
-        self.playbook_cb["values"] = list(self._playbook_map.keys())
-        if self.playbook_cb["values"]:
-            self.playbook_var.set(self.playbook_cb["values"][0])
-        self.playbook_cb.pack(side="left")
-
-        self._on_mode_change()
 
         # ---- rząd 4: przyciski sterowania ----
         ctrl = tk.Frame(self, bg=BG)
@@ -3007,12 +1631,6 @@ class SessionTab(tk.Frame):
                                    bg=GREEN, fg="#000", font=FONT_BOLD,
                                    relief="flat", cursor="hand2", padx=12, pady=5)
         self.play_btn.pack(side="left", padx=(0, 4))
-
-        self.pause_btn = tk.Button(ctrl, text="⏸ PAUZA", command=self._on_pause,
-                                    bg=VIOLET, fg="#fff", font=FONT_BOLD,
-                                    relief="flat", cursor="hand2", padx=12, pady=5,
-                                    state="disabled")
-        self.pause_btn.pack(side="left", padx=(0, 4))
 
         self.stop_btn = tk.Button(ctrl, text="⏹ STOP", command=self._on_stop,
                                    bg=RED, fg="#fff", font=FONT_BOLD,
@@ -3122,163 +1740,7 @@ class SessionTab(tk.Frame):
         self.logger.write("🔄 Lista configów odświeżona z katalogu.")
 
     # ---- tryb ----
-    def _on_mine_changed(self, _=None):
-        self._refresh_mine_positions()
-
-    def _refresh_mine_positions(self):
-        mine_key = self.mine_var.get()
-        mine_path = self._mine_map.get(mine_key)
-        positions = []
-        if mine_path and os.path.isfile(mine_path):
-            try:
-                with open(mine_path, encoding="utf-8") as f:
-                    data = json.load(f)
-                positions = [
-                    p.get("label", f"pos {i}")
-                    for i, p in enumerate(data.get("positions", []))
-                ]
-            except Exception:
-                pass
-        self.mine_pos_cb["values"] = positions
-        if positions:
-            self.mine_pos_var.set(positions[0])
-
-    def _on_e2_changed(self, _=None):
-        self._refresh_e2_positions()
-
-    def _refresh_e2_positions(self):
-        key  = self.e2_var.get()
-        path = self._e2_map.get(key)
-        positions = []
-        if path and os.path.isfile(path):
-            try:
-                with open(path, encoding="utf-8") as f:
-                    data = json.load(f)
-                positions = [
-                    p.get("label", f"({p['x']},{p['y']})")
-                    for p in data.get("waiting_positions", [])
-                ]
-            except Exception:
-                pass
-        self.e2_pos_cb["values"] = positions
-        if positions:
-            self.e2_pos_var.set(positions[0])
-
-    def _on_mode_change(self):
-        mode = self.mode_var.get()
-        self.exp_frame.pack_forget()
-        self.heros_frame.pack_forget()
-        self.e2_frame.pack_forget()
-        self.kolos_frame.pack_forget()
-        self.mine_frame.pack_forget()
-        self.playbook_frame.pack_forget()
-        if mode == "exp":
-            self.exp_frame.pack(side="left")
-        elif mode == "heros":
-            self.heros_frame.pack(side="left")
-        elif mode == "e2":
-            self.e2_frame.pack(side="left")
-        elif mode == "kolos":
-            self.kolos_frame.pack(side="left")
-        elif mode in ("kopalnia", "elite"):
-            self.mine_frame.pack(side="left")
-        elif mode == "playbook":
-            self.playbook_frame.pack(side="left")
-        self._refresh_mode_colors()
-        if self._runner is not None:
-            self.logger.write(f"🔄 Zmieniono tryb na: {mode.upper()}")
-            if mode == "e2":
-                e_key = self.e2_var.get()
-                self._runner.config["e2_config_path"]  = self._e2_map.get(e_key, e_key) or None
-                self._runner.config["e2_is_leader"]    = self.e2_leader_var.get()
-                self._runner.config["e2_is_attacker"]  = self.e2_attacker_var.get()
-                cur = self.e2_pos_cb.current()
-                self._runner.config["e2_position_idx"] = max(0, cur) if cur >= 0 else 0
-            elif mode == "kolos":
-                k_key = self.kolos_var.get()
-                self._runner.config["kolos_config_path"] = self._kolos_map.get(k_key, k_key) or None
-                self._runner.config["kolos_is_leader"]   = self.kolos_leader_var.get()
-            elif mode == "playbook":
-                pb_key = self.playbook_var.get()
-                self._runner.config["playbook_path"] = self._playbook_map.get(pb_key, pb_key) or None
-            elif mode == "exp":
-                exp_key = self.exp_var.get()
-                self._runner.config["exp_route_path"] = self._exp_map.get(exp_key, exp_key) or None
-            elif mode == "heros":
-                h_key = self.heros_var.get()
-                self._runner.config["heros_json_path"] = self._heros_map.get(h_key, h_key) or None
-            elif mode in ("kopalnia", "elite"):
-                m_key = self.mine_var.get()
-                self._runner.config["mine_config_path"] = self._mine_map.get(m_key) or None
-                self._runner.config["mine_auto"] = self.mine_auto_var.get()
-                pos_vals = list(self.mine_pos_cb["values"])
-                cur = self.mine_pos_cb.current()
-                self._runner.config["mine_position_idx"] = max(0, cur) if cur >= 0 else 0
-            if self.is_running:
-                if self.is_paused:
-                    self._runner.config["_saved_mode"] = mode
-                else:
-                    self._runner.config["mode"] = mode
-                    self._on_pause()
-            else:
-                self._runner.config["mode"] = mode
-            drv = self._runner.driver
-            if drv is not None:
-                for attr in ("_heros_route", "_active_exp_route"):
-                    if hasattr(drv, attr):
-                        delattr(drv, attr)
-
-    def _refresh_mode_colors(self):
-        mode = self.mode_var.get()
-        for m, b in self._mode_btns.items():
-            b.configure(bg=ACCENT if m == mode else BG3,
-                        fg="#000" if m == mode else FG)
-
-    def _on_auto_exp_toggle(self):
-        auto = self.auto_exp_var.get()
-        self.exp_cb.configure(state="disabled" if auto else "readonly")
-        if self._runner is not None:
-            if auto:
-                self._runner.config["exp_route_path"] = None
-                self.logger.write("🔄 Auto EXP: włączono automatyczny dobór lokacji")
-            else:
-                self._on_exp_changed()
-
-    def _on_max_lvl_toggle(self):
-        state = "normal" if self.max_lvl_enabled_var.get() else "disabled"
-        self.max_lvl_entry.configure(state=state)
-        if self._runner is not None:
-            enabled = self.max_lvl_enabled_var.get()
-            self._runner.config["max_lvl_enabled"] = enabled
-            try:
-                v = self.max_lvl_var.get().strip()
-                self._runner.config["max_lvl"] = int(v) if (v and enabled) else None
-            except ValueError:
-                pass
-
-    def _on_exp_changed(self, _=None):
-        if self._runner is None:
-            return
-        if self.auto_exp_var.get():
-            return
-        exp_key = self.exp_var.get()
-        new_path = self._exp_map.get(exp_key)
-        if new_path:
-            self._runner.config["exp_route_path"] = new_path
-            self.logger.write(f"🔄 Zmieniono lokację EXP: {exp_key}")
-
-    def _on_heros_changed(self, _=None):
-        if self._runner is None:
-            return
-        h_key = self.heros_var.get()
-        new_path = self._heros_map.get(h_key)
-        if new_path:
-            self._runner.config["heros_json_path"] = new_path
-            self.logger.write(f"🔄 Zmieniono herosa: {h_key}")
-
-    # ---- walidacja ----
     def _validate(self):
-        mode    = self.mode_var.get()
         cfg_key = self.config_var.get()
         cfg     = self._config_map.get(cfg_key, cfg_key)
         if not cfg or not os.path.isfile(cfg):
@@ -3331,182 +1793,37 @@ class SessionTab(tk.Frame):
                     f"⚠️  Config '{cfg_key}' jest już używany przez inną sesję!")
                 return None
 
-        exp = None
-        auto_exp = False
-        if mode == "exp":
-            auto_exp = self.auto_exp_var.get()
-            if not auto_exp:
-                exp_key = self.exp_var.get()
-                exp = self._exp_map.get(exp_key, exp_key)
-                if not exp or not os.path.isfile(exp):
-                    self.logger.write("⚠️  Wybierz lokację EXP!")
-                    return None
-
-        max_lvl_enabled = self.max_lvl_enabled_var.get()
-        max_lvl = None
-        if max_lvl_enabled:
-            try:
-                v = self.max_lvl_var.get().strip()
-                if v:
-                    max_lvl = int(v)
-            except ValueError:
-                pass
-
-        heros = None
-        if mode == "heros":
-            h_key = self.heros_var.get()
-            heros = self._heros_map.get(h_key, h_key)
-            if not heros or not os.path.isfile(heros):
-                self.logger.write("⚠️  Wybierz herosa!")
-                return None
-
-        e2_path = None
-        e2_is_leader = False
-        e2_is_attacker = False
-        e2_pos_idx = 0
-        if mode == "e2":
-            e_key = self.e2_var.get()
-            e2_path = self._e2_map.get(e_key, e_key)
-            if not e2_path or not os.path.isfile(e2_path):
-                self.logger.write("⚠️  Wybierz konfigurację E2!")
-                return None
-            e2_is_leader   = self.e2_leader_var.get()
-            e2_is_attacker = self.e2_attacker_var.get()
-            cur = self.e2_pos_cb.current()
-            e2_pos_idx = max(0, cur) if cur >= 0 else 0
-
-        kolos_path = None
-        kolos_is_leader = False
-        if mode == "kolos":
-            k_key = self.kolos_var.get()
-            kolos_path = self._kolos_map.get(k_key, k_key)
-            if not kolos_path or not os.path.isfile(kolos_path):
-                self.logger.write("⚠️  Wybierz konfigurację Kolos!")
-                return None
-            kolos_is_leader = self.kolos_leader_var.get()
-            kolos_repeat    = self.kolos_repeat_var.get()
-
-        mine_path = None
-        mine_pos_idx = 0
-        mine_auto = True
-        if mode in ("kopalnia", "elite"):
-            m_key = self.mine_var.get()
-            mine_path = self._mine_map.get(m_key, m_key)
-            if not mine_path or not os.path.isfile(mine_path):
-                self.logger.write("⚠️  Wybierz kopalnię!")
-                return None
-            pos_vals = list(self.mine_pos_cb["values"])
-            cur = self.mine_pos_cb.current()
-            mine_pos_idx = max(0, cur) if cur >= 0 else 0
-            mine_auto = self.mine_auto_var.get()
-
-        playbook_path = None
-        if mode == "playbook":
-            pb_key = self.playbook_var.get()
-            playbook_path = self._playbook_map.get(pb_key, pb_key)
-            if not playbook_path or not os.path.isfile(playbook_path):
-                self.logger.write("⚠️  Wybierz playbook!")
-                return None
-
-        # Read action sequence from character config file
-        cfg_actions = []
-        try:
-            with open(cfg, encoding="utf-8") as _f:
-                cfg_data = json.load(_f)
-            cfg_actions = cfg_data.get("action", cfg_data.get("actions", []))
-        except Exception:
-            pass
-
-        try:
-            delay = int(self.delay_var.get())
-        except ValueError:
-            delay = 10
-
-        tpl = self.template_var.get()
         return {
-            "mode":              mode,
-            "config_path":       cfg,
-            "delay":             delay,
-            "exp_route_path":    exp,
-            "auto_exp":          auto_exp,
-            "max_lvl_enabled":   max_lvl_enabled,
-            "max_lvl":           max_lvl,
-            "heros_json_path":   heros,
-            "no_attack":         self.no_attack_var.get(),
-            "anti_afk":          self.anti_afk_var.get(),
-            "browser":           self.browser_var.get(),
-            "server":            self.server_var.get(),
-            "template":          tpl if tpl != "(brak)" else None,
-            "group":             self.gm.group_of(self.session_id),
-            "group_world":       self.gm.world_of_session(self.session_id),
-            "recreate":          self.recreate_var.get(),
-            "e2_config_path":    e2_path,
-            "e2_is_leader":      e2_is_leader,
-            "e2_is_attacker":    e2_is_attacker,
-            "e2_position_idx":   e2_pos_idx,
-            "kolos_config_path": kolos_path,
-            "kolos_is_leader":   kolos_is_leader,
-            "kolos_repeat":      kolos_repeat if mode == "kolos" else False,
-            "mine_config_path":  mine_path,
-            "mine_position_idx": mine_pos_idx,
-            "mine_auto":         mine_auto,
-            "playbook_path":     playbook_path,
-            "actions":           cfg_actions,
-            "event_rewards":     self.event_rewards_var.get(),
+            "config_path":     cfg,
+            "browser":         self.browser_var.get(),
+            "server":          self.server_var.get(),
+            "template":        None if self.template_var.get() == "(brak)" else self.template_var.get(),
+            "group":           self.gm.group_of(self.session_id),
+            "group_world":     self.gm.world_of_session(self.session_id),
+            "recreate":        self.recreate_var.get(),
         }
 
     # ---- sterowanie ----
-    def _resume_exp(self):
-        """Wznów bota: przywróć zapisany tryb, zresetuj trasę EXP tylko gdy wraca do exp."""
-        resumed_mode = None
-        if self._runner is not None:
-            saved = self._runner.config.pop("_saved_mode", None)
-            if saved:
-                self._runner.config["mode"] = saved
-                resumed_mode = saved
-            drv = self._runner.driver
-            if drv is not None and resumed_mode == "exp":
-                drv._active_exp_route  = None
-                drv._move_seq_idx      = 0
-                drv._map_first_check   = False
-                drv._stuck_since       = None
-                drv._battle_first_seen = None
-        self.is_paused = False
-        self._set_status("RUNNING")
-        self.pause_btn.configure(text="⏸ PAUZA")
-        label = resumed_mode.upper() if resumed_mode else "BOT"
-        self.logger.write(f"▶️  Wznowiono – tryb {label}")
-
     def _on_play(self):
-        if self.is_paused:
-            self._resume_exp()
-            return
         if self.is_running:
             return
-
         config = self._validate()
         if config is None:
             return
-
-        self.pause_event.set()
         self.stop_event.clear()
         self.is_running = True
-        self.is_paused  = False
         self._set_status("RUNNING")
         self.play_btn.configure(state="disabled")
-        self.pause_btn.configure(state="normal")
         self.stop_btn.configure(state="normal")
 
-        runner = BotRunner(config, self.pause_event, self.stop_event, self.logger)
-        runner.pause_callback = lambda: self.after(0, self._on_pause)
+        runner = BotRunner(config, self.stop_event, self.logger)
         self._runner = runner
         self.bot_thread = threading.Thread(
             target=self._bot_wrapper, args=(runner,), daemon=True)
         self.bot_thread.start()
         self.logger.write(
-            f"🚀 Start  [{config['mode'].upper()}]  "
-            f"{os.path.basename(config['config_path'])}  "
-            f"[grupa: {self.gm.group_of(self.session_id)}]")
+            f"🚀 Start  {os.path.basename(config['config_path'])}  "
+            f"[{config['server']} · {config['browser']} · grupa: {self.gm.group_of(self.session_id)}]")
         self._poll_pid()
 
     def _bot_wrapper(self, runner: BotRunner):
@@ -3528,22 +1845,6 @@ class SessionTab(tk.Frame):
         else:
             self.after(500, self._poll_pid)
 
-    def _on_pause(self):
-        if not self.is_running:
-            return
-        if not self.is_paused:
-            self.is_paused = True
-            self._set_status("PAUSED")
-            self.pause_btn.configure(text="▶ WZNÓW")
-            self.logger.write("⏸️  Wstrzymano – przełączam na tryb NONE")
-            if self._runner is not None:
-                current = self._runner.config.get("mode", "none")
-                if current != "none":
-                    self._runner.config["_saved_mode"] = current
-                self._runner.config["mode"] = "none"
-        else:
-            self._resume_exp()
-
     def _on_stop(self):
         # Cancel a pending restart-on-fail even if the bot isn't running yet
         if self._pending_restart is not None:
@@ -3559,12 +1860,10 @@ class SessionTab(tk.Frame):
             return
 
         self.stop_event.set()
-        self.pause_event.set()   # unblocks pause_check() immediately
 
         # Immediate UI feedback — disable buttons so user knows the click landed
         self._set_status("STOPPING")
         self.stop_btn.configure(state="disabled")
-        self.pause_btn.configure(state="disabled", text="⏸ PAUZA")
         self.logger.write("⏹️  Zatrzymywanie...")
         self.after(5000, self._force_kill_if_needed)
 
@@ -3586,10 +1885,8 @@ class SessionTab(tk.Frame):
     def _on_finished(self, crashed: bool = False):
         self._runner    = None
         self.is_running = False
-        self.is_paused  = False
         self._set_status("OFFLINE")
         self.play_btn.configure(state="normal")
-        self.pause_btn.configure(state="disabled", text="⏸ PAUZA")
         self.stop_btn.configure(state="disabled")
         self.pid_lbl.configure(text="")
 
@@ -3617,117 +1914,35 @@ class SessionTab(tk.Frame):
     def get_settings(self) -> dict:
         """Zwraca słownik bieżących ustawień sesji (do zapisu stanu)."""
         return {
-            "name":      self.name,
-            "config":    self.config_var.get(),
-            "delay":     self.delay_var.get(),
-            "group":       self.gm.group_of(self.session_id),
-            "group_world": self.gm.world_of_session(self.session_id),
-            "browser":   self.browser_var.get(),
-            "server":    self.server_var.get(),
-            "template":  self.template_var.get(),
-            "mode":      self.mode_var.get(),
-            "exp":              self.exp_var.get(),
-            "auto_exp":         self.auto_exp_var.get(),
-            "max_lvl_enabled":  self.max_lvl_enabled_var.get(),
-            "max_lvl":          self.max_lvl_var.get(),
-            "heros":     self.heros_var.get(),
-            "no_attack":        self.no_attack_var.get(),
-            "anti_afk":         self.anti_afk_var.get(),
-            "recreate":         self.recreate_var.get(),
-            "event_rewards":    self.event_rewards_var.get(),
-            "restart_on_fail":  self.restart_on_fail_var.get(),
-            "e2":               self.e2_var.get(),
-            "e2_pos":           self.e2_pos_var.get(),
-            "e2_is_leader":     self.e2_leader_var.get(),
-            "e2_is_attacker":   self.e2_attacker_var.get(),
-            "kolos":            self.kolos_var.get(),
-            "kolos_is_leader":  self.kolos_leader_var.get(),
-            "kolos_repeat":     self.kolos_repeat_var.get(),
-            "mine":             self.mine_var.get(),
-            "mine_pos":         self.mine_pos_var.get(),
-            "mine_auto":        self.mine_auto_var.get(),
-            "playbook":         self.playbook_var.get(),
+            "name":            self.name,
+            "config":          self.config_var.get(),
+            "group":           self.gm.group_of(self.session_id),
+            "group_world":     self.gm.world_of_session(self.session_id),
+            "browser":         self.browser_var.get(),
+            "server":          self.server_var.get(),
+            "template":        self.template_var.get(),
+            "recreate":        self.recreate_var.get(),
+            "restart_on_fail": self.restart_on_fail_var.get(),
         }
 
     def apply_settings(self, d: dict):
-        """Przywraca ustawienia sesji z zapisanego słownika."""
+        """Przywraca ustawienia sesji z zapisanego słownika (stare pola trybów są pomijane)."""
         if d.get("config") in self._config_map:
             self.config_var.set(d["config"])
-        if "delay" in d:
-            self.delay_var.set(str(d["delay"]))
         if d.get("browser") in BROWSERS:
             self.browser_var.set(d["browser"])
+            self._refresh_template_cb()
         if d.get("server") in SERVERS:
             self.server_var.set(d["server"])
-
         tpl = d.get("template") or "(brak)"
-        browser = self.browser_var.get()
-        templates = ["(brak)"] + _list_templates(browser)
-        if tpl in templates:
+        if tpl in ["(brak)"] + _list_templates(self.browser_var.get()):
             self.template_var.set(tpl)
-
-        if "mode" in d:
-            self.mode_var.set(d["mode"])
-            self._on_mode_change()
-
-        if "auto_exp" in d:
-            self.auto_exp_var.set(bool(d["auto_exp"]))
-            self._on_auto_exp_toggle()
-
-        if d.get("exp") in self._exp_map:
-            self.exp_var.set(d["exp"])
-
-        if "max_lvl_enabled" in d:
-            self.max_lvl_enabled_var.set(bool(d["max_lvl_enabled"]))
-        if "max_lvl" in d:
-            self.max_lvl_var.set(str(d["max_lvl"]) if d["max_lvl"] else "")
-        self._on_max_lvl_toggle()
-
-        if d.get("heros") in self._heros_map:
-            self.heros_var.set(d["heros"])
-
-        if "no_attack" in d:
-            self.no_attack_var.set(bool(d["no_attack"]))
-        if "anti_afk" in d:
-            self.anti_afk_var.set(bool(d["anti_afk"]))
         if "recreate" in d:
             self.recreate_var.set(bool(d["recreate"]))
-        if "event_rewards" in d:
-            self.event_rewards_var.set(bool(d["event_rewards"]))
         if "restart_on_fail" in d:
             self.restart_on_fail_var.set(bool(d["restart_on_fail"]))
-
-        if d.get("e2") in self._e2_map:
-            self.e2_var.set(d["e2"])
-            self._refresh_e2_positions()
-        if d.get("e2_pos") in list(self.e2_pos_cb["values"]):
-            self.e2_pos_var.set(d["e2_pos"])
-        if "e2_is_leader" in d:
-            self.e2_leader_var.set(bool(d["e2_is_leader"]))
-        if "e2_is_attacker" in d:
-            self.e2_attacker_var.set(bool(d["e2_is_attacker"]))
-
-        if d.get("kolos") in self._kolos_map:
-            self.kolos_var.set(d["kolos"])
-        if "kolos_is_leader" in d:
-            self.kolos_leader_var.set(bool(d["kolos_is_leader"]))
-        if "kolos_repeat" in d:
-            self.kolos_repeat_var.set(bool(d["kolos_repeat"]))
-
-        if d.get("mine") in self._mine_map:
-            self.mine_var.set(d["mine"])
-            self._refresh_mine_positions()
-        if d.get("mine_pos") in list(self.mine_pos_cb["values"]):
-            self.mine_pos_var.set(d["mine_pos"])
-        if "mine_auto" in d:
-            self.mine_auto_var.set(bool(d["mine_auto"]))
-
-        if d.get("playbook") in self._playbook_map:
-            self.playbook_var.set(d["playbook"])
-
         if "name" in d:
             self.name = str(d["name"])[:20]
-
         grp_world = d.get("group_world", WORLDS[0])
         group = d.get("group") or self.gm.first_group(grp_world)
         if group and group in self.gm.group_names(grp_world):
@@ -3738,7 +1953,6 @@ class SessionTab(tk.Frame):
             self.after_cancel(self._pending_restart)
             self._pending_restart = None
         self.stop_event.set()
-        self.pause_event.set()
 
 
 # ============================================
@@ -3755,12 +1969,6 @@ class BotGUI:
         root.minsize(1060, 660)
 
         self._config_map:    dict = {}
-        self._exp_map:       dict = {}
-        self._heros_map:     dict = {}
-        self._kolos_map:     dict = {}
-        self._mine_map:      dict = {}
-        self._playbook_map:  dict = {}
-        self._e2_map:        dict = {}
         self._sessions:   list = []
         self._session_counter = 0
         self._selected_world: str = WORLDS[0]
@@ -3787,46 +1995,6 @@ class BotGUI:
         ])
         self._config_map = {os.path.basename(p): p for p in configs}
 
-        exp_dir = os.path.join(base, "exp")
-        if os.path.isdir(exp_dir):
-            def _exp_level(name):
-                m = re.search(r'\((\d+)', name)
-                return int(m.group(1)) if m else 0
-            for sub in sorted(os.listdir(exp_dir), key=_exp_level):
-                r = os.path.join(exp_dir, sub, "route.json")
-                if os.path.isfile(r):
-                    self._exp_map[sub] = r
-
-        heros_dir = os.path.join(base, "heros")
-        if os.path.isdir(heros_dir):
-            for sub in sorted(os.listdir(heros_dir)):
-                h = os.path.join(heros_dir, sub, "heros.json")
-                if os.path.isfile(h):
-                    self._heros_map[sub] = h
-
-        kolos_dir = os.path.join(base, "colossus")
-        if os.path.isdir(kolos_dir):
-            for f in sorted(glob.glob(os.path.join(kolos_dir, "*.json"))):
-                key = os.path.splitext(os.path.basename(f))[0]
-                self._kolos_map[key] = f
-
-        mine_dir = os.path.join(base, "mine")
-        if os.path.isdir(mine_dir):
-            for f in sorted(glob.glob(os.path.join(mine_dir, "*.json"))):
-                key = os.path.splitext(os.path.basename(f))[0]
-                self._mine_map[key] = f
-
-        playbooks_dir = os.path.join(base, "playbooks")
-        if os.path.isdir(playbooks_dir):
-            for f in sorted(glob.glob(os.path.join(playbooks_dir, "*.json"))):
-                key = os.path.splitext(os.path.basename(f))[0]
-                self._playbook_map[key] = f
-
-        e2_dir = os.path.join(base, "e2")
-        if os.path.isdir(e2_dir):
-            for f in sorted(glob.glob(os.path.join(e2_dir, "*.json"))):
-                key = os.path.splitext(os.path.basename(f))[0]
-                self._e2_map[key] = f
 
     # ---- UI ----
     def _build_ui(self):
@@ -3865,11 +2033,6 @@ class BotGUI:
                                   bg=BG3, fg=ACCENT, font=FONT_BOLD,
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
-        self.collect_btn = tk.Button(btn_frame, text="🗺 Collect",
-                                      command=self._on_collect,
-                                      bg=BG3, fg=FG, font=FONT_BOLD,
-                                      relief="flat", cursor="hand2", padx=10, pady=4)
-        self.collect_btn.pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="💾 Zapisz",
                   command=self._on_save,
                   bg=BG3, fg=FG, font=FONT_BOLD,
@@ -3890,16 +2053,6 @@ class BotGUI:
             on_account_created=self._on_config_added,
             on_world_changed=self._on_world_changed)
         self.group_panel.pack(side="left", fill="y", padx=(8, 0), pady=8)
-
-        # separator
-        tk.Frame(main, bg=BORDER, width=1).pack(side="left", fill="y", pady=8)
-
-        # panel dyspozytorski
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.dispatch_panel = DispatchPanel(
-            main, self.gm, base_dir,
-            get_sessions_fn=lambda: self._sessions)
-        self.dispatch_panel.pack(side="left", fill="y", pady=8)
 
         # separator
         tk.Frame(main, bg=BORDER, width=1).pack(side="left", fill="y", pady=8)
@@ -3992,17 +2145,13 @@ class BotGUI:
 
         tab = SessionTab(
             self.notebook, sid,
-            self._config_map, self._exp_map, self._heros_map,
+            self._config_map,
             self.gm,
             name=name,
             on_status_change=self._on_session_status,
             on_config_added=self._on_config_added,
             on_config_refresh=self._on_config_refresh,
             get_all_sessions_fn=lambda: self._sessions,
-            kolos_map=self._kolos_map,
-            mine_map=self._mine_map,
-            playbook_map=self._playbook_map,
-            e2_map=self._e2_map,
         )
         self._sessions.append(tab)
 
@@ -4045,37 +2194,8 @@ class BotGUI:
         for s in self._sessions:
             s._on_stop()
 
-    def _on_collect(self):
-        """Uruchamia skanowanie mapy na aktywnej sesji w osobnym wątku."""
-        try:
-            idx = self.notebook.index(self.notebook.select())
-            tab = self._sessions[idx] if idx < len(self._sessions) else None
-        except Exception:
-            tab = None
-
-        if tab is None:
-            from tkinter import messagebox
-            messagebox.showinfo("Collect", "Brak aktywnej sesji.", parent=self.root)
-            return
-
-        driver = getattr(tab._runner, "driver", None) if tab._runner else None
-        if driver is None:
-            from tkinter import messagebox
-            messagebox.showinfo("Collect", "Sesja nie ma aktywnego drivera.", parent=self.root)
-            return
-
-        self.collect_btn.configure(state="disabled", text="⏳ Collect...")
-
-        def _run():
-            from collect_world import collect_current_map
-            collect_current_map(driver, logger=tab.logger.write)
-            self.root.after(0, lambda: self.collect_btn.configure(
-                state="normal", text="🗺 Collect"))
-
-        threading.Thread(target=_run, daemon=True).start()
-
     def _tab_text(self, tab) -> str:
-        icons = {"RUNNING": "▶", "PAUSED": "⏸", "STOPPING": "◼", "OFFLINE": "○", "ERROR": "✕"}
+        icons = {"RUNNING": "▶", "STOPPING": "◼", "OFFLINE": "○", "ERROR": "✕"}
         return f"{icons.get(tab.status, '○')} {tab.name}"
 
     def _refresh_tab_texts(self):
@@ -4112,7 +2232,6 @@ class BotGUI:
     def _on_group_filter(self, group_name):
         self._group_filter = group_name
         self._filter_notebook(group_name)
-        self.dispatch_panel.set_group(group_name, self._selected_world)
         if hasattr(self, "add_btn"):
             self._update_add_btn()
 
@@ -4120,7 +2239,6 @@ class BotGUI:
         self._selected_world = world
         self._group_filter   = None
         self._filter_notebook(None)
-        self.dispatch_panel.set_group(None, world)
         if hasattr(self, "add_btn"):
             self._update_add_btn()
 
@@ -4226,12 +2344,10 @@ class BotGUI:
 
     def _update_statusbar(self):
         running = sum(1 for s in self._sessions if s.status == "RUNNING")
-        paused  = sum(1 for s in self._sessions if s.status == "PAUSED")
         total   = len(self._sessions)
         groups  = len(self.gm.group_names())
         self.statusbar.configure(
-            text=f"  Sesje: {total}   ▶ Aktywne: {running}   "
-                 f"⏸ Wstrzymane: {paused}   ○ Offline: {total-running-paused}"
+            text=f"  Sesje: {total}   ▶ Aktywne: {running}   ○ Offline: {total-running}"
                  f"   |   Grupy: {groups}")
 
     def _on_config_added(self, filename: str, path: str):
@@ -4315,7 +2431,7 @@ class BotGUI:
     def _cleanup_lock_files(self):
         base = os.path.dirname(os.path.abspath(__file__))
         removed = 0
-        for subdir in ("config", "exp"):
+        for subdir in ("config",):
             d = os.path.join(base, subdir)
             if not os.path.isdir(d):
                 continue
