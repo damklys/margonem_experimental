@@ -403,35 +403,60 @@ class BotRunner:
 
         self.stop_check()
 
-        import login as _login_mod
-        if profile_existed and not recreate and server_url:
-            # Profil istnieje — wejdź bezpośrednio na serwer, pomijając logowanie
-            self.log(f"⚡ Istniejący profil — wchodzę na {server_url}")
-            self.driver.get(server_url)
-            _login_mod._LOGIN_STARTED.release()
-            # Czekaj na canvas#GAME_CANVAS
+        # Zawsze najpierw margonem.pl: zalogowane konto (wybór postaci / „Wejdź do gry”, bez formularza) – od razu
+        # {server}.margonem.pl; niezalogowane – zwykłe logowanie, a potem też na wybrany serwer.
+        self.log("🌐 Wchodzę na margonem.pl – sprawdzam, czy konto jest zalogowane")
+        self.driver.get("https://margonem.pl")
+
+        def _first(checks, timeout):
             t0 = time.time()
-            _canvas_ok = False
-            while time.time() - t0 < 60:
+            while time.time() - t0 < timeout:
                 self.stop_check()
-                if self.driver.find_elements(By.CSS_SELECTOR, "canvas#GAME_CANVAS"):
-                    self.log("✅ Gra załadowana bezpośrednio")
-                    _canvas_ok = True
-                    break
-                time.sleep(0.5)
-            if _canvas_ok:
-                _login_mod._LOGIN_DONE.release()
-            else:
-                self.log("⚠️  Bezpośrednie wejście nieudane – pełne logowanie")
+                for name, sel in checks:
+                    try:
+                        if self.driver.find_elements(*sel):
+                            return name
+                    except Exception:
+                        pass
+                time.sleep(0.3)
+            return None
+
+        def _on_server():
+            try:
+                return bool(server_url) and self.driver.current_url.startswith(server_url)
+            except Exception:
+                return False
+
+        def _go_server():
+            self.log(f"⚡ Przechodzę na {server_url}")
+            self.driver.get(server_url)
+            if _first([("canvas", (By.CSS_SELECTOR, "canvas#GAME_CANVAS"))], 60):
+                self.log("✅ Gra załadowana")
+                return True
+            return False
+
+        state = _first([
+            ("form",   (By.ID, "login-input")),
+            ("link",   (By.LINK_TEXT, "Zaloguj się na Stronie Głównej")),
+            ("logged", (By.ID, "chnick")),
+            ("logged", (By.CSS_SELECTOR, "div.c-btn.enter-game")),
+        ], 45)
+        entered = False
+        if state == "logged" and server_url:
+            self.log("✅ Konto zalogowane")
+            entered = _go_server()
+            if not entered:
+                self.log("⚠️  Serwer się nie wczytał – loguję od nowa")
                 self.driver.get("https://margonem.pl")
-                login(driver=self.driver,
-                      username=credentials["username"],
-                      password=credentials["password"])
-        else:
-            self.driver.get("https://margonem.pl")
+        if not entered:
+            if state != "logged":
+                self.log("🔑 Konto niezalogowane – loguję")
             login(driver=self.driver,
                   username=credentials["username"],
                   password=credentials["password"])
+            # „Wejdź do gry” prowadzi na świat ostatniej postaci – gdy to inny serwer, przechodzimy na wybrany.
+            if server_url and not _on_server():
+                _go_server()
 
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
