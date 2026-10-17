@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kraken Bot
 // @namespace    kraken.margonem
-// @version      3.190.202610171600
+// @version      4.0.202610171800
 // @description  Logika bota Kraken (exp, herosy, E2, otchłań) działająca bezpośrednio w karcie gry
 // @match        https://*.margonem.pl/
 // @exclude      https://margonem.pl/*
@@ -43,7 +43,7 @@
   } catch (_) {}
 
 
-  const VERSION = '3.190.202610171600';
+  const VERSION = '4.0.202610171800';
   const DATA = {"world":{"Andarum Ilami":[{"n":"Kamienna Jaskinia - sala 2"},{"n":"Świątynia Andarum"},{"n":"Zdradzieckie Przejście p.1"},{"n":"Śnieżna Grota p.1"},{"n":"Skały Mroźnych Śpiewów"}],"Bandyckie Chowisko - skarbiec":[{"n":"Bandyckie Chowisko"}],"Bandyckie Chowisko":[{"n":"Chata bandytów"},{"n":"Bandyckie Chowisko - skarbiec"}],"Błędny Szlak":[{"n":"Zawiły Bór"},{"n":"Złowrogie Bagna"},{"n":"Ostępy Szalbierskich Lasów"}],"Chata bandytów":[{"n":"Ostępy Szalbierskich Lasów"},{"n":"Bandyckie Chowisko"}],"Chata szabrowników":[{"n":"Wertepy Rzezimieszków"}],"Ciche Rumowiska":[{"n":"Płaskowyż Arpan"},{"n":"Złote Piaski"},{"n":"Dolina Suchych Łez"}],"Ciemnica Szubrawców p.1 - sala 1":[{"n":"Fort Eder"},{"n":"Ciemnica Szubrawców p.1 - sala 2"}],"Ciemnica Szubrawców p.1 - sala 2":[{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Ciemnica Szubrawców p.1 - sala 3"}],"Ciemnica Szubrawców p.1 - sala 3":[{"n":"Ciemnica Szubrawców p.1 - sala 2"},{"n":"Stary Kupiecki Trakt"}],"Cienisty Bór":[{"n":"Ostępy Szalbierskich Lasów"},{"n":"Las Dziwów"}],"Czeluść Ognistej Pożogi":[{"n":"Wioska Gnolli"},{"n":"Grota Pragnolli p.3"},{"n":"Grota Caerbannoga"},{"n":"Grota Pragnolli p.1"}],"Dolina Centaurów":[{"n":"Iglaste Ścieżki"},{"n":"Selva Oscura"}],"Dolina Rozbójników":[{"n":"Przełęcz Łotrzyków"},{"n":"Ghuli Mogilnik"},{"n":"Kamienna Kryjówka"},{"n":"Mokradła"}],"Dolina Suchych Łez":[{"n":"Ciche Rumowiska"},{"n":"Złote Piaski"}],"Dolina Yss":[{"n":"Ithan"},{"n":"Leśny Bród"},{"n":"Orla Grań"},{"n":"Wilczy Szpic"}],"Dziewicza Knieja":[{"n":"Las Tropicieli"},{"n":"Stare Ruiny"},{"n":"Grota Malowanej Śmierci"},{"n":"Siedlisko Nietoperzy p.1"},{"n":"Siedlisko Nietoperzy p.5"},{"n":"Orla Grań"}],"Dzikie Pagórki":[{"n":"Tygrysia Polana"},{"n":"Jaskinia Dzikich Kotów"},{"n":"Pradawne Wzgórze Przodków"}],"Eder":[{"n":"Fort Eder"},{"n":"Spokojne Przejście"},{"n":"Gościniec Bardów"}],"Erem Czarnego Słońca p.1 - północ":[{"n":"Erem Czarnego Słońca p.2"},{"n":"Skały Mroźnych Śpiewów"}],"Erem Czarnego Słońca p.2":[{"n":"Erem Czarnego Słońca p.1 - północ"},{"n":"Erem Czarnego Słońca p.3"}],"Erem Czarnego Słońca p.3":[{"n":"Erem Czarnego Słońca p.4 - sala 2"},{"n":"Erem Czarnego Słońca p.4 - sala 1"},{"n":"Erem Czarnego Słońca p.2"}],"Erem Czarnego Słońca p.4 - sala 1":[{"n":"Erem Czarnego Słońca p.3"},{"n":"Erem Czarnego Słońca p.5"}],"Erem Czarnego Słońca p.4 - sala 2":[{"n":"Świątynia Andarum - magazyn p.2"},{"n":"Erem Czarnego Słońca p.3 - południe"},{"n":"Erem Czarnego Słońca p.3"}],"Fort Eder":[{"n":"Las Goblinów"},{"n":"Mokradła"},{"n":"Stary Kupiecki Trakt"},{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Eder"},{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 2"}],"Gadzia Kotlina":[{"n":"Zagrzybiałe Ścieżki p.1 - sala 2"},{"n":"Złowrogie Bagna"},{"n":"Mglista Polana Vesy"},{"n":"Wzgórze Płaczek"}],"Ghuli Mogilnik":[{"n":"Dolina Rozbójników"},{"n":"Zapomniany Grobowiec p.1"},{"n":"Warczące Osuwiska"},{"n":"Polana Ścierwojadów"}],"Gościniec Bardów":[{"n":"Eder"},{"n":"Wertepy Rzezimieszków"},{"n":"Nizina Wieśniaków"},{"n":"Racicowy Matecznik"},{"n":"Namiot Tropicieli Herosów"}],"Grań Gawronich Piór":[{"n":"Lazurowe Wzgórze"},{"n":"Thuzal"}],"Grota Bezszelestnych Kroków - sala 1":[{"n":"Zapomniany Szlak"},{"n":"Grota Bezszelestnych Kroków - sala 2"},{"n":"Grota Bezszelestnych Kroków - sala 3"}],"Grota Bezszelestnych Kroków - sala 2":[{"n":"Grota Bezszelestnych Kroków - sala 1"},{"n":"Grota Bezszelestnych Kroków - sala 3"}],"Grota Bezszelestnych Kroków - sala 3":[{"n":"Grota Bezszelestnych Kroków - sala 2"},{"n":"Grota Bezszelestnych Kroków - sala 1"}],"Grota Caerbannoga":[{"n":"Grota Caerbannoga - leże bestii"},{"n":"Czeluść Ognistej Pożogi"}],"Grota Malowanej Śmierci":[{"n":"Dziewicza Knieja"}],"Grota Pragnolli p.1 - sala 2":[{"n":"Grota Pragnolli p.1"},{"n":"Grota Pragnolli p.2"}],"Grota Pragnolli p.1":[{"n":"Czeluść Ognistej Pożogi"},{"n":"Grota Pragnolli p.1 - sala 2"}],"Grota Pragnolli p.2 - sala 2":[{"n":"Grota Pragnolli p.2"}],"Grota Pragnolli p.2":[{"n":"Grota Pragnolli p.1 - sala 2"},{"n":"Grota Pragnolli p.2 - sala 2"},{"n":"Grota Pragnolli p.3"}],"Grota Pragnolli p.3":[{"n":"Grota Pragnolli p.2"},{"n":"Czeluść Ognistej Pożogi"}],"Grota Samotnych Dusz p.3 - sala wyjściowa":[{"n":"Liściaste Rozstaje"},{"n":"Grota Samotnych Dusz p.3"}],"Grota Samotnych Dusz p.3":[{"n":"Grota Samotnych Dusz p.3 - sala wyjściowa"},{"n":"Ślepe Wyrobisko"},{"n":"Grota Samotnych Dusz p.4"},{"n":"Grota Samotnych Dusz p.2"}],"Górska Grota p.1":[{"n":"Górska Grota p.2"}],"Górska Grota p.2":[{"n":"Nawiedzony Jar"},{"n":"Górska Grota p.1"}],"Górska Kopalnia":[{"n":"Nawiedzony Jar"}],"Głębokie Skałki p.1":[{"n":"Zdradzieckie Przejście p.1"},{"n":"Głębokie Skałki p.2"}],"Głębokie Skałki p.2":[{"n":"Głębokie Skałki p.1"},{"n":"Zdradzieckie Przejście p.1"},{"n":"Głębokie Skałki p.3"}],"Głębokie Skałki p.3":[{"n":"Głębokie Skałki p.2"},{"n":"Głębokie Skałki p.4"}],"Iglaste Ścieżki":[{"n":"Dolina Centaurów"},{"n":"Zawiły Bór"},{"n":"Ostępy Szalbierskich Lasów"}],"Ithan":[{"n":"Dolina Yss"},{"n":"Zniszczone Opactwo"},{"n":"Jaskinia Łowców p.1"},{"n":"Porzucone Pasieki"},{"n":"Jaskinia Łowców p.2"},{"n":"Wioska Gnolli","tr":[{"n":"Jaskinia Łowców p.1"},{"n":"Jaskinia Łowców p.2"},{"n":"Ithan"}]},{"n":"Dom Huslina"},{"n":"Strażnica północno-zachodnia"},{"n":"Dom sióstr"},{"n":"Stary magazyn"},{"n":"Zajazd u Makiny"},{"n":"Strażnica południowo-zachodnia"},{"n":"Dom Roana"},{"n":"Ratusz Ithan"},{"n":"Dom Aukcyjny"},{"n":"Strażnica południowo-wschodnia"},{"n":"Dom Niela"},{"n":"Gildia Nerthusa - przedsionek"},{"n":"Pod Rozbrykanym Niziołkiem"},{"n":"Dom Eldrika"},{"n":"Szkoła"},{"n":"Baraki"},{"n":"Kopalnia Dogoran p.1"},{"n":"Strażnica północno-wschodnia"},{"n":"Dom Unila"}],"Jama Kocich Ślepi":[{"n":"Tygrysia Polana"}],"Jaskinia Dzikich Kotów":[{"n":"Tygrysia Polana"},{"n":"Dzikie Pagórki"}],"Jaskinia Gnollich Szamanów p.1":[{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Wioska Gnolli"}],"Jaskinia Gnollich Szamanów p.2":[{"n":"Wioska Gnolli"},{"n":"Jaskinia Gnollich Szamanów p.1"},{"n":"Jaskinia Gnollich Szamanów p.3"}],"Jaskinia Gnollich Szamanów p.3":[{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Jaskinia Gnollich Szamanów - komnata Kozuga"}],"Jaskinia Wilczego Zamętu p.1":[{"n":"Wilczy Szpic"},{"n":"Jaskinia Wilczego Zamętu p.2"}],"Jaskinia Wilczego Zamętu p.2":[{"n":"Jaskinia Wilczego Zamętu p.1"},{"n":"Wilczy Szpic"}],"Jaskinia Łowców p.1":[{"n":"Ithan"},{"n":"Jaskinia Łowców p.2"}],"Jaskinia Łowców p.2":[{"n":"Jaskinia Łowców p.1"},{"n":"Ithan"}],"Kamienna Jaskinia - sala 1":[{"n":"Zapomniany Szlak"},{"n":"Kamienna Jaskinia - sala 2"},{"n":"Kamienna Jaskinia - sala 3"}],"Kamienna Jaskinia - sala 2":[{"n":"Kamienna Jaskinia - sala 1"},{"n":"Andarum Ilami"}],"Kamienna Kryjówka":[{"n":"Dolina Rozbójników"}],"Kamienna Strażnica - Sala Chwały":[{"n":"Kamienna Strażnica - Sanktuarium"},{"n":"Kamienna Strażnica - tunel"}],"Kamienna Strażnica - Sanktuarium":[{"n":"Kamienna Strażnica - Sala Chwały"}],"Kamienna Strażnica - tunel":[{"n":"Kamienna Strażnica - zach. baszta p.1"},{"n":"Kamienna Strażnica - Sala Chwały"},{"n":"Kamienna Strażnica - wsch. baszta zasypany tunel"}],"Kamienna Strażnica - wsch. baszta p.1":[{"n":"Trupia Przełęcz"},{"n":"Kamienna Strażnica - wsch. baszta p.2"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - wsch. baszta p.2":[{"n":"Kamienna Strażnica - wsch. baszta p.1"}],"Kamienna Strażnica - wsch. baszta skalna sala p.0":[{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - wsch. baszta skalna sala p.1":[{"n":"Kamienna Strażnica - wsch. baszta zasypany tunel"},{"n":"Kamienna Strażnica - wsch. baszta p.1"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.0"}],"Kamienna Strażnica - wsch. baszta zasypany tunel":[{"n":"Kamienna Strażnica - tunel"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - zach. baszta p.1":[{"n":"Kamienna Strażnica - zach. baszta p.2"},{"n":"Kamienna Strażnica - tunel"}],"Kamienna Strażnica - zach. baszta p.2":[{"n":"Kamienna Strażnica - zach. baszta p.1"},{"n":"Trupia Przełęcz"}],"Kopalnia Kapiącego Miodu p.1 - sala 1":[{"n":"Kopalnia Kapiącego Miodu p.2 - sala 1"},{"n":"Porzucone Pasieki"}],"Kopalnia Kapiącego Miodu p.1 - sala 2":[{"n":"Porzucone Pasieki"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala 2"}],"Kopalnia Kapiącego Miodu p.2 - sala 1":[{"n":"Kopalnia Kapiącego Miodu p.3"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 1"}],"Kopalnia Kapiącego Miodu p.2 - sala 2":[{"n":"Kopalnia Kapiącego Miodu p.1 - sala 2"},{"n":"Kopalnia Kapiącego Miodu p.3"}],"Kopalnia Kapiącego Miodu p.3":[{"n":"Kopalnia Kapiącego Miodu p.2 - sala 2"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala 1"}],"Kopalnia Krwawego Opętania - przedsionek":[{"n":"Wyjście"}],"Kopalnia Krwawego Opętania":[],"Kopalnia Margorii":[{"n":"Ślepe Wyrobisko"},{"n":"Margoria"},{"n":"Labirynt Margorii"}],"Kopiec Mrówek p.1":[{"n":"Kopiec Mrówek p.2"},{"n":"Kopiec Mrówek"}],"Kopiec Mrówek p.2":[{"n":"Mrowisko p.2"},{"n":"Kopiec Mrówek p.1"}],"Kopiec Mrówek":[{"n":"Kopiec Mrówek p.1"},{"n":"Łany Zboża"}],"Krasowa Pieczara p.1":[{"n":"Legowisko Wilczej Hordy"},{"n":"Krasowa Pieczara p.2"}],"Krasowa Pieczara p.2":[{"n":"Krasowa Pieczara p.1"},{"n":"Krasowa Pieczara p.3"},{"n":"Legowisko Wilczej Hordy"}],"Krasowa Pieczara p.3":[{"n":"Krasowa Pieczara p.2"},{"n":"Legowisko Wilczej Hordy"}],"Kryjówka Dzikich Kotów":[{"n":"Leśna Przełęcz"},{"n":"Grota Dzikiego Kota"}],"Krypty Dusz Śniegu p.1":[{"n":"Krypty Dusz Śniegu p.2"},{"n":"Cmentarzysko Szerpów"}],"Krypty Dusz Śniegu p.2":[{"n":"Krypty Dusz Śniegu p.3"},{"n":"Krypty Dusz Śniegu p.1"},{"n":"Krypty Dusz Śniegu p.3 - komnata Lisza"}],"Krypty Dusz Śniegu p.3":[{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Krypty Dusz Śniegu p.2"}],"Księżycowe Wzniesienie":[{"n":"Trupia Przełęcz"},{"n":"Mglista Polana Vesy"},{"n":"Zapomniany Święty Gaj p.1"},{"n":"Sosnowe Odludzie"}],"Labirynt Wyklętych p.1":[{"n":"Labirynt Wyklętych p.2 - sala 1"},{"n":"Pieczara Czaszek"},{"n":"Labirynt Wyklętych p.2 - sala 2"}],"Labirynt Wyklętych p.2 - sala 1":[{"n":"Labirynt Wyklętych p.1"}],"Labirynt Wyklętych p.2 - sala 2":[{"n":"Labirynt Wyklętych p.1"}],"Las Dziwów":[{"n":"Cienisty Bór"},{"n":"Namiot Kambiona"},{"n":"Złowrogie Bagna"}],"Las Goblinów":[{"n":"Podmokła Dolina"},{"n":"Fort Eder"}],"Las Tropicieli":[{"n":"Osada Mulusów"},{"n":"Dziewicza Knieja"}],"Lazurowe Wzgórze":[{"n":"Słoneczna Wyżyna"},{"n":"Kwieciste Przejście"},{"n":"Grań Gawronich Piór"}],"Lazurytowa Grota p.1":[{"n":"Uroczysko"},{"n":"Lazurytowa Grota p.2"}],"Lazurytowa Grota p.2":[{"n":"Lazurytowa Grota p.1"},{"n":"Lazurytowa Grota p.3 - sala 1"},{"n":"Lazurytowa Grota p.3 - sala 2"}],"Lazurytowa Grota p.3 - sala 1":[{"n":"Lazurytowa Grota p.2"},{"n":"Lazurytowa Grota p.3 - sala 2"}],"Lazurytowa Grota p.3 - sala 2":[{"n":"Lazurytowa Grota p.3 - sala 1"},{"n":"Lazurytowa Grota p.2"},{"n":"Lazurytowa Grota p.4"}],"Legowisko Wilczej Hordy":[{"n":"Wilcza Skarpa"},{"n":"Warczące Osuwiska"},{"n":"Polana Ścierwojadów"},{"n":"Krasowa Pieczara p.1"},{"n":"Krasowa Pieczara p.2"},{"n":"Krasowa Pieczara p.3"},{"n":"Skalne Turnie"}],"Leśna Przełęcz":[{"n":"Torneg"},{"n":"Zatopiony Szczyt"},{"n":"Tygrysia Polana"},{"n":"Kryjówka Dzikich Kotów"}],"Leśny Bród":[{"n":"Zniszczone Opactwo"},{"n":"Dolina Yss"},{"n":"Mrówcza Kolonia p.1 - lewy tunel"},{"n":"Mrówcza Kolonia p.1 - prawy tunel"}],"Liściaste Rozstaje":[{"n":"Las Dziwów"},{"n":"Sosnowe Odludzie"},{"n":"Jezioro Ważek"},{"n":"Grota Samotnych Dusz p.3 - sala wyjściowa"},{"n":"Zapomniana Ścieżyna"}],"Lodowa Sala":[{"n":"Śnieżna Grota p.3"},{"n":"Przejście Magicznego Mrozu"},{"n":"Przejście Lodowatego Wiatru"},{"n":"Przejście Zamarzniętych Kości"}],"Margoria":[{"n":"Kopalnia Margorii"},{"n":"Labirynt Margorii"},{"n":"Margoria - Sala Królewska"}],"Mglista Polana Vesy":[{"n":"Gadzia Kotlina"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 3"},{"n":"Wzgórze Płaczek"},{"n":"Księżycowe Wzniesienie"}],"Mistyczny Bór":[{"n":"Porzucone Pasieki"},{"n":"Przedmieścia Karka-han"},{"n":"Wichrowe Szczyty"}],"Moczary Rybiego Oka":[{"n":"Stary Kupiecki Trakt"},{"n":"Uroczysko Wodnika"}],"Mokra Grota p.1 - boczny korytarz":[{"n":"Mokra Grota p.1"},{"n":"Mokra Grota p.1 - przełaz"},{"n":"Mokra Grota p.2 - korytarz"}],"Mokra Grota p.1 - przełaz":[{"n":"Mokra Grota p.2 - korytarz"},{"n":"Mokra Grota p.1"}],"Mokra Grota p.1":[{"n":"Zapomniany Szlak"},{"n":"Mokra Grota p.2"},{"n":"Mokra Grota p.1 - przełaz"},{"n":"Mokra Grota p.1 - boczny korytarz"}],"Mokra Grota p.2 - korytarz":[{"n":"Mokra Grota p.1 - boczny korytarz"},{"n":"Mroczna Pieczara p.1 - sala 3"}],"Mokradła":[{"n":"Dolina Rozbójników"},{"n":"Polana Ścierwojadów"},{"n":"Skarpiska Tolloków"},{"n":"Podmokła Dolina"},{"n":"Fort Eder"}],"Morwowe Przejście":[{"n":"Podmokła Dolina"},{"n":"Nawiedzony Jar"}],"Mroczna Pieczara p.0":[{"n":"Mroczna Pieczara p.1 - sala 2"},{"n":"Migotliwa Pieczara"}],"Mroczna Pieczara p.1 - sala 1":[{"n":"Mroczny Przesmyk"},{"n":"Mroczna Pieczara p.1 - sala 2"},{"n":"Mroczna Pieczara p.1 - sala 3"}],"Mroczna Pieczara p.1 - sala 2":[{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Mroczna Pieczara p.0"}],"Mroczna Pieczara p.1 - sala 3":[{"n":"Mroczny Przesmyk"},{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Mroczna Pieczara p.2"},{"n":"Mokra Grota p.2 - korytarz"}],"Mroczna Pieczara p.2":[{"n":"Mroczna Pieczara p.1 - sala 3"},{"n":"Mroczny Przesmyk"}],"Mroczny Przesmyk":[{"n":"Nawiedzony Jar"},{"n":"Mroczna Pieczara p.1 - sala 3"},{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Zapomniany Szlak"},{"n":"Mroczna Pieczara p.2"}],"Mrowisko p.1":[{"n":"Mrowisko"},{"n":"Mrowisko p.2"}],"Mrowisko p.2":[{"n":"Mrowisko p.1"},{"n":"Kopiec Mrówek p.2"}],"Mrowisko":[{"n":"Łany Zboża"},{"n":"Mrowisko p.1"}],"Mrówcza Kolonia p.1 - lewy tunel":[{"n":"Leśny Bród"},{"n":"Mrówcza Kolonia p.2 - lewe korytarze"}],"Mrówcza Kolonia p.1 - prawy tunel":[{"n":"Mrówcza Kolonia p.2 - prawe korytarze"},{"n":"Leśny Bród"}],"Mrówcza Kolonia p.2 - lewe korytarze":[{"n":"Mrówcza Kolonia p.1 - lewy tunel"},{"n":"Mrówcza Kolonia p.3 - lewa komora jaj"}],"Mrówcza Kolonia p.2 - prawe korytarze":[{"n":"Mrówcza Kolonia p.3 - prawa komora jaj"},{"n":"Mrówcza Kolonia p.1 - prawy tunel"}],"Mrówcza Kolonia p.3 - lewa komora jaj":[{"n":"Mrówcza Kolonia p.2 - lewe korytarze"},{"n":"Mrówcza Kolonia p.4 - królewskie gniazdo"}],"Mrówcza Kolonia p.3 - prawa komora jaj":[{"n":"Mrówcza Kolonia p.4 - królewskie gniazdo"},{"n":"Mrówcza Kolonia p.2 - prawe korytarze"}],"Mrówcza Kolonia p.4 - królewskie gniazdo":[{"n":"Mrówcza Kolonia p.3 - lewa komora jaj"},{"n":"Mrówcza Kolonia p.3 - prawa komora jaj"}],"Mythar":[{"n":"Smocze Góry"},{"n":"Zawiły Bór"},{"n":"Złowrogie Bagna"}],"Namiot Kambiona":[{"n":"Las Dziwów"}],"Nawiedzony Jar":[{"n":"Zburzona Twierdza"},{"n":"Stare Wyrobisko p.4"},{"n":"Stare Wyrobisko p.5"},{"n":"Mroczny Przesmyk"},{"n":"Górska Kopalnia"},{"n":"Górska Grota p.2"},{"n":"Morwowe Przejście"},{"n":"Stare Wyrobisko p.3"}],"Nithal":[{"n":"Mury Nithal - Baszta Koronna"},{"n":"Kwatera żołnierska"},{"n":"Akademia wojskowa p.1"},{"n":"Akademia wojskowa - stajnia"},{"n":"Izba chorych płn."},{"n":"Winnica Meflakasti"},{"n":"Kamienica Zagadek"},{"n":"Kamienica de Waldenów"},{"n":"Gildia Kupców - część wschodnia"},{"n":"Kamienica Tamena"},{"n":"Kamienica Prokusi"},{"n":"Kamienica Krynii Lufis"},{"n":"Cytadela"},{"n":"Kamienica Nitrusa"},{"n":"Kamienica Cecylii"},{"n":"Kamienica Pireza"},{"n":"Kamienica Nandraroka"},{"n":"Kamienica Broka"},{"n":"Południowe mury Nithal - część zachodnia"},{"n":"Kamienica Flawiana"},{"n":"Podgrodzie Nithal"},{"n":"Ratusz Nithal"},{"n":"Południowe mury Nithal - część wschodnia"},{"n":"Zajazd pod Złamanym Dukatem"},{"n":"Knajpa pod Czarnym Tulipanem"},{"n":"Pizzeria"},{"n":"Kamienica Rewii"},{"n":"Zajazd pod Złamanym Dukatem - pokój właściciela"},{"n":"Kamienica Eklektusa"},{"n":"Kamienica Miona"},{"n":"Kamienica Uliany i Arsena"},{"n":"Rezydencja Vonikur - kuchnia"},{"n":"Kamienica Mirutki"},{"n":"Opuszczona kamienica"},{"n":"Kamienica Kandelia"},{"n":"Rezydencja Vonikur"},{"n":"Kamienica Galeny i Sarda"},{"n":"Rezydencja Trafalgar"},{"n":"Kamienica Andronikusa"},{"n":"Rezydencja Vonikur - biblioteczka"},{"n":"Uniwersytet płn."},{"n":"Dormitorium - część akolitów"},{"n":"Uniwersytet płd."},{"n":"Świątynia Czterech Bóstw"},{"n":"Dormitorium - część westalek"},{"n":"Cytadela p.1"},{"n":"Prywatna kamienica"},{"n":"Izba chorych płd."},{"n":"Dom Rezarda"},{"n":"Kamienica Lukrecji"},{"n":"Kamienica Tanenbara"},{"n":"Gildia Kupców - część zachodnia"},{"n":"Kamienica Furii Infernalis"},{"n":"Gildia Kupców - część północna"},{"n":"Kamienica Vilgara"}],"Nizina Wieśniaków":[{"n":"Racicowy Matecznik"},{"n":"Zbocze Starych Bogów"},{"n":"Pieczara Czaszek"},{"n":"Gościniec Bardów"},{"n":"Zachodnia Rubież"},{"n":"Dom Chlasta"},{"n":"Szopa"},{"n":"Podgrodzie Nithal"}],"Oaza Siedmiu Wichrów":[{"n":"Stare Sioło"},{"n":"Ciche Rumowiska"},{"n":"Złote Piaski"},{"n":"Płaskowyż Arpan"}],"Opuszczony Bastion":[{"n":"Zburzona Twierdza"},{"n":"Podziemny Przełaz p.1"},{"n":"Zrujnowana Wieża"}],"Orla Grań":[{"n":"Dziewicza Knieja"},{"n":"Stare Ruiny"},{"n":"Dolina Yss"},{"n":"Przełęcz Łotrzyków"},{"n":"Przeklęta Strażnica"}],"Osada Mulusów":[{"n":"Pradawne Wzgórze Przodków"},{"n":"Las Tropicieli"}],"Ostępy Szalbierskich Lasów":[{"n":"Iglaste Ścieżki"},{"n":"Błędny Szlak"},{"n":"Chata bandytów"},{"n":"Cienisty Bór"},{"n":"Siedziba rekieterów"}],"Pagórki Łupieżców":[{"n":"Przełęcz Łotrzyków"},{"n":"Skład Grabieżców"},{"n":"Schowek na Łupy"}],"Pieczara Czaszek":[{"n":"Labirynt Wyklętych p.1"},{"n":"Nizina Wieśniaków"}],"Pieczara Kwiku - sala 1":[{"n":"Racicowy Matecznik"},{"n":"Pieczara Kwiku - sala 2"}],"Pieczara Kwiku - sala 2":[{"n":"Pieczara Kwiku - sala 1"}],"Pieczara Niepogody p.1":[{"n":"Fort Eder"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.2 - sala 1"}],"Pieczara Niepogody p.2 - sala 1":[{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.3"}],"Pieczara Niepogody p.2 - sala 2":[{"n":"Fort Eder"},{"n":"Pieczara Niepogody p.3"},{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 1"}],"Pieczara Niepogody p.3":[{"n":"Pieczara Niepogody p.2 - sala 1"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.4"}],"Pieczara Niepogody p.4":[{"n":"Pieczara Niepogody p.3"},{"n":"Pieczara Niepogody p.5"}],"Pieczara Niepogody p.5":[{"n":"Pieczara Niepogody p.4"}],"Pieczara Szaleńców - przedsionek":[{"n":"Pieczara Szaleńców - sala 4"},{"n":"Pieczara Szaleńców - sala Regulusa Mętnookiego"}],"Pieczara Szaleńców - sala 1":[{"n":"Radosna Polana"},{"n":"Pieczara Szaleńców - sala 2"}],"Pieczara Szaleńców - sala 2":[{"n":"Pieczara Szaleńców - sala 1"},{"n":"Pieczara Szaleńców - sala 3"}],"Pieczara Szaleńców - sala 3":[{"n":"Pieczara Szaleńców - sala 2"},{"n":"Pieczara Szaleńców - sala 4"}],"Pieczara Szaleńców - sala 4":[{"n":"Pieczara Szaleńców - przedsionek"},{"n":"Pieczara Szaleńców - sala 3"}],"Pieczara Szaleńców - sala Regulusa Mętnookiego":[{"n":"Pieczara Szaleńców - przedsionek"}],"Piekielna Grota p.1":[{"n":"Zniszczone Opactwo"},{"n":"Piekielna Grota p.2"}],"Piekielna Grota p.2":[{"n":"Piekielna Grota p.1"},{"n":"Piekielna Grota p.3 - sala 1"}],"Piekielna Grota p.3 - sala 1":[{"n":"Piekielna Grota p.2"},{"n":"Piekielna Grota p.3 - sala 2"}],"Piekielna Grota p.3 - sala 2":[{"n":"Piekielna Grota p.3 - sala 1"},{"n":"Piekielna Grota p.4"}],"Piekielna Grota p.4":[{"n":"Piekielna Grota p.3 - sala 2"},{"n":"Piekielna Sala Ognia"}],"Piekielna Sala Ognia":[{"n":"Piekielna Grota p.4"}],"Piramida Pustynnego Władcy p.1":[{"n":"Złote Piaski"},{"n":"Piramida Pustynnego Władcy p.2"}],"Piramida Pustynnego Władcy p.2":[{"n":"Piramida Pustynnego Władcy p.1"},{"n":"Piramida Pustynnego Władcy p.3"}],"Piramida Pustynnego Władcy p.3":[{"n":"Piramida Pustynnego Władcy p.2"}],"Pod Rozbrykanym Niziołkiem":[{"n":"Pod Rozbrykanym Niziołkiem - piętro"},{"n":"Pod Rozbrykanym Niziołkiem - piwnica"},{"n":"Ithan"}],"Podgrodzie Nithal":[{"n":"Nizina Wieśniaków"},{"n":"Dom Rózi"},{"n":"Zajazd pod Tęczowym Żukiem"},{"n":"Dom Edny"},{"n":"Młyn"},{"n":"Nithal"},{"n":"Bagna Chojraków"},{"n":"Drewutnia"},{"n":"Chlew"},{"n":"Cytadela p.3"},{"n":"Cytadela p.2"},{"n":"Żołnierz Nithal"},{"n":"Dom Młynarza"},{"n":"Stajnie"},{"n":"Źródło Narumi"},{"n":"Gospodarstwo Łucji i Jana"},{"n":"Stodoła"},{"n":"Dom Almonda"}],"Podmokła Dolina":[{"n":"Mokradła"},{"n":"Morwowe Przejście"},{"n":"Las Goblinów"},{"n":"Jaskinia Pogardy"}],"Podziemia Zniszczonej Wieży p.1":[{"n":"Ruiny Wieży Magów - przedsionek"},{"n":"Podziemia Zniszczonej Wieży p.2"}],"Podziemia Zniszczonej Wieży p.2":[{"n":"Podziemia Zniszczonej Wieży p.1"},{"n":"Podziemia Zniszczonej Wieży p.3"}],"Podziemia Zniszczonej Wieży p.3":[{"n":"Podziemia Zniszczonej Wieży p.2"},{"n":"Podziemia Zniszczonej Wieży p.4"}],"Podziemia Zniszczonej Wieży p.4":[{"n":"Podziemia Zniszczonej Wieży p.3"},{"n":"Podziemia Zniszczonej Wieży p.5"}],"Podziemia Zniszczonej Wieży p.5":[{"n":"Podziemia Zniszczonej Wieży p.4"}],"Podziemne Przejście p.1":[{"n":"Wichrowe Szczyty"},{"n":"Podziemne Przejście p.2"}],"Podziemne Przejście p.2":[{"n":"Podziemne Przejście p.1"},{"n":"Podziemne Przejście p.3"}],"Podziemny Przełaz p.1":[{"n":"Opuszczony Bastion"},{"n":"Podziemny Przełaz p.2"}],"Podziemny Przełaz p.2":[{"n":"Podziemny Przełaz p.1"},{"n":"Zrujnowana Wieża"}],"Port Tuzmer":[{"n":"Tuzmer"}],"Porzucone Pasieki":[{"n":"Ithan"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 1"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 2"},{"n":"Uroczysko"},{"n":"Mistyczny Bór"}],"Pradawne Wzgórze Przodków":[{"n":"Dzikie Pagórki"},{"n":"Osada Mulusów"},{"n":"Świątynia Mzintlavy"}],"Przejście Lodowatego Wiatru":[{"n":"Lodowa Sala"},{"n":"Sala Lodowatego Wiatru"}],"Przejście Magicznego Mrozu":[{"n":"Lodowa Sala"},{"n":"Sala Magicznego Mrozu"}],"Przejście Zamarzniętych Kości":[{"n":"Lodowa Sala"},{"n":"Sala Zamarzniętych Kości"}],"Przeklęta Strażnica - podziemia p.1 s.1":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica - podziemia p.2 s.1"}],"Przeklęta Strażnica - podziemia p.1 s.2":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica - podziemia p.2 s.2"}],"Przeklęta Strażnica - podziemia p.2 s.2":[{"n":"Przeklęta Strażnica - podziemia p.1 s.2"},{"n":"Przeklęta Strażnica - podziemia p.2 s.3"}],"Przeklęta Strażnica p.1":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica p.2"}],"Przeklęta Strażnica p.2":[{"n":"Przeklęta Strażnica p.1"}],"Przeklęta Strażnica":[{"n":"Orla Grań"},{"n":"Przeklęta Strażnica - podziemia p.1 s.1"},{"n":"Przeklęta Strażnica - podziemia p.1 s.2"},{"n":"Przeklęta Strażnica p.1"}],"Przeklęty Zamek - kanały":[{"n":"Przeklęty Zamek - zbrojownia"}],"Przeklęty Zamek - komnata":[{"n":"Przeklęty Zamek p.2"}],"Przeklęty Zamek - podziemia południowe":[{"n":"Przeklęty Zamek - zbrojownia"},{"n":"Przeklęty Zamek - wejście południowe"}],"Przeklęty Zamek - podziemia północne":[{"n":"Przeklęty Zamek - wejście północne"},{"n":"Przeklęty Zamek - zbrojownia"}],"Przeklęty Zamek - sala zgromadzeń":[{"n":"Przeklęty Zamek - zbrojownia"},{"n":"Przeklęty Zamek p.1"},{"n":"Przeklęty Zamek - wejście wschodnie"}],"Przeklęty Zamek - wejście południowe":[{"n":"Przeklęty Zamek - podziemia południowe"},{"n":"Stare Ruiny"}],"Przeklęty Zamek - wejście północne":[{"n":"Stare Ruiny"},{"n":"Przeklęty Zamek - podziemia północne"}],"Przeklęty Zamek - wejście wschodnie":[{"n":"Przeklęty Zamek - sala zgromadzeń"},{"n":"Stare Ruiny"}],"Przeklęty Zamek - zbrojownia":[{"n":"Przeklęty Zamek - podziemia północne"},{"n":"Przeklęty Zamek - kanały"},{"n":"Przeklęty Zamek - podziemia południowe"},{"n":"Przeklęty Zamek - sala zgromadzeń"}],"Przeklęty Zamek p.1":[{"n":"Przeklęty Zamek - sala zgromadzeń"},{"n":"Przeklęty Zamek p.2"}],"Przeklęty Zamek p.2":[{"n":"Przeklęty Zamek p.1"},{"n":"Stare Ruiny"},{"n":"Przeklęty Zamek - komnata"}],"Przełaz olbrzymów":[{"n":"Smocze Góry"},{"n":"Selva Oscura"}],"Przełęcz Łotrzyków":[{"n":"Orla Grań"},{"n":"Pagórki Łupieżców"},{"n":"Dolina Rozbójników"}],"Płacząca Grota - sala Lamentu":[{"n":"Płacząca Grota p.3"}],"Płacząca Grota p.1 - sala 1":[{"n":"Wzgórze Płaczek"},{"n":"Płacząca Grota p.2"}],"Płacząca Grota p.1 - sala 2":[{"n":"Płacząca Grota p.2"},{"n":"Wzgórze Płaczek"}],"Płacząca Grota p.2":[{"n":"Płacząca Grota p.1 - sala 1"},{"n":"Płacząca Grota p.3"},{"n":"Płacząca Grota p.1 - sala 2"}],"Płacząca Grota p.3":[{"n":"Płacząca Grota - sala Lamentu"},{"n":"Płacząca Grota p.2"}],"Płaskowyż Arpan":[{"n":"Trupia Przełęcz"},{"n":"Skalne Cmentarzysko p.1"},{"n":"Sucha Dolina"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Złote Piaski"},{"n":"Pustkowia Pogrzebanych"}],"Racicowy Matecznik":[{"n":"Spokojne Przejście"},{"n":"Ukwiecona Skarpa"},{"n":"Pieczara Kwiku - sala 1"}],"Radosna Polana":[{"n":"Wioska Gnolli"},{"n":"Pieczara Szaleńców - sala 1"}],"Ruiny Pustynnych Burz":[{"n":"Złote Piaski"}],"Ruiny Szabrowników":[{"n":"Zatopiony Szczyt"}],"Ruiny Wieży Magów - przedsionek":[{"n":"Selva Oscura"},{"n":"Podziemia Zniszczonej Wieży p.1"}],"Sala Lodowatego Wiatru":[{"n":"Przejście Lodowatego Wiatru"}],"Sala Magicznego Mrozu":[{"n":"Przejście Magicznego Mrozu"}],"Sala Zamarzniętych Kości":[{"n":"Przejście Zamarzniętych Kości"}],"Schowek na Łupy":[{"n":"Pagórki Łupieżców"}],"Selva Oscura":[{"n":"Zawiły Bór"},{"n":"Dolina Centaurów"},{"n":"Ruiny Wieży Magów - przedsionek"},{"n":"Przełaz olbrzymów"}],"Siedlisko Nietoperzy p.1":[{"n":"Dziewicza Knieja"},{"n":"Siedlisko Nietoperzy p.2"}],"Siedlisko Nietoperzy p.2":[{"n":"Siedlisko Nietoperzy p.1"},{"n":"Siedlisko Nietoperzy p.3 - sala 1"}],"Siedlisko Nietoperzy p.3 - sala 1":[{"n":"Siedlisko Nietoperzy p.2"},{"n":"Siedlisko Nietoperzy p.3 - sala 2"},{"n":"Siedlisko Nietoperzy p.4"}],"Siedlisko Nietoperzy p.3 - sala 2":[{"n":"Siedlisko Nietoperzy p.3 - sala 1"}],"Siedlisko Nietoperzy p.4":[{"n":"Siedlisko Nietoperzy p.3 - sala 1"},{"n":"Siedlisko Nietoperzy p.5"}],"Siedlisko Nietoperzy p.5":[{"n":"Siedlisko Nietoperzy p.4"},{"n":"Dziewicza Knieja"}],"Skalne Cmentarzysko p.1":[{"n":"Płaskowyż Arpan"},{"n":"Skalne Cmentarzysko p.2"}],"Skalne Cmentarzysko p.2":[{"n":"Skalne Cmentarzysko p.1"},{"n":"Skalne Cmentarzysko p.3"}],"Skalne Cmentarzysko p.3":[{"n":"Skalne Cmentarzysko p.2"},{"n":"Skalne Cmentarzysko p.4"}],"Skalne Cmentarzysko p.4":[{"n":"Skalne Cmentarzysko p.3"}],"Skalne Turnie":[{"n":"Legowisko Wilczej Hordy"},{"n":"Skarpiska Tolloków"}],"Skarpiska Tolloków":[{"n":"Skalne Turnie"},{"n":"Polana Ścierwojadów"},{"n":"Mokradła"}],"Skały Mroźnych Śpiewów":[{"n":"Andarum Ilami"},{"n":"Erem Czarnego Słońca p.1 - północ"},{"n":"Firnowa Grota p.1"},{"n":"Cmentarzysko Szerpów"},{"n":"Firnowa Grota p.2"},{"n":"Erem Czarnego Słońca p.3 - południe"},{"n":"Lodowa Wyrwa p.1 s.1"},{"n":"Zmarzlina Amaimona Soplorękiego - przedsionek"},{"n":"Lodowa Wyrwa p.2"}],"Skład Grabieżców":[{"n":"Pagórki Łupieżców"}],"Smocza Jaskinia":[{"n":"Smocze Góry"}],"Smocze Góry":[{"n":"Mythar"},{"n":"Przełaz olbrzymów"}],"Sosnowe Odludzie":[{"n":"Leszy (91w)"},{"n":"Księżycowe Wzniesienie"},{"n":"Chodniki Mrinding"},{"n":"Liściaste Rozstaje"},{"n":"Podziemne Rozpadliny"}],"Spokojne Przejście":[{"n":"Eder"},{"n":"Racicowy Matecznik"},{"n":"Zasłonięte Jezioro"}],"Stare Ruiny":[{"n":"Wilczy Szpic"},{"n":"Torneg"},{"n":"Zatopiony Szczyt"},{"n":"Orla Grań"},{"n":"Przeklęty Zamek - wejście północne"},{"n":"Przeklęty Zamek - wejście południowe"},{"n":"Przeklęty Zamek - wejście wschodnie"},{"n":"Przeklęty Zamek p.2"},{"n":"Dziewicza Knieja"}],"Stare Sioło":[{"n":"Sucha Dolina"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Tuzmer"}],"Stare Wyrobisko p.1":[{"n":"Stare Wyrobisko p.2"}],"Stare Wyrobisko p.2":[{"n":"Stare Wyrobisko p.3"},{"n":"Stare Wyrobisko p.1"}],"Stare Wyrobisko p.3":[{"n":"Stare Wyrobisko p.4"},{"n":"Stare Wyrobisko p.2"},{"n":"Nawiedzony Jar"}],"Stare Wyrobisko p.4":[{"n":"Nawiedzony Jar"},{"n":"Stare Wyrobisko p.5"},{"n":"Stare Wyrobisko p.3"}],"Stare Wyrobisko p.5":[{"n":"Nawiedzony Jar"},{"n":"Stare Wyrobisko p.4"}],"Stary Kupiecki Trakt":[{"n":"Fort Eder"},{"n":"Moczary Rybiego Oka"},{"n":"Stukot Widmowych Kół"},{"n":"Ciemnica Szubrawców p.1 - sala 3","tr":[{"n":"Fort Eder"},{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Ciemnica Szubrawców p.1 - sala 2"}]}],"Stukot Widmowych Kół":[{"n":"Stary Kupiecki Trakt"},{"n":"Wertepy Rzezimieszków"}],"Sucha Dolina":[{"n":"Płaskowyż Arpan"},{"n":"Stare Sioło"}],"Słoneczna Wyżyna":[{"n":"Zasłonięte Jezioro"},{"n":"Lazurowe Wzgórze"}],"Torneg":[{"n":"Łany Zboża"},{"n":"Stare Ruiny"},{"n":"Leśna Przełęcz"}],"Trupia Przełęcz":[{"n":"Zabłocona Jama p.1 - sala 2"},{"n":"Płaskowyż Arpan"},{"n":"Niecka Xiuh Atl"},{"n":"Kamienna Strażnica - zach. baszta p.2"},{"n":"Namiot kościarza"},{"n":"Grota Samotnych Dusz p.1"},{"n":"Wzgórze Płaczek"},{"n":"Kamienna Strażnica - wsch. baszta p.1"},{"n":"Księżycowe Wzniesienie"},{"n":"Jaskinia"}],"Tuzmer":[{"n":"Stare Sioło"},{"n":"Port Tuzmer"}],"Tygrysia Polana":[{"n":"Leśna Przełęcz"},{"n":"Jama Kocich Ślepi"},{"n":"Jaskinia Dzikich Kotów"},{"n":"Dzikie Pagórki"}],"Ukwiecona Skarpa":[{"n":"Racicowy Matecznik"}],"Uroczysko Wodnika":[{"n":"Moczary Rybiego Oka"},{"n":"Źródło Narumi"}],"Uroczysko":[{"n":"Porzucone Pasieki"},{"n":"Lazurytowa Grota p.1"},{"n":"Wichrowe Szczyty"},{"n":"Zapomniany Szlak"},{"n":"Zniszczone Opactwo"},{"n":"Namiot rozbójników"},{"n":"Namiot Rumcajsa"}],"Warczące Osuwiska":[{"n":"Ghuli Mogilnik"},{"n":"Wilcza Skarpa"},{"n":"Wilcza Nora p.1"},{"n":"Legowisko Wilczej Hordy"}],"Wertepy Rzezimieszków":[{"n":"Stukot Widmowych Kół"},{"n":"Źródło Narumi"},{"n":"Gościniec Bardów"},{"n":"Chata szabrowników"}],"Wilcza Nora p.1":[{"n":"Warczące Osuwiska"},{"n":"Wilcza Nora p.2"}],"Wilcza Nora p.2":[{"n":"Wilcza Nora p.1"}],"Wilcza Skarpa":[{"n":"Warczące Osuwiska"},{"n":"Legowisko Wilczej Hordy"}],"Wilczy Szpic":[{"n":"Łany Zboża"},{"n":"Stare Ruiny"},{"n":"Jaskinia Wilczego Zamętu p.1"},{"n":"Dolina Yss"},{"n":"Jaskinia Wilczego Zamętu p.2"}],"Wioska Gnolli":[{"n":"Ithan","tr":[{"n":"Ithan"},{"n":"Jaskinia Łowców p.2"},{"n":"Jaskinia Łowców p.1"}]},{"n":"Namiot Vari Krugera"},{"n":"Jaskinia Gnollich Szamanów p.1"},{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Czeluść Ognistej Pożogi"},{"n":"Radosna Polana"}],"Wylęgarnia Choukkerów p.1":[{"n":"Zdradzieckie Przejście p.1"}],"Wylęgarnia Choukkerów p.2":[{"n":"Wylęgarnia Choukkerów p.1"},{"n":"Wylęgarnia Choukkerów p.3"}],"Wylęgarnia Choukkerów p.3":[{"n":"Wylęgarnia Choukkerów p.2"}],"Wzgórze Płaczek":[{"n":"Gadzia Kotlina"},{"n":"Płacząca Grota p.1 - sala 1"},{"n":"Trupia Przełęcz"},{"n":"Płacząca Grota p.1 - sala 2"},{"n":"Mglista Polana Vesy"}],"Zabłocona Jama p.1 - sala 1":[{"n":"Zawiły Bór"},{"n":"Zabłocona Jama p.2 - sala 1"}],"Zabłocona Jama p.1 - sala 2":[{"n":"Zabłocona Jama p.2 - sala 3"},{"n":"Trupia Przełęcz"}],"Zabłocona Jama p.2 - Sala Błotnistych Odmętów":[{"n":"Zabłocona Jama p.2 - sala 2"}],"Zabłocona Jama p.2 - Sala Duszącej Stęchlizny":[{"n":"Zabłocona Jama p.2 - sala 1"}],"Zabłocona Jama p.2 - Sala Magicznego Błota":[{"n":"Zabłocona Jama p.2 - sala 3"}],"Zabłocona Jama p.2 - sala 1":[{"n":"Zabłocona Jama p.1 - sala 1"},{"n":"Zabłocona Jama p.2 - Sala Duszącej Stęchlizny"},{"n":"Zabłocona Jama p.2 - sala 2"}],"Zabłocona Jama p.2 - sala 2":[{"n":"Zabłocona Jama p.2 - sala 1"},{"n":"Zabłocona Jama p.2 - Sala Błotnistych Odmętów"},{"n":"Zabłocona Jama p.2 - sala 3"}],"Zabłocona Jama p.2 - sala 3":[{"n":"Zabłocona Jama p.2 - sala 2"},{"n":"Zabłocona Jama p.2 - Sala Magicznego Błota"},{"n":"Zabłocona Jama p.1 - sala 2"}],"Zagrzybiałe Ścieżki p.1 - sala 1":[{"n":"Złowrogie Bagna"},{"n":"Zagrzybiałe Ścieżki p.2"}],"Zagrzybiałe Ścieżki p.1 - sala 2":[{"n":"Zagrzybiałe Ścieżki p.2"},{"n":"Gadzia Kotlina"}],"Zagrzybiałe Ścieżki p.1 - sala 3":[{"n":"Mglista Polana Vesy"},{"n":"Zagrzybiałe Ścieżki p.2"}],"Zagrzybiałe Ścieżki p.2":[{"n":"Zagrzybiałe Ścieżki p.1 - sala 1"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 2"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 3"},{"n":"Zagrzybiałe Ścieżki p.3"}],"Zagrzybiałe Ścieżki p.3":[{"n":"Zagrzybiałe Ścieżki p.2"}],"Zapomniany Grobowiec p.1":[{"n":"Ghuli Mogilnik"},{"n":"Zapomniany Grobowiec p.2"}],"Zapomniany Grobowiec p.2":[{"n":"Zapomniany Grobowiec p.1"},{"n":"Zapomniany Grobowiec p.3"}],"Zapomniany Grobowiec p.3":[{"n":"Zapomniany Grobowiec p.2"},{"n":"Zapomniany Grobowiec p.4"}],"Zapomniany Grobowiec p.4":[{"n":"Zapomniany Grobowiec p.3"},{"n":"Zapomniany Grobowiec p.5"}],"Zapomniany Grobowiec p.5":[{"n":"Zapomniany Grobowiec p.4"}],"Zapomniany Szlak":[{"n":"Uroczysko"},{"n":"Mroczny Przesmyk"},{"n":"Mokra Grota p.1"},{"n":"Grota Bezszelestnych Kroków - sala 1"},{"n":"Kamienna Jaskinia - sala 1"}],"Zapomniany Święty Gaj p.1 - sala 1":[{"n":"Zapomniany Święty Gaj p.1"},{"n":"Zapomniany Święty Gaj p.2"}],"Zapomniany Święty Gaj p.1":[{"n":"Zapomniany Święty Gaj p.2"},{"n":"Zapomniany Święty Gaj p.1 - sala 1"},{"n":"Księżycowe Wzniesienie"}],"Zapomniany Święty Gaj p.2":[{"n":"Zapomniany Święty Gaj p.1"},{"n":"Zapomniany Święty Gaj p.3"},{"n":"Zapomniany Święty Gaj p.1 - sala 1"}],"Zapomniany Święty Gaj p.3":[{"n":"Zapomniany Święty Gaj p.2"}],"Zasłonięte Jezioro":[{"n":"Spokojne Przejście"},{"n":"Słoneczna Wyżyna"}],"Zatopiony Szczyt":[{"n":"Stare Ruiny"},{"n":"Leśna Przełęcz"},{"n":"Ruiny Szabrowników"}],"Zawiły Bór":[{"n":"Selva Oscura"},{"n":"Iglaste Ścieżki"},{"n":"Błędny Szlak"},{"n":"Zabłocona Jama p.1 - sala 1"},{"n":"Mythar"}],"Zburzona Twierdza":[{"n":"Zniszczone Opactwo"},{"n":"Świszcząca Grota p.1"},{"n":"Świszcząca Grota p.2"},{"n":"Świszcząca Grota p.3"},{"n":"Opuszczony Bastion"},{"n":"Nawiedzony Jar"}],"Zdradzieckie Przejście p.1":[{"n":"Andarum Ilami"},{"n":"Głębokie Skałki p.1"},{"n":"Głębokie Skałki p.2"},{"n":"Zdradzieckie Przejście p.2"},{"n":"Wylęgarnia Choukkerów p.1"}],"Zdradzieckie Przejście p.2":[{"n":"Zdradzieckie Przejście p.1"},{"n":"Labirynt Margorii"}],"Zmarzlina Amaimona Soplorękiego - przedsionek":[{"n":"Skały Mroźnych Śpiewów"},{"n":"Zmarzlina Amaimona Soplorękiego - sala"}],"Zmarzlina Amaimona Soplorękiego - sala":[{"n":"Zmarzlina Amaimona Soplorękiego - przedsionek"}],"Zniszczone Opactwo":[{"n":"Ithan"},{"n":"Uroczysko"},{"n":"Leśny Bród"},{"n":"Zburzona Twierdza"},{"n":"Piekielna Grota p.1"}],"Zrujnowana Wieża":[{"n":"Opuszczony Bastion"},{"n":"Podziemny Przełaz p.2"}],"Złote Piaski":[{"n":"Dolina Suchych Łez"},{"n":"Ruiny Pustynnych Burz"},{"n":"Płaskowyż Arpan"},{"n":"Piramida Pustynnego Władcy p.1"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Ciche Rumowiska"}],"Złowrogie Bagna":[{"n":"Mythar"},{"n":"Błędny Szlak"},{"n":"Las Dziwów"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 1"},{"n":"Gadzia Kotlina"}],"Łany Zboża":[{"n":"Torneg"},{"n":"Wilczy Szpic"},{"n":"Mrowisko"},{"n":"Kopiec Mrówek"}],"Ślepe Wyrobisko":[{"n":"Grota Samotnych Dusz p.3"},{"n":"Kopalnia Margorii"}],"Śnieżna Grota p.1":[{"n":"Andarum Ilami"},{"n":"Śnieżna Grota p.2"}],"Śnieżna Grota p.2":[{"n":"Śnieżna Grota p.1"},{"n":"Śnieżna Grota p.3"}],"Śnieżna Grota p.3":[{"n":"Śnieżna Grota p.2"},{"n":"Lodowa Sala"}],"Świszcząca Grota p.1":[{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.2"}],"Świszcząca Grota p.2":[{"n":"Świszcząca Grota p.1"},{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.3"}],"Świszcząca Grota p.3":[{"n":"Świszcząca Grota p.2"},{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.4"}],"Świszcząca Grota p.4":[{"n":"Świszcząca Grota p.3"}],"Świątynia Andarum - biblioteka":[{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum - lokum mnichów":[{"n":"Świątynia Andarum - podziemia"},{"n":"Krypty Dusz Śniegu p.3"},{"n":"Świątynia Andarum - magazyn p.3"}],"Świątynia Andarum - magazyn p.1":[{"n":"Świątynia Andarum - podziemia"},{"n":"Świątynia Andarum - magazyn p.2"}],"Świątynia Andarum - magazyn p.2":[{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Świątynia Andarum - magazyn p.1"},{"n":"Świątynia Andarum - zbrojownia"},{"n":"Erem Czarnego Słońca p.4 - sala 2"}],"Świątynia Andarum - podziemia":[{"n":"Świątynia Andarum - zejście prawe"},{"n":"Świątynia Andarum - zejście lewe"},{"n":"Świątynia Andarum - biblioteka"},{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Świątynia Andarum - magazyn p.1"}],"Świątynia Andarum - zbrojownia":[{"n":"Świątynia Andarum - magazyn p.2"}],"Świątynia Andarum - zejście lewe":[{"n":"Świątynia Andarum"},{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum - zejście prawe":[{"n":"Świątynia Andarum"},{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum":[{"n":"Świątynia Andarum - zejście lewe"},{"n":"Świątynia Andarum - zejście prawe"},{"n":"Andarum Ilami"}],"Świątynia Mzintlavy":[{"n":"Pradawne Wzgórze Przodków"}],"Źródło Narumi":[{"n":"Wertepy Rzezimieszków"},{"n":"Uroczysko Wodnika"},{"n":"Podgrodzie Nithal"}]},"exp":[],"heros":{"Domina_Ecclesiae":[{"location":"Orla Grań","respawns":[{"top":65.5312,"left":320.375},{"top":174.75,"left":334.938},{"top":160.188,"left":407.75}],"gw":{"top":174.75,"left":385.906}},{"location":"Przeklęta Strażnica","respawns":[{"top":318.182,"left":127.273},{"top":286.364,"left":254.545},{"top":445.455,"left":381.818},{"top":381.818,"left":509.091},{"top":254.545,"left":540.909}],"gw":{"top":509.091,"left":63.6364}},{"location":"Przeklęta Strażnica - podziemia p.1 s.1","respawns":[{"top":105,"left":420},{"top":140,"left":525},{"top":157.5,"left":157.5},{"top":402.5,"left":140},{"top":385,"left":350},{"top":350,"left":472.5},{"top":367.5,"left":542.5},{"top":472.5,"left":262.5},{"top":630,"left":87.5},{"top":595,"left":455},{"top":612.5,"left":542.5}],"gw":{"top":35,"left":332.5}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":63.6364,"left":350}},{"location":"Przeklęta Strażnica p.1","respawns":[{"top":540.909,"left":254.545},{"top":509.091,"left":477.273},{"top":445.455,"left":540.909},{"top":254.545,"left":381.818},{"top":254.545,"left":159.091},{"top":286.364,"left":95.4545}],"gw":{"top":95.4545,"left":636.364}},{"location":"Przeklęta Strażnica p.2","respawns":[{"top":477.273,"left":159.091},{"top":445.455,"left":286.364},{"top":381.818,"left":413.636},{"top":190.909,"left":477.273},{"top":127.273,"left":254.545}],"gw":{"top":95.4545,"left":127.273}},{"location":"Orla Grań","respawns":[{"top":72.8125,"left":378.625},{"top":87.375,"left":393.188}],"gw":{"top":94.6562,"left":371.344}},{"location":"Przeklęta Strażnica p.2","respawns":[],"gw":{"top":636.364,"left":350}},{"location":"Przeklęta Strażnica p.1","respawns":[],"gw":{"top":636.364,"left":254.545}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":509.091,"left":604.545}},{"location":"Przeklęta Strażnica - podziemia p.1 s.2","respawns":[{"top":630,"left":87.5},{"top":315,"left":175},{"top":175,"left":87.5},{"top":122.5,"left":332.5},{"top":70,"left":385},{"top":490,"left":507.5},{"top":367.5,"left":367.5},{"top":595,"left":297.5}],"gw":{"top":630,"left":630}},{"location":"Przeklęta Strażnica - podziemia p.2 s.2","respawns":[{"top":350,"left":318.182},{"top":190.909,"left":286.364},{"top":159.091,"left":63.6364},{"top":509.091,"left":413.636}],"gw":{"top":127.273,"left":604.545}},{"location":"Przeklęta Strażnica - podziemia p.1 s.2","respawns":[],"gw":{"top":437.5,"left":35}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":636.364,"left":350}},{"location":"Orla Grań","respawns":[],"gw":{"top":0,"left":320.375}},{"location":"Stare Ruiny","respawns":[{"top":386.458,"left":408.333},{"top":350,"left":415.625}],"gw":{"top":386.458,"left":386.458}},{"location":"Przeklęty Zamek - wejście południowe","respawns":[{"top":204.167,"left":466.667},{"top":233.333,"left":262.5}],"gw":{"top":116.667,"left":58.3333}},{"location":"Przeklęty Zamek - podziemia południowe","respawns":[{"top":175,"left":240.625},{"top":175,"left":459.375},{"top":590.625,"left":175},{"top":590.625,"left":415.625}],"gw":{"top":656.25,"left":590.625}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":422.917,"left":175}},{"location":"Przeklęty Zamek - kanały","respawns":[{"top":175,"left":306.25},{"top":590.625,"left":437.5}],"gw":{"top":284.375,"left":306.25}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":233.333,"left":583.333}},{"location":"Przeklęty Zamek - sala zgromadzeń","respawns":[{"top":116.667,"left":58.3333},{"top":145.833,"left":320.833},{"top":131.25,"left":437.5},{"top":422.917,"left":612.5}],"gw":{"top":277.083,"left":495.833}},{"location":"Przeklęty Zamek p.1","respawns":[{"top":175,"left":568.75},{"top":437.5,"left":525}],"gw":{"top":306.25,"left":131.25}},{"location":"Przeklęty Zamek p.2","respawns":[{"top":175,"left":612.5},{"top":320.833,"left":58.3333}],"gw":{"top":291.667,"left":525}},{"location":"Stare Ruiny","respawns":[{"top":131.25,"left":532.292},{"top":160.417,"left":481.25},{"top":182.292,"left":422.917}],"gw":{"top":72.9167,"left":240.625}},{"location":"Przeklęty Zamek - wejście północne","respawns":[{"top":262.5,"left":175},{"top":204.167,"left":525}],"gw":{"top":379.167,"left":612.5}},{"location":"Przeklęty Zamek - podziemia północne","respawns":[],"gw":{"top":122.5,"left":35}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":335.417,"left":277.083}},{"location":"Przeklęty Zamek - podziemia południowe","respawns":[],"gw":{"top":43.75,"left":65.625}},{"location":"Przeklęty Zamek - wejście południowe","respawns":[],"gw":{"top":58.3333,"left":320.833}},{"location":"Stare Ruiny","respawns":[],"gw":{"top":459.375,"left":320.833}}],"Karmazynowy_Mściciel":[{"location":"Fort Eder","respawns":[],"gw":{"top":538.812,"left":72.8125}},{"location":"Pieczara Niepogody p.1","respawns":[{"top":402.5,"left":280},{"top":455,"left":157.5}],"gw":{"top":315,"left":70}},{"location":"Pieczara Niepogody p.2 - sala 1","respawns":[{"top":218.75,"left":597.917},{"top":87.5,"left":291.667}],"gw":{"top":393.75,"left":306.25}},{"location":"Pieczara Niepogody p.3","respawns":[{"top":131.25,"left":284.375},{"top":393.75,"left":306.25},{"top":415.625,"left":557.812}],"gw":{"top":295.312,"left":240.625}},{"location":"Pieczara Niepogody p.4","respawns":[{"top":145.833,"left":495.833},{"top":306.25,"left":58.3333}],"gw":{"top":422.917,"left":568.75}},{"location":"Pieczara Niepogody p.5","respawns":[{"top":160.417,"left":583.333},{"top":320.833,"left":466.667},{"top":291.667,"left":175}],"gw":{"top":116.667,"left":306.25}},{"location":"Pieczara Niepogody p.4","respawns":[{"top":145.833,"left":495.833},{"top":306.25,"left":58.3333}],"gw":{"top":43.75,"left":58.3333}},{"location":"Pieczara Niepogody p.3","respawns":[{"top":415.625,"left":557.812},{"top":393.75,"left":306.25},{"top":131.25,"left":284.375}],"gw":{"top":21.875,"left":514.062}},{"location":"Pieczara Niepogody p.2 - sala 2","respawns":[{"top":189.312,"left":320.375},{"top":538.812,"left":305.812}],"gw":{"top":655.312,"left":262.125}},{"location":"Fort Eder","respawns":[],"gw":{"top":0,"left":203.875}},{"location":"Mokradła","respawns":[],"gw":{"top":612.5,"left":689.062}},{"location":"Skarpiska Tolloków","respawns":[{"top":164.062,"left":404.688},{"top":273.438,"left":568.75},{"top":350,"left":393.75},{"top":667.188,"left":43.75}],"gw":{"top":328.125,"left":689.062}},{"location":"Skalne Turnie","respawns":[{"top":426.562,"left":667.188},{"top":623.438,"left":459.375},{"top":393.75,"left":328.125},{"top":32.8125,"left":339.062}],"gw":{"top":0,"left":185.938}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":612.5,"left":492.188}],"gw":{"top":601.562,"left":306.25}},{"location":"Krasowa Pieczara p.3","respawns":[{"top":131.25,"left":189.583}],"gw":{"top":189.583,"left":131.25}},{"location":"Krasowa Pieczara p.2","respawns":[{"top":364.583,"left":87.5},{"top":510.417,"left":466.667}],"gw":{"top":29.1667,"left":583.333}},{"location":"Krasowa Pieczara p.1","respawns":[],"gw":{"top":630,"left":525}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":371.875,"left":634.375}],"gw":{"top":470.312,"left":612.5}},{"location":"Krasowa Pieczara p.1","respawns":[],"gw":{"top":245,"left":175}},{"location":"Krasowa Pieczara p.2","respawns":[{"top":364.583,"left":87.5},{"top":510.417,"left":466.667}],"gw":{"top":554.167,"left":145.833}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":273.438,"left":350},{"top":21.875,"left":415.625}],"gw":{"top":142.188,"left":689.062}},{"location":"Wilcza Skarpa","respawns":[{"top":291.25,"left":29.125},{"top":283.969,"left":240.281},{"top":58.25,"left":254.844},{"top":247.562,"left":349.5},{"top":225.719,"left":436.875},{"top":495.125,"left":436.875}],"gw":{"top":123.781,"left":0}},{"location":"Warczące Osuwiska","respawns":[{"top":207.812,"left":164.062},{"top":525,"left":656.25}],"gw":{"top":656.25,"left":667.188}},{"location":"Wilcza Nora p.1","respawns":[],"gw":{"top":218.75,"left":175}},{"location":"Wilcza Nora p.2","respawns":[{"top":109.375,"left":393.75}],"gw":{"top":109.375,"left":65.625}},{"location":"Wilcza Nora p.1","respawns":[],"gw":{"top":656.25,"left":350}},{"location":"Warczące Osuwiska","respawns":[{"top":546.875,"left":175}],"gw":{"top":689.062,"left":284.375}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":612.5,"left":492.188},{"top":371.875,"left":634.375},{"top":273.438,"left":350},{"top":21.875,"left":415.625}],"gw":{"top":689.062,"left":185.938}},{"location":"Skalne Turnie","respawns":[{"top":426.562,"left":667.188},{"top":623.438,"left":459.375},{"top":393.75,"left":328.125},{"top":32.8125,"left":339.062}],"gw":{"top":328.125,"left":0}},{"location":"Skarpiska Tolloków","respawns":[{"top":164.062,"left":404.688},{"top":273.438,"left":568.75},{"top":350,"left":393.75},{"top":667.188,"left":43.75}],"gw":{"top":262.5,"left":0}},{"location":"Mokradła","respawns":[],"gw":{"top":689.062,"left":317.188}}],"Kochanka_Nocy":[{"location":"Mythar","respawns":[],"gw":{"top":0,"left":233.333}},{"location":"Zawiły Bór","respawns":[{"top":313.542,"left":102.083},{"top":284.375,"left":342.708},{"top":58.3333,"left":634.375},{"top":36.4583,"left":350}],"gw":{"top":277.083,"left":0}},{"location":"Selva Oscura","respawns":[{"top":269.792,"left":525},{"top":255.208,"left":167.708},{"top":138.542,"left":175},{"top":87.5,"left":554.167}],"gw":{"top":0,"left":422.917}},{"location":"Dolina Centaurów","respawns":[{"top":320.833,"left":408.333},{"top":393.75,"left":80.2083},{"top":116.667,"left":503.125},{"top":335.417,"left":612.5}],"gw":{"top":269.792,"left":692.708}},{"location":"Iglaste Ścieżki","respawns":[{"top":72.9167,"left":167.708},{"top":408.333,"left":211.458},{"top":342.708,"left":495.833},{"top":65.625,"left":605.208},{"top":291.667,"left":641.667}],"gw":{"top":459.375,"left":517.708}},{"location":"Zawiły Bór","respawns":[{"top":36.4583,"left":350},{"top":58.3333,"left":634.375},{"top":284.375,"left":342.708},{"top":313.542,"left":102.083}],"gw":{"top":182.292,"left":692.708}},{"location":"Błędny Szlak","respawns":[{"top":320.833,"left":58.3333},{"top":36.4583,"left":160.417},{"top":167.708,"left":546.875},{"top":306.25,"left":291.667}],"gw":{"top":459.375,"left":160.417}},{"location":"Złowrogie Bagna","respawns":[{"top":72.9167,"left":72.9167},{"top":284.375,"left":167.708},{"top":298.958,"left":386.458},{"top":145.833,"left":379.167}],"gw":{"top":459.375,"left":430.208}},{"location":"Gadzia Kotlina","respawns":[{"top":189.583,"left":364.583},{"top":233.333,"left":72.9167},{"top":313.542,"left":277.083},{"top":233.333,"left":72.9167},{"top":102.083,"left":525},{"top":357.292,"left":437.5}],"gw":{"top":255.208,"left":692.708}},{"location":"Mglista Polana Vesy","respawns":[{"top":87.375,"left":50.9688},{"top":80.0938,"left":320.375}],"gw":{"top":291.25,"left":94.6562}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 3","respawns":[{"top":408.333,"left":408.333},{"top":160.417,"left":554.167},{"top":102.083,"left":102.083}],"gw":{"top":627.083,"left":379.167}},{"location":"Zagrzybiałe Ścieżki p.2","respawns":[{"top":204.167,"left":422.917},{"top":627.083,"left":437.5}],"gw":{"top":510.417,"left":43.75}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 2","respawns":[{"top":247.917,"left":525},{"top":87.5,"left":247.917}],"gw":{"top":116.667,"left":583.333}},{"location":"Zagrzybiałe Ścieżki p.2","respawns":[],"gw":{"top":58.3333,"left":131.25}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 1","respawns":[{"top":306.25,"left":481.25},{"top":175,"left":72.9167},{"top":510.417,"left":262.5}],"gw":{"top":627.083,"left":131.25}},{"location":"Złowrogie Bagna","respawns":[],"gw":{"top":196.875,"left":0}}],"Ksiąze_Kasim":[{"location":"Stare Sioło","respawns":[{"top":51.0417,"left":663.542},{"top":320.833,"left":612.5}],"gw":{"top":0,"left":568.75}},{"location":"Sucha Dolina","respawns":[{"top":560.656,"left":225.719},{"top":167.469,"left":320.375}],"gw":{"top":364.062,"left":458.719}},{"location":"Płaskowyż Arpan","respawns":[{"top":233.333,"left":269.792},{"top":364.583,"left":532.292},{"top":109.375,"left":517.708}],"gw":{"top":131.25,"left":627.083}},{"location":"Skalne Cmentarzysko p.1","respawns":[{"top":371.875,"left":109.375}],"gw":{"top":131.25,"left":196.875}},{"location":"Skalne Cmentarzysko p.2","respawns":[{"top":291.667,"left":583.333},{"top":583.333,"left":116.667}],"gw":{"top":656.25,"left":466.667}},{"location":"Skalne Cmentarzysko p.3","respawns":[{"top":426.562,"left":382.812},{"top":109.375,"left":601.562},{"top":481.25,"left":207.812}],"gw":{"top":481.25,"left":579.688}},{"location":"Skalne Cmentarzysko p.2","respawns":[{"top":583.333,"left":116.667},{"top":291.667,"left":583.333}],"gw":{"top":29.1667,"left":87.5}},{"location":"Skalne Cmentarzysko p.1","respawns":[{"top":371.875,"left":109.375}],"gw":{"top":634.375,"left":459.375}},{"location":"Płaskowyż Arpan","respawns":[{"top":109.375,"left":517.708},{"top":233.333,"left":269.792},{"top":364.583,"left":532.292}],"gw":{"top":459.375,"left":619.792}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":240.281,"left":174.75}},{"location":"Piramida Pustynnego Władcy p.1","respawns":[{"top":471.154,"left":551.923},{"top":148.077,"left":121.154}],"gw":{"top":13.4615,"left":376.923}},{"location":"Piramida Pustynnego Władcy p.2","respawns":[{"top":350,"left":277.083}],"gw":{"top":87.5,"left":335.417}},{"location":"Piramida Pustynnego Władcy p.1","respawns":[{"top":148.077,"left":121.154},{"top":471.154,"left":551.923}],"gw":{"top":659.615,"left":188.462}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":415.031,"left":458.719}},{"location":"Ruiny Pustynnych Burz","respawns":[{"top":167.469,"left":160.188},{"top":509.688,"left":320.375}],"gw":{"top":407.75,"left":0}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":691.719,"left":334.938}},{"location":"Dolina Suchych Łez","respawns":[{"top":255.208,"left":576.042},{"top":444.792,"left":444.792},{"top":379.167,"left":247.917}],"gw":{"top":320.833,"left":0}},{"location":"Ciche Rumowiska","respawns":[{"top":342.708,"left":583.333},{"top":80.2083,"left":619.792},{"top":350,"left":466.667},{"top":196.875,"left":189.583},{"top":401.042,"left":138.542}],"gw":{"top":0,"left":342.708}},{"location":"Oaza Siedmiu Wichrów","respawns":[{"top":524.25,"left":356.781},{"top":487.844,"left":160.188},{"top":305.812,"left":233},{"top":254.844,"left":349.5}],"gw":{"top":509.688,"left":0}}],"Mroczny_Patryk":[{"location":"Orla Grań","respawns":[{"top":669.875,"left":203.875},{"top":648.031,"left":240.281},{"top":633.469,"left":50.9688},{"top":611.625,"left":72.8125}],"gw":{"top":691.719,"left":123.781}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":101.938,"left":196.594},{"top":80.0938,"left":305.812},{"top":160.188,"left":101.938},{"top":371.344,"left":101.938},{"top":451.438,"left":80.0938},{"top":313.094,"left":196.594},{"top":211.156,"left":291.25},{"top":291.25,"left":327.656},{"top":276.688,"left":385.906},{"top":356.781,"left":334.938},{"top":451.438,"left":371.344}],"gw":{"top":342.219,"left":458.719}},{"location":"Pagórki Łupieżców","respawns":[{"top":400.469,"left":58.25},{"top":182.031,"left":58.25},{"top":218.438,"left":327.656},{"top":29.125,"left":407.75},{"top":123.781,"left":109.219},{"top":43.6875,"left":269.406},{"top":342.219,"left":211.156},{"top":283.969,"left":123.781}],"gw":{"top":291.25,"left":123.781}},{"location":"Skład Grabieżców","respawns":[{"top":371.875,"left":590.625},{"top":284.375,"left":525},{"top":109.375,"left":196.875},{"top":371.875,"left":153.125}],"gw":{"top":656.25,"left":393.75}},{"location":"Pagórki Łupieżców","respawns":[{"top":531.531,"left":189.312},{"top":473.281,"left":72.8125},{"top":626.188,"left":422.312}],"gw":{"top":349.5,"left":0}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":611.625,"left":43.6875},{"top":589.781,"left":262.125},{"top":546.094,"left":320.375},{"top":604.344,"left":334.938},{"top":567.938,"left":400.469}],"gw":{"top":691.719,"left":80.0938}},{"location":"Dolina Rozbójników","respawns":[{"top":36.4062,"left":160.188},{"top":80.0938,"left":298.531},{"top":167.469,"left":203.875},{"top":174.75,"left":269.406},{"top":138.344,"left":283.969},{"top":138.344,"left":342.219},{"top":211.156,"left":152.906},{"top":262.125,"left":145.625},{"top":291.25,"left":211.156},{"top":356.781,"left":123.781},{"top":320.375,"left":58.25},{"top":415.031,"left":87.375},{"top":509.688,"left":101.938},{"top":597.062,"left":109.219},{"top":662.594,"left":167.469},{"top":553.375,"left":298.531},{"top":495.125,"left":240.281},{"top":356.781,"left":269.406},{"top":415.031,"left":298.531},{"top":371.344,"left":407.75},{"top":305.812,"left":393.188},{"top":298.531,"left":415.031},{"top":480.562,"left":327.656},{"top":444.156,"left":371.344}],"gw":{"top":451.438,"left":371.344}},{"location":"Kamienna Kryjówka","respawns":[{"top":262.5,"left":612.5},{"top":131.25,"left":306.25},{"top":196.875,"left":284.375},{"top":328.125,"left":87.5}],"gw":{"top":656.25,"left":284.375}},{"location":"Dolina Rozbójników","respawns":[],"gw":{"top":691.719,"left":196.594}},{"location":"Mokradła","respawns":[{"top":43.75,"left":437.5},{"top":87.5,"left":590.625},{"top":120.312,"left":207.812},{"top":470.312,"left":87.5},{"top":503.125,"left":43.75},{"top":546.875,"left":98.4375},{"top":579.688,"left":87.5},{"top":481.25,"left":371.875},{"top":503.125,"left":481.25},{"top":590.625,"left":514.062},{"top":634.375,"left":590.625}],"gw":{"top":153.125,"left":689.062}},{"location":"Polana Ścierwojadów","respawns":[{"top":371.875,"left":251.562},{"top":328.125,"left":109.375},{"top":153.125,"left":240.625},{"top":76.5625,"left":470.312}],"gw":{"top":0,"left":251.562}},{"location":"Ghuli Mogilnik","respawns":[{"top":590.625,"left":65.625},{"top":426.562,"left":76.5625},{"top":382.812,"left":350},{"top":120.312,"left":175}],"gw":{"top":207.812,"left":0}},{"location":"Dolina Rozbójników","respawns":[],"gw":{"top":691.719,"left":203.875}},{"location":"Mokradła","respawns":[],"gw":{"top":426.562,"left":0}},{"location":"Podmokła Dolina","respawns":[{"top":43.75,"left":459.375}],"gw":{"top":0,"left":350}},{"location":"Morwowe Przejście","respawns":[{"top":678.125,"left":87.5},{"top":557.812,"left":43.75},{"top":437.5,"left":568.75},{"top":207.812,"left":503.125},{"top":87.5,"left":601.562},{"top":251.562,"left":350},{"top":382.812,"left":175},{"top":65.625,"left":98.4375}],"gw":{"top":689.062,"left":350}},{"location":"Podmokła Dolina","respawns":[{"top":360.938,"left":164.062},{"top":612.5,"left":590.625},{"top":404.688,"left":43.75}],"gw":{"top":689.062,"left":470.312}},{"location":"Las Goblinów","respawns":[{"top":72.8125,"left":400.469},{"top":65.5312,"left":145.625},{"top":131.062,"left":58.25},{"top":254.844,"left":123.781},{"top":269.406,"left":50.9688},{"top":152.906,"left":378.625},{"top":196.594,"left":269.406},{"top":327.656,"left":262.125},{"top":276.688,"left":334.938},{"top":334.938,"left":371.344},{"top":589.781,"left":160.188},{"top":582.5,"left":43.6875},{"top":633.469,"left":29.125},{"top":633.469,"left":233},{"top":567.938,"left":240.281}],"gw":{"top":0,"left":305.812}},{"location":"Podmokła Dolina","respawns":[{"top":404.688,"left":43.75},{"top":612.5,"left":590.625},{"top":360.938,"left":164.062}],"gw":{"top":426.562,"left":689.062}},{"location":"Mokradła","respawns":[{"top":43.75,"left":437.5},{"top":87.5,"left":590.625},{"top":120.312,"left":207.812},{"top":470.312,"left":87.5},{"top":503.125,"left":43.75},{"top":546.875,"left":98.4375},{"top":579.688,"left":87.5},{"top":481.25,"left":371.875},{"top":503.125,"left":481.25},{"top":590.625,"left":514.062},{"top":634.375,"left":590.625}],"gw":{"top":0,"left":295.312}},{"location":"Dolina Rozbójników","respawns":[{"top":36.4062,"left":160.188},{"top":80.0938,"left":298.531},{"top":167.469,"left":203.875},{"top":174.75,"left":269.406},{"top":138.344,"left":283.969},{"top":138.344,"left":342.219},{"top":211.156,"left":152.906},{"top":262.125,"left":145.625},{"top":291.25,"left":211.156},{"top":356.781,"left":123.781},{"top":320.375,"left":58.25},{"top":415.031,"left":87.375},{"top":509.688,"left":101.938},{"top":597.062,"left":109.219},{"top":662.594,"left":167.469},{"top":553.375,"left":298.531},{"top":495.125,"left":240.281},{"top":356.781,"left":269.406},{"top":415.031,"left":298.531},{"top":371.344,"left":407.75},{"top":305.812,"left":393.188},{"top":298.531,"left":415.031},{"top":480.562,"left":327.656},{"top":444.156,"left":371.344}],"gw":{"top":0,"left":80.0938}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":101.938,"left":196.594},{"top":80.0938,"left":305.812},{"top":160.188,"left":101.938},{"top":371.344,"left":101.938},{"top":451.438,"left":80.0938},{"top":313.094,"left":196.594},{"top":211.156,"left":291.25},{"top":291.25,"left":327.656},{"top":276.688,"left":385.906},{"top":356.781,"left":334.938},{"top":451.438,"left":371.344},{"top":611.625,"left":43.6875},{"top":589.781,"left":262.125},{"top":546.094,"left":320.375},{"top":604.344,"left":334.938},{"top":567.938,"left":400.469}],"gw":{"top":0,"left":123.781}}],"Złodziej":[{"location":"Eder","respawns":[{"top":36.4062,"left":21.8438}],"gw":{"top":87.375,"left":225.719}},{"location":"Dom Mrocznego Zgrzyta","respawns":[{"top":218.75,"left":437.5}],"gw":{"top":568.75,"left":393.75}},{"location":"Eder","respawns":[],"gw":{"top":174.75,"left":342.219}},{"location":"Siedziba Kultystów","respawns":[{"top":248.387,"left":248.387}],"gw":{"top":632.258,"left":361.29}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":415.031}},{"location":"Dom Artenii i Tafina","respawns":[{"top":218.75,"left":218.75}],"gw":{"top":218.75,"left":481.25}},{"location":"Dom Artenii i Tafina - piwnica","respawns":[{"top":466.667,"left":427.778}],"gw":{"top":77.7778,"left":77.7778}},{"location":"Dom Artenii i Tafina","respawns":[{"top":218.75,"left":218.75}],"gw":{"top":525,"left":393.75}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":415.031}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":525,"left":175}},{"location":"Dom Etrefana - pracownia","respawns":[{"top":525,"left":262.5}],"gw":{"top":131.25,"left":87.5}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":393.75,"left":481.25}},{"location":"Dom Etrefana p.1","respawns":[],"gw":{"top":393.75,"left":481.25}},{"location":"Dom Etrefana p.2","respawns":[{"top":262.5,"left":218.75}],"gw":{"top":306.25,"left":481.25}},{"location":"Dom Etrefana p.1","respawns":[],"gw":{"top":306.25,"left":481.25}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":568.75,"left":350}},{"location":"Eder","respawns":[],"gw":{"top":415.031,"left":364.062}},{"location":"Dom Erniego","respawns":[{"top":306.25,"left":262.5}],"gw":{"top":350,"left":481.25}},{"location":"Dom Erniego p.1","respawns":[{"top":218.75,"left":262.5}],"gw":{"top":350,"left":87.5}},{"location":"Dom Erniego","respawns":[],"gw":{"top":350,"left":87.5}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":298.531}},{"location":"Pracownia Bonifacego","respawns":[],"gw":{"top":350,"left":481.25}},{"location":"Pracownia Bonifacego p.1","respawns":[{"top":262.5,"left":218.75}],"gw":{"top":481.25,"left":437.5}},{"location":"Pracownia Bonifacego","respawns":[],"gw":{"top":525,"left":350}},{"location":"Eder","respawns":[],"gw":{"top":233,"left":291.25}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":481.25,"left":350}},{"location":"Dom Mikliniosa - przyziemie","respawns":[{"top":437.5,"left":350}],"gw":{"top":218.75,"left":437.5}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":306.25,"left":525}},{"location":"Dom Mikliniosa p.1","respawns":[{"top":218.75,"left":393.75}],"gw":{"top":262.5,"left":525}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":350,"left":131.25}},{"location":"Eder","respawns":[],"gw":{"top":0,"left":203.875}},{"location":"Fort Eder","respawns":[],"gw":{"top":531.531,"left":174.75}},{"location":"Fortyfikacja p.1","respawns":[],"gw":{"top":595,"left":595}},{"location":"Fortyfikacja","respawns":[{"top":595,"left":245}],"gw":{"top":490,"left":560}},{"location":"Fortyfikacja p.1","respawns":[],"gw":{"top":385,"left":280}},{"location":"Fortyfikacja p.2","respawns":[{"top":140,"left":350}],"gw":{"top":35,"left":420}},{"location":"Fortyfikacja p.3","respawns":[],"gw":{"top":35,"left":210}},{"location":"Fortyfikacja p.4","respawns":[{"top":490,"left":385}],"gw":{"top":35,"left":455}},{"location":"Fortyfikacja p.5","respawns":[{"top":350,"left":350}],"gw":{"top":175,"left":455}},{"location":"Fortyfikacja p.4","respawns":[],"gw":{"top":315,"left":210}},{"location":"Fortyfikacja p.4","respawns":[],"gw":{"top":560,"left":350}},{"location":"Fort Eder","respawns":[],"gw":{"top":604.344,"left":436.875}},{"location":"Ciemnica Szubrawców p.1 - sala 1","respawns":[{"top":233.333,"left":133.333}],"gw":{"top":666.667,"left":100}},{"location":"Ciemnica Szubrawców p.1 - sala 2","respawns":[{"top":83.3333,"left":216.667}],"gw":{"top":650,"left":600}},{"location":"Ciemnica Szubrawców p.1 - sala 3","respawns":[{"top":131.25,"left":492.188},{"top":579.688,"left":557.812}],"gw":{"top":43.75,"left":87.5}},{"location":"Ciemnica Szubrawców p.1 - sala 2","respawns":[{"top":83.3333,"left":216.667}],"gw":{"top":116.667,"left":33.3333}},{"location":"Ciemnica Szubrawców p.1 - sala 1","respawns":[{"top":233.333,"left":133.333}],"gw":{"top":166.667,"left":33.3333}},{"location":"Fort Eder","respawns":[{"top":436.875,"left":429.594}],"gw":{"top":393.188,"left":458.719}},{"location":"Stary Kupiecki Trakt","respawns":[{"top":58.25,"left":58.25},{"top":87.375,"left":371.344},{"top":320.375,"left":400.469},{"top":669.875,"left":400.469}],"gw":{"top":691.719,"left":233}},{"location":"Stukot Widmowych Kół","respawns":[{"top":444.156,"left":167.469},{"top":203.875,"left":145.625},{"top":36.4062,"left":36.4062},{"top":524.25,"left":349.5}],"gw":{"top":691.719,"left":138.344}},{"location":"Wertepy Rzezimieszków","respawns":[{"top":131.25,"left":579.688}],"gw":{"top":98.4375,"left":535.938}},{"location":"Chata szabrowników","respawns":[{"top":175,"left":262.5}],"gw":{"top":612.5,"left":350}},{"location":"Wertepy Rzezimieszków","respawns":[{"top":601.562,"left":131.25},{"top":557.812,"left":579.688}],"gw":{"top":481.25,"left":0}},{"location":"Gościniec Bardów","respawns":[],"gw":{"top":0,"left":320.375}}],"Zły_Przewodnik":[{"location":"Ithan","respawns":[{"top":609,"left":203}],"gw":{"top":693,"left":301}},{"location":"Zniszczone Opactwo","respawns":[{"top":503.125,"left":65.625}],"gw":{"top":415.625,"left":0}},{"location":"Uroczysko","respawns":[{"top":364.583,"left":670.833},{"top":240.625,"left":583.333},{"top":65.625,"left":656.25}],"gw":{"top":43.75,"left":269.792}},{"location":"Lazurytowa Grota p.1","respawns":[{"top":350,"left":284.375}],"gw":{"top":284.375,"left":568.75}},{"location":"Lazurytowa Grota p.2","respawns":[{"top":218.75,"left":273.438},{"top":98.4375,"left":382.812},{"top":185.938,"left":601.562}],"gw":{"top":306.25,"left":448.438}},{"location":"Lazurytowa Grota p.3 - sala 2","respawns":[{"top":315,"left":157.5}],"gw":{"top":122.5,"left":297.5}},{"location":"Lazurytowa Grota p.3 - sala 1","respawns":[{"top":597.917,"left":320.833},{"top":233.333,"left":495.833},{"top":233.333,"left":145.833}],"gw":{"top":14.5833,"left":87.5}},{"location":"Lazurytowa Grota p.2","respawns":[],"gw":{"top":54.6875,"left":196.875}},{"location":"Lazurytowa Grota p.1","respawns":[],"gw":{"top":568.75,"left":371.875}},{"location":"Uroczysko","respawns":[{"top":189.583,"left":94.7917}],"gw":{"top":459.375,"left":393.75}},{"location":"Zapomniany Szlak","respawns":[{"top":36.4583,"left":298.958},{"top":94.7917,"left":342.708},{"top":109.375,"left":123.958},{"top":175,"left":182.292},{"top":247.917,"left":277.083},{"top":247.917,"left":43.75},{"top":357.292,"left":189.583},{"top":437.5,"left":350},{"top":364.583,"left":401.042},{"top":350,"left":481.25},{"top":371.875,"left":648.958},{"top":262.5,"left":627.083},{"top":160.417,"left":576.042},{"top":298.958,"left":422.917},{"top":247.917,"left":466.667}],"gw":{"top":189.583,"left":415.625}},{"location":"Mokra Grota p.1","respawns":[{"top":568.75,"left":218.75},{"top":448.438,"left":404.688},{"top":142.188,"left":634.375}],"gw":{"top":196.875,"left":142.188}},{"location":"Mokra Grota p.1 - boczny korytarz","respawns":[{"top":437.5,"left":185.938},{"top":612.5,"left":481.25},{"top":382.812,"left":273.438}],"gw":{"top":568.75,"left":54.6875}},{"location":"Mokra Grota p.2 - korytarz","respawns":[{"top":252,"left":322},{"top":462,"left":504},{"top":616,"left":182}],"gw":{"top":14,"left":70}},{"location":"Mokra Grota p.1 - boczny korytarz","respawns":[],"gw":{"top":667.188,"left":131.25}},{"location":"Mokra Grota p.1","respawns":[{"top":142.188,"left":634.375},{"top":448.438,"left":404.688},{"top":568.75,"left":218.75}],"gw":{"top":656.25,"left":43.75}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":109.375,"left":386.458}},{"location":"Grota Bezszelestnych Kroków - sala 1","respawns":[{"top":350,"left":415.625},{"top":262.5,"left":393.75}],"gw":{"top":196.875,"left":590.625}},{"location":"Grota Bezszelestnych Kroków - sala 2","respawns":[{"top":470.312,"left":568.75},{"top":185.938,"left":557.812},{"top":109.375,"left":360.938},{"top":207.812,"left":131.25}],"gw":{"top":131.25,"left":54.6875}},{"location":"Grota Bezszelestnych Kroków - sala 3","respawns":[{"top":142.188,"left":371.875},{"top":164.062,"left":54.6875},{"top":317.188,"left":371.875},{"top":459.375,"left":306.25},{"top":535.938,"left":492.188}],"gw":{"top":678.125,"left":470.312}},{"location":"Grota Bezszelestnych Kroków - sala 1","respawns":[],"gw":{"top":656.25,"left":196.875}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":459.375,"left":473.958}},{"location":"Mroczny Przesmyk","respawns":[{"top":262.5,"left":612.5},{"top":590.625,"left":645.312}],"gw":{"top":426.562,"left":470.312}},{"location":"Mroczna Pieczara p.1 - sala 3","respawns":[],"gw":{"top":41.1,"left":102.75}},{"location":"Mroczna Pieczara p.2","respawns":[],"gw":{"top":583.333,"left":233.333}},{"location":"Mroczny Przesmyk","respawns":[{"top":371.875,"left":459.375}],"gw":{"top":262.5,"left":404.688}},{"location":"Mroczna Pieczara p.2","respawns":[],"gw":{"top":311.111,"left":194.444}},{"location":"Mroczna Pieczara p.1 - sala 3","respawns":[],"gw":{"top":575.4,"left":246.6}},{"location":"Mroczny Przesmyk","respawns":[{"top":645.312,"left":328.125},{"top":557.812,"left":164.062},{"top":262.5,"left":328.125},{"top":76.5625,"left":196.875},{"top":175,"left":459.375},{"top":21.875,"left":459.375}],"gw":{"top":0,"left":360.938}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":0,"left":393.75}},{"location":"Uroczysko","respawns":[],"gw":{"top":284.375,"left":692.708}},{"location":"Zniszczone Opactwo","respawns":[],"gw":{"top":0,"left":120.312}}]},"e2":{"(51lvl) Razuglag Oklash":{"name":"Razuglag Oklash","level":51,"location":"Stare Wyrobisko p.3","frame_size":21.174,"gather_key":"g","tolerance_px":14.0,"waiting_positions":[{"x":4,"y":6,"top":127.044,"left":84.696,"label":"(4,6)"},{"x":5,"y":6,"top":127.044,"left":105.87,"label":"(5,6)"},{"x":6,"y":6,"top":127.044,"left":127.044,"label":"(6,6)"},{"x":7,"y":6,"top":127.044,"left":148.218,"label":"(7,6)"},{"x":8,"y":6,"top":127.044,"left":169.392,"label":"(8,6)"},{"x":4,"y":7,"top":148.218,"left":84.696,"label":"(4,7)"},{"x":5,"y":7,"top":148.218,"left":105.87,"label":"(5,7)"},{"x":6,"y":7,"top":148.218,"left":127.044,"label":"(6,7)"},{"x":7,"y":7,"top":148.218,"left":148.218,"label":"(7,7)"},{"x":8,"y":7,"top":148.218,"left":169.392,"label":"(8,7)"}]}}};
 
   // Przejścia zebrane w grze (Kraken Dev), których brakowało w grafie świata – dopisywane do DATA.world.
@@ -836,8 +836,9 @@
   // która nie wchodzi na pola w promieniu 1 kratki od nich (8 kierunków), po kilka kratek, przeliczając na bieżąco.
   const SafeWalk = {
     token: 0,
+    // „Unikaj” zostało usunięte z ustawień – lista zawsze pusta (stare ustawienia nie działają).
     names() {
-      return String(Bot.cfg?.avoidMobs || '')
+      return String('')
         .split(';')
         .map((x) => x.trim().toLowerCase())
         .filter(Boolean);
@@ -2393,8 +2394,11 @@
     lastAttack: 0,
     lastLog: { id: null, t: 0 },
 
+    // Dobijarka należy do zestawu: przy pracy bota – zestaw kroku, poza nią – zestaw z zakładki Zestawy.
     cfg() {
-      return Bot.cfg && Bot.cfg.killer;
+      if (!Bot.cfg) return null;
+      const set = Bot.running() && Run.tile ? Run.set() : Eq.set();
+      return set?.killer || Bot.cfg.killer;
     },
     enabled() {
       const c = this.cfg();
@@ -2490,6 +2494,32 @@
   };
 
   // ───────────────────────── nagrody eventu ─────────────────────────
+
+  // Aktualności (ikona „news” na pasku gry): otwarcie okna, „Odbierz” przy każdej nagrodzie, zamknięcie.
+  async function collectNewsRewards() {
+    const icon = $$('.widget-button[widget-name="news-icon"], .widget-news-icon').find(isShown);
+    if (!icon) {
+      log('ℹ️ Aktualności: brak ikony na pasku gry');
+      return;
+    }
+    if (!trustedClick(icon)) icon.click();
+    const win = await waitUntil(() => $$('.c-window').find((w) => isShown(w) && /aktualno|news/i.test((w.className || '') + ' ' + text($('.header-label', w) || w).slice(0, 40))), 4000, 200);
+    if (!win) {
+      log('ℹ️ Aktualności: okno się nie otworzyło');
+      return;
+    }
+    let got = 0;
+    for (let i = 0; i < 20; i++) {
+      const b = $$('.button, button', win).find((x) => isShown(x) && /^odbierz/i.test(text(x).trim()));
+      if (!b) break;
+      if (!trustedClick(b)) b.click();
+      got++;
+      await sleep(rand(600, 1000));
+    }
+    log(got ? `🎁 Aktualności: odebrano ${got} nagród` : '🎁 Aktualności: brak nagród do odebrania');
+    const close = $('.close-button', win);
+    if (close) close.click();
+  }
 
   async function collectEventRewards() {
     const calVisible = () => isShown($('div.rewards-calendar'));
@@ -3522,6 +3552,7 @@
       route: r.maps.map((m) => ({ location: m.location, attack: m.attack !== false })),
       maxGroup: +r.maxGroup || 0,
       elites: r.elites !== false,
+      e2: !!r.e2,
       custom: true,
     };
   };
@@ -3611,9 +3642,9 @@
       return null;
     }
     const idx = planTile(lvl, plan);
-    if (idx < 0) requestStop(`🏁 Plan exp zakończony – żaden kafelek nie obejmuje poziomu ${lvl}`);
+    if (idx < 0) requestStop(`🏁 Plan exp zakończony – żaden krok nie obejmuje poziomu ${lvl}`);
     const tile = plan[idx];
-    const set = Run.tile?.uid === tile.uid ? Run.set() : setById(tile.setId);
+    const set = Run.tile?.uid === tile.uid ? Run.set() : Run.setFor('exp');
     const tkey = tile.uid || idx;
     if (st.tileKey !== tkey) {
       log(`🎯 Exp: ${tile.exp}, zestaw „${set.name}”`);
@@ -3794,12 +3825,13 @@
   // najkrótszej trasy z kolizjami – start z miejsca bohatera, na końcu przejście na następną mapę trasy.
   // Moby odrodzone w trakcie (nowe id) nie wchodzą do planu – zginą przy kolejnym przejściu.
   const Hunt = {
-    plan(toMap, charLevel, { maxGroup = 0, elites = true } = {}) {
+    plan(toMap, charLevel, { maxGroup = 0, elites = true, e2 = false } = {}) {
       const all = Mobs.list();
       // Wielkość grup (pole grp): grupy większe niż maxGroup pomijamy w całości.
       const groupSize = new Map();
       for (const o of all) if (+o.d.grp) groupSize.set(+o.d.grp, (groupSize.get(+o.d.grp) || 0) + 1);
-      let mobs = all.filter((o) => (+o.d.wt || 0) < (elites ? MOB_MAX_WT : 10));
+      // Zwykłe (wt < 10), elity (< 20), z opcją trasy „E2” także elity II (< 30).
+      let mobs = all.filter((o) => (+o.d.wt || 0) < (e2 ? 30 : elites ? MOB_MAX_WT : 10));
       if (maxGroup > 0) mobs = mobs.filter((o) => !+o.d.grp || groupSize.get(+o.d.grp) <= maxGroup);
       if (charLevel != null) {
         mobs = mobs.filter((o) => {
@@ -4014,7 +4046,7 @@
       // Kolizje wczytują się chwilę po wejściu na mapę – plan bez nich liczyłby drogę w linii prostej.
       await waitUntil(() => Grid.ctx()?.walk, 3000, 150);
       const t0 = now();
-      const p = Hunt.plan(toMap, st.charLevel, { maxGroup: exp.maxGroup, elites: exp.elites });
+      const p = Hunt.plan(toMap, st.charLevel, { maxGroup: exp.maxGroup, elites: exp.elites, e2: exp.e2 });
       st.hunt = { map: cur, ids: p.ids, i: 0, fails: 0, gw: p.gw, toMap: p.gw ? toMap : null };
       Bot.hunt = st.hunt;
       log(`🗺️ Plan '${cur}': ${p.ids.length} mobów${p.gw ? ` → przejście '${toMap}'` : ''} (~${p.cost} kratek drogi, ${now() - t0} ms)`);
@@ -4058,7 +4090,7 @@
 
   async function discordHerosAlert(name, map, coords) {
     const url = (Bot.global.discordWebhook || '').trim();
-    if (!/^https:\/\/(discord|discordapp)\.com\/api\/webhooks\//.test(url)) return;
+    if (Bot.global.herosAlert === false || !/^https:\/\/(discord|discordapp)\.com\/api\/webhooks\//.test(url)) return;
     const dedupe = `${name}|${map}`;
     if (now() - (discordSent.get(dedupe) || 0) < 10 * 60000) return;
     discordSent.set(dedupe, now());
@@ -4947,7 +4979,36 @@
     ['heroic', 'heroicNick', 'heroik'],
     ['legendary', 'legendaryNick', 'legenda'],
   ];
-  const defaultMilioner = () => ({ enabled: false, goldNick: '', uniqueNick: '', heroicNick: '', legendaryNick: '', sellUnique: false, sellHeroic: false, sellLegendary: false });
+  // Milioner: transfer (złoto ponad kwotę, przedmioty wg rzadkości) i aukcje – wektory cen (bez ofert: X × lvl + baza),
+  // reguły (z ofertami: najniższa − obniżka, nie poniżej minimum) i stałe ceny przedmiotów.
+  const defaultMilioner = () => ({
+    enabled: false,
+    goldKeep: '100k',
+    goldNick: '',
+    uniqueNick: '',
+    heroicNick: '',
+    legendaryNick: '',
+    auction: false,
+    sellUnique: false,
+    sellHeroic: false,
+    sellLegendary: false,
+    undercut: '1k',
+    vec: { unique: { x: 10e3, base: 1e6 }, heroic: { x: 100e3, base: 5e6 }, legendary: { x: 10e6, base: 1e9 } },
+    floor: { unique: 300e3, heroic: 5e6, legendary: 500e6 },
+    fixed: [],
+  });
+  function normalizeMilioner(m, sets) {
+    const d = defaultMilioner();
+    const out = Object.assign(d, m || {});
+    out.vec = Object.assign({}, d.vec, m?.vec);
+    for (const k of Object.keys(d.vec)) out.vec[k] = Object.assign({}, d.vec[k], out.vec[k]);
+    out.floor = Object.assign({}, d.floor, m?.floor);
+    out.fixed = Array.isArray(out.fixed) ? out.fixed.filter((x) => x && x.name) : [];
+    // Dawniej aukcje działały same z zaznaczonych rzadkości, a „Zatrzymaj złoto” było w każdym zestawie.
+    if (m && !('auction' in m)) out.auction = !!(m.sellUnique || m.sellHeroic || m.sellLegendary);
+    if (m && !('goldKeep' in m)) out.goldKeep = (sets || []).find((x) => x.transferKeep)?.transferKeep || d.goldKeep;
+    return out;
+  }
   // Sprzedaż na aukcji: [rzadkość, pole w karcie, nazwa, cena min, cena max (skrajne wartości ignorowane), wzór bez ofert].
   const AUCTION_RARITY = [
     ['unique', 'sellUnique', 'unikat', 300e3, 100e6, (lvl) => lvl * 10e3 + 1e6],
@@ -4962,7 +5023,7 @@
       if (+it.st !== 0) continue;
       const s = Inv.stats(it);
       if (s.soulbound || s.permbound) continue;
-      const r = AUCTION_RARITY.find(([k, f]) => k === s.rarity && m[f]);
+      const r = m.auction && AUCTION_RARITY.find(([k, f]) => k === s.rarity && m[f]);
       if (r) out.push({ it, rule: r, lvl: +s.lvl || 0 });
     }
     return out;
@@ -4975,8 +5036,8 @@
       const s = Inv.stats(it);
       if (s.soulbound || s.permbound) continue;
       const r = MIL_RARITY.find(([k]) => k === s.rarity);
-      // Rzadkość zaznaczona do sprzedaży idzie na aukcję, nie pocztą.
-      if (AUCTION_RARITY.some(([k, f]) => k === s.rarity && Bot.cfg.milioner?.[f])) continue;
+      // Rzadkość zaznaczona do sprzedaży (przy włączonych aukcjach) idzie na aukcję, nie pocztą.
+      if (Bot.cfg.milioner?.auction && AUCTION_RARITY.some(([k, f]) => k === s.rarity && Bot.cfg.milioner?.[f])) continue;
       const nick = r && String(Bot.cfg.milioner?.[r[1]] || '').trim();
       if (nick) out.push({ it, nick, rarity: r[2], key: r[0] });
     }
@@ -5104,18 +5165,30 @@
         if (!byName.has(x.it.name)) byName.set(x.it.name, []);
         byName.get(x.it.name).push(x);
       }
+      const m = Bot.cfg.milioner;
+      const undercut = parseGold(m.undercut || '0');
       for (const [name, copies] of byName) {
-        const [, , label, lo, hi, formula] = copies[0].rule;
-        const found = (await Auction.prices(name)) || [];
-        const fair = found.filter((v) => v >= lo && v <= hi);
-        // Ceny czytane na żywo przy każdym wystawianiu (bez zapamiętywania); z aukcji – o 1k taniej od najniższej oferty.
-        const lowest = fair.length ? Math.min(...fair) : 0;
-        const price = fair.length ? lowest - AUCTION_UNDERCUT : Math.round(formula(copies[0].lvl));
-        log(
-          fair.length
-            ? `💹 ${name} (${label}): najniższa oferta ${fmtGold(lowest)} zł (ofert ${found.length}, w granicach ${fair.length}) → wystawiam za ${fmtGold(price)} zł`
-            : `💹 ${name} (${label}): brak ofert w granicach ${fmtGold(lo)}–${fmtGold(hi)} – cena ze wzoru ${fmtGold(price)} zł (lvl ${copies[0].lvl})`
-        );
+        const [key, , label, , hi] = copies[0].rule;
+        const fixed = m.fixed.find((x) => fold(x.name) === fold(name));
+        const floor = +m.floor?.[key] || 0;
+        let price;
+        if (fixed) {
+          price = parseGold(String(fixed.price));
+          log(`💹 ${name} (${label}): stała cena ${fmtGold(price)} zł`);
+        } else {
+          const found = (await Auction.prices(name)) || [];
+          const fair = found.filter((v) => v >= floor && v <= hi);
+          // Ceny czytane na żywo przy każdym wystawianiu; z aukcji – najniższa oferta minus obniżka, nie poniżej minimum.
+          const lowest = fair.length ? Math.min(...fair) : 0;
+          const v = m.vec?.[key] || { x: 0, base: 0 };
+          price = fair.length ? Math.max(floor, lowest - (Number.isFinite(undercut) ? undercut : AUCTION_UNDERCUT)) : Math.round(+v.x * copies[0].lvl + +v.base);
+          log(
+            fair.length
+              ? `💹 ${name} (${label}): najniższa oferta ${fmtGold(lowest)} zł (ofert ${found.length}, od minimum ${fair.length}) → wystawiam za ${fmtGold(price)} zł`
+              : `💹 ${name} (${label}): brak ofert ≥ ${fmtGold(floor)} – wektor ${fmtGold(+v.x)} × ${copies[0].lvl} lvl + ${fmtGold(+v.base)} = ${fmtGold(price)} zł`
+          );
+        }
+        if (!(price > 0)) continue;
         for (const { it } of copies) {
           const done = await Auction.offer(it, price);
           log(done ? `🏷️ Wystawiono ${name} za ${fmtGold(price)} zł` : `❌ Nie wystawiono ${name}`);
@@ -5136,9 +5209,9 @@
   async function milioner(set = Eq.set(), itemsOnly = false, only = null) {
     const m = Bot.cfg.milioner || defaultMilioner();
     const items = milionerItems().filter((x) => !only || only.includes(x.key));
-    const keep = parseGold(set.transferKeep || '0');
+    const keep = parseGold(m.goldKeep || '0');
     const nick = itemsOnly ? '' : String(m.goldNick || '').trim();
-    if (nick && !Number.isFinite(keep)) log(`❌ Nieprawidłowa kwota „Zatrzymaj złoto” w zestawie „${set.name}”: ${set.transferKeep} (np. 100k, 2,5m, 1g)`);
+    if (nick && !Number.isFinite(keep)) log(`❌ Nieprawidłowa kwota „Złoto powyżej” w Milionerze: ${m.goldKeep} (np. 100k, 2,5m, 1g)`);
     const surplus = () => (nick && Number.isFinite(keep) ? Math.max(0, heroGold() - keep) : 0);
     if (!items.length && !surplus()) return true;
     log(`📮 Milioner: przedmiotów ${items.length}${surplus() ? `, złoto ${fmtGold(surplus())} → ${nick} (zostaje ${fmtGold(keep)})` : ''}`);
@@ -7548,8 +7621,10 @@
   // Discord (webhook „łup E2” z Ustawień – adres trzymany tylko w przeglądarce, nie w repo): nowy unikat/heroik/legenda
   // po walce z E2 – ikonka i nazwa przedmiotu, postać, E2 z ikonką i statystyki łupu tej E2 (okno Świat).
   async function discordE2Loot(found, fight) {
-    const url = (Bot.global.discordLootWebhook || '').trim();
+    const url = (Bot.global.discordWebhook || '').trim();
+    found = found.filter((x) => lootNotify(x.rarity));
     if (!/^https:\/\/(discord|discordapp)\.com\/api\/webhooks\//.test(url) || !found.length) return;
+    LootWatch.claim(found);
     await HuntStats.sync(fight.name, 'łup E2');
     const h = HuntStats.get(fight.name);
     const stats = h
@@ -7581,6 +7656,59 @@
       log(`⚠️ Discord: ${e.message}`);
     }
   }
+
+  // Powiadomienia o łupie: rzadkości zaznaczone w Ustawieniach (domyślnie wszystkie trzy).
+  const lootNotify = (rarity) => Bot.global?.[{ unique: 'lootUnique', heroic: 'lootHeroic', legendary: 'lootLegendary' }[rarity]] !== false;
+
+  // Każdy łup (nie tylko z E2): nowy unikat/heroik/legenda w torbach → Discord (ikonka, postać, mapa). Przy E2 łup
+  // zgłasza krok E2 (ze statystykami) – te przedmioty są „zajęte” i tu się nie powtarzają.
+  const LootWatch = {
+    seen: null,
+    claim(list) {
+      if (!this.seen) this.seen = new Set();
+      for (const x of list) this.seen.add(+x.it.id);
+    },
+    async tick() {
+      if (!Bot.running() || !Game.loaded()) return;
+      const items = rareItems();
+      if (!this.seen) {
+        this.seen = new Set(items.keys());
+        return;
+      }
+      const fresh = [...items.entries()].filter(([id]) => !this.seen.has(id)).map(([, x]) => x);
+      if (!fresh.length) return;
+      for (const x of fresh) this.seen.add(+x.it.id);
+      if (Run.tile?.type === 'e2' || Battle.visible()) return;
+      const url = (Bot.global.discordWebhook || '').trim();
+      const send = fresh.filter((x) => lootNotify(x.rarity));
+      if (!send.length || !/^https:\/\/(discord|discordapp)\.com\/api\/webhooks\//.test(url)) return;
+      const embeds = send.slice(0, 10).map(({ it, rarity }) => {
+        const icon = it.icon || it.d?.icon;
+        return {
+          title: it.name,
+          color: LOOT_RARITY[rarity][1],
+          description: `**${LOOT_RARITY[rarity][0]}** · ${Game.location() || '?'}`,
+          thumbnail: icon ? { url: ICON + String(icon).replace(/^.*?obrazki\/itemy\//, '').replace(/^\/+/, '') } : undefined,
+          fields: [{ name: 'Postać', value: `${Bot.charName} @ ${WORLD}`, inline: true }],
+          timestamp: new Date().toISOString(),
+        };
+      });
+      try {
+        await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: 'Kraken', embeds }) });
+        log(`📨 Discord: łup – ${send.map((x) => x.it.name).join(', ')}`);
+      } catch (e) {
+        log(`⚠️ Discord: ${e.message}`);
+      }
+    },
+    async watch() {
+      for (;;) {
+        try {
+          await this.tick();
+        } catch (_) {}
+        await Timer.wait(3000);
+      }
+    },
+  };
 
   async function e2Loot(st, s, fight) {
     await sleep(800); // łup trafia do toreb chwilę po walce
@@ -7622,7 +7750,7 @@
     const set = Run.set();
     // Zapasy w porządku (≥25% wolnych pól, ≥75% mikstur) i nic do kupienia z zestawu – miasto niepotrzebne.
     // Brak przedmiotów wskazanego zestawu – zawsze najpierw zakupy (bliskość E2 dotyczy tylko sprzedaży i mikstur).
-    const toBuy = Run.tile?.e2SetId ? Eq.plan(set).flatMap((g) => g.items) : [];
+    const toBuy = Eq.plan(set).flatMap((g) => g.items);
     const ready = suppliesOk(set) && !toBuy.length;
     const dE2 = hops(e2.location);
     const dCity = Math.min(...[...new Set([...POTION_CITIES, ...Object.keys(SELL_POINTS)])].map(hops));
@@ -7642,7 +7770,7 @@
 
     if (!st.e2 || st.e2.sig !== sig) {
       st.e2 = { sig, lastGather: 0, lastSeen: 0, needReturn: true };
-      HuntStats.sync(e2.name, 'start kafelka');
+      HuntStats.sync(e2.name, 'start kroku');
       log(
         `🦑 E2 start │ ${cfg.e2Leader ? 'lider' : 'follow'} │ ${cfg.e2Attacker ? 'atakuje' : 'wsparcie'} │ poz=(${pos.x},${pos.y})`
       );
@@ -7650,11 +7778,10 @@
       // Start kafelka: sprzedaż łupu i mikstury (z zestawem – też ekwipunek i umiejętności), chyba że mapa E2 jest
       // bliżej niż miasto – wtedy od razu E2, a do miasta dopiero przy pełnych torbach albo bez mikstur.
       const set = Run.set();
-      if (Run.tile?.e2SetId) log(`🎒 Zestaw kafelka E2: „${set.name}”`);
       if (e2NearStart(e2)) {
-        if (Run.tile?.e2SetId) await eqEquip(set);
+        await eqEquip(set);
         await Skills.apply(set);
-      } else await resupply(st, set, !!Run.tile?.e2SetId);
+      } else await resupply(st, set, true);
     }
     const s = st.e2;
     // W trakcie: pełne torby albo zero mikstur leczących → miasto (sprzedaż, poczta, mikstury), potem powrót na E2.
@@ -8356,7 +8483,7 @@
       if (!map || !Game.engine()?.hero?.d) return false;
       const tutQuest = this.quests().some((q) => +q.id >= 10001 && +q.id <= 10009);
       if (!this.onTutMap() || (map === 7251 && !tutQuest && $('.quest-observe-list') && !Shop.answers().length && !this.win('Ukończenie wprowadzenia'))) {
-        log('🎓 Tutorial już ukończony – kafelek przechodzi dalej');
+        log('🎓 Tutorial już ukończony – przechodzę do kolejnego kroku');
         this.save({ ...this.state(), done: true });
         return true;
       }
@@ -8979,7 +9106,7 @@
     const tile = Run.tile;
     st.tut = st.tut || {};
     if (!Tut.onTutMap()) {
-      if (!st.tut.offNoted) log('🎓 Postać nie jest na mapie tutoriala – kafelek czeka');
+      if (!st.tut.offNoted) log('🎓 Postać nie jest na mapie tutoriala – krok czeka');
       st.tut.offNoted = true;
       await sleep(5000);
       return;
@@ -9583,6 +9710,11 @@
       all[data.name] = data;
       store.set(PLAYBOOKS_KEY, all);
     },
+    remove(name) {
+      const all = this.all();
+      delete all[name];
+      store.set(PLAYBOOKS_KEY, all);
+    },
   };
   function playbookOf(prog, name) {
     const cfg = Bot.cfg;
@@ -9635,7 +9767,7 @@
     const data = playbookOf(prog, name);
     downloadJson(taskFileName(name), data);
     Playbooks.put(data);
-    log(`💾 Przebieg „${name}” → ${taskFileName(name)} (katalog playbooks/, ${data.tiles.length} kafelków)`);
+    log(`💾 Przebieg „${name}” → ${taskFileName(name)} (katalog playbooks/, ${data.tiles.length} kroków)`);
   }
   // Nowe kafelki z przebiegu; uid zostaje, gdy typ na tej pozycji się nie zmienił (bieżący kafelek nie startuje od nowa).
   // Ustawienia kafelka zmieniane ręcznie (profesja tutoriala, pozycja/zestaw/logout E2, kopalnia, tylko alarm) –
@@ -9669,9 +9801,22 @@
       first.name = DEFAULT_PLAYBOOK;
       setProgramTiles(first, def);
       first.pbSig = sig;
-      if (fresh) log(`📋 Program 1 ← przebieg „${DEFAULT_PLAYBOOK}” (${first.tiles.length} kafelków, tylko do odczytu)`);
+      if (fresh) log(`📋 Program 1 ← przebieg „${DEFAULT_PLAYBOOK}” (${first.tiles.length} kroków, tylko do odczytu)`);
       changed = true;
     }
+    cfg.programs.forEach((p, i) => {
+      if (i === 0 || !p.tiles.length) return;
+      if (!p.name) {
+        let n = `Program ${i + 1}`;
+        while (pbs[n]) n += '+';
+        p.name = n;
+        changed = true;
+      }
+      if (!pbs[p.name]) {
+        Playbooks.put(playbookOf(p, p.name));
+        pbs[p.name] = Playbooks.all()[p.name];
+      }
+    });
     if (refresh) {
       for (const prog of cfg.programs) {
         if (prog.name && pbs[prog.name]) {
@@ -9698,7 +9843,7 @@
       }
     }
     if (updated) Bot.saveCfg();
-    if (!quiet) log(`📥 Przebieg „${data.name}” (${data.tiles.length} kafelków)${updated ? ` – zaktualizowano program o tej nazwie` : ' – wybierz go z listy i kliknij „Wczytaj”'}`);
+    if (!quiet) log(`📥 Przebieg „${data.name}” (${data.tiles.length} kroków)${updated ? ` – zaktualizowano program o tej nazwie` : ' – wybierz go z listy programów'}`);
     return data;
   }
 
@@ -9790,6 +9935,12 @@
     return { done: false, game: active ? 'aktywne' : 'nierozpoczęte' };
   }
   // Zadanie kafelka; bez wybranego (stary kafelek, lista pokazywała pierwsze) – pierwsze z listy.
+  // Nazwa zadania w panelu: nazwa z dziennika gry (gdy zadanie jest powiązane), inaczej nazwa z pliku.
+  const taskLabel = (t) => {
+    if (!t?.questName) return t?.name || '?';
+    const zr = /^ZR:\s*\((\d+)\)/.exec(t.name || '');
+    return `${t.questName.replace(/\.$/, '')}${zr ? ` · ZR ${zr[1]}` : ''}`;
+  };
   const taskOfTile = (t) => Tasks.get(t.taskId) || (!t.taskId ? Tasks.all()[0] || null : null);
   // Nazwy mobów („Zabij”) albo roślin („Zbierz”) – oddzielone średnikami.
   const taskMobs = (st) =>
@@ -9907,7 +10058,7 @@
   // umiejętności, mikstury), chyba że zapasy wystarczą; w trakcie – powrót, gdy torby pełne albo brak mikstur.
   // Uzupełnianie tylko między czynnościami i nie w trakcie rozmowy. true = trwało zaopatrzenie (krok czeka).
   async function taskSupplies(st, task, step) {
-    const set = Run.tile && taskOfTile(Run.tile)?.id === task.id ? Run.set() : taskSet(task);
+    const set = Run.tile && taskOfTile(Run.tile)?.id === task.id ? Run.set() : Run.setFor('task');
     if (st.taskPrep !== task.id) {
       st.taskPrep = task.id;
       log(`🎯 Zadanie „${task.name}”, zestaw „${set.name}”`);
@@ -9926,7 +10077,7 @@
     const tile = Run.tile;
     const task = taskOfTile(tile);
     if (!task) {
-      await Tut.idle((st.tut = st.tut || {}) && st, 'kafelek Zadanie bez wybranego zadania');
+      await Tut.idle((st.tut = st.tut || {}) && st, 'krok Zadanie bez wybranego zadania');
       return;
     }
     if (taskState(task).done) {
@@ -10349,13 +10500,33 @@
     return n;
   }
 
+  // Programy postaci = przebiegi (bez dawnego limitu 20 slotów); program 1 to zawsze „Zero to Hero”.
   function normalizePrograms(list, sets) {
-    const out = [];
-    for (let i = 0; i < PROGRAMS_N; i++) {
-      const p = (Array.isArray(list) && list[i]) || {};
-      out.push({ name: typeof p.name === 'string' ? p.name : '', tiles: (Array.isArray(p.tiles) ? p.tiles : []).map((t) => normalizeTile(t, sets)) });
-    }
+    const out = (Array.isArray(list) ? list : []).map((p) => ({
+      name: typeof p?.name === 'string' ? p.name : '',
+      tiles: (Array.isArray(p?.tiles) ? p.tiles : []).map((t) => normalizeTile(t, sets)),
+      ...(p?.pbSig ? { pbSig: p.pbSig } : {}),
+    }));
+    if (!out.length) out.push({ name: '', tiles: [] });
     return out;
+  }
+  // Program o nazwie przebiegu (tworzony z przebiegu przy pierwszym wyborze) – indeks w cfg.programs.
+  function programIdx(name) {
+    const cfg = Bot.cfg;
+    let i = cfg.programs.findIndex((p) => p.name === name);
+    if (i < 0) {
+      const p = { name, tiles: [] };
+      const data = Playbooks.all()[name];
+      if (data) setProgramTiles(p, data);
+      cfg.programs.push(p);
+      i = cfg.programs.length - 1;
+    }
+    return i;
+  }
+  // Zmiany w programie trafiają do jego przebiegu (lista programów = przebiegi); „Zero to Hero” jest tylko do odczytu.
+  function saveProgramPlaybook(prog) {
+    if (!prog?.name || prog.name === DEFAULT_PLAYBOOK) return;
+    Playbooks.put(playbookOf(prog, prog.name));
   }
 
   // Dawne kafelki exp (expPlan: exp, lvlMin, lvlMax, setId) → kafelki programu z warunkiem poziomu.
@@ -10502,27 +10673,30 @@
       });
     },
     // Zestaw aktywnego kafelka exp (zakupy, mikstury, umiejętności); poza expem – aktywna zakładka.
-    set() {
-      const id = this.tile && this.tileSetId;
-      return (id && Bot.cfg.eqSets.find((s) => s.id === id)) || this.baseSet();
-    },
-    // Zestaw wskazany w kafelku (exp) albo w zadaniu – to minimum; poza kafelkiem – aktywna zakładka.
-    baseSet() {
-      if (this.tile?.type === 'task') return taskSet(taskOfTile(this.tile));
-      if (this.tile?.type === 'e2' && this.tile.e2SetId && Bot.cfg.eqSets.some((x) => x.id === this.tile.e2SetId)) return setById(this.tile.e2SetId);
-      return this.tile && this.tile.type === 'exp' && this.tile.setId ? setById(this.tile.setId) : Eq.set();
-    },
-    // Na początku kafelka: najwyższy zestaw z poziomem ≤ poziom postaci, ale nie niższy niż wskazany
-    // (postać 50 lvl nadrabiająca ZR z minimum 28lvl bierze 48lvl). Wybór trzyma się do końca kafelka.
-    pickSet() {
-      const base = this.baseSet();
+    // Zestaw dla rodzaju kroku: najwyższy poziom ≤ poziom postaci z zaznaczonym zastosowaniem tego kroku; gdy żaden
+    // nie pasuje poziomem – najniższy z zastosowaniem; bez kroku – zestaw wybrany w zakładce Zestawy.
+    setFor(type) {
       const lvl = Game.level() || 0;
-      const min = +base.lvl || 0;
-      const pool = Bot.cfg.eqSets.filter((s) => +s.lvl > 0 && +s.lvl >= min && +s.lvl <= lvl);
-      pool.sort((a, b) => +b.lvl - +a.lvl || (b === base) - (a === base));
-      const set = pool[0] || base;
+      const ok = (s) => !type || s.use?.[type] !== false;
+      const sets = Bot.cfg.eqSets.filter(ok);
+      const pool = sets.filter((s) => (+s.lvl || 0) <= lvl).sort((a, b) => (+b.lvl || 0) - (+a.lvl || 0));
+      return pool[0] || sets.sort((a, b) => (+a.lvl || 0) - (+b.lvl || 0))[0] || Eq.set();
+    },
+    set() {
+      if (!this.tile) return Eq.set();
+      const s = this.setFor(this.tile.type);
+      if (this.tileSetId && this.tileSetId !== s.id) log(`🎒 Zestaw: „${s.name}”`);
+      this.tileSetId = s.id;
+      return s;
+    },
+    baseSet() {
+      return this.set();
+    },
+    // Na początku kroku: zestaw wg poziomu postaci i zastosowania kroku.
+    pickSet() {
+      const set = this.setFor(this.tile?.type);
       this.tileSetId = set.id;
-      log(set === base ? `🎒 Zestaw kafelka: „${set.name}”` : `🎒 Zestaw kafelka: „${set.name}” (wskazany „${base.name}” to minimum, postać ma ${lvl} lvl)`);
+      log(`🎒 Zestaw kroku: „${set.name}” (${+set.lvl || 0} lvl)`);
       return set;
     },
   };
@@ -10530,7 +10704,7 @@
   // Zmiana kafelka: zwalniamy ekspowisko i zerujemy stan trybów, żeby nowy kafelek zaczął od początku.
   function switchTile(st, to) {
     const tiles = Run.prog().tiles;
-    log(`🧩 Kafelek ${tiles.indexOf(to) + 1}/${tiles.length}: ${Run.label(to)}`);
+    log(`🧩 Krok ${tiles.indexOf(to) + 1}/${tiles.length}: ${Run.label(to)}`);
     if (st.expKey) Locks.release(st.expKey);
     st.expKey = null;
     st.autoExpKey = null;
@@ -10543,9 +10717,7 @@
     st.task = null;
     Run.tile = to;
     Run.tileSetId = null;
-    if (to.type === 'task' || to.type === 'exp') Run.pickSet();
-    // E2: dokładnie wskazany zestaw (bez dobierania wyższego) – ekwipunek, mikstury, umiejętności i Walka z niego.
-    else if (to.type === 'e2' && to.e2SetId) Run.tileSetId = to.e2SetId;
+    if (to.type !== 'tutorial') Run.pickSet();
   }
 
   async function tick(st) {
@@ -10566,7 +10738,7 @@
     const tile = Run.pick();
     if (!tile) {
       if (!st.idleNoted) {
-        log('⏸️ Żaden kafelek programu nie spełnia warunków – czekam');
+        log('⏸️ Żaden krok programu nie spełnia warunków – czekam');
         Run.prog().tiles.forEach((t, i) => log(`   ${i + 1}. ${Run.label(t)}: ${Run.why(t)}`));
       }
       st.idleNoted = true;
@@ -10664,7 +10836,7 @@
     const st = newState();
     Run.progIdx = Bot.cfg.progIdx;
     Run.tile = null;
-    log(`▶️ Start – program ${Run.progIdx + 1} (${Run.prog().tiles.length} kafelków)`);
+    log(`▶️ Start – program „${Run.prog().name || Run.progIdx + 1}” (${Run.prog().tiles.length} kroków)`);
     try {
       await waitUntil(() => Game.loaded() && Game.location(), 120000, 500);
       // Start na ekranie przegranej albo w nieprzytomności – najpierw wyjście z walki i ocknięcie.
@@ -10683,6 +10855,10 @@
       if (Bot.cfg.eventRewards && !sessionStorage.getItem('kraken:eventDone')) {
         sessionStorage.setItem('kraken:eventDone', '1');
         await collectEventRewards();
+      }
+      if (Bot.cfg.newsRewards && !sessionStorage.getItem('kraken:newsDone')) {
+        sessionStorage.setItem('kraken:newsDone', '1');
+        await collectNewsRewards();
       }
       let lastBeat = 0;
       for (;;) {
@@ -11339,6 +11515,26 @@
       },
     });
   }
+  // Bot.cfg.killer = dobijarka zestawu wybranego w zakładce Zestawy.
+  function defineKiller(cfg) {
+    delete cfg.killer;
+    const cur = () => cfg.eqSets[cfg.eqTab] || cfg.eqSets[0];
+    Object.defineProperty(cfg, 'killer', {
+      configurable: true,
+      enumerable: false,
+      get() {
+        const set = cur();
+        if (!set.killer) {
+          set.killer = defaultCfg().killer;
+          normalizeKiller(set.killer);
+        }
+        return set.killer;
+      },
+      set(v) {
+        cur().killer = v;
+      },
+    });
+  }
   function newSet(name) {
     return { id: 's' + Math.random().toString(36).slice(2, 9), name, lvl: Game.level() || 0, potionName: 'Flakonik śmiałka', potionTarget: 200, sellNpc: '', transferKeep: '100k', slots: {}, skills: {}, combat: defaultCombat() };
   }
@@ -11358,6 +11554,7 @@
       // Profesja wybierana w tutorialu ('' = jak w dawnym kafelku tutoriala, inaczej wojownik); od 3 lvl – z gry.
       prof: '',
       eventRewards: false,
+      newsRewards: false,
       captchaAuto: true,
       avoidMobs: 'Jadowity orzeł',
       eqSets: [newSet('Zestaw 1')],
@@ -11394,7 +11591,7 @@
     }
     cfg.eqSets = cfg.eqSets.map((s) => Object.assign(newSet(s.name), legacy, s, { combat: s.combat || null }));
     // Nick odbiorcy złota był kiedyś w każdym zestawie – teraz jeden na karcie Milioner.
-    cfg.milioner = Object.assign(defaultMilioner(), saved.milioner);
+    cfg.milioner = normalizeMilioner(saved.milioner, saved.eqSets);
     if (!saved.milioner) cfg.milioner.goldNick = cfg.eqSets.find((s) => s.transferNick)?.transferNick || legacy.transferNick || '';
     for (const s of cfg.eqSets) delete s.transferNick;
     // Dawny wybór jednego ekspowiska staje się pierwszym kafelkiem planu.
@@ -11409,7 +11606,7 @@
       cfg.progIdx = 0;
     }
     cfg.programs = normalizePrograms(cfg.programs, cfg.eqSets);
-    if (!(cfg.progIdx >= 0 && cfg.progIdx < PROGRAMS_N)) cfg.progIdx = 0;
+    if (!(cfg.progIdx >= 0 && cfg.progIdx < cfg.programs.length)) cfg.progIdx = 0;
     if (!Array.isArray(legacyCombat.entries)) legacyCombat.entries = [];
     // Stare pole "Skille w walce" (np. "3,4,3") staje się sekwencją mistrzostwa walk.
     if (typeof saved.skills === 'string' && saved.skills.trim() && !legacyCombat.entries.length) {
@@ -11423,8 +11620,18 @@
     delete cfg.skills;
     for (const set of cfg.eqSets) set.combat = normalizeCombat(set.combat || JSON.parse(JSON.stringify(legacyCombat)));
     defineCombat(cfg);
-    cfg.killer = Object.assign(defaultCfg().killer, saved.killer || importAkiller());
-    normalizeKiller(cfg.killer);
+    // „Zatrzymaj na poziomie” i „Unikaj” zniknęły z panelu – wyłączone, żeby nie działały niewidocznie.
+    cfg.maxLvlEnabled = false;
+    cfg.avoidMobs = '';
+    // Dobijarka była wspólna dla postaci – teraz każdy zestaw ma własną (kopia dawnych ustawień).
+    const legacyKiller = Object.assign(defaultCfg().killer, saved.killer || importAkiller());
+    normalizeKiller(legacyKiller);
+    delete cfg.killer;
+    for (const set of cfg.eqSets) {
+      set.killer = Object.assign(JSON.parse(JSON.stringify(legacyKiller)), set.killer || {});
+      normalizeKiller(set.killer);
+    }
+    defineKiller(cfg);
     // Nowa postać bez własnych ustawień dostaje wbudowany profil swojej profesji.
     const preset = !Object.keys(saved).length && PROF_PRESETS[Game.prof()];
     if (preset) {
@@ -11772,7 +11979,7 @@
     for (const r of Array.isArray(p.routes) ? p.routes : []) if (r && r.id && Array.isArray(r.maps)) Routes.put(r);
     // Programy z profilu; starsze profile (kafelki exp w expPlan) → program 1.
     cfg.programs = normalizePrograms(Array.isArray(p.programs) ? p.programs : [{ tiles: expPlanTiles(p.expPlan) }], cfg.eqSets);
-    cfg.progIdx = +p.progIdx >= 0 && +p.progIdx < PROGRAMS_N ? +p.progIdx : 0;
+    cfg.progIdx = +p.progIdx >= 0 && +p.progIdx < cfg.programs.length ? +p.progIdx : 0;
   }
 
   function useProfile(p, source) {
@@ -12077,175 +12284,181 @@
 #kraken-panel .kr-hint[hidden],#kraken-panel .kr-log[hidden]{display:none}
 #kraken-panel .kr-log{height:150px;overflow-y:auto;background:#05070e;border:1px solid #1e2a48;border-radius:4px;padding:4px;
   font:11px/1.35 Menlo,Consolas,monospace;color:#9aa6c4;white-space:pre-wrap;word-break:break-word}
+#kraken-panel .kr-tabs>button{font-size:15px;padding:3px 0}
+#kraken-panel .kr-prof{flex:none;width:auto;max-width:120px;padding:1px 2px;font-size:11px}
+#kraken-panel .kr-head .kr-dot{margin-right:2px}
+#kraken-panel .kr-cur{font-size:11px;color:#c8921e;padding:2px 0;min-height:14px}
+#kraken-panel .kr-pane>details{margin-top:4px}
+#kraken-panel .kr-use{display:grid;grid-template-columns:1fr 1fr;gap:2px 8px}
+#kraken-panel .kr-mil-grid{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:3px 4px;align-items:center;font-size:11px}
+#kraken-panel .kr-mil-grid input{width:100%;min-width:0}
+#kraken-panel .kr-mil-tr{display:grid;grid-template-columns:auto 1fr 1fr;gap:3px 4px;align-items:center;font-size:11px}
+#kraken-panel .kr-mil-tr input{width:100%;min-width:0}
+#kraken-panel .kr-r-uni{color:#4caf50}
+#kraken-panel .kr-r-her{color:#3a8ee6}
+#kraken-panel .kr-r-leg{color:#ff8c1a}
+#kraken-panel .kr-fixed{display:flex;align-items:center;gap:4px;font-size:11px}
+#kraken-panel .kr-fixed>span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#kraken-panel .kr-eq-tabs{flex:1;min-width:0;display:flex;gap:3px}
+#kraken-panel .kr-eq-tabs select{flex:1;min-width:0}
 `;
 
   const HTML = `
-<div class="kr-head"><span class="kr-title">🦑 Kraken</span><span class="kr-char" data-k="char"></span>
+<div class="kr-head"><span class="kr-dot" data-k="dot"></span><span class="kr-title">🦑</span><span class="kr-char" data-k="char"></span>
+  <select class="kr-prof" data-cfg="prof" data-k="profSel" title="Profesja"></select>
   <button data-k="collapse" title="Zwiń / rozwiń">–</button></div>
 <div class="kr-body">
-  <div class="kr-status"><span class="kr-dot" data-k="dot"></span><span data-k="state"></span><span data-k="map"></span></div>
-  <div class="kr-inv" data-k="inv"></div>
-  <div class="kr-tabs"><button data-tab="bot">Bot</button><button data-tab="collect">Pobieranie</button><button data-tab="killer">Dobijanie</button><button data-tab="milioner">Milioner</button></div>
-  <div class="kr-pane" data-pane="bot">
-  <div class="kr-progs" data-k="progGrid"></div>
-  <details data-k="expBox" open><summary data-k="progLabel">Kafelki</summary>
-    <div class="kr-row"><input data-k="pbName" placeholder="nazwa przebiegu" title="Nazwa programu – pod nią przebieg trafia do playbooks/ i aktualizuje się z repo"><button data-k="pbExport" title="Pobierz program jako playbooks/<nazwa>.json">Eksport</button><button data-k="pbImport" title="Wczytaj przebiegi z plików .json">Import</button></div>
-    <div class="kr-row"><select data-k="pbPick" title="Przebiegi z repo i zaimportowane"></select><button data-k="pbLoad" title="Zastąp kafelki bieżącego programu wybranym przebiegiem">Wczytaj</button></div>
-    <input type="file" accept=".json,application/json" multiple data-k="pbFile" hidden>
-    <div class="kr-exp-list" data-k="expList"></div>
-    <div class="kr-help-row"><button class="kr-link" data-k="expAdd">＋ Dodaj kafelek</button><span class="kr-spacer"></span><span class="kr-hint" data-k="expHint"></span></div>
-  </details>
-  <div class="kr-btns"><button class="kr-go" data-k="start">▶ Start</button><button class="kr-stop" data-k="stop">■ Stop</button></div>
-  <details><summary>Ustawienia</summary>
-    <label class="kr-check"><input type="checkbox" data-cfg="maxLvlEnabled"> Zatrzymaj na poziomie <input class="kr-num" type="number" min="1" max="500" data-cfg="maxLvl"></label>
-    <label class="kr-row" data-k="profRow" title="Profesja wybierana w tutorialu. Od 3 poziomu postać ma już profesję – bot bierze ją z gry i pola nie da się zmienić.">Profesja <select data-cfg="prof" data-k="profSel"></select></label>
-    <label class="kr-check"><input type="checkbox" data-cfg="captchaAuto"> Rozwiązuj zagadki (captcha)</label>
-    <label class="kr-row" title="Agresywne moby – bot nie staje w promieniu 1 kratki od nich i nie atakuje mobów w promieniu 2 kratek od nich (nazwy oddzielone średnikami)">Unikaj <input type="text" data-cfg="avoidMobs" placeholder="np. Jadowity orzeł; …"></label>
-    <label class="kr-check"><input type="checkbox" data-cfg="eventRewards"> Odbierz nagrody eventu przy starcie</label>
-    <label class="kr-row">Discord <input type="text" class="kr-secret" data-global="discordWebhook" placeholder="URL webhooka (alerty herosów)"></label>
-    <label class="kr-row" title="Unikaty, heroiki i legendy zdobyte na E2 – z ikonką, postacią i statystykami łupu tej E2. Adres zostaje tylko w tej przeglądarce.">Łup E2 <input type="text" class="kr-secret" data-global="discordLootWebhook" placeholder="URL webhooka (łup z E2)"></label>
-  </details>
-  <details><summary>Narzędzia</summary>
-    <div class="kr-row"><input data-k="navTarget" list="kraken-maps" placeholder="Idź do mapy…"><button data-k="navGo">Idź</button></div>
-    <datalist id="kraken-maps"></datalist>
-    <div class="kr-btns"><button data-k="npcAuction">Aukcjoner</button><button data-k="npcMail">Poczta</button></div>
-    <div class="kr-btns"><button data-k="gameSetup" title="Zamykanie walki, przechodzenie przez przejścia, interakcje z graczami, błyskawiczna akceptacja zaproszeń od przyjaciół/klanu/sojuszu, filtr łupów, Q = szybka walka, K = przejście, R = rozmowa z NPC">Ustaw grę</button><button data-k="lootSave" title="Obecne ustawienia filtra łupów z gry stają się wzorcem, który bot przywraca">Zapamiętaj filtr łupów</button></div>
-  </details>
-  <details data-k="eqBox"><summary>Zestawy</summary>
-    <div class="kr-eq">
-      <div class="kr-eq-tabs" data-k="eqTabs"></div>
-      <div class="kr-eq-body">
-        <label class="kr-row kr-set-lvl">Poziom zestawu <input type="number" data-set-f="lvl" min="1" max="500" title="Limit poziomu przedmiotów i punktów umiejętności (poziom − 24)"></label>
-        <div class="kr-sublabel">Mikstury</div>
-        <div class="kr-row"><button class="kr-pot" data-k="potPick" title="Wybierz miksturę"></button><input type="number" data-set-f="potionTarget" min="0" step="5" title="Docelowa liczba sztuk w torbach"><button data-k="potBuy">Kup</button></div>
-        <div class="kr-potlist" data-k="potList" hidden></div>
-        <div class="kr-sublabel">Sprzedaj loot (torby 1–3)</div>
-        <div class="kr-row"><select data-set-f="sellNpc" data-k="sellNpc" title="U kogo sprzedawać"></select><button data-k="sellLoot">Sprzedaj</button></div>
-        <div class="kr-sublabel">Zatrzymaj złoto</div>
-        <div class="kr-row"><input data-set-f="transferKeep" placeholder="np. 100k" title="Przy rozpoczęciu kafelka postać zostawia sobie tyle złota, nadwyżka idzie do postaci z karty Milioner (k = tys., m = mln, g = mld; puste = nie wysyłaj)"></div>
-        <div class="kr-sublabel">Ekwipunek</div>
-        <div class="kr-eq-top">
-          <div class="kr-eq-grid" data-k="eqGrid"></div>
-          <div class="kr-eq-side" data-k="eqSide"></div>
+  <div class="kr-tabs">
+    <button data-tab="prog" title="Program">🤖</button><button data-tab="sets" title="Zestawy">⚔️</button><button data-tab="routes" title="Trasy">🗺️</button><button data-tab="tasks" title="Zadania">📜</button><button data-tab="mil" title="Milioner">💰</button><button data-tab="cfg" title="Ustawienia">⚙️</button>
+  </div>
+
+  <div class="kr-pane" data-pane="prog">
+    <div class="kr-row"><select data-k="pbPick" title="Program"></select><button data-k="progEdit" title="Edytuj program">✎</button></div>
+    <div data-k="progEditBox" hidden>
+      <div class="kr-row"><input data-k="pbName" placeholder="nazwa programu" title="Nazwa programu"><button data-k="pbNew" title="Nowy program">＋</button><button data-k="pbDup" title="Duplikuj program">⧉</button><button data-k="pbDel" title="Usuń program">🗑</button><button data-k="pbExport" title="Eksport do pliku">⤓</button><button data-k="pbImport" title="Import z pliku">⤒</button></div>
+      <input type="file" accept=".json,application/json" multiple data-k="pbFile" hidden>
+      <div class="kr-exp-list" data-k="expList"></div>
+      <div class="kr-help-row"><button class="kr-link" data-k="expAdd" title="Dodaj krok">＋ krok</button><span class="kr-spacer"></span><span class="kr-hint" data-k="expHint"></span></div>
+    </div>
+    <div class="kr-btns"><button class="kr-go" data-k="start" title="Start">▶</button><button class="kr-stop" data-k="stop" title="Stop">■</button></div>
+    <div class="kr-cur" data-k="curStep"></div>
+    <div class="kr-status"><span data-k="state"></span><span data-k="map"></span></div>
+    <div class="kr-inv" data-k="inv"></div>
+    <details data-k="logBox" open><summary>📃 Logi</summary>
+      <div class="kr-logbtns"><button data-k="logCopy" title="Kopiuj log do schowka">⧉</button><button data-k="logClear" title="Wyczyść log">🗑</button></div>
+      <div class="kr-log" data-k="log"></div>
+    </details>
+    <details data-k="pvBox"><summary>🧭 Podgląd mapy</summary>
+      <div class="kr-pv">
+        <div class="kr-pv-maps" data-k="pvMaps"></div>
+        <div class="kr-pv-right"><canvas data-k="pvCanvas"></canvas><div class="kr-hint" data-k="pvInfo"></div>
+          <div class="kr-pv-leg"><i style="background:#e05555"></i>cel <i style="background:#c8921e"></i>kolejka <i style="background:#6b7280"></i>poza planem <i style="background:#3c9a4a"></i>wyjście <i style="background:#3d7bd9"></i>przejście</div>
         </div>
       </div>
-    </div>
-    <div class="kr-eq-pick" data-k="eqPick" hidden>
-      <div class="kr-row"><input data-k="eqSearch" placeholder="Szukaj…"><input type="number" data-k="eqLvlMin" placeholder="lvl od" min="0"><input type="number" data-k="eqLvlMax" placeholder="do" min="0"></div>
-      <div class="kr-eq-list" data-k="eqList"></div>
-    </div>
-    <div class="kr-btns"><button data-k="eqBuy">Kup</button><button data-k="eqEquip">Ekwipuj</button></div>
-    <div class="kr-btns"><button data-k="eqExport" title="Pobierz zestaw (z Walką) jako <nazwa>.json do katalogu sets/<profesja>/">Eksport</button><button data-k="eqImport" title="Wczytaj zestawy z plików .json (zestaw o tej samej nazwie zostanie nadpisany)">Import</button></div>
+    </details>
+  </div>
+
+  <div class="kr-pane" data-pane="sets" hidden>
+    <div class="kr-row"><div class="kr-eq-tabs" data-k="eqTabs"></div><button data-k="eqExport" title="Eksport zestawu do pliku (sets/&lt;profesja&gt;/)">⤓</button><button data-k="eqImport" title="Import zestawów z plików">⤒</button></div>
     <input type="file" accept=".json,application/json" multiple data-k="eqFile" hidden>
-    <details data-k="skBox"><summary data-k="skLabel">Umiejętności</summary>
+    <label class="kr-row kr-set-lvl">Poziom zestawu <input type="number" data-set-f="lvl" min="1" max="500"><button class="kr-info" data-help="setlvl" title="Legenda">i</button></label>
+    <div class="kr-hint" data-help-body="setlvl" hidden>Bot wybiera zestaw o najwyższym poziomie, ale nie wyższym niż poziom postaci, z zaznaczonym zastosowaniem dla wykonywanego kroku. Poziom ogranicza też przedmioty i punkty umiejętności (poziom − 24).</div>
+    <details data-k="healBox"><summary>🧪 Leczenie</summary>
+      <div class="kr-row"><button class="kr-pot" data-k="potPick" title="Wybierz miksturę"></button><input type="number" data-set-f="potionTarget" min="0" step="5" title="Docelowa liczba mikstur w torbach"><button data-k="potBuy" title="Kup teraz">🛒</button></div>
+      <div class="kr-potlist" data-k="potList" hidden></div>
+    </details>
+    <details data-k="eqBox"><summary>🛡️ Ekwipunek</summary>
+      <div class="kr-eq-top">
+        <div class="kr-eq-grid" data-k="eqGrid"></div>
+        <div class="kr-eq-side" data-k="eqSide"></div>
+      </div>
+      <div class="kr-eq-pick" data-k="eqPick" hidden>
+        <div class="kr-row"><input data-k="eqSearch" placeholder="🔍"><input type="number" data-k="eqLvlMin" placeholder="lvl od" min="0"><input type="number" data-k="eqLvlMax" placeholder="do" min="0"></div>
+        <div class="kr-eq-list" data-k="eqList"></div>
+      </div>
+      <div class="kr-btns"><button data-k="eqBuy" title="Kup brakujące">🛒</button><button data-k="eqEquip" title="Załóż z toreb">🧥</button></div>
+      <div class="kr-row" title="Sprzedaż łupu (torby 1–3)">💰 <select data-set-f="sellNpc" data-k="sellNpc" title="U kogo sprzedawać"></select><button data-k="sellLoot" title="Sprzedaj teraz">▶</button></div>
+    </details>
+    <details data-k="skBox"><summary data-k="skLabel">✨ Umiejętności</summary>
       <div data-k="skTree"></div>
     </details>
-    <details data-k="cbBox"><summary data-k="cbLabel">Walka</summary>
-    <label class="kr-check"><input type="checkbox" data-combat="enabled"> Włączone – steruje każdą walką (także ręczną)</label>
-    <label class="kr-row">Tryb <select data-combat="speed">
-      <option value="slow">SLOW – akcja przy 1 s na timerze</option>
-      <option value="fast">FAST – akcja od razu po pojawieniu timera</option>
-    </select></label>
-    <div class="kr-cb-grid kr-cb-head"><span>Umiejętność</span><span>Cel</span><span title="Własny CD w turach">CD</span><span></span></div>
-    <div class="kr-cb-list" data-k="cbList"></div>
-    <div class="kr-help-row"><button data-k="cbAdd" title="Dodaj umiejętność">＋ Dodaj</button><span class="kr-spacer"></span><button data-k="cbExport" title="Zapisz ustawienia mistrzostwa walk do pliku .json (i skopiuj do schowka)">Eksport</button><button data-k="cbImport" title="Wczytaj ustawienia mistrzostwa walk z pliku .json">Import</button><input type="file" accept=".json,application/json" data-k="cbImportFile" hidden></div>
-    <div class="kr-help-row"><button class="kr-info" data-help="combat" title="Pokaż / ukryj instrukcję">i</button></div>
-    <div class="kr-hint" data-help-body="combat" hidden>Lista umiejętności wczytuje się z gry (getAllBattleSkill) przy pierwszej walce; użycie = kliknięcie kafelka na dowolnej belce.
-      Wpisy z warunkami (złoty pasek, ＋ dodaje warunek, max 5 – wszystkie muszą być spełnione) mają pierwszeństwo
-      przed sekwencją; wpisy bez warunków tworzą sekwencję. „lub” łączy warunek z poprzednim (złota ramka),
-      „i” zaczyna nową grupę – np. (A lub B) i C. Umiejętności na CD i szare są pomijane.
-      „Cel umiejętności” (albo ta sama grupa co cel) zawęża wybór celu, np. leczenie sojusznika z HP ≤ 30%.
-      Inna grupa działa jako bramka, np. czar w przeciwnika, gdy dowolny sojusznik ma HP ≤ 20%.
-      „Cel poza zasięgiem” = szary „Zwykły atak” (jedyny bez kosztu) albo przeciwnik w za dalekim rzędzie – np. dla kroku w przód.</div>
-    <div class="kr-cb-info" data-k="cbInfo"></div>
-  
+    <details data-k="cbBox"><summary data-k="cbLabel">🗡️ Walka</summary>
+      <label class="kr-check"><input type="checkbox" data-combat="enabled"> Włączona</label>
+      <label class="kr-row">Tryb <select data-combat="speed">
+        <option value="slow">SLOW</option>
+        <option value="fast">FAST</option>
+      </select><button class="kr-info" data-help="combat" title="Legenda">i</button></label>
+      <div class="kr-hint" data-help-body="combat" hidden>Walka steruje każdą walką (także ręczną). SLOW – akcja przy 1 s na timerze, FAST – od razu po pojawieniu timera.
+        Lista umiejętności: z gry (pierwsza walka) i z drzewka profesji. Wpisy z warunkami (złoty pasek, ＋ dodaje warunek, max 5 – wszystkie muszą być spełnione) mają pierwszeństwo
+        przed sekwencją; wpisy bez warunków tworzą sekwencję. „lub” łączy warunek z poprzednim (złota ramka), „i” zaczyna nową grupę – np. (A lub B) i C. Umiejętności na CD i szare są pomijane.
+        „Cel umiejętności” zawęża wybór celu, np. leczenie sojusznika z HP ≤ 30%; inna grupa działa jako bramka. „Cel poza zasięgiem” – np. dla kroku w przód.</div>
+      <div class="kr-cb-grid kr-cb-head"><span>Umiejętność</span><span>Cel</span><span title="Własny CD w turach">CD</span><span></span></div>
+      <div class="kr-cb-list" data-k="cbList"></div>
+      <div class="kr-help-row"><button data-k="cbAdd" title="Dodaj umiejętność">＋</button><span class="kr-spacer"></span><button data-k="cbExport" title="Eksport Walki do pliku">⤓</button><button data-k="cbImport" title="Import Walki z pliku">⤒</button><input type="file" accept=".json,application/json" data-k="cbImportFile" hidden></div>
+      <div class="kr-cb-info" data-k="cbInfo"></div>
     </details>
-  </details>
-  <details data-k="rtBox"><summary>Trasy</summary>
-    <div class="kr-row"><select data-k="rtPick" title="Trasy z repo (routes/) i własne"></select></div>
-    <div class="kr-btns"><button data-k="rtNew" title="Nowa pusta trasa">Nowa</button><button data-k="rtCopy">Kopiuj</button><button data-k="rtDel" title="Usuń trasę własną">Usuń</button></div>
-    <div class="kr-btns"><button data-k="rtExport" title="Pobierz trasę jako <nazwa>.json do katalogu routes/">Eksport</button><button data-k="rtImport" title="Wczytaj trasy z plików .json">Import</button></div>
-    <input type="file" accept=".json,application/json" multiple data-k="rtFile" hidden>
+    <details data-k="kBox"><summary data-k="kLabel">🎯 Dobijanie</summary>
+      <div class="kr-row"><label class="kr-check"><input type="checkbox" data-killer="enabled"> Włączone</label><button class="kr-info" data-help="killer" title="Legenda">i</button></div>
+      <div class="kr-row">lvl <input class="kr-num" type="number" min="0" max="500" data-killer="lvlMin"> – <input class="kr-num" type="number" min="0" max="500" data-killer="lvlMax"></div>
+      <div class="kr-tags" data-k="kTags"></div>
+      <div class="kr-hint" data-help-body="killer" hidden>Atakuje wrogów w zasięgu 2 kratek, tylko na mapach PvP. Kolejność: wyklucz gracza › dołącz gracza › wyklucz klan › dołącz klan › wróg w zakresie poziomu. Gracze już walczący są pomijani. Ustawienia należą do zestawu.</div>
+      <div class="kr-cb-info" data-k="kInfo"></div>
+    </details>
+    <details data-k="useBox"><summary>🧩 Zastosowanie</summary>
+      <div class="kr-use" data-k="useList"></div>
+    </details>
+  </div>
+
+  <div class="kr-pane" data-pane="routes" hidden>
+    <div class="kr-row"><select data-k="rtPick" title="Trasa"></select><button data-k="rtNew" title="Nowa trasa">＋</button><button data-k="rtDel" title="Usuń trasę">🗑</button><button data-k="rtCopy" title="Duplikuj trasę">⧉</button></div>
     <div data-k="rtProps">
       <label class="kr-row">Nazwa <input data-k="rtName"></label>
-      <div class="kr-rt-props"><span>lvl</span><input type="number" min="0" max="500" data-k="rtLvlMin" placeholder="od"><span>–</span><input type="number" min="0" max="500" data-k="rtLvlMax" placeholder="do"><span>maks. grupa</span><input type="number" min="0" max="20" data-k="rtGroup" placeholder="∞" title="Największa grupa mobów do bicia; większe bot omija (puste = bez limitu)"></div>
-      <label class="kr-check"><input type="checkbox" data-k="rtElites"> Bij elity</label>
+      <div class="kr-rt-props"><span>lvl min</span><input type="number" min="0" max="500" data-k="rtLvlMin"><span>max</span><input type="number" min="0" max="500" data-k="rtLvlMax"><span>maks. grupa</span><input type="number" min="0" max="20" data-k="rtGroup" placeholder="∞" title="Największa grupa mobów do bicia (puste = bez limitu)"></div>
+      <div class="kr-row"><label class="kr-check"><input type="checkbox" data-k="rtElites"> elity</label><label class="kr-check"><input type="checkbox" data-k="rtE2"> E2</label></div>
     </div>
     <div class="kr-rt-maps" data-k="rtMaps"></div>
-    <div data-k="rtAdd"><div class="kr-hint" data-k="rtNextLbl"></div><div class="kr-row"><select data-k="rtNext"></select><button data-k="rtAddBtn">Dodaj mapę</button></div></div>
+    <div data-k="rtAdd"><div class="kr-hint" data-k="rtNextLbl"></div><div class="kr-row"><select data-k="rtNext"></select><button data-k="rtAddBtn" title="Dodaj mapę">＋</button></div></div>
     <div class="kr-hint" data-k="rtHint"></div>
-  </details>
-  <details data-k="tkBox"><summary>Zadania</summary>
-    <div class="kr-row"><select data-k="tkPick" title="Zadania (wspólne dla postaci)"></select></div>
-    <div class="kr-btns"><button data-k="tkNew" title="Nowe puste zadanie">Nowe</button><button data-k="tkDel" title="Usuń zadanie">Usuń</button><button data-k="tkReset" title="Zeruj postęp tego zadania dla tej postaci">Od nowa</button></div>
-    <div class="kr-btns"><button data-k="tkExport" title="Pobierz logikę zadania jako plik <nazwa zadania>.json (do katalogu quests/)">Eksport</button><button data-k="tkImport" title="Wczytaj zadania z plików .json (zadanie o tej samej nazwie zostanie nadpisane)">Import</button></div>
-    <input type="file" accept=".json,application/json" multiple data-k="tkFile" hidden>
+    <div class="kr-btns"><button data-k="rtImport" title="Import tras z plików">⤒</button><button data-k="rtExport" title="Eksport trasy do pliku (routes/)">⤓</button></div>
+    <input type="file" accept=".json,application/json" multiple data-k="rtFile" hidden>
+  </div>
+
+  <div class="kr-pane" data-pane="tasks" hidden>
+    <div class="kr-row"><select data-k="tkPick" title="Zadanie"></select><button data-k="tkNew" title="Nowe zadanie">＋</button><button data-k="tkDel" title="Usuń zadanie">🗑</button><button data-k="tkReset" title="Od nowa – zeruj postęp tej postaci">↺</button></div>
     <div data-k="tkProps">
-      <label class="kr-row">Nazwa <input data-k="tkName"></label>
-      <div class="kr-row" title="Minimalny zestaw zadania: na starcie kafelka bot bierze najwyższy zestaw ≤ poziom postaci, nie niższy niż ten"><span class="kr-tk-lbl">Min. zestaw</span><select data-k="tkSet"></select></div>
-      <div class="kr-row" title="Zadanie z dziennika gry: gdy gra uzna je za ukończone, zadanie bota jest zrobione"><span class="kr-tk-lbl">Z gry</span><select data-k="tkQuest"></select><button data-k="tkQuestLoad" title="Wczytaj aktywne i dostępne zadania z dziennika gry">⟳</button></div>
+      <div class="kr-row" title="Zadanie z dziennika gry – jego nazwa jest nazwą zadania"><select data-k="tkQuest"></select><button data-k="tkQuestLoad" title="Wczytaj zadania z dziennika gry">⟳</button></div>
       <div class="kr-tk-steps" data-k="tkSteps"></div>
-      <div class="kr-btns"><button data-k="tkAddGoto">＋ Idź do</button><button data-k="tkAddTalk">＋ Porozmawiaj</button><button data-k="tkAddKill">＋ Zabij</button><button data-k="tkAddGather">＋ Zbierz</button></div>
+      <div class="kr-help-row"><button class="kr-link" data-k="tkAddStep" title="Dodaj krok (Idź do)">＋ krok</button></div>
     </div>
     <div class="kr-hint" data-k="tkHint"></div>
-  </details>
+    <div class="kr-btns"><button data-k="tkImport" title="Import zadań z plików">⤒</button><button data-k="tkExport" title="Eksport zadania do pliku (quests/)">⤓</button></div>
+    <input type="file" accept=".json,application/json" multiple data-k="tkFile" hidden>
   </div>
-  <div class="kr-pane" data-pane="collect" hidden>
-    <div class="kr-sublabel">Bieżąca mapa</div>
-    <div class="kr-btns"><button data-k="colNpcs" title="Zapisz NPC, potwory, rośliny i respawny herosów z mapy">NPC z mapy</button><button data-k="colGws" title="Zapisz przejścia mapy i dokąd prowadzą">Przejścia mapy</button><button data-k="colMine" title="Zapisz wszystkie obiekty bieżącej mapy (kopalnia, pułapka, przedsionek) i pobierz plik kraken-kopalnie.json ze wszystkimi zebranymi mapami kopalń">Pobierz kopalnię</button></div>
-    <label class="kr-check" title="Po wejściu na mapę: NPC, potwory, rośliny, przejścia, respawny herosów i strefy; dodatkowo każdy otwarty sklep, którego jeszcze nie ma w zebranych"><input type="checkbox" data-k="colAuto"> Zbieraj automatycznie: NPC, potwory, rośliny, przejścia, respawny herosów i nowe sklepy</label>
-    <div class="kr-sublabel">Sklep</div>
-    <div class="kr-btns"><button data-k="shopCollect" title="Zapisz towary otwartego sklepu">Zbierz otwarty sklep</button></div>
-    <div class="kr-sublabel">Wspólne dane z repo</div>
-    <div class="kr-btns"><button data-k="repoSync" title="Pobierz ponownie zadania, trasy i zestawy (tej profesji) z repozytorium – nadpisuje lokalne o tych samych nazwach">Odśwież z repo</button></div>
-    <div class="kr-sublabel">Zebrane dane</div>
-    <div class="kr-hint" data-k="colInfo"></div>
-    <div class="kr-sublabel">Profil profesji (zestawy, programy, Walka)</div>
-    <div class="kr-btns"><button data-k="profExport" title="Pobierz ustawienia tej postaci jako profil profesji">Eksport</button><button data-k="profImport" title="Wczytaj profil z pliku">Import</button><button data-k="profPreset" title="Wczytaj profil wbudowany w skrypt dla tej profesji">Domyślne</button></div>
-    <input type="file" accept=".json,application/json" data-k="profFile" hidden>
-    <div class="kr-sublabel">Umiejętności</div>
-    <div class="kr-btns"><button data-k="skillTreeDl" title="Otwiera okno U i pobiera drzewko umiejętności profesji tej postaci jako skills-&lt;profesja&gt;.json">Drzewko umiejętności</button></div>
-    <div class="kr-btns"><button data-k="colDownload" title="Eksport zbiorczy: wszystkie zebrane mapy i sklepy w jednym pliku kraken-dane.json">Eksport zbiorczy</button><button data-k="colClear" title="Usuń zebrane mapy i sklepy z pamięci przeglądarki">Wyczyść</button></div>
-  </div>
-  <div class="kr-pane" data-pane="killer" hidden>
-    <div class="kr-row"><label class="kr-check"><input type="checkbox" data-killer="enabled"> Włączona – atakuje wrogów w zasięgu 2 kratek (tylko PvP)</label><button class="kr-info" data-help="killer" title="Pokaż / ukryj instrukcję">i</button></div>
-    <div class="kr-row">Poziom od <input class="kr-num" type="number" min="0" max="500" data-killer="lvlMin">
-      do <input class="kr-num" type="number" min="0" max="500" data-killer="lvlMax"></div>
-    <div class="kr-tags" data-k="kTags"></div>
-    <div class="kr-hint" data-help-body="killer" hidden>Kolejność: wyklucz gracza › dołącz gracza › wyklucz klan › dołącz klan › wróg w zakresie poziomu.
-      Gracze już walczący są pomijani. Dobijarka działa niezależnie od bota.</div>
-    <div class="kr-cb-info" data-k="kInfo"></div>
-  </div>
-  <div class="kr-pane" data-pane="milioner" hidden>
-    <label class="kr-check"><input type="checkbox" data-mil="enabled"> Włączony – przy rozpoczęciu każdego kafelka</label>
-    <div class="kr-sublabel">Sprzedaż na aukcji (Torneg, Aukcjoner)</div>
-    <label class="kr-check"><input type="checkbox" data-mil="sellUnique"> Unikatowe</label>
-    <label class="kr-check"><input type="checkbox" data-mil="sellHeroic"> Heroiczne</label>
-    <label class="kr-check"><input type="checkbox" data-mil="sellLegendary"> Legendarne</label>
-    <div class="kr-btns"><button data-k="aucRun" title="Wystaw teraz zaznaczone rzadkości z toreb">Wystaw teraz</button></div>
-    <div class="kr-hint">Cena = najniższa oferta „kup teraz” na aukcjach minus 1k, sprawdzana przy każdym wystawianiu (pomijane skrajne: unikat 300k–100m, heroik 5m–500m, legenda 500m–100g); bez ofert – wzór: unikat lvl×10k+1m, heroik lvl×100k+5m, legenda lvl×10m+1g. Zaznaczone rzadkości nie idą pocztą.</div>
-    <div class="kr-sublabel">Transfer</div>
-    <div class="kr-sublabel">Złoto</div>
-    <label class="kr-row">Nadwyżka do <input data-mil="goldNick" placeholder="Postać" title="Ponad kwotę „Zatrzymaj złoto” z zestawu kafelka"></label>
-    <div class="kr-sublabel">Niezwiązane przedmioty z toreb</div>
-    <label class="kr-row">Unikaty do <input data-mil="uniqueNick" placeholder="Postać"></label>
-    <label class="kr-row">Heroiki do <input data-mil="heroicNick" placeholder="Postać"></label>
-    <label class="kr-row">Legendy do <input data-mil="legendaryNick" placeholder="Postać"></label>
-    <div class="kr-btns"><button data-k="milRun" title="Wyślij teraz wg zestawu wybranego w Zestawach">Wyślij teraz</button></div>
-    <div class="kr-hint">Włączony: na początku każdego kafelka bot idzie do skrzynki pocztowej (najbliższe miasto) i wysyła przedmioty oraz nadwyżkę złota; po każdej sprzedaży lootu – same przedmioty. Puste pole = nie wysyłaj. Przedmioty związane z właścicielem i założone zostają.</div>
-  </div>
-  <details data-k="logBox" open><summary>Log</summary>
-    <div class="kr-logbtns"><button data-k="logCopy" title="Skopiuj cały log do schowka">Kopiuj</button><button data-k="logClear" title="Wyczyść log">Wyczyść</button></div>
-    <div class="kr-log" data-k="log"></div>
-  </details>
-  <details data-k="pvBox"><summary>Podgląd expa</summary>
-    <div class="kr-pv">
-      <div class="kr-pv-maps" data-k="pvMaps"></div>
-      <div class="kr-pv-right"><canvas data-k="pvCanvas"></canvas><div class="kr-hint" data-k="pvInfo"></div>
-        <div class="kr-pv-leg"><i style="background:#e05555"></i>cel <i style="background:#c8921e"></i>kolejka <i style="background:#6b7280"></i>poza planem <i style="background:#3c9a4a"></i>wyjście <i style="background:#3d7bd9"></i>przejście</div>
+
+  <div class="kr-pane" data-pane="mil" hidden>
+    <details open><summary>🏛️ Aukcje</summary>
+      <div class="kr-row"><label class="kr-check"><input type="checkbox" data-mil="auction"> Włączone</label><button data-k="aucRun" title="Wystaw teraz">🏷️</button><button class="kr-info" data-help="auc" title="Legenda">i</button></div>
+      <div class="kr-row"><label class="kr-check kr-r-uni"><input type="checkbox" data-mil="sellUnique"> unikat</label><label class="kr-check kr-r-her"><input type="checkbox" data-mil="sellHeroic"> heroik</label><label class="kr-check kr-r-leg"><input type="checkbox" data-mil="sellLegendary"> legenda</label></div>
+      <div class="kr-hint" data-help-body="auc" hidden>Wektory sprzedaży: cena, gdy przedmiotu nie ma na aukcjach = X × poziom przedmiotu + wartość bazowa.
+        Reguły sprzedaży: gdy przedmiot jest na aukcjach – najniższa oferta minus „obniż o”, ale nie poniżej minimum. Stałe ceny mają pierwszeństwo przed wszystkim.
+        Zaznaczone rzadkości nie idą pocztą.</div>
+      <div class="kr-sublabel">Wektory sprzedaży</div>
+      <div class="kr-mil-grid" data-k="milVec"></div>
+      <div class="kr-sublabel">Reguły sprzedaży</div>
+      <div class="kr-row">obniż o <input class="kr-num" data-mil="undercut" placeholder="1k" title="O ile taniej od najniższej oferty"></div>
+      <div class="kr-mil-grid" data-k="milFloor"></div>
+      <div class="kr-sublabel">Stałe ceny</div>
+      <div data-k="milFixed"></div>
+      <div class="kr-row"><input data-k="milFixName" placeholder="przedmiot"><input class="kr-num" data-k="milFixPrice" placeholder="cena"><button data-k="milFixAdd" title="Dodaj stałą cenę">＋</button></div>
+    </details>
+    <details open><summary>📮 Transfer</summary>
+      <div class="kr-row"><label class="kr-check"><input type="checkbox" data-mil="enabled"> Włączony</label><button data-k="milRun" title="Wyślij teraz">📤</button><button class="kr-info" data-help="mil" title="Legenda">i</button></div>
+      <div class="kr-hint" data-help-body="mil" hidden>Na początku każdego kroku programu bot idzie do skrzynki pocztowej i wysyła przedmioty oraz złoto ponad podaną kwotę; po każdej sprzedaży łupu – same przedmioty. Puste pole postaci = nie wysyłaj. Przedmioty związane i założone zostają.</div>
+      <div class="kr-mil-tr">
+        <span>🪙 Złoto powyżej</span><input data-mil="goldKeep" placeholder="100k"><input data-mil="goldNick" placeholder="postać">
+        <span class="kr-r-uni">Unikat</span><span></span><input data-mil="uniqueNick" placeholder="postać">
+        <span class="kr-r-her">Heroiczne</span><span></span><input data-mil="heroicNick" placeholder="postać">
+        <span class="kr-r-leg">Legendarne</span><span></span><input data-mil="legendaryNick" placeholder="postać">
       </div>
-    </div>
-  </details>
+    </details>
+  </div>
+
+  <div class="kr-pane" data-pane="cfg" hidden>
+    <details open><summary>🔔 Powiadomienia</summary>
+      <label class="kr-row">Discord <input type="text" class="kr-secret" data-global="discordWebhook" placeholder="URL webhooka"><button class="kr-info" data-help="notif" title="Legenda">i</button></label>
+      <div class="kr-hint" data-help-body="notif" hidden>Łupy: nowy przedmiot zaznaczonej rzadkości w torbach – na Discord z ikonką, postacią, mapą (po E2 także statystyki łupu E2). Herosi: alert po znalezieniu herosa. Adres zostaje tylko w tej przeglądarce.</div>
+      <div class="kr-row"><span>łupy:</span><label class="kr-check kr-r-uni"><input type="checkbox" data-global="lootUnique"> unikat</label><label class="kr-check kr-r-her"><input type="checkbox" data-global="lootHeroic"> heroik</label><label class="kr-check kr-r-leg"><input type="checkbox" data-global="lootLegendary"> legenda</label></div>
+      <label class="kr-check"><input type="checkbox" data-global="herosAlert"> herosi</label>
+    </details>
+    <details open><summary>🧩 Zagadki</summary>
+      <label class="kr-check"><input type="checkbox" data-cfg="captchaAuto"> Rozwiązuj zagadki</label>
+    </details>
+    <details open><summary>🎁 Nagrody</summary>
+      <label class="kr-check"><input type="checkbox" data-cfg="newsRewards"> Odbieraj aktualności</label>
+      <label class="kr-check"><input type="checkbox" data-cfg="eventRewards"> Odbieraj kalendarz</label>
+    </details>
+  </div>
+  <datalist id="kraken-maps"></datalist>
 </div>`;
 
   function fillSelect(sel, options, value) {
@@ -12295,19 +12508,16 @@
       root.classList.toggle('kr-collapsed', !!ui.collapsed);
       this.showTab(ui.tab);
       this.setLogCollapsed(!!ui.logCollapsed);
-      this.k.skBox.open = !!ui.skOpen;
-      this.k.cbBox.open = !!ui.cbOpen;
-      this.k.cbBox.addEventListener('toggle', () => this.saveUi());
-      this.k.expBox.open = ui.expOpen !== false;
-      this.k.pvBox.open = !!ui.pvOpen;
-      this.k.rtBox.open = !!ui.rtOpen;
-      this.k.tkBox.open = !!ui.tkOpen;
-      for (const b of [this.k.expBox, this.k.pvBox]) {
-        b.addEventListener('toggle', () => {
+      const boxes = ['healBox', 'eqBox', 'skBox', 'cbBox', 'kBox', 'useBox', 'pvBox'];
+      for (const b of boxes) {
+        this.k[b].open = !!ui.open?.[b];
+        this.k[b].addEventListener('toggle', () => {
           this.saveUi();
-          if (b === this.k.pvBox) this.renderPreview();
+          if (b === 'pvBox') this.renderPreview();
+          if (b === 'eqBox' || b === 'skBox') this.renderSet();
         });
       }
+      this.k.progEditBox.hidden = !ui.progEdit;
 
       // Klawisze i kliknięcia w panelu nie mogą trafiać do gry (np. "q" wpisane w pole).
       for (const t of ['keydown', 'keyup', 'keypress', 'mousedown', 'click', 'wheel']) {
@@ -12781,64 +12991,6 @@
       for (const el of [k.eqSearch, k.eqLvlMin, k.eqLvlMax]) el.addEventListener('input', () => this.renderEqPick());
       k.eqBuy.addEventListener('click', () => Bot.runTask('zakupy', eqBuy));
       k.eqEquip.addEventListener('click', () => Bot.runTask('ekwipunek', eqEquip));
-      const info = () => {
-        k.colInfo.textContent = collectInfo();
-      };
-      k.shopCollect.addEventListener('click', () =>
-        collectShop().then(() => {
-          this.renderEqPick();
-          info();
-        })
-      );
-      k.colNpcs.addEventListener('click', () => {
-        collectNpcs();
-        collectExtras();
-        info();
-      });
-      k.colGws.addEventListener('click', () => {
-        collectGateways();
-        info();
-      });
-      k.colMine.addEventListener('click', () => {
-        Mine.download();
-        info();
-      });
-      k.colDownload.addEventListener('click', downloadData);
-      k.skillTreeDl.addEventListener('click', () => Bot.runTask('drzewko umiejętności', exportSkillTree));
-      k.profExport.addEventListener('click', exportProfile);
-      k.profImport.addEventListener('click', () => k.profFile.click());
-      k.profFile.addEventListener('change', () => {
-        const f = k.profFile.files && k.profFile.files[0];
-        if (!f) return;
-        const fr = new FileReader();
-        fr.onload = () => {
-          try {
-            useProfile(JSON.parse(String(fr.result)), f.name);
-          } catch (e) {
-            log(`❌ Import profilu: ${e.message}`);
-          }
-          k.profFile.value = '';
-        };
-        fr.readAsText(f);
-      });
-      k.profPreset.addEventListener('click', () => {
-        const prof = Game.prof();
-        const p = PROF_PRESETS[prof];
-        if (!p) {
-          log(`ℹ️ Brak wbudowanego profilu dla profesji: ${SKILL_PROFS[prof] || prof || '?'}`);
-          return;
-        }
-        useProfile(p, 'wbudowany');
-      });
-      k.repoSync.addEventListener('click', async () => {
-        k.repoSync.disabled = true;
-        try {
-          await RepoData.sync(true);
-          this.afterRepoSync();
-        } finally {
-          k.repoSync.disabled = false;
-        }
-      });
       const readFiles = async (input, fn) => {
         for (const f of [...(input.files || [])]) {
           try {
@@ -12869,52 +13021,25 @@
         this.renderRoutes();
         this.renderExp();
       });
-      k.colClear.addEventListener('click', () => {
-        if (!window.confirm('Usunąć zebrane mapy i sklepy z pamięci przeglądarki?')) return;
-        localStorage.removeItem(MAPS_KEY);
-        localStorage.removeItem(SHOPS_KEY);
-        Eq._cat = null;
-        log('🗑️ Wyczyszczono zebrane dane');
-        info();
-      });
-      try {
-        k.colAuto.checked = localStorage.getItem(AUTO_COLLECT_KEY) === '1';
-      } catch (_) {}
-      k.colAuto.addEventListener('change', () => {
-        try {
-          localStorage.setItem(AUTO_COLLECT_KEY, k.colAuto.checked ? '1' : '0');
-        } catch (_) {}
-        autoCollectFor = '';
-        log(k.colAuto.checked ? '📥 Automatyczne zbieranie map włączone' : '📥 Automatyczne zbieranie map wyłączone');
-      });
-      info();
     },
 
-    // Siatka programów 1–20 (2×10): wybrany do edycji, z kafelkami, uruchomiony.
+    // Lista programów = przebiegi; „Zero to Hero” na górze i tylko do odczytu.
     renderProgGrid() {
       const k = this.k;
       const cfg = Bot.cfg;
-      const running = Bot.running() && Run.progIdx != null ? Run.progIdx : -1;
-      if (k.progGrid.children.length !== PROGRAMS_N) {
-        k.progGrid.textContent = '';
-        for (let i = 0; i < PROGRAMS_N; i++) {
-          const b = document.createElement('button');
-          b.textContent = String(i + 1);
-          b.dataset.prog = i;
-          k.progGrid.appendChild(b);
-        }
+      const prog = cfg.programs[cfg.progIdx] || {};
+      const names = Object.keys(Playbooks.all());
+      if (prog.name && !names.includes(prog.name)) names.push(prog.name);
+      names.sort((a, b) => (b === DEFAULT_PLAYBOOK) - (a === DEFAULT_PLAYBOOK) || a.localeCompare(b, 'pl'));
+      const sig = JSON.stringify([names, prog.name]);
+      if (document.activeElement !== k.pbPick && this.pbSig !== sig) {
+        this.pbSig = sig;
+        fillSelect(k.pbPick, names.length ? names.map((n) => [n, n === DEFAULT_PLAYBOOK ? `🔒 ${n}` : n]) : [['', '— brak programów —']], prog.name || '');
       }
-      [...k.progGrid.children].forEach((b, i) => {
-        b.classList.toggle('on', i === cfg.progIdx);
-        b.classList.toggle('has', cfg.programs[i].tiles.length > 0);
-        b.classList.toggle('run', i === running);
-        b.title = `Program ${i + 1}${cfg.programs[i].name ? ` „${cfg.programs[i].name}”` : ''}: ${cfg.programs[i].tiles.length} kafelków${i === running ? ' (uruchomiony)' : ''}`;
-      });
-      const prog = cfg.programs[cfg.progIdx];
-      k.progLabel.textContent = `Program ${cfg.progIdx + 1}${prog.name ? ` – ${prog.name}` : ' – kafelki'}`;
       if (document.activeElement !== k.pbName) k.pbName.value = prog.name || '';
-      const pbs = Object.keys(Playbooks.all()).sort((a, b) => a.localeCompare(b, 'pl'));
-      fillSelect(k.pbPick, pbs.length ? pbs.map((n) => [n, n]) : [['', '— brak przebiegów —']], pbs.includes(prog.name) ? prog.name : k.pbPick.value || pbs[0] || '');
+      const ro = this.progLocked();
+      k.progEdit.title = ro ? 'Kroki programu (tylko odczyt)' : 'Edytuj program';
+      for (const key of ['pbName', 'pbDel', 'pbImport']) k[key].disabled = ro;
     },
 
     renderExp() {
@@ -12990,7 +13115,7 @@
         tile.dataset.i = i;
         tile.dataset.uid = t.uid;
         const top = mk('div', 'kr-exp-top');
-        top.append(mk('span', 'kr-exp-no', String(i + 1)), select('type', TILE_TYPES, t.type), btn('up', '↑', 'W górę'), btn('down', '↓', 'W dół'), btn('del', '✕', 'Usuń kafelek'));
+        top.append(mk('span', 'kr-exp-no', String(i + 1)), select('type', TILE_TYPES, t.type), btn('up', '↑', 'W górę'), btn('down', '↓', 'W dół'), btn('del', '✕', 'Usuń krok'));
         tile.appendChild(top);
         const row = mk('div', 'kr-exp-bottom');
         if (t.type === 'exp') {
@@ -13000,14 +13125,14 @@
             t.exp = cur;
             Bot.saveCfg();
           }
-          row.append(select('exp', exps, t.exp), mk('span', '', 'min. zestaw'), select('setId', sets, t.setId));
+          row.append(select('exp', exps, t.exp));
         } else if (t.type === 'heros') {
           row.append(select('route', Object.keys(DATA.heros).map((n) => [n, n.replace(/_/g, ' ')]), t.route), check('noAttack', t.noAttack, 'tylko alarm'));
         } else if (t.type === 'e2') {
           const pos = (DATA.e2[t.e2Config] || {}).waiting_positions || [];
           row.append(select('e2Config', Object.keys(DATA.e2).map((n) => [n, n]), t.e2Config), select('e2Pos', pos.map((p, j) => [j, p.label || `(${p.x},${p.y})`]), t.e2Pos));
           const row2 = mk('div', 'kr-exp-bottom');
-          row2.append(check('e2Leader', t.e2Leader, 'lider'), check('e2Attacker', t.e2Attacker, 'atakuje E2'), mk('span', '', 'zestaw'), select('e2SetId', [['', '— aktywna zakładka —'], ...sets], t.e2SetId || ''));
+          row2.append(check('e2Leader', t.e2Leader, 'lider'), check('e2Attacker', t.e2Attacker, 'atakuje E2'));
           const row3 = mk('div', 'kr-exp-bottom');
           const worlds = [...new Set([WORLD, ...E2_WORLDS])].map((w) => [w === WORLD ? '' : w, w]);
           row3.append(check('e2Logout', t.e2Logout, 'logout'), mk('span', '', 'powrót na'), select('e2World', worlds, t.e2World || ''));
@@ -13019,15 +13144,10 @@
             t.taskId = tl[0].id;
             Bot.saveCfg();
           }
-          row.append(select('taskId', tl.length ? tl.map((x) => [x.id, x.name]) : [['', '— brak zadań (sekcja Zadania) —']], t.taskId));
+          row.append(select('taskId', tl.length ? tl.map((x) => [x.id, taskLabel(x)]) : [['', '— brak zadań —']], t.taskId));
           const tk = Tasks.get(t.taskId);
           if (tk) row.appendChild(mk('span', 'kr-hint', taskState(tk).done ? 'ukończone' : `krok ${Tasks.progress(tk.id).step + 1}`));
-          // Zestaw należy do zadania (plik quests/…: pole set) – tu tylko widoczny i zmieniany bez wchodzenia w Zadania.
-          if (tk) {
-            const row2 = mk('div', 'kr-exp-bottom');
-            row2.append(mk('span', '', 'min. zestaw'), select('taskSetId', [['', '— aktywna zakładka —'], ...sets], taskSetOf(tk)?.id || ''));
-            tile.append(row, row2);
-          }
+
         } else if (t.type === 'tutorial') {
           row.append(mk('span', 'kr-hint', `profesja: ${(TUT_PROFS.find(([k]) => k === tutProf()) || TUT_PROFS[0])[1]} (Ustawienia) · lvl 1–${TUT_MAX_LVL}`));
         } else if (t.type === 'mine') {
@@ -13079,13 +13199,13 @@
         }
         k.expList.appendChild(tile);
       });
-      k.expHint.textContent = tiles.length ? `${tiles.length} kafelków · pętla` : 'Pusty program';
+      k.expHint.textContent = tiles.length ? `${tiles.length} kroków · pętla` : 'Pusty program';
       // Program 1 („Zero to Hero”) – tylko do odczytu.
       const ro = this.progLocked();
       for (const el of $$('input, select, button, textarea', k.expList)) el.disabled = ro;
       for (const key of ['pbName', 'pbImport', 'pbLoad', 'pbPick', 'expAdd']) if (k[key]) k[key].disabled = ro;
       k.expList.classList.toggle('kr-ro', ro);
-      if (ro) k.expHint.textContent = `${tiles.length} kafelków · „${DEFAULT_PLAYBOOK}” – tylko do odczytu`;
+      if (ro) k.expHint.textContent = `${tiles.length} kroków · tylko do odczytu`;
       // Widoczne naraz dwa kafelki – wysokość listy wg dwóch pierwszych (mają różną liczbę warunków).
       const els = [...k.expList.children];
       const two = els.slice(0, 2).reduce((h, el) => h + el.offsetHeight, 0);
@@ -13096,7 +13216,7 @@
     },
 
     progLocked() {
-      return Bot.cfg.progIdx === 0;
+      return (Bot.cfg.programs[Bot.cfg.progIdx]?.name || '') === DEFAULT_PLAYBOOK;
     },
 
     markRunTile() {
@@ -13118,18 +13238,70 @@
       const cfg = Bot.cfg;
       const tiles = () => cfg.programs[cfg.progIdx].tiles;
       const save = () => {
+        saveProgramPlaybook(cfg.programs[cfg.progIdx]);
         Bot.saveCfg();
         this.renderExp();
       };
-      k.progGrid.addEventListener('click', (e) => {
-        const b = e.target.closest('[data-prog]');
-        if (!b) return;
-        cfg.progIdx = +b.dataset.prog;
-        save();
+      const pick = (name) => {
+        cfg.progIdx = programIdx(name);
+        this.pbSig = null;
+        Bot.saveCfg();
+        this.renderExp();
+      };
+      const askName = (def) => {
+        const n = (window.prompt('Nazwa programu', def) || '').trim();
+        if (!n) return null;
+        if (Playbooks.all()[n] || cfg.programs.some((p) => p.name === n)) {
+          log(`⚠️ Program „${n}” już istnieje`);
+          return null;
+        }
+        return n;
+      };
+      k.pbPick.addEventListener('change', () => {
+        k.pbPick.blur();
+        if (k.pbPick.value) pick(k.pbPick.value);
+      });
+      k.progEdit.addEventListener('click', () => {
+        k.progEditBox.hidden = !k.progEditBox.hidden;
+        this.saveUi();
+        this.renderExp();
+      });
+      k.pbNew.addEventListener('click', () => {
+        const n = askName(`Program ${Object.keys(Playbooks.all()).length + 1}`);
+        if (!n) return;
+        Playbooks.put({ kraken: 'przebieg', version: VERSION, name: n, tiles: [] });
+        pick(n);
+        k.progEditBox.hidden = false;
+      });
+      k.pbDup.addEventListener('click', () => {
+        const prog = cfg.programs[cfg.progIdx];
+        const n = askName(`${prog.name || 'Program'} (kopia)`);
+        if (!n) return;
+        Playbooks.put(playbookOf(prog, n));
+        pick(n);
+        log(`📋 Program „${n}” – kopia „${prog.name}”`);
+      });
+      k.pbDel.addEventListener('click', () => {
+        const prog = cfg.programs[cfg.progIdx];
+        if (this.progLocked() || !prog?.name || !window.confirm(`Usunąć program „${prog.name}”?`)) return;
+        Playbooks.remove(prog.name);
+        cfg.programs.splice(cfg.progIdx, 1);
+        if (!cfg.programs.length) cfg.programs.push({ name: '', tiles: [] });
+        pick(DEFAULT_PLAYBOOK);
       });
       k.pbName.addEventListener('change', () => {
         if (this.progLocked()) return;
-        cfg.programs[cfg.progIdx].name = k.pbName.value.trim();
+        const prog = cfg.programs[cfg.progIdx];
+        const n = k.pbName.value.trim();
+        if (!n || n === prog.name) return;
+        if (Playbooks.all()[n] || n === DEFAULT_PLAYBOOK) {
+          log(`⚠️ Program „${n}” już istnieje`);
+          k.pbName.value = prog.name;
+          return;
+        }
+        if (prog.name) Playbooks.remove(prog.name);
+        prog.name = n;
+        this.pbSig = null;
         save();
       });
       k.pbExport.addEventListener('click', () => exportPlaybook(cfg.programs[cfg.progIdx], cfg.progIdx));
@@ -13143,18 +13315,8 @@
           }
         }
         k.pbFile.value = '';
+        this.pbSig = null;
         this.renderExp();
-      });
-      k.pbLoad.addEventListener('click', () => {
-        if (this.progLocked()) return;
-        const data = Playbooks.all()[k.pbPick.value];
-        if (!data) return;
-        const prog = cfg.programs[cfg.progIdx];
-        if (prog.tiles.length && !window.confirm(`Zastąpić kafelki programu ${cfg.progIdx + 1} przebiegiem „${data.name}”?`)) return;
-        prog.name = data.name;
-        prog.tiles = tilesOfPlaybook(data);
-        log(`📋 Program ${cfg.progIdx + 1} ← przebieg „${data.name}” (${prog.tiles.length} kafelków)`);
-        save();
       });
       k.expAdd.addEventListener('click', () => {
         if (this.progLocked()) return;
@@ -13243,7 +13405,6 @@
       const custom = this.rtSel.startsWith('c:');
       const r = custom ? Routes.get(this.rtSel.slice(2)) : null;
       const exp = expByName(this.rtSel);
-      k.rtCopy.textContent = custom ? 'Duplikuj' : 'Kopiuj do własnych';
       k.rtDel.disabled = !custom;
       k.rtProps.hidden = !custom;
       k.rtAdd.hidden = !custom;
@@ -13253,6 +13414,7 @@
         k.rtLvlMax.value = r.lvlMax || '';
         k.rtGroup.value = r.maxGroup || '';
         k.rtElites.checked = r.elites !== false;
+        k.rtE2.checked = !!r.e2;
       }
       k.rtMaps.textContent = '';
       const maps = custom ? r.maps : (exp?.route || []).map((s) => ({ location: s.location, attack: s.attack !== false }));
@@ -13298,11 +13460,7 @@
         this.renderRoutes();
         this.renderExp();
       };
-      k.rtBox.addEventListener('toggle', () => {
-        if (k.rtBox.open) this.renderRoutes();
-        this.saveUi();
-      });
-      if (k.rtBox.open) this.renderRoutes();
+
       k.rtPick.addEventListener('change', () => {
         this.rtSel = k.rtPick.value;
         this.renderRoutes();
@@ -13316,7 +13474,7 @@
         const src = expByName(this.rtSel);
         if (!src) return;
         const r = newRoute(`${src.name}${src.custom ? ' (kopia)' : ''}`);
-        Object.assign(r, { lvlMin: src.min || 0, lvlMax: src.max < 999 ? src.max : 0, maxGroup: src.maxGroup, elites: src.elites, maps: src.route.map((s) => ({ location: s.location, attack: s.attack !== false })) });
+        Object.assign(r, { lvlMin: src.min || 0, lvlMax: src.max < 999 ? src.max : 0, maxGroup: src.maxGroup, elites: src.elites, e2: !!src.e2, maps: src.route.map((s) => ({ location: s.location, attack: s.attack !== false })) });
         this.rtSel = `c:${r.id}`;
         save(r);
         log(`🗺️ Trasa „${r.name}” dodana do własnych`);
@@ -13341,6 +13499,7 @@
       prop(k.rtLvlMax, 'lvlMax', true);
       prop(k.rtGroup, 'maxGroup', true);
       prop(k.rtElites, 'elites');
+      prop(k.rtE2, 'e2');
       k.rtAddBtn.addEventListener('click', () => {
         const r = cur();
         if (!r || !k.rtNext.value) return;
@@ -13374,8 +13533,9 @@
     afterRepoSync() {
       this.syncControls();
       this.renderExp();
-      if (this.k.rtBox.open) this.renderRoutes();
-      if (this.k.tkBox.open) this.renderTasks();
+      if (this.tab === 'routes') this.renderRoutes();
+      if (this.tab === 'tasks') this.renderTasks();
+      if (this.tab === 'mil') this.renderMil();
     },
 
     renderTasks() {
@@ -13388,7 +13548,7 @@
       };
       const list = Tasks.all();
       if (!this.tkSel || !Tasks.get(this.tkSel)) this.tkSel = list[0]?.id || '';
-      fillSelect(k.tkPick, list.length ? list.map((t) => [t.id, t.name]) : [['', '— brak zadań —']], this.tkSel);
+      fillSelect(k.tkPick, list.length ? list.map((t) => [t.id, taskLabel(t)]).sort((a, b) => a[1].localeCompare(b[1], 'pl', { numeric: true })) : [['', '— brak zadań —']], this.tkSel);
       const task = Tasks.get(this.tkSel);
       k.tkProps.hidden = !task;
       k.tkDel.disabled = !task;
@@ -13396,17 +13556,15 @@
       k.tkExport.disabled = !task;
       k.tkSteps.textContent = '';
       if (!task) {
-        k.tkHint.textContent = 'Utwórz zadanie i dodaj czynności; potem wybierz je w kafelku „Zadanie” programu.';
+        k.tkHint.textContent = 'Utwórz zadanie (＋), powiąż je z zadaniem z gry i dodaj kroki; potem wybierz je w kroku „Zadanie” programu.';
         return;
       }
-      if (document.activeElement !== k.tkName) k.tkName.value = task.name;
-      fillSelect(k.tkSet, [['', '— aktywna zakładka Zestawów —'], ...Bot.cfg.eqSets.map((x) => [x.id, x.name])], taskSetOf(task)?.id || '');
       // Lista zadań z gry: wczytane (⟳) + aktualnie przypisane.
       const qopts = new Map((this.tkQuests || []).map((q) => [String(q.id), q]));
       if (task.questId && !qopts.has(String(task.questId))) qopts.set(String(task.questId), { id: task.questId, name: task.questName || '' });
       fillSelect(
         k.tkQuest,
-        [['', '— bez powiązania —'], ...[...qopts.values()].map((q) => [String(q.id), `[${q.id}] ${q.name}${q.state ? ` · ${q.state}` : ''}`])],
+        [['', '— zadanie z gry (⟳) —'], ...[...qopts.values()].map((q) => [String(q.id), `${q.name}${q.state ? ` · ${q.state}` : ''}`])],
         task.questId ? String(task.questId) : ''
       );
       const pr = Tasks.progress(task.id);
@@ -13470,7 +13628,7 @@
         }
         k.tkSteps.appendChild(box);
       });
-      if (!task.steps.length) k.tkSteps.appendChild(mk('div', 'kr-hint', 'Brak czynności – dodaj pierwszą przyciskami poniżej'));
+      if (!task.steps.length) k.tkSteps.appendChild(mk('div', 'kr-hint', 'Brak kroków – dodaj pierwszy (＋ krok)'));
       const st = taskState(task);
       k.tkHint.textContent = `${Bot.charName}: ${st.done ? `zadanie ukończone${task.questId ? ' (wg gry)' : ''}` : `${task.steps.length ? `krok ${Math.min(pr.step + 1, task.steps.length)}/${task.steps.length}` : 'brak czynności'}${pr.count ? ` (zabite: ${pr.count})` : ''}${task.questId ? ` · w grze: ${st.game}` : ''}`}`;
     },
@@ -13483,11 +13641,7 @@
         if (rerender) this.renderTasks();
         this.renderExp();
       };
-      k.tkBox.addEventListener('toggle', () => {
-        if (k.tkBox.open) this.renderTasks();
-        this.saveUi();
-      });
-      if (k.tkBox.open) this.renderTasks();
+
       k.tkPick.addEventListener('change', () => {
         this.tkSel = k.tkPick.value;
         this.renderTasks();
@@ -13533,26 +13687,15 @@
         this.renderTasks();
         this.renderExp();
       });
-      k.tkName.addEventListener('change', () => {
-        const t = cur();
-        if (!t) return;
-        t.name = k.tkName.value.trim() || t.name;
-        save(t);
-      });
-      k.tkSet.addEventListener('change', () => {
-        const t = cur();
-        if (!t) return;
-        t.setId = k.tkSet.value;
-        t.setName = Bot.cfg.eqSets.find((x) => x.id === t.setId)?.name || '';
-        save(t);
-      });
       k.tkQuest.addEventListener('change', () => {
         const t = cur();
         if (!t) return;
         const q = (this.tkQuests || []).find((x) => String(x.id) === k.tkQuest.value);
         t.questId = k.tkQuest.value ? +k.tkQuest.value : 0;
         t.questName = q?.name || (t.questId ? t.questName : '');
+        // Nowe zadanie bierze nazwę z gry (nazwy zadań z plików zostają – odwołują się do nich programy).
         if (t.questId && /^Zadanie \d+$/.test(t.name) && q) t.name = q.name;
+        this.tkSel = t.id;
         save(t);
       });
       k.tkQuestLoad.addEventListener('click', async () => {
@@ -13567,14 +13710,12 @@
           k.tkQuestLoad.disabled = false;
         }
       });
-      for (const [btn, type] of [[k.tkAddGoto, 'goto'], [k.tkAddTalk, 'talk'], [k.tkAddKill, 'kill'], [k.tkAddGather, 'gather']]) {
-        btn.addEventListener('click', () => {
-          const t = cur();
-          if (!t) return;
-          t.steps.push(newTaskStep(type));
-          save(t);
-        });
-      }
+      k.tkAddStep.addEventListener('click', () => {
+        const t = cur();
+        if (!t) return;
+        t.steps.push(newTaskStep('goto'));
+        save(t);
+      });
       k.tkSteps.addEventListener('change', (e) => {
         const el = e.target;
         const box = el.closest('[data-si]');
@@ -13640,7 +13781,7 @@
           k.pvMaps.appendChild(row);
         });
       } else {
-        k.pvMaps.appendChild(mk('div', 'kr-hint', 'Trasa pojawi się po starcie bota na kafelku exp'));
+        k.pvMaps.appendChild(mk('div', 'kr-hint', 'Trasa pojawi się po starcie bota na kroku exp'));
       }
 
       const cv = k.pvCanvas;
@@ -13723,7 +13864,118 @@
       this.renderEq();
       this.renderEqPick();
       this.renderSkills(true);
+      this.renderUse();
+      if (this.k.kLabel) this.k.kLabel.textContent = `🎯 Dobijanie${Bot.cfg.killer.enabled ? '' : ' (wyłączone)'}`;
+      this.renderKillerTags();
+      for (const el of $$('[data-killer]', this.root)) {
+        const v = Bot.cfg.killer[el.dataset.killer];
+        if (el.type === 'checkbox') el.checked = !!v;
+        else el.value = String(v);
+      }
       this.renderExp();
+    },
+
+    // Zastosowanie zestawu: rodzaje kroków programu, w których bot może go wybrać (domyślnie wszystkie).
+    renderUse() {
+      const box = this.k.useList;
+      const set = Eq.set();
+      box.textContent = '';
+      for (const [type, label] of TILE_TYPES) {
+        const l = document.createElement('label');
+        l.className = 'kr-check';
+        const c = document.createElement('input');
+        c.type = 'checkbox';
+        c.dataset.use = type;
+        c.checked = set.use?.[type] !== false;
+        l.append(c, document.createTextNode(' ' + label));
+        box.appendChild(l);
+      }
+    },
+    bindUse() {
+      this.k.useList.addEventListener('change', (e) => {
+        const type = e.target.dataset.use;
+        if (!type) return;
+        const set = Eq.set();
+        set.use = Object.assign({}, set.use, { [type]: e.target.checked });
+        Bot.saveCfg();
+      });
+    },
+
+    // Milioner: wektory i minima cen (na rzadkość) oraz stałe ceny przedmiotów.
+    renderMil() {
+      const k = this.k;
+      const m = Bot.cfg.milioner;
+      const cell = (cls, txt) => {
+        const el = document.createElement('span');
+        el.className = cls;
+        el.textContent = txt;
+        return el;
+      };
+      const num = (path, val, ph) => {
+        const el = document.createElement('input');
+        el.dataset.milv = path;
+        el.value = fmtGold(+val || 0);
+        el.placeholder = ph;
+        return el;
+      };
+      const RAR = [['unique', 'unikat', 'kr-r-uni'], ['heroic', 'heroik', 'kr-r-her'], ['legendary', 'legenda', 'kr-r-leg']];
+      if (!k.milVec.contains(document.activeElement)) {
+        k.milVec.textContent = '';
+        for (const [key, label, cls] of RAR) k.milVec.append(cell(cls, label), num(`vec.${key}.x`, m.vec[key].x, 'X'), cell('kr-hint', '× lvl +'), num(`vec.${key}.base`, m.vec[key].base, 'baza'));
+      }
+      if (!k.milFloor.contains(document.activeElement)) {
+        k.milFloor.textContent = '';
+        for (const [key, label, cls] of RAR) k.milFloor.append(cell(cls, label), cell('kr-hint', 'nie mniej niż'), num(`floor.${key}`, m.floor[key], 'min'), cell('', ''));
+      }
+      k.milFixed.textContent = '';
+      m.fixed.forEach((x, i) => {
+        const row = document.createElement('div');
+        row.className = 'kr-fixed';
+        const del = document.createElement('button');
+        del.textContent = '🗑';
+        del.title = 'Usuń';
+        del.dataset.fixDel = i;
+        row.append(cell('', x.name), cell('kr-hint', `${fmtGold(parseGold(String(x.price)) || 0)} zł`), del);
+        k.milFixed.appendChild(row);
+      });
+    },
+    bindMil() {
+      const k = this.k;
+      const m = () => Bot.cfg.milioner;
+      const box = (el) =>
+        el.addEventListener('change', (e) => {
+          const path = e.target.dataset.milv;
+          if (!path) return;
+          const v = parseGold(e.target.value);
+          if (!Number.isFinite(v)) return;
+          const parts = path.split('.');
+          let o = m();
+          for (const p of parts.slice(0, -1)) o = o[p] = o[p] || {};
+          o[parts[parts.length - 1]] = v;
+          Bot.saveCfg();
+          e.target.value = fmtGold(v);
+        });
+      box(k.milVec);
+      box(k.milFloor);
+      k.milFixAdd.addEventListener('click', () => {
+        const name = k.milFixName.value.trim();
+        const price = parseGold(k.milFixPrice.value);
+        if (!name || !Number.isFinite(price) || price <= 0) return;
+        const list = m().fixed.filter((x) => fold(x.name) !== fold(name));
+        list.push({ name, price });
+        m().fixed = list;
+        Bot.saveCfg();
+        k.milFixName.value = '';
+        k.milFixPrice.value = '';
+        this.renderMil();
+      });
+      k.milFixed.addEventListener('click', (e) => {
+        const i = e.target.dataset.fixDel;
+        if (i == null) return;
+        m().fixed.splice(+i, 1);
+        Bot.saveCfg();
+        this.renderMil();
+      });
     },
 
     renderPotions() {
@@ -13810,7 +14062,10 @@
     },
 
     showTab(tab) {
-      this.tab = ['collect', 'killer', 'milioner'].includes(tab) ? tab : 'bot';
+      this.tab = ['prog', 'sets', 'routes', 'tasks', 'mil', 'cfg'].includes(tab) ? tab : 'prog';
+      if (this.tab === 'routes') this.renderRoutes?.();
+      if (this.tab === 'tasks') this.renderTasks?.();
+      if (this.tab === 'mil') this.renderMil?.();
       for (const b of $$('[data-tab]', this.root)) b.classList.toggle('on', b.dataset.tab === this.tab);
       for (const p of $$('[data-pane]', this.root)) p.hidden = p.dataset.pane !== this.tab;
     },
@@ -14145,21 +14400,26 @@
         el.addEventListener('change', () => {
           cfg.killer[key] = el.type === 'checkbox' ? el.checked : Number(el.value) || 0;
           Bot.saveCfg();
-          if (key === 'enabled') log(el.checked ? '🗡️ Dobijarka włączona' : '🗡️ Dobijarka wyłączona');
+          if (key === 'enabled') {
+            log(el.checked ? `🎯 Dobijanie zestawu „${Eq.set().name}” włączone` : `🎯 Dobijanie zestawu „${Eq.set().name}” wyłączone`);
+            this.renderSet();
+          }
         });
       }
       for (const el of $$('[data-mil]', this.root)) {
         el.addEventListener('change', () => {
           cfg.milioner[el.dataset.mil] = el.type === 'checkbox' ? el.checked : el.value.trim();
           Bot.saveCfg();
-          if (el.type === 'checkbox') log(el.checked ? '📮 Milioner włączony' : '📮 Milioner wyłączony');
+          if (el.dataset.mil === 'enabled') log(el.checked ? '📮 Transfer włączony' : '📮 Transfer wyłączony');
+          if (el.dataset.mil === 'auction') log(el.checked ? '🏛️ Aukcje włączone' : '🏛️ Aukcje wyłączone');
         });
       }
       for (const el of $$('[data-global]', this.root)) {
         const key = el.dataset.global;
-        el.value = Bot.global[key] || '';
+        if (el.type === 'checkbox') el.checked = Bot.global[key] !== false;
+        else el.value = Bot.global[key] || '';
         el.addEventListener('change', () => {
-          Bot.global[key] = el.value.trim();
+          Bot.global[key] = el.type === 'checkbox' ? el.checked : el.value.trim();
           Bot.saveGlobal();
         });
       }
@@ -14172,14 +14432,6 @@
       k.collapse.addEventListener('click', () => {
         this.root.classList.toggle('kr-collapsed');
         this.saveUi();
-      });
-      const go = () => {
-        const t = k.navTarget.value.trim();
-        if (t) Bot.goTo(t);
-      };
-      k.navGo.addEventListener('click', go);
-      k.navTarget.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') go();
       });
       for (const b of $$('[data-tab]', this.root)) {
         b.addEventListener('click', () => {
@@ -14201,8 +14453,8 @@
       k.logBox.addEventListener('toggle', () => this.saveUi());
       k.logCopy.addEventListener('click', async () => {
         const ok = await copyText(logLines.join('\n'));
-        k.logCopy.textContent = ok ? 'Skopiowano ✓' : 'Błąd kopiowania';
-        setTimeout(() => (k.logCopy.textContent = 'Kopiuj'), 1500);
+        k.logCopy.textContent = ok ? '✓' : '✕';
+        setTimeout(() => (k.logCopy.textContent = '⧉'), 1500);
       });
       k.cbExport.addEventListener('click', () => exportCombat());
       k.cbImport.addEventListener('click', () => k.cbImportFile.click());
@@ -14236,10 +14488,8 @@
         k.potList.hidden = true;
         this.renderPotions();
       });
-      k.npcAuction.addEventListener('click', () => Bot.runTask('aukcjoner', () => Npc.approach('auction')));
-      k.npcMail.addEventListener('click', () => Bot.runTask('poczta', () => Npc.approach('mail')));
-      k.gameSetup.addEventListener('click', () => Bot.runTask('ustawienia gry', () => GameSettings.apply()));
-      k.lootSave.addEventListener('click', () => GameSettings.saveLootFilter());
+      this.bindUse();
+      this.bindMil();
     },
 
     // Panel przypięty do prawego górnego rogu planszy gry (canvas#GAME_CANVAS), najwyżej na jej wysokość;
@@ -14275,12 +14525,8 @@
         collapsed: this.root.classList.contains('kr-collapsed'),
         tab: this.tab,
         logCollapsed: !this.k.logBox.open,
-        skOpen: this.k.skBox.open,
-        cbOpen: this.k.cbBox.open,
-        expOpen: this.k.expBox.open,
-        pvOpen: this.k.pvBox.open,
-        rtOpen: this.k.rtBox.open,
-        tkOpen: this.k.tkBox.open,
+        open: Object.fromEntries(['healBox', 'eqBox', 'skBox', 'cbBox', 'kBox', 'useBox', 'pvBox'].map((b) => [b, this.k[b].open])),
+        progEdit: !this.k.progEditBox.hidden,
       });
     },
 
@@ -14298,8 +14544,8 @@
       }
       if (document.activeElement !== el && el.value !== tutProf()) el.value = tutProf();
       el.disabled = locked;
-      this.k.profRow.style.opacity = locked ? '0.55' : '';
-      this.k.profRow.title = locked ? `Profesja z gry (postać ma ${lvl} lvl) – zmiana niemożliwa` : 'Profesja wybierana w tutorialu (do 3 poziomu)';
+      el.style.opacity = locked ? '0.55' : '';
+      el.title = locked ? `Profesja z gry (postać ma ${lvl} lvl)` : 'Profesja wybierana w tutorialu (do 3 poziomu)';
     },
 
     refresh() {
@@ -14307,7 +14553,10 @@
       const k = this.k;
       const running = Bot.running();
       const lvl = Game.level();
-      k.char.textContent = `${Bot.charName}${lvl ? ` (${lvl})` : ''} · ${WORLD}`;
+      k.char.textContent = `${Bot.charName}${lvl ? ` (${lvl})` : ''}`;
+      k.char.title = `${Bot.charName} @ ${WORLD}`;
+      const tiles = Run.prog().tiles;
+      k.curStep.textContent = running && Run.tile ? `▶ krok ${tiles.indexOf(Run.tile) + 1}/${tiles.length}: ${Run.label(Run.tile)}` : '';
       k.dot.classList.toggle('on', running);
       k.state.textContent = running ? (ctl.taskName === 'bot' ? 'Działa' : `Zadanie: ${ctl.taskName}`) : 'Zatrzymany';
       k.map.textContent = '· ' + (Game.location() || '—');
@@ -14317,18 +14566,17 @@
       autoCollectShop();
       Learned.learn();
       this.syncProf();
-      if (this.tab === 'collect') k.colInfo.textContent = collectInfo();
       this.markRunTile();
       this.renderProgGrid();
-      if (k.eqBox.open) {
-        this.renderEq();
+      if (this.tab === 'sets') {
+        if (k.eqBox.open) this.renderEq();
         if (k.skBox.open) this.renderSkills();
+        if (k.cbBox.open) k.cbInfo.textContent = this.combatInfo();
+        if (k.kBox.open) k.kInfo.textContent = Killer.status();
       }
-      if (k.pvBox.open) this.renderPreview();
+      if (this.tab === 'prog' && k.pvBox.open) this.renderPreview();
       k.start.disabled = running;
       k.stop.disabled = !running;
-      if (this.tab === 'combat') k.cbInfo.textContent = this.combatInfo();
-      if (this.tab === 'killer') k.kInfo.textContent = Killer.status();
     },
   };
 
@@ -14342,7 +14590,9 @@
     Bot.cfg = loadCfg();
     Bot.saveCfg();
     if (Bot.presetApplied) setTimeout(() => log(`📥 Nowa postać – wczytano wbudowany profil: ${SKILL_PROFS[Bot.presetApplied] || Bot.presetApplied}`), 0);
-    Bot.global = Object.assign({ discordWebhook: '', discordLootWebhook: '' }, store.get(K.global, {}));
+    Bot.global = Object.assign({ discordWebhook: '', lootUnique: true, lootHeroic: true, lootLegendary: true, herosAlert: true }, store.get(K.global, {}));
+    // Dawny osobny webhook łupu E2 → jeden webhook powiadomień.
+    if (!Bot.global.discordWebhook && Bot.global.discordLootWebhook) Bot.global.discordWebhook = Bot.global.discordLootWebhook;
     MapData.apply();
     NpcData.apply();
     // Program 1 („Zero to Hero”) gotowy od razu z zapisanych przebiegów – bez czekania na repo.
@@ -14355,6 +14605,7 @@
     Mastery.watch();
     Killer.watch();
     DeathWatch.watch();
+    LootWatch.watch();
     // Captcha w tle: rozwiązywana też w trakcie długich akcji (podróż, walka), gdy bot działa.
     (async () => {
       for (;;) {
@@ -14406,6 +14657,23 @@
   // API dla konsoli / menedżera sesji (np. driver.execute_script("Kraken.setConfig({...}); Kraken.start()")).
   window.Kraken = {
     version: VERSION,
+    // Narzędzia (dawne zakładki Pobieranie i Narzędzia): Kraken.tools.collectMap() itd.
+    tools: {
+      collectMap: () => (collectNpcs(), collectGateways(), collectExtras()),
+      collectShop: () => collectShop(),
+      download: () => downloadData(),
+      mine: () => Mine.download(),
+      skillTree: () => Bot.runTask('drzewko umiejętności', exportSkillTree),
+      gameSetup: () => Bot.runTask('ustawienia gry', () => GameSettings.apply()),
+      saveLootFilter: () => GameSettings.saveLootFilter(),
+      repoSync: () => RepoData.sync(true).then(() => UI.afterRepoSync()),
+      autoCollect(on = true) {
+        localStorage.setItem(AUTO_COLLECT_KEY, on ? '1' : '0');
+        autoCollectFor = '';
+      },
+      exportProfile: () => exportProfile(),
+      goTo: (map) => Bot.goTo(map),
+    },
     // Timery Minutnika widziane przez bota: Kraken.timers()
     timers: () => console.table(minutnikTimers().map((x) => ({ nazwa: x.name, mapa: x.map, od: new Date(x.minResp * 1000).toLocaleTimeString('pl-PL'), do: new Date(x.presp * 1000).toLocaleTimeString('pl-PL') }))),
     start: () => Bot.start(),
@@ -14420,7 +14688,7 @@
       for (const set of Bot.cfg.eqSets) set.combat = normalizeCombat(set.combat);
       if ('combat' in patch) Bot.cfg.eqSets[Bot.cfg.eqTab || 0].combat = normalizeCombat(patch.combat);
       defineCombat(Bot.cfg);
-      Bot.cfg.milioner = Object.assign(defaultMilioner(), Bot.cfg.milioner);
+      Bot.cfg.milioner = normalizeMilioner(Bot.cfg.milioner, Bot.cfg.eqSets);
       Bot.cfg.killer = Object.assign(defaultCfg().killer, Bot.cfg.killer);
       normalizeKiller(Bot.cfg.killer);
       Bot.saveCfg();
