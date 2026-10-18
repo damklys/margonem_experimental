@@ -59,31 +59,6 @@
   },
   {
    "type": "exp",
-   "exp": "[18lvl] grobowce",
-   "set": "10lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 13
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 18
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
    "exp": "[20lvl] koty",
    "set": "10lvl",
    "conds": [
