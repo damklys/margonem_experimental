@@ -43,7 +43,7 @@
   } catch (_) {}
 
 
-  const VERSION = '4.8.202610190000';
+  const VERSION = '4.9.202610190100';
   const DATA = {"world":{"Andarum Ilami":[{"n":"Kamienna Jaskinia - sala 2"},{"n":"Świątynia Andarum"},{"n":"Zdradzieckie Przejście p.1"},{"n":"Śnieżna Grota p.1"},{"n":"Skały Mroźnych Śpiewów"}],"Bandyckie Chowisko - skarbiec":[{"n":"Bandyckie Chowisko"}],"Bandyckie Chowisko":[{"n":"Chata bandytów"},{"n":"Bandyckie Chowisko - skarbiec"}],"Błędny Szlak":[{"n":"Zawiły Bór"},{"n":"Złowrogie Bagna"},{"n":"Ostępy Szalbierskich Lasów"}],"Chata bandytów":[{"n":"Ostępy Szalbierskich Lasów"},{"n":"Bandyckie Chowisko"}],"Chata szabrowników":[{"n":"Wertepy Rzezimieszków"}],"Ciche Rumowiska":[{"n":"Płaskowyż Arpan"},{"n":"Złote Piaski"},{"n":"Dolina Suchych Łez"}],"Ciemnica Szubrawców p.1 - sala 1":[{"n":"Fort Eder"},{"n":"Ciemnica Szubrawców p.1 - sala 2"}],"Ciemnica Szubrawców p.1 - sala 2":[{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Ciemnica Szubrawców p.1 - sala 3"}],"Ciemnica Szubrawców p.1 - sala 3":[{"n":"Ciemnica Szubrawców p.1 - sala 2"},{"n":"Stary Kupiecki Trakt"}],"Cienisty Bór":[{"n":"Ostępy Szalbierskich Lasów"},{"n":"Las Dziwów"}],"Czeluść Ognistej Pożogi":[{"n":"Wioska Gnolli"},{"n":"Grota Pragnolli p.3"},{"n":"Grota Caerbannoga"},{"n":"Grota Pragnolli p.1"}],"Dolina Centaurów":[{"n":"Iglaste Ścieżki"},{"n":"Selva Oscura"}],"Dolina Rozbójników":[{"n":"Przełęcz Łotrzyków"},{"n":"Ghuli Mogilnik"},{"n":"Kamienna Kryjówka"},{"n":"Mokradła"}],"Dolina Suchych Łez":[{"n":"Ciche Rumowiska"},{"n":"Złote Piaski"}],"Dolina Yss":[{"n":"Ithan"},{"n":"Leśny Bród"},{"n":"Orla Grań"},{"n":"Wilczy Szpic"}],"Dziewicza Knieja":[{"n":"Las Tropicieli"},{"n":"Stare Ruiny"},{"n":"Grota Malowanej Śmierci"},{"n":"Siedlisko Nietoperzy p.1"},{"n":"Siedlisko Nietoperzy p.5"},{"n":"Orla Grań"}],"Dzikie Pagórki":[{"n":"Tygrysia Polana"},{"n":"Jaskinia Dzikich Kotów"},{"n":"Pradawne Wzgórze Przodków"}],"Eder":[{"n":"Fort Eder"},{"n":"Spokojne Przejście"},{"n":"Gościniec Bardów"}],"Erem Czarnego Słońca p.1 - północ":[{"n":"Erem Czarnego Słońca p.2"},{"n":"Skały Mroźnych Śpiewów"}],"Erem Czarnego Słońca p.2":[{"n":"Erem Czarnego Słońca p.1 - północ"},{"n":"Erem Czarnego Słońca p.3"}],"Erem Czarnego Słońca p.3":[{"n":"Erem Czarnego Słońca p.4 - sala 2"},{"n":"Erem Czarnego Słońca p.4 - sala 1"},{"n":"Erem Czarnego Słońca p.2"}],"Erem Czarnego Słońca p.4 - sala 1":[{"n":"Erem Czarnego Słońca p.3"},{"n":"Erem Czarnego Słońca p.5"}],"Erem Czarnego Słońca p.4 - sala 2":[{"n":"Świątynia Andarum - magazyn p.2"},{"n":"Erem Czarnego Słońca p.3 - południe"},{"n":"Erem Czarnego Słońca p.3"}],"Fort Eder":[{"n":"Las Goblinów"},{"n":"Mokradła"},{"n":"Stary Kupiecki Trakt"},{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Eder"},{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 2"}],"Gadzia Kotlina":[{"n":"Zagrzybiałe Ścieżki p.1 - sala 2"},{"n":"Złowrogie Bagna"},{"n":"Mglista Polana Vesy"},{"n":"Wzgórze Płaczek"}],"Ghuli Mogilnik":[{"n":"Dolina Rozbójników"},{"n":"Zapomniany Grobowiec p.1"},{"n":"Warczące Osuwiska"},{"n":"Polana Ścierwojadów"}],"Gościniec Bardów":[{"n":"Eder"},{"n":"Wertepy Rzezimieszków"},{"n":"Nizina Wieśniaków"},{"n":"Racicowy Matecznik"},{"n":"Namiot Tropicieli Herosów"}],"Grań Gawronich Piór":[{"n":"Lazurowe Wzgórze"},{"n":"Thuzal"}],"Grota Bezszelestnych Kroków - sala 1":[{"n":"Zapomniany Szlak"},{"n":"Grota Bezszelestnych Kroków - sala 2"},{"n":"Grota Bezszelestnych Kroków - sala 3"}],"Grota Bezszelestnych Kroków - sala 2":[{"n":"Grota Bezszelestnych Kroków - sala 1"},{"n":"Grota Bezszelestnych Kroków - sala 3"}],"Grota Bezszelestnych Kroków - sala 3":[{"n":"Grota Bezszelestnych Kroków - sala 2"},{"n":"Grota Bezszelestnych Kroków - sala 1"}],"Grota Caerbannoga":[{"n":"Grota Caerbannoga - leże bestii"},{"n":"Czeluść Ognistej Pożogi"}],"Grota Malowanej Śmierci":[{"n":"Dziewicza Knieja"}],"Grota Pragnolli p.1 - sala 2":[{"n":"Grota Pragnolli p.1"},{"n":"Grota Pragnolli p.2"}],"Grota Pragnolli p.1":[{"n":"Czeluść Ognistej Pożogi"},{"n":"Grota Pragnolli p.1 - sala 2"}],"Grota Pragnolli p.2 - sala 2":[{"n":"Grota Pragnolli p.2"}],"Grota Pragnolli p.2":[{"n":"Grota Pragnolli p.1 - sala 2"},{"n":"Grota Pragnolli p.2 - sala 2"},{"n":"Grota Pragnolli p.3"}],"Grota Pragnolli p.3":[{"n":"Grota Pragnolli p.2"},{"n":"Czeluść Ognistej Pożogi"}],"Grota Samotnych Dusz p.3 - sala wyjściowa":[{"n":"Liściaste Rozstaje"},{"n":"Grota Samotnych Dusz p.3"}],"Grota Samotnych Dusz p.3":[{"n":"Grota Samotnych Dusz p.3 - sala wyjściowa"},{"n":"Ślepe Wyrobisko"},{"n":"Grota Samotnych Dusz p.4"},{"n":"Grota Samotnych Dusz p.2"}],"Górska Grota p.1":[{"n":"Górska Grota p.2"}],"Górska Grota p.2":[{"n":"Nawiedzony Jar"},{"n":"Górska Grota p.1"}],"Górska Kopalnia":[{"n":"Nawiedzony Jar"}],"Głębokie Skałki p.1":[{"n":"Zdradzieckie Przejście p.1"},{"n":"Głębokie Skałki p.2"}],"Głębokie Skałki p.2":[{"n":"Głębokie Skałki p.1"},{"n":"Zdradzieckie Przejście p.1"},{"n":"Głębokie Skałki p.3"}],"Głębokie Skałki p.3":[{"n":"Głębokie Skałki p.2"},{"n":"Głębokie Skałki p.4"}],"Iglaste Ścieżki":[{"n":"Dolina Centaurów"},{"n":"Zawiły Bór"},{"n":"Ostępy Szalbierskich Lasów"}],"Ithan":[{"n":"Dolina Yss"},{"n":"Zniszczone Opactwo"},{"n":"Jaskinia Łowców p.1"},{"n":"Porzucone Pasieki"},{"n":"Jaskinia Łowców p.2"},{"n":"Wioska Gnolli","tr":[{"n":"Jaskinia Łowców p.1"},{"n":"Jaskinia Łowców p.2"},{"n":"Ithan"}]},{"n":"Dom Huslina"},{"n":"Strażnica północno-zachodnia"},{"n":"Dom sióstr"},{"n":"Stary magazyn"},{"n":"Zajazd u Makiny"},{"n":"Strażnica południowo-zachodnia"},{"n":"Dom Roana"},{"n":"Ratusz Ithan"},{"n":"Dom Aukcyjny"},{"n":"Strażnica południowo-wschodnia"},{"n":"Dom Niela"},{"n":"Gildia Nerthusa - przedsionek"},{"n":"Pod Rozbrykanym Niziołkiem"},{"n":"Dom Eldrika"},{"n":"Szkoła"},{"n":"Baraki"},{"n":"Kopalnia Dogoran p.1"},{"n":"Strażnica północno-wschodnia"},{"n":"Dom Unila"}],"Jama Kocich Ślepi":[{"n":"Tygrysia Polana"}],"Jaskinia Dzikich Kotów":[{"n":"Tygrysia Polana"},{"n":"Dzikie Pagórki"}],"Jaskinia Gnollich Szamanów p.1":[{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Wioska Gnolli"}],"Jaskinia Gnollich Szamanów p.2":[{"n":"Wioska Gnolli"},{"n":"Jaskinia Gnollich Szamanów p.1"},{"n":"Jaskinia Gnollich Szamanów p.3"}],"Jaskinia Gnollich Szamanów p.3":[{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Jaskinia Gnollich Szamanów - komnata Kozuga"}],"Jaskinia Wilczego Zamętu p.1":[{"n":"Wilczy Szpic"},{"n":"Jaskinia Wilczego Zamętu p.2"}],"Jaskinia Wilczego Zamętu p.2":[{"n":"Jaskinia Wilczego Zamętu p.1"},{"n":"Wilczy Szpic"}],"Jaskinia Łowców p.1":[{"n":"Ithan"},{"n":"Jaskinia Łowców p.2"}],"Jaskinia Łowców p.2":[{"n":"Jaskinia Łowców p.1"},{"n":"Ithan"}],"Kamienna Jaskinia - sala 1":[{"n":"Zapomniany Szlak"},{"n":"Kamienna Jaskinia - sala 2"},{"n":"Kamienna Jaskinia - sala 3"}],"Kamienna Jaskinia - sala 2":[{"n":"Kamienna Jaskinia - sala 1"},{"n":"Andarum Ilami"}],"Kamienna Kryjówka":[{"n":"Dolina Rozbójników"}],"Kamienna Strażnica - Sala Chwały":[{"n":"Kamienna Strażnica - Sanktuarium"},{"n":"Kamienna Strażnica - tunel"}],"Kamienna Strażnica - Sanktuarium":[{"n":"Kamienna Strażnica - Sala Chwały"}],"Kamienna Strażnica - tunel":[{"n":"Kamienna Strażnica - zach. baszta p.1"},{"n":"Kamienna Strażnica - Sala Chwały"},{"n":"Kamienna Strażnica - wsch. baszta zasypany tunel"}],"Kamienna Strażnica - wsch. baszta p.1":[{"n":"Trupia Przełęcz"},{"n":"Kamienna Strażnica - wsch. baszta p.2"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - wsch. baszta p.2":[{"n":"Kamienna Strażnica - wsch. baszta p.1"}],"Kamienna Strażnica - wsch. baszta skalna sala p.0":[{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - wsch. baszta skalna sala p.1":[{"n":"Kamienna Strażnica - wsch. baszta zasypany tunel"},{"n":"Kamienna Strażnica - wsch. baszta p.1"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.0"}],"Kamienna Strażnica - wsch. baszta zasypany tunel":[{"n":"Kamienna Strażnica - tunel"},{"n":"Kamienna Strażnica - wsch. baszta skalna sala p.1"}],"Kamienna Strażnica - zach. baszta p.1":[{"n":"Kamienna Strażnica - zach. baszta p.2"},{"n":"Kamienna Strażnica - tunel"}],"Kamienna Strażnica - zach. baszta p.2":[{"n":"Kamienna Strażnica - zach. baszta p.1"},{"n":"Trupia Przełęcz"}],"Kopalnia Kapiącego Miodu p.1 - sala 1":[{"n":"Kopalnia Kapiącego Miodu p.2 - sala 1"},{"n":"Porzucone Pasieki"}],"Kopalnia Kapiącego Miodu p.1 - sala 2":[{"n":"Porzucone Pasieki"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala 2"}],"Kopalnia Kapiącego Miodu p.2 - sala 1":[{"n":"Kopalnia Kapiącego Miodu p.3"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala Owadziej Matki"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 1"}],"Kopalnia Kapiącego Miodu p.2 - sala 2":[{"n":"Kopalnia Kapiącego Miodu p.1 - sala 2"},{"n":"Kopalnia Kapiącego Miodu p.3"}],"Kopalnia Kapiącego Miodu p.3":[{"n":"Kopalnia Kapiącego Miodu p.2 - sala 2"},{"n":"Kopalnia Kapiącego Miodu p.2 - sala 1"}],"Kopalnia Krwawego Opętania - przedsionek":[{"n":"Wyjście"}],"Kopalnia Krwawego Opętania":[],"Kopalnia Margorii":[{"n":"Ślepe Wyrobisko"},{"n":"Margoria"},{"n":"Labirynt Margorii"}],"Kopiec Mrówek p.1":[{"n":"Kopiec Mrówek p.2"},{"n":"Kopiec Mrówek"}],"Kopiec Mrówek p.2":[{"n":"Mrowisko p.2"},{"n":"Kopiec Mrówek p.1"}],"Kopiec Mrówek":[{"n":"Kopiec Mrówek p.1"},{"n":"Łany Zboża"}],"Krasowa Pieczara p.1":[{"n":"Legowisko Wilczej Hordy"},{"n":"Krasowa Pieczara p.2"}],"Krasowa Pieczara p.2":[{"n":"Krasowa Pieczara p.1"},{"n":"Krasowa Pieczara p.3"},{"n":"Legowisko Wilczej Hordy"}],"Krasowa Pieczara p.3":[{"n":"Krasowa Pieczara p.2"},{"n":"Legowisko Wilczej Hordy"}],"Kryjówka Dzikich Kotów":[{"n":"Leśna Przełęcz"},{"n":"Grota Dzikiego Kota"}],"Krypty Dusz Śniegu p.1":[{"n":"Krypty Dusz Śniegu p.2"},{"n":"Cmentarzysko Szerpów"}],"Krypty Dusz Śniegu p.2":[{"n":"Krypty Dusz Śniegu p.3"},{"n":"Krypty Dusz Śniegu p.1"},{"n":"Krypty Dusz Śniegu p.3 - komnata Lisza"}],"Krypty Dusz Śniegu p.3":[{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Krypty Dusz Śniegu p.2"}],"Księżycowe Wzniesienie":[{"n":"Trupia Przełęcz"},{"n":"Mglista Polana Vesy"},{"n":"Zapomniany Święty Gaj p.1"},{"n":"Sosnowe Odludzie"}],"Labirynt Wyklętych p.1":[{"n":"Labirynt Wyklętych p.2 - sala 1"},{"n":"Pieczara Czaszek"},{"n":"Labirynt Wyklętych p.2 - sala 2"}],"Labirynt Wyklętych p.2 - sala 1":[{"n":"Labirynt Wyklętych p.1"}],"Labirynt Wyklętych p.2 - sala 2":[{"n":"Labirynt Wyklętych p.1"}],"Las Dziwów":[{"n":"Cienisty Bór"},{"n":"Namiot Kambiona"},{"n":"Złowrogie Bagna"}],"Las Goblinów":[{"n":"Podmokła Dolina"},{"n":"Fort Eder"}],"Las Tropicieli":[{"n":"Osada Mulusów"},{"n":"Dziewicza Knieja"}],"Lazurowe Wzgórze":[{"n":"Słoneczna Wyżyna"},{"n":"Kwieciste Przejście"},{"n":"Grań Gawronich Piór"}],"Lazurytowa Grota p.1":[{"n":"Uroczysko"},{"n":"Lazurytowa Grota p.2"}],"Lazurytowa Grota p.2":[{"n":"Lazurytowa Grota p.1"},{"n":"Lazurytowa Grota p.3 - sala 1"},{"n":"Lazurytowa Grota p.3 - sala 2"}],"Lazurytowa Grota p.3 - sala 1":[{"n":"Lazurytowa Grota p.2"},{"n":"Lazurytowa Grota p.3 - sala 2"}],"Lazurytowa Grota p.3 - sala 2":[{"n":"Lazurytowa Grota p.3 - sala 1"},{"n":"Lazurytowa Grota p.2"},{"n":"Lazurytowa Grota p.4"}],"Legowisko Wilczej Hordy":[{"n":"Wilcza Skarpa"},{"n":"Warczące Osuwiska"},{"n":"Polana Ścierwojadów"},{"n":"Krasowa Pieczara p.1"},{"n":"Krasowa Pieczara p.2"},{"n":"Krasowa Pieczara p.3"},{"n":"Skalne Turnie"}],"Leśna Przełęcz":[{"n":"Torneg"},{"n":"Zatopiony Szczyt"},{"n":"Tygrysia Polana"},{"n":"Kryjówka Dzikich Kotów"}],"Leśny Bród":[{"n":"Zniszczone Opactwo"},{"n":"Dolina Yss"},{"n":"Mrówcza Kolonia p.1 - lewy tunel"},{"n":"Mrówcza Kolonia p.1 - prawy tunel"}],"Liściaste Rozstaje":[{"n":"Las Dziwów"},{"n":"Sosnowe Odludzie"},{"n":"Jezioro Ważek"},{"n":"Grota Samotnych Dusz p.3 - sala wyjściowa"},{"n":"Zapomniana Ścieżyna"}],"Lodowa Sala":[{"n":"Śnieżna Grota p.3"},{"n":"Przejście Magicznego Mrozu"},{"n":"Przejście Lodowatego Wiatru"},{"n":"Przejście Zamarzniętych Kości"}],"Margoria":[{"n":"Kopalnia Margorii"},{"n":"Labirynt Margorii"},{"n":"Margoria - Sala Królewska"}],"Mglista Polana Vesy":[{"n":"Gadzia Kotlina"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 3"},{"n":"Wzgórze Płaczek"},{"n":"Księżycowe Wzniesienie"}],"Mistyczny Bór":[{"n":"Porzucone Pasieki"},{"n":"Przedmieścia Karka-han"},{"n":"Wichrowe Szczyty"}],"Moczary Rybiego Oka":[{"n":"Stary Kupiecki Trakt"},{"n":"Uroczysko Wodnika"}],"Mokra Grota p.1 - boczny korytarz":[{"n":"Mokra Grota p.1"},{"n":"Mokra Grota p.1 - przełaz"},{"n":"Mokra Grota p.2 - korytarz"}],"Mokra Grota p.1 - przełaz":[{"n":"Mokra Grota p.2 - korytarz"},{"n":"Mokra Grota p.1"}],"Mokra Grota p.1":[{"n":"Zapomniany Szlak"},{"n":"Mokra Grota p.2"},{"n":"Mokra Grota p.1 - przełaz"},{"n":"Mokra Grota p.1 - boczny korytarz"}],"Mokra Grota p.2 - korytarz":[{"n":"Mokra Grota p.1 - boczny korytarz"},{"n":"Mroczna Pieczara p.1 - sala 3"}],"Mokradła":[{"n":"Dolina Rozbójników"},{"n":"Polana Ścierwojadów"},{"n":"Skarpiska Tolloków"},{"n":"Podmokła Dolina"},{"n":"Fort Eder"}],"Morwowe Przejście":[{"n":"Podmokła Dolina"},{"n":"Nawiedzony Jar"}],"Mroczna Pieczara p.0":[{"n":"Mroczna Pieczara p.1 - sala 2"},{"n":"Migotliwa Pieczara"}],"Mroczna Pieczara p.1 - sala 1":[{"n":"Mroczny Przesmyk"},{"n":"Mroczna Pieczara p.1 - sala 2"},{"n":"Mroczna Pieczara p.1 - sala 3"}],"Mroczna Pieczara p.1 - sala 2":[{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Mroczna Pieczara p.0"}],"Mroczna Pieczara p.1 - sala 3":[{"n":"Mroczny Przesmyk"},{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Mroczna Pieczara p.2"},{"n":"Mokra Grota p.2 - korytarz"}],"Mroczna Pieczara p.2":[{"n":"Mroczna Pieczara p.1 - sala 3"},{"n":"Mroczny Przesmyk"}],"Mroczny Przesmyk":[{"n":"Nawiedzony Jar"},{"n":"Mroczna Pieczara p.1 - sala 3"},{"n":"Mroczna Pieczara p.1 - sala 1"},{"n":"Zapomniany Szlak"},{"n":"Mroczna Pieczara p.2"}],"Mrowisko p.1":[{"n":"Mrowisko"},{"n":"Mrowisko p.2"}],"Mrowisko p.2":[{"n":"Mrowisko p.1"},{"n":"Kopiec Mrówek p.2"}],"Mrowisko":[{"n":"Łany Zboża"},{"n":"Mrowisko p.1"}],"Mrówcza Kolonia p.1 - lewy tunel":[{"n":"Leśny Bród"},{"n":"Mrówcza Kolonia p.2 - lewe korytarze"}],"Mrówcza Kolonia p.1 - prawy tunel":[{"n":"Mrówcza Kolonia p.2 - prawe korytarze"},{"n":"Leśny Bród"}],"Mrówcza Kolonia p.2 - lewe korytarze":[{"n":"Mrówcza Kolonia p.1 - lewy tunel"},{"n":"Mrówcza Kolonia p.3 - lewa komora jaj"}],"Mrówcza Kolonia p.2 - prawe korytarze":[{"n":"Mrówcza Kolonia p.3 - prawa komora jaj"},{"n":"Mrówcza Kolonia p.1 - prawy tunel"}],"Mrówcza Kolonia p.3 - lewa komora jaj":[{"n":"Mrówcza Kolonia p.2 - lewe korytarze"},{"n":"Mrówcza Kolonia p.4 - królewskie gniazdo"}],"Mrówcza Kolonia p.3 - prawa komora jaj":[{"n":"Mrówcza Kolonia p.4 - królewskie gniazdo"},{"n":"Mrówcza Kolonia p.2 - prawe korytarze"}],"Mrówcza Kolonia p.4 - królewskie gniazdo":[{"n":"Mrówcza Kolonia p.3 - lewa komora jaj"},{"n":"Mrówcza Kolonia p.3 - prawa komora jaj"}],"Mythar":[{"n":"Smocze Góry"},{"n":"Zawiły Bór"},{"n":"Złowrogie Bagna"}],"Namiot Kambiona":[{"n":"Las Dziwów"}],"Nawiedzony Jar":[{"n":"Zburzona Twierdza"},{"n":"Stare Wyrobisko p.4"},{"n":"Stare Wyrobisko p.5"},{"n":"Mroczny Przesmyk"},{"n":"Górska Kopalnia"},{"n":"Górska Grota p.2"},{"n":"Morwowe Przejście"},{"n":"Stare Wyrobisko p.3"}],"Nithal":[{"n":"Mury Nithal - Baszta Koronna"},{"n":"Kwatera żołnierska"},{"n":"Akademia wojskowa p.1"},{"n":"Akademia wojskowa - stajnia"},{"n":"Izba chorych płn."},{"n":"Winnica Meflakasti"},{"n":"Kamienica Zagadek"},{"n":"Kamienica de Waldenów"},{"n":"Gildia Kupców - część wschodnia"},{"n":"Kamienica Tamena"},{"n":"Kamienica Prokusi"},{"n":"Kamienica Krynii Lufis"},{"n":"Cytadela"},{"n":"Kamienica Nitrusa"},{"n":"Kamienica Cecylii"},{"n":"Kamienica Pireza"},{"n":"Kamienica Nandraroka"},{"n":"Kamienica Broka"},{"n":"Południowe mury Nithal - część zachodnia"},{"n":"Kamienica Flawiana"},{"n":"Podgrodzie Nithal"},{"n":"Ratusz Nithal"},{"n":"Południowe mury Nithal - część wschodnia"},{"n":"Zajazd pod Złamanym Dukatem"},{"n":"Knajpa pod Czarnym Tulipanem"},{"n":"Pizzeria"},{"n":"Kamienica Rewii"},{"n":"Zajazd pod Złamanym Dukatem - pokój właściciela"},{"n":"Kamienica Eklektusa"},{"n":"Kamienica Miona"},{"n":"Kamienica Uliany i Arsena"},{"n":"Rezydencja Vonikur - kuchnia"},{"n":"Kamienica Mirutki"},{"n":"Opuszczona kamienica"},{"n":"Kamienica Kandelia"},{"n":"Rezydencja Vonikur"},{"n":"Kamienica Galeny i Sarda"},{"n":"Rezydencja Trafalgar"},{"n":"Kamienica Andronikusa"},{"n":"Rezydencja Vonikur - biblioteczka"},{"n":"Uniwersytet płn."},{"n":"Dormitorium - część akolitów"},{"n":"Uniwersytet płd."},{"n":"Świątynia Czterech Bóstw"},{"n":"Dormitorium - część westalek"},{"n":"Cytadela p.1"},{"n":"Prywatna kamienica"},{"n":"Izba chorych płd."},{"n":"Dom Rezarda"},{"n":"Kamienica Lukrecji"},{"n":"Kamienica Tanenbara"},{"n":"Gildia Kupców - część zachodnia"},{"n":"Kamienica Furii Infernalis"},{"n":"Gildia Kupców - część północna"},{"n":"Kamienica Vilgara"}],"Nizina Wieśniaków":[{"n":"Racicowy Matecznik"},{"n":"Zbocze Starych Bogów"},{"n":"Pieczara Czaszek"},{"n":"Gościniec Bardów"},{"n":"Zachodnia Rubież"},{"n":"Dom Chlasta"},{"n":"Szopa"},{"n":"Podgrodzie Nithal"}],"Oaza Siedmiu Wichrów":[{"n":"Stare Sioło"},{"n":"Ciche Rumowiska"},{"n":"Złote Piaski"},{"n":"Płaskowyż Arpan"}],"Opuszczony Bastion":[{"n":"Zburzona Twierdza"},{"n":"Podziemny Przełaz p.1"},{"n":"Zrujnowana Wieża"}],"Orla Grań":[{"n":"Dziewicza Knieja"},{"n":"Stare Ruiny"},{"n":"Dolina Yss"},{"n":"Przełęcz Łotrzyków"},{"n":"Przeklęta Strażnica"}],"Osada Mulusów":[{"n":"Pradawne Wzgórze Przodków"},{"n":"Las Tropicieli"}],"Ostępy Szalbierskich Lasów":[{"n":"Iglaste Ścieżki"},{"n":"Błędny Szlak"},{"n":"Chata bandytów"},{"n":"Cienisty Bór"},{"n":"Siedziba rekieterów"}],"Pagórki Łupieżców":[{"n":"Przełęcz Łotrzyków"},{"n":"Skład Grabieżców"},{"n":"Schowek na Łupy"}],"Pieczara Czaszek":[{"n":"Labirynt Wyklętych p.1"},{"n":"Nizina Wieśniaków"}],"Pieczara Kwiku - sala 1":[{"n":"Racicowy Matecznik"},{"n":"Pieczara Kwiku - sala 2"}],"Pieczara Kwiku - sala 2":[{"n":"Pieczara Kwiku - sala 1"}],"Pieczara Niepogody p.1":[{"n":"Fort Eder"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.2 - sala 1"}],"Pieczara Niepogody p.2 - sala 1":[{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.3"}],"Pieczara Niepogody p.2 - sala 2":[{"n":"Fort Eder"},{"n":"Pieczara Niepogody p.3"},{"n":"Pieczara Niepogody p.1"},{"n":"Pieczara Niepogody p.2 - sala 1"}],"Pieczara Niepogody p.3":[{"n":"Pieczara Niepogody p.2 - sala 1"},{"n":"Pieczara Niepogody p.2 - sala 2"},{"n":"Pieczara Niepogody p.4"}],"Pieczara Niepogody p.4":[{"n":"Pieczara Niepogody p.3"},{"n":"Pieczara Niepogody p.5"}],"Pieczara Niepogody p.5":[{"n":"Pieczara Niepogody p.4"}],"Pieczara Szaleńców - przedsionek":[{"n":"Pieczara Szaleńców - sala 4"},{"n":"Pieczara Szaleńców - sala Regulusa Mętnookiego"}],"Pieczara Szaleńców - sala 1":[{"n":"Radosna Polana"},{"n":"Pieczara Szaleńców - sala 2"}],"Pieczara Szaleńców - sala 2":[{"n":"Pieczara Szaleńców - sala 1"},{"n":"Pieczara Szaleńców - sala 3"}],"Pieczara Szaleńców - sala 3":[{"n":"Pieczara Szaleńców - sala 2"},{"n":"Pieczara Szaleńców - sala 4"}],"Pieczara Szaleńców - sala 4":[{"n":"Pieczara Szaleńców - przedsionek"},{"n":"Pieczara Szaleńców - sala 3"}],"Pieczara Szaleńców - sala Regulusa Mętnookiego":[{"n":"Pieczara Szaleńców - przedsionek"}],"Piekielna Grota p.1":[{"n":"Zniszczone Opactwo"},{"n":"Piekielna Grota p.2"}],"Piekielna Grota p.2":[{"n":"Piekielna Grota p.1"},{"n":"Piekielna Grota p.3 - sala 1"}],"Piekielna Grota p.3 - sala 1":[{"n":"Piekielna Grota p.2"},{"n":"Piekielna Grota p.3 - sala 2"}],"Piekielna Grota p.3 - sala 2":[{"n":"Piekielna Grota p.3 - sala 1"},{"n":"Piekielna Grota p.4"}],"Piekielna Grota p.4":[{"n":"Piekielna Grota p.3 - sala 2"},{"n":"Piekielna Sala Ognia"}],"Piekielna Sala Ognia":[{"n":"Piekielna Grota p.4"}],"Piramida Pustynnego Władcy p.1":[{"n":"Złote Piaski"},{"n":"Piramida Pustynnego Władcy p.2"}],"Piramida Pustynnego Władcy p.2":[{"n":"Piramida Pustynnego Władcy p.1"},{"n":"Piramida Pustynnego Władcy p.3"}],"Piramida Pustynnego Władcy p.3":[{"n":"Piramida Pustynnego Władcy p.2"}],"Pod Rozbrykanym Niziołkiem":[{"n":"Pod Rozbrykanym Niziołkiem - piętro"},{"n":"Pod Rozbrykanym Niziołkiem - piwnica"},{"n":"Ithan"}],"Podgrodzie Nithal":[{"n":"Nizina Wieśniaków"},{"n":"Dom Rózi"},{"n":"Zajazd pod Tęczowym Żukiem"},{"n":"Dom Edny"},{"n":"Młyn"},{"n":"Nithal"},{"n":"Bagna Chojraków"},{"n":"Drewutnia"},{"n":"Chlew"},{"n":"Cytadela p.3"},{"n":"Cytadela p.2"},{"n":"Żołnierz Nithal"},{"n":"Dom Młynarza"},{"n":"Stajnie"},{"n":"Źródło Narumi"},{"n":"Gospodarstwo Łucji i Jana"},{"n":"Stodoła"},{"n":"Dom Almonda"}],"Podmokła Dolina":[{"n":"Mokradła"},{"n":"Morwowe Przejście"},{"n":"Las Goblinów"},{"n":"Jaskinia Pogardy"}],"Podziemia Zniszczonej Wieży p.1":[{"n":"Ruiny Wieży Magów - przedsionek"},{"n":"Podziemia Zniszczonej Wieży p.2"}],"Podziemia Zniszczonej Wieży p.2":[{"n":"Podziemia Zniszczonej Wieży p.1"},{"n":"Podziemia Zniszczonej Wieży p.3"}],"Podziemia Zniszczonej Wieży p.3":[{"n":"Podziemia Zniszczonej Wieży p.2"},{"n":"Podziemia Zniszczonej Wieży p.4"}],"Podziemia Zniszczonej Wieży p.4":[{"n":"Podziemia Zniszczonej Wieży p.3"},{"n":"Podziemia Zniszczonej Wieży p.5"}],"Podziemia Zniszczonej Wieży p.5":[{"n":"Podziemia Zniszczonej Wieży p.4"}],"Podziemne Przejście p.1":[{"n":"Wichrowe Szczyty"},{"n":"Podziemne Przejście p.2"}],"Podziemne Przejście p.2":[{"n":"Podziemne Przejście p.1"},{"n":"Podziemne Przejście p.3"}],"Podziemny Przełaz p.1":[{"n":"Opuszczony Bastion"},{"n":"Podziemny Przełaz p.2"}],"Podziemny Przełaz p.2":[{"n":"Podziemny Przełaz p.1"},{"n":"Zrujnowana Wieża"}],"Port Tuzmer":[{"n":"Tuzmer"}],"Porzucone Pasieki":[{"n":"Ithan"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 1"},{"n":"Kopalnia Kapiącego Miodu p.1 - sala 2"},{"n":"Uroczysko"},{"n":"Mistyczny Bór"}],"Pradawne Wzgórze Przodków":[{"n":"Dzikie Pagórki"},{"n":"Osada Mulusów"},{"n":"Świątynia Mzintlavy"}],"Przejście Lodowatego Wiatru":[{"n":"Lodowa Sala"},{"n":"Sala Lodowatego Wiatru"}],"Przejście Magicznego Mrozu":[{"n":"Lodowa Sala"},{"n":"Sala Magicznego Mrozu"}],"Przejście Zamarzniętych Kości":[{"n":"Lodowa Sala"},{"n":"Sala Zamarzniętych Kości"}],"Przeklęta Strażnica - podziemia p.1 s.1":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica - podziemia p.2 s.1"}],"Przeklęta Strażnica - podziemia p.1 s.2":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica - podziemia p.2 s.2"}],"Przeklęta Strażnica - podziemia p.2 s.2":[{"n":"Przeklęta Strażnica - podziemia p.1 s.2"},{"n":"Przeklęta Strażnica - podziemia p.2 s.3"}],"Przeklęta Strażnica p.1":[{"n":"Przeklęta Strażnica"},{"n":"Przeklęta Strażnica p.2"}],"Przeklęta Strażnica p.2":[{"n":"Przeklęta Strażnica p.1"}],"Przeklęta Strażnica":[{"n":"Orla Grań"},{"n":"Przeklęta Strażnica - podziemia p.1 s.1"},{"n":"Przeklęta Strażnica - podziemia p.1 s.2"},{"n":"Przeklęta Strażnica p.1"}],"Przeklęty Zamek - kanały":[{"n":"Przeklęty Zamek - zbrojownia"}],"Przeklęty Zamek - komnata":[{"n":"Przeklęty Zamek p.2"}],"Przeklęty Zamek - podziemia południowe":[{"n":"Przeklęty Zamek - zbrojownia"},{"n":"Przeklęty Zamek - wejście południowe"}],"Przeklęty Zamek - podziemia północne":[{"n":"Przeklęty Zamek - wejście północne"},{"n":"Przeklęty Zamek - zbrojownia"}],"Przeklęty Zamek - sala zgromadzeń":[{"n":"Przeklęty Zamek - zbrojownia"},{"n":"Przeklęty Zamek p.1"},{"n":"Przeklęty Zamek - wejście wschodnie"}],"Przeklęty Zamek - wejście południowe":[{"n":"Przeklęty Zamek - podziemia południowe"},{"n":"Stare Ruiny"}],"Przeklęty Zamek - wejście północne":[{"n":"Stare Ruiny"},{"n":"Przeklęty Zamek - podziemia północne"}],"Przeklęty Zamek - wejście wschodnie":[{"n":"Przeklęty Zamek - sala zgromadzeń"},{"n":"Stare Ruiny"}],"Przeklęty Zamek - zbrojownia":[{"n":"Przeklęty Zamek - podziemia północne"},{"n":"Przeklęty Zamek - kanały"},{"n":"Przeklęty Zamek - podziemia południowe"},{"n":"Przeklęty Zamek - sala zgromadzeń"}],"Przeklęty Zamek p.1":[{"n":"Przeklęty Zamek - sala zgromadzeń"},{"n":"Przeklęty Zamek p.2"}],"Przeklęty Zamek p.2":[{"n":"Przeklęty Zamek p.1"},{"n":"Stare Ruiny"},{"n":"Przeklęty Zamek - komnata"}],"Przełaz olbrzymów":[{"n":"Smocze Góry"},{"n":"Selva Oscura"}],"Przełęcz Łotrzyków":[{"n":"Orla Grań"},{"n":"Pagórki Łupieżców"},{"n":"Dolina Rozbójników"}],"Płacząca Grota - sala Lamentu":[{"n":"Płacząca Grota p.3"}],"Płacząca Grota p.1 - sala 1":[{"n":"Wzgórze Płaczek"},{"n":"Płacząca Grota p.2"}],"Płacząca Grota p.1 - sala 2":[{"n":"Płacząca Grota p.2"},{"n":"Wzgórze Płaczek"}],"Płacząca Grota p.2":[{"n":"Płacząca Grota p.1 - sala 1"},{"n":"Płacząca Grota p.3"},{"n":"Płacząca Grota p.1 - sala 2"}],"Płacząca Grota p.3":[{"n":"Płacząca Grota - sala Lamentu"},{"n":"Płacząca Grota p.2"}],"Płaskowyż Arpan":[{"n":"Trupia Przełęcz"},{"n":"Skalne Cmentarzysko p.1"},{"n":"Sucha Dolina"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Złote Piaski"},{"n":"Pustkowia Pogrzebanych"}],"Racicowy Matecznik":[{"n":"Spokojne Przejście"},{"n":"Ukwiecona Skarpa"},{"n":"Pieczara Kwiku - sala 1"}],"Radosna Polana":[{"n":"Wioska Gnolli"},{"n":"Pieczara Szaleńców - sala 1"}],"Ruiny Pustynnych Burz":[{"n":"Złote Piaski"}],"Ruiny Szabrowników":[{"n":"Zatopiony Szczyt"}],"Ruiny Wieży Magów - przedsionek":[{"n":"Selva Oscura"},{"n":"Podziemia Zniszczonej Wieży p.1"}],"Sala Lodowatego Wiatru":[{"n":"Przejście Lodowatego Wiatru"}],"Sala Magicznego Mrozu":[{"n":"Przejście Magicznego Mrozu"}],"Sala Zamarzniętych Kości":[{"n":"Przejście Zamarzniętych Kości"}],"Schowek na Łupy":[{"n":"Pagórki Łupieżców"}],"Selva Oscura":[{"n":"Zawiły Bór"},{"n":"Dolina Centaurów"},{"n":"Ruiny Wieży Magów - przedsionek"},{"n":"Przełaz olbrzymów"}],"Siedlisko Nietoperzy p.1":[{"n":"Dziewicza Knieja"},{"n":"Siedlisko Nietoperzy p.2"}],"Siedlisko Nietoperzy p.2":[{"n":"Siedlisko Nietoperzy p.1"},{"n":"Siedlisko Nietoperzy p.3 - sala 1"}],"Siedlisko Nietoperzy p.3 - sala 1":[{"n":"Siedlisko Nietoperzy p.2"},{"n":"Siedlisko Nietoperzy p.3 - sala 2"},{"n":"Siedlisko Nietoperzy p.4"}],"Siedlisko Nietoperzy p.3 - sala 2":[{"n":"Siedlisko Nietoperzy p.3 - sala 1"}],"Siedlisko Nietoperzy p.4":[{"n":"Siedlisko Nietoperzy p.3 - sala 1"},{"n":"Siedlisko Nietoperzy p.5"}],"Siedlisko Nietoperzy p.5":[{"n":"Siedlisko Nietoperzy p.4"},{"n":"Dziewicza Knieja"}],"Skalne Cmentarzysko p.1":[{"n":"Płaskowyż Arpan"},{"n":"Skalne Cmentarzysko p.2"}],"Skalne Cmentarzysko p.2":[{"n":"Skalne Cmentarzysko p.1"},{"n":"Skalne Cmentarzysko p.3"}],"Skalne Cmentarzysko p.3":[{"n":"Skalne Cmentarzysko p.2"},{"n":"Skalne Cmentarzysko p.4"}],"Skalne Cmentarzysko p.4":[{"n":"Skalne Cmentarzysko p.3"}],"Skalne Turnie":[{"n":"Legowisko Wilczej Hordy"},{"n":"Skarpiska Tolloków"}],"Skarpiska Tolloków":[{"n":"Skalne Turnie"},{"n":"Polana Ścierwojadów"},{"n":"Mokradła"}],"Skały Mroźnych Śpiewów":[{"n":"Andarum Ilami"},{"n":"Erem Czarnego Słońca p.1 - północ"},{"n":"Firnowa Grota p.1"},{"n":"Cmentarzysko Szerpów"},{"n":"Firnowa Grota p.2"},{"n":"Erem Czarnego Słońca p.3 - południe"},{"n":"Lodowa Wyrwa p.1 s.1"},{"n":"Zmarzlina Amaimona Soplorękiego - przedsionek"},{"n":"Lodowa Wyrwa p.2"}],"Skład Grabieżców":[{"n":"Pagórki Łupieżców"}],"Smocza Jaskinia":[{"n":"Smocze Góry"}],"Smocze Góry":[{"n":"Mythar"},{"n":"Przełaz olbrzymów"}],"Sosnowe Odludzie":[{"n":"Leszy (91w)"},{"n":"Księżycowe Wzniesienie"},{"n":"Chodniki Mrinding"},{"n":"Liściaste Rozstaje"},{"n":"Podziemne Rozpadliny"}],"Spokojne Przejście":[{"n":"Eder"},{"n":"Racicowy Matecznik"},{"n":"Zasłonięte Jezioro"}],"Stare Ruiny":[{"n":"Wilczy Szpic"},{"n":"Torneg"},{"n":"Zatopiony Szczyt"},{"n":"Orla Grań"},{"n":"Przeklęty Zamek - wejście północne"},{"n":"Przeklęty Zamek - wejście południowe"},{"n":"Przeklęty Zamek - wejście wschodnie"},{"n":"Przeklęty Zamek p.2"},{"n":"Dziewicza Knieja"}],"Stare Sioło":[{"n":"Sucha Dolina"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Tuzmer"}],"Stare Wyrobisko p.1":[{"n":"Stare Wyrobisko p.2"}],"Stare Wyrobisko p.2":[{"n":"Stare Wyrobisko p.3"},{"n":"Stare Wyrobisko p.1"}],"Stare Wyrobisko p.3":[{"n":"Stare Wyrobisko p.4"},{"n":"Stare Wyrobisko p.2"},{"n":"Nawiedzony Jar"}],"Stare Wyrobisko p.4":[{"n":"Nawiedzony Jar"},{"n":"Stare Wyrobisko p.5"},{"n":"Stare Wyrobisko p.3"}],"Stare Wyrobisko p.5":[{"n":"Nawiedzony Jar"},{"n":"Stare Wyrobisko p.4"}],"Stary Kupiecki Trakt":[{"n":"Fort Eder"},{"n":"Moczary Rybiego Oka"},{"n":"Stukot Widmowych Kół"},{"n":"Ciemnica Szubrawców p.1 - sala 3","tr":[{"n":"Fort Eder"},{"n":"Ciemnica Szubrawców p.1 - sala 1"},{"n":"Ciemnica Szubrawców p.1 - sala 2"}]}],"Stukot Widmowych Kół":[{"n":"Stary Kupiecki Trakt"},{"n":"Wertepy Rzezimieszków"}],"Sucha Dolina":[{"n":"Płaskowyż Arpan"},{"n":"Stare Sioło"}],"Słoneczna Wyżyna":[{"n":"Zasłonięte Jezioro"},{"n":"Lazurowe Wzgórze"}],"Torneg":[{"n":"Łany Zboża"},{"n":"Stare Ruiny"},{"n":"Leśna Przełęcz"}],"Trupia Przełęcz":[{"n":"Zabłocona Jama p.1 - sala 2"},{"n":"Płaskowyż Arpan"},{"n":"Niecka Xiuh Atl"},{"n":"Kamienna Strażnica - zach. baszta p.2"},{"n":"Namiot kościarza"},{"n":"Grota Samotnych Dusz p.1"},{"n":"Wzgórze Płaczek"},{"n":"Kamienna Strażnica - wsch. baszta p.1"},{"n":"Księżycowe Wzniesienie"},{"n":"Jaskinia"}],"Tuzmer":[{"n":"Stare Sioło"},{"n":"Port Tuzmer"}],"Tygrysia Polana":[{"n":"Leśna Przełęcz"},{"n":"Jama Kocich Ślepi"},{"n":"Jaskinia Dzikich Kotów"},{"n":"Dzikie Pagórki"}],"Ukwiecona Skarpa":[{"n":"Racicowy Matecznik"}],"Uroczysko Wodnika":[{"n":"Moczary Rybiego Oka"},{"n":"Źródło Narumi"}],"Uroczysko":[{"n":"Porzucone Pasieki"},{"n":"Lazurytowa Grota p.1"},{"n":"Wichrowe Szczyty"},{"n":"Zapomniany Szlak"},{"n":"Zniszczone Opactwo"},{"n":"Namiot rozbójników"},{"n":"Namiot Rumcajsa"}],"Warczące Osuwiska":[{"n":"Ghuli Mogilnik"},{"n":"Wilcza Skarpa"},{"n":"Wilcza Nora p.1"},{"n":"Legowisko Wilczej Hordy"}],"Wertepy Rzezimieszków":[{"n":"Stukot Widmowych Kół"},{"n":"Źródło Narumi"},{"n":"Gościniec Bardów"},{"n":"Chata szabrowników"}],"Wilcza Nora p.1":[{"n":"Warczące Osuwiska"},{"n":"Wilcza Nora p.2"}],"Wilcza Nora p.2":[{"n":"Wilcza Nora p.1"}],"Wilcza Skarpa":[{"n":"Warczące Osuwiska"},{"n":"Legowisko Wilczej Hordy"}],"Wilczy Szpic":[{"n":"Łany Zboża"},{"n":"Stare Ruiny"},{"n":"Jaskinia Wilczego Zamętu p.1"},{"n":"Dolina Yss"},{"n":"Jaskinia Wilczego Zamętu p.2"}],"Wioska Gnolli":[{"n":"Ithan","tr":[{"n":"Ithan"},{"n":"Jaskinia Łowców p.2"},{"n":"Jaskinia Łowców p.1"}]},{"n":"Namiot Vari Krugera"},{"n":"Jaskinia Gnollich Szamanów p.1"},{"n":"Jaskinia Gnollich Szamanów p.2"},{"n":"Czeluść Ognistej Pożogi"},{"n":"Radosna Polana"}],"Wylęgarnia Choukkerów p.1":[{"n":"Zdradzieckie Przejście p.1"}],"Wylęgarnia Choukkerów p.2":[{"n":"Wylęgarnia Choukkerów p.1"},{"n":"Wylęgarnia Choukkerów p.3"}],"Wylęgarnia Choukkerów p.3":[{"n":"Wylęgarnia Choukkerów p.2"}],"Wzgórze Płaczek":[{"n":"Gadzia Kotlina"},{"n":"Płacząca Grota p.1 - sala 1"},{"n":"Trupia Przełęcz"},{"n":"Płacząca Grota p.1 - sala 2"},{"n":"Mglista Polana Vesy"}],"Zabłocona Jama p.1 - sala 1":[{"n":"Zawiły Bór"},{"n":"Zabłocona Jama p.2 - sala 1"}],"Zabłocona Jama p.1 - sala 2":[{"n":"Zabłocona Jama p.2 - sala 3"},{"n":"Trupia Przełęcz"}],"Zabłocona Jama p.2 - Sala Błotnistych Odmętów":[{"n":"Zabłocona Jama p.2 - sala 2"}],"Zabłocona Jama p.2 - Sala Duszącej Stęchlizny":[{"n":"Zabłocona Jama p.2 - sala 1"}],"Zabłocona Jama p.2 - Sala Magicznego Błota":[{"n":"Zabłocona Jama p.2 - sala 3"}],"Zabłocona Jama p.2 - sala 1":[{"n":"Zabłocona Jama p.1 - sala 1"},{"n":"Zabłocona Jama p.2 - Sala Duszącej Stęchlizny"},{"n":"Zabłocona Jama p.2 - sala 2"}],"Zabłocona Jama p.2 - sala 2":[{"n":"Zabłocona Jama p.2 - sala 1"},{"n":"Zabłocona Jama p.2 - Sala Błotnistych Odmętów"},{"n":"Zabłocona Jama p.2 - sala 3"}],"Zabłocona Jama p.2 - sala 3":[{"n":"Zabłocona Jama p.2 - sala 2"},{"n":"Zabłocona Jama p.2 - Sala Magicznego Błota"},{"n":"Zabłocona Jama p.1 - sala 2"}],"Zagrzybiałe Ścieżki p.1 - sala 1":[{"n":"Złowrogie Bagna"},{"n":"Zagrzybiałe Ścieżki p.2"}],"Zagrzybiałe Ścieżki p.1 - sala 2":[{"n":"Zagrzybiałe Ścieżki p.2"},{"n":"Gadzia Kotlina"}],"Zagrzybiałe Ścieżki p.1 - sala 3":[{"n":"Mglista Polana Vesy"},{"n":"Zagrzybiałe Ścieżki p.2"}],"Zagrzybiałe Ścieżki p.2":[{"n":"Zagrzybiałe Ścieżki p.1 - sala 1"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 2"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 3"},{"n":"Zagrzybiałe Ścieżki p.3"}],"Zagrzybiałe Ścieżki p.3":[{"n":"Zagrzybiałe Ścieżki p.2"}],"Zapomniany Grobowiec p.1":[{"n":"Ghuli Mogilnik"},{"n":"Zapomniany Grobowiec p.2"}],"Zapomniany Grobowiec p.2":[{"n":"Zapomniany Grobowiec p.1"},{"n":"Zapomniany Grobowiec p.3"}],"Zapomniany Grobowiec p.3":[{"n":"Zapomniany Grobowiec p.2"},{"n":"Zapomniany Grobowiec p.4"}],"Zapomniany Grobowiec p.4":[{"n":"Zapomniany Grobowiec p.3"},{"n":"Zapomniany Grobowiec p.5"}],"Zapomniany Grobowiec p.5":[{"n":"Zapomniany Grobowiec p.4"}],"Zapomniany Szlak":[{"n":"Uroczysko"},{"n":"Mroczny Przesmyk"},{"n":"Mokra Grota p.1"},{"n":"Grota Bezszelestnych Kroków - sala 1"},{"n":"Kamienna Jaskinia - sala 1"}],"Zapomniany Święty Gaj p.1 - sala 1":[{"n":"Zapomniany Święty Gaj p.1"},{"n":"Zapomniany Święty Gaj p.2"}],"Zapomniany Święty Gaj p.1":[{"n":"Zapomniany Święty Gaj p.2"},{"n":"Zapomniany Święty Gaj p.1 - sala 1"},{"n":"Księżycowe Wzniesienie"}],"Zapomniany Święty Gaj p.2":[{"n":"Zapomniany Święty Gaj p.1"},{"n":"Zapomniany Święty Gaj p.3"},{"n":"Zapomniany Święty Gaj p.1 - sala 1"}],"Zapomniany Święty Gaj p.3":[{"n":"Zapomniany Święty Gaj p.2"}],"Zasłonięte Jezioro":[{"n":"Spokojne Przejście"},{"n":"Słoneczna Wyżyna"}],"Zatopiony Szczyt":[{"n":"Stare Ruiny"},{"n":"Leśna Przełęcz"},{"n":"Ruiny Szabrowników"}],"Zawiły Bór":[{"n":"Selva Oscura"},{"n":"Iglaste Ścieżki"},{"n":"Błędny Szlak"},{"n":"Zabłocona Jama p.1 - sala 1"},{"n":"Mythar"}],"Zburzona Twierdza":[{"n":"Zniszczone Opactwo"},{"n":"Świszcząca Grota p.1"},{"n":"Świszcząca Grota p.2"},{"n":"Świszcząca Grota p.3"},{"n":"Opuszczony Bastion"},{"n":"Nawiedzony Jar"}],"Zdradzieckie Przejście p.1":[{"n":"Andarum Ilami"},{"n":"Głębokie Skałki p.1"},{"n":"Głębokie Skałki p.2"},{"n":"Zdradzieckie Przejście p.2"},{"n":"Wylęgarnia Choukkerów p.1"}],"Zdradzieckie Przejście p.2":[{"n":"Zdradzieckie Przejście p.1"},{"n":"Labirynt Margorii"}],"Zmarzlina Amaimona Soplorękiego - przedsionek":[{"n":"Skały Mroźnych Śpiewów"},{"n":"Zmarzlina Amaimona Soplorękiego - sala"}],"Zmarzlina Amaimona Soplorękiego - sala":[{"n":"Zmarzlina Amaimona Soplorękiego - przedsionek"}],"Zniszczone Opactwo":[{"n":"Ithan"},{"n":"Uroczysko"},{"n":"Leśny Bród"},{"n":"Zburzona Twierdza"},{"n":"Piekielna Grota p.1"}],"Zrujnowana Wieża":[{"n":"Opuszczony Bastion"},{"n":"Podziemny Przełaz p.2"}],"Złote Piaski":[{"n":"Dolina Suchych Łez"},{"n":"Ruiny Pustynnych Burz"},{"n":"Płaskowyż Arpan"},{"n":"Piramida Pustynnego Władcy p.1"},{"n":"Oaza Siedmiu Wichrów"},{"n":"Ciche Rumowiska"}],"Złowrogie Bagna":[{"n":"Mythar"},{"n":"Błędny Szlak"},{"n":"Las Dziwów"},{"n":"Zagrzybiałe Ścieżki p.1 - sala 1"},{"n":"Gadzia Kotlina"}],"Łany Zboża":[{"n":"Torneg"},{"n":"Wilczy Szpic"},{"n":"Mrowisko"},{"n":"Kopiec Mrówek"}],"Ślepe Wyrobisko":[{"n":"Grota Samotnych Dusz p.3"},{"n":"Kopalnia Margorii"}],"Śnieżna Grota p.1":[{"n":"Andarum Ilami"},{"n":"Śnieżna Grota p.2"}],"Śnieżna Grota p.2":[{"n":"Śnieżna Grota p.1"},{"n":"Śnieżna Grota p.3"}],"Śnieżna Grota p.3":[{"n":"Śnieżna Grota p.2"},{"n":"Lodowa Sala"}],"Świszcząca Grota p.1":[{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.2"}],"Świszcząca Grota p.2":[{"n":"Świszcząca Grota p.1"},{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.3"}],"Świszcząca Grota p.3":[{"n":"Świszcząca Grota p.2"},{"n":"Zburzona Twierdza"},{"n":"Świszcząca Grota p.4"}],"Świszcząca Grota p.4":[{"n":"Świszcząca Grota p.3"}],"Świątynia Andarum - biblioteka":[{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum - lokum mnichów":[{"n":"Świątynia Andarum - podziemia"},{"n":"Krypty Dusz Śniegu p.3"},{"n":"Świątynia Andarum - magazyn p.3"}],"Świątynia Andarum - magazyn p.1":[{"n":"Świątynia Andarum - podziemia"},{"n":"Świątynia Andarum - magazyn p.2"}],"Świątynia Andarum - magazyn p.2":[{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Świątynia Andarum - magazyn p.1"},{"n":"Świątynia Andarum - zbrojownia"},{"n":"Erem Czarnego Słońca p.4 - sala 2"}],"Świątynia Andarum - podziemia":[{"n":"Świątynia Andarum - zejście prawe"},{"n":"Świątynia Andarum - zejście lewe"},{"n":"Świątynia Andarum - biblioteka"},{"n":"Świątynia Andarum - lokum mnichów"},{"n":"Świątynia Andarum - magazyn p.1"}],"Świątynia Andarum - zbrojownia":[{"n":"Świątynia Andarum - magazyn p.2"}],"Świątynia Andarum - zejście lewe":[{"n":"Świątynia Andarum"},{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum - zejście prawe":[{"n":"Świątynia Andarum"},{"n":"Świątynia Andarum - podziemia"}],"Świątynia Andarum":[{"n":"Świątynia Andarum - zejście lewe"},{"n":"Świątynia Andarum - zejście prawe"},{"n":"Andarum Ilami"}],"Świątynia Mzintlavy":[{"n":"Pradawne Wzgórze Przodków"}],"Źródło Narumi":[{"n":"Wertepy Rzezimieszków"},{"n":"Uroczysko Wodnika"},{"n":"Podgrodzie Nithal"}]},"exp":[],"heros":{"Domina_Ecclesiae":[{"location":"Orla Grań","respawns":[{"top":65.5312,"left":320.375},{"top":174.75,"left":334.938},{"top":160.188,"left":407.75}],"gw":{"top":174.75,"left":385.906}},{"location":"Przeklęta Strażnica","respawns":[{"top":318.182,"left":127.273},{"top":286.364,"left":254.545},{"top":445.455,"left":381.818},{"top":381.818,"left":509.091},{"top":254.545,"left":540.909}],"gw":{"top":509.091,"left":63.6364}},{"location":"Przeklęta Strażnica - podziemia p.1 s.1","respawns":[{"top":105,"left":420},{"top":140,"left":525},{"top":157.5,"left":157.5},{"top":402.5,"left":140},{"top":385,"left":350},{"top":350,"left":472.5},{"top":367.5,"left":542.5},{"top":472.5,"left":262.5},{"top":630,"left":87.5},{"top":595,"left":455},{"top":612.5,"left":542.5}],"gw":{"top":35,"left":332.5}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":63.6364,"left":350}},{"location":"Przeklęta Strażnica p.1","respawns":[{"top":540.909,"left":254.545},{"top":509.091,"left":477.273},{"top":445.455,"left":540.909},{"top":254.545,"left":381.818},{"top":254.545,"left":159.091},{"top":286.364,"left":95.4545}],"gw":{"top":95.4545,"left":636.364}},{"location":"Przeklęta Strażnica p.2","respawns":[{"top":477.273,"left":159.091},{"top":445.455,"left":286.364},{"top":381.818,"left":413.636},{"top":190.909,"left":477.273},{"top":127.273,"left":254.545}],"gw":{"top":95.4545,"left":127.273}},{"location":"Orla Grań","respawns":[{"top":72.8125,"left":378.625},{"top":87.375,"left":393.188}],"gw":{"top":94.6562,"left":371.344}},{"location":"Przeklęta Strażnica p.2","respawns":[],"gw":{"top":636.364,"left":350}},{"location":"Przeklęta Strażnica p.1","respawns":[],"gw":{"top":636.364,"left":254.545}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":509.091,"left":604.545}},{"location":"Przeklęta Strażnica - podziemia p.1 s.2","respawns":[{"top":630,"left":87.5},{"top":315,"left":175},{"top":175,"left":87.5},{"top":122.5,"left":332.5},{"top":70,"left":385},{"top":490,"left":507.5},{"top":367.5,"left":367.5},{"top":595,"left":297.5}],"gw":{"top":630,"left":630}},{"location":"Przeklęta Strażnica - podziemia p.2 s.2","respawns":[{"top":350,"left":318.182},{"top":190.909,"left":286.364},{"top":159.091,"left":63.6364},{"top":509.091,"left":413.636}],"gw":{"top":127.273,"left":604.545}},{"location":"Przeklęta Strażnica - podziemia p.1 s.2","respawns":[],"gw":{"top":437.5,"left":35}},{"location":"Przeklęta Strażnica","respawns":[],"gw":{"top":636.364,"left":350}},{"location":"Orla Grań","respawns":[],"gw":{"top":0,"left":320.375}},{"location":"Stare Ruiny","respawns":[{"top":386.458,"left":408.333},{"top":350,"left":415.625}],"gw":{"top":386.458,"left":386.458}},{"location":"Przeklęty Zamek - wejście południowe","respawns":[{"top":204.167,"left":466.667},{"top":233.333,"left":262.5}],"gw":{"top":116.667,"left":58.3333}},{"location":"Przeklęty Zamek - podziemia południowe","respawns":[{"top":175,"left":240.625},{"top":175,"left":459.375},{"top":590.625,"left":175},{"top":590.625,"left":415.625}],"gw":{"top":656.25,"left":590.625}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":422.917,"left":175}},{"location":"Przeklęty Zamek - kanały","respawns":[{"top":175,"left":306.25},{"top":590.625,"left":437.5}],"gw":{"top":284.375,"left":306.25}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":233.333,"left":583.333}},{"location":"Przeklęty Zamek - sala zgromadzeń","respawns":[{"top":116.667,"left":58.3333},{"top":145.833,"left":320.833},{"top":131.25,"left":437.5},{"top":422.917,"left":612.5}],"gw":{"top":277.083,"left":495.833}},{"location":"Przeklęty Zamek p.1","respawns":[{"top":175,"left":568.75},{"top":437.5,"left":525}],"gw":{"top":306.25,"left":131.25}},{"location":"Przeklęty Zamek p.2","respawns":[{"top":175,"left":612.5},{"top":320.833,"left":58.3333}],"gw":{"top":291.667,"left":525}},{"location":"Stare Ruiny","respawns":[{"top":131.25,"left":532.292},{"top":160.417,"left":481.25},{"top":182.292,"left":422.917}],"gw":{"top":72.9167,"left":240.625}},{"location":"Przeklęty Zamek - wejście północne","respawns":[{"top":262.5,"left":175},{"top":204.167,"left":525}],"gw":{"top":379.167,"left":612.5}},{"location":"Przeklęty Zamek - podziemia północne","respawns":[],"gw":{"top":122.5,"left":35}},{"location":"Przeklęty Zamek - zbrojownia","respawns":[],"gw":{"top":335.417,"left":277.083}},{"location":"Przeklęty Zamek - podziemia południowe","respawns":[],"gw":{"top":43.75,"left":65.625}},{"location":"Przeklęty Zamek - wejście południowe","respawns":[],"gw":{"top":58.3333,"left":320.833}},{"location":"Stare Ruiny","respawns":[],"gw":{"top":459.375,"left":320.833}}],"Karmazynowy_Mściciel":[{"location":"Fort Eder","respawns":[],"gw":{"top":538.812,"left":72.8125}},{"location":"Pieczara Niepogody p.1","respawns":[{"top":402.5,"left":280},{"top":455,"left":157.5}],"gw":{"top":315,"left":70}},{"location":"Pieczara Niepogody p.2 - sala 1","respawns":[{"top":218.75,"left":597.917},{"top":87.5,"left":291.667}],"gw":{"top":393.75,"left":306.25}},{"location":"Pieczara Niepogody p.3","respawns":[{"top":131.25,"left":284.375},{"top":393.75,"left":306.25},{"top":415.625,"left":557.812}],"gw":{"top":295.312,"left":240.625}},{"location":"Pieczara Niepogody p.4","respawns":[{"top":145.833,"left":495.833},{"top":306.25,"left":58.3333}],"gw":{"top":422.917,"left":568.75}},{"location":"Pieczara Niepogody p.5","respawns":[{"top":160.417,"left":583.333},{"top":320.833,"left":466.667},{"top":291.667,"left":175}],"gw":{"top":116.667,"left":306.25}},{"location":"Pieczara Niepogody p.4","respawns":[{"top":145.833,"left":495.833},{"top":306.25,"left":58.3333}],"gw":{"top":43.75,"left":58.3333}},{"location":"Pieczara Niepogody p.3","respawns":[{"top":415.625,"left":557.812},{"top":393.75,"left":306.25},{"top":131.25,"left":284.375}],"gw":{"top":21.875,"left":514.062}},{"location":"Pieczara Niepogody p.2 - sala 2","respawns":[{"top":189.312,"left":320.375},{"top":538.812,"left":305.812}],"gw":{"top":655.312,"left":262.125}},{"location":"Fort Eder","respawns":[],"gw":{"top":0,"left":203.875}},{"location":"Mokradła","respawns":[],"gw":{"top":612.5,"left":689.062}},{"location":"Skarpiska Tolloków","respawns":[{"top":164.062,"left":404.688},{"top":273.438,"left":568.75},{"top":350,"left":393.75},{"top":667.188,"left":43.75}],"gw":{"top":328.125,"left":689.062}},{"location":"Skalne Turnie","respawns":[{"top":426.562,"left":667.188},{"top":623.438,"left":459.375},{"top":393.75,"left":328.125},{"top":32.8125,"left":339.062}],"gw":{"top":0,"left":185.938}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":612.5,"left":492.188}],"gw":{"top":601.562,"left":306.25}},{"location":"Krasowa Pieczara p.3","respawns":[{"top":131.25,"left":189.583}],"gw":{"top":189.583,"left":131.25}},{"location":"Krasowa Pieczara p.2","respawns":[{"top":364.583,"left":87.5},{"top":510.417,"left":466.667}],"gw":{"top":29.1667,"left":583.333}},{"location":"Krasowa Pieczara p.1","respawns":[],"gw":{"top":630,"left":525}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":371.875,"left":634.375}],"gw":{"top":470.312,"left":612.5}},{"location":"Krasowa Pieczara p.1","respawns":[],"gw":{"top":245,"left":175}},{"location":"Krasowa Pieczara p.2","respawns":[{"top":364.583,"left":87.5},{"top":510.417,"left":466.667}],"gw":{"top":554.167,"left":145.833}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":273.438,"left":350},{"top":21.875,"left":415.625}],"gw":{"top":142.188,"left":689.062}},{"location":"Wilcza Skarpa","respawns":[{"top":291.25,"left":29.125},{"top":283.969,"left":240.281},{"top":58.25,"left":254.844},{"top":247.562,"left":349.5},{"top":225.719,"left":436.875},{"top":495.125,"left":436.875}],"gw":{"top":123.781,"left":0}},{"location":"Warczące Osuwiska","respawns":[{"top":207.812,"left":164.062},{"top":525,"left":656.25}],"gw":{"top":656.25,"left":667.188}},{"location":"Wilcza Nora p.1","respawns":[],"gw":{"top":218.75,"left":175}},{"location":"Wilcza Nora p.2","respawns":[{"top":109.375,"left":393.75}],"gw":{"top":109.375,"left":65.625}},{"location":"Wilcza Nora p.1","respawns":[],"gw":{"top":656.25,"left":350}},{"location":"Warczące Osuwiska","respawns":[{"top":546.875,"left":175}],"gw":{"top":689.062,"left":284.375}},{"location":"Legowisko Wilczej Hordy","respawns":[{"top":612.5,"left":492.188},{"top":371.875,"left":634.375},{"top":273.438,"left":350},{"top":21.875,"left":415.625}],"gw":{"top":689.062,"left":185.938}},{"location":"Skalne Turnie","respawns":[{"top":426.562,"left":667.188},{"top":623.438,"left":459.375},{"top":393.75,"left":328.125},{"top":32.8125,"left":339.062}],"gw":{"top":328.125,"left":0}},{"location":"Skarpiska Tolloków","respawns":[{"top":164.062,"left":404.688},{"top":273.438,"left":568.75},{"top":350,"left":393.75},{"top":667.188,"left":43.75}],"gw":{"top":262.5,"left":0}},{"location":"Mokradła","respawns":[],"gw":{"top":689.062,"left":317.188}}],"Kochanka_Nocy":[{"location":"Mythar","respawns":[],"gw":{"top":0,"left":233.333}},{"location":"Zawiły Bór","respawns":[{"top":313.542,"left":102.083},{"top":284.375,"left":342.708},{"top":58.3333,"left":634.375},{"top":36.4583,"left":350}],"gw":{"top":277.083,"left":0}},{"location":"Selva Oscura","respawns":[{"top":269.792,"left":525},{"top":255.208,"left":167.708},{"top":138.542,"left":175},{"top":87.5,"left":554.167}],"gw":{"top":0,"left":422.917}},{"location":"Dolina Centaurów","respawns":[{"top":320.833,"left":408.333},{"top":393.75,"left":80.2083},{"top":116.667,"left":503.125},{"top":335.417,"left":612.5}],"gw":{"top":269.792,"left":692.708}},{"location":"Iglaste Ścieżki","respawns":[{"top":72.9167,"left":167.708},{"top":408.333,"left":211.458},{"top":342.708,"left":495.833},{"top":65.625,"left":605.208},{"top":291.667,"left":641.667}],"gw":{"top":459.375,"left":517.708}},{"location":"Zawiły Bór","respawns":[{"top":36.4583,"left":350},{"top":58.3333,"left":634.375},{"top":284.375,"left":342.708},{"top":313.542,"left":102.083}],"gw":{"top":182.292,"left":692.708}},{"location":"Błędny Szlak","respawns":[{"top":320.833,"left":58.3333},{"top":36.4583,"left":160.417},{"top":167.708,"left":546.875},{"top":306.25,"left":291.667}],"gw":{"top":459.375,"left":160.417}},{"location":"Złowrogie Bagna","respawns":[{"top":72.9167,"left":72.9167},{"top":284.375,"left":167.708},{"top":298.958,"left":386.458},{"top":145.833,"left":379.167}],"gw":{"top":459.375,"left":430.208}},{"location":"Gadzia Kotlina","respawns":[{"top":189.583,"left":364.583},{"top":233.333,"left":72.9167},{"top":313.542,"left":277.083},{"top":233.333,"left":72.9167},{"top":102.083,"left":525},{"top":357.292,"left":437.5}],"gw":{"top":255.208,"left":692.708}},{"location":"Mglista Polana Vesy","respawns":[{"top":87.375,"left":50.9688},{"top":80.0938,"left":320.375}],"gw":{"top":291.25,"left":94.6562}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 3","respawns":[{"top":408.333,"left":408.333},{"top":160.417,"left":554.167},{"top":102.083,"left":102.083}],"gw":{"top":627.083,"left":379.167}},{"location":"Zagrzybiałe Ścieżki p.2","respawns":[{"top":204.167,"left":422.917},{"top":627.083,"left":437.5}],"gw":{"top":510.417,"left":43.75}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 2","respawns":[{"top":247.917,"left":525},{"top":87.5,"left":247.917}],"gw":{"top":116.667,"left":583.333}},{"location":"Zagrzybiałe Ścieżki p.2","respawns":[],"gw":{"top":58.3333,"left":131.25}},{"location":"Zagrzybiałe Ścieżki p.1 - sala 1","respawns":[{"top":306.25,"left":481.25},{"top":175,"left":72.9167},{"top":510.417,"left":262.5}],"gw":{"top":627.083,"left":131.25}},{"location":"Złowrogie Bagna","respawns":[],"gw":{"top":196.875,"left":0}}],"Ksiąze_Kasim":[{"location":"Stare Sioło","respawns":[{"top":51.0417,"left":663.542},{"top":320.833,"left":612.5}],"gw":{"top":0,"left":568.75}},{"location":"Sucha Dolina","respawns":[{"top":560.656,"left":225.719},{"top":167.469,"left":320.375}],"gw":{"top":364.062,"left":458.719}},{"location":"Płaskowyż Arpan","respawns":[{"top":233.333,"left":269.792},{"top":364.583,"left":532.292},{"top":109.375,"left":517.708}],"gw":{"top":131.25,"left":627.083}},{"location":"Skalne Cmentarzysko p.1","respawns":[{"top":371.875,"left":109.375}],"gw":{"top":131.25,"left":196.875}},{"location":"Skalne Cmentarzysko p.2","respawns":[{"top":291.667,"left":583.333},{"top":583.333,"left":116.667}],"gw":{"top":656.25,"left":466.667}},{"location":"Skalne Cmentarzysko p.3","respawns":[{"top":426.562,"left":382.812},{"top":109.375,"left":601.562},{"top":481.25,"left":207.812}],"gw":{"top":481.25,"left":579.688}},{"location":"Skalne Cmentarzysko p.2","respawns":[{"top":583.333,"left":116.667},{"top":291.667,"left":583.333}],"gw":{"top":29.1667,"left":87.5}},{"location":"Skalne Cmentarzysko p.1","respawns":[{"top":371.875,"left":109.375}],"gw":{"top":634.375,"left":459.375}},{"location":"Płaskowyż Arpan","respawns":[{"top":109.375,"left":517.708},{"top":233.333,"left":269.792},{"top":364.583,"left":532.292}],"gw":{"top":459.375,"left":619.792}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":240.281,"left":174.75}},{"location":"Piramida Pustynnego Władcy p.1","respawns":[{"top":471.154,"left":551.923},{"top":148.077,"left":121.154}],"gw":{"top":13.4615,"left":376.923}},{"location":"Piramida Pustynnego Władcy p.2","respawns":[{"top":350,"left":277.083}],"gw":{"top":87.5,"left":335.417}},{"location":"Piramida Pustynnego Władcy p.1","respawns":[{"top":148.077,"left":121.154},{"top":471.154,"left":551.923}],"gw":{"top":659.615,"left":188.462}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":415.031,"left":458.719}},{"location":"Ruiny Pustynnych Burz","respawns":[{"top":167.469,"left":160.188},{"top":509.688,"left":320.375}],"gw":{"top":407.75,"left":0}},{"location":"Złote Piaski","respawns":[{"top":50.9688,"left":320.375},{"top":400.469,"left":320.375},{"top":436.875,"left":80.0938},{"top":211.156,"left":94.6562}],"gw":{"top":691.719,"left":334.938}},{"location":"Dolina Suchych Łez","respawns":[{"top":255.208,"left":576.042},{"top":444.792,"left":444.792},{"top":379.167,"left":247.917}],"gw":{"top":320.833,"left":0}},{"location":"Ciche Rumowiska","respawns":[{"top":342.708,"left":583.333},{"top":80.2083,"left":619.792},{"top":350,"left":466.667},{"top":196.875,"left":189.583},{"top":401.042,"left":138.542}],"gw":{"top":0,"left":342.708}},{"location":"Oaza Siedmiu Wichrów","respawns":[{"top":524.25,"left":356.781},{"top":487.844,"left":160.188},{"top":305.812,"left":233},{"top":254.844,"left":349.5}],"gw":{"top":509.688,"left":0}}],"Mroczny_Patryk":[{"location":"Orla Grań","respawns":[{"top":669.875,"left":203.875},{"top":648.031,"left":240.281},{"top":633.469,"left":50.9688},{"top":611.625,"left":72.8125}],"gw":{"top":691.719,"left":123.781}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":101.938,"left":196.594},{"top":80.0938,"left":305.812},{"top":160.188,"left":101.938},{"top":371.344,"left":101.938},{"top":451.438,"left":80.0938},{"top":313.094,"left":196.594},{"top":211.156,"left":291.25},{"top":291.25,"left":327.656},{"top":276.688,"left":385.906},{"top":356.781,"left":334.938},{"top":451.438,"left":371.344}],"gw":{"top":342.219,"left":458.719}},{"location":"Pagórki Łupieżców","respawns":[{"top":400.469,"left":58.25},{"top":182.031,"left":58.25},{"top":218.438,"left":327.656},{"top":29.125,"left":407.75},{"top":123.781,"left":109.219},{"top":43.6875,"left":269.406},{"top":342.219,"left":211.156},{"top":283.969,"left":123.781}],"gw":{"top":291.25,"left":123.781}},{"location":"Skład Grabieżców","respawns":[{"top":371.875,"left":590.625},{"top":284.375,"left":525},{"top":109.375,"left":196.875},{"top":371.875,"left":153.125}],"gw":{"top":656.25,"left":393.75}},{"location":"Pagórki Łupieżców","respawns":[{"top":531.531,"left":189.312},{"top":473.281,"left":72.8125},{"top":626.188,"left":422.312}],"gw":{"top":349.5,"left":0}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":611.625,"left":43.6875},{"top":589.781,"left":262.125},{"top":546.094,"left":320.375},{"top":604.344,"left":334.938},{"top":567.938,"left":400.469}],"gw":{"top":691.719,"left":80.0938}},{"location":"Dolina Rozbójników","respawns":[{"top":36.4062,"left":160.188},{"top":80.0938,"left":298.531},{"top":167.469,"left":203.875},{"top":174.75,"left":269.406},{"top":138.344,"left":283.969},{"top":138.344,"left":342.219},{"top":211.156,"left":152.906},{"top":262.125,"left":145.625},{"top":291.25,"left":211.156},{"top":356.781,"left":123.781},{"top":320.375,"left":58.25},{"top":415.031,"left":87.375},{"top":509.688,"left":101.938},{"top":597.062,"left":109.219},{"top":662.594,"left":167.469},{"top":553.375,"left":298.531},{"top":495.125,"left":240.281},{"top":356.781,"left":269.406},{"top":415.031,"left":298.531},{"top":371.344,"left":407.75},{"top":305.812,"left":393.188},{"top":298.531,"left":415.031},{"top":480.562,"left":327.656},{"top":444.156,"left":371.344}],"gw":{"top":451.438,"left":371.344}},{"location":"Kamienna Kryjówka","respawns":[{"top":262.5,"left":612.5},{"top":131.25,"left":306.25},{"top":196.875,"left":284.375},{"top":328.125,"left":87.5}],"gw":{"top":656.25,"left":284.375}},{"location":"Dolina Rozbójników","respawns":[],"gw":{"top":691.719,"left":196.594}},{"location":"Mokradła","respawns":[{"top":43.75,"left":437.5},{"top":87.5,"left":590.625},{"top":120.312,"left":207.812},{"top":470.312,"left":87.5},{"top":503.125,"left":43.75},{"top":546.875,"left":98.4375},{"top":579.688,"left":87.5},{"top":481.25,"left":371.875},{"top":503.125,"left":481.25},{"top":590.625,"left":514.062},{"top":634.375,"left":590.625}],"gw":{"top":153.125,"left":689.062}},{"location":"Polana Ścierwojadów","respawns":[{"top":371.875,"left":251.562},{"top":328.125,"left":109.375},{"top":153.125,"left":240.625},{"top":76.5625,"left":470.312}],"gw":{"top":0,"left":251.562}},{"location":"Ghuli Mogilnik","respawns":[{"top":590.625,"left":65.625},{"top":426.562,"left":76.5625},{"top":382.812,"left":350},{"top":120.312,"left":175}],"gw":{"top":207.812,"left":0}},{"location":"Dolina Rozbójników","respawns":[],"gw":{"top":691.719,"left":203.875}},{"location":"Mokradła","respawns":[],"gw":{"top":426.562,"left":0}},{"location":"Podmokła Dolina","respawns":[{"top":43.75,"left":459.375}],"gw":{"top":0,"left":350}},{"location":"Morwowe Przejście","respawns":[{"top":678.125,"left":87.5},{"top":557.812,"left":43.75},{"top":437.5,"left":568.75},{"top":207.812,"left":503.125},{"top":87.5,"left":601.562},{"top":251.562,"left":350},{"top":382.812,"left":175},{"top":65.625,"left":98.4375}],"gw":{"top":689.062,"left":350}},{"location":"Podmokła Dolina","respawns":[{"top":360.938,"left":164.062},{"top":612.5,"left":590.625},{"top":404.688,"left":43.75}],"gw":{"top":689.062,"left":470.312}},{"location":"Las Goblinów","respawns":[{"top":72.8125,"left":400.469},{"top":65.5312,"left":145.625},{"top":131.062,"left":58.25},{"top":254.844,"left":123.781},{"top":269.406,"left":50.9688},{"top":152.906,"left":378.625},{"top":196.594,"left":269.406},{"top":327.656,"left":262.125},{"top":276.688,"left":334.938},{"top":334.938,"left":371.344},{"top":589.781,"left":160.188},{"top":582.5,"left":43.6875},{"top":633.469,"left":29.125},{"top":633.469,"left":233},{"top":567.938,"left":240.281}],"gw":{"top":0,"left":305.812}},{"location":"Podmokła Dolina","respawns":[{"top":404.688,"left":43.75},{"top":612.5,"left":590.625},{"top":360.938,"left":164.062}],"gw":{"top":426.562,"left":689.062}},{"location":"Mokradła","respawns":[{"top":43.75,"left":437.5},{"top":87.5,"left":590.625},{"top":120.312,"left":207.812},{"top":470.312,"left":87.5},{"top":503.125,"left":43.75},{"top":546.875,"left":98.4375},{"top":579.688,"left":87.5},{"top":481.25,"left":371.875},{"top":503.125,"left":481.25},{"top":590.625,"left":514.062},{"top":634.375,"left":590.625}],"gw":{"top":0,"left":295.312}},{"location":"Dolina Rozbójników","respawns":[{"top":36.4062,"left":160.188},{"top":80.0938,"left":298.531},{"top":167.469,"left":203.875},{"top":174.75,"left":269.406},{"top":138.344,"left":283.969},{"top":138.344,"left":342.219},{"top":211.156,"left":152.906},{"top":262.125,"left":145.625},{"top":291.25,"left":211.156},{"top":356.781,"left":123.781},{"top":320.375,"left":58.25},{"top":415.031,"left":87.375},{"top":509.688,"left":101.938},{"top":597.062,"left":109.219},{"top":662.594,"left":167.469},{"top":553.375,"left":298.531},{"top":495.125,"left":240.281},{"top":356.781,"left":269.406},{"top":415.031,"left":298.531},{"top":371.344,"left":407.75},{"top":305.812,"left":393.188},{"top":298.531,"left":415.031},{"top":480.562,"left":327.656},{"top":444.156,"left":371.344}],"gw":{"top":0,"left":80.0938}},{"location":"Przełęcz Łotrzyków","respawns":[{"top":101.938,"left":196.594},{"top":80.0938,"left":305.812},{"top":160.188,"left":101.938},{"top":371.344,"left":101.938},{"top":451.438,"left":80.0938},{"top":313.094,"left":196.594},{"top":211.156,"left":291.25},{"top":291.25,"left":327.656},{"top":276.688,"left":385.906},{"top":356.781,"left":334.938},{"top":451.438,"left":371.344},{"top":611.625,"left":43.6875},{"top":589.781,"left":262.125},{"top":546.094,"left":320.375},{"top":604.344,"left":334.938},{"top":567.938,"left":400.469}],"gw":{"top":0,"left":123.781}}],"Złodziej":[{"location":"Eder","respawns":[{"top":36.4062,"left":21.8438}],"gw":{"top":87.375,"left":225.719}},{"location":"Dom Mrocznego Zgrzyta","respawns":[{"top":218.75,"left":437.5}],"gw":{"top":568.75,"left":393.75}},{"location":"Eder","respawns":[],"gw":{"top":174.75,"left":342.219}},{"location":"Siedziba Kultystów","respawns":[{"top":248.387,"left":248.387}],"gw":{"top":632.258,"left":361.29}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":415.031}},{"location":"Dom Artenii i Tafina","respawns":[{"top":218.75,"left":218.75}],"gw":{"top":218.75,"left":481.25}},{"location":"Dom Artenii i Tafina - piwnica","respawns":[{"top":466.667,"left":427.778}],"gw":{"top":77.7778,"left":77.7778}},{"location":"Dom Artenii i Tafina","respawns":[{"top":218.75,"left":218.75}],"gw":{"top":525,"left":393.75}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":415.031}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":525,"left":175}},{"location":"Dom Etrefana - pracownia","respawns":[{"top":525,"left":262.5}],"gw":{"top":131.25,"left":87.5}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":393.75,"left":481.25}},{"location":"Dom Etrefana p.1","respawns":[],"gw":{"top":393.75,"left":481.25}},{"location":"Dom Etrefana p.2","respawns":[{"top":262.5,"left":218.75}],"gw":{"top":306.25,"left":481.25}},{"location":"Dom Etrefana p.1","respawns":[],"gw":{"top":306.25,"left":481.25}},{"location":"Dom Etrefana","respawns":[],"gw":{"top":568.75,"left":350}},{"location":"Eder","respawns":[],"gw":{"top":415.031,"left":364.062}},{"location":"Dom Erniego","respawns":[{"top":306.25,"left":262.5}],"gw":{"top":350,"left":481.25}},{"location":"Dom Erniego p.1","respawns":[{"top":218.75,"left":262.5}],"gw":{"top":350,"left":87.5}},{"location":"Dom Erniego","respawns":[],"gw":{"top":350,"left":87.5}},{"location":"Eder","respawns":[],"gw":{"top":291.25,"left":298.531}},{"location":"Pracownia Bonifacego","respawns":[],"gw":{"top":350,"left":481.25}},{"location":"Pracownia Bonifacego p.1","respawns":[{"top":262.5,"left":218.75}],"gw":{"top":481.25,"left":437.5}},{"location":"Pracownia Bonifacego","respawns":[],"gw":{"top":525,"left":350}},{"location":"Eder","respawns":[],"gw":{"top":233,"left":291.25}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":481.25,"left":350}},{"location":"Dom Mikliniosa - przyziemie","respawns":[{"top":437.5,"left":350}],"gw":{"top":218.75,"left":437.5}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":306.25,"left":525}},{"location":"Dom Mikliniosa p.1","respawns":[{"top":218.75,"left":393.75}],"gw":{"top":262.5,"left":525}},{"location":"Dom Mikliniosa","respawns":[],"gw":{"top":350,"left":131.25}},{"location":"Eder","respawns":[],"gw":{"top":0,"left":203.875}},{"location":"Fort Eder","respawns":[],"gw":{"top":531.531,"left":174.75}},{"location":"Fortyfikacja p.1","respawns":[],"gw":{"top":595,"left":595}},{"location":"Fortyfikacja","respawns":[{"top":595,"left":245}],"gw":{"top":490,"left":560}},{"location":"Fortyfikacja p.1","respawns":[],"gw":{"top":385,"left":280}},{"location":"Fortyfikacja p.2","respawns":[{"top":140,"left":350}],"gw":{"top":35,"left":420}},{"location":"Fortyfikacja p.3","respawns":[],"gw":{"top":35,"left":210}},{"location":"Fortyfikacja p.4","respawns":[{"top":490,"left":385}],"gw":{"top":35,"left":455}},{"location":"Fortyfikacja p.5","respawns":[{"top":350,"left":350}],"gw":{"top":175,"left":455}},{"location":"Fortyfikacja p.4","respawns":[],"gw":{"top":315,"left":210}},{"location":"Fortyfikacja p.4","respawns":[],"gw":{"top":560,"left":350}},{"location":"Fort Eder","respawns":[],"gw":{"top":604.344,"left":436.875}},{"location":"Ciemnica Szubrawców p.1 - sala 1","respawns":[{"top":233.333,"left":133.333}],"gw":{"top":666.667,"left":100}},{"location":"Ciemnica Szubrawców p.1 - sala 2","respawns":[{"top":83.3333,"left":216.667}],"gw":{"top":650,"left":600}},{"location":"Ciemnica Szubrawców p.1 - sala 3","respawns":[{"top":131.25,"left":492.188},{"top":579.688,"left":557.812}],"gw":{"top":43.75,"left":87.5}},{"location":"Ciemnica Szubrawców p.1 - sala 2","respawns":[{"top":83.3333,"left":216.667}],"gw":{"top":116.667,"left":33.3333}},{"location":"Ciemnica Szubrawców p.1 - sala 1","respawns":[{"top":233.333,"left":133.333}],"gw":{"top":166.667,"left":33.3333}},{"location":"Fort Eder","respawns":[{"top":436.875,"left":429.594}],"gw":{"top":393.188,"left":458.719}},{"location":"Stary Kupiecki Trakt","respawns":[{"top":58.25,"left":58.25},{"top":87.375,"left":371.344},{"top":320.375,"left":400.469},{"top":669.875,"left":400.469}],"gw":{"top":691.719,"left":233}},{"location":"Stukot Widmowych Kół","respawns":[{"top":444.156,"left":167.469},{"top":203.875,"left":145.625},{"top":36.4062,"left":36.4062},{"top":524.25,"left":349.5}],"gw":{"top":691.719,"left":138.344}},{"location":"Wertepy Rzezimieszków","respawns":[{"top":131.25,"left":579.688}],"gw":{"top":98.4375,"left":535.938}},{"location":"Chata szabrowników","respawns":[{"top":175,"left":262.5}],"gw":{"top":612.5,"left":350}},{"location":"Wertepy Rzezimieszków","respawns":[{"top":601.562,"left":131.25},{"top":557.812,"left":579.688}],"gw":{"top":481.25,"left":0}},{"location":"Gościniec Bardów","respawns":[],"gw":{"top":0,"left":320.375}}],"Zły_Przewodnik":[{"location":"Ithan","respawns":[{"top":609,"left":203}],"gw":{"top":693,"left":301}},{"location":"Zniszczone Opactwo","respawns":[{"top":503.125,"left":65.625}],"gw":{"top":415.625,"left":0}},{"location":"Uroczysko","respawns":[{"top":364.583,"left":670.833},{"top":240.625,"left":583.333},{"top":65.625,"left":656.25}],"gw":{"top":43.75,"left":269.792}},{"location":"Lazurytowa Grota p.1","respawns":[{"top":350,"left":284.375}],"gw":{"top":284.375,"left":568.75}},{"location":"Lazurytowa Grota p.2","respawns":[{"top":218.75,"left":273.438},{"top":98.4375,"left":382.812},{"top":185.938,"left":601.562}],"gw":{"top":306.25,"left":448.438}},{"location":"Lazurytowa Grota p.3 - sala 2","respawns":[{"top":315,"left":157.5}],"gw":{"top":122.5,"left":297.5}},{"location":"Lazurytowa Grota p.3 - sala 1","respawns":[{"top":597.917,"left":320.833},{"top":233.333,"left":495.833},{"top":233.333,"left":145.833}],"gw":{"top":14.5833,"left":87.5}},{"location":"Lazurytowa Grota p.2","respawns":[],"gw":{"top":54.6875,"left":196.875}},{"location":"Lazurytowa Grota p.1","respawns":[],"gw":{"top":568.75,"left":371.875}},{"location":"Uroczysko","respawns":[{"top":189.583,"left":94.7917}],"gw":{"top":459.375,"left":393.75}},{"location":"Zapomniany Szlak","respawns":[{"top":36.4583,"left":298.958},{"top":94.7917,"left":342.708},{"top":109.375,"left":123.958},{"top":175,"left":182.292},{"top":247.917,"left":277.083},{"top":247.917,"left":43.75},{"top":357.292,"left":189.583},{"top":437.5,"left":350},{"top":364.583,"left":401.042},{"top":350,"left":481.25},{"top":371.875,"left":648.958},{"top":262.5,"left":627.083},{"top":160.417,"left":576.042},{"top":298.958,"left":422.917},{"top":247.917,"left":466.667}],"gw":{"top":189.583,"left":415.625}},{"location":"Mokra Grota p.1","respawns":[{"top":568.75,"left":218.75},{"top":448.438,"left":404.688},{"top":142.188,"left":634.375}],"gw":{"top":196.875,"left":142.188}},{"location":"Mokra Grota p.1 - boczny korytarz","respawns":[{"top":437.5,"left":185.938},{"top":612.5,"left":481.25},{"top":382.812,"left":273.438}],"gw":{"top":568.75,"left":54.6875}},{"location":"Mokra Grota p.2 - korytarz","respawns":[{"top":252,"left":322},{"top":462,"left":504},{"top":616,"left":182}],"gw":{"top":14,"left":70}},{"location":"Mokra Grota p.1 - boczny korytarz","respawns":[],"gw":{"top":667.188,"left":131.25}},{"location":"Mokra Grota p.1","respawns":[{"top":142.188,"left":634.375},{"top":448.438,"left":404.688},{"top":568.75,"left":218.75}],"gw":{"top":656.25,"left":43.75}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":109.375,"left":386.458}},{"location":"Grota Bezszelestnych Kroków - sala 1","respawns":[{"top":350,"left":415.625},{"top":262.5,"left":393.75}],"gw":{"top":196.875,"left":590.625}},{"location":"Grota Bezszelestnych Kroków - sala 2","respawns":[{"top":470.312,"left":568.75},{"top":185.938,"left":557.812},{"top":109.375,"left":360.938},{"top":207.812,"left":131.25}],"gw":{"top":131.25,"left":54.6875}},{"location":"Grota Bezszelestnych Kroków - sala 3","respawns":[{"top":142.188,"left":371.875},{"top":164.062,"left":54.6875},{"top":317.188,"left":371.875},{"top":459.375,"left":306.25},{"top":535.938,"left":492.188}],"gw":{"top":678.125,"left":470.312}},{"location":"Grota Bezszelestnych Kroków - sala 1","respawns":[],"gw":{"top":656.25,"left":196.875}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":459.375,"left":473.958}},{"location":"Mroczny Przesmyk","respawns":[{"top":262.5,"left":612.5},{"top":590.625,"left":645.312}],"gw":{"top":426.562,"left":470.312}},{"location":"Mroczna Pieczara p.1 - sala 3","respawns":[],"gw":{"top":41.1,"left":102.75}},{"location":"Mroczna Pieczara p.2","respawns":[],"gw":{"top":583.333,"left":233.333}},{"location":"Mroczny Przesmyk","respawns":[{"top":371.875,"left":459.375}],"gw":{"top":262.5,"left":404.688}},{"location":"Mroczna Pieczara p.2","respawns":[],"gw":{"top":311.111,"left":194.444}},{"location":"Mroczna Pieczara p.1 - sala 3","respawns":[],"gw":{"top":575.4,"left":246.6}},{"location":"Mroczny Przesmyk","respawns":[{"top":645.312,"left":328.125},{"top":557.812,"left":164.062},{"top":262.5,"left":328.125},{"top":76.5625,"left":196.875},{"top":175,"left":459.375},{"top":21.875,"left":459.375}],"gw":{"top":0,"left":360.938}},{"location":"Zapomniany Szlak","respawns":[],"gw":{"top":0,"left":393.75}},{"location":"Uroczysko","respawns":[],"gw":{"top":284.375,"left":692.708}},{"location":"Zniszczone Opactwo","respawns":[],"gw":{"top":0,"left":120.312}}]},"e2":{"(51lvl) Razuglag Oklash":{"name":"Razuglag Oklash","level":51,"location":"Stare Wyrobisko p.3","frame_size":21.174,"gather_key":"g","tolerance_px":14.0,"waiting_positions":[{"x":4,"y":6,"top":127.044,"left":84.696,"label":"(4,6)"},{"x":5,"y":6,"top":127.044,"left":105.87,"label":"(5,6)"},{"x":6,"y":6,"top":127.044,"left":127.044,"label":"(6,6)"},{"x":7,"y":6,"top":127.044,"left":148.218,"label":"(7,6)"},{"x":8,"y":6,"top":127.044,"left":169.392,"label":"(8,6)"},{"x":4,"y":7,"top":148.218,"left":84.696,"label":"(4,7)"},{"x":5,"y":7,"top":148.218,"left":105.87,"label":"(5,7)"},{"x":6,"y":7,"top":148.218,"left":127.044,"label":"(6,7)"},{"x":7,"y":7,"top":148.218,"left":148.218,"label":"(7,7)"},{"x":8,"y":7,"top":148.218,"left":169.392,"label":"(8,7)"}]}}};
 
   // Przejścia zebrane w grze (Kraken Dev), których brakowało w grafie świata – dopisywane do DATA.world.
@@ -2036,7 +2036,7 @@
     // Walka zestawu aktywnego kafelka (bot działa) albo zestawu wybranego w zakładkach.
     cfg() {
       if (!Bot.cfg) return null;
-      const set = Bot.running() && Run.tile ? Run.set() : Eq.set();
+      const set = Bot.running() && Run.tile ? Run.set() : Eq.view();
       if (set && !set.combat) set.combat = defaultCombat();
       return set ? set.combat : Bot.cfg.combat;
     },
@@ -2429,8 +2429,46 @@
     // Dobijarka należy do zestawu: przy pracy bota – zestaw kroku, poza nią – zestaw z zakładki Zestawy.
     cfg() {
       if (!Bot.cfg) return null;
-      const set = Bot.running() && Run.tile ? Run.set() : Eq.set();
+      const set = this.set();
       return set?.killer || Bot.cfg.killer;
+    },
+    set() {
+      return Bot.running() && Run.tile ? Run.set() : Eq.view();
+    },
+    // Zestaw gry wg profesji przeciwnika (Walka zestawu, wspólne dla zestawów gry); 0 = bez zmiany.
+    profBuild(set, prof) {
+      return +set?.profBuild?.[prof] || 0;
+    },
+    // Faktyczni wrogowie (relacja „wróg” / wrogi klan) i dołączeni z list; wykluczeni pominięci.
+    enemies() {
+      const c = this.cfg() || {};
+      return this.others().filter((o) => {
+        const nick = o.nick ?? o.name ?? '';
+        const clan = (o.clan && o.clan.name) || '';
+        if (this.inList(c.excludePlayer, nick) || this.inList(c.excludeClan, clan)) return false;
+        if (this.inList(c.includePlayer, nick) || this.inList(c.includeClan, clan)) return true;
+        return [3, 6].includes(+o.relation);
+      });
+    },
+    // „Zmieniaj zestaw względem najbliższego przeciwnika”: na mapie PvP zestaw gry wg profesji najbliższego wroga
+    // (żeby mieć właściwy, gdy on zaatakuje), bez wroga – zestaw gry kroku. Tylko przełączenie, bez ataku.
+    nearTick() {
+      if (!Bot.running() || !Run.tile || GameBuild.busy || now() - (this.nearAt || 0) < 2000) return;
+      this.nearAt = now();
+      const set = Run.set();
+      if (!set?.nearBuild || Battle.visible() || GameBuild.cur() == null) return;
+      const hero = this.hero();
+      const base = buildNo(set.buildNo);
+      let want = base;
+      let who = null;
+      if (hero && this.pvpMode() == 2) {
+        const d = (o) => Math.max(Math.abs(o.x - hero.x), Math.abs(o.y - hero.y));
+        who = this.enemies().sort((a, b) => d(a) - d(b))[0] || null;
+        if (who) want = this.profBuild(set, who.prof) || base;
+      }
+      if (GameBuild.cur() === want) return;
+      log(`⚔️ Zestaw w grze → ${want}: ${who ? `najbliższy wróg ${who.nick ?? who.name} (${who.lvl}${who.prof || ''})` : 'brak wroga w pobliżu – zestaw kroku'}`);
+      GameBuild.ensure({ buildNo: want }).catch(() => {});
     },
     enabled() {
       const c = this.cfg();
@@ -2490,6 +2528,15 @@
       if (!hero || typeof window._g !== 'function' || now() - this.lastAttack < 300) return;
       const t = this.targets().find((o) => Math.abs(o.x - hero.x) <= 2 && Math.abs(o.y - hero.y) <= 2);
       if (!t) return;
+      // Zestaw gry wg profesji celu – przełączenie przed atakiem (atak w kolejnym przebiegu, po zmianie zestawu).
+      const want = this.profBuild(this.set(), t.prof);
+      if (GameBuild.busy) return;
+      if (want && GameBuild.cur() != null && GameBuild.cur() !== want) {
+        this.lastAttack = now();
+        log(`⚔️ Zestaw w grze → ${want} przed atakiem na ${t.nick ?? t.name} (${t.prof || '?'})`);
+        GameBuild.ensure({ buildNo: want }).catch(() => {});
+        return;
+      }
       this.lastAttack = now();
       window._g(`fight&a=attack&id=${t.id}`);
       if (this.lastLog.id !== t.id || now() - this.lastLog.t > 5000) {
@@ -2517,6 +2564,7 @@
       for (;;) {
         try {
           this.tick();
+          this.nearTick();
         } catch (e) {
           console.error('[Kraken] dobijarka', e);
         }
@@ -4773,7 +4821,7 @@
   const SELL_BAGS = [1, 2, 3];
   const SELL_ROUNDS = 3;
 
-  async function sellLoot(set = Eq.set(), prefer = null) {
+  async function sellLoot(set = Eq.view(), prefer = null) {
     // Przed sprzedażą zestaw walki gry zestawu: inaczej przedmioty innego zestawu gry leżą w torbach i poszłyby do handlarza.
     if (!(await GameBuild.ready(set, 'sprzedaż łupu'))) return false;
     // Handlarz z zestawu („mapa · NPC”), miasto, w którym i tak robimy zakupy (prefer), albo najbliższe z SELL_POINTS.
@@ -5233,7 +5281,7 @@
   async function auctionSell() {
     const list = auctionItems();
     if (!list.length) return true;
-    if (!(await GameBuild.ready(Run.tile ? Run.set() : Eq.set(), 'aukcje'))) return false;
+    if (!(await GameBuild.ready(Run.tile ? Run.set() : Eq.view(), 'aukcje'))) return false;
     log(`🏛️ Aukcje: do wystawienia ${list.length} przedm.`);
     if (!(await Auction.open())) return false;
     let ok = true;
@@ -5284,7 +5332,7 @@
   // Przy rozpoczęciu kafelka (gdy włączony) i z przycisku: jedna wizyta przy skrzynce – przedmioty, potem nadwyżka złota.
   // itemsOnly: tylko przedmioty (po sprzedaży lootu – złoto i tak zaraz pójdzie na zakupy).
   // only: tylko te rzadkości (np. ['heroic', 'legendary'] – E2 wysyła je od razu, unikaty czekają na pełne torby).
-  async function milioner(set = Eq.set(), itemsOnly = false, only = null) {
+  async function milioner(set = Eq.view(), itemsOnly = false, only = null) {
     if (!(await GameBuild.ready(set, 'Milioner'))) return false;
     const m = Bot.cfg.milioner || defaultMilioner();
     const items = milionerItems().filter((x) => !only || only.includes(x.key));
@@ -6949,6 +6997,10 @@
       const cfg = Bot.cfg;
       return cfg.eqSets[cfg.eqTab] || cfg.eqSets[0];
     },
+    // Zestaw z zakładki Zestawy w zestawie gry z zakładki 1–9 (edycja i przyciski kup/załóż/rozdaj).
+    view(set = this.set(), n = UI.buildTab) {
+      return setView(set, n);
+    },
     // Poziom zestawu: limit poziomu przedmiotów i punktów umiejętności (bez ustawienia – poziom postaci).
     lvl(set = this.set()) {
       return +set.lvl || Game.level() || 0;
@@ -6988,7 +7040,8 @@
     // Przedmioty wpisane w warstwach któregokolwiek zestawu – nie idą pocztą, na aukcję ani do handlarza.
     protectedNames() {
       const out = new Set();
-      for (const set of Bot.cfg?.eqSets || []) for (const r of this.LAYERS) for (const e of Object.values(set.layers?.[r] || {})) if (e?.name) out.add(e.name);
+      for (const set of Bot.cfg?.eqSets || [])
+        for (const b of [set, ...Object.values(set.builds || {})]) for (const r of this.LAYERS) for (const e of Object.values(b?.layers?.[r] || {})) if (e?.name) out.add(e.name);
       return out;
     },
     classes(st, prof) {
@@ -7252,7 +7305,7 @@
   }
 
   const EQ_MAX_HOPS = 10;
-  async function eqBuy(set = Eq.set()) {
+  async function eqBuy(set = Eq.view()) {
     const plan = Eq.plan(set);
     if (!plan.length) {
       log(`✅ ${set.name}: nic do kupienia`);
@@ -7305,6 +7358,35 @@
     return !failed;
   }
 
+  // Zestawy gry (1–9) w zestawie bota: zestaw gry 1 to pola samego zestawu, 2–9 – set.builds[n], każdy z osobnym
+  // ekwipunkiem (z warstwami), umiejętnościami, mistrzostwem i walką. Poziom, mikstury, dobijanie i zastosowanie są wspólne.
+  const BUILD_FIELDS = ['slots', 'layers', 'skills', 'combat', 'mastery'];
+  const buildNo = (n) => Math.min(9, Math.max(1, Math.floor(+n) || 1));
+  function buildOf(set, n) {
+    n = buildNo(n);
+    if (n === 1) return set;
+    set.builds ||= {};
+    const b = (set.builds[n] ||= {});
+    b.slots ||= {};
+    b.layers ||= { unique: {}, heroic: {}, legendary: {} };
+    b.skills ||= {};
+    b.combat ||= defaultCombat();
+    b.mastery ||= { skills: [], repeat: true };
+    return b;
+  }
+  // Zestaw bota „widziany” w zestawie gry n: pola zestawu gry czytane i zapisywane w set.builds[n], reszta – z zestawu.
+  function setView(set, n) {
+    n = buildNo(n);
+    if (!set || n === 1) return set;
+    const b = buildOf(set, n);
+    const v = Object.create(set);
+    for (const f of BUILD_FIELDS) Object.defineProperty(v, f, { get: () => b[f], set: (x) => (b[f] = x), enumerable: true });
+    v.buildNo = n;
+    return v;
+  }
+  // Zestaw gry dla rodzaju kroku (Zastosowanie): wybrany przy zastosowaniu, domyślnie 1.
+  const buildFor = (set, type) => buildNo((type && set?.useBuild?.[type]) || set?.gameBuild || 1);
+
   // Zestaw walki gry (cyfra przy postaci, .builds-interface): PPM → menu „N. Nazwa” → klik, jak gracz. Darmowe są 3,
   // można mieć do 9; zestaw bota wskazuje numer (domyślnie 1). Bez interfejsu zestawów (niski poziom) – pomijamy.
   const GameBuild = {
@@ -7314,11 +7396,21 @@
     // Przed sprzedażą / pocztą / aukcjami: właściwy zestaw gry albo (gdy nie da się przełączyć) pominięcie tej czynności.
     async ready(set, what) {
       if (await this.ensure(set)) return true;
-      log(`⚠️ ${what}: pomijam – zestaw w grze ${this.cur()} zamiast ${+set?.gameBuild || 1} (nie sprzedaję cudzego ekwipunku)`);
+      log(`⚠️ ${what}: pomijam – zestaw w grze ${this.cur()} zamiast ${buildNo(set?.buildNo)} (nie sprzedaję cudzego ekwipunku)`);
       return false;
     },
+    busy: false,
     async ensure(set) {
-      const want = Math.min(9, Math.max(1, +set?.gameBuild || 1));
+      if (this.busy) await waitUntil(() => !this.busy, 5000, 100);
+      this.busy = true;
+      try {
+        return await this.ensure_(set);
+      } finally {
+        this.busy = false;
+      }
+    },
+    async ensure_(set) {
+      const want = buildNo(set?.buildNo);
       const box = $('.builds-interface');
       if (!box || !isShown(box) || this.cur() === want || this.cur() == null) return true;
       const from = this.cur();
@@ -7336,7 +7428,7 @@
     },
   };
 
-  async function eqEquip(set = Eq.set()) {
+  async function eqEquip(set = Eq.view()) {
     // Najpierw zestaw walki gry (zmienia ekwipunek/umiejętności), potem przedmioty zestawu bota.
     await GameBuild.ensure(set);
     let worn = 0;
@@ -9910,8 +10002,9 @@
     delete set.transferNick;
     set.combat = normalizeCombat(src.combat);
     if (old?.combat?.knownSkills) set.combat.knownSkills = old.combat.knownSkills;
-    // Warstwy (lepsze uni/hero/lega) ustawia gracz – plik z repo ich nie nosi, więc zostają z dotychczasowego zestawu.
+    // Warstwy (lepsze uni/hero/lega), zestawy gry 2–9 i ich wybór ustawia gracz – plik z repo ich nie nosi, więc zostają.
     if (old?.layers && !src.layers) set.layers = old.layers;
+    for (const f of ['builds', 'useBuild', 'profBuild', 'nearBuild']) if (old?.[f] !== undefined && src[f] === undefined) set[f] = old[f];
     if (old) cfg.eqSets[i] = set;
     else cfg.eqSets.push(set);
     if (!quiet) {
@@ -10332,7 +10425,10 @@
     const need = +set.potionTarget || 0;
     return space.free >= 0.25 * space.total && (!need || pots >= 0.75 * need);
   }
-  const taskSet = (task) => taskSetOf(task) || Eq.set();
+  const taskSet = (task) => {
+    const s = taskSetOf(task) || Eq.set();
+    return setView(s, buildFor(s, 'task'));
+  };
 
   // Zaopatrzenie zadania wg jego zestawu (jak w expie): przy wejściu – pełne przygotowanie (sprzedaż, ekwipunek,
   // umiejętności, mikstury), chyba że zapasy wystarczą; w trakcie – powrót, gdy torby pełne albo brak mikstur.
@@ -11072,12 +11168,13 @@
       const pool = sets.filter((s) => (+s.lvl || 0) <= lvl).sort((a, b) => (+b.lvl || 0) - (+a.lvl || 0));
       return pool[0] || sets.sort((a, b) => (+a.lvl || 0) - (+b.lvl || 0))[0] || Eq.set();
     },
+    // Zestaw kroku w zestawie gry z Zastosowania (dla rodzaju kroku).
     set() {
-      if (!this.tile) return Eq.set();
+      if (!this.tile) return Eq.view();
       const s = this.setFor(this.tile.type);
       if (this.tileSetId && this.tileSetId !== s.id) log(`🎒 Zestaw: „${s.name}”`);
       this.tileSetId = s.id;
-      return s;
+      return setView(s, buildFor(s, this.tile.type));
     },
     baseSet() {
       return this.set();
@@ -11086,7 +11183,7 @@
     pickSet() {
       const set = this.setFor(this.tile?.type);
       this.tileSetId = set.id;
-      log(`🎒 Zestaw kroku: „${set.name}” (${+set.lvl || 0} lvl)`);
+      log(`🎒 Zestaw kroku: „${set.name}” (${+set.lvl || 0} lvl, zestaw gry ${buildFor(set, this.tile?.type)})`);
       return set;
     },
   };
@@ -11741,7 +11838,7 @@
       return (await waitUntil(() => (this.levels()[id] || 0) > lvl0, 1500)) != null;
     },
     // Rozdaje wolne punkty według planu zestawu, w kolejności drzewka; zablokowane progi pomija.
-    async apply(set = Eq.set()) {
+    async apply(set = Eq.view()) {
       if (this.tooLow()) return false;
       try {
         await MasterySlots.ensure(set);
@@ -11902,7 +11999,7 @@
   // Bot.cfg.combat = Walka zestawu wybranego w zakładkach (edycja w panelu, eksport/import Walki).
   function defineCombat(cfg) {
     delete cfg.combat;
-    const cur = () => cfg.eqSets[cfg.eqTab] || cfg.eqSets[0];
+    const cur = () => buildOf(cfg.eqSets[cfg.eqTab] || cfg.eqSets[0], UI.buildTab);
     Object.defineProperty(cfg, 'combat', {
       configurable: true,
       enumerable: false,
@@ -12023,6 +12120,7 @@
     }
     delete cfg.skills;
     for (const set of cfg.eqSets) set.combat = normalizeCombat(set.combat || JSON.parse(JSON.stringify(legacyCombat)));
+    for (const set of cfg.eqSets) for (const b of Object.values(set.builds || {})) if (b) b.combat = normalizeCombat(b.combat);
     defineCombat(cfg);
     // „Zatrzymaj na poziomie” i „Unikaj” zniknęły z panelu – wyłączone, żeby nie działały niewidocznie.
     cfg.maxLvlEnabled = false;
@@ -12529,6 +12627,14 @@
 #kraken-panel .kr-eq-slot.kr-bag{border-color:#c8a21e}
 #kraken-panel .kr-eq-slot.kr-buy{border-color:#c55}
 #kraken-panel .kr-eq-layers{display:flex;gap:3px;margin-bottom:4px}
+#kraken-panel .kr-builds{display:flex;gap:2px;flex:1}
+#kraken-panel .kr-builds button{flex:1;padding:1px 0;min-width:0;opacity:.6}
+#kraken-panel .kr-builds button.has{opacity:.9;font-weight:bold}
+#kraken-panel .kr-builds button.on{opacity:1;outline:2px solid #c8921e}
+#kraken-panel .kr-pb{border:1px solid #2c3546;border-radius:4px;padding:4px;margin-bottom:6px}
+#kraken-panel .kr-pb-grid{display:grid;grid-template-columns:repeat(3,auto auto);gap:3px 6px;align-items:center;font-size:11px}
+#kraken-panel .kr-use-row{display:flex;align-items:center;gap:6px}
+#kraken-panel .kr-use-row select{flex:none;width:44px}
 #kraken-panel .kr-eq-layers button{flex:1;padding:2px 0;font-size:11px;opacity:.65}
 #kraken-panel .kr-eq-layers button.on{opacity:1;outline:1px solid currentColor}
 #kraken-panel .kr-eq-layers .kr-r-unique{color:#e8d45a}
@@ -12761,13 +12867,13 @@
     <div class="kr-row"><div class="kr-eq-tabs" data-k="eqTabs"></div><button data-k="eqExport" title="Eksport zestawu do pliku (sets/&lt;profesja&gt;/)">⤓</button><button data-k="eqImport" title="Import zestawów z plików">⤒</button></div>
     <input type="file" accept=".json,application/json" multiple data-k="eqFile" hidden>
     <label class="kr-row kr-set-lvl">Poziom zestawu <input type="number" data-set-f="lvl" min="1" max="500"><button class="kr-info" data-help="setlvl" title="Legenda">i</button></label>
-    <label class="kr-row kr-set-lvl">Zestaw w grze <select data-set-f="gameBuild" title="Zestaw walki gry (cyfra przy postaci), wybierany przed założeniem ekwipunku">${[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => `<option value="${n}">${n}</option>`).join('')}</select></label>
+    <div class="kr-row kr-set-lvl">Zestaw w grze <div class="kr-builds" data-k="buildTabs"></div></div>
     <div class="kr-hint" data-help-body="setlvl" hidden>Bot wybiera zestaw o najwyższym poziomie, ale nie wyższym niż poziom postaci, z zaznaczonym zastosowaniem dla wykonywanego kroku. Poziom ogranicza też przedmioty i punkty umiejętności (poziom − 24).</div>
     <details data-k="healBox"><summary>🧪 Leczenie</summary>
       <div class="kr-row"><button class="kr-pot" data-k="potPick" title="Wybierz miksturę"></button><input type="number" data-set-f="potionTarget" min="0" step="5" title="Docelowa liczba mikstur w torbach"><button data-k="potBuy" title="Kup teraz">🛒</button></div>
       <div class="kr-potlist" data-k="potList" hidden></div>
     </details>
-    <details data-k="eqBox"><summary>🛡️ Ekwipunek</summary>
+    <details data-k="eqBox"><summary data-k="eqLabel">🛡️ Ekwipunek</summary>
       <div class="kr-eq-layers" data-k="eqLayers"></div>
       <div class="kr-eq-top">
         <div class="kr-eq-grid" data-k="eqGrid"></div>
@@ -12783,6 +12889,7 @@
       <div data-k="skTree"></div>
     </details>
     <details data-k="cbBox"><summary data-k="cbLabel">🗡️ Walka</summary>
+      <div class="kr-pb" data-k="pbBox"></div>
       <label class="kr-check"><input type="checkbox" data-combat="enabled"> Włączona</label>
       <label class="kr-row">Tryb <select data-combat="speed">
         <option value="slow">SLOW</option>
@@ -12904,6 +13011,8 @@
   const UI = {
     root: null,
     k: {},
+    // Zakładka zestawu gry (1–9) w Zestawach: którego ekwipunek, umiejętności i walkę edytujemy.
+    buildTab: 1,
     eqPick: null,
     eqLvlInit: false,
 
@@ -12999,7 +13108,7 @@
       const k = this.k;
       if (!k.eqGrid) return;
       const cfg = Bot.cfg;
-      const set = Eq.set();
+      const set = Eq.view();
       const items = Inv.items();
       const mk = (tag, cls, txt) => {
         const el = document.createElement(tag);
@@ -13213,8 +13322,8 @@
       const st = this.eqPick;
       k.eqPick.hidden = st == null;
       if (st == null) return;
-      if ((this.eqLayer || 'common') !== 'common') return this.renderEqLayerPick(Eq.set(), this.eqLayer, st);
-      const set = Eq.set();
+      if ((this.eqLayer || 'common') !== 'common') return this.renderEqLayerPick(Eq.view(), this.eqLayer, st);
+      const set = Eq.view();
       const items = Inv.items();
       const list = Eq.candidates(st, {
         prof: Game.prof(),
@@ -13250,14 +13359,14 @@
       const k = this.k;
       if (!k.skTree) return;
       const prof = Game.prof();
-      const set = Eq.set();
+      const set = Eq.view();
       const enabled = SKILL_ENABLED.includes(prof);
       const tree = enabled ? Skills.tree(prof) : null;
       const live = tree ? Skills.live() : null;
       const plan = Skills.plan(set, prof);
       const total = Skills.pointsTotal();
       const setLvl = Eq.lvl(set);
-      const sig = JSON.stringify([prof, set.id, plan, live, total, Skills._sig, setLvl, this.skImport]);
+      const sig = JSON.stringify([prof, set.id, set.buildNo || 1, plan, live, total, Skills._sig, setLvl, this.skImport]);
       if (!force && sig === this.skSig) return;
       this.skSig = sig;
       const mk = (tag, cls, txt) => {
@@ -13267,7 +13376,7 @@
         return el;
       };
 
-      k.skLabel.textContent = `Umiejętności · ${set.name}`;
+      k.skLabel.textContent = `✨ Umiejętności · ${set.name} · zestaw gry ${set.buildNo || 1}`;
       k.skTree.textContent = '';
       if (!enabled) {
         k.skTree.appendChild(mk('div', 'kr-hint', `Drzewko dla profesji ${SKILL_PROFS[prof] || prof || '?'} – jeszcze nieobsługiwane`));
@@ -13394,7 +13503,7 @@
         const b = e.target.closest('button');
         if (!b) return;
         const prof = Game.prof();
-        const set = Eq.set();
+        const set = Eq.view();
         const plan = Skills.plan(set, prof);
         if (b.dataset.skAct === 'buySlot') {
           Bot.runTask('slot mistrzostwa', async () => {
@@ -13523,7 +13632,7 @@
       k.eqList.addEventListener('click', (e) => {
         const row = e.target.closest('[data-item]');
         if (!row || this.eqPick == null) return;
-        const set = Eq.set();
+        const set = Eq.view();
         const st = this.eqPick;
         const layer = this.eqLayer || 'common';
         if (layer !== 'common') {
@@ -14421,7 +14530,10 @@
     renderSet() {
       this.syncCombat?.();
       const set = Eq.set();
-      for (const el of $$('[data-set-f]', this.root)) el.value = set[el.dataset.setF] ?? (el.dataset.setF === 'gameBuild' ? 1 : '');
+      for (const el of $$('[data-set-f]', this.root)) el.value = set[el.dataset.setF] ?? '';
+      this.renderBuildTabs();
+      this.renderProfBuild();
+      if (this.k.eqLabel) this.k.eqLabel.textContent = `🛡️ Ekwipunek · zestaw gry ${this.buildTab || 1}`;
       this.k.potList.hidden = true;
       this.renderPotions();
       this.renderEq();
@@ -14438,12 +14550,80 @@
       this.renderExp();
     },
 
-    // Zastosowanie zestawu: rodzaje kroków programu, w których bot może go wybrać (domyślnie wszystkie).
+    // Zakładki 1–9: zestaw gry, którego ekwipunek, umiejętności i walkę edytujemy (pogrubione – z danymi).
+    renderBuildTabs() {
+      const box = this.k.buildTabs;
+      if (!box) return;
+      const set = Eq.set();
+      const cur = this.buildTab || 1;
+      const used = new Set(TILE_TYPES.map(([t]) => buildFor(set, t)));
+      box.textContent = '';
+      for (let n = 1; n <= 9; n++) {
+        const b = set.builds?.[n];
+        const has = n === 1 || (b && (Object.values(b.slots || {}).some(Boolean) || Object.values(b.skills || {}).some((x) => x && Object.keys(x).length) || (b.combat?.entries || []).length));
+        const btn = document.createElement('button');
+        btn.textContent = String(n);
+        btn.dataset.build = n;
+        btn.className = `${n === cur ? 'on' : ''}${has ? ' has' : ''}`;
+        btn.title = `Zestaw gry ${n}${used.has(n) ? ' – używany w Zastosowaniu' : ''}${has ? '' : ' (pusty)'}`;
+        box.appendChild(btn);
+      }
+    },
+    // Walka › zestaw gry wg profesji przeciwnika i zmiana względem najbliższego wroga (wspólne dla zestawów gry).
+    renderProfBuild() {
+      const box = this.k.pbBox;
+      if (!box) return;
+      const set = Eq.set();
+      box.textContent = '';
+      const hint = document.createElement('div');
+      hint.className = 'kr-hint';
+      hint.textContent = 'Zestaw w grze wg profesji przeciwnika (przed atakiem; wspólne dla zestawów gry, — = bez zmiany):';
+      const grid = document.createElement('div');
+      grid.className = 'kr-pb-grid';
+      for (const [p, name] of Object.entries(SKILL_PROFS)) {
+        const sel = document.createElement('select');
+        sel.dataset.pb = p;
+        fillSelect(sel, [['0', '—'], ...[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => [String(n), String(n)])], String(+set.profBuild?.[p] || 0));
+        grid.append(Object.assign(document.createElement('span'), { textContent: name }), sel);
+      }
+      const l = document.createElement('label');
+      l.className = 'kr-check';
+      const c = document.createElement('input');
+      c.type = 'checkbox';
+      c.dataset.near = '1';
+      c.checked = !!set.nearBuild;
+      l.title = 'Na mapie PvP: zestaw w grze wg profesji najbliższego wroga (relacja wróg / wrogi klan), żeby mieć właściwy, gdy zaatakuje; bez wroga – zestaw gry kroku. Tylko zmiana zestawu, bez ataku.';
+      l.append(c, document.createTextNode(' Zmieniaj zestaw względem najbliższego przeciwnika'));
+      box.append(hint, grid, l);
+    },
+    bindBuilds() {
+      const k = this.k;
+      k.buildTabs?.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-build]');
+        if (!b) return;
+        this.buildTab = +b.dataset.build;
+        this.eqPick = null;
+        this.skSig = null;
+        this.renderSet();
+      });
+      k.pbBox?.addEventListener('change', (e) => {
+        const set = Eq.set();
+        if (e.target.dataset.pb) set.profBuild = Object.assign({}, set.profBuild, { [e.target.dataset.pb]: +e.target.value || 0 });
+        else if (e.target.dataset.near) set.nearBuild = e.target.checked;
+        else return;
+        Bot.saveCfg();
+      });
+    },
+
+    // Zastosowanie zestawu: rodzaje kroków programu, w których bot może go wybrać (domyślnie wszystkie), i zestaw gry
+    // (1–9) używany w danym rodzaju kroku.
     renderUse() {
       const box = this.k.useList;
       const set = Eq.set();
       box.textContent = '';
       for (const [type, label] of TILE_TYPES) {
+        const row = document.createElement('div');
+        row.className = 'kr-use-row';
         const l = document.createElement('label');
         l.className = 'kr-check';
         const c = document.createElement('input');
@@ -14451,16 +14631,25 @@
         c.dataset.use = type;
         c.checked = set.use?.[type] !== false;
         l.append(c, document.createTextNode(' ' + label));
-        box.appendChild(l);
+        const sel = document.createElement('select');
+        sel.dataset.useBuild = type;
+        sel.title = 'Zestaw w grze dla tego rodzaju kroku';
+        fillSelect(sel, [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => [String(n), String(n)]), String(buildFor(set, type)));
+        sel.disabled = !c.checked;
+        row.append(l, sel);
+        box.appendChild(row);
       }
     },
     bindUse() {
       this.k.useList.addEventListener('change', (e) => {
-        const type = e.target.dataset.use;
-        if (!type) return;
         const set = Eq.set();
-        set.use = Object.assign({}, set.use, { [type]: e.target.checked });
+        const type = e.target.dataset.use;
+        if (type) set.use = Object.assign({}, set.use, { [type]: e.target.checked });
+        else if (e.target.dataset.useBuild) set.useBuild = Object.assign({}, set.useBuild, { [e.target.dataset.useBuild]: buildNo(e.target.value) });
+        else return;
         Bot.saveCfg();
+        this.renderUse();
+        this.renderBuildTabs();
       });
     },
 
@@ -14670,7 +14859,7 @@
         if (el.type === 'checkbox') el.checked = !!v;
         else el.value = String(v);
       }
-      if (this.k.cbLabel) this.k.cbLabel.textContent = `Walka – ${Eq.set().name}${Bot.cfg.combat.enabled ? '' : ' (wyłączona)'}`;
+      if (this.k.cbLabel) this.k.cbLabel.textContent = `🗡️ Walka – ${Eq.set().name} · zestaw gry ${this.buildTab || 1}${Bot.cfg.combat.enabled ? '' : ' (wyłączona)'}`;
       this.renderCombat();
     },
 
@@ -15086,6 +15275,7 @@
         this.renderPotions();
       });
       this.bindUse();
+      this.bindBuilds();
       this.bindMil();
     },
 
@@ -15353,7 +15543,7 @@
     },
     // Timery Minutnika widziane przez bota: Kraken.timers()
     // Zestaw walki gry: Kraken.gameBuild(2) – przełącza (PPM → menu), bez argumentu – bieżący numer.
-    gameBuild: (n) => (n ? GameBuild.ensure({ gameBuild: n }) : GameBuild.cur()),
+    gameBuild: (n) => (n ? GameBuild.ensure({ buildNo: n }) : GameBuild.cur()),
     // Błogosławieństwo: Kraken.bless() → { active, blessed, spare }
     bless: () => Bless.info(),
     timers: () => console.table(minutnikTimers().map((x) => ({ nazwa: x.name, mapa: x.map, od: new Date(x.minResp * 1000).toLocaleTimeString('pl-PL'), do: new Date(x.presp * 1000).toLocaleTimeString('pl-PL') }))),
@@ -15367,6 +15557,7 @@
       if (!Bot.cfg) throw new Error('Kraken jeszcze się nie zainicjalizował');
       Object.assign(Bot.cfg, patch);
       for (const set of Bot.cfg.eqSets) set.combat = normalizeCombat(set.combat);
+      for (const set of Bot.cfg.eqSets) for (const b of Object.values(set.builds || {})) if (b) b.combat = normalizeCombat(b.combat);
       if ('combat' in patch) Bot.cfg.eqSets[Bot.cfg.eqTab || 0].combat = normalizeCombat(patch.combat);
       defineCombat(Bot.cfg);
       Bot.cfg.milioner = normalizeMilioner(Bot.cfg.milioner, Bot.cfg.eqSets);
