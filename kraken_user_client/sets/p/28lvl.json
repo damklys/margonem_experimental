@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "4.6.202610182000",
+ "version": "4.9.202610190300",
  "prof": "p",
  "set": {
   "id": "def-p-28",
@@ -22,13 +22,22 @@
    "8": "Magiczne trzewiki"
   },
   "skills": {
-   "p": {}
+   "p": {
+    "38": 1,
+    "99": 1,
+    "185": 1,
+    "263": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
   }
  }
 }

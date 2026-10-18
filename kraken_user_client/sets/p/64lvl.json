@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "4.6.202610182000",
+ "version": "4.9.202610190300",
  "prof": "p",
  "set": {
   "id": "def-p-64",
@@ -21,13 +21,30 @@
    "8": "Szara piechota"
   },
   "skills": {
-   "p": {}
+   "p": {
+    "38": 2,
+    "99": 2,
+    "185": 6,
+    "263": 10,
+    "108": 1,
+    "168": 1,
+    "198": 10,
+    "44": 2,
+    "200": 6
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    99,
+    38
+   ],
+   "repeat": true
   }
  }
 }

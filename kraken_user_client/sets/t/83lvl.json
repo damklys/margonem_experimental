@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "4.6.202610182000",
+ "version": "4.9.202610190300",
  "prof": "t",
  "set": {
   "id": "def-t-83",
@@ -21,13 +21,33 @@
    "8": "Cholewy czarnoksiężnika"
   },
   "skills": {
-   "t": {}
+   "t": {
+    "26": 2,
+    "239": 2,
+    "243": 7,
+    "263": 10,
+    "168": 1,
+    "215": 1,
+    "255": 10,
+    "61": 6,
+    "90": 6,
+    "240": 10,
+    "15": 1,
+    "193": 3
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    26,
+    239
+   ],
+   "repeat": true
   }
  }
 }

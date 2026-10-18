@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "4.6.202610182000",
+ "version": "4.9.202610190300",
  "prof": "t",
  "set": {
   "id": "def-t-48",
@@ -22,13 +22,27 @@
    "8": "Podeszwy nocnej ucieczki"
   },
   "skills": {
-   "t": {}
+   "t": {
+    "26": 2,
+    "239": 2,
+    "243": 5,
+    "263": 3,
+    "168": 1,
+    "215": 1,
+    "255": 10
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    26
+   ],
+   "repeat": true
   }
  }
 }

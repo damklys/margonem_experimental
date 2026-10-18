@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "4.6.202610182000",
+ "version": "4.9.202610190300",
  "prof": "p",
  "set": {
   "id": "def-p-36",
@@ -22,13 +22,24 @@
    "8": "Kamasze odważnego rycerza"
   },
   "skills": {
-   "p": {}
+   "p": {
+    "38": 1,
+    "99": 1,
+    "185": 3,
+    "263": 7
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    99
+   ],
+   "repeat": true
   }
  }
 }
