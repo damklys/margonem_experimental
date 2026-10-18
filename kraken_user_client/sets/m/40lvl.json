@@ -1,0 +1,44 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-40",
+  "name": "40lvl",
+  "lvl": 40,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Wzmocniona ochrona maga",
+   "2": "Czaszka chciwości",
+   "3": "Los tułacza",
+   "4": "Otuldłonie",
+   "5": "Ścieżka wiecznego ognia",
+   "6": "Bojowa kolczuga maga",
+   "7": "Szklana sfera płomieni",
+   "8": "Obuwie z magiczną powłoką"
+  },
+  "skills": {
+   "m": {
+    "11": 1,
+    "12": 5,
+    "21": 1,
+    "263": 8,
+    "168": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
+  }
+ }
+}

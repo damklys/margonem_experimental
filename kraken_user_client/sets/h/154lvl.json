@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-154",
+  "name": "154lvl",
+  "lvl": 154,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Czapa portowego bywalca",
+   "2": "Grudka wygasającego wulkanu",
+   "3": "Ozdoba kwitnących alg",
+   "4": "Chwyt wprawionego poławiacza",
+   "5": "Groźna cięciwa pirata",
+   "6": "Ochrona wprawionego żeglarza",
+   "7": "Lotka starego wyspiarza",
+   "8": "Kapitańskie kamasze"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

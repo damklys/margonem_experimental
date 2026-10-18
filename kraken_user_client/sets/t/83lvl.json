@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-83",
+  "name": "83lvl",
+  "lvl": 83,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Sygnet wyniosłości",
+   "3": "Odurzająca woń hortensji",
+   "4": "Zemsta banity",
+   "5": "Soczysty łuk anemonów",
+   "6": "Opieka leśnej istoty",
+   "7": "Mistrzowski kołczan tropiciela",
+   "8": "Cholewy czarnoksiężnika"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

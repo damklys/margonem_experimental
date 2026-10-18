@@ -1,0 +1,44 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-43",
+  "name": "43lvl",
+  "lvl": 43,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Wizja trzeciego oka",
+   "2": "Czaszka chciwości",
+   "3": "Los tułacza",
+   "4": "Magiczny dotyk rabusia",
+   "5": "Czarcia pochodnia",
+   "6": "Płaszcz wróżbity amatora",
+   "7": "Żar w kościanej oprawie",
+   "8": "Trepy na każdą okazję"
+  },
+  "skills": {
+   "m": {
+    "11": 2,
+    "12": 5,
+    "21": 1,
+    "263": 10,
+    "168": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
+  }
+ }
+}

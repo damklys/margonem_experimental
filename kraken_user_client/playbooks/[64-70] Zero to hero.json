@@ -150,7 +150,7 @@
   {
    "type": "exp",
    "exp": "[70lvl] Andarum i okolice",
-   "set": "60lvl",
+   "set": "58lvl",
    "conds": [
     {
      "join": "and",
@@ -175,7 +175,7 @@
   {
    "type": "exp",
    "exp": "[71lvl] jaskiniowe tolloki",
-   "set": "66lvl",
+   "set": "64lvl",
    "conds": [
     {
      "join": "and",
@@ -272,7 +272,7 @@
   {
    "type": "exp",
    "exp": "[72lvl] demilisze",
-   "set": "66lvl",
+   "set": "64lvl",
    "conds": [
     {
      "join": "and",

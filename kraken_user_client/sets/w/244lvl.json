@@ -1,0 +1,32 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-244",
+  "name": "244lvl",
+  "lvl": 244,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Poroże mordercy",
+   "2": "Grzybowy zarodnik",
+   "3": "Mutagenny klejnot grzybiarza",
+   "4": "Grzybowe rękawice śmiałka",
+   "5": "Cęgi boliciego dentysty",
+   "6": "Łuski aspirującego dowódcy",
+   "8": "Utwardzone podeszwy"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

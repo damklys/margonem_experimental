@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-154",
+  "name": "154lvl",
+  "lvl": 154,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Kask zawodowego żeglarza",
+   "2": "Sygnet aktywności wulkanicznej",
+   "3": "Wodne kwiecie oceanu",
+   "4": "Osłony krwiożerczej piranii",
+   "5": "Splot płonącego krzewu",
+   "6": "Błękitny falochron",
+   "7": "Rozżarzony grot dżina",
+   "8": "Kapitańskie kamasze"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

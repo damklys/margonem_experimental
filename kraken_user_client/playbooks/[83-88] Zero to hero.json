@@ -173,7 +173,7 @@
   {
    "type": "exp",
    "exp": "[89lvl] grexy",
-   "set": "84lvl",
+   "set": "83lvl",
    "conds": [
     {
      "join": "and",
@@ -342,7 +342,7 @@
   {
    "type": "exp",
    "exp": "[91lvl] Drapieżne koty",
-   "set": "84lvl",
+   "set": "83lvl",
    "conds": [
     {
      "join": "and",
@@ -367,7 +367,7 @@
   {
    "type": "exp",
    "exp": "[91lvl] leszy",
-   "set": "84lvl",
+   "set": "83lvl",
    "conds": [
     {
      "join": "and",
@@ -464,7 +464,7 @@
   {
    "type": "exp",
    "exp": "[92lvl] wieczornice i południce",
-   "set": "84lvl",
+   "set": "83lvl",
    "conds": [
     {
      "join": "and",

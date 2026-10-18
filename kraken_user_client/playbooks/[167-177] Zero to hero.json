@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[174lvl] kryształowa grota",
-   "set": "168lvl",
+   "set": "167lvl",
    "conds": [
     {
      "join": "and",
@@ -171,7 +171,7 @@
   {
    "type": "exp",
    "exp": "[178lvl] driady",
-   "set": "168lvl",
+   "set": "167lvl",
    "conds": [
     {
      "join": "and",
@@ -374,7 +374,7 @@
   {
    "type": "exp",
    "exp": "[181lvl] ogry",
-   "set": "174lvl",
+   "set": "167lvl",
    "conds": [
     {
      "join": "and",

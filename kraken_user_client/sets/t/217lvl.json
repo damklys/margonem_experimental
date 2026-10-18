@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-217",
+  "name": "217lvl",
+  "lvl": 217,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Otok zniewolonej driady",
+   "3": "Korowy amulet driady",
+   "4": "Ochrona dłoni maga",
+   "5": "Rdzeń zmutowanej rośliny",
+   "6": "Ochrona ożywieńca",
+   "7": "Amunicja dotkliwych poparzeń",
+   "8": "Zdobycz z Katakumb Rozkoszy"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

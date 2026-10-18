@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-231",
+  "name": "231lvl",
+  "lvl": 231,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Stalowy szturmak",
+   "2": "Oczko dojrzałości",
+   "3": "Więzienie błogich doznań",
+   "4": "Bandaże wielkiej przygody",
+   "5": "Narzędzie bezdusznego łowcy",
+   "6": "Powłoka badacza natury",
+   "7": "Zestaw śmiercionośnych lotek",
+   "8": "Wysokie cholewy elfa"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-70",
+  "name": "70lvl",
+  "lvl": 70,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Czapka łowcy tygrysów",
+   "2": "Symbol spopielenia",
+   "3": "Medalion fotosyntezy",
+   "4": "Lniane otuldłonie",
+   "5": "Przekleństwo leśnej zwierzyny",
+   "6": "Karmazynowy lekki pancerz",
+   "7": "Doskonały kołczan łowcy",
+   "8": "Szczecina gnolla"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

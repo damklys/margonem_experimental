@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-217",
+  "name": "217lvl",
+  "lvl": 217,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Otok zniewolonej driady",
+   "3": "Krwawy order draka",
+   "4": "Ochrona dłoni wynalazcy",
+   "5": "Pal specyficznej tortury",
+   "6": "Zbroja ze znakiem czaszki",
+   "7": "Lustro rozlanej krwi",
+   "8": "Zdobycz z Katakumb Rozkoszy"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

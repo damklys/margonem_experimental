@@ -150,7 +150,7 @@
   {
    "type": "exp",
    "exp": "[85lvl] wermonty",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -209,7 +209,7 @@
   {
    "type": "exp",
    "exp": "[86lvl] krasnoludy",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -306,7 +306,7 @@
   {
    "type": "exp",
    "exp": "[87lvl] darhouny",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",

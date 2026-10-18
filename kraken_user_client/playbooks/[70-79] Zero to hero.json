@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[75lvl] biblioteka Andarum",
-   "set": "66lvl",
+   "set": "64lvl",
    "conds": [
     {
      "join": "and",
@@ -103,7 +103,7 @@
   {
    "type": "exp",
    "exp": "[77lvl] magazynierzy",
-   "set": "72lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -272,7 +272,7 @@
   {
    "type": "exp",
    "exp": "[80lvl] Eremy światynne",
-   "set": "72lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -297,7 +297,7 @@
   {
    "type": "exp",
    "exp": "[80lvl] erem",
-   "set": "72lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -322,7 +322,7 @@
   {
    "type": "exp",
    "exp": "[81lvl] minotaury",
-   "set": "72lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -480,7 +480,7 @@
   {
    "type": "exp",
    "exp": "[83lvl] dławiciele",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -505,7 +505,7 @@
   {
    "type": "exp",
    "exp": "[83lvl] miśki",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",
@@ -530,7 +530,7 @@
   {
    "type": "exp",
    "exp": "[83lvl] mykonidy",
-   "set": "78lvl",
+   "set": "70lvl",
    "conds": [
     {
      "join": "and",

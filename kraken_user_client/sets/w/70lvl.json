@@ -1,0 +1,32 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-70",
+  "name": "70lvl",
+  "lvl": 70,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Kask pogromcy gnolli",
+   "2": "Symbol spopielenia",
+   "3": "Kwiecisty popis jubilera",
+   "4": "Lniane otuldłonie",
+   "5": "Siła minotaura",
+   "6": "Wzmocniona ochrona żeber",
+   "8": "Szczecina gnolla"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

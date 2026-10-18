@@ -177,7 +177,7 @@
   {
    "type": "exp",
    "exp": "[50lvl] przesmyk",
-   "set": "42lvl",
+   "set": "40lvl",
    "conds": [
     {
      "join": "and",
@@ -274,7 +274,7 @@
   {
    "type": "exp",
    "exp": "[51lvl] galarety",
-   "set": "42lvl",
+   "set": "40lvl",
    "conds": [
     {
      "join": "and",
@@ -371,7 +371,7 @@
   {
    "type": "exp",
    "exp": "[52lvl] pokątniki",
-   "set": "42lvl",
+   "set": "40lvl",
    "conds": [
     {
      "join": "and",

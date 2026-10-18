@@ -139,7 +139,7 @@
   {
    "type": "exp",
    "exp": "[161lvl] dziki zagajnik",
-   "set": "156lvl",
+   "set": "154lvl",
    "conds": [
     {
      "join": "and",
@@ -236,7 +236,7 @@
   {
    "type": "exp",
    "exp": "[163lvl] kazamaty",
-   "set": "156lvl",
+   "set": "154lvl",
    "conds": [
     {
      "join": "and",
@@ -435,7 +435,7 @@
   {
    "type": "exp",
    "exp": "[170lvl] komnaty",
-   "set": "162lvl",
+   "set": "154lvl",
    "conds": [
     {
      "join": "and",

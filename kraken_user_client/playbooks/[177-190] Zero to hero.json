@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[184lvl] patrycjusze",
-   "set": "174lvl",
+   "set": "167lvl",
    "conds": [
     {
      "join": "and",
@@ -205,7 +205,7 @@
   {
    "type": "exp",
    "exp": "[187lvl] zmutowane rośliny",
-   "set": "180lvl",
+   "set": "177lvl",
    "conds": [
     {
      "join": "and",
@@ -302,7 +302,7 @@
   {
    "type": "exp",
    "exp": "[189lvl] draki",
-   "set": "180lvl",
+   "set": "177lvl",
    "conds": [
     {
      "join": "and",
@@ -467,7 +467,7 @@
   {
    "type": "exp",
    "exp": "[192lvl] mroczny las",
-   "set": "186lvl",
+   "set": "177lvl",
    "conds": [
     {
      "join": "and",

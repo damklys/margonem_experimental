@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-53",
+  "name": "53lvl",
+  "lvl": 53,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Pierścień żądzy krwi",
+   "3": "Złote płatki władzy",
+   "4": "Popis garbarza",
+   "5": "Skwierczący szpon demona",
+   "6": "Pancerz szabrownika",
+   "7": "Zwęglone rogi szakala",
+   "8": "Podeszwy nocnej ucieczki"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-88",
+  "name": "88lvl",
+  "lvl": 88,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Iglasty kryształ",
+   "3": "Amulet przemiany w gada",
+   "4": "Splot ametystowych nici",
+   "5": "Płomień cierpiącej duszy",
+   "6": "Splot magicznych nici",
+   "7": "Wygotowany kryształ",
+   "8": "Cholewy czarnoksiężnika"
+  },
+  "skills": {
+   "m": {
+    "11": 8,
+    "12": 10,
+    "21": 3,
+    "263": 10,
+    "168": 1,
+    "61": 1,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 1,
+    "59": 8,
+    "106": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21
+   ],
+   "repeat": true
+  }
+ }
+}

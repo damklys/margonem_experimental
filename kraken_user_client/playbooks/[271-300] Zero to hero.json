@@ -78,7 +78,7 @@
   {
    "type": "exp",
    "exp": "[278lvl] pustynia",
-   "set": "270lvl",
+   "set": "258lvl",
    "conds": [
     {
      "join": "and",
@@ -202,7 +202,7 @@
   {
    "type": "exp",
    "exp": "[282lvl] wodniki",
-   "set": "276lvl",
+   "set": "271lvl",
    "conds": [
     {
      "join": "and",
@@ -261,7 +261,7 @@
   {
    "type": "exp",
    "exp": "[283lvl] Uroczysko Wodnika",
-   "set": "276lvl",
+   "set": "271lvl",
    "conds": [
     {
      "join": "and",
@@ -392,7 +392,7 @@
   {
    "type": "exp",
    "exp": "[286lvl] mroczne driady",
-   "set": "276lvl",
+   "set": "271lvl",
    "conds": [
     {
      "join": "and",

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-79",
+  "name": "79lvl",
+  "lvl": 79,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Pycha Wernoradu",
+   "3": "Odurzająca woń hortensji",
+   "4": "Splot ametystowych nici",
+   "5": "Przestroga żywiołaka",
+   "6": "Skórzany strój herosa",
+   "7": "Blokada herosa",
+   "8": "Cholewy czarnoksiężnika"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-70",
+  "name": "70lvl",
+  "lvl": 70,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Magiczne wsparcie demiliszy",
+   "2": "Kryształowe iskry",
+   "3": "Medalion fotosyntezy",
+   "4": "Krwawe pięści maga",
+   "5": "Ogniste szczypce",
+   "6": "Płaszcz tropiciela z wyżyn",
+   "7": "Doskonały kołczan tropiciela",
+   "8": "Szczecina gnolla"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

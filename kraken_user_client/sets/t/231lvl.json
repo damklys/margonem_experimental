@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-231",
+  "name": "231lvl",
+  "lvl": 231,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Zaczarowane kabuto",
+   "2": "Sygnet starości",
+   "3": "Wisior kumulacji gniewu",
+   "4": "Bandaże wielkiej przygody",
+   "5": "Konstrukcja badacza płomieni",
+   "6": "Płaszcz eksploratora bagien",
+   "7": "Pociski nieuchwytnego podpalacza",
+   "8": "Cholewy mieszkańca kniei"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

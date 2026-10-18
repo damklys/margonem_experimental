@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[98lvl] centaury",
-   "set": "90lvl",
+   "set": "88lvl",
    "conds": [
     {
      "join": "and",
@@ -164,7 +164,7 @@
   {
    "type": "exp",
    "exp": "[100lvl] bandyci",
-   "set": "90lvl",
+   "set": "88lvl",
    "conds": [
     {
      "join": "and",
@@ -333,7 +333,7 @@
   {
    "type": "exp",
    "exp": "[103lvl] dwugłowe olbrzymy i molochy",
-   "set": "96lvl",
+   "set": "93lvl",
    "conds": [
     {
      "join": "and",
@@ -498,7 +498,7 @@
   {
    "type": "exp",
    "exp": "[106lvl] gady płazy i błotniaki",
-   "set": "96lvl",
+   "set": "93lvl",
    "conds": [
     {
      "join": "and",
@@ -523,7 +523,7 @@
   {
    "type": "exp",
    "exp": "[106lvl] szkielety koty i alghule",
-   "set": "96lvl",
+   "set": "93lvl",
    "conds": [
     {
      "join": "and",

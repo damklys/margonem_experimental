@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-167",
+  "name": "167lvl",
+  "lvl": 167,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Mineralne narośle",
+   "3": "Życiodajny brelok",
+   "4": "Bagienny uścisk dłoni",
+   "5": "Wyrok myśliwego",
+   "6": "Narzuta łowcy skór",
+   "7": "Lotki bezwzględności łowcy",
+   "8": "Obuwie zgładzonego orka"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -243,7 +243,7 @@
   {
    "type": "exp",
    "exp": "[216lvl] drowy",
-   "set": "210lvl",
+   "set": "204lvl",
    "conds": [
     {
      "join": "and",
@@ -412,7 +412,7 @@
   {
    "type": "exp",
    "exp": "[219lvl] dridery",
-   "set": "210lvl",
+   "set": "204lvl",
    "conds": [
     {
      "join": "and",

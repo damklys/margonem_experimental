@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-53",
+  "name": "53lvl",
+  "lvl": 53,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Czarna zguba bojownika",
+   "3": "Złote płatki władzy",
+   "4": "Popis garbarza",
+   "5": "Stalowy zygzak",
+   "6": "Odzienie ze skóry dzika",
+   "8": "Słoneczne frędzle"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

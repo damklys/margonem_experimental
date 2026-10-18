@@ -1,0 +1,50 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-79",
+  "name": "79lvl",
+  "lvl": 79,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Sygnet wyniosłości",
+   "3": "Odurzająca woń hortensji",
+   "4": "Splot ametystowych nici",
+   "5": "Przewodnik magmowych świątyń",
+   "6": "Splot magicznych nici",
+   "7": "Serce wygasłego wulkanu",
+   "8": "Cholewy czarnoksiężnika"
+  },
+  "skills": {
+   "m": {
+    "11": 8,
+    "12": 10,
+    "21": 3,
+    "263": 10,
+    "168": 1,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 1,
+    "61": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21
+   ],
+   "repeat": true
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-40",
+  "name": "40lvl",
+  "lvl": 40,
+  "potionName": "Flakonik śmiałka",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Bitewny diabeł",
+   "2": "Czaszka pychy",
+   "3": "Szczęście podróżnika",
+   "4": "Otuldłonie",
+   "5": "Mroczny kordelas",
+   "6": "Prosta zbroja asasyna",
+   "7": "Podręczne ostrze strażnika",
+   "8": "Goblinie cichobiegi"
+  },
+  "skills": {
+   "b": {
+    "94": 10,
+    "209": 1,
+    "213": 1,
+    "263": 4
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
+  }
+ }
+}

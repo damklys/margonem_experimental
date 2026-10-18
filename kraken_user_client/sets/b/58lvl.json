@@ -1,0 +1,49 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-58",
+  "name": "58lvl",
+  "lvl": 58,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Odznaka młodego asasyna",
+   "3": "Zielony wabiciel żądłaków",
+   "4": "Rękawice z mokradeł",
+   "5": "Pałasz honoru i chwały",
+   "6": "Kolczuga skrytobójcy amatora",
+   "7": "Sztylet okrętowy",
+   "8": "Słoneczne frędzle"
+  },
+  "skills": {
+   "b": {
+    "94": 10,
+    "209": 1,
+    "213": 6,
+    "263": 10,
+    "168": 1,
+    "222": 1,
+    "127": 5
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    127,
+    209
+   ],
+   "repeat": true
+  }
+ }
+}

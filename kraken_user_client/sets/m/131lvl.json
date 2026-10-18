@@ -1,0 +1,56 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-131",
+  "name": "131lvl",
+  "lvl": 131,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm pustynnego eksploratora",
+   "2": "Oko feniksa",
+   "3": "Pąk z wyspy Magradit",
+   "4": "Rękawice z pustynnego grobowca",
+   "5": "Kula degradacji natury",
+   "6": "Marynarskie wdzianko maga",
+   "7": "Złota wydma",
+   "8": "Obuwie okrętowego obserwatora"
+  },
+  "skills": {
+   "m": {
+    "11": 10,
+    "12": 10,
+    "21": 4,
+    "263": 10,
+    "168": 1,
+    "246": 8,
+    "61": 1,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 10,
+    "59": 10,
+    "106": 10,
+    "46": 10,
+    "54": 2
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21,
+    246
+   ],
+   "repeat": true
+  }
+ }
+}

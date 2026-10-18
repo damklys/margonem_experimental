@@ -1,0 +1,32 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-154",
+  "name": "154lvl",
+  "lvl": 154,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Groźne rogi wyspiarza",
+   "2": "Grudka wygasającego wulkanu",
+   "3": "Rozkwitnięty koralowiec",
+   "4": "Chwyt wprawionego poławiacza",
+   "5": "Zdeformowana kotwica",
+   "6": "Pancerz krwawego bosmana",
+   "8": "Kapitańskie kamasze"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

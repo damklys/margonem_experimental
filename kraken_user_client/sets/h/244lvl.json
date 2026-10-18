@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-244",
+  "name": "244lvl",
+  "lvl": 244,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Maska aspirującego skrytobójcy",
+   "2": "Grzybowy zarodnik",
+   "3": "Piękno leśnego runa",
+   "4": "Grzybowe rękawice śmiałka",
+   "5": "Ramiona mocnego naciągu",
+   "6": "Wdzianko łowcy bolit",
+   "7": "Pociski na dendrokreatury",
+   "8": "Utwardzone podeszwy"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

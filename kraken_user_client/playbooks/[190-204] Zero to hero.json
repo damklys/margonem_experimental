@@ -78,7 +78,7 @@
   {
    "type": "exp",
    "exp": "[196lvl] myświóry",
-   "set": "186lvl",
+   "set": "177lvl",
    "conds": [
     {
      "join": "and",
@@ -236,7 +236,7 @@
   {
    "type": "exp",
    "exp": "[199lvl] hurysy",
-   "set": "192lvl",
+   "set": "190lvl",
    "conds": [
     {
      "join": "and",
@@ -405,7 +405,7 @@
   {
    "type": "exp",
    "exp": "[203lvl] heretycy",
-   "set": "198lvl",
+   "set": "190lvl",
    "conds": [
     {
      "join": "and",
@@ -570,7 +570,7 @@
   {
    "type": "exp",
    "exp": "[208lvl] furbole",
-   "set": "198lvl",
+   "set": "190lvl",
    "conds": [
     {
      "join": "and",

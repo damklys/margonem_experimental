@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-93",
+  "name": "93lvl",
+  "lvl": 93,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosta wężowa łebka",
+   "2": "Bagienna narośl",
+   "3": "Naszyjnik ofiary bagien",
+   "4": "Zamszowy chwyt gadziny",
+   "5": "Cięciwa orlich piór",
+   "6": "Ukrycie czarnej kobry",
+   "7": "Ostre strzały na węże",
+   "8": "Ochrona przed igliwiem"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

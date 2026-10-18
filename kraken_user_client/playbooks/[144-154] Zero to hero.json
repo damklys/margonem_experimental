@@ -496,7 +496,7 @@
   {
    "type": "exp",
    "exp": "[156lvl] czerwoni orkowie",
-   "set": "150lvl",
+   "set": "144lvl",
    "conds": [
     {
      "join": "and",

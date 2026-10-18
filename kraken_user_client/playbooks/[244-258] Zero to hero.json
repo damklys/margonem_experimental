@@ -245,7 +245,7 @@
   {
    "type": "exp",
    "exp": "[253lvl] maho",
-   "set": "246lvl",
+   "set": "244lvl",
    "conds": [
     {
      "join": "and",
@@ -410,7 +410,7 @@
   {
    "type": "exp",
    "exp": "[258lvl] wiedźmowe potwory",
-   "set": "252lvl",
+   "set": "244lvl",
    "conds": [
     {
      "join": "and",
@@ -469,7 +469,7 @@
   {
    "type": "exp",
    "exp": "[261lvl] potępione zamczysko",
-   "set": "252lvl",
+   "set": "244lvl",
    "conds": [
     {
      "join": "and",

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-93",
+  "name": "93lvl",
+  "lvl": 93,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Hełm leśnego licha",
+   "2": "Iglasty kryształ",
+   "3": "Amulet przemiany w gada",
+   "4": "Zamszowy chwyt gadziny",
+   "5": "Gniewna cięciwa z Mythar",
+   "6": "Zbożowy kamuflaż węża",
+   "7": "Płonące strzały na węże",
+   "8": "Fikuśne kamasze maga"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

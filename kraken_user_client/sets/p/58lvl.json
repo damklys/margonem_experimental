@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-58",
+  "name": "58lvl",
+  "lvl": 58,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Odwet wojownika",
+   "3": "Miododajny naszyjnik maga",
+   "4": "Popis garbarza",
+   "5": "Skwar",
+   "6": "Pancerz szabrownika",
+   "7": "Oranżowa osłona paladyna",
+   "8": "Podeszwy nocnej ucieczki"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

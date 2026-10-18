@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-190",
+  "name": "190lvl",
+  "lvl": 190,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Misyjna czapka teologa",
+   "2": "Błyskotka z Gildii Wynalazców",
+   "3": "Żołnierskie odznaczenie",
+   "4": "Palce wyblakłych kolorów",
+   "5": "Cięciwa zlęknionej driady",
+   "6": "Driadzia podomka",
+   "7": "Nośniki wielkich boleści",
+   "8": "Elfickie kamasze"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

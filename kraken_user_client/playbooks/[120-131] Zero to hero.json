@@ -561,7 +561,7 @@
   {
    "type": "exp",
    "exp": "[133lvl] piaskowi niewolnicy",
-   "set": "126lvl",
+   "set": "120lvl",
    "conds": [
     {
      "join": "and",
@@ -586,7 +586,7 @@
   {
    "type": "exp",
    "exp": "[134lvl] korredy",
-   "set": "126lvl",
+   "set": "120lvl",
    "conds": [
     {
      "join": "and",

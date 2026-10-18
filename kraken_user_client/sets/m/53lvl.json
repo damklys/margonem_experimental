@@ -1,0 +1,46 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-53",
+  "name": "53lvl",
+  "lvl": 53,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Pierścień żądzy krwi",
+   "3": "Gwiazda nadziei",
+   "4": "Symbol tajemnego bractwa",
+   "5": "Igneum Daemonium",
+   "6": "Cyklamenowa peleryna",
+   "7": "Złoty cielec",
+   "8": "Podeszwy nocnej ucieczki"
+  },
+  "skills": {
+   "m": {
+    "11": 6,
+    "12": 10,
+    "21": 2,
+    "263": 10,
+    "168": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21
+   ],
+   "repeat": true
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "h",
+ "set": {
+  "id": "def-h-131",
+  "name": "131lvl",
+  "lvl": 131,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Głowochron wilka morskiego",
+   "2": "Ozdoba z krabiego pancerzyka",
+   "3": "Pąk z wyspy Rem",
+   "4": "Rękawice z pustynnego grobowca",
+   "5": "Pogromca zasuszonych mumii",
+   "6": "Szara kurta sternika",
+   "7": "Szpila obrońcy okrętu",
+   "8": "Zielone podeszwy bosmana"
+  },
+  "skills": {
+   "h": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

@@ -150,7 +150,7 @@
   {
    "type": "exp",
    "exp": "[94lvl] gnomy",
-   "set": "84lvl",
+   "set": "83lvl",
    "conds": [
     {
      "join": "and",
@@ -281,7 +281,7 @@
   {
    "type": "exp",
    "exp": "[96lvl] błotniste gady i ogniki",
-   "set": "90lvl",
+   "set": "88lvl",
    "conds": [
     {
      "join": "and",

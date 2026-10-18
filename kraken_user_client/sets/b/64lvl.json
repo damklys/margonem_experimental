@@ -1,0 +1,50 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-64",
+  "name": "64lvl",
+  "lvl": 64,
+  "potionName": "Piramidka odnowy",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Osłona młodej harpii",
+   "2": "Odznaka młodego asasyna",
+   "3": "Zielony wabiciel żądłaków",
+   "4": "Poplamione rękawice strażnika",
+   "5": "Ekwipunek szlachcica",
+   "6": "Strój ze znakiem śmierci",
+   "7": "Duma rzeźnika",
+   "8": "Szelest nieuważnego kobolda"
+  },
+  "skills": {
+   "b": {
+    "94": 10,
+    "209": 1,
+    "213": 6,
+    "263": 10,
+    "168": 1,
+    "222": 1,
+    "216": 2,
+    "127": 8,
+    "125": 1
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    127,
+    209
+   ],
+   "repeat": true
+  }
+ }
+}

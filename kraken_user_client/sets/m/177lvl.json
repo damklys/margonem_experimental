@@ -1,0 +1,59 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-177",
+  "name": "177lvl",
+  "lvl": 177,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Rogi sztygara",
+   "2": "Lśnienie brzasku",
+   "3": "Wahadełko czarownicy",
+   "4": "Skórzane rękawice górnika",
+   "5": "Kostur oszalałej wiedźmy",
+   "6": "Schludna szata czarnoksiężnika",
+   "7": "Płonący glob",
+   "8": "Kamasze poskramiacza hydr"
+  },
+  "skills": {
+   "m": {
+    "11": 10,
+    "12": 10,
+    "21": 6,
+    "263": 10,
+    "78": 10,
+    "168": 10,
+    "246": 8,
+    "61": 10,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 10,
+    "59": 10,
+    "106": 10,
+    "46": 10,
+    "54": 10,
+    "47": 8
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21,
+    246,
+    78
+   ],
+   "repeat": true
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-167",
+  "name": "167lvl",
+  "lvl": 167,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Drobny popis jubilera",
+   "3": "Wisior szybkiej regeneracji",
+   "4": "Cyklamenowe palce alchemika",
+   "5": "Ramiona pożogi",
+   "6": "Peleryna przejrzystego nieba",
+   "7": "Lotki ognistych ptaków",
+   "8": "Kozaki spalonej wiedźmy"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

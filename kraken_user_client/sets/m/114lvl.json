@@ -1,6 +1,6 @@
 {
  "kraken": "zestaw",
- "version": "3.120.202610132000",
+ "version": "4.6.202610182000",
  "prof": "m",
  "set": {
   "id": "def-m-114",
@@ -21,13 +21,34 @@
    "8": "Buciki szczura okrętowego"
   },
   "skills": {
-   "m": {}
+   "m": {
+    "11": 10,
+    "12": 10,
+    "21": 4,
+    "263": 10,
+    "168": 1,
+    "246": 8,
+    "61": 1,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 10,
+    "59": 10,
+    "106": 5
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21,
+    246
+   ],
+   "repeat": true
   }
  }
 }

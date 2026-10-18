@@ -1,0 +1,60 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-167",
+  "name": "167lvl",
+  "lvl": 167,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosty kask górnika",
+   "2": "Mineralne narośle",
+   "3": "Życiodajny brelok",
+   "4": "Bagienny uścisk dłoni",
+   "5": "Pazur pośmiertnego stężenia",
+   "6": "Skórzane odzienie asasyna",
+   "7": "Nóż do samoobrony",
+   "8": "Obuwie zgładzonego orka"
+  },
+  "skills": {
+   "b": {
+    "94": 10,
+    "209": 1,
+    "213": 10,
+    "263": 10,
+    "168": 1,
+    "216": 10,
+    "222": 1,
+    "61": 10,
+    "125": 1,
+    "127": 10,
+    "214": 10,
+    "65": 10,
+    "106": 10,
+    "211": 10,
+    "237": 10,
+    "259": 10,
+    "225": 10,
+    "230": 9
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    127,
+    209,
+    237
+   ],
+   "repeat": true
+  }
+ }
+}

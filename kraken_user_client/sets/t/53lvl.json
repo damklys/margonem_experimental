@@ -1,0 +1,34 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-53",
+  "name": "53lvl",
+  "lvl": 53,
+  "potionName": "Krople na drobne rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "transferNick": "",
+  "slots": {
+   "1": "Kask wielozadaniowy",
+   "2": "Pierścień żądzy krwi",
+   "3": "Gwiazda nadziei",
+   "4": "Rękawice z mokradeł",
+   "5": "Manotrówczy naciąg tropiciela",
+   "6": "Złota pierś myśliwego",
+   "7": "Gorące strzały rzezimieszka",
+   "8": "Podeszwy nocnej ucieczki"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

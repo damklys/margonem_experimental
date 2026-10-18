@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[236lvl] elgary",
-   "set": "228lvl",
+   "set": "217lvl",
    "conds": [
     {
      "join": "and",
@@ -103,7 +103,7 @@
   {
    "type": "exp",
    "exp": "[239lvl] drzewce",
-   "set": "234lvl",
+   "set": "231lvl",
    "conds": [
     {
      "join": "and",
@@ -234,7 +234,7 @@
   {
    "type": "exp",
    "exp": "[244lvl] bolity",
-   "set": "234lvl",
+   "set": "231lvl",
    "conds": [
     {
      "join": "and",
@@ -365,7 +365,7 @@
   {
    "type": "exp",
    "exp": "[248lvl] niecka",
-   "set": "240lvl",
+   "set": "231lvl",
    "conds": [
     {
      "join": "and",

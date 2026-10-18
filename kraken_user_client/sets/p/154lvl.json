@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-154",
+  "name": "154lvl",
+  "lvl": 154,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Groźne rogi wyspiarza",
+   "2": "Sygnet aktywności wulkanicznej",
+   "3": "Rozkwitnięty koralowiec",
+   "4": "Osłony krwiożerczej piranii",
+   "5": "Kieł pustyni",
+   "6": "Ciężka okrętowa kapota",
+   "7": "Stalowe wąsy kapitana",
+   "8": "Kapitańskie kamasze"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

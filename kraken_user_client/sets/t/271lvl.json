@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-271",
+  "name": "271lvl",
+  "lvl": 271,
+  "potionName": "Magiczne panaceum",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Stalowa twarzyczka",
+   "2": "Złoty symbol mądrości",
+   "3": "Kwiat z wiedźmiej oranżerii",
+   "4": "Czarne dyrygentki wiedźmy",
+   "5": "Skwierczenie podpalonej wiedźmy",
+   "6": "Wodny kamuflaż tropiciela",
+   "7": "Wiadomość z Jęczywąwozu",
+   "8": "Kopyta wiedźmiego chowańca"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

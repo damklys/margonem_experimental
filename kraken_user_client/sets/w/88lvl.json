@@ -1,0 +1,32 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-88",
+  "name": "88lvl",
+  "lvl": 88,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Srebrna kopuła śmiałka",
+   "2": "Bagienna narośl",
+   "3": "Gadzia kolia",
+   "4": "Zakurzone wojenne rękawice",
+   "5": "Czarne chmury",
+   "6": "Wytworna kamizela wojownika",
+   "8": "Pozłacana duma rycerza"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

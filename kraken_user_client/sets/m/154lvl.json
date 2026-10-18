@@ -1,0 +1,58 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-154",
+  "name": "154lvl",
+  "lvl": 154,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Kask zawodowego żeglarza",
+   "2": "Sygnet aktywności wulkanicznej",
+   "3": "Wodne kwiecie oceanu",
+   "4": "Osłony krwiożerczej piranii",
+   "5": "Kostur mieszkańca oazy",
+   "6": "Koszula wilka morskiego",
+   "7": "Oko ducha pustyni",
+   "8": "Kapitańskie kamasze"
+  },
+  "skills": {
+   "m": {
+    "11": 10,
+    "12": 10,
+    "21": 6,
+    "263": 10,
+    "78": 10,
+    "168": 4,
+    "246": 8,
+    "61": 1,
+    "107": 10,
+    "167": 10,
+    "258": 1,
+    "277": 10,
+    "59": 10,
+    "106": 10,
+    "46": 10,
+    "54": 10
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    21,
+    246,
+    78
+   ],
+   "repeat": true
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "p",
+ "set": {
+  "id": "def-p-190",
+  "name": "190lvl",
+  "lvl": 190,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Udany projekt wynalazcy",
+   "2": "Błyskotka z Gildii Teologów",
+   "3": "Ozdoba mieszczucha",
+   "4": "Dotyk głębokiej czerwieni",
+   "5": "Ogień Valmirów",
+   "6": "Pancerz zdjęty z patrycjusza",
+   "7": "Stalowy pancernik",
+   "8": "Elfickie kamasze"
+  },
+  "skills": {
+   "p": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

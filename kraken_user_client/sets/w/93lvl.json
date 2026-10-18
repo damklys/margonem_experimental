@@ -1,0 +1,32 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "w",
+ "set": {
+  "id": "def-w-93",
+  "name": "93lvl",
+  "lvl": 93,
+  "potionName": "Mikstura początkującego alchemika",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Prosta wężowa łebka",
+   "2": "Bagienna narośl",
+   "3": "Gadzia kolia",
+   "4": "Zamszowy chwyt gadziny",
+   "5": "Czarna poszarpana klinga",
+   "6": "Filcowa opieka gadów",
+   "8": "Smocze podeszwy"
+  },
+  "skills": {
+   "w": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

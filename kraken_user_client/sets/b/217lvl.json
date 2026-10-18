@@ -1,0 +1,64 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "b",
+ "set": {
+  "id": "def-b-217",
+  "name": "217lvl",
+  "lvl": 217,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Pamiątka z wielkiego miasta",
+   "2": "Kryształowe kwiecie Valmira",
+   "3": "Utleniony medalion patrycjusza",
+   "4": "Ochrona dłoni teologa",
+   "5": "Zielone ostrze driady",
+   "6": "Błotna kamizela",
+   "7": "Ukłucie bezgwiezdnej gęstwiny",
+   "8": "Podeszwy z thuzalskich koszarów"
+  },
+  "skills": {
+   "b": {
+    "94": 10,
+    "209": 2,
+    "213": 10,
+    "263": 10,
+    "168": 10,
+    "216": 10,
+    "222": 10,
+    "61": 10,
+    "125": 1,
+    "127": 10,
+    "214": 10,
+    "65": 10,
+    "106": 10,
+    "211": 10,
+    "237": 10,
+    "259": 10,
+    "225": 10,
+    "230": 10,
+    "100": 10,
+    "221": 10,
+    "227": 10
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    127,
+    209,
+    237,
+    222
+   ],
+   "repeat": true
+  }
+ }
+}

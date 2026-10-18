@@ -6,7 +6,7 @@
   {
    "type": "exp",
    "exp": "[64lvl] gnolle",
-   "set": "54lvl",
+   "set": "53lvl",
    "conds": [
     {
      "join": "and",
@@ -103,7 +103,7 @@
   {
    "type": "exp",
    "exp": "[66lvl] mrówcza kolonia",
-   "set": "60lvl",
+   "set": "58lvl",
    "conds": [
     {
      "join": "and",
@@ -128,7 +128,7 @@
   {
    "type": "exp",
    "exp": "[66lvl] rosomaki",
-   "set": "60lvl",
+   "set": "58lvl",
    "conds": [
     {
      "join": "and",
@@ -214,7 +214,7 @@
   {
    "type": "exp",
    "exp": "[67lvl] olbrzymy",
-   "set": "60lvl",
+   "set": "58lvl",
    "conds": [
     {
      "join": "and",

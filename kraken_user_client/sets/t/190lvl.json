@@ -1,0 +1,33 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "t",
+ "set": {
+  "id": "def-t-190",
+  "name": "190lvl",
+  "lvl": 190,
+  "potionName": "Łyk Odrodzenia",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Astralny kask maga",
+   "2": "Błyskotka z Gildii Magów",
+   "3": "Ozdoba mieszczucha",
+   "4": "Dotyk głębokiej czerwieni",
+   "5": "Oddech ogra",
+   "6": "Zimowy kubrak Valmira",
+   "7": "Upust skumulowanych płomieni",
+   "8": "Elfickie kamasze"
+  },
+  "skills": {
+   "t": {}
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  }
+ }
+}

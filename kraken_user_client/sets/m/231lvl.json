@@ -1,0 +1,65 @@
+{
+ "kraken": "zestaw",
+ "version": "4.6.202610182000",
+ "prof": "m",
+ "set": {
+  "id": "def-m-231",
+  "name": "231lvl",
+  "lvl": 231,
+  "potionName": "Remedium na głębokie rany",
+  "potionTarget": 325,
+  "sellNpc": "",
+  "transferKeep": "100k",
+  "slots": {
+   "1": "Zaczarowane kabuto",
+   "2": "Sygnet starości",
+   "3": "Wisior kumulacji gniewu",
+   "4": "Bandaże wielkiej przygody",
+   "5": "Wypalacz lepkich pajęczyn",
+   "6": "Strój obiecującego naukowca",
+   "7": "Żar podziemnych kuźni",
+   "8": "Cholewy mieszkańca kniei"
+  },
+  "skills": {
+   "m": {
+    "11": 10,
+    "12": 10,
+    "21": 10,
+    "263": 10,
+    "78": 10,
+    "168": 10,
+    "246": 10,
+    "61": 10,
+    "107": 10,
+    "167": 10,
+    "258": 10,
+    "277": 10,
+    "59": 10,
+    "106": 10,
+    "131": 5,
+    "46": 10,
+    "54": 10,
+    "302": 10,
+    "47": 10,
+    "55": 10,
+    "166": 10,
+    "270": 2
+   }
+  },
+  "combat": {
+   "enabled": false,
+   "speed": "slow",
+   "knownSkills": {},
+   "entries": []
+  },
+  "mastery": {
+   "skills": [
+    55,
+    21,
+    246,
+    78
+   ],
+   "repeat": true
+  }
+ }
+}
