@@ -1,0 +1,76 @@
+{
+ "kraken": "zadanie",
+ "version": "4.3.202610181300",
+ "name": "Zainfekowane zwierzęta. – etap 1",
+ "questId": 13272,
+ "questName": "Zainfekowane zwierzęta.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "lvl": 228,
+ "set": "228lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Karka-han",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Zainfekowane zwierzęta"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Koścista łania; Zainfekowane wilcze zwłoki; Rogaty ponurak; Szkielet porośnięty grzybem; Niedźwiedź pełen zarodników; Grzybowa marionetka; Przejęte ciało żubra; Ofiara grzybyfikacji; Fangaj",
+   "n": 100,
+   "route": "[232lvl] zagrzybiony las"
+  },
+  {
+   "type": "goto",
+   "map": "Karka-han",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "4.2.202610181200",
+ "version": "4.3.202610181300",
  "name": "[1-43lvl] Zero to Hero - B",
  "tiles": [
   {
@@ -77,8 +77,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 36
+     "op": "le",
+     "value": 34
     }
    ]
   },
@@ -95,8 +95,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 36
+     "op": "le",
+     "value": 34
     }
    ]
   },
@@ -113,8 +113,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 36
+     "op": "le",
+     "value": 34
     }
    ]
   },
@@ -150,8 +150,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 37
+     "op": "le",
+     "value": 35
     }
    ]
   },
@@ -168,8 +168,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 37
+     "op": "le",
+     "value": 35
     }
    ]
   },
@@ -186,8 +186,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 37
+     "op": "le",
+     "value": 35
     }
    ]
   },
@@ -223,8 +223,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 40
+     "op": "le",
+     "value": 38
     }
    ]
   },
@@ -241,8 +241,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 40
+     "op": "le",
+     "value": 38
     }
    ]
   },
@@ -259,8 +259,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 40
+     "op": "le",
+     "value": 38
     }
    ]
   },
@@ -333,8 +333,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 41
     }
    ]
   },
@@ -351,8 +351,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 41
     }
    ]
   },
@@ -369,8 +369,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 41
     }
    ]
   },
@@ -406,8 +406,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -424,8 +424,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -442,8 +442,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },

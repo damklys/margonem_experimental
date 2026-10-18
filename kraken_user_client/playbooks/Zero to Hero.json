@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "4.2.202610181200",
+ "version": "4.3.202610181300",
  "name": "Zero to Hero",
  "tiles": [
   {
@@ -1782,150 +1782,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Potwory z Mrocznego Przesmyku. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 38
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 51
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potwory z Mrocznego Przesmyku. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 38
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 51
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potwory z Mrocznego Przesmyku. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 38
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 51
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mokra Grota. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 39
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mokra Grota. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 39
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mokra Grota. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 39
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[44lvl] wilcze plemię",
    "set": "36lvl",
@@ -1952,7 +1808,7 @@
   },
   {
    "type": "task",
-   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 1",
+   "task": "Potwory z Mrocznego Przesmyku. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -1976,7 +1832,7 @@
   },
   {
    "type": "task",
-   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 2",
+   "task": "Potwory z Mrocznego Przesmyku. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -2000,7 +1856,7 @@
   },
   {
    "type": "task",
-   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 3",
+   "task": "Potwory z Mrocznego Przesmyku. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -2075,78 +1931,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Latające stwory. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 41
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Latające stwory. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 41
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Latające stwory. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 41
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[46lvl] zbiry",
    "set": "36lvl",
@@ -2172,78 +1956,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Lazurytowa Grota. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 42
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 55
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Lazurytowa Grota. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 42
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 55
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Lazurytowa Grota. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 42
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 55
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[47lvl] orkowie",
    "set": "42lvl",
@@ -2259,78 +1971,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 47
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Owady z kopalni. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 43
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 56
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Owady z kopalni. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 43
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 56
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Owady z kopalni. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 43
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 56
     },
     {
      "join": "and",
@@ -2369,79 +2009,7 @@
   },
   {
    "type": "task",
-   "task": "Bazyliszki. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 44
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Bazyliszki. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 44
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Bazyliszki. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 44
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wioska Gnolli. – etap 1",
+   "task": "Mokra Grota. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -2465,7 +2033,7 @@
   },
   {
    "type": "task",
-   "task": "Wioska Gnolli. – etap 2",
+   "task": "Mokra Grota. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -2489,7 +2057,79 @@
   },
   {
    "type": "task",
-   "task": "Wioska Gnolli. – etap 3",
+   "task": "Mokra Grota. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 58
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 58
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 58
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ośmionogi z Groty Bezszelestnych Kroków. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -2538,7 +2178,7 @@
   },
   {
    "type": "task",
-   "task": "Szkodniki z Leśnego Brodu. – etap 1",
+   "task": "Latające stwory. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -2562,7 +2202,7 @@
   },
   {
    "type": "task",
-   "task": "Szkodniki z Leśnego Brodu. – etap 2",
+   "task": "Latające stwory. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -2586,7 +2226,7 @@
   },
   {
    "type": "task",
-   "task": "Szkodniki z Leśnego Brodu. – etap 3",
+   "task": "Latające stwory. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -2635,7 +2275,7 @@
   },
   {
    "type": "task",
-   "task": "Mrówcza Kolonia. – etap 1",
+   "task": "Lazurytowa Grota. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -2659,7 +2299,7 @@
   },
   {
    "type": "task",
-   "task": "Mrówcza Kolonia. – etap 2",
+   "task": "Lazurytowa Grota. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -2683,7 +2323,7 @@
   },
   {
    "type": "task",
-   "task": "Mrówcza Kolonia. – etap 3",
+   "task": "Lazurytowa Grota. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -2792,150 +2432,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Mieszkańcy Andarum. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 48
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mieszkańcy Andarum. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 48
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mieszkańcy Andarum. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 48
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zdradzieckie tunele. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 49
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zdradzieckie tunele. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 49
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zdradzieckie tunele. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 49
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[54lvl] koboldy",
    "set": "48lvl",
@@ -2987,7 +2483,7 @@
   },
   {
    "type": "task",
-   "task": "Dusze śniegu. – etap 1",
+   "task": "Owady z kopalni. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -3011,7 +2507,7 @@
   },
   {
    "type": "task",
-   "task": "Dusze śniegu. – etap 2",
+   "task": "Owady z kopalni. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -3035,7 +2531,7 @@
   },
   {
    "type": "task",
-   "task": "Dusze śniegu. – etap 3",
+   "task": "Owady z kopalni. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -3059,7 +2555,7 @@
   },
   {
    "type": "task",
-   "task": "Mnisi ze świątyni. – etap 1",
+   "task": "Bazyliszki. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -3083,7 +2579,7 @@
   },
   {
    "type": "task",
-   "task": "Mnisi ze świątyni. – etap 2",
+   "task": "Bazyliszki. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -3107,7 +2603,7 @@
   },
   {
    "type": "task",
-   "task": "Mnisi ze świątyni. – etap 3",
+   "task": "Bazyliszki. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -3120,78 +2616,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 64
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Strażnicy biblioteki – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 65
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Strażnicy biblioteki – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 65
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Strażnicy biblioteki – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 52
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 65
     },
     {
      "join": "and",
@@ -3229,78 +2653,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Tajemnica magazynu świątyni – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 53
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnica magazynu świątyni – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 53
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnica magazynu świątyni – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 53
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[58lvl] żądłaki",
    "set": "48lvl",
@@ -3327,79 +2679,7 @@
   },
   {
    "type": "task",
-   "task": "Eremy światynne – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 67
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Eremy światynne – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 67
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Eremy światynne – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 54
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 67
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Włochate stwory – etap 1",
+   "task": "Wioska Gnolli. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -3423,7 +2703,7 @@
   },
   {
    "type": "task",
-   "task": "Włochate stwory – etap 2",
+   "task": "Wioska Gnolli. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -3447,7 +2727,7 @@
   },
   {
    "type": "task",
-   "task": "Włochate stwory – etap 3",
+   "task": "Wioska Gnolli. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -3471,7 +2751,7 @@
   },
   {
    "type": "task",
-   "task": "Wylęgarnia dławicieli – etap 1",
+   "task": "Szkodniki z Leśnego Brodu. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -3495,7 +2775,7 @@
   },
   {
    "type": "task",
-   "task": "Wylęgarnia dławicieli – etap 2",
+   "task": "Szkodniki z Leśnego Brodu. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -3519,7 +2799,7 @@
   },
   {
    "type": "task",
-   "task": "Wylęgarnia dławicieli – etap 3",
+   "task": "Szkodniki z Leśnego Brodu. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -3557,78 +2837,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Robale ze Zdradzieckiego Przejścia – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 70
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Robale ze Zdradzieckiego Przejścia – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 70
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Robale ze Zdradzieckiego Przejścia – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 57
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 70
     },
     {
      "join": "and",
@@ -3693,150 +2901,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Kopalnia Margorii – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 58
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 71
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Kopalnia Margorii – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 58
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 71
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Kopalnia Margorii – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 58
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 71
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Istoty cienia – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 59
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 72
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Istoty cienia – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 59
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 72
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Istoty cienia – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 59
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 72
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[64lvl] gnolle",
    "set": "54lvl",
@@ -3863,7 +2927,7 @@
   },
   {
    "type": "task",
-   "task": "Grota Samotnych Dusz. – etap 1",
+   "task": "Mrówcza Kolonia. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -3887,7 +2951,7 @@
   },
   {
    "type": "task",
-   "task": "Grota Samotnych Dusz. – etap 2",
+   "task": "Mrówcza Kolonia. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -3911,7 +2975,7 @@
   },
   {
    "type": "task",
-   "task": "Grota Samotnych Dusz. – etap 3",
+   "task": "Mrówcza Kolonia. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -3924,78 +2988,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 73
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Drapieżne koty. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 74
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Drapieżne koty. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 74
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Drapieżne koty. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 61
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 74
     },
     {
      "join": "and",
@@ -4117,78 +3109,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Zapomniany Święty Gaj. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 75
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zapomniany Święty Gaj. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 75
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zapomniany Święty Gaj. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 62
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 75
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[67lvl] olbrzymy",
    "set": "60lvl",
@@ -4215,151 +3135,7 @@
   },
   {
    "type": "task",
-   "task": "Strażniczki lasów. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 63
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 76
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Strażniczki lasów. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 63
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 76
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Strażniczki lasów. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 63
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 76
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gnomie jaskinie. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 64
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 77
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gnomie jaskinie. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 64
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 77
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gnomie jaskinie. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 64
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 77
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gady ze Złowrogich Bagien. – etap 1",
+   "task": "Mieszkańcy Andarum. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -4383,7 +3159,7 @@
   },
   {
    "type": "task",
-   "task": "Gady ze Złowrogich Bagien. – etap 2",
+   "task": "Mieszkańcy Andarum. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -4407,7 +3183,79 @@
   },
   {
    "type": "task",
-   "task": "Gady ze Złowrogich Bagien. – etap 3",
+   "task": "Mieszkańcy Andarum. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -4455,78 +3303,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Zwodnicze bagna. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 79
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zwodnicze bagna. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 79
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zwodnicze bagna. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 66
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 79
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[71lvl] jaskiniowe tolloki",
    "set": "66lvl",
@@ -4553,7 +3329,7 @@
   },
   {
    "type": "task",
-   "task": "Dolina Centaurów. – etap 1",
+   "task": "Dusze śniegu. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -4577,7 +3353,7 @@
   },
   {
    "type": "task",
-   "task": "Dolina Centaurów. – etap 2",
+   "task": "Dusze śniegu. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -4601,7 +3377,7 @@
   },
   {
    "type": "task",
-   "task": "Dolina Centaurów. – etap 3",
+   "task": "Dusze śniegu. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -4683,6 +3459,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(58lvl) Owadzia Matka",
    "e2Pos": 0,
@@ -4711,19 +3559,19 @@
   },
   {
    "type": "task",
-   "task": "Strapienie podróżników. – etap 1",
+   "task": "Strażnicy biblioteki – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 70
+     "value": 69
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 83
+     "value": 82
     },
     {
      "join": "and",
@@ -4735,19 +3583,19 @@
   },
   {
    "type": "task",
-   "task": "Strapienie podróżników. – etap 2",
+   "task": "Strażnicy biblioteki – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 70
+     "value": 69
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 83
+     "value": 82
     },
     {
      "join": "and",
@@ -4759,19 +3607,19 @@
   },
   {
    "type": "task",
-   "task": "Strapienie podróżników. – etap 3",
+   "task": "Strażnicy biblioteki – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 70
+     "value": 69
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 83
+     "value": 82
     },
     {
      "join": "and",
@@ -4808,19 +3656,19 @@
   },
   {
    "type": "task",
-   "task": "Podziemia wieży magów. – etap 1",
+   "task": "Tajemnica magazynu świątyni – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 72
+     "value": 71
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 85
+     "value": 84
     },
     {
      "join": "and",
@@ -4832,19 +3680,19 @@
   },
   {
    "type": "task",
-   "task": "Podziemia wieży magów. – etap 2",
+   "task": "Tajemnica magazynu świątyni – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 72
+     "value": 71
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 85
+     "value": 84
     },
     {
      "join": "and",
@@ -4856,19 +3704,19 @@
   },
   {
    "type": "task",
-   "task": "Podziemia wieży magów. – etap 3",
+   "task": "Tajemnica magazynu świątyni – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 72
+     "value": 71
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 85
+     "value": 84
     },
     {
      "join": "and",
@@ -4905,7 +3753,7 @@
   },
   {
    "type": "task",
-   "task": "Dwugłowe olbrzymy. – etap 1",
+   "task": "Eremy światynne – etap 1",
    "conds": [
     {
      "join": "and",
@@ -4929,7 +3777,7 @@
   },
   {
    "type": "task",
-   "task": "Dwugłowe olbrzymy. – etap 2",
+   "task": "Eremy światynne – etap 2",
    "conds": [
     {
      "join": "and",
@@ -4953,7 +3801,79 @@
   },
   {
    "type": "task",
-   "task": "Dwugłowe olbrzymy. – etap 3",
+   "task": "Eremy światynne – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 3",
    "conds": [
     {
      "join": "and",
@@ -5113,7 +4033,7 @@
   },
   {
    "type": "task",
-   "task": "Błotniste istoty. – etap 1",
+   "task": "Wylęgarnia dławicieli – etap 1",
    "conds": [
     {
      "join": "and",
@@ -5137,7 +4057,7 @@
   },
   {
    "type": "task",
-   "task": "Błotniste istoty. – etap 2",
+   "task": "Wylęgarnia dławicieli – etap 2",
    "conds": [
     {
      "join": "and",
@@ -5161,7 +4081,7 @@
   },
   {
    "type": "task",
-   "task": "Błotniste istoty. – etap 3",
+   "task": "Wylęgarnia dławicieli – etap 3",
    "conds": [
     {
      "join": "and",
@@ -5174,78 +4094,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 90
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Północny szlak. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 78
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 91
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Północny szlak. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 78
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 91
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Północny szlak. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 78
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 91
     },
     {
      "join": "and",
@@ -5331,6 +4179,150 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Robale ze Zdradzieckiego Przejścia – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Robale ze Zdradzieckiego Przejścia – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Robale ze Zdradzieckiego Przejścia – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kopalnia Margorii – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kopalnia Margorii – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kopalnia Margorii – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[85lvl] wermonty",
    "set": "78lvl",
@@ -5390,78 +4382,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Potwory z zaświatów. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 81
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 94
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potwory z zaświatów. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 81
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 94
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potwory z zaświatów. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 81
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 94
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[86lvl] krasnoludy",
    "set": "78lvl",
@@ -5488,7 +4408,7 @@
   },
   {
    "type": "task",
-   "task": "Pustynni wojownicy. – etap 1",
+   "task": "Istoty cienia – etap 1",
    "conds": [
     {
      "join": "and",
@@ -5512,7 +4432,7 @@
   },
   {
    "type": "task",
-   "task": "Pustynni wojownicy. – etap 2",
+   "task": "Istoty cienia – etap 2",
    "conds": [
     {
      "join": "and",
@@ -5536,7 +4456,7 @@
   },
   {
    "type": "task",
-   "task": "Pustynni wojownicy. – etap 3",
+   "task": "Istoty cienia – etap 3",
    "conds": [
     {
      "join": "and",
@@ -5679,6 +4599,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Grota Samotnych Dusz. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 97
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Grota Samotnych Dusz. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 97
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Grota Samotnych Dusz. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 97
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[89lvl] grexy",
    "set": "84lvl",
@@ -5705,7 +4697,79 @@
   },
   {
    "type": "task",
-   "task": "Archipelag Bremus An. – etap 1",
+   "task": "Drapieżne koty. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 85
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Drapieżne koty. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 85
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Drapieżne koty. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 85
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zapomniany Święty Gaj. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -5729,7 +4793,7 @@
   },
   {
    "type": "task",
-   "task": "Archipelag Bremus An. – etap 2",
+   "task": "Zapomniany Święty Gaj. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -5753,7 +4817,7 @@
   },
   {
    "type": "task",
-   "task": "Archipelag Bremus An. – etap 3",
+   "task": "Zapomniany Święty Gaj. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -5826,6 +4890,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Strażniczki lasów. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 87
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 100
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strażniczki lasów. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 87
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 100
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strażniczki lasów. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 87
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 100
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[92lvl] wieczornice i południce",
    "set": "84lvl",
@@ -5852,7 +4988,79 @@
   },
   {
    "type": "task",
-   "task": "Rogogłowi obrońcy. – etap 1",
+   "task": "Gnomie jaskinie. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 101
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gnomie jaskinie. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 101
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gnomie jaskinie. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 101
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gady ze Złowrogich Bagien. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -5876,7 +5084,7 @@
   },
   {
    "type": "task",
-   "task": "Rogogłowi obrońcy. – etap 2",
+   "task": "Gady ze Złowrogich Bagien. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -5900,7 +5108,7 @@
   },
   {
    "type": "task",
-   "task": "Rogogłowi obrońcy. – etap 3",
+   "task": "Gady ze Złowrogich Bagien. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -5938,6 +5146,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 94
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zwodnicze bagna. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 103
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zwodnicze bagna. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 103
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zwodnicze bagna. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 103
     },
     {
      "join": "and",
@@ -6008,7 +5288,7 @@
   },
   {
    "type": "task",
-   "task": "Skorupiaki z Rem. – etap 1",
+   "task": "Dolina Centaurów. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -6032,7 +5312,7 @@
   },
   {
    "type": "task",
-   "task": "Skorupiaki z Rem. – etap 2",
+   "task": "Dolina Centaurów. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -6056,7 +5336,7 @@
   },
   {
    "type": "task",
-   "task": "Skorupiaki z Rem. – etap 3",
+   "task": "Dolina Centaurów. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -6147,78 +5427,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Gliniane golemy. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 93
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 106
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gliniane golemy. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 93
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 106
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Gliniane golemy. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 93
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 106
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[98lvl] centaury",
    "set": "90lvl",
@@ -6305,6 +5513,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Strapienie podróżników. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 95
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 108
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strapienie podróżników. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 95
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 108
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strapienie podróżników. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 95
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 108
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[100lvl] bandyci",
    "set": "90lvl",
@@ -6331,19 +5611,19 @@
   },
   {
    "type": "task",
-   "task": "Na ratunek Magradit. – etap 1",
+   "task": "Podziemia wieży magów. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 96
+     "value": 97
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 109
+     "value": 110
     },
     {
      "join": "and",
@@ -6355,19 +5635,19 @@
   },
   {
    "type": "task",
-   "task": "Na ratunek Magradit. – etap 2",
+   "task": "Podziemia wieży magów. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 96
+     "value": 97
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 109
+     "value": 110
     },
     {
      "join": "and",
@@ -6379,19 +5659,19 @@
   },
   {
    "type": "task",
-   "task": "Na ratunek Magradit. – etap 3",
+   "task": "Podziemia wieży magów. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 96
+     "value": 97
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 109
+     "value": 110
     },
     {
      "join": "and",
@@ -6403,31 +5683,7 @@
   },
   {
    "type": "task",
-   "task": "Widma z Wyspy Wraków. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 98
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 111
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Widma z Wyspy Wraków. – etap 2",
+   "task": "Dwugłowe olbrzymy. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -6451,7 +5707,31 @@
   },
   {
    "type": "task",
-   "task": "Widma z Wyspy Wraków. – etap 3",
+   "task": "Dwugłowe olbrzymy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 111
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dwugłowe olbrzymy. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -6568,7 +5848,7 @@
   },
   {
    "type": "task",
-   "task": "Piracka nora. – etap 1",
+   "task": "Błotniste istoty. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -6592,7 +5872,7 @@
   },
   {
    "type": "task",
-   "task": "Piracka nora. – etap 2",
+   "task": "Błotniste istoty. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -6616,7 +5896,7 @@
   },
   {
    "type": "task",
-   "task": "Piracka nora. – etap 3",
+   "task": "Błotniste istoty. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -6690,7 +5970,7 @@
   },
   {
    "type": "task",
-   "task": "Piaskowi niewolnicy. – etap 1",
+   "task": "Północny szlak. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -6714,7 +5994,7 @@
   },
   {
    "type": "task",
-   "task": "Piaskowi niewolnicy. – etap 2",
+   "task": "Północny szlak. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -6738,7 +6018,7 @@
   },
   {
    "type": "task",
-   "task": "Piaskowi niewolnicy. – etap 3",
+   "task": "Północny szlak. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -6888,78 +6168,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Kopalnia Żółtego Kruszcu. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 104
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 117
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Kopalnia Żółtego Kruszcu. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 104
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 117
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Kopalnia Żółtego Kruszcu. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 104
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 117
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[109lvl] Północny szlak",
    "set": "102lvl",
@@ -6986,19 +6194,19 @@
   },
   {
    "type": "task",
-   "task": "Latający rabusie. – etap 1",
+   "task": "Potwory z zaświatów. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 105
+     "value": 106
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 118
+     "value": 119
     },
     {
      "join": "and",
@@ -7010,19 +6218,19 @@
   },
   {
    "type": "task",
-   "task": "Latający rabusie. – etap 2",
+   "task": "Potwory z zaświatów. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 105
+     "value": 106
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 118
+     "value": 119
     },
     {
      "join": "and",
@@ -7034,19 +6242,19 @@
   },
   {
    "type": "task",
-   "task": "Latający rabusie. – etap 3",
+   "task": "Potwory z zaświatów. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 105
+     "value": 106
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 118
+     "value": 119
     },
     {
      "join": "and",
@@ -7117,79 +6325,7 @@
   },
   {
    "type": "task",
-   "task": "Żywe ognie. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 107
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 120
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Żywe ognie. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 107
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 120
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Żywe ognie. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 107
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 120
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Magmowi strażnicy. – etap 1",
+   "task": "Pustynni wojownicy. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -7213,7 +6349,7 @@
   },
   {
    "type": "task",
-   "task": "Magmowi strażnicy. – etap 2",
+   "task": "Pustynni wojownicy. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -7237,7 +6373,7 @@
   },
   {
    "type": "task",
-   "task": "Magmowi strażnicy. – etap 3",
+   "task": "Pustynni wojownicy. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -7250,78 +6386,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 121
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 109
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 122
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 109
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 122
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 109
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 122
     },
     {
      "join": "and",
@@ -7367,7 +6431,7 @@
   },
   {
    "type": "task",
-   "task": "Olbrzymie ważki. – etap 1",
+   "task": "Archipelag Bremus An. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -7391,7 +6455,7 @@
   },
   {
    "type": "task",
-   "task": "Olbrzymie ważki. – etap 2",
+   "task": "Archipelag Bremus An. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -7415,7 +6479,7 @@
   },
   {
    "type": "task",
-   "task": "Olbrzymie ważki. – etap 3",
+   "task": "Archipelag Bremus An. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -7428,78 +6492,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 123
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Góralska przygoda. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 111
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 124
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Góralska przygoda. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 111
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 124
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Góralska przygoda. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 111
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 124
     },
     {
      "join": "and",
@@ -7544,6 +6536,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Rogogłowi obrońcy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 112
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 125
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Rogogłowi obrońcy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 112
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 125
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Rogogłowi obrońcy. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 112
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 125
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[118lvl] kałamarnice",
    "set": "108lvl",
@@ -7570,19 +6634,19 @@
   },
   {
    "type": "task",
-   "task": "Bezduszni barbarzyńcy. – etap 1",
+   "task": "Skorupiaki z Rem. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 115
+     "value": 114
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 128
+     "value": 127
     },
     {
      "join": "and",
@@ -7594,19 +6658,19 @@
   },
   {
    "type": "task",
-   "task": "Bezduszni barbarzyńcy. – etap 2",
+   "task": "Skorupiaki z Rem. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 115
+     "value": 114
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 128
+     "value": 127
     },
     {
      "join": "and",
@@ -7618,19 +6682,19 @@
   },
   {
    "type": "task",
-   "task": "Bezduszni barbarzyńcy. – etap 3",
+   "task": "Skorupiaki z Rem. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 115
+     "value": 114
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 128
+     "value": 127
     },
     {
      "join": "and",
@@ -7671,6 +6735,78 @@
      "op": "in",
      "value": "08:00",
      "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gliniane golemy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 129
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gliniane golemy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 129
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Gliniane golemy. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 129
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
     }
    ]
   },
@@ -7726,7 +6862,7 @@
   },
   {
    "type": "task",
-   "task": "Tajemnica Kruzo. – etap 1",
+   "task": "Na ratunek Magradit. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -7750,7 +6886,7 @@
   },
   {
    "type": "task",
-   "task": "Tajemnica Kruzo. – etap 2",
+   "task": "Na ratunek Magradit. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -7774,7 +6910,7 @@
   },
   {
    "type": "task",
-   "task": "Tajemnica Kruzo. – etap 3",
+   "task": "Na ratunek Magradit. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -7925,7 +7061,7 @@
   },
   {
    "type": "task",
-   "task": "Mechaniczne gobliny. – etap 1",
+   "task": "Widma z Wyspy Wraków. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -7949,7 +7085,7 @@
   },
   {
    "type": "task",
-   "task": "Mechaniczne gobliny. – etap 2",
+   "task": "Widma z Wyspy Wraków. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -7973,7 +7109,7 @@
   },
   {
    "type": "task",
-   "task": "Mechaniczne gobliny. – etap 3",
+   "task": "Widma z Wyspy Wraków. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -7997,7 +7133,7 @@
   },
   {
    "type": "task",
-   "task": "Potępione dusze. – etap 1",
+   "task": "Piracka nora. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -8021,7 +7157,7 @@
   },
   {
    "type": "task",
-   "task": "Potępione dusze. – etap 2",
+   "task": "Piracka nora. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -8045,7 +7181,7 @@
   },
   {
    "type": "task",
-   "task": "Potępione dusze. – etap 3",
+   "task": "Piracka nora. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -8153,19 +7289,19 @@
   },
   {
    "type": "task",
-   "task": "Górskie wiedźmy. – etap 1",
+   "task": "Piaskowi niewolnicy. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 123
+     "value": 124
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 136
+     "value": 137
     },
     {
      "join": "and",
@@ -8177,19 +7313,19 @@
   },
   {
    "type": "task",
-   "task": "Górskie wiedźmy. – etap 2",
+   "task": "Piaskowi niewolnicy. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 123
+     "value": 124
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 136
+     "value": 137
     },
     {
      "join": "and",
@@ -8201,19 +7337,19 @@
   },
   {
    "type": "task",
-   "task": "Górskie wiedźmy. – etap 3",
+   "task": "Piaskowi niewolnicy. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 123
+     "value": 124
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 136
+     "value": 137
     },
     {
      "join": "and",
@@ -8336,7 +7472,7 @@
   },
   {
    "type": "task",
-   "task": "Czerwone bestie. – etap 1",
+   "task": "Kopalnia Żółtego Kruszcu. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -8360,7 +7496,7 @@
   },
   {
    "type": "task",
-   "task": "Czerwone bestie. – etap 2",
+   "task": "Kopalnia Żółtego Kruszcu. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -8384,7 +7520,7 @@
   },
   {
    "type": "task",
-   "task": "Czerwone bestie. – etap 3",
+   "task": "Kopalnia Żółtego Kruszcu. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -8397,6 +7533,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 139
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Latający rabusie. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 128
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 141
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Latający rabusie. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 128
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 141
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Latający rabusie. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 128
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 141
     },
     {
      "join": "and",
@@ -8458,7 +7666,7 @@
   },
   {
    "type": "task",
-   "task": "Dziki Zagajnik. – etap 1",
+   "task": "Żywe ognie. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -8482,7 +7690,7 @@
   },
   {
    "type": "task",
-   "task": "Dziki Zagajnik. – etap 2",
+   "task": "Żywe ognie. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -8506,7 +7714,7 @@
   },
   {
    "type": "task",
-   "task": "Dziki Zagajnik. – etap 3",
+   "task": "Żywe ognie. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -8555,7 +7763,7 @@
   },
   {
    "type": "task",
-   "task": "Duchy Pradawnych. – etap 1",
+   "task": "Magmowi strażnicy. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -8579,7 +7787,7 @@
   },
   {
    "type": "task",
-   "task": "Duchy Pradawnych. – etap 2",
+   "task": "Magmowi strażnicy. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -8603,7 +7811,7 @@
   },
   {
    "type": "task",
-   "task": "Duchy Pradawnych. – etap 3",
+   "task": "Magmowi strażnicy. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -8666,6 +7874,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 147
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 147
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Skrytobójcy ze Szlaku Thorpa. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 147
     },
     {
      "join": "and",
@@ -8838,7 +8118,7 @@
   },
   {
    "type": "task",
-   "task": "Sala Królewska. – etap 1",
+   "task": "Olbrzymie ważki. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -8862,7 +8142,7 @@
   },
   {
    "type": "task",
-   "task": "Sala Królewska. – etap 2",
+   "task": "Olbrzymie ważki. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -8886,7 +8166,7 @@
   },
   {
    "type": "task",
-   "task": "Sala Królewska. – etap 3",
+   "task": "Olbrzymie ważki. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -8899,6 +8179,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 149
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Góralska przygoda. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 151
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Góralska przygoda. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 151
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Góralska przygoda. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 151
     },
     {
      "join": "and",
@@ -8969,19 +8321,19 @@
   },
   {
    "type": "task",
-   "task": "Czarna Gwardia. – etap 1",
+   "task": "Bezduszni barbarzyńcy. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 141
+     "value": 140
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 154
+     "value": 153
     },
     {
      "join": "and",
@@ -8993,19 +8345,19 @@
   },
   {
    "type": "task",
-   "task": "Czarna Gwardia. – etap 2",
+   "task": "Bezduszni barbarzyńcy. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 141
+     "value": 140
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 154
+     "value": 153
     },
     {
      "join": "and",
@@ -9017,19 +8369,19 @@
   },
   {
    "type": "task",
-   "task": "Czarna Gwardia. – etap 3",
+   "task": "Bezduszni barbarzyńcy. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 141
+     "value": 140
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 154
+     "value": 153
     },
     {
      "join": "and",
@@ -9142,6 +8494,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Tajemnica Kruzo. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 142
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 155
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnica Kruzo. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 142
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 155
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnica Kruzo. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 142
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 155
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[147lvl] berserkerzy",
    "set": "138lvl",
@@ -9168,19 +8592,19 @@
   },
   {
    "type": "task",
-   "task": "Kryształowe korytarze. – etap 1",
+   "task": "Mechaniczne gobliny. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 143
+     "value": 144
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 156
+     "value": 157
     },
     {
      "join": "and",
@@ -9192,19 +8616,19 @@
   },
   {
    "type": "task",
-   "task": "Kryształowe korytarze. – etap 2",
+   "task": "Mechaniczne gobliny. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 143
+     "value": 144
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 156
+     "value": 157
     },
     {
      "join": "and",
@@ -9216,19 +8640,19 @@
   },
   {
    "type": "task",
-   "task": "Kryształowe korytarze. – etap 3",
+   "task": "Mechaniczne gobliny. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 143
+     "value": 144
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 156
+     "value": 157
     },
     {
      "join": "and",
@@ -9254,78 +8678,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 149
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mieszkanki lasu. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 145
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 158
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mieszkanki lasu. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 145
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 158
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Mieszkanki lasu. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 145
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 158
     },
     {
      "join": "and",
@@ -9366,6 +8718,78 @@
      "op": "in",
      "value": "08:00",
      "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Potępione dusze. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 146
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 159
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Potępione dusze. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 146
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 159
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Potępione dusze. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 146
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 159
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
     }
    ]
   },
@@ -9454,6 +8878,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Górskie wiedźmy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 148
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Górskie wiedźmy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 148
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Górskie wiedźmy. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 148
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[154lvl] wiedzmy",
    "set": "144lvl",
@@ -9514,7 +9010,7 @@
   },
   {
    "type": "task",
-   "task": "Ogrza kawerna. – etap 1",
+   "task": "Czerwone bestie. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -9538,7 +9034,7 @@
   },
   {
    "type": "task",
-   "task": "Ogrza kawerna. – etap 2",
+   "task": "Czerwone bestie. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -9562,7 +9058,7 @@
   },
   {
    "type": "task",
-   "task": "Ogrza kawerna. – etap 3",
+   "task": "Czerwone bestie. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -9611,19 +9107,19 @@
   },
   {
    "type": "task",
-   "task": "Nieumarła szlachta – etap 1",
+   "task": "Dziki Zagajnik. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 152
+     "value": 154
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 165
+     "value": 167
     },
     {
      "join": "and",
@@ -9635,19 +9131,19 @@
   },
   {
    "type": "task",
-   "task": "Nieumarła szlachta – etap 2",
+   "task": "Dziki Zagajnik. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 152
+     "value": 154
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 165
+     "value": 167
     },
     {
      "join": "and",
@@ -9659,19 +9155,19 @@
   },
   {
    "type": "task",
-   "task": "Nieumarła szlachta – etap 3",
+   "task": "Dziki Zagajnik. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 152
+     "value": 154
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 165
+     "value": 167
     },
     {
      "join": "and",
@@ -9743,78 +9239,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Niebezpieczna roślinność. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 155
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 168
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Niebezpieczna roślinność. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 155
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 168
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Niebezpieczna roślinność. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 155
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 168
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[161lvl] dziki zagajnik",
    "set": "156lvl",
@@ -9841,19 +9265,19 @@
   },
   {
    "type": "task",
-   "task": "Bezwzględni Valmirowie. – etap 1",
+   "task": "Duchy Pradawnych. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 157
+     "value": 158
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 170
+     "value": 171
     },
     {
      "join": "and",
@@ -9865,19 +9289,19 @@
   },
   {
    "type": "task",
-   "task": "Bezwzględni Valmirowie. – etap 2",
+   "task": "Duchy Pradawnych. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 157
+     "value": 158
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 170
+     "value": 171
     },
     {
      "join": "and",
@@ -9889,19 +9313,19 @@
   },
   {
    "type": "task",
-   "task": "Bezwzględni Valmirowie. – etap 3",
+   "task": "Duchy Pradawnych. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 157
+     "value": 158
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 170
+     "value": 171
     },
     {
      "join": "and",
@@ -10006,19 +9430,19 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Las. – etap 1",
+   "task": "Sala Królewska. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 161
+     "value": 162
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 174
+     "value": 175
     },
     {
      "join": "and",
@@ -10030,19 +9454,19 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Las. – etap 2",
+   "task": "Sala Królewska. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 161
+     "value": 162
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 174
+     "value": 175
     },
     {
      "join": "and",
@@ -10054,91 +9478,19 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Las. – etap 3",
+   "task": "Sala Królewska. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 161
+     "value": 162
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 174
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Śmierdząca robota. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 164
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 177
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Śmierdząca robota. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 164
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 177
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Śmierdząca robota. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 164
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 177
+     "value": 175
     },
     {
      "join": "and",
@@ -10243,19 +9595,19 @@
   },
   {
    "type": "task",
-   "task": "Zagubione niewiasty. – etap 1",
+   "task": "Czarna Gwardia. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 168
+     "value": 166
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 181
+     "value": 179
     },
     {
      "join": "and",
@@ -10267,19 +9619,19 @@
   },
   {
    "type": "task",
-   "task": "Zagubione niewiasty. – etap 2",
+   "task": "Czarna Gwardia. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 168
+     "value": 166
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 181
+     "value": 179
     },
     {
      "join": "and",
@@ -10291,19 +9643,19 @@
   },
   {
    "type": "task",
-   "task": "Zagubione niewiasty. – etap 3",
+   "task": "Czarna Gwardia. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 168
+     "value": 166
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 181
+     "value": 179
     },
     {
      "join": "and",
@@ -10329,6 +9681,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kryształowe korytarze. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 170
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 183
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kryształowe korytarze. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 170
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 183
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Kryształowe korytarze. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 170
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 183
     },
     {
      "join": "and",
@@ -10407,150 +9831,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Heretycy niższego stopnia. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 171
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 184
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Heretycy niższego stopnia. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 171
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 184
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Heretycy niższego stopnia. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 171
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 184
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wyznawcy Czarnego Pana. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 173
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 186
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wyznawcy Czarnego Pana. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 173
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 186
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wyznawcy Czarnego Pana. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 173
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 186
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[178lvl] driady",
    "set": "168lvl",
@@ -10566,6 +9846,150 @@
      "stat": "lvl",
      "op": "le",
      "value": 178
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkanki lasu. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkanki lasu. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkanki lasu. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ogrza kawerna. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ogrza kawerna. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Ogrza kawerna. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 174
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 187
     },
     {
      "join": "and",
@@ -10610,78 +10034,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Zapomniany Las. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 176
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 189
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zapomniany Las. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 176
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 189
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Zapomniany Las. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 176
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 189
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[181lvl] ogry",
    "set": "174lvl",
@@ -10707,78 +10059,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Pajęcze królestwo. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 178
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 191
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Pajęcze królestwo. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 178
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 191
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Pajęcze królestwo. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 178
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 191
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[184lvl] patrycjusze",
    "set": "174lvl",
@@ -10794,6 +10074,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 184
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Nieumarła szlachta – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 180
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 193
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Nieumarła szlachta – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 180
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 193
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Nieumarła szlachta – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 180
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 193
     },
     {
      "join": "and",
@@ -10932,7 +10284,7 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Lud. – etap 1",
+   "task": "Niebezpieczna roślinność. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -10956,7 +10308,7 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Lud. – etap 2",
+   "task": "Niebezpieczna roślinność. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -10980,7 +10332,7 @@
   },
   {
    "type": "task",
-   "task": "Mroczny Lud. – etap 3",
+   "task": "Niebezpieczna roślinność. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -11097,19 +10449,19 @@
   },
   {
    "type": "task",
-   "task": "Wyznawcy Pajęczej Matki. – etap 1",
+   "task": "Bezwzględni Valmirowie. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 187
+     "value": 186
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 200
+     "value": 199
     },
     {
      "join": "and",
@@ -11121,19 +10473,19 @@
   },
   {
    "type": "task",
-   "task": "Wyznawcy Pajęczej Matki. – etap 2",
+   "task": "Bezwzględni Valmirowie. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 187
+     "value": 186
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 200
+     "value": 199
     },
     {
      "join": "and",
@@ -11145,19 +10497,19 @@
   },
   {
    "type": "task",
-   "task": "Wyznawcy Pajęczej Matki. – etap 3",
+   "task": "Bezwzględni Valmirowie. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 187
+     "value": 186
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 200
+     "value": 199
     },
     {
      "join": "and",
@@ -11296,19 +10648,19 @@
   },
   {
    "type": "task",
-   "task": "Zatrute Torfowiska. – etap 1",
+   "task": "Mroczny Las. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 191
+     "value": 190
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 204
+     "value": 203
     },
     {
      "join": "and",
@@ -11320,19 +10672,19 @@
   },
   {
    "type": "task",
-   "task": "Zatrute Torfowiska. – etap 2",
+   "task": "Mroczny Las. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 191
+     "value": 190
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 204
+     "value": 203
     },
     {
      "join": "and",
@@ -11344,19 +10696,19 @@
   },
   {
    "type": "task",
-   "task": "Zatrute Torfowiska. – etap 3",
+   "task": "Mroczny Las. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 191
+     "value": 190
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 204
+     "value": 203
     },
     {
      "join": "and",
@@ -11382,6 +10734,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 196
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Śmierdząca robota. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 192
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 205
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Śmierdząca robota. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 192
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 205
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Śmierdząca robota. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 192
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 205
     },
     {
      "join": "and",
@@ -11479,19 +10903,19 @@
   },
   {
    "type": "task",
-   "task": "Strumienie Szemrzących Wód. – etap 1",
+   "task": "Zagubione niewiasty. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 195
+     "value": 196
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 208
+     "value": 209
     },
     {
      "join": "and",
@@ -11503,19 +10927,19 @@
   },
   {
    "type": "task",
-   "task": "Strumienie Szemrzących Wód. – etap 2",
+   "task": "Zagubione niewiasty. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 195
+     "value": 196
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 208
+     "value": 209
     },
     {
      "join": "and",
@@ -11527,19 +10951,91 @@
   },
   {
    "type": "task",
-   "task": "Strumienie Szemrzących Wód. – etap 3",
+   "task": "Zagubione niewiasty. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 195
+     "value": 196
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 208
+     "value": 209
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Heretycy niższego stopnia. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 198
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 211
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Heretycy niższego stopnia. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 198
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 211
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Heretycy niższego stopnia. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 198
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 211
     },
     {
      "join": "and",
@@ -11610,7 +11106,55 @@
   },
   {
    "type": "task",
-   "task": "Zainfekowane zwierzęta.",
+   "task": "Wyznawcy Czarnego Pana. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 200
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 213
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wyznawcy Czarnego Pana. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 200
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 213
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wyznawcy Czarnego Pana. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -11727,7 +11271,55 @@
   },
   {
    "type": "task",
-   "task": "Księżycowe anomalie.",
+   "task": "Zapomniany Las. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 204
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 217
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zapomniany Las. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 204
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 217
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zapomniany Las. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -11810,7 +11402,7 @@
   },
   {
    "type": "task",
-   "task": "Zakorzeniony Lud. – etap 1",
+   "task": "Pajęcze królestwo. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -11834,7 +11426,7 @@
   },
   {
    "type": "task",
-   "task": "Zakorzeniony Lud. – etap 2",
+   "task": "Pajęcze królestwo. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -11858,7 +11450,7 @@
   },
   {
    "type": "task",
-   "task": "Zakorzeniony Lud. – etap 3",
+   "task": "Pajęcze królestwo. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -11915,78 +11507,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Tajemnicza kraina. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 211
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 224
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnicza kraina. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 211
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 224
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnicza kraina. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 211
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 224
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[216lvl] drowy",
    "set": "210lvl",
@@ -12002,6 +11522,150 @@
      "stat": "lvl",
      "op": "le",
      "value": 216
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mroczny Lud. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 212
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 225
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mroczny Lud. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 212
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 225
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mroczny Lud. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 212
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 225
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wyznawcy Pajęczej Matki. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 227
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wyznawcy Pajęczej Matki. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 227
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wyznawcy Pajęczej Matki. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 227
     },
     {
      "join": "and",
@@ -12173,78 +11837,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Waleczne plemię. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 215
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 228
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Waleczne plemię. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 215
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 228
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Waleczne plemię. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 215
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 228
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "e2",
    "e2Config": "(205lvl) Zufulus Smakosz Serc",
    "e2Pos": 0,
@@ -12305,7 +11897,7 @@
   },
   {
    "type": "task",
-   "task": "Mahoptecka starszyzna. – etap 1",
+   "task": "Zatrute Torfowiska. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -12329,7 +11921,7 @@
   },
   {
    "type": "task",
-   "task": "Mahoptecka starszyzna. – etap 2",
+   "task": "Zatrute Torfowiska. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -12353,7 +11945,7 @@
   },
   {
    "type": "task",
-   "task": "Mahoptecka starszyzna. – etap 3",
+   "task": "Zatrute Torfowiska. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -12435,6 +12027,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Strumienie Szemrzących Wód. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 224
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 237
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strumienie Szemrzących Wód. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 224
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 237
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strumienie Szemrzących Wód. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 224
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 237
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(214lvl) Arachniregina Colosseus",
    "e2Pos": 0,
@@ -12462,78 +12126,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Wypaczenie Potępionego Zamczyska. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 225
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 238
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wypaczenie Potępionego Zamczyska. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 225
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 238
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Wypaczenie Potępionego Zamczyska. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 225
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 238
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[232lvl] zagrzybiony las",
    "set": "222lvl",
@@ -12549,6 +12141,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 232
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zainfekowane zwierzęta. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 228
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 241
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zainfekowane zwierzęta. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 228
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 241
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zainfekowane zwierzęta. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 228
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 241
     },
     {
      "join": "and",
@@ -12593,78 +12257,6 @@
    ]
   },
   {
-   "type": "task",
-   "task": "Potępione wiedźmy. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 229
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 242
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potępione wiedźmy. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 229
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 242
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Potępione wiedźmy. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 229
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 242
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "exp",
    "exp": "[236lvl] elgary",
    "set": "228lvl",
@@ -12691,7 +12283,7 @@
   },
   {
    "type": "task",
-   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 1",
+   "task": "Księżycowe anomalie. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -12715,7 +12307,7 @@
   },
   {
    "type": "task",
-   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 2",
+   "task": "Księżycowe anomalie. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -12739,7 +12331,7 @@
   },
   {
    "type": "task",
-   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 3",
+   "task": "Księżycowe anomalie. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -12788,7 +12380,7 @@
   },
   {
    "type": "task",
-   "task": "Przerażone byty. – etap 1",
+   "task": "Zakorzeniony Lud. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -12812,7 +12404,7 @@
   },
   {
    "type": "task",
-   "task": "Przerażone byty. – etap 2",
+   "task": "Zakorzeniony Lud. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -12836,7 +12428,7 @@
   },
   {
    "type": "task",
-   "task": "Przerażone byty. – etap 3",
+   "task": "Zakorzeniony Lud. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -12919,7 +12511,7 @@
   },
   {
    "type": "task",
-   "task": "Wernoradzkie zło – etap 1",
+   "task": "Tajemnicza kraina. – etap 1",
    "conds": [
     {
      "join": "and",
@@ -12943,7 +12535,7 @@
   },
   {
    "type": "task",
-   "task": "Wernoradzkie zło – etap 2",
+   "task": "Tajemnicza kraina. – etap 2",
    "conds": [
     {
      "join": "and",
@@ -12967,7 +12559,7 @@
   },
   {
    "type": "task",
-   "task": "Wernoradzkie zło – etap 3",
+   "task": "Tajemnicza kraina. – etap 3",
    "conds": [
     {
      "join": "and",
@@ -13050,19 +12642,19 @@
   },
   {
    "type": "task",
-   "task": "Mieszkańcy pustyni Shaiharrud – etap 1",
+   "task": "Waleczne plemię. – etap 1",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 245
+     "value": 244
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 258
+     "value": 257
     },
     {
      "join": "and",
@@ -13074,19 +12666,19 @@
   },
   {
    "type": "task",
-   "task": "Mieszkańcy pustyni Shaiharrud – etap 2",
+   "task": "Waleczne plemię. – etap 2",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 245
+     "value": 244
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 258
+     "value": 257
     },
     {
      "join": "and",
@@ -13098,19 +12690,19 @@
   },
   {
    "type": "task",
-   "task": "Mieszkańcy pustyni Shaiharrud – etap 3",
+   "task": "Waleczne plemię. – etap 3",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 245
+     "value": 244
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 258
+     "value": 257
     },
     {
      "join": "and",
@@ -13216,6 +12808,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Mahoptecka starszyzna. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 248
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 261
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mahoptecka starszyzna. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 248
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 261
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mahoptecka starszyzna. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 248
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 261
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[253lvl] maho",
    "set": "246lvl",
@@ -13231,78 +12895,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 253
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Uroczysko Wodnika. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 250
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 263
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Uroczysko Wodnika. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 250
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 263
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Uroczysko Wodnika. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 250
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 263
     },
     {
      "join": "and",
@@ -13381,6 +12973,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Wypaczenie Potępionego Zamczyska. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 252
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 265
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wypaczenie Potępionego Zamczyska. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 252
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 265
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wypaczenie Potępionego Zamczyska. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 252
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 265
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[258lvl] wiedźmowe potwory",
    "set": "252lvl",
@@ -13396,78 +13060,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 258
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnicze mieszkanki lasu. – etap 1",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 254
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 267
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnicze mieszkanki lasu. – etap 2",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 254
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 267
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "task",
-   "task": "Tajemnicze mieszkanki lasu. – etap 3",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 254
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 267
     },
     {
      "join": "and",
@@ -13537,6 +13129,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Potępione wiedźmy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 258
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 271
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Potępione wiedźmy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 258
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 271
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Potępione wiedźmy. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 258
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 271
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "exp",
    "exp": "[264lvl] tellary",
    "set": "258lvl",
@@ -13552,6 +13216,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 264
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 260
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 260
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zagrożenie ze Skalnego Pustkowia. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 260
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 273
     },
     {
      "join": "and",
@@ -13592,6 +13328,78 @@
      "op": "in",
      "value": "08:00",
      "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Przerażone byty. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 262
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 275
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Przerażone byty. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 262
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 275
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Przerażone byty. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 262
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 275
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
     }
    ]
   },
@@ -13680,6 +13488,78 @@
    ]
   },
   {
+   "type": "task",
+   "task": "Wernoradzkie zło – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 270
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 283
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wernoradzkie zło – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 270
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 283
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wernoradzkie zło – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 270
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 283
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(260lvl) Wabicielka",
    "e2Pos": 0,
@@ -13710,6 +13590,78 @@
      "op": "in",
      "value": "08:00",
      "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkańcy pustyni Shaiharrud – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 286
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkańcy pustyni Shaiharrud – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 286
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkańcy pustyni Shaiharrud – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 273
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 286
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
     }
    ]
   },
@@ -13761,6 +13713,78 @@
      "join": "and",
      "stat": "ttl",
      "op": "eq",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Uroczysko Wodnika. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 276
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 289
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Uroczysko Wodnika. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 276
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 289
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Uroczysko Wodnika. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 276
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 289
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
      "value": 0
     }
    ]
@@ -13840,6 +13864,78 @@
      "stat": "lvl",
      "op": "le",
      "value": 283
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicze mieszkanki lasu. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 293
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicze mieszkanki lasu. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 293
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicze mieszkanki lasu. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 293
     },
     {
      "join": "and",

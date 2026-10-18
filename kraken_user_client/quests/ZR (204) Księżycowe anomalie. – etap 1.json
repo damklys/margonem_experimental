@@ -1,0 +1,76 @@
+{
+ "kraken": "zadanie",
+ "version": "4.3.202610181300",
+ "name": "Księżycowe anomalie. – etap 1",
+ "questId": 13273,
+ "questName": "Księżycowe anomalie.",
+ "stage": 1,
+ "stages": 3,
+ "stageKills": [
+  100,
+  250,
+  500
+ ],
+ "lvl": 232,
+ "set": "228lvl",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Karka-han",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Słyszałem,"
+    },
+    {
+     "q": "Zobaczmy, jakie zadania mógłbym ci zlecić",
+     "a": "pierwszy etap zadania - Księżycowe anomalie"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "1."
+    }
+   ]
+  },
+  {
+   "type": "kill",
+   "mob": "Lunarny lisek; Lunarna łania; Elgara; Lunarny wilk; Pani stukających kopyt; Wrogo nastawiona elgara; Leśna boginka; Czcicielka księżyca; Księżycowy strażnik; Czarnowidzka",
+   "n": 100,
+   "route": "[236lvl] elgary"
+  },
+  {
+   "type": "goto",
+   "map": "Karka-han",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Równowagi",
+   "rules": [
+    {
+     "q": "Zakonnik Równowagi Witaj,",
+     "a": "Wykonałem dla ciebie"
+    },
+    {
+     "q": "Jakie zadanie dla mnie wykonałeś?",
+     "a": "1"
+    },
+    {
+     "q": "Zakonnik Równowagi",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

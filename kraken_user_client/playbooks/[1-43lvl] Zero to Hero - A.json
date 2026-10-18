@@ -1,6 +1,6 @@
 {
  "kraken": "przebieg",
- "version": "4.2.202610181200",
+ "version": "4.3.202610181300",
  "name": "[1-43lvl] Zero to Hero - A",
  "tiles": [
   {
@@ -58,8 +58,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 35
+     "op": "le",
+     "value": 33
     }
    ]
   },
@@ -76,8 +76,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 35
+     "op": "le",
+     "value": 33
     }
    ]
   },
@@ -94,8 +94,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 35
+     "op": "le",
+     "value": 33
     }
    ]
   },
@@ -131,8 +131,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 38
+     "op": "le",
+     "value": 36
     }
    ]
   },
@@ -149,8 +149,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 38
+     "op": "le",
+     "value": 36
     }
    ]
   },
@@ -167,8 +167,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 38
+     "op": "le",
+     "value": 36
     }
    ]
   },
@@ -204,8 +204,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 39
+     "op": "le",
+     "value": 37
     }
    ]
   },
@@ -222,8 +222,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 39
+     "op": "le",
+     "value": 37
     }
    ]
   },
@@ -240,8 +240,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 39
+     "op": "le",
+     "value": 37
     }
    ]
   },
@@ -295,8 +295,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 42
+     "op": "le",
+     "value": 40
     }
    ]
   },
@@ -313,8 +313,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 42
+     "op": "le",
+     "value": 40
     }
    ]
   },
@@ -331,8 +331,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 42
+     "op": "le",
+     "value": 40
     }
    ]
   },
@@ -368,8 +368,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -386,8 +386,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -404,8 +404,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -441,8 +441,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -459,8 +459,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
@@ -477,8 +477,8 @@
     {
      "join": "and",
      "stat": "lvl",
-     "op": "lt",
-     "value": 43
+     "op": "le",
+     "value": 42
     }
    ]
   },
