@@ -21,13 +21,30 @@
    "8": "Szelest nieuważnego kobolda"
   },
   "skills": {
-   "h": {}
+   "h": {
+    "71": 10,
+    "97": 10,
+    "263": 3,
+    "168": 1,
+    "218": 1,
+    "61": 1,
+    "62": 2,
+    "64": 1,
+    "88": 10,
+    "113": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    97
+   ],
+   "repeat": true
   }
  }
 }

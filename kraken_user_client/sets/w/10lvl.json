@@ -28,6 +28,10 @@
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
   }
  }
 }

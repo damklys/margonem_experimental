@@ -21,13 +21,32 @@
    "8": "Pozłacana duma rycerza"
   },
   "skills": {
-   "h": {}
+   "h": {
+    "71": 10,
+    "97": 10,
+    "263": 3,
+    "168": 1,
+    "218": 1,
+    "61": 10,
+    "62": 10,
+    "64": 1,
+    "88": 10,
+    "113": 1,
+    "173": 1,
+    "253": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    97
+   ],
+   "repeat": true
   }
  }
 }

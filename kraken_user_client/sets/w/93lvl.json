@@ -20,13 +20,32 @@
    "8": "Smocze podeszwy"
   },
   "skills": {
-   "w": {}
+   "w": {
+    "23": 1,
+    "234": 10,
+    "263": 10,
+    "22": 10,
+    "29": 10,
+    "168": 1,
+    "205": 3,
+    "207": 10,
+    "20": 3,
+    "24": 1,
+    "106": 10
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    23,
+    22
+   ],
+   "repeat": true
   }
  }
 }

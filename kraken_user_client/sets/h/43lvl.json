@@ -22,13 +22,25 @@
    "8": "Trepy na każdą okazję"
   },
   "skills": {
-   "h": {}
+   "h": {
+    "71": 4,
+    "97": 10,
+    "263": 3,
+    "168": 1,
+    "218": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    97
+   ],
+   "repeat": true
   }
  }
 }

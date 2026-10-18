@@ -21,13 +21,26 @@
    "8": "Kamasze odważnego rycerza"
   },
   "skills": {
-   "w": {}
+   "w": {
+    "23": 1,
+    "234": 2,
+    "263": 10,
+    "22": 1,
+    "168": 1,
+    "205": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    23
+   ],
+   "repeat": true
   }
  }
 }

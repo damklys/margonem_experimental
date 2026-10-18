@@ -22,13 +22,21 @@
    "8": "Goblinie cichobiegi"
   },
   "skills": {
-   "h": {}
+   "h": {
+    "71": 1,
+    "97": 10,
+    "263": 1
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [],
+   "repeat": true
   }
  }
 }

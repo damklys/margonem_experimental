@@ -20,13 +20,33 @@
    "8": "Lekkie trzewiki majtka"
   },
   "skills": {
-   "w": {}
+   "w": {
+    "23": 4,
+    "234": 10,
+    "263": 10,
+    "22": 10,
+    "29": 10,
+    "168": 1,
+    "205": 5,
+    "61": 6,
+    "207": 10,
+    "20": 10,
+    "24": 10,
+    "106": 10
+   }
   },
   "combat": {
    "enabled": false,
    "speed": "slow",
    "knownSkills": {},
    "entries": []
+  },
+  "mastery": {
+   "skills": [
+    23,
+    22
+   ],
+   "repeat": true
   }
  }
 }
