@@ -320,31 +320,6 @@
    ]
   },
   {
-   "type": "exp",
-   "exp": "[81lvl] minotaury",
-   "set": "70lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 76
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 81
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "e2",
    "e2Config": "(66lvl) Furruk Kozug",
    "e2Pos": 0,
@@ -505,31 +480,6 @@
   {
    "type": "exp",
    "exp": "[83lvl] miśki",
-   "set": "70lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 78
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 83
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
-   "exp": "[83lvl] mykonidy",
    "set": "70lvl",
    "conds": [
     {

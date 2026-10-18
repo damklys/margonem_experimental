@@ -175,31 +175,6 @@
    ]
   },
   {
-   "type": "exp",
-   "exp": "[50lvl] przesmyk",
-   "set": "40lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 45
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 50
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "task",
    "task": "Latające stwory. – etap 1",
    "conds": [

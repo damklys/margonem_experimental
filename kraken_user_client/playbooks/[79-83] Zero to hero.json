@@ -148,31 +148,6 @@
    ]
   },
   {
-   "type": "exp",
-   "exp": "[85lvl] wermonty",
-   "set": "70lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 80
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 85
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "e2",
    "e2Config": "(70lvl) Jotun",
    "e2Pos": 0,
@@ -294,31 +269,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 95
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
-   "exp": "[87lvl] darhouny",
-   "set": "70lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 82
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 87
     },
     {
      "join": "and",

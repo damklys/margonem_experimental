@@ -34,31 +34,6 @@
   },
   {
    "type": "exp",
-   "exp": "[17lvl] wilki",
-   "set": "10lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 12
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 17
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
    "exp": "[20lvl] koty",
    "set": "10lvl",
    "conds": [
@@ -98,31 +73,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 20
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
-   "exp": "[23lvl] niedźwiedzie",
-   "set": "10lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 18
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 23
     },
     {
      "join": "and",
@@ -1305,56 +1255,6 @@
      "stat": "lvl",
      "op": "le",
      "value": 46
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
-   "exp": "[38lvl] warany",
-   "set": "28lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 33
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 38
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "type": "exp",
-   "exp": "[38lvl] żółwie",
-   "set": "28lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 33
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 38
     },
     {
      "join": "and",
