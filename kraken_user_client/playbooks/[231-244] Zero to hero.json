@@ -1,0 +1,391 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[231-244] Zero to hero",
+ "tiles": [
+  {
+   "type": "exp",
+   "exp": "[236lvl] elgary",
+   "set": "228lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 231
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Księżycowe anomalie. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 232
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 245
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Księżycowe anomalie. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 232
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 245
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Księżycowe anomalie. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 232
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 245
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[239lvl] drzewce",
+   "set": "234lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 234
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 239
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zakorzeniony Lud. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 249
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zakorzeniony Lud. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 249
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zakorzeniony Lud. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 249
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(226lvl) Arytodam olbrzymi",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 236
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 239
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[244lvl] bolity",
+   "set": "234lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 239
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 244
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicza kraina. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 240
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 253
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicza kraina. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 240
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 253
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnicza kraina. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 240
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 253
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(231lvl) Mocny Maddoks",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 241
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 244
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[248lvl] niecka",
+   "set": "240lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 243
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 248
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}

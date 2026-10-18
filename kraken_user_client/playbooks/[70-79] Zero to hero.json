@@ -1,0 +1,556 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[70-79] Zero to hero",
+ "tiles": [
+  {
+   "type": "exp",
+   "exp": "[75lvl] biblioteka Andarum",
+   "set": "66lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 70
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnica magazynu świątyni – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnica magazynu świątyni – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Tajemnica magazynu świątyni – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[77lvl] magazynierzy",
+   "set": "72lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 72
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 77
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Eremy światynne – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Eremy światynne – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Eremy światynne – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Włochate stwory – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[80lvl] Eremy światynne",
+   "set": "72lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[80lvl] erem",
+   "set": "72lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 75
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[81lvl] minotaury",
+   "set": "72lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 76
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(66lvl) Furruk Kozug",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 76
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 79
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(66lvl) Vari Kruger",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 76
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 79
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wylęgarnia dławicieli – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 77
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wylęgarnia dławicieli – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 77
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Wylęgarnia dławicieli – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 77
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[83lvl] dławiciele",
+   "set": "78lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 83
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[83lvl] miśki",
+   "set": "78lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 83
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[83lvl] mykonidy",
+   "set": "78lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 83
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}

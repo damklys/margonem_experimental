@@ -1,0 +1,503 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[64-70] Zero to hero",
+ "tiles": [
+  {
+   "type": "task",
+   "task": "Mieszkańcy Andarum. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkańcy Andarum. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mieszkańcy Andarum. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Zdradzieckie tunele. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 78
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[70lvl] Andarum i okolice",
+   "set": "60lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 70
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[71lvl] jaskiniowe tolloki",
+   "set": "66lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 66
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dusze śniegu. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dusze śniegu. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dusze śniegu. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 80
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[72lvl] demilisze",
+   "set": "66lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 72
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(57lvl) Foverk Turrim",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 67
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 70
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Mnisi ze świątyni. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 81
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(58lvl) Owadzia Matka",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 68
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 71
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strażnicy biblioteki – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 82
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strażnicy biblioteki – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 82
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Strażnicy biblioteki – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 82
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}

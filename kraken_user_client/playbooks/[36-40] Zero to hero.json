@@ -1,0 +1,203 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[36-40] Zero to hero",
+ "tiles": [
+  {
+   "type": "task",
+   "task": "Szemrani kupcy. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 36
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 49
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Szemrani kupcy. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 36
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 49
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Szemrani kupcy. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 36
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 49
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Porachunki z orkami. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 50
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Porachunki z orkami. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 50
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Porachunki z orkami. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 50
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(27lvl) Kotołak Tropiciel",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 40
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[44lvl] wilcze plemię",
+   "set": "36lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 39
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 44
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,567 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[154-167] Zero to hero",
+ "tiles": [
+  {
+   "type": "task",
+   "task": "Dziki Zagajnik. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 167
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dziki Zagajnik. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 167
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Dziki Zagajnik. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 167
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(145lvl) Teściowa Rumcajsa",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 155
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(144lvl) Wójt Fistuła",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 157
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[161lvl] dziki zagajnik",
+   "set": "156lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 156
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Duchy Pradawnych. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 171
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Duchy Pradawnych. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 171
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Duchy Pradawnych. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 171
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[163lvl] kazamaty",
+   "set": "156lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 163
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(148lvl) Berserker Amuno",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 158
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(150lvl) Fodug Zolash",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 160
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 163
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Sala Królewska. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 162
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 175
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Sala Królewska. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 162
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 175
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Sala Królewska. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 162
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 175
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(154lvl) Goons Asterus",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 164
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 167
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[170lvl] komnaty",
+   "set": "162lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 165
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 170
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "e2",
+   "e2Config": "(155lvl) Adariel",
+   "e2Pos": 0,
+   "e2Leader": false,
+   "e2Attacker": true,
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 165
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 168
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "eq",
+     "value": 0
+    },
+    {
+     "join": "and",
+     "stat": "hour",
+     "op": "in",
+     "value": "08:00",
+     "value2": "11:55"
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Czarna Gwardia. – etap 1",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 166
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 179
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Czarna Gwardia. – etap 2",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 166
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 179
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "task",
+   "task": "Czarna Gwardia. – etap 3",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 166
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 179
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}

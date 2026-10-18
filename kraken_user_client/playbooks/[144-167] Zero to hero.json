@@ -1,0 +1,43 @@
+{
+ "kraken": "przebieg",
+ "version": "4.5.202610181800",
+ "name": "[144-167] Zero to hero",
+ "tiles": [
+  {
+   "type": "program",
+   "program": "[144-154] Zero to hero",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 144
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 163
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[154-167] Zero to hero",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 179
+    }
+   ]
+  }
+ ]
+}
