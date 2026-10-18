@@ -45,7 +45,7 @@
    "type": "kill",
    "mob": "Klasztorny brodacz; Strażnik cennych ksiąg; Władca pastorału; Duchowny w błękicie; Sługa ołtarza; Zakonnik wyższego kręgu; Selder",
    "n": 250,
-   "route": "[75lvl] biblioteka Andarum"
+   "route": "[76lvl] niebiescy zakonnicy"
   },
   {
    "type": "goto",
