@@ -11,14 +11,14 @@
   "sellNpc": "",
   "transferKeep": "100k",
   "slots": {
-   "1": "Srebrna kopuła śmiałka",
+   "1": "Hełm leśnego licha",
    "2": "Iglasty kryształ",
    "3": "Gadzia kolia",
-   "4": "Splot ametystowych nici",
+   "4": "Zamszowy chwyt gadziny",
    "5": "Płomienny sejmitar",
-   "6": "Skórzany strój herosa",
+   "6": "Kolczuga smoczej łuski",
    "7": "Ochrona gadziego odkrywcy",
-   "8": "Cholewy czarnoksiężnika"
+   "8": "Smocze podeszwy"
   },
   "skills": {
    "p": {}

@@ -11,14 +11,14 @@
   "sellNpc": "",
   "transferKeep": "100k",
   "slots": {
-   "1": "Srebrna kopuła śmiałka",
+   "1": "Hełm leśnego licha",
    "2": "Iglasty kryształ",
    "3": "Amulet przemiany w gada",
-   "4": "Zemsta banity",
+   "4": "Zamszowy chwyt gadziny",
    "5": "Wyrzutnia rozgotowanych żab",
-   "6": "Opieka leśnej istoty",
+   "6": "Zbożowy kamuflaż węża",
    "7": "Płonące strzały na ropuchy",
-   "8": "Cholewy czarnoksiężnika"
+   "8": "Fikuśne kamasze maga"
   },
   "skills": {
    "t": {}

@@ -11,13 +11,13 @@
   "sellNpc": "",
   "transferKeep": "100k",
   "slots": {
-   "1": "Srebrna kopuła śmiałka",
+   "1": "Prosta wężowa łebka",
    "2": "Bagienna narośl",
    "3": "Gadzia kolia",
-   "4": "Zakurzone wojenne rękawice",
+   "4": "Zamszowy chwyt gadziny",
    "5": "Czarne chmury",
-   "6": "Wytworna kamizela wojownika",
-   "8": "Pozłacana duma rycerza"
+   "6": "Filcowa opieka gadów",
+   "8": "Smocze podeszwy"
   },
   "skills": {
    "w": {
