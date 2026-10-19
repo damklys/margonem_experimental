@@ -1,0 +1,59 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "source": "wbudowana · tylko zadania",
+ "route": {
+  "id": "q-b-przesmyk-50lvl",
+  "name": "[50lvl] przesmyk",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Mroczny Przesmyk",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.0",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 2",
+    "attack": false
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 1",
+    "attack": false
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 3",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.2",
+    "attack": true
+   },
+   {
+    "location": "Mroczna Pieczara p.1 - sala 3",
+    "attack": false
+   },
+   {
+    "location": "Mroczny Przesmyk",
+    "attack": false
+   },
+   {
+    "location": "Zapomniany Szlak",
+    "attack": true
+   }
+  ]
+ }
+}

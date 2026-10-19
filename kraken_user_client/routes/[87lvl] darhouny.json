@@ -1,0 +1,39 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "source": "wbudowana · tylko zadania",
+ "route": {
+  "id": "q-b-darhouny-87lvl",
+  "name": "[87lvl] darhouny",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Szyb Zdrajców",
+    "attack": true
+   },
+   {
+    "location": "Labirynt Margorii",
+    "attack": false
+   },
+   {
+    "location": "Kopalnia Margorii",
+    "attack": false
+   },
+   {
+    "location": "Ślepe Wyrobisko",
+    "attack": true
+   },
+   {
+    "location": "Kopalnia Margorii",
+    "attack": false
+   },
+   {
+    "location": "Labirynt Margorii",
+    "attack": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "source": "wbudowana · tylko zadania",
+ "route": {
+  "id": "q-b-niedzwiedzie-23lvl",
+  "name": "[23lvl] niedźwiedzie",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Siedlisko Nietoperzy p.1",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.2",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.3 - sala 1",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.3 - sala 2",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.3 - sala 1",
+    "attack": false
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.4",
+    "attack": true
+   },
+   {
+    "location": "Siedlisko Nietoperzy p.5",
+    "attack": true
+   },
+   {
+    "location": "Dziewicza Knieja",
+    "attack": true
+   }
+  ]
+ }
+}

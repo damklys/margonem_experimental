@@ -1,0 +1,19 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "source": "margoworld:exp-85-wermonty · tylko zadania",
+ "route": {
+  "id": "q-mw-wermonty-85lvl",
+  "name": "[85lvl] wermonty",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zdradzieckie Przejście p.2",
+    "attack": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "route": {
+  "id": "q-r-rosomaki66lv",
+  "name": "[66lvl] rosomaki",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Zniszczone Opactwo",
+    "attack": true
+   },
+   {
+    "location": "Leśny Bród",
+    "attack": true
+   }
+  ]
+ },
+ "source": " · tylko zadania"
+}

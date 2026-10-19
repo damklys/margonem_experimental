@@ -1,0 +1,55 @@
+{
+ "kraken": "trasa",
+ "version": "4.9.202610190900",
+ "route": {
+  "id": "q-r-żółwie38lvl",
+  "name": "[38lvl] żółwie",
+  "lvlMin": 0,
+  "lvlMax": 0,
+  "maxGroup": 0,
+  "elites": true,
+  "maps": [
+   {
+    "location": "Fort Eder",
+    "attack": true
+   },
+   {
+    "location": "Mokradła",
+    "attack": true
+   },
+   {
+    "location": "Fort Eder",
+    "attack": true
+   },
+   {
+    "location": "Eder",
+    "attack": false
+   },
+   {
+    "location": "Spokojne Przejście",
+    "attack": true
+   },
+   {
+    "location": "Zasłonięte Jezioro",
+    "attack": true
+   },
+   {
+    "location": "Słoneczna Wyżyna",
+    "attack": true
+   },
+   {
+    "location": "Zasłonięte Jezioro",
+    "attack": true
+   },
+   {
+    "location": "Spokojne Przejście",
+    "attack": true
+   },
+   {
+    "location": "Eder",
+    "attack": false
+   }
+  ]
+ },
+ "source": " · tylko zadania"
+}
