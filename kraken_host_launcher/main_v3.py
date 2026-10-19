@@ -367,9 +367,13 @@ def _window_slot(layout: dict, index: int) -> "dict | None":
             "slot": i + 1, "screen": sc["name"]}
 
 
-def _apply_profile_zoom(profile_path: str, zoom: int) -> None:
-    """Domyślny zoom przeglądarki w profilu (jak Ctrl −) – zapis do Default/Preferences przed startem przeglądarki.
-    Poziom Chrome = log(zoom) / log(1.2); powiększenia ustawione ręcznie dla margonem.pl są usuwane."""
+ZOOM_HOSTS = ["margonem.pl", "www.margonem.pl", "gordion.margonem.pl", "luvia.margonem.pl"]
+
+
+def _apply_profile_zoom(profile_path: str, zoom: int, extra_hosts: tuple = ()) -> None:
+    """Zoom przeglądarki w profilu (jak Ctrl −) – zapis do Default/Preferences przed startem przeglądarki.
+    Chrome/Brave zapamiętują powiększenie osobno dla każdej domeny (per_host_zoom_levels) i ono wygrywa z domyślnym,
+    więc ustawiamy je wprost dla domen margonem.pl, a do tego domyślny poziom. Poziom = log(zoom) / log(1.2)."""
     import math
     pref_dir = os.path.join(profile_path, "Default")
     os.makedirs(pref_dir, exist_ok=True)
@@ -382,18 +386,42 @@ def _apply_profile_zoom(profile_path: str, zoom: int) -> None:
     level = 0.0 if zoom == 100 else math.log(zoom / 100) / math.log(1.2)
     part = prefs.setdefault("partition", {})
     part.setdefault("default_zoom_level", {})["x"] = level
-    for hosts in (part.get("per_host_zoom_levels") or {}).values():
-        if isinstance(hosts, dict):
-            for host in [h for h in hosts if "margonem" in h]:
-                del hosts[host]
+    per_host = part.setdefault("per_host_zoom_levels", {})
+    if not isinstance(per_host, dict):
+        per_host = part["per_host_zoom_levels"] = {}
+    stamp = str(int((time.time() + 11644473600) * 1_000_000))   # czas Chrome (µs od 1601)
+    for key in set(per_host) | {"x"}:
+        hosts = per_host.setdefault(key, {})
+        if not isinstance(hosts, dict):
+            continue
+        for host in set(ZOOM_HOSTS) | {h for h in hosts if "margonem" in h} | set(extra_hosts):
+            hosts[host] = {"last_modified": stamp, "zoom_level": level}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(prefs, f)
+
+
+# undetected_chromedriver dopisuje na sztywno --window-size=1920,1080 i --start-maximized – przy układzie okien grupy
+# każde okno startowałoby zmaksymalizowane na głównym ekranie. Takie opcje pomijają te dwa argumenty.
+_UC_FORCED_WINDOW_ARGS = ("--window-size=1920,1080", "--start-maximized")
+
+
+def _keep_window_args(o):
+    orig = o.add_argument
+    def add_argument(arg):
+        if arg in _UC_FORCED_WINDOW_ARGS:
+            return
+        return orig(arg)
+    o.add_argument = add_argument
+    o._kraken_keep_window = True
+    return o
 
 
 def _clone_uc_options(o):
     """Kopia ChromeOptions (undetected_chromedriver nie pozwala użyć tego samego obiektu drugi raz)."""
     import undetected_chromedriver as uc
     n = uc.ChromeOptions()
+    if getattr(o, "_kraken_keep_window", False):
+        _keep_window_args(n)
     for a in o.arguments:
         n.add_argument(a)
     for k, v in (o.experimental_options or {}).items():
@@ -692,12 +720,15 @@ class BotRunner:
         if win:
             # Okno aplikacji (bez kart i paska adresu): zwykłe okno Chrome nie zejdzie poniżej ~500 px szerokości,
             # a w siatce 5×2 na MacBooku komórka ma ~300 px.
-            _apply_profile_zoom(profile_path, win["zoom"])
+            _keep_window_args(options)
+            srv_host = (SERVER_URL.get(cfg.get("server", ""), "") or "").replace("https://", "").strip("/")
+            _apply_profile_zoom(profile_path, win["zoom"], (srv_host,) if srv_host else ())
             options.add_argument("--app=https://margonem.pl")
             options.add_argument(f"--window-position={win['x']},{win['y']}")
             options.add_argument(f"--window-size={win['w']},{win['h']}")
             self.log(f"🪟 Okno {win['slot']}: {win['w']}×{win['h']} na ({win['x']},{win['y']}), {win['screen']}, zoom {win['zoom']}%")
         else:
+            self.log("🪟 Układ okien grupy wyłączony – okno zmaksymalizowane (prawy klik na grupie → Układ okien…)")
             options.add_argument("--start-maximized")
         options.add_argument("--no-first-run")
         options.add_argument("--no-default-browser-check")
