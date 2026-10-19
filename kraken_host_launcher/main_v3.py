@@ -247,6 +247,16 @@ class SessionLogger:
 # ============================================
 # BOT RUNNER
 # ============================================
+def _write_config(path: str, data: dict) -> None:
+    """Zapis configu od razu na dysk (plik tymczasowy + podmiana – bez pustego/uciętego pliku przy przerwaniu)."""
+    tmp = f"{path}.tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, path)
+
+
 class BotRunner:
     """Sesja przeglądarki: profil (z szablonu), logowanie na margonem.pl, jednorazowa captcha zaraz po wejściu do gry.
     Całą grą steruje bot Kraken w przeglądarce (Tampermonkey) – tu tylko trzymamy przeglądarkę do STOP."""
@@ -320,6 +330,42 @@ class BotRunner:
                 self.log("✅ Captcha rozwiązana" if ok else "⚠️  Captcha: nie udało się rozwiązać")
                 return
             time.sleep(0.5)
+
+    def _provision(self, data: dict, path: str, server: str, login_fn):
+        """Zakłada konto (gdy jeszcze nie: "registered") i postać na wybranym świecie; po każdym etapie zapis configu."""
+        from selenium.webdriver.common.by import By
+        from create_account import step_register, step_create_character
+        cred = data["login"][0]
+        nick = data.get("nick") or cred["username"]
+        if not data.get("registered"):
+            self.log(f"🆕 Rejestruję konto {cred['username']} (nick postaci: {nick})")
+            self.driver.get("https://www.margonem.pl/intro/")
+            step_register(self.driver, self.log, cred["username"], cred["password"])
+            data["registered"] = True
+            _write_config(path, data)
+            self.log("💾 Config: konto zarejestrowane")
+        else:
+            self.log("🔑 Konto już zarejestrowane – loguję i zakładam postać")
+            self.driver.get("https://margonem.pl")
+            time.sleep(3)
+            if self.driver.find_elements(By.ID, "login-input"):
+                login_fn(driver=self.driver, username=cred["username"], password=cred["password"])
+        self.stop_check()
+        # Formularz postaci: po rejestracji pojawia się sam; przy istniejącej postaci go nie ma – konto gotowe.
+        t0 = time.time()
+        while time.time() - t0 < 45 and not self.driver.find_elements(By.ID, "add-character-form"):
+            self.stop_check()
+            if self.driver.find_elements(By.ID, "chnick") or self.driver.find_elements(By.CSS_SELECTOR, "div.c-btn.enter-game"):
+                break
+            time.sleep(0.5)
+        if self.driver.find_elements(By.ID, "add-character-form"):
+            step_create_character(self.driver, self.log, nick, server=(server or "gordion").lower())
+            time.sleep(4)
+        else:
+            self.log("ℹ️  Brak formularza postaci – konto ma już postać")
+        data["provisioned"] = True
+        _write_config(path, data)
+        self.log(f"💾 Config: konto i postać gotowe ({nick} @ {server})")
 
     def _run_bot(self):
         import undetected_chromedriver as uc
@@ -402,6 +448,10 @@ class BotRunner:
         credentials = config_data["login"][0]
 
         self.stop_check()
+
+        # Nowe konto z ＋ ("provisioned": false): rejestracja i postać w tej przeglądarce, stan zapisywany od razu.
+        if config_data.get("provisioned") is False:
+            self._provision(config_data, config_path, server, login)
 
         # Zawsze najpierw margonem.pl: zalogowane konto (wybór postaci / „Wejdź do gry”, bez formularza) – od razu
         # {server}.margonem.pl; niezalogowane – zwykłe logowanie, a potem też na wybrany serwer.
@@ -1085,9 +1135,6 @@ class GroupPanel(tk.Frame):
         tk.Button(tpl_hdr, text="＋ Template", command=self._add_template_dialog,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
                   font=("Segoe UI", 8, "bold"), padx=6, pady=2).pack(side="right")
-        tk.Button(tpl_hdr, text="＋ Konto", command=self._create_account_dialog,
-                  bg=BG3, fg=GREEN, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 8, "bold"), padx=6, pady=2).pack(side="right", padx=(0, 4))
 
         self.tpl_list_frame = tk.Frame(self, bg=BG2)
         self.tpl_list_frame.pack(fill="x", padx=8, pady=(0, 8))
@@ -1753,16 +1800,26 @@ class SessionTab(tk.Frame):
             self.template_var.set(templates[1] if len(templates) > 1 else "(brak)")
 
     def _new_account(self):
-        """＋: nowe konto od zera – login, hasło, nick i plik configu generowane, przeglądarka/szablon/serwer z sesji."""
-        tpl = self.template_var.get()
-        CreateAccountDialog(
-            self.winfo_toplevel(),
-            on_created=self._on_config_file_created,
-            browser=self.browser_var.get(),
-            template=tpl if tpl and tpl != "(brak)" else None,
-            server=self.server_var.get(),
-            auto_start=True,
-        )
+        """＋: od razu nowy plik configu z wygenerowanym loginem, hasłem i nickiem ("provisioned": false).
+        Konto i postać zakłada START tej sesji (w jej przeglądarce i profilu); plik istnieje od razu i jest na liście."""
+        from create_account import generate_login, generate_password, generate_nick
+        base = os.path.dirname(os.path.abspath(__file__))
+        config_dir = os.path.join(base, "config")
+        os.makedirs(config_dir, exist_ok=True)
+        nick = generate_nick()
+        stem = re.sub(r"[^\w\-]+", "_", nick, flags=re.UNICODE).strip("_") or "konto"
+        name, i = f"{stem}.json", 2
+        while os.path.exists(os.path.join(config_dir, name)):
+            name, i = f"{stem}_{i}.json", i + 1
+        path = os.path.join(config_dir, name)
+        data = {
+            "login": [{"username": generate_login(), "password": generate_password()}],
+            "nick": nick,
+            "provisioned": False,
+        }
+        _write_config(path, data)
+        self.logger.write(f"🆕 Nowe konto (do założenia przy START): {name} – login {data['login'][0]['username']}, nick {nick}")
+        self._on_config_file_created(name, path)
 
     def _new_config(self):
         """✎: ręczny config (istniejące konto – login i hasło wpisywane)."""
