@@ -249,24 +249,100 @@ def step_register(driver, logger, login: str, password: str) -> None:
     logger(f"✅ Rejestracja wysłana: {login}")
 
 
+def _real_click(driver, el) -> None:
+    """Kliknięcie jak gracz (przewinięcie do elementu + mysz); gdy się nie da – kliknięcie z JS."""
+    try:
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", el)
+        time.sleep(random.uniform(0.3, 0.6))
+        ActionChains(driver).move_to_element(el).pause(random.uniform(0.1, 0.3)).click().perform()
+    except Exception:
+        driver.execute_script("arguments[0].click();", el)
+
+
 def step_create_character(driver, logger, nick: str, server: str = "gordion") -> None:
-    """Wypełnia formularz tworzenia postaci."""
+    """Formularz „Dodawanie Postaci”: rozwinięcie „Więcej Światów”, wybór świata, nick, „Stwórz Postać”.
+
+    Postać płatna (SŁ – np. ponad limit darmowych postaci albo Pandora) jest przerywana bez wysyłania.
+    """
     logger("🧙 Czekam na formularz postaci...")
-    if not _wait_for(driver, By.ID, "add-character-form", timeout=45):
+    form = _wait_for(driver, By.ID, "add-character-form", timeout=45)
+    if not form:
         raise RuntimeError("Brak formularza tworzenia postaci (timeout 45s)")
-
     time.sleep(random.uniform(1.0, 2.0))
-    radio = _find(driver, By.ID, f"world-select-input-{server.lower()}")
-    if radio:
-        driver.execute_script("arguments[0].click();", radio)
-    time.sleep(random.uniform(0.8, 1.4))
 
+    # 1) Świat: lista jest zwinięta – „Więcej Światów”, potem etykieta świata (klik w etykietę zaznacza radio).
+    world = server.lower()
+    radio_id = f"world-select-input-{world}"
+    radio = _find(driver, By.ID, radio_id)
+    if not radio:
+        raise RuntimeError(f"Brak świata '{server}' na liście w formularzu postaci")
+    more = _find(driver, By.CSS_SELECTOR, "#add-character-form .btn-more-worlds")
+    if more and more.is_displayed():
+        logger("🌍 Rozwijam „Więcej Światów”")
+        _real_click(driver, more)
+        time.sleep(random.uniform(0.8, 1.4))
+    label = _find(driver, By.CSS_SELECTOR, f"label[for='{radio_id}']")
+    for _ in range(3):
+        if radio.is_selected():
+            break
+        if label and label.is_displayed():
+            _real_click(driver, label)
+        else:
+            driver.execute_script(
+                "arguments[0].click(); arguments[0].dispatchEvent(new Event('change', {bubbles: true}));", radio
+            )
+        time.sleep(random.uniform(0.6, 1.0))
+    if not radio.is_selected():
+        raise RuntimeError(f"Nie udało się zaznaczyć świata '{server}'")
+    logger(f"🌍 Świat: {server}")
+
+    # 2) Nick – wpisany znak po znaku; TAB, żeby formularz sprawdził pole.
     _human_type(driver, By.ID, "add-character-nick", nick)
+    inp = _find(driver, By.ID, "add-character-nick")
+    if not inp or (inp.get_attribute("value") or "") != nick:
+        raise RuntimeError(f"Nick nie wpisał się poprawnie (jest: {inp.get_attribute('value') if inp else '?'!r})")
+    try:
+        inp.send_keys(Keys.TAB)
+    except Exception:
+        pass
     time.sleep(random.uniform(1.0, 2.0))
+    bad = _find(driver, By.CSS_SELECTOR, "#add-character-form .invalid-info")
+    if bad and bad.is_displayed() and bad.text.strip():
+        raise RuntimeError(f"Nick odrzucony: {bad.text.strip()}")
 
-    btn = _find(driver, By.CSS_SELECTOR, "button.js-create-character-button")
-    if btn:
-        driver.execute_script("arguments[0].click();", btn)
+    # 3) Koszt: tylko darmowa postać (0 SŁ).
+    cost = 0
+    for cid in ("add-character-cost", "cost-above-world-limit", "cost-above-total-limit"):
+        el = _find(driver, By.ID, cid)
+        try:
+            cost += int(float(el.get_attribute("value") or 0)) if el else 0
+        except ValueError:
+            pass
+    if cost > 0:
+        raise RuntimeError(f"Postać byłaby płatna ({cost} SŁ) – przerwano (limit darmowych postaci na świecie/koncie?)")
+
+    # 4) „Stwórz Postać” – po walidacji przycisk przestaje być wyłączony.
+    btn = None
+    t0 = time.time()
+    while time.time() - t0 < 15:
+        btn = _find(driver, By.CSS_SELECTOR, "#add-character-form button.js-create-character-button")
+        if btn and btn.is_enabled() and not btn.get_attribute("disabled"):
+            break
+        time.sleep(0.4)
+    else:
+        raise RuntimeError("Przycisk „Stwórz Postać” nieaktywny po 15 s (świat/nick niezaakceptowane?)")
+    _real_click(driver, btn)
+    # Okno potwierdzenia opłaty (gdyby jednak się pojawiło) – nie akceptujemy.
+    time.sleep(1.0)
+    try:
+        alert = driver.switch_to.alert
+        txt = alert.text
+        alert.dismiss()
+        raise RuntimeError(f"Gra pyta o opłatę – anulowano: {txt}")
+    except RuntimeError:
+        raise
+    except Exception:
+        pass
     logger(f"✅ Postać wysłana: nick={nick}, serwer={server}")
 
 
