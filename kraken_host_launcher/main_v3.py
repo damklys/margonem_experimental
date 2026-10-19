@@ -65,11 +65,20 @@ FG        = "#c4ae78"   # pergamin
 FG_DIM    = "#5a6a88"   # mgła oceaniczna
 BORDER    = "#1e2a48"   # ciemna rama
 
-FONT_MONO  = ("Courier New", 10)
-FONT_SMALL = ("Segoe UI", 9)
-FONT_BOLD  = ("Segoe UI", 10, "bold")
-FONT_TITLE = ("Segoe UI", 14, "bold")
-FONT_GRP   = ("Segoe UI", 9, "bold")
+# System: Windows / macOS / Linux – ścieżki przeglądarek, czcionki, procesy.
+IS_WIN   = _sys.platform.startswith("win")
+IS_MAC   = _sys.platform == "darwin"
+IS_LINUX = not IS_WIN and not IS_MAC
+
+# Czcionki dostępne na danym systemie (Segoe UI jest tylko na Windows).
+UI_FONT   = "Segoe UI" if IS_WIN else ("Helvetica Neue" if IS_MAC else "DejaVu Sans")
+MONO_FONT = "Consolas" if IS_WIN else ("Menlo" if IS_MAC else "DejaVu Sans Mono")
+
+FONT_MONO  = (MONO_FONT, 10)
+FONT_SMALL = (UI_FONT, 9)
+FONT_BOLD  = (UI_FONT, 10, "bold")
+FONT_TITLE = (UI_FONT, 14, "bold")
+FONT_GRP   = (UI_FONT, 9, "bold")
 
 STATUS_COLORS = {
     "OFFLINE":  FG_DIM,
@@ -103,9 +112,72 @@ SERVER_URL = {
 }
 WORLDS = SERVERS
 
-BROWSER_BINARY = {
-    "Brave": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
-}
+def _browser_candidates(browser: str) -> list:
+    """Typowe miejsca instalacji Chrome / Brave na Windows, macOS i Linuksie."""
+    if IS_WIN:
+        roots = [os.environ.get(k) for k in ("PROGRAMFILES", "PROGRAMFILES(X86)", "LOCALAPPDATA")]
+        rel = {
+            "Chrome": r"Google\Chrome\Application\chrome.exe",
+            "Brave":  r"BraveSoftware\Brave-Browser\Application\brave.exe",
+        }.get(browser)
+        return [os.path.join(r, rel) for r in roots if r and rel]
+    if IS_MAC:
+        return {
+            "Chrome": ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+                       os.path.expanduser("~/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")],
+            "Brave":  ["/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+                       os.path.expanduser("~/Applications/Brave Browser.app/Contents/MacOS/Brave Browser")],
+        }.get(browser, [])
+    names = {
+        "Chrome": ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"],
+        "Brave":  ["brave-browser", "brave", "brave-browser-stable"],
+    }.get(browser, [])
+    found = [shutil.which(n) for n in names]
+    return [p for p in found if p] + {
+        "Chrome": ["/opt/google/chrome/chrome", "/usr/bin/google-chrome"],
+        "Brave":  ["/opt/brave.com/brave/brave", "/usr/bin/brave-browser"],
+    }.get(browser, [])
+
+
+_BROWSER_BINARY_CACHE = {}
+
+def _browser_binary(browser: str) -> "str | None":
+    """Ścieżka do pliku przeglądarki na tym systemie albo None (wtedy ChromeDriver szuka Chrome sam)."""
+    if browser not in _BROWSER_BINARY_CACHE:
+        _BROWSER_BINARY_CACHE[browser] = next((p for p in _browser_candidates(browser) if p and os.path.isfile(p)), None)
+    return _BROWSER_BINARY_CACHE[browser]
+
+
+def _win_browser_version(browser: str, binary: "str | None") -> "int | None":
+    """Windows: wersja z rejestru (BLBeacon) albo z nazwy katalogu wersji obok pliku .exe.
+    (chrome.exe --version na Windows nie wypisuje wersji – za to potrafi otworzyć okno przeglądarki.)"""
+    keys = {
+        "Chrome": r"Software\Google\Chrome\BLBeacon",
+        "Brave":  r"Software\BraveSoftware\Brave-Browser\BLBeacon",
+    }
+    try:
+        import winreg
+        for hive in (winreg.HKEY_CURRENT_USER, winreg.HKEY_LOCAL_MACHINE):
+            try:
+                with winreg.OpenKey(hive, keys.get(browser, "")) as k:
+                    v, _ = winreg.QueryValueEx(k, "version")
+                    m = re.match(r"(\d+)\.", str(v))
+                    if m:
+                        return int(m.group(1))
+            except OSError:
+                continue
+    except ImportError:
+        pass
+    if binary:
+        try:
+            vers = [d for d in os.listdir(os.path.dirname(binary)) if re.match(r"^\d+\.\d+\.\d+\.\d+$", d)]
+            if vers:
+                return max(int(v.split(".")[0]) for v in vers)
+        except OSError:
+            pass
+    return None
+
+
 _DETECTED_BROWSER_VERSION_CACHE = {}
 
 def _detect_browser_major_version(browser: str) -> int | None:
@@ -118,7 +190,7 @@ def _detect_browser_major_version(browser: str) -> int | None:
     if browser in _DETECTED_BROWSER_VERSION_CACHE:
         return _DETECTED_BROWSER_VERSION_CACHE[browser]
 
-    binary = BROWSER_BINARY.get(browser)
+    binary = _browser_binary(browser)
     if not binary:
         try:
             import undetected_chromedriver as uc
@@ -127,7 +199,9 @@ def _detect_browser_major_version(browser: str) -> int | None:
             binary = None
 
     version = None
-    if binary and os.path.exists(binary):
+    if IS_WIN:
+        version = _win_browser_version(browser, binary)
+    elif binary and os.path.exists(binary):
         try:
             out = subprocess.run(
                 [binary, "--version"],
@@ -148,6 +222,45 @@ BROWSER_VERSION = {
     "Chrome": 149,
     "Brave":  149,
 }
+
+def _pid_alive(pid: int) -> bool:
+    """Czy proces żyje. Na Windows os.kill(pid, 0) ZABIJA proces – tam pytamy WinAPI."""
+    if IS_WIN:
+        try:
+            import ctypes
+            k32 = ctypes.windll.kernel32
+            h = k32.OpenProcess(0x1000, False, int(pid))   # PROCESS_QUERY_LIMITED_INFORMATION
+            if not h:
+                return False
+            code = ctypes.c_ulong()
+            ok = k32.GetExitCodeProcess(h, ctypes.byref(code))
+            k32.CloseHandle(h)
+            return bool(ok) and code.value == 259          # STILL_ACTIVE
+        except Exception:
+            return False
+    try:
+        os.kill(pid, 0)
+        return True
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True
+
+
+def _kill_pid(pid: int) -> None:
+    """Wymuszone zamknięcie procesu (z procesami potomnymi przeglądarki na Windows)."""
+    if IS_WIN:
+        subprocess.run(["taskkill", "/PID", str(pid), "/T", "/F"], capture_output=True, timeout=15,
+                       creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+    else:
+        import signal as _signal
+        os.kill(pid, _signal.SIGKILL)
+
+
+def _safe_group(group: str) -> str:
+    """Nazwa katalogu grupy (ta sama przy tworzeniu profilu i przy starcie sesji)."""
+    return re.sub(r'[\\/:*?"<>|\s]+', "_", group or "default").strip("_") or "default"
+
 
 def _get_templates_dir(browser: str = "Chrome") -> str:
     base = os.path.dirname(os.path.abspath(__file__))
@@ -173,8 +286,7 @@ def _list_all_templates() -> list:
 
 def _get_group_profile_path(group: str, profile_name: str) -> str:
     base = os.path.dirname(os.path.abspath(__file__))
-    group_safe = group.replace(" ", "_") if group else "default"
-    d = os.path.join(base, "profiles", "groups", group_safe, profile_name)
+    d = os.path.join(base, "profiles", "groups", _safe_group(group), profile_name)
     return d
 
 
@@ -428,8 +540,8 @@ class BotRunner:
         # "none": driver.get() wraca natychmiast, ChromeDriver nie blokuje
         # find_element z powodu trwającej nawigacji
         options.page_load_strategy = "none"
-        if browser in BROWSER_BINARY:
-            options.binary_location = BROWSER_BINARY[browser]
+        if _browser_binary(browser):
+            options.binary_location = _browser_binary(browser)
 
         server     = cfg.get("server", "")
         server_url = SERVER_URL.get(server, "")
@@ -936,8 +1048,8 @@ class CreateAccountDialog(tk.Toplevel):
             "profile.password_manager_enabled": False,
         })
         opts.page_load_strategy = "none"
-        if browser in BROWSER_BINARY:
-            opts.binary_location = BROWSER_BINARY[browser]
+        if _browser_binary(browser):
+            opts.binary_location = _browser_binary(browser)
 
         try:
             self._driver = uc.Chrome(options=opts,
@@ -1059,7 +1171,7 @@ class GroupPanel(tk.Frame):
         # ---- sekcja ŚWIAT ----
         world_hdr = tk.Frame(self, bg=BG2, pady=6)
         world_hdr.pack(fill="x", padx=10)
-        tk.Label(world_hdr, text="ŚWIAT", font=("Segoe UI", 8, "bold"),
+        tk.Label(world_hdr, text="ŚWIAT", font=(UI_FONT, 8, "bold"),
                  bg=BG2, fg=FG_DIM).pack(side="left")
 
         self._world_btn_frame = tk.Frame(self, bg=BG2)
@@ -1072,7 +1184,7 @@ class GroupPanel(tk.Frame):
                 bg=ACCENT if w == self._selected_world else BG3,
                 fg="#000" if w == self._selected_world else FG,
                 relief="flat", cursor="hand2",
-                font=("Segoe UI", 8, "bold"), padx=8, pady=2,
+                font=(UI_FONT, 8, "bold"), padx=8, pady=2,
             )
             btn.pack(side="left", padx=(0, 4))
             self._world_btns[w] = btn
@@ -1082,11 +1194,11 @@ class GroupPanel(tk.Frame):
         # ---- nagłówek grup ----
         hdr = tk.Frame(self, bg=BG2, pady=8)
         hdr.pack(fill="x", padx=10)
-        tk.Label(hdr, text="GRUPY", font=("Segoe UI", 8, "bold"),
+        tk.Label(hdr, text="GRUPY", font=(UI_FONT, 8, "bold"),
                  bg=BG2, fg=FG_DIM).pack(side="left")
         tk.Button(hdr, text="＋", command=self._new_group,
                   bg=BG2, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 11, "bold")).pack(side="right")
+                  font=(UI_FONT, 11, "bold")).pack(side="right")
 
         tk.Frame(self, bg=BORDER, height=1).pack(fill="x")
 
@@ -1098,7 +1210,7 @@ class GroupPanel(tk.Frame):
         # === WSZYSTKIE GRUPY (scrollowalne, wypełnia resztę) ===
         all_lbl_row = tk.Frame(self, bg=BG2, pady=3)
         all_lbl_row.pack(fill="x", padx=10)
-        tk.Label(all_lbl_row, text="WSZYSTKIE", font=("Segoe UI", 7, "bold"),
+        tk.Label(all_lbl_row, text="WSZYSTKIE", font=(UI_FONT, 7, "bold"),
                  bg=BG2, fg=FG_DIM).pack(side="left")
 
         all_outer = tk.Frame(self, bg=BG2)
@@ -1129,12 +1241,12 @@ class GroupPanel(tk.Frame):
         tk.Frame(self, bg=BORDER, height=1).pack(fill="x", pady=(8, 0))
         tpl_hdr = tk.Frame(self, bg=BG2, pady=6)
         tpl_hdr.pack(fill="x", padx=10)
-        tk.Label(tpl_hdr, text="PROFILE", font=("Segoe UI", 8, "bold"),
+        tk.Label(tpl_hdr, text="PROFILE", font=(UI_FONT, 8, "bold"),
                  bg=BG2, fg=FG_DIM).pack(side="left")
 
         tk.Button(tpl_hdr, text="＋ Template", command=self._add_template_dialog,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 8, "bold"), padx=6, pady=2).pack(side="right")
+                  font=(UI_FONT, 8, "bold"), padx=6, pady=2).pack(side="right")
 
         self.tpl_list_frame = tk.Frame(self, bg=BG2)
         self.tpl_list_frame.pack(fill="x", padx=8, pady=(0, 8))
@@ -1155,7 +1267,7 @@ class GroupPanel(tk.Frame):
             # Gwiazdka ulubionych
             is_fav = self.gm.is_favorite(name, self._selected_world)
             star = tk.Label(row, text="★" if is_fav else "☆",
-                            font=("Segoe UI", 9), bg=BG2,
+                            font=(UI_FONT, 9), bg=BG2,
                             fg="#FFD700" if is_fav else FG_DIM, cursor="hand2")
             star.pack(side="left", padx=(2, 0))
             row._star_lbl = star
@@ -1164,7 +1276,7 @@ class GroupPanel(tk.Frame):
                 return "break"
             star.bind("<Button-1>", _star_click)
 
-        dot = tk.Label(row, text="●", font=("Segoe UI", 10), bg=BG2, fg=color)
+        dot = tk.Label(row, text="●", font=(UI_FONT, 10), bg=BG2, fg=color)
         dot.pack(side="left", padx=(4, 4))
         row._dot = dot
 
@@ -1179,14 +1291,14 @@ class GroupPanel(tk.Frame):
             row._ctrl_frame = ctrl
 
             _btn_cfg = dict(bg=BG2, fg=FG_DIM, relief="flat", cursor="hand2",
-                            font=("Segoe UI", 8), padx=0, pady=0, width=1,
+                            font=(UI_FONT, 8), padx=0, pady=0, width=1,
                             bd=0, highlightthickness=0)
             tk.Button(ctrl, text="⏹", command=lambda n=name: self._stop_group(n),
                       **_btn_cfg).pack(side="right")
             tk.Button(ctrl, text="▶", command=lambda n=name: self._start_group(n),
                       **_btn_cfg).pack(side="right")
 
-            count_lbl = tk.Label(row, text="", font=("Segoe UI", 8),
+            count_lbl = tk.Label(row, text="", font=(UI_FONT, 8),
                                   bg=BG2, fg=FG_DIM, width=6, anchor="e")
             count_lbl.pack(side="right")
             row._count_lbl = count_lbl
@@ -1226,19 +1338,19 @@ class GroupPanel(tk.Frame):
             w.destroy()
         templates = _list_all_templates()
         if not templates:
-            tk.Label(self.tpl_list_frame, text="Brak szablonów", font=("Segoe UI", 8),
+            tk.Label(self.tpl_list_frame, text="Brak szablonów", font=(UI_FONT, 8),
                      bg=BG2, fg=FG_DIM).pack(anchor="w", padx=4)
         for browser, t in templates:
             row = tk.Frame(self.tpl_list_frame, bg=BG2)
             row.pack(fill="x", pady=1)
-            tk.Label(row, text="🗂", font=("Segoe UI", 9),
+            tk.Label(row, text="🗂", font=(UI_FONT, 9),
                      bg=BG2, fg=FG_DIM).pack(side="left", padx=(2, 4))
-            tk.Label(row, text=f"[{browser}] {t}", font=("Segoe UI", 8),
+            tk.Label(row, text=f"[{browser}] {t}", font=(UI_FONT, 8),
                      bg=BG2, fg=FG, anchor="w").pack(side="left", fill="x", expand=True)
             tk.Button(row, text="🗑",
                       command=lambda b=browser, n=t: self._delete_template(b, n),
                       bg=BG2, fg=FG_DIM, relief="flat", cursor="hand2",
-                      font=("Segoe UI", 8)).pack(side="right")
+                      font=(UI_FONT, 8)).pack(side="right")
 
     def _delete_template(self, browser: str, name: str):
         from tkinter import messagebox
@@ -1297,7 +1409,7 @@ class GroupPanel(tk.Frame):
         if fav_names:
             fhdr = tk.Frame(self.fav_outer, bg=BG2, pady=4)
             fhdr.pack(fill="x", padx=10)
-            tk.Label(fhdr, text="ULUBIONE", font=("Segoe UI", 8, "bold"),
+            tk.Label(fhdr, text="ULUBIONE", font=(UI_FONT, 8, "bold"),
                      bg=BG2, fg="#FFD700").pack(side="left")
 
             n_fav = len(fav_names)
@@ -1400,8 +1512,10 @@ class GroupPanel(tk.Frame):
             c.yview_scroll(-1, "units")
         elif event.num == 5:
             c.yview_scroll(1, "units")
+        elif IS_MAC:
+            c.yview_scroll(-1 if event.delta > 0 else 1, "units")
         else:
-            c.yview_scroll(int(-1 * (event.delta / 120)), "units")
+            c.yview_scroll(int(-1 * (event.delta / 120)) or (-1 if event.delta > 0 else 1), "units")
 
     def update_session_status(self, session_id: int, status: str):
         self._session_statuses[session_id] = status
@@ -1664,13 +1778,13 @@ class SessionTab(tk.Frame):
         self.cfg_cb.pack(side="left", padx=(0, 4))
         tk.Button(row1, text="＋", command=self._new_account,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 11, "bold"), padx=4).pack(side="left", padx=(0, 4))
+                  font=(UI_FONT, 11, "bold"), padx=4).pack(side="left", padx=(0, 4))
         tk.Button(row1, text="✎", command=self._new_config,
                   bg=BG3, fg=FG_DIM, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 10), padx=3).pack(side="left", padx=(0, 4))
+                  font=(UI_FONT, 10), padx=3).pack(side="left", padx=(0, 4))
         tk.Button(row1, text="⟳", command=self._refresh_config_now,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=("Segoe UI", 11, "bold"), padx=4).pack(side="left", padx=(0, 10))
+                  font=(UI_FONT, 11, "bold"), padx=4).pack(side="left", padx=(0, 10))
 
         tk.Label(row1, text="Serwer:", font=FONT_SMALL,
                  bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
@@ -1777,8 +1891,8 @@ class SessionTab(tk.Frame):
                     "credentials_enable_service": False,
                     "profile.password_manager_enabled": False,
                 })
-                if browser in BROWSER_BINARY:
-                    opts.binary_location = BROWSER_BINARY[browser]
+                if _browser_binary(browser):
+                    opts.binary_location = _browser_binary(browser)
                 driver = uc.Chrome(options=opts,
                                    version_main=_detect_browser_major_version(browser) or BROWSER_VERSION.get(browser, 148),
                                    driver_executable_path=None)
@@ -1888,13 +2002,8 @@ class SessionTab(tk.Frame):
                         _pid = int(_lf.read().strip())
                     if _pid != os.getpid():
                         # Zewnętrzny proces — sprawdź czy żyje
-                        try:
-                            os.kill(_pid, 0)
+                        if _pid_alive(_pid):
                             is_stale = False   # żyje → aktywny lock
-                        except ProcessLookupError:
-                            pass               # martwy → stale
-                        except PermissionError:
-                            is_stale = False   # żyje, brak uprawnień
                     # _pid == os.getpid() ale żadna sesja nie używa → stale
                 except Exception:
                     pass  # nie można odczytać PID → traktuj jako stale
@@ -1991,9 +2100,8 @@ class SessionTab(tk.Frame):
         pid = getattr(runner, "browser_pid", None) if runner else None
         if pid:
             try:
-                import signal as _signal
-                os.kill(pid, _signal.SIGKILL)
-                self.logger.write(f"💀 Wymuszono SIGKILL PID {pid}")
+                _kill_pid(pid)
+                self.logger.write(f"💀 Wymuszono zamknięcie PID {pid}")
             except Exception as e:
                 self.logger.write(f"⚠️  SIGKILL PID {pid} nie powiodło się: {e}")
         else:

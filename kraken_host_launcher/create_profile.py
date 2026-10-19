@@ -16,8 +16,11 @@ def create_profile(profile_name: str, template_name: str = None,
 
     Jeśli profil już istnieje → pomija tworzenie i zwraca jego ścieżkę.
     """
+    import re
     base_dir = Path(__file__).parent
-    target_path = base_dir / "profiles" / "groups" / group / profile_name
+    # Ta sama nazwa katalogu grupy co przy starcie sesji (main_v3._safe_group).
+    group_dir = re.sub(r'[\\/:*?"<>|\s]+', "_", group or "default").strip("_") or "default"
+    target_path = base_dir / "profiles" / "groups" / group_dir / profile_name
 
     if target_path.exists():
         return str(target_path)

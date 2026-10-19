@@ -31,3 +31,7 @@ kraken_user_client/*.local.js
 
 # lokalne notatki (adres MAC, ścieżki maszyn wirtualnych)
 kraken_host_launcher/boot.txt
+
+# lokalny stan sesji launchera i pliki tymczasowe zapisu configu
+kraken_host_launcher/sessions_state.json
+kraken_host_launcher/config/*.tmp

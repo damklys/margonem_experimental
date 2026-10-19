@@ -1,0 +1,9 @@
+# Kraken – launcher (Python 3.10+). Instalacja: pip install -r requirements.txt
+# (skrypty start.sh / start.bat / start.command robią to same w .venv)
+selenium>=4.15
+undetected-chromedriver>=3.5.5
+# undetected-chromedriver na Pythonie 3.12+ potrzebuje distutils z setuptools
+setuptools>=68
+Pillow>=10.0
+# macOS: ikona w Docku (opcjonalne – bez tego launcher działa)
+pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"
