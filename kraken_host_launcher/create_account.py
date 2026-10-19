@@ -511,7 +511,7 @@ def step_tutorial(driver, logger, stop_flag) -> None:
 # ── Punkt wejściowy ───────────────────────────────────────────────────────────
 
 def run_full(driver, logger, login: str, password: str,
-             server: str = "gordion", stop_flag=None, nick: str = None) -> str:
+             server: str = "gordion", stop_flag=None, nick: str = None, progress: dict = None) -> str:
     """
     Pełny proces: rejestracja → postać → tutorial.
     Zwraca użyty nick lub "" jeśli przerwano.
@@ -524,11 +524,17 @@ def run_full(driver, logger, login: str, password: str,
     nick = nick if nick else generate_nick()
     logger(f"🔑 Login: {login}  |  Hasło: {password}  |  Nick: {nick}")
 
+    # progress: co już się udało (konto / postać) – dane logowania zapisujemy, nawet gdy dalszy krok padnie.
+    if progress is None:
+        progress = {}
+    progress["nick"] = nick
     step_register(driver, logger, login, password)
+    progress["registered"] = True
     if stop_flag():
         return ""
 
     step_create_character(driver, logger, nick, server=server)
+    progress["character"] = True
     if stop_flag():
         return ""
 

@@ -701,11 +701,14 @@ class CreateAccountDialog(tk.Toplevel):
     tworzy postać, przechodzi tutorial i zapisuje config.
     """
 
-    def __init__(self, parent, on_created=None):
+    def __init__(self, parent, on_created=None, browser: str = None, template: str = None,
+                 server: str = None, auto_start: bool = False):
         super().__init__(parent)
         self.on_created = on_created   # callback(filename, path)
         self._stop      = threading.Event()
         self._driver    = None
+        self._preset    = {"browser": browser, "template": template, "server": server}
+        self._auto      = auto_start
 
         self.title("Nowe konto — Kraken")
         self.configure(bg=BG)
@@ -718,6 +721,17 @@ class CreateAccountDialog(tk.Toplevel):
         py = parent.winfo_rooty() + parent.winfo_height() // 2
         self.geometry(f"560x480+{px-280}+{py-240}")
         self.protocol("WM_DELETE_WINDOW", self._on_close)
+        # Ustawienia z sesji (przycisk ＋ przy configu) i start bez pytań: login, hasło, nick i plik – generowane.
+        p = self._preset
+        if p["browser"] in BROWSERS:
+            self.browser_var.set(p["browser"])
+            self._refresh_tpl_cb()
+        if p["template"] and p["template"] in (self.tpl_cb["values"] or ()):
+            self.tpl_var.set(p["template"])
+        if p["server"] in SERVERS:
+            self.server_var.set(p["server"])
+        if self._auto:
+            self.after(400, self._on_start)
 
     def _build(self):
         tk.Label(self, text="Nowe konto Margonem (Kraken)", font=FONT_BOLD,
@@ -843,6 +857,7 @@ class CreateAccountDialog(tk.Toplevel):
         custom_name = self.custom_name_var.get().strip()[:20]
         login       = generate_login()
         password    = generate_password()
+        progress    = {}
 
         self._log(f"🔑 Generuję dane: {login} / {password}")
         if custom_name:
@@ -894,6 +909,7 @@ class CreateAccountDialog(tk.Toplevel):
                 server=server_world,
                 stop_flag=lambda: self._stop.is_set(),
                 nick=custom_name if custom_name else None,
+                progress=progress,
             )
         except Exception as e:
             self._log(f"❌ Błąd: {e}")
@@ -906,7 +922,11 @@ class CreateAccountDialog(tk.Toplevel):
                 except Exception:
                     pass
 
-        if nick and not self._stop.is_set():
+        # Konto założone (nawet gdy postać/tutorial się nie udały) – zapisujemy dane logowania, żeby nie przepadły.
+        if not nick and progress.get("registered"):
+            nick = progress.get("nick") or login
+            self._log("⚠️  Proces nie dokończony – zapisuję config z danymi konta")
+        if nick and progress.get("registered"):
             # Jeśli użytkownik podał własną nazwę — użyj jej, inaczej nick postaci
             nick_safe = (
                 custom_name.replace(" ", "_")
@@ -1595,9 +1615,12 @@ class SessionTab(tk.Frame):
         if self.cfg_cb["values"]:
             self.config_var.set(self.cfg_cb["values"][0])
         self.cfg_cb.pack(side="left", padx=(0, 4))
-        tk.Button(row1, text="＋", command=self._new_config,
+        tk.Button(row1, text="＋", command=self._new_account,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
                   font=("Segoe UI", 11, "bold"), padx=4).pack(side="left", padx=(0, 4))
+        tk.Button(row1, text="✎", command=self._new_config,
+                  bg=BG3, fg=FG_DIM, relief="flat", cursor="hand2",
+                  font=("Segoe UI", 10), padx=3).pack(side="left", padx=(0, 4))
         tk.Button(row1, text="⟳", command=self._refresh_config_now,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
                   font=("Segoe UI", 11, "bold"), padx=4).pack(side="left", padx=(0, 10))
@@ -1729,8 +1752,20 @@ class SessionTab(tk.Frame):
         if cur not in templates or cur == "(brak)":
             self.template_var.set(templates[1] if len(templates) > 1 else "(brak)")
 
+    def _new_account(self):
+        """＋: nowe konto od zera – login, hasło, nick i plik configu generowane, przeglądarka/szablon/serwer z sesji."""
+        tpl = self.template_var.get()
+        CreateAccountDialog(
+            self.winfo_toplevel(),
+            on_created=self._on_config_file_created,
+            browser=self.browser_var.get(),
+            template=tpl if tpl and tpl != "(brak)" else None,
+            server=self.server_var.get(),
+            auto_start=True,
+        )
+
     def _new_config(self):
-        """Otwórz dialog tworzenia nowego configa."""
+        """✎: ręczny config (istniejące konto – login i hasło wpisywane)."""
         base = os.path.dirname(os.path.abspath(__file__))
         config_dir = os.path.join(base, "config")
         NewConfigDialog(
