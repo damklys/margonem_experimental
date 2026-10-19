@@ -76,31 +76,6 @@
    ]
   },
   {
-   "type": "exp",
-   "exp": "[45lvl] tolloki",
-   "set": "36lvl",
-   "conds": [
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "ge",
-     "value": 40
-    },
-    {
-     "join": "and",
-     "stat": "lvl",
-     "op": "le",
-     "value": 45
-    },
-    {
-     "join": "and",
-     "stat": "ttl",
-     "op": "ne",
-     "value": 0
-    }
-   ]
-  },
-  {
    "type": "e2",
    "e2Config": "(30lvl) Shae Phu – Przeklęta Strażnica - podziemia p.2 s.1",
    "e2Pos": 0,
@@ -129,20 +104,20 @@
   },
   {
    "type": "exp",
-   "exp": "[46lvl] zbiry",
-   "set": "36lvl",
+   "exp": "[40lvl] dziki",
+   "set": "40lvl",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 41
+     "value": 40
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 46
+     "value": 42
     },
     {
      "join": "and",
@@ -154,20 +129,20 @@
   },
   {
    "type": "exp",
-   "exp": "[47lvl] orkowie",
+   "exp": "[40lvl] ghule",
    "set": "40lvl",
    "conds": [
     {
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 42
+     "value": 40
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 47
+     "value": 42
     },
     {
      "join": "and",
