@@ -148,34 +148,62 @@ def _browser_binary(browser: str) -> "str | None":
     return _BROWSER_BINARY_CACHE[browser]
 
 
+def _win_file_major(path: str) -> "int | None":
+    """Wersja główna z metadanych pliku .exe (GetFileVersionInfo) – zawsze ta, która się uruchomi."""
+    try:
+        import ctypes
+        from ctypes import wintypes
+        ver = ctypes.WinDLL("version")
+        size = ver.GetFileVersionInfoSizeW(path, None)
+        if not size:
+            return None
+        buf = ctypes.create_string_buffer(size)
+        if not ver.GetFileVersionInfoW(path, 0, size, buf):
+            return None
+        ptr, ln = ctypes.c_void_p(), wintypes.UINT()
+        if not ver.VerQueryValueW(buf, "\\", ctypes.byref(ptr), ctypes.byref(ln)):
+            return None
+        class VS_FIXEDFILEINFO(ctypes.Structure):
+            _fields_ = [("sig", wintypes.DWORD), ("struc", wintypes.DWORD), ("msHi", wintypes.DWORD), ("msLo", wintypes.DWORD)]
+        info = ctypes.cast(ptr, ctypes.POINTER(VS_FIXEDFILEINFO)).contents
+        return info.msHi >> 16 or None
+    except Exception:
+        return None
+
+
 def _win_browser_version(browser: str, binary: "str | None") -> "int | None":
-    """Windows: wersja z rejestru (BLBeacon) albo z nazwy katalogu wersji obok pliku .exe.
-    (chrome.exe --version na Windows nie wypisuje wersji – za to potrafi otworzyć okno przeglądarki.)"""
+    """Windows: najwyższa wersja z pliku .exe, rejestru (HKCU i HKLM – wpis użytkownika bywa stary po aktualizacji
+    systemowej) i katalogów wersji obok .exe. (chrome.exe --version na Windows nie wypisuje wersji.)"""
+    found = []
+    if binary:
+        found.append(_win_file_major(binary))
     keys = {
-        "Chrome": r"Software\Google\Chrome\BLBeacon",
-        "Brave":  r"Software\BraveSoftware\Brave-Browser\BLBeacon",
-    }
+        "Chrome": [r"Software\Google\Chrome\BLBeacon", r"Software\WOW6432Node\Google\Chrome\BLBeacon"],
+        "Brave":  [r"Software\BraveSoftware\Brave-Browser\BLBeacon", r"Software\WOW6432Node\BraveSoftware\Brave-Browser\BLBeacon"],
+    }.get(browser, [])
     try:
         import winreg
         for hive in (winreg.HKEY_CURRENT_USER, winreg.HKEY_LOCAL_MACHINE):
-            try:
-                with winreg.OpenKey(hive, keys.get(browser, "")) as k:
-                    v, _ = winreg.QueryValueEx(k, "version")
-                    m = re.match(r"(\d+)\.", str(v))
-                    if m:
-                        return int(m.group(1))
-            except OSError:
-                continue
+            for key in keys:
+                try:
+                    with winreg.OpenKey(hive, key) as k:
+                        v, _ = winreg.QueryValueEx(k, "version")
+                        m = re.match(r"(\d+)\.", str(v))
+                        if m:
+                            found.append(int(m.group(1)))
+                except OSError:
+                    continue
     except ImportError:
         pass
     if binary:
         try:
-            vers = [d for d in os.listdir(os.path.dirname(binary)) if re.match(r"^\d+\.\d+\.\d+\.\d+$", d)]
-            if vers:
-                return max(int(v.split(".")[0]) for v in vers)
+            for d in os.listdir(os.path.dirname(binary)):
+                if re.match(r"^\d+\.\d+\.\d+\.\d+$", d):
+                    found.append(int(d.split(".")[0]))
         except OSError:
             pass
-    return None
+    found = [v for v in found if v]
+    return max(found) if found else None
 
 
 _DETECTED_BROWSER_VERSION_CACHE = {}
@@ -260,6 +288,39 @@ def _kill_pid(pid: int) -> None:
 def _safe_group(group: str) -> str:
     """Nazwa katalogu grupy (ta sama przy tworzeniu profilu i przy starcie sesji)."""
     return re.sub(r'[\\/:*?"<>|\s]+', "_", group or "default").strip("_") or "default"
+
+
+def _clone_uc_options(o):
+    """Kopia ChromeOptions (undetected_chromedriver nie pozwala użyć tego samego obiektu drugi raz)."""
+    import undetected_chromedriver as uc
+    n = uc.ChromeOptions()
+    for a in o.arguments:
+        n.add_argument(a)
+    for k, v in (o.experimental_options or {}).items():
+        n.add_experimental_option(k, v)
+    if o.binary_location:
+        n.binary_location = o.binary_location
+    n.page_load_strategy = o.page_load_strategy
+    return n
+
+
+def _start_uc(options, browser: str, log=None):
+    """uc.Chrome z wersją ChromeDrivera = wersja przeglądarki. Gdy mimo to ChromeDriver zgłosi
+    „Current browser version is X” (np. przeglądarka zaktualizowała się w tle), ponawia z wersją X."""
+    import undetected_chromedriver as uc
+    version = _detect_browser_major_version(browser) or BROWSER_VERSION.get(browser, 148)
+    backup = _clone_uc_options(options)
+    try:
+        return uc.Chrome(options=options, version_main=version, driver_executable_path=None)
+    except Exception as e:
+        m = re.search(r"[Cc]urrent browser version is (\d+)", str(e))
+        if not m or int(m.group(1)) == version:
+            raise
+        real = int(m.group(1))
+        _DETECTED_BROWSER_VERSION_CACHE[browser] = real
+        if log:
+            log(f"🔁 ChromeDriver {version} ≠ przeglądarka {real} – pobieram ChromeDriver {real}")
+        return uc.Chrome(options=backup, version_main=real, driver_executable_path=None)
 
 
 def _get_templates_dir(browser: str = "Chrome") -> str:
@@ -546,9 +607,7 @@ class BotRunner:
         server     = cfg.get("server", "")
         server_url = SERVER_URL.get(server, "")
 
-        self.driver = uc.Chrome(options=options,
-                                 version_main=_detect_browser_major_version(browser) or BROWSER_VERSION.get(browser, 148),
-                                 driver_executable_path=None)
+        self.driver = _start_uc(options, browser, self.log)
         try:
             self.browser_pid = self.driver.service.process.pid
             self.log(f"🔢 PID: {self.browser_pid}")
@@ -1052,9 +1111,7 @@ class CreateAccountDialog(tk.Toplevel):
             opts.binary_location = _browser_binary(browser)
 
         try:
-            self._driver = uc.Chrome(options=opts,
-                                      version_main=_detect_browser_major_version(browser) or BROWSER_VERSION.get(browser, 148),
-                                      driver_executable_path=None)
+            self._driver = _start_uc(opts, browser, self._log)
         except Exception as e:
             self._log(f"❌ Błąd uruchomienia przeglądarki: {e}")
             self.after(0, self._reset_buttons)
@@ -1893,9 +1950,7 @@ class SessionTab(tk.Frame):
                 })
                 if _browser_binary(browser):
                     opts.binary_location = _browser_binary(browser)
-                driver = uc.Chrome(options=opts,
-                                   version_main=_detect_browser_major_version(browser) or BROWSER_VERSION.get(browser, 148),
-                                   driver_executable_path=None)
+                driver = _start_uc(opts, browser, self.logger.write)
                 driver.get("https://margonem.pl")
                 self.logger.write(
                     f"✅ Template '{tpl}' otwarty — skonfiguruj przeglądarkę i zamknij okno.")
