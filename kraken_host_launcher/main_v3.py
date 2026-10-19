@@ -290,6 +290,106 @@ def _safe_group(group: str) -> str:
     return re.sub(r'[\\/:*?"<>|\s]+', "_", group or "default").strip("_") or "default"
 
 
+# ============================================
+# UKŁAD OKIEN GRUPY (siatka na wybranym ekranie + zoom przeglądarki)
+# ============================================
+LAYOUT_DEFAULT = {"enabled": False, "screen": 0, "cols": 5, "rows": 2, "zoom": "auto"}
+ZOOM_CHOICES = ["auto", "50", "67", "75", "80", "90", "100"]
+
+
+def _screens() -> list:
+    """Ekrany: [{x, y, w, h, name}] – obszar roboczy (bez paska menu / zadań), współrzędne od lewego górnego rogu."""
+    out = []
+    try:
+        if IS_MAC:
+            from AppKit import NSScreen
+            scr = list(NSScreen.screens())
+            main_h = scr[0].frame().size.height
+            for i, sc in enumerate(scr):
+                vf = sc.visibleFrame()
+                out.append({"x": int(vf.origin.x), "y": int(main_h - (vf.origin.y + vf.size.height)),
+                            "w": int(vf.size.width), "h": int(vf.size.height),
+                            "name": str(sc.localizedName()) if hasattr(sc, "localizedName") else f"Ekran {i + 1}"})
+        elif IS_WIN:
+            import ctypes
+            from ctypes import wintypes
+            class MONITORINFOEXW(ctypes.Structure):
+                _fields_ = [("cbSize", wintypes.DWORD), ("rcMonitor", wintypes.RECT), ("rcWork", wintypes.RECT),
+                            ("dwFlags", wintypes.DWORD), ("szDevice", wintypes.WCHAR * 32)]
+            mons = []
+            proc = ctypes.WINFUNCTYPE(ctypes.c_int, wintypes.HMONITOR, wintypes.HDC, ctypes.POINTER(wintypes.RECT), wintypes.LPARAM)
+            def cb(hmon, _hdc, _rc, _lp):
+                mi = MONITORINFOEXW()
+                mi.cbSize = ctypes.sizeof(MONITORINFOEXW)
+                if ctypes.windll.user32.GetMonitorInfoW(hmon, ctypes.byref(mi)):
+                    r = mi.rcWork
+                    mons.append((not (mi.dwFlags & 1), {"x": r.left, "y": r.top, "w": r.right - r.left,
+                                                        "h": r.bottom - r.top, "name": mi.szDevice.replace("\\\\.\\", "")}))
+                return 1
+            ctypes.windll.user32.EnumDisplayMonitors(None, None, proc(cb), 0)
+            out = [m for _, m in sorted(mons, key=lambda t: t[0])]   # główny monitor pierwszy
+        else:
+            r = subprocess.run(["xrandr", "--listmonitors"], capture_output=True, text=True, timeout=5).stdout
+            for line in r.splitlines()[1:]:
+                m = re.search(r"(\d+)/\d+x(\d+)/\d+\+(-?\d+)\+(-?\d+)\s+(\S+)$", line.strip())
+                if m:
+                    item = {"x": int(m.group(3)), "y": int(m.group(4)), "w": int(m.group(1)), "h": int(m.group(2)), "name": m.group(5)}
+                    (out.insert(0, item) if "*" in line else out.append(item))
+    except Exception:
+        out = []
+    if not out:
+        try:
+            r = tk._default_root
+            out = [{"x": 0, "y": 0, "w": r.winfo_screenwidth(), "h": r.winfo_screenheight(), "name": "Ekran główny"}]
+        except Exception:
+            out = [{"x": 0, "y": 0, "w": 1920, "h": 1080, "name": "Ekran główny"}]
+    return out
+
+
+def _auto_zoom(screen: dict) -> int:
+    """Skalowanie wg ekranu: MacBook (węższy niż 1920 punktów, np. 1512×982) – 50%, od 1920×1080 – 67%."""
+    return 50 if screen["w"] < 1900 else 67
+
+
+def _window_slot(layout: dict, index: int) -> "dict | None":
+    """Okno sesji nr index (kolejność w grupie): kolumny od lewej, wiersze od góry; po zapełnieniu siatki – od nowa."""
+    if not layout or not layout.get("enabled"):
+        return None
+    scr = _screens()
+    sc = scr[min(max(int(layout.get("screen", 0)), 0), len(scr) - 1)]
+    cols = max(1, int(layout.get("cols", 5)))
+    rows = max(1, int(layout.get("rows", 2)))
+    i = index % (cols * rows)
+    w, h = sc["w"] // cols, sc["h"] // rows
+    z = layout.get("zoom", "auto")
+    zoom = _auto_zoom(sc) if z == "auto" else int(z)
+    return {"x": sc["x"] + (i % cols) * w, "y": sc["y"] + (i // cols) * h, "w": w, "h": h, "zoom": zoom,
+            "slot": i + 1, "screen": sc["name"]}
+
+
+def _apply_profile_zoom(profile_path: str, zoom: int) -> None:
+    """Domyślny zoom przeglądarki w profilu (jak Ctrl −) – zapis do Default/Preferences przed startem przeglądarki.
+    Poziom Chrome = log(zoom) / log(1.2); powiększenia ustawione ręcznie dla margonem.pl są usuwane."""
+    import math
+    pref_dir = os.path.join(profile_path, "Default")
+    os.makedirs(pref_dir, exist_ok=True)
+    path = os.path.join(pref_dir, "Preferences")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            prefs = json.load(f)
+    except Exception:
+        prefs = {}
+    level = 0.0 if zoom == 100 else math.log(zoom / 100) / math.log(1.2)
+    part = prefs.setdefault("partition", {})
+    part.setdefault("default_zoom_level", {})["x"] = level
+    for hosts in (part.get("per_host_zoom_levels") or {}).values():
+        if isinstance(hosts, dict):
+            for host in [h for h in hosts if "margonem" in h]:
+                del hosts[host]
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(prefs, f)
+
+
 def _clone_uc_options(o):
     """Kopia ChromeOptions (undetected_chromedriver nie pozwala użyć tego samego obiektu drugi raz)."""
     import undetected_chromedriver as uc
@@ -583,12 +683,22 @@ class BotRunner:
         else:
             self.log(f"♻️  Używam istniejącego profilu: {profile_name}")
 
+        win = cfg.get("window")
         options = uc.ChromeOptions()
         options.add_argument("--password-store=basic")
         options.add_argument("--use-mock-keychain")
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument(f"--user-data-dir={profile_path}")
-        options.add_argument("--start-maximized")
+        if win:
+            # Okno aplikacji (bez kart i paska adresu): zwykłe okno Chrome nie zejdzie poniżej ~500 px szerokości,
+            # a w siatce 5×2 na MacBooku komórka ma ~300 px.
+            _apply_profile_zoom(profile_path, win["zoom"])
+            options.add_argument("--app=https://margonem.pl")
+            options.add_argument(f"--window-position={win['x']},{win['y']}")
+            options.add_argument(f"--window-size={win['w']},{win['h']}")
+            self.log(f"🪟 Okno {win['slot']}: {win['w']}×{win['h']} na ({win['x']},{win['y']}), {win['screen']}, zoom {win['zoom']}%")
+        else:
+            options.add_argument("--start-maximized")
         options.add_argument("--no-first-run")
         options.add_argument("--no-default-browser-check")
         options.add_argument("--disable-default-apps")
@@ -608,6 +718,11 @@ class BotRunner:
         server_url = SERVER_URL.get(server, "")
 
         self.driver = _start_uc(options, browser, self.log)
+        if win:
+            try:
+                self.driver.set_window_rect(win["x"], win["y"], win["w"], win["h"])
+            except Exception as e:
+                self.log(f"⚠️  Ustawienie okna: {e}")
         try:
             self.browser_pid = self.driver.service.process.pid
             self.log(f"🔢 PID: {self.browser_pid}")
@@ -707,7 +822,7 @@ class GroupManager:
     # ---- zarządzanie grupami ----
     def _add_group(self, name: str, color: str, world: str = "Gordion"):
         key = (world, name)
-        self._groups[key] = {"color": color, "sessions": []}
+        self._groups[key] = {"color": color, "sessions": [], "layout": dict(LAYOUT_DEFAULT)}
         self._notify()
 
     def add_group(self, name: str, world: str = "Gordion") -> bool:
@@ -807,9 +922,25 @@ class GroupManager:
     def is_favorite(self, name: str, world: str = "Gordion") -> bool:
         return (world, name) in self._favorites
 
+    def layout_of(self, name: str, world: str = "Gordion") -> dict:
+        return dict(LAYOUT_DEFAULT, **(self._groups.get((world, name), {}).get("layout") or {}))
+
+    def set_layout(self, name: str, world: str, layout: dict):
+        if (world, name) in self._groups:
+            self._groups[(world, name)]["layout"] = dict(LAYOUT_DEFAULT, **layout)
+            self._notify()
+
+    def slot_of(self, session_id: int) -> int:
+        """Miejsce sesji w kolejności jej grupy (0 = pierwsza)."""
+        for data in self._groups.values():
+            if session_id in data["sessions"]:
+                return data["sessions"].index(session_id)
+        return 0
+
     def to_dict(self) -> list:
         return [{"name": n, "world": w, "color": d["color"],
-                 "favorite": (w, n) in self._favorites}
+                 "favorite": (w, n) in self._favorites,
+                 "layout": d.get("layout") or dict(LAYOUT_DEFAULT)}
                 for (w, n), d in self._groups.items()]
 
     # ---- obserwatorzy ----
@@ -1604,6 +1735,8 @@ class GroupPanel(tk.Frame):
                        relief="flat", bd=0)
         menu.add_command(label="✏️  Zmień nazwę",
                          command=lambda: self._rename_group(group_name))
+        menu.add_command(label="🪟  Układ okien…",
+                         command=lambda: LayoutDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         menu.add_separator()
         menu.add_command(label="🗑  Usuń grupę",
                          command=lambda: self._delete_group(group_name))
@@ -1682,6 +1815,84 @@ class GroupPanel(tk.Frame):
 # ============================================
 # DIALOG: NOWY CONFIG
 # ============================================
+class LayoutDialog(tk.Toplevel):
+    """Układ okien grupy: siatka (kolumny × wiersze) na wybranym ekranie i zoom przeglądarki.
+    Sesje zajmują miejsca w kolejności w grupie (od lewej, potem kolejny wiersz). Działa od następnego STARTU sesji."""
+
+    def __init__(self, parent, gm, group: str, world: str):
+        super().__init__(parent)
+        self.gm, self.group, self.world = gm, group, world
+        self.title(f"Układ okien – {group}")
+        self.configure(bg=BG)
+        self.resizable(False, False)
+        self.transient(parent)
+        self.screens = _screens()
+        lay = gm.layout_of(group, world)
+        self.enabled = tk.BooleanVar(value=bool(lay["enabled"]))
+        self.screen = tk.StringVar(value=self._screen_label(min(int(lay["screen"]), len(self.screens) - 1)))
+        self.cols = tk.StringVar(value=str(lay["cols"]))
+        self.rows = tk.StringVar(value=str(lay["rows"]))
+        self.zoom = tk.StringVar(value="Auto" if lay["zoom"] == "auto" else f"{lay['zoom']}%")
+        pad = {"padx": 14, "pady": 3}
+        tk.Checkbutton(self, text="Układaj okna przeglądarek tej grupy", variable=self.enabled, bg=BG, fg=FG,
+                       selectcolor=BG3, activebackground=BG, font=FONT_SMALL, command=self._preview).pack(anchor="w", **pad)
+        row = tk.Frame(self, bg=BG); row.pack(fill="x", **pad)
+        tk.Label(row, text="Ekran:", bg=BG, fg=FG_DIM, font=FONT_SMALL, width=10, anchor="w").pack(side="left")
+        cb = ttk.Combobox(row, textvariable=self.screen, state="readonly", width=34,
+                          values=[self._screen_label(i) for i in range(len(self.screens))])
+        cb.pack(side="left"); cb.bind("<<ComboboxSelected>>", lambda _e: self._preview())
+        row = tk.Frame(self, bg=BG); row.pack(fill="x", **pad)
+        tk.Label(row, text="Siatka:", bg=BG, fg=FG_DIM, font=FONT_SMALL, width=10, anchor="w").pack(side="left")
+        for var, label in ((self.cols, "kolumn"), (self.rows, "wierszy")):
+            sp = tk.Spinbox(row, from_=1, to=10, width=3, textvariable=var, command=self._preview,
+                            bg=BG3, fg=FG, buttonbackground=BG3, relief="flat")
+            sp.pack(side="left"); sp.bind("<KeyRelease>", lambda _e: self._preview())
+            tk.Label(row, text=f" {label}   ", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        row = tk.Frame(self, bg=BG); row.pack(fill="x", **pad)
+        tk.Label(row, text="Skalowanie:", bg=BG, fg=FG_DIM, font=FONT_SMALL, width=10, anchor="w").pack(side="left")
+        zc = ttk.Combobox(row, textvariable=self.zoom, state="readonly", width=8,
+                          values=["Auto"] + [f"{z}%" for z in ZOOM_CHOICES[1:]])
+        zc.pack(side="left"); zc.bind("<<ComboboxSelected>>", lambda _e: self._preview())
+        self.info = tk.Label(self, text="", bg=BG, fg=FG_DIM, font=FONT_SMALL, justify="left")
+        self.info.pack(anchor="w", **pad)
+        btns = tk.Frame(self, bg=BG); btns.pack(fill="x", padx=14, pady=(6, 12))
+        tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD,
+                  padx=10).pack(side="right")
+        tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL,
+                  padx=10).pack(side="right", padx=6)
+        self._preview()
+
+    def _screen_label(self, i: int) -> str:
+        s = self.screens[i]
+        return f"{i + 1}. {s['name']} – {s['w']}×{s['h']}"
+
+    def _layout(self) -> dict:
+        try:
+            idx = int(self.screen.get().split(".")[0]) - 1
+        except ValueError:
+            idx = 0
+        z = self.zoom.get().rstrip("%").lower()
+        def num(v, d):
+            try:
+                return max(1, min(10, int(v.get())))
+            except ValueError:
+                return d
+        return {"enabled": self.enabled.get(), "screen": max(0, idx), "cols": num(self.cols, 5), "rows": num(self.rows, 2),
+                "zoom": "auto" if z == "auto" else z}
+
+    def _preview(self):
+        lay = dict(self._layout(), enabled=True)
+        a = _window_slot(lay, 0)
+        n = lay["cols"] * lay["rows"]
+        self.info.configure(text=f"Okno: {a['w']}×{a['h']}, zoom {a['zoom']}% · miejsc w siatce: {n}\n"
+                                 f"Sesje wg kolejności w grupie; {n + 1}. sesja wraca na miejsce 1.\n"
+                                 "Zmiana działa od następnego STARTU sesji (okno bez kart i paska adresu).")
+
+    def _save(self):
+        self.gm.set_layout(self.group, self.world, self._layout())
+        self.destroy()
+
+
 class NewConfigDialog(tk.Toplevel):
     """Okno dialogowe do tworzenia nowego pliku konfiguracyjnego."""
 
@@ -2082,6 +2293,10 @@ class SessionTab(tk.Frame):
             "group":           self.gm.group_of(self.session_id),
             "group_world":     self.gm.world_of_session(self.session_id),
             "recreate":        self.recreate_var.get(),
+            # Układ okien grupy: miejsce wg kolejności sesji w grupie, ekran i zoom z ustawień grupy.
+            "window":          _window_slot(self.gm.layout_of(self.gm.group_of(self.session_id),
+                                                              self.gm.world_of_session(self.session_id)),
+                                            self.gm.slot_of(self.session_id)),
         }
 
     # ---- sterowanie ----
@@ -2684,6 +2899,8 @@ class BotGUI:
             world = g.get("world", "Gordion")
             if name and (world, name) not in self.gm._groups:
                 self.gm._add_group(name, color, world)
+            if name and g.get("layout"):
+                self.gm._groups[(world, name)]["layout"] = dict(LAYOUT_DEFAULT, **g["layout"])
             if g.get("favorite"):
                 self.gm._favorites.add((world, name))
 
