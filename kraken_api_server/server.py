@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "4.1.0"
+VERSION = "4.2.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -437,11 +437,11 @@ const groupsOpt=()=>(O.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.
 function sessions(){const tb=$('rows');tb.textContent='';const ss=H.sessions||[];
 if(!ss.length){tb.innerHTML=`<tr><td colspan=8 class=hint>${H.online?'Brak sesji.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;return}
 for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';const ps=pendState(s);
-tr.innerHTML=`<td>${ST[s.status]||esc(s.status)}</td><td>${on?(BOT[s.bot]||'…'):'—'}</td><td>${esc(s.name)}</td><td>${esc(s.group)}</td><td>${esc(s.config)}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'(z bota)')}${s.prog_override?' <span class=tag>własny</span>':''}</td><td></td>`;
+tr.innerHTML=`<td>${ST[s.status]||esc(s.status)}</td><td>${on?(BOT[s.bot]||'…'):'—'}</td><td>${esc(s.name)}</td><td>${esc(s.group)}</td><td>${esc(s.config)}${s.banned?' <span class=err>(zablokowane)</span>':''}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'(z bota)')}${s.prog_override?' <span class=tag>własny</span>':''}</td><td></td>`;
 const a=tr.lastChild;a.style.whiteSpace='nowrap';
 if(ps&&!ps.err){tr.className='pending';const sp=document.createElement('span');sp.className='busy';sp.innerHTML='<span class="spin"></span>'+esc(ps.txt);a.appendChild(sp);tb.appendChild(tr);continue}
 if(ps&&ps.err){const e=document.createElement('div');e.className='err';e.style.fontSize='12px';e.textContent='✖ '+ps.err;a.appendChild(e)}
-a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>act(on?'stop':'start',s),!H.online));
+a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>act(on?'stop':'start',s),!H.online||(!on&&s.banned)));
 a.appendChild(btn(s.bot==='running'?'⏸ Bot':'▶ Bot','',()=>act(s.bot==='running'?'bot_stop':'bot_start',s),!H.online||!on||s.bot==='loading'));
 a.appendChild(btn('✎','',()=>{editing=editing===s.uid?null:s.uid;edit()},!H.online));
 a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć sesję „${s.name}”?`))cmd('delete_session',s.uid,s.name)},!H.online||on));tb.appendChild(tr)}}
@@ -482,7 +482,7 @@ box.innerHTML=`<h2>Grupa „${esc(g.name)}”</h2><div class="grid2"><label>Nazw
 $('eg_cancel').onclick=()=>{gediting=null;box.style.display='none'};
 $('eg_save').onclick=async()=>{const nn=$('eg_name').value.trim();await cmd('update_group','',g.name,{name:g.name,world:g.world,program:$('eg_program').value,layout_enabled:$('eg_en').checked,layout_screen:$('eg_screen').value,layout_cols:$('eg_cols').value,layout_rows:$('eg_rows').value,layout_zoom:$('eg_zoom').value});
 if(nn&&nn!==g.name)await cmd('rename_group','',g.name,{name:g.name,new:nn,world:g.world});gediting=null;box.style.display='none'}}
-function configs(){const tb=$('crows');tb.textContent='';for(const c of O.config_profs||[]){const tr=document.createElement('tr');tr.innerHTML=`<td>${esc(c.name)}</td><td></td>`;
+function configs(){const tb=$('crows');tb.textContent='';for(const c of O.config_profs||[]){const tr=document.createElement('tr');tr.innerHTML=`<td>${esc(c.name)}${c.banned===true||c.banned==='True'?' <span class=err>(zablokowane)</span>':''}</td><td></td>`;
 const sel=document.createElement('select');sel.innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),c.prof||'');sel.disabled=!H.online;
 sel.onchange=()=>cmd('set_config_prof','',c.name,{config:c.name,prof:sel.value});tr.lastChild.appendChild(sel);tb.appendChild(tr)}
 if(!(O.config_profs||[]).length)tb.innerHTML='<tr><td colspan=2 class=hint>Brak configów.</td></tr>'}
@@ -498,12 +498,14 @@ const man=()=>{const m=$('nc_mode').value==='manual';document.querySelectorAll('
 $('nc_go').onclick=()=>{const v=(i)=>$(i).value;const m=v('nc_mode');if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){$('nc_info').textContent='Podaj login i hasło.';return}
 cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto',prof:v('nc_prof')}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw'),prof:v('nc_prof')});$('nc_pw').value='';$('nc_info').textContent='Wysłano.'};
 $('ng_go').onclick=()=>{const n=$('ng_name').value.trim();if(!n)return;cmd('create_group','',n,{name:n,world:$('ng_world').value});$('ng_name').value=''};
-const ACT={start:'▶ sesja',stop:'⏹ sesja',bot_start:'▶ bot',bot_stop:'⏸ bot',create_session:'＋ sesja',update_session:'✎ sesja',delete_session:'🗑 sesja',create_config:'＋ config',set_config_prof:'🎓 profesja',create_group:'＋ grupa',rename_group:'✎ nazwa grupy',delete_group:'🗑 grupa',update_group:'✎ grupa'};
+const ACT={start:'▶ sesja',stop:'⏹ sesja',bot_start:'▶ bot',bot_stop:'⏸ bot',create_session:'＋ sesja',update_session:'✎ sesja',delete_session:'🗑 sesja',create_config:'＋ config',set_config_prof:'🎓 profesja',create_group:'＋ grupa',rename_group:'✎ nazwa grupy',delete_group:'🗑 grupa',update_group:'✎ grupa',delete_banned:'🗑 zablokowane sesje'};
 async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}H=await r.json();O=H.options||{};
 $('hn').textContent=H.name||id;$('hs').innerHTML=`<span class="dot ${H.online?'on':''}"></span>${H.online?'online':'offline'} · ${esc(H.platform||'')} ${esc(H.version||'')}${H.saved?' · ustawienia zapisane '+new Date(H.saved*1000).toLocaleString('pl-PL'):''}`;
 const none=!O.groups&&H.online;$('ns_info').textContent=none?'Launcher nie przesłał list – zaktualizuj launcher (git pull) i uruchom ponownie.':'';
 for(const b of ['ns_go','nc_go','ng_go'])$(b).disabled=!H.online;
 sessions();forms();edit();gedit();
+const nb=(H.sessions||[]).filter(s=>s.banned&&s.status!=='RUNNING'&&s.status!=='STOPPING').length;const db=$('del_banned');db.style.display=nb?'':'none';db.textContent=`🗑 Usuń zablokowane sesje (${nb})`;db.disabled=!H.online;
+db.onclick=()=>{if(confirm(`Usunąć ${nb} sesji z zablokowanym kontem? Configi zostaną (z oznaczeniem).`))cmd('delete_banned','','zablokowane')};
 const cb=$('cmds');cb.textContent='';for(const c of (H.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
 d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${ACT[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
 async function loop(){await load().catch(()=>{});setTimeout(loop,Object.keys(PEND).length?1500:3000)}
@@ -764,7 +766,7 @@ def make_handler(cfg, users, store, presence, hosts):
                     action = body.get("action")
                     assert action in ("start", "stop", "bot_start", "bot_stop", "create_session", "update_session",
                                       "delete_session", "create_config", "set_config_prof",
-                                      "create_group", "rename_group", "delete_group", "update_group")
+                                      "create_group", "rename_group", "delete_group", "update_group", "delete_banned")
                     assert action not in ("start", "stop", "bot_start", "bot_stop", "update_session", "delete_session") or body.get("session")
                     params = body.get("params") if isinstance(body.get("params"), dict) else {}
                     params = {str(k)[:32]: (v if isinstance(v, bool) else str(v)[:120]) for k, v in list(params.items())[:20]}
@@ -865,7 +867,7 @@ def make_handler(cfg, users, store, presence, hosts):
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
-<div class="card"><h2>Sesje</h2><table><thead><tr><th>Sesja</th><th>Bot</th><th>Nazwa</th><th>Grupa</th><th>Config</th><th>Profesja</th><th>Program</th><th></th></tr></thead>
+<div class="card"><h2>Sesje <button class="sm" id="del_banned" style="float:right;display:none"></button></h2><table><thead><tr><th>Sesja</th><th>Bot</th><th>Nazwa</th><th>Grupa</th><th>Config</th><th>Profesja</th><th>Program</th><th></th></tr></thead>
 <tbody id="rows"><tr><td colspan=8 class=hint>Wczytuję…</td></tr></tbody></table>
 <div id="edit" class="card" style="display:none;margin-top:12px"></div>
 <p class="hint">Polecenia trafiają do launchera przy jego następnym sygnale (do 10 s). ⏸ Bot zatrzymuje samego bota – przeglądarka i gra zostają.</p></div>

@@ -14,6 +14,21 @@ _ENTER_GAME_TIMEOUT = 30   # s na GAME_CANVAS po kliknięciu; przekroczenie → 
 _POLL              = 0.15  # s między sprawdzeniami DOM
 
 
+class AccountBanned(Exception):
+    """margonem.pl po kliknięciu „Zaloguj się” pokazuje „Konto zostało zablokowane” (#js-ban-box)."""
+
+
+_JS_BANNED = ("const b=document.getElementById('js-ban-box');"
+              "return !!b && b.getClientRects().length>0 && /zablokowane/i.test(b.textContent||'');")
+
+
+def is_banned(driver) -> bool:
+    try:
+        return bool(driver.execute_script(_JS_BANNED))
+    except WebDriverException:
+        return False
+
+
 def login(driver, username, password):
     _LOGIN_GATE.acquire()
     try:
@@ -35,10 +50,12 @@ def _find(driver, by, selector):
 def _wait_first(driver, checks: list, deadline: float):
     """
     Polling-loop: zwraca (nazwa, element) gdy którykolwiek warunek zostanie spełniony.
-    Zwraca (None, None) po przekroczeniu deadline.
+    Zwraca (None, None) po przekroczeniu deadline. Zablokowane konto → AccountBanned.
     checks = [(nazwa, lambda driver -> element_lub_None), ...]
     """
     while time.time() < deadline:
+        if is_banned(driver):
+            raise AccountBanned("Konto zostało zablokowane")
         for name, check in checks:
             result = check(driver)
             if result:
@@ -117,6 +134,8 @@ def _do_login(driver, username, password):
         # Strona dopiero co pokazała formularz – chwila na dokończenie skryptów (przy całej grupie trwa to dłużej).
         time.sleep(1.5)
         for attempt in range(3):
+            if is_banned(driver):
+                raise AccountBanned("Konto zostało zablokowane")
             # --- Krok 2–3: login i hasło (ze sprawdzeniem, że zostały w polach) ---
             ok_user = _fill(driver, "login-input", username)
             ok_pwd = _fill(driver, "login-password", password)
@@ -147,6 +166,8 @@ def _do_login(driver, username, password):
             ], time.time() + 10)
             if what:
                 break
+            if is_banned(driver):
+                raise AccountBanned("Konto zostało zablokowane")
             print(f"⚠️  Logowanie: po kliknięciu „Zaloguj się” nadal formularz (próba {attempt + 1}/3)")
             if time.time() >= deadline:
                 break

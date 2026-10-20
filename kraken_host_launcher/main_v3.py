@@ -625,6 +625,26 @@ def set_config_prof(path: str, prof: str) -> None:
     _write_config(path, data)
 
 
+BANNED_SUFFIX = " (zablokowane)"   # dopisek przy nazwie configu zablokowanego konta (lista configów)
+
+
+def config_banned(path: str) -> bool:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return bool(json.load(f).get("banned"))
+    except Exception:
+        return False
+
+
+def mark_config_banned(path: str) -> None:
+    """Konto zablokowane na margonem.pl → "banned": true w configu (START takiego configu jest odrzucany)."""
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    data["banned"] = True
+    data["banned_at"] = time.strftime("%Y-%m-%d %H:%M")
+    _write_config(path, data)
+
+
 def _config_dir() -> str:
     d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config")
     os.makedirs(d, exist_ok=True)
@@ -683,6 +703,7 @@ class BotRunner:
         self.bot_state         = ""                  # running / stopped / loading – odczyt z przeglądarki co 5 s
         self.program           = config.get("program", "")
         self.prof              = ""
+        self.banned            = False               # konto zablokowane (wykryte przy logowaniu)
 
     def log(self, msg):
         self.logger.write(msg)
@@ -694,10 +715,19 @@ class BotRunner:
     def run(self):
         self.crashed = False
         _THREAD_STREAM.set_logger(self.logger)
+        from login import AccountBanned
         try:
             self._run_bot()
         except StopIteration as e:
             self.log(f"⛔ {e}")
+        except AccountBanned:
+            self.banned = True
+            self.log("⛔ Konto zostało zablokowane – oznaczam config jako zablokowany i kończę sesję")
+            try:
+                mark_config_banned(self.config["config_path"])
+                self.log(f"💾 Config {os.path.basename(self.config['config_path'])}: zablokowane")
+            except Exception as e:
+                self.log(f"⚠️  Zapis blokady w configu: {e}")
         except Exception as e:
             self.log(f"❌ Błąd: {e}")
             self.crashed = True
@@ -908,7 +938,7 @@ class BotRunner:
     def _run_bot(self):
         import undetected_chromedriver as uc
         from selenium.webdriver.common.by import By
-        from login import login
+        from login import login, is_banned, AccountBanned
         from create_profile import create_profile
         from captcha import check_and_solve_captcha
 
@@ -1019,6 +1049,8 @@ class BotRunner:
             t0 = time.time()
             while time.time() - t0 < timeout:
                 self.stop_check()
+                if is_banned(self.driver):
+                    raise AccountBanned("Konto zostało zablokowane")
                 for name, sel in checks:
                     try:
                         if self.driver.find_elements(*sel):
@@ -2428,8 +2460,10 @@ class SessionTab(tk.Frame):
                  on_status_change=None,
                  on_config_added=None,
                  on_config_refresh=None,
-                 get_all_sessions_fn=None):
+                 get_all_sessions_fn=None,
+                 on_banned=None):
         super().__init__(parent, bg=BG)
+        self.on_banned            = on_banned
         self.session_id           = session_id
         self.name                 = name[:20] if name else ""
         # Stały identyfikator sesji (polecenia start/stop z panelu WWW trafiają po nim).
@@ -2465,9 +2499,7 @@ class SessionTab(tk.Frame):
         self.config_var = tk.StringVar()
         self.cfg_cb = ttk.Combobox(row1, textvariable=self.config_var,
                                font=FONT_SMALL, state="readonly", width=22)
-        self.cfg_cb["values"] = list(self._config_map.keys())
-        if self.cfg_cb["values"]:
-            self.config_var.set(self.cfg_cb["values"][0])
+        self._refresh_config_cb()
         self.cfg_cb.pack(side="left", padx=(0, 4))
         tk.Button(row1, text="＋", command=self._new_account,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
@@ -2668,18 +2700,36 @@ class SessionTab(tk.Frame):
         """Wywoływany gdy nowy plik config zostanie zapisany."""
         self._config_map[filename] = path
         self._refresh_config_cb()
-        self.config_var.set(filename)
+        self.set_config(filename)
         self.logger.write(f"✅ Nowy config: {filename}")
         # powiadom BotGUI żeby zaktualizował pozostałe sesje
         if self.on_config_added:
             self.on_config_added(filename, path)
 
+    def config_key(self) -> str:
+        """Nazwa pliku wybranego configu (bez dopisku „(zablokowane)” z listy)."""
+        v = self.config_var.get()
+        return v[:-len(BANNED_SUFFIX)] if v.endswith(BANNED_SUFFIX) else v
+
+    def _config_label(self, key: str) -> str:
+        p = self._config_map.get(key)
+        return key + BANNED_SUFFIX if p and config_banned(p) else key
+
+    def set_config(self, key: str):
+        self.config_var.set(self._config_label(key))
+
+    def is_banned(self) -> bool:
+        p = self._config_path()
+        return bool(p) and config_banned(p)
+
     def _refresh_config_cb(self):
-        """Odśwież wartości comboboxa configów."""
-        cur = self.config_var.get()
-        self.cfg_cb["values"] = list(self._config_map.keys())
-        if cur not in self._config_map and self.cfg_cb["values"]:
-            self.config_var.set(self.cfg_cb["values"][0])
+        """Odśwież wartości comboboxa configów (zablokowane konta z dopiskiem „(zablokowane)”)."""
+        cur = self.config_key()
+        self.cfg_cb["values"] = [self._config_label(k) for k in self._config_map]
+        if cur in self._config_map:
+            self.set_config(cur)
+        elif self._config_map:
+            self.set_config(next(iter(self._config_map)))
 
     def _refresh_config_now(self):
         """Wczytaj ponownie listę configów z katalogu (np. po ręcznym dodaniu pliku)."""
@@ -2691,10 +2741,13 @@ class SessionTab(tk.Frame):
 
     # ---- tryb ----
     def _validate(self):
-        cfg_key = self.config_var.get()
+        cfg_key = self.config_key()
         cfg     = self._config_map.get(cfg_key, cfg_key)
         if not cfg or not os.path.isfile(cfg):
             self.logger.write("⚠️  Wybierz plik konfiguracyjny!")
+            return None
+        if config_banned(cfg):
+            self.logger.write(f"⛔ Konto z configu {cfg_key} jest zablokowane – sesja nie wystartuje")
             return None
 
         # ---- sprawdź config lock ----
@@ -2782,7 +2835,8 @@ class SessionTab(tk.Frame):
             runner.run()
         finally:
             crashed = getattr(runner, "crashed", False) and not self.stop_event.is_set()
-            self.after(0, lambda c=crashed: self._on_finished(c))
+            banned = getattr(runner, "banned", False)
+            self.after(0, lambda c=crashed, b=banned: self._on_finished(c, b))
 
     def _poll_pid(self):
         if not self.is_running:
@@ -2832,13 +2886,17 @@ class SessionTab(tk.Frame):
         else:
             self.logger.write("⚠️  Brak PID — nie można wymusić zatrzymania")
 
-    def _on_finished(self, crashed: bool = False):
+    def _on_finished(self, crashed: bool = False, banned: bool = False):
         self._runner    = None
         self.is_running = False
         self._set_status("OFFLINE")
         self.play_btn.configure(state="normal")
         self.stop_btn.configure(state="disabled")
         self.pid_lbl.configure(text="")
+        if banned:
+            if self.on_banned:
+                self.on_banned(self)
+            return
 
         if crashed and self.restart_on_fail_var.get():
             delay = 10
@@ -2891,7 +2949,7 @@ class SessionTab(tk.Frame):
         r.bot_command(action, self.effective_program() if action == "bot_start" else None, done)
 
     def _config_path(self) -> str:
-        key = self.config_var.get()
+        key = self.config_key()
         return self._config_map.get(key, "") if key else ""
 
     def current_prof(self) -> str:
@@ -2951,7 +3009,7 @@ class SessionTab(tk.Frame):
         return {
             "uid":             self.uid,
             "name":            self.name,
-            "config":          self.config_var.get(),
+            "config":          self.config_key(),
             "group":           self.gm.group_of(self.session_id),
             "group_world":     self.gm.world_of_session(self.session_id),
             "browser":         self.browser_var.get(),
@@ -2966,7 +3024,7 @@ class SessionTab(tk.Frame):
     def apply_settings(self, d: dict):
         """Przywraca ustawienia sesji z zapisanego słownika (stare pola trybów są pomijane)."""
         if d.get("config") in self._config_map:
-            self.config_var.set(d["config"])
+            self.set_config(d["config"])
         if d.get("browser") in BROWSERS:
             self.browser_var.set(d["browser"])
             self._refresh_template_cb()
@@ -3083,6 +3141,10 @@ class BotGUI:
                                   bg=BG3, fg=ACCENT, font=FONT_BOLD,
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
+        tk.Button(btn_frame, text="🗑 Usuń zablokowane",
+                  command=self._delete_banned_ui,
+                  bg=BG3, fg=RED, font=FONT_BOLD,
+                  relief="flat", cursor="hand2", padx=10, pady=4).pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="⚙️ Ustawienia",
                   command=lambda: LauncherSettingsDialog(root, app=self),
                   bg=BG3, fg=FG, font=FONT_BOLD,
@@ -3206,6 +3268,7 @@ class BotGUI:
             on_config_added=self._on_config_added,
             on_config_refresh=self._on_config_refresh,
             get_all_sessions_fn=lambda: self._sessions,
+            on_banned=self._on_banned,
         )
         self._sessions.append(tab)
 
@@ -3251,7 +3314,37 @@ class BotGUI:
 
     def _tab_text(self, tab) -> str:
         icons = {"RUNNING": "▶", "STOPPING": "◼", "OFFLINE": "○", "ERROR": "✕"}
+        if tab.status == "OFFLINE" and tab.is_banned():
+            return f"⛔ {tab.name}"
         return f"{icons.get(tab.status, '○')} {tab.name}"
+
+    def _on_banned(self, tab):
+        """Sesja wykryła zablokowane konto: dopisek „(zablokowane)” na listach configów, ⛔ na zakładce, zapis na serwer."""
+        for s in self._sessions:
+            s._refresh_config_cb()
+        self._refresh_tab_texts()
+        self._save_state()
+
+    def _banned_sessions(self) -> list:
+        return [s for s in self._sessions if not s.is_running and s.is_banned()]
+
+    def delete_banned(self) -> int:
+        """Usuwa wszystkie (zatrzymane) sesje z configiem zablokowanego konta; configi zostają z oznaczeniem."""
+        tabs = self._banned_sessions()
+        for t in tabs:
+            self._remove_session(t)
+        if tabs:
+            self._save_state()
+        return len(tabs)
+
+    def _delete_banned_ui(self):
+        tabs = self._banned_sessions()
+        if not tabs:
+            messagebox.showinfo("Zablokowane", "Brak sesji z zablokowanym kontem.", parent=self.root)
+            return
+        names = ", ".join(t.name for t in tabs[:15]) + (" …" if len(tabs) > 15 else "")
+        if messagebox.askyesno("Usuń zablokowane", f"Usunąć {len(tabs)} sesji z zablokowanym kontem?\n{names}", parent=self.root):
+            self.delete_banned()
 
     def _refresh_tab_texts(self):
         for tab in self._sessions:
@@ -3438,8 +3531,8 @@ class BotGUI:
             HOST.snapshot = [{
                 "uid": s.uid, "name": s.name or f"sesja {i + 1}", "group": self.gm.group_of(s.session_id),
                 "group_world": self.gm.world_of_session(s.session_id),
-                "world": s.server_var.get().lower(), "config": s.config_var.get(),
-                "char": os.path.splitext(s.config_var.get())[0], "status": s.status, "program": s.effective_program(),
+                "world": s.server_var.get().lower(), "config": s.config_key(), "banned": s.is_banned(),
+                "char": os.path.splitext(s.config_key())[0], "status": s.status, "program": s.effective_program(),
                 "prof": PROF_LABEL.get(s.current_prof(), ""), "bot": s.bot_state,
                 "server": s.server_var.get(), "browser": s.browser_var.get(), "template": s.template_var.get(),
                 "prog_override": bool(s.prog_override_var.get()),
@@ -3452,7 +3545,7 @@ class BotGUI:
                 "groups": [dict({"name": n, "world": w, "program": self.gm.program_of(n, w)},
                                 **{f"layout_{k}": v for k, v in self.gm.layout_of(n, w).items()}) for (w, n) in self.gm._groups],
                 "configs": sorted(self._config_map),
-                "config_profs": [{"name": c, "prof": config_prof(p)} for c, p in sorted(self._config_map.items())],
+                "config_profs": [{"name": c, "prof": config_prof(p), "banned": config_banned(p)} for c, p in sorted(self._config_map.items())],
                 "screens": [{"name": f"{i + 1}. {x['name']} – {x['w']}×{x['h']}"} for i, x in enumerate(getattr(self, "_screens_cache", []))],
                 "zooms": ZOOM_CHOICES,
                 "worlds": WORLDS,
@@ -3561,6 +3654,9 @@ class BotGUI:
                 s._refresh_prof()
             self._save_state()
             return HOST.report(c["id"], True, f"{p.get('config')}: {PROF_LABEL[prof]}")
+        if act == "delete_banned":
+            n = self.delete_banned()
+            return HOST.report(c["id"], True, f"usunięto {n} sesji z zablokowanym kontem" if n else "brak sesji z zablokowanym kontem")
         tab = next((s for s in self._sessions if s.uid == c.get("session")), None)
         name = c.get("session_name") or c.get("session")
         if not tab:
@@ -3568,6 +3664,8 @@ class BotGUI:
         if c.get("action") == "start":
             if tab.is_running:
                 return HOST.report(c["id"], True, "już działa")
+            if tab.is_banned():
+                return HOST.report(c["id"], False, "konto zablokowane – sesja nie wystartuje")
             tab.logger.write("🌐 START z panelu WWW")
             tab._on_play()
             return HOST.report(c["id"], tab.is_running, "uruchomiona" if tab.is_running else "nie wystartowała (config?)")
