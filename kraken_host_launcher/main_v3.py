@@ -619,6 +619,25 @@ class BotRunner:
                 except Exception:
                     pass
 
+    def _push_api_to_bot(self):
+        """Adres i token serwera z Ustawień launchera → bot Kraken w tej przeglądarce (Ustawienia › Serwer)."""
+        from log_shipper import SHIPPER
+        if not SHIPPER.enabled:
+            return
+        t0 = time.time()
+        while time.time() - t0 < 60 and not self.stop_event.is_set():
+            try:
+                ok = self.driver.execute_script(
+                    "if (!window.Kraken || !Kraken.setApi) return false; Kraken.setApi(arguments[0], arguments[1]); return true;",
+                    SHIPPER.url, SHIPPER.token)
+                if ok:
+                    self.log("📡 Bot: adres i token serwera ustawione")
+                    return
+            except Exception:
+                pass
+            time.sleep(2)
+        self.log("⚠️  Bot nie wystartował w 60 s – adres i token serwera nieprzekazane")
+
     _JS_STR = re.compile(r'"((?:[^"\\]|\\.)*)"')
 
     def _ship_browser_logs(self, shipper, char: str, world: str):
@@ -867,6 +886,7 @@ class BotRunner:
 
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
+        self._push_api_to_bot()
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
         from log_shipper import SHIPPER
         if SHIPPER.enabled:
@@ -1893,6 +1913,59 @@ class GroupPanel(tk.Frame):
 # ============================================
 # DIALOG: NOWY CONFIG
 # ============================================
+class LauncherSettingsDialog(tk.Toplevel):
+    """Ustawienia launchera: serwer Kraken API (adres panelu i token użytkownika) – zapis do api.json.
+    Launcher wysyła wtedy logi sesji, a przy starcie sesji przekazuje adres i token botowi w przeglądarce."""
+
+    def __init__(self, parent):
+        super().__init__(parent)
+        from log_shipper import SHIPPER
+        self.title("Ustawienia launchera")
+        self.configure(bg=BG)
+        self.resizable(False, False)
+        self.transient(parent)
+        self.url = tk.StringVar(value=SHIPPER.url)
+        self.token = tk.StringVar(value=SHIPPER.token)
+        tk.Label(self, text="📡 Serwer Kraken API", font=FONT_BOLD, bg=BG, fg=ACCENT).pack(anchor="w", padx=16, pady=(14, 6))
+        for label, var, show in (("Adres panelu:", self.url, ""), ("Token:", self.token, "•")):
+            row = tk.Frame(self, bg=BG)
+            row.pack(fill="x", padx=16, pady=3)
+            tk.Label(row, text=label, width=13, anchor="w", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+            e = tk.Entry(row, textvariable=var, width=48, show=show, bg=BG3, fg=FG, insertbackground=FG, relief="flat", font=FONT_SMALL)
+            e.pack(side="left", fill="x", expand=True)
+            if show:
+                self._tok_entry = e
+        self.show = tk.BooleanVar(value=False)
+        tk.Checkbutton(self, text="pokaż token", variable=self.show, bg=BG, fg=FG_DIM, selectcolor=BG3, activebackground=BG,
+                       font=FONT_SMALL, command=lambda: self._tok_entry.configure(show="" if self.show.get() else "•")).pack(anchor="w", padx=16)
+        self.info = tk.Label(self, text="Adres i token z panelu (https://…). Przy starcie sesji launcher przekaże je też botowi.",
+                             bg=BG, fg=FG_DIM, font=FONT_SMALL, wraplength=460, justify="left")
+        self.info.pack(anchor="w", padx=16, pady=(6, 4))
+        btns = tk.Frame(self, bg=BG)
+        btns.pack(fill="x", padx=16, pady=(4, 14))
+        tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD, padx=10).pack(side="right")
+        tk.Button(btns, text="Sprawdź połączenie", command=self._check, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right", padx=6)
+        tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right")
+
+    def _check(self):
+        from log_shipper import check
+        self.info.configure(text="⏳ Sprawdzam…", fg=FG_DIM)
+        url, token = self.url.get(), self.token.get()
+        def run():
+            msg = check(url, token)
+            self.after(0, lambda: self.info.configure(text=msg, fg=GREEN if msg.startswith("✅") else RED))
+        threading.Thread(target=run, daemon=True).start()
+
+    def _save(self):
+        from log_shipper import save_config
+        url = self.url.get().strip()
+        if url and not url.lower().startswith("https://"):
+            self.info.configure(text="Adres musi zaczynać się od https:// (bot w przeglądarce nie wyśle niczego na http).", fg=RED)
+            return
+        save_config(url, self.token.get())
+        self.destroy()
+
+
 class LayoutDialog(tk.Toplevel):
     """Układ okien grupy: siatka (kolumny × wiersze) na wybranym ekranie i zoom przeglądarki.
     Sesje zajmują miejsca w kolejności w grupie (od lewej, potem kolejny wiersz). Działa od następnego STARTU sesji."""
@@ -2606,6 +2679,10 @@ class BotGUI:
                                   bg=BG3, fg=ACCENT, font=FONT_BOLD,
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
+        tk.Button(btn_frame, text="⚙️ Ustawienia",
+                  command=lambda: LauncherSettingsDialog(root),
+                  bg=BG3, fg=FG, font=FONT_BOLD,
+                  relief="flat", cursor="hand2", padx=10, pady=4).pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="💾 Zapisz",
                   command=self._on_save,
                   bg=BG3, fg=FG, font=FONT_BOLD,

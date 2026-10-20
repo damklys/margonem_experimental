@@ -40,8 +40,8 @@ class LogShipper:
                 cfg = json.load(f)
         except Exception:
             cfg = {}
-        self.url = str(cfg.get("url", "")).rstrip("/")
-        self.token = str(cfg.get("token", ""))
+        self.url = str(cfg.get("url", "")).strip().rstrip("/")
+        self.token = str(cfg.get("token", "")).strip()
         if cfg.get("source"):
             self.source = str(cfg["source"])[:64]
         if self.enabled and not self._thread:
@@ -108,6 +108,34 @@ class LogShipper:
                 self.last_error = str(e)[:200]
                 self._put_back(items)
                 backoff = min(backoff * 2, 60.0)
+
+
+def save_config(url: str, token: str) -> None:
+    """Zapis adresu i tokenu (Ustawienia launchera) do api.json – tylko dla właściciela pliku – i przeładowanie wysyłki."""
+    data = {"url": url.strip().rstrip("/"), "token": token.strip()}
+    tmp = CONFIG_PATH + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    try:
+        os.chmod(tmp, 0o600)
+    except OSError:
+        pass
+    os.replace(tmp, CONFIG_PATH)
+    SHIPPER.reload()
+
+
+def check(url: str, token: str) -> str:
+    """Test połączenia: GET /api/v1/me z tokenem → opis wyniku."""
+    try:
+        req = urllib.request.Request(f"{url.strip().rstrip('/')}/api/v1/me",
+                                     headers={"Authorization": f"Bearer {token.strip()}", "User-Agent": "KrakenLauncher"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            d = json.loads(r.read().decode("utf-8") or "{}")
+            return f"✅ Połączono – konto: {d.get('user')}" if d.get("ok") else "❌ Serwer odrzucił token"
+    except urllib.error.HTTPError as e:
+        return "❌ Zły token" if e.code == 401 else f"❌ HTTP {e.code}"
+    except Exception as e:
+        return f"❌ Brak połączenia: {str(e)[:120]}"
 
 
 SHIPPER = LogShipper()
