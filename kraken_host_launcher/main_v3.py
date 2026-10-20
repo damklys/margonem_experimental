@@ -294,7 +294,7 @@ def _safe_group(group: str) -> str:
 # UKŁAD OKIEN GRUPY (siatka na wybranym ekranie + zoom przeglądarki)
 # ============================================
 LAYOUT_DEFAULT = {"enabled": False, "screen": 0, "cols": 5, "rows": 2, "zoom": "auto"}
-ZOOM_CHOICES = ["auto", "50", "67", "75", "80", "90", "100"]
+ZOOM_CHOICES = ["auto", "25", "33", "40", "50", "67", "75", "80", "90", "100"]
 
 
 def _screens() -> list:
