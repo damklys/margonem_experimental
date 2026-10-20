@@ -601,6 +601,40 @@ def _write_config(path: str, data: dict) -> None:
     os.replace(tmp, path)
 
 
+def _config_dir() -> str:
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config")
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+def _free_config_name(stem: str) -> str:
+    stem = re.sub(r"[^\w\-]+", "_", stem or "", flags=re.UNICODE).strip("_") or "konto"
+    name, i = f"{stem}.json", 2
+    while os.path.exists(os.path.join(_config_dir(), name)):
+        name, i = f"{stem}_{i}.json", i + 1
+    return name
+
+
+def create_auto_config():
+    """Nowe konto: plik configu z wygenerowanym loginem, hasłem i nickiem ("provisioned": false) – konto i postać
+    zakłada START sesji. Zwraca (nazwa pliku, ścieżka, dane)."""
+    from create_account import generate_login, generate_password, generate_nick
+    nick = generate_nick()
+    name = _free_config_name(nick)
+    path = os.path.join(_config_dir(), name)
+    data = {"login": [{"username": generate_login(), "password": generate_password()}], "nick": nick, "provisioned": False}
+    _write_config(path, data)
+    return name, path, data
+
+
+def create_manual_config(name: str, login: str, password: str):
+    """Config istniejącego konta (login i hasło podane). Zwraca (nazwa pliku, ścieżka)."""
+    fname = _free_config_name(name or login)
+    path = os.path.join(_config_dir(), fname)
+    _write_config(path, {"login": [{"username": login.strip(), "password": password}]})
+    return fname, path
+
+
 class BotRunner:
     """Sesja przeglądarki: profil (z szablonu), logowanie na margonem.pl, jednorazowa captcha zaraz po wejściu do gry.
     Całą grą steruje bot Kraken w przeglądarce (Tampermonkey) – tu tylko trzymamy przeglądarkę do STOP."""
@@ -2510,22 +2544,8 @@ class SessionTab(tk.Frame):
     def _new_account(self):
         """＋: od razu nowy plik configu z wygenerowanym loginem, hasłem i nickiem ("provisioned": false).
         Konto i postać zakłada START tej sesji (w jej przeglądarce i profilu); plik istnieje od razu i jest na liście."""
-        from create_account import generate_login, generate_password, generate_nick
-        base = os.path.dirname(os.path.abspath(__file__))
-        config_dir = os.path.join(base, "config")
-        os.makedirs(config_dir, exist_ok=True)
-        nick = generate_nick()
-        stem = re.sub(r"[^\w\-]+", "_", nick, flags=re.UNICODE).strip("_") or "konto"
-        name, i = f"{stem}.json", 2
-        while os.path.exists(os.path.join(config_dir, name)):
-            name, i = f"{stem}_{i}.json", i + 1
-        path = os.path.join(config_dir, name)
-        data = {
-            "login": [{"username": generate_login(), "password": generate_password()}],
-            "nick": nick,
-            "provisioned": False,
-        }
-        _write_config(path, data)
+        name, path, data = create_auto_config()
+        nick = data["nick"]
         self.logger.write(f"🆕 Nowe konto (do założenia przy START): {name} – login {data['login'][0]['username']}, nick {nick}")
         self._on_config_file_created(name, path)
 
@@ -3054,6 +3074,7 @@ class BotGUI:
 
         self._update_add_btn()
         self._update_statusbar()
+        return tab
 
     def _remove_session(self, tab: SessionTab):
         tab.stop_all()
@@ -3261,6 +3282,13 @@ class BotGUI:
                 "world": s.server_var.get().lower(), "config": s.config_var.get(),
                 "char": os.path.splitext(s.config_var.get())[0], "status": s.status, "program": s.effective_program(),
             } for i, s in enumerate(self._sessions)]
+            HOST.options = {
+                "groups": [{"name": n, "world": w} for (w, n) in self.gm._groups],
+                "configs": sorted(self._config_map),
+                "servers": SERVERS, "browsers": BROWSERS,
+                "templates": {b: _list_templates(b) for b in BROWSERS},
+                "programs": _list_programs(),
+            }
             while True:
                 try:
                     c = HOST.commands.get_nowait()
@@ -3278,6 +3306,37 @@ class BotGUI:
 
     def _run_command(self, c: dict):
         from log_shipper import HOST
+        p = c.get("params") or {}
+        if c.get("action") == "create_config":
+            try:
+                if p.get("mode") == "manual":
+                    if not p.get("login") or not p.get("password"):
+                        return HOST.report(c["id"], False, "brak loginu lub hasła")
+                    fname, path = create_manual_config(p.get("name", ""), p["login"], p["password"])
+                    msg = f"utworzono {fname}"
+                else:
+                    fname, path, data = create_auto_config()
+                    msg = f"utworzono {fname} (nick {data['nick']}, konto założy START sesji)"
+                self._on_config_added(fname, path)
+                self._save_state()
+                return HOST.report(c["id"], True, msg)
+            except Exception as e:
+                return HOST.report(c["id"], False, str(e)[:200])
+        if c.get("action") == "create_session":
+            group, world = p.get("group", ""), p.get("world", "") or self._selected_world
+            if group not in self.gm.group_names(world):
+                return HOST.report(c["id"], False, f"brak grupy „{group}” ({world}) w launcherze")
+            tab = self._add_session(group=group, name=(p.get("name") or None), world=world)
+            if not tab:
+                return HOST.report(c["id"], False, f"grupa „{group}” jest pełna")
+            tab.apply_settings({k: v for k, v in {
+                "config": p.get("config"), "server": p.get("server"), "browser": p.get("browser"),
+                "template": p.get("template") or "(brak)", "group": group, "group_world": world,
+                "program_override": bool(p.get("program")), "program": p.get("program", ""),
+            }.items() if v is not None})
+            self._save_state()
+            tab.logger.write("🌐 Sesja utworzona z panelu WWW")
+            return HOST.report(c["id"], True, f"utworzono „{tab.name}”")
         tab = next((s for s in self._sessions if s.uid == c.get("session")), None)
         name = c.get("session_name") or c.get("session")
         if not tab:

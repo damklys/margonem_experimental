@@ -177,6 +177,7 @@ class HostLink:
 
     def __init__(self):
         self.snapshot = []                 # lista sesji ustawiana przez okno (wątek Tk)
+        self.options = {}                  # grupy, configi, serwery, przeglądarki, szablony, programy (formularze panelu)
         self.commands = queue.Queue()      # polecenia dla okna
         self._results = []
         self._lock = threading.Lock()
@@ -201,7 +202,8 @@ class HostLink:
                 try:
                     res = _api("POST", "/api/v1/host/heartbeat", {
                         "host_id": SHIPPER.host_id, "name": SHIPPER.host_name, "platform": PLATFORM,
-                        "version": LAUNCHER_VERSION, "sessions": list(self.snapshot), "results": results})
+                        "version": LAUNCHER_VERSION, "sessions": list(self.snapshot),
+                        "options": dict(self.options), "results": results})
                     self.online, self.last_error = True, ""
                     for c in res.get("commands") or []:
                         self.commands.put(c)

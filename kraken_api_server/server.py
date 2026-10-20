@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "3.0.0"
+VERSION = "3.1.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -308,6 +308,8 @@ class Hosts:
         """Sygnał „żyję” launchera; zwraca polecenia do wykonania (oznaczone jako wysłane)."""
         key = (user, info["host_id"])
         with self.lock:
+            if not info.get("options") and key in self.live:
+                info["options"] = self.live[key].get("options") or {}
             self.live[key] = dict(info, ts=time.time())
             cmds = self.cmds.setdefault(key, [])
             for r in info.get("results") or []:
@@ -319,17 +321,17 @@ class Hosts:
                 if c["status"] == "queued":
                     c["status"] = "sent"
                     c["sent"] = time.time()
-                    out.append({k: c[k] for k in ("id", "action", "session", "session_name")})
+                    out.append({k: c[k] for k in ("id", "action", "session", "session_name", "params")})
                 elif c["status"] == "sent" and time.time() - c.get("sent", 0) > 120:
                     c.update(status="error", result="brak odpowiedzi launchera")
             del cmds[:-50]
             return out
 
-    def command(self, user, host_id, action, session, session_name):
+    def command(self, user, host_id, action, session, session_name, params=None):
         with self.lock:
             self.seq += 1
             c = {"id": f"c{int(time.time())}{self.seq}", "action": action, "session": session,
-                 "session_name": session_name, "status": "queued", "created": time.time(), "result": ""}
+                 "session_name": session_name, "params": params or {}, "status": "queued", "created": time.time(), "result": ""}
             self.cmds.setdefault((user, host_id), []).append(c)
             return c["id"]
 
@@ -346,8 +348,10 @@ class Hosts:
                     continue
                 r = rows.setdefault(hid, {"host_id": hid, "saved": None})
                 r.update(name=v.get("name") or r.get("name") or hid, platform=v.get("platform", ""), version=v.get("version", ""),
-                         sessions=v.get("sessions") or [], online=now - v["ts"] < online_s, last=int(v["ts"]))
-                r["commands"] = [dict(c) for c in self.cmds.get((u, hid), [])][-15:]
+                         sessions=v.get("sessions") or [], options=v.get("options") or {},
+                         online=now - v["ts"] < online_s, last=int(v["ts"]))
+                r["commands"] = [dict(c, params={k: v for k, v in (c.get("params") or {}).items() if k != "password"})
+                                 for c in self.cmds.get((u, hid), [])][-15:]
         return sorted(rows.values(), key=lambda r: (not r.get("online"), (r.get("name") or "").lower()))
 
 
@@ -360,6 +364,8 @@ a{color:var(--acc)}header{display:flex;align-items:center;gap:12px;padding:10px 
 header b{font-size:16px}header .sp{flex:1}main{max-width:1100px;margin:0 auto;padding:18px}
 .tag{display:inline-block;padding:1px 7px;border-radius:9px;background:var(--bg3);color:var(--dim);font-size:12px}
 .ok{color:var(--ok)}button.sm{padding:3px 9px;font-size:12.5px}button:disabled{opacity:.4;cursor:default}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.grid2 label{display:grid;gap:4px;color:var(--dim);font-size:12.5px}
+select{background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;padding:6px 8px;font:inherit;width:100%}
 .card{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:14px 16px;margin-bottom:14px}
 h2{margin:0 0 10px;font-size:15px;color:var(--acc)}input,button{font:inherit}
 input[type=text],input[type=password]{background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;padding:7px 9px;width:100%}
@@ -406,16 +412,33 @@ HOST_JS = """
 const q=new URLSearchParams(location.search);const id=q.get('id');
 const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const st={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};
-async function cmd(action,s,name){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s,session_name:name})});load()}
+async function cmd(action,s,name,params){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s,session_name:name,params})});load()}
+let opts=null;const fill=(sel,items,keep,first)=>{const el=document.getElementById(sel);const cur=el.value;el.textContent='';
+if(first){const o=document.createElement('option');o.value='';o.textContent=first;el.appendChild(o)}
+for(const it of items){const o=document.createElement('option');o.value=typeof it==='string'?it:it.value;o.textContent=typeof it==='string'?it:it.label;el.appendChild(o)}
+if(keep&&[...el.options].some(o=>o.value===cur))el.value=cur};
+function forms(h){const o=h.options||{};const sig=JSON.stringify(o);if(sig===opts)return;opts=sig;
+fill('ns_group',(o.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.name} (${g.world})`})),true);
+fill('ns_config',o.configs||[],true);fill('ns_server',o.servers||[],true);fill('ns_browser',o.browsers||[],true);
+const tpl=()=>fill('ns_template',(o.templates||{})[document.getElementById('ns_browser').value]||[],true,'(brak)');tpl();document.getElementById('ns_browser').onchange=tpl;
+fill('ns_program',o.programs||[],true,'(program grupy)')}
+document.getElementById('ns_go').onclick=async()=>{const v=(i)=>document.getElementById(i).value;if(!v('ns_group')){document.getElementById('ns_info').textContent='Launcher nie ma grup – utwórz grupę w launcherze.';return}
+const [group,world]=v('ns_group').split('|');await cmd('create_session','',v('ns_name')||'nowa sesja',{name:v('ns_name'),group,world,config:v('ns_config'),server:v('ns_server'),browser:v('ns_browser'),template:v('ns_template'),program:v('ns_program')});
+document.getElementById('ns_info').textContent='Wysłano – sesja pojawi się w ciągu kilkunastu sekund.'};
+const man=()=>{const m=document.getElementById('nc_mode').value==='manual';document.querySelectorAll('.nc-man').forEach(e=>e.style.display=m?'':'none')};document.getElementById('nc_mode').onchange=man;man();
+document.getElementById('nc_go').onclick=async()=>{const v=(i)=>document.getElementById(i).value;const m=v('nc_mode');
+if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){document.getElementById('nc_info').textContent='Podaj login i hasło.';return}
+await cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto'}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw')});
+document.getElementById('nc_pw').value='';document.getElementById('nc_info').textContent='Wysłano – config pojawi się na liście w ciągu kilkunastu sekund.'};
 async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}const h=await r.json();
-document.getElementById('hn').textContent=h.name||id;document.getElementById('hs').innerHTML=`<span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'} · ${esc(h.platform||'')} ${esc(h.version||'')}${h.saved?' · ustawienia zapisane '+new Date(h.saved*1000).toLocaleString('pl-PL'):''}`;
+document.getElementById('hn').textContent=h.name||id;forms(h);document.getElementById('hs').innerHTML=`<span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'} · ${esc(h.platform||'')} ${esc(h.version||'')}${h.saved?' · ustawienia zapisane '+new Date(h.saved*1000).toLocaleString('pl-PL'):''}`;
 const tb=document.getElementById('rows');tb.textContent='';const ss=h.sessions||[];
 if(!ss.length)tb.innerHTML=`<tr><td colspan=6 class=hint>${h.online?'Brak sesji w launcherze.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;
 for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';
 tr.innerHTML=`<td>${st[s.status]||esc(s.status)}</td><td>${esc(s.name)}</td><td>${esc(s.group||'')}</td><td>${esc(s.config||'')}</td><td>${esc(s.program||'')}</td><td></td>`;
 const b=document.createElement('button');b.className='sm '+(on?'':'pri');b.textContent=on?'⏹ Stop':'▶ Start';b.disabled=!h.online;b.onclick=()=>cmd(on?'stop':'start',s.uid,s.name);tr.lastChild.appendChild(b);tb.appendChild(tr)}
 const cb=document.getElementById('cmds');cb.textContent='';for(const c of (h.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
-d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${c.action==='start'?'▶ start':'⏹ stop'} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
+d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${({start:'▶ start',stop:'⏹ stop',create_session:'＋ sesja',create_config:'＋ config'})[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
 load();setInterval(load,3000);
 """
 
@@ -650,7 +673,15 @@ def make_handler(cfg, users, store, presence, hosts):
                 for x in (body.get("sessions") or [])[:200]:
                     if isinstance(x, dict):
                         sess.append({k: str(x.get(k, ""))[:80] for k in ("uid", "name", "group", "world", "config", "char", "status", "program")})
-                info = {"host_id": hid, "name": name, "platform": str(body.get("platform", ""))[:40],
+                opts = body.get("options") if isinstance(body.get("options"), dict) else {}
+                clean_opts = {}
+                for k in ("groups", "configs", "servers", "browsers", "programs"):
+                    v = opts.get(k)
+                    if isinstance(v, list):
+                        clean_opts[k] = [({kk: str(x.get(kk, ""))[:64] for kk in ("name", "world")} if isinstance(x, dict) else str(x)[:80]) for x in v[:300]]
+                if isinstance(opts.get("templates"), dict):
+                    clean_opts["templates"] = {str(b)[:20]: [str(t)[:64] for t in (ts or [])[:100]] for b, ts in list(opts["templates"].items())[:5]}
+                info = {"host_id": hid, "name": name, "platform": str(body.get("platform", ""))[:40], "options": clean_opts,
                         "version": str(body.get("version", ""))[:20], "sessions": sess, "results": body.get("results") or []}
                 return self._send(200, {"ok": True, "commands": hosts.beat(user, info)})
             if p == "/panel/api/host/command":
@@ -662,13 +693,16 @@ def make_handler(cfg, users, store, presence, hosts):
                 try:
                     body = json.loads((self._body() or b"").decode("utf-8"))
                     action = body.get("action")
-                    assert action in ("start", "stop") and body.get("session")
+                    assert action in ("start", "stop", "create_session", "create_config")
+                    assert action.startswith("create") or body.get("session")
+                    params = body.get("params") if isinstance(body.get("params"), dict) else {}
+                    params = {str(k)[:32]: (v if isinstance(v, bool) else str(v)[:120]) for k, v in list(params.items())[:20]}
                 except Exception:
                     return self._send(400, {"ok": False, "error": "bad request"})
                 hid = safe_name(parse_qs(urlparse(self.path).query).get("id", [""])[0], "")
                 if not hid:
                     return self._send(400, {"ok": False, "error": "no host"})
-                cid = hosts.command(user, hid, action, str(body["session"])[:64], str(body.get("session_name", ""))[:64])
+                cid = hosts.command(user, hid, action, str(body.get("session", ""))[:64], str(body.get("session_name", ""))[:64], params)
                 log.info("polecenie %s %s → %s (%s)", action, body.get("session_name"), hid, user)
                 return self._send(200, {"ok": True, "id": cid})
             if p == "/login":
@@ -763,6 +797,21 @@ def make_handler(cfg, users, store, presence, hosts):
 <div class="card"><h2>Sesje launchera</h2><table><thead><tr><th>Stan</th><th>Sesja</th><th>Grupa</th><th>Config</th><th>Program</th><th></th></tr></thead>
 <tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table>
 <p class="hint">Start/stop trafia do launchera przy jego następnym sygnale (do 10 s).</p></div>
+<div class="card"><h2>Nowa sesja</h2>
+<div class="grid2"><label>Nazwa<input type="text" id="ns_name" placeholder="np. sesja 5"></label>
+<label>Grupa<select id="ns_group"></select></label>
+<label>Config<select id="ns_config"></select></label>
+<label>Serwer<select id="ns_server"></select></label>
+<label>Przeglądarka<select id="ns_browser"></select></label>
+<label>Szablon profilu<select id="ns_template"></select></label>
+<label>Program (opcjonalnie)<select id="ns_program"></select></label></div>
+<div style="margin-top:10px"><button class="pri" id="ns_go">＋ Utwórz sesję</button> <span class="hint" id="ns_info"></span></div></div>
+<div class="card"><h2>Nowy config</h2>
+<div class="grid2"><label>Rodzaj<select id="nc_mode"><option value="auto">Nowe konto – login, hasło i nick generowane (konto zakłada START sesji)</option><option value="manual">Istniejące konto – podaję login i hasło</option></select></label>
+<label class="nc-man">Nazwa pliku<input type="text" id="nc_name" placeholder="np. MojaPostac"></label>
+<label class="nc-man">Login<input type="text" id="nc_login" autocomplete="off"></label>
+<label class="nc-man">Hasło<input type="password" id="nc_pw" autocomplete="new-password"></label></div>
+<div style="margin-top:10px"><button class="pri" id="nc_go">＋ Utwórz config</button> <span class="hint" id="nc_info"></span></div></div>
 <div class="card"><h2>Ostatnie polecenia</h2><div id="cmds"></div></div></main><script>{HOST_JS}</script>""", user)
 
         def _session_page(self, user, world, char):
