@@ -601,6 +601,30 @@ def _write_config(path: str, data: dict) -> None:
     os.replace(tmp, path)
 
 
+# Profesje postaci (zapis w configu: "prof"); '' = wybór w panelu bota.
+PROFESSIONS = [("", "(wybór w bocie)"), ("w", "wojownik"), ("p", "paladyn"), ("b", "tancerz ostrzy"),
+               ("h", "łowca"), ("t", "tropiciel"), ("m", "mag")]
+PROF_LABEL = dict(PROFESSIONS)
+
+
+def config_prof(path: str) -> str:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return str(json.load(f).get("prof", "") or "")
+    except Exception:
+        return ""
+
+
+def set_config_prof(path: str, prof: str) -> None:
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if prof:
+        data["prof"] = prof
+    else:
+        data.pop("prof", None)
+    _write_config(path, data)
+
+
 def _config_dir() -> str:
     d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config")
     os.makedirs(d, exist_ok=True)
@@ -615,7 +639,7 @@ def _free_config_name(stem: str) -> str:
     return name
 
 
-def create_auto_config():
+def create_auto_config(prof: str = ""):
     """Nowe konto: plik configu z wygenerowanym loginem, hasłem i nickiem ("provisioned": false) – konto i postać
     zakłada START sesji. Zwraca (nazwa pliku, ścieżka, dane)."""
     from create_account import generate_login, generate_password, generate_nick
@@ -623,15 +647,20 @@ def create_auto_config():
     name = _free_config_name(nick)
     path = os.path.join(_config_dir(), name)
     data = {"login": [{"username": generate_login(), "password": generate_password()}], "nick": nick, "provisioned": False}
+    if prof in PROF_LABEL and prof:
+        data["prof"] = prof
     _write_config(path, data)
     return name, path, data
 
 
-def create_manual_config(name: str, login: str, password: str):
+def create_manual_config(name: str, login: str, password: str, prof: str = ""):
     """Config istniejącego konta (login i hasło podane). Zwraca (nazwa pliku, ścieżka)."""
     fname = _free_config_name(name or login)
     path = os.path.join(_config_dir(), fname)
-    _write_config(path, {"login": [{"username": login.strip(), "password": password}]})
+    data = {"login": [{"username": login.strip(), "password": password}]}
+    if prof in PROF_LABEL and prof:
+        data["prof"] = prof
+    _write_config(path, data)
     return fname, path
 
 
@@ -685,7 +714,7 @@ class BotRunner:
                 except Exception:
                     pass
 
-    def _start_bot(self, program: str):
+    def _start_bot(self, program: str, prof: str = ""):
         """START sesji = start bota: autoryzacja tokenu na serwerze (gdy skonfigurowany), program grupy/sesji, start."""
         from log_shipper import SHIPPER, check
         if SHIPPER.enabled:
@@ -701,6 +730,13 @@ class BotRunner:
                 if not self.driver.execute_script(js_ready):
                     time.sleep(2)
                     continue
+                if prof and not getattr(self, "_prof_done", False):
+                    rp = self.driver.execute_script("return Kraken.setProf ? Kraken.setProf(arguments[0]) : null;", prof) or {}
+                    self._prof_done = True
+                    if rp.get("locked"):
+                        self.log(f"🎓 Profesja z gry: {PROF_LABEL.get(rp.get('prof'), rp.get('prof'))} (config: {PROF_LABEL.get(prof, prof)})")
+                    elif rp.get("ok"):
+                        self.log(f"🎓 Profesja: {PROF_LABEL.get(prof, prof)}")
                 if program:
                     r = self.driver.execute_script("return Kraken.setProgram(arguments[0]);", program) or {}
                     if not r.get("ok"):
@@ -994,7 +1030,7 @@ class BotRunner:
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
         self._push_api_to_bot()
-        self._start_bot(cfg.get("program", ""))
+        self._start_bot(cfg.get("program", ""), str(config_data.get("prof", "") or ""))
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
         from log_shipper import SHIPPER
         if SHIPPER.enabled:
@@ -2446,6 +2482,19 @@ class SessionTab(tk.Frame):
                        activebackground=BG, activeforeground=ACCENT,
                        font=FONT_SMALL).pack(side="left", padx=(10, 0))
 
+        # ---- rząd 1d: profesja postaci (zapis w configu) ----
+        row1d = tk.Frame(self, bg=BG, pady=2)
+        row1d.pack(fill="x", padx=14)
+        tk.Label(row1d, text="Profesja:", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
+        self.prof_var = tk.StringVar(value=PROF_LABEL[""])
+        self.prof_cb = ttk.Combobox(row1d, textvariable=self.prof_var, font=FONT_SMALL, state="readonly", width=18,
+                                    values=[l for _, l in PROFESSIONS])
+        self.prof_cb.pack(side="left")
+        self.prof_cb.bind("<<ComboboxSelected>>", self._on_prof_selected)
+        tk.Label(row1d, text="(zapis w configu; bot wybiera ją w tutorialu)", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(8, 0))
+        self.cfg_cb.bind("<<ComboboxSelected>>", lambda _e: self._refresh_prof(), add="+")
+        self.after(0, self._refresh_prof)
+
         # ---- rząd 1c: program bota (z grupy albo własny sesji) ----
         row1c = tk.Frame(self, bg=BG, pady=2)
         row1c.pack(fill="x", padx=14)
@@ -2755,6 +2804,30 @@ class SessionTab(tk.Frame):
         self.log_widget.configure(state="normal")
         self.log_widget.delete("1.0", tk.END)
         self.log_widget.configure(state="disabled")
+
+    def _config_path(self) -> str:
+        key = self.config_var.get()
+        return self._config_map.get(key, "") if key else ""
+
+    def current_prof(self) -> str:
+        p = self._config_path()
+        return config_prof(p) if p and os.path.isfile(p) else ""
+
+    def _refresh_prof(self):
+        try:
+            self.prof_var.set(PROF_LABEL.get(self.current_prof(), PROF_LABEL[""]))
+        except Exception:
+            pass
+
+    def _on_prof_selected(self, _e=None):
+        p = self._config_path()
+        if not p or not os.path.isfile(p):
+            self.logger.write("⚠️  Wybierz najpierw config – profesja zapisuje się w configu postaci")
+            self._refresh_prof()
+            return
+        code = next((k for k, l in PROFESSIONS if l == self.prof_var.get()), "")
+        set_config_prof(p, code)
+        self.logger.write(f"🎓 Profesja w configu {os.path.basename(p)}: {PROF_LABEL[code]}")
 
     def _on_groups_changed(self):
         # Zamknięta karta sesji nadal jest na liście obserwatorów grup – bez wyjątku dla pozostałych.
@@ -3281,6 +3354,7 @@ class BotGUI:
                 "uid": s.uid, "name": s.name or f"sesja {i + 1}", "group": self.gm.group_of(s.session_id),
                 "world": s.server_var.get().lower(), "config": s.config_var.get(),
                 "char": os.path.splitext(s.config_var.get())[0], "status": s.status, "program": s.effective_program(),
+                "prof": PROF_LABEL.get(s.current_prof(), ""),
             } for i, s in enumerate(self._sessions)]
             HOST.options = {
                 "groups": [{"name": n, "world": w} for (w, n) in self.gm._groups],
@@ -3288,6 +3362,7 @@ class BotGUI:
                 "servers": SERVERS, "browsers": BROWSERS,
                 "templates": {b: _list_templates(b) for b in BROWSERS},
                 "programs": _list_programs(),
+                "professions": [{"name": k, "world": l} for k, l in PROFESSIONS],
             }
             while True:
                 try:
@@ -3312,10 +3387,10 @@ class BotGUI:
                 if p.get("mode") == "manual":
                     if not p.get("login") or not p.get("password"):
                         return HOST.report(c["id"], False, "brak loginu lub hasła")
-                    fname, path = create_manual_config(p.get("name", ""), p["login"], p["password"])
+                    fname, path = create_manual_config(p.get("name", ""), p["login"], p["password"], p.get("prof", ""))
                     msg = f"utworzono {fname}"
                 else:
-                    fname, path, data = create_auto_config()
+                    fname, path, data = create_auto_config(p.get("prof", ""))
                     msg = f"utworzono {fname} (nick {data['nick']}, konto założy START sesji)"
                 self._on_config_added(fname, path)
                 self._save_state()

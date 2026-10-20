@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "3.1.0"
+VERSION = "3.2.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -430,14 +430,14 @@ document.getElementById('ns_info').textContent='Wysłano – sesja pojawi się w
 const man=()=>{const m=document.getElementById('nc_mode').value==='manual';document.querySelectorAll('.nc-man').forEach(e=>e.style.display=m?'':'none')};document.getElementById('nc_mode').onchange=man;man();
 document.getElementById('nc_go').onclick=async()=>{const v=(i)=>document.getElementById(i).value;const m=v('nc_mode');
 if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){document.getElementById('nc_info').textContent='Podaj login i hasło.';return}
-await cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto'}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw')});
+await cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto',prof:v('nc_prof')}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw'),prof:v('nc_prof')});
 document.getElementById('nc_pw').value='';document.getElementById('nc_info').textContent='Wysłano – config pojawi się na liście w ciągu kilkunastu sekund.'};
 async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}const h=await r.json();
 document.getElementById('hn').textContent=h.name||id;forms(h);document.getElementById('hs').innerHTML=`<span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'} · ${esc(h.platform||'')} ${esc(h.version||'')}${h.saved?' · ustawienia zapisane '+new Date(h.saved*1000).toLocaleString('pl-PL'):''}`;
 const tb=document.getElementById('rows');tb.textContent='';const ss=h.sessions||[];
-if(!ss.length)tb.innerHTML=`<tr><td colspan=6 class=hint>${h.online?'Brak sesji w launcherze.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;
+if(!ss.length)tb.innerHTML=`<tr><td colspan=7 class=hint>${h.online?'Brak sesji w launcherze.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;
 for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';
-tr.innerHTML=`<td>${st[s.status]||esc(s.status)}</td><td>${esc(s.name)}</td><td>${esc(s.group||'')}</td><td>${esc(s.config||'')}</td><td>${esc(s.program||'')}</td><td></td>`;
+tr.innerHTML=`<td>${st[s.status]||esc(s.status)}</td><td>${esc(s.name)}</td><td>${esc(s.group||'')}</td><td>${esc(s.config||'')}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'')}</td><td></td>`;
 const b=document.createElement('button');b.className='sm '+(on?'':'pri');b.textContent=on?'⏹ Stop':'▶ Start';b.disabled=!h.online;b.onclick=()=>cmd(on?'stop':'start',s.uid,s.name);tr.lastChild.appendChild(b);tb.appendChild(tr)}
 const cb=document.getElementById('cmds');cb.textContent='';for(const c of (h.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
 d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${({start:'▶ start',stop:'⏹ stop',create_session:'＋ sesja',create_config:'＋ config'})[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
@@ -674,7 +674,7 @@ def make_handler(cfg, users, store, presence, hosts):
                 sess = []
                 for x in (body.get("sessions") or [])[:200]:
                     if isinstance(x, dict):
-                        sess.append({k: str(x.get(k, ""))[:80] for k in ("uid", "name", "group", "world", "config", "char", "status", "program")})
+                        sess.append({k: str(x.get(k, ""))[:80] for k in ("uid", "name", "group", "world", "config", "char", "status", "program", "prof")})
                 opts = body.get("options") if isinstance(body.get("options"), dict) else {}
                 clean_opts = {}
                 for k in ("groups", "configs", "servers", "browsers", "programs"):
@@ -796,8 +796,8 @@ def make_handler(cfg, users, store, presence, hosts):
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
-<div class="card"><h2>Sesje launchera</h2><table><thead><tr><th>Stan</th><th>Sesja</th><th>Grupa</th><th>Config</th><th>Program</th><th></th></tr></thead>
-<tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table>
+<div class="card"><h2>Sesje launchera</h2><table><thead><tr><th>Stan</th><th>Sesja</th><th>Grupa</th><th>Config</th><th>Profesja</th><th>Program</th><th></th></tr></thead>
+<tbody id="rows"><tr><td colspan=7 class=hint>Wczytuję…</td></tr></tbody></table>
 <p class="hint">Start/stop trafia do launchera przy jego następnym sygnale (do 10 s).</p></div>
 <div class="card"><h2>Nowa sesja</h2>
 <div class="grid2"><label>Nazwa<input type="text" id="ns_name" placeholder="np. sesja 5"></label>
@@ -812,7 +812,8 @@ def make_handler(cfg, users, store, presence, hosts):
 <div class="grid2"><label>Rodzaj<select id="nc_mode"><option value="auto">Nowe konto – login, hasło i nick generowane (konto zakłada START sesji)</option><option value="manual">Istniejące konto – podaję login i hasło</option></select></label>
 <label class="nc-man">Nazwa pliku<input type="text" id="nc_name" placeholder="np. MojaPostac"></label>
 <label class="nc-man">Login<input type="text" id="nc_login" autocomplete="off"></label>
-<label class="nc-man">Hasło<input type="password" id="nc_pw" autocomplete="new-password"></label></div>
+<label class="nc-man">Hasło<input type="password" id="nc_pw" autocomplete="new-password"></label>
+<label>Profesja<select id="nc_prof"><option value="">(wybór w bocie)</option><option value="w">wojownik</option><option value="p">paladyn</option><option value="b">tancerz ostrzy</option><option value="h">łowca</option><option value="t">tropiciel</option><option value="m">mag</option></select></label></div>
 <div style="margin-top:10px"><button class="pri" id="nc_go">＋ Utwórz config</button> <span class="hint" id="nc_info"></span></div></div>
 <div class="card"><h2>Ostatnie polecenia</h2><div id="cmds"></div></div></main><script>{HOST_JS}</script>""", user)
 
