@@ -12,7 +12,13 @@ API bota / launchera (nagłówek Authorization: Bearer <token użytkownika>, COR
   GET  /api/v1/me          – czy token jest poprawny: {"ok", "user"}
   POST /api/v1/logs        – {"source", "entries": [{"char", "world", "lines": [...]}]} (opcjonalnie gzip)
   POST /api/v1/heartbeat   – {"char", "world", "version", "running", "map", "lvl", "step", "source"}
-Panel: /  (sesje użytkownika i token), /session?world=&char=  (log na żywo), /password, /login, /logout
+API launchera (host):
+  POST /api/v1/host/heartbeat – {"host_id", "name", "platform", "version", "sessions": [...], "results": [...]}
+                                → {"ok", "commands": [{"id", "action", "session", "session_name"}]}
+  POST /api/v1/host/state     – {"host_id", "name", "state": {...}, "configs": {"plik.json": {...}}} – ustawienia launchera
+  GET  /api/v1/host/state?host_id=…   – zapisane ustawienia (odtworzenie); ?list=1 – hosty z zapisanymi ustawieniami
+Panel: /  (hosty, sesje, token), /host?id=  (sesje hosta, start/stop), /session?world=&char=  (log na żywo),
+       /password, /login, /logout
 """
 import argparse
 import gzip
@@ -31,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "2.0.0"
+VERSION = "3.0.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -253,6 +259,98 @@ class Presence:
             return {(w, c): v for (u, w, c), v in self.data.items() if u == user}
 
 
+class Hosts:
+    """Launchery (hosty) użytkowników: stan z sygnału „żyję” (w pamięci), zapisane ustawienia launchera (dysk)
+    i kolejka poleceń z panelu (start/stop sesji) odbierana przez launcher w odpowiedzi na sygnał."""
+
+    def __init__(self, cfg):
+        self.root = os.path.join(cfg["data_dir"], "users")
+        self.lock = threading.Lock()
+        self.live = {}          # (user, host_id) → info z sygnału + ts
+        self.cmds = {}          # (user, host_id) → [polecenia]
+        self.seq = 0
+
+    def _dir(self, user):
+        d = os.path.join(self.root, safe_name(user, "unknown"), "hosts")
+        os.makedirs(d, exist_ok=True)
+        return d
+
+    def _file(self, user, host_id):
+        return os.path.join(self._dir(user), safe_name(host_id, "host") + ".json")
+
+    def load(self, user, host_id):
+        try:
+            with open(self._file(user, host_id), "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+
+    def save_state(self, user, host_id, name, state, configs):
+        data = {"host_id": host_id, "name": name, "state": state, "configs": configs, "updated": int(time.time())}
+        path = self._file(user, host_id)
+        tmp = path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False)
+        os.chmod(tmp, 0o600)          # configi zawierają loginy i hasła kont gry
+        os.replace(tmp, path)
+        return data["updated"]
+
+    def saved(self, user):
+        out = []
+        for fn in sorted(os.listdir(self._dir(user))):
+            if fn.endswith(".json"):
+                d = self.load(user, fn[:-5]) or {}
+                out.append({"host_id": d.get("host_id", fn[:-5]), "name": d.get("name", ""), "updated": d.get("updated"),
+                            "sessions": len((d.get("state") or {}).get("sessions") or []), "configs": len(d.get("configs") or {})})
+        return out
+
+    def beat(self, user, info):
+        """Sygnał „żyję” launchera; zwraca polecenia do wykonania (oznaczone jako wysłane)."""
+        key = (user, info["host_id"])
+        with self.lock:
+            self.live[key] = dict(info, ts=time.time())
+            cmds = self.cmds.setdefault(key, [])
+            for r in info.get("results") or []:
+                for c in cmds:
+                    if c["id"] == r.get("id"):
+                        c.update(status="done" if r.get("ok") else "error", result=str(r.get("message", ""))[:300], done=time.time())
+            out = []
+            for c in cmds:
+                if c["status"] == "queued":
+                    c["status"] = "sent"
+                    c["sent"] = time.time()
+                    out.append({k: c[k] for k in ("id", "action", "session", "session_name")})
+                elif c["status"] == "sent" and time.time() - c.get("sent", 0) > 120:
+                    c.update(status="error", result="brak odpowiedzi launchera")
+            del cmds[:-50]
+            return out
+
+    def command(self, user, host_id, action, session, session_name):
+        with self.lock:
+            self.seq += 1
+            c = {"id": f"c{int(time.time())}{self.seq}", "action": action, "session": session,
+                 "session_name": session_name, "status": "queued", "created": time.time(), "result": ""}
+            self.cmds.setdefault((user, host_id), []).append(c)
+            return c["id"]
+
+    def of(self, user, online_s):
+        """Hosty użytkownika: online (sygnał) + zapisane na dysku (offline)."""
+        now = time.time()
+        rows = {}
+        for d in self.saved(user):
+            rows[d["host_id"]] = {"host_id": d["host_id"], "name": d["name"], "online": False, "last": d["updated"],
+                                  "sessions": [], "saved": d["updated"]}
+        with self.lock:
+            for (u, hid), v in self.live.items():
+                if u != user:
+                    continue
+                r = rows.setdefault(hid, {"host_id": hid, "saved": None})
+                r.update(name=v.get("name") or r.get("name") or hid, platform=v.get("platform", ""), version=v.get("version", ""),
+                         sessions=v.get("sessions") or [], online=now - v["ts"] < online_s, last=int(v["ts"]))
+                r["commands"] = [dict(c) for c in self.cmds.get((u, hid), [])][-15:]
+        return sorted(rows.values(), key=lambda r: (not r.get("online"), (r.get("name") or "").lower()))
+
+
 # ───────────────────────── HTML panelu ─────────────────────────
 
 CSS = """
@@ -260,6 +358,8 @@ CSS = """
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
 a{color:var(--acc)}header{display:flex;align-items:center;gap:12px;padding:10px 18px;background:var(--bg2);border-bottom:1px solid #222a44}
 header b{font-size:16px}header .sp{flex:1}main{max-width:1100px;margin:0 auto;padding:18px}
+.tag{display:inline-block;padding:1px 7px;border-radius:9px;background:var(--bg3);color:var(--dim);font-size:12px}
+.ok{color:var(--ok)}button.sm{padding:3px 9px;font-size:12.5px}button:disabled{opacity:.4;cursor:default}
 .card{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:14px 16px;margin-bottom:14px}
 h2{margin:0 0 10px;font-size:15px;color:var(--acc)}input,button{font:inherit}
 input[type=text],input[type=password]{background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;padding:7px 9px;width:100%}
@@ -277,23 +377,46 @@ table{width:100%;border-collapse:collapse}td,th{padding:6px 8px;border-bottom:1p
 
 def page(title, body, user=None):
     nav = (f'<header><b>🐙 Kraken</b><span class="sp"></span><span class="hint">{html.escape(user)}</span>'
-           f'<a class="btn" href="/">Sesje</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
+           f'<a class="btn" href="/">Panel</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
            if user else "")
     return (f'<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{html.escape(title)} – Kraken</title><style>{CSS}</style></head><body>{nav}{body}</body></html>')
 
 
 DASH_JS = """
+const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function hosts(){const r=await fetch('/panel/api/hosts');if(r.status===401)return;const list=await r.json();const tb=document.getElementById('hrows');tb.textContent='';
+if(!list.length){tb.innerHTML='<tr><td colspan=5 class=hint>Brak hostów – w launcherze: ⚙️ Ustawienia › adres i token.</td></tr>';return}
+for(const h of list){const tr=document.createElement('tr');const run=(h.sessions||[]).filter(s=>s.status==='RUNNING').length;
+tr.innerHTML=`<td><span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'}</td><td><a href="/host?id=${encodeURIComponent(h.host_id)}">${esc(h.name||h.host_id)}</a></td>
+<td>${esc(h.platform||'')} ${h.version?'<span class=tag>'+esc(h.version)+'</span>':''}</td><td>${h.online?run+' / '+(h.sessions||[]).length+' uruchomionych':'—'}</td><td>${fmt(h.last)}</td>`;tb.appendChild(tr)}}
 const fmt=(s)=>{if(s==null)return'—';const d=Math.round(Date.now()/1000-s);return d<60?d+' s temu':d<3600?Math.round(d/60)+' min temu':new Date(s*1000).toLocaleString('pl-PL')};
 async function load(){const r=await fetch('/panel/api/sessions');if(r.status===401){location='/login';return}
 const list=await r.json();const tb=document.getElementById('rows');tb.textContent='';
-if(!list.length){tb.innerHTML='<tr><td colspan=6 class=hint>Brak sesji – wpisz token w bocie (Ustawienia › Serwer) albo w launcherze (api.json).</td></tr>';return}
+if(!list.length){tb.innerHTML='<tr><td colspan=7 class=hint>Brak sesji – wpisz token w bocie (Ustawienia › Serwer) albo w launcherze (api.json).</td></tr>';return}
 for(const s of list){const tr=document.createElement('tr');const u=`/session?world=${encodeURIComponent(s.world)}&char=${encodeURIComponent(s.char)}`;
-tr.innerHTML=`<td><span class="dot ${s.online?'on':''}"></span>${s.online?'online':'offline'}</td><td><a></a></td><td></td><td></td><td></td><td></td>`;
+tr.innerHTML=`<td><span class="dot ${s.online?'on':''}"></span>${s.online?'online':'offline'}</td><td><a></a></td><td></td><td></td><td></td><td></td><td></td>`;
 const a=tr.children[1].firstChild;a.href=u;a.textContent=s.char;tr.children[2].textContent=s.world;
 tr.children[3].textContent=[s.lvl?('lvl '+s.lvl):'',s.map||''].filter(Boolean).join(' · ');tr.children[4].textContent=s.step||(s.running===false?'zatrzymany':'');
-tr.children[5].textContent=fmt(s.last);tb.appendChild(tr)}}
-load();setInterval(load,5000);
+tr.children[5].textContent=s.host||'poza launcherem';tr.children[6].textContent=fmt(s.last);tb.appendChild(tr)}}
+const tick=()=>{hosts();load()};tick();setInterval(tick,5000);
+"""
+
+HOST_JS = """
+const q=new URLSearchParams(location.search);const id=q.get('id');
+const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const st={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};
+async function cmd(action,s,name){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s,session_name:name})});load()}
+async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}const h=await r.json();
+document.getElementById('hn').textContent=h.name||id;document.getElementById('hs').innerHTML=`<span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'} · ${esc(h.platform||'')} ${esc(h.version||'')}${h.saved?' · ustawienia zapisane '+new Date(h.saved*1000).toLocaleString('pl-PL'):''}`;
+const tb=document.getElementById('rows');tb.textContent='';const ss=h.sessions||[];
+if(!ss.length)tb.innerHTML=`<tr><td colspan=6 class=hint>${h.online?'Brak sesji w launcherze.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;
+for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';
+tr.innerHTML=`<td>${st[s.status]||esc(s.status)}</td><td>${esc(s.name)}</td><td>${esc(s.group||'')}</td><td>${esc(s.config||'')}</td><td>${esc(s.program||'')}</td><td></td>`;
+const b=document.createElement('button');b.className='sm '+(on?'':'pri');b.textContent=on?'⏹ Stop':'▶ Start';b.disabled=!h.online;b.onclick=()=>cmd(on?'stop':'start',s.uid,s.name);tr.lastChild.appendChild(b);tb.appendChild(tr)}
+const cb=document.getElementById('cmds');cb.textContent='';for(const c of (h.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
+d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${c.action==='start'?'▶ start':'⏹ stop'} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
+load();setInterval(load,3000);
 """
 
 LIVE_JS = """
@@ -312,7 +435,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence):
+def make_handler(cfg, users, store, presence, hosts):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -416,6 +539,14 @@ def make_handler(cfg, users, store, presence):
             if p == "/api/v1/me":
                 u = self.token_user()
                 return self._send(200 if u else 401, {"ok": bool(u), "user": u})
+            if p == "/api/v1/host/state":
+                user = self.token_user()
+                if not user:
+                    return self._send(401, {"ok": False, "error": "unauthorized"})
+                if q.get("list"):
+                    return self._send(200, {"ok": True, "hosts": hosts.saved(user)})
+                d = hosts.load(user, q.get("host_id", ""))
+                return self._send(200 if d else 404, {"ok": bool(d), **(d or {})})
             if p == "/login":
                 return self._login_page()
             if p == "/logout":
@@ -433,6 +564,20 @@ def make_handler(cfg, users, store, presence):
             if p == "/session":
                 user = self._require_panel()
                 return user and self._session_page(user, q.get("world", ""), q.get("char", ""))
+            if p == "/host":
+                user = self._require_panel()
+                return user and self._host_page(user)
+            if p == "/panel/api/hosts":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                return self._send(200, [{k: v for k, v in h.items() if k != "commands"} for h in hosts.of(user, online_s)])
+            if p == "/panel/api/host":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                h = next((x for x in hosts.of(user, online_s) if x["host_id"] == q.get("id")), None)
+                return self._send(200 if h else 404, h or {"ok": False})
             if p == "/panel/api/sessions":
                 user = self.panel_user()
                 if not user:
@@ -486,6 +631,46 @@ def make_handler(cfg, users, store, presence):
                         for k in ("char", "world", "version", "running", "map", "lvl", "step", "source") if k in info}
                 presence.beat(user, keep)
                 return self._send(200, {"ok": True})
+            if p in ("/api/v1/host/heartbeat", "/api/v1/host/state"):
+                user = self.token_user()
+                if not user:
+                    return self._send(401, {"ok": False, "error": "unauthorized"})
+                try:
+                    body = json.loads((self._body() or b"").decode("utf-8"))
+                    hid = safe_name(body.get("host_id"), "")
+                    assert hid
+                except Exception:
+                    return self._send(400, {"ok": False, "error": "bad json"})
+                name = str(body.get("name", ""))[:64]
+                if p.endswith("state"):
+                    updated = hosts.save_state(user, hid, name, body.get("state") or {}, body.get("configs") or {})
+                    log.info("ustawienia launchera: %s / %s (%s)", user, name or hid, self.client_ip())
+                    return self._send(200, {"ok": True, "updated": updated})
+                sess = []
+                for x in (body.get("sessions") or [])[:200]:
+                    if isinstance(x, dict):
+                        sess.append({k: str(x.get(k, ""))[:80] for k in ("uid", "name", "group", "world", "config", "char", "status", "program")})
+                info = {"host_id": hid, "name": name, "platform": str(body.get("platform", ""))[:40],
+                        "version": str(body.get("version", ""))[:20], "sessions": sess, "results": body.get("results") or []}
+                return self._send(200, {"ok": True, "commands": hosts.beat(user, info)})
+            if p == "/panel/api/host/command":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                if "application/json" not in self.headers.get("Content-Type", ""):
+                    return self._send(400, {"ok": False})
+                try:
+                    body = json.loads((self._body() or b"").decode("utf-8"))
+                    action = body.get("action")
+                    assert action in ("start", "stop") and body.get("session")
+                except Exception:
+                    return self._send(400, {"ok": False, "error": "bad request"})
+                hid = safe_name(parse_qs(urlparse(self.path).query).get("id", [""])[0], "")
+                if not hid:
+                    return self._send(400, {"ok": False, "error": "no host"})
+                cid = hosts.command(user, hid, action, str(body["session"])[:64], str(body.get("session_name", ""))[:64])
+                log.info("polecenie %s %s → %s (%s)", action, body.get("session_name"), hid, user)
+                return self._send(200, {"ok": True, "id": cid})
             if p == "/login":
                 return self._login_post()
             if p == "/password":
@@ -567,8 +752,18 @@ def make_handler(cfg, users, store, presence):
 <form method="post" action="/token" onsubmit="return confirm('Nowy token unieważni obecny – trzeba go będzie wpisać ponownie w botach. Kontynuować?')">
 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('tok').textContent)">Kopiuj</button>
 <button type="submit">Wygeneruj nowy</button></form></div>
-<div class="card"><h2>Sesje</h2><table><thead><tr><th>Stan</th><th>Postać</th><th>Świat</th><th>Postęp</th><th>Krok</th><th>Ostatnio</th></tr></thead>
+<div class="card"><h2>Hosty</h2><p class="hint">Launchery z tym tokenem. Kliknij host, żeby zobaczyć jego sesje i uruchomić je z przeglądarki.</p>
+<table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div>
+<div class="card"><h2>Sesje bota</h2><p class="hint">Postacie wysyłające logi – z launchera albo uruchomione poza nim.</p>
+<table><thead><tr><th>Stan</th><th>Postać</th><th>Świat</th><th>Postęp</th><th>Krok</th><th>Host</th><th>Ostatnio</th></tr></thead>
 <tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table></div></main><script>{DASH_JS}</script>""", user)
+
+        def _host_page(self, user):
+            self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
+<div class="card"><h2>Sesje launchera</h2><table><thead><tr><th>Stan</th><th>Sesja</th><th>Grupa</th><th>Config</th><th>Program</th><th></th></tr></thead>
+<tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table>
+<p class="hint">Start/stop trafia do launchera przy jego następnym sygnale (do 10 s).</p></div>
+<div class="card"><h2>Ostatnie polecenia</h2><div id="cmds"></div></div></main><script>{HOST_JS}</script>""", user)
 
         def _session_page(self, user, world, char):
             self._html(200, char or "Sesja", f"""<main><div class="card">
@@ -588,9 +783,15 @@ def make_handler(cfg, users, store, presence):
                 r.update({k: v.get(k) for k in ("version", "running", "map", "lvl", "step")})
                 r["last"] = max(r["last"] or 0, int(v["ts"]))
                 r["online"] = now - v["ts"] < online_s
+            host_of = {}
+            for h in hosts.of(user, online_s):
+                for x in h.get("sessions") or []:
+                    if h.get("online") and x.get("char"):
+                        host_of[(safe_name(x.get("world"), "unknown").lower(), safe_name(x["char"], "unknown"))] = h.get("name") or h["host_id"]
             out = list(rows.values())
             for r in out:
                 r.setdefault("online", False)
+                r["host"] = host_of.get((str(r["world"]).lower(), safe_name(r["char"], "unknown")), "")
             out.sort(key=lambda r: (not r["online"], -(r["last"] or 0)))
             return out
 
@@ -621,7 +822,8 @@ def main():
     store = Store(cfg)
     presence = Presence()
     ThreadingHTTPServer.request_queue_size = 128     # domyślne 5 – za mało przy wielu postaciach naraz
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence))
+    hosts = Hosts(cfg)
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts))
     httpd.daemon_threads = True
 
     def stop(*_):

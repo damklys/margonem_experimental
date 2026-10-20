@@ -2034,17 +2034,19 @@ class LauncherSettingsDialog(tk.Toplevel):
     """Ustawienia launchera: serwer Kraken API (adres panelu i token użytkownika) – zapis do api.json.
     Launcher wysyła wtedy logi sesji, a przy starcie sesji przekazuje adres i token botowi w przeglądarce."""
 
-    def __init__(self, parent):
+    def __init__(self, parent, app=None):
         super().__init__(parent)
         from log_shipper import SHIPPER
+        self.app = app
         self.title("Ustawienia launchera")
         self.configure(bg=BG)
         self.resizable(False, False)
         self.transient(parent)
         self.url = tk.StringVar(value=SHIPPER.url)
         self.token = tk.StringVar(value=SHIPPER.token)
+        self.host_name = tk.StringVar(value=SHIPPER.host_name)
         tk.Label(self, text="📡 Serwer Kraken API", font=FONT_BOLD, bg=BG, fg=ACCENT).pack(anchor="w", padx=16, pady=(14, 6))
-        for label, var, show in (("Adres panelu:", self.url, ""), ("Token:", self.token, "•")):
+        for label, var, show in (("Adres panelu:", self.url, ""), ("Token:", self.token, "•"), ("Nazwa hosta:", self.host_name, "")):
             row = tk.Frame(self, bg=BG)
             row.pack(fill="x", padx=16, pady=3)
             tk.Label(row, text=label, width=13, anchor="w", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
@@ -2062,6 +2064,7 @@ class LauncherSettingsDialog(tk.Toplevel):
         btns.pack(fill="x", padx=16, pady=(4, 14))
         tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD, padx=10).pack(side="right")
         tk.Button(btns, text="Sprawdź połączenie", command=self._check, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right", padx=6)
+        tk.Button(btns, text="⬇ Odtwórz z serwera", command=self._restore, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="left")
         tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right")
 
     def _check(self):
@@ -2079,8 +2082,46 @@ class LauncherSettingsDialog(tk.Toplevel):
         if url and not url.lower().startswith("https://"):
             self.info.configure(text="Adres musi zaczynać się od https:// (bot w przeglądarce nie wyśle niczego na http).", fg=RED)
             return
-        save_config(url, self.token.get())
+        save_config(url, self.token.get(), self.host_name.get())
         self.destroy()
+
+    def _restore(self):
+        """Ustawienia launchera zapisane na serwerze (grupy, sesje, configi kont) → ten komputer."""
+        from log_shipper import save_config, HostLink, SHIPPER
+        if not self.app:
+            return
+        save_config(self.url.get(), self.token.get(), self.host_name.get())
+        if not SHIPPER.enabled:
+            self.info.configure(text="Najpierw adres (https://…) i token.", fg=RED)
+            return
+        try:
+            saved = HostLink.saved_hosts()
+        except Exception as e:
+            self.info.configure(text=f"❌ Serwer: {str(e)[:120]}", fg=RED)
+            return
+        if not saved:
+            self.info.configure(text="Na serwerze nie ma zapisanych ustawień żadnego launchera z tym tokenem.", fg=RED)
+            return
+        # Własny host, a gdy go nie ma (nowy komputer) – wybór spośród zapisanych.
+        own = next((h for h in saved if h["host_id"] == SHIPPER.host_id), None)
+        pick = own
+        if not pick:
+            labels = [f"{h.get('name') or h['host_id']} – {h['sessions']} sesji, {h['configs']} configów, "
+                      f"{time.strftime('%Y-%m-%d %H:%M', time.localtime(h['updated'] or 0))}" for h in saved]
+            choice = simpledialog.askinteger("Odtwórz z serwera",
+                                             "Którego launchera ustawienia odtworzyć?\n" + "\n".join(f"{i + 1}. {l}" for i, l in enumerate(labels)),
+                                             parent=self, minvalue=1, maxvalue=len(saved), initialvalue=1)
+            if not choice:
+                return
+            pick = saved[choice - 1]
+        if not messagebox.askyesno("Odtwórz z serwera", f"Zastąpić grupy, sesje i configi ustawieniami „{pick.get('name') or pick['host_id']}”?", parent=self):
+            return
+        try:
+            data = HostLink.fetch_state(pick["host_id"])
+            msg = self.app.restore_from_server(data)
+        except Exception as e:
+            msg = f"❌ {str(e)[:150]}"
+        self.info.configure(text=msg, fg=GREEN if msg.startswith("Odtworzono") else RED)
 
 
 class LayoutDialog(tk.Toplevel):
@@ -2278,6 +2319,9 @@ class SessionTab(tk.Frame):
         super().__init__(parent, bg=BG)
         self.session_id           = session_id
         self.name                 = name[:20] if name else ""
+        # Stały identyfikator sesji (polecenia start/stop z panelu WWW trafiają po nim).
+        import uuid as _uuid
+        self.uid                  = _uuid.uuid4().hex[:12]
         self._config_map          = config_map
         self.gm                   = group_manager
         self.on_status_change     = on_status_change
@@ -2727,6 +2771,7 @@ class SessionTab(tk.Frame):
     def get_settings(self) -> dict:
         """Zwraca słownik bieżących ustawień sesji (do zapisu stanu)."""
         return {
+            "uid":             self.uid,
             "name":            self.name,
             "config":          self.config_var.get(),
             "group":           self.gm.group_of(self.session_id),
@@ -2762,6 +2807,8 @@ class SessionTab(tk.Frame):
         self.after(0, self._refresh_program_row)
         if "name" in d:
             self.name = str(d["name"])[:20]
+        if d.get("uid"):
+            self.uid = str(d["uid"])[:24]
         grp_world = d.get("group_world", WORLDS[0])
         group = d.get("group") or self.gm.first_group(grp_world)
         if group and group in self.gm.group_names(grp_world):
@@ -2801,6 +2848,12 @@ class BotGUI:
         self._cleanup_lock_files()
         self._build_ui()
         self._load_state()
+        # Host w panelu WWW: sygnał z listą sesji, polecenia start/stop, zapis ustawień na serwer.
+        from log_shipper import HOST
+        HOST.start()
+        self._last_pushed = ""
+        self._last_push_check = 0.0
+        self.root.after(1500, self._host_tick)
 
     # ---- skanowanie ----
     def _scan_files(self):
@@ -2853,7 +2906,7 @@ class BotGUI:
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="⚙️ Ustawienia",
-                  command=lambda: LauncherSettingsDialog(root),
+                  command=lambda: LauncherSettingsDialog(root, app=self),
                   bg=BG3, fg=FG, font=FONT_BOLD,
                   relief="flat", cursor="hand2", padx=10, pady=4).pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="💾 Zapisz",
@@ -3199,15 +3252,107 @@ class BotGUI:
         for s in self._sessions:
             s._refresh_template_cb()
 
+    # ---- host w panelu WWW ----
+    def _host_tick(self):
+        from log_shipper import HOST
+        try:
+            HOST.snapshot = [{
+                "uid": s.uid, "name": s.name or f"sesja {i + 1}", "group": self.gm.group_of(s.session_id),
+                "world": s.server_var.get().lower(), "config": s.config_var.get(),
+                "char": os.path.splitext(s.config_var.get())[0], "status": s.status, "program": s.effective_program(),
+            } for i, s in enumerate(self._sessions)]
+            while True:
+                try:
+                    c = HOST.commands.get_nowait()
+                except Exception:
+                    break
+                self._run_command(c)
+            # Zmienione ustawienia → serwer (co 2 min sprawdzamy, czy coś się zmieniło).
+            if time.time() - self._last_push_check > 120:
+                self._last_push_check = time.time()
+                if json.dumps(self._state(), sort_keys=True) != self._last_pushed:
+                    self._save_state()
+        except Exception as e:
+            print(f"host: {e}")
+        self.root.after(2000, self._host_tick)
+
+    def _run_command(self, c: dict):
+        from log_shipper import HOST
+        tab = next((s for s in self._sessions if s.uid == c.get("session")), None)
+        name = c.get("session_name") or c.get("session")
+        if not tab:
+            return HOST.report(c["id"], False, f"brak sesji „{name}” w launcherze")
+        if c.get("action") == "start":
+            if tab.is_running:
+                return HOST.report(c["id"], True, "już działa")
+            tab.logger.write("🌐 START z panelu WWW")
+            tab._on_play()
+            return HOST.report(c["id"], tab.is_running, "uruchomiona" if tab.is_running else "nie wystartowała (config?)")
+        if c.get("action") == "stop":
+            if not tab.is_running:
+                return HOST.report(c["id"], True, "już zatrzymana")
+            tab.logger.write("🌐 STOP z panelu WWW")
+            tab._on_stop()
+            return HOST.report(c["id"], True, "zatrzymywana")
+        HOST.report(c["id"], False, "nieznane polecenie")
+
+    def _state(self) -> dict:
+        return {"groups": self.gm.to_dict(), "sessions": [s.get_settings() for s in self._sessions]}
+
+    def _configs_for_sync(self) -> dict:
+        out = {}
+        for name, path in self._config_map.items():
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    out[name] = json.load(f)
+            except Exception:
+                pass
+        return out
+
+    def restore_from_server(self, data: dict) -> str:
+        """Odtwarza ustawienia zapisane na serwerze: configi kont, grupy i sesje (bez działających sesji)."""
+        if any(s.is_running for s in self._sessions):
+            return "Zatrzymaj najpierw wszystkie sesje."
+        base = os.path.dirname(os.path.abspath(__file__))
+        cdir = os.path.join(base, "config")
+        os.makedirs(cdir, exist_ok=True)
+        n = 0
+        for name, content in (data.get("configs") or {}).items():
+            fn = os.path.basename(str(name))
+            if not fn.endswith(".json") or fn in ("discord.json",) or not isinstance(content, dict):
+                continue
+            tmp = os.path.join(cdir, fn + ".tmp")
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
+            os.replace(tmp, os.path.join(cdir, fn))
+            n += 1
+        state = data.get("state") or {}
+        with open(self._state_file, "w", encoding="utf-8") as f:
+            json.dump(state, f, ensure_ascii=False, indent=2)
+        for tab in list(self._sessions):
+            self._remove_session(tab)
+        for (w, gname) in list(self.gm._groups):
+            self.gm._groups.pop((w, gname), None)
+        self.gm._favorites.clear()
+        self._on_config_refresh()
+        self._load_state()
+        self.gm._notify()
+        self._last_pushed = json.dumps(self._state(), sort_keys=True)
+        return f"Odtworzono: {n} configów, {len(state.get('groups') or [])} grup, {len(state.get('sessions') or [])} sesji."
+
     # ---- persystencja stanu ----
     def _save_state(self):
-        state = {
-            "groups":   self.gm.to_dict(),
-            "sessions": [s.get_settings() for s in self._sessions],
-        }
+        state = self._state()
         try:
             with open(self._state_file, "w", encoding="utf-8") as f:
                 json.dump(state, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+        # Kopia ustawień i configów na serwerze (⚙️ Ustawienia › Odtwórz z serwera na innym komputerze).
+        try:
+            from log_shipper import HOST
+            HOST.push_state(state, self._configs_for_sync())
+            self._last_pushed = json.dumps(state, sort_keys=True)
         except Exception:
             pass
 
