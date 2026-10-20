@@ -418,6 +418,8 @@ if(first){const o=document.createElement('option');o.value='';o.textContent=firs
 for(const it of items){const o=document.createElement('option');o.value=typeof it==='string'?it:it.value;o.textContent=typeof it==='string'?it:it.label;el.appendChild(o)}
 if(keep&&[...el.options].some(o=>o.value===cur))el.value=cur};
 function forms(h){const o=h.options||{};const sig=JSON.stringify(o);if(sig===opts)return;opts=sig;
+const none=!(o.groups||o.configs);for(const id of ['ns_info','nc_info'])document.getElementById(id).textContent=none?(h.online?'Launcher nie przesłał list (grupy, configi…) – zaktualizuj launcher (git pull) do wersji 3.1+ i uruchom go ponownie.':'Host offline – listy pojawią się, gdy launcher będzie uruchomiony.'):'';
+document.getElementById('ns_go').disabled=none||!h.online;document.getElementById('nc_go').disabled=!h.online;
 fill('ns_group',(o.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.name} (${g.world})`})),true);
 fill('ns_config',o.configs||[],true);fill('ns_server',o.servers||[],true);fill('ns_browser',o.browsers||[],true);
 const tpl=()=>fill('ns_template',(o.templates||{})[document.getElementById('ns_browser').value]||[],true,'(brak)');tpl();document.getElementById('ns_browser').onchange=tpl;
