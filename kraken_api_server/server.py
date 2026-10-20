@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "3.2.0"
+VERSION = "4.0.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -409,38 +409,84 @@ const tick=()=>{hosts();load()};tick();setInterval(tick,5000);
 """
 
 HOST_JS = """
-const q=new URLSearchParams(location.search);const id=q.get('id');
-const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const st={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};
-async function cmd(action,s,name,params){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s,session_name:name,params})});load()}
-let opts=null;const fill=(sel,items,keep,first)=>{const el=document.getElementById(sel);const cur=el.value;el.textContent='';
-if(first){const o=document.createElement('option');o.value='';o.textContent=first;el.appendChild(o)}
-for(const it of items){const o=document.createElement('option');o.value=typeof it==='string'?it:it.value;o.textContent=typeof it==='string'?it:it.label;el.appendChild(o)}
-if(keep&&[...el.options].some(o=>o.value===cur))el.value=cur};
-function forms(h){const o=h.options||{};const sig=JSON.stringify(o);if(sig===opts)return;opts=sig;
-const none=!(o.groups||o.configs);for(const id of ['ns_info','nc_info'])document.getElementById(id).textContent=none?(h.online?'Launcher nie przesłał list (grupy, configi…) – zaktualizuj launcher (git pull) do wersji 3.1+ i uruchom go ponownie.':'Host offline – listy pojawią się, gdy launcher będzie uruchomiony.'):'';
-document.getElementById('ns_go').disabled=none||!h.online;document.getElementById('nc_go').disabled=!h.online;
-fill('ns_group',(o.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.name} (${g.world})`})),true);
-fill('ns_config',o.configs||[],true);fill('ns_server',o.servers||[],true);fill('ns_browser',o.browsers||[],true);
-const tpl=()=>fill('ns_template',(o.templates||{})[document.getElementById('ns_browser').value]||[],true,'(brak)');tpl();document.getElementById('ns_browser').onchange=tpl;
-fill('ns_program',o.programs||[],true,'(program grupy)')}
-document.getElementById('ns_go').onclick=async()=>{const v=(i)=>document.getElementById(i).value;if(!v('ns_group')){document.getElementById('ns_info').textContent='Launcher nie ma grup – utwórz grupę w launcherze.';return}
-const [group,world]=v('ns_group').split('|');await cmd('create_session','',v('ns_name')||'nowa sesja',{name:v('ns_name'),group,world,config:v('ns_config'),server:v('ns_server'),browser:v('ns_browser'),template:v('ns_template'),program:v('ns_program')});
-document.getElementById('ns_info').textContent='Wysłano – sesja pojawi się w ciągu kilkunastu sekund.'};
-const man=()=>{const m=document.getElementById('nc_mode').value==='manual';document.querySelectorAll('.nc-man').forEach(e=>e.style.display=m?'':'none')};document.getElementById('nc_mode').onchange=man;man();
-document.getElementById('nc_go').onclick=async()=>{const v=(i)=>document.getElementById(i).value;const m=v('nc_mode');
-if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){document.getElementById('nc_info').textContent='Podaj login i hasło.';return}
-await cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto',prof:v('nc_prof')}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw'),prof:v('nc_prof')});
-document.getElementById('nc_pw').value='';document.getElementById('nc_info').textContent='Wysłano – config pojawi się na liście w ciągu kilkunastu sekund.'};
-async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}const h=await r.json();
-document.getElementById('hn').textContent=h.name||id;forms(h);document.getElementById('hs').innerHTML=`<span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'} · ${esc(h.platform||'')} ${esc(h.version||'')}${h.saved?' · ustawienia zapisane '+new Date(h.saved*1000).toLocaleString('pl-PL'):''}`;
-const tb=document.getElementById('rows');tb.textContent='';const ss=h.sessions||[];
-if(!ss.length)tb.innerHTML=`<tr><td colspan=7 class=hint>${h.online?'Brak sesji w launcherze.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;
+const q=new URLSearchParams(location.search);const id=q.get('id');let H={},O={},editing=null,gediting=null;
+const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PROFS=[['','(wybór w bocie)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
+const ST={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};const BOT={running:'🤖 pracuje',stopped:'⏸ stoi',loading:'… wczytuje'};
+async function cmd(action,s,name,params){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s||'',session_name:name||'',params:params||{}})});setTimeout(load,300)}
+const opt=(items,cur,first)=>(first!=null?`<option value="">${esc(first)}</option>`:'')+items.map(it=>{const v=typeof it==='string'?it:it.value,l=typeof it==='string'?it:it.label;return `<option value="${esc(v)}"${v===cur?' selected':''}>${esc(l)}</option>`}).join('');
+const btn=(t,cls,fn,dis)=>{const b=document.createElement('button');b.className='sm '+(cls||'');b.textContent=t;b.disabled=!!dis;b.onclick=fn;return b};
+const groupsOpt=()=>(O.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.name} (${g.world})`}));
+function sessions(){const tb=$('rows');tb.textContent='';const ss=H.sessions||[];
+if(!ss.length){tb.innerHTML=`<tr><td colspan=8 class=hint>${H.online?'Brak sesji.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;return}
 for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';
-tr.innerHTML=`<td>${st[s.status]||esc(s.status)}</td><td>${esc(s.name)}</td><td>${esc(s.group||'')}</td><td>${esc(s.config||'')}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'')}</td><td></td>`;
-const b=document.createElement('button');b.className='sm '+(on?'':'pri');b.textContent=on?'⏹ Stop':'▶ Start';b.disabled=!h.online;b.onclick=()=>cmd(on?'stop':'start',s.uid,s.name);tr.lastChild.appendChild(b);tb.appendChild(tr)}
-const cb=document.getElementById('cmds');cb.textContent='';for(const c of (h.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
-d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${({start:'▶ start',stop:'⏹ stop',create_session:'＋ sesja',create_config:'＋ config'})[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
+tr.innerHTML=`<td>${ST[s.status]||esc(s.status)}</td><td>${on?(BOT[s.bot]||'…'):'—'}</td><td>${esc(s.name)}</td><td>${esc(s.group)}</td><td>${esc(s.config)}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'(z bota)')}${s.prog_override?' <span class=tag>własny</span>':''}</td><td></td>`;
+const a=tr.lastChild;a.style.whiteSpace='nowrap';
+a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>cmd(on?'stop':'start',s.uid,s.name),!H.online));
+a.appendChild(btn(s.bot==='running'?'⏸ Bot':'▶ Bot','',()=>cmd(s.bot==='running'?'bot_stop':'bot_start',s.uid,s.name),!H.online||!on||s.bot==='loading'));
+a.appendChild(btn('✎','',()=>{editing=editing===s.uid?null:s.uid;edit()},!H.online));
+a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć sesję „${s.name}”?`))cmd('delete_session',s.uid,s.name)},!H.online||on));tb.appendChild(tr)}}
+function edit(){const box=$('edit');const s=(H.sessions||[]).find(x=>x.uid===editing);if(!s){box.style.display='none';return}
+if(box.dataset.uid===editing&&box.style.display!=='none')return;box.dataset.uid=editing;box.style.display='';const on=s.status==='RUNNING'||s.status==='STOPPING';
+box.innerHTML=`<h2>Edycja sesji „${esc(s.name)}”</h2><div class="grid2">
+<label>Nazwa<input type="text" id="es_name" value="${esc(s.name)}"></label>
+<label>Grupa<select id="es_group"${on?' disabled':''}>${opt(groupsOpt(),s.group+'|'+(s.group_world||''))}</select></label>
+<label>Config<select id="es_config"${on?' disabled':''}>${opt(O.configs||[],s.config)}</select></label>
+<label>Serwer<select id="es_server">${opt(O.servers||[],s.server)}</select></label>
+<label>Przeglądarka<select id="es_browser"${on?' disabled':''}>${opt(O.browsers||[],s.browser)}</select></label>
+<label>Szablon<select id="es_template"${on?' disabled':''}></select></label>
+<label>Program<select id="es_program">${opt(O.programs||[],s.prog_override?s.own_program:'','(program grupy)')}</select></label>
+<label><span><input type="checkbox" id="es_recreate"${s.recreate?' checked':''}> Recreate (nowy profil przy starcie)</span></label>
+<label><span><input type="checkbox" id="es_rof"${s.restart_on_fail?' checked':''}> Restart on fail</span></label></div>
+<div style="margin-top:10px"><button class="pri" id="es_save">Zapisz</button> <button id="es_cancel">Anuluj</button>${on?' <span class=hint>Sesja działa – config, grupę, przeglądarkę i szablon zmienisz po zatrzymaniu.</span>':''}</div>`;
+const tpl=()=>{$('es_template').innerHTML=opt((O.templates||{})[$('es_browser').value]||[],s.template,'(brak)')};tpl();$('es_browser').onchange=tpl;
+$('es_cancel').onclick=()=>{editing=null;box.style.display='none'};
+$('es_save').onclick=()=>{const [group,gw]=$('es_group').value.split('|');const prog=$('es_program').value;const p={name:$('es_name').value,server:$('es_server').value,
+recreate:$('es_recreate').checked,restart_on_fail:$('es_rof').checked,prog_override:!!prog,program:prog};
+if(!on)Object.assign(p,{group,group_world:gw,config:$('es_config').value,browser:$('es_browser').value,template:$('es_template').value||'(brak)'});
+cmd('update_session',s.uid,s.name,p);editing=null;box.style.display='none'}}
+function groups(){const tb=$('grows');tb.textContent='';for(const g of O.groups||[]){const tr=document.createElement('tr');
+const lay=g.layout_enabled===true||g.layout_enabled==='True'?`${g.layout_cols}×${g.layout_rows}, ekran ${(+g.layout_screen||0)+1}, zoom ${g.layout_zoom}`:'wyłączony';
+tr.innerHTML=`<td>${esc(g.name)}</td><td>${esc(g.world)}</td><td>${esc(g.program||'(bez zmiany)')}</td><td>${esc(lay)}</td><td></td>`;const a=tr.lastChild;
+a.appendChild(btn('✎','',()=>{gediting=gediting===g.name+'|'+g.world?null:g.name+'|'+g.world;gedit()},!H.online));
+a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć grupę „${g.name}”? Sesje trafią do innej grupy.`))cmd('delete_group','',g.name,{name:g.name,world:g.world})},!H.online));tb.appendChild(tr)}
+if(!(O.groups||[]).length)tb.innerHTML='<tr><td colspan=5 class=hint>Brak grup.</td></tr>';$('ng_world').innerHTML=opt(O.worlds||['Gordion'],$('ng_world').value)}
+function gedit(){const box=$('gedit');const g=(O.groups||[]).find(x=>x.name+'|'+x.world===gediting);if(!g){box.style.display='none';return}
+if(box.dataset.g===gediting&&box.style.display!=='none')return;box.dataset.g=gediting;box.style.display='';const en=g.layout_enabled===true||g.layout_enabled==='True';
+box.innerHTML=`<h2>Grupa „${esc(g.name)}”</h2><div class="grid2"><label>Nazwa<input type="text" id="eg_name" value="${esc(g.name)}"></label>
+<label>Program grupy<select id="eg_program">${opt(O.programs||[],g.program||'','(bez zmiany – program z bota)')}</select></label>
+<label><span><input type="checkbox" id="eg_en"${en?' checked':''}> Układaj okna przeglądarek</span></label>
+<label>Ekran<select id="eg_screen">${(O.screens||[]).map((x,i)=>`<option value="${i}"${i===(+g.layout_screen||0)?' selected':''}>${esc(x.name)}</option>`).join('')}</select></label>
+<label>Kolumny<input type="text" id="eg_cols" value="${esc(g.layout_cols)}"></label><label>Wiersze<input type="text" id="eg_rows" value="${esc(g.layout_rows)}"></label>
+<label>Skalowanie<select id="eg_zoom">${opt((O.zooms||[]).map(z=>({value:z,label:z==='auto'?'Auto':z+'%'})),String(g.layout_zoom))}</select></label></div>
+<div style="margin-top:10px"><button class="pri" id="eg_save">Zapisz</button> <button id="eg_cancel">Anuluj</button></div>`;
+$('eg_cancel').onclick=()=>{gediting=null;box.style.display='none'};
+$('eg_save').onclick=async()=>{const nn=$('eg_name').value.trim();await cmd('update_group','',g.name,{name:g.name,world:g.world,program:$('eg_program').value,layout_enabled:$('eg_en').checked,layout_screen:$('eg_screen').value,layout_cols:$('eg_cols').value,layout_rows:$('eg_rows').value,layout_zoom:$('eg_zoom').value});
+if(nn&&nn!==g.name)await cmd('rename_group','',g.name,{name:g.name,new:nn,world:g.world});gediting=null;box.style.display='none'}}
+function configs(){const tb=$('crows');tb.textContent='';for(const c of O.config_profs||[]){const tr=document.createElement('tr');tr.innerHTML=`<td>${esc(c.name)}</td><td></td>`;
+const sel=document.createElement('select');sel.innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),c.prof||'');sel.disabled=!H.online;
+sel.onchange=()=>cmd('set_config_prof','',c.name,{config:c.name,prof:sel.value});tr.lastChild.appendChild(sel);tb.appendChild(tr)}
+if(!(O.config_profs||[]).length)tb.innerHTML='<tr><td colspan=2 class=hint>Brak configów.</td></tr>'}
+let optSig='';function forms(){const sig=JSON.stringify(O);if(sig===optSig)return;optSig=sig;
+$('ns_group').innerHTML=opt(groupsOpt(),$('ns_group').value);$('ns_config').innerHTML=opt(O.configs||[],$('ns_config').value);
+$('ns_server').innerHTML=opt(O.servers||[],$('ns_server').value);$('ns_browser').innerHTML=opt(O.browsers||[],$('ns_browser').value);
+const tpl=()=>{$('ns_template').innerHTML=opt((O.templates||{})[$('ns_browser').value]||[],$('ns_template').value,'(brak)')};tpl();$('ns_browser').onchange=tpl;
+$('ns_program').innerHTML=opt(O.programs||[],$('ns_program').value,'(program grupy)');$('nc_prof').innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),$('nc_prof').value);
+groups();configs()}
+$('ns_go').onclick=()=>{const v=(i)=>$(i).value;if(!v('ns_group')){$('ns_info').textContent='Brak grup – utwórz grupę.';return}const [group,world]=v('ns_group').split('|');
+cmd('create_session','',v('ns_name')||'nowa sesja',{name:v('ns_name'),group,world,config:v('ns_config'),server:v('ns_server'),browser:v('ns_browser'),template:v('ns_template'),program:v('ns_program')});$('ns_info').textContent='Wysłano.'};
+const man=()=>{const m=$('nc_mode').value==='manual';document.querySelectorAll('.nc-man').forEach(e=>e.style.display=m?'':'none')};$('nc_mode').onchange=man;man();
+$('nc_go').onclick=()=>{const v=(i)=>$(i).value;const m=v('nc_mode');if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){$('nc_info').textContent='Podaj login i hasło.';return}
+cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto',prof:v('nc_prof')}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw'),prof:v('nc_prof')});$('nc_pw').value='';$('nc_info').textContent='Wysłano.'};
+$('ng_go').onclick=()=>{const n=$('ng_name').value.trim();if(!n)return;cmd('create_group','',n,{name:n,world:$('ng_world').value});$('ng_name').value=''};
+const ACT={start:'▶ sesja',stop:'⏹ sesja',bot_start:'▶ bot',bot_stop:'⏸ bot',create_session:'＋ sesja',update_session:'✎ sesja',delete_session:'🗑 sesja',create_config:'＋ config',set_config_prof:'🎓 profesja',create_group:'＋ grupa',rename_group:'✎ nazwa grupy',delete_group:'🗑 grupa',update_group:'✎ grupa'};
+async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}H=await r.json();O=H.options||{};
+$('hn').textContent=H.name||id;$('hs').innerHTML=`<span class="dot ${H.online?'on':''}"></span>${H.online?'online':'offline'} · ${esc(H.platform||'')} ${esc(H.version||'')}${H.saved?' · ustawienia zapisane '+new Date(H.saved*1000).toLocaleString('pl-PL'):''}`;
+const none=!O.groups&&H.online;$('ns_info').textContent=none?'Launcher nie przesłał list – zaktualizuj launcher (git pull) i uruchom ponownie.':'';
+for(const b of ['ns_go','nc_go','ng_go'])$(b).disabled=!H.online;
+sessions();forms();edit();gedit();
+const cb=$('cmds');cb.textContent='';for(const c of (H.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
+d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${ACT[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
 load();setInterval(load,3000);
 """
 
@@ -672,15 +718,16 @@ def make_handler(cfg, users, store, presence, hosts):
                     log.info("ustawienia launchera: %s / %s (%s)", user, name or hid, self.client_ip())
                     return self._send(200, {"ok": True, "updated": updated})
                 sess = []
+                val = lambda v: v if isinstance(v, (bool, int, float)) else str(v if v is not None else "")[:100]
                 for x in (body.get("sessions") or [])[:200]:
                     if isinstance(x, dict):
-                        sess.append({k: str(x.get(k, ""))[:80] for k in ("uid", "name", "group", "world", "config", "char", "status", "program", "prof")})
+                        sess.append({str(k)[:32]: val(v) for k, v in list(x.items())[:30]})
                 opts = body.get("options") if isinstance(body.get("options"), dict) else {}
                 clean_opts = {}
-                for k in ("groups", "configs", "servers", "browsers", "programs"):
+                for k in ("groups", "configs", "config_profs", "servers", "browsers", "programs", "screens", "zooms", "worlds"):
                     v = opts.get(k)
                     if isinstance(v, list):
-                        clean_opts[k] = [({kk: str(x.get(kk, ""))[:64] for kk in ("name", "world")} if isinstance(x, dict) else str(x)[:80]) for x in v[:300]]
+                        clean_opts[k] = [({str(kk)[:32]: val(vv) for kk, vv in list(x.items())[:20]} if isinstance(x, dict) else val(x)) for x in v[:300]]
                 if isinstance(opts.get("templates"), dict):
                     clean_opts["templates"] = {str(b)[:20]: [str(t)[:64] for t in (ts or [])[:100]] for b, ts in list(opts["templates"].items())[:5]}
                 info = {"host_id": hid, "name": name, "platform": str(body.get("platform", ""))[:40], "options": clean_opts,
@@ -695,8 +742,10 @@ def make_handler(cfg, users, store, presence, hosts):
                 try:
                     body = json.loads((self._body() or b"").decode("utf-8"))
                     action = body.get("action")
-                    assert action in ("start", "stop", "create_session", "create_config")
-                    assert action.startswith("create") or body.get("session")
+                    assert action in ("start", "stop", "bot_start", "bot_stop", "create_session", "update_session",
+                                      "delete_session", "create_config", "set_config_prof",
+                                      "create_group", "rename_group", "delete_group", "update_group")
+                    assert action not in ("start", "stop", "bot_start", "bot_stop", "update_session", "delete_session") or body.get("session")
                     params = body.get("params") if isinstance(body.get("params"), dict) else {}
                     params = {str(k)[:32]: (v if isinstance(v, bool) else str(v)[:120]) for k, v in list(params.items())[:20]}
                 except Exception:
@@ -796,24 +845,27 @@ def make_handler(cfg, users, store, presence, hosts):
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
-<div class="card"><h2>Sesje launchera</h2><table><thead><tr><th>Stan</th><th>Sesja</th><th>Grupa</th><th>Config</th><th>Profesja</th><th>Program</th><th></th></tr></thead>
-<tbody id="rows"><tr><td colspan=7 class=hint>Wczytuję…</td></tr></tbody></table>
-<p class="hint">Start/stop trafia do launchera przy jego następnym sygnale (do 10 s).</p></div>
+<div class="card"><h2>Sesje</h2><table><thead><tr><th>Sesja</th><th>Bot</th><th>Nazwa</th><th>Grupa</th><th>Config</th><th>Profesja</th><th>Program</th><th></th></tr></thead>
+<tbody id="rows"><tr><td colspan=8 class=hint>Wczytuję…</td></tr></tbody></table>
+<div id="edit" class="card" style="display:none;margin-top:12px"></div>
+<p class="hint">Polecenia trafiają do launchera przy jego następnym sygnale (do 10 s). ⏸ Bot zatrzymuje samego bota – przeglądarka i gra zostają.</p></div>
+<div class="card"><h2>Grupy</h2><table><thead><tr><th>Grupa</th><th>Świat</th><th>Program grupy</th><th>Układ okien</th><th></th></tr></thead>
+<tbody id="grows"></tbody></table><div id="gedit" class="card" style="display:none;margin-top:12px"></div>
+<div class="grid2" style="margin-top:10px"><label>Nowa grupa<input type="text" id="ng_name" placeholder="nazwa"></label><label>Świat<select id="ng_world"></select></label></div>
+<div style="margin-top:8px"><button class="pri" id="ng_go">＋ Utwórz grupę</button></div></div>
 <div class="card"><h2>Nowa sesja</h2>
-<div class="grid2"><label>Nazwa<input type="text" id="ns_name" placeholder="np. sesja 5"></label>
-<label>Grupa<select id="ns_group"></select></label>
-<label>Config<select id="ns_config"></select></label>
-<label>Serwer<select id="ns_server"></select></label>
-<label>Przeglądarka<select id="ns_browser"></select></label>
-<label>Szablon profilu<select id="ns_template"></select></label>
-<label>Program (opcjonalnie)<select id="ns_program"></select></label></div>
+<div class="grid2"><label>Nazwa<input type="text" id="ns_name" placeholder="puste = automatyczna"></label>
+<label>Grupa<select id="ns_group"></select></label><label>Config<select id="ns_config"></select></label>
+<label>Serwer<select id="ns_server"></select></label><label>Przeglądarka<select id="ns_browser"></select></label>
+<label>Szablon profilu<select id="ns_template"></select></label><label>Program (opcjonalnie)<select id="ns_program"></select></label></div>
 <div style="margin-top:10px"><button class="pri" id="ns_go">＋ Utwórz sesję</button> <span class="hint" id="ns_info"></span></div></div>
-<div class="card"><h2>Nowy config</h2>
+<div class="card"><h2>Configi</h2><table><thead><tr><th>Config</th><th>Profesja</th></tr></thead><tbody id="crows"></tbody></table>
+<h2 style="margin-top:14px">Nowy config</h2>
 <div class="grid2"><label>Rodzaj<select id="nc_mode"><option value="auto">Nowe konto – login, hasło i nick generowane (konto zakłada START sesji)</option><option value="manual">Istniejące konto – podaję login i hasło</option></select></label>
 <label class="nc-man">Nazwa pliku<input type="text" id="nc_name" placeholder="np. MojaPostac"></label>
 <label class="nc-man">Login<input type="text" id="nc_login" autocomplete="off"></label>
 <label class="nc-man">Hasło<input type="password" id="nc_pw" autocomplete="new-password"></label>
-<label>Profesja<select id="nc_prof"><option value="">(wybór w bocie)</option><option value="w">wojownik</option><option value="p">paladyn</option><option value="b">tancerz ostrzy</option><option value="h">łowca</option><option value="t">tropiciel</option><option value="m">mag</option></select></label></div>
+<label>Profesja<select id="nc_prof"></select></label></div>
 <div style="margin-top:10px"><button class="pri" id="nc_go">＋ Utwórz config</button> <span class="hint" id="nc_info"></span></div></div>
 <div class="card"><h2>Ostatnie polecenia</h2><div id="cmds"></div></div></main><script>{HOST_JS}</script>""", user)
 

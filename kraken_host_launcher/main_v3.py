@@ -680,6 +680,9 @@ class BotRunner:
         self.browser_pid: "int | None" = None
         self._config_lock_path = None
         self.login_done_event  = threading.Event()   # sygnał: logowanie zakończone
+        self.bot_state         = ""                  # running / stopped / loading – odczyt z przeglądarki co 5 s
+        self.program           = config.get("program", "")
+        self.prof              = ""
 
     def log(self, msg):
         self.logger.write(msg)
@@ -713,6 +716,41 @@ class BotRunner:
                     self.log("🔒 Przeglądarka zamknięta.")
                 except Exception:
                     pass
+
+    def _read_bot_state(self) -> str:
+        try:
+            return self.driver.execute_script(
+                "return !window.Kraken || !Kraken.isRunning ? 'loading' : (Kraken.isRunning() ? 'running' : 'stopped');") or ""
+        except Exception:
+            return ""
+
+    def bot_command(self, action: str, program: str = None, done=None):
+        """Bot w działającej sesji (przeglądarka zostaje): start z programem/profesją albo zatrzymanie. W tle."""
+        def run():
+            ok, msg = False, ""
+            try:
+                if not self.driver:
+                    msg = "sesja nie działa"
+                elif action == "bot_stop":
+                    if self.driver.execute_script("return !!(window.Kraken && Kraken.isRunning && Kraken.isRunning());"):
+                        self.driver.execute_script("Kraken.stop('Zatrzymano z launchera');")
+                        self.log("⏸ Bot zatrzymany (sesja działa dalej)")
+                        ok, msg = True, "bot zatrzymany"
+                    else:
+                        ok, msg = True, "bot już stoi"
+                else:
+                    if program is not None:
+                        self.program = program
+                    self._prof_done = False
+                    self._start_bot(self.program, self.prof)
+                    ok = self._read_bot_state() == "running"
+                    msg = "bot uruchomiony" if ok else "bot nie wystartował (log sesji)"
+            except Exception as e:
+                msg = str(e)[:200]
+            self.bot_state = self._read_bot_state()
+            if done:
+                done(ok, msg)
+        threading.Thread(target=run, daemon=True).start()
 
     def _start_bot(self, program: str, prof: str = ""):
         """START sesji = start bota: autoryzacja tokenu na serwerze (gdy skonfigurowany), program grupy/sesji, start."""
@@ -1030,17 +1068,22 @@ class BotRunner:
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
         self._push_api_to_bot()
-        self._start_bot(cfg.get("program", ""), str(config_data.get("prof", "") or ""))
+        self.prof = str(config_data.get("prof", "") or "")
+        self._start_bot(cfg.get("program", ""), self.prof)
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
         from log_shipper import SHIPPER
         if SHIPPER.enabled:
             self.log(f"📡 Logi postaci → {SHIPPER.url}")
         last_pull = 0.0
+        last_state = 0.0
         while not self.stop_event.is_set():
             if not self._browser_alive():
                 self.log("🔒 Przeglądarka została zamknięta.")
                 self.driver = None
                 return
+            if time.time() - last_state > 5:
+                last_state = time.time()
+                self.bot_state = self._read_bot_state()
             if SHIPPER.enabled and time.time() - last_pull > 5:
                 last_pull = time.time()
                 self._ship_browser_logs(SHIPPER, config_name, cfg.get("server", ""))
@@ -2530,6 +2573,19 @@ class SessionTab(tk.Frame):
                                     bg=BG, fg=FG_DIM)
         self.status_lbl.pack(side="left")
 
+        # Bot w sesji: start/stop bez zamykania przeglądarki
+        self.bot_start_btn = tk.Button(ctrl, text="▶ Bot", command=lambda: self.bot_command("bot_start"),
+                                       bg=BG3, fg=GREEN, font=FONT_BOLD, relief="flat", cursor="hand2", padx=8, pady=4,
+                                       state="disabled")
+        self.bot_start_btn.pack(side="left", padx=(16, 4))
+        self.bot_stop_btn = tk.Button(ctrl, text="⏸ Bot", command=lambda: self.bot_command("bot_stop"),
+                                      bg=BG3, fg=ACCENT, font=FONT_BOLD, relief="flat", cursor="hand2", padx=8, pady=4,
+                                      state="disabled")
+        self.bot_stop_btn.pack(side="left", padx=(0, 6))
+        self.bot_lbl = tk.Label(ctrl, text="", font=FONT_SMALL, bg=BG, fg=FG_DIM)
+        self.bot_lbl.pack(side="left")
+        self.after(2000, self._refresh_bot_row)
+
         tk.Button(ctrl, text="🗑 Wyczyść", command=self._clear_log,
                   bg=BG, fg=FG_DIM, relief="flat", cursor="hand2",
                   font=FONT_SMALL).pack(side="right")
@@ -2804,6 +2860,35 @@ class SessionTab(tk.Frame):
         self.log_widget.configure(state="normal")
         self.log_widget.delete("1.0", tk.END)
         self.log_widget.configure(state="disabled")
+
+    @property
+    def bot_state(self) -> str:
+        r = self._runner
+        return (r.bot_state if r and self.is_running else "") or ""
+
+    def _refresh_bot_row(self):
+        try:
+            if not self.winfo_exists():
+                return
+            st = self.bot_state
+            self.bot_start_btn.configure(state="normal" if self.is_running and st == "stopped" else "disabled")
+            self.bot_stop_btn.configure(state="normal" if self.is_running and st == "running" else "disabled")
+            self.bot_lbl.configure(text={"running": "🤖 bot pracuje", "stopped": "🤖 bot zatrzymany",
+                                         "loading": "🤖 bot się wczytuje"}.get(st, ""),
+                                   fg=GREEN if st == "running" else FG_DIM)
+            self.after(2000, self._refresh_bot_row)
+        except Exception:
+            pass
+
+    def bot_command(self, action: str, done=None):
+        """▶/⏸ Bot (launcher albo panel WWW): bot w działającej sesji; start z bieżącym programem sesji/grupy."""
+        r = self._runner
+        if not (r and self.is_running):
+            if done:
+                done(False, "sesja nie działa")
+            return
+        self.logger.write("▶ Start bota" if action == "bot_start" else "⏸ Zatrzymanie bota")
+        r.bot_command(action, self.effective_program() if action == "bot_start" else None, done)
 
     def _config_path(self) -> str:
         key = self.config_var.get()
@@ -3352,13 +3437,25 @@ class BotGUI:
         try:
             HOST.snapshot = [{
                 "uid": s.uid, "name": s.name or f"sesja {i + 1}", "group": self.gm.group_of(s.session_id),
+                "group_world": self.gm.world_of_session(s.session_id),
                 "world": s.server_var.get().lower(), "config": s.config_var.get(),
                 "char": os.path.splitext(s.config_var.get())[0], "status": s.status, "program": s.effective_program(),
-                "prof": PROF_LABEL.get(s.current_prof(), ""),
+                "prof": PROF_LABEL.get(s.current_prof(), ""), "bot": s.bot_state,
+                "server": s.server_var.get(), "browser": s.browser_var.get(), "template": s.template_var.get(),
+                "prog_override": bool(s.prog_override_var.get()),
+                "own_program": s.program_var.get() if s.prog_override_var.get() else "",
+                "recreate": bool(s.recreate_var.get()), "restart_on_fail": bool(s.restart_on_fail_var.get()),
             } for i, s in enumerate(self._sessions)]
+            if time.time() - getattr(self, "_screens_at", 0) > 60:
+                self._screens_at, self._screens_cache = time.time(), _screens()
             HOST.options = {
-                "groups": [{"name": n, "world": w} for (w, n) in self.gm._groups],
+                "groups": [dict({"name": n, "world": w, "program": self.gm.program_of(n, w)},
+                                **{f"layout_{k}": v for k, v in self.gm.layout_of(n, w).items()}) for (w, n) in self.gm._groups],
                 "configs": sorted(self._config_map),
+                "config_profs": [{"name": c, "prof": config_prof(p)} for c, p in sorted(self._config_map.items())],
+                "screens": [{"name": f"{i + 1}. {x['name']} – {x['w']}×{x['h']}"} for i, x in enumerate(getattr(self, "_screens_cache", []))],
+                "zooms": ZOOM_CHOICES,
+                "worlds": WORLDS,
                 "servers": SERVERS, "browsers": BROWSERS,
                 "templates": {b: _list_templates(b) for b in BROWSERS},
                 "programs": _list_programs(),
@@ -3412,6 +3509,58 @@ class BotGUI:
             self._save_state()
             tab.logger.write("🌐 Sesja utworzona z panelu WWW")
             return HOST.report(c["id"], True, f"utworzono „{tab.name}”")
+        act = c.get("action")
+        # ── grupy ──
+        if act in ("create_group", "rename_group", "delete_group", "update_group"):
+            g, w = (p.get("name") or "").strip(), p.get("world") or self._selected_world
+            if act == "create_group":
+                ok = bool(g) and self.gm.add_group(g, world=w)
+                msg = f"grupa „{g}” utworzona" if ok else f"grupa „{g}” już istnieje albo pusta nazwa"
+            elif act == "rename_group":
+                new = (p.get("new") or "").strip()
+                ok = self.gm.rename_group(g, new, w)
+                msg = f"„{g}” → „{new}”" if ok else "nie można zmienić nazwy (zajęta?)"
+            elif act == "delete_group":
+                if any(s.is_running and self.gm.group_of(s.session_id) == g for s in self._sessions):
+                    return HOST.report(c["id"], False, "w grupie działają sesje – zatrzymaj je")
+                ok = self.gm.remove_group(g, w)
+                msg = f"grupa „{g}” usunięta (sesje przeniesione)" if ok else "brak grupy"
+            else:
+                if g not in self.gm.group_names(w):
+                    return HOST.report(c["id"], False, f"brak grupy „{g}”")
+                if "program" in p:
+                    self.gm.set_program(g, w, p.get("program") or "")
+                lay = {k[7:]: v for k, v in p.items() if k.startswith("layout_")}
+                if lay:
+                    cur = self.gm.layout_of(g, w)
+                    for k, v in lay.items():
+                        if k == "enabled":
+                            cur[k] = v in (True, "true", "1", "on")
+                        elif k in ("screen", "cols", "rows"):
+                            try:
+                                cur[k] = max(0 if k == "screen" else 1, int(v))
+                            except ValueError:
+                                pass
+                        elif k == "zoom" and v in ZOOM_CHOICES:
+                            cur[k] = v
+                    self.gm.set_layout(g, w, cur)
+                ok, msg = True, f"grupa „{g}” zapisana"
+            if ok:
+                self._save_state()
+            return HOST.report(c["id"], ok, msg)
+        # ── profesja configu ──
+        if act == "set_config_prof":
+            path = self._config_map.get(p.get("config", ""))
+            if not path:
+                return HOST.report(c["id"], False, "brak configu")
+            prof = p.get("prof", "")
+            if prof not in PROF_LABEL:
+                return HOST.report(c["id"], False, "nieznana profesja")
+            set_config_prof(path, prof)
+            for s in self._sessions:
+                s._refresh_prof()
+            self._save_state()
+            return HOST.report(c["id"], True, f"{p.get('config')}: {PROF_LABEL[prof]}")
         tab = next((s for s in self._sessions if s.uid == c.get("session")), None)
         name = c.get("session_name") or c.get("session")
         if not tab:
@@ -3428,6 +3577,41 @@ class BotGUI:
             tab.logger.write("🌐 STOP z panelu WWW")
             tab._on_stop()
             return HOST.report(c["id"], True, "zatrzymywana")
+        if act in ("bot_start", "bot_stop"):
+            tab.logger.write(f"🌐 {'▶ Start' if act == 'bot_start' else '⏸ Zatrzymanie'} bota z panelu WWW")
+            tab.bot_command(act, lambda ok, msg, cid=c["id"]: HOST.report(cid, ok, msg))
+            return
+        if act == "update_session":
+            if tab.is_running and any(k in p for k in ("config", "browser", "group", "template")):
+                return HOST.report(c["id"], False, "zatrzymaj sesję, żeby zmienić config, grupę, przeglądarkę lub szablon")
+            boolv = lambda v: v in (True, "true", "1", "on")
+            d = {}
+            for k in ("name", "config", "server", "browser", "template"):
+                if p.get(k) not in (None, ""):
+                    d[k] = p[k]
+            for k in ("recreate", "restart_on_fail"):
+                if k in p:
+                    d[k] = boolv(p[k])
+            if "prog_override" in p:
+                d["program_override"] = boolv(p["prog_override"])
+                d["program"] = p.get("program", "") if d["program_override"] else ""
+                if not d["program_override"]:
+                    tab.prog_override_var.set(False)
+            # bez grupy w danych apply_settings przeniósłby sesję do pierwszej grupy – zostaje bieżąca
+            d["group"] = p.get("group") or self.gm.group_of(tab.session_id)
+            d["group_world"] = p.get("group_world") or self.gm.world_of_session(tab.session_id)
+            tab.apply_settings(d)
+            tab._refresh_prof()
+            tab._refresh_program_row()
+            self._refresh_tab_texts()
+            self._save_state()
+            return HOST.report(c["id"], True, f"„{tab.name}” zapisana")
+        if act == "delete_session":
+            if tab.is_running:
+                return HOST.report(c["id"], False, "zatrzymaj sesję przed usunięciem")
+            self._remove_session(tab)
+            self._save_state()
+            return HOST.report(c["id"], True, f"„{name}” usunięta")
         HOST.report(c["id"], False, "nieznane polecenie")
 
     def _state(self) -> dict:
