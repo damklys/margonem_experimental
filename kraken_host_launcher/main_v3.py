@@ -291,6 +291,38 @@ def _safe_group(group: str) -> str:
 
 
 # ============================================
+# PROGRAMY BOTA (przebiegi z kraken_user_client/playbooks)
+# ============================================
+DEFAULT_PROGRAM = "[1-300] Zero to hero"
+_PLAYBOOKS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "kraken_user_client", "playbooks")
+
+
+def _list_programs() -> list:
+    """Nazwy programów predefiniowanych (pliki przebiegów w repo), w kolejności jak w bocie:
+    [1-300] Zero to hero, przedziały Zero to hero wg poziomu, reszta alfabetycznie."""
+    names = []
+    try:
+        for fn in os.listdir(_PLAYBOOKS_DIR):
+            if fn.endswith(".json"):
+                try:
+                    with open(os.path.join(_PLAYBOOKS_DIR, fn), "r", encoding="utf-8") as f:
+                        n = json.load(f).get("name")
+                except Exception:
+                    n = None
+                names.append(n or fn[:-5])
+    except OSError:
+        pass
+    def key(n):
+        if n == DEFAULT_PROGRAM:
+            return (0, 0, 0, n)
+        m = re.match(r"^\[(\d+)-(\d+)\] Zero to hero$", n)
+        if m:
+            return (1, int(m.group(1)), -int(m.group(2)), n)
+        return (2, 0, 0, n.lower())
+    return sorted(set(names), key=key)
+
+
+# ============================================
 # UKŁAD OKIEN GRUPY (siatka na wybranym ekranie + zoom przeglądarki)
 # ============================================
 LAYOUT_DEFAULT = {"enabled": False, "screen": 0, "cols": 5, "rows": 2, "zoom": "auto"}
@@ -619,6 +651,47 @@ class BotRunner:
                 except Exception:
                     pass
 
+    def _start_bot(self, program: str):
+        """START sesji = start bota: autoryzacja tokenu na serwerze (gdy skonfigurowany), program grupy/sesji, start."""
+        from log_shipper import SHIPPER, check
+        if SHIPPER.enabled:
+            res = check(SHIPPER.url, SHIPPER.token)
+            if not res.startswith("✅"):
+                self.log(f"⛔ Autoryzacja na serwerze nieudana ({res}) – bot nie wystartuje (⚙️ Ustawienia launchera)")
+                return
+            self.log(f"🔐 Serwer: {res[2:].strip()}")
+        js_ready = "return !!(window.Kraken && Kraken.setProgram && Kraken.getConfig && Object.keys(Kraken.getConfig()).length);"
+        t0 = time.time()
+        while time.time() - t0 < 180 and not self.stop_event.is_set():
+            try:
+                if not self.driver.execute_script(js_ready):
+                    time.sleep(2)
+                    continue
+                if program:
+                    r = self.driver.execute_script("return Kraken.setProgram(arguments[0]);", program) or {}
+                    if not r.get("ok"):
+                        # program jeszcze nie pobrany z repo (nowa postać) – czekamy
+                        if time.time() - t0 > 170:
+                            self.log(f"⚠️  Program „{program}”: {r.get('error', '?')} – startuję z programem z bota")
+                        else:
+                            time.sleep(3)
+                            continue
+                    elif r.get("changed"):
+                        self.log(f"📋 Program bota: „{program}”")
+                        for _ in range(60):          # bot zatrzymuje poprzedni program
+                            if not self.driver.execute_script("return Kraken.isRunning();"):
+                                break
+                            time.sleep(1)
+                if self.driver.execute_script("return Kraken.isRunning();"):
+                    self.log("▶ Bot już pracuje")
+                else:
+                    self.driver.execute_script("Kraken.start();")
+                    self.log("▶ Bot uruchomiony")
+                return
+            except Exception:
+                time.sleep(2)
+        self.log("⚠️  Bot nie odpowiedział w 3 min – nie uruchomiono")
+
     def _push_api_to_bot(self):
         """Adres i token serwera z Ustawień launchera → bot Kraken w tej przeglądarce (Ustawienia › Serwer)."""
         from log_shipper import SHIPPER
@@ -887,6 +960,7 @@ class BotRunner:
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
         self._push_api_to_bot()
+        self._start_bot(cfg.get("program", ""))
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
         from log_shipper import SHIPPER
         if SHIPPER.enabled:
@@ -920,7 +994,7 @@ class GroupManager:
     # ---- zarządzanie grupami ----
     def _add_group(self, name: str, color: str, world: str = "Gordion"):
         key = (world, name)
-        self._groups[key] = {"color": color, "sessions": [], "layout": dict(LAYOUT_DEFAULT)}
+        self._groups[key] = {"color": color, "sessions": [], "layout": dict(LAYOUT_DEFAULT), "program": ""}
         self._notify()
 
     def add_group(self, name: str, world: str = "Gordion") -> bool:
@@ -1028,6 +1102,15 @@ class GroupManager:
             self._groups[(world, name)]["layout"] = dict(LAYOUT_DEFAULT, **layout)
             self._notify()
 
+    def program_of(self, name: str, world: str = "Gordion") -> str:
+        """Program bota ustawiany każdej sesji grupy ('' = bez zmiany – bot zostaje przy swoim)."""
+        return self._groups.get((world, name), {}).get("program", "") or ""
+
+    def set_program(self, name: str, world: str, program: str):
+        if (world, name) in self._groups:
+            self._groups[(world, name)]["program"] = program or ""
+            self._notify()
+
     def slot_of(self, session_id: int) -> int:
         """Miejsce sesji w kolejności jej grupy (0 = pierwsza)."""
         for data in self._groups.values():
@@ -1038,7 +1121,8 @@ class GroupManager:
     def to_dict(self) -> list:
         return [{"name": n, "world": w, "color": d["color"],
                  "favorite": (w, n) in self._favorites,
-                 "layout": d.get("layout") or dict(LAYOUT_DEFAULT)}
+                 "layout": d.get("layout") or dict(LAYOUT_DEFAULT),
+                 "program": d.get("program", "")}
                 for (w, n), d in self._groups.items()]
 
     # ---- obserwatorzy ----
@@ -1833,6 +1917,8 @@ class GroupPanel(tk.Frame):
                        relief="flat", bd=0)
         menu.add_command(label="✏️  Zmień nazwę",
                          command=lambda: self._rename_group(group_name))
+        menu.add_command(label="📋  Program grupy…",
+                         command=lambda: GroupProgramDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         menu.add_command(label="🪟  Układ okien…",
                          command=lambda: LayoutDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         menu.add_separator()
@@ -1913,6 +1999,37 @@ class GroupPanel(tk.Frame):
 # ============================================
 # DIALOG: NOWY CONFIG
 # ============================================
+class GroupProgramDialog(tk.Toplevel):
+    """Program grupy: każda sesja grupy (bez własnego programu) ustawia go w bocie przy STARCIE i uruchamia bota."""
+    NONE = "(bez zmiany – program wybrany w bocie)"
+
+    def __init__(self, parent, gm, group: str, world: str):
+        super().__init__(parent)
+        self.gm, self.group, self.world = gm, group, world
+        self.title(f"Program grupy – {group}")
+        self.configure(bg=BG)
+        self.resizable(False, False)
+        self.transient(parent)
+        cur = gm.program_of(group, world)
+        progs = _list_programs()
+        self.var = tk.StringVar(value=cur or self.NONE)
+        tk.Label(self, text=f"📋 Program bota dla grupy „{group}”", font=FONT_BOLD, bg=BG, fg=ACCENT).pack(anchor="w", padx=16, pady=(14, 6))
+        ttk.Combobox(self, textvariable=self.var, state="readonly", width=42,
+                     values=[self.NONE] + progs + ([cur] if cur and cur not in progs else [])).pack(anchor="w", padx=16)
+        tk.Label(self, text="Przy STARCIE sesji launcher ustawia ten program w bocie i uruchamia bota.\n"
+                            "Sesja z zaznaczonym „Własny program” używa swojego.",
+                 bg=BG, fg=FG_DIM, font=FONT_SMALL, justify="left").pack(anchor="w", padx=16, pady=8)
+        btns = tk.Frame(self, bg=BG)
+        btns.pack(fill="x", padx=16, pady=(0, 14))
+        tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD, padx=10).pack(side="right")
+        tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right", padx=6)
+
+    def _save(self):
+        v = self.var.get()
+        self.gm.set_program(self.group, self.world, "" if v == self.NONE else v)
+        self.destroy()
+
+
 class LauncherSettingsDialog(tk.Toplevel):
     """Ustawienia launchera: serwer Kraken API (adres panelu i token użytkownika) – zapis do api.json.
     Launcher wysyła wtedy logi sesji, a przy starcie sesji przekazuje adres i token botowi w przeglądarce."""
@@ -2251,6 +2368,22 @@ class SessionTab(tk.Frame):
                        activebackground=BG, activeforeground=ACCENT,
                        font=FONT_SMALL).pack(side="left", padx=(10, 0))
 
+        # ---- rząd 1c: program bota (z grupy albo własny sesji) ----
+        row1c = tk.Frame(self, bg=BG, pady=2)
+        row1c.pack(fill="x", padx=14)
+        tk.Label(row1c, text="Program:", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
+        self.prog_override_var = tk.BooleanVar(value=False)
+        tk.Checkbutton(row1c, text="Własny program", variable=self.prog_override_var, command=self._refresh_program_row,
+                       bg=BG, fg=FG, selectcolor=BG, activebackground=BG, activeforeground=ACCENT,
+                       font=FONT_SMALL).pack(side="left", padx=(0, 6))
+        self.program_var = tk.StringVar(value="")
+        self.program_cb = ttk.Combobox(row1c, textvariable=self.program_var, font=FONT_SMALL, state="disabled", width=30)
+        self.program_cb.pack(side="left")
+        self.program_info = tk.Label(row1c, text="", font=FONT_SMALL, bg=BG, fg=FG_DIM)
+        self.program_info.pack(side="left", padx=(8, 0))
+        self.gm.subscribe(self._on_groups_changed)
+        self.after(0, self._refresh_program_row)
+
         # ---- rząd 4: przyciski sterowania ----
         ctrl = tk.Frame(self, bg=BG)
         ctrl.pack(fill="x", padx=14, pady=(8, 4))
@@ -2444,6 +2577,8 @@ class SessionTab(tk.Frame):
             "group":           self.gm.group_of(self.session_id),
             "group_world":     self.gm.world_of_session(self.session_id),
             "recreate":        self.recreate_var.get(),
+            # Program bota: własny sesji albo program grupy ('' – bot zostaje przy swoim).
+            "program":         self.effective_program(),
             # Układ okien grupy: miejsce wg kolejności sesji w grupie, ekran i zoom z ustawień grupy.
             "window":          _window_slot(self.gm.layout_of(self.gm.group_of(self.session_id),
                                                               self.gm.world_of_session(self.session_id)),
@@ -2557,6 +2692,38 @@ class SessionTab(tk.Frame):
         self.log_widget.delete("1.0", tk.END)
         self.log_widget.configure(state="disabled")
 
+    def _on_groups_changed(self):
+        # Zamknięta karta sesji nadal jest na liście obserwatorów grup – bez wyjątku dla pozostałych.
+        try:
+            self.after(0, self._refresh_program_row)
+        except Exception:
+            pass
+
+    def _group_program(self) -> str:
+        return self.gm.program_of(self.gm.group_of(self.session_id), self.gm.world_of_session(self.session_id))
+
+    def effective_program(self) -> str:
+        """Program dla bota tej sesji: własny (gdy zaznaczony) albo program grupy; '' = bez zmiany."""
+        return self.program_var.get().strip() if self.prog_override_var.get() else self._group_program()
+
+    def _refresh_program_row(self):
+        try:
+            if not self.winfo_exists():
+                return
+        except Exception:
+            return
+        progs = _list_programs()
+        if self.prog_override_var.get():
+            self.program_cb.configure(state="readonly", values=progs)
+            if not self.program_var.get():
+                self.program_var.set(self._group_program() or (progs[0] if progs else ""))
+            self.program_info.configure(text="tylko ta sesja")
+        else:
+            self.program_cb.configure(state="disabled", values=progs)
+            gp = self._group_program()
+            self.program_var.set(gp)
+            self.program_info.configure(text="z grupy" if gp else "grupa: bez zmiany (program z bota)")
+
     def get_settings(self) -> dict:
         """Zwraca słownik bieżących ustawień sesji (do zapisu stanu)."""
         return {
@@ -2569,6 +2736,8 @@ class SessionTab(tk.Frame):
             "template":        self.template_var.get(),
             "recreate":        self.recreate_var.get(),
             "restart_on_fail": self.restart_on_fail_var.get(),
+            "program_override": self.prog_override_var.get(),
+            "program":         self.program_var.get() if self.prog_override_var.get() else "",
         }
 
     def apply_settings(self, d: dict):
@@ -2587,6 +2756,10 @@ class SessionTab(tk.Frame):
             self.recreate_var.set(bool(d["recreate"]))
         if "restart_on_fail" in d:
             self.restart_on_fail_var.set(bool(d["restart_on_fail"]))
+        if d.get("program_override"):
+            self.prog_override_var.set(True)
+            self.program_var.set(d.get("program", ""))
+        self.after(0, self._refresh_program_row)
         if "name" in d:
             self.name = str(d["name"])[:20]
         grp_world = d.get("group_world", WORLDS[0])
@@ -3056,6 +3229,8 @@ class BotGUI:
                 self.gm._add_group(name, color, world)
             if name and g.get("layout"):
                 self.gm._groups[(world, name)]["layout"] = dict(LAYOUT_DEFAULT, **g["layout"])
+            if name and g.get("program"):
+                self.gm._groups[(world, name)]["program"] = g["program"]
             if g.get("favorite"):
                 self.gm._favorites.add((world, name))
 
