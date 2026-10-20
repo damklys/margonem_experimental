@@ -489,7 +489,12 @@ class SessionLogger:
         self.widget       = text_widget
         self._profile     = profile_name
         self._file        = None
+        self._ship        = None    # (świat, postać) – wysyłka na serwer Kraken API (log_shipper)
         self._open_file()
+
+    def ship_to(self, char: str, world: str):
+        """Od teraz linie tej sesji idą też na serwer logów (gdy skonfigurowany w api.json)."""
+        self._ship = (str(world or "").lower(), char)
 
     def _open_file(self):
         try:
@@ -519,6 +524,12 @@ class SessionLogger:
         if self._file:
             try:
                 self._file.write(line)
+            except Exception:
+                pass
+        if self._ship:
+            try:
+                from log_shipper import SHIPPER
+                SHIPPER.add(self._ship[0], self._ship[1], f"[launcher] {line.strip()}")
             except Exception:
                 pass
         self.widget.after(0, self._append, line)
@@ -608,6 +619,29 @@ class BotRunner:
                 except Exception:
                     pass
 
+    _JS_STR = re.compile(r'"((?:[^"\\]|\\.)*)"')
+
+    def _ship_browser_logs(self, shipper, char: str, world: str):
+        """Linie bota Kraken z konsoli przeglądarki („[Kraken] [godz][postać]…”) → serwer logów."""
+        try:
+            entries = self.driver.get_log("browser")
+        except Exception:
+            return
+        for e in entries:
+            msg = str(e.get("message", ""))
+            if "[Kraken]" not in msg:
+                continue
+            parts = []
+            for m in self._JS_STR.finditer(msg):
+                try:
+                    parts.append(json.loads(f'"{m.group(1)}"'))
+                except ValueError:
+                    parts.append(m.group(1))
+            text = " ".join(parts) if parts else msg
+            text = text.split("[Kraken]", 1)[-1].strip()
+            if text:
+                shipper.add(str(world or "").lower(), char, text)
+
     def _browser_alive(self) -> bool:
         try:
             _ = self.driver.window_handles
@@ -695,6 +729,7 @@ class BotRunner:
         profile_name  = f"{browser.lower()}_{config_name}"
         profile_path  = _get_group_profile_path(group, profile_name)
         self.logger.set_profile(profile_name)
+        self.logger.ship_to(config_name, cfg.get("server", ""))
 
         profile_existed = os.path.exists(profile_path)  # przed create/delete
 
@@ -739,6 +774,8 @@ class BotRunner:
             "profile.password_manager_enabled": False,
         })
         options.add_argument("--disable-save-password-bubble")
+        # Konsola przeglądarki (logi bota Kraken) czytana przez launcher i wysyłana na serwer logów.
+        options.set_capability("goog:loggingPrefs", {"browser": "ALL"})
         # "none": driver.get() wraca natychmiast, ChromeDriver nie blokuje
         # find_element z powodu trwającej nawigacji
         options.page_load_strategy = "none"
@@ -828,11 +865,18 @@ class BotRunner:
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
+        from log_shipper import SHIPPER
+        if SHIPPER.enabled:
+            self.log(f"📡 Logi postaci → {SHIPPER.url}")
+        last_pull = 0.0
         while not self.stop_event.is_set():
             if not self._browser_alive():
                 self.log("🔒 Przeglądarka została zamknięta.")
                 self.driver = None
                 return
+            if SHIPPER.enabled and time.time() - last_pull > 5:
+                last_pull = time.time()
+                self._ship_browser_logs(SHIPPER, config_name, cfg.get("server", ""))
             time.sleep(1)
         raise StopIteration("Sesja zatrzymana.")
 

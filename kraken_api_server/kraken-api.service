@@ -1,0 +1,22 @@
+[Unit]
+Description=Kraken API – zbieranie logów postaci
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kraken
+Group=kraken
+WorkingDirectory=/opt/kraken-api
+ExecStart=/usr/bin/python3 /opt/kraken-api/server.py --config /etc/kraken-api/config.json
+Restart=always
+RestartSec=3
+# Ograniczenia: tylko katalog danych do zapisu
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/kraken-api
+
+[Install]
+WantedBy=multi-user.target
