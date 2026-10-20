@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "4.0.0"
+VERSION = "4.1.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -364,6 +364,8 @@ a{color:var(--acc)}header{display:flex;align-items:center;gap:12px;padding:10px 
 header b{font-size:16px}header .sp{flex:1}main{max-width:1100px;margin:0 auto;padding:18px}
 .tag{display:inline-block;padding:1px 7px;border-radius:9px;background:var(--bg3);color:var(--dim);font-size:12px}
 .ok{color:var(--ok)}button.sm{padding:3px 9px;font-size:12.5px}button:disabled{opacity:.4;cursor:default}
+.spin{display:inline-block;width:11px;height:11px;border:2px solid var(--dim);border-top-color:var(--acc);border-radius:50%;animation:sp .8s linear infinite;vertical-align:-1px;margin-right:6px}
+@keyframes sp{to{transform:rotate(360deg)}}.busy{color:var(--acc);font-size:12.5px;white-space:nowrap}tr.pending td{background:#151b30}
 .grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.grid2 label{display:grid;gap:4px;color:var(--dim);font-size:12.5px}
 select{background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;padding:6px 8px;font:inherit;width:100%}
 .card{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:14px 16px;margin-bottom:14px}
@@ -413,17 +415,34 @@ const q=new URLSearchParams(location.search);const id=q.get('id');let H={},O={},
 const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const PROFS=[['','(wybór w bocie)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
 const ST={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};const BOT={running:'🤖 pracuje',stopped:'⏸ stoi',loading:'… wczytuje'};
-async function cmd(action,s,name,params){await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s||'',session_name:name||'',params:params||{}})});setTimeout(load,300)}
+async function cmd(action,s,name,params){const r=await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s||'',session_name:name||'',params:params||{}})});
+let cid='';try{cid=(await r.json()).id||''}catch(e){}setTimeout(load,300);return cid}
+// Akcje w toku na sesjach: uid → {action, cid, t}; koniec, gdy sesja/bot dojdzie do stanu docelowego, błąd albo 4 min.
+const PEND={};const LIMIT=240000;
+async function act(action,s){PEND[s.uid]={action,cid:'',t:Date.now(),err:''};sessions();PEND[s.uid].cid=await cmd(action,s.uid,s.name)}
+function pendState(s){const p=PEND[s.uid];if(!p)return null;const c=(H.commands||[]).find(x=>x.id===p.cid);
+if(c&&c.status==='error'){p.err=c.result||'błąd';p.done=Date.now()}
+if(p.err){if(Date.now()-p.done>8000){delete PEND[s.uid];return null}return {err:p.err}}
+const on=s.status==='RUNNING';let done=false,txt='';
+if(p.action==='start'){done=on&&s.bot==='running';txt=!c||c.status==='queued'?'w kolejce…':!on?'uruchamiam przeglądarkę…':s.bot==='stopped'?'startuję bota…':'loguję i startuję bota…'}
+else if(p.action==='stop'){done=s.status==='OFFLINE'||s.status==='ERROR';txt=!c||c.status==='queued'?'w kolejce…':'zatrzymuję sesję…'}
+else if(p.action==='bot_start'){done=s.bot==='running';txt=!c||c.status==='queued'?'w kolejce…':'startuję bota…'}
+else if(p.action==='bot_stop'){done=s.bot==='stopped'||!on;txt=!c||c.status==='queued'?'w kolejce…':'zatrzymuję bota…'}
+if(c&&c.status==='done'&&(p.action==='start'||p.action==='stop')&&/już/.test(c.result||''))done=true;
+if(done||Date.now()-p.t>LIMIT){delete PEND[s.uid];return null}
+return {txt:txt+' '+Math.round((Date.now()-p.t)/1000)+' s'}}
 const opt=(items,cur,first)=>(first!=null?`<option value="">${esc(first)}</option>`:'')+items.map(it=>{const v=typeof it==='string'?it:it.value,l=typeof it==='string'?it:it.label;return `<option value="${esc(v)}"${v===cur?' selected':''}>${esc(l)}</option>`}).join('');
 const btn=(t,cls,fn,dis)=>{const b=document.createElement('button');b.className='sm '+(cls||'');b.textContent=t;b.disabled=!!dis;b.onclick=fn;return b};
 const groupsOpt=()=>(O.groups||[]).map(g=>({value:g.name+'|'+g.world,label:`${g.name} (${g.world})`}));
 function sessions(){const tb=$('rows');tb.textContent='';const ss=H.sessions||[];
 if(!ss.length){tb.innerHTML=`<tr><td colspan=8 class=hint>${H.online?'Brak sesji.':'Host offline – sesje widać, gdy launcher jest uruchomiony.'}</td></tr>`;return}
-for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';
+for(const s of ss){const tr=document.createElement('tr');const on=s.status==='RUNNING'||s.status==='STOPPING';const ps=pendState(s);
 tr.innerHTML=`<td>${ST[s.status]||esc(s.status)}</td><td>${on?(BOT[s.bot]||'…'):'—'}</td><td>${esc(s.name)}</td><td>${esc(s.group)}</td><td>${esc(s.config)}</td><td>${esc(s.prof||'—')}</td><td>${esc(s.program||'(z bota)')}${s.prog_override?' <span class=tag>własny</span>':''}</td><td></td>`;
 const a=tr.lastChild;a.style.whiteSpace='nowrap';
-a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>cmd(on?'stop':'start',s.uid,s.name),!H.online));
-a.appendChild(btn(s.bot==='running'?'⏸ Bot':'▶ Bot','',()=>cmd(s.bot==='running'?'bot_stop':'bot_start',s.uid,s.name),!H.online||!on||s.bot==='loading'));
+if(ps&&!ps.err){tr.className='pending';const sp=document.createElement('span');sp.className='busy';sp.innerHTML='<span class="spin"></span>'+esc(ps.txt);a.appendChild(sp);tb.appendChild(tr);continue}
+if(ps&&ps.err){const e=document.createElement('div');e.className='err';e.style.fontSize='12px';e.textContent='✖ '+ps.err;a.appendChild(e)}
+a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>act(on?'stop':'start',s),!H.online));
+a.appendChild(btn(s.bot==='running'?'⏸ Bot':'▶ Bot','',()=>act(s.bot==='running'?'bot_stop':'bot_start',s),!H.online||!on||s.bot==='loading'));
 a.appendChild(btn('✎','',()=>{editing=editing===s.uid?null:s.uid;edit()},!H.online));
 a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć sesję „${s.name}”?`))cmd('delete_session',s.uid,s.name)},!H.online||on));tb.appendChild(tr)}}
 function edit(){const box=$('edit');const s=(H.sessions||[]).find(x=>x.uid===editing);if(!s){box.style.display='none';return}
@@ -487,7 +506,8 @@ for(const b of ['ns_go','nc_go','ng_go'])$(b).disabled=!H.online;
 sessions();forms();edit();gedit();
 const cb=$('cmds');cb.textContent='';for(const c of (H.commands||[]).slice().reverse()){const d=document.createElement('div');d.className='hint';
 d.textContent=`${new Date(c.created*1000).toLocaleTimeString('pl-PL')} · ${ACT[c.action]||c.action} „${c.session_name||c.session}” – ${({queued:'w kolejce',sent:'wysłane',done:'wykonane',error:'błąd'})[c.status]||c.status}${c.result?': '+c.result:''}`;cb.appendChild(d)}}
-load();setInterval(load,3000);
+async function loop(){await load().catch(()=>{});setTimeout(loop,Object.keys(PEND).length?1500:3000)}
+loop();setInterval(()=>{if(Object.keys(PEND).length)sessions()},1000);
 """
 
 LIVE_JS = """
