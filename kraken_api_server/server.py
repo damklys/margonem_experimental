@@ -47,13 +47,19 @@ DEFAULTS = {
     "panel_session_hours": 24,
 }
 
-_NAME_RE = re.compile(r"[^\w\-. ]+", re.UNICODE)
+_NAME_RE = re.compile(r"[^\w\-.]+", re.UNICODE)
 
 
 def safe_name(s, default):
-    """Nazwa pliku/katalogu (bez ścieżek, znaków specjalnych i kropek na początku)."""
-    s = _NAME_RE.sub("_", str(s or "")).strip(" ._")[:64]
+    """Nazwa pliku/katalogu (bez ścieżek, znaków specjalnych i kropek na początku). Spacje → „_”, więc
+    „Solony Borowik Ósmy” (bot) i „Solony_Borowik_Ósmy” (plik configu w launcherze) to ta sama postać."""
+    s = _NAME_RE.sub("_", str(s or "").strip()).strip("._")[:64]
     return s or default
+
+
+def display_name(key):
+    """Nazwa postaci do panelu (z nazwy pliku): podkreślenia jak spacje w nicku."""
+    return key.replace("_", " ")
 
 
 # ───────────────────────── użytkownicy ─────────────────────────
@@ -134,6 +140,32 @@ class Store:
         self._locks = {}
         self._guard = threading.Lock()
         os.makedirs(self.root, exist_ok=True)
+        self._merge_legacy_names()
+
+    def _merge_legacy_names(self):
+        """Pliki z dawnymi nazwami (spacje) → nazwa kanoniczna; gdy oba istnieją – dopisanie i usunięcie starego."""
+        for user in os.listdir(self.root):
+            base = os.path.join(self.root, user, "logs")
+            if not os.path.isdir(base):
+                continue
+            for world in os.listdir(base):
+                wdir = os.path.join(base, world)
+                if not os.path.isdir(wdir):
+                    continue
+                for fn in sorted(os.listdir(wdir)):
+                    if not fn.endswith(".log"):
+                        continue
+                    canon = safe_name(fn[:-4], "unknown") + ".log"
+                    if canon == fn:
+                        continue
+                    src, dst = os.path.join(wdir, fn), os.path.join(wdir, canon)
+                    if os.path.exists(dst):
+                        with open(src, "rb") as a, open(dst, "ab") as b:
+                            b.write(a.read())
+                        os.remove(src)
+                    else:
+                        os.replace(src, dst)
+                    log.info("scalono log postaci: %s/%s → %s", world, fn, canon)
 
     def path(self, user, world, char):
         return os.path.join(self.root, safe_name(user, "unknown"), "logs", safe_name(world, "unknown"),
@@ -548,9 +580,11 @@ def make_handler(cfg, users, store, presence):
             pres = presence.of(user)
             rows = {}
             for c in store.chars(user):
-                rows[(c["world"], c["char"])] = {"world": c["world"], "char": c["char"], "last": c["mtime"]}
+                rows[(c["world"], c["char"])] = {"world": c["world"], "char": display_name(c["char"]), "last": c["mtime"]}
             for (w, c), v in pres.items():
-                r = rows.setdefault((w, c), {"world": w, "char": c, "last": None})
+                r = rows.setdefault((w, c), {"world": w, "char": display_name(c), "last": None})
+                if v.get("char"):
+                    r["char"] = str(v["char"])          # nick z gry (bot) – dokładna pisownia
                 r.update({k: v.get(k) for k in ("version", "running", "map", "lvl", "step")})
                 r["last"] = max(r["last"] or 0, int(v["ts"]))
                 r["online"] = now - v["ts"] < online_s
