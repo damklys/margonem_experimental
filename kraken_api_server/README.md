@@ -1,58 +1,47 @@
-# Kraken API (serwer logów)
+# Kraken API (panel + logi postaci)
 
-Demon systemd zbierający logi postaci z launcherów (`kraken_host_launcher`). Czysty Python 3.8+, bez zależności i bez Dockera.
+Demon systemd: panel WWW z kontami użytkowników i API, na które bot Kraken (przeglądarka) i launcher wysyłają
+logi postaci oraz sygnał „żyję”. Czysty Python 3.8+, bez zależności i bez Dockera; HTTPS przez Caddy.
 
-## Instalacja na VPS
-
-```bash
-# skopiuj katalog kraken_api_server na serwer, potem:
-cd kraken_api_server
-sudo ./install.sh          # użytkownik kraken, /opt/kraken-api, /etc/kraken-api/config.json (nowy token), systemd
-```
-
-Aktualizacja: ponownie `sudo ./install.sh` (config i logi zostają).
-
-- logi postaci: `/var/lib/kraken-api/logs/<świat>/<postać>.log` (rotacja co 50 MB, 5 starszych plików)
-- dziennik serwera: `journalctl -u kraken-api -f`
-- sterowanie: `systemctl status|restart|stop kraken-api`
-
-## HTTPS (zalecane)
-
-Serwer domyślnie słucha tylko na `127.0.0.1:8787` – na zewnątrz wystaw go przez reverse proxy z HTTPS,
-żeby token nie szedł otwartym tekstem. Najprościej Caddy (sam pobiera certyfikat):
-
-```
-# /etc/caddy/Caddyfile
-api.twojadomena.pl {
-    reverse_proxy 127.0.0.1:8787
-}
-```
-
-Bez domeny / proxy: w `/etc/kraken-api/config.json` ustaw `"host": "0.0.0.0"`, otwórz port w firewallu
-(`ufw allow 8787/tcp`) i w launcherze użyj `http://IP:8787` (token jawnym tekstem – tylko na próbę).
-
-## API
-
-Nagłówek `Authorization: Bearer <token>` (tokeny w `config.json` → `tokens`).
-
-| Metoda | Ścieżka | Opis |
-|---|---|---|
-| GET | `/api/v1/health` | bez tokenu – czy serwer żyje |
-| POST | `/api/v1/logs` | `{"source": "...", "entries": [{"char": "Nick", "world": "gordion", "lines": ["..."]}]}`, opcjonalnie gzip |
-| GET | `/api/v1/chars` | lista postaci z logami |
-| GET | `/api/v1/logs?world=gordion&char=Nick&tail=200` | ostatnie linie postaci |
+## Instalacja na VPS (Ubuntu/Debian)
 
 ```bash
-curl -H "Authorization: Bearer $TOKEN" "https://api.twojadomena.pl/api/v1/logs?world=gordion&char=Nick&tail=50"
+scp -r kraken_api_server root@SERWER:/root/
+ssh root@SERWER 'cd /root/kraken_api_server && ./install.sh --domain api.twojadomena.pl'
 ```
+
+Bez własnej domeny: `--domain 203-0-113-7.sslip.io` (IP z kreskami – sslip.io wskazuje na ten adres, Caddy
+pobiera dla niego certyfikat Let's Encrypt). Instalator: użytkownik `kraken`, `/opt/kraken-api`,
+`/etc/kraken-api/config.json`, usługa `kraken-api`, Caddy (HTTPS), ufw (22/80/443).
+Aktualizacja: ten sam `install.sh` (dane i konfiguracja zostają).
+
+- panel: `https://<domena>` – pierwsze logowanie **admin / admin**, potem wymuszona zmiana hasła
+- dane: `/var/lib/kraken-api/users.json` (konta, hasła PBKDF2, tokeny), `/var/lib/kraken-api/users/<użytkownik>/logs/<świat>/<postać>.log`
+- dziennik: `journalctl -u kraken-api -f`, `journalctl -u caddy -f`
+
+## Panel
+
+- **Token użytkownika** (kopiuj / wygeneruj nowy) – wpisuje się go w bocie i launcherze.
+- **Sesje** – postacie z logami na tym koncie: online/offline (sygnał „żyję” w ostatnich 45 s), poziom, mapa, krok.
+- **Podgląd sesji** – log postaci na żywo (odświeżanie co 1,5 s, kolory wg typu wpisu).
+
+## Bot Kraken
+
+⚙️ Ustawienia › 📡 Serwer: adres panelu (`https://…`) i token. Bot wysyła swoje logi co 3 s i sygnał „żyję” co 15 s;
+pod polami widać stan połączenia. Ustawienie jest wspólne dla postaci w tej przeglądarce.
 
 ## Launcher
 
-W `kraken_host_launcher/api.json` (plik lokalny, poza gitem):
+`kraken_host_launcher/api.json` (lokalny, poza gitem): `{"url": "https://…", "token": "…"}` – launcher wysyła
+swoje logi sesji (`[launcher] …`), a logi bota z konsoli przeglądarki tylko wtedy, gdy bot nie ma tokenu (bez dubli).
 
-```json
-{ "url": "https://api.twojadomena.pl", "token": "TOKEN-Z-INSTALACJI" }
-```
+## API
 
-Launcher wysyła wtedy w tle logi każdej sesji: własne (logowanie, captcha…) i logi bota Kraken z przeglądarki.
-Bez tego pliku nic nie wysyła.
+`Authorization: Bearer <token użytkownika>` (CORS otwarty dla stron gry):
+
+| Metoda | Ścieżka | Opis |
+|---|---|---|
+| GET | `/api/v1/health` | bez tokenu |
+| GET | `/api/v1/me` | sprawdzenie tokenu |
+| POST | `/api/v1/logs` | `{"source", "entries": [{"char", "world", "lines": [...]}]}` (opcjonalnie gzip) |
+| POST | `/api/v1/heartbeat` | `{"char", "world", "version", "running", "map", "lvl", "step"}` |

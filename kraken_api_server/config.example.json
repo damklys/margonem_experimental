@@ -2,9 +2,10 @@
   "host": "127.0.0.1",
   "port": 8787,
   "data_dir": "/var/lib/kraken-api",
-  "tokens": ["WSTAW-TU-TOKEN"],
   "max_body_bytes": 4194304,
   "max_line_chars": 4000,
   "max_file_bytes": 52428800,
-  "keep_rotated": 5
+  "keep_rotated": 5,
+  "online_seconds": 45,
+  "panel_session_hours": 24
 }

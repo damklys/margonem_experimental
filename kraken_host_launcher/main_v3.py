@@ -625,6 +625,9 @@ class BotRunner:
         """Linie bota Kraken z konsoli przeglądarki („[Kraken] [godz][postać]…”) → serwer logów."""
         try:
             entries = self.driver.get_log("browser")
+            # Bot z tokenem w Ustawieniach › Serwer wysyła logi sam – launcher ich nie dubluje.
+            if self.driver.execute_script("return !!(window.Kraken && Kraken.apiLinked && Kraken.apiLinked())"):
+                return
         except Exception:
             return
         for e in entries:

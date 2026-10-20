@@ -1,5 +1,5 @@
 [Unit]
-Description=Kraken API – zbieranie logów postaci
+Description=Kraken API – panel i logi postaci
 After=network-online.target
 Wants=network-online.target
 
