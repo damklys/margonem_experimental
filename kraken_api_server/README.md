@@ -21,9 +21,14 @@ Aktualizacja: ten sam `install.sh` (dane i konfiguracja zostają).
 
 ## Panel
 
-- **Token użytkownika** (kopiuj / wygeneruj nowy) – wpisuje się go w bocie i launcherze.
-- **Sesje** – postacie z logami na tym koncie: online/offline (sygnał „żyję” w ostatnich 45 s), poziom, mapa, krok.
+- **Token użytkownika** (kopiuj / wygeneruj nowy) – wpisuje się go w launcherze (⚙️ Ustawienia) albo w bocie.
+- **Hosty** – launchery z tym tokenem: online/offline, system, wersja, uruchomione sesje. Strona hosta: sesje launchera
+  z przyciskami ▶ Start / ⏹ Stop (polecenie trafia do launchera przy jego następnym sygnale, do 10 s) i historia poleceń.
+- **Sesje bota** – postacie z logami (z launchera albo uruchomione poza nim): online/offline, poziom, mapa, krok, host.
 - **Podgląd sesji** – log postaci na żywo (odświeżanie co 1,5 s, kolory wg typu wpisu).
+- **Ustawienia launcherów** – grupy, sesje i configi kont każdego hosta zapisują się na serwerze
+  (`/var/lib/kraken-api/users/<użytkownik>/hosts/<host>.json`, uprawnienia 600 – zawierają loginy i hasła kont gry);
+  launcher odtwarza je przyciskiem ⚙️ Ustawienia › ⬇ Odtwórz z serwera.
 
 ## Bot Kraken
 
@@ -45,3 +50,6 @@ swoje logi sesji (`[launcher] …`), a logi bota z konsoli przeglądarki tylko w
 | GET | `/api/v1/me` | sprawdzenie tokenu |
 | POST | `/api/v1/logs` | `{"source", "entries": [{"char", "world", "lines": [...]}]}` (opcjonalnie gzip) |
 | POST | `/api/v1/heartbeat` | `{"char", "world", "version", "running", "map", "lvl", "step"}` |
+| POST | `/api/v1/host/heartbeat` | launcher: `{"host_id", "name", "platform", "version", "sessions", "results"}` → polecenia |
+| POST | `/api/v1/host/state` | launcher: `{"host_id", "name", "state", "configs"}` – zapis ustawień |
+| GET | `/api/v1/host/state?host_id=…` / `?list=1` | odczyt zapisanych ustawień / lista hostów |
