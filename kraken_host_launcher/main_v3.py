@@ -884,8 +884,8 @@ class BotRunner:
         while time.time() - t0 < 60 and not self.stop_event.is_set():
             try:
                 ok = self.driver.execute_script(
-                    "if (!window.Kraken || !Kraken.setApi) return false; Kraken.setApi(arguments[0], arguments[1]); return true;",
-                    SHIPPER.url, SHIPPER.token)
+                    "if (!window.Kraken || !Kraken.setApi) return false; Kraken.setApi(arguments[0], arguments[1], arguments[2]); return true;",
+                    SHIPPER.url, SHIPPER.token, {"host_id": SHIPPER.host_id, "session": self.config.get("uid", "")})
                 if ok:
                     self.log("📡 Bot: adres i token serwera ustawione")
                     return
@@ -3260,6 +3260,7 @@ class SessionTab(tk.Frame):
                 return None
 
         return {
+            "uid":             self.uid,
             "config_path":     cfg,
             "browser":         self.browser_var.get(),
             "server":          self.server_var.get(),

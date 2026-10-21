@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.1.0"
+VERSION = "5.2.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -398,6 +398,153 @@ class Hosts:
         return sorted(rows.values(), key=lambda r: (not r.get("online"), (r.get("name") or "").lower()))
 
 
+PROF_NAMES = {"w": "wojownik", "p": "paladyn", "b": "tancerz ostrzy", "h": "łowca", "t": "tropiciel", "m": "mag"}
+UNMANAGED = "niezarządzany"
+
+
+def build_overview(user, store, presence, hosts, online_s):
+    """Hosty (launchery) i jedna lista sesji: sesje launcherów (online – z sygnału, offline – z zapisanych ustawień)
+    z dołączonym botem (po hoście i id sesji z bota, potem po świecie i nazwie postaci) i logiem; reszta – host
+    „niezarządzany”."""
+    now = time.time()
+    rows, by_uid, by_name, host_rows = [], {}, {}, []
+
+    def blank(**kw):
+        r = {"host": UNMANAGED, "host_id": "", "managed": False, "host_online": False, "uid": "", "group": "", "session": "",
+             "world": "", "char": "", "log_char": "", "prof": "", "lvl": None, "program": "", "step": "", "map": "",
+             "last": None, "launcher": "", "online": False, "running": None, "version": ""}
+        r.update(kw)
+        return r
+
+    for h in hosts.of(user, online_s):
+        sess = h.get("sessions") if h.get("online") else None
+        if not sess:
+            st = (hosts.load(user, h["host_id"]) or {}).get("state") or {}
+            sess = [{"uid": x.get("uid", ""), "name": x.get("name", ""), "group": x.get("group", ""),
+                     "world": str(x.get("server", "")).lower(), "char": os.path.splitext(str(x.get("config", "")))[0],
+                     "program": x.get("program", ""), "status": "OFFLINE"} for x in st.get("sessions") or []]
+        name = h.get("name") or h["host_id"]
+        for x in sess:
+            r = blank(host=name, host_id=h["host_id"], managed=True, host_online=bool(h.get("online")), uid=str(x.get("uid") or ""),
+                      group=x.get("group", ""), session=x.get("name", ""), world=str(x.get("world", "")).lower(),
+                      char=display_name(str(x.get("char", ""))), log_char=safe_name(x.get("char"), "unknown"),
+                      prof=x.get("prof", ""), program=x.get("program", ""), launcher=x.get("status", "OFFLINE"))
+            rows.append(r)
+            if r["uid"]:
+                by_uid[(h["host_id"], r["uid"])] = r
+            by_name.setdefault((r["world"], r["log_char"]), r)
+        host_rows.append({"host_id": h["host_id"], "name": name, "online": bool(h.get("online")), "platform": h.get("platform", ""),
+                          "version": h.get("version", ""), "last": h.get("last")})
+
+    seen = set()
+    for (w, c), v in presence.of(user).items():
+        r = by_uid.get((v.get("host_id"), v.get("session"))) or by_name.get((w, c))
+        if r is None:
+            r = blank(world=w, char=display_name(c), log_char=c)
+            rows.append(r)
+            by_name[(w, c)] = r
+        seen.add((w, c))
+        r["char"] = str(v.get("char") or r["char"])
+        r["log_char"] = c
+        r["world"] = r["world"] or w
+        for k in ("lvl", "step", "map", "version"):
+            if v.get(k) not in (None, ""):
+                r[k] = v[k]
+        if v.get("prof"):
+            r["prof"] = PROF_NAMES.get(v["prof"], v["prof"])
+        r["running"] = v.get("running")
+        r["last"] = max(r["last"] or 0, int(v["ts"]))
+        r["online"] = r["online"] or now - v["ts"] < online_s
+    for c in store.chars(user):
+        key = (c["world"], c["char"])
+        if key in seen:
+            continue
+        r = by_name.get(key)
+        if r is None:
+            r = blank(world=c["world"], char=display_name(c["char"]), log_char=c["char"])
+            rows.append(r)
+            by_name[key] = r
+        r["last"] = max(r["last"] or 0, c["mtime"])
+
+    for r in rows:
+        if r["online"] and r["running"]:
+            r["state"], r["state_key"] = "▶ pracuje", "run"
+        elif r["online"]:
+            r["state"], r["state_key"] = "⏸ bot stoi", "idle"
+        elif r["launcher"] in ("RUNNING", "STOPPING"):
+            r["state"], r["state_key"] = "⏳ uruchamia", "start"
+        elif r["launcher"] == "ERROR":
+            r["state"], r["state_key"] = "✖ błąd", "err"
+        else:
+            r["state"], r["state_key"] = "○ offline", "off"
+    order = {"run": 0, "idle": 1, "start": 2, "err": 3, "off": 4}
+    rows.sort(key=lambda r: (order[r["state_key"]], not r["managed"], r["host"].lower(), str(r["group"]).lower(),
+                             str(r["session"]).lower(), str(r["char"]).lower()))
+    active = lambda r: r["state_key"] in ("run", "idle", "start")
+    for hr in host_rows:
+        mine = [r for r in rows if r["host_id"] == hr["host_id"]]
+        hr.update(sessions=len(mine), active=sum(1 for r in mine if active(r)))
+    um = [r for r in rows if not r["managed"]]
+    totals = {"hosts_total": len(host_rows), "hosts_online": sum(1 for h in host_rows if h["online"]),
+              "sessions_total": len(rows), "sessions_active": sum(1 for r in rows if active(r)),
+              "bots_running": sum(1 for r in rows if r["state_key"] == "run"),
+              "unmanaged_total": len(um), "unmanaged_active": sum(1 for r in um if active(r))}
+    return {"hosts": host_rows, "sessions": rows, "totals": totals}
+
+
+class History:
+    """Aktywność konta co 5 min (hosty online, sesje aktywne, boty pracujące) – wykres na pulpicie; 7 dni na dysku."""
+    KEEP = 7 * 86400
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.data = {}
+
+    def _path(self, user):
+        return os.path.join(self.root, safe_name(user, "unknown"), "stats.json")
+
+    def _load(self, user):
+        if user not in self.data:
+            try:
+                with open(self._path(user), "r", encoding="utf-8") as f:
+                    self.data[user] = [p for p in json.load(f) if isinstance(p, dict)]
+            except Exception:
+                self.data[user] = []
+        return self.data[user]
+
+    def add(self, user, point):
+        with self.lock:
+            pts = self._load(user)
+            pts.append(point)
+            cut = time.time() - self.KEEP
+            self.data[user] = pts = [p for p in pts if p.get("t", 0) >= cut]
+            os.makedirs(os.path.dirname(self._path(user)), exist_ok=True)
+            tmp = self._path(user) + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(pts, f)
+            os.replace(tmp, self._path(user))
+
+    def get(self, user, hours=24):
+        cut = time.time() - hours * 3600
+        with self.lock:
+            return [p for p in self._load(user) if p.get("t", 0) >= cut]
+
+
+def history_sampler(users, store, presence, hosts, history, online_s, every=300):
+    time.sleep(60)
+    while True:
+        for user in list(users.data.get("users", {})):
+            try:
+                t = build_overview(user, store, presence, hosts, online_s)["totals"]
+                if t["sessions_total"] or t["hosts_total"]:
+                    history.add(user, {"t": int(time.time()), "hosts": t["hosts_online"], "sessions": t["sessions_active"],
+                                       "bots": t["bots_running"]})
+            except Exception as e:
+                log.warning("historia %s: %s", user, e)
+        time.sleep(every)
+
+
 # ───────────────────────── HTML panelu ─────────────────────────
 
 CSS = """
@@ -420,6 +567,18 @@ table{width:100%;border-collapse:collapse}td,th{padding:6px 8px;border-bottom:1p
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:var(--off)}.dot.on{background:var(--ok)}
 .tok{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--bg3);padding:6px 9px;border-radius:5px;word-break:break-all}
 .err{color:var(--bad)}.hint{color:var(--dim);font-size:12.5px}
+main.wide{max-width:1400px}.card{min-width:0}header{flex-wrap:wrap}
+@media (max-width:600px){main{padding:12px}.tile .v{font-size:24px}.tiles{grid-template-columns:1fr 1fr}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}
+.tile{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:12px 14px}
+.tile .l{color:var(--dim);font-size:12.5px}.tile .v{font-size:30px;font-weight:600;line-height:1.15;color:var(--fg)}.tile .s{color:var(--dim);font-size:12px}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}.charts .card{margin:0;min-width:0}
+@media (max-width:820px){.charts{grid-template-columns:1fr}}
+.chart svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--dim);margin:0 0 6px}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+#tip{position:fixed;pointer-events:none;background:#070912;border:1px solid #2b3556;border-radius:6px;padding:6px 9px;font-size:12.5px;color:var(--fg);display:none;z-index:9;white-space:nowrap}
+.tbl-wrap{overflow-x:auto}.flt{padding:4px}.flt input,.flt select{padding:3px 5px;font-size:12px;min-width:70px}
+.st-run{color:var(--ok)}.st-idle,.st-start{color:var(--acc)}.st-err{color:var(--bad)}.st-off{color:var(--off)}
 .login{max-width:360px;margin:12vh auto}.login form>*{margin-bottom:10px}
 #log{font:12.5px/1.4 ui-monospace,Menlo,Consolas,monospace;background:#070912;border:1px solid #1d2440;border-radius:6px;padding:10px;height:70vh;overflow:auto;white-space:pre-wrap;word-break:break-word}
 .l-blad{color:#e06c6c}.l-ostrzezenie{color:#e0b44c}.l-sukces{color:#5fc77f}.l-launcher{color:#7d8aa8}
@@ -434,27 +593,117 @@ def page(title, body, user=None):
             f'<title>{html.escape(title)} – Kraken</title><style>{CSS}</style></head><body>{nav}{body}</body></html>')
 
 
-DASH_JS = """
+DASH_JS = r"""
 const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-async function hosts(){const r=await fetch('/panel/api/hosts');if(r.status===401)return;const list=await r.json();const tb=document.getElementById('hrows');tb.textContent='';
-if(!list.length){tb.innerHTML='<tr><td colspan=5 class=hint>Brak hostów – w launcherze: ⚙️ Ustawienia › adres i token.</td></tr>';return}
-for(const h of list){const tr=document.createElement('tr');const run=(h.sessions||[]).filter(s=>s.status==='RUNNING').length;
-tr.innerHTML=`<td><span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'}</td><td><a href="/host?id=${encodeURIComponent(h.host_id)}">${esc(h.name||h.host_id)}</a></td>
-<td>${esc(h.platform||'')} ${h.version?'<span class=tag>'+esc(h.version)+'</span>':''}</td><td>${h.online?run+' / '+(h.sessions||[]).length+' uruchomionych':'—'}</td><td>${fmt(h.last)}</td>`;tb.appendChild(tr)}}
-const fmt=(s)=>{if(s==null)return'—';const d=Math.round(Date.now()/1000-s);return d<60?d+' s temu':d<3600?Math.round(d/60)+' min temu':new Date(s*1000).toLocaleString('pl-PL')};
-async function load(){const r=await fetch('/panel/api/sessions');if(r.status===401){location='/login';return}
-const list=await r.json();const tb=document.getElementById('rows');tb.textContent='';
-if(!list.length){tb.innerHTML='<tr><td colspan=7 class=hint>Brak sesji – wpisz token w bocie (Ustawienia › Serwer) albo w launcherze (api.json).</td></tr>';return}
-for(const s of list){const tr=document.createElement('tr');const u=`/session?world=${encodeURIComponent(s.world)}&char=${encodeURIComponent(s.char)}`;
-tr.innerHTML=`<td><span class="dot ${s.online?'on':''}"></span>${s.online?'online':'offline'}</td><td><a></a></td><td></td><td></td><td></td><td></td><td></td>`;
-const a=tr.children[1].firstChild;a.href=u;a.textContent=s.char;tr.children[2].textContent=s.world;
-tr.children[3].textContent=[s.lvl?('lvl '+s.lvl):'',s.map||''].filter(Boolean).join(' · ');tr.children[4].textContent=s.step||(s.running===false?'zatrzymany':'');
-tr.children[5].textContent=s.host||'poza launcherem';tr.children[6].textContent=fmt(s.last);tb.appendChild(tr)}}
+const fmt=(s)=>{if(s==null)return'—';const d=Math.round(Date.now()/1000-s);return d<60?d+' s temu':d<3600?Math.round(d/60)+' min temu':d<86400?Math.round(d/3600)+' godz. temu':new Date(s*1000).toLocaleString('pl-PL')};
+const $=(i)=>document.getElementById(i);
+const NS='http://www.w3.org/2000/svg';
+// Serie (walidacja palety: ciemne tło #111526 – CVD i kontrast OK): sesje aktywne, boty pracujące.
+const SER={sessions:['#3987e5','Sesje aktywne'],bots:['#d95926','Boty pracują']};
+const BAR='#3987e5';
+const tip=$('tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.display='block';const x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px'}
+const hideTip=()=>{tip.style.display='none'};
+const el=(tag,attrs,parent)=>{const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);if(parent)parent.appendChild(n);return n};
+const txt=(parent,x,y,s,attrs)=>{const t=el('text',Object.assign({x,y,fill:'#7d8aa8','font-size':11},attrs||{}),parent);t.textContent=s;return t};
+// Oś liczb całkowitych: krok 1, 2, 5, 10… tak, żeby było najwyżej 5 podziałek.
+const ticks=(m)=>{m=Math.max(1,m);let st=1;for(const k of [1,2,5,10,20,50,100,200,500,1000]){st=k;if(Math.ceil(m/k)<=5)break}return{max:Math.ceil(m/st)*st,step:st}};
+const widthOf=(box,min)=>Math.max(min,Math.round(box.clientWidth||min));
+
+// Aktywność z 24 h: dwie linie, celownik i dymek z wartościami, etykiety na końcach linii.
+function lineChart(box,pts,now){box.textContent='';
+if(!pts.length){box.innerHTML='<p class=hint>Zbieram dane – pierwszy punkt pojawi się w ciągu kilku minut (próbka co 5 min).</p>';return}
+const W=widthOf(box,300),H=220,L=30,R=78,T=10,B=24,x0=now-86400;
+const svg=el('svg',{width:W,height:H,viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'Aktywność z ostatnich 24 godzin'},box);
+const {max,step}=ticks(Math.max(...pts.map(p=>Math.max(p.sessions||0,p.bots||0))));
+const X=(t)=>L+(t-x0)/86400*(W-L-R),Y=(v)=>T+(1-v/max)*(H-T-B);
+for(let v=0;v<=max;v+=step){el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),stroke:'#1d2440','stroke-width':1},svg);txt(svg,L-6,Y(v)+4,Math.round(v),{'text-anchor':'end'})}
+for(let h=0;h<=24;h+=6){const t=x0+h*3600;txt(svg,X(t),H-6,new Date(t*1000).toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit'}),{'text-anchor':h===0?'start':h===24?'end':'middle'})}
+for(const k of ['sessions','bots']){let d='',prev=null;
+for(const p of pts){const gap=!prev||p.t-prev.t>900;d+=(gap?'M':'L')+X(p.t).toFixed(1)+' '+Y(p[k]||0).toFixed(1);prev=p}
+el('path',{d,fill:'none',stroke:SER[k][0],'stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'},svg)}
+const last=pts[pts.length-1];
+const ends=[['sessions',last.sessions||0],['bots',last.bots||0]].map(([k,v])=>({k,v,y:Y(v)}));
+if(Math.abs(ends[0].y-ends[1].y)<13){const m=(ends[0].y+ends[1].y)/2;const up=ends[0].v>=ends[1].v?0:1;ends[up].y=m-7;ends[1-up].y=m+7}
+for(const e of ends){el('circle',{cx:X(last.t),cy:Y(e.v),r:4,fill:SER[e.k][0],stroke:'#111526','stroke-width':2},svg);txt(svg,X(last.t)+8,e.y+4,`${e.v} ${e.k==='sessions'?'sesji':'botów'}`,{fill:'#d8c79a'})}
+const cross=el('line',{y1:T,y2:H-B,stroke:'#7d8aa8','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'},svg);
+const dots=['sessions','bots'].map(k=>el('circle',{r:4,fill:SER[k][0],stroke:'#111526','stroke-width':2,visibility:'hidden'},svg));
+const hit=el('rect',{x:L,y:T,width:W-L-R,height:H-T-B,fill:'transparent'},svg);
+hit.addEventListener('mousemove',(e)=>{const r=svg.getBoundingClientRect();const t=x0+((e.clientX-r.left)*W/r.width-L)/(W-L-R)*86400;
+let best=pts[0];for(const p of pts)if(Math.abs(p.t-t)<Math.abs(best.t-t))best=p;
+const x=X(best.t);cross.setAttribute('x1',x);cross.setAttribute('x2',x);cross.setAttribute('visibility','visible');
+['sessions','bots'].forEach((k,i)=>{dots[i].setAttribute('cx',x);dots[i].setAttribute('cy',Y(best[k]||0));dots[i].setAttribute('visibility','visible')});
+showTip(e,`<b>${new Date(best.t*1000).toLocaleString('pl-PL',{hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'})}</b><br>`+['sessions','bots'].map(k=>`<span style="color:${SER[k][0]}">●</span> ${SER[k][1]}: <b>${best[k]||0}</b>`).join('<br>')+`<br><span class=hint>hosty online: ${best.hosts||0}</span>`)});
+hit.addEventListener('mouseleave',()=>{hideTip();cross.setAttribute('visibility','hidden');dots.forEach(d=>d.setAttribute('visibility','hidden'))})}
+
+// Poziome słupki (jedna seria): etykieta po lewej, wartość za końcem słupka, dymek po najechaniu.
+function barChart(box,items,empty){box.textContent='';items=items.filter(i=>i.value>0);
+if(!items.length){box.innerHTML=`<p class=hint>${esc(empty)}</p>`;return}
+const W=widthOf(box,280),LW=Math.min(150,Math.round(W*0.32)),row=26,bh=12,H=items.length*row+6;
+const svg=el('svg',{width:W,height:H,viewBox:`0 0 ${W} ${H}`,role:'img'},box);const max=Math.max(...items.map(i=>i.value));
+items.forEach((it,i)=>{const y=i*row+4,w=Math.max(4,(W-LW-44)*it.value/max),r=4;
+txt(svg,LW-8,y+bh-1,it.label.length>20?it.label.slice(0,19)+'…':it.label,{'text-anchor':'end',fill:'#d8c79a','font-size':12});
+el('path',{d:`M${LW} ${y}h${w-r}a${r} ${r} 0 0 1 ${r} ${r}v${bh-2*r}a${r} ${r} 0 0 1 -${r} ${r}h-${w-r}z`,fill:BAR},svg);
+txt(svg,LW+w+6,y+bh-1,String(it.value),{'font-size':12});
+const hit=el('rect',{x:0,y:i*row,width:W,height:row,fill:'transparent'},svg);
+hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(it.label)}</b><br>${esc(it.title||it.value)}`));hit.addEventListener('mouseleave',hideTip)})}
+
+const LVL=[[1,19],[20,39],[40,59],[60,99],[100,149],[150,199],[200,999]];
+function charts(ov){
+lineChart($('c_act'),ov.history||[],ov.now);
+const hs=(ov.hosts||[]).map(h=>({label:h.name,value:h.sessions,title:`sesje: ${h.sessions}, aktywne: ${h.active}${h.online?'':' · host offline'}`}));
+const um=ov.sessions.filter(s=>!s.managed);if(um.length)hs.push({label:'niezarządzany',value:um.length,title:`sesje poza launcherem: ${um.length}, aktywne: ${ov.totals.unmanaged_active}`});
+barChart($('c_hosts'),hs,'Brak sesji.');
+const withLvl=ov.sessions.filter(s=>+s.lvl>0);
+barChart($('c_lvl'),LVL.map(([a,b])=>{const n=withLvl.filter(s=>s.lvl>=a&&s.lvl<=b);return{label:b>=999?`${a}+`:`${a}–${b}`,value:n.length,title:`postaci: ${n.length}${n.length?' · '+n.slice(0,6).map(s=>s.char).join(', ')+(n.length>6?'…':''):''}`}}),'Brak danych o poziomach (bot jeszcze nie wysłał sygnału).');
+const pc={};for(const s of ov.sessions)if(s.prof)pc[s.prof]=(pc[s.prof]||0)+1;
+barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci: ${v}`})),'Brak danych o profesjach.')}
+
+function tiles(t){const T=[['Hosty online',t.hosts_online,`z ${t.hosts_total}`],['Sesje aktywne',t.sessions_active,`z ${t.sessions_total}`],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane',t.unmanaged_active,`aktywne z ${t.unmanaged_total}`]];
+$('tiles').innerHTML=T.map(([l,v,s])=>`<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('')}
+
+function hostsTable(ov){const tb=$('hrows');tb.textContent='';
+for(const h of ov.hosts){const tr=document.createElement('tr');
+tr.innerHTML=`<td><span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'}</td><td><a href="/host?id=${encodeURIComponent(h.host_id)}">${esc(h.name)}</a></td><td>${esc(h.platform||'')} ${h.version?'<span class=tag>'+esc(h.version)+'</span>':''}</td><td>${h.active} / ${h.sessions}</td><td>${fmt(h.last)}</td>`;tb.appendChild(tr)}
+const t=ov.totals;const tr=document.createElement('tr');
+tr.innerHTML=`<td><span class="dot ${t.unmanaged_active?'on':''}"></span>${t.unmanaged_active?'aktywne':'—'}</td><td>niezarządzany</td><td class=hint>bot uruchomiony poza launcherem</td><td>${t.unmanaged_active} / ${t.unmanaged_total}</td><td>—</td>`;tb.appendChild(tr)}
+
+// Lista sesji: kolumny i belka filtrów (lista wyboru dla kolumn o kilku wartościach, tekst dla reszty;
+// poziom: „50”, „20-40”, „>100”, „<30”). Filtry zapamiętane w tej przeglądarce.
+const COLS=[['state','Stan','sel'],['host','Host','sel'],['group','Grupa','sel'],['session','Sesja','txt'],['world','Świat','sel'],['char','Postać','txt'],['prof','Profesja','sel'],['lvl','Poziom','lvl'],['program','Program','txt'],['step','Krok','txt'],['last','Ostatnio','']];
+let F={};try{F=JSON.parse(localStorage.getItem('kraken:panel:filters')||'{}')}catch(e){}
+const saveF=()=>{try{localStorage.setItem('kraken:panel:filters',JSON.stringify(F))}catch(e){}};
+function buildFilters(){const tr=$('frow');tr.textContent='';
+for(const [k,,kind] of COLS){const td=document.createElement('td');td.className='flt';
+if(kind==='sel'){const s=document.createElement('select');s.id='f_'+k;s.onchange=()=>{F[k]=s.value;saveF();rows()};td.appendChild(s)}
+else if(kind){const i=document.createElement('input');i.type='text';i.id='f_'+k;i.placeholder=kind==='lvl'?'np. 20-40':'szukaj';i.value=F[k]||'';i.oninput=()=>{F[k]=i.value;saveF();rows()};td.appendChild(i)}
+tr.appendChild(td)}}
+const lvlOk=(v,f)=>{f=f.replace(/\s/g,'');if(!f)return true;const n=+v;if(!n)return false;let m;
+if((m=/^(\d+)-(\d+)$/.exec(f)))return n>=+m[1]&&n<=+m[2];if((m=/^>=?(\d+)$/.exec(f)))return f[1]==='='?n>=+m[1]:n>+m[1];if((m=/^<=?(\d+)$/.exec(f)))return f[1]==='='?n<=+m[1]:n<+m[1];return String(n)===f};
+const cell=(s,k)=>k==='lvl'?(s.lvl||''):String(s[k]??'');
+let OV=null;
+function rows(){if(!OV)return;const ss=OV.sessions;
+for(const [k,,kind] of COLS){if(kind!=='sel')continue;const s=$('f_'+k);const vals=[...new Set(ss.map(x=>cell(x,k)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pl'));
+const cur=F[k]||'';s.innerHTML='<option value="">wszystkie</option>'+vals.map(v=>`<option${v===cur?' selected':''}>${esc(v)}</option>`).join('')+(cur&&!vals.includes(cur)?`<option selected>${esc(cur)}</option>`:'')}
+const list=ss.filter(x=>COLS.every(([k,,kind])=>{const f=(F[k]||'').trim();if(!f||!kind)return true;if(kind==='sel')return cell(x,k)===f;if(kind==='lvl')return lvlOk(x.lvl,f);return cell(x,k).toLowerCase().includes(f.toLowerCase())}));
+const tb=$('rows');tb.textContent='';
+if(!list.length)tb.innerHTML=`<tr><td colspan=${COLS.length} class=hint>${ss.length?'Brak sesji pasujących do filtrów.':'Brak sesji – uruchom launcher albo wpisz token w bocie.'}</td></tr>`;
+for(const s of list){const tr=document.createElement('tr');const u=`/session?world=${encodeURIComponent(s.world)}&char=${encodeURIComponent(s.log_char)}`;
+tr.innerHTML=`<td class="st-${s.state_key}" style="white-space:nowrap">${esc(s.state)}</td><td>${s.managed?`<a href="/host?id=${encodeURIComponent(s.host_id)}">${esc(s.host)}</a>`:'<span class=hint>niezarządzany</span>'}</td><td>${esc(s.group)}</td><td>${esc(s.session)}</td><td>${esc(s.world)}</td><td>${s.log_char?`<a href="${u}">${esc(s.char)}</a>`:esc(s.char)}</td><td>${esc(s.prof)}</td><td>${s.lvl||''}</td><td>${esc(s.program)}</td><td>${esc(s.step)}</td><td style="white-space:nowrap">${fmt(s.last)}</td>`;tb.appendChild(tr)}
+const act=Object.values(F).some(v=>String(v).trim());$('fcount').innerHTML=`pokazano ${list.length} z ${ss.length}`+(act?' · <a href="#" id="fclear">✕ wyczyść filtry</a>':'');
+if(act)$('fclear').onclick=(e)=>{e.preventDefault();F={};saveF();buildFilters();rows()}}
+
+let chartSig='';
+async function load(){const r=await fetch('/panel/api/overview');if(r.status===401){location='/login';return}OV=await r.json();
+tiles(OV.totals);hostsTable(OV);rows();
+const sig=JSON.stringify([OV.history,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
 async function dstat(){const r=await fetch('/panel/api/data/status');if(!r.ok)return;const d=await r.json();
 const N={map:'mapy',npc:'NPC',quest:'zadania',route:'trasy',set:'zestawy',playbook:'przebiegi',skill:'drzewka'};
-document.getElementById('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
-document.getElementById('dsync').onclick=async()=>{await fetch('/panel/api/data/sync',{method:'POST'});document.getElementById('dstat').textContent='Pobieram…';setTimeout(dstat,4000)};
-const tick=()=>{hosts();load();dstat()};tick();setInterval(tick,5000);
+$('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
+$('dsync').onclick=async()=>{await fetch('/panel/api/data/sync',{method:'POST'});$('dstat').textContent='Pobieram…';setTimeout(dstat,4000)};
+buildFilters();
+let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>OV&&charts(OV),200)});
+const tick=()=>{load().catch(()=>{});dstat().catch(()=>{})};tick();setInterval(tick,5000);
 """
 
 HOST_JS = """
@@ -579,7 +828,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo):
+def make_handler(cfg, users, store, presence, hosts, repo, history):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -698,6 +947,12 @@ def make_handler(cfg, users, store, presence, hosts, repo):
                 return self._send(200, {"ok": True, "user": name, "expires": users.get(name).get("token_expires")})
             if p.startswith("/api/v1/data/"):
                 return self._data_get(p, q)
+            if p == "/panel/api/overview":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                ov = build_overview(user, store, presence, hosts, online_s)
+                return self._send(200, dict(ov, ok=True, history=history.get(user, 24), now=int(time.time())))
             if p == "/panel/api/data/status":
                 if not self.panel_user():
                     return self._send(401, {"ok": False})
@@ -811,7 +1066,7 @@ def make_handler(cfg, users, store, presence, hosts, repo):
                 except Exception:
                     return self._send(400, {"ok": False, "error": "bad json"})
                 keep = {k: (str(info[k])[:200] if isinstance(info[k], str) else info[k])
-                        for k in ("char", "world", "version", "running", "map", "lvl", "step", "source") if k in info}
+                        for k in ("char", "world", "version", "running", "map", "lvl", "step", "source", "prof", "host_id", "session") if k in info}
                 presence.beat(user, keep)
                 return self._send(200, {"ok": True})
             if p in ("/api/v1/host/heartbeat", "/api/v1/host/state"):
@@ -994,7 +1249,19 @@ def make_handler(cfg, users, store, presence, hosts, repo):
             exp = users.get(user).get("token_expires") or 0
             exp_txt = time.strftime("%d.%m.%Y %H:%M", time.localtime(exp)) if exp else "bez terminu"
             left = int((exp - time.time()) // 86400) if exp else 0
-            self._html(200, "Sesje", f"""<main>
+            self._html(200, "Pulpit", f"""<main class="wide">
+<div class="tiles" id="tiles"></div>
+<div class="charts">
+<div class="card chart"><h2>Aktywność – ostatnie 24 h</h2><div class="legend"><span><i style="background:#3987e5"></i>Sesje aktywne</span><span><i style="background:#d95926"></i>Boty pracują</span></div><div id="c_act"></div></div>
+<div class="card chart"><h2>Sesje na hostach</h2><div id="c_hosts"></div></div>
+<div class="card chart"><h2>Poziomy postaci</h2><div id="c_lvl"></div></div>
+<div class="card chart"><h2>Profesje</h2><div id="c_prof"></div></div>
+</div>
+<div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
+<div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (aktywne / wszystkie)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
+<div class="card"><h2>Sesje <span class="hint" id="fcount" style="font-size:12.5px;font-weight:400;margin-left:8px"></span></h2><div class="tbl-wrap"><table>
+<thead><tr><th>Stan</th><th>Host</th><th>Grupa</th><th>Sesja</th><th>Świat</th><th>Postać</th><th>Profesja</th><th>Poziom</th><th>Program</th><th>Krok</th><th>Ostatnio</th></tr><tr id="frow"></tr></thead>
+<tbody id="rows"><tr><td colspan=11 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
 <div class="card"><h2>Token użytkownika</h2>
 <div class="tok" id="tok">{tok}</div>
 <p class="hint">Ważny do <b>{exp_txt}</b>{f" (jeszcze {left} dni)" if exp else ""}. Wpisz go w bocie Kraken (pierwszy ekran bota: adres tej strony i token)
@@ -1003,11 +1270,7 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('tok').textContent)">Kopiuj</button>
 <button type="submit">🔄 Zroluj token</button></form></div>
 <div class="card"><h2>Dane bota <button class="sm" id="dsync" style="float:right">⟳ Pobierz z repo</button></h2><div class="hint" id="dstat">Wczytuję…</div></div>
-<div class="card"><h2>Hosty</h2><p class="hint">Launchery z tym tokenem. Kliknij host, żeby zobaczyć jego sesje i uruchomić je z przeglądarki.</p>
-<table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div>
-<div class="card"><h2>Sesje bota</h2><p class="hint">Postacie wysyłające logi – z launchera albo uruchomione poza nim.</p>
-<table><thead><tr><th>Stan</th><th>Postać</th><th>Świat</th><th>Postęp</th><th>Krok</th><th>Host</th><th>Ostatnio</th></tr></thead>
-<tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table></div></main><script>{DASH_JS}</script>""", user)
+<div id="tip"></div></main><script>{DASH_JS}</script>""", user)
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
@@ -1095,7 +1358,10 @@ def main():
     hosts = Hosts(cfg)
     repo = DataRepo(cfg)
     repo.start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo))
+    history = History(store.root)
+    threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"])),
+                     daemon=True, name="history").start()
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history))
     httpd.daemon_threads = True
 
     def stop(*_):
