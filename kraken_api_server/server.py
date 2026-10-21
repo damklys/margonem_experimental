@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "4.3.0"
+VERSION = "4.4.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -468,7 +468,8 @@ if(!on)Object.assign(p,{group,group_world:gw,config:$('es_config').value,browser
 cmd('update_session',s.uid,s.name,p);editing=null;box.style.display='none'}}
 function groups(){const tb=$('grows');tb.textContent='';for(const g of O.groups||[]){const tr=document.createElement('tr');
 const lay=g.layout_enabled===true||g.layout_enabled==='True'?`${g.layout_cols}×${g.layout_rows}, ekran ${(+g.layout_screen||0)+1}, zoom ${g.layout_zoom}`:'wyłączony';
-tr.innerHTML=`<td>${esc(g.name)}</td><td>${esc(g.world)}</td><td>${esc(g.program||'(bez zmiany)')}</td><td>${esc(lay)}</td><td></td>`;const a=tr.lastChild;
+const ram=g.ram_saver===true||g.ram_saver==='True';
+tr.innerHTML=`<td>${esc(g.name)}${ram?' <span class=tag title="Oszczędzaj RAM">💾 RAM</span>':''}</td><td>${esc(g.world)}</td><td>${esc(g.program||'(bez zmiany)')}</td><td>${esc(lay)}</td><td></td>`;const a=tr.lastChild;
 a.appendChild(btn('✎','',()=>{gediting=gediting===g.name+'|'+g.world?null:g.name+'|'+g.world;gedit()},!H.online));
 a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć grupę „${g.name}”? Sesje trafią do innej grupy.`))cmd('delete_group','',g.name,{name:g.name,world:g.world})},!H.online));tb.appendChild(tr)}
 if(!(O.groups||[]).length)tb.innerHTML='<tr><td colspan=5 class=hint>Brak grup.</td></tr>';$('ng_world').innerHTML=opt(O.worlds||['Gordion'],$('ng_world').value)}
@@ -477,12 +478,13 @@ if(box.dataset.g===gediting&&box.style.display!=='none')return;box.dataset.g=ged
 box.innerHTML=`<h2>Grupa „${esc(g.name)}”</h2><div class="grid2"><label>Nazwa<input type="text" id="eg_name" value="${esc(g.name)}"></label>
 <label>Program grupy<select id="eg_program">${opt(O.programs||[],g.program||'','(bez zmiany – program z bota)')}</select></label>
 <label><span><input type="checkbox" id="eg_en"${en?' checked':''}> Układaj okna przeglądarek</span></label>
+<label><span><input type="checkbox" id="eg_ram"${g.ram_saver===true||g.ram_saver==='True'?' checked':''}> 💾 Oszczędzaj RAM (od następnego startu sesji)</span></label>
 <label>Ekran<select id="eg_screen">${(O.screens||[]).map((x,i)=>`<option value="${i}"${i===(+g.layout_screen||0)?' selected':''}>${esc(x.name)}</option>`).join('')}</select></label>
 <label>Kolumny<input type="text" id="eg_cols" value="${esc(g.layout_cols)}"></label><label>Wiersze<input type="text" id="eg_rows" value="${esc(g.layout_rows)}"></label>
 <label>Skalowanie<select id="eg_zoom">${opt((O.zooms||[]).map(z=>({value:z,label:z==='auto'?'Auto':z+'%'})),String(g.layout_zoom))}</select></label></div>
 <div style="margin-top:10px"><button class="pri" id="eg_save">Zapisz</button> <button id="eg_cancel">Anuluj</button></div>`;
 $('eg_cancel').onclick=()=>{gediting=null;box.style.display='none'};
-$('eg_save').onclick=async()=>{const nn=$('eg_name').value.trim();await cmd('update_group','',g.name,{name:g.name,world:g.world,program:$('eg_program').value,layout_enabled:$('eg_en').checked,layout_screen:$('eg_screen').value,layout_cols:$('eg_cols').value,layout_rows:$('eg_rows').value,layout_zoom:$('eg_zoom').value});
+$('eg_save').onclick=async()=>{const nn=$('eg_name').value.trim();await cmd('update_group','',g.name,{name:g.name,world:g.world,program:$('eg_program').value,ram_saver:$('eg_ram').checked,layout_enabled:$('eg_en').checked,layout_screen:$('eg_screen').value,layout_cols:$('eg_cols').value,layout_rows:$('eg_rows').value,layout_zoom:$('eg_zoom').value});
 if(nn&&nn!==g.name)await cmd('rename_group','',g.name,{name:g.name,new:nn,world:g.world});gediting=null;box.style.display='none'}}
 function configs(){const tb=$('crows');tb.textContent='';for(const c of O.config_profs||[]){const tr=document.createElement('tr');tr.innerHTML=`<td>${esc(c.name)}${c.banned===true||c.banned==='True'?' <span class=err>(zablokowane)</span>':''}</td><td></td>`;
 const sel=document.createElement('select');sel.innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),c.prof||'');sel.disabled=!H.online;

@@ -399,6 +399,17 @@ def _window_slot(layout: dict, index: int) -> "dict | None":
             "slot": i + 1, "screen": sc["name"]}
 
 
+# Tryb oszczędny RAM grupy: mniej procesów i usług w tle przeglądarki (bez --disable-gpu – gra na canvasie obciążyłaby CPU).
+# Chrome bierze tylko ostatnie --disable-features, dlatego jedna lista.
+RAM_SAVER_ARGS = [
+    "--renderer-process-limit=1",
+    "--disable-site-isolation-trials",
+    "--disable-features=IsolateOrigins,site-per-process,Translate,MediaRouter,OptimizationHints",
+    "--disable-background-networking",
+    "--disable-component-update",
+]
+
+
 ZOOM_HOSTS = ["margonem.pl", "www.margonem.pl", "gordion.margonem.pl", "luvia.margonem.pl"]
 
 
@@ -1041,6 +1052,10 @@ class BotRunner:
             "profile.password_manager_enabled": False,
         })
         options.add_argument("--disable-save-password-bubble")
+        if cfg.get("ram_saver"):
+            for a in RAM_SAVER_ARGS:
+                options.add_argument(a)
+            self.log("💾 Tryb oszczędny RAM grupy: jeden proces renderera, bez izolacji stron i usług w tle")
         # Konsola przeglądarki (logi bota Kraken) czytana przez launcher i wysyłana na serwer logów.
         options.set_capability("goog:loggingPrefs", {"browser": "ALL"})
         # "none": driver.get() wraca natychmiast, ChromeDriver nie blokuje
@@ -1173,7 +1188,7 @@ class GroupManager:
     # ---- zarządzanie grupami ----
     def _add_group(self, name: str, color: str, world: str = "Gordion"):
         key = (world, name)
-        self._groups[key] = {"color": color, "sessions": [], "layout": dict(LAYOUT_DEFAULT), "program": ""}
+        self._groups[key] = {"color": color, "sessions": [], "layout": dict(LAYOUT_DEFAULT), "program": "", "ram_saver": False}
         self._notify()
 
     def add_group(self, name: str, world: str = "Gordion") -> bool:
@@ -1290,6 +1305,15 @@ class GroupManager:
             self._groups[(world, name)]["program"] = program or ""
             self._notify()
 
+    def ram_saver_of(self, name: str, world: str = "Gordion") -> bool:
+        """Tryb oszczędny RAM grupy (flagi RAM_SAVER_ARGS przy starcie przeglądarek sesji)."""
+        return bool(self._groups.get((world, name), {}).get("ram_saver"))
+
+    def set_ram_saver(self, name: str, world: str, on: bool):
+        if (world, name) in self._groups:
+            self._groups[(world, name)]["ram_saver"] = bool(on)
+            self._notify()
+
     def slot_of(self, session_id: int) -> int:
         """Miejsce sesji w kolejności jej grupy (0 = pierwsza)."""
         for data in self._groups.values():
@@ -1301,7 +1325,8 @@ class GroupManager:
         return [{"name": n, "world": w, "color": d["color"],
                  "favorite": (w, n) in self._favorites,
                  "layout": d.get("layout") or dict(LAYOUT_DEFAULT),
-                 "program": d.get("program", "")}
+                 "program": d.get("program", ""),
+                 "ram_saver": bool(d.get("ram_saver"))}
                 for (w, n), d in self._groups.items()]
 
     # ---- obserwatorzy ----
@@ -2100,6 +2125,10 @@ class GroupPanel(tk.Frame):
                          command=lambda: GroupProgramDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         menu.add_command(label="🪟  Układ okien…",
                          command=lambda: LayoutDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
+        ram = tk.BooleanVar(value=self.gm.ram_saver_of(group_name, self._selected_world))
+        menu.add_checkbutton(label="💾  Oszczędzaj RAM (od następnego STARTU)", variable=ram,
+                             command=lambda: self.gm.set_ram_saver(group_name, self._selected_world, ram.get()))
+        menu._ram_var = ram   # referencja – bez niej Tk gubi stan zaznaczenia
         menu.add_separator()
         menu.add_command(label="🗑  Usuń grupę",
                          command=lambda: self._delete_group(group_name))
@@ -3176,6 +3205,8 @@ class SessionTab(tk.Frame):
             "group":           self.gm.group_of(self.session_id),
             "group_world":     self.gm.world_of_session(self.session_id),
             "recreate":        self.recreate_var.get(),
+            "ram_saver":       self.gm.ram_saver_of(self.gm.group_of(self.session_id),
+                                                    self.gm.world_of_session(self.session_id)),
             # Program bota: własny sesji albo program grupy ('' – bot zostaje przy swoim).
             "program":         self.effective_program(),
             # Układ okien grupy: miejsce wg kolejności sesji w grupie, ekran i zoom z ustawień grupy.
@@ -3939,7 +3970,8 @@ class BotGUI:
             if time.time() - getattr(self, "_screens_at", 0) > 60:
                 self._screens_at, self._screens_cache = time.time(), _screens()
             HOST.options = {
-                "groups": [dict({"name": n, "world": w, "program": self.gm.program_of(n, w)},
+                "groups": [dict({"name": n, "world": w, "program": self.gm.program_of(n, w),
+                                 "ram_saver": self.gm.ram_saver_of(n, w)},
                                 **{f"layout_{k}": v for k, v in self.gm.layout_of(n, w).items()}) for (w, n) in self.gm._groups],
                 "configs": sorted(self._config_map),
                 "config_profs": [{"name": c, "prof": config_prof(p), "banned": config_banned(p)} for c, p in sorted(self._config_map.items())],
@@ -4020,6 +4052,8 @@ class BotGUI:
                     return HOST.report(c["id"], False, f"brak grupy „{g}”")
                 if "program" in p:
                     self.gm.set_program(g, w, p.get("program") or "")
+                if "ram_saver" in p:
+                    self.gm.set_ram_saver(g, w, p["ram_saver"] in (True, "true", "1", "on"))
                 lay = {k[7:]: v for k, v in p.items() if k.startswith("layout_")}
                 if lay:
                     cur = self.gm.layout_of(g, w)
@@ -4306,6 +4340,8 @@ class BotGUI:
                 self.gm._groups[(world, name)]["layout"] = dict(LAYOUT_DEFAULT, **g["layout"])
             if name and g.get("program"):
                 self.gm._groups[(world, name)]["program"] = g["program"]
+            if name and g.get("ram_saver"):
+                self.gm._groups[(world, name)]["ram_saver"] = True
             if g.get("favorite"):
                 self.gm._favorites.add((world, name))
 
