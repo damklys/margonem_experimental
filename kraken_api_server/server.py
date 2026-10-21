@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.4.0"
+VERSION = "5.4.1"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -653,8 +653,10 @@ class Issues:
 
 
 class OpStats:
-    """Operacje botów (z sygnału „żyję”): godzina → typ → {start, ok, slow, fail}; 30 dni na dysku (ops.json)."""
+    """Operacje botów (z sygnału „żyję”): przedział 5 min → typ → {start, ok, slow, fail}; 30 dni na dysku (ops.json).
+    Zakresy pulpitu (1 h … 30 d) liczone wstecz od teraz, nie od pełnej godziny."""
     KEEP = 30 * 86400
+    BUCKET = 300
     KEYS = ("start", "ok", "slow", "fail")
 
     def __init__(self, root):
@@ -676,10 +678,10 @@ class OpStats:
         return self.data[user]
 
     def add(self, user, ops):
-        hour = int(time.time() // 3600 * 3600)
+        slot = int(time.time() // self.BUCKET * self.BUCKET)
         with self.lock:
             d = self._load(user)
-            b = d.setdefault(hour, {})
+            b = d.setdefault(slot, {})
             for t, c in list(ops.items())[:40]:
                 if not isinstance(c, dict):
                     continue
@@ -705,8 +707,8 @@ class OpStats:
             self.dirty.clear()
 
     def last(self, user, hours=24):
-        """Suma z ostatnich `hours` godzin: typ → {start, ok, slow, fail}."""
-        cut = time.time() // 3600 * 3600 - (hours - 1) * 3600
+        """Suma z ostatnich `hours` godzin (wstecz od teraz): typ → {start, ok, slow, fail}."""
+        cut = time.time() - hours * 3600 - self.BUCKET
         out = {}
         with self.lock:
             for h, b in self._load(user).items():
