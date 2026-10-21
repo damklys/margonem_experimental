@@ -985,6 +985,34 @@ class BotRunner:
         except Exception:
             return False
 
+    def _captcha_present(self, By) -> bool:
+        try:
+            return bool(self.driver.find_elements(By.CSS_SELECTOR, ".captcha__buttons")) or bool(
+                self.driver.find_elements(By.XPATH, "//div[@class='label' and text()='Rozwiąż teraz']"))
+        except Exception:
+            return False
+
+    def _captcha_guard(self, check_and_solve_captcha, By):
+        """Captcha przez całą sesję: dopóki bot nie pracuje (autoryzacja, wczytywanie danych, start, zatrzymany bot),
+        rozwiązuje ją launcher; gdy bot pracuje – przejmuje ją bot (czujka captchy w bocie)."""
+        owner = ""
+        while not self.stop_event.is_set() and self.driver:
+            try:
+                running = self._read_bot_state() == "running"
+                now_owner = "bot" if running else "launcher"
+                if now_owner != owner:
+                    owner = now_owner
+                    self.log("🤖 Bot pracuje – captchę rozwiązuje bot" if running else
+                             "🔐 Bot nie pracuje – captchę rozwiązuje launcher")
+                if not running and self._captcha_present(By):
+                    self.log("🔐 Captcha – rozwiązuję (launcher)")
+                    ok = check_and_solve_captcha(self.driver)
+                    self.log("✅ Captcha rozwiązana" if ok else "⚠️  Captcha: nie udało się rozwiązać – spróbuję ponownie")
+                    time.sleep(3)
+            except Exception:
+                pass
+            time.sleep(1)
+
     def _captcha_once(self, check_and_solve_captcha, By):
         """Captcha zaraz po wejściu do gry (zanim ruszy bot w przeglądarce) – jedno rozwiązanie i koniec."""
         t0 = time.time()
@@ -1205,7 +1233,9 @@ class BotRunner:
                 _go_server()
 
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
+        # Captcha zaraz po wejściu do gry, potem strażnik w tle przez całą sesję (do startu bota i gdy bot stoi).
         self._captcha_once(check_and_solve_captcha, By)
+        threading.Thread(target=self._captcha_guard, args=(check_and_solve_captcha, By), daemon=True).start()
         self._ensure_bot_loaded(By)
         self._push_api_to_bot()
         self.prof = str(config_data.get("prof", "") or "")
