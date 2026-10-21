@@ -23,6 +23,7 @@ Dane bota (checkout repo na serwerze, data_repo.py; odpowiedzi gzip przy Accept-
   GET  /api/v1/data/get?kind=route&key=…   – {"ok", "ref", "data"}
   POST /api/v1/data/batch {"items": [{"kind", "key"}]} (do 100) – {"ok", "ref", "items": [{"kind", "key", "data"}]}
   GET  /api/v1/data/world                  – graf świata (world, heros, e2)
+  GET  /api/v1/data/pack?kind=map|npc|route|playbook|set|skill[&prof=m] – cały rodzaj jedną odpowiedzią
 Panel: /  (hosty, sesje, token), /host?id=  (sesje hosta, start/stop), /session?world=&char=  (log na żywo),
        /password, /login, /logout
 """
@@ -901,9 +902,15 @@ def make_handler(cfg, users, store, presence, hosts, repo):
                 if not repo.world:
                     return self._send(503, {"ok": False, "error": "dane jeszcze się wczytują"})
                 return self._send(200, self._data_json(repo.world))
+            if not repo.ref:
+                return self._send(503, {"ok": False, "error": "dane jeszcze się wczytują"})
             kind = q.get("kind", "")
             if kind not in KINDS:
                 return self._send(400, {"ok": False, "error": "kind"})
+            if p == "/api/v1/data/pack":
+                if kind not in repo.PACK_KINDS:
+                    return self._send(400, {"ok": False, "error": "kind"})
+                return self._send(200, b'{"ok":true,"ref":"' + repo.ref.encode() + b'","items":' + repo.pack(kind, q.get("prof", "")) + b"}")
             if p == "/api/v1/data/list":
                 ref, items = repo.list(kind, q.get("prof", ""))
                 return self._send(200, {"ok": True, "ref": ref, "items": items})
@@ -922,6 +929,8 @@ def make_handler(cfg, users, store, presence, hosts, repo):
                 assert isinstance(items, list) and len(items) <= 100
             except Exception:
                 return self._send(400, {"ok": False, "error": "bad request"})
+            if not repo.ref:
+                return self._send(503, {"ok": False, "error": "dane jeszcze się wczytują"})
             parts = []
             for it in items:
                 kind, key = str((it or {}).get("kind", "")), str((it or {}).get("key", ""))[:200]

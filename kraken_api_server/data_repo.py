@@ -91,6 +91,9 @@ class DataRepo:
         return r.stdout.strip()
 
     def sync(self):
+        # Po restarcie serwera: indeks od razu z istniejącego checkoutu (fetch z GitHuba może chwilę potrwać).
+        if not self.ref and os.path.isdir(os.path.join(self.dir, ".git")):
+            self._rebuild(self._git("-C", self.dir, "rev-parse", "HEAD"))
         if not os.path.isdir(os.path.join(self.dir, ".git")):
             log.info("dane repo: klonuję %s (%s) → %s", self.url, self.branch, self.dir)
             self._git("clone", "--depth", "1", "--branch", self.branch, self.url, self.dir, timeout=900)
@@ -159,6 +162,53 @@ class DataRepo:
             items = self.meta.get(kind) or {}
             out = [dict({"key": k}, **m) for k, m in items.items() if not prof or kind != "set" or m.get("prof") == prof]
             return self.ref, sorted(out, key=lambda x: x["key"])
+
+    PACK_KINDS = ("map", "npc", "route", "playbook", "set", "skill")
+
+    def pack(self, kind, prof=""):
+        """Cały rodzaj jedną odpowiedzią (bajty JSON listy plików; mapy – zwięzły słownik nazwa → {id, gw, zones},
+        jak MapData w bocie). Budowane raz na commit repo."""
+        with self.lock:
+            ref, cache = self.ref, self.__dict__.setdefault("_packs", {})
+            hit = cache.get((ref, kind, prof))
+            files = sorted(set(self.index.get(kind, {}).values()))
+        if hit is not None:
+            return hit
+        if kind == "set" and prof:
+            files = [f for f in files if os.path.basename(os.path.dirname(f)) == prof]
+        if kind == "map":
+            out = {}
+            for path in files:
+                try:
+                    with open(path, "r", encoding="utf-8") as f:
+                        rec = json.load(f)
+                except Exception:
+                    continue
+                if rec.get("kraken") != "mapa" or not rec.get("name"):
+                    continue
+                zones = rec.get("zones")
+                out[rec["name"]] = {"id": rec.get("id"),
+                                    "gw": [[g["to"], g.get("x"), g.get("y"), g.get("req") or ""]
+                                           for g in rec.get("gateways") or [] if g and g.get("to")],
+                                    "zones": zones if isinstance(zones, list) and len(zones) > 1 else None}
+            raw = json.dumps(out, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        else:
+            parts = []
+            for path in files:
+                try:
+                    with open(path, "rb") as f:
+                        b = f.read()
+                    json.loads(b)
+                    parts.append(b)
+                except Exception:
+                    continue
+            raw = b"[" + b",".join(parts) + b"]"
+        with self.lock:
+            if self.ref == ref:
+                cache = {k: v for k, v in cache.items() if k[0] == ref}
+                cache[(ref, kind, prof)] = raw
+                self._packs = cache
+        return raw
 
     def get(self, kind, key):
         """Surowe bajty pliku albo None."""
