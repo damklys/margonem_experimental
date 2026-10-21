@@ -142,23 +142,43 @@ def save_config(url: str, token: str, host_name: str = None) -> None:
     SHIPPER.reload()
 
 
-def check(url: str, token: str) -> str:
-    """Test połączenia: GET /api/v1/me z tokenem → opis wyniku."""
+def auth(url: str, token: str) -> dict:
+    """Autoryzacja tokenem: GET /api/v1/me → {"state": ok | denied | offline, "user", "expires", "msg"}.
+    denied – token nieznany (zrolowany w panelu) albo wygasły; offline – serwer niedostępny."""
+    url, token = (url or "").strip().rstrip("/"), (token or "").strip()
+    if not url.lower().startswith("https://") or not token:
+        return {"state": "denied", "user": "", "expires": 0, "msg": "Podaj adres panelu (https://…) i token."}
     try:
-        req = urllib.request.Request(f"{url.strip().rstrip('/')}/api/v1/me",
-                                     headers={"Authorization": f"Bearer {token.strip()}", "User-Agent": "KrakenLauncher"})
+        req = urllib.request.Request(f"{url}/api/v1/me", headers={"Authorization": f"Bearer {token}", "User-Agent": "KrakenLauncher"})
         with urllib.request.urlopen(req, timeout=10) as r:
             d = json.loads(r.read().decode("utf-8") or "{}")
-            return f"✅ Połączono – konto: {d.get('user')}" if d.get("ok") else "❌ Serwer odrzucił token"
+        if d.get("ok"):
+            return {"state": "ok", "user": d.get("user", ""), "expires": int(d.get("expires") or 0), "msg": ""}
+        return {"state": "denied", "user": "", "expires": 0, "msg": "Serwer odrzucił token."}
     except urllib.error.HTTPError as e:
-        return "❌ Zły token" if e.code == 401 else f"❌ HTTP {e.code}"
+        if e.code == 401:
+            try:
+                why = json.loads(e.read().decode("utf-8") or "{}").get("error") or "zły token"
+            except Exception:
+                why = "zły token"
+            return {"state": "denied", "user": "", "expires": 0, "msg": f"Token odrzucony: {why}."}
+        return {"state": "offline", "user": "", "expires": 0, "msg": f"Serwer: HTTP {e.code}"}
     except Exception as e:
-        return f"❌ Brak połączenia: {str(e)[:120]}"
+        return {"state": "offline", "user": "", "expires": 0, "msg": f"Brak połączenia z serwerem: {str(e)[:120]}"}
+
+
+def check(url: str, token: str) -> str:
+    """Test połączenia (Ustawienia launchera, start bota) → opis wyniku: „✅ …” albo „❌ …”."""
+    a = auth(url, token)
+    if a["state"] == "ok":
+        until = time.strftime("%d.%m.%Y", time.localtime(a["expires"])) if a["expires"] else ""
+        return f"✅ Połączono – konto: {a['user']}" + (f", token ważny do {until}" if until else "")
+    return f"❌ {a['msg']}"
 
 
 SHIPPER = LogShipper()
 
-LAUNCHER_VERSION = "4.4"
+LAUNCHER_VERSION = "5.0"
 PLATFORM = {"Darwin": "macOS", "Windows": "Windows", "Linux": "Linux"}.get(platform.system(), platform.system())
 
 

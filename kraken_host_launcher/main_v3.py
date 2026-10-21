@@ -2245,6 +2245,66 @@ class GroupProgramDialog(tk.Toplevel):
         self.destroy()
 
 
+class AuthScreen(tk.Frame):
+    """Pierwszy ekran launchera: adres panelu Kraken i token. Bez ważnej autoryzacji nie widać reszty okna (ekran
+    zasłania całe okno). Po autoryzacji token zostaje w api.json na tym komputerze i działa do zrolowania w panelu."""
+
+    def __init__(self, root, on_ok, message: str = "", auto: bool = True):
+        super().__init__(root, bg=BG)
+        from log_shipper import SHIPPER
+        self.on_ok = on_ok
+        self.place(x=0, y=0, relwidth=1, relheight=1)
+        self.lift()
+        box = tk.Frame(self, bg=BG2, padx=28, pady=22, highlightbackground=BORDER, highlightthickness=1)
+        box.place(relx=0.5, rely=0.45, anchor="center")
+        tk.Label(box, text="🔐 KRAKEN — AUTORYZACJA", font=FONT_TITLE, bg=BG2, fg=ACCENT).pack(anchor="w")
+        tk.Label(box, text="Launcher działa tylko z ważnym tokenem konta z panelu Kraken (strona główna panelu).\n"
+                           "Token zostaje zapisany na tym komputerze i działa do zrolowania w panelu.",
+                 font=FONT_SMALL, bg=BG2, fg=FG_DIM, justify="left").pack(anchor="w", pady=(4, 12))
+        self.url = tk.StringVar(value=SHIPPER.url)
+        self.token = tk.StringVar(value=SHIPPER.token)
+        self.host_name = tk.StringVar(value=SHIPPER.host_name)
+        for label, var, show in (("Adres panelu:", self.url, ""), ("Token:", self.token, "•"), ("Nazwa hosta:", self.host_name, "")):
+            row = tk.Frame(box, bg=BG2)
+            row.pack(fill="x", pady=3)
+            tk.Label(row, text=label, width=13, anchor="w", bg=BG2, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+            e = tk.Entry(row, textvariable=var, width=52, show=show, bg=BG3, fg=FG, insertbackground=FG, relief="flat", font=FONT_SMALL)
+            e.pack(side="left", fill="x", expand=True, ipady=3)
+            e.bind("<Return>", lambda _e: self._go())
+        self.info = tk.Label(box, text=message, font=FONT_SMALL, bg=BG2, fg=RED if message else FG_DIM,
+                             wraplength=520, justify="left")
+        self.info.pack(anchor="w", pady=(10, 4))
+        self.btn = tk.Button(box, text="🔐 Autoryzuj", command=self._go, bg=GREEN, fg="#000", relief="flat",
+                             font=FONT_BOLD, padx=14, pady=5, cursor="hand2")
+        self.btn.pack(anchor="e", pady=(6, 0))
+        # Zapisany token (api.json) – sprawdzamy od razu; ekran znika, gdy jest ważny.
+        if auto and SHIPPER.url and SHIPPER.token:
+            self._go(saved=True)
+
+    def _go(self, saved: bool = False):
+        from log_shipper import auth
+        url, token = self.url.get().strip().rstrip("/"), self.token.get().strip()
+        self.btn.configure(state="disabled")
+        self.info.configure(text="⏳ Sprawdzam zapisany token…" if saved else "⏳ Sprawdzam token…", fg=FG_DIM)
+
+        def run():
+            a = auth(url, token)
+            self.after(0, lambda: self._done(a, url, token))
+        threading.Thread(target=run, daemon=True).start()
+
+    def _done(self, a: dict, url: str, token: str):
+        from log_shipper import save_config
+        if not self.winfo_exists():
+            return
+        self.btn.configure(state="normal")
+        if a["state"] != "ok":
+            self.info.configure(text=f"❌ {a['msg']}", fg=RED)
+            return
+        save_config(url, token, self.host_name.get())
+        self.destroy()
+        self.on_ok(a)
+
+
 class LauncherSettingsDialog(tk.Toplevel):
     """Ustawienia launchera: serwer Kraken API (adres panelu i token użytkownika) – zapis do api.json.
     Launcher wysyła wtedy logi sesji, a przy starcie sesji przekazuje adres i token botowi w przeglądarce."""
@@ -2298,6 +2358,8 @@ class LauncherSettingsDialog(tk.Toplevel):
             self.info.configure(text="Adres musi zaczynać się od https:// (bot w przeglądarce nie wyśle niczego na http).", fg=RED)
             return
         save_config(url, self.token.get(), self.host_name.get())
+        if self.app:
+            self.app.auth_check_now()
         self.destroy()
 
     def _restore(self):
@@ -3483,9 +3545,12 @@ class SessionTab(tk.Frame):
 class BotGUI:
     MAX_PER_GROUP = 10
 
-    def __init__(self, root: tk.Tk, app_icon=None):
+    def __init__(self, root: tk.Tk, app_icon=None, auth: dict = None):
         self.root     = root
         self._app_icon = app_icon
+        self._auth    = auth or {}           # wynik autoryzacji (log_shipper.auth): user, expires
+        self._locked  = False                # token zrolowany / wygasły – okno zasłonięte ekranem autoryzacji
+        self._offline_since = None
         root.title("Kraken — Żul Operator")
         root.configure(bg=BG)
         root.minsize(1060, 660)
@@ -3514,6 +3579,7 @@ class BotGUI:
         self._last_pushed = ""
         self._last_push_check = 0.0
         self.root.after(1500, self._host_tick)
+        self.root.after(60000, self._auth_tick)
 
     # ---- skanowanie ----
     def _scan_files(self):
@@ -3922,9 +3988,12 @@ class BotGUI:
         running = sum(1 for s in self._sessions if s.status == "RUNNING")
         total   = len(self._sessions)
         groups  = len(self.gm.group_names())
+        a = getattr(self, "_auth", {}) or {}
+        auth_txt = (f"   |   🔐 {a.get('user')}" + (f" · token do {time.strftime('%d.%m.%Y', time.localtime(a['expires']))}"
+                                                     if a.get("expires") else "")) if a.get("user") else ""
         self.statusbar.configure(
             text=f"  Sesje: {total}   ▶ Aktywne: {running}   ○ Offline: {total-running}"
-                 f"   |   Grupy: {groups}")
+                 f"   |   Grupy: {groups}{auth_txt}")
 
     def _on_config_added(self, filename: str, path: str):
         """Aktualizuj _config_map i odśwież combobox we wszystkich sesjach."""
@@ -3951,6 +4020,50 @@ class BotGUI:
         """Odśwież dropdown template we wszystkich sesjach."""
         for s in self._sessions:
             s._refresh_template_cb()
+
+    # ---- autoryzacja tokenem (co minutę) ----
+    AUTH_GRACE = 15 * 60   # s – serwer niedostępny: tyle pracujemy na ostatniej autoryzacji
+
+    def _auth_tick(self):
+        self.auth_check_now()
+        self.root.after(60000, self._auth_tick)
+
+    def auth_check_now(self):
+        from log_shipper import SHIPPER, auth
+        url, token = SHIPPER.url, SHIPPER.token
+
+        def run():
+            a = auth(url, token)
+            self.root.after(0, lambda: self._auth_result(a))
+        threading.Thread(target=run, daemon=True).start()
+
+    def _auth_result(self, a: dict):
+        if self._locked:
+            return
+        if a["state"] == "ok":
+            self._auth, self._offline_since = a, None
+            self._update_statusbar()
+            return
+        if a["state"] == "offline":
+            self._offline_since = self._offline_since or time.time()
+            if time.time() - self._offline_since < self.AUTH_GRACE:
+                return
+        self._lock(a["msg"])
+
+    def _lock(self, msg: str):
+        """Token zrolowany / wygasły: sesje stop, okno zasłonięte ekranem autoryzacji (polecenia z panelu czekają)."""
+        self._locked = True
+        running = [s for s in self._sessions if s.is_running]
+        for s in self._sessions:
+            if s.is_running:
+                s.logger.write(f"⛔ Autoryzacja launchera utracona: {msg} – zatrzymuję sesję")
+        self._stop_all()
+        AuthScreen(self.root, on_ok=self._unlock, auto=False,
+                   message=f"⛔ {msg}" + (f" Zatrzymano sesje: {len(running)}." if running else "") + " Wpisz aktualny token z panelu.")
+
+    def _unlock(self, a: dict):
+        self._locked, self._auth, self._offline_since = False, a, None
+        self._update_statusbar()
 
     # ---- host w panelu WWW ----
     def _host_tick(self):
@@ -3983,7 +4096,7 @@ class BotGUI:
                 "programs": _list_programs(),
                 "professions": [{"name": k, "world": l} for k, l in PROFESSIONS],
             }
-            while True:
+            while not self._locked:
                 try:
                     c = HOST.commands.get_nowait()
                 except Exception:
@@ -4157,7 +4270,7 @@ class BotGUI:
         try:
             now = time.time()
             ran = False
-            for e in list(self._schedules):
+            for e in ([] if self._locked else list(self._schedules)):
                 if S.due(e, now):
                     e["last_run"] = now
                     if e["kind"] == "once":
@@ -4532,8 +4645,18 @@ def main():
         root.iconphoto(True, _icon)
     _set_dock_icon()
 
-    app = BotGUI(root, app_icon=_icon)
-    root.protocol("WM_DELETE_WINDOW", app.on_close)
+    # Pierwszy ekran: autoryzacja tokenem – okno launchera powstaje dopiero po niej.
+    root.geometry("1180x720")
+    root.title("Kraken — autoryzacja")
+    root.configure(bg=BG)
+    root.protocol("WM_DELETE_WINDOW", root.destroy)
+
+    def start_app(a):
+        app = BotGUI(root, app_icon=_icon, auth=a)
+        root.protocol("WM_DELETE_WINDOW", app.on_close)
+        app._update_statusbar()
+
+    AuthScreen(root, on_ok=start_app)
     root.mainloop()
 
 

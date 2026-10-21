@@ -9,7 +9,7 @@ Pierwsze uruchomienie: użytkownik admin / hasło admin – panel wymusza zmian�
 
 API bota / launchera (nagłówek Authorization: Bearer <token użytkownika>, CORS dla stron gry):
   GET  /api/v1/health      – bez tokenu
-  GET  /api/v1/me          – czy token jest poprawny: {"ok", "user"}
+  GET  /api/v1/me          – czy token jest poprawny i ważny: {"ok", "user", "expires"}; 401 {"error"} – zły / wygasły
   POST /api/v1/logs        – {"source", "entries": [{"char", "world", "lines": [...]}]} (opcjonalnie gzip)
   POST /api/v1/heartbeat   – {"char", "world", "version", "running", "map", "lvl", "step", "source"}
 API launchera (host):
@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.0.0"
+VERSION = "5.1.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -97,6 +97,9 @@ def check_password(pw, stored):
         return False
 
 
+TOKEN_DAYS = 365   # ważność tokenu konta (dni); pole "token_days" użytkownika w users.json zmienia ją dla konta
+
+
 class Users:
     def __init__(self, data_dir, legacy_tokens):
         self.path = os.path.join(data_dir, "users.json")
@@ -110,6 +113,15 @@ class Users:
                                            "token": secrets.token_urlsafe(32), "created": int(time.time())}
             self.save()
             log.warning("utworzono użytkownika admin / admin – zmiana hasła wymagana po pierwszym logowaniu")
+        # Tokeny bez terminu ważności (sprzed wersji 5.1) – ważne od dziś przez okres konta.
+        changed = False
+        for u in self.data["users"].values():
+            if not u.get("token_expires"):
+                u["token_created"] = u.get("token_created") or int(time.time())
+                u["token_expires"] = int(time.time()) + self.days(u) * 86400
+                changed = True
+        if changed:
+            self.save()
         self.legacy = [t for t in legacy_tokens if t]
 
     def save(self):
@@ -122,15 +134,28 @@ class Users:
     def get(self, name):
         return self.data["users"].get(name)
 
-    def by_token(self, token):
+    @staticmethod
+    def days(u):
+        try:
+            return max(1, int(u.get("token_days") or TOKEN_DAYS))
+        except (TypeError, ValueError):
+            return TOKEN_DAYS
+
+    def lookup(self, token):
+        """(użytkownik, wygasł?) albo (None, False) – nieznany token."""
         if not token:
-            return None
+            return None, False
         for name, u in self.data["users"].items():
             if hmac.compare_digest(token, u.get("token", "")):
-                return name
+                return name, bool(u.get("token_expires")) and time.time() > u["token_expires"]
         if any(hmac.compare_digest(token, t) for t in self.legacy):
-            return "admin"
-        return None
+            return "admin", False
+        return None, False
+
+    def by_token(self, token):
+        """Użytkownik tokenu – tylko ważnego (wygasły = brak autoryzacji)."""
+        name, expired = self.lookup(token)
+        return None if expired else name
 
     def set_password(self, name, pw):
         with self.lock:
@@ -140,8 +165,13 @@ class Users:
             self.save()
 
     def new_token(self, name):
+        """Rotacja: nowy token z nowym terminem ważności; stary przestaje działać od razu (boty i launchery na nim
+        tracą autoryzację przy najbliższym sprawdzeniu)."""
         with self.lock:
-            self.data["users"][name]["token"] = secrets.token_urlsafe(32)
+            u = self.data["users"][name]
+            u["token"] = secrets.token_urlsafe(32)
+            u["token_created"] = int(time.time())
+            u["token_expires"] = int(time.time()) + self.days(u) * 86400
             self.save()
             return self.data["users"][name]["token"]
 
@@ -602,11 +632,15 @@ def make_handler(cfg, users, store, presence, hosts, repo):
             self._send(303, "", "text/plain", h)
 
         def _body(self):
+            self._body_done = True
             try:
                 length = int(self.headers.get("Content-Length", "0"))
             except ValueError:
                 length = 0
-            if length <= 0 or length > cfg["max_body_bytes"]:
+            if length > cfg["max_body_bytes"]:
+                self.close_connection = True      # nieprzeczytana treść – połączenie do zamknięcia
+                return None
+            if length <= 0:
                 return None
             raw = self.rfile.read(length)
             if self.headers.get("Content-Encoding", "").lower() == "gzip":
@@ -657,8 +691,11 @@ def make_handler(cfg, users, store, presence, hosts, repo):
             if p == "/api/v1/health":
                 return self._send(200, {"ok": True, "version": VERSION})
             if p == "/api/v1/me":
-                u = self.token_user()
-                return self._send(200 if u else 401, {"ok": bool(u), "user": u})
+                auth = self.headers.get("Authorization", "")
+                name, expired = users.lookup(auth[7:].strip() if auth.lower().startswith("bearer ") else "")
+                if not name or expired:
+                    return self._send(401, {"ok": False, "error": "token wygasł" if expired else "nieznany token (zrolowany?)"})
+                return self._send(200, {"ok": True, "user": name, "expires": users.get(name).get("token_expires")})
             if p.startswith("/api/v1/data/"):
                 return self._data_get(p, q)
             if p == "/panel/api/data/status":
@@ -727,6 +764,19 @@ def make_handler(cfg, users, store, presence, hosts, repo):
             self._send(404, {"ok": False, "error": "not found"})
 
         def do_POST(self):
+            # Odpowiedź bez odczytania treści (np. 401 przy złym tokenie) zostawiłaby ją w połączeniu keep-alive –
+            # następne żądanie na tym połączeniu byłoby z niej odczytane (501). Treść dobieramy po obsłudze.
+            self._body_done = False
+            try:
+                self._do_post()
+            finally:
+                if not self._body_done:
+                    try:
+                        self._body()
+                    except Exception:
+                        self.close_connection = True
+
+        def _do_post(self):
             p = urlparse(self.path).path
             if p == "/api/v1/data/batch":
                 return self._data_batch()
@@ -941,14 +991,17 @@ def make_handler(cfg, users, store, presence, hosts, repo):
 
         def _dashboard(self, user):
             tok = html.escape(users.get(user)["token"])
+            exp = users.get(user).get("token_expires") or 0
+            exp_txt = time.strftime("%d.%m.%Y %H:%M", time.localtime(exp)) if exp else "bez terminu"
+            left = int((exp - time.time()) // 86400) if exp else 0
             self._html(200, "Sesje", f"""<main>
 <div class="card"><h2>Token użytkownika</h2>
 <div class="tok" id="tok">{tok}</div>
-<p class="hint">Wpisz go w bocie Kraken (⚙️ Ustawienia › Serwer, razem z adresem tej strony) i/lub w launcherze
-(<code>api.json</code>). Logi i stan sesji trafią na to konto.</p>
-<form method="post" action="/token" onsubmit="return confirm('Nowy token unieważni obecny – trzeba go będzie wpisać ponownie w botach. Kontynuować?')">
+<p class="hint">Ważny do <b>{exp_txt}</b>{f" (jeszcze {left} dni)" if exp else ""}. Wpisz go w bocie Kraken (pierwszy ekran bota: adres tej strony i token)
+i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launcher nie działają.</p>
+<form method="post" action="/token" onsubmit="return confirm('Zrolować token? Obecny przestanie działać od razu: wszystkie boty i launchery na nim stracą autoryzację (boty się zatrzymają) – trzeba będzie wpisać nowy token. Kontynuować?')">
 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('tok').textContent)">Kopiuj</button>
-<button type="submit">Wygeneruj nowy</button></form></div>
+<button type="submit">🔄 Zroluj token</button></form></div>
 <div class="card"><h2>Dane bota <button class="sm" id="dsync" style="float:right">⟳ Pobierz z repo</button></h2><div class="hint" id="dstat">Wczytuję…</div></div>
 <div class="card"><h2>Hosty</h2><p class="hint">Launchery z tym tokenem. Kliknij host, żeby zobaczyć jego sesje i uruchomić je z przeglądarki.</p>
 <table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div>
