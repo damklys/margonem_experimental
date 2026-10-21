@@ -17,6 +17,12 @@ API launchera (host):
                                 → {"ok", "commands": [{"id", "action", "session", "session_name"}]}
   POST /api/v1/host/state     – {"host_id", "name", "state": {...}, "configs": {"plik.json": {...}}} – ustawienia launchera
   GET  /api/v1/host/state?host_id=…   – zapisane ustawienia (odtworzenie); ?list=1 – hosty z zapisanymi ustawieniami
+Dane bota (checkout repo na serwerze, data_repo.py; odpowiedzi gzip przy Accept-Encoding: gzip):
+  GET  /api/v1/data/status                 – {"ref", "updated", "counts"}
+  GET  /api/v1/data/list?kind=route[&prof=m] – klucze i krótkie opisy (bez całych plików)
+  GET  /api/v1/data/get?kind=route&key=…   – {"ok", "ref", "data"}
+  POST /api/v1/data/batch {"items": [{"kind", "key"}]} (do 100) – {"ok", "ref", "items": [{"kind", "key", "data"}]}
+  GET  /api/v1/data/world                  – graf świata (world, heros, e2)
 Panel: /  (hosty, sesje, token), /host?id=  (sesje hosta, start/stop), /session?world=&char=  (log na żywo),
        /password, /login, /logout
 """
@@ -37,7 +43,10 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "4.4.0"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from data_repo import KINDS, DataRepo  # noqa: E402
+
+VERSION = "5.0.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -51,6 +60,9 @@ DEFAULTS = {
     "keep_rotated": 5,
     "online_seconds": 45,         # sesja online, gdy sygnał „żyję” był w tym czasie
     "panel_session_hours": 24,
+    "repo_url": "https://github.com/damklys/margonem_experimental.git",
+    "repo_branch": "main",
+    "repo_sync_seconds": 600,     # co ile sprawdzać nowe dane w repo (git fetch)
 }
 
 _NAME_RE = re.compile(r"[^\w\-.]+", re.UNICODE)
@@ -407,7 +419,11 @@ tr.innerHTML=`<td><span class="dot ${s.online?'on':''}"></span>${s.online?'onlin
 const a=tr.children[1].firstChild;a.href=u;a.textContent=s.char;tr.children[2].textContent=s.world;
 tr.children[3].textContent=[s.lvl?('lvl '+s.lvl):'',s.map||''].filter(Boolean).join(' · ');tr.children[4].textContent=s.step||(s.running===false?'zatrzymany':'');
 tr.children[5].textContent=s.host||'poza launcherem';tr.children[6].textContent=fmt(s.last);tb.appendChild(tr)}}
-const tick=()=>{hosts();load()};tick();setInterval(tick,5000);
+async function dstat(){const r=await fetch('/panel/api/data/status');if(!r.ok)return;const d=await r.json();
+const N={map:'mapy',npc:'NPC',quest:'zadania',route:'trasy',set:'zestawy',playbook:'przebiegi',skill:'drzewka'};
+document.getElementById('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
+document.getElementById('dsync').onclick=async()=>{await fetch('/panel/api/data/sync',{method:'POST'});document.getElementById('dstat').textContent='Pobieram…';setTimeout(dstat,4000)};
+const tick=()=>{hosts();load();dstat()};tick();setInterval(tick,5000);
 """
 
 HOST_JS = """
@@ -532,7 +548,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts):
+def make_handler(cfg, users, store, presence, hosts, repo):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -553,8 +569,14 @@ def make_handler(cfg, users, store, presence, hosts):
             if isinstance(body, (dict, list)):
                 body = json.dumps(body, ensure_ascii=False)
             raw = body.encode("utf-8") if isinstance(body, str) else body
+            gz = len(raw) > 2048 and "gzip" in self.headers.get("Accept-Encoding", "") and self.path.startswith("/api/v1/data")
+            if gz:
+                raw = gzip.compress(raw, 6)
             self.send_response(code)
             self.send_header("Content-Type", ctype)
+            if gz:
+                self.send_header("Content-Encoding", "gzip")
+                self.send_header("Vary", "Accept-Encoding")
             self.send_header("Content-Length", str(len(raw)))
             self.send_header("Cache-Control", "no-store")
             if self.path.startswith("/api/"):
@@ -636,6 +658,12 @@ def make_handler(cfg, users, store, presence, hosts):
             if p == "/api/v1/me":
                 u = self.token_user()
                 return self._send(200 if u else 401, {"ok": bool(u), "user": u})
+            if p.startswith("/api/v1/data/"):
+                return self._data_get(p, q)
+            if p == "/panel/api/data/status":
+                if not self.panel_user():
+                    return self._send(401, {"ok": False})
+                return self._send(200, dict({"ok": True}, **repo.status()))
             if p == "/api/v1/host/state":
                 user = self.token_user()
                 if not user:
@@ -699,6 +727,13 @@ def make_handler(cfg, users, store, presence, hosts):
 
         def do_POST(self):
             p = urlparse(self.path).path
+            if p == "/api/v1/data/batch":
+                return self._data_batch()
+            if p == "/panel/api/data/sync":
+                if not self.panel_user():
+                    return self._send(401, {"ok": False})
+                repo.request_sync()
+                return self._send(200, {"ok": True})
             if p == "/api/v1/logs":
                 user = self.token_user()
                 if not user:
@@ -853,6 +888,48 @@ def make_handler(cfg, users, store, presence, hosts):
             log.info("zmiana hasła: %s", user)
             self._redirect("/")
 
+        # ── dane bota (tylko z tokenem) ──
+        def _data_json(self, raw):
+            return b'{"ok":true,"ref":"' + repo.ref.encode() + b'","data":' + raw + b"}"
+
+        def _data_get(self, p, q):
+            if not self.token_user():
+                return self._send(401, {"ok": False, "error": "unauthorized"})
+            if p == "/api/v1/data/status":
+                return self._send(200, dict({"ok": True}, **repo.status()))
+            if p == "/api/v1/data/world":
+                if not repo.world:
+                    return self._send(503, {"ok": False, "error": "dane jeszcze się wczytują"})
+                return self._send(200, self._data_json(repo.world))
+            kind = q.get("kind", "")
+            if kind not in KINDS:
+                return self._send(400, {"ok": False, "error": "kind"})
+            if p == "/api/v1/data/list":
+                ref, items = repo.list(kind, q.get("prof", ""))
+                return self._send(200, {"ok": True, "ref": ref, "items": items})
+            if p == "/api/v1/data/get":
+                raw = repo.get(kind, q.get("key", ""))
+                if raw is None:
+                    return self._send(404, {"ok": False, "error": "brak", "ref": repo.ref})
+                return self._send(200, self._data_json(raw))
+            return self._send(404, {"ok": False, "error": "not found"})
+
+        def _data_batch(self):
+            if not self.token_user():
+                return self._send(401, {"ok": False, "error": "unauthorized"})
+            try:
+                items = json.loads((self._body() or b"").decode("utf-8")).get("items") or []
+                assert isinstance(items, list) and len(items) <= 100
+            except Exception:
+                return self._send(400, {"ok": False, "error": "bad request"})
+            parts = []
+            for it in items:
+                kind, key = str((it or {}).get("kind", "")), str((it or {}).get("key", ""))[:200]
+                raw = repo.get(kind, key) if kind in KINDS else None
+                parts.append(b'{"kind":' + json.dumps(kind).encode() + b',"key":' + json.dumps(key, ensure_ascii=False).encode()
+                             + b',"data":' + (raw if raw is not None else b"null") + b"}")
+            return self._send(200, b'{"ok":true,"ref":"' + repo.ref.encode() + b'","items":[' + b",".join(parts) + b"]}")
+
         def _dashboard(self, user):
             tok = html.escape(users.get(user)["token"])
             self._html(200, "Sesje", f"""<main>
@@ -863,6 +940,7 @@ def make_handler(cfg, users, store, presence, hosts):
 <form method="post" action="/token" onsubmit="return confirm('Nowy token unieważni obecny – trzeba go będzie wpisać ponownie w botach. Kontynuować?')">
 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('tok').textContent)">Kopiuj</button>
 <button type="submit">Wygeneruj nowy</button></form></div>
+<div class="card"><h2>Dane bota <button class="sm" id="dsync" style="float:right">⟳ Pobierz z repo</button></h2><div class="hint" id="dstat">Wczytuję…</div></div>
 <div class="card"><h2>Hosty</h2><p class="hint">Launchery z tym tokenem. Kliknij host, żeby zobaczyć jego sesje i uruchomić je z przeglądarki.</p>
 <table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div>
 <div class="card"><h2>Sesje bota</h2><p class="hint">Postacie wysyłające logi – z launchera albo uruchomione poza nim.</p>
@@ -953,7 +1031,9 @@ def main():
     presence = Presence()
     ThreadingHTTPServer.request_queue_size = 128     # domyślne 5 – za mało przy wielu postaciach naraz
     hosts = Hosts(cfg)
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts))
+    repo = DataRepo(cfg)
+    repo.start()
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo))
     httpd.daemon_threads = True
 
     def stop(*_):
