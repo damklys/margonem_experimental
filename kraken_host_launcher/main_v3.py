@@ -4075,7 +4075,7 @@ class BotGUI:
                 "group_world": self.gm.world_of_session(s.session_id),
                 "world": s.server_var.get().lower(), "config": s.config_key(), "banned": s.is_banned(),
                 "char": os.path.splitext(s.config_key())[0], "status": s.status, "program": s.effective_program(),
-                "prof": PROF_LABEL.get(s.current_prof(), ""), "bot": s.bot_state,
+                "prof": PROF_LABEL[s.current_prof()] if s.current_prof() in PROF_LABEL and s.current_prof() else "", "bot": s.bot_state,
                 "server": s.server_var.get(), "browser": s.browser_var.get(), "template": s.template_var.get(),
                 "prog_override": bool(s.prog_override_var.get()),
                 "own_program": s.program_var.get() if s.prog_override_var.get() else "",

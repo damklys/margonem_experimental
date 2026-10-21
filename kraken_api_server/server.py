@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.2.0"
+VERSION = "5.2.1"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -428,7 +428,9 @@ def build_overview(user, store, presence, hosts, online_s):
             r = blank(host=name, host_id=h["host_id"], managed=True, host_online=bool(h.get("online")), uid=str(x.get("uid") or ""),
                       group=x.get("group", ""), session=x.get("name", ""), world=str(x.get("world", "")).lower(),
                       char=display_name(str(x.get("char", ""))), log_char=safe_name(x.get("char"), "unknown"),
-                      prof=x.get("prof", ""), program=x.get("program", ""), launcher=x.get("status", "OFFLINE"))
+                      # „(wybór w bocie)” ze starszych launcherów to brak profesji, nie profesja
+                      prof="" if str(x.get("prof", "")).startswith("(") else x.get("prof", ""),
+                      program=x.get("program", ""), launcher=x.get("status", "OFFLINE"))
             rows.append(r)
             if r["uid"]:
                 by_uid[(h["host_id"], r["uid"])] = r
