@@ -23,6 +23,10 @@ Dane bota (checkout repo na serwerze, data_repo.py; odpowiedzi gzip przy Accept-
   GET  /api/v1/data/get?kind=route&key=…   – {"ok", "ref", "data"}
   POST /api/v1/data/batch {"items": [{"kind", "key"}]} (do 100) – {"ok", "ref", "items": [{"kind", "key", "data"}]}
   GET  /api/v1/data/world                  – graf świata (world, heros, e2)
+Blokady tras (wspólne dla botów konta, także z różnych komputerów):
+  POST /api/v1/locks {"world", "char", "acquire"?: trasa, "release"?: trasa}
+       → {"ok", "granted", "holder", "locks": {trasa: {"owner", "age"}}}; ważność 120 s bez odnowienia,
+       jedna trasa na postać (przejęcie nowej zwalnia poprzednią)
   GET  /api/v1/data/pack?kind=map|npc|route|playbook|set|skill[&prof=m] – cały rodzaj jedną odpowiedzią
 Panel: /  (hosty, sesje, token), /host?id=  (sesje hosta, start/stop), /session?world=&char=  (log na żywo),
        /password, /login, /logout
@@ -47,7 +51,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.4.2"
+VERSION = "5.5.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -652,6 +656,44 @@ class Issues:
                 "items": [{k: r.get(k) for k in keys} for r in reversed(rows[-limit:])]}
 
 
+class RouteLocks:
+    """Blokady tras (expowiska, trasy ZR): (użytkownik, świat) → trasa → {owner, ts}; w pamięci, 120 s ważności."""
+    TTL = 120
+
+    def __init__(self):
+        self.lock = threading.Lock()
+        self.data = {}
+
+    def call(self, user, world, char, acquire="", release=""):
+        now = time.time()
+        key = (user, safe_name(world, "unknown").lower())
+        acquire, release, char = str(acquire or "")[:120], str(release or "")[:120], str(char or "")[:60]
+        with self.lock:
+            t = self.data.setdefault(key, {})
+            for name in [n for n, v in t.items() if now - v["ts"] > self.TTL]:
+                del t[name]
+            if release and t.get(release, {}).get("owner") == char:
+                del t[release]
+            granted, holder = None, ""
+            if acquire and char:
+                cur = t.get(acquire)
+                if not cur or cur["owner"] == char:
+                    for name in [n for n, v in t.items() if v["owner"] == char and n != acquire]:
+                        del t[name]
+                    t[acquire] = {"owner": char, "ts": now}
+                    granted, holder = True, char
+                else:
+                    granted, holder = False, cur["owner"]
+            return {"granted": granted, "holder": holder,
+                    "locks": {n: {"owner": v["owner"], "age": int(now - v["ts"])} for n, v in t.items()}}
+
+    def of(self, user):
+        now = time.time()
+        with self.lock:
+            return {w: {n: {"owner": v["owner"], "age": int(now - v["ts"])} for n, v in t.items() if now - v["ts"] <= self.TTL}
+                    for (u, w), t in self.data.items() if u == user}
+
+
 class OpStats:
     """Operacje botów (z sygnału „żyję”): przedział 5 min → typ → {start, ok, slow, fail}; 30 dni na dysku (ops.json).
     Zakresy pulpitu (1 h … 30 d) liczone wstecz od teraz, nie od pełnej godziny."""
@@ -1063,7 +1105,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues):
+def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -1187,6 +1229,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                 if not user:
                     return self._send(401, {"ok": False})
                 ov = build_overview(user, store, presence, hosts, online_s)
+                ov["locks"] = locks.of(user)
                 return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, range_hours(q)),
                                             hours=range_hours(q), now=int(time.time())))
             if p == "/panel/api/issues":
@@ -1309,6 +1352,16 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                             log.warning("ostrzeżenia/błędy: %s", ex)
                 log.info("logi: %d linii (%s, %s, %s)", n, user, str(body.get("source", ""))[:40], self.client_ip())
                 return self._send(200, {"ok": True, "written": n})
+            if p == "/api/v1/locks":
+                user = self.token_user()
+                if not user:
+                    return self._send(401, {"ok": False, "error": "unauthorized"})
+                try:
+                    b = json.loads((self._body() or b"").decode("utf-8"))
+                    assert isinstance(b, dict)
+                except Exception:
+                    return self._send(400, {"ok": False, "error": "bad json"})
+                return self._send(200, dict(locks.call(user, b.get("world", ""), b.get("char", ""), b.get("acquire"), b.get("release")), ok=True))
             if p == "/api/v1/heartbeat":
                 user = self.token_user()
                 if not user:
@@ -1627,9 +1680,10 @@ def main():
     history = History(store.root)
     opstats = OpStats(store.root)
     issues = Issues(store.root)
+    locks = RouteLocks()
     threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"]), 300, opstats),
                      daemon=True, name="history").start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues))
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks))
     httpd.daemon_threads = True
 
     def stop(*_):
