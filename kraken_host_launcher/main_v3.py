@@ -874,7 +874,14 @@ class BotRunner:
                 return
             except Exception:
                 time.sleep(2)
-        self.log("⚠️  Bot nie odpowiedział w 3 min – nie uruchomiono")
+        try:
+            st = self.driver.execute_script("return window.Kraken ? {cfg: !!(Kraken.getConfig && Object.keys(Kraken.getConfig()).length), "
+                                            "running: !!(Kraken.isRunning && Kraken.isRunning())} : null;")
+        except Exception:
+            st = None
+        why = "bota nie ma na stronie" if not st else ("config postaci niewczytany" if not st.get("cfg") else
+                                                         "brak danych z serwera Kraken (autoryzacja / program niedostępny)")
+        self.log(f"⚠️  Bot nie zgłosił gotowości w 3 min ({why}) – nie uruchomiono; ▶ Bot w launcherze albo panelu spróbuje ponownie")
 
     def _sync_prof_from_game(self, config_path: str):
         """Profesja ustalona w grze (po wyborze w tutorialu) → config postaci, gdy się różni."""
@@ -894,6 +901,37 @@ class BotRunner:
         self.log(f"🎓 Profesja z gry: {PROF_LABEL[prof]} – zapisana w configu {os.path.basename(config_path)}")
         if self.on_prof_saved:
             self.on_prof_saved()
+
+    def _bot_present(self) -> bool:
+        try:
+            return bool(self.driver.execute_script("return !!(window.Kraken && Kraken.setApi);"))
+        except Exception:
+            return False
+
+    def _ensure_bot_loaded(self, By, wait_s: int = 60):
+        """Po logowaniu: gra (canvas) i bot Kraken (Tampermonkey) na stronie. Brak – jedno odświeżenie strony;
+        dalej brak – błąd sesji z powodem (Restart on fail uruchomi ją od nowa), zamiast pracy bez bota."""
+        for attempt in (1, 2):
+            t0 = time.time()
+            while time.time() - t0 < wait_s and not self.stop_event.is_set():
+                if self._bot_present():
+                    return
+                time.sleep(2)
+            self.stop_check()
+            try:
+                url = self.driver.current_url
+                canvas = bool(self.driver.find_elements(By.CSS_SELECTOR, "canvas#GAME_CANVAS"))
+            except Exception:
+                url, canvas = "?", False
+            if attempt == 1:
+                self.log(f"⚠️  Bot Kraken nie wczytał się w {wait_s} s (strona: {url}, gra: {'tak' if canvas else 'nie'}) – odświeżam stronę")
+                try:
+                    self.driver.refresh()
+                except Exception:
+                    pass
+                continue
+            raise RuntimeError(f"Bot Kraken nie wczytał się po odświeżeniu (strona: {url}, gra: {'tak' if canvas else 'nie'}) – "
+                               "sprawdź logowanie i Tampermonkey w szablonie profilu")
 
     def _push_api_to_bot(self):
         """Adres i token serwera z Ustawień launchera → bot Kraken w tej przeglądarce (Ustawienia › Serwer)."""
@@ -1168,6 +1206,7 @@ class BotRunner:
 
         self.login_done_event.set()   # sygnał dla stream_worker: logowanie skończone
         self._captcha_once(check_and_solve_captcha, By)
+        self._ensure_bot_loaded(By)
         self._push_api_to_bot()
         self.prof = str(config_data.get("prof", "") or "")
         # Brak profesji w configu = losowa (bot wybierze ją w tutorialu); do configu trafia dopiero profesja z gry.
@@ -1176,7 +1215,8 @@ class BotRunner:
             self.prof = random.choice([k for k, _ in PROFESSIONS if k])
             self.log(f"🎲 Profesja losowa: {PROF_LABEL[self.prof]} – po wyborze w grze zapisze się w configu")
         self._start_bot(cfg.get("program", ""), self.prof)
-        self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
+        self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę."
+                 if self._read_bot_state() in ("running", "stopped") else "⚠️  Zalogowano, ale bot nie pracuje – sprawdź log bota (▶ Bot uruchomi go ponownie)")
         from log_shipper import SHIPPER
         if SHIPPER.enabled:
             self.log(f"📡 Logi postaci → {SHIPPER.url}")
