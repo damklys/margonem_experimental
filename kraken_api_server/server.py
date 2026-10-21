@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.2.2"
+VERSION = "5.2.3"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -479,6 +479,8 @@ def build_overview(user, store, presence, hosts, online_s):
             r["state"], r["state_key"] = "✖ błąd", "err"
         else:
             r["state"], r["state_key"] = "○ offline", "off"
+    # Poza launcherem liczy się tylko bot online – stare logi postaci, których już nikt nie uruchamia, nie są sesjami.
+    rows = [r for r in rows if r["managed"] or r["online"]]
     order = {"run": 0, "idle": 1, "start": 2, "err": 3, "off": 4}
     rows.sort(key=lambda r: (order[r["state_key"]], not r["managed"], r["host"].lower(), str(r["group"]).lower(),
                              str(r["session"]).lower(), str(r["char"]).lower()))
@@ -651,24 +653,25 @@ const hit=el('rect',{x:0,y:i*row,width:W,height:row,fill:'transparent'},svg);
 hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(it.label)}</b><br>${esc(it.title||it.value)}`));hit.addEventListener('mouseleave',hideTip)})}
 
 const LVL=[[1,19],[20,39],[40,59],[60,99],[100,149],[150,199],[200,999]];
-function charts(ov){
+const isOn=(s)=>s.state_key==='run'||s.state_key==='idle'||s.state_key==='start';
+function charts(ov){const on=ov.sessions.filter(isOn);
 lineChart($('c_act'),ov.history||[],ov.now);
-const hs=(ov.hosts||[]).map(h=>({label:h.name,value:h.sessions,title:`sesje: ${h.sessions}, aktywne: ${h.active}${h.online?'':' · host offline'}`}));
-const um=ov.sessions.filter(s=>!s.managed);if(um.length)hs.push({label:'niezarządzany',value:um.length,title:`sesje poza launcherem: ${um.length}, aktywne: ${ov.totals.unmanaged_active}`});
-barChart($('c_hosts'),hs,'Brak sesji.');
-const withLvl=ov.sessions.filter(s=>+s.lvl>0);
-barChart($('c_lvl'),LVL.map(([a,b])=>{const n=withLvl.filter(s=>s.lvl>=a&&s.lvl<=b);return{label:b>=999?`${a}+`:`${a}–${b}`,value:n.length,title:`postaci: ${n.length}${n.length?' · '+n.slice(0,6).map(s=>s.char).join(', ')+(n.length>6?'…':''):''}`}}),'Brak danych o poziomach (bot jeszcze nie wysłał sygnału).');
-const pc={};for(const s of ov.sessions)if(s.prof)pc[s.prof]=(pc[s.prof]||0)+1;
-barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci: ${v}`})),'Brak danych o profesjach.')}
+const hs=(ov.hosts||[]).map(h=>({label:h.name,value:h.active,title:`sesje online: ${h.active} (w launcherze: ${h.sessions})`}));
+const um=on.filter(s=>!s.managed);if(um.length)hs.push({label:'niezarządzany',value:um.length,title:`boty online poza launcherem: ${um.length}`});
+barChart($('c_hosts'),hs,'Brak sesji online.');
+const withLvl=on.filter(s=>+s.lvl>0);
+barChart($('c_lvl'),LVL.map(([a,b])=>{const n=withLvl.filter(s=>s.lvl>=a&&s.lvl<=b);return{label:b>=999?`${a}+`:`${a}–${b}`,value:n.length,title:`postaci online: ${n.length}${n.length?' · '+n.slice(0,6).map(s=>s.char).join(', ')+(n.length>6?'…':''):''}`}}),'Brak sesji online z poziomem.');
+const pc={};for(const s of on)if(s.prof)pc[s.prof]=(pc[s.prof]||0)+1;
+barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci online: ${v}`})),'Brak sesji online z profesją.')}
 
-function tiles(t){const T=[['Hosty online',t.hosts_online,`z ${t.hosts_total}`],['Sesje aktywne',t.sessions_active,`z ${t.sessions_total}`],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane',t.unmanaged_active,`aktywne z ${t.unmanaged_total}`]];
+function tiles(t){const T=[['Hosty online',t.hosts_online,'launchery z sygnałem'],['Sesje online',t.sessions_active,'działające teraz'],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane online',t.unmanaged_active,'boty poza launcherem']];
 $('tiles').innerHTML=T.map(([l,v,s])=>`<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('')}
 
 function hostsTable(ov){const tb=$('hrows');tb.textContent='';
 for(const h of ov.hosts){const tr=document.createElement('tr');
 tr.innerHTML=`<td><span class="dot ${h.online?'on':''}"></span>${h.online?'online':'offline'}</td><td><a href="/host?id=${encodeURIComponent(h.host_id)}">${esc(h.name)}</a></td><td>${esc(h.platform||'')} ${h.version?'<span class=tag>'+esc(h.version)+'</span>':''}</td><td>${h.active} / ${h.sessions}</td><td>${fmt(h.last)}</td>`;tb.appendChild(tr)}
 const t=ov.totals;const tr=document.createElement('tr');
-tr.innerHTML=`<td><span class="dot ${t.unmanaged_active?'on':''}"></span>${t.unmanaged_active?'aktywne':'—'}</td><td>niezarządzany</td><td class=hint>bot uruchomiony poza launcherem</td><td>${t.unmanaged_active} / ${t.unmanaged_total}</td><td>—</td>`;tb.appendChild(tr)}
+tr.innerHTML=`<td><span class="dot ${t.unmanaged_active?'on':''}"></span>${t.unmanaged_active?'online':'—'}</td><td>niezarządzany</td><td class=hint>boty uruchomione poza launcherem</td><td>${t.unmanaged_active}</td><td>—</td>`;tb.appendChild(tr)}
 
 // Lista sesji: kolumny i belka filtrów (lista wyboru dla kolumn o kilku wartościach, tekst dla reszty;
 // poziom: „50”, „20-40”, „>100”, „<30”). Filtry zapamiętane w tej przeglądarce.
@@ -1255,12 +1258,12 @@ def make_handler(cfg, users, store, presence, hosts, repo, history):
 <div class="tiles" id="tiles"></div>
 <div class="charts">
 <div class="card chart"><h2>Aktywność – ostatnie 24 h</h2><div class="legend"><span><i style="background:#3987e5"></i>Sesje aktywne</span><span><i style="background:#d95926"></i>Boty pracują</span></div><div id="c_act"></div></div>
-<div class="card chart"><h2>Sesje na hostach</h2><div id="c_hosts"></div></div>
-<div class="card chart"><h2>Poziomy postaci</h2><div id="c_lvl"></div></div>
-<div class="card chart"><h2>Profesje</h2><div id="c_prof"></div></div>
+<div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
+<div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
+<div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
-<div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (aktywne / wszystkie)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
+<div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
 <div class="card"><h2>Sesje <span class="hint" id="fcount" style="font-size:12.5px;font-weight:400;margin-left:8px"></span></h2><div class="tbl-wrap"><table>
 <thead><tr><th>Stan</th><th>Host</th><th>Grupa</th><th>Sesja</th><th>Świat</th><th>Postać</th><th>Profesja</th><th>Poziom</th><th>Program</th><th>Krok</th><th>Ostatnio</th></tr><tr id="frow"></tr></thead>
 <tbody id="rows"><tr><td colspan=11 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
