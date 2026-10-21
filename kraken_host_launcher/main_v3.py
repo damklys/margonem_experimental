@@ -2491,10 +2491,15 @@ class ScheduleEditDialog(tk.Toplevel):
         self.kind = tk.StringVar(value=S.KINDS[e["kind"]])
         self.time = tk.StringVar(value=e.get("time") or "11:00")
         self.days = [tk.BooleanVar(value=i in (e.get("days") or [])) for i in range(7)]
-        self.every = tk.StringVar(value=str(e.get("every") or 60))
+        mins = int(e.get("every") or 60)
+        in_h = mins >= 60 and mins % 60 == 0
+        self.every = tk.StringVar(value=str(mins // 60 if in_h else mins))
+        self.unit = tk.StringVar(value="godzin" if in_h else "minut")
         self.wfrom = tk.StringVar(value=e.get("from") or "")
         self.wto = tk.StringVar(value=e.get("to") or "")
-        self.first_now = tk.BooleanVar(value=bool(e.get("first_now")))
+        self.first = tk.StringVar(value=S.FIRST.get(e.get("first") or "after", S.FIRST["after"]))
+        self.first_at = tk.StringVar(value=e.get("first_at") or "11:00")
+        self._last_action = e["action"]
         self.date = tk.StringVar(value=e.get("date") or time.strftime("%Y-%m-%d", time.localtime(time.time() + 86400)))
         self.prof = tk.StringVar(value=PROF_RANDOM_LABEL if p.get("prof") == PROF_RANDOM
                                  else PROF_LABEL.get(p.get("prof", ""), PROF_LABEL[""]))
@@ -2550,15 +2555,21 @@ class ScheduleEditDialog(tk.Toplevel):
         self.r_days = row(body, "Dni:")
         for i, d in enumerate(S.DAYS):
             check(self.r_days, d, self.days[i])
-        self.r_every = row(body, "Co (minut):")
-        entry(self.r_every, self.every, 6)
-        tk.Label(self.r_every, text="   w godzinach", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left", padx=(0, 4))
-        entry(self.r_every, self.wfrom, 6)
-        tk.Label(self.r_every, text=" – ", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
-        entry(self.r_every, self.wto, 6)
-        tk.Label(self.r_every, text="  (puste = cała doba)", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
-        self.r_first = row(body, "")
-        check(self.r_first, "Pierwszy raz od razu (inaczej po pierwszym odstępie)", self.first_now)
+        self.r_every = row(body, "Odstęp: co")
+        entry(self.r_every, self.every, 5)
+        tk.Label(self.r_every, text=" ", bg=BG).pack(side="left")
+        combo(self.r_every, self.unit, ["minut", "godzin"], 8)
+        self.r_first = row(body, "Pierwszy raz:")
+        combo(self.r_first, self.first, list(S.FIRST.values()), 22, cmd=self._layout)
+        self.first_at_box = tk.Frame(self.r_first, bg=BG)
+        tk.Label(self.first_at_box, text="  ", bg=BG).pack(side="left")
+        entry(self.first_at_box, self.first_at, 6)
+        tk.Label(self.first_at_box, text="  GG:MM, potem co odstęp", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        self.r_window = row(body, "Tylko w godzinach:")
+        entry(self.r_window, self.wfrom, 6)
+        tk.Label(self.r_window, text=" – ", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        entry(self.r_window, self.wto, 6)
+        tk.Label(self.r_window, text="  (puste = cała doba)", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
 
         # Nowa sesja z nowym configiem
         self.r_new = tk.Frame(body, bg=BG)
@@ -2608,12 +2619,23 @@ class ScheduleEditDialog(tk.Toplevel):
         self.action_cb["values"] = acts
         if self.action.get() not in acts:
             self.action.set(acts[0])
+        action = self._code(S.ACTIONS, self.action.get())
+        create = action == "create_session"
+        # nowy wpis „Nowa sesja”: domyślnie co 1 godzinę
+        if create and self.is_new and action != self._last_action:
+            self.kind.set(S.KINDS["interval"])
+            self.every.set("1")
+            self.unit.set("godzin")
+        self._last_action = action
         kind = self._code(S.KINDS, self.kind.get())
-        create = self._code(S.ACTIONS, self.action.get()) == "create_session"
         for w in self.body.winfo_children():
             w.pack_forget()
+        if self._code(S.FIRST, self.first.get()) == "at":
+            self.first_at_box.pack(side="left")
+        else:
+            self.first_at_box.pack_forget()
         rows = [self.r_target, self.r_group if is_group else self.r_session, self.r_action, self.r_kind]
-        rows += {"daily": [self.r_time, self.r_days], "interval": [self.r_every, self.r_first],
+        rows += {"daily": [self.r_time, self.r_days], "interval": [self.r_every, self.r_first, self.r_window],
                  "once": [self.r_date, self.r_time]}.get(kind, [])
         for r in rows:
             r.pack(fill="x", pady=2)
@@ -2635,9 +2657,13 @@ class ScheduleEditDialog(tk.Toplevel):
         e["kind"] = self._code(S.KINDS, self.kind.get())
         e["time"] = self.time.get().strip()
         e["days"] = [i for i, v in enumerate(self.days) if v.get()]
-        e["every"] = self.every.get().strip()
+        try:
+            e["every"] = int(self.every.get().strip()) * (60 if self.unit.get() == "godzin" else 1)
+        except ValueError:
+            e["every"] = self.every.get().strip()
         e["from"], e["to"] = self.wfrom.get().strip(), self.wto.get().strip()
-        e["first_now"] = self.first_now.get()
+        e["first"] = self._code(S.FIRST, self.first.get()) or "after"
+        e["first_at"] = self.first_at.get().strip()
         e["date"] = self.date.get().strip()
         same = lambda v: "" if v == self.SAME else v
         e["params"] = {"prof": PROF_RANDOM if self.prof.get() == PROF_RANDOM_LABEL
@@ -2653,7 +2679,7 @@ class ScheduleEditDialog(tk.Toplevel):
         if e["kind"] == "interval":
             e["every"] = int(e["every"])
         # nowy wpis / zmiana terminu → odliczanie od nowa; godzina, która już minęła, wykona się w kolejnym terminie
-        if self.is_new or any(e.get(k) != self.e.get(k) for k in ("kind", "time", "days", "every", "from", "to", "date", "first_now")):
+        if self.is_new or any(e.get(k) != self.e.get(k) for k in ("kind", "time", "days", "every", "from", "to", "date", "first", "first_at")):
             e["created"] = time.time()
             e["last_run"] = 0 if e["kind"] == "interval" else time.time()
         self.e.clear()
