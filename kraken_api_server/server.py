@@ -51,7 +51,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.5.0"
+VERSION = "5.6.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -416,7 +416,7 @@ def build_overview(user, store, presence, hosts, online_s):
     def blank(**kw):
         r = {"host": UNMANAGED, "host_id": "", "managed": False, "host_online": False, "uid": "", "group": "", "session": "",
              "world": "", "char": "", "log_char": "", "prof": "", "lvl": None, "program": "", "step": "", "map": "",
-             "last": None, "launcher": "", "online": False, "running": None, "version": ""}
+             "last": None, "launcher": "", "online": False, "running": None, "version": "", "vital": "", "vital_since": 0}
         r.update(kw)
         return r
 
@@ -453,7 +453,7 @@ def build_overview(user, store, presence, hosts, online_s):
         r["char"] = str(v.get("char") or r["char"])
         r["log_char"] = c
         r["world"] = r["world"] or w
-        for k in ("lvl", "step", "map", "version"):
+        for k in ("lvl", "step", "map", "version", "vital", "vital_since"):
             if v.get(k) not in (None, ""):
                 r[k] = v[k]
         if v.get("prof"):
@@ -496,7 +496,12 @@ def build_overview(user, store, presence, hosts, online_s):
     totals = {"hosts_total": len(host_rows), "hosts_online": sum(1 for h in host_rows if h["online"]),
               "sessions_total": len(rows), "sessions_active": sum(1 for r in rows if active(r)),
               "bots_running": sum(1 for r in rows if r["state_key"] == "run"),
-              "unmanaged_total": len(um), "unmanaged_active": sum(1 for r in um if active(r))}
+              "unmanaged_total": len(um), "unmanaged_active": sum(1 for r in um if active(r)),
+              "bots_online": sum(1 for r in rows if r["online"]),
+              "down_online": sum(1 for r in rows if r["online"] and r.get("vital") in ("dead", "unconscious"))}
+    for r in rows:
+        if not r["online"]:
+            r["vital"] = ""
     return {"hosts": host_rows, "sessions": rows, "totals": totals}
 
 
@@ -654,6 +659,75 @@ class Issues:
         return {"total": len(rows), "warn": sum(1 for r in rows if r.get("level") != "error"),
                 "error": sum(1 for r in rows if r.get("level") == "error"), "groups": top,
                 "items": [{k: r.get(k) for k in keys} for r in reversed(rows[-limit:])]}
+
+
+class Deaths:
+    """Śmierci / nieprzytomność postaci (zdarzenia z bota): <users>/<u>/deaths.jsonl, 30 dni."""
+    KEEP = 30 * 86400
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.pruned = 0
+
+    def _path(self, user):
+        return os.path.join(self.root, safe_name(user, "unknown"), "deaths.jsonl")
+
+    def add(self, user, world, char, events):
+        rows = []
+        for e in events:
+            if not isinstance(e, dict):
+                continue
+            try:
+                ts = int(e.get("ts") or time.time())
+            except (TypeError, ValueError):
+                ts = int(time.time())
+            rows.append(json.dumps({"ts": ts, "world": str(world)[:40], "char": str(char)[:60], "map": str(e.get("map", ""))[:80],
+                                    "kind": "unconscious" if e.get("kind") == "unconscious" else "dead"}, ensure_ascii=False))
+        if not rows:
+            return
+        path = self._path(user)
+        with self.lock:
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "a", encoding="utf-8") as f:
+                f.write("\n".join(rows) + "\n")
+            if time.time() - self.pruned > 86400:
+                self.pruned = time.time()
+                cut = time.time() - self.KEEP
+                try:
+                    with open(path, "r", encoding="utf-8") as f:
+                        keep = [l for l in f if json.loads(l).get("ts", 0) >= cut]
+                    with open(path + ".tmp", "w", encoding="utf-8") as f:
+                        f.writelines(keep)
+                    os.replace(path + ".tmp", path)
+                except Exception:
+                    pass
+
+    def summary(self, user, hours=24):
+        """Śmierci w zakresie: łącznie i na postać (z mapami)."""
+        cut = time.time() - hours * 3600
+        by = {}
+        total = 0
+        try:
+            with self.lock, open(self._path(user), "r", encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        e = json.loads(line)
+                    except ValueError:
+                        continue
+                    if e.get("ts", 0) < cut:
+                        continue
+                    total += 1
+                    c = by.setdefault(e.get("char", ""), {"char": e.get("char", ""), "n": 0, "maps": {}, "last": 0})
+                    c["n"] += 1
+                    c["maps"][e.get("map", "")] = c["maps"].get(e.get("map", ""), 0) + 1
+                    c["last"] = max(c["last"], e.get("ts", 0))
+        except FileNotFoundError:
+            pass
+        chars = sorted(by.values(), key=lambda c: -c["n"])
+        for c in chars:
+            c["maps"] = sorted(c["maps"].items(), key=lambda kv: -kv[1])[:5]
+        return {"total": total, "chars": chars[:30]}
 
 
 class RouteLocks:
@@ -896,7 +970,9 @@ const withLvl=on.filter(s=>+s.lvl>0);
 barChart($('c_lvl'),LVL.map(([a,b])=>{const n=withLvl.filter(s=>s.lvl>=a&&s.lvl<=b);return{label:b>=999?`${a}+`:`${a}–${b}`,value:n.length,title:`postaci online: ${n.length}${n.length?' · '+n.slice(0,6).map(s=>s.char).join(', ')+(n.length>6?'…':''):''}`}}),'Brak sesji online z poziomem.');
 const pc={};for(const s of on)if(s.prof)pc[s.prof]=(pc[s.prof]||0)+1;
 barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci online: ${v}`})),'Brak sesji online z profesją.');
-opsChart($('c_ops'),ov.ops)}
+opsChart($('c_ops'),ov.ops);
+const dd=ov.deaths||{total:0,chars:[]};$('d_sum').textContent=`łącznie: ${dd.total}`;
+barChart($('c_deaths'),dd.chars.map(c=>({label:c.char,value:c.n,title:`śmierci: ${c.n} · ostatnio ${fmt(c.last)} · mapy: ${c.maps.map(([m,n])=>`${m||'?'} (${n})`).join(', ')}`})),`Brak śmierci w zakresie ${rangeLabel()}.`)}
 
 // Operacje botów z 24 h: słupek na typ, segmenty – udane, wolne (po ostrzeżeniu 120 s), nieudane (stała paleta statusów).
 const OPN={travel:'Podróż',fight:'Walka',resupply:'Zaopatrzenie',prep:'Przygotowanie',sell:'Sprzedaż łupu',potions:'Mikstury',buy:'Zakup ekwipunku',equip:'Ekwipunek',skills:'Umiejętności',mail:'Poczta (Milioner)',auction:'Aukcje',quest:'Krok zadania',captcha:'Captcha',outfit:'Strój',rewards:'Nagrody'};
@@ -921,7 +997,7 @@ let R=24;try{R=+localStorage.getItem('kraken:panel:range')||24}catch(e){}if(!RAN
 const rangeLabel=()=>(RANGES.find(([h])=>h===R)||[0,'24 h'])[1];
 function rangeBar(){for(const bid of ['range','range2']){const b=$(bid);if(!b)continue;b.textContent='';for(const [h,l] of RANGES){const x=document.createElement('button');x.className='sm'+(h===R?' pri':'');x.textContent=l;
 x.onclick=()=>{R=h;try{localStorage.setItem('kraken:panel:range',String(h))}catch(e){}rangeBar();chartSig='';load().catch(()=>{});issues().catch(()=>{})};b.appendChild(x)}}
-for(const id of ['ops_range','iss_range'])$(id).textContent=rangeLabel();$('iss_dl').href=`/panel/api/issues?hours=${R}`}
+for(const id of ['ops_range','iss_range','d_range'])$(id).textContent=rangeLabel();$('iss_dl').href=`/panel/api/issues?hours=${R}`}
 // Ostrzeżenia i błędy: najczęstsze komunikaty (bez liczb) i lista ostatnich wpisów z filtrami.
 const LV=[['warn','#fab219','⚠ ostrzeżenia'],['error','#d03b3b','✖ błędy']];let ISS=null;
 async function issues(){const r=await fetch(`/panel/api/issues?format=json&hours=${R}`);if(!r.ok)return;ISS=await r.json();
@@ -936,7 +1012,7 @@ for(const i of list.slice(0,150)){const tr=document.createElement('tr');
 tr.innerHTML=`<td style="white-space:nowrap">${new Date(i.ts*1000).toLocaleString('pl-PL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'})}</td><td style="white-space:nowrap;color:${i.level==='error'?'#d03b3b':'#fab219'}">${i.level==='error'?'✖ błąd':'⚠ ostrzeżenie'}</td><td>${esc(i.char)}${i.source==='launcher'?' <span class=tag>launcher</span>':''}</td><td class=hint>${esc(i.step||'')}</td><td>${esc(i.msg)}</td>`;tb.appendChild(tr)}
 $('icount').textContent=`pokazano ${Math.min(150,list.length)} z ${list.length}${ISS.items.length<ISS.total?` (ostatnie ${ISS.items.length} z ${ISS.total})`:''}`}
 for(const id of ['if_lvl','if_char'])$(id).onchange=issRows;$('if_q').oninput=issRows;
-function tiles(t){const T=[['Hosty online',t.hosts_online,'launchery z sygnałem'],['Sesje online',t.sessions_active,'działające teraz'],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane online',t.unmanaged_active,'boty poza launcherem']];
+function tiles(t){const T=[['Hosty online',t.hosts_online,'launchery z sygnałem'],['Sesje online',t.sessions_active,'działające teraz'],['Boty pracują',t.bots_running,'teraz'],['Martwe / nieprzytomne',t.down_online,`z ${t.bots_online} postaci online`],['Niezarządzane online',t.unmanaged_active,'boty poza launcherem']];
 $('tiles').innerHTML=T.map(([l,v,s])=>`<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('')}
 
 function hostsTable(ov){const tb=$('hrows');tb.textContent='';
@@ -947,7 +1023,8 @@ tr.innerHTML=`<td><span class="dot ${t.unmanaged_active?'on':''}"></span>${t.unm
 
 // Lista sesji: kolumny i belka filtrów (lista wyboru dla kolumn o kilku wartościach, tekst dla reszty;
 // poziom: „50”, „20-40”, „>100”, „<30”). Filtry zapamiętane w tej przeglądarce.
-const COLS=[['state','Stan','sel'],['host','Host','sel'],['group','Grupa','sel'],['session','Sesja','txt'],['world','Świat','sel'],['char','Postać','txt'],['prof','Profesja','sel'],['lvl','Poziom','lvl'],['program','Program','txt'],['step','Krok','txt'],['last','Ostatnio','']];
+const VITAL={alive:'❤ żywa',dead:'☠ martwa',unconscious:'💤 nieprzytomna'};
+const COLS=[['state','Stan','sel'],['vital_t','Życie','sel'],['host','Host','sel'],['group','Grupa','sel'],['session','Sesja','txt'],['world','Świat','sel'],['char','Postać','txt'],['prof','Profesja','sel'],['lvl','Poziom','lvl'],['program','Program','txt'],['step','Krok','txt'],['last','Ostatnio','']];
 let F={};try{F=JSON.parse(localStorage.getItem('kraken:panel:filters')||'{}')}catch(e){}
 const saveF=()=>{try{localStorage.setItem('kraken:panel:filters',JSON.stringify(F))}catch(e){}};
 function buildFilters(){const tr=$('frow');tr.textContent='';
@@ -957,7 +1034,7 @@ else if(kind){const i=document.createElement('input');i.type='text';i.id='f_'+k;
 tr.appendChild(td)}}
 const lvlOk=(v,f)=>{f=f.replace(/\s/g,'');if(!f)return true;const n=+v;if(!n)return false;let m;
 if((m=/^(\d+)-(\d+)$/.exec(f)))return n>=+m[1]&&n<=+m[2];if((m=/^>=?(\d+)$/.exec(f)))return f[1]==='='?n>=+m[1]:n>+m[1];if((m=/^<=?(\d+)$/.exec(f)))return f[1]==='='?n<=+m[1]:n<+m[1];return String(n)===f};
-const cell=(s,k)=>k==='lvl'?(s.lvl||''):String(s[k]??'');
+const cell=(s,k)=>k==='lvl'?(s.lvl||''):k==='vital_t'?(VITAL[s.vital]||''):String(s[k]??'');
 let OV=null;
 function rows(){if(!OV)return;const ss=OV.sessions;
 for(const [k,,kind] of COLS){if(kind!=='sel')continue;const s=$('f_'+k);const vals=[...new Set(ss.map(x=>cell(x,k)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pl'));
@@ -966,14 +1043,15 @@ const list=ss.filter(x=>COLS.every(([k,,kind])=>{const f=(F[k]||'').trim();if(!f
 const tb=$('rows');tb.textContent='';
 if(!list.length)tb.innerHTML=`<tr><td colspan=${COLS.length} class=hint>${ss.length?'Brak sesji pasujących do filtrów.':'Brak sesji – uruchom launcher albo wpisz token w bocie.'}</td></tr>`;
 for(const s of list){const tr=document.createElement('tr');const u=`/session?world=${encodeURIComponent(s.world)}&char=${encodeURIComponent(s.log_char)}`;
-tr.innerHTML=`<td class="st-${s.state_key}" style="white-space:nowrap">${esc(s.state)}</td><td>${s.managed?`<a href="/host?id=${encodeURIComponent(s.host_id)}">${esc(s.host)}</a>`:'<span class=hint>niezarządzany</span>'}</td><td>${esc(s.group)}</td><td>${esc(s.session)}</td><td>${esc(s.world)}</td><td>${s.log_char?`<a href="${u}">${esc(s.char)}</a>`:esc(s.char)}</td><td>${esc(s.prof)}</td><td>${s.lvl||''}</td><td>${esc(s.program)}</td><td>${esc(s.step)}</td><td style="white-space:nowrap">${fmt(s.last)}</td>`;tb.appendChild(tr)}
+const vt=VITAL[s.vital]?`<span title="${s.vital_since?'od '+new Date(s.vital_since*1000).toLocaleTimeString('pl-PL'):''}" style="color:${s.vital==='alive'?'var(--ok)':s.vital==='dead'?'#d03b3b':'#fab219'}">${VITAL[s.vital]}</span>`:'<span class=hint>—</span>';
+tr.innerHTML=`<td class="st-${s.state_key}" style="white-space:nowrap">${esc(s.state)}</td><td style="white-space:nowrap">${vt}</td><td>${s.managed?`<a href="/host?id=${encodeURIComponent(s.host_id)}">${esc(s.host)}</a>`:'<span class=hint>niezarządzany</span>'}</td><td>${esc(s.group)}</td><td>${esc(s.session)}</td><td>${esc(s.world)}</td><td>${s.log_char?`<a href="${u}">${esc(s.char)}</a>`:esc(s.char)}</td><td>${esc(s.prof)}</td><td>${s.lvl||''}</td><td>${esc(s.program)}</td><td>${esc(s.step)}</td><td style="white-space:nowrap">${fmt(s.last)}</td>`;tb.appendChild(tr)}
 const act=Object.values(F).some(v=>String(v).trim());$('fcount').innerHTML=`pokazano ${list.length} z ${ss.length}`+(act?' · <a href="#" id="fclear">✕ wyczyść filtry</a>':'');
 if(act)$('fclear').onclick=(e)=>{e.preventDefault();F={};saveF();buildFilters();rows()}}
 
 let chartSig='';
 async function load(){const r=await fetch(`/panel/api/overview?hours=${R}`);if(r.status===401){location='/login';return}OV=await r.json();
 tiles(OV.totals);hostsTable(OV);rows();
-const sig=JSON.stringify([OV.history,OV.ops,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char,s.state_key])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
+const sig=JSON.stringify([OV.history,OV.ops,OV.deaths,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char,s.state_key])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
 async function dstat(){const r=await fetch('/panel/api/data/status');if(!r.ok)return;const d=await r.json();
 const N={map:'mapy',npc:'NPC',quest:'zadania',route:'trasy',set:'zestawy',playbook:'przebiegi',skill:'drzewka'};
 $('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
@@ -1105,7 +1183,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks):
+def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -1230,6 +1308,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                     return self._send(401, {"ok": False})
                 ov = build_overview(user, store, presence, hosts, online_s)
                 ov["locks"] = locks.of(user)
+                ov["deaths"] = deaths.summary(user, range_hours(q))
                 return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, range_hours(q)),
                                             hours=range_hours(q), now=int(time.time())))
             if p == "/panel/api/issues":
@@ -1372,10 +1451,13 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                 except Exception:
                     return self._send(400, {"ok": False, "error": "bad json"})
                 keep = {k: (str(info[k])[:200] if isinstance(info[k], str) else info[k])
-                        for k in ("char", "world", "version", "running", "map", "lvl", "step", "source", "prof", "host_id", "session") if k in info}
+                        for k in ("char", "world", "version", "running", "map", "lvl", "step", "source", "prof", "host_id", "session",
+                                  "vital", "vital_since") if k in info}
                 presence.beat(user, keep)
                 if isinstance(info.get("ops"), dict) and info["ops"]:
                     opstats.add(user, info["ops"])
+                if isinstance(info.get("deaths"), list) and info["deaths"]:
+                    deaths.add(user, info.get("world", ""), info.get("char", ""), info["deaths"][:50])
                 return self._send(200, {"ok": True})
             if p in ("/api/v1/host/heartbeat", "/api/v1/host/state"):
                 user = self.token_user()
@@ -1564,14 +1646,15 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
 <div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
 <div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
 <div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
-<div class="card" style="grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="color:var(--acc)">Zakres</b><span id="range" style="display:flex;gap:4px;flex-wrap:wrap"></span><span class="hint">operacje botów (tu) oraz ostrzeżenia i błędy (na dole strony)</span></div>
+<div class="card" style="grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="color:var(--acc)">Zakres</b><span id="range" style="display:flex;gap:4px;flex-wrap:wrap"></span><span class="hint">śmierci, operacje botów (tu) oraz ostrzeżenia i błędy (na dole strony)</span></div>
+<div class="card chart" style="grid-column:1/-1"><h2>Śmierci postaci – <span id="d_range">24 h</span> <span class="hint" id="d_sum" style="font-size:12.5px;font-weight:400;margin-left:6px"></span></h2><div id="c_deaths"></div></div>
 <div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – <span id="ops_range">24 h</span></h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
 <div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
 <div class="card"><h2>Sesje <span class="hint" id="fcount" style="font-size:12.5px;font-weight:400;margin-left:8px"></span></h2><div class="tbl-wrap"><table>
-<thead><tr><th>Stan</th><th>Host</th><th>Grupa</th><th>Sesja</th><th>Świat</th><th>Postać</th><th>Profesja</th><th>Poziom</th><th>Program</th><th>Krok</th><th>Ostatnio</th></tr><tr id="frow"></tr></thead>
-<tbody id="rows"><tr><td colspan=11 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
+<thead><tr><th>Stan</th><th>Życie</th><th>Host</th><th>Grupa</th><th>Sesja</th><th>Świat</th><th>Postać</th><th>Profesja</th><th>Poziom</th><th>Program</th><th>Krok</th><th>Ostatnio</th></tr><tr id="frow"></tr></thead>
+<tbody id="rows"><tr><td colspan=12 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
 <div class="card"><h2>Token użytkownika</h2>
 <div class="tok" id="tok">{tok}</div>
 <p class="hint">Ważny do <b>{exp_txt}</b>{f" (jeszcze {left} dni)" if exp else ""}. Wpisz go w bocie Kraken (pierwszy ekran bota: adres tej strony i token)
@@ -1681,9 +1764,10 @@ def main():
     opstats = OpStats(store.root)
     issues = Issues(store.root)
     locks = RouteLocks()
+    deaths = Deaths(store.root)
     threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"]), 300, opstats),
                      daemon=True, name="history").start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks))
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths))
     httpd.daemon_threads = True
 
     def stop(*_):
