@@ -51,7 +51,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.6.0"
+VERSION = "5.7.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -544,6 +544,54 @@ class History:
             return [p for p in self._load(user) if p.get("t", 0) >= cut]
 
 
+PB_TYPES = ("exp", "task", "program", "e2", "heros", "tutorial", "otchlan", "mine")
+PB_STATS = ("lvl", "ttl", "gold", "hour")
+PB_OPS = ("eq", "ne", "ge", "le", "gt", "lt")
+
+
+def is_admin(users, user):
+    u = users.get(user) or {}
+    return u.get("role") == "admin" or user == "admin"
+
+
+def validate_playbook(d):
+    """Przebieg z edytora → (czysty słownik, '') albo (None, opis błędu)."""
+    if not isinstance(d, dict):
+        return None, "zły format"
+    name = str(d.get("name") or "").strip()
+    if not name or len(name) > 100:
+        return None, "podaj nazwę przebiegu (do 100 znaków)"
+    tiles = d.get("tiles")
+    if not isinstance(tiles, list) or len(tiles) > 600:
+        return None, "lista kroków (do 600)"
+    out = []
+    for i, t in enumerate(tiles, 1):
+        if not isinstance(t, dict) or t.get("type") not in PB_TYPES:
+            return None, f"krok {i}: nieznany typ"
+        for k, need in (("exp", "trasy"), ("task", "zadania"), ("program", "programu")):
+            if t["type"] == k and not str(t.get(k) or "").strip():
+                return None, f"krok {i}: brak {need}"
+        conds = []
+        for j, c in enumerate(t.get("conds") or [], 1):
+            if not isinstance(c, dict) or c.get("stat") not in PB_STATS:
+                return None, f"krok {i}, warunek {j}: nieznany rodzaj"
+            cc = {"join": "or" if c.get("join") == "or" else "and", "stat": c["stat"]}
+            if c["stat"] == "hour":
+                cc.update(value=str(c.get("value") or "")[:5], value2=str(c.get("value2") or "")[:5])
+            else:
+                if c.get("op") not in PB_OPS:
+                    return None, f"krok {i}, warunek {j}: nieznany operator"
+                try:
+                    cc.update(op=c["op"], value=int(float(c.get("value"))))
+                except (TypeError, ValueError):
+                    return None, f"krok {i}, warunek {j}: wartość musi być liczbą"
+            conds.append(cc)
+        tt = {k: v for k, v in t.items() if not str(k).startswith("_") and k != "conds"}
+        tt["conds"] = conds
+        out.append(tt)
+    return {"kraken": "przebieg", "version": time.strftime("panel.%Y%m%d%H%M"), "name": name, "tiles": out}, ""
+
+
 def range_hours(q, default=24):
     """Zakres pulpitu: hours=1, 8, 24, 72, 168, 336, 720."""
     try:
@@ -878,7 +926,10 @@ table{width:100%;border-collapse:collapse}td,th{padding:6px 8px;border-bottom:1p
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:var(--off)}.dot.on{background:var(--ok)}
 .tok{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--bg3);padding:6px 9px;border-radius:5px;word-break:break-all}
 .err{color:var(--bad)}.hint{color:var(--dim);font-size:12.5px}
-main.wide{max-width:1400px}.card{min-width:0}header{flex-wrap:wrap}
+main.wide{max-width:1400px}
+.pb td{vertical-align:top}.pb select,.pb input{width:auto;padding:4px 6px;font-size:12.5px}.pb .conds{min-width:330px}
+.cond{display:inline-flex;gap:3px;align-items:center;margin:0 6px 4px 0;padding:2px 4px;border:1px solid #2c3656;border-radius:5px;background:#0e1222}
+.cond input{width:62px}.card{min-width:0}header{flex-wrap:wrap}
 @media (max-width:600px){main{padding:12px}.tile .v{font-size:24px}.tiles{grid-template-columns:1fr 1fr}}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}
 .tile{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:12px 14px}
@@ -898,7 +949,7 @@ main.wide{max-width:1400px}.card{min-width:0}header{flex-wrap:wrap}
 
 def page(title, body, user=None):
     nav = (f'<header><b>🐙 Kraken</b><span class="sp"></span><span class="hint">{html.escape(user)}</span>'
-           f'<a class="btn" href="/">Panel</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
+           f'<a class="btn" href="/">Panel</a><a class="btn" href="/playbooks">Programy</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
            if user else "")
     return (f'<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{html.escape(title)} – Kraken</title><style>{CSS}</style></head><body>{nav}{body}</body></html>')
@@ -1059,6 +1110,73 @@ $('dsync').onclick=async()=>{await fetch('/panel/api/data/sync',{method:'POST'})
 buildFilters();rangeBar();issues().catch(()=>{});setInterval(()=>issues().catch(()=>{}),30000);
 let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{OV&&charts(OV);issues().catch(()=>{})},200)});
 const tick=()=>{load().catch(()=>{});dstat().catch(()=>{})};tick();setInterval(tick,5000);
+"""
+
+PB_JS = r"""
+// Edytor przebiegów (programów) – administrator. Zapis = nadpisanie na serwerze (pierwszeństwo przed repo).
+const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TYPES=[['exp','Exp'],['task','Zadanie'],['program','Program'],['e2','E2'],['heros','Herosy'],['tutorial','Tutorial'],['otchlan','Otchłań'],['mine','Kopalnia']];
+const STATS=[['lvl','Poziom'],['ttl','Wyczerpanie'],['gold','Złoto'],['hour','Godzina']];const OPS=[['ge','≥'],['le','≤'],['eq','='],['ne','≠'],['gt','>'],['lt','<']];
+const PROFS=[['','(wg ustawień)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
+// Pole celu kroku wg typu i lista podpowiedzi (z danych serwera).
+const TARGET={exp:['exp','routes'],task:['task','tasks'],program:['program','programs'],e2:['e2Config','e2'],heros:['route','heros']};
+const MANAGED=new Set(['type','conds','exp','set','task','program','e2Config','route','prof']);
+let O={},LIST=[],CUR=null,ORIG='',dirty=false,filter='';
+const opt=(items,cur)=>items.map(([v,l])=>`<option value="${esc(v)}"${v===cur?' selected':''}>${esc(l)}</option>`).join('');
+async function api(path,body){const r=await fetch(path,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{});
+if(r.status===401){location='/login';return null}const d=await r.json().catch(()=>({}));if(!r.ok||d.ok===false)throw new Error(d.error||`HTTP ${r.status}`);return d}
+function lists(){for(const [id,key] of [['dl_routes','routes'],['dl_tasks','tasks'],['dl_programs','programs'],['dl_sets','sets'],['dl_e2','e2'],['dl_heros','heros']])
+$(id).innerHTML=(O[key]||[]).map(v=>`<option value="${esc(v)}">`).join('')}
+async function loadList(sel){const d=await api('/panel/api/pb/list');LIST=d.items||[];const s=$('pb_sel');
+s.innerHTML=LIST.map(p=>`<option value="${esc(p.name)}">${esc(p.name)}${p.override?'  ✎ nadpisany':''} (${p.tiles})</option>`).join('');
+if(sel)s.value=sel;if(!s.value&&LIST.length)s.value=LIST[0].name}
+async function open(name){if(dirty&&!confirm('Niezapisane zmiany przepadną. Otworzyć inny przebieg?')){$('pb_sel').value=CUR?.name||'';return}
+const d=await api(`/panel/api/pb/get?name=${encodeURIComponent(name)}`);CUR=d.data;CUR.tiles=CUR.tiles||[];ORIG=JSON.stringify(CUR);dirty=false;
+$('pb_name').value=CUR.name;$('pb_state').innerHTML=d.override?'<span class=tag style="background:#5a4410">✎ nadpisany na serwerze</span>'+(d.in_repo?' · jest też w repo':' · tylko na serwerze'):'<span class=tag>z repo</span>';
+$('pb_revert').disabled=!d.override;render()}
+function mark(){dirty=JSON.stringify(CUR)!==ORIG;$('pb_save').disabled=!dirty;$('pb_dirty').textContent=dirty?'● niezapisane zmiany':''}
+function condHtml(c,i,j){const hour=c.stat==='hour';
+return `<span class="cond">${j?`<select data-c="join" data-i="${i}" data-j="${j}">${opt([['and','i'],['or','lub']],c.join||'and')}</select>`:''}<select data-c="stat" data-i="${i}" data-j="${j}">${opt(STATS,c.stat)}</select>`+
+(hour?`<input type="text" data-c="value" data-i="${i}" data-j="${j}" value="${esc(c.value||'')}" placeholder="od 08:00" size=5>–<input type="text" data-c="value2" data-i="${i}" data-j="${j}" value="${esc(c.value2||'')}" placeholder="do 22:00" size=5>`:
+`<select data-c="op" data-i="${i}" data-j="${j}">${opt(OPS,c.op)}</select><input type="text" data-c="value" data-i="${i}" data-j="${j}" value="${esc(c.value??'')}" size=5>`)+`<button class="sm" data-a="cdel" data-i="${i}" data-j="${j}" title="Usuń warunek">×</button></span>`}
+function tileText(t){return `${t.type} ${t.exp||''} ${t.task||''} ${t.program||''} ${t.e2Config||''} ${t.route||''} ${t.set||''}`.toLowerCase()}
+function render(){const tb=$('pb_rows');tb.textContent='';const f=filter.trim().toLowerCase();let shown=0;
+CUR.tiles.forEach((t,i)=>{if(f&&!tileText(t).includes(f))return;shown++;const tg=TARGET[t.type];const extra={};for(const k in t)if(!MANAGED.has(k))extra[k]=t[k];
+const tr=document.createElement('tr');tr.dataset.i=i;
+tr.innerHTML=`<td class=hint>${i+1}</td><td><select data-f="type" data-i="${i}">${opt(TYPES,t.type)}</select></td>
+<td>${tg?`<input type="text" data-f="${tg[0]}" data-i="${i}" list="dl_${tg[1]}" value="${esc(t[tg[0]]||'')}" style="min-width:240px">`:t.type==='tutorial'?`<select data-f="prof" data-i="${i}">${opt(PROFS,t.prof||'')}</select>`:'<span class=hint>—</span>'}</td>
+<td>${t.type==='exp'?`<input type="text" data-f="set" data-i="${i}" list="dl_sets" value="${esc(t.set||'')}" size=8>`:''}</td>
+<td class="conds">${(t.conds||[]).map((c,j)=>condHtml(c,i,j)).join('')}<button class="sm" data-a="cadd" data-i="${i}" title="Dodaj warunek">＋</button></td>
+<td style="white-space:nowrap"><button class="sm" data-a="up" data-i="${i}" title="W górę">↑</button><button class="sm" data-a="down" data-i="${i}" title="W dół">↓</button><button class="sm" data-a="dup" data-i="${i}" title="Duplikuj">⧉</button><button class="sm" data-a="del" data-i="${i}" title="Usuń krok">🗑</button><button class="sm" data-a="more" data-i="${i}" title="Pozostałe pola (JSON)">⋯</button></td>`;
+tb.appendChild(tr);
+if(t._more){const r2=document.createElement('tr');r2.innerHTML=`<td></td><td colspan=5><textarea data-f="_extra" data-i="${i}" rows=3 style="width:100%;font:12px ui-monospace,Menlo,monospace;background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px">${esc(JSON.stringify(extra))}</textarea><div class=hint>Pozostałe pola kroku (np. E2: e2Pos, e2Leader, e2Attacker) jako JSON.</div></td>`;tb.appendChild(r2)}});
+$('pb_count').textContent=`${CUR.tiles.length} kroków${f?` · pokazano ${shown}`:''}`;mark()}
+const num=(v)=>v===''||isNaN(+v)?v:+v;
+document.addEventListener('change',(e)=>{const el=e.target;if(!CUR)return;const i=+el.dataset.i;const t=CUR.tiles[i];if(!t)return;
+if(el.dataset.f==='type'){const nt={type:el.value,conds:t.conds||[]};if(el.value==='exp')nt.set=t.set||'';CUR.tiles[i]=nt;render();return}
+if(el.dataset.f==='_extra'){try{const x=JSON.parse(el.value||'{}');for(const k of Object.keys(t))if(!MANAGED.has(k)&&k!=='_more')delete t[k];Object.assign(t,x);el.style.borderColor='';}catch(err){el.style.borderColor='#d03b3b';return}mark();return}
+if(el.dataset.f){t[el.dataset.f]=el.value;mark();return}
+if(el.dataset.c){const c=t.conds[+el.dataset.j];if(el.dataset.c==='stat'){c.stat=el.value;if(el.value==='hour'){delete c.op;c.value='';c.value2=''}else{c.op=c.op||'ge';delete c.value2;c.value=0}render();return}
+c[el.dataset.c]=el.dataset.c==='value'&&c.stat!=='hour'?num(el.value):el.value;mark()}});
+document.addEventListener('input',(e)=>{if(e.target.id==='pb_filter'){filter=e.target.value;render()}});
+document.addEventListener('click',(e)=>{const b=e.target.closest('button[data-a]');if(!b||!CUR)return;const i=+b.dataset.i;const T=CUR.tiles;
+const a=b.dataset.a;if(a==='up'&&i>0)[T[i-1],T[i]]=[T[i],T[i-1]];else if(a==='down'&&i<T.length-1)[T[i+1],T[i]]=[T[i],T[i+1]];
+else if(a==='dup')T.splice(i+1,0,JSON.parse(JSON.stringify(T[i])));else if(a==='del'){if(!confirm(`Usunąć krok ${i+1}?`))return;T.splice(i,1)}
+else if(a==='more')T[i]._more=!T[i]._more;else if(a==='cadd')(T[i].conds=T[i].conds||[]).push({join:'and',stat:'lvl',op:'ge',value:1});
+else if(a==='cdel')T[i].conds.splice(+b.dataset.j,1);render()});
+$('pb_sel').onchange=()=>open($('pb_sel').value);
+$('pb_add').onclick=()=>{if(!CUR)return;CUR.tiles.push({type:'task',task:'',conds:[{join:'and',stat:'lvl',op:'ge',value:1}]});filter='';$('pb_filter').value='';render();scrollTo(0,document.body.scrollHeight)};
+$('pb_new').onclick=async()=>{const n=prompt('Nazwa nowego przebiegu:');if(!n)return;CUR={kraken:'przebieg',name:n.trim(),tiles:[]};ORIG='';$('pb_name').value=CUR.name;$('pb_state').innerHTML='<span class=tag>nowy – zapisz, żeby utworzyć</span>';$('pb_revert').disabled=true;render()};
+$('pb_dupall').onclick=()=>{if(!CUR)return;const n=prompt('Nazwa kopii:',CUR.name+' (kopia)');if(!n)return;CUR=JSON.parse(JSON.stringify(CUR));CUR.name=n.trim();ORIG='';$('pb_name').value=CUR.name;$('pb_state').innerHTML='<span class=tag>kopia – zapisz, żeby utworzyć</span>';$('pb_revert').disabled=true;render()};
+$('pb_name').oninput=()=>{if(CUR){CUR.name=$('pb_name').value;mark()}};
+$('pb_save').onclick=async()=>{const data=JSON.parse(JSON.stringify(CUR));data.tiles.forEach(t=>delete t._more);$('pb_msg').textContent='⏳ Zapisuję…';
+try{const d=await api('/panel/api/pb/save',{data});ORIG=JSON.stringify(CUR);dirty=false;$('pb_msg').textContent=`✅ Zapisano „${d.name}” (${d.tiles} kroków) · wersja danych ${String(d.ref).slice(0,7)}… – boty wczytają zmiany w ciągu kilku minut`;await loadList(d.name);await open(d.name)}
+catch(err){$('pb_msg').textContent='❌ '+err.message}};
+$('pb_revert').onclick=async()=>{if(!CUR||!confirm(`Usunąć nadpisanie „${CUR.name}” i wrócić do wersji z repo?`))return;try{await api('/panel/api/pb/revert',{name:CUR.name});dirty=false;$('pb_msg').textContent='↩ Przywrócono wersję z repo';await loadList(CUR.name);await open($('pb_sel').value)}catch(err){$('pb_msg').textContent='❌ '+err.message}};
+$('pb_dl').onclick=()=>{if(!CUR)return;const a=document.createElement('a');const data=JSON.parse(JSON.stringify(CUR));data.tiles.forEach(t=>delete t._more);
+a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,1)+'\n'],{type:'application/json'}));a.download=`${CUR.name}.json`;a.click()};
+addEventListener('beforeunload',(e)=>{if(dirty){e.preventDefault();e.returnValue=''}});
+(async()=>{try{O=await api('/panel/api/pb/options');lists();await loadList(new URLSearchParams(location.search).get('name')||'[1-300] Zero to hero');await open($('pb_sel').value)}catch(err){$('pb_msg').textContent='❌ '+err.message}})();
 """
 
 HOST_JS = """
@@ -1302,6 +1420,37 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                 return self._send(200, {"ok": True, "user": name, "expires": users.get(name).get("token_expires")})
             if p.startswith("/api/v1/data/"):
                 return self._data_get(p, q)
+            if p == "/playbooks":
+                user = self._require_panel()
+                if not user:
+                    return
+                if not is_admin(users, user):
+                    return self._html(403, "Programy", '<main><div class="card"><h2>Brak uprawnień</h2><p class="hint">Edytor programów jest tylko dla administratora.</p></div></main>', user)
+                return self._playbooks_page(user)
+            if p.startswith("/panel/api/pb/"):
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                if not is_admin(users, user):
+                    return self._send(403, {"ok": False, "error": "tylko administrator"})
+                if p == "/panel/api/pb/list":
+                    _ref, items = repo.list("playbook")
+                    return self._send(200, {"ok": True, "items": [{"name": x["key"], "tiles": x.get("tiles", 0), "override": bool(x.get("override"))}
+                                                                  for x in sorted(items, key=lambda x: (not x["key"].startswith("[1-300]"), x["key"]))]})
+                if p == "/panel/api/pb/get":
+                    raw = repo.get("playbook", q.get("name", ""))
+                    if raw is None:
+                        return self._send(404, {"ok": False, "error": "brak przebiegu"})
+                    return self._send(200, {"ok": True, "data": json.loads(raw), "override": repo.is_override("playbook", q.get("name", "")),
+                                            "in_repo": repo.repo_has("playbook", q.get("name", ""))})
+                if p == "/panel/api/pb/options":
+                    lst = lambda k: [x["key"] for x in repo.list(k)[1]]
+                    world = json.loads(repo.world) if repo.world else {}
+                    return self._send(200, {"ok": True, "tasks": sorted(lst("quest")), "programs": sorted(lst("playbook")),
+                                            "routes": sorted({x.get("name") or x["key"] for x in repo.list("route")[1]}),
+                                            "sets": sorted({k.split("/", 1)[-1] for k in lst("set")}, key=lambda n: (len(n), n)),
+                                            "e2": sorted(world.get("e2", {})), "heros": sorted(world.get("heros", {}))})
+                return self._send(404, {"ok": False, "error": "not found"})
             if p == "/panel/api/overview":
                 user = self.panel_user()
                 if not user:
@@ -1406,6 +1555,30 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
             p = urlparse(self.path).path
             if p == "/api/v1/data/batch":
                 return self._data_batch()
+            if p in ("/panel/api/pb/save", "/panel/api/pb/revert"):
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                if not is_admin(users, user):
+                    return self._send(403, {"ok": False, "error": "tylko administrator"})
+                if "application/json" not in self.headers.get("Content-Type", ""):
+                    return self._send(400, {"ok": False, "error": "bad request"})
+                try:
+                    body = json.loads((self._body() or b"").decode("utf-8"))
+                except Exception:
+                    return self._send(400, {"ok": False, "error": "zły JSON"})
+                if p.endswith("revert"):
+                    name = str(body.get("name") or "")
+                    if not repo.remove_override("playbook", name):
+                        return self._send(400, {"ok": False, "error": "ten przebieg nie ma nadpisania"})
+                    log.info("przebieg „%s”: przywrócony z repo (%s)", name, user)
+                    return self._send(200, {"ok": True, "ref": repo.ref})
+                data, err = validate_playbook(body.get("data"))
+                if err:
+                    return self._send(400, {"ok": False, "error": err})
+                repo.save_override("playbook", data["name"], data)
+                log.info("przebieg „%s”: zapisany w panelu (%d kroków, %s)", data["name"], len(data["tiles"]), user)
+                return self._send(200, {"ok": True, "name": data["name"], "tiles": len(data["tiles"]), "ref": repo.ref})
             if p == "/panel/api/data/sync":
                 if not self.panel_user():
                     return self._send(401, {"ok": False})
@@ -1673,6 +1846,19 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <div class="hint" id="icount" style="margin:6px 0"></div>
 <div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 <div id="tip"></div></main><script>{DASH_JS}</script>""", user)
+
+        def _playbooks_page(self, user):
+            self._html(200, "Programy", f"""<main class="wide"><div class="card"><h2>Edytor programów (przebiegów)</h2>
+<p class="hint">Zmiany zapisują się na serwerze jako nadpisanie – mają pierwszeństwo przed repo i przetrwają jego aktualizację.
+Boty wczytają je w ciągu kilku minut (pracujący bot zostaje przy bieżącym kroku). „Przywróć z repo” usuwa nadpisanie; „Pobierz” – plik do repo.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px"><select id="pb_sel" style="width:auto;min-width:320px"></select>
+<button class="sm" id="pb_new">＋ Nowy</button><button class="sm" id="pb_dupall">⧉ Kopia</button><button class="sm" id="pb_dl">⬇ Pobierz</button><button class="sm" id="pb_revert">↩ Przywróć z repo</button></div>
+<div class="grid2" style="margin-top:10px"><label>Nazwa<input type="text" id="pb_name"></label><label>Szukaj w krokach<input type="text" id="pb_filter" placeholder="np. Mrowisko, 36lvl, e2"></label></div>
+<div style="margin-top:8px"><span id="pb_state"></span> <span class="hint" id="pb_count"></span> <b style="color:var(--acc)" id="pb_dirty"></b></div></div>
+<div class="card"><div class="tbl-wrap"><table class="pb"><thead><tr><th>#</th><th>Typ</th><th>Cel (trasa / zadanie / program / E2)</th><th>Zestaw</th><th>Warunki (krok działa, gdy spełnione)</th><th></th></tr></thead><tbody id="pb_rows"></tbody></table></div>
+<div style="margin-top:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="sm" id="pb_add">＋ krok</button><button class="pri" id="pb_save" disabled>💾 Zapisz</button><span class="hint" id="pb_msg"></span></div></div>
+<datalist id="dl_routes"></datalist><datalist id="dl_tasks"></datalist><datalist id="dl_programs"></datalist><datalist id="dl_sets"></datalist><datalist id="dl_e2"></datalist><datalist id="dl_heros"></datalist>
+</main><script>{PB_JS}</script>""", user)
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>

@@ -10,7 +10,11 @@ Rodzaje (katalogi w kraken_user_client/) i klucze, po których bot o nie pyta:
   playbook playbooks/*.json  nazwa przebiegu ("name")
   skill    skills/*.json     profesja ("prof")
 Graf świata (DATA: world, heros, e2) – z kodu bota (const DATA = … w kraken-bot.user.js).
+
+Nadpisania (edytor przebiegów w panelu): <data_dir>/overrides/<katalog rodzaju>/*.json – mają pierwszeństwo przed repo
+i przetrwają aktualizację checkoutu. Wersja danych (ref) = commit repo + skrót nadpisań, więc boty widzą zmianę.
 """
+import hashlib
 import json
 import logging
 import os
@@ -54,6 +58,8 @@ def _keys(kind, rel, d):
 class DataRepo:
     def __init__(self, cfg):
         self.dir = cfg.get("repo_dir") or os.path.join(cfg["data_dir"], "repo")
+        self.over_dir = os.path.join(cfg["data_dir"], "overrides")
+        self.repo_ref = ""
         self.url = cfg.get("repo_url") or "https://github.com/damklys/margonem_experimental.git"
         self.branch = cfg.get("repo_branch") or "main"
         self.every = max(60, int(cfg.get("repo_sync_seconds") or 600))
@@ -92,7 +98,7 @@ class DataRepo:
 
     def sync(self):
         # Po restarcie serwera: indeks od razu z istniejącego checkoutu (fetch z GitHuba może chwilę potrwać).
-        if not self.ref and os.path.isdir(os.path.join(self.dir, ".git")):
+        if not self.repo_ref and os.path.isdir(os.path.join(self.dir, ".git")):
             self._rebuild(self._git("-C", self.dir, "rev-parse", "HEAD"))
         if not os.path.isdir(os.path.join(self.dir, ".git")):
             log.info("dane repo: klonuję %s (%s) → %s", self.url, self.branch, self.dir)
@@ -101,7 +107,7 @@ class DataRepo:
             self._git("-C", self.dir, "fetch", "--depth", "1", "origin", self.branch)
             self._git("-C", self.dir, "reset", "--hard", "FETCH_HEAD")
         ref = self._git("-C", self.dir, "rev-parse", "HEAD")
-        if ref != self.ref:
+        if ref != self.repo_ref:
             self._rebuild(ref)
         self.error = ""
 
@@ -131,8 +137,39 @@ class DataRepo:
                         index[kind].setdefault(k, path)
                     meta[kind][keys[0]] = m
         world = self._extract_world(os.path.join(base, BOT_FILE))
+        # Nadpisania z panelu (wygrywają z repo) i ich skrót w wersji danych.
+        sig = hashlib.sha1()
+        overrides = {}
+        for kind, sub in KINDS.items():
+            od = os.path.join(self.over_dir, sub)
+            if not os.path.isdir(od):
+                continue
+            for fn in sorted(os.listdir(od)):
+                if not fn.endswith(".json"):
+                    continue
+                path = os.path.join(od, fn)
+                try:
+                    with open(path, "rb") as fh:
+                        raw = fh.read()
+                    d = json.loads(raw)
+                    keys, m = _keys(kind, fn, d)
+                except Exception:
+                    bad += 1
+                    continue
+                sig.update(fn.encode() + raw)
+                # plik z repo o tym kluczu znika z indeksu (także jego aliasy) – nadpisanie zamiast niego
+                repo_file = index[kind].get(keys[0])
+                if repo_file:
+                    for k in [k for k, v in index[kind].items() if v == repo_file]:
+                        del index[kind][k]
+                for k in keys:
+                    index[kind][k] = path
+                meta[kind][keys[0]] = dict(m, override=True)
+                overrides.setdefault(kind, []).append(keys[0])
+        full = ref + ("+" + sig.hexdigest()[:8] if overrides else "")
         with self.lock:
-            self.index, self.meta, self.world, self.ref, self.updated = index, meta, world, ref, time.time()
+            self.index, self.meta, self.world, self.ref, self.updated = index, meta, world, full, time.time()
+            self.repo_ref, self.overrides = ref, overrides
         log.info("dane repo @%s: %s%s (%.1f s)", ref[:7], ", ".join(f"{k} {len(v)}" for k, v in meta.items()),
                  f", błędnych plików {bad}" if bad else "", time.time() - t0)
 
@@ -154,7 +191,8 @@ class DataRepo:
     # ── odczyt ──
     def status(self):
         with self.lock:
-            return {"ref": self.ref, "updated": int(self.updated), "error": self.error,
+            return {"ref": self.ref, "repo_ref": self.repo_ref, "overrides": {k: len(v) for k, v in getattr(self, "overrides", {}).items()},
+                    "updated": int(self.updated), "error": self.error,
                     "counts": {k: len(v) for k, v in self.meta.items()}, "world": bool(self.world)}
 
     def list(self, kind, prof=""):
@@ -162,6 +200,57 @@ class DataRepo:
             items = self.meta.get(kind) or {}
             out = [dict({"key": k}, **m) for k, m in items.items() if not prof or kind != "set" or m.get("prof") == prof]
             return self.ref, sorted(out, key=lambda x: x["key"])
+
+    # ── nadpisania (edytor przebiegów) ──
+    def override_path(self, kind, key):
+        safe = "".join(c if c.isalnum() or c in " -_[]().,+" else "_" for c in key).strip() or "bez_nazwy"
+        return os.path.join(self.over_dir, KINDS[kind], safe[:120] + ".json")
+
+    def is_override(self, kind, key):
+        with self.lock:
+            p = (self.index.get(kind) or {}).get(key, "")
+        return p.startswith(self.over_dir + os.sep)
+
+    def repo_has(self, kind, key):
+        """Czy wpis jest w samym repo (bez nadpisań) – do „Przywróć z repo”."""
+        root = os.path.join(self.dir, CLIENT_DIR, KINDS[kind])
+        for dirpath, _d, files in os.walk(root):
+            for fn in files:
+                if fn.endswith(".json"):
+                    try:
+                        with open(os.path.join(dirpath, fn), "r", encoding="utf-8") as fh:
+                            if key in _keys(kind, fn, json.load(fh))[0]:
+                                return True
+                    except Exception:
+                        pass
+        return False
+
+    def save_override(self, kind, key, data):
+        path = self.override_path(kind, key)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        # inna nazwa pliku dla tego samego klucza (zmiana pisowni) – stary plik nadpisania znika
+        with self.lock:
+            old = (self.index.get(kind) or {}).get(key, "")
+        if old.startswith(self.over_dir + os.sep) and old != path:
+            try:
+                os.remove(old)
+            except OSError:
+                pass
+        tmp = path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            json.dump(data, fh, ensure_ascii=False, indent=1)
+            fh.write("\n")
+        os.replace(tmp, path)
+        self._rebuild(self.repo_ref)
+
+    def remove_override(self, kind, key):
+        with self.lock:
+            p = (self.index.get(kind) or {}).get(key, "")
+        if not p.startswith(self.over_dir + os.sep):
+            return False
+        os.remove(p)
+        self._rebuild(self.repo_ref)
+        return True
 
     PACK_KINDS = ("map", "npc", "route", "playbook", "set", "skill")
 
