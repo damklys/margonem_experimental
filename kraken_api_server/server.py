@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.4.1"
+VERSION = "5.4.2"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -877,8 +877,8 @@ function opsChart(box,ops){stackBars(box,Object.entries(ops||{}).map(([k,c])=>({
 const RANGES=[[1,'1 h'],[8,'8 h'],[24,'24 h'],[72,'3 d'],[168,'7 d'],[336,'14 d'],[720,'30 d']];
 let R=24;try{R=+localStorage.getItem('kraken:panel:range')||24}catch(e){}if(!RANGES.some(([h])=>h===R))R=24;
 const rangeLabel=()=>(RANGES.find(([h])=>h===R)||[0,'24 h'])[1];
-function rangeBar(){const b=$('range');b.textContent='';for(const [h,l] of RANGES){const x=document.createElement('button');x.className='sm'+(h===R?' pri':'');x.textContent=l;
-x.onclick=()=>{R=h;try{localStorage.setItem('kraken:panel:range',String(h))}catch(e){}rangeBar();chartSig='';load().catch(()=>{});issues().catch(()=>{})};b.appendChild(x)}
+function rangeBar(){for(const bid of ['range','range2']){const b=$(bid);if(!b)continue;b.textContent='';for(const [h,l] of RANGES){const x=document.createElement('button');x.className='sm'+(h===R?' pri':'');x.textContent=l;
+x.onclick=()=>{R=h;try{localStorage.setItem('kraken:panel:range',String(h))}catch(e){}rangeBar();chartSig='';load().catch(()=>{});issues().catch(()=>{})};b.appendChild(x)}}
 for(const id of ['ops_range','iss_range'])$(id).textContent=rangeLabel();$('iss_dl').href=`/panel/api/issues?hours=${R}`}
 // Ostrzeżenia i błędy: najczęstsze komunikaty (bez liczb) i lista ostatnich wpisów z filtrami.
 const LV=[['warn','#fab219','⚠ ostrzeżenia'],['error','#d03b3b','✖ błędy']];let ISS=null;
@@ -1511,16 +1511,8 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
 <div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
 <div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
 <div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
-<div class="card" style="grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="color:var(--acc)">Zakres</b><span id="range" style="display:flex;gap:4px;flex-wrap:wrap"></span><span class="hint">operacje botów, ostrzeżenia i błędy</span></div>
+<div class="card" style="grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="color:var(--acc)">Zakres</b><span id="range" style="display:flex;gap:4px;flex-wrap:wrap"></span><span class="hint">operacje botów (tu) oraz ostrzeżenia i błędy (na dole strony)</span></div>
 <div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – <span id="ops_range">24 h</span></h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
-<div class="card chart" style="grid-column:1/-1"><h2>Ostrzeżenia i błędy – <span id="iss_range">24 h</span> <span style="float:right;font-size:12.5px;font-weight:400"><a id="iss_dl" href="/panel/api/issues?hours=24">⬇ pobierz (JSONL)</a></span></h2>
-<div class="hint" id="iss_sum" style="margin-bottom:6px"></div>
-<h3 style="font-size:13px;color:var(--dim);font-weight:500;margin:8px 0 4px">Najczęstsze komunikaty (liczby zastąpione przez N)</h3>
-<div class="legend"><span><i style="background:#fab219"></i>⚠ ostrzeżenia</span><span><i style="background:#d03b3b"></i>✖ błędy</span></div><div id="c_iss"></div>
-<div class="grid2" style="margin-top:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))"><select id="if_lvl"><option value="">ostrzeżenia i błędy</option><option value="warn">tylko ostrzeżenia</option><option value="error">tylko błędy</option></select>
-<select id="if_char"><option value="">wszystkie postacie</option></select><input type="text" id="if_q" placeholder="szukaj w komunikacie / kroku"></div>
-<div class="hint" id="icount" style="margin:6px 0"></div>
-<div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
 <div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
@@ -1535,6 +1527,15 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('tok').textContent)">Kopiuj</button>
 <button type="submit">🔄 Zroluj token</button></form></div>
 <div class="card"><h2>Dane bota <button class="sm" id="dsync" style="float:right">⟳ Pobierz z repo</button></h2><div class="hint" id="dstat">Wczytuję…</div></div>
+<div class="card chart"><h2>Ostrzeżenia i błędy – <span id="iss_range">24 h</span> <span style="float:right;font-size:12.5px;font-weight:400"><a id="iss_dl" href="/panel/api/issues?hours=24">⬇ pobierz (JSONL)</a></span></h2>
+<div style="display:flex;gap:4px;flex-wrap:wrap;margin:2px 0 8px" id="range2"></div>
+<div class="hint" id="iss_sum" style="margin-bottom:6px"></div>
+<h3 style="font-size:13px;color:var(--dim);font-weight:500;margin:8px 0 4px">Najczęstsze komunikaty (liczby zastąpione przez N)</h3>
+<div class="legend"><span><i style="background:#fab219"></i>⚠ ostrzeżenia</span><span><i style="background:#d03b3b"></i>✖ błędy</span></div><div id="c_iss"></div>
+<div class="grid2" style="margin-top:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))"><select id="if_lvl"><option value="">ostrzeżenia i błędy</option><option value="warn">tylko ostrzeżenia</option><option value="error">tylko błędy</option></select>
+<select id="if_char"><option value="">wszystkie postacie</option></select><input type="text" id="if_q" placeholder="szukaj w komunikacie / kroku"></div>
+<div class="hint" id="icount" style="margin:6px 0"></div>
+<div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 <div id="tip"></div></main><script>{DASH_JS}</script>""", user)
 
         def _host_page(self, user):
