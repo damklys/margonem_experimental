@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.3.1"
+VERSION = "5.4.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -535,6 +535,15 @@ class History:
             return [p for p in self._load(user) if p.get("t", 0) >= cut]
 
 
+def range_hours(q, default=24):
+    """Zakres pulpitu: hours=1, 8, 24, 72, 168, 336, 720."""
+    try:
+        h = int(q.get("hours", default))
+    except (TypeError, ValueError):
+        h = default
+    return h if h in (1, 8, 24, 72, 168, 336, 720) else default
+
+
 class Issues:
     """Ostrzeżenia i błędy z logów botów i launcherów – osobno, do późniejszej analizy:
     <data_dir>/users/<użytkownik>/issues/RRRR-MM-DD.jsonl, wiersz JSON na wpis
@@ -596,14 +605,15 @@ class Issues:
                             pass
         return len(rows)
 
-    def read(self, user, days=1):
-        """Wpisy z ostatnich `days` dni (najnowsze pliki), jako tekst JSONL."""
+    def read(self, user, hours=24):
+        """Wpisy z ostatnich `hours` godzin, jako tekst JSONL (pliki dni, które obejmuje zakres)."""
         d = os.path.join(self.root, safe_name(user, "unknown"), "issues")
         if not os.path.isdir(d):
             return ""
-        cut = time.time() - days * 86400
+        cut = time.time() - hours * 3600
+        first = time.strftime("%Y-%m-%d", time.localtime(cut))
         out = []
-        for fn in sorted(f for f in os.listdir(d) if f.endswith(".jsonl"))[-(days + 1):]:
+        for fn in sorted(f for f in os.listdir(d) if f.endswith(".jsonl") and f[:10] >= first):
             with open(os.path.join(d, fn), "r", encoding="utf-8") as fh:
                 for line in fh:
                     try:
@@ -613,10 +623,38 @@ class Issues:
                         pass
         return "".join(out)
 
+    @staticmethod
+    def pattern(msg):
+        """Komunikat bez liczb (współrzędne, czasy, poziomy) – grupuje podobne wpisy."""
+        m = re.sub(r"\d+(?:[.,]\d+)?", "N", str(msg or ""))
+        return re.sub(r"\s+", " ", m).strip()[:140]
+
+    def summary(self, user, hours=24, limit=300):
+        rows = []
+        for line in self.read(user, hours).splitlines():
+            try:
+                rows.append(json.loads(line))
+            except ValueError:
+                pass
+        rows.sort(key=lambda r: r.get("ts", 0))
+        groups = {}
+        for r in rows:
+            g = groups.setdefault(self.pattern(r.get("msg")), {"pattern": self.pattern(r.get("msg")), "warn": 0, "error": 0, "chars": set(), "last": 0})
+            g["error" if r.get("level") == "error" else "warn"] += 1
+            g["chars"].add(r.get("char", ""))
+            g["last"] = max(g["last"], r.get("ts", 0))
+        top = sorted(groups.values(), key=lambda g: -(g["warn"] + g["error"]))[:15]
+        for g in top:
+            g["chars"] = sorted(c for c in g["chars"] if c)[:8]
+        keys = ("ts", "level", "source", "world", "char", "prog", "step", "msg")
+        return {"total": len(rows), "warn": sum(1 for r in rows if r.get("level") != "error"),
+                "error": sum(1 for r in rows if r.get("level") == "error"), "groups": top,
+                "items": [{k: r.get(k) for k in keys} for r in reversed(rows[-limit:])]}
+
 
 class OpStats:
-    """Operacje botów (z sygnału „żyję”): godzina → typ → {start, ok, slow, fail}; 7 dni na dysku (ops.json)."""
-    KEEP = 7 * 86400
+    """Operacje botów (z sygnału „żyję”): godzina → typ → {start, ok, slow, fail}; 30 dni na dysku (ops.json)."""
+    KEEP = 30 * 86400
     KEYS = ("start", "ok", "slow", "fail")
 
     def __init__(self, root):
@@ -819,17 +857,41 @@ opsChart($('c_ops'),ov.ops)}
 // Operacje botów z 24 h: słupek na typ, segmenty – udane, wolne (po ostrzeżeniu 120 s), nieudane (stała paleta statusów).
 const OPN={travel:'Podróż',fight:'Walka',resupply:'Zaopatrzenie',prep:'Przygotowanie',sell:'Sprzedaż łupu',potions:'Mikstury',buy:'Zakup ekwipunku',equip:'Ekwipunek',skills:'Umiejętności',mail:'Poczta (Milioner)',auction:'Aukcje',quest:'Krok zadania',captcha:'Captcha',outfit:'Strój',rewards:'Nagrody'};
 const OPS=[['ok','#0ca30c','✔ udane'],['slow','#fab219','⚠ wolne (po ostrzeżeniu)'],['fail','#d03b3b','✖ nieudane']];
-function opsChart(box,ops){box.textContent='';const items=Object.entries(ops||{}).map(([k,c])=>({k,label:OPN[k]||k,c,total:(c.ok||0)+(c.slow||0)+(c.fail||0)})).filter(i=>i.total>0).sort((a,b)=>b.total-a.total);
-if(!items.length){box.innerHTML='<p class=hint>Brak operacji z ostatnich 24 h (bot 5.3+ wysyła je z sygnałem „żyję”).</p>';return}
-const W=widthOf(box,300),LW=Math.min(150,Math.round(W*0.3)),row=26,bh=12,H=items.length*row+6,max=Math.max(...items.map(i=>i.total)),scale=(W-LW-70)/max;
-const svg=el('svg',{width:W,height:H,viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'Operacje botów z 24 godzin'},box);
-items.forEach((it,i)=>{const y=i*row+4;txt(svg,LW-8,y+bh-1,it.label,{'text-anchor':'end',fill:'#d8c79a','font-size':12});
-const segs=OPS.map(([k,col])=>({k,col,v:it.c[k]||0})).filter(x=>x.v>0);let x=LW;
-segs.forEach((sg,j)=>{const w=Math.max(2,sg.v*scale)-(j<segs.length-1?2:0),last=j===segs.length-1,r=last?Math.min(4,w/2):0;
+// Słupki skumulowane (segmenty z odstępem 2 px, zaokrąglony koniec słupka): items [{label, c: {klucz: liczba}, tip}].
+function stackBars(box,items,segs,empty,LWmax){box.textContent='';items=items.filter(i=>segs.some(([k])=>(i.c[k]||0)>0));
+if(!items.length){box.innerHTML=`<p class=hint>${esc(empty)}</p>`;return}
+items.forEach(i=>i.total=segs.reduce((a,[k])=>a+(i.c[k]||0),0));
+const W=widthOf(box,300),LW=Math.min(LWmax||150,Math.round(W*0.4)),row=26,bh=12,H=items.length*row+6,max=Math.max(...items.map(i=>i.total)),scale=(W-LW-60)/max;
+const svg=el('svg',{width:W,height:H,viewBox:`0 0 ${W} ${H}`,role:'img'},box);const maxCh=Math.max(8,Math.floor((LW-10)/6.6));
+items.forEach((it,i)=>{const y=i*row+4;txt(svg,LW-8,y+bh-1,it.label.length>maxCh?it.label.slice(0,maxCh-1)+'…':it.label,{'text-anchor':'end',fill:'#d8c79a','font-size':12});
+const parts=segs.map(([k,col])=>({k,col,v:it.c[k]||0})).filter(x=>x.v>0);let x=LW;
+parts.forEach((sg,j)=>{const w=Math.max(2,sg.v*scale)-(j<parts.length-1?2:0),last=j===parts.length-1,r=last?Math.min(4,w/2):0;
 el('path',{d:r?`M${x} ${y}h${w-r}a${r} ${r} 0 0 1 ${r} ${r}v${bh-2*r}a${r} ${r} 0 0 1 -${r} ${r}h-${w-r}z`:`M${x} ${y}h${w}v${bh}h-${w}z`,fill:sg.col},svg);x+=w+(last?0:2)});
 txt(svg,x+6,y+bh-1,String(it.total),{'font-size':12});
 const hit=el('rect',{x:0,y:i*row,width:W,height:row,fill:'transparent'},svg);
-hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(it.label)}</b> – ${it.total}<br>`+OPS.map(([k,col,l])=>`<span style="color:${col}">■</span> ${l}: <b>${it.c[k]||0}</b>`).join('<br>')));hit.addEventListener('mouseleave',hideTip)})}
+hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(it.label)}</b> – ${it.total}<br>`+segs.map(([k,col,l])=>`<span style="color:${col}">■</span> ${l}: <b>${it.c[k]||0}</b>`).join('<br>')+(it.tip?'<br>'+it.tip:'')));hit.addEventListener('mouseleave',hideTip)})}
+function opsChart(box,ops){stackBars(box,Object.entries(ops||{}).map(([k,c])=>({label:OPN[k]||k,c})).sort((a,b)=>(b.c.ok+b.c.slow+b.c.fail)-(a.c.ok+a.c.slow+a.c.fail)),OPS,`Brak operacji w zakresie ${rangeLabel()} (bot 5.3+ wysyła je z sygnałem „żyję”).`)}
+// Zakres pulpitu (operacje, ostrzeżenia i błędy) – zapamiętany w tej przeglądarce.
+const RANGES=[[1,'1 h'],[8,'8 h'],[24,'24 h'],[72,'3 d'],[168,'7 d'],[336,'14 d'],[720,'30 d']];
+let R=24;try{R=+localStorage.getItem('kraken:panel:range')||24}catch(e){}if(!RANGES.some(([h])=>h===R))R=24;
+const rangeLabel=()=>(RANGES.find(([h])=>h===R)||[0,'24 h'])[1];
+function rangeBar(){const b=$('range');b.textContent='';for(const [h,l] of RANGES){const x=document.createElement('button');x.className='sm'+(h===R?' pri':'');x.textContent=l;
+x.onclick=()=>{R=h;try{localStorage.setItem('kraken:panel:range',String(h))}catch(e){}rangeBar();chartSig='';load().catch(()=>{});issues().catch(()=>{})};b.appendChild(x)}
+for(const id of ['ops_range','iss_range'])$(id).textContent=rangeLabel();$('iss_dl').href=`/panel/api/issues?hours=${R}`}
+// Ostrzeżenia i błędy: najczęstsze komunikaty (bez liczb) i lista ostatnich wpisów z filtrami.
+const LV=[['warn','#fab219','⚠ ostrzeżenia'],['error','#d03b3b','✖ błędy']];let ISS=null;
+async function issues(){const r=await fetch(`/panel/api/issues?format=json&hours=${R}`);if(!r.ok)return;ISS=await r.json();
+$('iss_sum').innerHTML=`<span style="color:#fab219">⚠</span> ostrzeżeń: <b>${ISS.warn}</b> · <span style="color:#d03b3b">✖</span> błędów: <b>${ISS.error}</b>`;
+stackBars($('c_iss'),(ISS.groups||[]).map(g=>({label:g.pattern,c:{warn:g.warn,error:g.error},tip:`postacie: ${esc(g.chars.join(', ')||'—')}<br>ostatnio: ${fmt(g.last)}`})),LV,`Brak ostrzeżeń i błędów w zakresie ${rangeLabel()}.`,420);
+const chars=[...new Set((ISS.items||[]).map(i=>i.char).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pl'));const cs=$('if_char'),cur=cs.value;
+cs.innerHTML='<option value="">wszystkie postacie</option>'+chars.map(c=>`<option${c===cur?' selected':''}>${esc(c)}</option>`).join('');issRows()}
+function issRows(){if(!ISS)return;const lv=$('if_lvl').value,ch=$('if_char').value,q=$('if_q').value.trim().toLowerCase();
+const list=(ISS.items||[]).filter(i=>(!lv||i.level===lv)&&(!ch||i.char===ch)&&(!q||`${i.msg} ${i.step} ${i.prog}`.toLowerCase().includes(q)));
+const tb=$('irows');tb.textContent='';if(!list.length)tb.innerHTML=`<tr><td colspan=5 class=hint>Brak wpisów.</td></tr>`;
+for(const i of list.slice(0,150)){const tr=document.createElement('tr');
+tr.innerHTML=`<td style="white-space:nowrap">${new Date(i.ts*1000).toLocaleString('pl-PL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'})}</td><td style="white-space:nowrap;color:${i.level==='error'?'#d03b3b':'#fab219'}">${i.level==='error'?'✖ błąd':'⚠ ostrzeżenie'}</td><td>${esc(i.char)}${i.source==='launcher'?' <span class=tag>launcher</span>':''}</td><td class=hint>${esc(i.step||'')}</td><td>${esc(i.msg)}</td>`;tb.appendChild(tr)}
+$('icount').textContent=`pokazano ${Math.min(150,list.length)} z ${list.length}${ISS.items.length<ISS.total?` (ostatnie ${ISS.items.length} z ${ISS.total})`:''}`}
+for(const id of ['if_lvl','if_char'])$(id).onchange=issRows;$('if_q').oninput=issRows;
 function tiles(t){const T=[['Hosty online',t.hosts_online,'launchery z sygnałem'],['Sesje online',t.sessions_active,'działające teraz'],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane online',t.unmanaged_active,'boty poza launcherem']];
 $('tiles').innerHTML=T.map(([l,v,s])=>`<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('')}
 
@@ -865,15 +927,15 @@ const act=Object.values(F).some(v=>String(v).trim());$('fcount').innerHTML=`poka
 if(act)$('fclear').onclick=(e)=>{e.preventDefault();F={};saveF();buildFilters();rows()}}
 
 let chartSig='';
-async function load(){const r=await fetch('/panel/api/overview');if(r.status===401){location='/login';return}OV=await r.json();
+async function load(){const r=await fetch(`/panel/api/overview?hours=${R}`);if(r.status===401){location='/login';return}OV=await r.json();
 tiles(OV.totals);hostsTable(OV);rows();
 const sig=JSON.stringify([OV.history,OV.ops,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char,s.state_key])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
 async function dstat(){const r=await fetch('/panel/api/data/status');if(!r.ok)return;const d=await r.json();
 const N={map:'mapy',npc:'NPC',quest:'zadania',route:'trasy',set:'zestawy',playbook:'przebiegi',skill:'drzewka'};
 $('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
 $('dsync').onclick=async()=>{await fetch('/panel/api/data/sync',{method:'POST'});$('dstat').textContent='Pobieram…';setTimeout(dstat,4000)};
-buildFilters();
-let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>OV&&charts(OV),200)});
+buildFilters();rangeBar();issues().catch(()=>{});setInterval(()=>issues().catch(()=>{}),30000);
+let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{OV&&charts(OV);issues().catch(()=>{})},200)});
 const tick=()=>{load().catch(()=>{});dstat().catch(()=>{})};tick();setInterval(tick,5000);
 """
 
@@ -1123,17 +1185,20 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                 if not user:
                     return self._send(401, {"ok": False})
                 ov = build_overview(user, store, presence, hosts, online_s)
-                return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, 24), now=int(time.time())))
+                return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, range_hours(q)),
+                                            hours=range_hours(q), now=int(time.time())))
             if p == "/panel/api/issues":
                 user = self.panel_user()
                 if not user:
                     return self._send(401, {"ok": False})
                 try:
-                    days = max(1, min(30, int(q.get("days", "1"))))
+                    hours = range_hours(q) if "hours" in q else 24 * max(1, min(30, int(q.get("days", "1") or 1)))
                 except ValueError:
-                    days = 1
-                name = f"kraken-ostrzezenia-bledy-{time.strftime('%Y-%m-%d')}-{days}d.jsonl"
-                return self._send(200, issues.read(user, days), "application/x-ndjson; charset=utf-8",
+                    hours = 24
+                if q.get("format") == "json":
+                    return self._send(200, dict(issues.summary(user, hours), ok=True, hours=hours))
+                name = f"kraken-ostrzezenia-bledy-{time.strftime('%Y-%m-%d')}-{hours}h.jsonl"
+                return self._send(200, issues.read(user, hours), "application/x-ndjson; charset=utf-8",
                                   {"Content-Disposition": f'attachment; filename="{name}"'})
             if p == "/panel/api/data/status":
                 if not self.panel_user():
@@ -1444,7 +1509,16 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
 <div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
 <div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
 <div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
-<div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – ostatnie 24 h <span style="float:right;font-size:12.5px;font-weight:400"><a href="/panel/api/issues?days=1">⬇ ostrzeżenia i błędy (24 h)</a> · <a href="/panel/api/issues?days=7">7 dni</a></span></h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
+<div class="card" style="grid-column:1/-1;display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="color:var(--acc)">Zakres</b><span id="range" style="display:flex;gap:4px;flex-wrap:wrap"></span><span class="hint">operacje botów, ostrzeżenia i błędy</span></div>
+<div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – <span id="ops_range">24 h</span></h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
+<div class="card chart" style="grid-column:1/-1"><h2>Ostrzeżenia i błędy – <span id="iss_range">24 h</span> <span style="float:right;font-size:12.5px;font-weight:400"><a id="iss_dl" href="/panel/api/issues?hours=24">⬇ pobierz (JSONL)</a></span></h2>
+<div class="hint" id="iss_sum" style="margin-bottom:6px"></div>
+<h3 style="font-size:13px;color:var(--dim);font-weight:500;margin:8px 0 4px">Najczęstsze komunikaty (liczby zastąpione przez N)</h3>
+<div class="legend"><span><i style="background:#fab219"></i>⚠ ostrzeżenia</span><span><i style="background:#d03b3b"></i>✖ błędy</span></div><div id="c_iss"></div>
+<div class="grid2" style="margin-top:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))"><select id="if_lvl"><option value="">ostrzeżenia i błędy</option><option value="warn">tylko ostrzeżenia</option><option value="error">tylko błędy</option></select>
+<select id="if_char"><option value="">wszystkie postacie</option></select><input type="text" id="if_q" placeholder="szukaj w komunikacie / kroku"></div>
+<div class="hint" id="icount" style="margin:6px 0"></div>
+<div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
 <div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
