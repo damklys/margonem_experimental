@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.3.0"
+VERSION = "5.3.1"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -535,6 +535,85 @@ class History:
             return [p for p in self._load(user) if p.get("t", 0) >= cut]
 
 
+class Issues:
+    """Ostrzeżenia i błędy z logów botów i launcherów – osobno, do późniejszej analizy:
+    <data_dir>/users/<użytkownik>/issues/RRRR-MM-DD.jsonl, wiersz JSON na wpis
+    {"ts", "t", "level": warn|error, "source": bot|launcher, "world", "char", "prog", "step", "msg", "line"}; 30 dni."""
+    KEEP_DAYS = 30
+    # Program i krok mogą zawierać nawiasy („[1-300] Zero to hero”, „Exp: [44lvl] gnolle”) – granice to „][” i „]: ”.
+    BOT = re.compile(r"^\[(?P<time>[\d:]+)\]\[(?P<char>[^\]]*)\]\[(?P<type>[^\]]*)\]\[(?P<prog>.*?)\]\[(?P<step>.*?)\]: (?P<msg>.*)$")
+    WARN_ICONS = ("⚠️", "⚠")
+    ERR_ICONS = ("❌", "⛔", "🔴", "💀", "✖")
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.pruned = ""
+
+    def classify(self, line):
+        """(poziom, źródło, pola) albo None – zwykła linia."""
+        ln = line.strip()
+        src = "bot"
+        if ln.startswith("[launcher]"):
+            src, ln = "launcher", ln[len("[launcher]"):].strip()
+            m = re.match(r"^\[[\d:]+\]\s*(.*)$", ln)
+            msg = m.group(1) if m else ln
+            lvl = "error" if msg.startswith(self.ERR_ICONS) else "warn" if msg.startswith(self.WARN_ICONS) else None
+            return (lvl, src, {"prog": "", "step": "", "msg": msg}) if lvl else None
+        m = self.BOT.match(ln)
+        if not m:
+            return None
+        lvl = {"błąd": "error", "ostrzeżenie": "warn"}.get(m.group("type"))
+        return (lvl, src, {"prog": m.group("prog"), "step": m.group("step"), "msg": m.group("msg")}) if lvl else None
+
+    def append(self, user, world, char, lines):
+        now = time.time()
+        rows = []
+        for ln in lines:
+            c = self.classify(str(ln)[:4000])
+            if not c:
+                continue
+            lvl, src, f = c
+            rows.append(json.dumps(dict({"ts": int(now), "t": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(now)), "level": lvl,
+                                         "source": src, "world": str(world)[:40], "char": str(char)[:60], "line": str(ln)[:4000]}, **f),
+                                   ensure_ascii=False))
+        if not rows:
+            return 0
+        d = os.path.join(self.root, safe_name(user, "unknown"), "issues")
+        day = time.strftime("%Y-%m-%d", time.localtime(now))
+        with self.lock:
+            os.makedirs(d, exist_ok=True)
+            with open(os.path.join(d, f"{day}.jsonl"), "a", encoding="utf-8") as fh:
+                fh.write("\n".join(rows) + "\n")
+            if self.pruned != day:
+                self.pruned = day
+                cut = time.strftime("%Y-%m-%d", time.localtime(now - self.KEEP_DAYS * 86400))
+                for fn in os.listdir(d):
+                    if fn.endswith(".jsonl") and fn[:10] < cut:
+                        try:
+                            os.remove(os.path.join(d, fn))
+                        except OSError:
+                            pass
+        return len(rows)
+
+    def read(self, user, days=1):
+        """Wpisy z ostatnich `days` dni (najnowsze pliki), jako tekst JSONL."""
+        d = os.path.join(self.root, safe_name(user, "unknown"), "issues")
+        if not os.path.isdir(d):
+            return ""
+        cut = time.time() - days * 86400
+        out = []
+        for fn in sorted(f for f in os.listdir(d) if f.endswith(".jsonl"))[-(days + 1):]:
+            with open(os.path.join(d, fn), "r", encoding="utf-8") as fh:
+                for line in fh:
+                    try:
+                        if json.loads(line).get("ts", 0) >= cut:
+                            out.append(line)
+                    except ValueError:
+                        pass
+        return "".join(out)
+
+
 class OpStats:
     """Operacje botów (z sygnału „żyję”): godzina → typ → {start, ok, slow, fail}; 7 dni na dysku (ops.json)."""
     KEEP = 7 * 86400
@@ -920,7 +999,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo, history, opstats):
+def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -1045,6 +1124,17 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats):
                     return self._send(401, {"ok": False})
                 ov = build_overview(user, store, presence, hosts, online_s)
                 return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, 24), now=int(time.time())))
+            if p == "/panel/api/issues":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                try:
+                    days = max(1, min(30, int(q.get("days", "1"))))
+                except ValueError:
+                    days = 1
+                name = f"kraken-ostrzezenia-bledy-{time.strftime('%Y-%m-%d')}-{days}d.jsonl"
+                return self._send(200, issues.read(user, days), "application/x-ndjson; charset=utf-8",
+                                  {"Content-Disposition": f'attachment; filename="{name}"'})
             if p == "/panel/api/data/status":
                 if not self.panel_user():
                     return self._send(401, {"ok": False})
@@ -1146,6 +1236,10 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats):
                 for e in entries:
                     if isinstance(e, dict) and isinstance(e.get("lines"), list):
                         n += store.append(user, e.get("world", ""), e.get("char", ""), e["lines"])
+                        try:
+                            issues.append(user, e.get("world", ""), e.get("char", ""), e["lines"][:5000])
+                        except Exception as ex:
+                            log.warning("ostrzeżenia/błędy: %s", ex)
                 log.info("logi: %d linii (%s, %s, %s)", n, user, str(body.get("source", ""))[:40], self.client_ip())
                 return self._send(200, {"ok": True, "written": n})
             if p == "/api/v1/heartbeat":
@@ -1350,7 +1444,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats):
 <div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
 <div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
 <div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
-<div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – ostatnie 24 h</h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
+<div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – ostatnie 24 h <span style="float:right;font-size:12.5px;font-weight:400"><a href="/panel/api/issues?days=1">⬇ ostrzeżenia i błędy (24 h)</a> · <a href="/panel/api/issues?days=7">7 dni</a></span></h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
 <div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
@@ -1455,9 +1549,10 @@ def main():
     repo.start()
     history = History(store.root)
     opstats = OpStats(store.root)
+    issues = Issues(store.root)
     threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"]), 300, opstats),
                      daemon=True, name="history").start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats))
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues))
     httpd.daemon_threads = True
 
     def stop(*_):
