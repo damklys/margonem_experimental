@@ -37,7 +37,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, quote, urlparse
 
-VERSION = "4.2.0"
+VERSION = "4.3.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -427,6 +427,7 @@ const on=s.status==='RUNNING';let done=false,txt='';
 if(p.action==='start'){done=on&&s.bot==='running';txt=!c||c.status==='queued'?'w kolejce…':!on?'uruchamiam przeglądarkę…':s.bot==='stopped'?'startuję bota…':'loguję i startuję bota…'}
 else if(p.action==='stop'){done=s.status==='OFFLINE'||s.status==='ERROR';txt=!c||c.status==='queued'?'w kolejce…':'zatrzymuję sesję…'}
 else if(p.action==='bot_start'){done=s.bot==='running';txt=!c||c.status==='queued'?'w kolejce…':'startuję bota…'}
+else if(p.action==='refresh'){done=!!c&&(c.status==='done');txt=!c||c.status==='queued'?'w kolejce…':'odświeżam przeglądarkę…'}
 else if(p.action==='bot_stop'){done=s.bot==='stopped'||!on;txt=!c||c.status==='queued'?'w kolejce…':'zatrzymuję bota…'}
 if(c&&c.status==='done'&&(p.action==='start'||p.action==='stop')&&/już/.test(c.result||''))done=true;
 if(done||Date.now()-p.t>LIMIT){delete PEND[s.uid];return null}
@@ -443,6 +444,7 @@ if(ps&&!ps.err){tr.className='pending';const sp=document.createElement('span');s
 if(ps&&ps.err){const e=document.createElement('div');e.className='err';e.style.fontSize='12px';e.textContent='✖ '+ps.err;a.appendChild(e)}
 a.appendChild(btn(on?'⏹ Sesja':'▶ Sesja',on?'':'pri',()=>act(on?'stop':'start',s),!H.online||(!on&&s.banned)));
 a.appendChild(btn(s.bot==='running'?'⏸ Bot':'▶ Bot','',()=>act(s.bot==='running'?'bot_stop':'bot_start',s),!H.online||!on||s.bot==='loading'));
+a.appendChild(btn('🔄','',()=>act('refresh',s),!H.online||s.status!=='RUNNING'));
 a.appendChild(btn('✎','',()=>{editing=editing===s.uid?null:s.uid;edit()},!H.online));
 a.appendChild(btn('🗑','',()=>{if(confirm(`Usunąć sesję „${s.name}”?`))cmd('delete_session',s.uid,s.name)},!H.online||on));tb.appendChild(tr)}}
 function edit(){const box=$('edit');const s=(H.sessions||[]).find(x=>x.uid===editing);if(!s){box.style.display='none';return}
@@ -498,7 +500,7 @@ const man=()=>{const m=$('nc_mode').value==='manual';document.querySelectorAll('
 $('nc_go').onclick=()=>{const v=(i)=>$(i).value;const m=v('nc_mode');if(m==='manual'&&(!v('nc_login')||!v('nc_pw'))){$('nc_info').textContent='Podaj login i hasło.';return}
 cmd('create_config','',m==='auto'?'nowe konto':v('nc_name')||v('nc_login'),m==='auto'?{mode:'auto',prof:v('nc_prof')}:{mode:'manual',name:v('nc_name'),login:v('nc_login'),password:v('nc_pw'),prof:v('nc_prof')});$('nc_pw').value='';$('nc_info').textContent='Wysłano.'};
 $('ng_go').onclick=()=>{const n=$('ng_name').value.trim();if(!n)return;cmd('create_group','',n,{name:n,world:$('ng_world').value});$('ng_name').value=''};
-const ACT={start:'▶ sesja',stop:'⏹ sesja',bot_start:'▶ bot',bot_stop:'⏸ bot',create_session:'＋ sesja',update_session:'✎ sesja',delete_session:'🗑 sesja',create_config:'＋ config',set_config_prof:'🎓 profesja',create_group:'＋ grupa',rename_group:'✎ nazwa grupy',delete_group:'🗑 grupa',update_group:'✎ grupa',delete_banned:'🗑 zablokowane sesje'};
+const ACT={start:'▶ sesja',stop:'⏹ sesja',bot_start:'▶ bot',bot_stop:'⏸ bot',create_session:'＋ sesja',update_session:'✎ sesja',delete_session:'🗑 sesja',create_config:'＋ config',set_config_prof:'🎓 profesja',create_group:'＋ grupa',rename_group:'✎ nazwa grupy',delete_group:'🗑 grupa',update_group:'✎ grupa',delete_banned:'🗑 zablokowane sesje',refresh:'🔄 odświeżenie'};
 async function load(){const r=await fetch(`/panel/api/host?id=${encodeURIComponent(id)}`);if(r.status===401){location='/login';return}H=await r.json();O=H.options||{};
 $('hn').textContent=H.name||id;$('hs').innerHTML=`<span class="dot ${H.online?'on':''}"></span>${H.online?'online':'offline'} · ${esc(H.platform||'')} ${esc(H.version||'')}${H.saved?' · ustawienia zapisane '+new Date(H.saved*1000).toLocaleString('pl-PL'):''}`;
 const none=!O.groups&&H.online;$('ns_info').textContent=none?'Launcher nie przesłał list – zaktualizuj launcher (git pull) i uruchom ponownie.':'';
@@ -766,8 +768,8 @@ def make_handler(cfg, users, store, presence, hosts):
                     action = body.get("action")
                     assert action in ("start", "stop", "bot_start", "bot_stop", "create_session", "update_session",
                                       "delete_session", "create_config", "set_config_prof",
-                                      "create_group", "rename_group", "delete_group", "update_group", "delete_banned")
-                    assert action not in ("start", "stop", "bot_start", "bot_stop", "update_session", "delete_session") or body.get("session")
+                                      "create_group", "rename_group", "delete_group", "update_group", "delete_banned", "refresh")
+                    assert action not in ("start", "stop", "bot_start", "bot_stop", "refresh", "update_session", "delete_session") or body.get("session")
                     params = body.get("params") if isinstance(body.get("params"), dict) else {}
                     params = {str(k)[:32]: (v if isinstance(v, bool) else str(v)[:120]) for k, v in list(params.items())[:20]}
                 except Exception:

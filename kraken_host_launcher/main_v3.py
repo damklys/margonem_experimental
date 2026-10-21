@@ -784,6 +784,38 @@ class BotRunner:
                 done(ok, msg)
         threading.Thread(target=run, daemon=True).start()
 
+    def refresh_browser(self, done=None):
+        """🔄 Odświeżenie strony gry w tej sesji (F5). Bot, który pracował, po wczytaniu gry rusza dalej. W tle."""
+        def run():
+            ok, msg = False, ""
+            try:
+                if not self.driver:
+                    msg = "sesja nie działa"
+                else:
+                    was_running = self._read_bot_state() == "running"
+                    self.driver.refresh()
+                    self.log("🔄 Odświeżono przeglądarkę")
+                    ok, msg = True, "odświeżono"
+                    # Bot pracował – czekamy na wczytanie; gdy po odświeżeniu stoi, uruchamiamy go ponownie.
+                    t0, stopped_since = time.time(), None
+                    while was_running and time.time() - t0 < 120 and not self.stop_event.is_set():
+                        st = self._read_bot_state()
+                        if st == "running":
+                            break
+                        if st == "stopped":
+                            stopped_since = stopped_since or time.time()
+                            if time.time() - stopped_since > 5:
+                                self.driver.execute_script("Kraken.start();")
+                                self.log("▶ Bot wznowiony po odświeżeniu")
+                                break
+                        time.sleep(2)
+            except Exception as e:
+                msg = str(e)[:200]
+            self.bot_state = self._read_bot_state()
+            if done:
+                done(ok, msg)
+        threading.Thread(target=run, daemon=True).start()
+
     def _start_bot(self, program: str, prof: str = ""):
         """START sesji = start bota: autoryzacja tokenu na serwerze (gdy skonfigurowany), program grupy/sesji, start."""
         from log_shipper import SHIPPER, check
@@ -2955,6 +2987,10 @@ class SessionTab(tk.Frame):
                                       bg=BG3, fg=ACCENT, font=FONT_BOLD, relief="flat", cursor="hand2", padx=8, pady=4,
                                       state="disabled")
         self.bot_stop_btn.pack(side="left", padx=(0, 6))
+        self.refresh_btn = tk.Button(ctrl, text="🔄", command=self.refresh_browser,
+                                     bg=BG3, fg=ACCENT, font=FONT_BOLD, relief="flat", cursor="hand2", padx=8, pady=4,
+                                     state="disabled")
+        self.refresh_btn.pack(side="left", padx=(0, 6))
         self.bot_lbl = tk.Label(ctrl, text="", font=FONT_SMALL, bg=BG, fg=FG_DIM)
         self.bot_lbl.pack(side="left")
         self.after(2000, self._refresh_bot_row)
@@ -3272,6 +3308,8 @@ class SessionTab(tk.Frame):
             st = self.bot_state
             self.bot_start_btn.configure(state="normal" if self.is_running and st == "stopped" else "disabled")
             self.bot_stop_btn.configure(state="normal" if self.is_running and st == "running" else "disabled")
+            r = self._runner
+            self.refresh_btn.configure(state="normal" if self.is_running and r and r.driver else "disabled")
             self.bot_lbl.configure(text={"running": "🤖 bot pracuje", "stopped": "🤖 bot zatrzymany",
                                          "loading": "🤖 bot się wczytuje"}.get(st, ""),
                                    fg=GREEN if st == "running" else FG_DIM)
@@ -3288,6 +3326,16 @@ class SessionTab(tk.Frame):
             return
         self.logger.write("▶ Start bota" if action == "bot_start" else "⏸ Zatrzymanie bota")
         r.bot_command(action, self.effective_program() if action == "bot_start" else None, done)
+
+    def refresh_browser(self, done=None):
+        """🔄 Odświeżenie przeglądarki sesji (launcher albo panel WWW)."""
+        r = self._runner
+        if not (r and self.is_running and r.driver):
+            if done:
+                done(False, "sesja nie działa")
+            return
+        self.logger.write("🔄 Odświeżam przeglądarkę…")
+        r.refresh_browser(done)
 
     def _config_path(self) -> str:
         key = self.config_key()
@@ -4024,6 +4072,10 @@ class BotGUI:
             tab.logger.write("🌐 STOP z panelu WWW")
             tab._on_stop()
             return HOST.report(c["id"], True, "zatrzymywana")
+        if act == "refresh":
+            tab.logger.write("🌐 🔄 Odświeżenie przeglądarki z panelu WWW")
+            tab.refresh_browser(lambda ok, msg, cid=c["id"]: HOST.report(cid, ok, msg))
+            return
         if act in ("bot_start", "bot_stop"):
             tab.logger.write(f"🌐 {'▶ Start' if act == 'bot_start' else '⏸ Zatrzymanie'} bota z panelu WWW")
             tab.bot_command(act, lambda ok, msg, cid=c["id"]: HOST.report(cid, ok, msg))
