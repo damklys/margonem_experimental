@@ -137,6 +137,7 @@ class DataRepo:
                         index[kind].setdefault(k, path)
                     meta[kind][keys[0]] = m
         world = self._extract_world(os.path.join(base, BOT_FILE))
+        e2_keys = self._extract_e2(os.path.join(base, BOT_FILE), world)
         # Nadpisania z panelu (wygrywają z repo) i ich skrót w wersji danych.
         sig = hashlib.sha1()
         overrides = {}
@@ -169,9 +170,34 @@ class DataRepo:
         full = ref + ("+" + sig.hexdigest()[:8] if overrides else "")
         with self.lock:
             self.index, self.meta, self.world, self.ref, self.updated = index, meta, world, full, time.time()
-            self.repo_ref, self.overrides = ref, overrides
+            self.repo_ref, self.overrides, self.e2_keys = ref, overrides, e2_keys
         log.info("dane repo @%s: %s%s (%.1f s)", ref[:7], ", ".join(f"{k} {len(v)}" for k, v in meta.items()),
                  f", błędnych plików {bad}" if bad else "", time.time() - t0)
+
+    @staticmethod
+    def _extract_e2(path, world):
+        """Konfiguracje E2 jak w bocie: DATA.e2 + E2_SPAWNS („(lvl) nazwa”, kilka respów – „ – mapa”)."""
+        import re as _re
+        keys = set()
+        try:
+            known = json.loads(world or b"{}").get("e2", {})
+            keys.update(known)
+            with open(path, "r", encoding="utf-8") as fh:
+                src = fh.read()
+            block = src[src.index("const E2_SPAWNS = ["):]
+            block = block[:block.index("];")]
+            multi = set(_re.findall(r'"([^"]+)"', src[src.index("const E2_MULTI = new Set(["):].split("]", 1)[0]))
+            have = {(c.get("name"), c.get("location")) for c in known.values()}
+            for name, lvl, mp in _re.findall(r'\["([^"]+)",\s*(\d+),\s*"([^"]+)",', block):
+                if (name, mp) in have:
+                    continue
+                keys.add(f"({lvl}lvl) {name}" + (f" – {mp}" if name in multi else ""))
+        except Exception as e:
+            log.warning("dane repo: konfiguracje E2 z %s – %s", path, e)
+        def lvl(k):
+            m = _re.match(r"^\((\d+)lvl\)", k)
+            return (int(m.group(1)) if m else 0, k)
+        return sorted(keys, key=lvl)
 
     @staticmethod
     def _extract_world(path):

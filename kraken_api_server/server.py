@@ -51,7 +51,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.7.0"
+VERSION = "5.8.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -927,9 +927,22 @@ table{width:100%;border-collapse:collapse}td,th{padding:6px 8px;border-bottom:1p
 .tok{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--bg3);padding:6px 9px;border-radius:5px;word-break:break-all}
 .err{color:var(--bad)}.hint{color:var(--dim);font-size:12.5px}
 main.wide{max-width:1400px}
-.pb td{vertical-align:top}.pb select,.pb input{width:auto;padding:4px 6px;font-size:12.5px}.pb .conds{min-width:330px}
-.cond{display:inline-flex;gap:3px;align-items:center;margin:0 6px 4px 0;padding:2px 4px;border:1px solid #2c3656;border-radius:5px;background:#0e1222}
-.cond input{width:62px}.card{min-width:0}header{flex-wrap:wrap}
+.pbe-bar{position:sticky;top:0;z-index:5;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 18px;background:#0f1324;border-bottom:1px solid #222a44}
+.pbe-bar #e_name{max-width:340px;font-weight:600}.pbe-bar .sp{flex:1}
+.pbe{display:grid;grid-template-columns:minmax(300px,1fr) minmax(340px,1.15fr);gap:14px;align-items:start}
+@media (max-width:900px){.pbe{grid-template-columns:1fr}}
+.pbe-list{max-height:calc(100vh - 120px);overflow:auto}.pbe-form{position:sticky;top:64px}
+.step{display:flex;gap:8px;align-items:flex-start;padding:7px 8px;margin-bottom:5px;border:1px solid #222a44;border-radius:6px;background:#0e1222;cursor:pointer}
+.step:hover{border-color:#36406a}.step.sel{border-color:var(--acc);background:#171c33}.step.bad{border-left:3px solid #d03b3b}
+.step.over{border-top:2px solid var(--acc)}.step.drag{opacity:.4}
+.step .num{color:var(--dim);font-size:12px;min-width:22px;text-align:right}.step .ic{width:20px}.step .body{min-width:0;flex:1}
+.step .tt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.step .warn{color:#e66767;font-size:12px}
+.pbe-form .fh{display:flex;gap:6px;align-items:center;margin-bottom:10px}.pbe-form .fh .sp{flex:1}
+.pbe-form h3{font-size:13px;color:var(--acc);margin:14px 0 6px}.pbe-form .f{display:block;margin-bottom:9px}.pbe-form .f>span{display:block;color:var(--dim);font-size:12.5px;margin-bottom:3px}
+.pbe-form .row{display:flex;gap:10px;flex-wrap:wrap}.pbe-form .ck{display:inline-flex;gap:5px;align-items:center;margin-right:12px}.pbe-form .ck input{width:auto}
+.pbe-form details{margin-top:10px}.pbe-form summary{cursor:pointer;color:var(--dim)}
+.pbe-form textarea{width:100%;font:12px ui-monospace,Menlo,monospace;background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;margin-top:6px}
+.cond{display:flex;gap:4px;align-items:center;margin:6px 0}.cond select,.cond input{width:auto;padding:4px 6px;font-size:12.5px}.cond input{width:74px}.card{min-width:0}header{flex-wrap:wrap}
 @media (max-width:600px){main{padding:12px}.tile .v{font-size:24px}.tiles{grid-template-columns:1fr 1fr}}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}
 .tile{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:12px 14px}
@@ -1112,71 +1125,138 @@ let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{OV&&
 const tick=()=>{load().catch(()=>{});dstat().catch(()=>{})};tick();setInterval(tick,5000);
 """
 
-PB_JS = r"""
-// Edytor przebiegów (programów) – administrator. Zapis = nadpisanie na serwerze (pierwszeństwo przed repo).
+PBL_JS = r"""
+// Lista programów (przebiegów) – administrator: podsumowanie, edycja w pełnym edytorze, kopia, pobranie, przywrócenie.
+const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TN={exp:'Exp',task:'Zadania',program:'Programy',e2:'E2',heros:'Herosy',tutorial:'Tutorial',otchlan:'Otchłań',mine:'Kopalnia'};
+async function api(path,body){const r=await fetch(path,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{});
+if(r.status===401){location='/login';return null}const d=await r.json().catch(()=>({}));if(!r.ok||d.ok===false)throw new Error(d.error||`HTTP ${r.status}`);return d}
+const edit=(n)=>`/playbook?name=${encodeURIComponent(n)}`;let ITEMS=[];
+async function load(){ITEMS=(await api('/panel/api/pb/list')).items||[];render()}
+function render(){const q=$('q').value.trim().toLowerCase();const tb=$('rows');tb.textContent='';const list=ITEMS.filter(p=>!q||p.name.toLowerCase().includes(q));
+for(const p of list){const tr=document.createElement('tr');const lv=p.lvl||[];
+tr.innerHTML=`<td><a href="${edit(p.name)}"><b>${esc(p.name)}</b></a></td><td>${p.tiles}</td>
+<td>${Object.entries(p.types).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<span class=tag>${esc(TN[k]||k)} ${v}</span>`).join(' ')}</td>
+<td style="white-space:nowrap">${lv[0]!=null||lv[1]!=null?`${lv[0]??'—'}–${lv[1]??'—'}`:'—'}</td>
+<td>${p.override?'<span class=tag style="background:#5a4410">✎ nadpisany</span>':'<span class=hint>repo</span>'}</td><td style="white-space:nowrap"></td>`;
+const a=tr.lastChild;const b=(t,fn,dis,title)=>{const x=document.createElement('button');x.className='sm';x.textContent=t;x.disabled=!!dis;x.title=title||'';x.onclick=fn;a.appendChild(x)};
+b('✎ Edytuj',()=>location=edit(p.name),0,'Otwórz w edytorze');
+b('⧉',async()=>{const n=prompt('Nazwa kopii:',p.name+' (kopia)');if(!n)return;try{const d=(await api(`/panel/api/pb/get?name=${encodeURIComponent(p.name)}`)).data;d.name=n.trim();await api('/panel/api/pb/save',{data:d});location=edit(d.name)}catch(e){$('msg').textContent='❌ '+e.message}},0,'Kopia pod nową nazwą');
+b('⬇',async()=>{const d=(await api(`/panel/api/pb/get?name=${encodeURIComponent(p.name)}`)).data;const l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(d,null,1)+'\n'],{type:'application/json'}));l.download=p.name+'.json';l.click()},0,'Pobierz plik (do repo)');
+b('↩',async()=>{if(!confirm(`Usunąć nadpisanie „${p.name}” i wrócić do wersji z repo?`))return;try{await api('/panel/api/pb/revert',{name:p.name});$('msg').textContent=`↩ „${p.name}”: przywrócono wersję z repo`;load()}catch(e){$('msg').textContent='❌ '+e.message}},!p.override,'Przywróć z repo');
+tb.appendChild(tr)}
+$('count').textContent=`${list.length} z ${ITEMS.length}`}
+$('q').oninput=render;
+$('new').onclick=()=>{const n=prompt('Nazwa nowego programu:');if(n&&n.trim())location=`/playbook?new=${encodeURIComponent(n.trim())}`};
+load().catch(e=>{$('msg').textContent='❌ '+e.message});
+"""
+
+PBE_JS = r"""
+// Edytor programu (przebiegu): karty kroków (przeciąganie, wyszukiwanie, błędy) i formularz zaznaczonego kroku.
 const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const TYPES=[['exp','Exp'],['task','Zadanie'],['program','Program'],['e2','E2'],['heros','Herosy'],['tutorial','Tutorial'],['otchlan','Otchłań'],['mine','Kopalnia']];
+const ICON={exp:'⚔️',task:'📜',program:'📋',e2:'🐉',heros:'🦸',tutorial:'🎓',otchlan:'🌀',mine:'⛏️'};
 const STATS=[['lvl','Poziom'],['ttl','Wyczerpanie'],['gold','Złoto'],['hour','Godzina']];const OPS=[['ge','≥'],['le','≤'],['eq','='],['ne','≠'],['gt','>'],['lt','<']];
-const PROFS=[['','(wg ustawień)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
-// Pole celu kroku wg typu i lista podpowiedzi (z danych serwera).
-const TARGET={exp:['exp','routes'],task:['task','tasks'],program:['program','programs'],e2:['e2Config','e2'],heros:['route','heros']};
-const MANAGED=new Set(['type','conds','exp','set','task','program','e2Config','route','prof']);
-let O={},LIST=[],CUR=null,ORIG='',dirty=false,filter='';
+const OPT={ge:'≥',le:'≤',eq:'=',ne:'≠',gt:'>',lt:'<'};const SN={lvl:'poziom',ttl:'wyczerpanie',gold:'złoto',hour:'godzina'};
+const PROFS=[['','(wg ustawień bota)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
+const MANAGED=new Set(['type','conds','exp','set','task','program','e2Config','e2Pos','e2Leader','e2Attacker','route','noAttack','prof']);
+let O={},S={},CUR=null,ORIG='',SEL=-1,dirty=false,isOverride=false,inRepo=false,origName='';
 const opt=(items,cur)=>items.map(([v,l])=>`<option value="${esc(v)}"${v===cur?' selected':''}>${esc(l)}</option>`).join('');
 async function api(path,body){const r=await fetch(path,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{});
 if(r.status===401){location='/login';return null}const d=await r.json().catch(()=>({}));if(!r.ok||d.ok===false)throw new Error(d.error||`HTTP ${r.status}`);return d}
-function lists(){for(const [id,key] of [['dl_routes','routes'],['dl_tasks','tasks'],['dl_programs','programs'],['dl_sets','sets'],['dl_e2','e2'],['dl_heros','heros']])
-$(id).innerHTML=(O[key]||[]).map(v=>`<option value="${esc(v)}">`).join('')}
-async function loadList(sel){const d=await api('/panel/api/pb/list');LIST=d.items||[];const s=$('pb_sel');
-s.innerHTML=LIST.map(p=>`<option value="${esc(p.name)}">${esc(p.name)}${p.override?'  ✎ nadpisany':''} (${p.tiles})</option>`).join('');
-if(sel)s.value=sel;if(!s.value&&LIST.length)s.value=LIST[0].name}
-async function open(name){if(dirty&&!confirm('Niezapisane zmiany przepadną. Otworzyć inny przebieg?')){$('pb_sel').value=CUR?.name||'';return}
-const d=await api(`/panel/api/pb/get?name=${encodeURIComponent(name)}`);CUR=d.data;CUR.tiles=CUR.tiles||[];ORIG=JSON.stringify(CUR);dirty=false;
-$('pb_name').value=CUR.name;$('pb_state').innerHTML=d.override?'<span class=tag style="background:#5a4410">✎ nadpisany na serwerze</span>'+(d.in_repo?' · jest też w repo':' · tylko na serwerze'):'<span class=tag>z repo</span>';
-$('pb_revert').disabled=!d.override;render()}
-function mark(){dirty=JSON.stringify(CUR)!==ORIG;$('pb_save').disabled=!dirty;$('pb_dirty').textContent=dirty?'● niezapisane zmiany':''}
-function condHtml(c,i,j){const hour=c.stat==='hour';
-return `<span class="cond">${j?`<select data-c="join" data-i="${i}" data-j="${j}">${opt([['and','i'],['or','lub']],c.join||'and')}</select>`:''}<select data-c="stat" data-i="${i}" data-j="${j}">${opt(STATS,c.stat)}</select>`+
-(hour?`<input type="text" data-c="value" data-i="${i}" data-j="${j}" value="${esc(c.value||'')}" placeholder="od 08:00" size=5>–<input type="text" data-c="value2" data-i="${i}" data-j="${j}" value="${esc(c.value2||'')}" placeholder="do 22:00" size=5>`:
-`<select data-c="op" data-i="${i}" data-j="${j}">${opt(OPS,c.op)}</select><input type="text" data-c="value" data-i="${i}" data-j="${j}" value="${esc(c.value??'')}" size=5>`)+`<button class="sm" data-a="cdel" data-i="${i}" data-j="${j}" title="Usuń warunek">×</button></span>`}
-function tileText(t){return `${t.type} ${t.exp||''} ${t.task||''} ${t.program||''} ${t.e2Config||''} ${t.route||''} ${t.set||''}`.toLowerCase()}
-function render(){const tb=$('pb_rows');tb.textContent='';const f=filter.trim().toLowerCase();let shown=0;
-CUR.tiles.forEach((t,i)=>{if(f&&!tileText(t).includes(f))return;shown++;const tg=TARGET[t.type];const extra={};for(const k in t)if(!MANAGED.has(k))extra[k]=t[k];
-const tr=document.createElement('tr');tr.dataset.i=i;
-tr.innerHTML=`<td class=hint>${i+1}</td><td><select data-f="type" data-i="${i}">${opt(TYPES,t.type)}</select></td>
-<td>${tg?`<input type="text" data-f="${tg[0]}" data-i="${i}" list="dl_${tg[1]}" value="${esc(t[tg[0]]||'')}" style="min-width:240px">`:t.type==='tutorial'?`<select data-f="prof" data-i="${i}">${opt(PROFS,t.prof||'')}</select>`:'<span class=hint>—</span>'}</td>
-<td>${t.type==='exp'?`<input type="text" data-f="set" data-i="${i}" list="dl_sets" value="${esc(t.set||'')}" size=8>`:''}</td>
-<td class="conds">${(t.conds||[]).map((c,j)=>condHtml(c,i,j)).join('')}<button class="sm" data-a="cadd" data-i="${i}" title="Dodaj warunek">＋</button></td>
-<td style="white-space:nowrap"><button class="sm" data-a="up" data-i="${i}" title="W górę">↑</button><button class="sm" data-a="down" data-i="${i}" title="W dół">↓</button><button class="sm" data-a="dup" data-i="${i}" title="Duplikuj">⧉</button><button class="sm" data-a="del" data-i="${i}" title="Usuń krok">🗑</button><button class="sm" data-a="more" data-i="${i}" title="Pozostałe pola (JSON)">⋯</button></td>`;
-tb.appendChild(tr);
-if(t._more){const r2=document.createElement('tr');r2.innerHTML=`<td></td><td colspan=5><textarea data-f="_extra" data-i="${i}" rows=3 style="width:100%;font:12px ui-monospace,Menlo,monospace;background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px">${esc(JSON.stringify(extra))}</textarea><div class=hint>Pozostałe pola kroku (np. E2: e2Pos, e2Leader, e2Attacker) jako JSON.</div></td>`;tb.appendChild(r2)}});
-$('pb_count').textContent=`${CUR.tiles.length} kroków${f?` · pokazano ${shown}`:''}`;mark()}
+const qs=new URLSearchParams(location.search);
+// ── opis kroku ──
+function title(t){return t.type==='exp'?`${t.exp||'— brak trasy —'}${t.set?` · ${t.set}`:''}`:t.type==='task'?t.task||'— brak zadania —':t.type==='program'?t.program||'— brak programu —':
+t.type==='e2'?`${t.e2Config||'— brak E2 —'}${t.e2Pos!=null?` · pozycja ${t.e2Pos}`:''}`:t.type==='heros'?t.route||'— brak trasy herosów —':t.type==='tutorial'?`profesja: ${(PROFS.find(([k])=>k===(t.prof||''))||PROFS[0])[1]}`:(TYPES.find(([k])=>k===t.type)||[t.type,t.type])[1]}
+function lvlRange(t){const c=t.conds||[];const lo=c.find(x=>x.stat==='lvl'&&x.op==='ge'),hi=c.find(x=>x.stat==='lvl'&&x.op==='le');return{lo,hi}}
+function condText(t){const{lo,hi}=lvlRange(t);const parts=[];if(lo||hi)parts.push(`lvl ${lo?lo.value:'…'}–${hi?hi.value:'…'}`);
+(t.conds||[]).forEach((c,j)=>{if(c===lo||c===hi)return;const s=c.stat==='hour'?`godz. ${c.value||'00:00'}–${c.value2||'24:00'}`:c.stat==='ttl'&&c.op==='ne'&&+c.value===0?'z wyczerpaniem':`${SN[c.stat]||c.stat} ${OPT[c.op]||c.op} ${c.value}`;parts.push((j&&c.join==='or'?'lub ':'')+s)});
+return parts.join(' · ')||'zawsze'}
+function problems(t){const p=[];if(t.type==='exp'){if(!t.exp)p.push('brak trasy');else if(!S.routes.has(t.exp))p.push('nieznana trasa');if(t.set&&!S.sets.has(t.set))p.push('nieznany zestaw')}
+if(t.type==='task'){if(!t.task)p.push('brak zadania');else if(!S.tasks.has(t.task))p.push('nieznane zadanie')}if(t.type==='program'){if(!t.program)p.push('brak programu');else if(!S.programs.has(t.program))p.push('nieznany program')}
+if(t.type==='e2'&&t.e2Config&&!S.e2.has(t.e2Config))p.push('nieznana E2');return p}
+// ── lista kart ──
+function cards(){const box=$('e_cards');box.textContent='';const q=$('e_q').value.trim().toLowerCase();let shown=0,bad=0;
+CUR.tiles.forEach((t,i)=>{const pr=problems(t);if(pr.length)bad++;const txt=`${t.type} ${title(t)} ${condText(t)}`.toLowerCase();if(q&&!txt.includes(q))return;shown++;
+const d=document.createElement('div');d.className='step'+(i===SEL?' sel':'')+(pr.length?' bad':'');d.draggable=true;d.dataset.i=i;
+d.innerHTML=`<span class="num">${i+1}</span><span class="ic">${ICON[t.type]||'•'}</span><div class="body"><div class="tt">${esc(title(t))}</div><div class="hint">${esc(condText(t))}</div>${pr.length?`<div class="warn">⚠ ${esc(pr.join(', '))}</div>`:''}</div>`;
+d.onclick=()=>{SEL=i;cards();form()};
+d.ondragstart=(e)=>{e.dataTransfer.setData('text/plain',String(i));d.classList.add('drag')};d.ondragend=()=>d.classList.remove('drag');
+d.ondragover=(e)=>{e.preventDefault();d.classList.add('over')};d.ondragleave=()=>d.classList.remove('over');
+d.ondrop=(e)=>{e.preventDefault();d.classList.remove('over');const from=+e.dataTransfer.getData('text/plain'),to=i;if(from===to)return;const [m]=CUR.tiles.splice(from,1);CUR.tiles.splice(to,0,m);SEL=to;changed(true)};
+box.appendChild(d)});
+$('e_count').textContent=`${CUR.tiles.length} kroków${q?` · pokazano ${shown}`:''}${bad?` · ⚠ do poprawy: ${bad}`:''}`;mark()}
+// ── formularz kroku ──
+function field(label,html,hint){return `<label class="f"><span>${label}</span>${html}${hint?`<small class=hint>${hint}</small>`:''}</label>`}
+function inp(key,val,list,attrs){return `<input type="text" data-k="${key}" value="${esc(val??'')}"${list?` list="dl_${list}"`:''} ${attrs||''}>`}
+function chk(key,val,label){return `<label class="ck"><input type="checkbox" data-k="${key}"${val?' checked':''}> ${label}</label>`}
+function form(){const box=$('e_form');const t=CUR.tiles[SEL];
+if(!t){box.innerHTML='<div class="hint" style="padding:30px 10px;text-align:center">Zaznacz krok po lewej albo dodaj nowy.</div>';return}
+const extra={};for(const k in t)if(!MANAGED.has(k))extra[k]=t[k];const{lo,hi}=lvlRange(t);const c=t.conds||[];
+const ttl=c.some(x=>x.stat==='ttl'&&x.op==='ne'&&+x.value===0);const hour=c.find(x=>x.stat==='hour');
+let typeFields='';
+if(t.type==='exp')typeFields=field('Trasa ekspowiska',inp('exp',t.exp,'routes'),'nazwa trasy z routes/ (podpowiedzi)')+field('Zestaw',inp('set',t.set,'sets','style="max-width:140px"'),'np. 20lvl – ekwipunek, mikstury, umiejętności');
+if(t.type==='task')typeFields=field('Zadanie',inp('task',t.task,'tasks'),'nazwa zadania z quests/ (np. „Mrowisko. – etap 1”)');
+if(t.type==='program')typeFields=field('Program',inp('program',t.program,'programs')+(t.program&&S.programs.has(t.program)?` <a href="/playbook?name=${encodeURIComponent(t.program)}" target="_blank">✎ otwórz</a>`:''),'kroki tego programu wykonują się w tym miejscu');
+if(t.type==='e2')typeFields=field('Konfiguracja E2',inp('e2Config',t.e2Config,'e2'))+field('Pozycja',`<input type="text" data-k="e2Pos" value="${esc(t.e2Pos??0)}" style="max-width:80px">`)+`<div class="f">${chk('e2Leader',t.e2Leader,'lider')} ${chk('e2Attacker',t.e2Attacker!==false,'atakuje')}</div>`;
+if(t.type==='heros')typeFields=field('Trasa herosów',inp('route',t.route,'heros'))+`<div class="f">${chk('noAttack',t.noAttack,'tylko szukanie, bez ataku')}</div>`;
+if(t.type==='tutorial')typeFields=field('Profesja',`<select data-k="prof">${opt(PROFS,t.prof||'')}</select>`);
+box.innerHTML=`<div class="fh"><b>Krok ${SEL+1}</b><span class="sp"></span><button class="sm" data-a="before">＋ przed</button><button class="sm" data-a="after">＋ po</button><button class="sm" data-a="dup">⧉ duplikuj</button><button class="sm" data-a="del">🗑 usuń</button></div>
+${field('Typ',`<select data-k="type">${opt(TYPES,t.type)}</select>`)}${typeFields}
+<h3>Kiedy krok działa</h3>
+<div class="row">${field('Poziom od',`<input type="text" data-q="lo" value="${esc(lo?lo.value:'')}" placeholder="—" style="max-width:80px">`)}${field('do',`<input type="text" data-q="hi" value="${esc(hi?hi.value:'')}" placeholder="—" style="max-width:80px">`)}
+${field('Godzina od',`<input type="text" data-q="h1" value="${esc(hour?hour.value:'')}" placeholder="—" style="max-width:80px">`)}${field('do',`<input type="text" data-q="h2" value="${esc(hour?hour.value2:'')}" placeholder="—" style="max-width:80px">`)}</div>
+<div class="f">${`<label class="ck"><input type="checkbox" data-q="ttl"${ttl?' checked':''}> tylko gdy postać ma wyczerpanie (≠ 0)</label>`}</div>
+<details${c.some(x=>!(x===lo||x===hi||x===hour||(x.stat==='ttl'&&x.op==='ne'&&+x.value===0)))?' open':''}><summary>Wszystkie warunki (zaawansowane)</summary><div id="e_conds"></div><button class="sm" data-a="cadd">＋ warunek</button>
+<small class=hint style="display:block;margin-top:4px">Grupy łączone „i”; w grupie wystarczy jeden warunek „lub”. Rozpoczęte zadanie ignoruje górny limit poziomu.</small></details>
+<details><summary>Pozostałe pola (JSON)</summary><textarea data-k="_extra" rows=4>${esc(JSON.stringify(extra,null,1))}</textarea></details>`;
+condsUI()}
+function condsUI(){const t=CUR.tiles[SEL];const box=$('e_conds');if(!box)return;box.innerHTML=(t.conds||[]).map((c,j)=>{const h=c.stat==='hour';
+return `<div class="cond">${j?`<select data-c="join" data-j="${j}">${opt([['and','i'],['or','lub']],c.join||'and')}</select>`:'<span class=hint style="width:42px">gdy</span>'}<select data-c="stat" data-j="${j}">${opt(STATS,c.stat)}</select>`+
+(h?`<input type="text" data-c="value" data-j="${j}" value="${esc(c.value||'')}" placeholder="od"> – <input type="text" data-c="value2" data-j="${j}" value="${esc(c.value2||'')}" placeholder="do">`:
+`<select data-c="op" data-j="${j}">${opt(OPS,c.op)}</select><input type="text" data-c="value" data-j="${j}" value="${esc(c.value??'')}">`)+`<button class="sm" data-a="cdel" data-j="${j}">×</button></div>`}).join('')||'<div class=hint>brak warunków – krok działa zawsze</div>'}
+// ── zmiany ──
+function changed(full){if(full){cards();form()}else cards()}
+function mark(){dirty=JSON.stringify(CUR)!==ORIG;$('e_save').disabled=!dirty;$('e_dirty').textContent=dirty?'● niezapisane zmiany':''}
 const num=(v)=>v===''||isNaN(+v)?v:+v;
-document.addEventListener('change',(e)=>{const el=e.target;if(!CUR)return;const i=+el.dataset.i;const t=CUR.tiles[i];if(!t)return;
-if(el.dataset.f==='type'){const nt={type:el.value,conds:t.conds||[]};if(el.value==='exp')nt.set=t.set||'';CUR.tiles[i]=nt;render();return}
-if(el.dataset.f==='_extra'){try{const x=JSON.parse(el.value||'{}');for(const k of Object.keys(t))if(!MANAGED.has(k)&&k!=='_more')delete t[k];Object.assign(t,x);el.style.borderColor='';}catch(err){el.style.borderColor='#d03b3b';return}mark();return}
-if(el.dataset.f){t[el.dataset.f]=el.value;mark();return}
-if(el.dataset.c){const c=t.conds[+el.dataset.j];if(el.dataset.c==='stat'){c.stat=el.value;if(el.value==='hour'){delete c.op;c.value='';c.value2=''}else{c.op=c.op||'ge';delete c.value2;c.value=0}render();return}
-c[el.dataset.c]=el.dataset.c==='value'&&c.stat!=='hour'?num(el.value):el.value;mark()}});
-document.addEventListener('input',(e)=>{if(e.target.id==='pb_filter'){filter=e.target.value;render()}});
-document.addEventListener('click',(e)=>{const b=e.target.closest('button[data-a]');if(!b||!CUR)return;const i=+b.dataset.i;const T=CUR.tiles;
-const a=b.dataset.a;if(a==='up'&&i>0)[T[i-1],T[i]]=[T[i],T[i-1]];else if(a==='down'&&i<T.length-1)[T[i+1],T[i]]=[T[i],T[i+1]];
-else if(a==='dup')T.splice(i+1,0,JSON.parse(JSON.stringify(T[i])));else if(a==='del'){if(!confirm(`Usunąć krok ${i+1}?`))return;T.splice(i,1)}
-else if(a==='more')T[i]._more=!T[i]._more;else if(a==='cadd')(T[i].conds=T[i].conds||[]).push({join:'and',stat:'lvl',op:'ge',value:1});
-else if(a==='cdel')T[i].conds.splice(+b.dataset.j,1);render()});
-$('pb_sel').onchange=()=>open($('pb_sel').value);
-$('pb_add').onclick=()=>{if(!CUR)return;CUR.tiles.push({type:'task',task:'',conds:[{join:'and',stat:'lvl',op:'ge',value:1}]});filter='';$('pb_filter').value='';render();scrollTo(0,document.body.scrollHeight)};
-$('pb_new').onclick=async()=>{const n=prompt('Nazwa nowego przebiegu:');if(!n)return;CUR={kraken:'przebieg',name:n.trim(),tiles:[]};ORIG='';$('pb_name').value=CUR.name;$('pb_state').innerHTML='<span class=tag>nowy – zapisz, żeby utworzyć</span>';$('pb_revert').disabled=true;render()};
-$('pb_dupall').onclick=()=>{if(!CUR)return;const n=prompt('Nazwa kopii:',CUR.name+' (kopia)');if(!n)return;CUR=JSON.parse(JSON.stringify(CUR));CUR.name=n.trim();ORIG='';$('pb_name').value=CUR.name;$('pb_state').innerHTML='<span class=tag>kopia – zapisz, żeby utworzyć</span>';$('pb_revert').disabled=true;render()};
-$('pb_name').oninput=()=>{if(CUR){CUR.name=$('pb_name').value;mark()}};
-$('pb_save').onclick=async()=>{const data=JSON.parse(JSON.stringify(CUR));data.tiles.forEach(t=>delete t._more);$('pb_msg').textContent='⏳ Zapisuję…';
-try{const d=await api('/panel/api/pb/save',{data});ORIG=JSON.stringify(CUR);dirty=false;$('pb_msg').textContent=`✅ Zapisano „${d.name}” (${d.tiles} kroków) · wersja danych ${String(d.ref).slice(0,7)}… – boty wczytają zmiany w ciągu kilku minut`;await loadList(d.name);await open(d.name)}
-catch(err){$('pb_msg').textContent='❌ '+err.message}};
-$('pb_revert').onclick=async()=>{if(!CUR||!confirm(`Usunąć nadpisanie „${CUR.name}” i wrócić do wersji z repo?`))return;try{await api('/panel/api/pb/revert',{name:CUR.name});dirty=false;$('pb_msg').textContent='↩ Przywrócono wersję z repo';await loadList(CUR.name);await open($('pb_sel').value)}catch(err){$('pb_msg').textContent='❌ '+err.message}};
-$('pb_dl').onclick=()=>{if(!CUR)return;const a=document.createElement('a');const data=JSON.parse(JSON.stringify(CUR));data.tiles.forEach(t=>delete t._more);
-a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,1)+'\n'],{type:'application/json'}));a.download=`${CUR.name}.json`;a.click()};
+function setQuick(t,q,v){t.conds=t.conds||[];const c=t.conds;
+if(q==='lo'||q==='hi'){const op=q==='lo'?'ge':'le';const cur=c.find(x=>x.stat==='lvl'&&x.op===op);if(v===''){if(cur)c.splice(c.indexOf(cur),1)}else if(cur)cur.value=num(v);else c.push({join:'and',stat:'lvl',op,value:num(v)})}
+if(q==='h1'||q==='h2'){let cur=c.find(x=>x.stat==='hour');if(!cur){cur={join:'and',stat:'hour',value:'',value2:''};c.push(cur)}cur[q==='h1'?'value':'value2']=v;if(!cur.value&&!cur.value2)c.splice(c.indexOf(cur),1)}
+if(q==='ttl'){const cur=c.find(x=>x.stat==='ttl'&&x.op==='ne'&&+x.value===0);if(v&&!cur)c.push({join:'and',stat:'ttl',op:'ne',value:0});if(!v&&cur)c.splice(c.indexOf(cur),1)}}
+$('e_form').addEventListener('input',(e)=>{const el=e.target;const t=CUR.tiles[SEL];if(!t)return;
+if(el.dataset.k&&el.type!=='checkbox'&&el.tagName!=='SELECT'&&el.dataset.k!=='_extra'){t[el.dataset.k]=el.dataset.k==='e2Pos'?num(el.value):el.value;cards();return}
+if(el.dataset.q&&el.type!=='checkbox'){setQuick(t,el.dataset.q,el.value.trim());cards();condsUI();return}
+if(el.dataset.c&&el.tagName==='INPUT'){const c=t.conds[+el.dataset.j];c[el.dataset.c]=el.dataset.c==='value'&&c.stat!=='hour'?num(el.value):el.value;cards()}});
+$('e_form').addEventListener('change',(e)=>{const el=e.target;const t=CUR.tiles[SEL];if(!t)return;
+if(el.dataset.k==='type'){const nt={type:el.value,conds:t.conds||[]};if(el.value==='exp')nt.set=t.set||'';CUR.tiles[SEL]=nt;changed(true);return}
+if(el.dataset.k==='_extra'){try{const x=JSON.parse(el.value||'{}');for(const k of Object.keys(t))if(!MANAGED.has(k))delete t[k];Object.assign(t,x);el.style.borderColor=''}catch(err){el.style.borderColor='#d03b3b';return}cards();return}
+if(el.dataset.k&&el.type==='checkbox'){t[el.dataset.k]=el.checked;cards();return}
+if(el.dataset.k&&el.tagName==='SELECT'){t[el.dataset.k]=el.value;cards();return}
+if(el.dataset.q==='ttl'){setQuick(t,'ttl',el.checked);cards();condsUI();return}
+if(el.dataset.c&&el.tagName==='SELECT'){const c=t.conds[+el.dataset.j];if(el.dataset.c==='stat'){c.stat=el.value;if(el.value==='hour'){delete c.op;c.value='';c.value2=''}else{c.op=c.op||'ge';delete c.value2;c.value=0}}else c[el.dataset.c]=el.value;form();cards()}});
+$('e_form').addEventListener('click',(e)=>{const b=e.target.closest('button[data-a]');if(!b)return;const T=CUR.tiles,a=b.dataset.a;
+const blank=()=>({type:'task',task:'',conds:[{join:'and',stat:'lvl',op:'ge',value:1}]});
+if(a==='before'){T.splice(SEL,0,blank())}else if(a==='after'){T.splice(SEL+1,0,blank());SEL++}else if(a==='dup'){T.splice(SEL+1,0,JSON.parse(JSON.stringify(T[SEL])));SEL++}
+else if(a==='del'){if(!confirm(`Usunąć krok ${SEL+1} (${title(T[SEL])})?`))return;T.splice(SEL,1);SEL=Math.min(SEL,T.length-1)}
+else if(a==='cadd'){(T[SEL].conds=T[SEL].conds||[]).push({join:'and',stat:'lvl',op:'ge',value:1});condsUI();cards();return}
+else if(a==='cdel'){T[SEL].conds.splice(+b.dataset.j,1);form();cards();return}changed(true)});
+$('e_q').oninput=cards;
+$('e_add').onclick=()=>{CUR.tiles.push({type:'task',task:'',conds:[{join:'and',stat:'lvl',op:'ge',value:1}]});SEL=CUR.tiles.length-1;$('e_q').value='';changed(true);$('e_cards').lastChild?.scrollIntoView({block:'nearest'})};
+$('e_name').oninput=()=>{CUR.name=$('e_name').value;mark()};
+function head(){$('e_state').innerHTML=!ORIG?'<span class=tag>nowy – zapisz, żeby utworzyć</span>':isOverride?`<span class=tag style="background:#5a4410">✎ nadpisany na serwerze</span>${inRepo?' <span class=hint>· jest też w repo</span>':' <span class=hint>· tylko na serwerze</span>'}`:'<span class=tag>z repo</span>';$('e_revert').disabled=!isOverride;document.title=`${CUR.name} – edytor – Kraken`}
+async function save(){const bad=CUR.tiles.map((t,i)=>[i,problems(t)]).filter(([,p])=>p.some(x=>x.startsWith('brak')));
+if(bad.length){SEL=bad[0][0];changed(true);$('e_msg').textContent=`❌ Krok ${bad[0][0]+1}: ${bad[0][1].join(', ')}`;return}
+$('e_msg').textContent='⏳ Zapisuję…';try{const d=await api('/panel/api/pb/save',{data:CUR});ORIG=JSON.stringify(CUR);isOverride=true;inRepo=inRepo&&d.name===origName;origName=d.name;mark();head();
+history.replaceState(null,'',`/playbook?name=${encodeURIComponent(d.name)}`);$('e_msg').textContent=`✅ Zapisano (${d.tiles} kroków) – boty wczytają zmiany w ciągu ~5 min`}catch(err){$('e_msg').textContent='❌ '+err.message}}
+$('e_save').onclick=save;addEventListener('keydown',(e)=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();if(dirty)save()}});
+$('e_revert').onclick=async()=>{if(!confirm(`Usunąć nadpisanie „${CUR.name}” i wrócić do wersji z repo?`))return;try{await api('/panel/api/pb/revert',{name:CUR.name});dirty=false;location.reload()}catch(err){$('e_msg').textContent='❌ '+err.message}};
+$('e_dl').onclick=()=>{const l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(CUR,null,1)+'\n'],{type:'application/json'}));l.download=`${CUR.name}.json`;l.click()};
+$('e_back').onclick=()=>{location='/playbooks'};
 addEventListener('beforeunload',(e)=>{if(dirty){e.preventDefault();e.returnValue=''}});
-(async()=>{try{O=await api('/panel/api/pb/options');lists();await loadList(new URLSearchParams(location.search).get('name')||'[1-300] Zero to hero');await open($('pb_sel').value)}catch(err){$('pb_msg').textContent='❌ '+err.message}})();
+(async()=>{try{O=await api('/panel/api/pb/options');S={routes:new Set(O.routes),tasks:new Set(O.tasks),programs:new Set(O.programs),sets:new Set(O.sets),e2:new Set(O.e2)};
+for(const [id,key] of [['dl_routes','routes'],['dl_tasks','tasks'],['dl_programs','programs'],['dl_sets','sets'],['dl_e2','e2'],['dl_heros','heros']])$(id).innerHTML=(O[key]||[]).map(v=>`<option value="${esc(v)}">`).join('');
+if(qs.get('new')){CUR={kraken:'przebieg',name:qs.get('new'),tiles:[]};ORIG=''}else{const d=await api(`/panel/api/pb/get?name=${encodeURIComponent(qs.get('name')||'')}`);CUR=d.data;CUR.tiles=CUR.tiles||[];ORIG=JSON.stringify(CUR);isOverride=d.override;inRepo=d.in_repo}
+origName=CUR.name;$('e_name').value=CUR.name;SEL=CUR.tiles.length?0:-1;head();cards();form()}catch(err){$('e_msg').textContent='❌ '+err.message}})();
 """
 
 HOST_JS = """
@@ -1420,13 +1500,13 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                 return self._send(200, {"ok": True, "user": name, "expires": users.get(name).get("token_expires")})
             if p.startswith("/api/v1/data/"):
                 return self._data_get(p, q)
-            if p == "/playbooks":
+            if p in ("/playbooks", "/playbook"):
                 user = self._require_panel()
                 if not user:
                     return
                 if not is_admin(users, user):
                     return self._html(403, "Programy", '<main><div class="card"><h2>Brak uprawnień</h2><p class="hint">Edytor programów jest tylko dla administratora.</p></div></main>', user)
-                return self._playbooks_page(user)
+                return self._playbooks_page(user) if p == "/playbooks" else self._playbook_editor(user)
             if p.startswith("/panel/api/pb/"):
                 user = self.panel_user()
                 if not user:
@@ -1435,8 +1515,26 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                     return self._send(403, {"ok": False, "error": "tylko administrator"})
                 if p == "/panel/api/pb/list":
                     _ref, items = repo.list("playbook")
-                    return self._send(200, {"ok": True, "items": [{"name": x["key"], "tiles": x.get("tiles", 0), "override": bool(x.get("override"))}
-                                                                  for x in sorted(items, key=lambda x: (not x["key"].startswith("[1-300]"), x["key"]))]})
+                    out = []
+                    for x in items:
+                        try:
+                            tiles = json.loads(repo.get("playbook", x["key"]) or b"{}").get("tiles") or []
+                        except ValueError:
+                            tiles = []
+                        types, lo, hi = {}, None, None
+                        for t in tiles:
+                            types[t.get("type", "?")] = types.get(t.get("type", "?"), 0) + 1
+                            for c in t.get("conds") or []:
+                                if c.get("stat") == "lvl" and isinstance(c.get("value"), (int, float)):
+                                    if c.get("op") in ("ge", "gt"):
+                                        lo = c["value"] if lo is None else min(lo, c["value"])
+                                    if c.get("op") in ("le", "lt"):
+                                        hi = c["value"] if hi is None else max(hi, c["value"])
+                        out.append({"name": x["key"], "tiles": len(tiles), "types": types, "lvl": [lo, hi], "override": bool(x.get("override"))})
+                    def order(p):
+                        m = re.match(r"^\[(\d+)-(\d+)", p["name"])
+                        return (p["name"] != "[1-300] Zero to hero", 0 if m else 1, int(m.group(1)) if m else 0, p["name"].lower())
+                    return self._send(200, {"ok": True, "items": sorted(out, key=order)})
                 if p == "/panel/api/pb/get":
                     raw = repo.get("playbook", q.get("name", ""))
                     if raw is None:
@@ -1449,7 +1547,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                     return self._send(200, {"ok": True, "tasks": sorted(lst("quest")), "programs": sorted(lst("playbook")),
                                             "routes": sorted({x.get("name") or x["key"] for x in repo.list("route")[1]}),
                                             "sets": sorted({k.split("/", 1)[-1] for k in lst("set")}, key=lambda n: (len(n), n)),
-                                            "e2": sorted(world.get("e2", {})), "heros": sorted(world.get("heros", {}))})
+                                            "e2": getattr(repo, "e2_keys", None) or sorted(world.get("e2", {})), "heros": sorted(world.get("heros", {}))})
                 return self._send(404, {"ok": False, "error": "not found"})
             if p == "/panel/api/overview":
                 user = self.panel_user()
@@ -1848,17 +1946,22 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <div id="tip"></div></main><script>{DASH_JS}</script>""", user)
 
         def _playbooks_page(self, user):
-            self._html(200, "Programy", f"""<main class="wide"><div class="card"><h2>Edytor programów (przebiegów)</h2>
-<p class="hint">Zmiany zapisują się na serwerze jako nadpisanie – mają pierwszeństwo przed repo i przetrwają jego aktualizację.
-Boty wczytają je w ciągu kilku minut (pracujący bot zostaje przy bieżącym kroku). „Przywróć z repo” usuwa nadpisanie; „Pobierz” – plik do repo.</p>
-<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px"><select id="pb_sel" style="width:auto;min-width:320px"></select>
-<button class="sm" id="pb_new">＋ Nowy</button><button class="sm" id="pb_dupall">⧉ Kopia</button><button class="sm" id="pb_dl">⬇ Pobierz</button><button class="sm" id="pb_revert">↩ Przywróć z repo</button></div>
-<div class="grid2" style="margin-top:10px"><label>Nazwa<input type="text" id="pb_name"></label><label>Szukaj w krokach<input type="text" id="pb_filter" placeholder="np. Mrowisko, 36lvl, e2"></label></div>
-<div style="margin-top:8px"><span id="pb_state"></span> <span class="hint" id="pb_count"></span> <b style="color:var(--acc)" id="pb_dirty"></b></div></div>
-<div class="card"><div class="tbl-wrap"><table class="pb"><thead><tr><th>#</th><th>Typ</th><th>Cel (trasa / zadanie / program / E2)</th><th>Zestaw</th><th>Warunki (krok działa, gdy spełnione)</th><th></th></tr></thead><tbody id="pb_rows"></tbody></table></div>
-<div style="margin-top:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="sm" id="pb_add">＋ krok</button><button class="pri" id="pb_save" disabled>💾 Zapisz</button><span class="hint" id="pb_msg"></span></div></div>
+            self._html(200, "Programy", f"""<main class="wide"><div class="card"><h2>Programy (przebiegi) <button class="pri" id="new" style="float:right">＋ Nowy program</button></h2>
+<p class="hint">Programy „Zero to hero” i pozostałe przebiegi z repo. Zmiany z edytora zapisują się na serwerze jako nadpisanie (pierwszeństwo przed repo,
+przetrwa jego aktualizację); boty wczytują je w ciągu ~5 min. „↩” usuwa nadpisanie, „⬇” daje plik do repo.</p>
+<div style="display:flex;gap:10px;align-items:center;margin-top:8px"><input type="text" id="q" placeholder="Szukaj programu" style="max-width:320px"><span class="hint" id="count"></span><span class="hint" id="msg"></span></div></div>
+<div class="card"><div class="tbl-wrap"><table><thead><tr><th>Program</th><th>Kroki</th><th>Rodzaje kroków</th><th>Poziomy</th><th>Źródło</th><th></th></tr></thead><tbody id="rows"><tr><td colspan=6 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
+</main><script>{PBL_JS}</script>""", user)
+
+        def _playbook_editor(self, user):
+            self._html(200, "Edytor programu", f"""<div class="pbe-bar"><button class="sm" id="e_back">← Programy</button>
+<input type="text" id="e_name" placeholder="nazwa programu"><span id="e_state"></span><b id="e_dirty" style="color:var(--acc)"></b><span class="sp"></span>
+<span class="hint" id="e_msg"></span><button class="sm" id="e_dl">⬇ Pobierz</button><button class="sm" id="e_revert">↩ Przywróć z repo</button><button class="pri" id="e_save" disabled title="Ctrl+S">💾 Zapisz</button></div>
+<main class="wide"><div class="pbe"><div class="card pbe-list"><div style="display:flex;gap:8px;align-items:center;margin-bottom:8px"><input type="text" id="e_q" placeholder="Szukaj w krokach (np. Mrowisko, 36lvl, e2)"><button class="sm" id="e_add" style="white-space:nowrap">＋ krok</button></div>
+<div class="hint" id="e_count" style="margin-bottom:6px"></div><div id="e_cards"></div><div class="hint" style="margin-top:8px">Przeciągnij kartę, żeby zmienić kolejność. Bot sprawdza kroki od góry i robi pierwszy, którego warunki są spełnione.</div></div>
+<div class="card pbe-form" id="e_form"></div></div>
 <datalist id="dl_routes"></datalist><datalist id="dl_tasks"></datalist><datalist id="dl_programs"></datalist><datalist id="dl_sets"></datalist><datalist id="dl_e2"></datalist><datalist id="dl_heros"></datalist>
-</main><script>{PB_JS}</script>""", user)
+</main><script>{PBE_JS}</script>""", user)
 
         def _host_page(self, user):
             self._html(200, "Host", f"""<main><div class="card"><h2 id="hn">Host</h2><div class="hint" id="hs"></div></div>
