@@ -612,8 +612,8 @@ def _write_config(path: str, data: dict) -> None:
     os.replace(tmp, path)
 
 
-# Profesje postaci (zapis w configu: "prof"); '' = wybór w panelu bota.
-PROFESSIONS = [("", "(wybór w bocie)"), ("w", "wojownik"), ("p", "paladyn"), ("b", "tancerz ostrzy"),
+# Profesje postaci (zapis w configu: "prof"); '' = losowa przy starcie sesji, po wyborze w grze zapis z gry.
+PROFESSIONS = [("", "🎲 losowa"), ("w", "wojownik"), ("p", "paladyn"), ("b", "tancerz ostrzy"),
                ("h", "łowca"), ("t", "tropiciel"), ("m", "mag")]
 PROF_LABEL = dict(PROFESSIONS)
 PROF_RANDOM = "random"            # harmonogram: profesja losowana przy tworzeniu każdej nowej sesji
@@ -717,6 +717,7 @@ class BotRunner:
         self.program           = config.get("program", "")
         self.prof              = ""
         self.banned            = False               # konto zablokowane (wykryte przy logowaniu)
+        self.on_prof_saved     = None                # profesja z gry zapisana w configu → odświeżenie okna
 
     def log(self, msg):
         self.logger.write(msg)
@@ -874,6 +875,25 @@ class BotRunner:
             except Exception:
                 time.sleep(2)
         self.log("⚠️  Bot nie odpowiedział w 3 min – nie uruchomiono")
+
+    def _sync_prof_from_game(self, config_path: str):
+        """Profesja ustalona w grze (po wyborze w tutorialu) → config postaci, gdy się różni."""
+        try:
+            info = self.driver.execute_script("return window.Kraken && Kraken.profInfo ? Kraken.profInfo() : null;") or {}
+        except Exception:
+            return
+        prof = str(info.get("prof") or "")
+        if not info.get("chosen") or prof not in PROF_LABEL or not prof or config_prof(config_path) == prof:
+            return
+        try:
+            set_config_prof(config_path, prof)
+        except Exception as e:
+            self.log(f"⚠️  Zapis profesji w configu: {e}")
+            return
+        self.prof = prof
+        self.log(f"🎓 Profesja z gry: {PROF_LABEL[prof]} – zapisana w configu {os.path.basename(config_path)}")
+        if self.on_prof_saved:
+            self.on_prof_saved()
 
     def _push_api_to_bot(self):
         """Adres i token serwera z Ustawień launchera → bot Kraken w tej przeglądarce (Ustawienia › Serwer)."""
@@ -1150,6 +1170,11 @@ class BotRunner:
         self._captcha_once(check_and_solve_captcha, By)
         self._push_api_to_bot()
         self.prof = str(config_data.get("prof", "") or "")
+        # Brak profesji w configu = losowa (bot wybierze ją w tutorialu); do configu trafia dopiero profesja z gry.
+        if self.prof not in PROF_LABEL or not self.prof:
+            import random
+            self.prof = random.choice([k for k, _ in PROFESSIONS if k])
+            self.log(f"🎲 Profesja losowa: {PROF_LABEL[self.prof]} – po wyborze w grze zapisze się w configu")
         self._start_bot(cfg.get("program", ""), self.prof)
         self.log("✅ Zalogowano – grą steruje bot Kraken w przeglądarce. STOP zamyka przeglądarkę.")
         from log_shipper import SHIPPER
@@ -1157,6 +1182,7 @@ class BotRunner:
             self.log(f"📡 Logi postaci → {SHIPPER.url}")
         last_pull = 0.0
         last_state = 0.0
+        last_prof = 0.0
         while not self.stop_event.is_set():
             if not self._browser_alive():
                 self.log("🔒 Przeglądarka została zamknięta.")
@@ -1165,6 +1191,9 @@ class BotRunner:
             if time.time() - last_state > 5:
                 last_state = time.time()
                 self.bot_state = self._read_bot_state()
+            if time.time() - last_prof > 15:
+                last_prof = time.time()
+                self._sync_prof_from_game(config_path)
             if SHIPPER.enabled and time.time() - last_pull > 5:
                 last_pull = time.time()
                 self._ship_browser_logs(SHIPPER, config_name, cfg.get("server", ""))
@@ -2624,8 +2653,7 @@ class ScheduleEditDialog(tk.Toplevel):
         self.first_at = tk.StringVar(value=e.get("first_at") or "11:00")
         self._last_action = e["action"]
         self.date = tk.StringVar(value=e.get("date") or time.strftime("%Y-%m-%d", time.localtime(time.time() + 86400)))
-        self.prof = tk.StringVar(value=PROF_RANDOM_LABEL if p.get("prof") == PROF_RANDOM
-                                 else PROF_LABEL.get(p.get("prof", ""), PROF_LABEL[""]))
+        self.prof = tk.StringVar(value=PROF_LABEL.get("" if p.get("prof") == PROF_RANDOM else p.get("prof", ""), PROF_LABEL[""]))
         self.server = tk.StringVar(value=p.get("server") or self.SAME)
         self.browser = tk.StringVar(value=p.get("browser") or self.SAME)
         self.template = tk.StringVar(value=p.get("template") or self.SAME)
@@ -2698,7 +2726,7 @@ class ScheduleEditDialog(tk.Toplevel):
         self.r_new = tk.Frame(body, bg=BG)
         tk.Label(self.r_new, text="Nowa sesja", font=(UI_FONT, 8, "bold"), bg=BG, fg=ACCENT).pack(anchor="w", pady=(8, 2))
         r = row(self.r_new, "Profesja:"); r.pack(fill="x", pady=2)
-        combo(r, self.prof, [l for _, l in PROFESSIONS] + [PROF_RANDOM_LABEL], 20)
+        combo(r, self.prof, [l for _, l in PROFESSIONS], 20)
         r = row(self.r_new, "Serwer:"); r.pack(fill="x", pady=2)
         combo(r, self.server, [self.SAME] + SERVERS, 26)
         r = row(self.r_new, "Przeglądarka:"); r.pack(fill="x", pady=2)
@@ -2789,8 +2817,7 @@ class ScheduleEditDialog(tk.Toplevel):
         e["first_at"] = self.first_at.get().strip()
         e["date"] = self.date.get().strip()
         same = lambda v: "" if v == self.SAME else v
-        e["params"] = {"prof": PROF_RANDOM if self.prof.get() == PROF_RANDOM_LABEL
-                               else next((k for k, l in PROFESSIONS if l == self.prof.get()), ""),
+        e["params"] = {"prof": next((k for k, l in PROFESSIONS if l == self.prof.get()), ""),
                        "server": same(self.server.get()), "browser": same(self.browser.get()),
                        "template": same(self.template.get()),
                        "program": "" if self.program.get() == "(program grupy)" else self.program.get(),
@@ -2925,9 +2952,11 @@ class SessionTab(tk.Frame):
                  on_config_added=None,
                  on_config_refresh=None,
                  get_all_sessions_fn=None,
-                 on_banned=None):
+                 on_banned=None,
+                 on_prof_synced=None):
         super().__init__(parent, bg=BG)
         self.on_banned            = on_banned
+        self.on_prof_synced       = on_prof_synced
         self.session_id           = session_id
         self.name                 = name[:20] if name else ""
         # Stały identyfikator sesji (polecenia start/stop z panelu WWW trafiają po nim).
@@ -3030,7 +3059,7 @@ class SessionTab(tk.Frame):
                                     values=[l for _, l in PROFESSIONS])
         self.prof_cb.pack(side="left")
         self.prof_cb.bind("<<ComboboxSelected>>", self._on_prof_selected)
-        tk.Label(row1d, text="(zapis w configu; bot wybiera ją w tutorialu)", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(8, 0))
+        tk.Label(row1d, text="(losowa – losowana przy starcie; po wyborze w grze zapisuje się z gry)", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(8, 0))
         self.cfg_cb.bind("<<ComboboxSelected>>", lambda _e: self._refresh_prof(), add="+")
         self.after(0, self._refresh_prof)
 
@@ -3292,6 +3321,7 @@ class SessionTab(tk.Frame):
         self.stop_btn.configure(state="normal")
 
         runner = BotRunner(config, self.stop_event, self.logger)
+        runner.on_prof_saved = lambda: self.after(0, self._prof_from_game)
         self._runner = runner
         self.bot_thread = threading.Thread(
             target=self._bot_wrapper, args=(runner,), daemon=True)
@@ -3444,6 +3474,11 @@ class SessionTab(tk.Frame):
             self.prof_var.set(PROF_LABEL.get(self.current_prof(), PROF_LABEL[""]))
         except Exception:
             pass
+
+    def _prof_from_game(self):
+        self._refresh_prof()
+        if self.on_prof_synced:
+            self.on_prof_synced()
 
     def _on_prof_selected(self, _e=None):
         p = self._config_path()
@@ -3764,6 +3799,7 @@ class BotGUI:
             on_config_refresh=self._on_config_refresh,
             get_all_sessions_fn=lambda: self._sessions,
             on_banned=self._on_banned,
+            on_prof_synced=self._on_prof_synced,
         )
         self._sessions.append(tab)
 
@@ -3818,6 +3854,12 @@ class BotGUI:
         for s in self._sessions:
             s._refresh_config_cb()
         self._refresh_tab_texts()
+        self._save_state()
+
+    def _on_prof_synced(self):
+        """Profesja z gry trafiła do configu: wiersze profesji we wszystkich sesjach i kopia configów na serwer."""
+        for s in self._sessions:
+            s._refresh_prof()
         self._save_state()
 
     def _banned_sessions(self) -> list:

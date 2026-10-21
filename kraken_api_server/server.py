@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.2.1"
+VERSION = "5.2.2"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -711,7 +711,7 @@ const tick=()=>{load().catch(()=>{});dstat().catch(()=>{})};tick();setInterval(t
 HOST_JS = """
 const q=new URLSearchParams(location.search);const id=q.get('id');let H={},O={},editing=null,gediting=null;
 const $=(i)=>document.getElementById(i);const esc=(s)=>String(s??'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const PROFS=[['','(wybór w bocie)'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
+const PROFS=[['','🎲 losowa'],['w','wojownik'],['p','paladyn'],['b','tancerz ostrzy'],['h','łowca'],['t','tropiciel'],['m','mag']];
 const ST={RUNNING:'▶ działa',STOPPING:'⏳ zatrzymuje',ERROR:'✖ błąd',OFFLINE:'○ wyłączona'};const BOT={running:'🤖 pracuje',stopped:'⏸ stoi',loading:'… wczytuje'};
 async function cmd(action,s,name,params){const r=await fetch(`/panel/api/host/command?id=${encodeURIComponent(id)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session:s||'',session_name:name||'',params:params||{}})});
 let cid='';try{cid=(await r.json()).id||''}catch(e){}setTimeout(load,300);return cid}
