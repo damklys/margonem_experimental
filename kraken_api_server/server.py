@@ -47,7 +47,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.2.3"
+VERSION = "5.3.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -535,9 +535,81 @@ class History:
             return [p for p in self._load(user) if p.get("t", 0) >= cut]
 
 
-def history_sampler(users, store, presence, hosts, history, online_s, every=300):
+class OpStats:
+    """Operacje botów (z sygnału „żyję”): godzina → typ → {start, ok, slow, fail}; 7 dni na dysku (ops.json)."""
+    KEEP = 7 * 86400
+    KEYS = ("start", "ok", "slow", "fail")
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.data = {}
+        self.dirty = set()
+
+    def _path(self, user):
+        return os.path.join(self.root, safe_name(user, "unknown"), "ops.json")
+
+    def _load(self, user):
+        if user not in self.data:
+            try:
+                with open(self._path(user), "r", encoding="utf-8") as f:
+                    self.data[user] = {int(k): v for k, v in json.load(f).items()}
+            except Exception:
+                self.data[user] = {}
+        return self.data[user]
+
+    def add(self, user, ops):
+        hour = int(time.time() // 3600 * 3600)
+        with self.lock:
+            d = self._load(user)
+            b = d.setdefault(hour, {})
+            for t, c in list(ops.items())[:40]:
+                if not isinstance(c, dict):
+                    continue
+                cur = b.setdefault(safe_name(t, "inne")[:24], dict.fromkeys(self.KEYS, 0))
+                for k in self.KEYS:
+                    try:
+                        cur[k] += max(0, min(100000, int(c.get(k) or 0)))
+                    except (TypeError, ValueError):
+                        pass
+            self.dirty.add(user)
+
+    def flush(self):
+        with self.lock:
+            cut = time.time() - self.KEEP
+            for user in list(self.dirty):
+                d = {h: v for h, v in self.data.get(user, {}).items() if h >= cut}
+                self.data[user] = d
+                os.makedirs(os.path.dirname(self._path(user)), exist_ok=True)
+                tmp = self._path(user) + ".tmp"
+                with open(tmp, "w", encoding="utf-8") as f:
+                    json.dump({str(h): v for h, v in d.items()}, f)
+                os.replace(tmp, self._path(user))
+            self.dirty.clear()
+
+    def last(self, user, hours=24):
+        """Suma z ostatnich `hours` godzin: typ → {start, ok, slow, fail}."""
+        cut = time.time() // 3600 * 3600 - (hours - 1) * 3600
+        out = {}
+        with self.lock:
+            for h, b in self._load(user).items():
+                if h < cut:
+                    continue
+                for t, c in b.items():
+                    o = out.setdefault(t, dict.fromkeys(self.KEYS, 0))
+                    for k in self.KEYS:
+                        o[k] += int(c.get(k) or 0)
+        return out
+
+
+def history_sampler(users, store, presence, hosts, history, online_s, every=300, opstats=None):
     time.sleep(60)
     while True:
+        if opstats:
+            try:
+                opstats.flush()
+            except Exception as e:
+                log.warning("operacje: %s", e)
         for user in list(users.data.get("users", {})):
             try:
                 t = build_overview(user, store, presence, hosts, online_s)["totals"]
@@ -662,8 +734,23 @@ barChart($('c_hosts'),hs,'Brak sesji online.');
 const withLvl=on.filter(s=>+s.lvl>0);
 barChart($('c_lvl'),LVL.map(([a,b])=>{const n=withLvl.filter(s=>s.lvl>=a&&s.lvl<=b);return{label:b>=999?`${a}+`:`${a}–${b}`,value:n.length,title:`postaci online: ${n.length}${n.length?' · '+n.slice(0,6).map(s=>s.char).join(', ')+(n.length>6?'…':''):''}`}}),'Brak sesji online z poziomem.');
 const pc={};for(const s of on)if(s.prof)pc[s.prof]=(pc[s.prof]||0)+1;
-barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci online: ${v}`})),'Brak sesji online z profesją.')}
+barChart($('c_prof'),Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k,value:v,title:`postaci online: ${v}`})),'Brak sesji online z profesją.');
+opsChart($('c_ops'),ov.ops)}
 
+// Operacje botów z 24 h: słupek na typ, segmenty – udane, wolne (po ostrzeżeniu 120 s), nieudane (stała paleta statusów).
+const OPN={travel:'Podróż',fight:'Walka',resupply:'Zaopatrzenie',prep:'Przygotowanie',sell:'Sprzedaż łupu',potions:'Mikstury',buy:'Zakup ekwipunku',equip:'Ekwipunek',skills:'Umiejętności',mail:'Poczta (Milioner)',auction:'Aukcje',quest:'Krok zadania',captcha:'Captcha',outfit:'Strój',rewards:'Nagrody'};
+const OPS=[['ok','#0ca30c','✔ udane'],['slow','#fab219','⚠ wolne (po ostrzeżeniu)'],['fail','#d03b3b','✖ nieudane']];
+function opsChart(box,ops){box.textContent='';const items=Object.entries(ops||{}).map(([k,c])=>({k,label:OPN[k]||k,c,total:(c.ok||0)+(c.slow||0)+(c.fail||0)})).filter(i=>i.total>0).sort((a,b)=>b.total-a.total);
+if(!items.length){box.innerHTML='<p class=hint>Brak operacji z ostatnich 24 h (bot 5.3+ wysyła je z sygnałem „żyję”).</p>';return}
+const W=widthOf(box,300),LW=Math.min(150,Math.round(W*0.3)),row=26,bh=12,H=items.length*row+6,max=Math.max(...items.map(i=>i.total)),scale=(W-LW-70)/max;
+const svg=el('svg',{width:W,height:H,viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'Operacje botów z 24 godzin'},box);
+items.forEach((it,i)=>{const y=i*row+4;txt(svg,LW-8,y+bh-1,it.label,{'text-anchor':'end',fill:'#d8c79a','font-size':12});
+const segs=OPS.map(([k,col])=>({k,col,v:it.c[k]||0})).filter(x=>x.v>0);let x=LW;
+segs.forEach((sg,j)=>{const w=Math.max(2,sg.v*scale)-(j<segs.length-1?2:0),last=j===segs.length-1,r=last?Math.min(4,w/2):0;
+el('path',{d:r?`M${x} ${y}h${w-r}a${r} ${r} 0 0 1 ${r} ${r}v${bh-2*r}a${r} ${r} 0 0 1 -${r} ${r}h-${w-r}z`:`M${x} ${y}h${w}v${bh}h-${w}z`,fill:sg.col},svg);x+=w+(last?0:2)});
+txt(svg,x+6,y+bh-1,String(it.total),{'font-size':12});
+const hit=el('rect',{x:0,y:i*row,width:W,height:row,fill:'transparent'},svg);
+hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(it.label)}</b> – ${it.total}<br>`+OPS.map(([k,col,l])=>`<span style="color:${col}">■</span> ${l}: <b>${it.c[k]||0}</b>`).join('<br>')));hit.addEventListener('mouseleave',hideTip)})}
 function tiles(t){const T=[['Hosty online',t.hosts_online,'launchery z sygnałem'],['Sesje online',t.sessions_active,'działające teraz'],['Boty pracują',t.bots_running,'teraz'],['Niezarządzane online',t.unmanaged_active,'boty poza launcherem']];
 $('tiles').innerHTML=T.map(([l,v,s])=>`<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('')}
 
@@ -701,7 +788,7 @@ if(act)$('fclear').onclick=(e)=>{e.preventDefault();F={};saveF();buildFilters();
 let chartSig='';
 async function load(){const r=await fetch('/panel/api/overview');if(r.status===401){location='/login';return}OV=await r.json();
 tiles(OV.totals);hostsTable(OV);rows();
-const sig=JSON.stringify([OV.history,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
+const sig=JSON.stringify([OV.history,OV.ops,OV.hosts,OV.sessions.map(s=>[s.managed,s.lvl,s.prof,s.host_id,s.char,s.state_key])]);if(sig!==chartSig){chartSig=sig;charts(OV)}}
 async function dstat(){const r=await fetch('/panel/api/data/status');if(!r.ok)return;const d=await r.json();
 const N={map:'mapy',npc:'NPC',quest:'zadania',route:'trasy',set:'zestawy',playbook:'przebiegi',skill:'drzewka'};
 $('dstat').textContent=d.ref?`Repo @${d.ref.slice(0,7)} · ${fmt(d.updated)} · `+Object.entries(d.counts).map(([k,v])=>`${N[k]||k} ${v}`).join(', ')+(d.world?'':' · brak grafu świata')+(d.error?' · błąd: '+d.error:''):(d.error?'Błąd: '+d.error:'Pierwsze pobieranie repo…')}
@@ -833,7 +920,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo, history):
+def make_handler(cfg, users, store, presence, hosts, repo, history, opstats):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -957,7 +1044,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history):
                 if not user:
                     return self._send(401, {"ok": False})
                 ov = build_overview(user, store, presence, hosts, online_s)
-                return self._send(200, dict(ov, ok=True, history=history.get(user, 24), now=int(time.time())))
+                return self._send(200, dict(ov, ok=True, history=history.get(user, 24), ops=opstats.last(user, 24), now=int(time.time())))
             if p == "/panel/api/data/status":
                 if not self.panel_user():
                     return self._send(401, {"ok": False})
@@ -1073,6 +1160,8 @@ def make_handler(cfg, users, store, presence, hosts, repo, history):
                 keep = {k: (str(info[k])[:200] if isinstance(info[k], str) else info[k])
                         for k in ("char", "world", "version", "running", "map", "lvl", "step", "source", "prof", "host_id", "session") if k in info}
                 presence.beat(user, keep)
+                if isinstance(info.get("ops"), dict) and info["ops"]:
+                    opstats.add(user, info["ops"])
                 return self._send(200, {"ok": True})
             if p in ("/api/v1/host/heartbeat", "/api/v1/host/state"):
                 user = self.token_user()
@@ -1261,6 +1350,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history):
 <div class="card chart"><h2>Sesje online na hostach</h2><div id="c_hosts"></div></div>
 <div class="card chart"><h2>Poziomy postaci online</h2><div id="c_lvl"></div></div>
 <div class="card chart"><h2>Profesje online</h2><div id="c_prof"></div></div>
+<div class="card chart" style="grid-column:1/-1"><h2>Operacje botów – ostatnie 24 h</h2><div class="legend"><span><i style="background:#0ca30c"></i>✔ udane</span><span><i style="background:#fab219"></i>⚠ wolne (po ostrzeżeniu 120 s)</span><span><i style="background:#d03b3b"></i>✖ nieudane (błąd albo 5 min bez zakończenia)</span></div><div id="c_ops"></div></div>
 </div>
 <div class="card"><h2>Hosty</h2><p class="hint">Maszyny z działającym launcherem; „niezarządzany” – boty uruchomione poza launcherem.</p>
 <div class="tbl-wrap"><table><thead><tr><th>Stan</th><th>Host</th><th>System</th><th>Sesje (online / w launcherze)</th><th>Ostatnio</th></tr></thead><tbody id="hrows"><tr><td colspan=5 class=hint>Wczytuję…</td></tr></tbody></table></div></div>
@@ -1364,13 +1454,18 @@ def main():
     repo = DataRepo(cfg)
     repo.start()
     history = History(store.root)
-    threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"])),
+    opstats = OpStats(store.root)
+    threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"]), 300, opstats),
                      daemon=True, name="history").start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history))
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats))
     httpd.daemon_threads = True
 
     def stop(*_):
         log.info("zatrzymuję serwer")
+        try:
+            opstats.flush()
+        except Exception:
+            pass
         threading.Thread(target=httpd.shutdown, daemon=True).start()
 
     signal.signal(signal.SIGTERM, stop)
