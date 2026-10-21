@@ -605,6 +605,8 @@ def _write_config(path: str, data: dict) -> None:
 PROFESSIONS = [("", "(wybór w bocie)"), ("w", "wojownik"), ("p", "paladyn"), ("b", "tancerz ostrzy"),
                ("h", "łowca"), ("t", "tropiciel"), ("m", "mag")]
 PROF_LABEL = dict(PROFESSIONS)
+PROF_RANDOM = "random"            # harmonogram: profesja losowana przy tworzeniu każdej nowej sesji
+PROF_RANDOM_LABEL = "🎲 losowa"
 
 
 def config_prof(path: str) -> str:
@@ -2494,7 +2496,8 @@ class ScheduleEditDialog(tk.Toplevel):
         self.wto = tk.StringVar(value=e.get("to") or "")
         self.first_now = tk.BooleanVar(value=bool(e.get("first_now")))
         self.date = tk.StringVar(value=e.get("date") or time.strftime("%Y-%m-%d", time.localtime(time.time() + 86400)))
-        self.prof = tk.StringVar(value=PROF_LABEL.get(p.get("prof", ""), PROF_LABEL[""]))
+        self.prof = tk.StringVar(value=PROF_RANDOM_LABEL if p.get("prof") == PROF_RANDOM
+                                 else PROF_LABEL.get(p.get("prof", ""), PROF_LABEL[""]))
         self.server = tk.StringVar(value=p.get("server") or self.SAME)
         self.browser = tk.StringVar(value=p.get("browser") or self.SAME)
         self.template = tk.StringVar(value=p.get("template") or self.SAME)
@@ -2561,7 +2564,7 @@ class ScheduleEditDialog(tk.Toplevel):
         self.r_new = tk.Frame(body, bg=BG)
         tk.Label(self.r_new, text="Nowa sesja", font=(UI_FONT, 8, "bold"), bg=BG, fg=ACCENT).pack(anchor="w", pady=(8, 2))
         r = row(self.r_new, "Profesja:"); r.pack(fill="x", pady=2)
-        combo(r, self.prof, [l for _, l in PROFESSIONS], 20)
+        combo(r, self.prof, [l for _, l in PROFESSIONS] + [PROF_RANDOM_LABEL], 20)
         r = row(self.r_new, "Serwer:"); r.pack(fill="x", pady=2)
         combo(r, self.server, [self.SAME] + SERVERS, 26)
         r = row(self.r_new, "Przeglądarka:"); r.pack(fill="x", pady=2)
@@ -2637,7 +2640,8 @@ class ScheduleEditDialog(tk.Toplevel):
         e["first_now"] = self.first_now.get()
         e["date"] = self.date.get().strip()
         same = lambda v: "" if v == self.SAME else v
-        e["params"] = {"prof": next((k for k, l in PROFESSIONS if l == self.prof.get()), ""),
+        e["params"] = {"prof": PROF_RANDOM if self.prof.get() == PROF_RANDOM_LABEL
+                               else next((k for k, l in PROFESSIONS if l == self.prof.get()), ""),
                        "server": same(self.server.get()), "browser": same(self.browser.get()),
                        "template": same(self.template.get()),
                        "program": "" if self.program.get() == "(program grupy)" else self.program.get(),
@@ -4117,7 +4121,11 @@ class BotGUI:
         last = next((s for s in reversed(self._sessions)
                      if self.gm.world_of_session(s.session_id) == w and self.gm.group_of(s.session_id) == g), None)
         base = last.get_settings() if last else {}
-        name, path, data = create_auto_config(p.get("prof", ""))
+        prof = p.get("prof", "")
+        if prof == PROF_RANDOM:
+            import random
+            prof = random.choice([k for k, _ in PROFESSIONS if k])
+        name, path, data = create_auto_config(prof)
         self._on_config_added(name, path)
         tab = self._add_session(group=g, world=w)
         if not tab:
@@ -4130,7 +4138,8 @@ class BotGUI:
             "group": g, "group_world": w,
             "program_override": bool(p.get("program")), "program": p.get("program", ""),
         })
-        tab.logger.write(f"⏰ Sesja utworzona z harmonogramu – nowy config {name} (nick {data['nick']})")
+        tab.logger.write(f"⏰ Sesja utworzona z harmonogramu – nowy config {name} (nick {data['nick']}"
+                         + (f", profesja {PROF_LABEL[prof]}" if prof else "") + ")")
         if p.get("start", True):
             tab.after(800, tab._on_play)
         full = self._group_count(g, w) >= self.MAX_PER_GROUP
