@@ -2086,16 +2086,18 @@ class GroupPanel(tk.Frame):
                 self._select(None)
 
     # ---- sterowanie grupą ----
-    def _start_group(self, group: str):
+    def _start_group(self, group: str, world: str = None) -> int:
+        """Start sesji grupy (3 strumienie, logowania po kolei). Zwraca liczbę startowanych sesji."""
         if self._get_sessions_fn is None:
-            return
+            return 0
+        world = world or self._selected_world
         sessions = self._get_sessions_fn()
         to_start = [s for s in sessions
                     if self.gm.group_of(s.session_id) == group
-                    and self.gm.world_of_session(s.session_id) == self._selected_world
-                    and not s.is_running]
+                    and self.gm.world_of_session(s.session_id) == world
+                    and not s.is_running and not s.is_banned()]
         if not to_start:
-            return
+            return 0
 
         def _sequential():
             STREAMS = 3   # niezależne strumienie startowania
@@ -2129,15 +2131,20 @@ class GroupPanel(tk.Frame):
                 ).start()
 
         threading.Thread(target=_sequential, daemon=True).start()
+        return len(to_start)
 
-    def _stop_group(self, group: str):
+    def _stop_group(self, group: str, world: str = None) -> int:
         if self._get_sessions_fn is None:
-            return
+            return 0
+        world = world or self._selected_world
+        n = 0
         for s in self._get_sessions_fn():
             if (self.gm.group_of(s.session_id) == group
-                    and self.gm.world_of_session(s.session_id) == self._selected_world):
+                    and self.gm.world_of_session(s.session_id) == world):
                 if s.is_running or getattr(s, "_pending_restart", None) is not None:
                     s._on_stop()
+                    n += 1
+        return n
 
 
 
@@ -2344,6 +2351,310 @@ class LayoutDialog(tk.Toplevel):
 
     def _save(self):
         self.gm.set_layout(self.group, self.world, self._layout())
+        self.destroy()
+
+
+class ScheduleDialog(tk.Toplevel):
+    """⏰ Harmonogram: lista wpisów (grupa / sesja, akcja, termin), dodawanie, edycja, wł./wył., uruchom teraz, usuń,
+    a pod spodem dziennik ostatnich wykonań. Wpisy wykonuje BotGUI._schedule_tick (co 15 s), zapis w stanie launchera."""
+
+    COLS = (("on", "Wł.", 40), ("target", "Cel", 210), ("action", "Akcja", 200), ("when", "Kiedy", 170),
+            ("next", "Następnie", 110), ("last", "Ostatnio", 110))
+
+    def __init__(self, parent, app):
+        super().__init__(parent)
+        self.app = app
+        self.title("Harmonogram")
+        self.configure(bg=BG)
+        self.transient(parent)
+        self.geometry("900x520")
+        st = ttk.Style(self)
+        st.configure("Treeview", background=BG3, fieldbackground=BG3, foreground=FG, rowheight=22, font=FONT_SMALL)
+        st.configure("Treeview.Heading", background=BG2, foreground=FG_DIM, font=FONT_SMALL)
+        st.map("Treeview", background=[("selected", VIOLET)])
+        tk.Label(self, text="⏰ Harmonogram – start / stop grup i sesji, nowe sesje z nowym configiem",
+                 font=FONT_BOLD, bg=BG, fg=ACCENT).pack(anchor="w", padx=14, pady=(12, 6))
+        self.tree = ttk.Treeview(self, columns=[c for c, _, _ in self.COLS], show="headings", height=10, selectmode="browse")
+        for c, label, w in self.COLS:
+            self.tree.heading(c, text=label)
+            self.tree.column(c, width=w, anchor="w", stretch=c in ("target", "action"))
+        self.tree.pack(fill="x", padx=14)
+        self.tree.bind("<Double-1>", lambda _e: self._edit())
+        btns = tk.Frame(self, bg=BG)
+        btns.pack(fill="x", padx=14, pady=8)
+        for text, fn, fg in (("＋ Dodaj", self._add, ACCENT), ("✎ Edytuj", self._edit, FG), ("⏯ Wł. / wył.", self._toggle, FG),
+                             ("▶ Uruchom teraz", self._run_now, GREEN), ("🗑 Usuń", self._delete, RED)):
+            tk.Button(btns, text=text, command=fn, bg=BG3, fg=fg, relief="flat", cursor="hand2",
+                      font=FONT_SMALL, padx=10, pady=3).pack(side="left", padx=(0, 6))
+        tk.Label(self, text="Dziennik", font=(UI_FONT, 8, "bold"), bg=BG, fg=FG_DIM).pack(anchor="w", padx=14)
+        self.log = tk.Text(self, font=FONT_MONO, bg="#0b0d14", fg="#94a3b8", relief="flat", bd=0, height=10, state="disabled")
+        self.log.pack(fill="both", expand=True, padx=14, pady=(2, 12))
+        self._refresh()
+
+    def _selected(self):
+        sel = self.tree.selection()
+        return next((e for e in self.app._schedules if e["id"] == sel[0]), None) if sel else None
+
+    def _refresh(self):
+        import scheduler as S
+        if not self.winfo_exists():
+            return
+        sel = self.tree.selection()
+        self.tree.delete(*self.tree.get_children())
+        fmt = lambda t: time.strftime("%d.%m %H:%M", time.localtime(t)) if t else "—"
+        for e in self.app._schedules:
+            self.tree.insert("", "end", iid=e["id"], values=(
+                "✔" if e.get("enabled") else "—", S.describe_target(e), S.ACTIONS.get(e["action"], e["action"]),
+                S.describe_when(e), fmt(S.next_run(e)), fmt(e.get("last_run"))))
+        if sel and self.tree.exists(sel[0]):
+            self.tree.selection_set(sel[0])
+        self.log.configure(state="normal")
+        self.log.delete("1.0", tk.END)
+        for t, label, msg in reversed(self.app._schedule_log):
+            self.log.insert(tk.END, f"{time.strftime('%d.%m %H:%M:%S', time.localtime(t))}  {label}: {msg}\n")
+        self.log.configure(state="disabled")
+        self.after(5000, self._refresh)
+
+    def _saved(self, e: dict, is_new: bool):
+        if is_new:
+            self.app._schedules.append(e)
+        self.app._save_state()
+        self._refresh()
+
+    def _add(self):
+        ScheduleEditDialog(self, self.app, None, self._saved)
+
+    def _edit(self):
+        e = self._selected()
+        if e:
+            ScheduleEditDialog(self, self.app, e, self._saved)
+
+    def _toggle(self):
+        e = self._selected()
+        if e:
+            e["enabled"] = not e.get("enabled")
+            if e["enabled"]:
+                # odstęp liczony od włączenia; termin „o godzinie”, który już minął – dopiero następny
+                e["created"] = time.time()
+                e["last_run"] = 0 if e["kind"] == "interval" else time.time()
+            self.app._save_state()
+            self._refresh()
+
+    def _run_now(self):
+        e = self._selected()
+        if e:
+            e["last_run"] = time.time()
+            self.app.run_schedule(e)
+            self.app._save_state()
+            self._refresh()
+
+    def _delete(self):
+        e = self._selected()
+        if e and messagebox.askyesno("Harmonogram", "Usunąć zaznaczony wpis?", parent=self):
+            self.app._schedules.remove(e)
+            self.app._save_state()
+            self._refresh()
+
+
+class ScheduleEditDialog(tk.Toplevel):
+    """Wpis harmonogramu: cel (grupa / sesja), akcja, termin (codziennie o godzinie / co N minut / jednorazowo),
+    a dla „Nowa sesja z nowym configiem” – ustawienia sesji (puste = jak ostatnia sesja grupy)."""
+    SAME = "(jak ostatnia sesja grupy)"
+
+    def __init__(self, parent, app, entry, on_save):
+        import scheduler as S
+        super().__init__(parent)
+        self.S, self.app, self.on_save = S, app, on_save
+        self.is_new = entry is None
+        self.e = entry if entry is not None else S.new_entry()
+        e = self.e
+        self.title("Nowy wpis harmonogramu" if self.is_new else "Edycja wpisu harmonogramu")
+        self.configure(bg=BG)
+        self.resizable(False, False)
+        self.transient(parent)
+        self.grab_set()
+
+        self.groups = [(n, w) for (w, n) in app.gm._groups]
+        self.group_labels = [f"{n} ({w})" for n, w in self.groups]
+        self.sessions = [(s.uid, s.name, app.gm.group_of(s.session_id)) for s in app._sessions]
+        self.session_labels = [f"{n} [{g}]" for _, n, g in self.sessions]
+        p = e.get("params") or {}
+
+        self.target = tk.StringVar(value=e["target"])
+        cur_g = next((i for i, (n, w) in enumerate(self.groups) if n == e.get("group") and w == e.get("world")), 0)
+        self.group = tk.StringVar(value=self.group_labels[cur_g] if self.group_labels else "")
+        cur_s = next((i for i, (u, _, _) in enumerate(self.sessions) if u == e.get("session")), 0)
+        self.session = tk.StringVar(value=self.session_labels[cur_s] if self.session_labels else "")
+        self.action = tk.StringVar(value=S.ACTIONS[e["action"]])
+        self.kind = tk.StringVar(value=S.KINDS[e["kind"]])
+        self.time = tk.StringVar(value=e.get("time") or "11:00")
+        self.days = [tk.BooleanVar(value=i in (e.get("days") or [])) for i in range(7)]
+        self.every = tk.StringVar(value=str(e.get("every") or 60))
+        self.wfrom = tk.StringVar(value=e.get("from") or "")
+        self.wto = tk.StringVar(value=e.get("to") or "")
+        self.first_now = tk.BooleanVar(value=bool(e.get("first_now")))
+        self.date = tk.StringVar(value=e.get("date") or time.strftime("%Y-%m-%d", time.localtime(time.time() + 86400)))
+        self.prof = tk.StringVar(value=PROF_LABEL.get(p.get("prof", ""), PROF_LABEL[""]))
+        self.server = tk.StringVar(value=p.get("server") or self.SAME)
+        self.browser = tk.StringVar(value=p.get("browser") or self.SAME)
+        self.template = tk.StringVar(value=p.get("template") or self.SAME)
+        self.program = tk.StringVar(value=p.get("program") or "(program grupy)")
+        self.start = tk.BooleanVar(value=p.get("start", True))
+        self.disable_full = tk.BooleanVar(value=p.get("disable_when_full", True))
+
+        body = tk.Frame(self, bg=BG)
+        body.pack(fill="both", padx=16, pady=(12, 4))
+        self.body = body
+
+        def row(parent, label):
+            r = tk.Frame(parent, bg=BG)
+            tk.Label(r, text=label, width=16, anchor="w", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+            return r
+
+        def combo(parent, var, values, width=30, cmd=None):
+            cb = ttk.Combobox(parent, textvariable=var, values=values, state="readonly", width=width, font=FONT_SMALL)
+            cb.pack(side="left")
+            if cmd:
+                cb.bind("<<ComboboxSelected>>", lambda _e: cmd())
+            return cb
+
+        def entry(parent, var, width=8):
+            tk.Entry(parent, textvariable=var, width=width, bg=BG3, fg=FG, insertbackground=FG, relief="flat",
+                     font=FONT_SMALL).pack(side="left")
+
+        def check(parent, text, var):
+            tk.Checkbutton(parent, text=text, variable=var, bg=BG, fg=FG, selectcolor=BG3, activebackground=BG,
+                           font=FONT_SMALL).pack(side="left", padx=(0, 6))
+
+        self.r_target = row(body, "Cel:")
+        for val, text in (("group", "Grupa"), ("session", "Sesja")):
+            tk.Radiobutton(self.r_target, text=text, value=val, variable=self.target, command=self._layout, bg=BG, fg=FG,
+                           selectcolor=BG3, activebackground=BG, font=FONT_SMALL).pack(side="left", padx=(0, 8))
+        self.r_group = row(body, "Grupa:")
+        combo(self.r_group, self.group, self.group_labels)
+        self.r_session = row(body, "Sesja:")
+        combo(self.r_session, self.session, self.session_labels)
+        self.r_action = row(body, "Akcja:")
+        self.action_cb = combo(self.r_action, self.action, list(S.ACTIONS.values()), cmd=self._layout)
+        self.r_kind = row(body, "Kiedy:")
+        combo(self.r_kind, self.kind, list(S.KINDS.values()), cmd=self._layout)
+        self.r_date = row(body, "Data:")
+        entry(self.r_date, self.date, 12)
+        tk.Label(self.r_date, text="  RRRR-MM-DD", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        self.r_time = row(body, "Godzina:")
+        entry(self.r_time, self.time)
+        tk.Label(self.r_time, text="  GG:MM", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        self.r_days = row(body, "Dni:")
+        for i, d in enumerate(S.DAYS):
+            check(self.r_days, d, self.days[i])
+        self.r_every = row(body, "Co (minut):")
+        entry(self.r_every, self.every, 6)
+        tk.Label(self.r_every, text="   w godzinach", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left", padx=(0, 4))
+        entry(self.r_every, self.wfrom, 6)
+        tk.Label(self.r_every, text=" – ", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        entry(self.r_every, self.wto, 6)
+        tk.Label(self.r_every, text="  (puste = cała doba)", bg=BG, fg=FG_DIM, font=FONT_SMALL).pack(side="left")
+        self.r_first = row(body, "")
+        check(self.r_first, "Pierwszy raz od razu (inaczej po pierwszym odstępie)", self.first_now)
+
+        # Nowa sesja z nowym configiem
+        self.r_new = tk.Frame(body, bg=BG)
+        tk.Label(self.r_new, text="Nowa sesja", font=(UI_FONT, 8, "bold"), bg=BG, fg=ACCENT).pack(anchor="w", pady=(8, 2))
+        r = row(self.r_new, "Profesja:"); r.pack(fill="x", pady=2)
+        combo(r, self.prof, [l for _, l in PROFESSIONS], 20)
+        r = row(self.r_new, "Serwer:"); r.pack(fill="x", pady=2)
+        combo(r, self.server, [self.SAME] + SERVERS, 26)
+        r = row(self.r_new, "Przeglądarka:"); r.pack(fill="x", pady=2)
+        combo(r, self.browser, [self.SAME] + BROWSERS, 26, cmd=self._refresh_templates)
+        r = row(self.r_new, "Szablon:"); r.pack(fill="x", pady=2)
+        self.template_cb = combo(r, self.template, [self.SAME], 26)
+        r = row(self.r_new, "Program:"); r.pack(fill="x", pady=2)
+        combo(r, self.program, ["(program grupy)"] + _list_programs(), 34)
+        r = row(self.r_new, ""); r.pack(fill="x", pady=2)
+        check(r, "Uruchom sesję po utworzeniu", self.start)
+        r = row(self.r_new, ""); r.pack(fill="x", pady=2)
+        check(r, f"Wyłącz wpis po zapełnieniu grupy ({app.MAX_PER_GROUP} sesji)", self.disable_full)
+        tk.Label(self.r_new, text="Każde wykonanie: nowy config (login, hasło, nick generowane; konto zakłada START sesji)\n"
+                                  "i nowa sesja w grupie – aż do zapełnienia grupy.",
+                 bg=BG, fg=FG_DIM, font=FONT_SMALL, justify="left").pack(anchor="w", pady=(4, 0))
+        self._refresh_templates()
+
+        self.err = tk.Label(self, text="", bg=BG, fg=RED, font=FONT_SMALL)
+        self.err.pack(anchor="w", padx=16)
+        btns = tk.Frame(self, bg=BG)
+        btns.pack(fill="x", padx=16, pady=(4, 14))
+        tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD, padx=10).pack(side="right")
+        tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right", padx=6)
+        self._layout()
+
+    def _refresh_templates(self):
+        b = self.browser.get()
+        vals = [self.SAME] + (_list_templates(b) if b in BROWSERS else [])
+        self.template_cb["values"] = vals
+        if self.template.get() not in vals:
+            self.template.set(self.SAME)
+
+    def _code(self, mapping: dict, label: str) -> str:
+        return next((k for k, v in mapping.items() if v == label), "")
+
+    def _layout(self):
+        """Pokazuje tylko pola pasujące do celu, akcji i rodzaju terminu."""
+        S = self.S
+        is_group = self.target.get() == "group"
+        acts = list(S.ACTIONS.values()) if is_group else [S.ACTIONS["start"], S.ACTIONS["stop"]]
+        self.action_cb["values"] = acts
+        if self.action.get() not in acts:
+            self.action.set(acts[0])
+        kind = self._code(S.KINDS, self.kind.get())
+        create = self._code(S.ACTIONS, self.action.get()) == "create_session"
+        for w in self.body.winfo_children():
+            w.pack_forget()
+        rows = [self.r_target, self.r_group if is_group else self.r_session, self.r_action, self.r_kind]
+        rows += {"daily": [self.r_time, self.r_days], "interval": [self.r_every, self.r_first],
+                 "once": [self.r_date, self.r_time]}.get(kind, [])
+        for r in rows:
+            r.pack(fill="x", pady=2)
+        if create:
+            self.r_new.pack(fill="x")
+
+    def _save(self):
+        S, e = self.S, dict(self.e)
+        e["target"] = self.target.get()
+        if e["target"] == "group":
+            i = self.group_labels.index(self.group.get()) if self.group.get() in self.group_labels else -1
+            e["group"], e["world"] = self.groups[i] if i >= 0 else ("", "")
+            e["session"] = e["session_name"] = ""
+        else:
+            i = self.session_labels.index(self.session.get()) if self.session.get() in self.session_labels else -1
+            e["session"], e["session_name"] = (self.sessions[i][0], self.sessions[i][1]) if i >= 0 else ("", "")
+            e["group"] = e["world"] = ""
+        e["action"] = self._code(S.ACTIONS, self.action.get())
+        e["kind"] = self._code(S.KINDS, self.kind.get())
+        e["time"] = self.time.get().strip()
+        e["days"] = [i for i, v in enumerate(self.days) if v.get()]
+        e["every"] = self.every.get().strip()
+        e["from"], e["to"] = self.wfrom.get().strip(), self.wto.get().strip()
+        e["first_now"] = self.first_now.get()
+        e["date"] = self.date.get().strip()
+        same = lambda v: "" if v == self.SAME else v
+        e["params"] = {"prof": next((k for k, l in PROFESSIONS if l == self.prof.get()), ""),
+                       "server": same(self.server.get()), "browser": same(self.browser.get()),
+                       "template": same(self.template.get()),
+                       "program": "" if self.program.get() == "(program grupy)" else self.program.get(),
+                       "start": self.start.get(), "disable_when_full": self.disable_full.get()}
+        err = S.validate(e)
+        if err:
+            self.err.configure(text=f"⚠️  {err}")
+            return
+        if e["kind"] == "interval":
+            e["every"] = int(e["every"])
+        # nowy wpis / zmiana terminu → odliczanie od nowa; godzina, która już minęła, wykona się w kolejnym terminie
+        if self.is_new or any(e.get(k) != self.e.get(k) for k in ("kind", "time", "days", "every", "from", "to", "date", "first_now")):
+            e["created"] = time.time()
+            e["last_run"] = 0 if e["kind"] == "interval" else time.time()
+        self.e.clear()
+        self.e.update(e)
+        self.on_save(self.e, self.is_new)
         self.destroy()
 
 
@@ -3080,10 +3391,14 @@ class BotGUI:
         self._state_file = os.path.join(
             os.path.dirname(os.path.abspath(__file__)), "sessions_state.json")
 
+        self._schedules: list = []        # wpisy harmonogramu (scheduler.py)
+        self._schedule_log: list = []     # ostatnie wykonania: (czas, opis, wynik)
+
         self._scan_files()
         self._cleanup_lock_files()
         self._build_ui()
         self._load_state()
+        self.root.after(5000, self._schedule_tick)
         # Host w panelu WWW: sygnał z listą sesji, polecenia start/stop, zapis ustawień na serwer.
         from log_shipper import HOST
         HOST.start()
@@ -3141,6 +3456,10 @@ class BotGUI:
                                   bg=BG3, fg=ACCENT, font=FONT_BOLD,
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
+        tk.Button(btn_frame, text="⏰ Harmonogram",
+                  command=lambda: ScheduleDialog(root, self),
+                  bg=BG3, fg=ACCENT, font=FONT_BOLD,
+                  relief="flat", cursor="hand2", padx=10, pady=4).pack(side="right", padx=(6, 0))
         tk.Button(btn_frame, text="🗑 Usuń zablokowane",
                   command=self._delete_banned_ui,
                   bg=BG3, fg=RED, font=FONT_BOLD,
@@ -3713,7 +4032,112 @@ class BotGUI:
         HOST.report(c["id"], False, "nieznane polecenie")
 
     def _state(self) -> dict:
-        return {"groups": self.gm.to_dict(), "sessions": [s.get_settings() for s in self._sessions]}
+        return {"groups": self.gm.to_dict(), "sessions": [s.get_settings() for s in self._sessions],
+                "schedules": self._schedules}
+
+    # ---- harmonogram ----
+    def _schedule_tick(self):
+        import scheduler as S
+        try:
+            now = time.time()
+            ran = False
+            for e in list(self._schedules):
+                if S.due(e, now):
+                    e["last_run"] = now
+                    if e["kind"] == "once":
+                        e["enabled"] = False
+                    self.run_schedule(e)
+                    ran = True
+            if ran:
+                self._save_state()
+        except Exception as ex:
+            print(f"harmonogram: {ex}")
+        self.root.after(15000, self._schedule_tick)
+
+    def run_schedule(self, e: dict) -> str:
+        """Wykonanie wpisu harmonogramu (o czasie albo „Uruchom teraz”); wynik trafia do dziennika i paska stanu."""
+        import scheduler as S
+        try:
+            msg = self._do_schedule(e)
+        except Exception as ex:
+            msg = f"❌ {ex}"
+        label = f"{S.ACTIONS.get(e['action'], e['action'])} · {S.describe_target(e)}"
+        self._schedule_log.append((time.time(), label, msg))
+        del self._schedule_log[:-50]
+        self.statusbar.configure(text=f"  ⏰ {label}: {msg}")
+        self.root.after(8000, self._update_statusbar)
+        return msg
+
+    def _do_schedule(self, e: dict) -> str:
+        act, g, w = e["action"], e.get("group", ""), e.get("world") or self._selected_world
+        if e["target"] == "session":
+            tab = next((s for s in self._sessions if s.uid == e.get("session")), None)
+            if not tab:
+                return "brak sesji w launcherze"
+            if act == "start":
+                if tab.is_running:
+                    return "już działa"
+                if tab.is_banned():
+                    return "konto zablokowane"
+                tab.logger.write("⏰ START z harmonogramu")
+                tab._on_play()
+                return "uruchomiona" if tab.is_running else "nie wystartowała (log sesji)"
+            if act == "stop":
+                if not tab.is_running:
+                    return "już zatrzymana"
+                tab.logger.write("⏰ STOP z harmonogramu")
+                tab._on_stop()
+                return "zatrzymywana"
+            return "nieznana akcja"
+        if g not in self.gm.group_names(w):
+            return f"brak grupy „{g}” ({w})"
+        if act == "start":
+            n = self.group_panel._start_group(g, w)
+            return f"startuję {n} sesji" if n else "brak sesji do startu"
+        if act == "stop":
+            n = self.group_panel._stop_group(g, w)
+            return f"zatrzymuję {n} sesji" if n else "nic nie działało"
+        if act == "create_session":
+            return self._schedule_create(e, g, w)
+        return "nieznana akcja"
+
+    def _group_count(self, g: str, w: str) -> int:
+        return sum(1 for s in self._sessions
+                   if self.gm.world_of_session(s.session_id) == w and self.gm.group_of(s.session_id) == g)
+
+    def _schedule_create(self, e: dict, g: str, w: str) -> str:
+        """Nowy config (konto do założenia przy START) + nowa sesja w grupie; ustawienia z wpisu,
+        a puste – jak w ostatniej sesji grupy. Po zapełnieniu grupy wpis może się wyłączyć."""
+        p = e.get("params") or {}
+        if self._group_count(g, w) >= self.MAX_PER_GROUP:
+            if p.get("disable_when_full", True):
+                e["enabled"] = False
+                return f"grupa pełna ({self.MAX_PER_GROUP}) – wpis wyłączony"
+            return f"grupa pełna ({self.MAX_PER_GROUP})"
+        last = next((s for s in reversed(self._sessions)
+                     if self.gm.world_of_session(s.session_id) == w and self.gm.group_of(s.session_id) == g), None)
+        base = last.get_settings() if last else {}
+        name, path, data = create_auto_config(p.get("prof", ""))
+        self._on_config_added(name, path)
+        tab = self._add_session(group=g, world=w)
+        if not tab:
+            return "nie udało się dodać sesji"
+        server = p.get("server") or base.get("server") or (w if w in SERVERS else SERVERS[0])
+        browser = p.get("browser") or base.get("browser") or BROWSERS[0]
+        tab.apply_settings({
+            "config": name, "server": server, "browser": browser,
+            "template": p.get("template") or (base.get("template") if browser == base.get("browser") else "") or "(brak)",
+            "group": g, "group_world": w,
+            "program_override": bool(p.get("program")), "program": p.get("program", ""),
+        })
+        tab.logger.write(f"⏰ Sesja utworzona z harmonogramu – nowy config {name} (nick {data['nick']})")
+        if p.get("start", True):
+            tab.after(800, tab._on_play)
+        full = self._group_count(g, w) >= self.MAX_PER_GROUP
+        if full and p.get("disable_when_full", True):
+            e["enabled"] = False
+        return (f"„{tab.name}” z configiem {name}" + (" – START" if p.get("start", True) else "")
+                + (" · grupa pełna, wpis wyłączony" if full and p.get("disable_when_full", True) else ""))
 
     def _configs_for_sync(self) -> dict:
         out = {}
@@ -3780,6 +4204,9 @@ class BotGUI:
                 state = json.load(f)
         except Exception:
             return
+
+        import scheduler as S
+        self._schedules = [S.normalize(e) for e in (state.get("schedules") or []) if isinstance(e, dict)]
 
         # odtwórz grupy
         for g in state.get("groups", []):
