@@ -7,7 +7,7 @@
   "name": "[34lvl] gobliny",
   "lvlMin": 30,
   "lvlMax": 37,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

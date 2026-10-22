@@ -7,7 +7,7 @@
   "name": "[94lvl] gnomy",
   "lvlMin": 91,
   "lvlMax": 97,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

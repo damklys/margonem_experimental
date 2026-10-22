@@ -7,7 +7,7 @@
   "name": "[83lvl] miśki",
   "lvlMin": 79,
   "lvlMax": 86,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

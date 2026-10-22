@@ -7,7 +7,7 @@
   "name": "[149lvl] duchy",
   "lvlMin": 145,
   "lvlMax": 152,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

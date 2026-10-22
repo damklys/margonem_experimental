@@ -7,7 +7,7 @@
   "name": "[192lvl] mroczny las",
   "lvlMin": 188,
   "lvlMax": 195,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

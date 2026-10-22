@@ -7,7 +7,7 @@
   "name": "[203lvl] heretycy",
   "lvlMin": 199,
   "lvlMax": 206,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

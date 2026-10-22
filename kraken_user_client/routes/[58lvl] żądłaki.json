@@ -7,7 +7,7 @@
   "name": "[58lvl] żądłaki",
   "lvlMin": 54,
   "lvlMax": 61,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

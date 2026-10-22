@@ -7,7 +7,7 @@
   "name": "[100lvl] bandyci",
   "lvlMin": 96,
   "lvlMax": 103,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

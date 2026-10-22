@@ -7,7 +7,7 @@
   "name": "[77lvl] magazynierzy",
   "lvlMin": 73,
   "lvlMax": 80,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

@@ -7,7 +7,7 @@
   "name": "[232lvl] zagrzybiony las",
   "lvlMin": 228,
   "lvlMax": 235,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

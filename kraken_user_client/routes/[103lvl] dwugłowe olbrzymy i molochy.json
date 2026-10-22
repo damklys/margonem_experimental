@@ -7,7 +7,7 @@
   "name": "[103lvl] dwugłowe olbrzymy i molochy",
   "lvlMin": 100,
   "lvlMax": 106,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

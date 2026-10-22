@@ -7,7 +7,7 @@
   "name": "[45lvl] tolloki",
   "lvlMin": 41,
   "lvlMax": 48,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

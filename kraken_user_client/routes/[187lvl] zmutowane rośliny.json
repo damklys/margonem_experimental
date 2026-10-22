@@ -7,7 +7,7 @@
   "name": "[187lvl] zmutowane rośliny",
   "lvlMin": 183,
   "lvlMax": 190,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

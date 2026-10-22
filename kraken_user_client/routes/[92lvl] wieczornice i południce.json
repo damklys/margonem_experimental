@@ -7,7 +7,7 @@
   "name": "[92lvl] wieczornice i południce",
   "lvlMin": 89,
   "lvlMax": 95,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

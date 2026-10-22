@@ -7,7 +7,7 @@
   "name": "[37lvl] puffy",
   "lvlMin": 33,
   "lvlMax": 40,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

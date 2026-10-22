@@ -7,7 +7,7 @@
   "name": "[272lvl] katakumby",
   "lvlMin": 268,
   "lvlMax": 275,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

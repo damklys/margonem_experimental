@@ -7,7 +7,7 @@
   "name": "[89lvl] grexy",
   "lvlMin": 85,
   "lvlMax": 92,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

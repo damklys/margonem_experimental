@@ -7,7 +7,7 @@
   "name": "[282lvl] wodniki",
   "lvlMin": 278,
   "lvlMax": 285,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

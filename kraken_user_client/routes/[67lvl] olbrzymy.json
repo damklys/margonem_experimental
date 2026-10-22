@@ -7,7 +7,7 @@
   "name": "[67lvl] olbrzymy",
   "lvlMin": 63,
   "lvlMax": 70,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

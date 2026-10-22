@@ -7,7 +7,7 @@
   "name": "[219lvl] dridery",
   "lvlMin": 215,
   "lvlMax": 222,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

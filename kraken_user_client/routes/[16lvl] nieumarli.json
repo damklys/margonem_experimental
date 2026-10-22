@@ -7,7 +7,7 @@
   "name": "[16lvl] nieumarli",
   "lvlMin": 13,
   "lvlMax": 19,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

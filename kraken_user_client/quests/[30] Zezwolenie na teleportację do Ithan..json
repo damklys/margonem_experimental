@@ -1,0 +1,33 @@
+{
+ "kraken": "zadanie",
+ "version": "5.6.202610230000",
+ "name": "Zezwolenie na teleportację do Ithan.",
+ "questId": 0,
+ "questName": "",
+ "steps": [
+  {
+   "type": "goto",
+   "map": "Ithan",
+   "x": null,
+   "y": null
+  },
+  {
+   "type": "talk",
+   "npc": "Zakonnik Planu Astralnego",
+   "rules": [
+    {
+     "q": "Jestem przedstawicielem Zakonu Planu Astralnego w Ithan",
+     "a": "uzyskać zezwolenie na teleportację do miasta Ithan"
+    },
+    {
+     "q": "Zezwolenie na teleportację do Ithan kosztuje",
+     "a": "Tak!"
+    },
+    {
+     "q": "",
+     "a": "Zakończ rozmowę"
+    }
+   ]
+  }
+ ]
+}

@@ -7,7 +7,7 @@
   "name": "[216lvl] drowy",
   "lvlMin": 212,
   "lvlMax": 219,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

@@ -7,7 +7,7 @@
   "name": "[248lvl] niecka",
   "lvlMin": 244,
   "lvlMax": 251,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

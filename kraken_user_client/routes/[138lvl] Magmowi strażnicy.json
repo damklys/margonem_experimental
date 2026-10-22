@@ -7,7 +7,7 @@
   "name": "[138lvl] Magmowi strażnicy",
   "lvlMin": 134,
   "lvlMax": 141,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

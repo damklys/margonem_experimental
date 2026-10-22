@@ -7,7 +7,7 @@
   "name": "[258lvl] wiedźmowe potwory",
   "lvlMin": 254,
   "lvlMax": 261,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

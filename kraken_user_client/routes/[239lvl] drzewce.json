@@ -7,7 +7,7 @@
   "name": "[239lvl] drzewce",
   "lvlMin": 235,
   "lvlMax": 242,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

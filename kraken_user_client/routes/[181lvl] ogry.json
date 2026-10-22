@@ -7,7 +7,7 @@
   "name": "[181lvl] ogry",
   "lvlMin": 177,
   "lvlMax": 184,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

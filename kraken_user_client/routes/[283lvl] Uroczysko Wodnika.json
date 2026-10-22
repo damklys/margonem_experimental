@@ -7,7 +7,7 @@
   "name": "[283lvl] Uroczysko Wodnika",
   "lvlMin": 279,
   "lvlMax": 286,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

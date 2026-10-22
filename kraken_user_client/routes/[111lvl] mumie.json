@@ -7,7 +7,7 @@
   "name": "[111lvl] mumie",
   "lvlMin": 108,
   "lvlMax": 114,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

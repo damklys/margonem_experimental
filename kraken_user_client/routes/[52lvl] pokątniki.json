@@ -7,7 +7,7 @@
   "name": "[52lvl] pokątniki",
   "lvlMin": 48,
   "lvlMax": 55,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

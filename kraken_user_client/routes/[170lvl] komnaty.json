@@ -7,7 +7,7 @@
   "name": "[170lvl] komnaty",
   "lvlMin": 166,
   "lvlMax": 173,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

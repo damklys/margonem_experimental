@@ -7,7 +7,7 @@
   "name": "[178lvl] driady",
   "lvlMin": 174,
   "lvlMax": 181,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

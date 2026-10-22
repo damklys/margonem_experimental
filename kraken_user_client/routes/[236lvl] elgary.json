@@ -7,7 +7,7 @@
   "name": "[236lvl] elgary",
   "lvlMin": 232,
   "lvlMax": 239,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

@@ -7,7 +7,7 @@
   "name": "[29lvl] demony",
   "lvlMin": 25,
   "lvlMax": 32,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

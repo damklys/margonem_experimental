@@ -7,7 +7,7 @@
   "name": "[143lvl] górale",
   "lvlMin": 139,
   "lvlMax": 146,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

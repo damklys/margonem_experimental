@@ -7,7 +7,7 @@
   "name": "[91lvl] Drapieżne koty",
   "lvlMin": 87,
   "lvlMax": 94,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

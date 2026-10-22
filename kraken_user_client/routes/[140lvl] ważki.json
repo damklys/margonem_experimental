@@ -7,7 +7,7 @@
   "name": "[140lvl] ważki",
   "lvlMin": 136,
   "lvlMax": 143,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

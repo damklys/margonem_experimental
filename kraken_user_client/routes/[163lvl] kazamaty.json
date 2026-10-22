@@ -7,7 +7,7 @@
   "name": "[163lvl] kazamaty",
   "lvlMin": 159,
   "lvlMax": 166,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

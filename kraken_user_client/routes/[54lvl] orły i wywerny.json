@@ -6,7 +6,7 @@
   "name": "[54lvl] orły i wywerny",
   "lvlMin": 0,
   "lvlMax": 0,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

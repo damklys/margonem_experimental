@@ -7,7 +7,7 @@
   "name": "[20lvl] koty",
   "lvlMin": 16,
   "lvlMax": 23,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

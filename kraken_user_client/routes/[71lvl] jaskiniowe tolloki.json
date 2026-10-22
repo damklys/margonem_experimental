@@ -7,7 +7,7 @@
   "name": "[71lvl] jaskiniowe tolloki",
   "lvlMin": 67,
   "lvlMax": 74,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

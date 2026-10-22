@@ -7,7 +7,7 @@
   "name": "[83lvl] dławiciele",
   "lvlMin": 0,
   "lvlMax": 0,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

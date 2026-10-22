@@ -7,7 +7,7 @@
   "name": "[127lvl] magradit",
   "lvlMin": 123,
   "lvlMax": 130,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

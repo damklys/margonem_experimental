@@ -7,7 +7,7 @@
   "name": "[124lvl] Caneum",
   "lvlMin": 120,
   "lvlMax": 127,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

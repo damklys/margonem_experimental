@@ -7,7 +7,7 @@
   "name": "[223lvl] anuraki",
   "lvlMin": 219,
   "lvlMax": 226,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

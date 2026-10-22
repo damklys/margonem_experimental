@@ -7,7 +7,7 @@
   "name": "[244lvl] bolity",
   "lvlMin": 240,
   "lvlMax": 247,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

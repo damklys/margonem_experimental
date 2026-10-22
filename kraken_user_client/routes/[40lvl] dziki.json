@@ -7,7 +7,7 @@
   "name": "[40lvl] dziki",
   "lvlMin": 36,
   "lvlMax": 43,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {

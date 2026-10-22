@@ -7,7 +7,7 @@
   "name": "[96lvl] błotniste gady i ogniki",
   "lvlMin": 93,
   "lvlMax": 99,
-  "maxGroup": 0,
+  "maxGroup": 4,
   "elites": true,
   "maps": [
    {
