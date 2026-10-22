@@ -1,0 +1,43 @@
+{
+ "kraken": "przebieg",
+ "version": "5.6.202610220900",
+ "name": "[244-271] [EXP + ZR][A]",
+ "tiles": [
+  {
+   "type": "program",
+   "program": "[244-258] [EXP + ZR][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 244
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 265
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[258-271] [EXP + ZR][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 258
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 283
+    }
+   ]
+  }
+ ]
+}

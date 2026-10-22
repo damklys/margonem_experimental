@@ -1,0 +1,199 @@
+{
+ "kraken": "przebieg",
+ "version": "5.6.202610220900",
+ "name": "[1-300] Zero to hero [EXP][A]",
+ "tiles": [
+  {
+   "type": "program",
+   "program": "[1-43] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[43-64] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 43
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 73
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[64-83] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 64
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 95
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[83-114] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 83
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 125
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[114-144] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 114
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 155
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[144-167] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 144
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 179
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[167-190] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 167
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 199
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[190-217] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 190
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 227
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[217-244] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 217
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 253
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[244-271] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 244
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 283
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[271-300] [EXP][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 271
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 300
+    }
+   ]
+  }
+ ]
+}

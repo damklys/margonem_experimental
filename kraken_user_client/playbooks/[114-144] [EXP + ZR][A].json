@@ -1,0 +1,61 @@
+{
+ "kraken": "przebieg",
+ "version": "5.6.202610220900",
+ "name": "[114-144] [EXP + ZR][A]",
+ "tiles": [
+  {
+   "type": "program",
+   "program": "[114-120] [EXP + ZR][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 114
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 131
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[120-131] [EXP + ZR][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 120
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 143
+    }
+   ]
+  },
+  {
+   "type": "program",
+   "program": "[131-144] [EXP + ZR][A]",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 131
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 155
+    }
+   ]
+  }
+ ]
+}
