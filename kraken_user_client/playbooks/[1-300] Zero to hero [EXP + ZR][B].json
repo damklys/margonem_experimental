@@ -12,6 +12,12 @@
      "stat": "gold",
      "op": "ge",
      "value": 1000000
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 45
     }
    ]
   },
