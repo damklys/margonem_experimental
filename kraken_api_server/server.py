@@ -12,6 +12,8 @@ API bota / launchera (nagłówek Authorization: Bearer <token użytkownika>, COR
   GET  /api/v1/me          – czy token jest poprawny i ważny: {"ok", "user", "expires"}; 401 {"error"} – zły / wygasły
   POST /api/v1/logs        – {"source", "entries": [{"char", "world", "lines": [...]}]} (opcjonalnie gzip)
   POST /api/v1/heartbeat   – {"char", "world", "version", "running", "map", "lvl", "step", "source"}
+                             → {"ok", "milioner_ts"} (znacznik wspólnych ustawień Milionera; 0 = brak)
+  POST /api/v1/milioner    – {"ok", "data", "ts"} wspólne ustawienia Milionera konta (panel /milioner)
 API launchera (host):
   POST /api/v1/host/heartbeat – {"host_id", "name", "platform", "version", "sessions": [...], "results": [...]}
                                 → {"ok", "commands": [{"id", "action", "session", "session_name"}]}
@@ -51,7 +53,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.8.0"
+VERSION = "5.9.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -915,6 +917,7 @@ header b{font-size:16px}header .sp{flex:1}main{max-width:1100px;margin:0 auto;pa
 .ok{color:var(--ok)}button.sm{padding:3px 9px;font-size:12.5px}button:disabled{opacity:.4;cursor:default}
 .spin{display:inline-block;width:11px;height:11px;border:2px solid var(--dim);border-top-color:var(--acc);border-radius:50%;animation:sp .8s linear infinite;vertical-align:-1px;margin-right:6px}
 @keyframes sp{to{transform:rotate(360deg)}}.busy{color:var(--acc);font-size:12.5px;white-space:nowrap}tr.pending td{background:#151b30}
+.chk{display:inline-flex;gap:5px;align-items:center;margin-right:12px;width:auto}.chk input{width:auto}
 .grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.grid2 label{display:grid;gap:4px;color:var(--dim);font-size:12.5px}
 select{background:var(--bg3);color:var(--fg);border:1px solid #2c3656;border-radius:5px;padding:6px 8px;font:inherit;width:100%}
 .card{background:var(--bg2);border:1px solid #222a44;border-radius:8px;padding:14px 16px;margin-bottom:14px}
@@ -960,9 +963,110 @@ main.wide{max-width:1400px}
 """
 
 
+MIL_JS = r"""
+const $=id=>document.getElementById(id);
+const RAR=[['unique','unikat'],['heroic','heroik'],['legendary','legenda']];
+const DEF={enabled:false,goldKeep:'100k',goldNick:'',uniqueNick:'',heroicNick:'',legendaryNick:'',auction:true,sellUnique:true,sellHeroic:false,sellLegendary:false,undercut:'1k',
+ vec:{unique:{x:1e4,base:1e6},heroic:{x:1e5,base:5e6},legendary:{x:1e7,base:1e9}},floor:{unique:3e5,heroic:5e6,legendary:5e8},fixed:[]};
+const parseGold=v=>{const m=String(v||'').trim().toLowerCase().replace(/\s/g,'').replace(',','.').match(/^(\d+(?:\.\d+)?)(k|m|g|b|kk)?$/);if(!m)return NaN;return Math.round(+m[1]*({k:1e3,kk:1e6,m:1e6,g:1e9,b:1e9}[m[2]]||1))};
+const fmt=n=>{n=+n||0;for(const[d,s]of[[1e9,'g'],[1e6,'m'],[1e3,'k']])if(n>=d&&n%(d/100)===0)return String(n/d).replace('.',',')+s;return String(n)};
+let M=JSON.parse(JSON.stringify(DEF));
+const STR=['goldKeep','goldNick','uniqueNick','heroicNick','legendaryNick','undercut'],BOOL=['enabled','auction','sellUnique','sellHeroic','sellLegendary'];
+function render(){for(const k of STR)$('m_'+k).value=M[k]||'';for(const k of BOOL)$('m_'+k).checked=!!M[k];
+ $('m_vec').innerHTML=RAR.map(([k,l])=>`<tr><td>${l}</td><td><input type=text data-v="vec.${k}.x" value="${fmt(M.vec[k].x)}"></td><td><input type=text data-v="vec.${k}.base" value="${fmt(M.vec[k].base)}"></td><td><input type=text data-v="floor.${k}" value="${fmt(M.floor[k])}"></td></tr>`).join('');
+ $('m_fixed').innerHTML=M.fixed.length?M.fixed.map((f,i)=>`<tr><td></td><td>${fmt(f.price)} zł</td><td><button class=sm data-del=${i}>🗑</button></td></tr>`).join(''):'<tr><td colspan=3 class=hint>brak</td></tr>';
+ [...$('m_fixed').querySelectorAll('tr')].forEach((tr,i)=>{if(M.fixed[i])tr.cells[0].textContent=M.fixed[i].name})}
+function collect(){const d=JSON.parse(JSON.stringify(M));for(const k of STR)d[k]=$('m_'+k).value.trim();for(const k of BOOL)d[k]=$('m_'+k).checked;
+ for(const el of document.querySelectorAll('[data-v]')){const v=parseGold(el.value);if(!Number.isFinite(v))throw new Error(`zła kwota: „${el.value}”`);const p=el.dataset.v.split('.');let o=d;while(p.length>1)o=o[p.shift()];o[p[0]]=v}
+ for(const k of ['goldKeep','undercut'])if(d[k]&&!Number.isFinite(parseGold(d[k])))throw new Error(`zła kwota: „${d[k]}”`);return d}
+$('m_fadd').onclick=()=>{const n=$('m_fname').value.trim(),p=parseGold($('m_fprice').value);if(!n||!(p>0)){$('m_msg').textContent='❌ podaj przedmiot i cenę';return}
+ try{M=collect()}catch(e){}M.fixed=M.fixed.filter(f=>f.name.toLowerCase()!==n.toLowerCase());M.fixed.push({name:n,price:p});$('m_fname').value=$('m_fprice').value='';render()};
+$('m_fixed').onclick=e=>{const b=e.target.closest('[data-del]');if(!b)return;try{M=collect()}catch(_){}M.fixed.splice(+b.dataset.del,1);render()};
+async function post(body){const r=await fetch('/panel/api/milioner',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const j=await r.json();if(!j.ok)throw new Error(j.error||r.status);return j}
+const state=(ts,by)=>{$('m_state').textContent=ts?`Wspólne ustawienia aktywne – zapisane ${new Date(ts*1000).toLocaleString('pl-PL')}${by?` (${by})`:''}.`:'Wspólne ustawienia wyłączone – każda postać używa własnej zakładki Milioner.'};
+$('m_save').onclick=async()=>{try{const d=collect();const j=await post({data:d});M=d;state(j.ts);$('m_msg').textContent='✅ zapisano – boty przejmą w ciągu ~15 s'}catch(e){$('m_msg').textContent='❌ '+e.message}};
+$('m_clear').onclick=async()=>{if(!confirm('Wyłączyć wspólne ustawienia? Boty zostaną przy ostatnio pobranych, dalej każda postać edytuje własne.'))return;try{await post({clear:true});state(0);$('m_msg').textContent='✅ wyłączono'}catch(e){$('m_msg').textContent='❌ '+e.message}};
+(async()=>{try{const j=await (await fetch('/panel/api/milioner')).json();if(j.data)M=Object.assign(JSON.parse(JSON.stringify(DEF)),j.data);state(j.ts,j.by)}catch(e){$('m_msg').textContent='❌ '+e.message}render()})();
+"""
+
+MIL_RAR = ("unique", "heroic", "legendary")
+MIL_STR = ("goldKeep", "goldNick", "uniqueNick", "heroicNick", "legendaryNick", "undercut")
+MIL_BOOL = ("enabled", "auction", "sellUnique", "sellHeroic", "sellLegendary")
+
+
+def validate_milioner(d):
+    """Ustawienia Milionera z panelu → (dane, błąd). Bez „sellNpc” – u kogo sprzedawać zależy od postaci."""
+    if not isinstance(d, dict):
+        return None, "brak danych"
+    num = lambda v: float(v) if isinstance(v, (int, float)) and not isinstance(v, bool) and 0 <= v < 1e13 else None
+    out = {k: bool(d.get(k)) for k in MIL_BOOL}
+    for k in MIL_STR:
+        out[k] = str(d.get(k) or "").strip()[:40]
+    out["vec"], out["floor"] = {}, {}
+    for r in MIL_RAR:
+        v = (d.get("vec") or {}).get(r) or {}
+        x, base, fl = num(v.get("x")), num(v.get("base")), num((d.get("floor") or {}).get(r))
+        if x is None or base is None or fl is None:
+            return None, f"zła liczba w wektorze / regule ({r})"
+        out["vec"][r] = {"x": x, "base": base}
+        out["floor"][r] = fl
+    fixed = []
+    for f in (d.get("fixed") or [])[:200]:
+        name, price = str((f or {}).get("name") or "").strip()[:80], num((f or {}).get("price"))
+        if name and price:
+            fixed.append({"name": name, "price": price})
+    out["fixed"] = fixed
+    return out, None
+
+
+class SharedMilioner:
+    """Wspólne ustawienia Milionera konta (panel WWW → wszystkie boty): <users>/<u>/milioner.json {"data", "ts", "by"}."""
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.cache = {}
+
+    def _path(self, user):
+        return os.path.join(self.root, safe_name(user, "unknown"), "milioner.json")
+
+    def get(self, user):
+        with self.lock:
+            if user not in self.cache:
+                try:
+                    with open(self._path(user), "r", encoding="utf-8") as f:
+                        self.cache[user] = json.load(f)
+                except (OSError, ValueError):
+                    self.cache[user] = None
+            return self.cache[user]
+
+    def ts(self, user):
+        v = self.get(user)
+        return int(v["ts"]) if v else 0
+
+    def set(self, user, data, by):
+        path = self._path(user)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with self.lock:
+            if data is None:
+                try:
+                    os.remove(path)
+                except OSError:
+                    pass
+                self.cache[user] = None
+                return 0
+            v = {"data": data, "ts": int(time.time()), "by": by}
+            tmp = path + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(v, f, ensure_ascii=False)
+            os.replace(tmp, path)
+            self.cache[user] = v
+            return v["ts"]
+
+
 def page(title, body, user=None):
     nav = (f'<header><b>🐙 Kraken</b><span class="sp"></span><span class="hint">{html.escape(user)}</span>'
-           f'<a class="btn" href="/">Panel</a><a class="btn" href="/playbooks">Programy</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
+           f'<a class="btn" href="/">Panel</a><a class="btn" href="/playbooks">Programy</a><a class="btn" href="/milioner">Milioner</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
            if user else "")
     return (f'<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{html.escape(title)} – Kraken</title><style>{CSS}</style></head><body>{nav}{body}</body></html>')
@@ -1381,7 +1485,7 @@ pull();
 
 # ───────────────────────── serwer ─────────────────────────
 
-def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths):
+def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths, milioner):
     sessions = {}                       # sid → {"user", "exp"}
     fails = {}                          # ip → (liczba, od kiedy)
     slock = threading.Lock()
@@ -1549,6 +1653,17 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                                             "sets": sorted({k.split("/", 1)[-1] for k in lst("set")}, key=lambda n: (len(n), n)),
                                             "e2": getattr(repo, "e2_keys", None) or sorted(world.get("e2", {})), "heros": sorted(world.get("heros", {}))})
                 return self._send(404, {"ok": False, "error": "not found"})
+            if p == "/milioner":
+                user = self._require_panel()
+                if not user:
+                    return
+                return self._milioner_page(user)
+            if p == "/panel/api/milioner":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                v = milioner.get(user)
+                return self._send(200, {"ok": True, "data": v["data"] if v else None, "ts": v["ts"] if v else 0, "by": v.get("by") if v else ""})
             if p == "/panel/api/overview":
                 user = self.panel_user()
                 if not user:
@@ -1653,6 +1768,33 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
             p = urlparse(self.path).path
             if p == "/api/v1/data/batch":
                 return self._data_batch()
+            if p == "/api/v1/milioner":
+                user = self.token_user()
+                if not user:
+                    return self._send(401, {"ok": False, "error": "unauthorized"})
+                self._body()
+                v = milioner.get(user)
+                return self._send(200, {"ok": True, "data": v["data"] if v else None, "ts": v["ts"] if v else 0})
+            if p == "/panel/api/milioner":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                if "application/json" not in self.headers.get("Content-Type", ""):
+                    return self._send(400, {"ok": False, "error": "bad request"})
+                try:
+                    body = json.loads((self._body() or b"").decode("utf-8"))
+                except Exception:
+                    return self._send(400, {"ok": False, "error": "zły JSON"})
+                if body.get("clear"):
+                    milioner.set(user, None, user)
+                    log.info("milioner: wspólne ustawienia usunięte (%s)", user)
+                    return self._send(200, {"ok": True, "ts": 0})
+                data, err = validate_milioner(body.get("data"))
+                if err:
+                    return self._send(400, {"ok": False, "error": err})
+                ts = milioner.set(user, data, user)
+                log.info("milioner: wspólne ustawienia zapisane (%s)", user)
+                return self._send(200, {"ok": True, "ts": ts})
             if p in ("/panel/api/pb/save", "/panel/api/pb/revert"):
                 user = self.panel_user()
                 if not user:
@@ -1729,7 +1871,7 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                     opstats.add(user, info["ops"])
                 if isinstance(info.get("deaths"), list) and info["deaths"]:
                     deaths.add(user, info.get("world", ""), info.get("char", ""), info["deaths"][:50])
-                return self._send(200, {"ok": True})
+                return self._send(200, {"ok": True, "milioner_ts": milioner.ts(user)})
             if p in ("/api/v1/host/heartbeat", "/api/v1/host/state"):
                 user = self.token_user()
                 if not user:
@@ -1945,6 +2087,28 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 <div id="tip"></div></main><script>{DASH_JS}</script>""", user)
 
+        def _milioner_page(self, user):
+            self._html(200, "Milioner", f"""<main><div class="card"><h2>Milioner – wspólne ustawienia</h2>
+<p class="hint">Ustawione raz obowiązują we wszystkich sesjach konta: każdy bot pobiera je z serwera (w ciągu ~15 s od zapisu) i nadpisuje nimi
+swoją zakładkę Milioner. Bez wspólnych ustawień każda postać ma własne. „U kogo sprzedawać” zostaje w postaci.</p>
+<div class="hint" id="m_state"></div></div>
+<div class="card"><h2>🏛️ Aukcje</h2>
+<label class="chk"><input type="checkbox" id="m_auction"> Włączone</label>
+<div style="margin:6px 0">Sprzedawaj: <label class="chk"><input type="checkbox" id="m_sellUnique"> unikat</label> <label class="chk"><input type="checkbox" id="m_sellHeroic"> heroik</label> <label class="chk"><input type="checkbox" id="m_sellLegendary"> legenda</label></div>
+<p class="hint">Bez ofert na aukcjach: cena = X × poziom przedmiotu + baza. Z ofertami: najniższa oferta minus „obniż o”, nie mniej niż minimum. Stałe ceny mają pierwszeństwo.</p>
+<table><thead><tr><th>Rzadkość</th><th>X (× lvl)</th><th>Baza</th><th>Minimum</th></tr></thead><tbody id="m_vec"></tbody></table>
+<label style="display:block;margin-top:8px">Obniż o <input type="text" id="m_undercut" placeholder="1k" style="max-width:120px"></label>
+<h3 style="margin-top:12px">Stałe ceny</h3><table><thead><tr><th>Przedmiot</th><th>Cena</th><th></th></tr></thead><tbody id="m_fixed"></tbody></table>
+<div style="display:flex;gap:8px;margin-top:6px"><input type="text" id="m_fname" placeholder="przedmiot"><input type="text" id="m_fprice" placeholder="cena (np. 2,5m)" style="max-width:160px"><button class="sm" id="m_fadd">＋</button></div></div>
+<div class="card"><h2>📮 Transfer</h2>
+<label class="chk"><input type="checkbox" id="m_enabled"> Włączony</label>
+<p class="hint">Przy wizycie w mieście: przedmioty wybranych rzadkości (po sprzedaży łupu) i złoto ponad kwotę (po zakupach) pocztą do podanych postaci. Puste pole = nie wysyłaj.</p>
+<div class="grid2"><label>🪙 Złoto powyżej<input type="text" id="m_goldKeep" placeholder="100k"></label><label>do postaci<input type="text" id="m_goldNick" placeholder="postać"></label>
+<label>Unikaty do<input type="text" id="m_uniqueNick" placeholder="postać"></label><label>Heroiki do<input type="text" id="m_heroicNick" placeholder="postać"></label>
+<label>Legendy do<input type="text" id="m_legendaryNick" placeholder="postać"></label></div></div>
+<div class="card"><button class="pri" id="m_save">💾 Zapisz dla wszystkich sesji</button> <button id="m_clear">Wyłącz wspólne (każda postać własne)</button> <span class="hint" id="m_msg"></span></div>
+</main><script>{MIL_JS}</script>""", user)
+
         def _playbooks_page(self, user):
             self._html(200, "Programy", f"""<main class="wide"><div class="card"><h2>Programy (przebiegi) <button class="pri" id="new" style="float:right">＋ Nowy program</button></h2>
 <p class="hint">Programy „Zero to hero” i pozostałe przebiegi z repo. Zmiany z edytora zapisują się na serwerze jako nadpisanie (pierwszeństwo przed repo,
@@ -2054,9 +2218,10 @@ def main():
     issues = Issues(store.root)
     locks = RouteLocks()
     deaths = Deaths(store.root)
+    milioner = SharedMilioner(store.root)
     threading.Thread(target=history_sampler, args=(users, store, presence, hosts, history, int(cfg["online_seconds"]), 300, opstats),
                      daemon=True, name="history").start()
-    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths))
+    httpd = ThreadingHTTPServer((cfg["host"], int(cfg["port"])), make_handler(cfg, users, store, presence, hosts, repo, history, opstats, issues, locks, deaths, milioner))
     httpd.daemon_threads = True
 
     def stop(*_):
