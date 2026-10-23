@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-ognie-137lvl",
   "name": "[137lvl] ognie",
-  "lvlMin": 137,
+  "lvlMin": 135,
   "lvlMax": 140,
   "maxGroup": 4,
   "elites": true,

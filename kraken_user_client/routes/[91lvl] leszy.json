@@ -5,7 +5,7 @@
  "route": {
   "id": "b-leszy-91-lvl",
   "name": "[91lvl] leszy",
-  "lvlMin": 91,
+  "lvlMin": 89,
   "lvlMax": 94,
   "maxGroup": 4,
   "elites": true,

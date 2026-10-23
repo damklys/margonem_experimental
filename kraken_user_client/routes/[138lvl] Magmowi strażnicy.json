@@ -5,7 +5,7 @@
  "route": {
   "id": "zr-magmowi-straznicy",
   "name": "[138lvl] Magmowi strażnicy",
-  "lvlMin": 138,
+  "lvlMin": 136,
   "lvlMax": 141,
   "maxGroup": 4,
   "elites": true,

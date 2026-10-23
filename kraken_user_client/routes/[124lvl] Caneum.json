@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-caneum-124lvl",
   "name": "[124lvl] Caneum",
-  "lvlMin": 124,
+  "lvlMin": 122,
   "lvlMax": 127,
   "maxGroup": 4,
   "elites": true,

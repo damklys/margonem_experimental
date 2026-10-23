@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-kazamaty-163lvl",
   "name": "[163lvl] kazamaty",
-  "lvlMin": 163,
+  "lvlMin": 161,
   "lvlMax": 166,
   "maxGroup": 4,
   "elites": true,

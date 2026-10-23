@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-bandyci-100lvl",
   "name": "[100lvl] bandyci",
-  "lvlMin": 100,
+  "lvlMin": 98,
   "lvlMax": 103,
   "maxGroup": 4,
   "elites": true,

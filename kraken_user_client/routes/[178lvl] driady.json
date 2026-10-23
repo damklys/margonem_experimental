@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-driady-178lvl",
   "name": "[178lvl] driady",
-  "lvlMin": 178,
+  "lvlMin": 176,
   "lvlMax": 181,
   "maxGroup": 4,
   "elites": true,

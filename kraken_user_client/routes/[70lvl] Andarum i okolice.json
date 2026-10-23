@@ -5,7 +5,7 @@
  "route": {
   "id": "b-andarum-i-okolice-70lvl",
   "name": "[70lvl] Andarum i okolice",
-  "lvlMin": 70,
+  "lvlMin": 68,
   "lvlMax": 73,
   "maxGroup": 4,
   "elites": true,

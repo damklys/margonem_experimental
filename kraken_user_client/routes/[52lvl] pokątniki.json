@@ -5,7 +5,7 @@
  "route": {
   "id": "b-pokatniki-52lvl",
   "name": "[52lvl] pokątniki",
-  "lvlMin": 52,
+  "lvlMin": 50,
   "lvlMax": 55,
   "maxGroup": 4,
   "elites": true,

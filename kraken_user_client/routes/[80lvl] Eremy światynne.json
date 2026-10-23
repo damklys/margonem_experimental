@@ -5,7 +5,7 @@
  "route": {
   "id": "zr-eremy-swiatynne",
   "name": "[80lvl] Eremy światynne",
-  "lvlMin": 80,
+  "lvlMin": 78,
   "lvlMax": 83,
   "maxGroup": 4,
   "elites": true,

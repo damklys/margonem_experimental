@@ -5,7 +5,7 @@
  "route": {
   "id": "b-galarety-51lvl",
   "name": "[51lvl] galarety",
-  "lvlMin": 51,
+  "lvlMin": 49,
   "lvlMax": 54,
   "maxGroup": 4,
   "elites": true,

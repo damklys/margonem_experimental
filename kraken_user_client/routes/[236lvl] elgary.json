@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-elgary-236lvl",
   "name": "[236lvl] elgary",
-  "lvlMin": 236,
+  "lvlMin": 234,
   "lvlMax": 239,
   "maxGroup": 4,
   "elites": true,

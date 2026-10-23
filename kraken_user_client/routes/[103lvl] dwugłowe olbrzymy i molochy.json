@@ -5,7 +5,7 @@
  "route": {
   "id": "b-dwuglowe-olbrzymy-i-molochy-103-lvl",
   "name": "[103lvl] dwugłowe olbrzymy i molochy",
-  "lvlMin": 105,
+  "lvlMin": 103,
   "lvlMax": 108,
   "maxGroup": 4,
   "elites": true,

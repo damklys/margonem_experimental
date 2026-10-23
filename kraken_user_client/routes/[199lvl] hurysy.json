@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-hurysy-199lvl",
   "name": "[199lvl] hurysy",
-  "lvlMin": 199,
+  "lvlMin": 197,
   "lvlMax": 202,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-zagrzybiony-las-232lvl",
   "name": "[232lvl] zagrzybiony las",
-  "lvlMin": 232,
+  "lvlMin": 230,
   "lvlMax": 235,
   "maxGroup": 4,
   "elites": true,

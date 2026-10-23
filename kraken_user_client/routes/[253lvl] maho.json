@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-maho-253lvl",
   "name": "[253lvl] maho",
-  "lvlMin": 253,
+  "lvlMin": 251,
   "lvlMax": 256,
   "maxGroup": 4,
   "elites": true,

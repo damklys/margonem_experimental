@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-gorale-143lvl",
   "name": "[143lvl] górale",
-  "lvlMin": 143,
+  "lvlMin": 141,
   "lvlMax": 146,
   "maxGroup": 4,
   "elites": true,

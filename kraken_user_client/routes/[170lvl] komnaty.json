@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-komnaty-170lvl",
   "name": "[170lvl] komnaty",
-  "lvlMin": 170,
+  "lvlMin": 168,
   "lvlMax": 173,
   "maxGroup": 4,
   "elites": true,

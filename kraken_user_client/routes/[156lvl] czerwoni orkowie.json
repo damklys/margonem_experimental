@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-czerwoni-orkowie-156lvl",
   "name": "[156lvl] czerwoni orkowie",
-  "lvlMin": 156,
+  "lvlMin": 154,
   "lvlMax": 159,
   "maxGroup": 4,
   "elites": true,

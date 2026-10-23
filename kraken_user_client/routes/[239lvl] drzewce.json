@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-drzewce-239lvl",
   "name": "[239lvl] drzewce",
-  "lvlMin": 239,
+  "lvlMin": 237,
   "lvlMax": 242,
   "maxGroup": 4,
   "elites": true,

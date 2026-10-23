@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-wazki-140lvl",
   "name": "[140lvl] ważki",
-  "lvlMin": 140,
+  "lvlMin": 138,
   "lvlMax": 143,
   "maxGroup": 4,
   "elites": true,

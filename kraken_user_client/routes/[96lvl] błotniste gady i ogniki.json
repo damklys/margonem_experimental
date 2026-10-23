@@ -5,7 +5,7 @@
  "route": {
   "id": "b-blotniste-gady-i-ogniki-96-lvl",
   "name": "[96lvl] błotniste gady i ogniki",
-  "lvlMin": 96,
+  "lvlMin": 94,
   "lvlMax": 99,
   "maxGroup": 4,
   "elites": true,

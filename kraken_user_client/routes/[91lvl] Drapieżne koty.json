@@ -5,7 +5,7 @@
  "route": {
   "id": "zr-drapiezne-koty",
   "name": "[91lvl] Drapieżne koty",
-  "lvlMin": 91,
+  "lvlMin": 89,
   "lvlMax": 94,
   "maxGroup": 4,
   "elites": true,

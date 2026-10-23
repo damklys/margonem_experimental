@@ -5,7 +5,7 @@
  "route": {
   "id": "b-demilisze-72lvl",
   "name": "[72lvl] demilisze",
-  "lvlMin": 72,
+  "lvlMin": 70,
   "lvlMax": 75,
   "maxGroup": 4,
   "elites": true,

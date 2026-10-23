@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-heretycy-203lvl",
   "name": "[203lvl] heretycy",
-  "lvlMin": 203,
+  "lvlMin": 201,
   "lvlMax": 206,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-draki-189lvl",
   "name": "[189lvl] draki",
-  "lvlMin": 189,
+  "lvlMin": 187,
   "lvlMax": 192,
   "maxGroup": 4,
   "elites": true,

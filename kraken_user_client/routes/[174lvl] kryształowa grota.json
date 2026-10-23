@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-krysztalowa-grota-174lvl",
   "name": "[174lvl] kryształowa grota",
-  "lvlMin": 174,
+  "lvlMin": 172,
   "lvlMax": 177,
   "maxGroup": 4,
   "elites": true,

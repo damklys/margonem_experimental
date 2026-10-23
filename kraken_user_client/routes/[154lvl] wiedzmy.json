@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-wiedzmy-154lvl",
   "name": "[154lvl] wiedzmy",
-  "lvlMin": 154,
+  "lvlMin": 152,
   "lvlMax": 157,
   "maxGroup": 4,
   "elites": true,

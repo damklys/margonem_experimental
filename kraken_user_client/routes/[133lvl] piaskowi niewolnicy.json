@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-piaskowi-niewolnicy-133lvl",
   "name": "[133lvl] piaskowi niewolnicy",
-  "lvlMin": 133,
+  "lvlMin": 131,
   "lvlMax": 136,
   "maxGroup": 4,
   "elites": true,

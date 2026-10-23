@@ -5,7 +5,7 @@
  "route": {
   "id": "b-erem-80lvl",
   "name": "[80lvl] erem",
-  "lvlMin": 80,
+  "lvlMin": 78,
   "lvlMax": 83,
   "maxGroup": 4,
   "elites": true,

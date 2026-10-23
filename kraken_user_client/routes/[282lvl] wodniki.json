@@ -5,7 +5,7 @@
  "route": {
   "id": "b-wodniki-75-lvl",
   "name": "[282lvl] wodniki",
-  "lvlMin": 282,
+  "lvlMin": 280,
   "lvlMax": 285,
   "maxGroup": 4,
   "elites": true,

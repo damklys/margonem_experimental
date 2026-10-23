@@ -5,7 +5,7 @@
  "route": {
   "id": "b-gnomy-94-lvl",
   "name": "[94lvl] gnomy",
-  "lvlMin": 94,
+  "lvlMin": 92,
   "lvlMax": 97,
   "maxGroup": 4,
   "elites": true,

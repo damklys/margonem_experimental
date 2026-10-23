@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-olbrzymy-67lvl",
   "name": "[67lvl] olbrzymy",
-  "lvlMin": 67,
+  "lvlMin": 65,
   "lvlMax": 70,
   "maxGroup": 4,
   "elites": true,

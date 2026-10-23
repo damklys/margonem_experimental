@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-magradit-127lvl",
   "name": "[127lvl] magradit",
-  "lvlMin": 127,
+  "lvlMin": 125,
   "lvlMax": 130,
   "maxGroup": 4,
   "elites": true,

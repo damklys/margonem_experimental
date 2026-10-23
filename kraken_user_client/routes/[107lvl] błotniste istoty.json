@@ -5,7 +5,7 @@
  "route": {
   "id": "b-blotniste-istoty-107lvl",
   "name": "[107lvl] błotniste istoty",
-  "lvlMin": 107,
+  "lvlMin": 105,
   "lvlMax": 110,
   "maxGroup": 4,
   "elites": true,

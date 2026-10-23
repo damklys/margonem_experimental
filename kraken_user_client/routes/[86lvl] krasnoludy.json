@@ -5,7 +5,7 @@
  "route": {
   "id": "b-krasnoludy-86lvl",
   "name": "[86lvl] krasnoludy",
-  "lvlMin": 86,
+  "lvlMin": 84,
   "lvlMax": 89,
   "maxGroup": 4,
   "elites": true,

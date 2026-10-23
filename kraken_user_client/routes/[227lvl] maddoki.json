@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-maddoki-227lvl",
   "name": "[227lvl] maddoki",
-  "lvlMin": 227,
+  "lvlMin": 225,
   "lvlMax": 230,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "b-niebiescy-zakonnicy-76lvl",
   "name": "[76lvl] niebiescy zakonnicy",
-  "lvlMin": 76,
+  "lvlMin": 74,
   "lvlMax": 79,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "q-b-darhouny-87lvl",
   "name": "[87lvl] darhouny",
-  "lvlMin": 87,
+  "lvlMin": 85,
   "lvlMax": 90,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-duchy-149lvl",
   "name": "[149lvl] duchy",
-  "lvlMin": 149,
+  "lvlMin": 147,
   "lvlMax": 152,
   "maxGroup": 4,
   "elites": true,
