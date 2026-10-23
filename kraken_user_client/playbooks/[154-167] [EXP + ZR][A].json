@@ -162,6 +162,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[156lvl] czerwoni orkowie",
+   "set": "154lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 159
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 168
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Duchy Pradawnych. – etap 1",
    "conds": [
@@ -410,6 +435,31 @@
   {
    "type": "exp",
    "exp": "[170lvl] komnaty",
+   "set": "154lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 168
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 172
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[161lvl] dziki zagajnik",
    "set": "154lvl",
    "conds": [
     {

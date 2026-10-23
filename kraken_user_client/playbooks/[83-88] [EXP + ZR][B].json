@@ -340,6 +340,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[86lvl] krasnoludy",
+   "set": "83lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 89
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 93
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Zapomniany Święty Gaj. – etap 1",
    "conds": [
@@ -414,6 +439,31 @@
   {
    "type": "exp",
    "exp": "[92lvl] wieczornice i południce",
+   "set": "83lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 90
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 94
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[91lvl] Drapieżne koty",
    "set": "83lvl",
    "conds": [
     {

@@ -29,6 +29,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[133lvl] piaskowi niewolnicy",
+   "set": "120lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 134
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 138
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Magmowi strażnicy. – etap 1",
    "conds": [
@@ -103,6 +128,31 @@
   {
    "type": "exp",
    "exp": "[138lvl] Magmowi strażnicy",
+   "set": "131lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 136
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 141
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[136lvl] impy",
    "set": "131lvl",
    "conds": [
     {
@@ -480,6 +530,31 @@
   {
    "type": "exp",
    "exp": "[143lvl] górale",
+   "set": "131lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 141
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 147
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[138lvl] Magmowi strażnicy",
    "set": "131lvl",
    "conds": [
     {

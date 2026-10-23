@@ -29,6 +29,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[94lvl] gnomy",
+   "set": "88lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 96
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 103
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(84lvl) Choukker – Wylęgarnia Choukkerów p.3",
    "e2Pos": 0,
@@ -331,6 +356,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[98lvl] centaury",
+   "set": "93lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 103
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 107
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(88lvl) Nadzorczyni krasnoludów",
    "e2Pos": 0,
@@ -473,6 +523,31 @@
   {
    "type": "exp",
    "exp": "[106lvl] szkielety koty i alghule",
+   "set": "93lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 109
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 113
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[107lvl] błotniste istoty",
    "set": "93lvl",
    "conds": [
     {

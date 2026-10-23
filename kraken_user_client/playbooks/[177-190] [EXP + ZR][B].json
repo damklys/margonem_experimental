@@ -203,6 +203,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[178lvl] driady",
+   "set": "177lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 185
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 190
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Nieumarła szlachta – etap 1",
    "conds": [
@@ -417,6 +442,31 @@
   {
    "type": "exp",
    "exp": "[192lvl] mroczny las",
+   "set": "177lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 190
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 197
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[187lvl] zmutowane rośliny",
    "set": "177lvl",
    "conds": [
     {

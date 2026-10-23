@@ -29,6 +29,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[32lvl] rozbójnicy",
+   "set": "36lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 39
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(27lvl) Kotołak Tropiciel",
    "e2Pos": 0,

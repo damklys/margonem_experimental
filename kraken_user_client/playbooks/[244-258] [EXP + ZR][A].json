@@ -268,6 +268,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[244lvl] bolity",
+   "set": "244lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 251
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 259
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(240lvl) Dendroculus",
    "e2Pos": 0,
@@ -444,6 +469,31 @@
   {
    "type": "exp",
    "exp": "[261lvl] potępione zamczysko",
+   "set": "244lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 259
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 263
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[253lvl] maho",
    "set": "244lvl",
    "conds": [
     {

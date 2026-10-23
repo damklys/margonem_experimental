@@ -63,6 +63,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[92lvl] wieczornice i południce",
+   "set": "88lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 94
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(82lvl) Wielka Stopa",
    "e2Pos": 0,

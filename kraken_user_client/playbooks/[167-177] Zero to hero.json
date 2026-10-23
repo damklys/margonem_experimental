@@ -29,6 +29,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[170lvl] komnaty",
+   "set": "167lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 172
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 176
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Kryształowe korytarze. – etap 1",
    "conds": [
@@ -171,6 +196,31 @@
   {
    "type": "exp",
    "exp": "[178lvl] driady",
+   "set": "167lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 176
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 180
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[174lvl] kryształowa grota",
    "set": "167lvl",
    "conds": [
     {
@@ -374,6 +424,31 @@
   {
    "type": "exp",
    "exp": "[181lvl] ogry",
+   "set": "167lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 179
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 183
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[178lvl] driady",
    "set": "167lvl",
    "conds": [
     {

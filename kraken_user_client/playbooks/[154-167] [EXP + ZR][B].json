@@ -234,6 +234,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[154lvl] wiedzmy",
+   "set": "154lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 176
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(148lvl) Berserker Amuno",
    "e2Pos": 0,

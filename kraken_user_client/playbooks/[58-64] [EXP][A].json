@@ -29,6 +29,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[61lvl] bazyliszki",
+   "set": "53lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 62
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 66
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(51lvl) Agar",
    "e2Pos": 0,
@@ -92,6 +117,31 @@
   {
    "type": "exp",
    "exp": "[67lvl] olbrzymy",
+   "set": "58lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 65
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[64lvl] gnolle",
    "set": "58lvl",
    "conds": [
     {

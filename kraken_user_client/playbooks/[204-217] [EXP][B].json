@@ -97,6 +97,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[208lvl] furbole",
+   "set": "204lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 225
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(204lvl) Sataniel Skrytobójca",
    "e2Pos": 0,

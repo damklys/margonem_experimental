@@ -63,6 +63,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[118lvl] kałamarnice",
+   "set": "114lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 120
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 125
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(108lvl) Miłośnik rycerzy",
    "e2Pos": 0,

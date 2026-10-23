@@ -207,6 +207,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[83lvl] miśki",
+   "set": "70lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 84
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 88
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Istoty cienia – etap 1",
    "conds": [

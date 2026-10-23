@@ -203,6 +203,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[106lvl] gady płazy i błotniaki",
+   "set": "102lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 107
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Północny szlak. – etap 1",
    "conds": [

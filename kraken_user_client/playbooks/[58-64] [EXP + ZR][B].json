@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[58lvl] żądłaki",
+   "set": "58lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 64
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 69
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(51lvl) Agar",
    "e2Pos": 0,

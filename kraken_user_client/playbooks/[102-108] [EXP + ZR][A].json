@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[103lvl] dwugłowe olbrzymy i molochy",
+   "set": "102lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 105
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 109
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(92lvl) Leśne Widmo",
    "e2Pos": 0,
@@ -277,6 +302,31 @@
   {
    "type": "exp",
    "exp": "[111lvl] mumie",
+   "set": "102lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 112
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[106lvl] szkielety koty i alghule",
    "set": "102lvl",
    "conds": [
     {

@@ -90,6 +90,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[96lvl] błotniste gady i ogniki",
+   "set": "88lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 104
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(88lvl) Nadzorczyni krasnoludów",
    "e2Pos": 0,
@@ -160,6 +185,31 @@
   {
    "type": "exp",
    "exp": "[106lvl] gady płazy i błotniaki",
+   "set": "93lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 104
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 108
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[100lvl] bandyci",
    "set": "93lvl",
    "conds": [
     {

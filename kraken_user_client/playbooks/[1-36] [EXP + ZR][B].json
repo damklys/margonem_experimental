@@ -527,6 +527,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[20lvl] koty",
+   "set": "20lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 28
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 33
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Przydrożni rozbójnicy. – etap 1",
    "conds": [
@@ -901,6 +926,31 @@
   {
    "type": "exp",
    "exp": "[34lvl] gobliny",
+   "set": "28lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 34
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 37
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[28lvl] mulusy",
    "set": "28lvl",
    "conds": [
     {

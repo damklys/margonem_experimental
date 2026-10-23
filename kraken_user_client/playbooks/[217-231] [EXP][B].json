@@ -63,6 +63,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[216lvl] drowy",
+   "set": "217lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 225
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 237
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(214lvl) Arachniregina Colosseus",
    "e2Pos": 0,

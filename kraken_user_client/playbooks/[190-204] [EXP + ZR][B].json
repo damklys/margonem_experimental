@@ -234,6 +234,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[192lvl] mroczny las",
+   "set": "190lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 197
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 206
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Heretycy niższego stopnia. – etap 1",
    "conds": [
@@ -520,6 +545,31 @@
   {
    "type": "exp",
    "exp": "[208lvl] furbole",
+   "set": "190lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 206
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 214
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[199lvl] hurysy",
    "set": "190lvl",
    "conds": [
     {

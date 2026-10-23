@@ -97,6 +97,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[163lvl] kazamaty",
+   "set": "167lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 176
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 185
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(165lvl) Duch Władcy Klanów",
    "e2Pos": 0,

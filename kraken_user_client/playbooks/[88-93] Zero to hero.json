@@ -173,6 +173,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[92lvl] wieczornice i południce",
+   "set": "83lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 92
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 96
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Zwodnicze bagna. – etap 1",
    "conds": [
@@ -281,6 +306,31 @@
   {
    "type": "exp",
    "exp": "[96lvl] błotniste gady i ogniki",
+   "set": "88lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 94
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 98
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[94lvl] gnomy",
    "set": "88lvl",
    "conds": [
     {

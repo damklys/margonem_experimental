@@ -126,6 +126,31 @@
      "value": 0
     }
    ]
+  },
+  {
+   "type": "exp",
+   "exp": "[38lvl] żółwie",
+   "set": "40lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 40
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 44
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
   }
  ]
 }

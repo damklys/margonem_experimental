@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[147lvl] berserkerzy",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 147
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 151
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(135lvl) Eol",
    "e2Pos": 0,
@@ -232,6 +257,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[149lvl] duchy",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 149
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 153
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(136lvl) Grubber Ochlaj",
    "e2Pos": 0,
@@ -268,6 +318,31 @@
   {
    "type": "exp",
    "exp": "[152lvl] dusze",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 150
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[151lvl] mechaniczne gobliny",
    "set": "144lvl",
    "conds": [
     {
@@ -365,6 +440,31 @@
   {
    "type": "exp",
    "exp": "[154lvl] wiedzmy",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 152
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 156
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[152lvl] dusze",
    "set": "144lvl",
    "conds": [
     {
@@ -496,6 +596,31 @@
   {
    "type": "exp",
    "exp": "[156lvl] czerwoni orkowie",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 154
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 159
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[154lvl] wiedzmy",
    "set": "144lvl",
    "conds": [
     {

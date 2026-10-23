@@ -173,6 +173,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[91lvl] leszy",
+   "set": "83lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 92
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 96
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Zwodnicze bagna. – etap 1",
    "conds": [

@@ -311,6 +311,31 @@
      "value": 0
     }
    ]
+  },
+  {
+   "type": "exp",
+   "exp": "[109lvl] Północny szlak",
+   "set": "108lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 120
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
   }
  ]
 }

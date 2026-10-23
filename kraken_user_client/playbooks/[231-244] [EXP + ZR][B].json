@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[227lvl] maddoki",
+   "set": "231lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 237
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 246
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Księżycowe anomalie. – etap 1",
    "conds": [
@@ -315,6 +340,31 @@
   {
    "type": "exp",
    "exp": "[248lvl] niecka",
+   "set": "231lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 246
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 256
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[239lvl] drzewce",
    "set": "231lvl",
    "conds": [
     {

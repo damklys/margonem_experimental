@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[203lvl] heretycy",
+   "set": "204lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 210
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 217
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(197lvl) Mysiur Myświórowy Król",
    "e2Pos": 0,
@@ -387,6 +412,31 @@
   {
    "type": "exp",
    "exp": "[219lvl] dridery",
+   "set": "204lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 217
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 221
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[212lvl] pająki",
    "set": "204lvl",
    "conds": [
     {

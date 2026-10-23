@@ -207,6 +207,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[118lvl] kałamarnice",
+   "set": "114lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 119
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 123
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "task",
    "task": "Na ratunek Magradit. – etap 1",
    "conds": [
@@ -383,6 +408,31 @@
   {
    "type": "exp",
    "exp": "[124lvl] Caneum",
+   "set": "114lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 122
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 126
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[121lvl] Ingotia",
    "set": "114lvl",
    "conds": [
     {

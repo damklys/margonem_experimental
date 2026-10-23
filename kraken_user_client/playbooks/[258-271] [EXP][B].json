@@ -63,6 +63,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[258lvl] wiedźmowe potwory",
+   "set": "258lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 266
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(258lvl) Yaotl",
    "e2Pos": 0,

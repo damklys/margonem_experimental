@@ -408,6 +408,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[248lvl] niecka",
+   "set": "244lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 256
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 266
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(245lvl) Tolypeutes",
    "e2Pos": 0,

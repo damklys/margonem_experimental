@@ -101,6 +101,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[272lvl] katakumby",
+   "set": "258lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 276
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(263lvl) Pogardliwa Sybilla",
    "e2Pos": 0,
@@ -225,6 +250,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[278lvl] pustynia",
+   "set": "271lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 284
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(267lvl) Wysłannik Tellarów",
    "e2Pos": 0,
@@ -261,6 +311,31 @@
   {
    "type": "exp",
    "exp": "[283lvl] Uroczysko Wodnika",
+   "set": "271lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 281
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 285
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[282lvl] wodniki",
    "set": "271lvl",
    "conds": [
     {
@@ -392,6 +467,31 @@
   {
    "type": "exp",
    "exp": "[286lvl] mroczne driady",
+   "set": "271lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 284
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 300
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[283lvl] Uroczysko Wodnika",
    "set": "271lvl",
    "conds": [
     {

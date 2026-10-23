@@ -131,6 +131,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[106lvl] gady płazy i błotniaki",
+   "set": "102lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 107
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 116
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(96lvl) Gnom Figlid",
    "e2Pos": 0,

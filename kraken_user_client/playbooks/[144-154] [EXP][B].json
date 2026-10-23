@@ -63,6 +63,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[147lvl] berserkerzy",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 149
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 153
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(136lvl) Grubber Ochlaj",
    "e2Pos": 0,
@@ -99,6 +124,31 @@
   {
    "type": "exp",
    "exp": "[154lvl] wiedzmy",
+   "set": "144lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 152
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 161
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[151lvl] mechaniczne gobliny",
    "set": "144lvl",
    "conds": [
     {

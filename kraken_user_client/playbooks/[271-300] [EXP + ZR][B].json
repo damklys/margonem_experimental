@@ -200,6 +200,31 @@
    ]
   },
   {
+   "type": "exp",
+   "exp": "[268lvl] przestraszeni",
+   "set": "271lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 280
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 284
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
    "type": "e2",
    "e2Config": "(267lvl) Wysłannik Tellarów",
    "e2Pos": 0,
@@ -342,6 +367,31 @@
   {
    "type": "exp",
    "exp": "[286lvl] mroczne driady",
+   "set": "271lvl",
+   "conds": [
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "ge",
+     "value": 284
+    },
+    {
+     "join": "and",
+     "stat": "lvl",
+     "op": "le",
+     "value": 300
+    },
+    {
+     "join": "and",
+     "stat": "ttl",
+     "op": "ne",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "type": "exp",
+   "exp": "[282lvl] wodniki",
    "set": "271lvl",
    "conds": [
     {
