@@ -35,7 +35,9 @@
    "entries": []
   },
   "mastery": {
-   "skills": [],
+   "skills": [
+    209
+   ],
    "repeat": true
   }
  }
