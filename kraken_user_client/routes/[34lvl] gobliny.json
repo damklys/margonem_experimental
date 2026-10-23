@@ -5,7 +5,7 @@
  "route": {
   "id": "b-gobliny-34lvl",
   "name": "[34lvl] gobliny",
-  "lvlMin": 30,
+  "lvlMin": 34,
   "lvlMax": 37,
   "maxGroup": 4,
   "elites": true,

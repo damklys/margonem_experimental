@@ -5,7 +5,7 @@
  "route": {
   "id": "b-zbiry-46lvl",
   "name": "[46lvl] zbiry",
-  "lvlMin": 42,
+  "lvlMin": 46,
   "lvlMax": 49,
   "maxGroup": 4,
   "elites": true,

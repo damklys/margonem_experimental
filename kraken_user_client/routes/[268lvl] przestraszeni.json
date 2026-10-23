@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-przestraszeni-268lvl",
   "name": "[268lvl] przestraszeni",
-  "lvlMin": 264,
+  "lvlMin": 268,
   "lvlMax": 271,
   "maxGroup": 4,
   "elites": true,

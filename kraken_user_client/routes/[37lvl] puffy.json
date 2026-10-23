@@ -5,7 +5,7 @@
  "route": {
   "id": "b-puffy-37lvl",
   "name": "[37lvl] puffy",
-  "lvlMin": 33,
+  "lvlMin": 37,
   "lvlMax": 40,
   "maxGroup": 4,
   "elites": true,

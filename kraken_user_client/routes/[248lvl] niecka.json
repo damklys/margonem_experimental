@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-niecka-248lvl",
   "name": "[248lvl] niecka",
-  "lvlMin": 244,
+  "lvlMin": 248,
   "lvlMax": 251,
   "maxGroup": 4,
   "elites": true,

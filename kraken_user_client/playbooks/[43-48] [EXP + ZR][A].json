@@ -39,13 +39,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 43
+     "value": 44
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 44
+     "value": 47
     },
     {
      "join": "and",
@@ -208,13 +208,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 45
+     "value": 46
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 47
+     "value": 50
     },
     {
      "join": "and",

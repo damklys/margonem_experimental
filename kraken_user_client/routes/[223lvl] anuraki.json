@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-anuraki-223lvl",
   "name": "[223lvl] anuraki",
-  "lvlMin": 219,
+  "lvlMin": 223,
   "lvlMax": 226,
   "maxGroup": 4,
   "elites": true,

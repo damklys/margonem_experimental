@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-mechaniczne-gobliny-151lvl",
   "name": "[151lvl] mechaniczne gobliny",
-  "lvlMin": 147,
+  "lvlMin": 151,
   "lvlMax": 154,
   "maxGroup": 4,
   "elites": true,

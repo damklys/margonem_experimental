@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-katakumby-272lvl",
   "name": "[272lvl] katakumby",
-  "lvlMin": 268,
+  "lvlMin": 272,
   "lvlMax": 275,
   "maxGroup": 4,
   "elites": true,

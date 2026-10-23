@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-dridery-219lvl",
   "name": "[219lvl] dridery",
-  "lvlMin": 215,
+  "lvlMin": 219,
   "lvlMax": 222,
   "maxGroup": 4,
   "elites": true,

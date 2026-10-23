@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-kraby-122lvl",
   "name": "[122lvl] kraby",
-  "lvlMin": 118,
+  "lvlMin": 122,
   "lvlMax": 125,
   "maxGroup": 4,
   "elites": true,

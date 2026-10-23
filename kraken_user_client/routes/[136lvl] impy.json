@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-impy-136lvl",
   "name": "[136lvl] impy",
-  "lvlMin": 132,
+  "lvlMin": 136,
   "lvlMax": 139,
   "maxGroup": 4,
   "elites": true,

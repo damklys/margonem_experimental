@@ -5,7 +5,7 @@
  "route": {
   "id": "b-ghule-40lvl",
   "name": "[40lvl] ghule",
-  "lvlMin": 36,
+  "lvlMin": 40,
   "lvlMax": 43,
   "maxGroup": 4,
   "elites": true,

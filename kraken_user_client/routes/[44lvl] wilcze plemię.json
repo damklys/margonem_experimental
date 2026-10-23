@@ -5,7 +5,7 @@
  "route": {
   "id": "b-wilcze-plemie-44lvl",
   "name": "[44lvl] wilcze plemię",
-  "lvlMin": 40,
+  "lvlMin": 44,
   "lvlMax": 47,
   "maxGroup": 4,
   "elites": true,

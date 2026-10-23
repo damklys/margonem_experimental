@@ -5,7 +5,7 @@
  "route": {
   "id": "b-bazyliszki-61lvl",
   "name": "[61lvl] bazyliszki",
-  "lvlMin": 57,
+  "lvlMin": 61,
   "lvlMax": 64,
   "maxGroup": 4,
   "elites": true,

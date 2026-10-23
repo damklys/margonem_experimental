@@ -5,7 +5,7 @@
  "route": {
   "id": "b-orkowie-47lvl",
   "name": "[47lvl] orkowie",
-  "lvlMin": 43,
+  "lvlMin": 47,
   "lvlMax": 50,
   "maxGroup": 4,
   "elites": true,

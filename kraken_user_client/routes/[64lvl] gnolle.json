@@ -5,7 +5,7 @@
  "route": {
   "id": "b-gnolle-64lvl",
   "name": "[64lvl] gnolle",
-  "lvlMin": 60,
+  "lvlMin": 64,
   "lvlMax": 67,
   "maxGroup": 4,
   "elites": true,

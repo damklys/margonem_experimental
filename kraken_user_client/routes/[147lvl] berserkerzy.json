@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-berserkerzy-147lvl",
   "name": "[147lvl] berserkerzy",
-  "lvlMin": 143,
+  "lvlMin": 147,
   "lvlMax": 150,
   "maxGroup": 4,
   "elites": true,

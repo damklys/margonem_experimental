@@ -5,7 +5,7 @@
  "route": {
   "id": "b-biblioteka-andarum-75lvl",
   "name": "[75lvl] biblioteka Andarum",
-  "lvlMin": 71,
+  "lvlMin": 75,
   "lvlMax": 78,
   "maxGroup": 4,
   "elites": true,

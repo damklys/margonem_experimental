@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-ogry-181lvl",
   "name": "[181lvl] ogry",
-  "lvlMin": 177,
+  "lvlMin": 181,
   "lvlMax": 184,
   "maxGroup": 4,
   "elites": true,

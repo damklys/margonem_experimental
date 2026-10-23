@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-wraki-127lvl",
   "name": "[127lvl] wraki",
-  "lvlMin": 123,
+  "lvlMin": 127,
   "lvlMax": 130,
   "maxGroup": 4,
   "elites": true,

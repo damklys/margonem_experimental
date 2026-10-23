@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-mroczne-driady-286lvl",
   "name": "[286lvl] mroczne driady",
-  "lvlMin": 282,
+  "lvlMin": 286,
   "lvlMax": 289,
   "maxGroup": 4,
   "elites": true,

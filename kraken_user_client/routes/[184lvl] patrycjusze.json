@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-patrycjusze-184lvl",
   "name": "[184lvl] patrycjusze",
-  "lvlMin": 180,
+  "lvlMin": 184,
   "lvlMax": 187,
   "maxGroup": 4,
   "elites": true,

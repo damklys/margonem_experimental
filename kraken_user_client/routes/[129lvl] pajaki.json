@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-pajaki-129lvl",
   "name": "[129lvl] pajaki",
-  "lvlMin": 125,
+  "lvlMin": 129,
   "lvlMax": 132,
   "maxGroup": 4,
   "elites": true,

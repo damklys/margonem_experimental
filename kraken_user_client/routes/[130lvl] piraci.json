@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-piraci-130lvl",
   "name": "[130lvl] piraci",
-  "lvlMin": 126,
+  "lvlMin": 130,
   "lvlMax": 133,
   "maxGroup": 4,
   "elites": true,

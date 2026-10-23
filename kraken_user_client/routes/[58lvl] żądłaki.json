@@ -5,7 +5,7 @@
  "route": {
   "id": "b-zadlaki-58lvl",
   "name": "[58lvl] żądłaki",
-  "lvlMin": 54,
+  "lvlMin": 58,
   "lvlMax": 61,
   "maxGroup": 4,
   "elites": true,

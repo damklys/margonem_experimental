@@ -5,8 +5,8 @@
  "route": {
   "id": "q-mw-wermonty-85lvl",
   "name": "[85lvl] wermonty",
-  "lvlMin": 0,
-  "lvlMax": 0,
+  "lvlMin": 85,
+  "lvlMax": 88,
   "maxGroup": 4,
   "elites": true,
   "maps": [

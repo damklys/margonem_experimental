@@ -5,7 +5,7 @@
  "route": {
   "id": "b-centaury-98-lvl",
   "name": "[98lvl] centaury",
-  "lvlMin": 95,
+  "lvlMin": 98,
   "lvlMax": 101,
   "maxGroup": 4,
   "elites": true,

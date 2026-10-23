@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-bolity-244lvl",
   "name": "[244lvl] bolity",
-  "lvlMin": 240,
+  "lvlMin": 244,
   "lvlMax": 247,
   "maxGroup": 4,
   "elites": true,

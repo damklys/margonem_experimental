@@ -5,7 +5,7 @@
  "route": {
   "id": "b-mrowcza-kolonia-66lvl",
   "name": "[66lvl] mrówcza kolonia",
-  "lvlMin": 62,
+  "lvlMin": 66,
   "lvlMax": 69,
   "maxGroup": 4,
   "elites": true,

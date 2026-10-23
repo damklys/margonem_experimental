@@ -262,13 +262,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 89
+     "value": 96
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 96
+     "value": 99
     },
     {
      "join": "and",

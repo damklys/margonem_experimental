@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-dusze-152lvl",
   "name": "[152lvl] dusze",
-  "lvlMin": 148,
+  "lvlMin": 152,
   "lvlMax": 155,
   "maxGroup": 4,
   "elites": true,

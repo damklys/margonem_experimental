@@ -5,7 +5,7 @@
  "route": {
   "id": "b-mrowki-20lvl",
   "name": "[20lvl] mrówki",
-  "lvlMin": 16,
+  "lvlMin": 20,
   "lvlMax": 23,
   "maxGroup": 4,
   "elites": true,

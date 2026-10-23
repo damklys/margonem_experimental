@@ -5,8 +5,8 @@
  "route": {
   "id": "q-b-niedzwiedzie-23lvl",
   "name": "[23lvl] niedźwiedzie",
-  "lvlMin": 0,
-  "lvlMax": 0,
+  "lvlMin": 23,
+  "lvlMax": 26,
   "maxGroup": 4,
   "elites": true,
   "maps": [

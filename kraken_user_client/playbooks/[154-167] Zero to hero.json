@@ -145,13 +145,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 156
+     "value": 161
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 161
+     "value": 164
     },
     {
      "join": "and",
@@ -242,13 +242,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 158
+     "value": 163
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 163
+     "value": 169
     },
     {
      "join": "and",
@@ -441,13 +441,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 165
+     "value": 170
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 170
+     "value": 173
     },
     {
      "join": "and",

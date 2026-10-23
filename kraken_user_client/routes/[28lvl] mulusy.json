@@ -5,7 +5,7 @@
  "route": {
   "id": "b-mulusy-28lvl",
   "name": "[28lvl] mulusy",
-  "lvlMin": 24,
+  "lvlMin": 28,
   "lvlMax": 31,
   "maxGroup": 4,
   "elites": true,

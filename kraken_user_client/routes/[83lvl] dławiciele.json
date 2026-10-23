@@ -5,8 +5,8 @@
  "route": {
   "id": "b-dlawiciele-83lvl",
   "name": "[83lvl] dławiciele",
-  "lvlMin": 0,
-  "lvlMax": 0,
+  "lvlMin": 83,
+  "lvlMax": 86,
   "maxGroup": 4,
   "elites": true,
   "maps": [

@@ -5,7 +5,7 @@
  "route": {
   "id": "b-wieczornice-i-poludnice-92-lvl",
   "name": "[92lvl] wieczornice i południce",
-  "lvlMin": 89,
+  "lvlMin": 92,
   "lvlMax": 95,
   "maxGroup": 4,
   "elites": true,

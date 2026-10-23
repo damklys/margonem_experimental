@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-ingotia-121lvl",
   "name": "[121lvl] Ingotia",
-  "lvlMin": 117,
+  "lvlMin": 121,
   "lvlMax": 124,
   "maxGroup": 4,
   "elites": true,

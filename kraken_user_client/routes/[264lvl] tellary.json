@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-tellary-264lvl",
   "name": "[264lvl] tellary",
-  "lvlMin": 260,
+  "lvlMin": 264,
   "lvlMax": 267,
   "maxGroup": 4,
   "elites": true,

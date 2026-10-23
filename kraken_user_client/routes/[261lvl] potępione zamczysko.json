@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-potepione-zamczysko-261lvl",
   "name": "[261lvl] potępione zamczysko",
-  "lvlMin": 257,
+  "lvlMin": 261,
   "lvlMax": 264,
   "maxGroup": 4,
   "elites": true,

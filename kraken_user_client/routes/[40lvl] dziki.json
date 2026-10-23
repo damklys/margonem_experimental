@@ -5,7 +5,7 @@
  "route": {
   "id": "b-dziki-40lvl",
   "name": "[40lvl] dziki",
-  "lvlMin": 36,
+  "lvlMin": 40,
   "lvlMax": 43,
   "maxGroup": 4,
   "elites": true,

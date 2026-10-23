@@ -5,7 +5,7 @@
  "route": {
   "id": "b-tolloki-45lvl",
   "name": "[45lvl] tolloki",
-  "lvlMin": 41,
+  "lvlMin": 45,
   "lvlMax": 48,
   "maxGroup": 4,
   "elites": true,

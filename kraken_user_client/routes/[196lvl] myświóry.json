@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-myswiory-196lvl",
   "name": "[196lvl] myświóry",
-  "lvlMin": 192,
+  "lvlMin": 196,
   "lvlMax": 199,
   "maxGroup": 4,
   "elites": true,

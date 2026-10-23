@@ -5,7 +5,7 @@
  "route": {
   "id": "zr-uroczysko-wodnika",
   "name": "[283lvl] Uroczysko Wodnika",
-  "lvlMin": 279,
+  "lvlMin": 283,
   "lvlMax": 286,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-wiedzmowe-potwory-258lvl",
   "name": "[258lvl] wiedźmowe potwory",
-  "lvlMin": 254,
+  "lvlMin": 258,
   "lvlMax": 261,
   "maxGroup": 4,
   "elites": true,

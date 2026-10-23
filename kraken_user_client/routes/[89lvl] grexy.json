@@ -5,7 +5,7 @@
  "route": {
   "id": "b-grexy-89-lvl",
   "name": "[89lvl] grexy",
-  "lvlMin": 85,
+  "lvlMin": 89,
   "lvlMax": 92,
   "maxGroup": 4,
   "elites": true,

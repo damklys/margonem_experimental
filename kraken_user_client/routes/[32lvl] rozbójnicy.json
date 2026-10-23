@@ -5,7 +5,7 @@
  "route": {
   "id": "b-rozbojnicy-32lvl",
   "name": "[32lvl] rozbójnicy",
-  "lvlMin": 28,
+  "lvlMin": 32,
   "lvlMax": 35,
   "maxGroup": 4,
   "elites": true,

@@ -5,8 +5,8 @@
  "route": {
   "id": "b-szkielety-koty-i-alghule-106-lvl",
   "name": "[106lvl] szkielety koty i alghule",
-  "lvlMin": 103,
-  "lvlMax": 109,
+  "lvlMin": 111,
+  "lvlMax": 114,
   "maxGroup": 4,
   "elites": true,
   "maps": [

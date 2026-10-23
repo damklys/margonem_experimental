@@ -5,7 +5,7 @@
  "route": {
   "id": "b-koboldy-54lvl",
   "name": "[54lvl] koboldy",
-  "lvlMin": 50,
+  "lvlMin": 54,
   "lvlMax": 57,
   "maxGroup": 4,
   "elites": true,

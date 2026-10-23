@@ -5,7 +5,7 @@
  "route": {
   "id": "b-jaskiniowe-tolloki-71lvl",
   "name": "[71lvl] jaskiniowe tolloki",
-  "lvlMin": 67,
+  "lvlMin": 71,
   "lvlMax": 74,
   "maxGroup": 4,
   "elites": true,

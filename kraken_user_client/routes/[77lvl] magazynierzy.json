@@ -5,7 +5,7 @@
  "route": {
   "id": "b-magazynierzy-77lvl",
   "name": "[77lvl] magazynierzy",
-  "lvlMin": 73,
+  "lvlMin": 77,
   "lvlMax": 80,
   "maxGroup": 4,
   "elites": true,

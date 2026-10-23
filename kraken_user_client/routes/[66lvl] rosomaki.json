@@ -4,8 +4,8 @@
  "route": {
   "id": "q-r-rosomaki66lv",
   "name": "[66lvl] rosomaki",
-  "lvlMin": 0,
-  "lvlMax": 0,
+  "lvlMin": 66,
+  "lvlMax": 69,
   "maxGroup": 4,
   "elites": true,
   "maps": [

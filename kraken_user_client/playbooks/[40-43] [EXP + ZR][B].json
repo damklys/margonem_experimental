@@ -117,7 +117,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 42
+     "value": 44
     },
     {
      "join": "and",

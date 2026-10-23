@@ -4,8 +4,8 @@
  "route": {
   "id": "q-r-orłyiwywerny",
   "name": "[54lvl] orły i wywerny",
-  "lvlMin": 0,
-  "lvlMax": 0,
+  "lvlMin": 54,
+  "lvlMax": 57,
   "maxGroup": 4,
   "elites": true,
   "maps": [

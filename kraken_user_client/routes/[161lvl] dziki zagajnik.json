@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-dziki-zagajnik-161lvl",
   "name": "[161lvl] dziki zagajnik",
-  "lvlMin": 157,
+  "lvlMin": 161,
   "lvlMax": 164,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-pajaki-212lvl",
   "name": "[212lvl] pająki",
-  "lvlMin": 208,
+  "lvlMin": 212,
   "lvlMax": 215,
   "maxGroup": 4,
   "elites": true,

@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-furbole-208lvl",
   "name": "[208lvl] furbole",
-  "lvlMin": 204,
+  "lvlMin": 208,
   "lvlMax": 211,
   "maxGroup": 4,
   "elites": true,

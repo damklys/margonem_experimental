@@ -5,7 +5,7 @@
  "route": {
   "id": "mw-mroczny-las-192lvl",
   "name": "[192lvl] mroczny las",
-  "lvlMin": 188,
+  "lvlMin": 192,
   "lvlMax": 195,
   "maxGroup": 4,
   "elites": true,

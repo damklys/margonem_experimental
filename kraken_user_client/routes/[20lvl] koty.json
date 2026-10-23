@@ -5,8 +5,8 @@
  "route": {
   "id": "b-koty-20lvl",
   "name": "[20lvl] koty",
-  "lvlMin": 16,
-  "lvlMax": 23,
+  "lvlMin": 21,
+  "lvlMax": 24,
   "maxGroup": 4,
   "elites": true,
   "maps": [
