@@ -11,7 +11,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 248
+     "value": 251
     },
     {
      "join": "and",
@@ -35,7 +35,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 248
+     "value": 251
     },
     {
      "join": "and",
@@ -59,7 +59,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 248
+     "value": 251
     },
     {
      "join": "and",
@@ -178,7 +178,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 244
+     "value": 246
     },
     {
      "join": "and",
@@ -202,7 +202,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 244
+     "value": 246
     },
     {
      "join": "and",
@@ -226,7 +226,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 244
+     "value": 246
     },
     {
      "join": "and",
@@ -318,13 +318,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 252
+     "value": 256
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 260
+     "value": 261
     },
     {
      "join": "and",
@@ -342,13 +342,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 252
+     "value": 256
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 260
+     "value": 261
     },
     {
      "join": "and",
@@ -366,13 +366,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 252
+     "value": 256
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 260
+     "value": 261
     },
     {
      "join": "and",

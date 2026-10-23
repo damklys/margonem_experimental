@@ -11,7 +11,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 273
+     "value": 276
     },
     {
      "join": "and",
@@ -35,7 +35,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 273
+     "value": 276
     },
     {
      "join": "and",
@@ -59,7 +59,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 273
+     "value": 276
     },
     {
      "join": "and",
@@ -135,13 +135,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 276
+     "value": 281
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 284
+     "value": 286
     },
     {
      "join": "and",
@@ -159,13 +159,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 276
+     "value": 281
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 284
+     "value": 286
     },
     {
      "join": "and",
@@ -183,13 +183,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 276
+     "value": 281
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 284
+     "value": 286
     },
     {
      "join": "and",
@@ -266,13 +266,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 280
+     "value": 284
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 288
+     "value": 289
     },
     {
      "join": "and",
@@ -290,13 +290,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 280
+     "value": 284
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 288
+     "value": 289
     },
     {
      "join": "and",
@@ -314,13 +314,13 @@
      "join": "and",
      "stat": "lvl",
      "op": "ge",
-     "value": 280
+     "value": 284
     },
     {
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 288
+     "value": 289
     },
     {
      "join": "and",
