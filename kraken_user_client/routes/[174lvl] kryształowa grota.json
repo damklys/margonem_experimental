@@ -8,7 +8,7 @@
   "lvlMin": 172,
   "lvlMax": 177,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Kryształowa Grota - przepaść",

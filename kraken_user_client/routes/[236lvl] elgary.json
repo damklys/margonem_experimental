@@ -8,7 +8,7 @@
   "lvlMin": 234,
   "lvlMax": 239,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Głusza Srebrnego Rogu",

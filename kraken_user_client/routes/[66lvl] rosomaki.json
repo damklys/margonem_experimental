@@ -7,7 +7,7 @@
   "lvlMin": 64,
   "lvlMax": 69,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Zniszczone Opactwo",

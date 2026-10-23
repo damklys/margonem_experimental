@@ -8,7 +8,7 @@
   "lvlMin": 280,
   "lvlMax": 285,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Moczary Rybiego Oka",

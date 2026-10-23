@@ -8,7 +8,7 @@
   "lvlMin": 128,
   "lvlMax": 133,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Korsarska Nora - sala 1",

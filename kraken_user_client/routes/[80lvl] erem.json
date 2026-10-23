@@ -8,7 +8,7 @@
   "lvlMin": 78,
   "lvlMax": 83,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Erem Czarnego Słońca p.1 - północ",

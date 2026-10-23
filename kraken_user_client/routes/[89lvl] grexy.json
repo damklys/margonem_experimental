@@ -8,7 +8,7 @@
   "lvlMin": 87,
   "lvlMax": 92,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Grota Samotnych Dusz p.1",

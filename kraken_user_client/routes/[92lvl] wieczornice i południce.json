@@ -8,7 +8,7 @@
   "lvlMin": 90,
   "lvlMax": 95,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Trupia Przełęcz",

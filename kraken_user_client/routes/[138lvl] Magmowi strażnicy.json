@@ -8,7 +8,7 @@
   "lvlMin": 136,
   "lvlMax": 141,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Kuźnia Worundriela p.2",

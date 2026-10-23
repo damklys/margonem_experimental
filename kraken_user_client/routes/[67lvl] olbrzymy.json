@@ -8,7 +8,7 @@
   "lvlMin": 65,
   "lvlMax": 70,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Ukryty Kanion",

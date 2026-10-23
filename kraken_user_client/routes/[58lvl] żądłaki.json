@@ -8,7 +8,7 @@
   "lvlMin": 56,
   "lvlMax": 61,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Porzucone Pasieki",

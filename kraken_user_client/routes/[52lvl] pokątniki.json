@@ -8,7 +8,7 @@
   "lvlMin": 50,
   "lvlMax": 55,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Grota Bezszelestnych Kroków - sala 1",

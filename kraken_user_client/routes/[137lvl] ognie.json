@@ -8,7 +8,7 @@
   "lvlMin": 135,
   "lvlMax": 140,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Ścieżki Erebeth p.2 - sala 1",

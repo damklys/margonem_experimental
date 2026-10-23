@@ -8,7 +8,7 @@
   "lvlMin": 221,
   "lvlMax": 226,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Smocze Skalisko",

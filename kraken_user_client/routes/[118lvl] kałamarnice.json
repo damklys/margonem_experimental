@@ -8,7 +8,7 @@
   "lvlMin": 116,
   "lvlMax": 121,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Archipelag Bremus An",

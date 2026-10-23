@@ -8,7 +8,7 @@
   "lvlMin": 262,
   "lvlMax": 267,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Las Monolitów",

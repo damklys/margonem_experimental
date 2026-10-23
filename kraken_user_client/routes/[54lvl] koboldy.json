@@ -8,7 +8,7 @@
   "lvlMin": 52,
   "lvlMax": 57,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Lazurytowa Grota p.1",

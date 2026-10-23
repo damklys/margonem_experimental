@@ -8,7 +8,7 @@
   "lvlMin": 197,
   "lvlMax": 202,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Przedsionek Kultu",

@@ -8,7 +8,7 @@
   "lvlMin": 270,
   "lvlMax": 275,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Pustynne Katakumby - sala 1",

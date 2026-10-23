@@ -8,7 +8,7 @@
   "lvlMin": 246,
   "lvlMax": 251,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Niecka Xiuh Atl",

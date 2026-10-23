@@ -8,7 +8,7 @@
   "lvlMin": 104,
   "lvlMax": 109,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Zabłocona Jama p.1 - sala 1",

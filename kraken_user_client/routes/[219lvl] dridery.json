@@ -8,7 +8,7 @@
   "lvlMin": 217,
   "lvlMax": 222,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Dawny Przełaz",

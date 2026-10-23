@@ -8,7 +8,7 @@
   "lvlMin": 132,
   "lvlMax": 137,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Kopalnia Żółtego Kruszcu p.1 - sala 1",

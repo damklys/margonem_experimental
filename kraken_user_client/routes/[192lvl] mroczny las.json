@@ -8,7 +8,7 @@
   "lvlMin": 190,
   "lvlMax": 195,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Złudny Trakt",

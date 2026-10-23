@@ -8,7 +8,7 @@
   "lvlMin": 168,
   "lvlMax": 173,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Nawiedzone Komnaty - przedsionek",

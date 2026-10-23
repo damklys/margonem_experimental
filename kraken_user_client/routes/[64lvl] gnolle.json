@@ -8,7 +8,7 @@
   "lvlMin": 62,
   "lvlMax": 67,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Radosna Polana",

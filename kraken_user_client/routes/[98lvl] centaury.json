@@ -8,7 +8,7 @@
   "lvlMin": 96,
   "lvlMax": 101,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Błędny Szlak",

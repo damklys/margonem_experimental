@@ -8,7 +8,7 @@
   "lvlMin": 147,
   "lvlMax": 152,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Korytarze Milczących Intryg p.1",

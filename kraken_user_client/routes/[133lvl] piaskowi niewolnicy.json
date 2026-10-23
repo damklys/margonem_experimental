@@ -8,7 +8,7 @@
   "lvlMin": 131,
   "lvlMax": 136,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Dolina Pustynnych Kręgów",

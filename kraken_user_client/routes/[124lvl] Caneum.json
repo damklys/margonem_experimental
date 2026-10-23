@@ -8,7 +8,7 @@
   "lvlMin": 122,
   "lvlMax": 127,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Piaskowa Pułapka p.1 - sala 1",

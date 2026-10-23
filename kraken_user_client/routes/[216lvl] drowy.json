@@ -8,7 +8,7 @@
   "lvlMin": 214,
   "lvlMax": 219,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Zakazana Grota",

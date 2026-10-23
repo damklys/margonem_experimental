@@ -8,7 +8,7 @@
   "lvlMin": 49,
   "lvlMax": 54,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Mokra Grota p.1",

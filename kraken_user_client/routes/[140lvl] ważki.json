@@ -8,7 +8,7 @@
   "lvlMin": 138,
   "lvlMax": 143,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Jezioro Ważek",

@@ -8,7 +8,7 @@
   "lvlMin": 92,
   "lvlMax": 97,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Złowrogie Bagna",

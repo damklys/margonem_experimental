@@ -8,7 +8,7 @@
   "lvlMin": 149,
   "lvlMax": 154,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Lokum Złych Goblinów - wieża",

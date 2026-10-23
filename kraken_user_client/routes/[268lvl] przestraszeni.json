@@ -8,7 +8,7 @@
   "lvlMin": 266,
   "lvlMax": 271,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Szepczące Wyrwy p.1 - sala 1",

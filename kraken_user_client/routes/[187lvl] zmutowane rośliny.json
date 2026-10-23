@@ -8,7 +8,7 @@
   "lvlMin": 185,
   "lvlMax": 190,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Kwieciste Przejście",

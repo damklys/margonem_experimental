@@ -8,7 +8,7 @@
   "lvlMin": 182,
   "lvlMax": 187,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Krypty Bezsennych p.1 s.1",

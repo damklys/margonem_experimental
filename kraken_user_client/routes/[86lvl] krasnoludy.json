@@ -8,7 +8,7 @@
   "lvlMin": 84,
   "lvlMax": 89,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Labirynt Margorii",

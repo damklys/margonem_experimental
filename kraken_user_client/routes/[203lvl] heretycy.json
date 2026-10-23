@@ -8,7 +8,7 @@
   "lvlMin": 201,
   "lvlMax": 206,
   "maxGroup": 4,
-  "elites": true,
+  "elites": false,
   "maps": [
    {
     "location": "Tajemnicza Siedziba",
