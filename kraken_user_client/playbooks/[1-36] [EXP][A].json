@@ -22,7 +22,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 20
+     "value": 19
     },
     {
      "join": "and",

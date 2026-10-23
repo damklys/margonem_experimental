@@ -78,7 +78,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -102,7 +102,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -126,7 +126,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -151,7 +151,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 105
+     "value": 104
     },
     {
      "join": "and",
@@ -175,7 +175,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 103
+     "value": 102
     },
     {
      "join": "and",
@@ -199,7 +199,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 103
+     "value": 102
     },
     {
      "join": "and",
@@ -223,7 +223,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 103
+     "value": 102
     },
     {
      "join": "and",
@@ -247,7 +247,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 110
+     "value": 109
     },
     {
      "join": "and",
@@ -271,7 +271,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 110
+     "value": 109
     },
     {
      "join": "and",
@@ -295,7 +295,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 110
+     "value": 109
     },
     {
      "join": "and",
@@ -387,7 +387,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -411,7 +411,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -435,7 +435,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 108
+     "value": 107
     },
     {
      "join": "and",
@@ -460,7 +460,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 109
+     "value": 108
     },
     {
      "join": "and",

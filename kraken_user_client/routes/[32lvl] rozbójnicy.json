@@ -6,7 +6,7 @@
   "id": "b-rozbojnicy-32lvl",
   "name": "[32lvl] rozbójnicy",
   "lvlMin": 32,
-  "lvlMax": 35,
+  "lvlMax": 34,
   "maxGroup": 4,
   "elites": true,
   "maps": [

@@ -6,7 +6,7 @@
   "id": "zr-polnocny-szlak",
   "name": "[109lvl] Północny szlak",
   "lvlMin": 107,
-  "lvlMax": 112,
+  "lvlMax": 111,
   "maxGroup": 4,
   "elites": false,
   "maps": [

@@ -18,7 +18,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 139
+     "value": 138
     },
     {
      "join": "and",
@@ -43,7 +43,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 142
+     "value": 141
     },
     {
      "join": "and",
@@ -204,7 +204,7 @@
      "join": "and",
      "stat": "lvl",
      "op": "le",
-     "value": 148
+     "value": 147
     },
     {
      "join": "and",
