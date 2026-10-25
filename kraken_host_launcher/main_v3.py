@@ -686,6 +686,25 @@ def create_auto_config(prof: str = ""):
     return name, path, data
 
 
+def preset_prof(preset) -> str:
+    """Profesja z sesji predefiniowanej; „losowa” (puste) – losowana dla każdego nowego configu."""
+    p = (preset or {}).get("prof", "")
+    if p in PROF_LABEL and p:
+        return p
+    import random
+    return random.choice([k for k, _ in PROFESSIONS if k])
+
+
+def preset_settings(preset, config: str, group: str, world: str) -> dict:
+    """Ustawienia SessionTab.apply_settings z sesji predefiniowanej grupy."""
+    p = preset or {}
+    return {"config": config, "server": p.get("server") or (world if world in SERVERS else SERVERS[0]),
+            "browser": p.get("browser") or BROWSERS[0], "template": p.get("template") or "(brak)",
+            "group": group, "group_world": world,
+            "recreate": bool(p.get("recreate")), "restart_on_fail": bool(p.get("restart_on_fail")),
+            "program_override": bool(p.get("program")), "program": p.get("program", "")}
+
+
 def create_manual_config(name: str, login: str, password: str, prof: str = ""):
     """Config istniejącego konta (login i hasło podane). Zwraca (nazwa pliku, ścieżka)."""
     fname = _free_config_name(name or login)
@@ -1404,6 +1423,18 @@ class GroupManager:
             self._groups[(world, name)]["program"] = program or ""
             self._notify()
 
+    def preset_of(self, name: str, world: str = "Gordion"):
+        """Sesja predefiniowana grupy: {prof, program, server, browser, template, recreate, restart_on_fail, start}
+        albo None. Każda nowa sesja grupy (＋ Nowa sesja, harmonogram, panel WWW) i każdy nowy config z ＋ w sesji
+        grupy dostaje te ustawienia."""
+        p = self._groups.get((world, name), {}).get("preset")
+        return dict(p) if isinstance(p, dict) else None
+
+    def set_preset(self, name: str, world: str, preset):
+        if (world, name) in self._groups:
+            self._groups[(world, name)]["preset"] = dict(preset) if preset else None
+            self._notify()
+
     def ram_saver_of(self, name: str, world: str = "Gordion") -> bool:
         """Tryb oszczędny RAM grupy (flagi RAM_SAVER_ARGS przy starcie przeglądarek sesji)."""
         return bool(self._groups.get((world, name), {}).get("ram_saver"))
@@ -1425,7 +1456,8 @@ class GroupManager:
                  "favorite": (w, n) in self._favorites,
                  "layout": d.get("layout") or dict(LAYOUT_DEFAULT),
                  "program": d.get("program", ""),
-                 "ram_saver": bool(d.get("ram_saver"))}
+                 "ram_saver": bool(d.get("ram_saver")),
+                 "preset": d.get("preset") or None}
                 for (w, n), d in self._groups.items()]
 
     # ---- obserwatorzy ----
@@ -2224,6 +2256,9 @@ class GroupPanel(tk.Frame):
                          command=lambda: GroupProgramDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         menu.add_command(label="🪟  Układ okien…",
                          command=lambda: LayoutDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
+        menu.add_command(label=("🧩  Sesja predefiniowana… ✓" if self.gm.preset_of(group_name, self._selected_world)
+                                else "🧩  Sesja predefiniowana…"),
+                         command=lambda: GroupPresetDialog(self.winfo_toplevel(), self.gm, group_name, self._selected_world))
         ram = tk.BooleanVar(value=self.gm.ram_saver_of(group_name, self._selected_world))
         menu.add_checkbutton(label="💾  Oszczędzaj RAM (od następnego STARTU)", variable=ram,
                              command=lambda: self.gm.set_ram_saver(group_name, self._selected_world, ram.get()))
@@ -2313,6 +2348,85 @@ class GroupPanel(tk.Frame):
 # ============================================
 # DIALOG: NOWY CONFIG
 # ============================================
+class GroupPresetDialog(tk.Toplevel):
+    """Sesja predefiniowana grupy: profesja, program, serwer, przeglądarka, template i opcje. Nowe sesje grupy
+    (＋ Nowa sesja, harmonogram, panel WWW) dostają nowy config (konto do założenia przy START) i te ustawienia;
+    ＋ (nowe konto) w sesji grupy – też."""
+    GROUP_PROG = "(program grupy)"
+
+    def __init__(self, parent, gm, group: str, world: str):
+        super().__init__(parent)
+        self.gm, self.group, self.world = gm, group, world
+        self.title(f"Sesja predefiniowana – {group}")
+        self.configure(bg=BG)
+        self.resizable(False, False)
+        self.transient(parent)
+        cur = gm.preset_of(group, world) or {}
+        self.on = tk.BooleanVar(value=bool(gm.preset_of(group, world)))
+        tk.Label(self, text=f"🧩 Sesja predefiniowana grupy „{group}”", font=FONT_BOLD, bg=BG, fg=ACCENT).pack(anchor="w", padx=16, pady=(14, 6))
+        tk.Checkbutton(self, text="Włączona – nowe sesje i nowe configi grupy z tymi ustawieniami", variable=self.on,
+                       bg=BG, fg=FG, selectcolor=BG3, activebackground=BG, activeforeground=FG,
+                       font=FONT_SMALL, highlightthickness=0).pack(anchor="w", padx=16)
+        f = tk.Frame(self, bg=BG)
+        f.pack(fill="x", padx=16, pady=8)
+        def row(r, label, widget):
+            tk.Label(f, text=label, bg=BG, fg=FG_DIM, font=FONT_SMALL).grid(row=r, column=0, sticky="w", pady=3, padx=(0, 10))
+            widget.grid(row=r, column=1, sticky="w", pady=3)
+        profs = [l for _, l in PROFESSIONS]
+        self.prof = tk.StringVar(value=PROF_LABEL.get(cur.get("prof", ""), PROF_LABEL[""]))
+        row(0, "Profesja", ttk.Combobox(f, textvariable=self.prof, values=profs, state="readonly", width=30))
+        progs = _list_programs()
+        self.prog = tk.StringVar(value=cur.get("program") or self.GROUP_PROG)
+        row(1, "Program", ttk.Combobox(f, textvariable=self.prog, state="readonly", width=40,
+                                       values=[self.GROUP_PROG] + progs + ([cur["program"]] if cur.get("program") and cur["program"] not in progs else [])))
+        self.server = tk.StringVar(value=cur.get("server") or (world if world in SERVERS else SERVERS[0]))
+        row(2, "Serwer", ttk.Combobox(f, textvariable=self.server, values=SERVERS, state="readonly", width=14))
+        self.browser = tk.StringVar(value=cur.get("browser") if cur.get("browser") in BROWSERS else BROWSERS[0])
+        bcb = ttk.Combobox(f, textvariable=self.browser, values=BROWSERS, state="readonly", width=14)
+        row(3, "Przeglądarka", bcb)
+        self.template = tk.StringVar(value=cur.get("template") or "(brak)")
+        self.tcb = ttk.Combobox(f, textvariable=self.template, state="readonly", width=30)
+        row(4, "Template", self.tcb)
+        bcb.bind("<<ComboboxSelected>>", lambda _e: self._templates())
+        self._templates()
+        self.recreate = tk.BooleanVar(value=bool(cur.get("recreate")))
+        self.restart = tk.BooleanVar(value=bool(cur.get("restart_on_fail")))
+        self.start = tk.BooleanVar(value=cur.get("start", True) is not False)
+        for r, (txt, var) in enumerate([("Odtwórz profil przy starcie (recreate)", self.recreate),
+                                        ("Restart po błędzie", self.restart),
+                                        ("START od razu po utworzeniu sesji (＋ Nowa sesja)", self.start)], start=5):
+            tk.Checkbutton(f, text=txt, variable=var, bg=BG, fg=FG, selectcolor=BG3, activebackground=BG,
+                           activeforeground=FG, font=FONT_SMALL, highlightthickness=0).grid(row=r, column=0, columnspan=2, sticky="w")
+        tk.Label(self, text="Nowa sesja dostaje nowy config (login, hasło i nick generowane; konto i postać zakłada START).\n"
+                            "Profesja „losowa” jest losowana dla każdego nowego configu.",
+                 bg=BG, fg=FG_DIM, font=FONT_SMALL, justify="left").pack(anchor="w", padx=16, pady=(0, 8))
+        btns = tk.Frame(self, bg=BG)
+        btns.pack(fill="x", padx=16, pady=(0, 14))
+        tk.Button(btns, text="Zapisz", command=self._save, bg=GREEN, fg="#000", relief="flat", font=FONT_BOLD, padx=10).pack(side="right")
+        tk.Button(btns, text="Anuluj", command=self.destroy, bg=BG3, fg=FG, relief="flat", font=FONT_SMALL, padx=10).pack(side="right", padx=6)
+
+    def _templates(self):
+        vals = ["(brak)"] + _list_templates(self.browser.get())
+        self.tcb["values"] = vals
+        if self.template.get() not in vals:
+            self.template.set("(brak)")
+
+    def _save(self):
+        if not self.on.get():
+            self.gm.set_preset(self.group, self.world, None)
+            return self.destroy()
+        prof = next((k for k, l in PROFESSIONS if l == self.prof.get()), "")
+        prog = self.prog.get()
+        self.gm.set_preset(self.group, self.world, {
+            "prof": prof, "program": "" if prog == self.GROUP_PROG else prog,
+            "server": self.server.get(), "browser": self.browser.get(),
+            "template": "" if self.template.get() == "(brak)" else self.template.get(),
+            "recreate": bool(self.recreate.get()), "restart_on_fail": bool(self.restart.get()),
+            "start": bool(self.start.get()),
+        })
+        self.destroy()
+
+
 class GroupProgramDialog(tk.Toplevel):
     """Program grupy: każda sesja grupy (bez własnego programu) ustawia go w bocie przy STARCIE i uruchamia bota."""
     NONE = "(bez zmiany – program wybrany w bocie)"
@@ -3257,10 +3371,16 @@ class SessionTab(tk.Frame):
     def _new_account(self):
         """＋: od razu nowy plik configu z wygenerowanym loginem, hasłem i nickiem ("provisioned": false).
         Konto i postać zakłada START tej sesji (w jej przeglądarce i profilu); plik istnieje od razu i jest na liście."""
-        name, path, data = create_auto_config()
+        g, w = self.gm.group_of(self.session_id), self.gm.world_of_session(self.session_id)
+        preset = self.gm.preset_of(g, w) if g else None
+        name, path, data = create_auto_config(preset_prof(preset) if preset else "")
         nick = data["nick"]
         self.logger.write(f"🆕 Nowe konto (do założenia przy START): {name} – login {data['login'][0]['username']}, nick {nick}")
         self._on_config_file_created(name, path)
+        if preset:
+            self.apply_settings(preset_settings(preset, name, g, w))
+            self._refresh_prof()
+            self.logger.write(f"🧩 Ustawienia z sesji predefiniowanej grupy „{g}” (profesja {PROF_LABEL.get(data.get('prof', ''), '?')})")
 
     def _new_config(self):
         """✎: ręczny config (istniejące konto – login i hasło wpisywane)."""
@@ -3755,7 +3875,7 @@ class BotGUI:
                   bg=RED, fg="#fff", font=FONT_BOLD, relief="flat",
                   cursor="hand2", padx=10, pady=4).pack(side="right", padx=(6, 0))
         self.add_btn = tk.Button(btn_frame, text="＋  Nowa sesja",
-                                  command=self._add_session,
+                                  command=self._add_session_ui,
                                   bg=BG3, fg=ACCENT, font=FONT_BOLD,
                                   relief="flat", cursor="hand2", padx=10, pady=4)
         self.add_btn.pack(side="right", padx=(6, 0))
@@ -3843,6 +3963,34 @@ class BotGUI:
                     if self.gm.world_of_session(s.session_id) == world
                     and self.gm.group_of(s.session_id) == group)
         self.add_btn.configure(state="disabled" if count >= self.MAX_PER_GROUP else "normal")
+
+    def _add_session_ui(self):
+        """＋ Nowa sesja: grupa z sesją predefiniowaną – od razu nowy config i jej ustawienia (opcjonalnie START)."""
+        world = self._selected_world
+        g = self._group_filter or self.gm.first_group(world)
+        preset = self.gm.preset_of(g, world) if g else None
+        if not preset:
+            return self._add_session()
+        tab = self._preset_session(g, world, preset)
+        if tab and preset.get("start", True) is not False:
+            tab.after(800, tab._on_play)
+        return tab
+
+    def _preset_session(self, g: str, w: str, preset: dict, name: str = None):
+        """Nowa sesja grupy z sesji predefiniowanej: nowy config (konto do założenia przy START) + jej ustawienia."""
+        if self._group_count(g, w) >= self.MAX_PER_GROUP:
+            return None
+        cname, path, data = create_auto_config(preset_prof(preset))
+        self._on_config_added(cname, path)
+        tab = self._add_session(group=g, name=name, world=w)
+        if not tab:
+            return None
+        tab.apply_settings(preset_settings(preset, cname, g, w))
+        tab._refresh_prof()
+        tab.logger.write(f"🧩 Sesja z sesji predefiniowanej grupy „{g}” – config {cname} (nick {data['nick']}, "
+                         f"profesja {PROF_LABEL.get(data.get('prof', ''), '?')})")
+        self._save_state()
+        return tab
 
     def _add_session(self, group: str = None, name: str = None, world: str = None):
         world = world or self._selected_world
@@ -4274,6 +4422,13 @@ class BotGUI:
             group, world = p.get("group", ""), p.get("world", "") or self._selected_world
             if group not in self.gm.group_names(world):
                 return HOST.report(c["id"], False, f"brak grupy „{group}” ({world}) w launcherze")
+            preset = self.gm.preset_of(group, world)
+            if preset and not p.get("config"):
+                tab = self._preset_session(group, world, preset, name=(p.get("name") or None))
+                if not tab:
+                    return HOST.report(c["id"], False, f"grupa „{group}” jest pełna")
+                tab.logger.write("🌐 Sesja utworzona z panelu WWW (sesja predefiniowana grupy)")
+                return HOST.report(c["id"], True, f"utworzono „{tab.name}” z sesji predefiniowanej")
             tab = self._add_session(group=group, name=(p.get("name") or None), world=world)
             if not tab:
                 return HOST.report(c["id"], False, f"grupa „{group}” jest pełna")
@@ -4487,6 +4642,18 @@ class BotGUI:
         last = next((s for s in reversed(self._sessions)
                      if self.gm.world_of_session(s.session_id) == w and self.gm.group_of(s.session_id) == g), None)
         base = last.get_settings() if last else {}
+        preset = self.gm.preset_of(g, w)
+        if preset and not any(p.get(k) for k in ("prof", "program", "server", "browser", "template")):
+            tab = self._preset_session(g, w, preset)
+            if not tab:
+                return "nie udało się dodać sesji"
+            if p.get("start", True):
+                tab.after(800, tab._on_play)
+            full = self._group_count(g, w) >= self.MAX_PER_GROUP
+            if full and p.get("disable_when_full", True):
+                e["enabled"] = False
+            return (f"„{tab.name}” z sesji predefiniowanej grupy" + (" – START" if p.get("start", True) else "")
+                    + (" · grupa pełna, wpis wyłączony" if full and p.get("disable_when_full", True) else ""))
         prof = p.get("prof", "")
         if prof == PROF_RANDOM:
             import random
@@ -4597,6 +4764,8 @@ class BotGUI:
                 self.gm._groups[(world, name)]["program"] = g["program"]
             if name and g.get("ram_saver"):
                 self.gm._groups[(world, name)]["ram_saver"] = True
+            if name and isinstance(g.get("preset"), dict):
+                self.gm._groups[(world, name)]["preset"] = g["preset"]
             if g.get("favorite"):
                 self.gm._favorites.add((world, name))
 
