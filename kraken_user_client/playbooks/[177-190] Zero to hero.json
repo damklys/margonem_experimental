@@ -2,6 +2,7 @@
  "kraken": "przebieg",
  "version": "4.5.202610181800",
  "name": "[177-190] Zero to hero",
+ "maxLvl": 190,
  "tiles": [
   {
    "type": "exp",

@@ -702,7 +702,8 @@ def preset_settings(preset, config: str, group: str, world: str) -> dict:
             "browser": p.get("browser") or BROWSERS[0], "template": p.get("template") or "(brak)",
             "group": group, "group_world": world,
             "recreate": bool(p.get("recreate")), "restart_on_fail": bool(p.get("restart_on_fail")),
-            "program_override": bool(p.get("program")), "program": p.get("program", "")}
+            "program_override": bool(p.get("program")), "program": p.get("program", ""),
+            "stop_lvl": int(p.get("stop_lvl") or 0), "lifecycle": bool(p.get("lifecycle"))}
 
 
 def create_manual_config(name: str, login: str, password: str, prof: str = ""):
@@ -747,6 +748,7 @@ class BotRunner:
 
     def run(self):
         self.crashed = False
+        self.level_done = 0
         _THREAD_STREAM.set_logger(self.logger)
         from login import AccountBanned
         try:
@@ -779,6 +781,30 @@ class BotRunner:
                     self.log("🔒 Przeglądarka zamknięta.")
                 except Exception:
                     pass
+
+    def _level_done(self, stop_lvl: int) -> int:
+        """Poziom, na którym sesja kończy pracę: ≥ „Stop lvl” sesji albo bot zatrzymany na max lvl programu; 0 – dalej."""
+        try:
+            r = self.driver.execute_script(
+                "if(!window.Kraken)return null;return {lvl:(Kraken.level?Kraken.level():null),"
+                "max:(Kraken.maxLvlReached?Kraken.maxLvlReached():null),run:(Kraken.isRunning?Kraken.isRunning():false)};")
+        except Exception:
+            return 0
+        if not r:
+            return 0
+        lvl = int(r.get("lvl") or 0)
+        mx = r.get("max")
+        if mx and not r.get("run"):
+            self.log(f"🏁 Bot zakończył program „{mx.get('program', '')}” na poziomie {mx.get('lvl')} (max {mx.get('max')})")
+            return int(mx.get("lvl") or lvl or 1)
+        if stop_lvl and lvl >= stop_lvl:
+            self.log(f"🏁 Poziom {lvl} ≥ Stop lvl {stop_lvl} – zatrzymuję bota i kończę sesję")
+            try:
+                self.driver.execute_script("if(window.Kraken&&Kraken.isRunning&&Kraken.isRunning())Kraken.stop('Osiągnięto Stop lvl z launchera');")
+            except Exception:
+                pass
+            return lvl
+        return 0
 
     def _read_bot_state(self) -> str:
         try:
@@ -1272,7 +1298,15 @@ class BotRunner:
         last_pull = 0.0
         last_state = 0.0
         last_prof = 0.0
+        last_lvl = 0.0
+        stop_lvl = int(cfg.get("stop_lvl") or 0)
         while not self.stop_event.is_set():
+            if time.time() - last_lvl > 10:
+                last_lvl = time.time()
+                done = self._level_done(stop_lvl)
+                if done:
+                    self.level_done = done
+                    raise StopIteration(f"Osiągnięto poziom {done} – sesja zakończona")
             if not self._browser_alive():
                 self.log("🔒 Przeglądarka została zamknięta.")
                 self.driver = None
@@ -2389,12 +2423,17 @@ class GroupPresetDialog(tk.Toplevel):
         row(4, "Template", self.tcb)
         bcb.bind("<<ComboboxSelected>>", lambda _e: self._templates())
         self._templates()
+        self.stop_lvl = tk.StringVar(value=str(cur.get("stop_lvl") or ""))
+        row(5, "Zatrzymaj po osiągnięciu poziomu", tk.Entry(f, textvariable=self.stop_lvl, width=6, font=FONT_SMALL,
+                                                            bg=BG3, fg=FG, insertbackground=FG, relief="flat"))
+        self.lifecycle = tk.BooleanVar(value=bool(cur.get("lifecycle")))
         self.recreate = tk.BooleanVar(value=bool(cur.get("recreate")))
         self.restart = tk.BooleanVar(value=bool(cur.get("restart_on_fail")))
         self.start = tk.BooleanVar(value=cur.get("start", True) is not False)
-        for r, (txt, var) in enumerate([("Odtwórz profil przy starcie (recreate)", self.recreate),
+        for r, (txt, var) in enumerate([("♻️ Cykl życia: po osiągnięciu poziomu sesja dostaje nowy config i START", self.lifecycle),
+                                        ("Odtwórz profil przy starcie (recreate)", self.recreate),
                                         ("Restart po błędzie", self.restart),
-                                        ("START od razu po utworzeniu sesji (＋ Nowa sesja)", self.start)], start=5):
+                                        ("START od razu po utworzeniu sesji (＋ Nowa sesja)", self.start)], start=6):
             tk.Checkbutton(f, text=txt, variable=var, bg=BG, fg=FG, selectcolor=BG3, activebackground=BG,
                            activeforeground=FG, font=FONT_SMALL, highlightthickness=0).grid(row=r, column=0, columnspan=2, sticky="w")
         tk.Label(self, text="Nowa sesja dostaje nowy config (login, hasło i nick generowane; konto i postać zakłada START).\n"
@@ -2423,6 +2462,8 @@ class GroupPresetDialog(tk.Toplevel):
             "template": "" if self.template.get() == "(brak)" else self.template.get(),
             "recreate": bool(self.recreate.get()), "restart_on_fail": bool(self.restart.get()),
             "start": bool(self.start.get()),
+            "stop_lvl": int(self.stop_lvl.get()) if self.stop_lvl.get().strip().isdigit() else 0,
+            "lifecycle": bool(self.lifecycle.get()),
         })
         self.destroy()
 
@@ -3243,6 +3284,18 @@ class SessionTab(tk.Frame):
                        activebackground=BG, activeforeground=ACCENT,
                        font=FONT_SMALL).pack(side="left", padx=(10, 0))
 
+        # Zatrzymanie po poziomie (0 = bez) i cykl życia: po osiągnięciu – nowy config w miejsce starego i START.
+        tk.Label(row1b, text="Stop lvl:", font=FONT_SMALL, bg=BG, fg=FG_DIM).pack(side="left", padx=(14, 2))
+        self.stop_lvl_var = tk.StringVar(value="")
+        tk.Entry(row1b, textvariable=self.stop_lvl_var, width=4, font=FONT_SMALL, bg=BG3, fg=FG,
+                 insertbackground=FG, relief="flat").pack(side="left")
+        self.lifecycle_var = tk.BooleanVar(value=False)
+        tk.Checkbutton(row1b, text="♻️ Cykl (nowy config)",
+                       variable=self.lifecycle_var,
+                       bg=BG, fg=FG, selectcolor=BG,
+                       activebackground=BG, activeforeground=ACCENT,
+                       font=FONT_SMALL).pack(side="left", padx=(6, 0))
+
         # ---- rząd 1d: profesja postaci (zapis w configu) ----
         row1d = tk.Frame(self, bg=BG, pady=2)
         row1d.pack(fill="x", padx=14)
@@ -3512,6 +3565,7 @@ class SessionTab(tk.Frame):
                                                     self.gm.world_of_session(self.session_id)),
             # Program bota: własny sesji albo program grupy ('' – bot zostaje przy swoim).
             "program":         self.effective_program(),
+            "stop_lvl":        self.stop_lvl(),
             # Układ okien grupy: miejsce wg kolejności sesji w grupie, ekran i zoom z ustawień grupy.
             "window":          _window_slot(self.gm.layout_of(self.gm.group_of(self.session_id),
                                                               self.gm.world_of_session(self.session_id)),
@@ -3548,7 +3602,8 @@ class SessionTab(tk.Frame):
         finally:
             crashed = getattr(runner, "crashed", False) and not self.stop_event.is_set()
             banned = getattr(runner, "banned", False)
-            self.after(0, lambda c=crashed, b=banned: self._on_finished(c, b))
+            done = getattr(runner, "level_done", 0)
+            self.after(0, lambda c=crashed, b=banned, d=done: self._on_finished(c, b, d))
 
     def _poll_pid(self):
         if not self.is_running:
@@ -3598,7 +3653,30 @@ class SessionTab(tk.Frame):
         else:
             self.logger.write("⚠️  Brak PID — nie można wymusić zatrzymania")
 
-    def _on_finished(self, crashed: bool = False, banned: bool = False):
+    def _lifecycle_next(self, lvl: int):
+        """Cykl życia: stary config zostaje (z oznaczeniem „done_lvl”), sesja dostaje nowy config i START."""
+        old = self._config_path()
+        try:
+            if old and os.path.isfile(old):
+                with open(old, "r", encoding="utf-8") as f:
+                    d = json.load(f)
+                d["done_lvl"] = int(lvl)
+                _write_config(old, d)
+        except Exception as e:
+            self.logger.write(f"⚠️  Zapis „done_lvl” w configu: {e}")
+        g, w = self.gm.group_of(self.session_id), self.gm.world_of_session(self.session_id)
+        preset = self.gm.preset_of(g, w) if g else None
+        prof = preset_prof(preset) if preset else (config_prof(old) if old else "")
+        name, path, data = create_auto_config(prof)
+        self._on_config_file_created(name, path)
+        if self.on_config_added:
+            self.on_config_added(name, path)
+        self._refresh_prof()
+        self.logger.write(f"♻️ Cykl życia: {os.path.basename(old or '?')} zakończony na {lvl} lvl → nowy config {name} "
+                          f"(nick {data['nick']}, profesja {PROF_LABEL.get(data.get('prof', ''), '?')}) – START za 10 s")
+        self._pending_restart = self.after(10000, self._do_restart)
+
+    def _on_finished(self, crashed: bool = False, banned: bool = False, level_done: int = 0):
         self._runner    = None
         self.is_running = False
         self._set_status("OFFLINE")
@@ -3608,6 +3686,13 @@ class SessionTab(tk.Frame):
         if banned:
             if self.on_banned:
                 self.on_banned(self)
+            return
+
+        if level_done:
+            if self.lifecycle_var.get():
+                self._lifecycle_next(level_done)
+            else:
+                self.logger.write(f"🏁 Sesja zakończona na poziomie {level_done}")
             return
 
         if crashed and self.restart_on_fail_var.get():
@@ -3733,6 +3818,13 @@ class SessionTab(tk.Frame):
             self.program_var.set(gp)
             self.program_info.configure(text="z grupy" if gp else "grupa: bez zmiany (program z bota)")
 
+    def stop_lvl(self) -> int:
+        try:
+            v = int(str(self.stop_lvl_var.get()).strip() or 0)
+        except (ValueError, AttributeError):
+            return 0
+        return v if 0 < v <= 1000 else 0
+
     def get_settings(self) -> dict:
         """Zwraca słownik bieżących ustawień sesji (do zapisu stanu)."""
         return {
@@ -3748,6 +3840,8 @@ class SessionTab(tk.Frame):
             "restart_on_fail": self.restart_on_fail_var.get(),
             "program_override": self.prog_override_var.get(),
             "program":         self.program_var.get() if self.prog_override_var.get() else "",
+            "stop_lvl":        self.stop_lvl(),
+            "lifecycle":       bool(self.lifecycle_var.get()),
         }
 
     def apply_settings(self, d: dict):
@@ -3769,6 +3863,10 @@ class SessionTab(tk.Frame):
         if d.get("program_override"):
             self.prog_override_var.set(True)
             self.program_var.set(d.get("program", ""))
+        if "stop_lvl" in d:
+            self.stop_lvl_var.set(str(int(d.get("stop_lvl") or 0) or ""))
+        if "lifecycle" in d:
+            self.lifecycle_var.set(bool(d.get("lifecycle")))
         self.after(0, self._refresh_program_row)
         if "name" in d:
             self.name = str(d["name"])[:20]

@@ -53,7 +53,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.9.0"
+VERSION = "5.10.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -591,7 +591,17 @@ def validate_playbook(d):
         tt = {k: v for k, v in t.items() if not str(k).startswith("_") and k != "conds"}
         tt["conds"] = conds
         out.append(tt)
-    return {"kraken": "przebieg", "version": time.strftime("panel.%Y%m%d%H%M"), "name": name, "tiles": out}, ""
+    out_d = {"kraken": "przebieg", "version": time.strftime("panel.%Y%m%d%H%M"), "name": name, "tiles": out}
+    # Maksymalny poziom programu: po jego osiągnięciu bot kończy bieżący krok i zatrzymuje się (0/brak = bez limitu).
+    try:
+        ml = int(float(d.get("maxLvl") or 0))
+    except (TypeError, ValueError):
+        return None, "max lvl musi być liczbą"
+    if not 0 <= ml <= 1000:
+        return None, "max lvl: 0–1000"
+    if ml:
+        out_d["maxLvl"] = ml
+    return out_d, ""
 
 
 def range_hours(q, default=24):
@@ -1347,6 +1357,7 @@ else if(a==='cdel'){T[SEL].conds.splice(+b.dataset.j,1);form();cards();return}ch
 $('e_q').oninput=cards;
 $('e_add').onclick=()=>{CUR.tiles.push({type:'task',task:'',conds:[{join:'and',stat:'lvl',op:'ge',value:1}]});SEL=CUR.tiles.length-1;$('e_q').value='';changed(true);$('e_cards').lastChild?.scrollIntoView({block:'nearest'})};
 $('e_name').oninput=()=>{CUR.name=$('e_name').value;mark()};
+$('e_maxlvl').oninput=()=>{const v=parseInt($('e_maxlvl').value,10);if(v>0)CUR.maxLvl=v;else delete CUR.maxLvl;mark()};
 function head(){$('e_state').innerHTML=!ORIG?'<span class=tag>nowy – zapisz, żeby utworzyć</span>':isOverride?`<span class=tag style="background:#5a4410">✎ nadpisany na serwerze</span>${inRepo?' <span class=hint>· jest też w repo</span>':' <span class=hint>· tylko na serwerze</span>'}`:'<span class=tag>z repo</span>';$('e_revert').disabled=!isOverride;document.title=`${CUR.name} – edytor – Kraken`}
 async function save(){const bad=CUR.tiles.map((t,i)=>[i,problems(t)]).filter(([,p])=>p.some(x=>x.startsWith('brak')));
 if(bad.length){SEL=bad[0][0];changed(true);$('e_msg').textContent=`❌ Krok ${bad[0][0]+1}: ${bad[0][1].join(', ')}`;return}
@@ -1360,7 +1371,7 @@ addEventListener('beforeunload',(e)=>{if(dirty){e.preventDefault();e.returnValue
 (async()=>{try{O=await api('/panel/api/pb/options');S={routes:new Set(O.routes),tasks:new Set(O.tasks),programs:new Set(O.programs),sets:new Set(O.sets),e2:new Set(O.e2)};
 for(const [id,key] of [['dl_routes','routes'],['dl_tasks','tasks'],['dl_programs','programs'],['dl_sets','sets'],['dl_e2','e2'],['dl_heros','heros']])$(id).innerHTML=(O[key]||[]).map(v=>`<option value="${esc(v)}">`).join('');
 if(qs.get('new')){CUR={kraken:'przebieg',name:qs.get('new'),tiles:[]};ORIG=''}else{const d=await api(`/panel/api/pb/get?name=${encodeURIComponent(qs.get('name')||'')}`);CUR=d.data;CUR.tiles=CUR.tiles||[];ORIG=JSON.stringify(CUR);isOverride=d.override;inRepo=d.in_repo}
-origName=CUR.name;$('e_name').value=CUR.name;SEL=CUR.tiles.length?0:-1;head();cards();form()}catch(err){$('e_msg').textContent='❌ '+err.message}})();
+origName=CUR.name;$('e_name').value=CUR.name;$('e_maxlvl').value=CUR.maxLvl||'';SEL=CUR.tiles.length?0:-1;head();cards();form()}catch(err){$('e_msg').textContent='❌ '+err.message}})();
 """
 
 HOST_JS = """
@@ -2119,7 +2130,7 @@ przetrwa jego aktualizację); boty wczytują je w ciągu ~5 min. „↩” usuwa
 
         def _playbook_editor(self, user):
             self._html(200, "Edytor programu", f"""<div class="pbe-bar"><button class="sm" id="e_back">← Programy</button>
-<input type="text" id="e_name" placeholder="nazwa programu"><span id="e_state"></span><b id="e_dirty" style="color:var(--acc)"></b><span class="sp"></span>
+<input type="text" id="e_name" placeholder="nazwa programu"><input type="number" id="e_maxlvl" min="0" max="1000" placeholder="max lvl" title="Maksymalny poziom: po jego osiągnięciu bot kończy bieżący krok i zatrzymuje się (puste = bez limitu)" style="width:90px"><span id="e_state"></span><b id="e_dirty" style="color:var(--acc)"></b><span class="sp"></span>
 <span class="hint" id="e_msg"></span><button class="sm" id="e_dl">⬇ Pobierz</button><button class="sm" id="e_revert">↩ Przywróć z repo</button><button class="pri" id="e_save" disabled title="Ctrl+S">💾 Zapisz</button></div>
 <main class="wide"><div class="pbe"><div class="card pbe-list"><div style="display:flex;gap:8px;align-items:center;margin-bottom:8px"><input type="text" id="e_q" placeholder="Szukaj w krokach (np. Mrowisko, 36lvl, e2)"><button class="sm" id="e_add" style="white-space:nowrap">＋ krok</button></div>
 <div class="hint" id="e_count" style="margin-bottom:6px"></div><div id="e_cards"></div><div class="hint" style="margin-top:8px">Przeciągnij kartę, żeby zmienić kolejność. Bot sprawdza kroki od góry i robi pierwszy, którego warunki są spełnione.</div></div>
