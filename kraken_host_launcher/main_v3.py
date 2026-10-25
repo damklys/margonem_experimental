@@ -686,9 +686,17 @@ def create_auto_config(prof: str = ""):
     return name, path, data
 
 
-def preset_prof(preset) -> str:
-    """Profesja z sesji predefiniowanej; „losowa” (puste) – losowana dla każdego nowego configu."""
-    p = (preset or {}).get("prof", "")
+PRESET_SLOTS = 10
+SLOT_DEFAULT = "(jak profesja grupy)"
+
+
+def preset_prof(preset, slot: int = None) -> str:
+    """Profesja z sesji predefiniowanej: dla miejsca w grupie (slot 0–9, „slot_profs”), a bez niej – ogólna;
+    „losowa” – losowana dla każdego nowego configu."""
+    slots = (preset or {}).get("slot_profs") or []
+    p = slots[slot] if slot is not None and 0 <= slot < len(slots) and slots[slot] else (preset or {}).get("prof", "")
+    if p == PROF_RANDOM:
+        p = ""
     if p in PROF_LABEL and p:
         return p
     import random
@@ -2423,6 +2431,19 @@ class GroupPresetDialog(tk.Toplevel):
         row(4, "Template", self.tcb)
         bcb.bind("<<ComboboxSelected>>", lambda _e: self._templates())
         self._templates()
+        # Profesja per miejsce w grupie (sesja 1–10); „jak profesja grupy” – pole Profesja wyżej.
+        sf = tk.Frame(f, bg=BG)
+        slot_vals = [SLOT_DEFAULT] + [l for k, l in PROFESSIONS if k] + [PROF_LABEL[""]]
+        cur_slots = list(cur.get("slot_profs") or [])
+        self.slots = []
+        for i in range(PRESET_SLOTS):
+            code = cur_slots[i] if i < len(cur_slots) else ""
+            v = tk.StringVar(value=SLOT_DEFAULT if not code else (PROF_LABEL[""] if code == PROF_RANDOM else PROF_LABEL.get(code, SLOT_DEFAULT)))
+            tk.Label(sf, text=f"sesja {i + 1}", bg=BG, fg=FG_DIM, font=FONT_SMALL).grid(row=i % 5, column=(i // 5) * 2, sticky="w", padx=(0, 4), pady=1)
+            ttk.Combobox(sf, textvariable=v, values=slot_vals, state="readonly", width=18).grid(row=i % 5, column=(i // 5) * 2 + 1, sticky="w", padx=(0, 12), pady=1)
+            self.slots.append(v)
+        tk.Label(f, text="Profesja per sesja", bg=BG, fg=FG_DIM, font=FONT_SMALL).grid(row=10, column=0, sticky="nw", pady=3, padx=(0, 10))
+        sf.grid(row=10, column=1, sticky="w", pady=3)
         self.stop_lvl = tk.StringVar(value=str(cur.get("stop_lvl") or ""))
         row(5, "Zatrzymaj po osiągnięciu poziomu", tk.Entry(f, textvariable=self.stop_lvl, width=6, font=FONT_SMALL,
                                                             bg=BG3, fg=FG, insertbackground=FG, relief="flat"))
@@ -2456,12 +2477,18 @@ class GroupPresetDialog(tk.Toplevel):
             return self.destroy()
         prof = next((k for k, l in PROFESSIONS if l == self.prof.get()), "")
         prog = self.prog.get()
+        slot_profs = []
+        for v in self.slots:
+            x = v.get()
+            slot_profs.append("" if x == SLOT_DEFAULT else PROF_RANDOM if x == PROF_LABEL[""] else
+                              next((k for k, l in PROFESSIONS if l == x and k), ""))
         self.gm.set_preset(self.group, self.world, {
             "prof": prof, "program": "" if prog == self.GROUP_PROG else prog,
             "server": self.server.get(), "browser": self.browser.get(),
             "template": "" if self.template.get() == "(brak)" else self.template.get(),
             "recreate": bool(self.recreate.get()), "restart_on_fail": bool(self.restart.get()),
             "start": bool(self.start.get()),
+            "slot_profs": slot_profs,
             "stop_lvl": int(self.stop_lvl.get()) if self.stop_lvl.get().strip().isdigit() else 0,
             "lifecycle": bool(self.lifecycle.get()),
         })
@@ -3426,7 +3453,7 @@ class SessionTab(tk.Frame):
         Konto i postać zakłada START tej sesji (w jej przeglądarce i profilu); plik istnieje od razu i jest na liście."""
         g, w = self.gm.group_of(self.session_id), self.gm.world_of_session(self.session_id)
         preset = self.gm.preset_of(g, w) if g else None
-        name, path, data = create_auto_config(preset_prof(preset) if preset else "")
+        name, path, data = create_auto_config(preset_prof(preset, self.gm.slot_of(self.session_id)) if preset else "")
         nick = data["nick"]
         self.logger.write(f"🆕 Nowe konto (do założenia przy START): {name} – login {data['login'][0]['username']}, nick {nick}")
         self._on_config_file_created(name, path)
@@ -3666,7 +3693,7 @@ class SessionTab(tk.Frame):
             self.logger.write(f"⚠️  Zapis „done_lvl” w configu: {e}")
         g, w = self.gm.group_of(self.session_id), self.gm.world_of_session(self.session_id)
         preset = self.gm.preset_of(g, w) if g else None
-        prof = preset_prof(preset) if preset else (config_prof(old) if old else "")
+        prof = preset_prof(preset, self.gm.slot_of(self.session_id)) if preset else (config_prof(old) if old else "")
         name, path, data = create_auto_config(prof)
         self._on_config_file_created(name, path)
         if self.on_config_added:
@@ -4078,7 +4105,8 @@ class BotGUI:
         """Nowa sesja grupy z sesji predefiniowanej: nowy config (konto do założenia przy START) + jej ustawienia."""
         if self._group_count(g, w) >= self.MAX_PER_GROUP:
             return None
-        cname, path, data = create_auto_config(preset_prof(preset))
+        # Miejsce nowej sesji w grupie = liczba sesji przed nią (dopisywana na koniec).
+        cname, path, data = create_auto_config(preset_prof(preset, self._group_count(g, w)))
         self._on_config_added(cname, path)
         tab = self._add_session(group=g, name=name, world=w)
         if not tab:
