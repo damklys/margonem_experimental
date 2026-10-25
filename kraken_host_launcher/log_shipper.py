@@ -178,7 +178,7 @@ def check(url: str, token: str) -> str:
 
 SHIPPER = LogShipper()
 
-LAUNCHER_VERSION = "5.4"
+LAUNCHER_VERSION = "5.5"
 PLATFORM = {"Darwin": "macOS", "Windows": "Windows", "Linux": "Linux"}.get(platform.system(), platform.system())
 
 

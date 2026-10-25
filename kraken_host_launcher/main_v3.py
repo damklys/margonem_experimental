@@ -3011,6 +3011,9 @@ class NewConfigDialog(tk.Toplevel):
         self.destroy()
 
 class SessionTab(tk.Frame):
+    # „Pokaż zablokowane” – wspólne dla wszystkich sesji (zapis w sessions_state.json).
+    SHOW_BANNED = True
+    on_show_banned = None
     """Sesja: konto (config), serwer, przeglądarka i szablon profilu. START – przeglądarka z profilem grupy,
     logowanie i jednorazowa captcha; dalej gra bot Kraken (Tampermonkey). STOP – zamknięcie przeglądarki."""
 
@@ -3072,7 +3075,13 @@ class SessionTab(tk.Frame):
                   font=(UI_FONT, 10), padx=3).pack(side="left", padx=(0, 4))
         tk.Button(row1, text="⟳", command=self._refresh_config_now,
                   bg=BG3, fg=ACCENT, relief="flat", cursor="hand2",
-                  font=(UI_FONT, 11, "bold"), padx=4).pack(side="left", padx=(0, 10))
+                  font=(UI_FONT, 11, "bold"), padx=4).pack(side="left", padx=(0, 6))
+        self.show_banned_var = tk.BooleanVar(value=SessionTab.SHOW_BANNED)
+        tk.Checkbutton(row1, text="pokaż zablokowane", variable=self.show_banned_var,
+                       command=self._toggle_show_banned, font=FONT_SMALL,
+                       bg=BG, fg=FG_DIM, selectcolor=BG3, activebackground=BG,
+                       activeforeground=FG, highlightthickness=0, bd=0,
+                       cursor="hand2").pack(side="left", padx=(0, 10))
 
         tk.Label(row1, text="Serwer:", font=FONT_SMALL,
                  bg=BG, fg=FG_DIM).pack(side="left", padx=(0, 4))
@@ -3289,10 +3298,22 @@ class SessionTab(tk.Frame):
         p = self._config_path()
         return bool(p) and config_banned(p)
 
+    def _toggle_show_banned(self):
+        SessionTab.SHOW_BANNED = bool(self.show_banned_var.get())
+        if SessionTab.on_show_banned:
+            SessionTab.on_show_banned()
+        else:
+            self._refresh_config_cb()
+
     def _refresh_config_cb(self):
-        """Odśwież wartości comboboxa configów (zablokowane konta z dopiskiem „(zablokowane)”)."""
+        """Odśwież wartości comboboxa configów (zablokowane konta z dopiskiem „(zablokowane)”;
+        przy odznaczonym „pokaż zablokowane” ukryte – poza configiem wybranym w tej sesji)."""
         cur = self.config_key()
-        self.cfg_cb["values"] = [self._config_label(k) for k in self._config_map]
+        if hasattr(self, "show_banned_var") and self.show_banned_var.get() != SessionTab.SHOW_BANNED:
+            self.show_banned_var.set(SessionTab.SHOW_BANNED)
+        keys = [k for k in self._config_map
+                if SessionTab.SHOW_BANNED or k == cur or not config_banned(self._config_map[k])]
+        self.cfg_cb["values"] = [self._config_label(k) for k in keys]
         if cur in self._config_map:
             self.set_config(cur)
         elif self._config_map:
@@ -3663,6 +3684,7 @@ class BotGUI:
 
         self._config_map:    dict = {}
         self._sessions:   list = []
+        SessionTab.on_show_banned = self._on_show_banned
         self._session_counter = 0
         self._selected_world: str = WORLDS[0]
 
@@ -4108,6 +4130,12 @@ class BotGUI:
             text=f"  Sesje: {total}   ▶ Aktywne: {running}   ○ Offline: {total-running}"
                  f"   |   Grupy: {groups}{auth_txt}")
 
+    def _on_show_banned(self):
+        """„Pokaż zablokowane” zmienione w jednej sesji – odśwież listy configów wszystkich sesji i zapisz."""
+        for s in self._sessions:
+            s._refresh_config_cb()
+        self._save_state()
+
     def _on_config_added(self, filename: str, path: str):
         """Aktualizuj _config_map i odśwież combobox we wszystkich sesjach."""
         self._config_map[filename] = path
@@ -4375,7 +4403,7 @@ class BotGUI:
 
     def _state(self) -> dict:
         return {"groups": self.gm.to_dict(), "sessions": [s.get_settings() for s in self._sessions],
-                "schedules": self._schedules}
+                "schedules": self._schedules, "show_banned": SessionTab.SHOW_BANNED}
 
     # ---- harmonogram ----
     def _schedule_tick(self):
@@ -4554,6 +4582,7 @@ class BotGUI:
 
         import scheduler as S
         self._schedules = [S.normalize(e) for e in (state.get("schedules") or []) if isinstance(e, dict)]
+        SessionTab.SHOW_BANNED = state.get("show_banned", True) is not False
 
         # odtwórz grupy
         for g in state.get("groups", []):
