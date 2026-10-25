@@ -53,7 +53,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.10.1"
+VERSION = "5.11.0"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -402,6 +402,50 @@ class Hosts:
                 r["commands"] = [dict(c, params={k: v for k, v in (c.get("params") or {}).items() if k != "password"})
                                  for c in self.cmds.get((u, hid), [])][-15:]
         return sorted(rows.values(), key=lambda r: (not r.get("online"), (r.get("name") or "").lower()))
+
+
+def build_chars(user, presence, hosts, online_s):
+    """Postacie = configi kont ze wszystkich launcherów (online – z sygnału, offline – z zapisanej kopii, bez haseł)
+    z dołączonym botem (nick configu = postać w grze): poziom, mapa, krok, stan."""
+    now = time.time()
+    bots = {}
+    for (w, c), v in presence.of(user).items():
+        nick = str(v.get("char") or display_name(c)).strip().lower()
+        if nick and (nick not in bots or v["ts"] > bots[nick]["ts"]):
+            bots[nick] = dict(v, world=w)
+    rows = []
+    for h in hosts.of(user, online_s):
+        name = h.get("name") or h["host_id"]
+        infos = (h.get("options") or {}).get("config_profs") if h.get("online") else None
+        if not infos:
+            saved = hosts.load(user, h["host_id"]) or {}
+            used = {str(x.get("config", "")): x for x in (saved.get("state") or {}).get("sessions") or []}
+            infos = []
+            for cname, d in sorted((saved.get("configs") or {}).items()):
+                if not isinstance(d, dict):
+                    continue
+                lg = d.get("login") if isinstance(d.get("login"), list) else []
+                u = used.get(cname) or {}
+                infos.append({"name": cname, "prof": d.get("prof", ""), "nick": d.get("nick", ""),
+                              "login": ((lg[0] if lg else {}) or {}).get("username", ""), "banned": bool(d.get("banned")),
+                              "banned_at": d.get("banned_at", ""), "done_lvl": int(d.get("done_lvl") or 0),
+                              "provisioned": "" if "provisioned" not in d else ("tak" if d.get("provisioned") else "nie"),
+                              "session": u.get("name", ""), "group": u.get("group", ""), "running": False, "mtime": 0})
+        for c in infos:
+            if not isinstance(c, dict):
+                continue
+            nick = str(c.get("nick") or os.path.splitext(str(c.get("name", "")))[0]).strip()
+            b = bots.get(nick.lower()) or {}
+            online = bool(b) and now - b["ts"] < online_s
+            rows.append({"host": name, "host_online": bool(h.get("online")), "config": c.get("name", ""), "nick": nick,
+                         "login": c.get("login", ""), "prof": c.get("prof", "") or b.get("prof", ""),
+                         "banned": c.get("banned") in (True, "True"), "banned_at": c.get("banned_at", ""),
+                         "provisioned": c.get("provisioned", ""), "done_lvl": int(c.get("done_lvl") or 0),
+                         "session": c.get("session", ""), "group": c.get("group", ""), "launcher_run": c.get("running") in (True, "True"),
+                         "mtime": int(c.get("mtime") or 0), "world": b.get("world", ""), "lvl": b.get("lvl"), "map": b.get("map", ""),
+                         "step": b.get("step", ""), "bot_online": online, "bot_running": bool(online and b.get("running")),
+                         "vital": b.get("vital", "") if online else "", "last": int(b["ts"]) if b else 0})
+    return rows
 
 
 PROF_NAMES = {"w": "wojownik", "p": "paladyn", "b": "tancerz ostrzy", "h": "łowca", "t": "tropiciel", "m": "mag"}
@@ -974,6 +1018,34 @@ main.wide{max-width:1400px}
 """
 
 
+CHARS_JS = r"""
+const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PN={w:'wojownik',p:'paladyn',b:'tancerz ostrzy',h:'łowca',t:'tropiciel',m:'mag'};
+let R=[],SK='lvl',SD=-1;
+const status=r=>r.banned?'ban':r.done_lvl>0?'done':r.provisioned==='nie'?'new':'ok';
+const stLabel=r=>({ban:'⛔ zablokowane'+(r.banned_at?' · '+esc(String(r.banned_at).slice(0,10)):''),done:`🏁 ukończony (${r.done_lvl} lvl)`,new:'⏳ do założenia przy START',ok:r.provisioned==='tak'?'✅ założone':'✅ istniejące konto'})[status(r)];
+const botst=r=>r.bot_running?'run':r.bot_online?'on':'off';
+const ago=t=>{if(!t)return'—';const s=Math.max(0,Date.now()/1000-t);return s<90?`${Math.round(s)} s`:s<5400?`${Math.round(s/60)} min`:s<172800?`${Math.round(s/3600)} h`:`${Math.round(s/86400)} d`};
+function val(r,k){return k==='status'?status(r):k==='botst'?botst(r):k==='lvl'?(+r.lvl||0):k==='prof'?(PN[r.prof]||''):String(r[k]??'').toLowerCase()}
+function render(){const q=$('ch_q').value.toLowerCase(),fs=$('ch_st').value,fp=$('ch_prof').value,fb=$('ch_bot').value,fh=$('ch_host').value;
+const cnt={ok:0,new:0,done:0,ban:0,run:0};let rows=R.filter(r=>{cnt[status(r)]++;if(r.bot_running)cnt.run++;
+if(fs&&status(r)!==fs)return false;if(fp&&(fp==='-'?r.prof:(r.prof!==fp)))return false;if(fb&&(fb==='on'?!r.bot_online:botst(r)!==fb))return false;if(fh&&r.host!==fh)return false;
+return !q||[r.nick,r.config,r.login,r.host,r.session,r.group,r.map,r.step].some(v=>String(v||'').toLowerCase().includes(q))});
+rows.sort((a,b)=>{const x=val(a,SK),y=val(b,SK);return (x<y?-1:x>y?1:0)*SD||String(a.nick).localeCompare(String(b.nick),'pl')});
+$('ch_count').textContent=`${rows.length} z ${R.length} · ▶ ${cnt.run} pracuje · ✅ ${cnt.ok} · ⏳ ${cnt.new} · 🏁 ${cnt.done} · ⛔ ${cnt.ban}`;
+$('ch_rows').innerHTML=rows.map(r=>{const st=status(r);const b=botst(r);
+return `<tr class="cst-${st}"><td><b>${esc(r.nick)}</b>${r.world?` <span class=hint>${esc(r.world)}</span>`:''}</td><td>${esc(PN[r.prof]||'🎲 losowa')}</td><td>${r.lvl?`<b>${+r.lvl}</b>`:'<span class=hint>—</span>'}</td><td>${stLabel(r)}</td>
+<td>${b==='run'?'<span class=st-run>▶ pracuje</span>':b==='on'?'<span class=st-idle>⏸ stoi</span>':'<span class=st-off>○ offline</span>'}${r.vital==='dead'?' 💀':r.vital==='unconscious'?' 😵':''}</td>
+<td>${esc(r.map||'')}${r.step?`<div class=hint>${esc(r.step)}</div>`:''}</td><td>${r.session?`${r.launcher_run?'<span class=st-run>●</span> ':''}${esc(r.session)}${r.group?` <span class=hint>(${esc(r.group)})</span>`:''}`:'<span class=hint>—</span>'}</td>
+<td>${r.host_online?'':'<span class=st-off>○</span> '}${esc(r.host)}</td><td class=hint>${esc(String(r.config).replace(/\.json$/,''))}</td><td class=hint>${esc(r.login)}</td><td class=hint>${ago(r.last)}</td></tr>`}).join('')||'<tr><td colspan=11 class=hint>Brak postaci dla wybranych filtrów.</td></tr>';
+for(const th of document.querySelectorAll('#ch_tbl th'))th.textContent=th.textContent.replace(/ [▲▼]$/,'')+(th.dataset.k===SK?(SD>0?' ▲':' ▼'):'')}
+for(const th of document.querySelectorAll('#ch_tbl th')){th.style.cursor='pointer';th.onclick=()=>{if(SK===th.dataset.k)SD=-SD;else{SK=th.dataset.k;SD=SK==='lvl'||SK==='last'?-1:1}render()}}
+for(const id of ['ch_q','ch_st','ch_prof','ch_bot','ch_host'])$(id).addEventListener('input',render);
+async function load(){try{const r=await fetch('/panel/api/chars');if(r.status===401){location='/login';return}const d=await r.json();R=d.rows||[];
+const hs=[...new Set(R.map(x=>x.host))].sort(),cur=$('ch_host').value;$('ch_host').innerHTML='<option value="">Host: wszystkie</option>'+hs.map(h=>`<option${h===cur?' selected':''}>${esc(h)}</option>`).join('');render()}catch(e){$('ch_count').textContent='❌ '+e.message}}
+load();setInterval(load,15000);
+"""
+
 MIL_JS = r"""
 const $=id=>document.getElementById(id);
 const RAR=[['unique','unikat'],['heroic','heroik'],['legendary','legenda']];
@@ -1077,7 +1149,7 @@ class SharedMilioner:
 
 def page(title, body, user=None):
     nav = (f'<header><b>🐙 Kraken</b><span class="sp"></span><span class="hint">{html.escape(user)}</span>'
-           f'<a class="btn" href="/">Panel</a><a class="btn" href="/playbooks">Programy</a><a class="btn" href="/milioner">Milioner</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
+           f'<a class="btn" href="/">Panel</a><a class="btn" href="/postacie">Postacie</a><a class="btn" href="/playbooks">Programy</a><a class="btn" href="/milioner">Milioner</a><a class="btn" href="/password">Hasło</a><a class="btn" href="/logout">Wyloguj</a></header>'
            if user else "")
     return (f'<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{html.escape(title)} – Kraken</title><style>{CSS}</style></head><body>{nav}{body}</body></html>')
@@ -1462,7 +1534,7 @@ if(q&&![c.name,c.nick,c.login,c.session,c.group].some(v=>String(v||'').toLowerCa
 const tr=document.createElement('tr');tr.className='cst-'+st;
 const sess=c.session?`${c.running?'<span class=ok>●</span> ':''}${esc(c.session)}${c.group?` <span class=hint>(${esc(c.group)})</span>`:''}`:'<span class=hint>—</span>';
 const when=+c.mtime?new Date(c.mtime*1000).toLocaleString('pl-PL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'';
-tr.innerHTML=`<td><b>${esc(c.name.replace(/\.json$/,''))}</b></td><td>${esc(c.nick||'')}</td><td class=hint>${esc(c.login||'')}</td><td></td><td>${label}</td><td>${sess}</td><td class=hint>${when}</td>`;
+tr.innerHTML=`<td><b>${esc(c.name.replace(/\\.json$/,''))}</b></td><td>${esc(c.nick||'')}</td><td class=hint>${esc(c.login||'')}</td><td></td><td>${label}</td><td>${sess}</td><td class=hint>${when}</td>`;
 const sel=document.createElement('select');sel.innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),c.prof||'');sel.disabled=!H.online;
 sel.onchange=()=>cmd('set_config_prof','',c.name,{config:c.name,prof:sel.value});tr.children[3].appendChild(sel);tb.appendChild(tr)}
 $('cf_count').textContent=`${shown} z ${all.length} · ✅ ${cnt.ok} · ⏳ ${cnt.new} · 🏁 ${cnt.done} · ⛔ ${cnt.ban}`;
@@ -1689,6 +1761,16 @@ def make_handler(cfg, users, store, presence, hosts, repo, history, opstats, iss
                     return self._send(401, {"ok": False})
                 v = milioner.get(user)
                 return self._send(200, {"ok": True, "data": v["data"] if v else None, "ts": v["ts"] if v else 0, "by": v.get("by") if v else ""})
+            if p == "/postacie":
+                user = self._require_panel()
+                if not user:
+                    return
+                return self._chars_page(user)
+            if p == "/panel/api/chars":
+                user = self.panel_user()
+                if not user:
+                    return self._send(401, {"ok": False})
+                return self._send(200, {"ok": True, "rows": build_chars(user, presence, hosts, online_s), "now": int(time.time())})
             if p == "/panel/api/overview":
                 user = self.panel_user()
                 if not user:
@@ -2111,6 +2193,19 @@ i w launcherze (pierwszy ekran po uruchomieniu). Bez ważnego tokenu bot i launc
 <div class="hint" id="icount" style="margin:6px 0"></div>
 <div class="tbl-wrap"><table><thead><tr><th>Czas</th><th>Poziom</th><th>Postać</th><th>Krok</th><th>Komunikat</th></tr></thead><tbody id="irows"></tbody></table></div></div>
 <div id="tip"></div></main><script>{DASH_JS}</script>""", user)
+
+        def _chars_page(self, user):
+            self._html(200, "Postacie", f"""<main class="wide"><div class="card"><h2>Postacie <span class="hint" id="ch_count" style="font-size:12.5px;font-weight:400;margin-left:8px"></span></h2>
+<p class="hint">Wszystkie configi kont z launcherów (host offline – z ostatniej zapisanej kopii) z danymi bota: poziom, mapa, krok. Klik w nagłówek – sortowanie.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0"><input type="text" id="ch_q" placeholder="Szukaj: nick, config, login, host, sesja, grupa, mapa" style="max-width:340px">
+<select id="ch_st" style="max-width:240px"><option value="">Stan konta: wszystkie</option><option value="ok">✅ założone / istniejące</option><option value="new">⏳ do założenia przy START</option><option value="done">🏁 ukończone (cykl życia)</option><option value="ban">⛔ zablokowane</option></select>
+<select id="ch_prof" style="max-width:200px"><option value="">Profesja: wszystkie</option><option value="w">wojownik</option><option value="p">paladyn</option><option value="b">tancerz ostrzy</option><option value="t">tropiciel</option><option value="h">łowca</option><option value="m">mag</option><option value="-">brak (losowa)</option></select>
+<select id="ch_bot" style="max-width:200px"><option value="">Bot: wszystkie</option><option value="run">▶ pracuje</option><option value="on">● online</option><option value="off">○ offline</option></select>
+<select id="ch_host" style="max-width:200px"><option value="">Host: wszystkie</option></select></div>
+<div class="tbl-wrap"><table id="ch_tbl"><thead><tr>
+<th data-k="nick">Postać</th><th data-k="prof">Profesja</th><th data-k="lvl">Poziom</th><th data-k="status">Stan konta</th><th data-k="botst">Bot</th>
+<th data-k="map">Mapa / krok</th><th data-k="session">Sesja (grupa)</th><th data-k="host">Host</th><th data-k="config">Config</th><th data-k="login">Login</th><th data-k="last">Ostatnio</th></tr></thead>
+<tbody id="ch_rows"><tr><td colspan=11 class=hint>Wczytuję…</td></tr></tbody></table></div></div></main><script>{CHARS_JS}</script>""", user)
 
         def _milioner_page(self, user):
             self._html(200, "Milioner", f"""<main><div class="card"><h2>Milioner – wspólne ustawienia</h2>
