@@ -641,6 +641,27 @@ def set_config_prof(path: str, prof: str) -> None:
 BANNED_SUFFIX = " (zablokowane)"   # dopisek przy nazwie configu zablokowanego konta (lista configów)
 
 
+def config_info(name: str, path: str, sessions=(), gm=None) -> dict:
+    """Opis configu dla panelu WWW (bez hasła): profesja, nick, login, stan konta, sesja, która go używa."""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        d = {}
+    login = ((d.get("login") or [{}])[0] or {}).get("username", "") if isinstance(d.get("login"), list) else ""
+    used = next((x for x in sessions if x.config_key() == name), None)
+    try:
+        mtime = int(os.path.getmtime(path))
+    except OSError:
+        mtime = 0
+    return {"name": name, "prof": str(d.get("prof", "") or ""), "nick": str(d.get("nick", "") or ""), "login": login,
+            "banned": bool(d.get("banned")), "banned_at": str(d.get("banned_at", "") or ""),
+            "provisioned": "" if "provisioned" not in d else ("tak" if d.get("provisioned") else "nie"),
+            "registered": bool(d.get("registered")), "done_lvl": int(d.get("done_lvl") or 0),
+            "session": used.name if used else "", "running": bool(used and used.is_running),
+            "group": (gm.group_of(used.session_id) if gm and used else "") or "", "mtime": mtime}
+
+
 def config_banned(path: str) -> bool:
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -4528,7 +4549,7 @@ class BotGUI:
                                  "ram_saver": self.gm.ram_saver_of(n, w)},
                                 **{f"layout_{k}": v for k, v in self.gm.layout_of(n, w).items()}) for (w, n) in self.gm._groups],
                 "configs": sorted(self._config_map),
-                "config_profs": [{"name": c, "prof": config_prof(p), "banned": config_banned(p)} for c, p in sorted(self._config_map.items())],
+                "config_profs": [config_info(c, p, self._sessions, self.gm) for c, p in sorted(self._config_map.items())],
                 "screens": [{"name": f"{i + 1}. {x['name']} – {x['w']}×{x['h']}"} for i, x in enumerate(getattr(self, "_screens_cache", []))],
                 "zooms": ZOOM_CHOICES,
                 "worlds": WORLDS,

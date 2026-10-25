@@ -53,7 +53,7 @@ from urllib.parse import parse_qs, quote, urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_repo import KINDS, DataRepo  # noqa: E402
 
-VERSION = "5.10.0"
+VERSION = "5.10.1"
 log = logging.getLogger("kraken-api")
 
 DEFAULTS = {
@@ -966,6 +966,7 @@ main.wide{max-width:1400px}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--dim);margin:0 0 6px}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 #tip{position:fixed;pointer-events:none;background:#070912;border:1px solid #2b3556;border-radius:6px;padding:6px 9px;font-size:12.5px;color:var(--fg);display:none;z-index:9;white-space:nowrap}
 .tbl-wrap{overflow-x:auto}.flt{padding:4px}.flt input,.flt select{padding:3px 5px;font-size:12px;min-width:70px}
+.cst-ban td{opacity:.55}.cst-done td{opacity:.75}
 .st-run{color:var(--ok)}.st-idle,.st-start{color:var(--acc)}.st-err{color:var(--bad)}.st-off{color:var(--off)}
 .login{max-width:360px;margin:12vh auto}.login form>*{margin-bottom:10px}
 #log{font:12.5px/1.4 ui-monospace,Menlo,Consolas,monospace;background:#070912;border:1px solid #1d2440;border-radius:6px;padding:10px;height:70vh;overflow:auto;white-space:pre-wrap;word-break:break-word}
@@ -1450,10 +1451,23 @@ box.innerHTML=`<h2>Grupa „${esc(g.name)}”</h2><div class="grid2"><label>Nazw
 $('eg_cancel').onclick=()=>{gediting=null;box.style.display='none'};
 $('eg_save').onclick=async()=>{const nn=$('eg_name').value.trim();await cmd('update_group','',g.name,{name:g.name,world:g.world,program:$('eg_program').value,ram_saver:$('eg_ram').checked,layout_enabled:$('eg_en').checked,layout_screen:$('eg_screen').value,layout_cols:$('eg_cols').value,layout_rows:$('eg_rows').value,layout_zoom:$('eg_zoom').value});
 if(nn&&nn!==g.name)await cmd('rename_group','',g.name,{name:g.name,new:nn,world:g.world});gediting=null;box.style.display='none'}}
-function configs(){const tb=$('crows');tb.textContent='';for(const c of O.config_profs||[]){const tr=document.createElement('tr');tr.innerHTML=`<td>${esc(c.name)}${c.banned===true||c.banned==='True'?' <span class=err>(zablokowane)</span>':''}</td><td></td>`;
+function cfgStatus(c){const b=c.banned===true||c.banned==='True';if(b)return['ban','⛔ zablokowane'+(c.banned_at?' · '+esc(String(c.banned_at).slice(0,10)):'')];
+if(+c.done_lvl>0)return['done',`🏁 ukończony (${+c.done_lvl} lvl)`];if(c.provisioned==='nie')return['new','⏳ do założenia przy START'];
+if(c.provisioned==='tak')return['ok','✅ założone'];return['ok','✅ istniejące konto']}
+function configs(){const tb=$('crows');tb.textContent='';const q=($('cf_q').value||'').toLowerCase(),fs=$('cf_status').value,fp=$('cf_prof').value;
+const all=O.config_profs||[];const cnt={ok:0,new:0,ban:0,done:0};let shown=0;
+for(const c of all){const [st,label]=cfgStatus(c);cnt[st]++;
+if(fs&&fs!==st)continue;if(fp&&(c.prof||'')!==fp)continue;
+if(q&&![c.name,c.nick,c.login,c.session,c.group].some(v=>String(v||'').toLowerCase().includes(q)))continue;shown++;
+const tr=document.createElement('tr');tr.className='cst-'+st;
+const sess=c.session?`${c.running?'<span class=ok>●</span> ':''}${esc(c.session)}${c.group?` <span class=hint>(${esc(c.group)})</span>`:''}`:'<span class=hint>—</span>';
+const when=+c.mtime?new Date(c.mtime*1000).toLocaleString('pl-PL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'';
+tr.innerHTML=`<td><b>${esc(c.name.replace(/\.json$/,''))}</b></td><td>${esc(c.nick||'')}</td><td class=hint>${esc(c.login||'')}</td><td></td><td>${label}</td><td>${sess}</td><td class=hint>${when}</td>`;
 const sel=document.createElement('select');sel.innerHTML=opt(PROFS.map(([v,l])=>({value:v,label:l})),c.prof||'');sel.disabled=!H.online;
-sel.onchange=()=>cmd('set_config_prof','',c.name,{config:c.name,prof:sel.value});tr.lastChild.appendChild(sel);tb.appendChild(tr)}
-if(!(O.config_profs||[]).length)tb.innerHTML='<tr><td colspan=2 class=hint>Brak configów.</td></tr>'}
+sel.onchange=()=>cmd('set_config_prof','',c.name,{config:c.name,prof:sel.value});tr.children[3].appendChild(sel);tb.appendChild(tr)}
+$('cf_count').textContent=`${shown} z ${all.length} · ✅ ${cnt.ok} · ⏳ ${cnt.new} · 🏁 ${cnt.done} · ⛔ ${cnt.ban}`;
+if(!shown)tb.innerHTML=`<tr><td colspan=7 class=hint>${all.length?'Brak configów dla wybranych filtrów.':'Brak configów.'}</td></tr>`}
+for(const id of ['cf_q','cf_status','cf_prof'])document.addEventListener('input',e=>{if(e.target.id===id)configs()});
 let optSig='';function forms(){const sig=JSON.stringify(O);if(sig===optSig)return;optSig=sig;
 $('ns_group').innerHTML=opt(groupsOpt(),$('ns_group').value);$('ns_config').innerHTML=opt(O.configs||[],$('ns_config').value);
 $('ns_server').innerHTML=opt(O.servers||[],$('ns_server').value);$('ns_browser').innerHTML=opt(O.browsers||[],$('ns_browser').value);
@@ -2154,7 +2168,11 @@ przetrwa jego aktualizację); boty wczytują je w ciągu ~5 min. „↩” usuwa
 <label>Serwer<select id="ns_server"></select></label><label>Przeglądarka<select id="ns_browser"></select></label>
 <label>Szablon profilu<select id="ns_template"></select></label><label>Program (opcjonalnie)<select id="ns_program"></select></label></div>
 <div style="margin-top:10px"><button class="pri" id="ns_go">＋ Utwórz sesję</button> <span class="hint" id="ns_info"></span></div></div>
-<div class="card"><h2>Configi</h2><table><thead><tr><th>Config</th><th>Profesja</th></tr></thead><tbody id="crows"></tbody></table>
+<div class="card"><h2>Configi <span class="hint" id="cf_count" style="font-weight:normal;font-size:12.5px"></span></h2>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px"><input type="text" id="cf_q" placeholder="Szukaj: config, nick, login, sesja, grupa" style="max-width:320px">
+<select id="cf_status" style="max-width:220px"><option value="">Stan konta: wszystkie</option><option value="ok">✅ założone / istniejące</option><option value="new">⏳ do założenia przy START</option><option value="done">🏁 ukończone (cykl życia)</option><option value="ban">⛔ zablokowane</option></select>
+<select id="cf_prof" style="max-width:200px"><option value="">Profesja: wszystkie</option><option value="w">wojownik</option><option value="p">paladyn</option><option value="b">tancerz ostrzy</option><option value="t">tropiciel</option><option value="h">łowca</option><option value="m">mag</option></select></div>
+<div class="tbl-wrap"><table><thead><tr><th>Config</th><th>Nick</th><th>Login</th><th>Profesja</th><th>Stan konta</th><th>Sesja (grupa)</th><th>Zmieniony</th></tr></thead><tbody id="crows"></tbody></table></div>
 <h2 style="margin-top:14px">Nowy config</h2>
 <div class="grid2"><label>Rodzaj<select id="nc_mode"><option value="auto">Nowe konto – login, hasło i nick generowane (konto zakłada START sesji)</option><option value="manual">Istniejące konto – podaję login i hasło</option></select></label>
 <label class="nc-man">Nazwa pliku<input type="text" id="nc_name" placeholder="np. MojaPostac"></label>
