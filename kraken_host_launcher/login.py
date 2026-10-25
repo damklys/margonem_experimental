@@ -177,6 +177,16 @@ def _do_login(driver, username, password):
 
     # --- Krok 5: "Wejdź do gry" → retry z refresh aż do GAME_CANVAS ---
 
+    # Prewencyjnie: odświeżenie strony przed oknem wyboru postaci – świeżo po logowaniu (zwłaszcza przy całej grupie)
+    # to okno potrafi się zawiesić; po refreshu ładuje się czysto. Gdy gra już się wczytuje (canvas) – bez refreshu.
+    if not _find(driver, By.CSS_SELECTOR, "canvas#GAME_CANVAS"):
+        print("🔄 Odświeżam stronę przed wyborem postaci (prewencyjnie)")
+        try:
+            driver.refresh()
+        except WebDriverException:
+            pass
+        time.sleep(1.5)
+
     # Najpierw poczekaj aż przycisk "Wejdź do gry" pojawi się (lub GAME_CANVAS od razu)
     what, _ = _wait_first(driver, [
         ("enter",  lambda d: _find(d, By.CSS_SELECTOR, "div.c-btn.enter-game")),
