@@ -1477,6 +1477,19 @@ class GroupManager:
             self._groups[(world, name)]["preset"] = dict(preset) if preset else None
             self._notify()
 
+    def reserve_config_start(self, name: str, world: str) -> float:
+        """Odstęp między startami nowych configów w grupie (sesja predefiniowana › „Odstęp między nowymi configami”):
+        zwraca, za ile sekund wolno wystartować kolejny nowy config, i rezerwuje ten termin."""
+        d = self._groups.get((world, name))
+        p = (d or {}).get("preset") or {}
+        gap = max(0, int(p.get("cfg_gap_min") or 0)) * 60
+        if not d or not gap:
+            return 0.0
+        now = time.time()
+        delay = max(0.0, float(d.get("cfg_next", 0)) - now)
+        d["cfg_next"] = now + delay + gap
+        return delay
+
     def ram_saver_of(self, name: str, world: str = "Gordion") -> bool:
         """Tryb oszczędny RAM grupy (flagi RAM_SAVER_ARGS przy starcie przeglądarek sesji)."""
         return bool(self._groups.get((world, name), {}).get("ram_saver"))
@@ -1499,7 +1512,9 @@ class GroupManager:
                  "layout": d.get("layout") or dict(LAYOUT_DEFAULT),
                  "program": d.get("program", ""),
                  "ram_saver": bool(d.get("ram_saver")),
-                 "preset": d.get("preset") or None}
+                 "preset": d.get("preset") or None,
+                 "preset_last_new": float(d.get("preset_last_new") or 0),
+                 "cfg_next": float(d.get("cfg_next") or 0)}
                 for (w, n), d in self._groups.items()]
 
     # ---- obserwatorzy ----
@@ -2447,6 +2462,12 @@ class GroupPresetDialog(tk.Toplevel):
         self.stop_lvl = tk.StringVar(value=str(cur.get("stop_lvl") or ""))
         row(5, "Zatrzymaj po osiągnięciu poziomu", tk.Entry(f, textvariable=self.stop_lvl, width=6, font=FONT_SMALL,
                                                             bg=BG3, fg=FG, insertbackground=FG, relief="flat"))
+        self.new_every = tk.StringVar(value=str(cur.get("new_every_min") or ""))
+        row(11, "Nowa sesja co … min (do zapełnienia grupy)", tk.Entry(f, textvariable=self.new_every, width=6, font=FONT_SMALL,
+                                                                       bg=BG3, fg=FG, insertbackground=FG, relief="flat"))
+        self.cfg_gap = tk.StringVar(value=str(cur.get("cfg_gap_min") or ""))
+        row(12, "Odstęp między startami nowych configów w grupie (min)", tk.Entry(f, textvariable=self.cfg_gap, width=6, font=FONT_SMALL,
+                                                                                  bg=BG3, fg=FG, insertbackground=FG, relief="flat"))
         self.lifecycle = tk.BooleanVar(value=bool(cur.get("lifecycle")))
         self.recreate = tk.BooleanVar(value=bool(cur.get("recreate")))
         self.restart = tk.BooleanVar(value=bool(cur.get("restart_on_fail")))
@@ -2491,6 +2512,8 @@ class GroupPresetDialog(tk.Toplevel):
             "slot_profs": slot_profs,
             "stop_lvl": int(self.stop_lvl.get()) if self.stop_lvl.get().strip().isdigit() else 0,
             "lifecycle": bool(self.lifecycle.get()),
+            "new_every_min": int(self.new_every.get()) if self.new_every.get().strip().isdigit() else 0,
+            "cfg_gap_min": int(self.cfg_gap.get()) if self.cfg_gap.get().strip().isdigit() else 0,
         })
         self.destroy()
 
@@ -3699,9 +3722,11 @@ class SessionTab(tk.Frame):
         if self.on_config_added:
             self.on_config_added(name, path)
         self._refresh_prof()
+        delay = max(10.0, self.gm.reserve_config_start(g, w) if g else 0.0)
+        when = f"{int(delay)} s" if delay < 120 else f"{delay / 60:.0f} min (odstęp między nowymi configami w grupie)"
         self.logger.write(f"♻️ Cykl życia: {os.path.basename(old or '?')} zakończony na {lvl} lvl → nowy config {name} "
-                          f"(nick {data['nick']}, profesja {PROF_LABEL.get(data.get('prof', ''), '?')}) – START za 10 s")
-        self._pending_restart = self.after(10000, self._do_restart)
+                          f"(nick {data['nick']}, profesja {PROF_LABEL.get(data.get('prof', ''), '?')}) – START za {when}")
+        self._pending_restart = self.after(int(delay * 1000), self._do_restart)
 
     def _on_finished(self, crashed: bool = False, banned: bool = False, level_done: int = 0):
         self._runner    = None
@@ -4098,6 +4123,7 @@ class BotGUI:
             return self._add_session()
         tab = self._preset_session(g, world, preset)
         if tab and preset.get("start", True) is not False:
+            self.gm.reserve_config_start(g, world)   # ręczny start od razu, ale kolejne nowe configi grupy po odstępie
             tab.after(800, tab._on_play)
         return tab
 
@@ -4699,11 +4725,34 @@ class BotGUI:
                         e["enabled"] = False
                     self.run_schedule(e)
                     ran = True
+            if not self._locked and self._preset_tick(now):
+                ran = True
             if ran:
                 self._save_state()
         except Exception as ex:
             print(f"harmonogram: {ex}")
         self.root.after(15000, self._schedule_tick)
+
+    def _preset_tick(self, now: float) -> bool:
+        """Harmonogram grup z sesją predefiniowaną: nowa sesja co „new_every_min” (do zapełnienia grupy), z zachowaniem
+        odstępu między startami nowych configów w grupie. True – coś utworzono."""
+        made = False
+        for (w, g), d in list(self.gm._groups.items()):
+            p = d.get("preset") or {}
+            every = max(0, int(p.get("new_every_min") or 0)) * 60
+            if not every or self._group_count(g, w) >= self.MAX_PER_GROUP:
+                continue
+            if now - float(d.get("preset_last_new") or 0) < every or now < float(d.get("cfg_next") or 0):
+                continue
+            tab = self._preset_session(g, w, dict(p))
+            d["preset_last_new"] = now
+            if not tab:
+                continue
+            self.gm.reserve_config_start(g, w)
+            tab.logger.write(f"⏰ Harmonogram grupy „{g}”: nowa sesja co {every // 60} min – START")
+            tab.after(800, tab._on_play)
+            made = True
+        return made
 
     def run_schedule(self, e: dict) -> str:
         """Wykonanie wpisu harmonogramu (o czasie albo „Uruchom teraz”); wynik trafia do dziennika i paska stanu."""
@@ -4892,6 +4941,9 @@ class BotGUI:
                 self.gm._groups[(world, name)]["ram_saver"] = True
             if name and isinstance(g.get("preset"), dict):
                 self.gm._groups[(world, name)]["preset"] = g["preset"]
+            for k in ("preset_last_new", "cfg_next"):
+                if name and g.get(k):
+                    self.gm._groups[(world, name)][k] = float(g[k])
             if g.get("favorite"):
                 self.gm._favorites.add((world, name))
 
